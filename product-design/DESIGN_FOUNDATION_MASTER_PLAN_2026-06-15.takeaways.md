@@ -1,0 +1,13 @@
+**This document is a step-by-step plan to make the online storefront look and feel like a premium, professional shop — not a generic website. It also lays the groundwork for features that keep customers coming back, like saving their designs. The plan is designed so several people (or AI agents) can work at the same time without getting in each other's way.**
+
+**The main parts explained simply:**
+
+- **The core problem** — The storefront works well but does not look premium. Before adding new features, the visual design must be fixed properly, otherwise every new feature will need to be reworked three times (once per theme).
+- **Design tokens** — Think of these as shared "knobs" that control colours, shadows, spacing, and text size across the whole site. When a block or section uses these shared knobs instead of hard-coding its own values, changing the store's brand colour automatically updates everything at once.
+- **Three themes (default, aurora, prism)** — Three different visual styles a store owner can pick from. The plan fixes all three. The "aurora" theme is the biggest problem — it has thousands of lines of overriding styles that ignore the shared knobs, so store-wide colour changes don't apply to it.
+- **CMS blocks** — Each section on a page (hero banner, product grid, testimonials, etc.) is a "block." This plan sets a 7-point checklist every block must pass: registered correctly, has an admin preview, responds to the theme, shows loading/empty/error states, and uses plain language labels.
+- **Waves (the order of work)** — Work is split into 5 phases: Wave 0 sets up safety nets and fixes a security gap. Wave 1 builds shared building-blocks used by all themes. Wave 2 updates every page section to use the shared knobs and polishes each theme. Wave 3 adds the "My Designs" library where customers can resume or reprint past orders. Wave 4 adds reminders, notifications, and recommendations.
+- **Parallel workstreams** — Within each wave, different parts can be built at the same time by different agents, each owning a separate set of files so they never overwrite each other's work.
+- **Open decisions for the founder** — Seven questions the business owner needs to answer before or during the work, such as: who approves what "premium" looks like, whether "My Designs" should launch behind a feature flag, and how deleted designs are handled after 30 days.
+
+**What to do with this:** Read the open questions at the end and decide on each one before work starts — they are blockers. Then let Wave 0 run first; nothing else should start until the safety net and security fix are in place.

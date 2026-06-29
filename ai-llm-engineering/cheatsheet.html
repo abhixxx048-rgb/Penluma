@@ -1,0 +1,94 @@
+<h2>7 · Revision Cheat Sheet — The Whole Guide on Two Pages</h2>
+
+<p>This is the 10-minute review. Each pillar distilled to its load-bearing ideas; the decision table tells you which technique fits which situation; the golden rules are what to remember when you forget everything else.</p>
+
+<h3>Evals in one minute</h3>
+<ul>
+<li><strong>Model eval vs product eval</strong> — model eval asks "is the model good?" (generic benchmarks); product eval asks "does <em>my</em> feature do <em>its</em> job for <em>my</em> users?" The second is the one that matters.</li>
+<li><strong>Golden dataset</strong> — a curated, labelled set of representative inputs + expected behaviour; your ground truth. Build it from real usage and edge cases, not invented examples.</li>
+<li><strong>Offline vs online</strong> — offline = measured pre-ship against fixed data; online = measured in production on live traffic (A/B, user signals). You need both: offline gates releases, online catches reality.</li>
+<li><strong>Error analysis</strong> — read actual failing outputs, cluster them into failure modes, name them. This comes <em>before</em> metrics — you can't measure what you haven't looked at.</li>
+<li><strong>LLM-as-a-judge</strong> — use a model to score outputs at scale. Cheap and fast, but must be validated against human labels before you trust it.</li>
+<li><strong>Judge biases</strong> — <strong>position</strong> (favours first/last option), <strong>verbosity</strong> (favours longer answers), <strong>self-preference</strong> (favours its own model family). Mitigate: randomise order, control for length, use a different judge model.</li>
+<li><strong>Binary vs Likert</strong> — binary (pass/fail) is reliable and actionable; Likert (1–5) is noisier and graders disagree. Prefer binary unless you genuinely need gradation.</li>
+<li><strong>RAG-specific metrics</strong> — <strong>faithfulness</strong> (answer supported by retrieved context, no hallucination), <strong>context precision</strong> (retrieved chunks are relevant), <strong>context recall</strong> (all needed info was retrieved). Diagnose retrieval vs generation separately.</li>
+<li><strong>pass@k vs pass^k</strong> — pass@k = succeeds at least once in k tries (measures capability/best-case); pass^k = succeeds in all k tries (measures reliability/consistency). Agents need pass^k thinking.</li>
+<li><strong>The eval flywheel</strong> — ship → observe failures → add them to the golden set → improve → re-measure. The dataset compounds into a moat.</li>
+</ul>
+
+<h3>Retrieval in one minute</h3>
+<ul>
+<li><strong>Tokens / context window</strong> — models read/write in tokens (sub-word units); the context window is the finite token budget for prompt + output. Everything you retrieve competes for that space.</li>
+<li><strong>Chunking</strong> — splitting documents into retrievable pieces. Too big = noisy/wasteful; too small = lost meaning. Chunk on semantic boundaries, keep some overlap.</li>
+<li><strong>Embeddings</strong> — text mapped to vectors so semantic similarity = geometric closeness. The basis of meaning-based search.</li>
+<li><strong>Vector DB / similarity search</strong> — stores embeddings and finds nearest neighbours to a query vector. Fast approximate semantic lookup.</li>
+<li><strong>Hybrid search</strong> — combine semantic (vector) with keyword/lexical (BM25). Catches both meaning and exact terms (names, codes, IDs) that embeddings miss.</li>
+<li><strong>Reranking</strong> — a second, more precise model reorders the top candidates from first-stage retrieval. Cheap retrieval casts a wide net; reranker tightens precision.</li>
+<li><strong>RAG pipeline</strong> — retrieve relevant context → inject into prompt → generate a grounded answer. Grounds output in your data without retraining.</li>
+<li><strong>Query rewriting</strong> — reshape the raw user query (expand, clarify, decompose) before retrieval so it matches how documents are written.</li>
+<li><strong>Contextual retrieval</strong> — prepend chunk-level context (what document/section it came from) before embedding, so isolated chunks stay interpretable.</li>
+<li><strong>GraphRAG</strong> — retrieve over a knowledge graph of entities/relationships, not just flat chunks. Better for multi-hop, "how do these connect?" questions.</li>
+<li><strong>RAG vs fine-tuning vs long-context</strong> — RAG adds <em>knowledge</em> (facts, updatable, citable); fine-tuning teaches <em>behaviour/format/style</em>; long-context stuffs everything in the window (simple but costly, and degrades). Default to RAG for facts.</li>
+<li><strong>"Lost in the middle"</strong> — models attend best to the start and end of a long context and miss the middle. Put the most important retrieved material at the edges; don't assume more context = better.</li>
+<li><strong>Agent memory</strong> — persisting state across turns/sessions (scratchpad, summaries, retrieved history) so an agent isn't amnesiac. Memory is retrieval applied to the agent's own past.</li>
+</ul>
+
+<h3>Agents in one minute</h3>
+<ul>
+<li><strong>Agent vs workflow</strong> — a workflow is a fixed, predefined path of LLM calls; an agent dynamically decides its own steps and tool use. Workflows are predictable; agents are flexible but harder to control. Prefer a workflow when the path is known.</li>
+<li><strong>The agent loop</strong> — observe → think → act (call a tool) → observe result → repeat until done. The engine under every agent.</li>
+<li><strong>Tools / function calling</strong> — the model emits a structured request to call a function; your code runs it and feeds the result back. How agents touch the real world.</li>
+<li><strong>ReAct</strong> — interleave Reasoning and Acting ("thought → action → observation" cycles) so the model plans, acts, and adjusts on feedback.</li>
+<li><strong>Workflow patterns</strong> — <strong>prompt chaining</strong> (sequential steps), <strong>routing</strong> (classify then dispatch), <strong>parallelization</strong> (fan out, aggregate), <strong>orchestrator-worker</strong> (a lead delegates subtasks), <strong>evaluator-optimizer</strong> (generate → critique → revise loop), <strong>reflection</strong> (model reviews its own output before finalizing).</li>
+<li><strong>Single vs multi-agent</strong> — multi-agent adds coordination cost and new failure surface. Use one agent until a task genuinely needs separate roles/contexts; most don't.</li>
+<li><strong>MCP (Model Context Protocol)</strong> — an open standard for connecting models to tools/data sources, so integrations are reusable instead of bespoke per app.</li>
+<li><strong>Failure modes</strong> — <strong>loops</strong> (agent repeats the same action forever), <strong>compounding errors</strong> (a small early mistake propagates and amplifies across steps). Long autonomous chains multiply per-step error rates.</li>
+<li><strong>Reliability practices</strong> — cap iterations, validate every tool output, constrain the action space, add checkpoints/human approval for risky steps, log traces, and design for graceful failure. Build for pass^k, not pass@k.</li>
+</ul>
+
+<h3>Judgment in one minute</h3>
+<ul>
+<li><strong>The escalation ladder</strong> — code → single LLM call → RAG → agent → multi-agent. Each rung costs more (latency, money, unpredictability). Start at the bottom; climb only when the rung below provably can't do the job.</li>
+<li><strong>When NOT to use AI</strong> — deterministic, exact, or correctness-critical tasks (math, lookups, rules, anything needing the same answer every time) belong in code. An LLM is the wrong tool for problems with one right answer.</li>
+<li><strong>Hallucination is permanent</strong> — it's intrinsic to how LLMs work, not a bug awaiting a fix. Design around it (grounding, citation, verification), never assume it'll go away.</li>
+<li><strong>Human-in-the-loop</strong> — keep a person on consequential/irreversible actions. Confidence ≠ correctness, so gate high-stakes outputs with review.</li>
+<li><strong>Automation vs augmentation</strong> — automation replaces the human (needs high reliability + low blast radius); augmentation assists a human who stays in control. Default to augmentation when stakes are real.</li>
+<li><strong>Designing for failure</strong> — assume the model will be wrong, slow, or unavailable. Add fallbacks, timeouts, validation, and clear user-facing error/recovery paths.</li>
+<li><strong>Prompt injection</strong> — malicious instructions hidden in retrieved/user content hijack the model. Treat all external text as untrusted, separate instructions from data, and never give an agent unchecked authority over sensitive actions.</li>
+<li><strong>Model-agnostic engineering</strong> — abstract the provider behind an interface so you can swap models as price/quality shifts. Don't hard-couple your product to one model's quirks.</li>
+</ul>
+
+<h3>Decision quick-reference</h3>
+<table>
+<thead>
+<tr><th>Situation</th><th>Right technique</th></tr>
+</thead>
+<tbody>
+<tr><td>Answers must cite private / up-to-date documents</td><td>RAG (retrieve, ground, cite)</td></tr>
+<tr><td>Need the same exact answer every time</td><td>Don't use an LLM — use code / deterministic logic</td></tr>
+<tr><td>Output should match a fixed style, format, or behaviour</td><td>Fine-tuning (not RAG)</td></tr>
+<tr><td>Subjective quality scored at scale</td><td>LLM-as-judge, validated against human labels first</td></tr>
+<tr><td>Task is a known, fixed sequence of steps</td><td>Workflow (chaining / routing), not an agent</td></tr>
+<tr><td>Open-ended, multi-step task with unknown path</td><td>Single agent with a tool loop + iteration cap</td></tr>
+<tr><td>Keyword/exact terms (names, IDs) being missed</td><td>Hybrid search + reranking</td></tr>
+<tr><td>Retrieval pulls the wrong or partial context</td><td>Query rewriting + contextual retrieval; check precision/recall</td></tr>
+<tr><td>Multi-hop "how do these relate?" questions</td><td>GraphRAG</td></tr>
+<tr><td>Irreversible or high-stakes action</td><td>Human-in-the-loop / augmentation, not automation</td></tr>
+<tr><td>Untrusted external text feeding the prompt</td><td>Treat as data, defend against prompt injection</td></tr>
+<tr><td>One agent overwhelmed by distinct roles/contexts</td><td>Multi-agent (only after single-agent fails)</td></tr>
+</tbody>
+</table>
+
+<h3>Golden rules</h3>
+<ul>
+<li><strong>Look at your data before you measure</strong> — error analysis precedes metrics; you can't fix what you haven't read.</li>
+<li><strong>An eval you don't run is worthless</strong> — wire it into the loop or it doesn't exist.</li>
+<li><strong>Measure the product, not the model</strong> — generic benchmarks don't tell you if your feature works.</li>
+<li><strong>Retrieve, then generate — never trust ungrounded output for facts</strong>.</li>
+<li><strong>A faithful answer over the wrong document is still wrong</strong> — fix retrieval, not just the prompt.</li>
+<li><strong>Prefer the simplest rung of the ladder that works</strong> — every step up costs reliability and money.</li>
+<li><strong>Validate your judge against humans before you believe its scores</strong>.</li>
+<li><strong>Hallucination is permanent — design around it, don't wait for a fix</strong>.</li>
+<li><strong>Optimize agents for pass^k (consistency), not pass@k (best case)</strong>.</li>
+<li><strong>Assume the model will fail — build the fallback before you ship the feature</strong>.</li>
+</ul>

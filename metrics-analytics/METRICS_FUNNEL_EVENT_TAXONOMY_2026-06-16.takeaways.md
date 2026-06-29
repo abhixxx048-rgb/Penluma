@@ -1,0 +1,14 @@
+**This document is a practical guide for tracking whether the Print-Flow-360 platform is actually helping store owners succeed — specifically, whether a new store places its first real order within 7 days of signing up. It tells you exactly which events to track, how to name them, and which tool to use, so the team gets reliable numbers instead of a confusing pile of data nobody trusts.**
+
+**The main parts explained simply:**
+
+- **What a funnel is** — A funnel counts how many people complete each step of a process in order (for example: sign up → publish store → receive first order). Each step shows you where people are dropping out so you can fix the right thing.
+- **Conversion window** — The time limit you set for someone to complete all funnel steps. This document recommends 7–14 days for the "first order" goal — long enough for a real store owner who signs up on a Friday and orders the following week, short enough to keep the numbers honest.
+- **Event naming rules (taxonomy)** — A set of simple rules for naming every action you track, so your data doesn't get messy over time. The rule is: `object_action` in lowercase with underscores, past tense (for example, `order_received`, `store_published`). Variable data like "what type of product" goes as a detail on the event, not baked into the name itself.
+- **Identity stitching** — Making sure one real person is counted as one person in your analytics, even before they log in. If you skip this step, your numbers are silently wrong — no error message tells you, the data just lies quietly.
+- **Server-side vs browser-side tracking** — Tracking from the server (your backend) is more reliable than tracking in the browser, because browser-based tracking can be blocked by ad-blockers. The most important events — sign-ups, orders, payments — should always be tracked from the server.
+- **Tool recommendation (PostHog)** — PostHog is the recommended analytics tool. It has a generous free plan, tracks clicks and page views automatically without extra coding, and includes session recordings and feature flags all in one place.
+- **The 14-event tracking plan** — A short, concrete list of the only events worth tracking right now. Keeping the list small keeps the data trustworthy. Adding events should require a team review.
+- **Governance (keeping it tidy)** — Rules to stop the tracking plan from becoming a mess: every event needs an owner, changes go through a checklist before shipping, and nothing is renamed or deleted without a clear migration plan.
+
+**What to do with this:** Use PostHog and start by tracking just these three events from the server: `signup_completed`, `store_published`, `first_order_received`. Review weekly how many stores reach all three within 14 days. That single number tells you more than any dashboard full of clicks.

@@ -1,0 +1,31 @@
+{
+  "name": "research-blog-platform",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "import": "node scripts/import-research.mjs",
+    "dev": "npm run import && astro dev",
+    "start": "astro dev",
+    "build": "npm run import && astro build && pagefind --site dist",
+    "preview": "astro preview",
+    "astro": "astro",
+    "cf:preview": "npm run build && wrangler pages dev dist"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^12.6.0",
+    "@astrojs/mdx": "^4.3.0",
+    "@astrojs/rss": "^4.0.12",
+    "@astrojs/sitemap": "^3.4.1",
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.1.11",
+    "astro": "^5.12.0",
+    "reading-time": "^1.5.0",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "pagefind": "^1.3.0",
+    "wrangler": "^4.24.0"
+  }
+}

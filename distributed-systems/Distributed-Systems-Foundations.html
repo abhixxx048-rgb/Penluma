@@ -1,0 +1,1932 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Distributed Systems Foundations — A Beginner-to-Advanced Study Guide</title>
+<style>
+:root{
+  --ink:#1a2230; --muted:#5b6675; --line:#e3e8ef; --bg:#ffffff;
+  --brand:#1f4e8c; --brand-soft:#eef3fb;
+  --key:#0f7b51; --key-bg:#eafaf1; --key-line:#bce7d2;
+  --warn:#9a3412; --warn-bg:#fff4ed; --warn-line:#fcd9c2;
+  --tip:#1e5fae; --tip-bg:#eef5ff; --tip-line:#c8defb;
+  --analogy:#6b3fa0; --analogy-bg:#f6f0fc; --analogy-line:#e2d3f4;
+  --example:#334155; --example-bg:#f4f6f9; --example-line:#dde3ec;
+}
+@page{ size:A4; margin:18mm 16mm 20mm 16mm; }
+*{ box-sizing:border-box; }
+body{
+  font-family:"Segoe UI",-apple-system,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink); line-height:1.62; font-size:11pt; margin:0; background:var(--bg);
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+}
+h1,h2,h3,h4{ line-height:1.25; color:var(--ink); }
+h2{ font-size:20pt; color:var(--brand); margin:0 0 .5em; padding-bottom:.28em; border-bottom:3px solid var(--brand-soft); }
+h3{ font-size:14pt; margin:1.5em 0 .5em; color:#173a63; }
+h4{ font-size:12pt; margin:1.2em 0 .4em; color:#2a3a50; }
+p{ margin:.6em 0; }
+ul,ol{ margin:.5em 0 .8em; padding-left:1.4em; }
+li{ margin:.28em 0; }
+strong{ color:#10203a; }
+code{ font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; font-size:.86em;
+  background:#eef1f5; padding:.08em .4em; border-radius:4px; color:#9a3412; }
+a{ color:var(--brand); text-decoration:none; }
+
+/* Section page breaks */
+.section{ break-before:page; }
+.section:first-of-type{ break-before:auto; }
+
+/* Diagrams */
+pre.diagram{
+  font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; font-size:9pt; line-height:1.35;
+  background:#0f1b2d; color:#dbe7f5; padding:14px 16px; border-radius:8px; overflow:hidden;
+  white-space:pre; break-inside:avoid; margin:1em 0; border:1px solid #1d3050;
+}
+
+/* Callout boxes */
+.key,.warn,.tip,.analogy,.example{
+  margin:1em 0; padding:.7em .95em .7em 1em; border-radius:8px; border:1px solid; break-inside:avoid; font-size:10.4pt;
+}
+.key{ background:var(--key-bg); border-color:var(--key-line); }
+.key strong{ color:var(--key); }
+.warn{ background:var(--warn-bg); border-color:var(--warn-line); }
+.warn strong{ color:var(--warn); }
+.tip{ background:var(--tip-bg); border-color:var(--tip-line); }
+.tip strong{ color:var(--tip); }
+.analogy{ background:var(--analogy-bg); border-color:var(--analogy-line); }
+.analogy strong{ color:var(--analogy); }
+.example{ background:var(--example-bg); border-color:var(--example-line); }
+.example strong{ color:var(--example); }
+
+/* Tables */
+table{ border-collapse:collapse; width:100%; margin:1em 0; font-size:10pt; break-inside:avoid; }
+th,td{ border:1px solid var(--line); padding:.5em .65em; text-align:left; vertical-align:top; }
+thead th{ background:var(--brand); color:#fff; font-weight:600; }
+tbody tr:nth-child(even){ background:#f6f8fb; }
+
+/* Glossary definition list */
+dl{ margin:1em 0; }
+dt{ font-weight:700; color:#173a63; margin-top:.7em; }
+dd{ margin:.15em 0 .15em 0; padding-left:1em; border-left:3px solid var(--brand-soft); color:#2c3a4d; }
+
+/* Cover */
+.cover{ break-after:page; text-align:center; padding-top:55mm; }
+.cover .kicker{ letter-spacing:3px; text-transform:uppercase; color:var(--muted); font-size:11pt; margin-bottom:10mm; }
+.cover h1{ font-size:34pt; color:var(--brand); margin:0 0 6mm; }
+.cover .sub{ font-size:15pt; color:var(--muted); margin:0 0 28mm; font-weight:400; }
+.cover .meta{ font-size:10.5pt; color:var(--muted); }
+.cover .rule{ width:60mm; height:4px; background:var(--brand); margin:8mm auto; border-radius:3px; }
+
+/* TOC */
+.toc{ break-after:page; }
+.toc h2{ color:var(--brand); }
+.toc ol{ list-style:none; padding-left:0; font-size:12pt; }
+.toc li{ padding:.45em 0; border-bottom:1px dashed var(--line); }
+.toc a{ color:var(--ink); }
+.toc .group{ margin-top:1.2em; font-weight:700; color:var(--brand); text-transform:uppercase; letter-spacing:1px; font-size:10pt; }
+</style>
+</head>
+<body>
+
+<section class="cover">
+  <div class="kicker">Study Guide · Series 1 of the Distributed Systems track</div>
+  <h1>Distributed Systems<br>Foundations</h1>
+  <div class="rule"></div>
+  <p class="sub">A Beginner-to-Advanced Study Guide<br>From "what is a distributed system?" to consistency models</p>
+  <p class="meta">Prepared 2026-06-21 · Read the sections in order</p>
+</section>
+
+<nav class="toc">
+  <h2>Table of Contents</h2>
+  <ol>
+    <li><a href="#how-to-use">How to Use This Guide</a></li>
+    <div class="group">Core Concepts</div>
+    <li><a href="#sec-1">1. What Is a Distributed System?</a></li>
+<li><a href="#sec-2">2. Why Distributed Systems Are Hard</a></li>
+<li><a href="#sec-3">3. Time, Clocks &amp; the Ordering of Events</a></li>
+<li><a href="#sec-4">4. Vector Clocks &amp; Causality</a></li>
+<li><a href="#sec-5">5. The CAP Theorem (and PACELC)</a></li>
+<li><a href="#sec-6">6. Consistency Models</a></li>
+    <div class="group">Reference</div>
+    <li><a href="#glossary">Glossary of Terms</a></li>
+    <li><a href="#faq">Frequently Asked Questions</a></li>
+    <li><a href="#cheatsheet">Revision Cheat Sheet</a></li>
+  </ol>
+</nav>
+
+<section class="section"><h2 id="how-to-use">How to Use This Guide</h2>
+<p>Welcome. A <strong>distributed system</strong> is just a group of computers that work together to look like one single service to the people using it. When you open a website, stream a video, or send a message, you are almost always talking to dozens or hundreds of machines pretending to be one. This guide explains, from the ground up, how those machines cooperate, why that cooperation is surprisingly hard, and what trade-offs engineers make to keep things working.</p>
+<p>This guide is written for a <strong>complete beginner</strong>. You do not need a computer science degree, advanced math, or prior experience with servers. If you can picture a few people in different rooms trying to agree on something by passing notes under the door, you already have the right mental model for most of what follows.</p>
+<p>The six sections are deliberately ordered so each one builds on the last:</p>
+<ul>
+<li><strong>1. What Is a Distributed System?</strong> — the vocabulary and the big picture. Start here even if you think you know it.</li>
+<li><strong>2. Why Distributed Systems Are Hard</strong> — the famous wrong assumptions ("fallacies") that trip everyone up, plus the difference between a fault and a failure.</li>
+<li><strong>3. Time, Clocks &amp; the Ordering of Events</strong> — why you cannot trust the clock on the wall, and how "logical" clocks order events instead.</li>
+<li><strong>4. Vector Clocks &amp; Causality</strong> — a smarter clock that can tell whether one event truly caused another, or whether two events just happened independently.</li>
+<li><strong>5. The CAP Theorem (and PACELC)</strong> — the single most quoted (and most misunderstood) rule about the trade-off between staying available and staying consistent when the network breaks.</li>
+<li><strong>6. Consistency Models</strong> — the menu of promises a system can make about how fresh and correct your data looks, from "always perfectly up to date" down to "it'll catch up eventually".</li>
+</ul>
+<p>Sections 3 and 4 (clocks and causality) are the technical heart of the guide. Sections 5 and 6 (CAP and consistency models) lean on them — once you understand <em>ordering</em> and <em>causality</em>, the trade-offs in CAP and the ladder of consistency models stop feeling like jargon and start feeling like common sense.</p>
+<div class="key">
+<strong>Tip: read in order, and do the analogies.</strong> Every section uses an everyday analogy (people passing notes, a group chat, a shared whiteboard, a bank balance). Pause on each one and picture it before moving to the technical terms. The analogy is not a simplification you will later "graduate" from — it is the same idea the professionals actually carry in their heads. If a formal definition ever feels slippery, return to its analogy and re-read it.
+</div>
+<p>Keep the <strong>Glossary</strong> open in another tab as you read — every bolded term in the sections is defined there in plain language. When you finish, the <strong>FAQ</strong> answers the questions most beginners ask next, and the <strong>Revision Cheat Sheet</strong> condenses everything onto one page you can glance at before an interview or an exam.</p></section>
+<section class="section"><h2>1. What Is a Distributed System?</h2>
+
+<p>Welcome to the very first step. You are a web developer, so you already know how to build software that runs on a computer. This section answers one question in plain English: <em>what happens when one computer is not enough, and we make many computers work together as a team?</em> That team is called a <strong>distributed system</strong>. By the end of this section you will understand what one is, why people build them, and the basic words used to talk about them. We will go slowly and define every term before we use it.</p>
+
+<h3>1.1 A plain-English definition</h3>
+
+<p>A <strong>distributed system</strong> is a group of separate computers that work together over a network and try to look, to the user, like a single computer.</p>
+
+<p>Let's break that sentence into its three important parts:</p>
+
+<ul>
+  <li><strong>Separate computers</strong> — these are physically different machines. They each have their own processor, their own memory, and their own copy of the program. One could be in New York and another in Tokyo. They do <em>not</em> share memory the way two programs on your laptop do.</li>
+  <li><strong>Work together over a network</strong> — a <strong>network</strong> is just the wiring (cables, Wi-Fi, the internet) that lets computers send messages to each other. The only way these separate computers can cooperate is by sending each other messages, like passing notes.</li>
+  <li><strong>Look like a single computer to the user</strong> — this is the magic goal. When you open Gmail, you do not think "I am now talking to machine number 4,812 in a data center in Oregon." You just think "I am using Gmail." The fact that thousands of machines are involved is hidden from you.</li>
+</ul>
+
+<p>The textbook version of this definition, from a well-known distributed-systems book by Andrew Tanenbaum and Maarten van Steen, says it well: <em>"a collection of autonomous computing elements that appears to its users as a single coherent system."</em> "Autonomous" means each computer can run on its own; "coherent" means it all behaves like one sensible whole.</p>
+
+<p>There is also a famous, funny definition by computer scientist <strong>Leslie Lamport</strong> (a pioneer of the field): <em>"A distributed system is one in which the failure of a computer you didn't even know existed can render your own computer unusable."</em> This joke captures a deep truth we will return to again and again: in a distributed system, your work can be affected by far-away machines you cannot see and did not know about. Things break in surprising ways.</p>
+
+<div class="analogy">
+  <strong>Analogy:</strong> Think of a large restaurant kitchen. To the diner in the dining room, there is "the kitchen" — one thing that produces their meal. But behind the door there are many separate cooks: one on the grill, one on salads, one plating desserts, one washing dishes. They talk to each other by shouting orders ("two steaks, medium!"). They are separate people doing separate jobs, but the diner experiences a single, smooth kitchen. A distributed system is that kitchen: many workers (computers) coordinating by passing messages, presenting one face to the customer.
+</div>
+
+<h3>1.2 Single computer vs. distributed system: what actually changes?</h3>
+
+<p>You have spent your career so far mostly thinking about a <strong>single computer</strong> — one machine running your code. Everything in that world is comfortable and predictable. When you move to many machines, a few comfortable assumptions disappear. This shift is the heart of why distributed systems are hard.</p>
+
+<table>
+  <thead>
+    <tr><th>Topic</th><th>Single computer</th><th>Distributed system (many computers)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>How parts share data</td><td>Shared memory — instant and reliable. One function calls another in nanoseconds.</td><td>Messages over a network — slow and can get lost, delayed, or duplicated.</td></tr>
+    <tr><td>Clock / time</td><td>One clock. "Now" means one thing.</td><td>Every machine has its own clock, and they drift apart. There is no single "now."</td></tr>
+    <tr><td>Failure</td><td>If it crashes, the whole thing stops. Simple to reason about.</td><td>One machine can fail while others keep running. The system is partly alive, partly dead — much harder to reason about.</td></tr>
+    <tr><td>Knowing the state</td><td>You can look at memory and see the exact current state.</td><td>No machine knows the full, up-to-date state of all the others. Information is always a little stale.</td></tr>
+    <tr><td>Growth limit</td><td>Limited by how big and fast one machine can be.</td><td>Add more machines to grow almost without limit.</td></tr>
+  </tbody>
+</table>
+
+<p>The single most important change is this: <strong>communication is now by messages over a network, and the network is unreliable.</strong> Messages can be slow, arrive out of order, get lost entirely, or arrive twice. On one machine, calling a function always works and always returns instantly. Across machines, a request might never get an answer — and you cannot tell whether the other machine did the work, is just slow, or has died. This single fact is the source of most distributed-systems difficulty, and the rest of this study guide is largely about coping with it.</p>
+
+<div class="key">
+  <strong>Key takeaway:</strong> Going from one computer to many is not just "more of the same." You lose three comfortable things: shared memory, a single clock, and all-or-nothing failure. In exchange, you gain the ability to grow, to survive failures, and to be fast for users everywhere. The whole field is about managing that trade.
+</div>
+
+<h3>1.3 Everyday real examples you already use</h3>
+
+<p>Distributed systems are not exotic. You use dozens every day, often without realizing it. Here are concrete ones:</p>
+
+<ul>
+  <li><strong>Any large web app (Google Search, YouTube, Netflix, Amazon)</strong> — when you search Google, your one query is handled by thousands of machines splitting the work, then combining results in a fraction of a second. No single machine could hold all of Google's index or serve all its users.</li>
+  <li><strong>WhatsApp / messaging apps</strong> — your message travels from your phone, through many servers in data centers, to your friend's phone, which may be on the other side of the planet. Servers store the message if your friend is offline and deliver it later. Many machines cooperate to make "send a message" feel instant.</li>
+  <li><strong>Online banking</strong> — your balance, transactions, and fraud checks are spread across many machines and data centers, replicated so that if one fails, your money records are not lost. Banks legally cannot afford to lose data, so they keep multiple copies on multiple machines.</li>
+  <li><strong>DNS (the Domain Name System)</strong> — this is the internet's phone book that turns a name like <code>google.com</code> into a numeric address. It is one of the oldest and largest distributed systems in the world. There are 13 named "root server" addresses, but behind them sit roughly <strong>1,900+ physical server instances</strong> spread across every populated continent, all answering as if they were one. (We'll use a clever trick called <em>anycast</em> here — more on that later in the guide.)</li>
+  <li><strong>Git</strong> — the version-control tool you use is a distributed system too. Every developer's laptop has a full copy of the repository's history. There is no single "master" computer that must be online; people sync copies by pushing and pulling. This is a distributed system you literally hold in your hands.</li>
+  <li><strong>Cassandra and Amazon DynamoDB (databases)</strong> — these are databases designed from the ground up to run across many machines. Both trace their design back to a famous 2007 Amazon research paper called <em>"Dynamo: Amazon's Highly Available Key-value Store."</em> They store your data on several machines at once so the database keeps working even when individual machines die. We'll meet them repeatedly throughout this guide.</li>
+</ul>
+
+<div class="example">
+  <strong>Example:</strong> Imagine you tweet a photo. (1) Your phone uploads it to a nearby server. (2) That server stores copies on several storage machines in different buildings, so losing one building loses nothing. (3) A separate fleet of machines resizes the photo into thumbnails. (4) Another fleet updates your followers' timelines. (5) When a follower in another country opens the app, a server near <em>them</em> serves the photo quickly. Dozens of machines across the planet cooperated for one tweet — and to you it felt like pressing one button.
+</div>
+
+<h3>1.4 Why do we build them? The four big reasons</h3>
+
+<p>Distributed systems are harder to build than single-machine programs. So why bother? There are four core motivations. Almost every distributed system exists because of at least one of these.</p>
+
+<h4>Reason 1: Scalability — handle more load</h4>
+<p><strong>Load</strong> means the amount of work coming in: number of users, requests per second, or amount of data. A single machine has a ceiling — only so much processor, memory, and disk. <strong>Scalability</strong> is the ability to handle more load by adding more machines. Instead of buying one impossibly huge computer, you add many ordinary ones and spread the work across them. This is how a startup with 100 users can grow to 100 million users without rewriting everything.</p>
+
+<h4>Reason 2: Fault tolerance & high availability — survive failures</h4>
+<p>Machines break. Disks die, power fails, cables get cut, software crashes. On a single machine, one failure means total downtime. A distributed system keeps several machines doing the same job, so if one dies, others carry on and the user never notices. <strong>Fault tolerance</strong> means the system keeps working correctly even when parts fail. <strong>High availability</strong> means the system is up and answering almost all the time (often measured as "how many minutes per year is it down?"). The trick is having no single point that, if it breaks, takes everything down with it.</p>
+
+<h4>Reason 3: Low latency — serve users close to them</h4>
+<p><strong>Latency</strong> is the delay between asking for something and getting the answer — how long you wait. Physics sets a hard limit: data cannot travel faster than light, so a request from London to a server in Sydney takes real, noticeable time just to make the round trip. The fix is to put copies of your system in many places around the world, so each user talks to a machine physically near them. A user in Sydney hits a Sydney machine; a user in London hits a London machine. Both feel fast. (This is exactly what DNS's anycast and Netflix's regional servers do.)</p>
+
+<h4>Reason 4: Data too big for one machine</h4>
+<p>Sometimes the data itself simply will not fit on one computer — Google's web index or Facebook's photos are far larger than any single disk. The only option is to split the data across many machines, each holding a slice. This splitting is so central it has its own vocabulary (partitioning/sharding), which we define just below.</p>
+
+<div class="analogy">
+  <strong>Analogy:</strong> Picture a popular bakery. <em>Scalability:</em> when lines grow, you add more counters and bakers rather than asking one baker to move faster. <em>Fault tolerance:</em> if one baker calls in sick, the others keep serving — the shop doesn't close. <em>Low latency:</em> instead of one giant bakery in one city, you open branches in every neighborhood so customers don't travel far. <em>Too big for one:</em> you can't store a year of flour in one room, so you keep stock spread across several warehouses. Every reason to distribute a system maps onto a reason to run more than one bakery.
+</div>
+
+<h3>1.5 Core vocabulary — defined simply</h3>
+
+<p>You'll see these words constantly. Learn them now and the rest of the guide reads easily. Each is defined in plain words first, then with a tiny example.</p>
+
+<table>
+  <thead>
+    <tr><th>Term</th><th>Plain meaning</th><th>Tiny example</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Node</strong></td><td>One computer (or one running process) that is part of the system. The basic building block.</td><td>One server in a data center is a node.</td></tr>
+    <tr><td><strong>Cluster</strong></td><td>A group of nodes working together as one system.</td><td>"Our database cluster has 6 nodes."</td></tr>
+    <tr><td><strong>Server</strong></td><td>A node that provides a service (answers requests).</td><td>The machine that returns web pages.</td></tr>
+    <tr><td><strong>Client</strong></td><td>The thing asking the server for something.</td><td>Your browser or phone app.</td></tr>
+    <tr><td><strong>Replica</strong></td><td>A copy of the same data kept on another node, for safety and speed. "Replication" = making such copies.</td><td>Your bank balance stored on 3 machines; each is a replica.</td></tr>
+    <tr><td><strong>Partition / Shard</strong></td><td>A <em>slice</em> of the data, so different nodes hold different pieces. "Sharding" = splitting data into slices. (Warning: "partition" has a second meaning — see the mistake box.)</td><td>Users A–M on node 1, users N–Z on node 2.</td></tr>
+    <tr><td><strong>Latency</strong></td><td>How long one request takes — the wait time.</td><td>"This page loads in 40 milliseconds."</td></tr>
+    <tr><td><strong>Throughput</strong></td><td>How much work the system does per second — the volume.</td><td>"It handles 50,000 requests per second."</td></tr>
+    <tr><td><strong>Availability</strong></td><td>The fraction of time the system is up and answering.</td><td>"99.9% available" ≈ down ~8.7 hours/year.</td></tr>
+    <tr><td><strong>Fault</strong></td><td>Something going wrong underneath (a disk error, a dropped message). A fault may or may not cause a visible problem.</td><td>A network cable briefly disconnects.</td></tr>
+    <tr><td><strong>Failure</strong></td><td>When the system actually fails to do its job, as seen by the user. A good distributed system tolerates faults so they don't become failures.</td><td>The user gets an error instead of their page.</td></tr>
+  </tbody>
+</table>
+
+<p>Two pairs are worth pausing on because beginners mix them up:</p>
+<ul>
+  <li><strong>Latency vs. throughput.</strong> Latency is about <em>one</em> task's delay (how long <em>you</em> wait). Throughput is about <em>many</em> tasks (how many get done per second overall). A highway analogy: latency is how long your car takes to drive the road; throughput is how many cars pass per minute. You can improve one without the other.</li>
+  <li><strong>Fault vs. failure.</strong> A <em>fault</em> is a problem in a part. A <em>failure</em> is when the whole system can't deliver. The entire point of distributed systems engineering is to stop faults from becoming failures — to absorb the broken part so the user never feels it.</li>
+</ul>
+
+<h3>1.6 What a distributed system is trying to achieve (its goals)</h3>
+
+<p>When engineers design a distributed system, they aim for a set of properties. Here are the main ones, in plain words:</p>
+
+<ul>
+  <li><strong>Transparency</strong> — hide the messy distributed details from the user. The user should not have to know how many machines there are, where they are, or that data is copied around. "It just works like one thing." (Forms of transparency include hiding <em>location</em>, hiding <em>replication</em>, and hiding <em>failures</em> when a node dies.)</li>
+  <li><strong>Scalability</strong> — the system should grow gracefully as load grows, by adding nodes, without a rewrite and without slowing to a crawl.</li>
+  <li><strong>Reliability</strong> — the system does the <em>correct</em> thing and does not lose or corrupt data, even when parts misbehave.</li>
+  <li><strong>Availability</strong> — the system is up and answering whenever users need it. (Reliability is "right answers"; availability is "an answer at all." They are related but not identical — a system can be available but wrong, or correct but down.)</li>
+  <li><strong>Fault tolerance</strong> — it keeps running through individual failures, which is how it achieves availability in the real world where machines constantly break.</li>
+</ul>
+
+<p>These goals often pull against each other — making something more available can make it harder to keep perfectly consistent, for example. Much of this guide is about understanding those trade-offs (you'll later meet the famous CAP theorem, which is exactly about one such trade). For now, just hold the goals loosely in mind.</p>
+
+<h3>1.7 The mental picture: nodes talking over a network</h3>
+
+<p>Here is the simplest possible diagram of a distributed system. Several nodes, each its own computer, connected by a network, with clients talking to them. Burn this picture into your mind — almost every diagram later in the guide is a richer version of it.</p>
+
+<pre class="diagram">
+                     CLIENTS (browsers, phones, apps)
+                  ┌──────────┬──────────┬──────────┐
+                  │          │          │          │
+                  ▼          ▼          ▼          ▼
+            ┌───────────────────────────────────────────┐
+            │              THE  NETWORK                  │
+            │   (messages: may be slow / lost / reordered)│
+            └───────────────────────────────────────────┘
+                  ▲          ▲          ▲          ▲
+                  │          │          │          │
+              ┌───┴───┐  ┌───┴───┐  ┌───┴───┐  ┌───┴───┐
+              │ Node 1│  │ Node 2│  │ Node 3│  │ Node 4│
+              │(server│  │(server│  │(server│  │(server│
+              │  +data)  │  +data)  │  +data)  │  +data)
+              └───┬───┘  └───┬───┘  └───┬───┘  └───┬───┘
+                  └──────────┴────┬─────┴──────────┘
+                                  │
+                      nodes also message EACH OTHER
+                      to stay coordinated (gossip,
+                      replicate data, elect a leader…)
+</pre>
+
+<p>Two things to notice. First, the clients see "one service," but it's really four nodes. Second, the nodes don't only talk to clients — they talk to <em>each other</em> across the same unreliable network, to copy data and stay in sync. That node-to-node chatter is where most of the hard, interesting problems live (and where the rest of this study guide spends its time).</p>
+
+<p>Now here's a quick timeline diagram showing the unreliable-network reality — the thing that makes all of this hard. A client asks a node to save something; the network can betray us in several ways:</p>
+
+<pre class="diagram">
+  CLIENT                     NETWORK                     NODE
+    │                                                      │
+    │  ──── "save X" ───────────────────────────────────▶ │  (1) works: arrives,
+    │                                                      │      node saves, replies
+    │  ◀──────────────────────── "ok, saved" ──────────── │
+    │                                                      │
+    │  ──── "save Y" ───────────────────────X             │  (2) lost on the way:
+    │                (message dropped, no reply ever)      │      node never heard it
+    │                                                      │
+    │  ──── "save Z" ───────────────────────────────────▶ │  (3) node saved it,
+    │                                                      │      but the REPLY is lost…
+    │                  X ◀────────────────── "ok, saved"   │
+    │   (client waits, times out — did it save? unknown!)  │
+    │                                                      │
+  In case (3) the client CANNOT TELL the difference from case (2).
+  This uncertainty is the central challenge of distributed systems.
+</pre>
+
+<div class="key">
+  <strong>Key takeaway:</strong> A distributed system is many nodes cooperating over an unreliable network to look like one system. You build them for scalability, fault tolerance/availability, low latency, and data that's too big for one machine. The price you pay is uncertainty — you often cannot tell whether a remote action happened. Everything else in this guide is tools for living with that uncertainty.
+</div>
+
+<h3>Common mistakes &amp; misconceptions</h3>
+
+<div class="warn"><strong>Common mistake:</strong> Thinking "distributed" just means "running on a server." A single web server with a single database is <em>not</em> a distributed system. It becomes one only when multiple cooperating machines must coordinate and present themselves as one. The defining feature is multiple nodes coordinating over a network, not merely "code that runs in the cloud."</div>
+
+<div class="warn"><strong>Common mistake:</strong> Confusing <em>latency</em> and <em>throughput</em>. Latency is how long <em>one</em> request waits; throughput is how many requests finish per second. A system can have high throughput (handles tons of traffic) yet bad latency (each user still waits a long time), or the reverse. Always ask which one a metric is talking about.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Treating <em>fault</em> and <em>failure</em> as the same word. A fault is a broken part (one disk, one dropped packet); a failure is the whole system letting the user down. Good design absorbs faults so they never become failures. Saying "we had a fault" is very different from "we had a failure."</div>
+
+<div class="warn"><strong>Common mistake:</strong> Mixing up the two meanings of "partition." In storage it means a <em>shard</em> — a slice of data on a node. In networking (which you'll meet in the CAP theorem) it means a <em>network partition</em> — when the network splits so some nodes can't reach others. Same word, completely different idea. Always check the context.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Assuming the network is fast and reliable like a function call. It is not. Messages get lost, delayed, duplicated, and reordered, and you often can't tell a dead node from a slow one. Treating remote calls as if they were local in-memory calls is the single most common beginner error — and the source of countless real outages.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Believing distribution is always better. It adds real complexity — coordination, partial failures, debugging across machines. If one machine comfortably does the job, one machine is the right answer. Distribute only when a concrete reason (scale, availability, latency, data size) forces you to.</div>
+
+<h3>Best practices</h3>
+
+<div class="tip"><strong>Best practice:</strong> Start with the simplest design that works — often a single machine — and distribute only when a measured need (too much load, not enough uptime, users too far away, data too big) actually appears. Complexity should be earned, not assumed.</div>
+
+<div class="tip"><strong>Best practice:</strong> Always design assuming the network and other nodes <em>will</em> fail. Ask of every remote call: "What happens if I never get a reply? What if it ran twice?" Planning for failure from day one is what separates systems that survive from systems that surprise you.</div>
+
+<div class="tip"><strong>Best practice:</strong> Be explicit about which goal you are optimizing — scalability, availability, low latency, or strong correctness. These goals trade off against each other, so name the one that matters most for your feature before you choose a design.</div>
+
+<div class="tip"><strong>Best practice:</strong> Use precise vocabulary in design discussions. Say "node," "replica," "shard," "latency," "throughput," "fault," "failure" deliberately and correctly. Sloppy words lead to sloppy designs; shared, exact language is half of getting distributed systems right.</div>
+
+<div class="tip"><strong>Best practice:</strong> Learn from battle-tested systems instead of inventing from scratch. The patterns in Cassandra, DynamoDB, etcd, Kafka, and DNS solve problems you will hit too — when in doubt, study how a proven system handled it before rolling your own.</div>
+
+<h3>Section summary</h3>
+
+<ul>
+  <li>A <strong>distributed system</strong> is many separate computers cooperating over a network to appear as one coherent system to the user.</li>
+  <li>Moving from one computer to many removes three comforts: shared memory, a single clock, and all-or-nothing failure — and adds an unreliable network where messages can be lost, delayed, duplicated, or reordered.</li>
+  <li>You use them everywhere: Google, WhatsApp, online banking, <strong>DNS</strong> (13 named root addresses, ~1,900+ real servers worldwide), <strong>Git</strong>, and databases like <strong>Cassandra</strong> and <strong>DynamoDB</strong> (both descended from Amazon's 2007 Dynamo paper).</li>
+  <li>We build them for four reasons: <strong>scalability</strong> (more load), <strong>fault tolerance / high availability</strong> (survive failures), <strong>low latency</strong> (serve users nearby), and <strong>data too big for one machine</strong>.</li>
+  <li>Core vocabulary: <strong>node</strong> (one computer), <strong>cluster</strong> (group of nodes), <strong>server/client</strong>, <strong>replica</strong> (a data copy), <strong>partition/shard</strong> (a data slice), <strong>latency</strong> (one request's wait), <strong>throughput</strong> (requests per second), <strong>availability</strong> (uptime fraction).</li>
+  <li>A <strong>fault</strong> is a broken part; a <strong>failure</strong> is the whole system letting the user down — good design stops the first from becoming the second.</li>
+  <li>The design goals are <strong>transparency, scalability, reliability, availability,</strong> and <strong>fault tolerance</strong> — and they trade off against one another.</li>
+  <li>The mental picture: nodes talking to clients <em>and to each other</em> over an unreliable network; the deep difficulty is that you often cannot tell whether a remote action succeeded.</li>
+  <li>Distribution is a tool with a cost — use it only when a real need forces it, and always design assuming failure.</li>
+</ul></section>
+<section class="section"><h2>2. Why Distributed Systems Are Hard</h2>
+
+<p>In the first section you learned what a distributed system <em>is</em>: a group of separate computers that work together over a network but appear, to the user, as one system. This section answers a harder question: <strong>why is building one so difficult?</strong> If you have only ever written ordinary programs that run on a single machine, the rules you have relied on your whole career quietly stop being true. The goal of this section is to show you exactly <em>which</em> rules break, <em>why</em> they break, and what that forces you to do differently.</p>
+
+<p>Let us define a few words up front, in plain English, because we will use them constantly.</p>
+
+<ul>
+<li><strong>Node</strong> — one computer (or one running process) that is part of the system. A node could be a server, a database replica, or a microservice.</li>
+<li><strong>Network</strong> — the wires, routers, and software that carry messages between nodes. Think of it as the postal service between computers.</li>
+<li><strong>Message</strong> — a chunk of data one node sends to another (a request, a reply, a heartbeat).</li>
+<li><strong>Process</strong> — a running program. On one machine you may have many.</li>
+<li><strong>State</strong> — the data a node currently holds in memory or on disk (account balances, user sessions, counters).</li>
+</ul>
+
+<p>On a single machine, all your code shares the same memory, the same clock, and the same fate: if the program crashes, <em>everything</em> stops together. A distributed system throws away all three of those comforts. That is the root of every difficulty below.</p>
+
+<h3>2.1 Partial failure: the defining problem</h3>
+
+<p><strong>What it is.</strong> <em>Partial failure</em> means that <strong>some parts of the system fail while other parts keep running</strong>. One server out of ten dies, or one network link goes down, but the rest of the system carries on, unaware.</p>
+
+<p><strong>Why it exists.</strong> On a single computer, failure is <em>total</em>. If the power dies, your whole program dies; there is no awkward in-between state where half your variables are alive and half are dead. But in a distributed system the parts are physically separate. They have separate power supplies, separate memory, separate operating systems. So nothing forces them to fail together. The normal case is that one piece breaks and the others do not even notice yet.</p>
+
+<p><strong>How it works, step by step.</strong> Imagine node A asks node B to "save this order."</p>
+
+<pre class="diagram">
+   Node A                          Node B
+     |                               |
+     |---- "save order #42" -------->|   (1) request travels over network
+     |                               |
+     |                          [B saves it]   (2) B does the work
+     |                               |
+     |   X  <----- "done!" ----------|   (3) reply is LOST on the way back
+     |                               |
+   (A waits... and waits...)         |   (4) A never hears back
+</pre>
+
+<p>Look at A's situation in step 4. A sent a request and heard nothing. <strong>A cannot tell which of these happened:</strong></p>
+
+<ol>
+<li>The request never reached B (so the order was <em>not</em> saved).</li>
+<li>B saved the order but the reply was lost (so the order <em>was</em> saved).</li>
+<li>B is just slow and the reply is still coming (so the order <em>will be</em> saved).</li>
+<li>B crashed completely (so… maybe saved, maybe not, depending on timing).</li>
+</ol>
+
+<p>This is the cruel heart of distributed systems: <strong>from the outside, a node that has crashed looks identical to a node that is merely slow.</strong> Silence tells you nothing. There is no signal that says "I am definitely dead." A dead node and a node stuck behind a slow network both produce the exact same thing: no answer.</p>
+
+<div class="analogy">
+<strong>Analogy:</strong> You text a friend "Are we still on for dinner?" and get no reply. Did the text fail to send? Did they read it and not answer? Are they driving and will reply in ten minutes? Did they drop their phone in a lake? You genuinely cannot tell the difference from your end — all four feel the same: silence. Now imagine your whole business depends on guessing correctly. That is distributed computing.
+</div>
+
+<p><strong>Why it matters.</strong> In single-machine code you almost never write "what if assigning this variable only half-worked?" — it cannot half-work. In distributed code, <em>every single remote interaction</em> can half-work, and you must have a plan for it. Ignoring partial failure does not make it go away; it just means your system will corrupt data or hang the first time a packet is lost in production.</p>
+
+<div class="key">
+<strong>Key takeaway:</strong> Partial failure is the one problem that has no equivalent in single-machine programming, and it is the source of almost everything else that is hard. You can never assume "it worked" just because you did not see an error — silence is ambiguous.
+</div>
+
+<h3>2.2 The network is unreliable</h3>
+
+<p><strong>What it is.</strong> The network — the thing that carries your messages — is not a reliable pipe. Messages can be <strong>lost</strong> (never arrive), <strong>delayed</strong> (arrive much later than expected), <strong>duplicated</strong> (arrive more than once), or <strong>reordered</strong> (arrive in a different order than you sent them).</p>
+
+<p><strong>Why it exists.</strong> A network is not a single wire. It is a long chain of cables, switches, and routers, often spanning buildings, cities, or continents. Each hop has buffers that can overflow and drop packets. Routers reboot. Cables get cut. Software retransmits, sometimes producing a duplicate. There is no physical law guaranteeing that what you send arrives, arrives once, or arrives in order.</p>
+
+<p>Here are the four failure modes drawn out:</p>
+
+<pre class="diagram">
+SENT (in order):     [M1] [M2] [M3] [M4]
+
+LOST:                [M1] [--] [M3] [M4]   M2 vanished
+DELAYED:             [M1]      [M3] [M4] ......... [M2]   M2 arrives very late
+DUPLICATED:          [M1] [M2] [M2] [M3]   M2 arrived twice
+REORDERED:           [M1] [M3] [M2] [M4]   M3 overtook M2
+</pre>
+
+<p><strong>How it works, step by step.</strong> Say you send "withdraw $100" to a bank node. The network drops it. You see no response. You assume it failed and send it again. <em>This time</em> it arrives — but so does the first one, which was only delayed, not lost. The account is now debited $200. The unreliable network turned one intended action into two.</p>
+
+<div class="example">
+<strong>Example:</strong> This is not theoretical. <strong>TCP</strong> (the protocol your web requests ride on) exists <em>precisely because</em> the raw network is unreliable. TCP adds sequence numbers (to detect reordering and duplicates), acknowledgements (to detect loss), and retransmission (to recover from loss). But TCP only fixes ordering and loss <em>within one connection</em>. The moment a connection drops — and connections drop all the time — TCP cannot tell you whether your last message was processed. The application is back to guessing.
+</div>
+
+<div class="analogy">
+<strong>Analogy:</strong> Sending messages over a network is like mailing postcards. Most arrive. Some get lost. Occasionally the post office accidentally prints two copies. Sometimes a postcard you mailed Monday shows up <em>after</em> the one you mailed Tuesday. You would never run a bank by mailing postcards and assuming each one arrives exactly once, in order. Yet that is the medium every distributed system is built on.
+</div>
+
+<div class="key">
+<strong>Key takeaway:</strong> Treat the network as an enemy that loses, delays, duplicates, and reorders your messages. Any code that assumes "I sent it, so it arrived exactly once" is already broken; it just has not failed <em>yet</em>.
+</div>
+
+<h3>2.3 No global clock: there is no shared "now"</h3>
+
+<p><strong>What it is.</strong> Every machine has its own clock, and <strong>no two clocks agree exactly</strong>. There is no single, shared, authoritative "now" that all nodes can read. Worse, clocks <em>drift</em> — they speed up or slow down slightly over time — so the disagreement changes constantly.</p>
+
+<p><strong>Why it exists.</strong> A clock is a physical oscillator (a tiny vibrating crystal). No two crystals vibrate at exactly the same rate; temperature and age change the rate. So each machine's clock slowly wanders away from the others. Systems try to fix this with <strong>NTP</strong> (Network Time Protocol — software that periodically asks a time server "what time is it?" and nudges the local clock toward it). But NTP itself runs over the unreliable, variable-delay network, so it can only get clocks <em>close</em>, not identical. Clocks can be off by milliseconds normally, and by seconds or more when something goes wrong.</p>
+
+<p><strong>Why it matters.</strong> A huge amount of ordinary programming secretly relies on a shared clock. "Which write happened last?" "Did this token expire?" "Order these events by timestamp." On one machine those questions are trivial — there is one clock. Across machines, comparing two timestamps from two different clocks is <strong>meaningless</strong>, because the clocks may disagree by more than the time gap you are trying to measure.</p>
+
+<pre class="diagram">
+Real time:   ----t1----t2---------------------->
+
+Node A clock:  reads 10.000s at t1   (A's clock is 30ms FAST)
+Node B clock:  reads  9.950s at t2   (B's clock is 20ms SLOW)
+
+Event X happens on A, timestamped 10.000
+Event Y happens on B LATER, timestamped  9.950
+
+Naive sort by timestamp says: Y before X.   WRONG — Y came AFTER X.
+</pre>
+
+<div class="example">
+<strong>Example:</strong> Apache <strong>Cassandra</strong> (a popular distributed database) historically used a "last write wins" rule based on wall-clock timestamps. If two servers had slightly skewed clocks, an <em>older</em> write with a <em>higher</em> timestamp could silently overwrite a <em>newer</em> write with a lower timestamp — quietly losing the customer's most recent update. This is a real, well-documented data-loss footgun, and its root cause is exactly "there is no global now." Systems that need a real ordering use logical clocks (Lamport clocks, vector clocks — covered later) or special hardware. <strong>Google Spanner</strong> goes so far as to install GPS receivers and atomic clocks in its data centres, and its "TrueTime" API deliberately returns a time <em>interval</em> ("now is somewhere between T1 and T2") rather than a single instant — an honest admission that exact time is unknowable, then waits out the uncertainty to stay correct.</p>
+</div>
+
+<div class="analogy">
+<strong>Analogy:</strong> Imagine a meeting scheduled across a team where everyone's watch is set slightly differently and each watch drifts. If you log events by "what my watch said," you cannot reliably reconstruct what happened first. You need a shared logbook with a strict sign-in order, not everybody's personal watch. In distributed systems that shared logbook is a <em>logical</em> clock, not a wall clock.
+</div>
+
+<div class="warn">
+<strong>Common mistake:</strong> Using server timestamps to decide ordering or "who wins" between two nodes. Clock skew (the gap between two clocks) and clock drift make this unreliable. Use it for rough display ("posted about 5 minutes ago"), never for correctness decisions.
+</div>
+
+<h3>2.4 Concurrency: many things happen at once</h3>
+
+<p><strong>What it is.</strong> <em>Concurrency</em> means multiple things are happening <strong>at the same time</strong>, on different nodes, with no built-in agreement about their order. Two users, on two servers, can act on the same data in the same instant.</p>
+
+<p><strong>Why it exists.</strong> The whole point of a distributed system is that many nodes run in parallel — that is how you serve millions of users. But parallel means simultaneous, and simultaneous means there is no obvious "this happened before that." On one machine you can wrap shared data in a lock and force one-at-a-time access cheaply, because everything shares memory. Across machines there is no shared memory to lock; coordinating order now requires sending messages over the unreliable network, which is slow and can fail.</p>
+
+<p><strong>How it works, step by step.</strong> Two customers buy the last concert ticket at the same moment:</p>
+
+<pre class="diagram">
+ Time -->
+ User A  --> Server 1: "tickets left?"  reads 1
+ User B  --> Server 2: "tickets left?"  reads 1     (both read at once!)
+ User A  --> Server 1: "buy 1"          writes 0
+ User B  --> Server 2: "buy 1"          writes 0
+ RESULT: two tickets sold, one ticket existed.  Oversold.
+</pre>
+
+<p>Each server, looking only at itself, behaved correctly. The bug only exists in the <em>interleaving</em> of the two — and that interleaving is invisible to either node. This is why distributed systems need explicit coordination tools (locks held in a service like <strong>etcd</strong> or <strong>ZooKeeper</strong>, or database transactions) to serialize access to shared resources.</p>
+
+<div class="key">
+<strong>Key takeaway:</strong> In a distributed system, "at the same time" is the default, not the exception. Any shared resource needs a deliberate coordination strategy, because the order of concurrent actions is not decided for you.
+</div>
+
+<h3>2.5 The Two Generals Problem: you can never be 100% sure</h3>
+
+<p><strong>What it is.</strong> The <em>Two Generals Problem</em> is a famous thought experiment that proves a startling fact: <strong>over an unreliable channel, two parties can never become completely certain they agree.</strong> It was the first computer-communication problem ever <em>proven</em> to be unsolvable.</p>
+
+<p><strong>The setup.</strong> Two generals, A and B, are camped on opposite hills with the enemy in the valley between them. They will win <em>only if they attack at the same time</em>. If just one attacks alone, that army is destroyed. They can communicate only by sending a messenger <em>through the valley</em> — and the messenger may be captured, so any message may be lost.</p>
+
+<pre class="diagram">
+   General A  ))))) valley (enemy may capture messenger) (((((  General B
+       |                                                          |
+       |---- "Attack at dawn!" --------------------------------->|   may be lost
+       |                                                          |
+       |<--- "Agreed — at dawn!" (ack) --------------------------|   may be lost
+       |                                                          |
+       |---- "Got your ack!" (ack of the ack) ----------------->|   may be lost
+       |                          ... and so on, forever ...      |
+</pre>
+
+<p><strong>Why it is unsolvable.</strong> Suppose A sends "Attack at dawn." A cannot act on it until A knows B received it — so B must send an acknowledgement (an <em>ack</em>, a "got it" reply). But that ack might be lost, so B cannot be sure A got the ack — so A must ack the ack. But <em>that</em> might be lost… Every message needs a confirmation, and every confirmation needs a confirmation. There is no last message you can fully trust, because the last message might be the one that gets lost. <strong>No finite number of messages ever produces certainty.</strong> The proof is by contradiction: take any protocol that supposedly works, delete its final message — if the protocol still works, that message was unnecessary, so remove it too; repeat until no messages remain, which obviously cannot coordinate an attack. Contradiction. So no such protocol exists.</p>
+
+<p><strong>Why it matters in practice.</strong> This is not just a puzzle. Every time your service calls another service, you are a general sending a messenger. When you get no reply, you are in exactly the general's dilemma: did they get it or not? You cannot achieve <em>certainty</em>. What you do instead is settle for being <em>probably</em> sure and designing so that the remaining doubt is harmless. The three tools below are how we live with that doubt.</p>
+
+<div class="analogy">
+<strong>Analogy:</strong> "Read receipts." You text a plan and want to be sure your friend will show up. You see "Delivered" — but did they read it? They send "👍" — but do they know you saw their 👍? You could volley confirmations forever and still never reach perfect certainty that you are both on the same page. At some point one of you just <em>acts</em>, accepting a small risk. Distributed systems do the same: act under uncertainty, and engineer so a wrong guess is recoverable.
+</div>
+
+<h3>2.6 The consequences: timeouts, retries, idempotency</h3>
+
+<p>The problems above force three coping tools into almost every distributed system. Learn the words now; you will see them everywhere.</p>
+
+<h4>Timeout</h4>
+<p><strong>What it is.</strong> A <em>timeout</em> is a maximum time you are willing to wait for a reply before giving up and assuming something went wrong. "If B has not answered in 5 seconds, stop waiting."</p>
+<p><strong>Why we need it.</strong> Because of partial failure (§2.1), a node may never answer. Without a timeout, your code would wait forever, holding memory and connections, until it too falls over. The hard part: a timeout cannot tell you <em>whether the work happened</em>. It only tells you that you stopped waiting. A timed-out request may still have succeeded on the other side.</p>
+
+<h4>Retry</h4>
+<p><strong>What it is.</strong> A <em>retry</em> is simply sending the request again after a timeout or error, in the hope it works this time.</p>
+<p><strong>Why we need it.</strong> The network loses messages (§2.2), and many failures are temporary (a brief blip, an overloaded server). Retrying recovers from those. <strong>The danger:</strong> remember the "withdraw $100 twice" story. If the first request actually succeeded but its reply was lost, your retry does the work <em>a second time</em>. Retries turn lost-reply situations into duplicate-action situations — which is why we need the next tool.</p>
+
+<h4>Idempotency</h4>
+<p><strong>What it is.</strong> An operation is <em>idempotent</em> if doing it <strong>twice has the same effect as doing it once</strong>. "Set status to PAID" is idempotent — running it five times still just means PAID. "Add $100 to the balance" is <em>not</em> idempotent — running it five times adds $500.</p>
+<p><strong>Why we need it.</strong> Because retries (and duplicated network messages) mean the same request <em>will</em> arrive more than once. If your operations are idempotent, duplicates are harmless. The common technique is an <strong>idempotency key</strong>: the client attaches a unique ID to the request; the server remembers which IDs it has already processed and ignores repeats.</p>
+
+<div class="example">
+<strong>Example:</strong> <strong>Stripe</strong>, the payment company, builds its entire API around this. Every charge request can carry an <code>Idempotency-Key</code> header. If your code times out and retries a charge, Stripe sees the repeated key and returns the <em>original</em> result instead of charging the customer twice. This single idea is what makes it safe to retry over an unreliable network. The same pattern protects message systems: <strong>Apache Kafka</strong> added an "idempotent producer" so that a producer retrying after a network hiccup does not write the same record twice.
+</div>
+
+<pre class="diagram">
+Without idempotency:                  With idempotency key "k9":
+  send "charge $50"  --X (lost reply)   send "charge $50" key=k9 --X (lost reply)
+  timeout -> retry "charge $50"         timeout -> retry  key=k9
+  RESULT: charged $100  (BUG)           server: "seen k9 already" -> $50 once  (SAFE)
+</pre>
+
+<div class="key">
+<strong>Key takeaway:</strong> Timeouts + retries + idempotency are the standard survival kit. Timeouts stop you waiting on the dead; retries recover from lost messages; idempotency makes the inevitable duplicates harmless. You almost never want one without the other two.
+</div>
+
+<h3>2.7 "A Note on Distributed Computing" (Waldo et al., 1994)</h3>
+
+<p>In November 1994, four engineers at Sun Microsystems — <strong>Jim Waldo, Geoff Wyant, Ann Wollrath, and Sam Kendall</strong> — published a now-famous paper called <em>"A Note on Distributed Computing."</em> It is one of the most important warnings in the field, and its message is simple:</p>
+
+<p class="">
+<strong>A remote call is NOT just a local function call that happens to go over a wire. Pretending it is will eventually destroy your system.</strong>
+</p>
+
+<p><strong>The problem it attacks.</strong> In the early 1990s, a popular idea was <em>transparency</em>: make calling a function on another machine look <em>exactly</em> like calling a function in your own program, so developers do not have to think about the network. This was sold as a convenience. The paper argues it is a trap. (The technique of making a remote call look local is called <strong>RPC</strong> — Remote Procedure Call. It is genuinely useful, but the <em>illusion of sameness</em> is the danger.)</p>
+
+<p><strong>The four fundamental differences</strong> the paper says you can never hide:</p>
+
+<table>
+<thead>
+<tr><th>Dimension</th><th>Local call (same machine)</th><th>Remote call (over network)</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Latency</strong> (how long it takes)</td><td>Nanoseconds. Effectively free.</td><td>Hundreds of microseconds to hundreds of milliseconds — thousands to millions of times slower. A loop that was instant locally can take minutes remotely.</td></tr>
+<tr><td><strong>Memory access</strong></td><td>You share one address space; a pointer on one side means something on the other.</td><td>No shared memory. A pointer is meaningless across machines; data must be copied (serialized) and sent. References do not transfer.</td></tr>
+<tr><td><strong>Partial failure</strong></td><td>Either the whole program runs or it crashes — together.</td><td>The other side can be dead, slow, or unreachable while you keep running, and you cannot tell which (see §2.1).</td></tr>
+<tr><td><strong>Concurrency</strong></td><td>You can often reason about one thread at a time; locks are cheap.</td><td>Other parties act simultaneously and independently; you must design for it (see §2.4).</td></tr>
+</tbody>
+</table>
+
+<p><strong>Why pretending is dangerous.</strong> If your code thinks a remote call is local, it will (1) make far too many tiny remote calls and run unbearably slowly because latency is real; (2) assume the call either fully succeeds or throws — with no handling for "I have no idea if it worked"; (3) ignore that two clients can call at once. The paper notes these failures were long <em>hidden</em> because early distributed systems were tiny. Scale them up and the cracks become catastrophes. The lesson: <strong>build the network's reality into your interfaces on purpose</strong> — design APIs that are coarse-grained (few big calls, not many small ones), that return explicit failure outcomes, and that the programmer knows are remote.</p>
+
+<div class="analogy">
+<strong>Analogy:</strong> Asking a coworker sitting next to you a question is a "local call" — instant, reliable, you share context. Asking the same question by mailing a letter overseas is a "remote call." If you write your workflow as if every letter were a tap on the shoulder — fire off a hundred of them and assume each gets an instant, guaranteed answer — your project grinds to a halt and breaks the first time a letter is lost. The medium changes how you must work, no matter how much you wish it did not.
+</div>
+
+<h3>2.8 The Eight Fallacies of Distributed Computing</h3>
+
+<p>The <strong>Eight Fallacies of Distributed Computing</strong> are a list of false assumptions that newcomers make. The first four are credited to <strong>Bill Joy and Dave Lyon</strong> at Sun; <strong>L. Peter Deutsch</strong> added three more around 1994; and <strong>James Gosling</strong> (creator of Java) added the eighth around 1997. They are called <em>fallacies</em> because each one feels obviously true and is, in fact, false — and each false belief carries a real cost.</p>
+
+<table>
+<thead>
+<tr><th>#</th><th>Fallacy</th><th>Why it is false</th><th>What it costs you if you believe it</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td><strong>The network is reliable</strong></td><td>Cables get cut, switches reboot, packets drop. Failure is routine, not rare.</td><td>No error handling, no retries → requests hang forever, resources leak, the app stalls the first time a packet is lost.</td></tr>
+<tr><td>2</td><td><strong>Latency is zero</strong></td><td>Light takes ~67ms to cross the Atlantic and back; real round-trips are far worse. Remote is not instant.</td><td>"Chatty" designs making hundreds of tiny remote calls become unusably slow. A page that loads fast in dev crawls in production.</td></tr>
+<tr><td>3</td><td><strong>Bandwidth is infinite</strong></td><td>Links carry a finite amount per second; big payloads and many users saturate them.</td><td>Sending huge responses / unbounded data → bottlenecks, congestion, dropped packets, timeouts under load.</td></tr>
+<tr><td>4</td><td><strong>The network is secure</strong></td><td>Anyone on the path can read, alter, or inject traffic; threats come from inside too.</td><td>No encryption/auth → eavesdropping, tampering, breaches. You get blindsided by attackers you assumed could not reach you.</td></tr>
+<tr><td>5</td><td><strong>Topology doesn't change</strong></td><td>Servers are added/removed, IPs change, links reroute, cloud instances come and go constantly.</td><td>Hard-coded hosts/IPs and fixed routes break; you need service discovery and dynamic config, or things silently stop resolving.</td></tr>
+<tr><td>6</td><td><strong>There is one administrator</strong></td><td>Different teams, vendors, and cloud providers each control a piece, with their own rules.</td><td>You cannot assume coordinated changes; conflicting policies, firewall rules, and upgrade schedules cause mystery outages.</td></tr>
+<tr><td>7</td><td><strong>Transport cost is zero</strong></td><td>Moving bytes costs money (egress fees, bandwidth bills) and CPU (serializing/deserializing data).</td><td>Surprise cloud bills and CPU spent packing/unpacking data you ignored in your budget and performance plan.</td></tr>
+<tr><td>8</td><td><strong>The network is homogeneous</strong></td><td>Real systems mix operating systems, languages, hardware, and protocols.</td><td>Assuming everyone speaks your exact format → incompatibility; you need standard, portable formats (e.g. JSON, Protobuf) and explicit contracts.</td></tr>
+</tbody>
+</table>
+
+<div class="example">
+<strong>Example:</strong> A team builds a feature that, for each item on a page, makes one separate API call to a service — 200 items, 200 calls. On the developer's laptop the service is local, so latency is near zero (fallacy #2 in action) and it feels instant. Deployed, that service is in another data centre 80ms away. 200 sequential calls × 80ms = 16 seconds to load one page. Nothing is "broken" — they simply believed latency was zero. The fix (batch the 200 into one call) is exactly the "coarse-grained interface" lesson from Waldo's paper.
+</div>
+
+<div class="analogy">
+<strong>Analogy:</strong> The fallacies are like a new driver's wishful assumptions: "the road is always clear," "I'll always have a green light," "petrol is basically free," "every road is the same width." Each feels harmless until reality — traffic, red lights, fuel bills, a narrow bridge — proves it wrong, usually at the worst moment. Experienced drivers plan for all of them. Experienced distributed-systems engineers plan for all eight fallacies.
+</div>
+
+<div class="key">
+<strong>Key takeaway:</strong> Every fallacy is a comfortable assumption from single-machine programming that quietly becomes false the moment a network is involved. Designing a distributed system is largely the discipline of refusing to believe these eight things.
+</div>
+
+<h3>Common mistakes &amp; misconceptions</h3>
+
+<div class="warn">
+<strong>Common mistake:</strong> Treating "no response" as "the request failed." A timed-out or lost request may have <em>fully succeeded</em> on the other side. Silence means "unknown," not "failed." Design for the unknown, not for a clean failure.
+</div>
+
+<div class="warn">
+<strong>Common mistake:</strong> Adding retries without idempotency. Retrying a non-idempotent operation (charge, increment, "send email") over a network that duplicates and delays messages turns one lost reply into double charges, double emails, double inventory deductions. Always pair retries with idempotency keys.
+</div>
+
+<div class="warn">
+<strong>Common mistake:</strong> Ordering events or resolving conflicts by comparing wall-clock timestamps from different machines. Clock skew and drift make cross-node timestamp comparisons unreliable; "last write wins" by timestamp can silently lose the newer write (the classic Cassandra footgun).
+</div>
+
+<div class="warn">
+<strong>Common mistake:</strong> Believing RPC makes the network "transparent." Hiding the network does not remove latency, partial failure, or concurrency — it only removes your <em>handling</em> of them. As Waldo et al. warned, the illusion of a local call is exactly what makes systems brittle at scale.
+</div>
+
+<div class="warn">
+<strong>Common mistake:</strong> Designing chatty interfaces — many small remote calls in a loop — because they were fast in local testing. Latency is not zero in production; coarse-grained, batched calls are the cure.
+</div>
+
+<div class="warn">
+<strong>Common mistake:</strong> Assuming you can eventually reach 100% certainty that another node received your message if you just add "one more confirmation." The Two Generals Problem proves you cannot. Accept residual uncertainty and make a wrong guess recoverable instead of chasing impossible certainty.
+</div>
+
+<h3>Best practices</h3>
+
+<div class="tip">
+<strong>Best practice:</strong> Set a sensible timeout on <em>every</em> remote call. Never wait forever. A request with no timeout is a resource leak waiting to take down the caller along with the callee.
+</div>
+
+<div class="tip">
+<strong>Best practice:</strong> Make write operations idempotent and use idempotency keys (Stripe's model). Then duplicates from retries or network re-sends become harmless, and you can retry freely.
+</div>
+
+<div class="tip">
+<strong>Best practice:</strong> Use logical ordering (Lamport clocks, vector clocks, sequence numbers) or a dedicated coordination service (etcd, ZooKeeper) for correctness decisions. Reserve wall-clock time for human-facing display only.
+</div>
+
+<div class="tip">
+<strong>Best practice:</strong> Design coarse-grained, network-aware interfaces. Make remote APIs do meaningful work per call, return explicit success/failure outcomes, and never pretend they are local function calls.
+</div>
+
+<div class="tip">
+<strong>Best practice:</strong> Write down your assumptions and test them against the eight fallacies before shipping. Ask explicitly: what if the network drops this? What if it is slow? What if two of these run at once? What if the other node is dead?
+</div>
+
+<div class="tip">
+<strong>Best practice:</strong> Inject failure on purpose. Use timeouts, dropped packets, and chaos testing in staging so partial failure is something your code has already survived before a customer triggers it in production.
+</div>
+
+<h3>Section summary</h3>
+
+<ul>
+<li><strong>Partial failure</strong> is the defining hardship: parts fail independently, and a crashed node is indistinguishable from a slow one — silence is ambiguous.</li>
+<li>The <strong>network is unreliable</strong>: messages can be lost, delayed, duplicated, and reordered. "I sent it, so it arrived once, in order" is always wrong eventually.</li>
+<li>There is <strong>no global clock</strong>: every machine's clock differs and drifts, so cross-node timestamps cannot be trusted for ordering or correctness.</li>
+<li><strong>Concurrency</strong> is the default: many nodes act at once with no inherent order, so shared resources need deliberate coordination.</li>
+<li>The <strong>Two Generals Problem</strong> proves you can never reach 100% certainty of agreement over an unreliable channel — you must act under uncertainty and stay recoverable.</li>
+<li>These realities force three survival tools: <strong>timeouts</strong> (stop waiting on the dead), <strong>retries</strong> (recover from loss), and <strong>idempotency</strong> (make the resulting duplicates harmless).</li>
+<li><strong>Waldo et al. (1994)</strong> warned that a remote call is fundamentally different from a local one in latency, memory access, partial failure, and concurrency — pretending otherwise breaks systems at scale.</li>
+<li>The <strong>Eight Fallacies</strong> (Joy/Lyon, Deutsch, Gosling) list the comfortable single-machine assumptions that become false — and costly — the moment a network is involved.</li>
+<li>Distributed-systems engineering is largely the discipline of <em>refusing</em> these assumptions and designing explicitly for failure, delay, duplication, and disorder.</li>
+</ul></section>
+<section class="section"><h2>3. Time, Clocks &amp; the Ordering of Events</h2>
+
+<p>This section is about one deceptively simple question: <strong>in what order did things happen?</strong> On a single computer this is trivial — you look at the clock, or you read the lines of a log file from top to bottom. But the moment your system spreads across many machines, "what happened first?" becomes one of the hardest and most important questions in all of distributed computing. This whole section is built on the single most-cited paper in the field: Leslie Lamport's <em>"Time, Clocks, and the Ordering of Events in a Distributed System,"</em> published in <strong>Communications of the ACM, Volume 21, Issue 7, in July 1978</strong>. It later won the ACM's <strong>PODC Influential-Paper Award (2000)</strong> and is a large part of why Lamport received the <strong>Turing Award in 2013</strong>.</p>
+
+<p>We will define every term as we go. By the end you will understand <em>why wall-clock time is a trap</em>, what the <strong>happens-before</strong> relation is, how <strong>Lamport logical clocks</strong> work step by step, and how all of this powers real systems like databases, version-control tools, and message queues.</p>
+
+<h3>3.1 First, some vocabulary</h3>
+
+<p>Let's nail down the basic words before anything else.</p>
+
+<ul>
+<li><strong>Process</strong> — a single running program on one machine. In this section, think of it as "one participant" in the system. We'll use <code>P1</code>, <code>P2</code>, <code>P3</code> for three of them. (Lamport's paper assumes each process runs on its own machine and the processes talk only by sending messages — no shared memory.)</li>
+<li><strong>Event</strong> — a single thing that happens inside a process at one instant. Three kinds matter: an <strong>internal event</strong> (the process does some local work), a <strong>send event</strong> (the process sends a message), and a <strong>receive event</strong> (the process receives a message).</li>
+<li><strong>Message</strong> — data sent from one process to another. It takes some unknown, variable amount of time to arrive. It cannot arrive before it was sent (that's the one rock-solid rule of reality we get to keep).</li>
+<li><strong>Physical clock / wall-clock time</strong> — the actual time-of-day clock on a machine (e.g. <code>2026-06-21 14:03:07.182</code>). Each machine has its own.</li>
+<li><strong>Logical clock</strong> — <em>not</em> a real clock. It is just a counter — a number that a process bumps up to track ordering, with no connection to real seconds. This is the star of the section.</li>
+</ul>
+
+<div class="analogy">
+<strong>Analogy:</strong> Imagine three people writing letters to each other from three different cities, with no phone and no shared calendar. Each person can only know: (a) the order in which <em>they</em> did their own things, and (b) that a letter they received must have been written before it arrived. They can never directly observe a global "now." A distributed system is exactly this — machines are the people, messages are the letters.
+</div>
+
+<h3>3.2 Why we can't just use the wall clock</h3>
+
+<p>The obvious idea is: put a timestamp from the system clock on every event, then sort all events by timestamp. On one machine this works. Across many machines it fails, for three reasons.</p>
+
+<h4>Reason 1: Clocks drift</h4>
+
+<p><strong>Clock drift</strong> means a clock runs slightly fast or slightly slow, so it slowly wanders away from true time. Computer clocks are usually driven by a cheap quartz crystal that oscillates at a not-quite-perfect rate, and that rate changes with temperature and age. A typical quartz computer clock drifts by roughly <strong>one second every 11–12 days</strong> if left alone. Two machines that were perfectly aligned at boot can be seconds — or, over long uptime, minutes — apart.</p>
+
+<h4>Reason 2: Clocks are skewed</h4>
+
+<p><strong>Clock skew</strong> is the difference between two clocks <em>at one instant</em>. Because every machine drifts at its own rate, at any given moment machine A might read <code>14:03:07.100</code> while machine B reads <code>14:03:07.230</code>. That 130-millisecond gap is skew.</p>
+
+<h4>Reason 3: Even NTP doesn't fully fix it</h4>
+
+<p><strong>NTP (Network Time Protocol)</strong> is the standard internet service machines use to ask time servers "what time is it?" and nudge their clocks toward agreement. NTP helps a lot, but it is not perfect: it can only estimate network delay, not eliminate it. Under good conditions NTP holds skew to about <strong>10 milliseconds</strong>; in real-world data centers it is common to see <strong>100–250 milliseconds</strong> of skew, and clocks can even jump <em>backward</em> when NTP makes a correction.</p>
+
+<div class="warn">
+<strong>Common mistake:</strong> "If two events have wall-clock timestamps 5 ms apart, the earlier timestamp happened first." False. With 100+ ms of possible skew, event B can carry an <em>earlier</em> timestamp than event A even though A caused B. A timestamp comparison can flatly contradict causality.
+</div>
+
+<p>Here is the killer scenario. Suppose <code>P1</code> sends a message that <em>causes</em> something on <code>P2</code>. If <code>P1</code>'s clock is running fast and <code>P2</code>'s is running slow, the receive on <code>P2</code> can be stamped with a time <em>earlier</em> than the send on <code>P1</code> — which says the effect happened before the cause. That is nonsense, and it's exactly the kind of bug that corrupts logs, traces, and databases.</p>
+
+<pre class="diagram">
+THE WALL-CLOCK TRAP (cause appears to happen after effect)
+
+P1 (clock runs FAST)        P2 (clock runs SLOW)
+   |                            |
+14:03:07.300  send msg ------\  |
+   |                          \ |
+   |                           \-->  receive msg  14:03:07.250
+   |                            |
+                                 ^
+  Sort by timestamp => 07.250 (receive) is BEFORE 07.300 (send)
+  => the system "believes" the message was received before it was sent. WRONG.
+</pre>
+
+<div class="key">
+<strong>Key takeaway:</strong> Physical clocks across machines disagree (skew) and wander (drift). You cannot reliably order events on different machines by comparing wall-clock timestamps. Lamport's insight: for ordering, we usually don't <em>need</em> real time at all — we need <em>causality</em>.
+</div>
+
+<h3>3.3 The "happens-before" relation (→)</h3>
+
+<p>Lamport's first big move is to throw away physical time and define ordering purely in terms of <strong>causality</strong> — what could possibly have influenced what. He calls this the <strong>happens-before</strong> relation and writes it with an arrow: <code>a → b</code> reads as "<em>a happens before b</em>."</p>
+
+<p>The relation is defined by exactly <strong>three rules</strong>:</p>
+
+<ol>
+<li><strong>Same-process rule:</strong> If <code>a</code> and <code>b</code> are events in the <em>same</em> process, and <code>a</code> comes before <code>b</code> in that process's local order, then <code>a → b</code>. (A process runs its own steps in a definite sequence; that order is known for free.)</li>
+<li><strong>Send-before-receive rule:</strong> If <code>a</code> is the sending of a message and <code>b</code> is the receiving of that same message (in another process), then <code>a → b</code>. (A message can't be received before it was sent — reality guarantees this.)</li>
+<li><strong>Transitivity rule:</strong> If <code>a → b</code> and <code>b → c</code>, then <code>a → c</code>. (Causality chains together.)</li>
+</ol>
+
+<p>That's the whole definition. Notice it never mentions seconds, clocks, or time-of-day. It only uses local order and message send/receive — two things every process can actually observe.</p>
+
+<p>When <code>a → b</code>, we say <code>a</code> <strong>causally precedes</strong> <code>b</code>: <code>a</code> <em>could have</em> influenced <code>b</code>. (It might not have actually influenced it, but it had the opportunity, because information could have flowed from <code>a</code> to <code>b</code>.)</p>
+
+<h4>Concurrent events</h4>
+
+<p>Now the crucial twist. What if <em>neither</em> <code>a → b</code> <em>nor</em> <code>b → a</code> holds? Then the two events are called <strong>concurrent</strong>, written <code>a ∥ b</code>. Concurrent does <em>not</em> mean "at the same wall-clock instant." It means <strong>causally unrelated</strong> — there is no chain of local steps and messages connecting them, so no information could have flowed either way. Neither could have affected the other.</p>
+
+<p>This is why happens-before is only a <strong>partial order</strong>: a relation where <em>some</em> pairs are ordered (<code>a → b</code>) but other pairs (the concurrent ones) are simply not ordered relative to each other at all. Contrast that with a <strong>total order</strong>, where every pair is comparable. Real time is a total order; causality is only partial — and that's an honest reflection of reality, because two unrelated things on two machines genuinely have no "true" order.</p>
+
+<pre class="diagram">
+SPACE-TIME DIAGRAM (time flows DOWNWARD; arrows = messages)
+
+   P1            P2            P3
+   |             |             |
+   a ----------> |             |        a -> b  (message P1->P2)
+   |             b             |
+   |             | ----------> |        b -> c  (message P2->P3)
+   d             |             c
+   |             |             |
+   |             e <---------- |        c -> e  (message P3->P2)
+   |             |             |
+
+Causal chains:  a -> b -> c -> e   (so a -> e by transitivity)
+Concurrent:     d ∥ b , d ∥ c , d ∥ e  (no path connects d to them)
+                 (P1's event 'd' never sent/received anything reaching them)
+</pre>
+
+<div class="analogy">
+<strong>Analogy:</strong> Think of a family group chat. If Mom posts a message and Dad replies to it, Mom's post happened-before Dad's reply — his reply was caused by reading hers. But if Mom and your sister both post at "the same time" without seeing each other's message, those two posts are <em>concurrent</em>: neither caused the other, and arguing about which one was "really first" is meaningless. Happens-before captures only the orderings that are caused by actual information flow.
+</div>
+
+<div class="warn">
+<strong>Common mistake:</strong> Reading <code>a → b</code> as "<code>a</code> definitely caused <code>b</code>." It means "<code>a</code> <em>could</em> have causally influenced <code>b</code>" — there exists a path of local steps and messages from <code>a</code> to <code>b</code>. It's about <em>potential</em> causality, not proven cause.
+</div>
+
+<h3>3.4 Lamport logical clocks: counters that respect causality</h3>
+
+<p>Happens-before is a beautiful idea, but to <em>use</em> it, each process needs a cheap, local way to stamp events so that the stamps respect the arrows. That mechanism is the <strong>Lamport logical clock</strong>.</p>
+
+<p>The setup is simple. Every process keeps one integer counter, call it <code>C</code> (start it at 0). For an event <code>a</code>, the stamp it gets is written <code>C(a)</code>. There are just two rules for updating the counter. In Lamport's paper these are the <em>Implementation Rules</em> <strong>IR1</strong> and <strong>IR2</strong>:</p>
+
+<ul>
+<li><strong>IR1 — before each event, tick.</strong> A process increments its own counter by 1 <em>before</em> (or as it executes) each event it performs. So every internal event and every send event bumps the counter. <code>C := C + 1</code>.</li>
+<li><strong>IR2 — piggyback the timestamp on messages.</strong> When a process sends a message, it includes its current counter value <code>t</code> inside the message. When another process receives that message, it sets its own counter to <code>C := max(C, t) + 1</code> — that is, take the larger of "my clock" and "the timestamp in the message," then add one.</li>
+</ul>
+
+<p>The <code>max</code> in IR2 is the whole trick. It forces the receiver's clock to jump ahead of the sender's send-time, so the receive event always gets a strictly larger number than the send event. Causality is preserved by construction.</p>
+
+<h4>Step-by-step walkthrough</h4>
+
+<pre class="diagram">
+LAMPORT CLOCK VALUES  (number after each event = its timestamp C)
+time flows DOWNWARD
+
+   P1            P2            P3
+  C=0           C=0           C=0
+   |             |             |
+ e1 [1]         |            f1 [1]      IR1: local tick
+   |            g1 [1]         |
+ e2 [2] -----.   |             |         send from P1 carries t=2
+   |          \  |             |
+   |           `> g2 [3]       |         receive: max(1,2)+1 = 3
+   |             |             |
+   |           g3 [4] ------.  |         send from P2 carries t=4
+   |             |           \ |
+   |             |            `> f2 [5]  receive: max(1,4)+1 = 5
+   |             |             |
+ e3 [3]          |             |         P1 keeps ticking on its own
+</pre>
+
+<p>Trace it slowly:</p>
+<ol>
+<li><code>P1</code> does <code>e1</code>: tick 0→1, so <code>C(e1)=1</code>.</li>
+<li><code>P1</code> does <code>e2</code> (a send): tick 1→2, so <code>C(e2)=2</code>. The message carries <code>t=2</code>.</li>
+<li><code>P2</code> receives it as <code>g2</code>. Its clock was 1 (from <code>g1</code>). Apply IR2: <code>max(1, 2) + 1 = 3</code>. So <code>C(g2)=3</code> — strictly bigger than the send's 2. Good: <code>e2 → g2</code> and <code>2 &lt; 3</code>.</li>
+<li><code>P2</code> sends at <code>g3</code>: tick 3→4, message carries <code>t=4</code>.</li>
+<li><code>P3</code> receives at <code>f2</code>. Its clock was 1. IR2: <code>max(1, 4) + 1 = 5</code>. So <code>C(f2)=5</code> — bigger than 4. Good.</li>
+</ol>
+
+<div class="example">
+<strong>Example:</strong> Notice <code>P3</code>'s clock leapt from 1 straight to 5. It "skipped" 2, 3, and 4. That's fine and expected — logical clocks are not measuring time, they're only guaranteeing the <em>order</em> of causally-related events comes out right. Gaps and uneven jumps don't matter at all.
+</div>
+
+<h3>3.5 The Clock Condition — and the one-way street</h3>
+
+<p>The property all of this is engineered to guarantee is the <strong>Clock Condition</strong>:</p>
+
+<div class="key">
+<strong>Key takeaway — the Clock Condition:</strong> For any events <code>a</code> and <code>b</code>, &nbsp; <code>if a → b then C(a) &lt; C(b)</code>.<br>
+In words: if <code>a</code> happens-before <code>b</code>, then <code>a</code>'s logical timestamp is strictly smaller than <code>b</code>'s. Causality is never violated by the numbers.
+</div>
+
+<p>This follows directly from the two rules: IR1 makes timestamps increase within a process, and IR2's <code>max(...) + 1</code> makes a receive strictly exceed its matching send. Chain those together (transitivity) and any causal path strictly increases the number every step.</p>
+
+<p>But here is the single most important caveat in this entire topic — the part beginners get wrong:</p>
+
+<div class="warn">
+<strong>Common mistake:</strong> Believing the reverse — that <code>C(a) &lt; C(b)</code> implies <code>a → b</code>. <strong>It does not.</strong> The implication only goes one way. A smaller timestamp does <em>not</em> prove "happened before." Two concurrent events can have any timestamps at all — equal, or one smaller than the other — purely by accident of how their local counters happened to advance.
+</div>
+
+<p>Look back at the diagram: <code>e1</code> on <code>P1</code> has timestamp 1, and <code>f1</code> on <code>P3</code> also has timestamp 1 — yet they are concurrent (no message connects them). And <code>g1[1]</code> on <code>P2</code> has a smaller number than <code>e2[2]</code> on <code>P1</code>, but they're also concurrent — the smaller number tells you nothing about causality. So:</p>
+
+<ul>
+<li><code>a → b</code> &nbsp;⟹&nbsp; <code>C(a) &lt; C(b)</code> &nbsp;✓ (guaranteed)</li>
+<li><code>C(a) &lt; C(b)</code> &nbsp;⟹&nbsp; <code>a → b</code> &nbsp;✗ (NOT guaranteed)</li>
+</ul>
+
+<p>Plainly: Lamport timestamps let you <strong>order causal events correctly</strong>, but they <strong>cannot detect concurrency</strong> — from two timestamps alone you can't tell whether one truly happened-before the other or whether they're unrelated. (This is precisely the gap that <strong>vector clocks</strong>, covered in a later section, were invented to close.)</p>
+
+<h3>3.6 Total ordering: breaking ties with process IDs</h3>
+
+<p>Happens-before is a partial order, but many real algorithms need a <strong>total order</strong> — a single global queue where <em>every</em> pair of events has a definite, agreed position, including concurrent ones. We don't need this order to be "true"; we just need every process to agree on the <em>same</em> order. Lamport gives a tiny trick to manufacture one.</p>
+
+<p>Sort all events by their Lamport timestamp <code>C</code>. When two events have the <strong>same</strong> timestamp (which only happens for concurrent events — causal ones always differ), break the tie using an <strong>arbitrary but fixed total ordering of the processes</strong> — for instance, by process ID, lowest ID wins. Write this combined order with <code>⇒</code>:</p>
+
+<pre class="diagram">
+TIE-BREAKING:  order key = (Lamport timestamp, process id)
+
+  event   C   pid          sorted "happened-before-ish" total order:
+  -----  ---  ----         a ⇒ b  iff  C(a) &lt; C(b)
+   x      3    P1                         OR ( C(a) = C(b) AND pid(a) &lt; pid(b) )
+   y      3    P3
+   z      4    P2          => final order:  x (3,P1) ⇒ y (3,P3) ⇒ z (4,P2)
+</pre>
+
+<p>The result is a <strong>total order</strong> (every pair is now comparable) that is <em>consistent with</em> happens-before: it never contradicts a real <code>→</code> arrow, it just makes an arbitrary-but-deterministic choice for the concurrent pairs. Every process, fed the same events, computes the identical order. That shared agreement is exactly what we need to build coordination algorithms.</p>
+
+<div class="analogy">
+<strong>Analogy:</strong> Think of timestamping race finishers with a stopwatch that only shows whole seconds. Many runners may tie at "12 s." To still produce a single ranked finishing list, you break ties by bib number. The bib number is arbitrary and has nothing to do with who was truly faster — but it gives one consistent, reproducible ranking that everyone can agree on. Process ID is the bib number.
+</div>
+
+<h3>3.7 Why this matters: real uses</h3>
+
+<h4>Consistent logs and event ordering</h4>
+
+<p>Any system that merges events from many machines into one timeline — distributed tracing, audit logs, event-sourced databases — needs a way to order them that doesn't lie about cause and effect. Lamport timestamps give a causally-honest ordering that wall-clock timestamps can't.</p>
+
+<h4>Distributed mutual exclusion (the paper's headline example)</h4>
+
+<p><strong>Mutual exclusion</strong> means: only one process at a time may hold a shared resource (the "critical section") — like only one machine being allowed to write to a shared printer or a shared record. Lamport's paper uses his total order to build a fully distributed solution with no central coordinator:</p>
+
+<ol>
+<li>To request the resource, a process timestamps a <code>REQUEST</code> message and broadcasts it to everyone, and adds it to its own ordered request queue.</li>
+<li>Every receiver puts the request in its queue (ordered by the total order <code>⇒</code>) and replies with a timestamped acknowledgement.</li>
+<li>A process may enter the critical section only when (a) its own request sits at the <em>front</em> of its queue by the total order, and (b) it has heard a later-timestamped message from every other process (so it knows no earlier request can still be in flight).</li>
+<li>To release, it broadcasts a timestamped <code>RELEASE</code> that removes its request from everyone's queue.</li>
+</ol>
+
+<p>Because every process orders the queue by the <em>same</em> total order, they all agree on whose turn is next — without any central lock manager. This is the original proof that logical time alone is enough to coordinate a distributed system.</p>
+
+<h4>Real-world intuition: databases and version control</h4>
+
+<ul>
+<li><strong>Lamport timestamps in databases.</strong> Distributed databases such as <strong>Apache Cassandra</strong> attach logical/timestamp metadata to writes so that, when replicas later compare two versions of the same row, they can resolve "which write wins" deterministically (last-write-wins conflict resolution). The descendants of Lamport's idea — <strong>vector clocks</strong> — power <strong>Amazon DynamoDB</strong> and its ancestor <strong>Riak</strong> to detect when two updates were concurrent and must be reconciled rather than silently overwritten.</li>
+<li><strong>Version control = happens-before, made visible.</strong> In <strong>Git</strong>, every commit records the ID(s) of its parent commit(s). "Parent → child" <em>is</em> a happens-before relation. A linear history is a causal chain; two branches edited independently are <strong>concurrent</strong> events — and <code>git merge</code> is literally the act of reconciling two concurrent histories, exactly the situation Lamport clocks identify (and a merge commit with two parents is the join point). Git's commit graph is a real-world picture of a partial order.</li>
+<li><strong>Coordination services.</strong> Systems like <strong>etcd</strong> and <strong>ZooKeeper</strong> expose a monotonically increasing version/revision number on every change — a logical clock in spirit — so clients can reason about ordering without trusting wall clocks.</li>
+</ul>
+
+<div class="key">
+<strong>Key takeaway:</strong> Lamport's 1978 paper gave distributed systems their notion of "order" without a shared clock. Happens-before defines what's causally ordered; logical clocks turn that into comparable numbers obeying the Clock Condition; process-ID tie-breaking turns the partial order into a usable total order. These three ideas underpin replication, conflict resolution, distributed locking, and version control to this day.
+</div>
+
+<h3>Common mistakes &amp; misconceptions</h3>
+
+<div class="warn"><strong>Common mistake:</strong> Trusting wall-clock timestamps to order events on different machines. Clock skew (often 100–250 ms in practice, even with NTP) and drift mean a later-timestamped event can actually have happened first — and an effect can be stamped earlier than its cause.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Thinking <code>C(a) &lt; C(b)</code> proves <code>a → b</code>. The Clock Condition runs one way only. A smaller Lamport timestamp does <em>not</em> imply happens-before; the two events may be concurrent. Lamport clocks order causality but cannot <em>detect</em> concurrency (that's what vector clocks add).</div>
+
+<div class="warn"><strong>Common mistake:</strong> Reading "concurrent" as "at the same instant." Concurrent means causally unrelated — no chain of messages/local steps connects them. Two events seconds apart in real time can still be concurrent.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Treating logical-clock numbers as elapsed time. They're abstract counters. They jump unevenly (a receive can leap from 1 to 5) and skip values; only their <em>relative order</em> for causal events carries meaning.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Forgetting to advance the clock on internal and send events (only updating on receive). IR1 says <em>every</em> event ticks the counter; skipping internal/send ticks breaks the strict-increase guarantee.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Believing the manufactured total order is the "real" order of concurrent events. It isn't — process-ID tie-breaking is arbitrary. Its only virtue is that <em>every process computes the same one</em>, which is all coordination needs.</div>
+
+<h3>Best practices</h3>
+
+<div class="tip"><strong>Best practice:</strong> Use logical clocks (or their descendants) — not wall-clock time — whenever correctness depends on <em>ordering</em> of events across machines, such as replication, conflict resolution, or distributed locking.</div>
+
+<div class="tip"><strong>Best practice:</strong> Always piggyback the sender's timestamp inside the message and apply <code>max(local, received) + 1</code> on receive. The <code>max</code> is what preserves causality; never just increment the receiver's own clock and ignore the message's stamp.</div>
+
+<div class="tip"><strong>Best practice:</strong> If you must detect concurrency (e.g. to know when two writes conflict and need merging), reach for <strong>vector clocks</strong>, not plain Lamport clocks — Lamport timestamps cannot tell concurrent apart from causally-ordered.</div>
+
+<div class="tip"><strong>Best practice:</strong> When you need a single global order over <em>all</em> events, break timestamp ties with a fixed rule (e.g. process ID) so every node deterministically computes the identical total order.</div>
+
+<div class="tip"><strong>Best practice:</strong> Keep NTP running for human-readable timestamps and rough debugging, but never let business logic <em>depend</em> on cross-machine wall-clock comparisons being accurate to the millisecond.</div>
+
+<h3>Section summary</h3>
+
+<ul>
+<li>Leslie Lamport's 1978 paper (CACM 21:7) showed how to order events in a distributed system <em>without</em> a reliable shared clock.</li>
+<li>Physical clocks drift (≈1 s every 11–12 days) and stay skewed (≈10 ms ideal, 100–250 ms typical even with NTP), so cross-machine wall-clock timestamps can violate cause-and-effect.</li>
+<li><strong>Happens-before (<code>→</code>)</strong> is defined by three rules: local order within a process, send-before-receive across processes, and transitivity — no clocks involved.</li>
+<li>Events where neither <code>a → b</code> nor <code>b → a</code> are <strong>concurrent</strong> (causally unrelated); this makes happens-before a <strong>partial order</strong>.</li>
+<li><strong>Lamport logical clocks</strong> are per-process counters updated by IR1 (tick before every event) and IR2 (<code>max(local, message) + 1</code> on receive).</li>
+<li>They guarantee the <strong>Clock Condition</strong>: <code>a → b ⟹ C(a) &lt; C(b)</code> — but <em>not</em> the reverse, so they can't detect concurrency.</li>
+<li>Breaking timestamp ties with a fixed process ordering yields a deterministic <strong>total order</strong> that all nodes agree on and that never contradicts causality.</li>
+<li>These ideas drive distributed mutual exclusion (the paper's example), consistent logs/tracing, conflict resolution in databases (Cassandra, DynamoDB/Riak via vector-clock descendants), version numbers in etcd/ZooKeeper, and the parent→child causal graph in Git.</li>
+</ul></section>
+<section class="section"><h2>4. Vector Clocks &amp; Causality</h2>
+
+<p>In the previous section you met <strong>Lamport clocks</strong> — simple counters that give every event a number so we can put events in <em>some</em> order. Lamport clocks are useful, but they have a famous blind spot. This section fixes that blind spot with a tool called the <strong>vector clock</strong>. By the end you will be able to look at two events in a distributed system and say, with certainty, one of exactly three things: "this one definitely came first", "that one definitely came first", or "these two happened at the same time and nobody can break the tie". That third answer — <strong>concurrency</strong> — is the whole point, and it is the foundation of how real databases like Amazon Dynamo and Riak detect conflicting writes.</p>
+
+<p>Let me define a few words up front, in plain English, before we use them:</p>
+
+<ul>
+<li><strong>Node</strong> (also called a <em>process</em> or <em>replica</em>): one independent computer in the system. It runs on its own and talks to others only by sending messages.</li>
+<li><strong>Event</strong>: one thing that happens on a node — doing some local work, sending a message, or receiving a message.</li>
+<li><strong>Causality</strong>: a fancy word for cause-and-effect. Event <code>a</code> "causes" event <code>b</code> if information from <code>a</code> could have travelled to <code>b</code> and influenced it. If no information could have travelled between them, neither caused the other.</li>
+<li><strong>Happened-before</strong> (written <code>a → b</code>): the formal name for "<code>a</code> could have influenced <code>b</code>". This is Lamport's relation from the last section. Two events with no happened-before link in either direction are called <strong>concurrent</strong> — they are independent.</li>
+</ul>
+
+<h3>4.1 Why Lamport clocks are not enough</h3>
+
+<p>A Lamport clock gives every event a single number, written <code>C(e)</code>. Its one guarantee is this:</p>
+
+<p style="text-align:center"><strong>If <code>a → b</code> (a happened-before b), then <code>C(a) &lt; C(b)</code>.</strong></p>
+
+<p>Read carefully: this guarantee only runs in <em>one</em> direction. It says causality forces the numbers to go up. It does <strong>not</strong> say the reverse. So if you are handed two numbers and you see <code>C(a) &lt; C(b)</code>, you cannot conclude that <code>a</code> caused <code>b</code>. The smaller number might just be a coincidence — two totally independent events on two different nodes can easily end up with <code>C(a) = 3</code> and <code>C(b) = 7</code> even though neither knew the other existed.</p>
+
+<p>In logic terms: <code>a → b</code> <em>implies</em> <code>C(a) &lt; C(b)</code>, but <code>C(a) &lt; C(b)</code> does <em>not</em> imply <code>a → b</code>. The implication is one-way. We say the Lamport clock condition is <em>necessary but not sufficient</em> for causality.</p>
+
+<div class="analogy">
+<strong>Analogy:</strong> Lamport numbers are like the page numbers in a giant printed book where many authors wrote on separate typewriters, then someone shuffled and stapled all the pages into one pile. If page 12 quotes page 5, you know page 5 was written first — quoting proves a real link. But if page 5 and page 30 simply sit in that order in the pile, that tells you nothing: page 30 might have been typed years earlier by an author who never read page 5. The page number orders the pile, but it does not prove who influenced whom.
+</div>
+
+<p>Why does this matter? Because the most valuable question in a distributed database is exactly the one Lamport clocks cannot answer: <em>"Did these two writes happen one-after-another (so I can safely keep the later one), or did they happen at the same time on different replicas that hadn't yet talked (so I have a genuine conflict)?"</em> To answer that, we need a clock that captures causality in <strong>both</strong> directions. That clock is the vector clock.</p>
+
+<div class="key">
+<strong>Key takeaway:</strong> A Lamport clock can <em>order</em> events but cannot <em>detect concurrency</em>. <code>C(a) &lt; C(b)</code> never proves causation. Vector clocks were invented to close exactly this gap.
+</div>
+
+<h3>4.2 What a vector clock is</h3>
+
+<p>A <strong>vector clock</strong> is, instead of a single number per event, a whole <em>list</em> of numbers — one slot for every node in the system. If there are three nodes — call them A, B, and C — then every vector clock has three slots, like <code>[A:2, B:5, C:1]</code> or just <code>[2, 5, 1]</code> if we agree on a fixed order.</p>
+
+<p>Each node owns exactly one slot — its own. The number in node A's own slot counts "how many events have happened on A so far". The numbers in the <em>other</em> slots are A's best knowledge of "how many events have happened on B and on C, as far as A has heard". So a vector clock is really a little summary: <em>"Here is everything I have personally done, plus everything I have heard about that everyone else has done."</em></p>
+
+<p>Vector clocks were invented independently in 1988 by two researchers: <strong>Colin Fidge</strong> ("Timestamps in Message-Passing Systems That Preserve the Partial Ordering", 11th Australian Computer Science Conference) and <strong>Friedemann Mattern</strong> ("Virtual Time and Global States of Distributed Systems", a 1988 workshop in Château de Bonas, France). Their key result is called the <strong>strong clock condition</strong>: with vector clocks, <code>a → b</code> is true <em>if and only if</em> <code>VC(a) &lt; VC(b)</code>. Notice "if and only if" — the implication now runs <strong>both</strong> ways, which is precisely what Lamport clocks could not do.</p>
+
+<h3>4.3 The three update rules</h3>
+
+<p>A vector clock changes by exactly three simple rules. Say node <code>i</code> holds a vector <code>V</code>, and <code>V[i]</code> means "node i's own slot".</p>
+
+<ol>
+<li><strong>On a local event</strong> (the node does some internal work): increment your own slot by one. <code>V[i] = V[i] + 1</code>. Nothing else changes.</li>
+<li><strong>On sending a message</strong>: first increment your own slot (<code>V[i] = V[i] + 1</code>), then attach a copy of your <em>entire</em> vector to the outgoing message. The receiver will need it.</li>
+<li><strong>On receiving a message</strong> that carries a vector <code>M</code>: first increment your own slot (<code>V[i] = V[i] + 1</code>), then for every slot <code>k</code>, set <code>V[k] = max(V[k], M[k])</code> — take the bigger of your number and the sender's number, slot by slot. This is called the <strong>element-wise maximum</strong>.</li>
+</ol>
+
+<p>The element-wise max in rule 3 is the magic. It means "merge in everything the sender knew that I didn't". If the sender had heard about 5 events on node C and I had only heard about 2, after the merge I know about 5 — I've absorbed their knowledge.</p>
+
+<div class="analogy">
+<strong>Analogy:</strong> Think of three friends keeping a shared gossip ledger. Each friend's ledger has a row per friend: "how many stories I've personally lived" plus "how many stories I've heard each other friend has lived". When you do something noteworthy, you bump your own row. When you phone a friend, you read them your whole ledger; they bump their own row, then update each row to the higher of the two counts — so nobody ever <em>loses</em> a story they'd already heard about. The ledger isn't a wall-clock time; it's a record of <em>who-knows-about-what</em>.
+</div>
+
+<h3>4.4 A full worked example with three nodes</h3>
+
+<p>Let's run three nodes — A, B, C — all starting at <code>[0, 0, 0]</code>. We'll track the vector after each event. Slots are in the order <code>[A, B, C]</code>.</p>
+
+<pre class="diagram">
+Time ──────────────────────────────────────────────────────────────▶
+
+A: [0,0,0]   a1          a2 ─────────msg m1──────────┐
+             [1,0,0]     [2,0,0]                     │
+                                                     ▼
+B: [0,0,0]                          b1               r1(recv m1)   b2
+                                    [0,1,0]          [2,2,0]       [2,3,0]
+                                                                    │
+                                                          msg m2 ───┘
+                                                                    │
+C: [0,0,0]        c1                                                 ▼
+                  [0,0,1]                                  r2(recv m2)
+                                                           [2,3,2]
+
+Legend:  a1,a2,b1,b2,c1 = local events;  m1,m2 = messages;  r1,r2 = receives
+</pre>
+
+<p>Step by step:</p>
+
+<ol>
+<li><strong>a1</strong> on A: local event → A's slot goes from 0 to 1. A = <code>[1,0,0]</code>.</li>
+<li><strong>c1</strong> on C: local event → C = <code>[0,0,1]</code>. (A and C have never communicated, so they know nothing about each other.)</li>
+<li><strong>b1</strong> on B: local event → B = <code>[0,1,0]</code>.</li>
+<li><strong>a2</strong> on A, then A sends message <code>m1</code>: a2 is the send event, so A increments its own slot to 2: A = <code>[2,0,0]</code>. The message <code>m1</code> carries the stamp <code>[2,0,0]</code>.</li>
+<li><strong>r1</strong> on B receives <code>m1</code>: B first increments its own slot (1 → 2), giving <code>[0,2,0]</code>, then takes the element-wise max with the message's <code>[2,0,0]</code>: max(0,2)=2 for A, max(2,0)=2 for B, max(0,0)=0 for C → B = <code>[2,2,0]</code>. B now knows A has done 2 events.</li>
+<li><strong>b2</strong> on B, then B sends <code>m2</code>: increment B's own slot → B = <code>[2,3,0]</code>. Message <code>m2</code> carries <code>[2,3,0]</code>.</li>
+<li><strong>r2</strong> on C receives <code>m2</code>: C increments its own slot (1 → 2) → <code>[0,0,2]</code>, then element-wise max with <code>[2,3,0]</code>: → C = <code>[2,3,2]</code>. C now knows about A's 2 events and B's 3 events, all from one message chain.</li>
+</ol>
+
+<p>Notice the causality captured in the final vector on C, <code>[2,3,2]</code>: it "contains" A's work and B's work because information flowed A → B → C. That is exactly the happened-before chain, recorded inside the numbers.</p>
+
+<h3>4.5 Comparing two vector clocks — the three possible answers</h3>
+
+<p>This is the payoff. Given two vector clocks <code>U</code> and <code>V</code>, compare them <strong>slot by slot</strong>. There are exactly three outcomes:</p>
+
+<table>
+<thead>
+<tr><th>Result</th><th>Definition (compare every slot)</th><th>Meaning</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Equal</strong> (<code>U = V</code>)</td><td>Every slot is equal.</td><td>The same point in time / the same event.</td></tr>
+<tr><td><strong>Happened-before</strong> (<code>U &lt; V</code>)</td><td>Every slot of <code>U</code> is <code>≤</code> the matching slot of <code>V</code>, <strong>and at least one slot is strictly &lt;</strong>.</td><td><code>U</code> causally came first; <code>U → V</code>. <code>V</code> is a descendant of <code>U</code>.</td></tr>
+<tr><td><strong>Concurrent</strong> (<code>U ∥ V</code>)</td><td>Neither <code>U &lt; V</code> nor <code>V &lt; U</code> holds — each has at least one slot bigger than the other.</td><td>Independent. Neither caused the other. <strong>Potential conflict.</strong></td></tr>
+</tbody>
+</table>
+
+<p>The crucial rule to memorise: <strong>"less-than-or-equal in every slot, and strictly less in at least one"</strong> means <em>happened-before</em>. If you cannot say that about either direction, the events are <strong>concurrent</strong>.</p>
+
+<div class="example">
+<strong>Example — three comparisons:</strong>
+<ul>
+<li><code>[1,0,0]</code> vs <code>[2,2,0]</code>: every slot of the first is ≤ the second (1≤2, 0≤2, 0≤0) and at least one is strictly smaller → <strong>first happened-before second</strong>. The first event causally precedes the second.</li>
+<li><code>[2,0,0]</code> vs <code>[0,1,0]</code>: first has A=2 &gt; 0, but second has B=1 &gt; 0. Each beats the other in some slot → <strong>concurrent</strong>. (These are events a2 and b1 from our diagram — and indeed they happened before A and B ever talked.)</li>
+<li><code>[2,3,0]</code> vs <code>[2,3,2]</code>: 2≤2, 3≤3, 0≤2, one strictly smaller → <strong>first happened-before second</strong>.</li>
+</ul>
+</div>
+
+<div class="warn">
+<strong>Common mistake:</strong> People think "I'll just compare the sums" — add up the slots and treat the bigger total as later. This is wrong. <code>[2,0,0]</code> (sum 2) and <code>[0,1,0]</code> (sum 1) have different sums but are actually <em>concurrent</em>. Summing throws away exactly the per-node detail that detects concurrency. You must compare slot-by-slot.
+</div>
+
+<h3>4.6 Detecting concurrent updates — the basis of "siblings"</h3>
+
+<p>Now connect this to a real database. Imagine a key-value store that keeps copies of your data on several nodes for availability (so the store stays up even if one node dies). Each stored <em>version</em> of a value carries a vector clock. When a node receives a write, it compares the incoming version's clock to the version it already has:</p>
+
+<ul>
+<li>If the new clock is <strong>greater than</strong> (happened-after) the old one → the new write is a straightforward, causal update. Overwrite the old version. No conflict.</li>
+<li>If the new clock is <strong>less than</strong> the old one → the new write is stale (an old update arriving late). Keep the version you have.</li>
+<li>If the two clocks are <strong>concurrent</strong> → two clients updated the same key independently, on replicas that hadn't synced. Neither is "newer". The database <strong>keeps both versions</strong>. These coexisting concurrent versions are called <strong>siblings</strong>.</li>
+</ul>
+
+<p>The database cannot decide which sibling is "right" — that's a business question (which shopping cart? which user profile?). So it hands all siblings back to the application at the next read and asks it to merge them. This is called <strong>semantic reconciliation</strong>: the app applies domain rules (for example, "union the two shopping carts so no item is lost") and writes back one reconciled value whose new vector clock <em>descends from both</em> siblings, collapsing the branch.</p>
+
+<h3>4.7 Real-world: Amazon Dynamo and the shopping-cart example</h3>
+
+<p>This design is exactly what Amazon described in their landmark 2007 <strong>Dynamo</strong> paper ("Dynamo: Amazon's Highly Available Key-value Store"). Dynamo chose <em>availability</em> over strong consistency — the shopping cart must <em>always</em> accept an "add to cart", even during network trouble. That means two replicas can take writes independently and disagree, so Dynamo uses vector clocks (it calls them version vectors, stored as a list of <code>(node, counter)</code> pairs) to tell apart genuine causal updates from real conflicts.</p>
+
+<p>Here is the actual example from the Dynamo paper, with server nodes Sx, Sy, Sz handling writes to one shopping-cart object:</p>
+
+<pre class="diagram">
+            WRITE handled by Sx                D1  [(Sx,1)]
+                     │                          │
+            WRITE handled by Sx                D2  [(Sx,2)]   (D2 descends from D1)
+                     │
+        ┌────────────┴────────────┐
+        │ (network split:         │
+        │  two replicas write     │
+        │  without seeing         │
+        │  each other)            │
+        ▼                          ▼
+  WRITE on Sy                WRITE on Sz
+  D3 [(Sx,2),(Sy,1)]         D4 [(Sx,2),(Sz,1)]
+        │                          │
+        └────────────┬─────────────┘
+                     ▼
+          client READ sees BOTH D3 and D4
+          D3 vs D4:  D3 has (Sy,1) but no Sz
+                     D4 has (Sz,1) but no Sy
+                     ⇒ NEITHER ≤ the other ⇒ CONCURRENT
+                     ⇒ they are SIBLINGS, returned together
+                     │
+                     ▼
+       client reconciles (merges carts) and writes back via Sx
+          D5 [(Sx,3),(Sy,1),(Sz,1)]
+          D5 descends from BOTH D3 and D4 ⇒ conflict resolved
+</pre>
+
+<p>Walk through the clocks: D3 = <code>[(Sx,2),(Sy,1)]</code> and D4 = <code>[(Sx,2),(Sz,1)]</code>. Compare slot by slot. For the Sy slot, D3 has 1 and D4 has 0 (absent counts as 0) — D3 wins. For the Sz slot, D4 has 1 and D3 has 0 — D4 wins. Each beats the other somewhere, so neither happened-before the other: they are <strong>concurrent</strong>, i.e. a real conflict. Dynamo returns both as siblings. The client merges and writes D5 = <code>[(Sx,3),(Sy,1),(Sz,1)]</code>, which is <code>≥</code> both D3 and D4 in every slot — so D5 unambiguously supersedes both, and the branch is healed.</p>
+
+<p><strong>Riak</strong>, the open-source database directly inspired by Dynamo, uses the same idea and exposes siblings to your application when an <code>allow_mult</code> setting is on. Riak later improved on plain vector clocks with <strong>dotted version vectors (DVV)</strong> — a refinement that avoids a subtle problem where naive client-id vectors grow without bound and can produce "false siblings". With DVV the clock size stabilises around the replication factor (typically 3) instead of growing with the number of clients.</p>
+
+<div class="key">
+<strong>Key takeaway:</strong> "Siblings" are just two versions whose vector clocks compare as <em>concurrent</em>. Vector clocks are the mechanism that lets an always-available database know <em>when</em> it has a genuine conflict to hand back, versus a safe overwrite.
+</div>
+
+<h3>4.8 Causality cousins: Git's DAG and CRDTs</h3>
+
+<p>You already use a causality-tracking system every day: <strong>Git</strong>. Git doesn't use vector clocks, but it captures the same <em>happened-before</em> idea with a <strong>DAG</strong> (Directed Acyclic Graph — a graph of nodes with one-way arrows and no loops). Each commit points back to its parent commit(s). "Commit X is an ancestor of commit Y" is Git's version of "X happened-before Y". When two people branch from the same commit and both commit independently, neither is an ancestor of the other — those commits are <em>concurrent</em>, which is exactly why Git asks you to <strong>merge</strong> (and sometimes flags a conflict). A merge commit with two parents is Git's "reconciliation": a new node that descends from both branches, just like Dynamo's D5.</p>
+
+<div class="analogy">
+<strong>Analogy:</strong> A vector clock and a Git history are two ways of writing the same story. The vector clock is the <em>summary</em> ("I've seen 2 of Sx's edits and 1 of Sy's"); the Git DAG is the <em>full family tree</em> drawn out with arrows. Both let you ask the same question — "is this version an ancestor, a descendant, or a cousin?" A cousin (concurrent / two siblings / a fork) is the one that needs a human or a merge rule.
+</div>
+
+<p>A related modern idea is the <strong>CRDT</strong> (Conflict-free Replicated Data Type) — a special data structure designed so that concurrent updates <em>always</em> merge automatically, with no human reconciliation needed. The intuition: instead of just detecting a conflict (what vector clocks do) and dumping it on the app, a CRDT defines a merge rule baked into the data type itself that is guaranteed to give the same answer no matter what order updates arrive in. For example, a "grow-only set" merges by union — order doesn't matter, so concurrent adds never conflict. CRDTs often still use vector-clock-style version information internally to know what each replica has seen; they just add a mathematically safe automatic merge on top.</p>
+
+<h3>4.9 Trade-offs: the clock grows with the cluster</h3>
+
+<p>Vector clocks are not free. The vector has one slot <em>per node that has ever written the object</em>. In a small fixed cluster that's fine. But:</p>
+
+<ul>
+<li>In a large system with many nodes, the vector gets long, and it travels with <em>every message and every stored version</em> — more bytes on the wire and on disk.</li>
+<li>Worse, if you give each <em>client</em> its own slot (rather than each server), the vector can grow without limit as new clients appear. The Dynamo paper specifically warns that during failures or partitions, writes handled by nodes outside the normal set make the vector clock grow.</li>
+</ul>
+
+<p>The fix is <strong>pruning</strong>: when the vector exceeds a threshold of entries, throw away the oldest <code>(node, counter)</code> pairs. Dynamo attaches a timestamp to each pair recording when that node last touched the object, and drops the least-recently-updated entries once the count crosses a limit (Dynamo used a threshold of 10; Riak's tunable limit sits in roughly the 20–50 range). Pruning trades a tiny, rare risk of an <em>inaccurate</em> causality judgement (you might fail to detect that two versions are actually related, producing an unnecessary sibling) for a bounded clock size. In practice this is a sound trade because the discarded entries are old and almost never relevant.</p>
+
+<div class="warn">
+<strong>Common mistake:</strong> Using one vector-clock slot per <em>client/actor</em> instead of per <em>server replica</em>. With millions of clients the vector explodes and you get "false conflicts". This is exactly the trap dotted version vectors (DVV) were designed to escape; prefer per-replica vectors or DVV for client-facing writes.
+</div>
+
+<h3>Common mistakes &amp; misconceptions</h3>
+
+<div class="warn"><strong>Common mistake:</strong> Believing <code>C(a) &lt; C(b)</code> from a Lamport clock proves <code>a</code> caused <code>b</code>. It does not — the implication only runs the other way. Only a vector clock gives the "if and only if".</div>
+
+<div class="warn"><strong>Common mistake:</strong> Comparing vector clocks by summing the slots or comparing them pairwise as single numbers. You must compare slot-by-slot; a difference where each clock leads in some slot means <em>concurrent</em>, not "the bigger sum wins".</div>
+
+<div class="warn"><strong>Common mistake:</strong> Forgetting to increment your <em>own</em> slot on a receive. Some learners only do the element-wise max. The rule is increment-own-slot <em>then</em> max — the receive is itself a new local event and must be counted.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Treating concurrent versions ("siblings") as an error to silently auto-overwrite with "last write wins" by wall-clock time. That throws away a real, intentional update (e.g. an item silently vanishes from a shopping cart). Concurrency means <em>reconcile</em>, not <em>discard</em>.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Assuming vector clocks order <em>all</em> events into one line. They don't — they produce a <em>partial</em> order. Concurrent events are deliberately left unordered, because forcing an order would be a lie about causality.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Putting a slot per client and never pruning, then being surprised when clock metadata dwarfs the actual data and false siblings pile up. Bound the vector (pruning / DVV) and slot per replica.</div>
+
+<h3>Best practices</h3>
+
+<div class="tip"><strong>Best practice:</strong> Allocate one vector-clock slot per stable <em>server replica</em>, not per transient client, so the vector size is bounded by your cluster size, not your traffic.</div>
+
+<div class="tip"><strong>Best practice:</strong> Always cap the vector with a pruning threshold and store a last-updated timestamp per entry so you can drop the oldest entries safely under failures and partitions.</div>
+
+<div class="tip"><strong>Best practice:</strong> Make conflict resolution explicit and domain-aware. Decide the merge rule for each data type up front (union carts, max counters, latest-by-field) instead of relying on a blind last-write-wins.</div>
+
+<div class="tip"><strong>Best practice:</strong> Where possible, model data as a CRDT so concurrent updates merge automatically and you never expose siblings to application code — reserve manual reconciliation for data that genuinely needs human judgement.</div>
+
+<div class="tip"><strong>Best practice:</strong> When debugging "which write should have won?", log the full vector clock of each version. The slot-by-slot comparison tells you immediately whether you had a causal update or a true concurrent conflict.</div>
+
+<div class="tip"><strong>Best practice:</strong> For client-facing writes that can race, prefer dotted version vectors (DVV) over naive client-id vector clocks to avoid unbounded growth and false siblings.</div>
+
+<h3>Section summary</h3>
+
+<ul>
+<li>Lamport clocks order events but cannot detect concurrency: <code>C(a) &lt; C(b)</code> does not prove <code>a → b</code>.</li>
+<li>A vector clock is a list of counters, one slot per node; your slot counts your events, other slots are your knowledge of theirs.</li>
+<li>Three update rules: local event → increment own slot; send → increment own, attach vector; receive → increment own, then element-wise max with the message's vector.</li>
+<li>Compare slot-by-slot: equal, happened-before (≤ in all slots and &lt; in at least one), or concurrent (each leads somewhere).</li>
+<li>Vector clocks satisfy the strong clock condition — <code>a → b</code> if and only if <code>VC(a) &lt; VC(b)</code> — invented by Fidge and Mattern in 1988.</li>
+<li>Concurrent versions are "siblings"; databases keep both and ask the application to reconcile them (semantic reconciliation).</li>
+<li>Amazon Dynamo and Riak use vector/version vectors to detect conflicts; the classic D1→D5 shopping-cart example shows two concurrent writes merging into one descendant.</li>
+<li>Git's commit DAG is a causality cousin: ancestor = happened-before, fork = concurrent, merge commit = reconciliation; CRDTs add automatic, conflict-free merging.</li>
+<li>Trade-off: vector size grows with the number of writing nodes; bound it with pruning (drop oldest entries) or dotted version vectors.</li>
+</ul>
+
+**Sources:** [Vector clock — Wikipedia](https://en.wikipedia.org/wiki/Vector_clock), [Dynamo: Amazon's Highly Available Key-value Store (Riak docs mirror)](https://docs.riak.com/riak/kv/2.2.2/learn/dynamo/), [Dotted Version Vectors (GSD, U. Minho)](https://gsd.di.uminho.pt/members/vff/dotted-version-vectors-2012.pdf), [Vector Clocks Revisited Part 2: Dotted Version Vectors — Riak](https://riak.com/posts/technical/vector-clocks-revisited-part-2-dotted-version-vectors/index.html), [Vector Clocks — Kevin Sookocheff](https://sookocheff.com/post/time/vector-clocks/), [Logical Clocks — pk.org](https://pk.org/classes/417/notes/logical-clocks.html)</section>
+<section class="section"><h2>5. The CAP Theorem (and PACELC)</h2>
+
+<p>Once you split data across more than one machine, you run into a hard, unavoidable rule about what those machines can promise you. That rule is the <strong>CAP theorem</strong>. It is the single most quoted idea in distributed systems, and also the most <em>misquoted</em>. This section teaches it from the ground up, corrects the popular myths, and then shows you the more useful modern version called <strong>PACELC</strong>.</p>
+
+<p>Let us first say plainly what problem we are dealing with. A <strong>distributed data store</strong> is a database whose data lives on several computers (called <strong>nodes</strong> or <strong>replicas</strong>) instead of one. We do this for two reasons: so the system survives one machine dying, and so it can serve more traffic. But the moment data is copied to several machines, those copies can disagree, and the network connecting them can fail. CAP is about what happens then.</p>
+
+<h3>5.1 A tiny bit of history (so the names make sense)</h3>
+
+<p>The idea was first stated by <strong>Eric Brewer</strong>, a Berkeley professor and later a Google VP. He floated it informally in the autumn of 1998 and presented it as a <em>conjecture</em> (an unproven guess) in his keynote at the year-2000 <strong>PODC</strong> conference (the Symposium on Principles of Distributed Computing). In 2002, two MIT researchers, <strong>Seth Gilbert</strong> and <strong>Nancy Lynch</strong>, wrote a formal mathematical proof. Their proof turned Brewer's guess into a real <strong>theorem</strong> (a statement that has been proven true). Then in 2012, Brewer wrote a famous follow-up article, <em>"CAP Twelve Years Later: How the 'Rules' Have Changed"</em>, walking back the simplistic way people had started teaching it. Most of the corrections in this section come straight from that 2012 article.</p>
+
+<div class="key"><strong>Key takeaway:</strong> CAP = Brewer's conjecture (1998/2000), proven by Gilbert &amp; Lynch (2002), clarified by Brewer himself (2012). When someone recites "two out of three," they are quoting the 1998 slogan — not the careful 2012 version.</div>
+
+<h3>5.2 The three letters, defined in plain words</h3>
+
+<p>CAP stands for three properties a distributed data store might try to guarantee. Each has a precise technical meaning that is narrower than the everyday word suggests, so read these carefully.</p>
+
+<h4>C — Consistency</h4>
+<p><strong>What it is:</strong> every read sees the <em>most recent</em> write. If I save <code>balance = 100</code> and then you read the balance one nanosecond later from <em>any</em> replica, you must see <code>100</code>, never the old value.</p>
+<p>The exact technical name for this is <strong>linearizability</strong> (also called <em>atomic</em> or <em>single-copy</em> consistency). Linearizability means the whole cluster behaves <em>as if</em> there were only one copy of the data and every operation happened instantly at one single moment in time, in a clear order. Brewer's 2012 phrasing: consistency here is "equivalent to having a single up-to-date copy of the data."</p>
+
+<div class="warn"><strong>Common mistake:</strong> The "C" in CAP is <em>not</em> the "C" in ACID. The ACID C means "a transaction leaves the database obeying its rules/constraints" (a business-rule guarantee inside one database). The CAP C means linearizability — "all replicas agree on the latest value." Two completely different ideas that happen to share a letter. Brewer notes the CAP C is "single-copy consistency, a strict subset of ACID consistency."</p></div>
+
+<h4>A — Availability</h4>
+<p><strong>What it is:</strong> every request sent to a working (non-failed) node gets a non-error response — it does not hang forever and it does not reply "sorry, I can't serve you right now." Crucially, an available system is allowed to return data that is slightly <em>stale</em> (out of date). Availability says "you get an answer," not "you get the freshest answer."</p>
+
+<h4>P — Partition tolerance</h4>
+<p><strong>What it is:</strong> the system keeps working even when the network between nodes <strong>drops or delays messages</strong>. A <strong>network partition</strong> is when the connection between groups of nodes breaks, so node A can no longer talk to node B, even though both machines are alive and healthy. Think of a cut undersea cable, a misconfigured firewall, or a switch that starts silently dropping packets. The nodes are fine; the <em>wire between them</em> is the problem.</p>
+
+<div class="analogy"><strong>Analogy:</strong> Picture two bank branches of the same bank, in two cities, that must always show the same account balance. <em>Consistency</em> = both branches always show the identical, latest balance. <em>Availability</em> = you can always walk into either branch and get served. <em>Partition</em> = the phone line between the two branches goes dead, so they can no longer tell each other about new deposits.</div>
+
+<h3>5.3 The actual claim: during a partition, choose C or A</h3>
+
+<p>Here is the theorem in one sentence: <strong>when a network partition happens, a distributed system must choose between Consistency and Availability — it cannot have both.</strong></p>
+
+<p>Why is that forced? Walk through it. The network has split your two replicas into two groups that cannot talk. Now a write request arrives at one side. That side faces a fork in the road with only two doors:</p>
+
+<ol>
+<li><strong>Door 1 — stay Consistent (sacrifice Availability):</strong> Refuse the request, because this side cannot safely confirm the change with the other side. It returns an error or just waits. Data stays correct everywhere, but the user did not get served — availability is lost.</li>
+<li><strong>Door 2 — stay Available (sacrifice Consistency):</strong> Accept the write on this side anyway and reply "OK." The user is served, but now the two sides hold <em>different</em> values for the same data. They have diverged — consistency is lost.</li>
+</ol>
+
+<p>There is no third door. You cannot both accept the write <em>and</em> keep both replicas identical when the replicas physically cannot communicate. That impossibility is the whole theorem.</p>
+
+<pre class="diagram">
+        NORMAL: nodes can talk, both C and A hold
+        ┌─────────┐    network OK    ┌─────────┐
+        │ Replica │ &lt;═════════════&gt;  │ Replica │
+        │    A    │   replicate      │    B    │
+        └─────────┘                  └─────────┘
+
+        PARTITION: the wire is cut  ✂
+        ┌─────────┐                  ┌─────────┐
+        │ Replica │  ✂  X  X  X  ✂   │ Replica │
+        │    A    │   no messages    │    B    │
+        └────┬────┘   get through    └────┬────┘
+             │                            │
+   write "x=2" arrives                read "x" arrives
+             │                            │
+   ┌─────────┴─────────┐        ┌─────────┴─────────┐
+   │ Choose CONSISTENCY │       │ Choose AVAILABILITY│
+   │  → refuse / error  │       │  → answer with OLD │
+   │  → user not served │       │    value x=1 (stale)│
+   │  (A sacrificed)    │       │  (C sacrificed)    │
+   └────────────────────┘       └────────────────────┘
+</pre>
+
+<div class="example"><strong>Example:</strong> A shopping site stores your cart on two replicas. The cable between them is cut. You add "blue shoes." Replica A takes the write. A <strong>CP system</strong> would refuse the write (or block) so the cart never disagrees — you might see "try again later." An <strong>AP system</strong> accepts "blue shoes" on A, lets B stay unaware for now, replies "Added!", and reconciles the two carts after the network heals. Same partition, two opposite choices.</div>
+
+<h3>5.4 Why "P" is not really optional</h3>
+
+<p>Beginners read "pick two of three" and think: "Fine, I'll pick C and A and drop P — I'll build a CA system." In the real world, <strong>this is not a real option.</strong> Here is why.</p>
+
+<p>Partitions are caused by the <em>network</em>, and you do not control the network. Cables get cut, routers reboot, packets get dropped, a cloud availability zone loses connectivity. These things <em>will</em> happen to any system whose nodes are on separate machines. You cannot choose to make partitions not occur, the same way you cannot choose for it to never rain.</p>
+
+<p>So partition tolerance is not a feature you opt into — it is a fact of life you must survive. That means <strong>P is effectively mandatory</strong>, and the real, practical choice is only ever <strong>C versus A, and only during a partition.</strong> A truly "CA" system would be one that simply gives up — stops working entirely — the instant the network hiccups. That is not a useful distributed system; it is a single-machine database (where there is no network between replicas, so no partition can happen).</p>
+
+<div class="key"><strong>Key takeaway:</strong> In any real multi-node system, P is forced on you. So CAP boils down to one decision: <em>during a partition, do you favor Consistency (CP) or Availability (AP)?</em> Outside of partitions, this trade-off does not even apply.</div>
+
+<h3>5.5 CP systems vs AP systems, with real examples</h3>
+
+<p>We label systems by what they choose <em>when a partition strikes</em>.</p>
+
+<table>
+<thead>
+<tr><th>Type</th><th>During a partition it…</th><th>Good for</th><th>Real systems</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>CP</strong> (Consistency + Partition tolerance)</td><td>Keeps data correct; refuses or blocks requests on the side that can't confirm. Sacrifices availability.</td><td>Coordination, locks, config, balances — where wrong data is worse than no data.</td><td>ZooKeeper, etcd, HBase, Google Spanner, traditional RDBMS in strict mode</td></tr>
+<tr><td><strong>AP</strong> (Availability + Partition tolerance)</td><td>Keeps answering on every reachable node; allows replicas to diverge, reconciles later. Sacrifices consistency.</td><td>Shopping carts, social feeds, sensor data, sessions — where an answer now beats a perfect answer.</td><td>Cassandra, Amazon DynamoDB (in eventually-consistent mode), Riak, CouchDB</td></tr>
+</tbody>
+</table>
+
+<h4>Why ZooKeeper / etcd are CP</h4>
+<p><strong>etcd</strong> (the key-value store that holds Kubernetes' cluster state) and <strong>ZooKeeper</strong> (a coordination service) exist to be the single source of truth that everyone agrees on. They use a consensus algorithm (Raft for etcd, Zab for ZooKeeper) that requires a <strong>majority (quorum)</strong> of nodes to agree before any write is accepted. If a partition leaves a group of nodes <em>without</em> a majority, that minority side stops accepting writes — it would rather be unavailable than risk telling two clients different things. Imagine if etcd let two halves of a split cluster each elect a different leader: Kubernetes would run two conflicting versions of your cluster. Unthinkable — so it picks C.</p>
+
+<h4>Why Cassandra / DynamoDB are AP</h4>
+<p><strong>Cassandra</strong> and <strong>DynamoDB</strong> grew out of Amazon's famous "Dynamo" design, built for an online store that must <em>never</em> reject a customer. Their guiding rule: an "add to cart" click must always succeed. So during a partition, every reachable node keeps accepting reads and writes. The copies drift apart, and the system reconciles them afterward using techniques like <strong>last-write-wins</strong> or <strong>vector clocks</strong> (a way to track which version came after which). They offer "tunable consistency" — you can ask for stronger guarantees per-request — but their <em>default temperament</em> is to stay available.</p>
+
+<div class="analogy"><strong>Analogy:</strong> A CP system is a careful pharmacist: if she can't verify your prescription against the central record, she refuses to hand over the pills — better to send you away than risk a dangerous mistake. An AP system is a busy coffee shop during a card-network outage: it keeps serving customers and writes the orders on paper, sorting out the payments once the system comes back. One refuses to be wrong; the other refuses to stop serving.</div>
+
+<h3>5.6 The big misconceptions (Brewer's own corrections)</h3>
+
+<p>Brewer's 2012 article exists mainly to fix how badly "two of three" had been taught. Here are the corrections.</p>
+
+<ul>
+<li><strong>It only applies <em>during</em> a partition.</strong> When the network is healthy (which is almost all the time), a well-built system can deliver both consistency <em>and</em> availability at once. You are not perpetually paying a tax. As Brewer put it, "CAP prohibits only a tiny part of the design space: perfect availability and consistency in the presence of partitions, which are rare."</li>
+<li><strong>"2 of 3" is an oversimplification.</strong> You don't permanently pick two letters and throw one away. P is forced; the C-vs-A choice only fires during partitions; and you can even make the choice differently for <em>different operations</em> in the same system (e.g., serve product browsing as AP but process payments as CP).</li>
+<li><strong>The properties are not binary.</strong> Brewer stresses they are "more continuous than binary." Consistency has a whole spectrum (linearizable → causal → eventual). Availability is a percentage, not a yes/no. You tune where you sit, you don't flip a switch.</li>
+<li><strong>Partitions can be managed, not just suffered.</strong> Brewer suggests a three-step recipe: (1) <em>detect</em> the partition began, (2) <em>enter partition mode</em> and limit certain risky operations, (3) when the network heals, <em>recover</em> — merge the diverged data and compensate for any mistakes made during the split.</li>
+</ul>
+
+<div class="warn"><strong>Common mistake:</strong> Treating CAP as a permanent, system-wide label printed on the box. The real choice is per-operation and only matters during the rare seconds of a partition. Designing your whole architecture as if you're always sacrificing something is a misreading of the theorem.</div>
+
+<h3>5.7 PACELC — the part CAP forgot</h3>
+
+<p>CAP has a blind spot: it only describes what happens <em>during a partition</em>. But partitions are rare. What governs your system the other 99.9% of the time, when the network is perfectly healthy? CAP is silent. In 2010, Yale professor <strong>Daniel Abadi</strong> proposed an extension to fill that gap (formalized in his 2012 paper, <em>"Consistency Tradeoffs in Modern Distributed Database System Design"</em>). He called it <strong>PACELC</strong>.</p>
+
+<p>Read the name as a sentence: <strong>P</strong>artition? then choose <strong>A</strong> vs <strong>C</strong>; <strong>E</strong>lse (no partition) choose <strong>L</strong> vs <strong>C</strong>.</p>
+
+<pre class="diagram">
+              ┌──────────────────────────┐
+              │  Is the network          │
+              │  PARTITIONED right now?   │
+              └───────────┬──────────────┘
+                  YES (P) │ NO  (E = "Else")
+          ┌───────────────┴───────────────┐
+          ▼                                ▼
+   ┌──────────────┐                ┌──────────────┐
+   │ choose A or C │               │ choose L or C │
+   │  (CAP's case) │               │ Latency  vs   │
+   │ Availability  │               │ Consistency   │
+   │  vs           │               │ (the part CAP │
+   │ Consistency   │               │  ignored)     │
+   └──────────────┘                └──────────────┘
+</pre>
+
+<p>The new insight is the right-hand branch. Even with a perfect network, keeping replicas in sync <em>costs time</em>. To guarantee a read sees the latest write, the system must contact other replicas (or wait for a majority to acknowledge) before answering — that round-trip adds <strong>latency</strong> (delay). If instead you let a nearby replica answer immediately from possibly-stale data, you get speed but give up strict consistency. So even in calm weather there is a trade: <strong>Latency vs Consistency.</strong> This is the trade-off CAP completely ignores, and it's the one you actually pay every single day.</p>
+
+<p>Every system therefore carries a two-part label, like <code>PC/EL</code>: the first part is its partition-time choice, the second its normal-time choice.</p>
+
+<table>
+<thead>
+<tr><th>System</th><th>PACELC</th><th>Reads as…</th></tr>
+</thead>
+<tbody>
+<tr><td>Cassandra</td><td><strong>PA/EL</strong></td><td>On partition, favor Availability; else, favor Latency. (Speed-first, eventually consistent.)</td></tr>
+<tr><td>Riak</td><td><strong>PA/EL</strong></td><td>Same temperament as Cassandra.</td></tr>
+<tr><td>DynamoDB</td><td><strong>PA/EC</strong></td><td>On partition stay Available; else favor Consistency over latency.</td></tr>
+<tr><td>MongoDB</td><td><strong>PA/EC</strong></td><td>Stays available on partition; in normal times leans consistent.</td></tr>
+<tr><td>HBase, BigTable</td><td><strong>PC/EC</strong></td><td>Consistency always — both during partitions and normal times. Never sacrifices correctness.</td></tr>
+<tr><td>VoltDB / H-Store</td><td><strong>PC/EC</strong></td><td>Strongly consistent in all conditions.</td></tr>
+<tr><td>Google Spanner</td><td><strong>PC/EC</strong></td><td>Consistency-first everywhere; accepts extra latency (its TrueTime clocks) to stay linearizable.</td></tr>
+</tbody>
+</table>
+
+<div class="example"><strong>Example — Google Spanner:</strong> Spanner is globally distributed yet linearizable, which sounds like it "beats" CAP. It doesn't. Spanner is a <strong>PC/EC</strong> system: when partitioned it chooses Consistency over Availability (CP), and in normal operation it chooses Consistency over Latency (EC) — it deliberately <em>waits out</em> a small clock-uncertainty window (its "TrueTime" mechanism) on commits to keep ordering correct. Engineers call it "effectively CA" only because Google's private network makes partitions so rare and so short that availability looks near-perfect in practice. It still obeys the theorem; it just hides the cost behind excellent infrastructure.</div>
+
+<div class="analogy"><strong>Analogy:</strong> You text a group of friends to confirm dinner plans. <em>Consistency</em> = you wait until <em>everyone</em> has replied "yes" before you book — slow, but no one shows up to the wrong place. <em>Low latency</em> = you book the instant the first person replies — fast, but someone might have wanted a different restaurant. There's no partition here (everyone's phone works fine); the trade-off between waiting-for-agreement and answering-fast exists anyway. That everyday trade is exactly PACELC's "Else" branch.</div>
+
+<div class="key"><strong>Key takeaway:</strong> CAP describes the rare emergency (a partition). PACELC adds the everyday reality: even with a healthy network, syncing replicas forces a Latency-vs-Consistency trade. PACELC is the more complete and more practically useful model.</div>
+
+<h3>Common mistakes &amp; misconceptions</h3>
+
+<div class="warn"><strong>Common mistake:</strong> Thinking you "pick 2 of 3" permanently. P is forced by reality, and the C-vs-A choice only matters <em>during</em> a partition. The rest of the time you can have both C and A.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Confusing CAP's Consistency with ACID's Consistency. CAP-C means linearizability (all replicas agree on the latest value). ACID-C means a transaction preserves database rules/constraints. Same letter, unrelated guarantees.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Building a "CA" system. On real multi-machine networks, partitions are inevitable, so a system that can't tolerate them simply breaks when the network blinks. Genuine "CA" only exists on a single node, where there's no network to partition.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Believing Google Spanner "broke CAP." It didn't. It's a CP / PC-EC system whose rare, short partitions and superb network make it <em>look</em> always-available. It pays the consistency cost in latency, not in violating the theorem.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Treating "AP = no consistency ever." AP systems are usually <em>eventually consistent</em>: replicas reconcile after the partition heals. They drop <em>strong</em> (immediate) consistency, not all consistency.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Ignoring the everyday cost. Teams obsess over the partition case and forget PACELC's "Else": the Latency-vs-Consistency trade you pay on every normal request often matters far more for user experience than the rare partition does.</div>
+
+<h3>Best practices</h3>
+
+<div class="tip"><strong>Best practice:</strong> Decide C-vs-A <em>per data type</em>, not per company. Money, inventory counts, locks, and config want CP. Carts, feeds, view counts, and sessions are happy with AP. One application can (and should) use both.</div>
+
+<div class="tip"><strong>Best practice:</strong> Use PACELC, not just CAP, when choosing a database. Ask both questions: "What does it do on a partition?" <em>and</em> "What latency does it cost me for consistency on a normal day?" The second question hits you constantly.</div>
+
+<div class="tip"><strong>Best practice:</strong> Plan the partition-recovery path up front (Brewer's detect → limit → recover). Know how diverged replicas will be merged (last-write-wins, vector clocks, CRDTs) <em>before</em> the partition, not during the 3 a.m. incident.</div>
+
+<div class="tip"><strong>Best practice:</strong> For coordination/source-of-truth needs (service discovery, leader election, config), reach for proven CP systems like etcd or ZooKeeper rather than rolling your own — consensus is famously easy to get subtly wrong.</div>
+
+<div class="tip"><strong>Best practice:</strong> Treat consistency as a dial, not a switch. Many AP databases offer tunable, per-request consistency (e.g., Cassandra's quorum levels). Turn it up for the few operations that need it and leave it low for the rest.</div>
+
+<h3>Section summary</h3>
+<ul>
+<li>CAP: Brewer's conjecture (1998/2000), proven by Gilbert &amp; Lynch (2002), clarified by Brewer (2012).</li>
+<li><strong>C</strong> = every read sees the latest write (linearizability); <strong>A</strong> = every request to a live node gets a non-error answer; <strong>P</strong> = the system keeps working despite dropped/delayed network messages.</li>
+<li>During a network partition you must choose Consistency <em>or</em> Availability — there is no third option.</li>
+<li>Partition tolerance isn't optional on real networks, so the practical choice is only C-vs-A, and only during a partition.</li>
+<li><strong>CP</strong> systems (ZooKeeper, etcd, HBase, Spanner) refuse/block to stay correct; <strong>AP</strong> systems (Cassandra, DynamoDB, Riak) keep answering and reconcile later.</li>
+<li>CAP's C is linearizability, <em>not</em> ACID's C; the two are unrelated despite the shared letter.</li>
+<li>"2 of 3" is misleading: CAP only bites during rare partitions, the properties are continuous not binary, and the choice can be made per-operation.</li>
+<li><strong>PACELC</strong> extends CAP: if <strong>P</strong>artitioned, trade <strong>A</strong> vs <strong>C</strong>; <strong>E</strong>lse, trade <strong>L</strong>atency vs <strong>C</strong>onsistency — the cost CAP ignores.</li>
+<li>PACELC labels: Cassandra/Riak = PA/EL, DynamoDB/MongoDB = PA/EC, HBase/BigTable/Spanner/VoltDB = PC/EC.</li>
+<li>The everyday Latency-vs-Consistency trade (PACELC's "Else") usually affects users more than the rare partition does.</li>
+</ul></section>
+<section class="section"><h2>6. Consistency Models</h2>
+
+<p>Imagine you save data in one place and it instantly appears everywhere. That is the dream. Reality is messier. In a distributed system your data lives on many machines at once (we call each copy a <strong>replica</strong>). When you change the data on one replica, the others do not learn about the change for free — the new value has to travel across the network, and the network is slow and sometimes broken. So at any instant the replicas can disagree about what the "current" value is.</p>
+
+<p>This raises a hard question: <em>when I read the data, which value am I allowed to get back?</em> The newest one? An old one? Some value in between? A <strong>consistency model</strong> is the answer to that question. It is a <strong>contract</strong> (a written promise) between the storage system and you, the programmer, about what reads are allowed to return given the writes that happened. It tells you exactly which answers are legal and which are bugs.</p>
+
+<div class="key"><strong>Key takeaway:</strong> "Consistency" is not one thing. It is a spectrum of contracts, from very strict (every read sees the latest write) to very loose (reads may see old data for a while). A consistency model is the precise rule that says which read results are correct. Pick the model on purpose — never by accident.</div>
+
+<h3>6.1 Why "consistency" has so many meanings</h3>
+
+<p>The word "consistency" is overloaded. The "C" in the <strong>ACID</strong> properties of databases (a set of guarantees for transactions) means "the database never breaks its own rules" (like "account balance can't go negative"). The "C" in the <strong>CAP theorem</strong> (covered in the previous section) means linearizability — every read sees the latest write. The consistency models in this section are about a third, more general idea: <em>across many replicas, what ordering of reads and writes is each observer allowed to see?</em></p>
+
+<p>Different systems pick different contracts because the contract you choose decides three things at once:</p>
+<ul>
+<li><strong>Correctness</strong> — how fresh and ordered the data your code sees will be.</li>
+<li><strong>Latency</strong> — how long a read or write takes (strict contracts force machines to talk to each other before answering, which is slow).</li>
+<li><strong>Availability</strong> — whether the system can still answer when the network is partly broken.</li>
+</ul>
+
+<p>Stronger contract = easier to reason about, but slower and less available. Weaker contract = faster and more available, but your code must tolerate surprises (like reading old data). This is the whole game.</p>
+
+<h3>6.2 The consistency ladder (strongest at the top)</h3>
+
+<p>Here is the map for the whole section. We will climb down it rung by rung. Higher = more guarantees, more coordination, more latency. Lower = fewer guarantees, less coordination, faster and more available.</p>
+
+<pre class="diagram">
+        STRONGER  (more coordination, slower, less available)
+        ▲
+   ┌────┴─────────────────────────────────────────────┐
+   │  LINEARIZABILITY    "one single up-to-date copy"  │  reads ALWAYS see latest write,
+   │  (a.k.a. strong /                                  │  respects real-time order
+   │   atomic / external)                               │  e.g. etcd, ZooKeeper, Spanner
+   ├───────────────────────────────────────────────────┤
+   │  SEQUENTIAL CONSISTENCY   "one agreed order,       │  everyone agrees on ONE order,
+   │                            but not real-time"      │  but it may lag real time
+   ├───────────────────────────────────────────────────┤
+   │  CAUSAL CONSISTENCY   "cause comes before effect"  │  related writes seen in order;
+   │  (ties back to vector clocks)                      │  unrelated writes may differ
+   ├───────────────────────────────────────────────────┤
+   │  CLIENT-CENTRIC GUARANTEES  "sane within YOUR own  │  read-your-writes, monotonic
+   │  (session guarantees)        session"             │  reads/writes, writes-follow-reads
+   ├───────────────────────────────────────────────────┤
+   │  EVENTUAL CONSISTENCY   "agree LATER, if writes    │  reads may be stale; replicas
+   │                          ever stop"               │  converge eventually
+   └───────────────────────────────────────────────────┘
+        ▼
+        WEAKER  (less coordination, faster, more available)
+</pre>
+
+<h3>6.3 Linearizability (strong / atomic / external consistency)</h3>
+
+<p><strong>What it is.</strong> Linearizability is the strongest practical consistency model. The promise is simple to state: the whole distributed system <em>behaves as if there is only one single copy of the data</em>, and every operation happens instantly at one moment in time. Even though there are really many replicas behind the scenes, you can never tell. The term was defined precisely by Maurice Herlihy and Jeannette Wing in their 1990 paper <em>"Linearizability: A Correctness Condition for Concurrent Objects"</em> (ACM TOPLAS, vol. 12, no. 3).</p>
+
+<p><strong>The problem it solves.</strong> Without it, two people reading "the same" value at the same time can get different answers, and a read that happens <em>after</em> a write finishes might still return the old value. That makes programming nearly impossible for things like bank balances and locks. Linearizability removes all that confusion: once a write finishes, every later read sees it. Full stop.</p>
+
+<p><strong>How it works, step by step.</strong> An operation (a read or a write) is not instantaneous in real life — it has a start (when you send the request, the <em>invocation</em>) and an end (when you get the response). Linearizability requires that each operation <em>appears</em> to take effect at one single instant somewhere between its start and its end. Three rules must hold (as the Jepsen project states them):</p>
+<ol>
+<li><strong>Single order</strong> — there is one total order of all operations (everyone agrees on it).</li>
+<li><strong>Real-time order</strong> — if operation A finishes before operation B starts in actual wall-clock time, then A must come before B in that order. You cannot reorder things that did not overlap.</li>
+<li><strong>Correct values</strong> — that order must make sense for the data type (a read returns the value of the most recent write before it).</li>
+</ol>
+
+<p>The real-time rule is the heart of it. It is what makes the system feel like one fresh copy.</p>
+
+<pre class="diagram">
+Real time ──────────────────────────────────────────────►
+
+Client A:   [ write x = 5 ]
+                          └─ finished here
+Client B:                      [ read x ] ──► MUST return 5
+                                              (B started AFTER A finished,
+                                               so B cannot see the old value)
+
+Overlapping case (allowed either way):
+Client A:   [ write x = 5 .............. ]
+Client B:        [ read x ] ──► may return old OR 5
+                  (they overlap in time, so order is the system's choice,
+                   but ALL observers must agree on whichever it picks)
+</pre>
+
+<div class="analogy"><strong>Analogy:</strong> Linearizability is a single shared whiteboard in one room. Anyone who walks up writes on it, and the instant they step back, the next person to look sees exactly what was written. There is only one board, so there is no way to see stale information. The fact that the company secretly has copies of the board in other cities does not matter — the system guarantees they are kept perfectly in sync, so it <em>looks</em> like one board.</div>
+
+<div class="example"><strong>Example:</strong> <strong>etcd</strong> and <strong>ZooKeeper</strong> are coordination stores used to elect leaders and hold distributed locks. They give linearizable reads and writes (etcd does this with the Raft consensus algorithm). If two servers both try to grab the same lock, linearizability guarantees exactly one wins and everyone agrees who — which is the entire point of a lock. <strong>Google Spanner</strong> goes even further with a property called <em>external consistency</em> (linearizability extended to multi-operation transactions). It uses <em>TrueTime</em>, an API backed by GPS receivers and atomic clocks, to put tightly-bounded real timestamps on transactions, then deliberately waits out the clock uncertainty (the "commit wait", typically a few milliseconds) before committing. That wait is the price of strong consistency made visible.</div>
+
+<p><strong>The cost.</strong> To honor "every read sees the latest write," replicas must coordinate — usually a read or write must reach a majority of nodes (a <em>quorum</em>) or go through one leader. That means network round-trips on every operation. A nearby stale read might take ~1&nbsp;ms; a linearizable read that must round-trip to a leader in another region can take 50–200&nbsp;ms. And per the CAP theorem, linearizability <em>cannot</em> stay available during a network partition: when the network splits, some nodes must stop answering rather than risk returning stale data.</p>
+
+<h3>6.4 Sequential consistency</h3>
+
+<p><strong>What it is.</strong> Sequential consistency keeps one part of linearizability and drops the other. It still requires that <em>everyone agrees on one single global order</em> of all operations, and that each process's own operations appear in that order in the sequence they were issued (its <em>program order</em>). But it <strong>drops the real-time rule</strong>. The agreed-upon order does not have to match wall-clock time. The classic definition comes from Leslie Lamport (1979): the result is the same as if all operations were executed in <em>some</em> sequential order, with each processor's operations appearing in the order its program issued them.</p>
+
+<p><strong>Why it exists / what it relaxes.</strong> Real-time ordering is the expensive part of linearizability, because honoring it forces tight coordination on every operation. If you only need everyone to <em>agree on one order</em> — but you don't care that the order exactly tracks the clock — you can sometimes go faster. The catch: a read may return a value that is technically "in the past" relative to wall time, <em>as long as every observer sees that same consistent story.</em></p>
+
+<div class="analogy"><strong>Analogy:</strong> Think of a movie everyone watches, but on a slight broadcast delay. Everybody in the world sees the exact same scenes in the exact same order — there is one timeline and no one disagrees about what happened next. But what they see is a few seconds behind real life. The order is shared and consistent; it just isn't "live." Linearizability is the live broadcast; sequential consistency is the synchronized-but-delayed broadcast.</div>
+
+<div class="example"><strong>Example:</strong> Suppose Alice posts "A" then "B"; Bob posts "X" then "Y". Under sequential consistency every reader might see the order <code>A, X, B, Y</code> — Alice's A-before-B and Bob's X-before-Y are both preserved, and <em>everyone</em> sees that same interleaving. What is forbidden is one reader seeing <code>A, B</code> while another sees <code>B, A</code> (that breaks the single agreed order). Older multiprocessor CPU memory systems were often designed to be sequentially consistent.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Thinking sequential consistency means "reads are fresh." It does not. It only means there is one agreed order. A reader can sit reading a stale-but-consistent view forever, as long as that view is part of the one global order everyone agrees on. Freshness (real-time) is what linearizability adds on top.</div>
+
+<h3>6.5 Causal consistency</h3>
+
+<p><strong>What it is.</strong> Causal consistency is weaker than sequential, but it captures the ordering that humans actually care about: <em>cause before effect.</em> The rule: if one operation <strong>causally precedes</strong> another, then every node must see them in that order. Operations that are <strong>concurrent</strong> (neither caused the other) may be seen in different orders on different nodes — and that is allowed.</p>
+
+<p><strong>What "causally precedes" means.</strong> Operation A causally precedes operation B if any of these hold: they were done by the same client and A came first; or B read the value that A wrote; or there is a chain of such links connecting them. This is exactly the "happens-before" relationship that <strong>vector clocks</strong> track (from the logical-clocks section). Vector clocks let each node detect, for any two operations, whether one happened-before the other or whether they are concurrent. That is precisely the information causal consistency needs to enforce its rule.</p>
+
+<pre class="diagram">
+Causal chain that MUST be preserved everywhere:
+
+  Alice: post  "Lost my keys 😫"        (operation P)
+                     │  (Bob READS P, so his reply is caused by it)
+                     ▼
+  Bob:   comment "Found them by the door!" (operation C, C depends on P)
+
+  Every node must show P before C.  Showing C ("Found them!") with no
+  visible P makes Bob look insane. Causal consistency forbids that.
+
+Concurrent writes (no cause link) — order may differ per node:
+
+  Carol: post "Happy Friday!"   ─┐  neither read the other,
+  Dave:  post "Good morning!"   ─┘  so node1 may show Carol-then-Dave,
+                                    node2 Dave-then-Carol. Both OK.
+</pre>
+
+<div class="analogy"><strong>Analogy:</strong> A group chat. A question and its answer must always appear in that order — answer-before-question is nonsense, because the answer was <em>caused</em> by reading the question. But two unrelated people each saying "good morning" at the same moment? It doesn't matter who appears first; nobody is confused if different phones momentarily show them in different orders. Causal consistency enforces the first rule and relaxes the second.</div>
+
+<div class="example"><strong>Example:</strong> The research system <strong>COPS</strong> ("Clusters of Order-Preserving Servers," from the 2011 paper <em>"Don't Settle for Eventual"</em>) provides scalable <em>causal+</em> consistency across data centers. It attaches explicit dependency metadata to each write so a replica can wait until everything that write <em>depends on</em> has arrived before exposing it. This is why a comment never shows up before the post it replies to, even across continents.</div>
+
+<p><strong>Why it matters.</strong> Causal consistency is a sweet spot: it stays <em>available</em> during network partitions (unlike linearizability) yet still rules out the most jarring anomalies (effects appearing before causes). It is often called the strongest consistency that a system can offer while remaining always-available.</p>
+
+<h3>6.6 Eventual consistency</h3>
+
+<p><strong>What it is.</strong> The weakest commonly-used model. The only promise: <em>if writes stop coming in, then after enough time all replicas will converge to the same value.</em> That's it. While writes are still flowing, reads on different replicas may return different, stale values, and there is no promise about ordering. "Eventually" has no guaranteed deadline — usually milliseconds, occasionally much longer.</p>
+
+<p><strong>Why it exists.</strong> It buys you maximum speed and maximum availability. A read can be answered by the nearest replica with zero coordination (~1&nbsp;ms), and the system keeps serving reads and writes even when nodes are cut off from each other. You trade freshness for performance and uptime — exactly the AP corner of the CAP theorem.</p>
+
+<p><strong>How it works.</strong> Replicas accept writes locally and gossip changes to each other in the background. When two replicas discover they disagree (a conflict), they resolve it with a rule — common ones are <em>last-write-wins</em> (the write with the highest timestamp wins) or merging with vector clocks / <em>CRDTs</em> (data types mathematically designed to merge without conflict).</p>
+
+<div class="analogy"><strong>Analogy:</strong> Email or postal mail. If you and your friend each mail a letter, you don't see each other's letter instantly. They arrive after a delay, possibly out of order. But if you both stop sending, eventually you'll both have received every letter and you'll agree on the full picture. The mail system is highly available (you can always drop a letter in the box) but never "live."</div>
+
+<div class="example"><strong>Example:</strong> <strong>Amazon DynamoDB</strong> defaults to eventually consistent reads because most reads tolerate slightly stale data, and a strongly consistent read costs twice the read capacity. <strong>Apache Cassandra</strong> is eventually consistent at its core but <em>tunable</em>: you choose how many replicas must acknowledge each read (R) and write (W). If you pick W + R &gt; replication factor (e.g. <code>QUORUM</code> reads and writes with RF=3, so W=R=2), you regain strong consistency for that operation at the cost of more coordination. The amazon Dynamo paper (2007) and these systems are the reason eventual consistency became mainstream.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Believing "eventual" means "a few milliseconds, guaranteed." It is not a time bound. Under load or partition, "eventually" can stretch into seconds or longer. Never write code that assumes a write you just made is already visible on another replica.</div>
+
+<h3>6.7 Client-centric (session) guarantees</h3>
+
+<p>Plain eventual consistency is often <em>too</em> surprising — for example, you save your profile, reload the page, and your change is gone (because the reload hit a different, stale replica). <strong>Client-centric guarantees</strong> (also called <strong>session guarantees</strong>) fix the worst surprises <em>for a single client's own session</em>, without forcing global coordination. The four classic guarantees come from the Bayou project at Xerox PARC and the 1994 paper <em>"Session Guarantees for Weakly Consistent Replicated Data"</em> by Terry et al. A "session" is just one client's sequence of operations over time.</p>
+
+<table>
+<thead>
+<tr><th>Guarantee</th><th>Plain-English promise</th><th>Example of the bug it prevents</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Read-your-writes</strong></td><td>After you write something, your own later reads will see it (or something newer).</td><td>You change your password, then immediately log in — and the old password still works because your read hit a stale replica.</td></tr>
+<tr><td><strong>Monotonic reads</strong></td><td>Once you've seen a value, you never see an older one later. Time only moves forward for you.</td><td>You refresh a thread, see 10 comments, refresh again and see only 8 — the count went backwards.</td></tr>
+<tr><td><strong>Monotonic writes</strong></td><td>Your writes are applied in the order you made them.</td><td>You set name = "Bob" then name = "Robert", but a replica applies them backwards and you end up as "Bob".</td></tr>
+<tr><td><strong>Writes-follow-reads</strong></td><td>A write you make after reading something is ordered <em>after</em> what you read. (Preserves cause→effect across the system.)</td><td>You read a post, then reply to it, but your reply propagates to a replica that doesn't have the post yet — a reply to nothing.</td></tr>
+</tbody>
+</table>
+
+<div class="analogy"><strong>Analogy:</strong> These four are the "don't gaslight one user" rules. The world (other people's data) can be fuzzy and lag behind, but <em>your own</em> experience should be self-consistent: what you typed is still there, your view never rewinds, your edits land in order, and your replies never precede what they replied to. It's like a notebook only you write in — even if the shared library is chaotic, your personal notebook must always make sense to you.</div>
+
+<p><strong>Why it matters.</strong> Session guarantees are how real apps make eventual-consistency stores feel sane to users. They are cheap (often implemented by "sticking" a client to one replica, or by the client carrying a small version vector of what it has already seen) and they eliminate the most infuriating, support-ticket-generating glitches without paying for full linearizability.</p>
+
+<h3>6.8 Putting it together: the comparison table</h3>
+
+<table>
+<thead>
+<tr><th>Model</th><th>Guarantee (what a read can return)</th><th>Cost / latency</th><th>Available under partition?</th><th>Example systems</th><th>When to choose it</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Linearizability</strong> (strong)</td>
+<td>Always the latest write; respects real-time order; acts like one copy.</td>
+<td>Highest — quorum/leader round-trip per op (tens to hundreds of ms cross-region).</td>
+<td><strong>No</strong> (CP — must stop to stay correct).</td>
+<td>etcd, ZooKeeper, Google Spanner, single-leader RDBMS</td>
+<td>Locks, leader election, bank balances, inventory counts, anything where stale = wrong.</td>
+</tr>
+<tr>
+<td><strong>Sequential</strong></td>
+<td>One global order everyone agrees on; program order kept; <em>not</em> real-time.</td>
+<td>High, but no real-time clock constraint.</td>
+<td>No (still needs total-order agreement).</td>
+<td>Older CPU memory models; some replicated logs</td>
+<td>When all observers must agree on one order but exact freshness isn't required.</td>
+</tr>
+<tr>
+<td><strong>Causal</strong></td>
+<td>Cause-before-effect preserved everywhere; concurrent writes may differ per node.</td>
+<td>Moderate — track dependencies (vector clocks), no global lock.</td>
+<td><strong>Yes</strong> (strongest model that stays available).</td>
+<td>COPS, MongoDB causal sessions, AntidoteDB</td>
+<td>Social feeds, comment threads, collaborative apps — kill "effect before cause" anomalies cheaply.</td>
+</tr>
+<tr>
+<td><strong>Client-centric</strong> (session)</td>
+<td>Sane within your own session (read-your-writes, monotonic, etc.); world may still be fuzzy.</td>
+<td>Low — sticky replica or small client-side version vector.</td>
+<td>Yes.</td>
+<td>Bayou; bolt-on layer over Cassandra/DynamoDB</td>
+<td>Layer on top of eventual stores to remove the most jarring per-user glitches.</td>
+</tr>
+<tr>
+<td><strong>Eventual</strong></td>
+<td>Maybe stale, any order; converges only after writes stop.</td>
+<td>Lowest — answer from nearest replica, no coordination (~1 ms).</td>
+<td>Yes (AP — always answers).</td>
+<td>DynamoDB (default), Cassandra (default), Riak, DNS</td>
+<td>Shopping carts, view counts, caches, like counts — high scale, staleness is harmless.</td>
+</tr>
+</tbody>
+</table>
+
+<h3>6.9 Tie-back to CAP and PACELC</h3>
+
+<p>The ladder is really the CAP/PACELC tradeoff viewed from the read side. <strong>CAP</strong> says when the network <em>partitions</em>, you must choose Consistency or Availability. <strong>PACELC</strong> (Daniel Abadi, 2010) extends it: <em>if Partitioned, choose Availability or Consistency; Else (normal operation), choose Latency or Consistency.</em> In other words, the consistency/latency tradeoff is paid <em>even when nothing is broken.</em></p>
+
+<ul>
+<li><strong>Linearizability = more coordination.</strong> Every operation talks to a majority, so it is slower (worse latency, the "L" in PACELC) and must stop during partitions (gives up "A" in CAP). It is the PC/EC corner.</li>
+<li><strong>Eventual = less coordination.</strong> Answer locally, gossip later. Fast and always-available (the PA/EL corner), but reads can be stale.</li>
+<li><strong>Causal</strong> sits in the available band: it is the strongest contract you can keep while still answering during a partition.</li>
+</ul>
+
+<div class="key"><strong>Key takeaway:</strong> Moving <em>up</em> the ladder buys you simpler reasoning and fresher data, paid for in coordination, latency, and lost availability. Moving <em>down</em> buys speed and uptime, paid for with staleness and weird orderings your code must handle. There is no free lunch — only a deliberate choice per piece of data.</div>
+
+<h3>6.10 Real-world: choose the model per use case</h3>
+
+<p>The professional move is not "pick one model for the whole system." It is "pick the weakest model that is still correct for <em>this specific data.</em>" Strong where it must be, weak where you can get away with it.</p>
+
+<ul>
+<li><strong>Shopping cart → eventual is fine.</strong> If two devices add items and a replica is briefly stale, no harm — you merge the carts later (this is exactly what Amazon's Dynamo did, even merging deleted items back in rather than losing an add). Customers tolerate "your cart updated a second late." They do not tolerate "the store was down."</li>
+<li><strong>Bank balance / product inventory → need linearizability.</strong> If a read can return a stale balance, you allow double-spends; if two buyers both read "1 left" from stale replicas, you oversell the last unit. Here staleness is a real money bug, so you pay for strong consistency (single leader or quorum, e.g. Spanner or a primary RDBMS).</li>
+<li><strong>Social feed / comments → causal is the right fit.</strong> You don't need the absolute latest global state, but a reply must never appear before the post it replies to. Causal consistency enforces exactly that ordering while staying fast and available at huge scale.</li>
+<li><strong>"My profile changes vanished on reload" → add read-your-writes</strong> (a session guarantee) on top of an otherwise-eventual store. Cheap fix, huge UX win.</li>
+</ul>
+
+<h3>Common mistakes &amp; misconceptions</h3>
+
+<div class="warn"><strong>Common mistake:</strong> Treating "consistency" as a single binary (consistent vs. not). It is a ladder of named contracts. Saying "we need a consistent database" is meaningless until you say <em>which model</em> — linearizable, causal, eventual, etc.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Assuming sequential consistency or "strong-sounding" models guarantee fresh reads. Only linearizability adds the real-time rule. Sequential consistency guarantees one <em>agreed</em> order, which can still lag reality.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Believing "eventual consistency" comes with a time guarantee. "Eventually" has no deadline. Under partition it can be long. Never code as if a just-made write is already globally visible.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Confusing the "C" in ACID with the "C" in CAP. ACID-C means "the data obeys your integrity rules within a transaction"; CAP-C means linearizability across replicas. They are unrelated guarantees that share a letter.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Thinking strong consistency is "the safe default, just always use it." It costs latency on <em>every</em> operation (PACELC's "else" branch) and sacrifices availability during partitions. Defaulting everything to linearizable can make a system needlessly slow and fragile.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Forgetting that concurrent (non-causal) writes legitimately appear in different orders on different nodes under causal/eventual models. That is not a bug — it is the contract. Your conflict-resolution logic must expect it.</div>
+
+<h3>Best practices</h3>
+
+<div class="tip"><strong>Best practice:</strong> Choose consistency <em>per data type</em>, not per system. Use linearizability for money, inventory, locks, and identity; use causal or eventual for feeds, carts, counters, and caches. Most real systems mix several models.</div>
+
+<div class="tip"><strong>Best practice:</strong> Default to the <em>weakest</em> model that is still correct for the use case, then strengthen only where a real bug appears. Weak-by-default keeps you fast and available; you pay for strength only where staleness causes harm.</div>
+
+<div class="tip"><strong>Best practice:</strong> On eventually-consistent stores, add client-centric (session) guarantees — especially read-your-writes and monotonic reads — to eliminate the "my change disappeared / the list went backwards" glitches that generate support tickets.</div>
+
+<div class="tip"><strong>Best practice:</strong> Use tunable consistency where the database offers it (e.g. Cassandra's per-query R/W levels, DynamoDB's optional strong reads). Pay the strong-read price only on the specific operations that need it.</div>
+
+<div class="tip"><strong>Best practice:</strong> Make the chosen model explicit in code and docs ("inventory reads are linearizable; feed reads are causal"). An accidental, undocumented consistency model is a future outage. Test it — Jepsen-style fault-injection tests verify your system actually honors the contract it claims.</div>
+
+<div class="tip"><strong>Best practice:</strong> When you must be strong and global, budget for the latency it forces (quorum round-trips, Spanner's commit-wait). Place leaders/quorums near the clients that need fresh reads to keep that cost bounded.</div>
+
+<h3>Section summary</h3>
+
+<ul>
+<li>A <strong>consistency model</strong> is a contract stating which values a read may legally return given the writes that occurred — it is a spectrum, not a yes/no.</li>
+<li><strong>Linearizability</strong> (strong): behaves like one up-to-date copy; reads always see the latest write and respect real-time order. Strongest, slowest, unavailable under partition (CP). Used by etcd, ZooKeeper, Spanner.</li>
+<li><strong>Sequential consistency:</strong> one global order everyone agrees on, preserving each client's program order — but <em>not</em> tied to real time, so reads can be consistent yet stale.</li>
+<li><strong>Causal consistency:</strong> cause-before-effect is preserved everywhere (tracked via vector clocks); concurrent writes may differ per node. The strongest model that stays available under partition. Great for feeds and comments (COPS).</li>
+<li><strong>Eventual consistency:</strong> only promises replicas converge <em>after writes stop</em>; reads may be stale and unordered. Fastest and most available (AP). Used by DynamoDB and Cassandra by default.</li>
+<li><strong>Client-centric (session) guarantees</strong> — read-your-writes, monotonic reads, monotonic writes, writes-follow-reads — make a weak store feel sane for one user's own session, cheaply (from the Bayou project).</li>
+<li><strong>CAP/PACELC tie-in:</strong> up the ladder = more coordination = slower and less available; down the ladder = faster and more available but stale. The latency tradeoff is paid even when the network is healthy (PACELC's "else").</li>
+<li><strong>In practice:</strong> shopping carts → eventual; bank balance/inventory → linearizable; social feeds/comments → causal; "my edit vanished" → add read-your-writes. Pick the weakest model that is still correct for each piece of data.</li>
+</ul>
+
+<p><strong>Sources:</strong></p>
+<ul>
+<li><a href="https://cs.brown.edu/people/mph/HerlihyW90/p463-herlihy.pdf">Herlihy &amp; Wing, "Linearizability: A Correctness Condition for Concurrent Objects," ACM TOPLAS 1990</a></li>
+<li><a href="https://jepsen.io/consistency/models/linearizable">Jepsen — Linearizability (consistency model definitions)</a></li>
+<li><a href="https://dl.acm.org/doi/pdf/10.1145/176575.176576">Attiya &amp; Welch, "Sequential Consistency versus Linearizability," ACM TOCS</a></li>
+<li><a href="https://www.cs.cornell.edu/courses/cs734/2000FA/cached%20papers/SessionGuaranteesPDIS_1.html">Terry et al., "Session Guarantees for Weakly Consistent Replicated Data" (Bayou)</a></li>
+<li><a href="https://www.cs.princeton.edu/courses/archive/fall17/cos418/docs/L16-causal.pdf">Princeton COS 418 — Causal Consistency (Michael Freedman)</a></li>
+<li><a href="https://xzhu0027.gitbook.io/blog/storage/index/dont-settle-for-eventual-scalable-causal-consistency-for-wide-area-storage-with-cops">"Don't Settle for Eventual" — COPS / causal+ consistency</a></li>
+<li><a href="https://docs.cloud.google.com/spanner/docs/true-time-external-consistency">Google Cloud — Spanner TrueTime and external consistency</a></li>
+</ul></section>
+<section class="section"><h2 id="glossary">Glossary of Terms</h2>
+<dl>
+<dt>Asynchronous network</dt>
+<dd>A network where messages can take any amount of time to arrive, with no guaranteed upper limit. The internet behaves this way. It is the root cause of most distributed-systems difficulty, because you can never tell a slow message apart from a lost one.</dd>
+
+<dt>Availability</dt>
+<dd>The promise that the system answers every request it receives (even if the answer might be slightly out of date). A system is "highly available" when it almost never refuses to respond.</dd>
+
+<dt>BASE</dt>
+<dd>An informal counterpart to ACID, standing for "Basically Available, Soft state, Eventually consistent." Describes systems that favour staying up and converging over time rather than being perfectly consistent at every instant.</dd>
+
+<dt>CAP theorem</dt>
+<dd>The rule that when the network between your machines breaks (a partition), a distributed system must choose between staying <em>Consistent</em> (everyone sees the same data) and staying <em>Available</em> (everyone still gets an answer). You cannot have both during the break.</dd>
+
+<dt>Causality</dt>
+<dd>The relationship where one event could have influenced another — event A "happened before" event B in a way that B might depend on A. The opposite is two events being <em>concurrent</em> (neither could have affected the other).</dd>
+
+<dt>Clock skew</dt>
+<dd>The difference between two machines' clocks at a single moment. Even well-synchronised servers are off by a few milliseconds, which is enough to order events wrongly.</dd>
+
+<dt>Clock drift</dt>
+<dd>The gradual speeding-up or slowing-down of a single machine's clock over time, so it slowly wanders away from real time until something corrects it.</dd>
+
+<dt>Concurrent events</dt>
+<dd>Two events where neither happened before the other — they ran independently and neither could have caused the other. Vector clocks can detect this; Lamport clocks cannot.</dd>
+
+<dt>Consensus</dt>
+<dd>The problem of getting several machines to agree on a single value (for example, "who is the leader?" or "what is the next entry in the log?") even when some machines or messages fail.</dd>
+
+<dt>Consistency (in CAP)</dt>
+<dd>The promise that every read sees the most recent write — all machines show the same data at the same time. (Note: this is stricter than the "C" in ACID, which is a different idea.)</dd>
+
+<dt>Consistency model</dt>
+<dd>The specific promise a system makes about how fresh and ordered your data looks. Ranges from <em>linearizability</em> (always perfectly current) down to <em>eventual consistency</em> (correct eventually).</dd>
+
+<dt>Eventual consistency</dt>
+<dd>The weakest common promise: if writes stop, all copies of the data will <em>eventually</em> become identical. It does not say <em>when</em>, and reads in the meantime may be stale.</dd>
+
+<dt>Fallacies of distributed computing</dt>
+<dd>A famous list of eight false assumptions beginners make (e.g. "the network is reliable", "latency is zero"). Believing them quietly is how systems break.</dd>
+
+<dt>Fault</dt>
+<dd>Something going wrong in one component — a disk dies, a message is dropped, a machine pauses. A fault is local and expected; good systems <em>tolerate</em> faults.</dd>
+
+<dt>Failure</dt>
+<dd>When the system as a whole stops doing its job. A failure is a fault that was not contained. The goal of fault tolerance is to stop faults from becoming failures.</dd>
+
+<dt>Happens-before</dt>
+<dd>A relationship (written A → B) meaning A could have caused or influenced B: either they happened on the same machine in order, or A was the sending of a message that B received. The foundation of logical ordering.</dd>
+
+<dt>Idempotency</dt>
+<dd>A property where doing the same operation twice has the same effect as doing it once (like pressing a floor button in a lift). Crucial because retried messages are common and you must not double-charge or double-apply them.</dd>
+
+<dt>Latency</dt>
+<dd>The time it takes for one message to travel from sender to receiver. Always greater than zero, and unpredictable across a real network.</dd>
+
+<dt>Linearizability</dt>
+<dd>The strongest single-object consistency model: the system behaves as if there were one copy of the data and every operation happened instantly at one point in time. The closest a distributed system gets to "feels like one machine."</dd>
+
+<dt>Logical clock</dt>
+<dd>A counter used to order events without relying on wall-clock time. It tracks <em>order</em>, not real seconds. Lamport clocks and vector clocks are the two main kinds.</dd>
+
+<dt>Lamport clock</dt>
+<dd>A single counter per machine that increments on each event and travels with messages. It guarantees that if A happened before B, A's number is smaller — but a smaller number does <em>not</em> prove causality.</dd>
+
+<dt>Linearizable vs serializable</dt>
+<dd>Linearizable is about a single object being up to date in real time; serializable is about multi-step transactions appearing to run one at a time. They are different guarantees often confused.</dd>
+
+<dt>Monotonic read</dt>
+<dd>A guarantee that once you have seen a newer value, you will never later see an older one — time only moves forward from your point of view.</dd>
+
+<dt>Node</dt>
+<dd>A single machine (server, process, or instance) participating in the system. The basic building block; "distributed" means more than one node.</dd>
+
+<dt>NTP (Network Time Protocol)</dt>
+<dd>The standard service that nudges machine clocks toward real time over the network. Helpful, but it only narrows clock skew — it never eliminates it.</dd>
+
+<dt>PACELC</dt>
+<dd>An extension of CAP: <em>if</em> there is a Partition, trade Availability vs Consistency; <em>Else</em> (normal operation) trade Latency vs Consistency. It reminds you the consistency cost exists even when nothing is broken.</dd>
+
+<dt>Partition (network partition)</dt>
+<dd>A break in the network that splits the nodes into groups that cannot talk to each other, even though each group is still running. The scenario CAP is about.</dd>
+
+<dt>Partition tolerance</dt>
+<dd>The ability of the system to keep operating despite a network partition. On real networks this is non-negotiable, which is why CAP is really a choice between C and A.</dd>
+
+<dt>Quorum</dt>
+<dd>A minimum number of nodes that must agree before an action counts (often "more than half"). Quorums let a system make safe decisions without hearing from every node.</dd>
+
+<dt>Read-your-writes</dt>
+<dd>A guarantee that after you make a change, you will always see your own change on subsequent reads — even if other users do not yet.</dd>
+
+<dt>Replica</dt>
+<dd>A copy of the data kept on another node. Replicas give speed and fault tolerance, but keeping them in agreement is the source of consistency problems.</dd>
+
+<dt>Replication</dt>
+<dd>The act of copying data across multiple nodes so it survives failures and can be read from nearby. The more copies, the harder consistency becomes.</dd>
+
+<dt>Stale read</dt>
+<dd>Reading a value that has since been updated elsewhere — you got an old answer because the newer write has not reached your replica yet.</dd>
+
+<dt>Strong consistency</dt>
+<dd>An umbrella term for models (like linearizability) where reads always reflect the latest write, so the system feels like a single up-to-date copy.</dd>
+
+<dt>Throughput</dt>
+<dd>How much work the system handles per unit of time (e.g. requests per second). Distinct from latency: a system can be high-throughput yet still slow per request.</dd>
+
+<dt>Timestamp</dt>
+<dd>A recorded time (or counter value) attached to an event. Wall-clock timestamps are unreliable for ordering across machines because of skew; logical timestamps are designed for it.</dd>
+
+<dt>Total order</dt>
+<dd>An arrangement where every pair of events has a definite "this one is first" answer. Lamport clocks can produce one (with tie-breaking); real causality only gives a partial order.</dd>
+
+<dt>Vector clock</dt>
+<dd>A list of counters — one per node — carried with each event. By comparing two vectors you can tell whether one event happened before the other, or whether they were concurrent. More information than a Lamport clock.</dd>
+
+<dt>Wall-clock time</dt>
+<dd>The ordinary time-of-day a machine reports (e.g. 10:42:07). Convenient for humans but untrustworthy for ordering events across machines because of skew and drift.</dd>
+
+<dt>Write conflict</dt>
+<dd>When two nodes change the same piece of data independently and the system must later decide which change wins (or how to merge them). Common under eventual consistency.</dd>
+</dl></section>
+<section class="section"><h2 id="faq">Frequently Asked Questions</h2>
+
+<p><strong>Q: What actually makes a system "distributed" — isn't every website on a server somewhere?</strong></p>
+<p>A: A single server running everything is not distributed. It becomes distributed the moment two or more separate machines (nodes) cooperate to provide one service. The defining feature is that those machines can only learn about each other by sending messages over a network — and that network can be slow, drop messages, or split in two. That single fact is where all the difficulty comes from.</p>
+
+<p><strong>Q: Why can't I just put a timestamp on everything and sort by time?</strong></p>
+<p>A: Because every machine's clock is slightly wrong, and they are all wrong by different amounts (clock skew). Two events a millisecond apart on two machines can easily get timestamps that are in the wrong order. So sorting by wall-clock time can tell you event B came "before" event A even when A actually caused B. Logical clocks exist precisely to order events correctly without trusting the wall clock.</p>
+
+<p><strong>Q: If NTP keeps clocks in sync, why is clock skew still a problem?</strong></p>
+<p>A: NTP <em>narrows</em> the gap — it does not close it. After syncing, machines are still typically a few milliseconds apart, and network delay means the correction itself arrives late. A few milliseconds is an eternity in computing; thousands of events can happen in that window. NTP makes timestamps "good enough for humans," not "good enough to order events safely."</p>
+
+<p><strong>Q: Lamport clocks vs vector clocks — which should I use?</strong></p>
+<p>A: Use a <strong>Lamport clock</strong> when you only need to put events into one agreed order and you do not care <em>why</em>. Use a <strong>vector clock</strong> when you need to know whether two events were truly causally related or just happened independently (concurrent) — for example, to detect and resolve write conflicts. The trade-off: a Lamport clock is one number; a vector clock is one number <em>per node</em>, so it costs more space and grows with the cluster.</p>
+
+<p><strong>Q: What's the real difference between Lamport and vector clocks in one sentence?</strong></p>
+<p>A: A Lamport clock guarantees "if A caused B then A's number is smaller," but a smaller number does not prove causation; a vector clock can actually tell you "A caused B," "B caused A," or "they're concurrent" with certainty.</p>
+
+<p><strong>Q: Is the CAP theorem still relevant, or is it outdated?</strong></p>
+<p>A: It is still relevant, but it is often quoted too simply. CAP only describes what happens <em>during a network partition</em> — and even then it is not a clean "pick 2 of 3," because partition tolerance is mandatory on real networks. So the real choice is just C vs A while the network is broken. PACELC is the more honest, modern framing because it also describes the trade-off (latency vs consistency) when nothing is broken — which is most of the time.</p>
+
+<p><strong>Q: Does "choosing availability" mean my data gets corrupted?</strong></p>
+<p>A: No. It means that during a network split, different parts of the system may temporarily show different (stale) values, and they may have to reconcile conflicting writes afterward. The data is not corrupt — it is just temporarily out of agreement. Choosing consistency instead means some requests get refused during the split rather than risk showing stale data.</p>
+
+<p><strong>Q: Does "eventually consistent" mean my data is wrong?</strong></p>
+<p>A: Not wrong — just possibly <em>not the latest yet</em>. Eventual consistency promises that if writes stop, every copy will converge to the same correct value. In the meantime a read might be stale (an old-but-valid value). For things like a "likes" count this is fine; for a bank balance you would want a stronger model. The data is never garbage, it is just behind.</p>
+
+<p><strong>Q: How stale can an eventually consistent read actually be?</strong></p>
+<p>A: The basic definition gives no time bound at all — "eventually" could in theory be a long time, though in practice good systems converge in milliseconds to seconds. If you need a promise like "no more than 5 seconds behind," you need a stronger model (such as bounded staleness) — plain eventual consistency does not provide one.</p>
+
+<p><strong>Q: What's the difference between a fault and a failure? They sound the same.</strong></p>
+<p>A: A <strong>fault</strong> is one thing going wrong locally — a disk dies, a packet is lost, a node freezes. A <strong>failure</strong> is when the whole system stops doing its job. The entire craft of distributed systems is stopping faults from turning into failures (this is "fault tolerance"). Faults are normal and constant; failures are what you design to prevent.</p>
+
+<p><strong>Q: Why do retries need to be "idempotent"? Can't I just resend a request?</strong></p>
+<p>A: Because on an unreliable network you often cannot tell whether your request failed or whether just the <em>reply</em> got lost. If you resend a non-idempotent request like "charge $10," you might charge twice. Idempotency means doing the operation again has no extra effect — so retrying is always safe. This is why so many systems use idempotency keys.</p>
+
+<p><strong>Q: Is linearizability the same as "the database is fast" or "ACID"?</strong></p>
+<p>A: No. Linearizability is about <em>freshness and ordering</em> of a single object — the system behaves as if there is one copy and every operation happens at one instant. It says nothing about speed (it usually costs latency) and it is not the same as ACID transactions, which are about multi-step operations being all-or-nothing and isolated. They are different guarantees that often appear together but are not interchangeable.</p>
+
+<p><strong>Q: Strong consistency sounds best — why doesn't everyone just use it?</strong></p>
+<p>A: Because it costs latency and availability. To guarantee every read is current, nodes must coordinate before answering, which is slower, and during a network partition they may have to refuse requests entirely (the CAP choice). For data where stale-by-a-moment is harmless, weaker consistency gives a faster, more available system. You pick the weakest model that is still <em>correct</em> for your use case.</p>
+
+<p><strong>Q: What is a quorum and why "more than half"?</strong></p>
+<p>A: A quorum is the minimum number of nodes that must agree for a decision to count. "More than half" is popular because two different majorities can never exist at the same time — so the system can never accidentally make two conflicting decisions, even if the network splits. This is how systems stay safe without needing every single node to respond.</p>
+
+<p><strong>Q: I'm a beginner — which of these six topics matters most in practice?</strong></p>
+<p>A: For day-to-day reasoning, the most useful ideas are the <em>fallacies</em> (Section 2, they keep you humble about the network), <em>consistency models</em> (Section 6, they tell you what your database actually promises), and <em>CAP/PACELC</em> (Section 5, the trade-offs you will discuss in design reviews). Clocks and causality (Sections 3–4) are the deeper foundation that makes the others click, so don't skip them — but the three above are what you will reach for first.</p>
+
+<p><strong>Q: Do I need to memorise all eight fallacies?</strong></p>
+<p>A: It helps, but the spirit matters more than the list. The one to truly internalise is "the network is reliable" is false — once you stop assuming messages always arrive, on time, in order, the rest follow naturally. Treat the network as slow, lossy, and occasionally split, and you will design defensively without reciting the list.</p></section>
+<section class="section"><h2 id="cheatsheet">Revision Cheat Sheet</h2>
+
+<h3>The 8 Fallacies of Distributed Computing (all are FALSE)</h3>
+<ul>
+<li>The network is reliable</li>
+<li>Latency is zero</li>
+<li>Bandwidth is infinite</li>
+<li>The network is secure</li>
+<li>Topology doesn't change</li>
+<li>There is one administrator</li>
+<li>Transport cost is zero</li>
+<li>The network is homogeneous</li>
+</ul>
+<div class="warn"><strong>If you remember only one:</strong> "the network is reliable" is false. Assume messages can be slow, lost, duplicated, reordered, or cut off entirely — and a slow message is indistinguishable from a lost one.</div>
+
+<h3>Fault vs Failure</h3>
+<table>
+<tr><th>Term</th><th>Meaning</th><th>Goal</th></tr>
+<tr><td>Fault</td><td>One component goes wrong (disk, packet, node)</td><td>Tolerate it</td></tr>
+<tr><td>Failure</td><td>The whole system stops doing its job</td><td>Prevent it</td></tr>
+</table>
+
+<h3>Happens-Before (A → B) rules</h3>
+<ul>
+<li><strong>Same node, in order:</strong> if A then B on one machine, A → B.</li>
+<li><strong>Message:</strong> sending a message → receiving that message.</li>
+<li><strong>Transitive:</strong> if A → B and B → C, then A → C.</li>
+<li><strong>Concurrent:</strong> if neither A → B nor B → A, they are concurrent (independent).</li>
+</ul>
+
+<h3>Lamport vs Vector Clocks</h3>
+<table>
+<tr><th></th><th>Lamport clock</th><th>Vector clock</th></tr>
+<tr><td>Size</td><td>One number per node</td><td>One number <em>per node, per node</em> (a list)</td></tr>
+<tr><td>On local event</td><td>counter += 1</td><td>increment own slot</td></tr>
+<tr><td>On send</td><td>send counter with message</td><td>send whole vector</td></tr>
+<tr><td>On receive</td><td>counter = max(local, received) + 1</td><td>take max of each slot, then increment own</td></tr>
+<tr><td>Tells you A→B?</td><td>Guarantees A→B ⇒ A&lt;B (but A&lt;B doesn't prove A→B)</td><td>Yes — can prove A→B, B→A, or concurrent</td></tr>
+<tr><td>Detects concurrency?</td><td>No</td><td>Yes</td></tr>
+</table>
+<div class="tip">Comparing two vectors: if every slot of V1 ≤ V2 (and at least one is strictly less), then A → B. If some slots are bigger and some smaller, the events are <strong>concurrent</strong>.</div>
+
+<h3>CAP &amp; PACELC one-liners</h3>
+<ul>
+<li><strong>CAP:</strong> during a network <em>Partition</em>, choose <em>Consistency</em> or <em>Availability</em> — you can't keep both.</li>
+<li><strong>Partition tolerance is mandatory</strong> on real networks, so CAP is really just C vs A.</li>
+<li><strong>CP system:</strong> refuses some requests during a split to avoid stale data.</li>
+<li><strong>AP system:</strong> always answers, may return stale data and reconcile later.</li>
+<li><strong>PACELC:</strong> <em>if Partition → A vs C; Else → Latency vs C.</em> The consistency cost exists even when nothing is broken.</li>
+</ul>
+
+<h3>Consistency model ladder (strongest → weakest)</h3>
+<table>
+<tr><th>Model</th><th>Promise in plain English</th></tr>
+<tr><td>Linearizable (strongest)</td><td>Acts like one copy; every read sees the latest write, instantly.</td></tr>
+<tr><td>Sequential</td><td>Everyone sees operations in the same order, but not necessarily real-time.</td></tr>
+<tr><td>Causal</td><td>Cause is always seen before effect; unrelated events may differ in order.</td></tr>
+<tr><td>Read-your-writes / Monotonic reads</td><td>You always see your own changes and never go backwards in time.</td></tr>
+<tr><td>Eventual (weakest)</td><td>If writes stop, all copies eventually match. Reads may be stale meanwhile.</td></tr>
+</table>
+
+<h3>Rules of thumb</h3>
+<div class="key">
+<ul>
+<li>Never order events across machines by wall-clock time — use logical clocks.</li>
+<li>NTP narrows clock skew, it never removes it. Assume milliseconds of error.</li>
+<li>Make every retried operation <strong>idempotent</strong> — you can't tell a lost request from a lost reply.</li>
+<li>Pick the <strong>weakest</strong> consistency model that is still correct for the use case — stronger costs latency and availability.</li>
+<li>Stale ≠ wrong. Eventually consistent data is just behind, not corrupt.</li>
+<li>Use a <strong>quorum</strong> ("more than half") so two conflicting decisions can never both win.</li>
+<li>Design to stop faults from becoming failures — faults are constant and normal.</li>
+</ul>
+</div></section>
+
+</body>
+</html>

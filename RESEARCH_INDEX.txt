@@ -1,0 +1,164 @@
+================================================================================
+ PRINT-FLOW-360  ·  RESEARCH INDEX
+ What research was done, on what, and where the file lives.
+ Base path: readme/research/
+================================================================================
+
+Total: 71 research docs across 9 topic folders.
+
+
+================================================================================
+ 1. GTM-STRATEGY  ·  readme/research/gtm-strategy/   (15 files)
+    Go-to-market & business strategy.
+================================================================================
+
+  Topic                                  | File (readme/research/gtm-strategy/)
+  ---------------------------------------+--------------------------------------
+  Strategy foundations (start here/index)| STRATEGY_FOUNDATIONS_INDEX_2026-06-16.md
+  Customer & market understanding (index)| GTM_00_CUSTOMER_AND_MARKET_UNDERSTANDING_INDEX_2026-06-16.md
+  ICP & positioning                      | GTM_01_ICP_AND_POSITIONING_2026-06-15.md
+  Jobs To Be Done                        | GTM_02_JOBS_TO_BE_DONE_2026-06-16.md
+  Win/loss & churn interviews            | GTM_03_WIN_LOSS_AND_CHURN_INTERVIEWS_2026-06-16.md
+  Pricing research methods               | GTM_04_PRICING_RESEARCH_METHODS_2026-06-16.md
+  Competitive intelligence               | GTM_05_COMPETITIVE_INTELLIGENCE_2026-06-16.md
+  TAM / SAM / SOM modeling               | GTM_06_TAM_SAM_SOM_MODELING_2026-06-16.md
+  GTM motion selection                   | GTM_MOTION_SELECTION_2026-06-16.md
+  Beachhead & expansion strategy         | BEACHHEAD_EXPANSION_STRATEGY_2026-06-16.md
+  Bullseye channel framework             | BULLSEYE_FRAMEWORK_2026-06-16.md
+  Moats / defensibility (vertical SaaS)  | MOATS_DEFENSIBILITY_VERTICAL_SAAS_2026-06-16.md
+  Pricing & packaging strategy           | PRICING_PACKAGING_STRATEGY_2026-06-16.md
+  Product-led growth & virality          | PRODUCT_LED_GROWTH_AND_VIRALITY_2026-06-16.md
+  Sales & revenue motion                 | SALES_REVENUE_MOTION_2026-06-16.md
+
+
+================================================================================
+ 2. MARKETING-GROWTH  ·  readme/research/marketing-growth/   (9 files)
+    Demand generation & acquisition.
+================================================================================
+
+  Topic                                  | File (readme/research/marketing-growth/)
+  ---------------------------------------+--------------------------------------
+  Acquisition channels (strategy)        | ACQUISITION_CHANNELS_2026-06-15.md
+  Acquisition execution kit              | ACQUISITION_EXECUTION_KIT_2026-06-16.md
+  Brand & trust research                 | BRAND_AND_TRUST_RESEARCH_2026-06-16.md
+  Brand trust signals (SMB)              | BRAND_TRUST_SIGNALS_SMB_2026-06-16.md
+  Content & SEO growth engine            | CONTENT_AND_SEO_GROWTH_ENGINE_2026-06-15.md
+  Content marketing / SEO clusters       | CONTENT_MARKETING_SEO_CLUSTERS_2026-06-16.md
+  Conversion funnel research             | CONVERSION_FUNNEL_RESEARCH_2026-06-15.md
+  Pricing, retention & referrals         | PRICING_RETENTION_REFERRALS_STRATEGY_2026-06-15.md
+  Visual brand, design & conversion      | VISUAL_BRAND_DESIGN_CONVERSION_2026-06-16.md
+
+
+================================================================================
+ 3. METRICS-ANALYTICS  ·  readme/research/metrics-analytics/   (7 files)
+    SaaS metrics & economics.
+================================================================================
+
+  Topic                                  | File (readme/research/metrics-analytics/)
+  ---------------------------------------+--------------------------------------
+  Metrics & economics (index)            | METRICS_AND_ECONOMICS_INDEX_2026-06-16.md
+  SaaS unit economics                    | METRICS_SAAS_UNIT_ECONOMICS_2026-06-16.md
+  Cohort retention                       | METRICS_COHORT_RETENTION_2026-06-16.md
+  MRR / ARR / NRR                        | METRICS_MRR_ARR_NRR_2026-06-16.md
+  Attribution (low-ACV SMB)              | METRICS_ATTRIBUTION_LOW_ACV_SMB_2026-06-16.md
+  Funnel / event taxonomy (metrics)      | METRICS_FUNNEL_EVENT_TAXONOMY_2026-06-16.md
+  Funnel analytics event taxonomy        | FUNNEL_ANALYTICS_EVENT_TAXONOMY_2026-06-16.md
+
+
+================================================================================
+ 4. RETENTION-LIFECYCLE  ·  readme/research/retention-lifecycle/   (6 files)
+    Retention, lifecycle & churn reduction.
+================================================================================
+
+  Topic                                  | File (readme/research/retention-lifecycle/)
+  ---------------------------------------+--------------------------------------
+  Retention & lifecycle (master)         | RETENTION_AND_LIFECYCLE_MASTER_2026-06-16.md
+  Customer success & onboarding          | RETENTION_CUSTOMER_SUCCESS_ONBOARDING_2026-06-16.md
+  Lifecycle behavioral email             | RETENTION_LIFECYCLE_BEHAVIORAL_EMAIL_2026-06-16.md
+  Dunning / involuntary churn            | RETENTION_DUNNING_INVOLUNTARY_CHURN_2026-06-16.md
+  NPS / CSAT / health scoring            | RETENTION_NPS_CSAT_HEALTH_SCORING_2026-06-16.md
+  Community moat                         | RETENTION_COMMUNITY_MOAT_2026-06-16.md
+
+
+================================================================================
+ 5. AGENT-ORCHESTRATION  ·  readme/research/agent-orchestration/   (9 files)
+    Multi-agent LLM systems (foundations -> applied to PrintFlow360).
+================================================================================
+
+  Topic                                  | File (readme/research/agent-orchestration/)
+  ---------------------------------------+--------------------------------------
+  Index (start here)                     | AGENT_ORCHESTRATION_00_INDEX_2026-06-16.md
+  Foundations                            | AGENT_ORCHESTRATION_01_FOUNDATIONS_2026-06-16.md
+  Patterns                               | AGENT_ORCHESTRATION_02_PATTERNS_2026-06-16.md
+  Communication protocols (MCP/A2A)      | AGENT_ORCHESTRATION_03_COMMUNICATION_PROTOCOLS_2026-06-16.md
+  Frameworks                             | AGENT_ORCHESTRATION_04_FRAMEWORKS_2026-06-16.md
+  Context & memory                       | AGENT_ORCHESTRATION_05_CONTEXT_MEMORY_2026-06-16.md
+  Reliability, eval & observability      | AGENT_ORCHESTRATION_06_RELIABILITY_EVAL_OBS_2026-06-16.md
+  Cost & performance                     | AGENT_ORCHESTRATION_07_COST_PERFORMANCE_2026-06-16.md
+  Applied to PrintFlow360                | AGENT_ORCHESTRATION_08_APPLIED_PRINTFLOW360_2026-06-16.md
+
+
+================================================================================
+ 6. ENGINEERING-OPS  ·  readme/research/engineering-ops/   (7 files)
+    Production readiness, infra & operational hardening.
+================================================================================
+
+  Topic                                  | File (readme/research/engineering-ops/)
+  ---------------------------------------+--------------------------------------
+  Production readiness & reliability     | PRODUCTION_READINESS_RELIABILITY_2026-06-15.md
+  Backup & restore runbook               | BACKUP_AND_RESTORE_RUNBOOK_2026-06-15.md
+  Docker containerization plan           | DOCKER_CONTAINERIZATION_PLAN_2026-06-16.md
+  Docker runbook                         | DOCKER_RUNBOOK_2026-06-16.md
+  Multi-tenant security isolation        | SECURITY_MULTITENANT_ISOLATION_2026-06-15.md
+  Payments & billing correctness         | PAYMENTS_BILLING_FINANCIAL_CORRECTNESS.md
+  Legal, compliance & data privacy       | LEGAL_COMPLIANCE_AND_DATA_PRIVACY_2026-06-16.md
+
+
+================================================================================
+ 7. QA-LAUNCH  ·  readme/research/qa-launch/   (9 files)
+    Pre-launch / real-user QA readiness, platform audits & QA findings.
+================================================================================
+
+  Topic                                  | File (readme/research/qa-launch/)
+  ---------------------------------------+--------------------------------------
+  Real-user QA readiness (overview)      | REAL_USER_QA_READINESS_2026-06-15.md
+  QA section: money paths                | qa_section_money_paths.md
+  QA section: onboarding                 | qa_section_onboarding.md
+  QA section: support                    | qa_section_support.md
+  QA section: feedback                   | qa_section_feedback.md
+  Platform audit                         | PLATFORM_AUDIT_2026-05-31.md
+  Platform gap assessment                | PLATFORM_GAP_ASSESSMENT_2026-06-07.md
+  QA findings                            | QA_FINDINGS_2026-06-01.md
+  QA page coverage                       | QA_PAGE_COVERAGE_2026-06-06.md
+
+
+================================================================================
+ 8. PRODUCT-DESIGN  ·  readme/research/product-design/   (2 files)
+    Product & design strategy.
+================================================================================
+
+  Topic                                  | File (readme/research/product-design/)
+  ---------------------------------------+--------------------------------------
+  Design foundation master plan          | DESIGN_FOUNDATION_MASTER_PLAN_2026-06-15.md
+  Storefront design audit                | STOREFRONT_DESIGN_AUDIT_2026-06-07.md
+
+
+================================================================================
+ 9. FEATURE-RD  ·  readme/research/feature-rd/   (7 files)
+    Feature R&D rounds & product councils.
+================================================================================
+
+  Topic                                  | File (readme/research/feature-rd/)
+  ---------------------------------------+--------------------------------------
+  Feature council                        | FEATURE_COUNSEL_2026-06-01.md
+  Feature improvement R&D (round 1)      | FEATURE_IMPROVEMENT_RD_2026-06-01.md
+  Feature improvement R&D (round 2)      | FEATURE_IMPROVEMENT_RD_2026-06-02.md
+  Feature improvement R&D (part 2)       | FEATURE_IMPROVEMENT_RD_PART2_2026-06-02.md
+  Frontstore design R&D                  | FRONTSTORE_DESIGN_RD_2026-06-02.md
+  Frontstore feature R&D                 | FRONTSTORE_FEATURE_RD_2026-06-02.md
+  Game-changer R&D                       | GAME_CHANGER_RD_2026-06-01.md
+
+
+================================================================================
+ End of index.
+================================================================================

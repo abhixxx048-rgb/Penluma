@@ -1,0 +1,2316 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Business & Financial Literacy for Founders — Study Guide</title>
+<style>
+:root{
+  --ink:#1a2230; --muted:#5b6675; --line:#e3e8ef; --bg:#ffffff;
+  --brand:#1f4e8c; --brand-soft:#eef3fb;
+  --key:#0f7b51; --key-bg:#eafaf1; --key-line:#bce7d2;
+  --warn:#9a3412; --warn-bg:#fff4ed; --warn-line:#fcd9c2;
+  --tip:#1e5fae; --tip-bg:#eef5ff; --tip-line:#c8defb;
+  --analogy:#6b3fa0; --analogy-bg:#f6f0fc; --analogy-line:#e2d3f4;
+  --example:#334155; --example-bg:#f4f6f9; --example-line:#dde3ec;
+}
+@page{ size:A4; margin:18mm 16mm 20mm 16mm; }
+*{ box-sizing:border-box; }
+body{ font-family:"Segoe UI",-apple-system,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink); line-height:1.62; font-size:11pt; margin:0; background:var(--bg);
+  -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+h1,h2,h3,h4{ line-height:1.25; color:var(--ink); }
+h2{ font-size:20pt; color:var(--brand); margin:0 0 .5em; padding-bottom:.28em; border-bottom:3px solid var(--brand-soft); }
+h3{ font-size:14pt; margin:1.5em 0 .5em; color:#173a63; }
+h4{ font-size:12pt; margin:1.2em 0 .4em; color:#2a3a50; }
+p{ margin:.6em 0; } ul,ol{ margin:.5em 0 .8em; padding-left:1.4em; } li{ margin:.28em 0; }
+strong{ color:#10203a; }
+code{ font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; font-size:.86em;
+  background:#eef1f5; padding:.08em .4em; border-radius:4px; color:#9a3412; }
+a{ color:var(--brand); text-decoration:none; }
+.section{ break-before:page; } .section:first-of-type{ break-before:auto; }
+pre.diagram{ font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; font-size:9pt; line-height:1.35;
+  background:#0f1b2d; color:#dbe7f5; padding:14px 16px; border-radius:8px; overflow:hidden;
+  white-space:pre; break-inside:avoid; margin:1em 0; border:1px solid #1d3050; }
+.key,.warn,.tip,.analogy,.example{ margin:1em 0; padding:.7em .95em .7em 1em; border-radius:8px;
+  border:1px solid; break-inside:avoid; font-size:10.4pt; }
+.key{ background:var(--key-bg); border-color:var(--key-line); } .key strong{ color:var(--key); }
+.warn{ background:var(--warn-bg); border-color:var(--warn-line); } .warn strong{ color:var(--warn); }
+.tip{ background:var(--tip-bg); border-color:var(--tip-line); } .tip strong{ color:var(--tip); }
+.analogy{ background:var(--analogy-bg); border-color:var(--analogy-line); } .analogy strong{ color:var(--analogy); }
+.example{ background:var(--example-bg); border-color:var(--example-line); } .example strong{ color:var(--example); }
+table{ border-collapse:collapse; width:100%; margin:1em 0; font-size:10pt; break-inside:avoid; }
+th,td{ border:1px solid var(--line); padding:.5em .65em; text-align:left; vertical-align:top; }
+thead th{ background:var(--brand); color:#fff; font-weight:600; }
+tbody tr:nth-child(even){ background:#f6f8fb; }
+dl{ margin:1em 0; } dt{ font-weight:700; color:#173a63; margin-top:.7em; }
+dd{ margin:.15em 0 .15em 0; padding-left:1em; border-left:3px solid var(--brand-soft); color:#2c3a4d; }
+.cover{ break-after:page; text-align:center; padding-top:55mm; }
+.cover .kicker{ letter-spacing:3px; text-transform:uppercase; color:var(--muted); font-size:11pt; margin-bottom:10mm; }
+.cover h1{ font-size:34pt; color:var(--brand); margin:0 0 6mm; }
+.cover .sub{ font-size:15pt; color:var(--muted); margin:0 0 28mm; font-weight:400; }
+.cover .meta{ font-size:10.5pt; color:var(--muted); }
+.cover .rule{ width:60mm; height:4px; background:var(--brand); margin:8mm auto; border-radius:3px; }
+.toc{ break-after:page; } .toc h2{ color:var(--brand); }
+.toc ol{ list-style:none; padding-left:0; font-size:12pt; }
+.toc li{ padding:.45em 0; border-bottom:1px dashed var(--line); } .toc a{ color:var(--ink); }
+.toc .group{ margin-top:1.2em; font-weight:700; color:var(--brand); text-transform:uppercase; letter-spacing:1px; font-size:10pt; }
+</style></head><body>
+
+<section class="cover">
+  <div class="kicker">Founder Skills · Money &amp; Numbers</div>
+  <h1>Business & Financial Literacy<br>for Founders</h1>
+  <div class="rule"></div>
+  <p class="sub">A Beginner-to-Advanced Study Guide — unit economics, pricing, cash flow, runway, reading a P&amp;L</p>
+  <p class="meta">Prepared 2026-06-21 · Read the sections in order</p>
+</section>
+
+<nav class="toc">
+  <h2>Table of Contents</h2>
+  <ol>
+    <li><a href="#how-to-use">How to Use This Guide</a></li>
+    <div class="group">Core Concepts</div>
+    <li><a href="#sec-1">1. The Founder’s Money Mindset — Is This a Business or a Hobby?</a></li>
+<li><a href="#sec-2">2. The Three Financial Statements — The Whole Picture</a></li>
+<li><a href="#sec-3">3. Reading a P&amp;L (Income Statement) Line by Line</a></li>
+<li><a href="#sec-4">4. The Balance Sheet &amp; Cash Flow Statement — Why Profit ≠ Cash</a></li>
+<li><a href="#sec-5">5. Unit Economics — Do You Make Money on Each Sale?</a></li>
+<li><a href="#sec-6">6. Cash Flow, Burn Rate &amp; Runway — Don’t Run Out of Money</a></li>
+<li><a href="#sec-7">7. Pricing Fundamentals — Cost-Plus vs Value vs Competitive</a></li>
+<li><a href="#sec-8">8. Pricing Psychology &amp; Pricing With Confidence</a></li>
+<li><a href="#sec-9">9. Break-Even, Margins &amp; Profitability</a></li>
+<li><a href="#sec-10">10. Budgeting, Forecasting &amp; Building a Simple Financial Model</a></li>
+<li><a href="#sec-11">11. Funding, Dilution &amp; The Cost of Capital</a></li>
+<li><a href="#sec-12">12. Living By the Numbers — The Founder’s Financial Dashboard</a></li>
+    <div class="group">Reference</div>
+    <li><a href="#glossary">Glossary of Terms</a></li>
+    <li><a href="#faq">Frequently Asked Questions</a></li>
+    <li><a href="#cheatsheet">Revision Cheat Sheet</a></li>
+  </ol>
+</nav>
+
+<section class="section"><h2 id="how-to-use">How to Use This Guide</h2>
+<p>This guide is for <strong>founders who have never studied finance</strong> — no accounting degree, no MBA, no spreadsheet wizardry required. If you can read a restaurant bill and tell whether you got change back, you have enough to start. By the end you will be able to read your own financial statements, tell whether each sale actually makes money, price your product with confidence, know how long your cash will last, and walk into an investor meeting able to explain your numbers without flinching.</p>
+
+<div class="callout key">
+<p><strong>Money has three faces — learn to see all three.</strong> Most founders only watch the money coming in (revenue) and are surprised by the rest. Keep these straight and most of finance falls into place:</p>
+<ul>
+<li><strong>Revenue</strong> — the money you charge customers. It tells you whether people want what you sell.</li>
+<li><strong>Profit</strong> — what's left after costs. It tells you whether your business model works.</li>
+<li><strong>Cash</strong> — the money actually sitting in your bank account today. It tells you whether you survive until next month.</li>
+</ul>
+<p>A business can have all three healthy, or be growing revenue while losing profit, or be profitable on paper yet about to run out of cash. They are not the same thing — and confusing them is the single most common way founders get blindsided.</p>
+</div>
+
+<p><strong>Read it in order.</strong> The 12 sections build on each other deliberately. The early sections (1–4) teach you the language and the three statements, so the later sections on unit economics, pricing, runway and fundraising make sense. If you skip ahead to "should I raise money?" without understanding cash flow first, the answer won't stick. Go section by section, in sequence, even if a topic feels obvious — the framing matters.</p>
+
+<div class="callout tip">
+<p><strong>How to actually learn this:</strong> after each section, open your own numbers — your bank balance, your invoices, your last month's sales — and find the thing the section just described. Finance only becomes real when it's <em>your</em> money on the page. Reading about gross margin is forgettable; calculating <em>your</em> gross margin and being shocked by it is not.</p>
+</div>
+
+<p>You don't need to become an accountant. You need to become <strong>fluent enough to make decisions and ask good questions</strong> — to know when a number looks wrong, when to push back on advice, and when to celebrate. That's a learnable skill, and you're closer than you think. Let's begin.</p></section>
+<section class="section"><h2 id="sec-1">The Founder’s Money Mindset — Is This a Business or a Hobby?</h2>
+
+<p>Welcome to your money education. You do not need a finance degree to run a real business. You need a way of thinking about money that keeps you honest and keeps you alive. That is what this whole guide builds, and this first section is the foundation.</p>
+
+<p>Let us start with the most basic question of all: <strong>is the thing you are building a business, or is it a hobby?</strong> This is not an insult. Hobbies are wonderful. But you must know which one you have, because they need completely different decisions. A founder who runs a hobby while believing it is a business will quietly bleed money for years and only find out when it is too late.</p>
+
+<h3>What "business" and "hobby" actually mean (in money terms)</h3>
+
+<p>Forget the dictionary. In money terms, the line is simple:</p>
+
+<ul>
+<li><strong>A business</strong> takes in money, time, materials, and effort — and turns them into <em>more</em> money than it consumed. It can do this again and again, on its own, without someone outside constantly feeding it cash. We call this <strong>sustainable</strong> — meaning it can keep going by itself.</li>
+<li><strong>A hobby</strong> (in money terms) loses money, or only survives because outside cash keeps arriving — your savings, a loan, a rich relative, or investors topping it up forever. The moment that outside cash stops, it dies.</li>
+</ul>
+
+<div class="key"><strong>Key takeaway:</strong> A business is a machine that turns inputs into <em>more</em> money than it ate. If it eats more than it produces, and can only continue because someone keeps pouring in cash, it is a hobby wearing a business costume.</div>
+
+<div class="analogy"><strong>Analogy:</strong> Think of a campfire. A real fire (a business) produces enough heat to dry and light the next logs you add — it sustains itself. A hobby is a fire you can only keep alive by constantly squirting lighter fluid on it. Stop squirting, and it goes out. Your job as a founder is to build a fire that burns on its own.</div>
+
+<pre class="diagram">
+   INPUTS                MACHINE             OUTPUT
+ ---------             ----------          ----------
+  Money     \                            /  MORE money
+  Time       \---->  YOUR BUSINESS  ---->/   than went in
+  Materials  /        (the machine)      \   = a business
+  Effort    /                             \  LESS money
+                                             = a hobby
+</pre>
+
+<h3>Why YOU must be financially literate — even with an accountant</h3>
+
+<p>Founders often think, "I will just hire an accountant." Hire one — they are valuable. But an accountant is not a substitute for your own understanding, for three reasons:</p>
+
+<ul>
+<li><strong>Accountants look backward; founders steer forward.</strong> An accountant mostly records what already happened (taxes, past reports). You must decide what happens next — whether to hire, to raise prices, to spend on marketing. Those are <em>your</em> decisions, made with money you must understand.</li>
+<li><strong>They report the numbers; they do not feel the consequences.</strong> If the business runs out of cash, the accountant goes home. You lose the company. The person with the most at stake must understand the most.</li>
+<li><strong>You cannot spot a problem in a language you do not speak.</strong> If you cannot read your own numbers, you cannot tell when something is quietly going wrong — or when someone is giving you bad advice.</li>
+</ul>
+
+<div class="tip"><strong>Best practice:</strong> Good founders do not do their own bookkeeping, but they <em>can read</em> their own statements. They know their cash balance, their margin, and their burn from memory. The accountant handles the plumbing; the founder reads the gauges.</div>
+
+<h3>The 3 questions every founder must be able to answer</h3>
+
+<p>Everything in this guide exists to help you answer three questions. If you can answer these confidently, you are running a business with your eyes open.</p>
+
+<ol>
+<li><strong>Are we making money on each sale?</strong> When you sell one unit, does the money you receive cover what that sale truly costs you? If you lose money on every sale, selling <em>more</em> just makes the hole deeper. (This is the world of <strong>margins</strong> and <strong>unit economics</strong> — covered later.)</li>
+<li><strong>Will we run out of cash?</strong> Even a profitable business dies if the bank account hits zero before the money arrives. This is about <strong>cash flow</strong> and <strong>runway</strong> — how many months until you are empty.</li>
+<li><strong>Is the whole thing worth more over time?</strong> Is the machine getting stronger — more customers, who stay longer and are worth more than they cost to win? This is about <strong>growth</strong> and <strong>company value</strong>.</li>
+</ol>
+
+<table>
+<thead><tr><th>The question</th><th>What it really asks</th><th>The danger if you ignore it</th></tr></thead>
+<tbody>
+<tr><td>1. Money on each sale?</td><td>Do the unit economics work?</td><td>You scale your way to bankruptcy</td></tr>
+<tr><td>2. Will we run out of cash?</td><td>Do we have runway?</td><td>You die while still "profitable"</td></tr>
+<tr><td>3. Worth more over time?</td><td>Is the machine growing in value?</td><td>You build a treadmill, not an asset</td></tr>
+</tbody>
+</table>
+
+<h3>The three words people mix up: revenue, profit, cash</h3>
+
+<p>These three sound similar to beginners. They are <em>not</em> the same, and confusing them is the single most expensive mistake a new founder makes. Learn them now.</p>
+
+<table>
+<thead><tr><th>Word</th><th>Plain meaning</th><th>One-line definition</th></tr></thead>
+<tbody>
+<tr><td><strong>Revenue</strong></td><td>What you sold</td><td>The total money customers agreed to pay you (also called "sales" or "the top line").</td></tr>
+<tr><td><strong>Profit</strong></td><td>What you kept</td><td>Revenue minus all your costs. What is left over on paper.</td></tr>
+<tr><td><strong>Cash</strong></td><td>What is actually in the bank</td><td>The real money you can spend <em>right now</em>.</td></tr>
+</tbody>
+</table>
+
+<div class="example"><strong>Example:</strong> You run a print shop. In January you sell $10,000 of business cards. That $10,000 is <strong>revenue</strong>. Your paper, ink, and labour for those jobs cost $6,000, and your rent and software were $1,500. So your <strong>profit</strong> is $10,000 − $6,000 − $1,500 = <strong>$2,500</strong>. Looks healthy! But here is the trap: many of those customers pay you 30 days later. So in January, only $3,000 of cash actually arrived, while you had to pay $6,500 in real bills. Your <strong>cash</strong> went <em>down</em> by $3,500 — even though you made a $2,500 profit. Profit said "up." Cash said "down." Both were true.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Believing "we are profitable, so we are fine." Profit is calculated on paper, using rules about when a sale "counts." Cash is the actual money in the account. A profitable company with no cash cannot pay salaries on Friday — and a company that cannot pay salaries is over, profit or not.</div>
+
+<div class="key"><strong>Key takeaway — memorise this:</strong> <em>"Profit is opinion, cash is fact."</em> Profit depends on judgment calls (when to count a sale, how to spread out a cost). Cash is undeniable — it is either in the bank or it is not. When the two disagree, trust cash to keep you alive and use profit to judge whether the machine is healthy.</div>
+
+<h3>Vanity metrics vs. real metrics</h3>
+
+<p>A <strong>metric</strong> is just a number you track. A <strong>vanity metric</strong> is a number that feels good and looks impressive but does not tell you whether the business works. A <strong>real metric</strong> is one that changes a decision.</p>
+
+<table>
+<thead><tr><th>Vanity metric (feels good)</th><th>Real metric (tells the truth)</th></tr></thead>
+<tbody>
+<tr><td>Total revenue ("we did $1M!")</td><td>Profit per sale / gross margin</td></tr>
+<tr><td>Number of signups or followers</td><td>Paying, <em>retained</em> customers</td></tr>
+<tr><td>Website visits</td><td>Visits that turn into purchases</td></tr>
+<tr><td>Money raised from investors</td><td>Months of cash runway left</td></tr>
+<tr><td>"App downloads"</td><td>People who came back next month</td></tr>
+</tbody>
+</table>
+
+<div class="warn"><strong>Common mistake:</strong> Celebrating revenue while ignoring margin. A founder shouting "we hit $1M in sales!" can still be losing money on every order. Big revenue with a negative margin is just a fast way to lose money. Always ask: "and what did we <em>keep</em>?"</div>
+
+<h3>A first taste of the benchmarks ahead</h3>
+
+<p>You will meet these properly later, but here is a preview so you know the rules of thumb experienced founders carry in their heads. (A <strong>benchmark</strong> is a "what good usually looks like" number to compare yourself against.)</p>
+
+<table>
+<thead><tr><th>Idea (taught later)</th><th>Common rule of thumb</th><th>Plain meaning</th></tr></thead>
+<tbody>
+<tr><td>Gross margin</td><td>Aim for ~40% minimum; 60–70%+ lets you scale</td><td>Keep enough of each sale to fund the rest of the business</td></tr>
+<tr><td>LTV : CAC</td><td>~3:1 is the healthy floor</td><td>A customer should be worth at least 3× what it cost to win them</td></tr>
+<tr><td>CAC payback</td><td>Under ~12 months (elite: a few months)</td><td>How fast you earn back the cost of getting a customer</td></tr>
+<tr><td>Rule of 40</td><td>Growth % + profit % ≥ 40</td><td>Balance growing fast and making money</td></tr>
+</tbody>
+</table>
+
+<p>Do not worry about how to calculate these yet — each gets its own walkthrough with numbers. For now, just notice: <em>real founders steer by numbers like these, not by gut feeling alone.</em></p>
+
+<h3>The mindset: live BY the numbers, not just read them</h3>
+
+<p>There is a difference between <em>reading</em> your numbers once a month and <em>living by</em> them. Reading is passive — you glance at a report and move on. Living by the numbers means the numbers actually change what you do this week: you delay a hire because runway is tight, you raise a price because margin is too thin, you cut an ad because it costs more than it brings in.</p>
+
+<div class="tip"><strong>Best practice:</strong> Pick three numbers you will check on a fixed rhythm — for example, cash in the bank (weekly), profit per sale (monthly), and customers retained (monthly). Three numbers you actually act on beat fifty numbers you only admire.</div>
+
+<div class="key"><strong>Key takeaway:</strong> The founder's money mindset is this — treat your business as a money machine you are responsible for understanding. Know whether it makes money on each sale, whether it will run out of cash, and whether it is growing in value. Trust cash over profit when survival is on the line. Steer by real metrics, not vanity ones. Do this, and you are running a business. Skip it, and no accountant on earth can save you from running a hobby that slowly drains your bank account.</div>
+
+<p>The rest of this guide turns each of these ideas — margins, cash flow, runway, customer value, valuation — into clear, worked numbers you can apply to your own business. Next, we open the hood and look at the first machine part: the income statement, where revenue becomes profit.</p></section>
+<section class="section"><h2 id="sec-2">The Three Financial Statements — The Whole Picture</h2>
+
+<p>Every business, from a corner bakery to a billion-dollar startup, tells its money story using just three reports. They are called <strong>financial statements</strong>. A "financial statement" is simply a standard summary of what happened to your money over a period of time, written in a format that any investor, bank, or accountant in the world can read.</p>
+
+<p>There are exactly three of them, and together they give you the whole picture. Learn what each one answers, and you can understand any company on earth.</p>
+
+<table>
+<thead>
+<tr><th>Statement</th><th>Other names</th><th>The one question it answers</th></tr>
+</thead>
+<tbody>
+<tr><td>Income Statement</td><td>P&amp;L, Profit &amp; Loss</td><td>Did we make a profit?</td></tr>
+<tr><td>Balance Sheet</td><td>Statement of Financial Position</td><td>What do we own and owe?</td></tr>
+<tr><td>Cash Flow Statement</td><td>Statement of Cash Flows</td><td>Where did the cash actually go?</td></tr>
+</tbody>
+</table>
+
+<div class="key"><strong>Key takeaway:</strong> The three statements are not three separate things. They are three views of the same business, taken from three different angles — like a front, side, and top photo of the same house.</div>
+
+<h3>1. The Income Statement (P&amp;L) — "Did we make a profit?"</h3>
+
+<p>The <strong>income statement</strong> covers a <em>period of time</em> — a month, a quarter, or a year. It starts with the money you earned (revenue) and subtracts every cost, ending with what's left over (profit, also called <strong>net income</strong>).</p>
+
+<p>Two terms first, in plain English:</p>
+<ul>
+<li><strong>Revenue</strong> = the total money you earned from selling your product or service.</li>
+<li><strong>Net income</strong> = revenue minus all costs. This is "the bottom line" — literally the last line on the page. If it's positive, you made a profit. If it's negative, you made a loss.</li>
+</ul>
+
+<div class="example"><strong>Example:</strong> In June, a coffee cart sells $10,000 of coffee. The beans, cups, and milk cost $3,000. Rent, wages, and other bills are $5,000. Net income = $10,000 − $3,000 − $5,000 = <strong>$2,000 profit</strong>.</div>
+
+<h3>2. The Balance Sheet — "What do we own and owe?"</h3>
+
+<p>The <strong>balance sheet</strong> is a snapshot at a <em>single moment</em> — usually the last day of the month or year. Unlike the income statement (a movie of a whole period), the balance sheet is a photo of one instant.</p>
+
+<p>It has three parts:</p>
+<ul>
+<li><strong>Assets</strong> = everything the business <em>owns</em> that has value: cash, equipment, inventory, money customers owe you.</li>
+<li><strong>Liabilities</strong> = everything the business <em>owes</em> to others: loans, unpaid bills, taxes due.</li>
+<li><strong>Equity</strong> = what's left for the owners after debts are subtracted. It's your slice of the pie.</li>
+</ul>
+
+<p>It is called a "balance" sheet because it must always balance using this rule, which never breaks:</p>
+
+<table>
+<thead><tr><th>The accounting equation</th></tr></thead>
+<tbody>
+<tr><td>Assets = Liabilities + Equity</td></tr>
+</tbody>
+</table>
+
+<div class="example"><strong>Example:</strong> A startup owns $50,000 in cash and equipment (assets). It owes $20,000 on a loan (liabilities). The owners' equity is therefore $50,000 − $20,000 = <strong>$30,000</strong>. And indeed: $50,000 = $20,000 + $30,000. It balances.</div>
+
+<div class="analogy"><strong>Analogy:</strong> Think of your own life. Your house and car are assets. Your mortgage and car loan are liabilities. What you'd have left if you sold everything and paid off every debt — that's your net worth, which is exactly what equity means for a business.</div>
+
+<h3>3. The Cash Flow Statement — "Where did the cash actually go?"</h3>
+
+<p>The <strong>cash flow statement</strong> tracks real cash moving in and out over a period of time. It exists to answer a question the profit number can't: <em>"We supposedly made a profit — so why is the bank account empty?"</em></p>
+
+<p>It splits all cash movement into three buckets:</p>
+<ul>
+<li><strong>Operating activities</strong> — cash from running the actual business (customers paying you, you paying staff and suppliers). This is the most important section; it shows whether the business itself produces cash.</li>
+<li><strong>Investing activities</strong> — cash spent buying long-term things (equipment, a building) or received from selling them.</li>
+<li><strong>Financing activities</strong> — cash from raising money (investors, loans) or returning it (repaying loans, paying owners).</li>
+</ul>
+
+<div class="key"><strong>Key takeaway:</strong> Profit is an opinion; cash is a fact. A company can show a profit on paper and still run out of cash and die. The cash flow statement is the truth-teller.</div>
+
+<h3>How the three statements connect</h3>
+
+<p>This is the part that turns three reports into one clear picture. There are two main bridges.</p>
+
+<h4>Bridge 1: Net income flows into the balance sheet</h4>
+<p>The profit from the income statement doesn't vanish. It gets added to a special equity line on the balance sheet called <strong>retained earnings</strong> — the running total of all the profits the business has ever kept. The formula:</p>
+
+<table>
+<thead><tr><th>Retained earnings (new)</th></tr></thead>
+<tbody>
+<tr><td>= Retained earnings (old) + Net income − Dividends paid</td></tr>
+</tbody>
+</table>
+
+<div class="example"><strong>Example:</strong> Last year's retained earnings were $8,000. This year you made $2,000 net income and paid the owners no dividends. New retained earnings = $8,000 + $2,000 − $0 = <strong>$10,000</strong>. That's how this year's profit shows up on the balance sheet.</div>
+
+<h4>Bridge 2: The cash flow statement reconciles profit to cash</h4>
+<p>The cash flow statement starts at net income (the same bottom line from the P&amp;L) and adjusts it for things that affected profit but not cash, until it arrives at the real change in the bank balance. That ending cash number then becomes the "Cash" line at the top of the balance sheet's assets. The loop is closed.</p>
+
+<pre class="diagram">
+   INCOME STATEMENT          BALANCE SHEET (snapshot)
+  (a period of time)        +----------------------+
+ +------------------+       | ASSETS               |
+ | Revenue          |       |   Cash <----------+  |
+ | - Costs          |       |   Equipment       |  |
+ | = NET INCOME ----+--+    | LIABILITIES       |  |
+ +------------------+  |    | EQUITY            |  |
+                       |    |   Retained        |  |
+                       +----+--> Earnings       |  |
+                       |    +----------------------+
+                       |                         ^
+                       v                         |
+            CASH FLOW STATEMENT                  |
+           +--------------------+                |
+           | Start: Net income  |                |
+           | +/- adjustments    |                |
+           | = Change in cash --+----------------+
+           +--------------------+   (ending cash)
+</pre>
+
+<p>Read the diagram as a circle: net income flows <em>right</em> into retained earnings (equity), and also flows <em>down</em> into the cash flow statement, which produces the ending cash that flows back <em>up</em> into assets. Everything connects.</p>
+
+<h3>Accrual vs. cash accounting — why a sale is "revenue" before the cash arrives</h3>
+
+<p>Here is the idea that confuses every new founder. There are two ways to decide <em>when</em> to record a sale or a cost.</p>
+
+<table>
+<thead>
+<tr><th></th><th>Cash accounting</th><th>Accrual accounting</th></tr>
+</thead>
+<tbody>
+<tr><td>Record revenue when…</td><td>cash lands in your account</td><td>you earn it (deliver the goods/service)</td></tr>
+<tr><td>Record an expense when…</td><td>you pay the bill</td><td>you incur it (use the thing)</td></tr>
+<tr><td>Best for</td><td>tiny/simple businesses</td><td>any serious or funded startup</td></tr>
+</tbody>
+</table>
+
+<p><strong>Accrual accounting</strong> says: record revenue when you've <em>earned</em> it — when you've done the work or shipped the product — even if the customer hasn't paid yet. This follows the <strong>matching principle</strong>: put the sale and the costs that created it in the same period, so the profit number is honest.</p>
+
+<div class="example"><strong>Example:</strong> In January a customer signs a $120,000 deal for a full year of your software and pays the whole amount upfront. Under <em>accrual</em> accounting, you have not "earned" all $120,000 in January — you owe 12 months of service. So you record $10,000 of revenue each month as you deliver it. The other $110,000 sits on the balance sheet as a liability called <strong>deferred revenue</strong> (a promise you still owe). Under <em>cash</em> accounting, you'd wrongly show $120,000 of revenue in January and nothing for 11 months.</div>
+
+<p>The reverse happens too: you can earn revenue <em>before</em> the cash arrives. If you deliver a $5,000 project in March but the client pays in May, accrual accounting books $5,000 of revenue in March. The unpaid amount sits on the balance sheet as an asset called <strong>accounts receivable</strong> (money owed to you). This is exactly why profit and cash differ — and why you need the cash flow statement.</p>
+
+<div class="analogy"><strong>Analogy:</strong> Accrual accounting is like marking a meal as "served" the moment the food hits the table — not when the customer eventually settles the bill on the way out. The service is what counts, not the timing of the payment.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Founders see a profitable income statement and assume there's cash in the bank to match. There often isn't — the money may be stuck in unpaid invoices (receivables) or spent on inventory. Always check the cash flow statement and the bank balance, never just the P&amp;L.</div>
+
+<div class="tip"><strong>Best practice:</strong> Use accrual accounting from day one if you plan to raise money. Investors expect it, and it's the standard for subscription revenue (under the rule known as ASC 606). Founders who start on cash basis face a painful, weeks-long conversion later, often right when they're trying to close a funding round. Pick accrual now and avoid the rework.</div>
+
+<div class="key"><strong>Key takeaway:</strong> Income statement = did we profit (over a period). Balance sheet = what we own and owe (at one moment). Cash flow = where the cash really went (over a period). Net income links the first two via retained earnings; the cash flow statement links profit to your actual bank balance. Master these connections and no company's finances can hide from you.</div></section>
+<section class="section"><h2 id="sec-3">Reading a P&L (Income Statement) Line by Line</h2>
+
+<p>The P&L is the report you will look at most as a founder. "P&L" stands for <strong>Profit and Loss statement</strong>. Another name for the exact same thing is the <strong>Income Statement</strong>. Both names mean: a list of the money your business earned over a period of time (a month, a quarter, or a year) minus everything it spent in that period, ending with the profit left over.</p>
+
+<p>Think of it as one long subtraction problem. You start with all the money that came in at the top, then subtract costs in a fixed order, one layer at a time. Each time you subtract a layer, you reach a new "profit" number. By the bottom, you know if you actually made money or lost it.</p>
+
+<div class="analogy"><strong>Analogy:</strong> A P&L is like a receipt for your whole business. The top says how much you sold. Then it lists what each thing cost you, line by line. The very bottom shows what you got to keep. You read it top to bottom, just like a receipt.</div>
+
+<div class="key"><strong>Key takeaway:</strong> A P&L always flows in one direction — top (all sales) to bottom (final profit). Every line in between is "money in so far, minus the next type of cost." Learn the order once and you can read any company's P&L.</div>
+
+<h3>The order of the lines (the only order that matters)</h3>
+
+<p>Here is the standard top-to-bottom order. Don't worry about the details yet — we define each line below. Just notice that costs get subtracted in groups, and after each group you get a "profit" checkpoint.</p>
+
+<ol>
+<li><strong>Revenue</strong> (the "top line")</li>
+<li>minus <strong>COGS</strong> (Cost of Goods Sold)</li>
+<li>= <strong>Gross Profit</strong> → and its <strong>Gross Margin %</strong></li>
+<li>minus <strong>Operating Expenses</strong> (Sales & Marketing, R&D, G&A)</li>
+<li>= <strong>Operating Income / EBIT</strong></li>
+<li>(<strong>EBITDA</strong> sits near here — explained below)</li>
+<li>minus <strong>Interest</strong> and <strong>Taxes</strong></li>
+<li>= <strong>Net Income</strong> (the "bottom line") → and its <strong>Net Margin %</strong></li>
+</ol>
+
+<h3>Line 1 — Revenue (the "top line")</h3>
+
+<p><strong>Revenue</strong> is all the money you earned from selling your product or service, before subtracting any costs. People call it the "top line" simply because it sits at the very top of the P&L. It is also called <strong>sales</strong> or <strong>turnover</strong>.</p>
+
+<p>Important: revenue is money you <em>earned</em>, not necessarily cash you collected. If you delivered a product in June, it counts as June revenue even if the customer pays you in July. (That cash-timing difference is why the cash-flow statement exists — but on the P&L we count what was earned.)</p>
+
+<div class="warn"><strong>Common mistake:</strong> Treating money in the bank as revenue. If a customer pre-pays $12,000 for a year of service, you only "earned" $1,000 of revenue this month. The other $11,000 is owed-but-not-yet-earned. Counting it all at once makes your P&L look far better than reality.</div>
+
+<h3>Line 2 — COGS (Cost of Goods Sold)</h3>
+
+<p><strong>COGS</strong> is the direct cost of making or delivering the thing you sold. The key word is <strong>direct</strong>: only costs that go up when you sell one more unit, and that are needed to actually produce or deliver the product, belong here.</p>
+
+<h4>What COGS includes — physical product vs SaaS</h4>
+
+<table>
+<thead><tr><th>Physical-product business</th><th>SaaS (software) business</th></tr></thead>
+<tbody>
+<tr><td>Raw materials</td><td>Cloud hosting (AWS, Azure, etc.)</td></tr>
+<tr><td>Factory/direct labor to build it</td><td>Customer support team wages</td></tr>
+<tr><td>Shipping &amp; freight to deliver</td><td>Third-party software fees passed to the customer</td></tr>
+<tr><td>Packaging</td><td>Payment-processing &amp; data-transfer fees</td></tr>
+<tr><td>Manufacturing overhead</td><td>Onboarding / implementation staff</td></tr>
+</tbody>
+</table>
+
+<div class="warn"><strong>Common mistake:</strong> Putting sales and marketing into COGS. Marketing helps you <em>win</em> a customer; it is not the cost of <em>delivering</em> the product. It belongs below, in operating expenses. Mixing them up inflates your gross margin and hides the truth.</div>
+
+<h3>Line 3 — Gross Profit and Gross Margin %</h3>
+
+<p><strong>Gross Profit</strong> = Revenue − COGS. It is the money left after paying to make/deliver the product, but <em>before</em> paying for the rest of the company (offices, salespeople, etc.).</p>
+
+<p><strong>Gross Margin %</strong> turns that into a percentage so you can compare across sizes and over time:</p>
+
+<table>
+<thead><tr><th>Formula</th><th>Worked example</th></tr></thead>
+<tbody>
+<tr><td>Gross Margin % = Gross Profit ÷ Revenue × 100</td><td>Revenue $100,000; COGS $30,000.<br>Gross Profit = $100,000 − $30,000 = $70,000.<br>Gross Margin = $70,000 ÷ $100,000 × 100 = <strong>70%</strong>.</td></tr>
+</tbody>
+</table>
+
+<p>Gross margin tells you how much of every sales dollar is left to run the company and (hopefully) keep as profit. At 70%, every $1 of sales leaves 70 cents.</p>
+
+<div class="tip"><strong>Best practice:</strong> Mature SaaS companies typically target gross margins of <strong>75–80%+</strong> (the 2025 median, including services, was around 77%). AI-heavy software runs lower (often 55–70%) because of compute costs. Physical-product and retail businesses run much lower — often 20–50% — because materials and shipping eat more of each sale. Always compare yourself to <em>your own industry</em>, never to a totally different one.</div>
+
+<h3>"Above the line" vs "below the line"</h3>
+
+<p>The "line" people mean is usually <strong>Gross Profit</strong>. Costs <strong>above the line</strong> are COGS — the direct cost of delivery. Costs <strong>below the line</strong> are operating expenses — running the rest of the company (salaries, rent, marketing). Knowing which side a cost sits on changes your gross margin, so be consistent and honest about it.</p>
+
+<h3>Line 4 — Operating Expenses (OpEx)</h3>
+
+<p><strong>Operating Expenses</strong> are the costs of running the business that are <em>not</em> the direct cost of the product. They usually split into three buckets:</p>
+
+<ul>
+<li><strong>Sales &amp; Marketing (S&amp;M)</strong> — ads, salespeople, events, anything to win and keep customers.</li>
+<li><strong>R&amp;D (Research &amp; Development)</strong> — building and improving the product; mostly engineering/product salaries.</li>
+<li><strong>G&amp;A (General &amp; Administrative)</strong> — the "keep the lights on" costs: rent, accounting, legal, HR, office software, the CEO's salary.</li>
+</ul>
+
+<h4>Fixed vs variable costs</h4>
+
+<p>A <strong>variable cost</strong> rises when you sell more (raw materials, hosting, payment fees). A <strong>fixed cost</strong> stays the same no matter how much you sell, at least for a while (office rent, salaries, your accounting software). COGS is mostly variable; G&amp;A is mostly fixed. This matters because fixed costs get cheaper <em>per sale</em> as you grow — you spread the same rent over more revenue.</p>
+
+<div class="example"><strong>Example:</strong> Rent is $5,000/month (fixed). At $50,000 revenue, rent is 10% of sales. At $200,000 revenue, the <em>same</em> $5,000 rent is only 2.5% of sales. You didn't cut the cost — you grew past it.</div>
+
+<h3>Line 5 — Operating Income (EBIT)</h3>
+
+<p><strong>Operating Income</strong> = Gross Profit − Operating Expenses. It is the profit from your core business, before interest and taxes. Its other name is <strong>EBIT</strong> = <strong>E</strong>arnings <strong>B</strong>efore <strong>I</strong>nterest and <strong>T</strong>axes. "Earnings" just means profit. So EBIT literally reads "profit before we subtract interest and taxes." It answers: <em>does the business itself actually make money?</em></p>
+
+<h3>EBITDA — one more profit view</h3>
+
+<p><strong>EBITDA</strong> = <strong>E</strong>arnings <strong>B</strong>efore <strong>I</strong>nterest, <strong>T</strong>axes, <strong>D</strong>epreciation, and <strong>A</strong>mortization. Start with EBIT, then <em>add back</em> two "paper" costs: <strong>depreciation</strong> (spreading the cost of a physical asset, like a machine, over its life) and <strong>amortization</strong> (the same idea for non-physical things, like software you bought). These two are accounting entries, not cash leaving your bank this month, so EBITDA estimates the cash your operations throw off.</p>
+
+<table>
+<thead><tr><th>Metric</th><th>What it answers</th></tr></thead>
+<tbody>
+<tr><td>Operating Income / EBIT</td><td>"How well do we run day-to-day operations?"</td></tr>
+<tr><td>EBITDA</td><td>"How much cash does the business generate before financing and accounting choices?"</td></tr>
+</tbody>
+</table>
+
+<h3>Line 6 — Interest &amp; Taxes</h3>
+
+<p><strong>Interest</strong> is what you pay to lenders if you borrowed money. <strong>Taxes</strong> are what you owe the government on your profit. Both are subtracted near the bottom because they depend on choices (how much you borrowed) and rules (tax rates) outside your core operations.</p>
+
+<h3>Line 7 — Net Income (the "bottom line") &amp; Net Margin %</h3>
+
+<p><strong>Net Income</strong> = what is left after subtracting <em>everything</em>: COGS, all operating expenses, interest, and taxes. It is called the "bottom line" because it sits at the very bottom. If it is positive, you made a profit. If negative, you made a loss (often shown in parentheses or red).</p>
+
+<table>
+<thead><tr><th>Formula</th><th>Worked example</th></tr></thead>
+<tbody>
+<tr><td>Net Margin % = Net Income ÷ Revenue × 100</td><td>Net Income $14,000; Revenue $100,000.<br>Net Margin = $14,000 ÷ $100,000 × 100 = <strong>14%</strong>.</td></tr>
+</tbody>
+</table>
+
+<h3>A full worked sample P&L</h3>
+
+<p>Here is a complete P&L for a small software company with $100,000 of monthly revenue. Every margin is computed so you can follow the math.</p>
+
+<table>
+<thead><tr><th>Line</th><th>Amount</th><th>Math / Margin</th></tr></thead>
+<tbody>
+<tr><td>Revenue (top line)</td><td>$100,000</td><td>—</td></tr>
+<tr><td>− COGS (hosting, support)</td><td>$30,000</td><td>—</td></tr>
+<tr><td><strong>Gross Profit</strong></td><td><strong>$70,000</strong></td><td>Gross Margin = 70%</td></tr>
+<tr><td>− Sales &amp; Marketing</td><td>$25,000</td><td>—</td></tr>
+<tr><td>− R&amp;D</td><td>$15,000</td><td>—</td></tr>
+<tr><td>− G&amp;A</td><td>$10,000</td><td>—</td></tr>
+<tr><td><strong>Operating Income (EBIT)</strong></td><td><strong>$20,000</strong></td><td>Operating Margin = 20%</td></tr>
+<tr><td>+ Depreciation &amp; Amortization</td><td>$3,000</td><td>added back</td></tr>
+<tr><td><strong>EBITDA</strong></td><td><strong>$23,000</strong></td><td>EBITDA Margin = 23%</td></tr>
+<tr><td>− Interest</td><td>$2,000</td><td>—</td></tr>
+<tr><td>− Taxes</td><td>$4,000</td><td>—</td></tr>
+<tr><td><strong>Net Income (bottom line)</strong></td><td><strong>$14,000</strong></td><td>Net Margin = 14%</td></tr>
+</tbody>
+</table>
+
+<p>Walk the math: $100,000 − $30,000 = $70,000 gross. $70,000 − $25,000 − $15,000 − $10,000 = $20,000 operating income. Add $3,000 depreciation/amortization back to get $23,000 EBITDA. From operating income, $20,000 − $2,000 interest − $4,000 tax = $14,000 net income.</p>
+
+<h3>ASCII waterfall — revenue down to net income</h3>
+
+<pre class="diagram">
+ Revenue                          $100,000
+   |
+   |-- COGS .................. -$30,000
+   v
+ Gross Profit .................. $70,000   (70%)
+   |
+   |-- Sales & Marketing ..... -$25,000
+   |-- R&D .................... -$15,000
+   |-- G&A .................... -$10,000
+   v
+ Operating Income / EBIT ....... $20,000   (20%)
+   |  (+ D&A $3,000  ->  EBITDA  $23,000, 23%)
+   |
+   |-- Interest .............. -$2,000
+   |-- Taxes ................. -$4,000
+   v
+ Net Income (bottom line) ...... $14,000   (14%)
+</pre>
+
+<h3>What "good" looks like</h3>
+
+<table>
+<thead><tr><th>Metric</th><th>Common rule of thumb</th></tr></thead>
+<tbody>
+<tr><td>SaaS gross margin</td><td>75–80%+ at maturity (~77% median)</td></tr>
+<tr><td>EBITDA margin</td><td>Above 20% = strong; 10–20% = moderate; below 10% = thin</td></tr>
+<tr><td>Rule of 40 (SaaS)</td><td>Revenue growth % + profit (EBITDA) margin % ≥ 40</td></tr>
+</tbody>
+</table>
+
+<div class="example"><strong>Example (Rule of 40):</strong> A SaaS company growing revenue 30% per year with a 15% EBITDA margin scores 30 + 15 = 45. That is above 40, so it is balancing growth and profit well. A company growing 10% with a −5% margin scores only 5 — a warning sign.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Judging your numbers against the wrong industry. A 30% EBITDA margin is great for software but unheard of for a grocery store (which runs fine at 5–7%). Always benchmark inside your own industry.</div>
+
+<div class="tip"><strong>Best practice:</strong> Read your P&L every month, in the same format, and compare to last month and the same month last year. The trend matters more than any single number. A founder who can explain why each line moved is a founder in control of the business.</div>
+
+<p><em>Sources: <a href="https://www.benchmarkit.ai/2025benchmarks">Benchmarkit 2025 SaaS Benchmarks</a>, <a href="https://www.cloudzero.com/blog/saas-gross-margin-benchmarks/">CloudZero SaaS Gross Margin Benchmarks</a>, <a href="https://www.cloudzero.com/blog/saas-cogs/">CloudZero SaaS COGS</a>, <a href="https://www.stocktitan.net/articles/ebitda-margin-vs-operating-margin-explained">StockTitan EBITDA vs Operating Margin</a>, <a href="https://corporatefinanceinstitute.com/resources/valuation/rule-of-40/">CFI Rule of 40</a>.</em></p></section>
+<section class="section"><h2 id="sec-4">The Balance Sheet & Cash Flow Statement — Why Profit ≠ Cash</h2>
+
+<p>In the last section you met the <strong>profit & loss statement</strong> (the P&L). It answers one question: "Did we make money over a period of time?" But it does <em>not</em> tell you if you have money in the bank today. Those are two different things. This section explains the two other core financial statements — the <strong>balance sheet</strong> and the <strong>cash flow statement</strong> — and the single most dangerous trap in business: a company can be profitable on paper and still go broke.</p>
+
+<div class="key"><strong>Key takeaway:</strong> Profit is an opinion. Cash is a fact. You can "earn" money and still run out of cash to pay your bills. Most founders who fail did not fail because the business was unprofitable — they failed because they ran out of cash at the wrong moment.</div>
+
+<h3>The Balance Sheet — a photo of what you own and owe</h3>
+
+<p>The P&L covers a <em>period</em> (a month, a year). The <strong>balance sheet</strong> is different: it is a <strong>snapshot</strong> of one single moment — usually the last day of the month or year. It freezes the business and asks: "Right now, what does this company own, and what does it owe?"</p>
+
+<div class="analogy"><strong>Analogy:</strong> The P&L is a video of a month — it shows what happened over time. The balance sheet is a photograph taken at one instant — it shows the state of things <em>at that click of the camera</em>.</div>
+
+<h4>The accounting equation (the most important formula in finance)</h4>
+
+<p>Every balance sheet on Earth obeys one rule. It must always balance:</p>
+
+<table>
+<thead><tr><th>Assets</th><th>=</th><th>Liabilities</th><th>+</th><th>Equity</th></tr></thead>
+<tbody><tr><td>What you <em>own</em></td><td>=</td><td>What you <em>owe</em></td><td>+</td><td>What's left for the <em>owners</em></td></tr></tbody>
+</table>
+
+<p>Let's define each word in plain English.</p>
+
+<ul>
+<li><strong>Assets</strong> — things the business <em>owns</em> that have value. Examples:
+  <ul>
+    <li><strong>Cash</strong> — money in the bank. The most useful asset of all.</li>
+    <li><strong>Accounts receivable</strong> ("receivables") — money customers owe <em>you</em> but haven't paid yet. You made the sale, but the cash hasn't arrived.</li>
+    <li><strong>Inventory</strong> — goods you bought or made that you plan to sell (stock sitting in your warehouse).</li>
+    <li><strong>Equipment / property</strong> — machines, computers, buildings, vehicles.</li>
+  </ul>
+</li>
+<li><strong>Liabilities</strong> — things the business <em>owes</em> to other people. Examples:
+  <ul>
+    <li><strong>Accounts payable</strong> ("payables") — money <em>you</em> owe suppliers but haven't paid yet.</li>
+    <li><strong>Loans / debt</strong> — money borrowed from a bank or investor that must be paid back.</li>
+  </ul>
+</li>
+<li><strong>Equity</strong> — what would be left over for the owners if you sold every asset and paid off every debt. It has two common parts:
+  <ul>
+    <li><strong>Owner / paid-in capital</strong> — money the founders or investors put <em>into</em> the business.</li>
+    <li><strong>Retained earnings</strong> — all the profit the business has earned and kept (not paid out) since day one. Profit from the P&L flows here over time.</li>
+  </ul>
+</li>
+</ul>
+
+<div class="example"><strong>Example:</strong> Your startup owns: $20,000 cash + $15,000 receivables + $10,000 inventory = <strong>$45,000 in assets</strong>. You owe: $12,000 to suppliers (payables) + $18,000 bank loan = <strong>$30,000 in liabilities</strong>. So equity must be the difference: $45,000 − $30,000 = <strong>$15,000</strong>. The equation balances: $45,000 = $30,000 + $15,000. That $15,000 is the owners' real stake in the business.</div>
+
+<div class="analogy"><strong>Analogy:</strong> Think of a house worth $400,000 (asset) with a $300,000 mortgage (liability). Your equity is $100,000 — the slice that's truly yours. A business works the exact same way.</div>
+
+<h3>The Cash Flow Statement — where the money actually moved</h3>
+
+<p>The balance sheet shows what you own and owe at a moment. The P&L shows profit over a period. But neither clearly shows the one thing that keeps the lights on: <strong>did cash come in or go out, and from where?</strong> That is the job of the <strong>cash flow statement</strong>. It sorts every dollar that moved into three buckets.</p>
+
+<h4>The three buckets</h4>
+
+<table>
+<thead><tr><th>Bucket</th><th>Plain meaning</th><th>What flows through it</th></tr></thead>
+<tbody>
+<tr><td><strong>Operating</strong></td><td>Cash from running the actual business day-to-day</td><td>Cash from customers, cash paid for wages, rent, suppliers, taxes</td></tr>
+<tr><td><strong>Investing</strong></td><td>Cash from buying or selling long-term things</td><td>Buying equipment, machines, property; selling those assets</td></tr>
+<tr><td><strong>Financing</strong></td><td>Cash from owners and lenders</td><td>Taking a loan, raising investment, repaying debt, paying dividends</td></tr>
+</tbody>
+</table>
+
+<div class="key"><strong>Key takeaway:</strong> <strong>Operating cash flow</strong> is the one investors stare at hardest. It answers: "Can the business itself produce cash, without borrowing or selling things off?" A business that only survives on financing (new loans, new investment) is on life support.</div>
+
+<div class="example"><strong>Example:</strong> In one month you collect $50,000 from customers and pay $40,000 in wages, rent, and supplies → <strong>Operating = +$10,000</strong>. You buy a $25,000 printing machine → <strong>Investing = −$25,000</strong>. You take a $30,000 bank loan → <strong>Financing = +$30,000</strong>. Net cash change = $10,000 − $25,000 + $30,000 = <strong>+$15,000</strong>. Your bank balance went up $15,000 this month — but notice it only went up because you borrowed. The business itself made just $10,000.</div>
+
+<h3>The big lesson: a profitable company can still go bankrupt</h3>
+
+<p>Here is the trap that kills good businesses. The P&L records a sale as <strong>revenue the moment you make it</strong> — even if the customer hasn't paid yet. This is called <strong>accrual accounting</strong>. So your P&L can show fat profits while your bank account is empty, because the cash is stuck in <strong>receivables</strong> (customers who owe you) or frozen in <strong>inventory</strong> (stock you bought but haven't sold).</p>
+
+<p>One widely cited figure: roughly <strong>82% of small businesses that fail do so because of cash flow problems</strong>, not because they were unprofitable. Let that sink in — being profitable is not the same as being safe.</p>
+
+<h4>Worked example — profit positive, cash negative</h4>
+
+<p>Imagine a small print shop. In one month:</p>
+
+<ol>
+<li>You win a big order and deliver it. Revenue = <strong>$100,000</strong>. The customer pays on "60-day terms" (they'll pay in two months).</li>
+<li>To make it, you spent <strong>$70,000</strong> on materials and wages — paid in cash now.</li>
+<li>Your P&L looks great: $100,000 revenue − $70,000 cost = <strong>$30,000 PROFIT.</strong></li>
+</ol>
+
+<p>Now look at the <em>cash</em>:</p>
+
+<table>
+<thead><tr><th>Item</th><th>On the P&L (profit)</th><th>In the bank (cash)</th></tr></thead>
+<tbody>
+<tr><td>Revenue / cash from customer</td><td>+$100,000</td><td>$0 (not paid for 60 days)</td></tr>
+<tr><td>Costs you paid out</td><td>−$70,000</td><td>−$70,000 (paid now)</td></tr>
+<tr><td><strong>Result</strong></td><td><strong>+$30,000 profit</strong></td><td><strong>−$70,000 cash</strong></td></tr>
+</tbody>
+</table>
+
+<p>You are "profitable" by $30,000 — but you are <strong>$70,000 poorer in real cash</strong> this month. If next week rent and payroll are due and you don't have $70,000, you cannot pay them. The bank doesn't care about your profit. You can go bankrupt with a P&L full of profit.</p>
+
+<div class="warn"><strong>Common mistake:</strong> Growing fast and celebrating rising profit while ignoring cash. <em>Faster growth makes this worse, not better.</em> Every new order forces you to pay for materials and labour up front, while the customer's cash arrives months later. Many founders "grow themselves to death" — more sales, more profit, less and less cash, until one payroll they can't make.</div>
+
+<h3>Working capital — the money trapped in your operating cycle</h3>
+
+<p><strong>Working capital</strong> is the money tied up in the everyday running of your business — cash you can't touch because it's sitting as inventory or as unpaid customer invoices. The simple formula:</p>
+
+<p><strong>Working Capital = Current Assets − Current Liabilities</strong></p>
+
+<p>("Current" means "within about a year" — cash, receivables, inventory on the asset side; payables and short-term debt on the liability side.)</p>
+
+<div class="example"><strong>Example:</strong> Current assets = $20,000 cash + $15,000 receivables + $10,000 inventory = $45,000. Current liabilities = $12,000 payables. Working capital = $45,000 − $12,000 = <strong>$33,000.</strong> Positive working capital means you can cover your short-term bills. Negative working capital is a warning light.</div>
+
+<h4>The cash conversion cycle (how many days your cash is stuck)</h4>
+
+<p>A sharper tool is the <strong>cash conversion cycle (CCC)</strong> — the number of <em>days</em> between paying for stock and finally collecting cash from your customer. It uses three numbers:</p>
+
+<ul>
+<li><strong>DIO</strong> — Days Inventory Outstanding: how many days stock sits before you sell it.</li>
+<li><strong>DSO</strong> — Days Sales Outstanding: how many days customers take to pay you.</li>
+<li><strong>DPO</strong> — Days Payable Outstanding: how many days <em>you</em> take to pay suppliers.</li>
+</ul>
+
+<p><strong>CCC = DIO + DSO − DPO</strong></p>
+
+<div class="example"><strong>Example:</strong> Stock sits 40 days (DIO), customers pay in 50 days (DSO), you pay suppliers in 30 days (DPO). CCC = 40 + 50 − 30 = <strong>60 days.</strong> Your cash is locked up for 60 days on every cycle. For context, large U.S. companies average around <strong>37 days</strong> — lower is better. Cutting your cycle from 60 to 45 days frees up real cash you can use for payroll or growth.</div>
+
+<div class="tip"><strong>Best practice:</strong> Shrink the cycle from both ends. Get customers to pay <em>sooner</em> (deposits up front, shorter terms, charge cards) and negotiate to pay suppliers <em>later</em> (net-30 instead of net-7). Every day you shave off is cash put back in your hands for free.</div>
+
+<h3>The cash-flow waterfall</h3>
+
+<p>Here is how cash flows down through the three buckets to your final bank balance:</p>
+
+<pre class="diagram">
+  Starting cash (bank balance)        $ 20,000
+  ----------------------------------------------
+  + OPERATING                          +$ 10,000
+      cash in from customers
+      minus wages, rent, suppliers
+  ----------------------------------------------
+  - INVESTING                          -$ 25,000
+      bought a machine
+  ----------------------------------------------
+  + FINANCING                          +$ 30,000
+      took a bank loan
+  ==============================================
+  = ENDING cash (bank balance)        =$ 35,000
+</pre>
+
+<p>Read it top to bottom. You start with cash, the three buckets add and subtract, and you land on the cash you actually have at month-end. If "Operating" is negative for long, the business is bleeding — no amount of financing hides that forever.</p>
+
+<div class="key"><strong>Key takeaway:</strong> Watch all three statements together. The <strong>P&L</strong> tells you if you're profitable, the <strong>balance sheet</strong> tells you what you own and owe, and the <strong>cash flow statement</strong> tells you if you'll survive next month. Of the three, the founder who runs out of cash loses the company — so guard your cash above all.</p></section>
+<section class="section"><h2 id="sec-5">Unit Economics — Do You Make Money on Each Sale?</h2>
+
+<p>Imagine your whole company shrunk down to <strong>one single sale</strong> or <strong>one single customer</strong>. Strip away everything else. Just ask: when I sell one thing to one person, do I make money or lose money?</p>
+
+<p>That question is <strong>unit economics</strong>. A "unit" is one of whatever you sell — one t-shirt, one subscription, one customer. Unit economics is the study of the money in and money out for that one unit. If you lose money on one customer, you lose money on a thousand customers, just faster. Big revenue cannot fix bad unit economics; it only makes the hole deeper.</p>
+
+<div class="key"><strong>Key takeaway:</strong> Unit economics is the founder's core skill. If you can't explain whether you make money on <em>one</em> sale, you cannot know if the whole business can ever make money. Master this before anything else.</div>
+
+<div class="analogy"><strong>Analogy:</strong> A leaky bucket. Every customer pours water in (revenue). Every customer also has a hole that lets water out (the cost to serve and acquire them). Unit economics tells you whether each customer fills the bucket or drains it. If the holes are bigger than the pour, no amount of buckets will ever fill up.</div>
+
+<h3>Variable cost vs. fixed cost — know the difference first</h3>
+
+<p>Before we can measure profit per sale, we need two cost words.</p>
+
+<ul>
+<li><strong>Variable cost</strong> — a cost that happens <em>because</em> you made a sale. No sale, no cost. Examples: the fabric in a shirt, the payment-processing fee, shipping, the cloud-hosting cost for one extra user.</li>
+<li><strong>Fixed cost</strong> — a cost you pay no matter how many you sell. Examples: rent, salaries, your accounting software. These don't change if you sell 10 or 10,000.</li>
+</ul>
+
+<p>Unit economics cares mostly about <strong>variable costs</strong>, because those are the ones tied to each unit.</p>
+
+<h3>Contribution Margin — what one sale leaves behind</h3>
+
+<p><strong>Contribution Margin</strong> is the money left from one sale after you pay the variable costs of that sale. It is called "contribution" because this leftover money is what <em>contributes</em> toward paying your fixed costs (rent, salaries) and, eventually, profit.</p>
+
+<table>
+<thead><tr><th>Formula</th></tr></thead>
+<tbody>
+<tr><td><strong>Contribution Margin (per unit) = Price − Variable Cost per unit</strong></td></tr>
+</tbody>
+</table>
+
+<div class="example"><strong>Example:</strong> You sell a mug for <strong>$25</strong>. The variable costs are: mug + printing $8, shipping $4, payment fee $1. That's $13 of variable cost.<br>
+Contribution Margin = $25 − $13 = <strong>$12</strong>.<br>
+Every mug you sell hands you $12 to put toward rent, salaries, and profit. If the margin had come out <em>negative</em>, you'd lose money on every mug — and you should stop selling it or fix the price/cost.</div>
+
+<p>People often say <strong>gross margin</strong> too. Gross margin is the same idea shown as a percentage: <em>Contribution ÷ Price</em>. Here that's $12 ÷ $25 = <strong>48%</strong>. We'll need gross margin again very soon, so keep it in your pocket.</p>
+
+<div class="tip"><strong>Best practice:</strong> Software businesses aim for high gross margins (often 70–80%+) because copying software is nearly free. Physical-product and print businesses run lower (often 30–60%) because every unit eats real materials. Know your industry's normal range so you can tell "healthy" from "in trouble".</div>
+
+<h3>CAC — how much it costs to win a customer</h3>
+
+<p><strong>CAC</strong> stands for <strong>Customer Acquisition Cost</strong>: the average amount you spend to get <em>one</em> new customer through the door. Customers don't appear for free — you run ads, pay salespeople, send emails, build content. CAC adds all that up and divides by how many customers it bought.</p>
+
+<table>
+<thead><tr><th>Formula</th></tr></thead>
+<tbody>
+<tr><td><strong>CAC = Total Sales &amp; Marketing Spend ÷ Number of New Customers Acquired</strong> (over the same time period)</td></tr>
+</tbody>
+</table>
+
+<p>"Total Sales &amp; Marketing Spend" must include <em>everything</em> used to win customers: ad money, the salaries of marketing and sales people, the tools they use, agency fees, and even your own time if you're doing the selling. People who only count ad spend get a fake, too-cheap number.</p>
+
+<div class="example"><strong>Example:</strong> Last month you spent: $6,000 on ads, $3,000 on a salesperson's salary, $1,000 on marketing tools = <strong>$10,000 total</strong>. That brought in <strong>200 new customers</strong>.<br>
+CAC = $10,000 ÷ 200 = <strong>$50 per customer</strong>.</div>
+
+<h4>Blended CAC vs. Paid CAC — the trap</h4>
+
+<p>Some customers cost you nothing direct — they found you through a friend (referral) or a Google search (organic). Others came from paid ads. Mixing them changes the story.</p>
+
+<ul>
+<li><strong>Blended CAC</strong> — total spend ÷ <em>all</em> new customers (paid + free). It looks cheap because the free customers drag the average down.</li>
+<li><strong>Paid CAC</strong> — paid spend ÷ only the customers who came from <em>paid</em> channels. This is the honest cost of your next ad dollar.</li>
+</ul>
+
+<div class="example"><strong>Example:</strong> 2,000 new customers; 1,200 from paid ads, 800 free. Paid spend = $84,000.<br>
+Blended CAC = $84,000 ÷ 2,000 = <strong>$42</strong>.<br>
+Paid CAC = $84,000 ÷ 1,200 = <strong>$70</strong>.<br>
+The blended number makes paid ads look 40% cheaper than they really are.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Making "should I spend more on ads?" decisions using blended CAC. Use <strong>paid CAC</strong> for that — it tells you the true cost of the <em>next</em> customer ads will buy. Blended CAC belongs in a board summary, not in a spending decision.</div>
+
+<h3>Churn and retention — the inputs that feed LTV</h3>
+
+<p>Before LTV, two more words.</p>
+<ul>
+<li><strong>Churn (churn rate)</strong> — the percentage of customers who leave (cancel, stop buying) in a period. 5% monthly churn means 5 of every 100 customers quit each month.</li>
+<li><strong>Retention</strong> — the opposite: who stays. It's just 100% − churn.</li>
+</ul>
+
+<p>Churn decides <em>how long</em> a customer sticks around, and that drives how much they're worth. The handy rule: <strong>Average customer lifetime = 1 ÷ churn rate</strong>. If 5% leave each month, the average customer stays 1 ÷ 0.05 = <strong>20 months</strong>. Lower churn = longer life = more money per customer. Churn is the silent killer of LTV.</p>
+
+<h3>LTV (also called CLV) — how much a customer is worth over their whole life</h3>
+
+<p><strong>LTV</strong> (Lifetime Value), sometimes <strong>CLV</strong> (Customer Lifetime Value), is the total <em>profit</em> you expect from one customer across the entire time they stay with you — not just their first purchase.</p>
+
+<p>The most-trusted formula multiplies revenue per customer by gross margin (so you count profit, not just sales) and divides by churn (to stretch it over their whole lifetime):</p>
+
+<table>
+<thead><tr><th>Formula</th></tr></thead>
+<tbody>
+<tr><td><strong>LTV = (ARPU × Gross Margin %) ÷ Churn Rate</strong></td></tr>
+</tbody>
+</table>
+
+<p><strong>ARPU</strong> means <em>Average Revenue Per User</em> — the average money one customer pays you in a period (say, per month). It's total revenue ÷ number of customers.</p>
+
+<div class="warn"><strong>Common mistake:</strong> Forgetting to multiply by gross margin. If you use revenue instead of profit, your LTV is hugely inflated — you're counting money that immediately goes back out to cover variable costs. A customer who pays $100/month at 50% margin is worth half of what raw revenue suggests.</div>
+
+<div class="example"><strong>Example:</strong> ARPU = $100/month. Gross margin = 60%. Monthly churn = 5%.<br>
+Step 1 — profit per month per customer: $100 × 0.60 = <strong>$60</strong>.<br>
+Step 2 — divide by churn: $60 ÷ 0.05 = <strong>$1,200</strong>.<br>
+LTV = $1,200. (Sanity check: $60/month × 20-month lifetime = $1,200. Same answer.)</div>
+
+<h3>LTV:CAC ratio — the master gauge</h3>
+
+<p>Now the payoff. Put what a customer is worth (LTV) next to what they cost to win (CAC). The ratio tells you, for every $1 you spend acquiring a customer, how many dollars of lifetime profit you get back.</p>
+
+<table>
+<thead><tr><th>Formula</th></tr></thead>
+<tbody>
+<tr><td><strong>LTV:CAC ratio = LTV ÷ CAC</strong></td></tr>
+</tbody>
+</table>
+
+<pre class="diagram">
+        THE LTV : CAC SEE-SAW
+
+   LTV ($1,200)            CAC ($50?)
+     [=====]                 [=]
+        \                     /
+         \                   /
+   _______\_________________/______
+          /\      pivot
+         /  \
+
+  LTV heavier  -> healthy, grow it
+  Balanced     -> break even, no margin
+  CAC heavier  -> you lose money on each
+                  customer (STOP & FIX)
+</pre>
+
+<p>The widely cited target is <strong>about 3:1</strong> — three dollars of lifetime value for every dollar of acquisition cost. Below 3:1 you're often too thin to survive once you add fixed costs. Top performers run 4:1 to 6:1.</p>
+
+<div class="warn"><strong>Common mistake:</strong> Thinking higher is always better. A very high ratio like <strong>8:1 or more</strong> usually means you're <em>under-spending</em> on growth — there are profitable customers out there you could be winning, and you're leaving them for competitors. Around 3:1–5:1 is the sweet spot: profitable, but still pressing the gas on growth.</div>
+
+<h3>CAC Payback Period — how fast you get your money back</h3>
+
+<p>The ratio tells you <em>if</em> a customer pays back; the <strong>payback period</strong> tells you <em>how fast</em>. It's the number of months a customer must stay before their profit repays what you spent to acquire them. This matters because of cash: you pay CAC <em>today</em>, but the customer pays you back slowly.</p>
+
+<table>
+<thead><tr><th>Formula</th></tr></thead>
+<tbody>
+<tr><td><strong>CAC Payback (months) = CAC ÷ (ARPU × Gross Margin %)</strong></td></tr>
+</tbody>
+</table>
+
+<p>The commonly cited healthy benchmark is <strong>under ~12 months</strong>; elite companies recover CAC in well under 6 months. The longer the payback, the more cash you must float while you wait — which can sink a profitable-on-paper business.</p>
+
+<h3>Full worked example — one company, start to finish</h3>
+
+<p>Meet <strong>BoxFresh</strong>, a subscription snack-box company. Let's run every metric on the same numbers.</p>
+
+<table>
+<thead><tr><th>Input</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>Price (ARPU per month)</td><td>$40</td></tr>
+<tr><td>Variable cost per box (snacks + shipping + fee)</td><td>$24</td></tr>
+<tr><td>Monthly churn rate</td><td>4% (0.04)</td></tr>
+<tr><td>Sales &amp; marketing spend (one month)</td><td>$30,000</td></tr>
+<tr><td>New customers from that spend</td><td>500</td></tr>
+</tbody>
+</table>
+
+<ol>
+<li><strong>Contribution Margin:</strong> $40 − $24 = <strong>$16/month</strong>.</li>
+<li><strong>Gross Margin %:</strong> $16 ÷ $40 = <strong>40%</strong>.</li>
+<li><strong>CAC:</strong> $30,000 ÷ 500 = <strong>$60</strong>.</li>
+<li><strong>Customer lifetime:</strong> 1 ÷ 0.04 = <strong>25 months</strong>.</li>
+<li><strong>LTV:</strong> (ARPU × margin) ÷ churn = ($40 × 0.40) ÷ 0.04 = $16 ÷ 0.04 = <strong>$400</strong>.</li>
+<li><strong>LTV:CAC ratio:</strong> $400 ÷ $60 = <strong>6.7 : 1</strong>.</li>
+<li><strong>CAC Payback:</strong> $60 ÷ $16 = <strong>3.75 months</strong>.</li>
+</ol>
+
+<p><strong>Reading the result:</strong> A 6.7:1 ratio is above the 3:1 minimum — in fact it's <em>above</em> the 4:1–6:1 top band, hinting BoxFresh could afford to spend <em>more</em> on growth and still profit. Payback of 3.75 months is excellent (well under 12). The unit economics work. Now BoxFresh's main risk isn't profitability per customer — it's that 40% gross margin is thin, so if shipping costs rise, the whole picture wobbles. That's the kind of insight unit economics hands you.</p>
+
+<div class="key"><strong>Key takeaway:</strong> Run all four numbers — Contribution Margin, CAC, LTV, and Payback — on every business. Aim for LTV:CAC around 3:1 to 5:1 and payback under 12 months. Always use <em>profit</em> (gross margin) in LTV, use <em>paid</em> CAC for spending decisions, and never forget churn is the hidden lever behind it all.</div>
+
+<h3>Sources</h3>
+<ul>
+<li><a href="https://www.fiscallion.io/blog/saas-unit-economics">Fiscallion — SaaS unit economics guide (CAC, LTV, payback, Rule of 40)</a></li>
+<li><a href="https://foundrycro.com/blog/ltv-cac-ratio-benchmarks-2026/">Foundry CRO — LTV:CAC ratio benchmarks 2026</a></li>
+<li><a href="https://churnzero.com/churnopedia/lifetime-value-ltv-or-customer-lifetime-value-cltv/">ChurnZero — LTV/CLV formula and example</a></li>
+<li><a href="https://chartmogul.com/saas-metrics/ltv/">ChartMogul — Customer Lifetime Value (ARPU × margin ÷ churn)</a></li>
+<li><a href="https://eightx.co/blog/what-is-blended-cac-vs-paid-cac">Eightx — Blended CAC vs Paid CAC</a></li>
+<li><a href="https://www.netsuite.com/portal/resource/articles/erp/customer-acqusition-cost.shtml">NetSuite — Customer Acquisition Cost formula and best practices</a></li>
+</ul></section>
+<section class="section"><h2 id="sec-6">Cash Flow, Burn Rate &amp; Runway — Don’t Run Out of Money</h2>
+
+<p>Most startups don’t die because their idea was bad. They die because they run out of cash. You can have happy customers, a growing product, and a great team — and still go to zero on a Friday when payroll hits and the bank account can’t cover it. This section teaches you the small handful of numbers that tell you exactly how many days you have left, and the levers you can pull to buy more time.</p>
+
+<div class="key"><strong>Key takeaway:</strong> Profit is an opinion; cash is a fact. You can survive years without profit, but you die the day you can’t pay your bills. Watch cash, not just profit.</div>
+
+<h3>First, what is "cash flow"?</h3>
+
+<p><strong>Cash flow</strong> is simply the money actually moving in and out of your bank account over time. <strong>Cash in</strong> = money customers pay you, plus money investors give you. <strong>Cash out</strong> = every dollar that leaves — salaries, rent, software, ads, taxes, paying suppliers.</p>
+
+<p>Note the word <em>actually</em>. Cash flow is not the same as "profit." You can make a sale today (so it counts as revenue) but not get paid for 60 days. The sale helps your profit now, but no cash has arrived. Your bank balance is what keeps the lights on, so we track the cash.</p>
+
+<div class="analogy"><strong>Analogy:</strong> Think of your company as a bathtub. Cash flowing in is the tap. Cash flowing out is the drain. The water level is your bank balance. It doesn’t matter how much water you <em>expect</em> later — if the level hits the bottom, the tub is empty <em>now</em>.</div>
+
+<h3>Burn rate: how fast the tub is draining</h3>
+
+<p><strong>Burn rate</strong> is how much cash your company uses up each month. There are two flavours, and mixing them up is a classic mistake.</p>
+
+<table>
+<thead>
+<tr><th>Term</th><th>Plain meaning</th><th>Formula</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Gross burn</strong></td><td>Total cash you spend in a month, ignoring any money coming in.</td><td>= all monthly cash spending</td></tr>
+<tr><td><strong>Net burn</strong></td><td>How fast your bank balance is actually shrinking after counting revenue.</td><td>= cash spent − cash received</td></tr>
+</tbody>
+</table>
+
+<p>Gross burn answers the worst-case question: "If every customer vanished tomorrow, how fast would I burn cash?" Net burn answers the real-life question: "How fast is my balance really dropping right now?"</p>
+
+<div class="example"><strong>Example:</strong> Last month you spent $150,000 (salaries, rent, tools, ads) and customers paid you $50,000.<br>
+• Gross burn = $150,000 (the total you spent).<br>
+• Net burn = $150,000 − $50,000 = <strong>$100,000</strong> per month.<br>
+Your bank balance dropped by $100,000 that month.</div>
+
+<p>One more case: if your revenue is bigger than your spending, your net burn is <em>negative</em> — your balance is growing. People call that "default alive" or "cash-flow positive." Good place to be.</p>
+
+<h3>Runway: how many months until empty</h3>
+
+<p><strong>Runway</strong> is the number of months you can keep going before the cash runs out, if nothing changes. It is the single most important survival number for a founder.</p>
+
+<table>
+<thead><tr><th>Formula</th></tr></thead>
+<tbody><tr><td><strong>Runway (months) = Cash in the bank ÷ Net monthly burn</strong></td></tr></tbody>
+</table>
+
+<div class="example"><strong>Example:</strong> You have $600,000 in the bank. Your net burn is $100,000/month.<br>
+Runway = $600,000 ÷ $100,000 = <strong>6 months.</strong><br>
+That means: in 6 months, the bathtub is empty. Mark the date on your calendar — that is your "zero-cash date." Today is the day to start acting on it, not the month before.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Calculating runway with a single lucky month’s burn. One slow month can flatter the number. Use a <em>trailing 3-month average</em> net burn so a quiet month or a one-off big payment doesn’t fool you.</div>
+
+<h3>Reading your cash position and building a simple forecast</h3>
+
+<p>Your <strong>cash position</strong> is just one number: how much real, spendable cash sits in your accounts today. Don’t count money you’re "owed but haven’t received" — that’s not cash yet.</p>
+
+<p>A <strong>forecast</strong> is your best guess of that balance going forward. The most trusted tool founders use is the <strong>13-week cash flow forecast</strong> — a week-by-week view of the next quarter (13 weeks ≈ 3 months). Why weekly instead of monthly? Because startups don’t run out of money on a tidy monthly schedule — they run out in the specific week payroll lands and the account is short. Weekly granularity catches that.</p>
+
+<p>How to build a simple one, in three columns per week:</p>
+<ol>
+<li><strong>Starting cash</strong> — the balance at the start of the week.</li>
+<li><strong>Cash in</strong> — customer payments you truly expect to <em>arrive</em> that week (by the date money hits the account, not the invoice date).</li>
+<li><strong>Cash out</strong> — payroll on its real pay dates, rent, supplier payments, taxes, subscriptions.</li>
+</ol>
+<p>Then: <strong>Ending cash = Starting + In − Out.</strong> That ending number becomes next week’s starting number. Roll it forward 13 weeks.</p>
+
+<pre class="diagram">
+13-WEEK CASH FORECAST (simplified)
+
+Week   Start    + In     - Out    = End
+-------------------------------------------
+W1    600,000   40,000  150,000   490,000
+W2    490,000   60,000   90,000   460,000
+W3    460,000   30,000  170,000   320,000  &lt;- payroll
+W4    320,000   50,000   90,000   280,000
+...
+W13    ~10,000  ...      ...        ~ ZERO  &lt;- danger
+</pre>
+
+<div class="tip"><strong>Best practice:</strong> Update the 13-week forecast every Monday with actual numbers, then compare last week’s real cash to what you predicted. Any gap bigger than ~10% — find out why. Over time your forecast gets scarily accurate, and surprises stop being surprises.</div>
+
+<h3>Default alive vs default dead (Paul Graham)</h3>
+
+<p>Startup investor Paul Graham gave founders a simple, brutal question. Assume your spending stays the same and your revenue keeps growing at the rate it has lately. Do you reach <strong>profitability</strong> (the point where revenue covers all costs, so net burn hits zero) <em>before</em> the money runs out?</p>
+<ul>
+<li><strong>Default alive:</strong> Yes — on your current path, you’ll become self-sustaining before the cash is gone. You don’t <em>need</em> anyone’s permission to survive.</li>
+<li><strong>Default dead:</strong> No — you’ll hit zero unless you raise more money or change something big.</li>
+</ul>
+
+<p>The key insight: this is about <em>trajectory</em>, not just runway. Runway tells you how long you last. Default-alive tells you whether your growing revenue will catch up to your spending in time. Graham says ask this honestly around month 8–9 of building, because the answer changes every decision.</p>
+
+<div class="warn"><strong>Common mistake:</strong> Graham warns about the "fatal pinch" — a default-dead company with weak growth and only about 6 months of runway left. By then there’s often too little time to fix things <em>or</em> raise money. The trap is waiting until cash is low to face the question. Ask it while you still have room to act.</div>
+
+<h3>The five levers to extend runway</h3>
+
+<p>If your zero-cash date is too close, you have five things you can pull on. Most founders should pull several at once.</p>
+
+<table>
+<thead><tr><th>Lever</th><th>What it means</th><th>Effect on cash</th></tr></thead>
+<tbody>
+<tr><td>1. Cut burn</td><td>Reduce spending — pause hiring, trim tools, lower ad spend, renegotiate rent.</td><td>Less cash out, fast.</td></tr>
+<tr><td>2. Raise prices</td><td>Charge more per customer (often the fastest profit lever — see the pricing section).</td><td>More cash in, no extra cost.</td></tr>
+<tr><td>3. Collect receivables faster</td><td>Get customers to pay sooner (deposits up front, shorter payment terms, chase late invoices).</td><td>Pulls future cash into now.</td></tr>
+<tr><td>4. Delay payables</td><td>Pay your own suppliers later (negotiate longer terms — fairly, not by stiffing them).</td><td>Keeps cash in your account longer.</td></tr>
+<tr><td>5. Grow revenue</td><td>Sell more — more customers, more usage, upsells.</td><td>More cash in over time.</td></tr>
+</tbody>
+</table>
+
+<div class="example"><strong>Example:</strong> Back to your 6-month runway ($600k cash, $100k net burn). You cut $20k of monthly spending and add $10k of new monthly revenue. New net burn = $100k − $20k − $10k = $70k. New runway = $600,000 ÷ $70,000 ≈ <strong>8.6 months.</strong> Two modest moves bought you ~2.5 extra months — often enough to close a deal or a funding round.</div>
+
+<h3>Working capital: the timing that swings your cash</h3>
+
+<p><strong>Working capital</strong> is the cash tied up in the day-to-day gap between paying out and getting paid in. Three things drive it:</p>
+<ul>
+<li><strong>Accounts receivable (AR)</strong> — money customers owe you but haven’t paid yet. The longer they take, the more of your cash is "stuck" outside your bank.</li>
+<li><strong>Accounts payable (AP)</strong> — money you owe suppliers but haven’t paid yet. Paying later keeps cash with you longer.</li>
+<li><strong>Inventory</strong> — cash frozen in stock sitting on a shelf, not yet sold.</li>
+</ul>
+
+<p>Together these form the <strong>cash conversion cycle</strong>: how many days from spending a dollar (on stock or work) until that dollar comes back as customer cash. Shorter is better — it means you self-fund growth instead of needing to raise money just to operate. A rough version: <em>days to sell inventory + days customers take to pay − days you take to pay suppliers.</em></p>
+
+<div class="analogy"><strong>Analogy:</strong> Working capital is the gap between your wallet emptying (you pay suppliers/staff) and refilling (customers pay you). The wider that gap, the bigger the "float" you must fund yourself. Collecting faster and paying later narrows the gap and quietly hands you cash without raising a dollar.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Booking a big sale and feeling rich — then learning the customer pays in 90 days while your payroll is in 2 weeks. A profitable sale on paper can still bankrupt you on timing. Always forecast by the date cash actually <em>moves</em>.</div>
+
+<h3>The danger zone: act at ~6 months, not 2</h3>
+
+<p>Raising money and cutting costs both take longer than founders expect. A funding round commonly takes <strong>3 to 6 months</strong> from "start talking to investors" to "money in the bank." So if you wait until you have 2 months of runway to start, you’re already too late — you’ll be negotiating from desperation, on bad terms, or not at all.</p>
+
+<div class="key"><strong>Key takeaway:</strong> When runway drops to about 6 months, it’s decision time: either raise money <em>now</em>, or cut burn hard enough to become default alive. The worst outcome is doing neither and discovering the choice was made for you.</div>
+
+<pre class="diagram">
+RUNWAY DEPLETION — act early, not at the cliff
+
+Cash
+$600k |*
+      |  *
+      |    *
+      |      *  &lt;-- 6 mo left: START raising / cut now
+$300k |        *
+      |          *
+      |            *  &lt;-- 3 mo: hard to fix, weak position
+      |              *
+   $0 |________________*___________
+       0   1   2   3   4   5   6  (months)
+</pre>
+
+<h3>What good founders do every week</h3>
+<ul>
+<li><strong>Know two numbers cold:</strong> cash in the bank, and net monthly burn. You should be able to say them from memory at any moment.</li>
+<li><strong>Know your zero-cash date.</strong> A single calendar date is more motivating than "a few months."</li>
+<li><strong>Update the 13-week forecast weekly</strong>, ideally every Monday, and compare it to what actually happened.</li>
+<li><strong>Re-check "default alive or dead?"</strong> monthly. If you’re dead, decide the fix this month, not next quarter.</li>
+<li><strong>Run a worst-case scenario:</strong> what if revenue is 30% lower and a big payment slips? If that breaks you, fix the plan now.</li>
+<li><strong>Start raising or cutting at ~6 months of runway</strong>, while you still have leverage and time.</li>
+</ul>
+
+<div class="tip"><strong>Best practice:</strong> Put a recurring 30-minute "cash review" on your calendar every week. Founders who survive aren’t the ones who never hit trouble — they’re the ones who saw it coming early enough to do something about it.</div></section>
+<section class="section"><h2 id="sec-7">Pricing Fundamentals — Cost-Plus vs Value vs Competitive</h2>
+
+<p>Price is the single most powerful lever in your business. Change your price by 10% and almost all of that extra money drops straight to profit, because your costs barely move. Yet most founders pick a number in a hurry and never touch it again. This section teaches you how to set a price on purpose.</p>
+
+<p>First, two words we will use constantly:</p>
+<ul>
+<li><strong>Cost</strong> = what it takes you to make and deliver one unit (the materials, the server, the hour of work).</li>
+<li><strong>Price</strong> = what the customer pays you for that unit. The gap between them is your profit.</li>
+</ul>
+
+<div class="key"><strong>Key takeaway:</strong> There are three ways to choose a price — based on your <em>cost</em>, based on your <em>competitors</em>, or based on the <em>value</em> the customer gets. Value-based pricing is almost always the most profitable, but most founders default to cost-based out of fear.</div>
+
+<h3>Method 1: Cost-Plus Pricing (markup over cost)</h3>
+
+<p>This is the simplest method. You take what it costs you to make something, then add a chunk on top. That chunk is your <strong>markup</strong>.</p>
+
+<div class="analogy"><strong>Analogy:</strong> A shopkeeper buys a bottle for $4 and sells it for $6. They "marked it up" by $2. Cost-plus pricing is just that idea: start from cost, add a slice.</div>
+
+<p>The method is honest and easy. But it has a blind spot: it ignores what the customer would happily pay. If your product saves a business $10,000, cost-plus might tell you to charge $50 — because that's what it cost you plus a markup. You'd be leaving a fortune on the table.</p>
+
+<h4>The classic confusion: markup vs margin</h4>
+
+<p>This trips up nearly every new founder, so go slowly. Markup and margin both describe the same profit, but they measure it against different things.</p>
+
+<ul>
+<li><strong>Markup</strong> = profit measured as a percentage of your <em>cost</em>.</li>
+<li><strong>Margin</strong> (also called gross margin) = profit measured as a percentage of your <em>selling price</em>.</li>
+</ul>
+
+<table>
+<thead><tr><th>Term</th><th>Formula</th><th>Question it answers</th></tr></thead>
+<tbody>
+<tr><td>Markup %</td><td>(Price − Cost) ÷ Cost</td><td>"How much did I add on top of cost?"</td></tr>
+<tr><td>Margin %</td><td>(Price − Cost) ÷ Price</td><td>"What share of the sale is profit?"</td></tr>
+</tbody>
+</table>
+
+<p>For the same sale, <strong>markup is always a bigger number than margin</strong>, because cost (the denominator for markup) is smaller than price (the denominator for margin).</p>
+
+<div class="example"><strong>Example:</strong> Your cost is $50. You sell for $100.<br>
+Profit = $100 − $50 = $50.<br>
+<strong>Markup</strong> = $50 ÷ $50 (cost) = 1.0 = <strong>100%</strong>.<br>
+<strong>Margin</strong> = $50 ÷ $100 (price) = 0.5 = <strong>50%</strong>.<br>
+Same $50 of profit. "100% markup" and "50% margin" are the exact same deal — just described from two angles.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Assuming a 50% markup gives you a 50% margin. It does NOT. A 50% markup ($50 cost → $75 price) gives only a 33% margin ($25 ÷ $75). Founders who confuse these quietly underprice and wonder why cash is always tight.</div>
+
+<h4>Converting between markup and margin</h4>
+
+<p>You will often know one and need the other. Two small formulas do the job:</p>
+
+<table>
+<thead><tr><th>You have</th><th>You want</th><th>Formula</th></tr></thead>
+<tbody>
+<tr><td>Markup</td><td>Margin</td><td>Margin = Markup ÷ (1 + Markup)</td></tr>
+<tr><td>Margin</td><td>Markup</td><td>Markup = Margin ÷ (1 − Margin)</td></tr>
+</tbody>
+</table>
+
+<div class="example"><strong>Example (markup → margin):</strong> You apply a 60% markup. What's your margin?<br>
+Margin = 0.60 ÷ (1 + 0.60) = 0.60 ÷ 1.60 = 0.375 = <strong>37.5% margin</strong>.</div>
+
+<div class="example"><strong>Example (margin → markup):</strong> You want a 40% margin. What markup do you set?<br>
+Markup = 0.40 ÷ (1 − 0.40) = 0.40 ÷ 0.60 = 0.667 = <strong>66.7% markup</strong>.<br>
+Check: cost $60 × 1.667 = $100 price. Profit $40 ÷ $100 = 40% margin. ✓</div>
+
+<div class="tip"><strong>Best practice:</strong> Set targets in <em>margin</em>, not markup, because margin tells you the share of every sale you actually keep. Software founders often aim for a <strong>70–80% gross margin</strong>, which is the common benchmark band for healthy SaaS — many self-serve products clear 80%+.</div>
+
+<h3>Method 2: Competitor-Based Pricing</h3>
+
+<p>Here you look at what rivals charge and place yourself near them — a bit below to win on price, a bit above to signal premium. It's fast and it keeps you "in the market."</p>
+
+<p>Use it as a <em>sanity check</em>, not your only method. Competitors may be wrong, may have different costs, or may be losing money. Copying their price copies their mistakes.</p>
+
+<div class="warn"><strong>Common mistake:</strong> Pricing just under the cheapest competitor to "win deals." A super-short sales cycle and customers saying "wow, that's cheap" are red flags that you've underpriced. You attract bargain-hunters and starve the business of margin.</div>
+
+<h3>Method 3: Value-Based Pricing (usually the best)</h3>
+
+<p>Value-based pricing means you set the price based on the <strong>value the customer gets</strong> — the money they make or save, the time returned, the pain removed — not on what it cost you to build.</p>
+
+<div class="analogy"><strong>Analogy:</strong> A fire extinguisher costs a few dollars of metal and powder. But in the moment your kitchen is on fire, it's worth far more than its parts. You're not paying for steel; you're paying for the outcome of not losing your house.</div>
+
+<div class="example"><strong>Example:</strong> Your software saves a print shop 10 hours a week. Their time is worth $40/hour, so you save them about $400/week ≈ $1,700/month. Charging $200/month is a no-brainer for them — it's roughly an 8-to-1 return — and it's far more than cost-plus would ever suggest.</div>
+
+<p>To price on value, you must understand your customer's world: what outcome they care about, what the problem costs them today, and what they'd pay an alternative. This takes customer conversations, but it's where the real money is.</p>
+
+<div class="key"><strong>Key takeaway:</strong> Cost-plus tells you the <em>floor</em> (never sell below cost for long). Competitor pricing tells you the <em>market range</em>. Value tells you the <em>ceiling</em>. Good founders use all three but let <strong>value</strong> lead.</div>
+
+<h3>The value metric: what you charge <em>per</em></h3>
+
+<p>A <strong>value metric</strong> is the unit you bill by — the thing that goes up as the customer gets more value. Picking the right one matters as much as the number.</p>
+
+<ul>
+<li>Email tool → priced per <em>subscriber</em> or per <em>email sent</em>.</li>
+<li>Storage service → priced per <em>gigabyte</em>.</li>
+<li>Team app → priced per <em>user (seat)</em>.</li>
+<li>Print platform → priced per <em>order processed</em> or per <em>store</em>.</li>
+</ul>
+
+<p>A good value metric is <strong>simple</strong> (the customer understands it instantly), <strong>fair</strong> (it grows as their success grows), and <strong>measurable</strong> (you can count it). Companies that align price to a clear value metric tend to grow faster than those that just charge a flat fee for a bundle of features.</p>
+
+<h3>Pricing models (the structures you can use)</h3>
+
+<table>
+<thead><tr><th>Model</th><th>How it works</th><th>Good for</th></tr></thead>
+<tbody>
+<tr><td>One-time</td><td>Pay once, own it</td><td>Tools, hardware, one-off projects</td></tr>
+<tr><td>Subscription</td><td>A fixed fee every month/year</td><td>Ongoing software; predictable revenue</td></tr>
+<tr><td>Usage / metered</td><td>Pay for what you consume</td><td>Infrastructure, APIs, variable use</td></tr>
+<tr><td>Per-seat</td><td>Price × number of users</td><td>Team and collaboration tools</td></tr>
+<tr><td>Tiered (good-better-best)</td><td>2–4 packages at rising prices</td><td>Mixed customers, big & small</td></tr>
+<tr><td>Freemium</td><td>Free base; pay to unlock more</td><td>Wide top-of-funnel, viral growth</td></tr>
+</tbody>
+</table>
+
+<p>Subscriptions create <strong>recurring revenue</strong> — money that arrives again every period without a new sale, which makes a business far more stable and valuable. Usage pricing feels fair but can scare customers who fear a surprise bill. Many companies blend models: a base subscription plus usage on top.</p>
+
+<h3>Good-better-best tiers (and why three works)</h3>
+
+<p>Most buyers dislike a single take-it-or-leave-it price. Three tiers let small and large customers both say yes, and the middle option quietly becomes the "obvious" choice.</p>
+
+<pre class="diagram">
+  GOOD          BETTER          BEST
+ +--------+    +----------+    +-----------+
+ | $19/mo |    |  $49/mo  |    |  $99/mo   |
+ | Basic  |    | Most     |    | Power     |
+ |        |    | popular* |    | users     |
+ | core   |    | core +   |    | everything|
+ | only   |    | the      |    | + support |
+ |        |    | features |    | + limits  |
+ |        |    | people   |    | raised    |
+ |        |    | want     |    |           |
+ +--------+    +----------+    +-----------+
+   anchor       <-- target -->    anchor
+  (cheap)     (you want this)   (premium)
+
+ * Highlight the middle tier. The cheap and
+   premium tiers exist mostly to make the
+   middle look like the sensible pick.
+</pre>
+
+<p>The high tier <strong>anchors</strong> — once a shopper sees $99, the $49 plan feels reasonable. The low tier catches the price-sensitive. A well-built third tier can lift premium-plan sales meaningfully (studies cite boosts of up to ~30% from this "decoy" effect). For the entry tier, <strong>charm pricing</strong> — ending in 9, like $19 or $99 instead of $20 or $100 — can nudge conversions, because the brain reads the left digit first.</p>
+
+<h3>Why most founders underprice</h3>
+
+<p>It's the most common pricing error, and it comes from fear and a few mental traps:</p>
+<ul>
+<li><strong>Fear of rejection.</strong> A low price feels "safe." But a price too low signals "cheap," repels serious buyers, and starves you of the margin to survive.</li>
+<li><strong>Anchoring on cost.</strong> "It only cost me $5 to make" feels like it should sell for $7. The customer doesn't care what it cost you — only what it's worth to <em>them</em>.</li>
+<li><strong>Impostor doubt.</strong> Founders delivering $100k of value flinch at charging even $20k. Spend the time on pricing that you'd spend on a feature.</li>
+</ul>
+
+<div class="tip"><strong>Best practice:</strong> Raising your price is the fastest, cheapest growth lever you have — no new customers, no new code. Test a higher price on new customers and watch whether sign-ups truly drop. Usually they don't drop nearly as much as you fear.</div>
+
+<h3>When to use each method — quick guide</h3>
+
+<table>
+<thead><tr><th>Situation</th><th>Lead with</th></tr></thead>
+<tbody>
+<tr><td>Commodity / physical product, thin differences</td><td>Cost-plus (protect margin) + competitor check</td></tr>
+<tr><td>Crowded market with clear price norms</td><td>Competitor-based, then adjust by value</td></tr>
+<tr><td>You deliver a measurable outcome (save money/time)</td><td>Value-based</td></tr>
+<tr><td>Brand-new category, no comparison exists</td><td>Value-based (you set the anchor)</td></tr>
+</tbody>
+</table>
+
+<div class="key"><strong>Key takeaway:</strong> Always know your cost (your floor) and your competitors (your range), but price to <em>value</em> whenever you can prove an outcome. Use clear tiers, pick a value metric that grows with the customer, and revisit your price regularly — it is a decision, not a permanent fact.</div></section>
+<section class="section"><h2 id="sec-8">Pricing Psychology &amp; Pricing With Confidence</h2>
+
+<p>Earlier sections covered the <em>math</em> of pricing — costs, margins, what you can afford to charge. This section is about the <em>mind</em> of the buyer. Two products at the exact same price can sell completely differently depending on how the price is shown, what sits next to it, and how you talk about it.</p>
+
+<p>None of this is trickery. It is about <strong>removing friction</strong> so the right customer says yes more easily, and about <strong>not undercharging out of fear</strong>. Let's start from zero.</p>
+
+<div class="key"><strong>Key takeaway:</strong> Price is not just a number. It is a story the buyer tells themselves about value. Your job is to make that story easy to believe — and to never apologize for the number.</div>
+
+<h3>The one idea behind everything: reference prices</h3>
+
+<p>A <strong>reference price</strong> is the price a buyer <em>expects</em> or <em>compares against</em> in their head. People almost never judge a price on its own. They judge it against something — a number they saw a minute ago, a competitor, or what they paid last time.</p>
+
+<p>This matters because it means <strong>you can shape the comparison</strong>. If the buyer has no reference, you can give them one. If they have a bad one (a cheap competitor), you can replace it with a better one (the cost of the problem you solve).</p>
+
+<div class="analogy"><strong>Analogy:</strong> A $40 bottle of wine feels expensive in a supermarket but cheap in a fine restaurant. The wine is identical. Only the reference point changed.</div>
+
+<h3>Anchoring: the first number sets the stage</h3>
+
+<p><strong>Anchoring</strong> means the first number a person sees becomes the mental "anchor" that all later numbers get compared to — even if the first number is irrelevant. The brain grabs the anchor and adjusts from there, usually not far enough.</p>
+
+<p>The most famous business example is the <strong>Williams-Sonoma breadmaker</strong>. They sold a bread machine for <strong>$275</strong> and it barely moved — buyers had no reference, so they couldn't tell if it was a fair price. The company then added a <em>fancier</em> model at <strong>$429</strong>. Almost nobody bought the $429 machine. But sales of the original $275 machine <strong>roughly doubled</strong>. Why? The $429 price became an anchor, and suddenly $275 looked like a clear bargain.</p>
+
+<div class="example"><strong>Example:</strong> You sell a $99/month plan and conversions are weak. You add a $299/month "Premium" plan above it. Few buy Premium — but the $99 plan now reads as "the sensible-value choice" instead of "the expensive one," and more people pick it.</div>
+
+<div class="tip"><strong>Best practice:</strong> On a pricing page or a sales call, show your highest-value (most expensive) option <em>first</em> or most prominently. It anchors high, so everything below feels reasonable. Lead with the premium, then step down.</div>
+
+<h3>Charm pricing and the left-digit effect ($9.99)</h3>
+
+<p><strong>Charm pricing</strong> is ending a price in <strong>.99</strong> or <strong>9</strong> (like $9.99 or $49). The reason it works is the <strong>left-digit effect</strong>: our brains read prices left-to-right and lock onto the <em>first</em> digit. We see $9.99 and our mind files it as "9-something," closer to $9 than to $10, even though it is basically $10.</p>
+
+<p>Researchers <strong>Thomas and Morwitz (2005)</strong> documented this "penny wise, pound foolish" effect. In a classic <strong>MIT / University of Chicago catalog test</strong>, the same women's clothing item sold <em>more</em> at <strong>$39</strong> than at $34 — a higher price beat a lower one purely because of the "9" ending.</p>
+
+<table>
+<thead><tr><th>Price shown</th><th>How the brain reads it</th><th>Best for</th></tr></thead>
+<tbody>
+<tr><td>$9.99 / $49 / $99</td><td>"Affordable, a deal"</td><td>Consumer, e-commerce, volume</td></tr>
+<tr><td>$10 / $50 / $100</td><td>"Clean, premium, trustworthy"</td><td>High-end, luxury, B2B services</td></tr>
+</tbody>
+</table>
+
+<div class="warn"><strong>Common mistake:</strong> Using charm pricing ($1,997) on a premium or trust-based offer. For luxury, professional services, and high-ticket B2B, round numbers ($2,000) feel more confident and honest. The "9" can signal "discount bin" — wrong for a premium brand.</div>
+
+<h3>Price tiering and the decoy effect</h3>
+
+<p><strong>Tiering</strong> means offering a few versions at different prices (Basic / Pro / Premium) instead of one. Good tiering does two things: it lets different buyers self-select, and it lets you <em>guide</em> the choice.</p>
+
+<p>The <strong>decoy effect</strong> (the formal name is <strong>asymmetric dominance</strong>) is when you add an option that is clearly <em>worse</em> than one of your real options — not to sell it, but to make the option next to it look obviously great.</p>
+
+<p>The legendary proof is <strong>Dan Ariely's Economist subscription study</strong>. Subscribers were offered:</p>
+
+<table>
+<thead><tr><th>Option</th><th>Price</th><th>Role</th></tr></thead>
+<tbody>
+<tr><td>Web only</td><td>$59</td><td>Cheap option</td></tr>
+<tr><td>Print only</td><td>$125</td><td>The decoy</td></tr>
+<tr><td>Print + Web</td><td>$125</td><td>The target (what they want you to buy)</td></tr>
+</tbody>
+</table>
+
+<p>"Print only" at $125 is a decoy: it costs the same as "Print + Web" but gives you <em>less</em>, so nobody should ever pick it. Its only job is to make "Print + Web" look like a no-brainer. The result:</p>
+
+<ul>
+<li><strong>With</strong> the decoy: <strong>84%</strong> chose Print + Web. Only 16% chose Web-only.</li>
+<li><strong>Without</strong> the decoy (just Web $59 vs Print+Web $125): <strong>68%</strong> chose the cheap Web-only option.</li>
+</ul>
+
+<p>The Economist itself was so amused it ran a piece called "the importance of irrelevant alternatives."</p>
+
+<div class="key"><strong>Key takeaway:</strong> A well-placed "obviously worse for the money" option doesn't get bought — it makes your real target look like the smart choice and quietly lifts revenue.</div>
+
+<h3>The center-stage and compromise effect: why the middle wins</h3>
+
+<p>The <strong>compromise effect</strong> (Simonson &amp; Tversky, 1992) says that when given three options, people disproportionately pick the <strong>middle</strong> one. The cheapest feels like a sacrifice ("am I being cheap?"); the most expensive feels risky ("am I overpaying?"). The middle feels safe and reasonable. Across five product categories, an option's market share jumped about <strong>17.5 percentage points</strong> just by becoming the middle choice.</p>
+
+<p>The related <strong>center-stage effect</strong> shows people pick the option placed visually in the <em>center</em> of a row, partly because they assume "the middle one must be the popular one."</p>
+
+<div class="tip"><strong>Best practice:</strong> Build three tiers and design the <em>middle</em> one to be the plan you most want sold. Place it in the center, make it visually bigger, and label it "Most Popular" or "Best Value." Set the top tier high enough to anchor, and the bottom tier limited enough that buyers reach for the middle.</div>
+
+<pre class="diagram">
+   BASIC          PRO           PREMIUM
+   $19         [  $49  ]          $99
+              "Most Popular"
+   anchor       <-- you steer     anchor
+   low          buyers here       high
+</pre>
+
+<div class="example"><strong>Example:</strong> Tiers at $19 / $49 / $99. Most buyers land on $49. Without the $99 anchor above it, that same $49 plan would feel like "the expensive one," and more people would drop to $19. The top tier earns its keep even if few buy it.</div>
+
+<h3>Bundling and the pain of paying</h3>
+
+<p>The <strong>pain of paying</strong> is a real, measurable discomfort people feel when handing over money — researched by Prelec and Loewenstein. Spending literally feels a bit like a small loss. Two levers reduce it:</p>
+
+<ul>
+<li><strong>Bundling:</strong> selling several things together for one price. Paying once for a bundle hurts less than paying five separate times for five items. (It also hides the price of each piece, so buyers can't easily comparison-shop each one.)</li>
+<li><strong>Decoupling payment from use:</strong> annual or up-front plans feel "already paid for," so every later use feels free. A $1,200/year plan stings once; the customer then enjoys it pain-free for 12 months. That's why subscriptions and prepaid credits boost retention — there's no monthly sting.</li>
+</ul>
+
+<div class="analogy"><strong>Analogy:</strong> An all-inclusive resort feels relaxing because you paid once at the start. Paying $12 every time you want a drink would make the whole trip feel expensive, even if the total were lower.</div>
+
+<h3>Prospect theory and loss aversion in pricing</h3>
+
+<p><strong>Prospect theory</strong> (Kahneman &amp; Tversky, 1979 — it won a Nobel Prize) gives us <strong>loss aversion</strong>: <em>losses hurt about twice as much as equal gains feel good</em>. People will work harder to avoid losing $100 than to win $100.</p>
+
+<p>For pricing, this means: <strong>frame your offer as avoiding a loss, not just gaining a benefit.</strong> "You're losing $3,000 a month to this problem" hits harder than "we'll save you $3,000 a month," even though it's the same number. Free trials work for the same reason — once people use your product, taking it away feels like a loss they'll pay to avoid.</p>
+
+<div class="tip"><strong>Best practice — the "Rule of 100" for discounts:</strong> For prices <strong>under $100</strong>, show the discount as a <strong>percentage</strong> ("25% off"). For prices <strong>over $100</strong>, show it as a <strong>dollar amount</strong> ("$200 off"). On a $40 item, "25% off" feels bigger than "$10 off." On a $1,000 item, "$200 off" feels bigger than "20% off." Pick whichever number <em>looks</em> larger.</div>
+
+<h3>How to run a price increase without losing customers</h3>
+
+<p>Raising prices is one of the fastest ways to grow profit (every extra dollar is nearly pure margin), but founders dread it. Do it like this:</p>
+
+<ol>
+<li><strong>Grandfather existing customers</strong> (at least for a while). "Grandfathering" means letting current customers keep their old price for a set period. This removes the sense of <em>loss</em> for your loyal base and buys goodwill.</li>
+<li><strong>Lead with value, not cost.</strong> Tie the increase to improvements: "Since you joined we've added X, Y, and Z." Never blame "rising costs" — that makes it your problem, not their gain.</li>
+<li><strong>Communicate early and directly.</strong> Email well before the change, with a clear date and number. Silence breeds churn; honesty builds trust.</li>
+<li><strong>Give a reason and a window.</strong> "New price starts March 1. Lock in today's rate by renewing annually before then." This even drives a short-term revenue bump.</li>
+</ol>
+
+<div class="example"><strong>Example:</strong> You raise from $40 to $50/month (+25%). You grandfather current users for 6 months and announce it 30 days ahead. Say only 5% leave. On 1,000 customers, you've gone from $40,000/month to roughly 950 × $50 = $47,500/month — up 19% even after losing some accounts. The math almost always favors the raise.</div>
+
+<h3>Pricing with confidence: talking price on a sales call</h3>
+
+<p>The single biggest pricing mistake founders make isn't a strategy error — it's <strong>flinching</strong>. When you say your price nervously, discount before being asked, or over-explain, you teach the buyer that the price isn't real. Confidence <em>is</em> a pricing tactic.</p>
+
+<div class="tip"><strong>Best practice — how to say the price:</strong> State it plainly, then <strong>stop talking</strong>. "It's $2,000 a month." Silence. Let them respond. Most founders panic and fill the silence with a discount nobody asked for. Don't. The next person to speak shouldn't be you.</div>
+
+<ul>
+<li><strong>Anchor to the value, not the cost.</strong> "This recovers about $20,000 a month in lost orders — it's $2,000." Now $2,000 sounds cheap against the $20,000 reference.</li>
+<li><strong>Don't apologize.</strong> No "it's a bit pricey, I know…" If <em>you</em> sound unsure it's worth it, why would they be sure?</li>
+<li><strong>If they push back on price, ask a question</strong> instead of cutting: "Is it the budget, or are you not yet sure it'll pay off?" Usually it's the second — solve that, don't drop the number.</li>
+</ul>
+
+<h3>The four reflex mistakes to unlearn</h3>
+
+<div class="warn"><strong>Common mistake — discounting reflexively:</strong> Offering a discount the moment anyone hesitates trains every future buyer to hesitate. Discounts also permanently lower your <em>reference price</em> — the next sale starts from the discounted number, not the real one.</div>
+
+<div class="warn"><strong>Common mistake — competing on price:</strong> If you win by being cheapest, someone with more money will out-cheap you, and you'll have trained customers to care only about price. Compete on outcome, speed, trust, or specialization. There's almost always room for one premium player — be that, not the bargain bin.</div>
+
+<div class="warn"><strong>Common mistake — apologizing for price:</strong> Saying "I know it's expensive" out loud puts the doubt in the buyer's head. Replace apology with value framing. State the number like it's obviously fair, because to the right customer it is.</div>
+
+<div class="warn"><strong>Common mistake — one take-it-or-leave-it price:</strong> A single option forces a yes/no on <em>buying</em>. Three options shift the question to <em>which one</em> — a much easier "yes." Always give the buyer a choice <em>among</em> your offers, not just a choice <em>about</em> them.</div>
+
+<div class="key"><strong>Key takeaway:</strong> Set three tiers (steer to the middle), anchor high, frame against the cost of the problem, grandfather loyal customers through increases, and say your price plainly without apologizing. Pricing psychology isn't manipulation — it's respecting that buyers decide by comparison and feeling, and giving them an honest, confident frame to decide within.</div>
+
+<p><strong>Sources:</strong> Dan Ariely / The Economist decoy study (asymmetric dominance, 84% vs 68%); Williams-Sonoma breadmaker anchoring case ($275 → +$429 decoy); Thomas &amp; Morwitz (2005) left-digit effect and the MIT/Chicago $39-beats-$34 catalog test; Simonson &amp; Tversky (1992) compromise effect (~17.5pt share lift) and the center-stage effect; Kahneman &amp; Tversky (1979) prospect theory / loss aversion (losses ≈ 2× gains); Prelec &amp; Loewenstein on the pain of paying.</p></section>
+<section class="section"><h2 id="sec-9">Break-Even, Margins &amp; Profitability</h2>
+
+<p>Every founder asks the same scary question: <em>"When do I actually start making money?"</em> This section gives you a precise, math-backed answer. By the end you will be able to take any business idea and calculate, on the back of a napkin, exactly how much you need to sell before you stop losing money and start keeping it.</p>
+
+<p>We will build up slowly, one term at a time. Do not skip ahead. Each idea is a brick, and we are building a wall.</p>
+
+<div class="key"><strong>Key takeaway:</strong> Break-even is the sales level where your money coming in exactly equals your money going out. Below it you lose money; above it you make money. Knowing this single number tells you whether your business can survive.</div>
+
+<h3>Fixed costs vs variable costs</h3>
+
+<p>Before we can find break-even, we must split every cost your business has into two buckets. This split is the foundation of everything in this section.</p>
+
+<h4>Fixed costs</h4>
+<p><strong>Fixed costs</strong> are the costs you pay no matter how much you sell. They stay the same whether you sell zero units or a thousand units. They are the bills that arrive every month even if business is dead.</p>
+<ul>
+  <li>Office or shop rent</li>
+  <li>Salaries of full-time staff</li>
+  <li>Software subscriptions (your accounting tool, your website hosting)</li>
+  <li>Insurance</li>
+  <li>Loan repayments</li>
+</ul>
+
+<h4>Variable costs</h4>
+<p><strong>Variable costs</strong> are the costs that go up and down <em>with each sale</em>. Sell one more unit, pay a bit more. Sell nothing, pay nothing.</p>
+<ul>
+  <li>The materials inside the product (paper, ink, fabric)</li>
+  <li>Payment processing fees (the ~3% the card company takes per order)</li>
+  <li>Shipping and packaging for each order</li>
+  <li>Sales commission paid per sale</li>
+  <li>For software: the cloud-server cost of serving one more customer</li>
+</ul>
+
+<div class="analogy"><strong>Analogy:</strong> Think of a food truck. The lease on the truck and the insurance are <em>fixed</em> — you pay them even on a rainy day with no customers. The bun, the patty, and the napkins for each burger are <em>variable</em> — they only exist because someone bought a burger.</div>
+
+<div class="warn"><strong>Common mistake:</strong> Treating your own founder salary or rent as "free" because cash hasn't left yet. If a cost will eventually be paid every month, it is a fixed cost. Ignoring it makes your break-even look far rosier than reality, and you will run out of cash by surprise.</div>
+
+<table>
+  <thead><tr><th>Question to ask</th><th>If YES → it's…</th></tr></thead>
+  <tbody>
+    <tr><td>Do I pay this even if I sell nothing this month?</td><td>Fixed cost</td></tr>
+    <tr><td>Does this cost only happen because a customer bought?</td><td>Variable cost</td></tr>
+  </tbody>
+</table>
+
+<h3>Contribution margin per unit — the engine of profit</h3>
+
+<p>Here is the single most useful number in this whole section. <strong>Contribution margin per unit</strong> is the money left over from <em>one sale</em> after you pay the variable costs of that one sale. It is the amount each sale "contributes" toward paying off your fixed costs (and, after those are paid, toward profit).</p>
+
+<pre class="diagram">
+Contribution margin = Selling price - Variable cost
+   per unit             per unit       per unit
+</pre>
+
+<div class="example"><strong>Example:</strong> You sell a custom mug for <strong>$25</strong>. The variable costs are: the blank mug $6, the printing ink $2, packaging $1, and the card fee $1. That is $10 of variable cost per mug.<br>
+Contribution margin = $25 − $10 = <strong>$15 per mug</strong>.<br>
+Every mug you sell hands you $15 to help cover your fixed costs.</div>
+
+<p>Notice that fixed costs do <em>not</em> appear in this formula. Contribution margin is purely about the per-sale economics. That is on purpose — it isolates whether each sale is even worth making.</p>
+
+<div class="warn"><strong>Common mistake:</strong> Selling a product whose contribution margin is zero or negative. If your variable costs equal or beat your price, then <em>every extra sale loses you money</em>, and no amount of "scaling" will ever save you. More sales just dig the hole faster. Fix the price or the costs first.</div>
+
+<h3>The break-even formula (in units)</h3>
+
+<p>Now we combine the two ideas. You break even when your contribution margins, added up across all your sales, have fully paid off your fixed costs. So:</p>
+
+<pre class="diagram">
+Break-even      Fixed costs
+units      =  ------------------------
+            Contribution margin per unit
+</pre>
+
+<div class="example"><strong>Example:</strong> Your monthly fixed costs (rent, your salary, software) are <strong>$10,000</strong>. Each mug has a contribution margin of <strong>$15</strong>.<br>
+Break-even units = $10,000 ÷ $15 = <strong>667 mugs per month</strong>.<br>
+Step by step: 10,000 ÷ 15 = 666.7, and you cannot sell two-thirds of a mug, so you round <em>up</em> to 667. Sell 667 mugs and you make exactly $0 profit. Mug number 668 is your first dollar of profit.</div>
+
+<h3>The break-even formula (in dollars)</h3>
+
+<p>Sometimes you do not sell neat "units" — maybe you sell many different products. In that case it's easier to work in revenue dollars. For this we need one more term: the <strong>contribution margin ratio</strong>, which is just contribution margin written as a percentage of price.</p>
+
+<pre class="diagram">
+Contribution      Contribution margin per unit
+margin ratio  =  ------------------------------
+                      Selling price per unit
+</pre>
+
+<div class="example"><strong>Example:</strong> Our mug's contribution margin is $15 and its price is $25.<br>
+Ratio = $15 ÷ $25 = 0.60, i.e. <strong>60%</strong>. Sixty cents of every sales dollar is left after variable costs.</div>
+
+<pre class="diagram">
+Break-even         Fixed costs
+revenue ($)  =  --------------------------
+                Contribution margin ratio
+</pre>
+
+<div class="example"><strong>Example:</strong> Break-even revenue = $10,000 ÷ 0.60 = <strong>$16,667 per month</strong>.<br>
+Sanity check: 667 mugs × $25 = $16,675 — the same answer, give or take rounding. Both methods agree, as they must.</div>
+
+<div class="tip"><strong>Best practice:</strong> Calculate break-even in <em>both</em> units and dollars and pin the numbers above your desk. "I need 667 sales / $16.7k a month to survive" is a goal the whole team can rally around, far more than a vague "let's grow."</div>
+
+<h3>How many to hit a target profit</h3>
+
+<p>Breaking even is survival. You actually want <em>profit</em>. The trick is beautifully simple: just treat your desired profit as if it were an extra fixed cost you must also cover.</p>
+
+<pre class="diagram">
+Units for       Fixed costs + Target profit
+target    =  ------------------------------
+profit       Contribution margin per unit
+</pre>
+
+<div class="example"><strong>Example:</strong> Same mug business. Fixed costs $10,000. You want $5,000 of profit next month.<br>
+Units = ($10,000 + $5,000) ÷ $15 = $15,000 ÷ $15 = <strong>1,000 mugs</strong>.<br>
+So 667 mugs keeps the lights on; 1,000 mugs puts $5,000 in your pocket. The 333 mugs <em>above</em> break-even each drop their full $15 straight into profit (333 × $15 ≈ $5,000). That's the magic: once fixed costs are paid, contribution margin <em>is</em> profit.</div>
+
+<h3>The three margin types — a recap</h3>
+
+<p>Founders throw the word "margin" around loosely. There are three distinct margins, and they answer three different questions. Each is a percentage of revenue. You read them top-to-bottom on a profit statement (P&amp;L).</p>
+
+<pre class="diagram">
+  Revenue (sales)              $100
+   -  Cost of goods sold       - $40
+  ----------------------------------
+  = Gross profit                $60   -> Gross margin 60%
+   -  Operating expenses       - $35
+  ----------------------------------
+  = Operating profit            $25   -> Operating margin 25%
+   -  Taxes & interest         - $10
+  ----------------------------------
+  = Net profit                  $15   -> Net margin 15%
+</pre>
+
+<table>
+  <thead><tr><th>Margin</th><th>Formula</th><th>Question it answers</th></tr></thead>
+  <tbody>
+    <tr><td>Gross margin</td><td>(Revenue − cost of making the product) ÷ Revenue</td><td>Is the product itself profitable to make?</td></tr>
+    <tr><td>Operating margin</td><td>Operating profit ÷ Revenue</td><td>Is the whole business (after running costs) profitable?</td></tr>
+    <tr><td>Net margin</td><td>Net profit ÷ Revenue</td><td>What's left after <em>everything</em>, including tax — the real bottom line?</td></tr>
+  </tbody>
+</table>
+
+<h3>Healthy benchmark ranges by business type</h3>
+
+<p>"Good" depends entirely on what kind of business you run. A 35% gross margin is a disaster for software but perfectly normal for ecommerce. Here are the commonly-cited 2025 benchmarks so you can sanity-check yourself.</p>
+
+<table>
+  <thead><tr><th>Business type</th><th>Healthy gross margin</th><th>Healthy net margin</th></tr></thead>
+  <tbody>
+    <tr><td>SaaS / software</td><td>~75–85% (top players 85–90%)</td><td>varies; growth often reinvested</td></tr>
+    <tr><td>Ecommerce / DTC</td><td>~30–40% (some categories higher)</td><td>~10% average; 20%+ is excellent, 5% is thin</td></tr>
+    <tr><td>Services / agency</td><td>~40–60% (driven by people's time)</td><td>~10–20% is a strong, well-run shop</td></tr>
+  </tbody>
+</table>
+
+<p>Two extra rules of thumb worth knowing:</p>
+<ul>
+  <li><strong>The "Rule of 40" (SaaS):</strong> your yearly growth-rate % plus your profit-margin % should add up to 40 or more. A SaaS growing 30% with a 10% margin (30 + 10 = 40) is considered healthy even though 10% profit alone looks low — early software trades profit for growth.</li>
+  <li><strong>Ecommerce expense ceiling:</strong> aim to keep total operating expenses under ~30% of revenue, or profit gets squeezed out.</li>
+</ul>
+
+<div class="warn"><strong>Common mistake:</strong> Comparing your net margin to the wrong industry. A founder seeing software companies at 80% gross margin and panicking that their ecommerce store is "only" 38% is comparing apples to rockets. Always benchmark against <em>your</em> model.</div>
+
+<h3>Operating leverage — why margins improve with scale</h3>
+
+<p>Here is the most exciting idea in this section, and the reason investors love businesses with low variable costs. <strong>Operating leverage</strong> means: once your fixed costs are paid, almost every extra dollar of sale turns into profit, so your profit margin <em>grows</em> as you grow.</p>
+
+<p>Remember: fixed costs don't rise when you sell more. So after break-even, each additional sale contributes its full margin to the bottom line. The first sales of the month are "paying the rent"; the later ones are "paying you."</p>
+
+<div class="example"><strong>Example:</strong> Mug business, fixed costs $10,000, $15 contribution per mug.
+<table>
+  <thead><tr><th>Mugs sold</th><th>Total contribution</th><th>Minus fixed</th><th>Profit</th><th>Net margin</th></tr></thead>
+  <tbody>
+    <tr><td>667</td><td>$10,000</td><td>−$10,000</td><td>$0</td><td>0%</td></tr>
+    <tr><td>1,000</td><td>$15,000</td><td>−$10,000</td><td>$5,000</td><td>20%</td></tr>
+    <tr><td>2,000</td><td>$30,000</td><td>−$10,000</td><td>$20,000</td><td>40%</td></tr>
+  </tbody>
+</table>
+Sales doubled from 1,000 to 2,000, but profit went up <em>four times</em> (from $5k to $20k), and the margin jumped from 20% to 40%. That is operating leverage in action.</div>
+
+<div class="analogy"><strong>Analogy:</strong> Operating leverage is like climbing a hill to reach a waterslide. The climb (covering fixed costs) is slow, sweaty work. But once you're over the top, every step forward sends you sliding — each extra sale glides almost entirely into profit.</div>
+
+<p><strong>The catch:</strong> leverage cuts both ways. A business with huge fixed costs (a factory, lots of salaried staff) and low variable costs has high operating leverage — wonderful above break-even, but brutal below it, because those big fixed bills keep coming even when sales fall. High leverage = high reward <em>and</em> high risk.</p>
+
+<h3>The break-even chart</h3>
+
+<p>This single picture ties the whole section together. Sales volume runs along the bottom. Two lines rise: total <em>costs</em> (fixed + variable) and total <em>revenue</em>. Where they cross is break-even. Left of the cross you live in the loss zone; right of it, the profit zone.</p>
+
+<pre class="diagram">
+$ |                              Revenue /
+  |                                   /
+  |                                 /  &lt;- Total cost
+  |                              / _ /
+  |          PROFIT          /  _ /
+  |          ZONE         / _ /
+  |                    X  &lt;---- BREAK-EVEN
+  |                /_ /  (lines cross here)
+  |             /_ / 
+  |    LOSS  /_ /
+  |  ZONE /_ /
+  |    /_ /  &lt;------------------ Fixed cost floor
+  | _/_______________________________________
+  +-------------------------------------------
+  0        Units sold (volume) -->
+</pre>
+
+<p>Read it like this: the total-cost line doesn't start at zero — it starts up high at your <strong>fixed-cost floor</strong> (the rent you owe even at zero sales). The revenue line <em>does</em> start at zero. Revenue climbs faster, eventually overtakes total cost at the crossing point <strong>X</strong>, and from there the growing gap between the two lines is your profit.</p>
+
+<div class="key"><strong>Key takeaway:</strong> Three numbers run your business: your <em>fixed costs</em> (the floor you must clear), your <em>contribution margin per unit</em> (how fast each sale climbs toward it), and the resulting <em>break-even point</em> (where you finally start making money). Know all three, watch your margins against the right industry benchmark, and lean into operating leverage — that is the entire game of profitability.</div></section>
+<section class="section"><h2 id="sec-10">Budgeting, Forecasting &amp; Building a Simple Financial Model</h2>
+
+<p>So far, most of business finance has been about <em>looking back</em> &mdash; what did we earn, what did we spend, what is the cash today. This section flips you around to <em>look forward</em>. You are going to learn how to make a plan for the future in numbers, check the plan against reality each month, and fix the plan when reality disagrees.</p>
+
+<p>Do not be scared. A "financial model" sounds like something only a banker in a suit can build. It is really just a spreadsheet that says: <strong>"If these few things happen, here is the money that comes out."</strong> If you can multiply and add, you can build one.</p>
+
+<div class="key"><strong>Key takeaway:</strong> Looking back tells you if you are alive. Looking forward tells you if you will <em>stay</em> alive. A founder who plans the next 12 months in numbers is far less likely to run out of cash by surprise.</div>
+
+<h3>Three words people mix up: budget, forecast, and model</h3>
+
+<p>These three words get used as if they mean the same thing. They do not. Let me define each in plain English.</p>
+
+<ul>
+<li><strong>Budget</strong> &mdash; your <em>plan</em> for a period (usually one year). It is a promise to yourself: "We <em>plan</em> to make $40,000 a month and spend $30,000 a month." You set it once, usually at the start of the year, and you mostly leave it fixed so you can measure yourself against it.</li>
+<li><strong>Forecast</strong> &mdash; your <em>best honest guess</em> of where you are <em>actually heading</em>, updated as new facts arrive. The budget says "here is what we planned." The forecast says "here is where we are really going, based on what we now know."</li>
+<li><strong>Financial model</strong> &mdash; the <em>machine</em> (a spreadsheet) that produces both. You feed it assumptions (price, number of customers, costs), and it calculates revenue, profit, and cash. Change one assumption and every number downstream updates by itself.</li>
+</ul>
+
+<div class="analogy"><strong>Analogy:</strong> Think of a road trip. The <strong>budget</strong> is the plan you made at home: "We'll drive 500 miles a day and arrive Friday." The <strong>forecast</strong> is your GPS re-calculating arrival time after you hit traffic: "Now arriving Saturday morning." The <strong>model</strong> is the GPS app itself &mdash; the engine that turns your speed and distance into an arrival time.</div>
+
+<h3>Two ways to build a revenue plan: bottoms-up vs top-down</h3>
+
+<p>Before any model, you need a number for <strong>revenue</strong> (money coming in from sales). There are two directions to reach it. Smart founders use both and compare them.</p>
+
+<h4>Top-down: start big, shrink to your slice</h4>
+
+<p>You start with the total market and take a small share of it. <strong>TAM</strong> means <em>Total Addressable Market</em> &mdash; the total money everyone could spend on your kind of product.</p>
+
+<div class="example"><strong>Example (top-down):</strong> "The print-shop software market is worth $2 billion a year. If we capture just 0.1% of it, that's $2,000,000,000 &times; 0.001 = <strong>$2,000,000</strong> a year." Easy to say&hellip; but where does "0.1%" come from? Usually thin air.</div>
+
+<h4>Bottoms-up: start with what you actually do</h4>
+
+<p>You build revenue from your <em>real activities</em>: how many customers, at what price, how often. This is slower but far more honest, because every number is something you can <em>do something about</em>.</p>
+
+<p>Two common bottoms-up formulas:</p>
+
+<table>
+<thead><tr><th>Business type</th><th>Revenue formula</th></tr></thead>
+<tbody>
+<tr><td>Subscription / B2B</td><td>Customers &times; Price per customer</td></tr>
+<tr><td>E-commerce / storefront</td><td>Traffic &times; Conversion rate &times; Average Order Value (AOV)</td></tr>
+</tbody>
+</table>
+
+<p>Quick definitions: <strong>Traffic</strong> = visitors to your site. <strong>Conversion rate</strong> = the % of visitors who actually buy. <strong>AOV (Average Order Value)</strong> = the average dollars per order.</p>
+
+<div class="example"><strong>Example (bottoms-up, step by step):</strong> Your online store gets <strong>100,000</strong> visitors a month. <strong>1%</strong> of them buy. Each order is worth <strong>$100</strong>.<br>
+Step 1 &mdash; buyers: 100,000 &times; 1% = 1,000 buyers.<br>
+Step 2 &mdash; revenue: 1,000 &times; $100 = <strong>$100,000</strong> for the month.<br>
+Now you can see the levers: lift conversion to 1.2% and you earn $120,000 with the <em>same</em> traffic.</div>
+
+<table>
+<thead><tr><th></th><th>Top-down</th><th>Bottoms-up</th></tr></thead>
+<tbody>
+<tr><td>Starts from</td><td>Total market size</td><td>Your own activities</td></tr>
+<tr><td>Good for</td><td>The yearly big-picture, board slides</td><td>Monthly operating, knowing what to fix</td></tr>
+<tr><td>Risk</td><td>Fantasy ("just 1% of a huge market")</td><td>Can be too cautious</td></tr>
+<tr><td>Editable levers?</td><td>Few</td><td>Many (price, conversion, traffic)</td></tr>
+</tbody>
+</table>
+
+<div class="tip"><strong>Best practice:</strong> Build bottoms-up as your real plan, then build a quick top-down as a sanity check. If your bottoms-up says you'll earn 5% of the entire world market, something is wrong. Industry data shows founders who <em>compare both</em> hit their goals more reliably than those using only one.</div>
+
+<h3>Driver-based modeling: make assumptions explicit and editable</h3>
+
+<p>A <strong>driver</strong> is an input number that "drives" the result &mdash; like price, customer count, or churn. An <strong>assumption</strong> is your guess for that driver before you have real data.</p>
+
+<p>The golden rule: <strong>never type a final answer directly into a cell. Type the drivers, and let the spreadsheet calculate the answer.</strong> This is "driver-based modeling." If you write revenue as "$100,000" by hand, you've learned nothing. If you write <code>traffic &times; conversion &times; AOV</code>, you can change any driver and instantly see the effect.</p>
+
+<div class="warn"><strong>Common mistake:</strong> Hard-coded numbers. Typing "Revenue = $50,000 growing 10% every month" hides the truth. What if you can't actually get those customers? A hard-coded number can't be argued with or improved. Always model the drivers underneath it.</div>
+
+<h3>Three scenarios: base, best, and worst case</h3>
+
+<p>The future is unknown, so don't pretend you know it exactly. Build three versions by changing your key drivers:</p>
+
+<ul>
+<li><strong>Base case</strong> &mdash; what you genuinely expect (your honest middle bet).</li>
+<li><strong>Best case</strong> &mdash; things go well (higher conversion, faster growth).</li>
+<li><strong>Worst case</strong> &mdash; things go badly (slow sales, higher costs). This one matters most &mdash; it tells you when you'd run out of cash.</li>
+</ul>
+
+<div class="example"><strong>Example:</strong> Base case: 1.0% conversion &rarr; $100,000/month. Best: 1.4% &rarr; $140,000. Worst: 0.6% &rarr; $60,000. If your costs are $80,000/month, the worst case <em>loses</em> $20,000 a month &mdash; now you know exactly how much cash buffer you need before you start.</div>
+
+<div class="tip"><strong>Best practice:</strong> Because you built drivers, all three scenarios should come from changing <em>two or three</em> assumption cells &mdash; not rebuilding the whole sheet.</div>
+
+<h3>Rolling forecast vs annual budget</h3>
+
+<p>An <strong>annual budget</strong> is set once a year and frozen, so you can measure yourself against it. A <strong>rolling forecast</strong> is updated every month and always looks the same distance ahead &mdash; as one month finishes, you add a new month at the far end, so you always see roughly 12 months forward.</p>
+
+<div class="analogy"><strong>Analogy:</strong> The annual budget is a printed map you bought in January. The rolling forecast is live GPS &mdash; it re-routes every time the road changes.</div>
+
+<p>You don't have to pick one. The strongest setup keeps <em>both</em>: the frozen budget gives you accountability (did we hit the plan?), and the rolling forecast gives you agility (where are we really heading now?).</p>
+
+<h3>Variance analysis: plan vs actual, then act</h3>
+
+<p><strong>Variance</strong> just means <em>the difference</em> between what you planned and what really happened. Variance analysis is the monthly habit of putting plan and actual side by side and asking <em>why</em> they differ &mdash; then doing something about it.</p>
+
+<div class="example"><strong>Example (with arithmetic):</strong><br>
+Planned revenue: $100,000. Actual revenue: $85,000.<br>
+Variance = $85,000 &minus; $100,000 = <strong>&minus;$15,000</strong> (a $15,000 shortfall).<br>
+As a %: &minus;$15,000 &divide; $100,000 = <strong>&minus;15%</strong>.<br>
+Now the real work &mdash; <em>why?</em> Because you built drivers, you can see traffic was on target, AOV was fine, but conversion fell from 1.0% to 0.85%. The problem is on your website, not your marketing. <strong>That</strong> is the power of variance analysis: it points you at the exact thing to fix.</div>
+
+<div class="tip"><strong>Best practice:</strong> Investigate variances bigger than a set threshold &mdash; many teams use roughly 5&ndash;10%. Tiny wiggles are just noise; chasing them wastes your day.</div>
+
+<h3>A simple month-by-month model layout</h3>
+
+<p>Here is a clean layout. Months across the top, line items down the side. Every revenue number is <em>calculated</em> from the drivers above it &mdash; nothing is typed in by hand except the assumptions.</p>
+
+<table>
+<thead><tr><th>Line</th><th>Jan</th><th>Feb</th><th>Mar</th></tr></thead>
+<tbody>
+<tr><td><em>Traffic (driver)</em></td><td>100,000</td><td>110,000</td><td>121,000</td></tr>
+<tr><td><em>Conversion (driver)</em></td><td>1.0%</td><td>1.0%</td><td>1.1%</td></tr>
+<tr><td><em>AOV (driver)</em></td><td>$100</td><td>$100</td><td>$100</td></tr>
+<tr><td><strong>Revenue (calc)</strong></td><td>$100,000</td><td>$110,000</td><td>$133,100</td></tr>
+<tr><td>Costs (driver)</td><td>$80,000</td><td>$82,000</td><td>$85,000</td></tr>
+<tr><td><strong>Profit (calc)</strong></td><td>$20,000</td><td>$28,000</td><td>$48,100</td></tr>
+<tr><td><strong>Cash at end (calc)</strong></td><td>$120,000</td><td>$148,000</td><td>$196,100</td></tr>
+</tbody>
+</table>
+
+<p>How the flow works, top to bottom:</p>
+
+<pre class="diagram">
+  Drivers (you type these)
+  traffic  conversion  AOV  costs
+        \      |       /     |
+         v     v      v      |
+        REVENUE = T x CR x AOV
+                  |          |
+                  v          v
+              REVENUE  -  COSTS  = PROFIT
+                                    |
+                                    v
+            CASH(last month) + PROFIT = CASH(now)
+</pre>
+
+<h3>Best practices that separate good models from junk</h3>
+
+<ul>
+<li><strong>One assumptions tab.</strong> Keep every driver (price, conversion, churn, salaries) in one place, clearly labeled. The rest of the sheet only does math on those cells. To test a new idea, you change one tab &mdash; not 200 scattered cells.</li>
+<li><strong>Don't fake precision.</strong> Writing "$1,284,447.18" for next year is silly &mdash; you don't know it to the penny. Round numbers ($1.3M) are more honest and easier to trust.</li>
+<li><strong>Update monthly.</strong> The best model is the one you actually keep current. A simple sheet you refresh every month beats a fancy one nobody has touched in three months.</li>
+<li><strong>Color-code inputs.</strong> Make typed-in driver cells one color (say blue) and calculated cells another. Then you instantly see what's a guess and what's math.</li>
+</ul>
+
+<div class="warn"><strong>Common mistake &mdash; the hockey-stick fantasy:</strong> A chart that's flat for six months, then suddenly rockets up to huge growth "by month 12" &mdash; with no reason given for <em>why</em> month 6 is magic. Investors have seen a thousand of these and trust none of them. If your line bends sharply upward, you must point to the exact driver that changes (a new channel, a price rise, a big partner) and defend it.</div>
+
+<div class="key"><strong>Key takeaway:</strong> A good financial model is not a crystal ball that predicts the future perfectly. It's a <em>thinking tool</em> &mdash; explicit drivers on one tab, three honest scenarios, and a monthly habit of comparing plan to actual and acting on the gap. Built that way, it stops cash surprises before they kill you.</div>
+
+<p><strong>Sources:</strong> <a href="https://forecastio.ai/blog/top-down-vs-bottom-up-forecasting">Forecastio</a>, <a href="https://www.finrofca.com/news/top-down-vs-bottom-up-revenue-modeling-which-is-right-for-your-startup">Finro</a>, <a href="https://8020consulting.com/blog/rolling-forecast-vs-static-budgeting">8020 Consulting</a>, <a href="https://www.onetribeadvisory.com/knowledge-hub/rolling-forecast-vs-annual-budget/">Onetribe Advisory</a>, <a href="https://prometai.app/blog/startup-financial-model-mistakes-to-avoid">PrometAI</a>, <a href="https://inflectioncfo.co/blog/startup-financial-model-assumptions-the-hidden-variables-killing-accuracy/">Inflection CFO</a>, <a href="https://www.polarisgrowth.com/en/blog/secret-weapons-revenue-growth">Polaris Growth</a>.</p></section>
+<section class="section"><h2 id="sec-11">Funding, Dilution &amp; The Cost of Capital</h2>
+
+<p>Every business needs money to start and to grow. That money has to come from somewhere. This section explains the two big ways to get it, what you give up to get it, and how to tell whether taking outside money is a smart move or a costly mistake. We start from zero. By the end you will understand cap tables, dilution, valuation math, and the financial scorecards investors use to judge you.</p>
+
+<div class="key"><strong>Key takeaway:</strong> Money is never free. You pay for it either with ownership of your company (equity) or with interest payments (debt). Understanding the true cost of each choice is what protects you in the room with investors.</div>
+
+<h3>Bootstrapping vs raising money — the real tradeoff</h3>
+
+<p><strong>Bootstrapping</strong> means funding the business yourself — from your savings, and from the money customers pay you. You take no outside investment. <strong>Raising money</strong> means bringing in outsiders (investors or lenders) who give you cash now.</p>
+
+<p>People talk about this like it is a personality choice. It is not. It is a trade between four things:</p>
+
+<table>
+<thead><tr><th>What you want</th><th>Bootstrapping gives you</th><th>Raising gives you</th></tr></thead>
+<tbody>
+<tr><td>Control</td><td>You keep 100% — you decide everything</td><td>You share control with investors</td></tr>
+<tr><td>Profit</td><td>All future profit is yours</td><td>You split future profit by ownership %</td></tr>
+<tr><td>Speed</td><td>Slow — you can only spend what you earn</td><td>Fast — a big cash injection now</td></tr>
+<tr><td>Risk</td><td>Lower (no debt to repay, no pressure to exit)</td><td>Higher (you owe results, must grow fast)</td></tr>
+</tbody>
+</table>
+
+<div class="analogy"><strong>Analogy:</strong> Bootstrapping is rowing your own boat — slow, but you choose the direction and keep every fish you catch. Raising money is bolting on a giant engine someone else owns — you go fast, but they now sit in the boat and expect a share of the catch.</div>
+
+<p>Bootstrapping wins on <em>control and profit</em>. Raising wins on <em>speed and scale</em>. Neither is "better." The right answer depends on whether your market rewards getting big fast (then raise) or rewards being steady and profitable (then bootstrap).</p>
+
+<h3>Equity vs debt — the two kinds of money</h3>
+
+<p>There are exactly two ways to get outside money.</p>
+
+<p><strong>Equity</strong> means selling a slice of ownership of your company. The investor gives you cash and in return owns a percentage of the business forever (or until it is sold). You never "repay" equity. Instead, the investor makes money only if the company becomes valuable later.</p>
+
+<p><strong>Debt</strong> means borrowing money you must pay back, usually with <strong>interest</strong> (an extra fee for borrowing). A bank loan is debt. You keep 100% ownership, but you owe fixed payments whether business is good or bad.</p>
+
+<table>
+<thead><tr><th></th><th>Equity</th><th>Debt</th></tr></thead>
+<tbody>
+<tr><td>Do you repay it?</td><td>No</td><td>Yes, with interest</td></tr>
+<tr><td>Do you give up ownership?</td><td>Yes</td><td>No</td></tr>
+<tr><td>What if the business fails?</td><td>Investor loses their money</td><td>You still owe the money</td></tr>
+<tr><td>Best for</td><td>Risky, high-growth bets</td><td>Predictable cash flow to repay</td></tr>
+</tbody>
+</table>
+
+<div class="warn"><strong>Common mistake:</strong> Taking on debt before you have steady cash coming in. Debt does not care if you had a bad month — the payment is still due. Early, unpredictable businesses usually break under fixed loan payments.</div>
+
+<h3>Dilution — giving away ownership %</h3>
+
+<p><strong>Dilution</strong> means your ownership percentage going down because new shares were given to investors. Your slice of the pie gets thinner each time you raise equity.</p>
+
+<p>The trick to understand: dilution is not always bad. A smaller slice of a much bigger pie can be worth far more than your whole original tiny pie.</p>
+
+<div class="analogy"><strong>Analogy:</strong> You own 100% of a pizza the size of a coin. An investor adds ingredients so the pizza becomes the size of a table. Now you own only 80% — but 80% of a table beats 100% of a coin.</div>
+
+<h3>Cap table basics</h3>
+
+<p>A <strong>cap table</strong> (short for "capitalization table") is just a list of who owns what percentage of the company. At the start it is simple — two founders, 50/50. After you raise money, investors get added as rows. The cap table is the official record of ownership, so keep it clean and accurate from day one.</p>
+
+<pre class="diagram">
+SIMPLE CAP TABLE (before any raise)
+
+  Owner        Ownership
+  ---------    ---------
+  Founder A      50%
+  Founder B      50%
+  ---------    ---------
+  TOTAL         100%
+</pre>
+
+<h3>Pre-money and post-money valuation</h3>
+
+<p>Before anyone can buy a slice of your company, you both must agree what the whole company is worth. That agreed worth is the <strong>valuation</strong>. There are two versions, and confusing them is a classic founder mistake.</p>
+
+<ul>
+<li><strong>Pre-money valuation</strong> = what the company is worth <em>before</em> the new investment goes in.</li>
+<li><strong>Post-money valuation</strong> = what it is worth <em>after</em> the cash lands. It is simply pre-money plus the new money.</li>
+</ul>
+
+<p>The core formulas:</p>
+
+<pre class="diagram">
+Post-money  = Pre-money + Investment
+
+Investor %  =     Investment
+              ----------------
+                 Post-money
+</pre>
+
+<h4>A full worked dilution example</h4>
+
+<div class="example"><strong>Example:</strong> You raise <strong>$1,000,000</strong> on a <strong>$4,000,000 pre-money</strong> valuation. Walk it through step by step:
+<ol>
+<li><strong>Post-money</strong> = $4,000,000 pre + $1,000,000 raised = <strong>$5,000,000</strong>.</li>
+<li><strong>Investor owns</strong> = $1,000,000 ÷ $5,000,000 = 0.20 = <strong>20%</strong>.</li>
+<li><strong>Founders keep</strong> = 100% − 20% = <strong>80%</strong>, split between them. If it was a 50/50 founder team, each founder now owns 40% (half of 80%).</li>
+</ol>
+So you raised a million dollars and gave away 20% of the company. That 20% is the price of the money.</div>
+
+<p>This 20%-for-a-seed-round figure is no accident. Across the market, seed rounds typically cost founders somewhere in the high teens to around 20% of the company, and good advice is to try to stay under 25% per round. Giving away much more than that, round after round, leaves founders owning too little to stay motivated — which investors themselves dislike.</p>
+
+<div class="tip"><strong>Best practice:</strong> Always confirm whether a number is pre-money or post-money before you celebrate. "$5M valuation" with a $1M raise means very different ownership depending on which it is. Post-money $5M = you gave 20%. Pre-money $5M = you only gave about 16.7% ($1M ÷ $6M). Get it in writing.</div>
+
+<h3>What investors look at financially</h3>
+
+<p>Investors are buying a piece of your <em>future</em>. To judge it, they look at a handful of numbers. (Several of these use <strong>ARR</strong> — Annual Recurring Revenue, the yearly value of subscriptions you can count on repeating.) Here are the big ones in plain English.</p>
+
+<h4>1. Growth rate</h4>
+<p>How fast revenue is rising, usually year over year. Fast growth signals a real market pulling your product. It is the single thing growth investors care about most early on.</p>
+
+<h4>2. Gross margin</h4>
+<p><strong>Gross margin</strong> = the percentage of each sales dollar left after the direct cost of delivering the product. High margin means each new customer adds a lot of profit. Software businesses often target very high gross margins (commonly 70–80%+) because copies cost almost nothing to make. Low margin makes growth less valuable.</p>
+
+<h4>3. The Rule of 40</h4>
+<p>This is a quick health check for whether you are balancing growth and profit well. It says: <strong>growth rate % + profit margin % should be at least 40</strong>. The idea was popularized by venture capitalist <strong>Brad Feld</strong> in 2015, who called 40 "the minimum point of happiness." It uses recurring-revenue growth plus profit margin (often EBITDA margin).</p>
+
+<pre class="diagram">
+Rule of 40:  Growth %  +  Profit Margin %  >=  40
+</pre>
+
+<div class="example"><strong>Example:</strong> Company A grows 60% a year but loses money at −15% margin: 60 + (−15) = <strong>45</strong>. Passes — fast growth is "paying for" the losses. Company B grows just 10% but earns a healthy 35% margin: 10 + 35 = <strong>45</strong>. Also passes — slow but very profitable. Both are healthy in different ways. A company growing 15% at −10% margin scores 5 — that fails, and investors will worry.</div>
+
+<h4>4. Burn multiple</h4>
+<p><strong>Net burn</strong> = how much cash you lose per period (money out minus money in). The <strong>burn multiple</strong>, popularized by investor <strong>David Sacks</strong> (it flips Bessemer's "efficiency score"), asks: how many dollars do you burn to add one dollar of new recurring revenue?</p>
+
+<pre class="diagram">
+Burn Multiple =      Net Burn
+                ------------------
+                  Net New ARR
+</pre>
+
+<div class="example"><strong>Example:</strong> You burned $2,000,000 this year and added $1,000,000 of new ARR. Burn multiple = $2,000,000 ÷ $1,000,000 = <strong>2.0x</strong>. You spent two dollars to win each new recurring dollar.</div>
+
+<table>
+<thead><tr><th>Burn multiple</th><th>What it means</th></tr></thead>
+<tbody>
+<tr><td>Under 1x</td><td>Very efficient — make more than a dollar per dollar spent</td></tr>
+<tr><td>1x – 1.5x</td><td>Healthy</td></tr>
+<tr><td>1.5x – 2x</td><td>Acceptable for early, high-growth startups</td></tr>
+<tr><td>2x – 3x+</td><td>Investors start to worry about discipline</td></tr>
+</tbody>
+</table>
+
+<p>Lower is better. Earlier-stage companies are forgiven higher multiples; later-stage companies are expected to get efficient (often well under 1x).</p>
+
+<h4>5. Magic number</h4>
+<p>The <strong>magic number</strong> measures sales efficiency: for every $1 you spend on sales and marketing, how many dollars of new recurring revenue do you create (annualized)? A common formula compares the rise in revenue from one quarter to the next against the prior quarter's sales-and-marketing spend.</p>
+
+<div class="example"><strong>Example:</strong> Revenue rose $300,000 from one quarter to the next. Annualize that increase: $300,000 × 4 = $1,200,000. Last quarter's sales-and-marketing spend was $1,000,000. Magic number = $1,200,000 ÷ $1,000,000 = <strong>1.2</strong>.</div>
+
+<p>The widely cited rule of thumb (from investor Lars Leckie, 2008): <strong>above 0.75 is healthy</strong> — your machine turns marketing dollars into revenue efficiently, so "pour on the gas." Below 0.75, stop and fix the engine before spending more.</p>
+
+<h3>The cost of capital idea</h3>
+
+<p><strong>Cost of capital</strong> is the price you pay to use someone else's money. Both debt and equity have a cost.</p>
+<ul>
+<li>The cost of <strong>debt</strong> is easy to see: the interest rate. Borrow at 10% and the cost is 10% a year.</li>
+<li>The cost of <strong>equity</strong> is hidden but usually higher: it is all the future profit you gave away forever. Equity investors take big risks, so they expect big returns — far more than a loan's interest.</li>
+</ul>
+
+<div class="key"><strong>Key takeaway:</strong> Equity is the most expensive money you will ever take, because you pay for it out of your future upside, forever. It only makes sense when the cash lets you build something worth far more than the slice you gave up.</div>
+
+<div class="analogy"><strong>Analogy:</strong> A loan is like renting a tool — you pay a fee and give it back. Selling equity is like giving a neighbor part-ownership of your house so they fund a renovation — they share every future gain in its value, for as long as you both own it.</div>
+
+<h3>When raising is right — and when it is wrong</h3>
+
+<p><strong>Raising is usually right when:</strong></p>
+<ul>
+<li>You have proof the business works (real customers, healthy gross margin) and money is the only thing stopping you from growing fast.</li>
+<li>Your market is winner-takes-most, so being first and biggest really matters.</li>
+<li>You need to build something expensive <em>before</em> revenue can exist (hardware, deep tech).</li>
+</ul>
+
+<p><strong>Raising is usually wrong when:</strong></p>
+<ul>
+<li>You are raising to avoid finding out whether customers actually want the product. Money hides the problem; it does not fix it.</li>
+<li>The business can fund its own growth from profits — then why give away ownership?</li>
+<li>You do not yet know what you would do with the cash. Raising without a clear use just buys an expensive deadline.</li>
+</ul>
+
+<div class="warn"><strong>Common mistake:</strong> Treating "raised money" as success. Raising is a loan against your future ownership, not a win. The win is building a valuable business. Plenty of heavily funded startups fail; plenty of bootstrapped ones quietly make their founders rich.</div>
+
+<h3>Why understanding this protects you in negotiations</h3>
+
+<p>Investors do this every day. You might do it a few times in your life. That gap is where founders get hurt. When you can do the valuation math in your head, you can spot a bad deal instantly:</p>
+<ul>
+<li>You will know that pre-money vs post-money quietly shifts how much you give up — and ask which one they mean.</li>
+<li>You will know whether their "low" valuation is fair by checking your own Rule of 40, burn multiple, and magic number.</li>
+<li>You will know that every percent of dilution is permanent, so you can push back on giving away more than the round is worth.</li>
+<li>You will negotiate from data, not fear — and investors respect founders who understand their own numbers.</li>
+</ul>
+
+<div class="key"><strong>Key takeaway:</strong> The founder who understands dilution, valuation, and the cost of capital walks into the room as a peer, not a supplicant. Knowing these numbers cold is the cheapest insurance you can buy against a deal that quietly takes your company away from you.</div>
+
+<p><strong>Sources:</strong> Rule of 40 (Brad Feld, 2015) — <a href="https://www.wallstreetprep.com/knowledge/rule-of-40/">Wall Street Prep</a>, <a href="https://en.wikipedia.org/wiki/Rule_of_40">Wikipedia</a>; Burn Multiple (David Sacks / Bessemer) — <a href="https://sacks.substack.com/p/the-burn-multiple-51a7e43cb200">Bottom Up by David Sacks</a>, <a href="https://www.wallstreetprep.com/knowledge/burn-multiple/">Wall Street Prep</a>; SaaS Magic Number — <a href="https://www.thesaascfo.com/calculate-saas-magic-number/">The SaaS CFO</a>, <a href="https://www.wallstreetprep.com/knowledge/saas-magic-number/">Wall Street Prep</a>; Seed dilution &amp; pre/post-money — <a href="https://www.ycombinator.com/library/4A-a-guide-to-seed-fundraising">Y Combinator</a>, <a href="https://www.crv.com/content/equity-dilution">CRV</a>.</p></section>
+<section class="section"><h2 id="sec-12">Living By the Numbers — The Founder’s Financial Dashboard</h2>
+
+<p>By now you have learned a lot of separate ideas: cash, profit, burn, the three financial statements, pricing, and the cost of getting a customer. This final section ties them all together into a single, simple habit. The goal is this: at any moment, on any day, you should be able to answer a handful of questions about your business <em>without looking anything up</em>. That ability is what separates a founder who is in control from one who is just hoping.</p>
+
+<div class="key"><strong>Key takeaway:</strong> You do not need to be an accountant. You need to know about 8–10 numbers cold, check them on a regular rhythm, and use them to make decisions. That is the whole job.</div>
+
+<h3>What "knowing your numbers" actually means</h3>
+<p>"Knowing your numbers" does not mean memorizing a spreadsheet. It means you carry a small mental dashboard — like the dashboard in a car. A driver does not stare at the engine. They glance at the speed, the fuel gauge, and the warning lights. That is enough to drive safely. Your business has the same kind of gauges.</p>
+
+<div class="analogy"><strong>Analogy:</strong> A car dashboard shows you maybe 5 things: speed, fuel, engine temperature, warning lights, and miles driven. You don't need to understand combustion to drive well. Your financial dashboard is the same — a few clear gauges that tell you "all good" or "pull over now."</div>
+
+<h3>The handful of numbers you must know cold</h3>
+<p>Let me define each gauge in plain English, with the formula and a tiny worked example. Round numbers are used on purpose so the arithmetic is easy to follow.</p>
+
+<h4>1. Cash in the bank</h4>
+<p>This is the simplest and most important number: how much money is actually sitting in your business bank account <em>right now</em>. Not what you are owed. Not what you hope to make. The real balance you could spend today.</p>
+<div class="example"><strong>Example:</strong> Your bank account shows <strong>$120,000</strong>. That is your cash. Full stop.</div>
+
+<h4>2. Net burn (how fast you lose money)</h4>
+<p>"Burn" means how much cash leaves the business. <strong>Gross burn</strong> is everything you spend in a month (salaries, rent, software, ads). <strong>Net burn</strong> subtracts the cash that comes in, so it shows your <em>real</em> monthly loss.</p>
+<table><thead><tr><th>Term</th><th>Formula</th></tr></thead><tbody>
+<tr><td>Gross burn</td><td>All cash spent in the month</td></tr>
+<tr><td>Net burn</td><td>Gross burn − cash collected from customers</td></tr>
+</tbody></table>
+<div class="example"><strong>Example:</strong> You spend $40,000 a month and collect $15,000 from customers. Net burn = $40,000 − $15,000 = <strong>$25,000 per month</strong>. You lose $25k every month.</div>
+
+<h4>3. Runway (how long until the money runs out)</h4>
+<p>Runway is the number of months you can survive at your current burn before the bank account hits zero. It is the single scariest and most useful number you own.</p>
+<pre class="diagram">
+Runway (months) = Cash in bank / Net burn per month
+
+   $120,000  /  $25,000  =  4.8 months
+</pre>
+<div class="example"><strong>Example:</strong> $120,000 cash ÷ $25,000 net burn = <strong>4.8 months of runway</strong>. In under 5 months you must raise money, cut costs, or grow revenue. No drama — just math.</div>
+<div class="warn"><strong>Common mistake:</strong> Founders calculate runway once and forget it. Burn changes every month (you hire, you sign a deal). Recalculate runway <em>every month</em>. A famous rule of thumb: start raising money when you have about 6 months of runway left, because fundraising itself takes months.</div>
+
+<h4>4. Revenue / MRR and its growth rate</h4>
+<p><strong>Revenue</strong> is the money you earn from selling. If you sell subscriptions, the key version is <strong>MRR — Monthly Recurring Revenue</strong>, the predictable money that repeats every month. <strong>Growth rate</strong> is how much bigger that number got versus last month, written as a percentage.</p>
+<pre class="diagram">
+Growth % = (This month − Last month) / Last month x 100
+
+   ($55,000 − $50,000) / $50,000 x 100 = 10%
+</pre>
+<div class="example"><strong>Example:</strong> MRR went from $50,000 to $55,000. Growth = $5,000 ÷ $50,000 = 0.10 = <strong>10% month-over-month</strong>. That is strong for an early startup.</div>
+
+<h4>5. Gross margin (how much of each sale you actually keep)</h4>
+<p>Gross margin is the slice of every revenue dollar left after the direct cost of delivering the product (hosting, payment fees, raw materials). It tells you how "good" each dollar of revenue is.</p>
+<pre class="diagram">
+Gross margin % = (Revenue − Cost of delivery) / Revenue x 100
+
+   ($100,000 − $20,000) / $100,000 x 100 = 80%
+</pre>
+<div class="example"><strong>Example:</strong> $100k revenue, $20k to deliver it. Gross margin = $80k ÷ $100k = <strong>80%</strong>.</div>
+<div class="tip"><strong>Best practice:</strong> Healthy software businesses run gross margins of about <strong>70%–90%</strong>. If yours is far below that, you are really running a service business, not a software business — and that changes everything about how you grow.</div>
+
+<h4>6. CAC — Customer Acquisition Cost</h4>
+<p>CAC is the average amount you spend (on sales and marketing) to win <em>one</em> new customer.</p>
+<pre class="diagram">
+CAC = Sales + Marketing spend / New customers won
+
+   $30,000 / 60 = $500 per customer
+</pre>
+<div class="example"><strong>Example:</strong> You spent $30,000 last month on ads and a salesperson, and won 60 customers. CAC = <strong>$500 per customer</strong>.</div>
+
+<h4>7. LTV and the LTV:CAC ratio</h4>
+<p><strong>LTV (Lifetime Value)</strong> is the total profit one customer brings over their whole time with you. The <strong>LTV:CAC ratio</strong> compares what a customer is worth to what they cost to acquire. It answers: "Is getting customers a good investment?"</p>
+<div class="example"><strong>Example:</strong> A customer is worth $1,500 in lifetime profit (LTV) and costs $500 to acquire (CAC). Ratio = 1,500 ÷ 500 = <strong>3:1</strong>.</div>
+<table><thead><tr><th>LTV:CAC ratio</th><th>What it means</th></tr></thead><tbody>
+<tr><td>Below 1:1</td><td>You lose money on every customer. Emergency.</td></tr>
+<tr><td>Around 3:1</td><td>The widely cited healthy target — sustainable.</td></tr>
+<tr><td>4:1 or 5:1</td><td>Excellent unit economics; ready to spend more on growth.</td></tr>
+<tr><td>Way above 5:1</td><td>You may be <em>under</em>-investing in growth.</td></tr>
+</tbody></table>
+
+<h4>8. CAC payback period</h4>
+<p>This is the number of months it takes a new customer to pay back what you spent to acquire them. It connects directly to cash and runway, because a long payback means your cash is tied up for a long time.</p>
+<div class="example"><strong>Example:</strong> CAC is $500 and each customer pays you $100 of gross profit per month. Payback = 500 ÷ 100 = <strong>5 months</strong>.</div>
+<div class="tip"><strong>Best practice:</strong> The commonly cited gold standard is a CAC payback <strong>under 12 months</strong>. 12–18 months is acceptable for big-contract businesses; over 18 months is risky and strains your cash.</div>
+
+<h4>9. Churn (how many customers you lose)</h4>
+<p>Churn is the percentage of customers (or revenue) you lose in a period. Low churn means customers stay; high churn means you are filling a leaky bucket.</p>
+<div class="example"><strong>Example:</strong> You start the month with 200 customers and 6 cancel. Monthly churn = 6 ÷ 200 = <strong>3%</strong>.</div>
+<div class="tip"><strong>Best practice:</strong> A commonly cited healthy target is <strong>under ~5% annual churn</strong> for B2B (under ~1% per month). Small-business and consumer products often run higher (3–5% per month) and that can still be normal — know the benchmark <em>for your type</em> of customer.</div>
+
+<h3>The one-page dashboard</h3>
+<p>Put every gauge on a single page. If it does not fit on one page, it is too complicated. Here is a clean layout you can copy into a spreadsheet.</p>
+<table><thead><tr><th>Number</th><th>This month</th><th>Last month</th><th>Healthy zone</th></tr></thead><tbody>
+<tr><td>Cash in bank</td><td>$120,000</td><td>$145,000</td><td>&gt; 6 mo of burn</td></tr>
+<tr><td>Net burn / month</td><td>$25,000</td><td>$24,000</td><td>Trending down</td></tr>
+<tr><td>Runway</td><td>4.8 mo</td><td>6.0 mo</td><td>&gt; 6 months</td></tr>
+<tr><td>MRR</td><td>$55,000</td><td>$50,000</td><td>Growing</td></tr>
+<tr><td>MRR growth</td><td>10%</td><td>8%</td><td>Steady/up</td></tr>
+<tr><td>Gross margin</td><td>80%</td><td>79%</td><td>70%–90%</td></tr>
+<tr><td>CAC</td><td>$500</td><td>$480</td><td>Stable/down</td></tr>
+<tr><td>LTV:CAC</td><td>3:1</td><td>3:1</td><td>≥ 3:1</td></tr>
+<tr><td>CAC payback</td><td>5 mo</td><td>5 mo</td><td>&lt; 12 months</td></tr>
+<tr><td>Churn</td><td>3%</td><td>2.5%</td><td>Low &amp; falling</td></tr>
+</tbody></table>
+<div class="key"><strong>Key takeaway:</strong> The "Last month" column matters as much as "This month." A single number is a snapshot; the trend tells you the story. Always look at direction, not just position.</div>
+
+<h3>The weekly and monthly rhythm</h3>
+<p>Knowing numbers is a <em>habit</em>, not a one-time event. Use two rhythms.</p>
+<ul>
+<li><strong>Weekly (5 minutes):</strong> Check just three things — cash in bank, new revenue/customers this week, and any new big bills. This catches surprises early.</li>
+<li><strong>Monthly (60–90 minutes):</strong> The full financial review. Sit down, update the whole one-page dashboard, and run the ritual below.</li>
+</ul>
+
+<h4>The monthly review ritual — what to look at, what to ask</h4>
+<ol>
+<li><strong>Cash &amp; runway first.</strong> "How much cash do we have? How many months does that buy us? Did runway shrink or grow versus last month, and why?"</li>
+<li><strong>Revenue &amp; growth.</strong> "Did MRR grow? By how much? Was it from new customers, or existing ones paying more?"</li>
+<li><strong>Churn.</strong> "How many customers left? Why did each one leave?" Churn is the truth-teller about your product.</li>
+<li><strong>Unit economics.</strong> "Is CAC creeping up? Is LTV:CAC still at least 3:1? Is payback still under a year?"</li>
+<li><strong>Margins &amp; burn.</strong> "Is each sale still profitable? Is net burn going the right direction?"</li>
+<li><strong>One decision.</strong> End every review by writing down one action: a thing to do, stop, or change before next month.</li>
+</ol>
+
+<h3>Using the numbers to make real decisions</h3>
+<p>Numbers are only useful if they drive action. Here is how the gauges turn into decisions.</p>
+<table><thead><tr><th>Decision</th><th>Look at…</th><th>Green light when…</th></tr></thead><tbody>
+<tr><td>Hire someone?</td><td>Runway + net burn</td><td>You still have &gt; 12 months runway after the new salary.</td></tr>
+<tr><td>Spend more on marketing?</td><td>LTV:CAC + payback</td><td>Ratio ≥ 3:1 and payback &lt; 12 months — pour more in.</td></tr>
+<tr><td>Cut costs?</td><td>Runway</td><td>Runway is under ~6 months and revenue isn't catching up.</td></tr>
+<tr><td>Raise prices?</td><td>Gross margin + churn</td><td>Margins are thin but customers stay (low churn = pricing power).</td></tr>
+<tr><td>Raise money?</td><td>Runway</td><td>You hit ~6 months of runway, or you have strong growth to show.</td></tr>
+</tbody></table>
+<div class="example"><strong>Example:</strong> A founder wants to double ad spend. They check: LTV:CAC is 3:1, payback is 5 months, runway after the spend is still 9 months. Green light — but only because the numbers said so, not because it "felt" right.</div>
+
+<h3>Connecting daily decisions to the three statements</h3>
+<p>Remember the three financial statements from earlier: the <strong>income statement</strong> (are we profitable?), the <strong>balance sheet</strong> (what do we own and owe?), and the <strong>cash flow statement</strong> (where did cash actually go?). Every small decision ripples through all three.</p>
+<pre class="diagram">
+You hire an engineer at $8,000/month
+        |
+        v
+Income statement: expenses up $8k -> profit down $8k
+        |
+        v
+Cash flow:        $8k cash leaves every month
+        |
+        v
+Balance sheet:    cash balance shrinks -> runway shorter
+</pre>
+<div class="key"><strong>Key takeaway:</strong> There is no such thing as a purely "operational" decision. Every hire, every tool, every discount touches profit, cash, and runway at the same time. The dashboard is how you see those ripples before they become waves.</div>
+
+<h3>Red flags that must never be ignored</h3>
+<div class="warn"><strong>Common mistake:</strong> Founders explain away bad numbers ("next month will be different"). The numbers are not insulting you — they are warning you. Listen the first time.</div>
+<ul>
+<li><strong>Runway under 6 months with no plan.</strong> This is a five-alarm fire. Fundraising takes months; start now.</li>
+<li><strong>Net burn rising while revenue is flat.</strong> You are speeding up toward the cliff.</li>
+<li><strong>LTV:CAC below 1:1.</strong> You lose money on every customer — growing faster makes it worse, not better.</li>
+<li><strong>Churn climbing month after month.</strong> A leaky bucket no amount of marketing can fill.</li>
+<li><strong>You don't know your cash balance off the top of your head.</strong> That itself is the red flag.</li>
+</ul>
+
+<h3>Final mindset: confidence comes from knowing your numbers</h3>
+<p>Here is the quiet truth that no one tells new founders: the calmest, most confident founders are not the ones who got lucky. They are the ones who know exactly where they stand. When you know your cash, your burn, and your runway, fear turns into a plan. A scary "are we going to make it?" becomes a solvable "we have 5 months — here are our three options."</p>
+<div class="tip"><strong>Best practice:</strong> Keep your one-page dashboard somewhere you see it weekly. Update it yourself at least once — don't fully outsource it. The act of touching the numbers is what builds the instinct.</div>
+<p>You do not need an MBA. You need a single page, a monthly hour, and the honesty to look at the gauges even when they're red. Do that, and you will make better decisions than founders far more "experienced" than you — because you will be deciding with facts instead of feelings.</p>
+<div class="key"><strong>Key takeaway:</strong> Run your business by the numbers, on a rhythm, on one page. Cash, burn, runway, growth, margin, CAC, LTV:CAC, payback, churn. Know them cold, check them often, and let them guide you. That is what it means to be in control — and it is fully within your reach. Now go run your business like you own it, because you do.</p></section>
+<section class="section"><h2 id="glossary">Glossary of Terms</h2>
+<p>Every important term in this guide, in plain English. Skim it now to see the landscape; come back whenever a word trips you up.</p>
+<dl>
+<dt>Accounts Payable (Payables)</dt><dd>Money you owe to others (suppliers, vendors) but haven't paid yet. Their invoices sitting in your inbox.</dd>
+
+<dt>Accounts Receivable (Receivables)</dt><dd>Money customers owe you but haven't paid yet. Your invoices that haven't cleared. It's "earned" revenue that isn't cash yet.</dd>
+
+<dt>Accrual Accounting</dt><dd>Recording revenue when you earn it and costs when you incur them — not when cash moves. It's why a profitable business can have an empty bank account. The opposite is cash accounting.</dd>
+
+<dt>Amortization</dt><dd>Spreading the cost of an intangible asset (like software or a patent) across the years it's useful, instead of expensing it all at once. The cousin of depreciation.</dd>
+
+<dt>ARPU (Average Revenue Per User)</dt><dd>Total revenue divided by number of customers. Tells you what an average customer is worth per period.</dd>
+
+<dt>ARR (Annual Recurring Revenue)</dt><dd>The yearly value of your recurring (subscription) revenue. Usually MRR × 12. The headline number for subscription businesses.</dd>
+
+<dt>Assets</dt><dd>Everything your business owns that has value: cash, inventory, equipment, money owed to you. The left side of the balance sheet.</dd>
+
+<dt>Balance Sheet</dt><dd>A snapshot of what you own (assets), what you owe (liabilities), and what's left over for owners (equity) at a single moment in time. It always balances: Assets = Liabilities + Equity.</dd>
+
+<dt>Break-even Point</dt><dd>The level of sales where total revenue exactly covers total costs — you make zero profit but zero loss. Below it you bleed; above it you earn.</dd>
+
+<dt>Budget</dt><dd>Your plan for how much you intend to spend and earn over a period. A set of targets you hold yourself to.</dd>
+
+<dt>Burn Multiple</dt><dd>Net cash burned divided by net new ARR added. It answers "how much money did we burn to grow $1 of revenue?" Lower is better; under 1 is excellent.</dd>
+
+<dt>Burn Rate</dt><dd>How fast you're spending cash, usually per month. The speed at which your runway shrinks.</dd>
+
+<dt>CAC (Customer Acquisition Cost)</dt><dd>The total sales and marketing money spent to win one new customer. Spend $10,000 to get 100 customers → CAC is $100.</dd>
+
+<dt>CAC Payback Period</dt><dd>How many months of a customer's profit it takes to earn back what you spent acquiring them. Shorter means you recover your money faster.</dd>
+
+<dt>Cap Table (Capitalization Table)</dt><dd>The list of who owns what slice of your company — founders, investors, employee options. Updated every funding round.</dd>
+
+<dt>Cash</dt><dd>Actual money available in your bank account right now. The only thing that pays salaries and rent. Profit is an opinion; cash is a fact.</dd>
+
+<dt>Cash Flow</dt><dd>The movement of actual money in and out of your business over a period. Positive means more came in than went out.</dd>
+
+<dt>Cash Flow Statement</dt><dd>The financial statement that tracks where cash actually came from and went — split into operating, investing, and financing activities. It explains the change in your bank balance.</dd>
+
+<dt>Churn</dt><dd>The rate at which customers (or revenue) leave you over a period. 5% monthly churn means you lose 5% of customers each month. High churn quietly kills growth.</dd>
+
+<dt>COGS (Cost of Goods Sold)</dt><dd>The direct costs of producing what you sell — materials, the server hosting a customer, payment fees, the freelancer who did the work. Costs that rise with each sale.</dd>
+
+<dt>Contribution Margin</dt><dd>Revenue from a sale minus the variable costs of that sale. What each unit "contributes" toward covering your fixed costs and profit.</dd>
+
+<dt>Cost of Capital</dt><dd>The price you pay to use someone else's money — interest on a loan, or the ownership you give up for equity. Money is never free; this is its cost.</dd>
+
+<dt>Cost-Plus Pricing</dt><dd>Setting price by taking your cost and adding a markup. Simple, but it ignores what the customer would actually pay.</dd>
+
+<dt>Decoy Effect</dt><dd>A pricing trick where adding a deliberately worse-value option makes another option look like a bargain, nudging buyers toward it.</dd>
+
+<dt>Default Alive / Default Dead</dt><dd>"Default alive" means that at your current growth and burn, you'll reach profitability before the cash runs out. "Default dead" means you won't — without raising more or changing course. Every founder should know which they are.</dd>
+
+<dt>Depreciation</dt><dd>Spreading the cost of a physical asset (a machine, a laptop) across the years it's useful, rather than expensing it all in year one.</dd>
+
+<dt>Dilution</dt><dd>The shrinking of your ownership percentage when new shares are issued (e.g. to investors or employees). You may own a smaller slice of a much bigger pie.</dd>
+
+<dt>EBITDA</dt><dd>Earnings Before Interest, Taxes, Depreciation and Amortization. A rough proxy for cash profit from core operations, stripping out financing and accounting effects.</dd>
+
+<dt>Equity</dt><dd>The owners' stake in the business — what's left after subtracting liabilities from assets. Also the shares you give investors in exchange for cash.</dd>
+
+<dt>Financial Model</dt><dd>A spreadsheet that links your assumptions (price, customers, costs) to projected revenue, profit and cash — so you can ask "what if?" before betting real money.</dd>
+
+<dt>Fixed Cost</dt><dd>A cost that stays the same regardless of how much you sell — rent, salaries, software subscriptions. You pay it even at zero sales.</dd>
+
+<dt>Forecast</dt><dd>Your best estimate of what will actually happen, updated as reality unfolds. A budget is the plan; a forecast is the honest expectation.</dd>
+
+<dt>Gross Burn</dt><dd>Total cash you spend each month, before counting any revenue coming in. Your raw monthly outflow.</dd>
+
+<dt>Gross Margin</dt><dd>Gross profit as a percentage of revenue — what's left after COGS, before other costs. The headline measure of how profitable each sale is. Software wants 70%+, retail far less.</dd>
+
+<dt>Gross Profit</dt><dd>Revenue minus COGS. The money left from sales to cover everything else and (hopefully) leave a profit.</dd>
+
+<dt>Income Statement (P&L)</dt><dd>The "Profit & Loss" statement showing revenue, costs and profit over a period. It answers "did we make money?"</dd>
+
+<dt>Liabilities</dt><dd>Everything your business owes: loans, unpaid bills, taxes due. The right side of the balance sheet.</dd>
+
+<dt>LTV (Lifetime Value)</dt><dd>The total profit you expect to earn from one customer over their whole relationship with you. The reward for acquiring them.</dd>
+
+<dt>LTV:CAC Ratio</dt><dd>Lifetime value divided by acquisition cost. It answers "for every $1 we spend winning a customer, how many dollars do we get back?" 3:1 is the classic healthy benchmark.</dd>
+
+<dt>Magic Number</dt><dd>A SaaS efficiency metric: new revenue generated per dollar of sales-and-marketing spend. Above ~0.75 suggests you can profitably spend more to grow.</dd>
+
+<dt>Margin</dt><dd>Profit expressed as a percentage of the selling price. "We make 30% margin" means 30 cents of every sales dollar is profit. Not to be confused with markup.</dd>
+
+<dt>Markup</dt><dd>How much you add on top of cost, as a percentage of the cost. A $50 item sold for $100 is a 100% markup but a 50% margin — same dollars, different denominator.</dd>
+
+<dt>MRR (Monthly Recurring Revenue)</dt><dd>The predictable subscription revenue you collect each month. The heartbeat of a subscription business.</dd>
+
+<dt>Net Burn</dt><dd>Cash spent minus cash earned each month — your true monthly cash loss after revenue helps. This is what actually drains your runway.</dd>
+
+<dt>Net Income (Net Profit / Bottom Line)</dt><dd>What's left after every cost — COGS, operating expenses, interest and taxes. The final profit line at the bottom of the P&L.</dd>
+
+<dt>Operating Expenses (OpEx)</dt><dd>The costs of running the business that aren't tied directly to producing a sale — salaries, marketing, rent, software. Everything between gross profit and net profit.</dd>
+
+<dt>Operating Leverage</dt><dd>The effect where, once fixed costs are covered, extra sales drop mostly to profit. High fixed costs + high margins = explosive profit growth past break-even (and steep losses below it).</dd>
+
+<dt>Post-money Valuation</dt><dd>What your company is worth right after an investment lands — pre-money valuation plus the new money raised.</dd>
+
+<dt>Pre-money Valuation</dt><dd>What your company is agreed to be worth just before new investment comes in. It sets how much ownership the new money buys.</dd>
+
+<dt>Price Tiering</dt><dd>Offering good / better / best versions at different prices so different customers self-select, capturing more total revenue than a single price would.</dd>
+
+<dt>Price Anchoring</dt><dd>Showing a higher reference price first so the price you actually want to sell at looks reasonable by comparison.</dd>
+
+<dt>Revenue (Top Line)</dt><dd>The total money you charge customers for your products or services, before any costs. The first line of the P&L.</dd>
+
+<dt>Rule of 40</dt><dd>A health check for growth companies: your revenue growth rate plus your profit margin should add up to at least 40%. It balances "grow fast" against "make money."</dd>
+
+<dt>Runway</dt><dd>How many months until you run out of cash at your current burn rate. Cash in the bank ÷ net monthly burn. Your survival countdown.</dd>
+
+<dt>Unit Economics</dt><dd>The profit and loss of a single sale or single customer, isolated from the rest of the business. If one unit loses money, scaling just loses it faster.</dd>
+
+<dt>Value-based Pricing</dt><dd>Setting price based on the value the customer gets, not on what it costs you to make. The most profitable way to price — and the hardest.</dd>
+
+<dt>Variable Cost</dt><dd>A cost that rises and falls with how much you sell — materials, shipping, transaction fees. Sell nothing, pay nothing.</dd>
+
+<dt>Working Capital</dt><dd>Current assets minus current liabilities — the short-term cash cushion that keeps day-to-day operations running. Tied up in receivables and inventory.</dd>
+</dl></section>
+<section class="section"><h2 id="faq">Frequently Asked Questions</h2>
+<p>Real questions founders ask, answered plainly.</p>
+
+<h4>Do I still need an accountant if I understand all this?</h4>
+<p>Yes — but for different reasons. This guide makes you fluent enough to run the business, make decisions, and ask sharp questions. An accountant handles compliance, tax filing, payroll rules, and the things that get you in legal trouble if done wrong. Think of it this way: you should understand your numbers well enough that an accountant can't blindside you, but you shouldn't be the one filing taxes at 2am. Understand it yourself; delegate the regulated parts.</p>
+
+<h4>Why is my profitable business out of cash?</h4>
+<p>Because profit and cash are not the same thing. Profit (on the P&L) counts a sale the moment you earn it — but the customer might not pay for 60 days, while your suppliers and staff want paying now. Money also leaves your account for things that aren't expenses (loan repayments, buying equipment, inventory you haven't sold). A growing business often eats cash faster than profit appears. Watch the cash flow statement, not just the P&L.</p>
+
+<h4>What's a good gross margin?</h4>
+<p>It depends entirely on your business. Software/SaaS typically wants 70–85% (copies cost almost nothing). A services business might run 40–60%. Physical retail and hardware can be healthy at 30–50%. Restaurants live and die in the single-to-low-double digits. The real test: is your gross margin enough to cover all your fixed costs and still leave profit? A "low" margin business can thrive on volume; a "high" margin one can still fail on bloated overhead.</p>
+
+<h4>How much runway should I keep?</h4>
+<p>A common rule of thumb is to never let runway drop below 6 months, and to start raising or cutting when you hit around 12 months — because raising money or finding savings always takes longer than you expect. Running below 3 months is a genuine emergency. The exact number depends on how fast you can raise or become profitable, but the principle is universal: decide and act <em>before</em> the cliff, not at it.</p>
+
+<h4>Is it bad to be the cheap option?</h4>
+<p>Usually, yes. Being cheap attracts the most demanding, least loyal customers, leaves no margin to invest in the product, and signals "low quality" whether you mean it to or not. Almost every founder underprices at first out of fear. Competing on price is a race you win by going out of business slowest. Compete on value instead — and charge for it. The exception is when scale or cost-leadership genuinely <em>is</em> your strategy, but that's a deliberate, capital-heavy bet, not a default.</p>
+
+<h4>How do I know what to charge?</h4>
+<p>Start from the value the customer gets, not your costs. Cost tells you the floor (never sell below it); the customer's perceived value sets the ceiling. Test by actually raising prices on new customers and watching whether they still buy — most founders discover they had room to charge more. If nobody ever pushes back on your price, it's too low.</p>
+
+<h4>Should I raise money?</h4>
+<p>Only if you have a use for it that earns more than it costs — and remember equity is the most expensive money there is, because you sell a piece of every future dollar forever. Raise when capital will accelerate something already working (you've found product-market fit and more fuel means faster, profitable growth). Don't raise to discover whether the business works, to feel validated, or to delay hard decisions. Many great businesses never raise at all.</p>
+
+<h4>What's the difference between markup and margin? I keep mixing them up.</h4>
+<p>Both describe the same profit dollars but divide by a different number. Markup is profit as a percentage of your <em>cost</em>; margin is profit as a percentage of your <em>selling price</em>. Buy for $50, sell for $100: that's a 100% markup but only a 50% margin. The trap: a "50% markup" leaves you thinner than a "50% margin." Always know which one a number refers to before you price off it.</p>
+
+<h4>My revenue is growing — why are investors still worried?</h4>
+<p>Because revenue growth alone doesn't prove a healthy business. They're checking whether you make money on each customer (unit economics), whether customers stay (churn), how much cash you burn to grow each dollar (burn multiple), and whether growth plus profit clears the Rule of 40. Growth bought by selling dollars for ninety cents isn't growth — it's a countdown. Healthy growth is profitable, retained, and efficient.</p>
+
+<h4>What's the LTV:CAC ratio everyone talks about, and what should it be?</h4>
+<p>It compares the lifetime profit from a customer (LTV) to what you spent acquiring them (CAC). 3:1 is the classic healthy target — for every $1 spent winning a customer, you get $3 back over their lifetime. Below 1:1 you lose money on every customer (stop spending). Far above 3:1 can mean you're underspending and could grow faster. Also watch CAC payback: how many months to earn the acquisition cost back — under 12 months is generally healthy.</p>
+
+<h4>Do I need to understand all three financial statements, or just the P&L?</h4>
+<p>All three, because each answers a different question and they only tell the truth together. The P&L asks "did we make a profit?" The balance sheet asks "what do we own and owe?" The cash flow statement asks "where did the actual money go?" A founder who only reads the P&L is the one most likely to be surprised by an empty bank account. They're three windows into the same house.</p>
+
+<h4>What does "default alive" mean and how do I find out if I am?</h4>
+<p>"Default alive" means that at your current growth and spending, you'll become profitable before the cash runs out — without needing to raise more money. "Default dead" means you won't, unless something changes. Find out by projecting your revenue growth and burn forward month by month: does the profit line cross above zero before the cash line hits zero? Every founder should know this answer at all times. If you're default dead, you have a deadline whether you've acknowledged it or not.</p>
+
+<h4>How often should I actually look at my numbers?</h4>
+<p>Cash balance and burn: weekly, or even daily if runway is tight. Your core dashboard (revenue, margin, churn, CAC, runway): monthly, reviewed properly. Full statements: monthly once you're past the earliest stage. The goal is to never be surprised. Founders who check quarterly find out about problems a quarter too late.</p>
+
+<h4>What numbers will an investor expect me to know cold, off the top of my head?</h4>
+<p>Your monthly revenue (and growth rate), gross margin, monthly burn, runway in months, CAC, LTV (or LTV:CAC), churn, and your cash in the bank. If you fumble these in a meeting, it reads as "not in control of the business." You don't need every line memorized — but these you should be able to say instantly, like your own phone number.</p>
+
+<h4>Is profit the goal, or is growth?</h4>
+<p>It's a balance, and the right mix depends on your stage and strategy — which is exactly what the Rule of 40 captures (growth rate + profit margin ≥ 40%). Very early, growth and learning matter most; later, profitability must show up or the business isn't real. The wrong answer is ignoring one entirely: pure growth with no path to profit is a bonfire, and pure profit with no growth may be a job, not a venture. Know which you're optimizing for, and why.</p>
+
+<h4>I find spreadsheets and financial models intimidating — do I really need one?</h4>
+<p>You need a <em>simple</em> one — and simple is the point. A useful first model is just a few rows: how many customers, at what price, with what costs, month by month, ending in a cash balance. That's enough to ask "what if I double prices?" or "what if churn doubles?" before betting real money. You're not building a Wall Street model; you're building a flight simulator for decisions. Start small and grow it as you learn.</p></section>
+<section class="section"><h2 id="cheatsheet">Revision Cheat Sheet</h2>
+<p>The dense one-pager. Review this before a board meeting, an investor call, or any moment you need the numbers at your fingertips.</p>
+
+<h3>Key Formulas</h3>
+<table>
+<thead><tr><th>Name</th><th>Formula</th><th>Quick example</th></tr></thead>
+<tbody>
+<tr><td>Gross Profit</td><td>Revenue − COGS</td><td>$100k − $30k = $70k</td></tr>
+<tr><td>Gross Margin %</td><td>Gross Profit ÷ Revenue × 100</td><td>$70k ÷ $100k = 70%</td></tr>
+<tr><td>Net Profit (Bottom Line)</td><td>Revenue − COGS − OpEx − Interest − Tax</td><td>$100k − $30k − $50k − $5k = $15k</td></tr>
+<tr><td>Net Margin %</td><td>Net Profit ÷ Revenue × 100</td><td>$15k ÷ $100k = 15%</td></tr>
+<tr><td>EBITDA</td><td>Net Profit + Interest + Tax + Depreciation + Amortization</td><td>$15k + $5k + $0 + $4k = $24k</td></tr>
+<tr><td>Balance Sheet Identity</td><td>Assets = Liabilities + Equity</td><td>$200k = $120k + $80k</td></tr>
+<tr><td>Working Capital</td><td>Current Assets − Current Liabilities</td><td>$90k − $50k = $40k</td></tr>
+<tr><td>Markup %</td><td>(Price − Cost) ÷ Cost × 100</td><td>($100 − $50) ÷ $50 = 100%</td></tr>
+<tr><td>Margin %</td><td>(Price − Cost) ÷ Price × 100</td><td>($100 − $50) ÷ $100 = 50%</td></tr>
+<tr><td>Contribution Margin (per unit)</td><td>Price − Variable Cost per unit</td><td>$100 − $40 = $60</td></tr>
+<tr><td>Break-even (units)</td><td>Fixed Costs ÷ Contribution Margin per unit</td><td>$30k ÷ $60 = 500 units</td></tr>
+<tr><td>Break-even (revenue)</td><td>Fixed Costs ÷ Gross Margin %</td><td>$30k ÷ 0.60 = $50k</td></tr>
+<tr><td>CAC</td><td>Total Sales &amp; Marketing Spend ÷ New Customers Won</td><td>$10k ÷ 100 = $100</td></tr>
+<tr><td>LTV (simple)</td><td>(ARPU × Gross Margin %) ÷ Churn rate</td><td>($50 × 0.8) ÷ 0.05 = $800</td></tr>
+<tr><td>LTV:CAC Ratio</td><td>LTV ÷ CAC</td><td>$800 ÷ $100 = 8:1</td></tr>
+<tr><td>CAC Payback (months)</td><td>CAC ÷ (ARPU × Gross Margin %)</td><td>$100 ÷ ($50 × 0.8) = 2.5 mo</td></tr>
+<tr><td>MRR</td><td>Sum of all monthly subscription revenue</td><td>200 users × $50 = $10k</td></tr>
+<tr><td>ARR</td><td>MRR × 12</td><td>$10k × 12 = $120k</td></tr>
+<tr><td>Churn rate</td><td>Customers Lost ÷ Customers at Start of Period</td><td>10 ÷ 200 = 5%</td></tr>
+<tr><td>Net Burn</td><td>Cash Spent − Cash Received (per month)</td><td>$80k − $30k = $50k</td></tr>
+<tr><td>Runway (months)</td><td>Cash in Bank ÷ Net Monthly Burn</td><td>$600k ÷ $50k = 12 mo</td></tr>
+<tr><td>Burn Multiple</td><td>Net Cash Burned ÷ Net New ARR</td><td>$600k ÷ $400k = 1.5</td></tr>
+<tr><td>Rule of 40</td><td>Growth Rate % + Profit Margin %</td><td>30% + 15% = 45% ✓</td></tr>
+<tr><td>Magic Number</td><td>(New ARR this quarter) ÷ Prior-quarter S&amp;M spend</td><td>$200k ÷ $250k = 0.8</td></tr>
+<tr><td>Post-money Valuation</td><td>Pre-money Valuation + New Investment</td><td>$8M + $2M = $10M</td></tr>
+<tr><td>Investor Ownership %</td><td>Investment ÷ Post-money Valuation</td><td>$2M ÷ $10M = 20%</td></tr>
+<tr><td>Dilution (your new %)</td><td>Old % × (1 − new investors' %)</td><td>100% × (1 − 0.20) = 80%</td></tr>
+</tbody>
+</table>
+
+<h3>Key Benchmarks</h3>
+<table>
+<thead><tr><th>Metric</th><th>Healthy target</th></tr></thead>
+<tbody>
+<tr><td>Gross Margin — SaaS/software</td><td>70–85%+</td></tr>
+<tr><td>Gross Margin — services</td><td>40–60%</td></tr>
+<tr><td>Gross Margin — physical/retail</td><td>30–50%</td></tr>
+<tr><td>LTV:CAC ratio</td><td>≥ 3:1 (below 1:1 = losing money per customer)</td></tr>
+<tr><td>CAC Payback period</td><td>&lt; 12 months (under 6 is excellent)</td></tr>
+<tr><td>Monthly churn (SMB SaaS)</td><td>&lt; 3–5%; lower is much better</td></tr>
+<tr><td>Annual churn / want net revenue retention</td><td>NRR &gt; 100% (revenue grows even with no new customers)</td></tr>
+<tr><td>Runway — comfortable</td><td>18+ months; raise/cut by 12; emergency under 6</td></tr>
+<tr><td>Burn Multiple</td><td>&lt; 1 great · 1–1.5 good · 1.5–2 ok · &gt;2 concerning</td></tr>
+<tr><td>Rule of 40 (growth % + margin %)</td><td>≥ 40%</td></tr>
+<tr><td>Magic Number</td><td>&gt; 0.75 (efficient to spend more on growth)</td></tr>
+<tr><td>Net margin — sustainable business</td><td>10–20%+ (varies widely by industry)</td></tr>
+<tr><td>Default status</td><td>Default ALIVE — profitable before cash runs out</td></tr>
+</tbody>
+</table>
+
+<div class="callout warn">
+<p><strong>Don't confuse these — the classic traps:</strong> Markup ≠ Margin (different denominator). Profit ≠ Cash (accrual vs. bank balance). Gross burn ≠ Net burn (runway uses <em>net</em>). Revenue growth ≠ a healthy business (check unit economics + churn).</p>
+</div>
+
+<h3>The Numbers To Know Cold</h3>
+<p>If an investor or board member asks, you should answer these instantly — like your own phone number:</p>
+<ul>
+<li><strong>Cash in the bank</strong> — today's actual balance.</li>
+<li><strong>Net monthly burn</strong> — how fast cash is leaving.</li>
+<li><strong>Runway</strong> — months left at current burn.</li>
+<li><strong>Monthly revenue + growth rate</strong> — MRR/ARR and how fast it's climbing.</li>
+<li><strong>Gross margin</strong> — how profitable each sale is.</li>
+<li><strong>CAC and LTV (or LTV:CAC)</strong> — cost to win a customer vs. what they're worth.</li>
+<li><strong>Churn</strong> — how fast customers leave.</li>
+<li><strong>Default alive or default dead</strong> — do you reach profit before the cash runs out?</li>
+</ul>
+
+<div class="callout key">
+<p><strong>The one sentence to remember:</strong> Revenue proves people want it, profit proves the model works, and cash proves you survive long enough to find out. Watch all three — never just the top line.</p>
+</div></section>
+
+</body></html>
