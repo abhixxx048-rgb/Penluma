@@ -2,8 +2,8 @@
 title: 'How Opportunities and Jobs Really Find You'
 metaTitle: 'How Opportunities Really Find You'
 description: >-
-  The best jobs, deals, and hires rarely come through the front door. Learn how
-  opportunities really flow through relationships and how to put yourself in their path.
+  The best jobs, deals, and hires rarely come through the front door. See how
+  opportunities really flow through relationships, and how to get in their path.
 topic: life-money-and-relationships
 topicTitle: 'Life, Money & Relationships'
 category: Thinking & Decisions

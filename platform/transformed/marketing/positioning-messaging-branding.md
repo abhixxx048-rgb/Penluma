@@ -38,8 +38,7 @@ category: Business & Growth
 date: '2026-06-16'
 order: 999
 icon: "\U0001F4E3"
-sources:
-  - 'https://www.aprildunford.com/books'
+sources: []
 ---
 
 Two founders sell nearly identical software. One spends three weeks arguing about taglines and still sounds like everyone else. The other writes a homepage in an afternoon, and the first five people who read it can repeat back exactly what the product does and who it is for.

@@ -3,7 +3,7 @@ title: 'Why People Really Buy: The Hidden Psychology of Customers'
 metaTitle: 'Why People Really Buy: Customer Psychology'
 description: >-
   People never buy what you think they buy. Learn the hidden psychology of why
-  customers really buy, from Jobs-To-Be-Done to pricing tricks and the pain of paying.
+  people really buy, from Jobs-To-Be-Done to pricing tricks and the pain of paying.
 keywords:
   - why people buy
   - customer psychology

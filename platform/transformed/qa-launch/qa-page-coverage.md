@@ -2,8 +2,8 @@
 title: 'Full-Page QA Coverage: Catch Launch Bugs Before Customers Do'
 metaTitle: 'Full-Page QA Coverage Before Launch'
 description: >-
-  A practical guide to full-page QA coverage before launch: how to click through
-  every page, watch the logs, and catch the silent bugs that quietly cost you money.
+  A practical guide to full-page QA coverage before launch: click through every
+  page, watch the logs, and catch the silent bugs that quietly cost you money.
 keywords:
   - full page QA coverage
   - pre-launch QA checklist

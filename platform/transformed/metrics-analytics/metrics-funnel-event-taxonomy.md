@@ -1,5 +1,5 @@
 ---
-title: "Funnel Analytics & Event Taxonomy: A Practical Guide"
+title: "Funnel Analytics & Event Taxonomy: Why Your Data Lies"
 metaTitle: "Funnel Analytics & Event Taxonomy Guide"
 description: "Learn funnel analytics and event taxonomy design the right way: name events that won't rot, fix identity, and track the one funnel that actually matters."
 keywords:

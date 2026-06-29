@@ -1,7 +1,7 @@
 ---
 title: "Why Your Store Works But Still Looks Cheap (And How to Fix It)"
 metaTitle: "Make Your Storefront Look Premium With Design Tokens"
-description: "Your online store loads fast and works fine, but still feels generic. Learn the design-token and CMS-block foundation that makes a storefront look premium across every theme."
+description: "Your online store works fine but still feels generic. Learn the design-token foundation that makes a storefront look premium across every theme."
 topic: product-design
 topicTitle: Product & Design
 category: Business & Growth

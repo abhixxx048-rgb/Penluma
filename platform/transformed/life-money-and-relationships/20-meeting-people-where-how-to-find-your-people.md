@@ -3,7 +3,7 @@ title: 'How to Find Your People as an Adult (Without Forcing It)'
 metaTitle: 'How to Find Your People as an Adult'
 description: >-
   Making friends as an adult feels impossible because school did the work for you.
-  Here is where to actually find your people and how to build real connection on purpose.
+  Here is where to find your people and build real connection on purpose.
 keywords:
   - how to find your people
   - making friends as an adult

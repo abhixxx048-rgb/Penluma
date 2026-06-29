@@ -1,6 +1,6 @@
 ---
 title: 'How to Sell Software With Demos, Not Demo Forms'
-metaTitle: 'Show Dont Tell: Demos That Sell Software'
+metaTitle: "Show, Don't Tell: Demos That Sell Software"
 description: >-
   A simple show-dont-tell playbook for selling software to non-technical buyers:
   teaching webinars, an always-on interactive demo, and 1:1 calls that close.

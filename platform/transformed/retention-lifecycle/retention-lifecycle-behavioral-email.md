@@ -1,7 +1,7 @@
 ---
 title: "Behavioral Email: The Triggered Sequences That Quietly Make Money"
 metaTitle: "Behavioral & Lifecycle Email Explained"
-description: "Behavioral email sends itself based on what customers do or don't do. Learn how triggered lifecycle journeys recover lost carts and win back buyers automatically."
+description: "Behavioral email sends itself based on what customers do or don't do. See how triggered lifecycle journeys recover carts and win back buyers automatically."
 keywords:
   - behavioral email
   - lifecycle email

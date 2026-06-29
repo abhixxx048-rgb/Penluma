@@ -1,7 +1,7 @@
 ---
 title: Why "Trusting Your Gut" in Hiring Fails (and What Works)
 metaTitle: Hiring Without Bias - Why Gut Instinct Fails
-description: Your gut is a bias amplifier, not a hiring tool. Learn how structured interviews, scorecards, and task-focused feedback help you hire without bias and lead better.
+description: Your gut is a bias amplifier, not a hiring tool. Structured interviews, scorecards, and task-focused feedback help you hire without bias and lead better.
 keywords:
   - hiring without bias
   - structured interviews

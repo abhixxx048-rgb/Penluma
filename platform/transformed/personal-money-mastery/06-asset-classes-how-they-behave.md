@@ -1,7 +1,7 @@
 ---
 title: "Asset Classes Explained: How Your Money Really Behaves"
 metaTitle: "Asset Classes Explained: How Money Behaves"
-description: "Cash, bonds, gold, real estate, and equity each behave differently in booms, crashes, and inflation. Learn how asset classes work and how tax shapes your real return."
+description: "Cash, bonds, gold, real estate and equity behave differently in booms, crashes and inflation. Learn how asset classes work and how tax shapes your real return."
 keywords:
   - asset classes explained
   - how asset classes behave

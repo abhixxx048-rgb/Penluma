@@ -2,7 +2,7 @@
 title: "Startup Dilution: What Raising Money Really Costs You"
 metaTitle: "Fundraising & Dilution: The Founder's Guide"
 description: >-
-  Raising money feels like winning, but every rupee of investment costs you future ownership. Learn how startup dilution, term sheets, and Indian funding rules really work.
+  Raising money feels like winning, but every rupee costs you future ownership. Learn how startup dilution, term sheets, and Indian funding rules work.
 keywords:
   - startup dilution
   - fundraising for startups

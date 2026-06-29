@@ -1,7 +1,7 @@
 ---
 title: "Why Your Churn Rate Lies (and Cohorts Tell the Truth)"
 metaTitle: "Cohort Analysis & Retention Curves Explained"
-description: "Your single churn % can stay flat while your business quietly rots. Learn how cohort analysis and retention curves reveal whether customers actually stick around."
+description: "Your single churn % can stay flat while your business quietly rots. Learn how cohort analysis and retention curves reveal whether customers really stick around."
 keywords:
   - cohort analysis
   - retention curves

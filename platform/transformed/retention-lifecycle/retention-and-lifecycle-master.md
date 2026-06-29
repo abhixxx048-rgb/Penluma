@@ -1,7 +1,7 @@
 ---
 title: "Customer Retention & Lifecycle: The 5 Levers That Keep Users"
-metaTitle: "Customer Retention & Lifecycle Guide"
-description: "A practical guide to customer retention and lifecycle strategy: the five levers that keep users, why onboarding and dunning come first, and how to sequence them."
+metaTitle: "Customer Retention & Lifecycle: 5 Churn Levers"
+description: "A practical guide to customer retention and lifecycle: the five levers that keep users, why onboarding and dunning come first, and how to sequence them."
 keywords:
   - customer retention
   - customer lifecycle

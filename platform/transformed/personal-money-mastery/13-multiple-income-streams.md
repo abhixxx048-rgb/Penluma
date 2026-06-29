@@ -1,7 +1,7 @@
 ---
 title: "Multiple Income Streams: The Smart Order to Build Them"
 metaTitle: "Multiple Income Streams: Build Them in Order"
-description: "Forget chasing seven income streams at once. Learn the smart order to build active, portfolio, and passive income, plus how each is taxed in India for FY 2025-26."
+description: "Forget chasing seven income streams at once. Learn the smart order to build active, portfolio, and passive income, and how each is taxed in India in 2025-26."
 keywords:
   - multiple income streams
   - passive income India

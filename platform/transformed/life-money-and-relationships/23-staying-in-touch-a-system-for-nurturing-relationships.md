@@ -1,5 +1,5 @@
 ---
-title: 'How to Stay in Touch: A Simple System for Keeping Relationships Alive'
+title: 'How to Stay in Touch: A System for Keeping Relationships Alive'
 metaTitle: 'How to Stay in Touch: A System That Works'
 description: >-
   Most relationships fade from neglect, not conflict. Learn how to stay in touch

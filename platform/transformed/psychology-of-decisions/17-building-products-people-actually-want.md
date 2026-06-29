@@ -39,7 +39,7 @@ faq:
   - q: Why are default settings so powerful?
     a: People rarely change defaults because of inertia, an implied recommendation ("they set it this way for a reason"), and loss aversion. Organ donor rates jump from around 12% to 99% just by switching from opt-in to opt-out.
 sources:
-  - https://en.wikipedia.org/wiki/Hooked:_How_to_Build_Habit-Forming_Products
+  - https://en.wikipedia.org/wiki/Nir_Eyal
   - https://en.wikipedia.org/wiki/Fogg_behavior_model
   - https://en.wikipedia.org/wiki/Dark_pattern
 ---

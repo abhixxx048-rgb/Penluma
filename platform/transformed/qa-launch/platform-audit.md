@@ -1,7 +1,7 @@
 ---
 title: The Pre-Launch Platform Audit That Catches What Tests Miss
 metaTitle: Pre-Launch Platform Audit Guide
-description: A pre-launch platform audit catches the bugs your tests miss: wrong currencies, silent errors, and cross-tenant leaks. Here's how to run one that actually works.
+description: A pre-launch platform audit catches the bugs your tests miss: wrong currencies, silent errors, and cross-tenant leaks. Here's how to run one that works.
 keywords:
   - platform audit
   - pre-launch QA checklist

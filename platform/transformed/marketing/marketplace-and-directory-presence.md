@@ -1,7 +1,7 @@
 ---
 title: How Buyers Find Software (Before They Ever Visit You)
 metaTitle: Software Directory & Review Site Strategy
-description: Your buyers compare tools on review sites and "best software" listicles before visiting your site. Here's how to win directory presence without paying for badges.
+description: Buyers shortlist software on review sites and "best software" listicles before visiting you. Here's how to win directory presence without paying for badges.
 topic: marketing
 topicTitle: Marketing
 category: Business & Growth

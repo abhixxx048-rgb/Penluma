@@ -1,7 +1,7 @@
 ---
 title: "Profit vs Cash: The 3 Statements Every Founder Must Read"
 metaTitle: "The Three Financial Statements Explained"
-description: "Why profitable companies run out of cash, and how the P&L, balance sheet, and cash-flow statement work together. A plain-English guide to the three financial statements."
+description: "Why do profitable companies run out of cash? A plain-English guide to the three financial statements: the P&L, balance sheet, and cash-flow statement."
 keywords:
   - three financial statements
   - profit vs cash flow

@@ -38,7 +38,6 @@ author: Pritesh Yadav
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things
-  - https://en.wikipedia.org/wiki/Jobs_to_be_done
 ---
 
 Some builders ship a feature and users just *get it*. No manual, no support ticket, no confusion. Other builders ship the same kind of feature and people get stuck, complain, or quietly disappear.

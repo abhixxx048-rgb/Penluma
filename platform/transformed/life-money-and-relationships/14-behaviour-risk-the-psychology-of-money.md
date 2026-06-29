@@ -2,8 +2,8 @@
 title: 'The Psychology of Money: Why You Are Your Biggest Risk'
 metaTitle: 'Psychology of Money: Your Biggest Money Risk'
 description: >-
-  The biggest threat to your wealth is not a crash or inflation. It is you. Learn the
-  psychology of money, the biases that wreck portfolios, and how to build guard-rails.
+  Your biggest money risk is not a crash. It is you. Learn the psychology of money, the
+  biases that wreck portfolios, and the guard-rails that protect it.
 topic: life-money-and-relationships
 topicTitle: 'Life, Money & Relationships'
 category: Thinking & Decisions

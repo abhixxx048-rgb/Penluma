@@ -2,9 +2,9 @@
 title: 'SaaS Growth for SMB Tools: Pricing, Retention & Referrals'
 metaTitle: 'SaaS Growth: Pricing, Retention & Referrals'
 description: >-
-  How low-ACV SaaS sold to small business owners actually grows: smart
-  pricing, first-90-day retention, dunning, and referral programs that beat
-  paid ads on cost and trust.
+  How low-priced SaaS for small businesses actually grows: smart pricing,
+  first-90-day retention, dunning, and referrals that beat paid ads on cost
+  and trust.
 keywords:
   - SaaS pricing strategy
   - SMB SaaS churn

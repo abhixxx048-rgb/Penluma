@@ -43,7 +43,7 @@ sources: []
 
 The first time you used a smartphone, did anyone hand you a manual? Probably not. You just touched the screen and it worked. That feeling, the sense that you already know what to do, is one of the most expensive things to build in all of software. And it is almost never an accident.
 
-In this piece we open up eight famous products like a mechanic opening a clock. For each one we ask three plain questions: What was the hard problem? What made the solution feel obvious? And which principle explains the magic?
+So let's pry open eight famous products the way a mechanic opens a clock. For each one, three plain questions: What was the hard problem? What made the solution feel obvious? And which principle explains the magic?
 
 ## Why this matters
 

@@ -2,9 +2,9 @@
 title: 'Turn Free Trials Into Paying Customers: The Activation Funnel'
 metaTitle: 'Free Trial to Paid: Fix Your Activation Funnel'
 description: >-
-  Most SaaS trials never convert because users never hit their "aha" moment.
-  Learn how activation speed drives free trial to paid conversion, plus the
-  funnel fixes that work.
+  Most SaaS trials never convert because users miss their "aha" moment. See how
+  activation speed drives free trial to paid conversion, plus the fixes that
+  work.
 keywords:
   - free trial to paid conversion
   - activation rate

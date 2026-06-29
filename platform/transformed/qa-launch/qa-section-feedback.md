@@ -1,7 +1,7 @@
 ---
 title: Why Your Store Can Transact but Cannot Listen
 metaTitle: Customer Feedback Loops Before Launch
-description: Your store can take orders but never hears how customers feel. Learn the customer feedback loops to build before launch so problems surface as signals, not churn.
+description: Your store takes orders but never hears how customers feel. Learn the customer feedback loops to build before launch so problems surface as signals, not churn.
 topic: qa-launch
 topicTitle: QA & Launch Readiness
 category: Business & Growth

@@ -1,7 +1,7 @@
 ---
 title: "Is Product Sense Born or Learned? Honest Answers"
 metaTitle: "Product Sense: Born or Learned? FAQ"
-description: "Is product sense something you're born with, or can you learn it? Honest answers to the questions beginners ask about empathy, UX, and building things people love."
+description: "Is product sense something you're born with, or can you learn it? Honest answers about empathy, UX, and the skill behind products people love."
 keywords:
   - product sense
   - is product sense learned

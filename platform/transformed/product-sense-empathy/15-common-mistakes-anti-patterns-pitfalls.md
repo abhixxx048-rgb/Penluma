@@ -2,8 +2,8 @@
 title: '15 UX Anti-Patterns That Quietly Wreck Your Product'
 metaTitle: 'UX Anti-Patterns & Common Design Mistakes'
 description: >-
-  Most bad software dies by a thousand small cuts, not one big blunder. Learn the
-  common UX anti-patterns and design mistakes that erode trust, and how to fix each.
+  Most bad software dies by a thousand small cuts, not one blunder. Learn the UX
+  anti-patterns and design mistakes that erode trust, and how to fix each.
 topic: product-sense-empathy
 topicTitle: Product Sense & Empathy
 category: Thinking & Decisions

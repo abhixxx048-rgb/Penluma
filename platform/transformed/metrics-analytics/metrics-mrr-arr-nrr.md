@@ -3,8 +3,7 @@ title: 'MRR, ARR and NRR Explained: The SaaS Metrics That Lie'
 metaTitle: 'MRR, ARR & NRR: The SaaS Metrics Guide'
 description: >-
   MRR, ARR and net revenue retention decide what your SaaS is worth. Learn the
-  definitions investors check, the waterfall that finds your real problem, and
-  the myths to ignore.
+  definitions investors check and the myths that quietly wreck your numbers.
 keywords:
   - what is MRR
   - what is ARR

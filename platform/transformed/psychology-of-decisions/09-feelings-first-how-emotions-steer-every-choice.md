@@ -2,7 +2,7 @@
 title: 'Feelings First: How Emotions Secretly Steer Every Choice'
 metaTitle: 'How Emotions Steer Every Decision You Make'
 description: >-
-  Your gut decides before your logic catches up. Learn how the affect heuristic,
+  Your gut decides before your logic catches up. See how the affect heuristic,
   mood, fear, and regret quietly steer every choice, and how to take the wheel back.
 keywords:
   - affect heuristic

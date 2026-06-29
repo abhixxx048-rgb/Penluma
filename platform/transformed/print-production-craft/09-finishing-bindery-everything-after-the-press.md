@@ -1,7 +1,7 @@
 ---
 title: "Finishing & Bindery: Why Print Jobs Are Won After the Press"
 metaTitle: "Print Finishing & Bindery: The Complete Guide"
-description: "Most print complaints aren't printing problems, they're finishing problems. Learn how cutting, folding, coating, and binding turn flat sheets into real products."
+description: "Most print complaints aren't printing problems, they're finishing problems. See how cutting, folding, coating, and binding turn flat sheets into products."
 keywords:
   - print finishing
   - bindery
