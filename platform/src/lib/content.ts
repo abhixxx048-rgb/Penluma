@@ -54,3 +54,18 @@ export async function postsForTopic(slug: string): Promise<CollectionEntry<'blog
     return b.data.date.getTime() - a.data.date.getTime();
   });
 }
+
+/** Related posts for "Continue reading": same topic first, then same category. */
+export async function relatedPosts(
+  post: CollectionEntry<'blog'>,
+  limit = 3
+): Promise<CollectionEntry<'blog'>[]> {
+  const all = await getCollection('blog', ({ data }) => !data.draft);
+  const others = all.filter((p) => p.id !== post.id);
+  const sameTopic = others.filter((p) => p.data.topic === post.data.topic);
+  const sameCategory = others.filter(
+    (p) => p.data.category === post.data.category && p.data.topic !== post.data.topic
+  );
+  const pool = [...sameTopic, ...sameCategory];
+  return pool.slice(0, limit);
+}

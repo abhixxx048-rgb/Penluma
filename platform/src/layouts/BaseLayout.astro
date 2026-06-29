@@ -21,6 +21,8 @@ interface Props {
   modifiedTime?: string;
   /** Page-specific JSON-LD objects (Article, BreadcrumbList, …). */
   jsonLd?: Record<string, unknown>[];
+  /** Target keywords — emitted as a <meta name="keywords"> tag. */
+  keywords?: string[];
 }
 
 const {
@@ -31,6 +33,7 @@ const {
   publishedTime,
   modifiedTime,
   jsonLd = [],
+  keywords = [],
 } = Astro.props;
 
 const pageTitle = title ? `${title} · ${SITE.title}` : `${SITE.title} — ${SITE.tagline}`;
@@ -82,6 +85,7 @@ const structuredData = [...baseLd, ...jsonLd];
 
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
+    {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
     <meta name="theme-color" content="#0a0a0a" />
 
     {/* Open Graph */}

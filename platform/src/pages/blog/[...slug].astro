@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostInteractions from '../../components/PostInteractions.astro';
 import { getCollection, render } from 'astro:content';
-import { postsForTopic, topicBySlug } from '../../lib/content';
+import { postsForTopic, topicBySlug, relatedPosts } from '../../lib/content';
 import { SITE } from '../../consts';
 import readingTime from 'reading-time';
 
@@ -20,6 +20,12 @@ const siblings = await postsForTopic(post.data.topic);
 const idx = siblings.findIndex((p) => p.id === post.id);
 const prev = idx > 0 ? siblings[idx - 1] : null;
 const next = idx >= 0 && idx < siblings.length - 1 ? siblings[idx + 1] : null;
+const related = await relatedPosts(post, 3);
+
+const faq = post.data.faq ?? [];
+const keywords = post.data.keywords ?? [];
+const sources = post.data.sources ?? [];
+const author = post.data.author || SITE.author;
 
 const fmtDate = post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
@@ -36,7 +42,8 @@ const jsonLd = [
     description: post.data.description,
     datePublished: publishedISO,
     dateModified: publishedISO,
-    author: { '@type': 'Person', name: SITE.author },
+    author: { '@type': 'Person', name: author },
+    ...(keywords.length ? { keywords: keywords.join(', ') } : {}),
     publisher: {
       '@type': 'Organization',
       name: SITE.name,
@@ -56,15 +63,29 @@ const jsonLd = [
       { '@type': 'ListItem', position: 3, name: post.data.title, item: canonicalUrl },
     ],
   },
+  ...(faq.length
+    ? [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: faq.map((f) => ({
+            '@type': 'Question',
+            name: f.q,
+            acceptedAnswer: { '@type': 'Answer', text: f.a },
+          })),
+        },
+      ]
+    : []),
 ];
 ---
 
 <BaseLayout
-  title={post.data.title}
+  title={post.data.metaTitle || post.data.title}
   description={post.data.description}
   type="article"
   publishedTime={publishedISO}
   jsonLd={jsonLd}
+  keywords={keywords}
 >
   <article class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
     <!-- breadcrumb -->
@@ -81,6 +102,7 @@ const jsonLd = [
         {post.data.title}
       </h1>
       <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-slate-500">
+        <span>By {author}</span>
         <time datetime={post.data.date.toISOString()}>{fmtDate}</time>
         <span>{stats.text}</span>
         <PostInteractions postId={post.id} />
@@ -103,6 +125,71 @@ const jsonLd = [
     <div class="prose-research mt-10">
       <Content />
     </div>
+
+    {/* FAQ — also emitted as FAQPage schema above */}
+    {faq.length > 0 && (
+      <section class="mt-16" aria-labelledby="faq-heading">
+        <h2 id="faq-heading" class="font-serif text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+          Frequently asked questions
+        </h2>
+        <dl class="mt-6 divide-y divide-slate-200 dark:divide-slate-800">
+          {faq.map((f) => (
+            <details class="group py-4">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-medium text-slate-800 dark:text-slate-200">
+                {f.q}
+                <span class="text-brand-500 transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+              </summary>
+              <p class="mt-3 text-slate-600 dark:text-slate-400">{f.a}</p>
+            </details>
+          ))}
+        </dl>
+      </section>
+    )}
+
+    {/* Further reading — trusted external sources */}
+    {sources.length > 0 && (
+      <section class="mt-12">
+        <h2 class="font-serif text-xl font-bold tracking-tight text-slate-900 dark:text-white">Further reading</h2>
+        <ul class="mt-4 space-y-2">
+          {sources.map((s) => (
+            <li>
+              <a href={s.url} target="_blank" rel="noopener noreferrer" class="text-brand-700 underline decoration-brand-400/50 underline-offset-2 hover:decoration-brand-500 dark:text-brand-300">
+                {s.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {/* Continue reading — related posts (internal links) */}
+    {related.length > 0 && (
+      <section class="mt-16 border-t border-slate-200 pt-10 dark:border-slate-800">
+        <h2 class="font-serif text-xl font-bold tracking-tight text-slate-900 dark:text-white">Continue reading</h2>
+        <div class="mt-5 grid gap-4 sm:grid-cols-3">
+          {related.map((r) => (
+            <a href={`/blog/${r.id}`} class="group rounded-xl border border-slate-200 p-4 transition-colors hover:border-brand-300 hover:bg-brand-50/40 dark:border-slate-800 dark:hover:border-brand-700 dark:hover:bg-slate-900/50">
+              <p class="text-xs font-medium text-brand-600 dark:text-brand-400">{r.data.icon} {r.data.topicTitle}</p>
+              <p class="mt-1.5 text-sm font-semibold text-slate-900 group-hover:text-brand-700 dark:text-white dark:group-hover:text-brand-300">{r.data.title}</p>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {/* Keyword-rich topical footer (subtle, for SEO discovery) */}
+    {keywords.length > 0 && (
+      <section class="mt-12">
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-slate-400">Related topics</h2>
+        <div class="mt-3 flex flex-wrap gap-2">
+          {keywords.map((k) => (
+            <a href={`/search?q=${encodeURIComponent(k)}`} class="rounded-full border border-slate-200 px-3 py-1 text-xs text-slate-500 transition-colors hover:border-brand-300 hover:text-brand-600 dark:border-slate-800 dark:hover:border-brand-700">
+              {k}
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
 
     <!-- prev / next within topic -->
     <nav class="mt-16 grid gap-4 border-t border-slate-200 pt-8 sm:grid-cols-2 dark:border-slate-800">

@@ -415,6 +415,34 @@ function statSafe(dir, file) {
   }
 }
 
+// ---------------------------------------------------------------------------
+// Transformed-content overlay. The transform workflow rewrites raw research
+// posts into engaging, SEO-optimized blogs and saves them (with full frontmatter)
+// under platform/transformed/<topic>/<slug>.md. These are committed and survive
+// regeneration. Here we overlay them on top of the raw import — same path, so a
+// transformed post cleanly REPLACES its raw counterpart (URLs stay stable).
+// ---------------------------------------------------------------------------
+const TRANSFORMED_DIR = path.join(PLATFORM_DIR, 'transformed');
+let overlaid = 0;
+if (fs.existsSync(TRANSFORMED_DIR)) {
+  const walk = (dir) => {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) walk(full);
+      else if (entry.name.endsWith('.md')) {
+        const rel = path.relative(TRANSFORMED_DIR, full); // <topic>/<slug>.md
+        const dest = path.join(OUT_DIR, rel);
+        const existed = fs.existsSync(dest);
+        fs.mkdirSync(path.dirname(dest), { recursive: true });
+        fs.copyFileSync(full, dest);
+        overlaid++;
+        if (!existed) postCount++; // a transformed-only post (no raw original)
+      }
+    }
+  };
+  walk(TRANSFORMED_DIR);
+}
+
 // homepage spotlight manifest (featured standalone posts)
 fs.writeFileSync(
   path.join(PLATFORM_DIR, 'src/featured.generated.json'),
@@ -429,4 +457,5 @@ fs.writeFileSync(
 );
 
 console.log(`✓ Imported ${postCount} posts across ${publishedTopics.length} topics.`);
+if (overlaid > 0) console.log(`   ✨ ${overlaid} posts overlaid from transformed/ (SEO blog rewrites).`);
 for (const t of publishedTopics) console.log(`   ${t.icon}  ${t.title} — ${t.postCount} posts`);

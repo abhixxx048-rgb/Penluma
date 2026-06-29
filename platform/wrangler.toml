@@ -1,17 +1,19 @@
 # Cloudflare Pages configuration.
-#
-# The KV namespace powers per-post view counts, likes, and newsletter signups.
-# Create it once, then paste the id below (see README → Deploy):
-#
-#   npx wrangler kv namespace create BLOG_KV
-#
-# Local `npm run dev` works WITHOUT a real id (an in-memory KV is simulated).
 
-name = "research-blog"
+name = "penluma"
 compatibility_date = "2025-06-01"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "dist"
 
-[[kv_namespaces]]
-binding = "BLOG_KV"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+# ---------------------------------------------------------------------------
+# KV namespace — powers per-post view counts, likes, and newsletter signups.
+# OPTIONAL: the site deploys and runs fine without it (those endpoints no-op).
+#
+# To enable, run once:
+#   npx wrangler kv namespace create BLOG_KV
+# then paste the printed id below and UNCOMMENT the two lines:
+#
+# [[kv_namespaces]]
+# binding = "BLOG_KV"
+# id = "PASTE_YOUR_KV_NAMESPACE_ID_HERE"
+# ---------------------------------------------------------------------------

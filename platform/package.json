@@ -10,7 +10,8 @@
     "build": "npm run import && astro build && pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro",
-    "cf:preview": "npm run build && wrangler pages dev dist"
+    "cf:preview": "npm run build && wrangler pages dev dist",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name=penluma --commit-dirty=true"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.0",
