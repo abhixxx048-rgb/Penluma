@@ -61,9 +61,9 @@ Learn the foundations, and you stop guessing. You start seeing the same handful 
 
 The **CIA triad** (no relation to the spy agency) names the three properties security exists to preserve. Treat it as a checklist. When you read about any attack, ask: *which leg does this hit?*
 
-- **Confidentiality** — only authorized people can read the data. It is protected by encryption, access control, MFA, and data classification. A violation is a **data breach**: information seen by people who should not see it.
-- **Integrity** — data is accurate, complete, and changed only by authorized actions. It is protected by hashing (a fingerprint that changes if even one byte changes), digital signatures, version control, and input validation. A violation is tampering, fraud, or corruption.
-- **Availability** — authorized users can reach the system when they need it. It is protected by redundancy, backups, failover, and DDoS protection. A violation is an outage, a ransomware lockout, or a denial-of-service.
+- **Confidentiality** - only authorized people can read the data. It is protected by encryption, access control, MFA, and data classification. A violation is a **data breach**: information seen by people who should not see it.
+- **Integrity** - data is accurate, complete, and changed only by authorized actions. It is protected by hashing (a fingerprint that changes if even one byte changes), digital signatures, version control, and input validation. A violation is tampering, fraud, or corruption.
+- **Availability** - authorized users can reach the system when they need it. It is protected by redundancy, backups, failover, and DDoS protection. A violation is an outage, a ransomware lockout, or a denial-of-service.
 
 **Think of a library.** Confidentiality means only members can read the restricted archive. Integrity means nobody secretly rewrites the books. Availability means the doors are open when you arrive.
 
@@ -79,9 +79,9 @@ Here is the catch: the three legs are in **tension**. Perfect confidentiality, a
 
 AAA is a three-step framework for controlling access. The order matters.
 
-1. **Authentication (AuthN)** — "Who are you?" Prove your identity using something you *know* (a password), *have* (a phone or token), or *are* (a fingerprint). MFA means using two or more of these.
-2. **Authorization (AuthZ)** — "What are you allowed to do?" This is decided *after* authentication, using models like role-based (RBAC) or attribute-based (ABAC) access control.
-3. **Accounting (Auditing)** — "What did you actually do?" Log every action for forensics, billing, and compliance.
+1. **Authentication (AuthN)** - "Who are you?" Prove your identity using something you *know* (a password), *have* (a phone or token), or *are* (a fingerprint). MFA means using two or more of these.
+2. **Authorization (AuthZ)** - "What are you allowed to do?" This is decided *after* authentication, using models like role-based (RBAC) or attribute-based (ABAC) access control.
+3. **Accounting (Auditing)** - "What did you actually do?" Log every action for forensics, billing, and compliance.
 
 The single most common conceptual mistake in all of security is confusing the first two. **Authentication is identity** ("you are Alice"). **Authorization is permission** ("Alice may view order #42 but not #43").
 
@@ -91,15 +91,15 @@ The web's number one risk, Broken Access Control, is an authorization failure. T
 
 Most of these come from a 1975 paper by Saltzer and Schroeder, and they are still taught 50 years later. Treat them as *trade-off lenses* you hold up while designing, not boxes to tick.
 
-- **Defense in depth** — layer multiple independent controls so one failure is not fatal. A castle has a moat, a wall, a gate, *and* guards.
-- **Least privilege** — give every user, process, and service the minimum rights it needs. This limits the blast radius when something is compromised, and it is core to Zero Trust.
-- **Fail securely** — when something errors, default to *deny*, not allow. Access should require an explicit "yes."
-- **Separation of duties** — no single person can abuse the system alone. The person who requests a payment must not also approve it.
-- **Complete mediation** — check authority on *every* access, *every* time. Never cache a "yes" and trust it forever.
-- **Secure defaults** — ship locked down. Users should opt *into* risk, not out of safety. Default passwords and open storage buckets are anti-patterns.
-- **Economy of mechanism** — keep the design as small and simple as possible. Complexity hides bugs.
-- **Open design** — security must not depend on the design being secret. As Kerckhoffs put it in 1883, a system should stay secure even if everything but the key is public.
-- **Psychological acceptability** — if security is too painful, people route around it. The secure path must be the easy path. Usability *is* a security property.
+- **Defense in depth** - layer multiple independent controls so one failure is not fatal. A castle has a moat, a wall, a gate, *and* guards.
+- **Least privilege** - give every user, process, and service the minimum rights it needs. This limits the blast radius when something is compromised, and it is core to Zero Trust.
+- **Fail securely** - when something errors, default to *deny*, not allow. Access should require an explicit "yes."
+- **Separation of duties** - no single person can abuse the system alone. The person who requests a payment must not also approve it.
+- **Complete mediation** - check authority on *every* access, *every* time. Never cache a "yes" and trust it forever.
+- **Secure defaults** - ship locked down. Users should opt *into* risk, not out of safety. Default passwords and open storage buckets are anti-patterns.
+- **Economy of mechanism** - keep the design as small and simple as possible. Complexity hides bugs.
+- **Open design** - security must not depend on the design being secret. As Kerckhoffs put it in 1883, a system should stay secure even if everything but the key is public.
+- **Psychological acceptability** - if security is too painful, people route around it. The secure path must be the easy path. Usability *is* a security property.
 
 Two warnings worth internalizing. First, "failing open" by accident is everywhere: a door that *unlocks* when power fails, or an auth check that crashes and lets the request through, is failing *insecurely*. Second, hiding your source code is not security. DVD copy protection relied on secrecy and broke the moment someone reverse-engineered it.
 
@@ -109,11 +109,11 @@ This is exactly why OWASP added "Insecure Design" to its 2025 Top 10: many flaws
 
 These five words get used interchangeably, and that confusion leads straight to bad decisions.
 
-- **Asset** — anything of value worth protecting: data, money, systems, reputation. You cannot secure what you have not inventoried.
-- **Vulnerability** — a weakness that *could* be exploited, like a missing patch or absent MFA. Public ones are catalogued as **CVEs**.
-- **Threat** — an actor or event that could exploit a weakness: a ransomware gang, a flood, a careless insider. Threats exist whether or not you happen to be vulnerable.
-- **Exploit** — the actual technique or code that takes advantage of a specific vulnerability. A **zero-day** is an exploit for a flaw that has no patch yet.
-- **Risk** — **Likelihood times Impact.** This is what executives actually manage. Risk can be reduced but rarely hits zero; what is left over is accepted, insured against, or avoided.
+- **Asset** - anything of value worth protecting: data, money, systems, reputation. You cannot secure what you have not inventoried.
+- **Vulnerability** - a weakness that *could* be exploited, like a missing patch or absent MFA. Public ones are catalogued as **CVEs**.
+- **Threat** - an actor or event that could exploit a weakness: a ransomware gang, a flood, a careless insider. Threats exist whether or not you happen to be vulnerable.
+- **Exploit** - the actual technique or code that takes advantage of a specific vulnerability. A **zero-day** is an exploit for a flaw that has no patch yet.
+- **Risk** - **Likelihood times Impact.** This is what executives actually manage. Risk can be reduced but rarely hits zero; what is left over is accepted, insured against, or avoided.
 
 **Picture a house.** A cracked window is the *vulnerability*. A burglar in the neighborhood is the *threat*. Their crowbar method is the *exploit*. "How likely they break in, and how bad it would be" is the *risk*. The jewelry inside is the *asset*.
 

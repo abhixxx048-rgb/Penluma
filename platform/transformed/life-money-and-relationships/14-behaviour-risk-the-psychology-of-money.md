@@ -172,10 +172,10 @@ Markets move in an emotional cycle, and most people ride it backwards. They feel
 
 The cycle runs like this:
 
-1. **Euphoria** — "I'm a genius!" This is the point of *maximum risk*, and it's exactly when most people buy.
-2. **Optimism to denial** — prices start slipping, but you tell yourself it's temporary.
-3. **Fear to panic to capitulation** — "Get me out!" This is the point of *maximum opportunity*, and it's exactly when most people sell at the bottom.
-4. **Relief to hope to optimism** — the recovery begins, and the cycle slowly climbs back toward euphoria.
+1. **Euphoria** - "I'm a genius!" This is the point of *maximum risk*, and it's exactly when most people buy.
+2. **Optimism to denial** - prices start slipping, but you tell yourself it's temporary.
+3. **Fear to panic to capitulation** - "Get me out!" This is the point of *maximum opportunity*, and it's exactly when most people sell at the bottom.
+4. **Relief to hope to optimism** - the recovery begins, and the cycle slowly climbs back toward euphoria.
 
 This backwards behaviour creates what's called the **investor gap** (or "behaviour gap"): the difference between what the *fund* earned and what the average *investor in that fund* actually earned.
 

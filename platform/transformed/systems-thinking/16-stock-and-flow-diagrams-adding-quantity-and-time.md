@@ -165,10 +165,10 @@ The diagram makes your two levers obvious. To grow past 2,000, you must either p
 
 Every SFD is built from just four pieces:
 
-1. **Stock** — a **rectangle (box)**. The accumulation.
-2. **Flow** — a **thick pipe with a valve** (a little tap). The valve sets the rate. Arrows into the box are inflows; arrows away are outflows.
-3. **Cloud** — a **cloud shape** where a pipe crosses the edge of your model. A *source* cloud is an infinite supply outside the model; a *sink* cloud is infinite disposal outside it.
-4. **Information connector** — a **thin curved arrow** from a stock to a valve. It says "the value of this thing influences that rate." It carries information, not material.
+1. **Stock** - a **rectangle (box)**. The accumulation.
+2. **Flow** - a **thick pipe with a valve** (a little tap). The valve sets the rate. Arrows into the box are inflows; arrows away are outflows.
+3. **Cloud** - a **cloud shape** where a pipe crosses the edge of your model. A *source* cloud is an infinite supply outside the model; a *sink* cloud is infinite disposal outside it.
+4. **Information connector** - a **thin curved arrow** from a stock to a valve. It says "the value of this thing influences that rate." It carries information, not material.
 
 You will also constantly use an **auxiliary variable** (a small circle) that *calculates* an intermediate value for a flow equation, like a churn rate or a "fraction of market untapped." It stores nothing and changes no stock directly. Freeze time and it disappears, just like a flow.
 
@@ -209,10 +209,10 @@ One warning: a BOT graph shows *what* happened, never *why*. Two completely diff
 Follow these seven steps in order:
 
 1. **Assign units** to every variable. Anything measured "per time" is a candidate flow.
-2. **Identify the stocks** — the things that persist when time stops.
+2. **Identify the stocks** - the things that persist when time stops.
 3. **Identify the flows** that raise or lower each stock, and mark each as inflow or outflow.
 4. **Connect** stocks to flows with information connectors wherever a stock's level drives a rate.
-5. **Add auxiliaries** — constants (market size) and calculated intermediates (fraction untapped).
+5. **Add auxiliaries** - constants (market size) and calculated intermediates (fraction untapped).
 6. **Write an equation** for every flow and auxiliary, then check that the units balance. A "people/month" flow cannot pour into a "dollars" stock. Unit checking is your main debugging tool.
 7. **Add clouds** at the boundary, so every flow starts and ends somewhere.
 

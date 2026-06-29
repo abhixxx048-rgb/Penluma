@@ -77,10 +77,10 @@ Production stalls the instant you run out of the right paper. Managing inbound m
 
 Four terms do most of the work:
 
-- **Lead time** — how long from "I order this" to "it's on my shelf." Days for common paper, weeks to months for specialty stock.
-- **Safety stock** — a buffer of extra material to absorb surprises, like a rush order or a late supplier.
-- **Reorder point** — the stock level that shouts "order more now," before you run dry.
-- **Purchase order (PO)** — the formal document telling a supplier "I want this much, at this price."
+- **Lead time** - how long from "I order this" to "it's on my shelf." Days for common paper, weeks to months for specialty stock.
+- **Safety stock** - a buffer of extra material to absorb surprises, like a rush order or a late supplier.
+- **Reorder point** - the stock level that shouts "order more now," before you run dry.
+- **Purchase order (PO)** - the formal document telling a supplier "I want this much, at this price."
 
 ### The one formula worth memorizing
 
@@ -116,15 +116,15 @@ Parcel has hard physical ceilings:
 
 Here is the part that surprises people: parcel price is *not* just the number on the scale. It is driven by three things:
 
-- **Billable weight** — the greater of actual weight or *dimensional* weight (more on this below, because it is the big one).
-- **Zone** — how far the package travels.
-- **Surcharges** — extra-handling fees, oversize fees near the limits, a **Delivery Area Surcharge** for remote ZIP codes, and a **residential surcharge** for delivering to a home rather than a business.
+- **Billable weight** - the greater of actual weight or *dimensional* weight (more on this below, because it is the big one).
+- **Zone** - how far the package travels.
+- **Surcharges** - extra-handling fees, oversize fees near the limits, a **Delivery Area Surcharge** for remote ZIP codes, and a **residential surcharge** for delivering to a home rather than a business.
 
 Use parcel when the package is under 150 lbs and within the size limits. Just remember the bill is built from billable weight, distance zone, and surcharges, not weight alone.
 
 ## Outbound, mode two: LTL freight
 
-When print goes big — a full run of brochures, a stack of catalogs, signage — it ships on a **pallet** (a wooden platform, also called a skid) by **LTL freight**.
+When print goes big - a full run of brochures, a stack of catalogs, signage - it ships on a **pallet** (a wooden platform, also called a skid) by **LTL freight**.
 
 **LTL** means "Less-Than-Truckload." Your palletized goods share a trailer with other shippers' loads, so you pay for the space you use instead of renting a whole truck. LTL covers roughly **150 to 15,000 lbs**. Above that you book **FTL** ("Full Truckload") or a flatbed, and your goods get the whole truck to themselves.
 
@@ -163,7 +163,7 @@ When a shipment sits *near* the 150 lb or size boundary, quote it **both ways** 
 
 This single concept catches more print shops off guard than any other, so it gets its own section.
 
-**Dimensional weight** (also called volumetric weight, or "DIM weight") exists because a carrier charges for the *space* your package occupies in the truck, not only its weight on a scale. A big, light box — extremely common in print, think rolled posters, foam-core signs, framed pieces, heavily padded fragile prints — would otherwise hog expensive truck space for almost no revenue. So carriers fight back.
+**Dimensional weight** (also called volumetric weight, or "DIM weight") exists because a carrier charges for the *space* your package occupies in the truck, not only its weight on a scale. A big, light box - extremely common in print, think rolled posters, foam-core signs, framed pieces, heavily padded fragile prints - would otherwise hog expensive truck space for almost no revenue. So carriers fight back.
 
 They compute a *pretend* weight from the package's size and bill you the larger of the two:
 
@@ -208,9 +208,9 @@ Paper is fragile in specific, predictable ways. Good packaging targets four dama
 
 The core principle is **rigidity plus zero internal movement**: stop the print from flexing, and stop it from sliding around inside. Then match the format to the size:
 
-- **Small, flat prints** — a rigid mailer with a firm backer board. It stays light, holds its shape, and keeps postage low. Add a sleeve and a slip sheet against scuffing.
-- **Large prints (16×20 and up)** — usually safer rolled in a strong tube with end caps. Shipping a large piece flat needs so much reinforcement that weight and DIM size spike. A tube's cylinder shape distributes pressure and resists corner damage. Use corrugated kraft tubes, typically 2 or 3 inches in diameter, and protect the *ends*, which is where the damage starts.
-- **Framed or rigid pieces** — foam corner protectors, glass-protection tape, and bubble wrap.
+- **Small, flat prints** - a rigid mailer with a firm backer board. It stays light, holds its shape, and keeps postage low. Add a sleeve and a slip sheet against scuffing.
+- **Large prints (16×20 and up)** - usually safer rolled in a strong tube with end caps. Shipping a large piece flat needs so much reinforcement that weight and DIM size spike. A tube's cylinder shape distributes pressure and resists corner damage. Use corrugated kraft tubes, typically 2 or 3 inches in diameter, and protect the *ends*, which is where the damage starts.
+- **Framed or rigid pieces** - foam corner protectors, glass-protection tape, and bubble wrap.
 
 Treat packaging as a three-way trade-off between **protection, DIM weight, and material cost**. For a large poster, a well-built tube often wins on all three at once.
 
@@ -218,9 +218,9 @@ Treat packaging as a three-way trade-off between **protection, DIM weight, and m
 
 The moment a shipment crosses a national border, a government wants to know what is inside, where it came from, and what it is worth, so it can charge **duties** (taxes on imported goods). Three pieces of paperwork do most of the work:
 
-- **Commercial invoice** — the shipment's ID card: shipper, recipient, an *honest* goods description, quantity, value, and country of origin. This is the single most important document. Vague descriptions like "accessories" or "samples" now trigger delays and scrutiny.
-- **HS code** — the Harmonized System code, a standardized number classifying every internationally shipped item. A small misclassification materially changes the duty owed, so getting it right is a real lever.
-- **Electronic shipment data** — standardized data submitted *before* goods enter (especially in the EU), so customs can pre-clear. Missing it stalls the shipment.
+- **Commercial invoice** - the shipment's ID card: shipper, recipient, an *honest* goods description, quantity, value, and country of origin. This is the single most important document. Vague descriptions like "accessories" or "samples" now trigger delays and scrutiny.
+- **HS code** - the Harmonized System code, a standardized number classifying every internationally shipped item. A small misclassification materially changes the duty owed, so getting it right is a real lever.
+- **Electronic shipment data** - standardized data submitted *before* goods enter (especially in the EU), so customs can pre-clear. Missing it stalls the shipment.
 
 ### Intrinsic value and a vanishing safety net
 
@@ -255,9 +255,9 @@ A worked example: a box of custom business cards, €120 of goods plus €18 shi
 
 Not every shop prints and ships everything itself. Three related models outsource part of the spine:
 
-- **Print-on-Demand (POD)** — the product is printed *and* shipped only after a sale clears. No finished-goods inventory to store; the order triggers production.
-- **Drop-ship** — a print partner produces and ships directly to the end customer, *under your brand*. Your storefront never physically touches the product.
-- **3PL (third-party logistics)** — an outside company that warehouses, kits, picks, packs, and ships on your behalf.
+- **Print-on-Demand (POD)** - the product is printed *and* shipped only after a sale clears. No finished-goods inventory to store; the order triggers production.
+- **Drop-ship** - a print partner produces and ships directly to the end customer, *under your brand*. Your storefront never physically touches the product.
+- **3PL (third-party logistics)** - an outside company that warehouses, kits, picks, packs, and ships on your behalf.
 
 Major platforms here include Printful, Printify, CJdropshipping, Lumaprints, Amplifier, and Gelato. Specialist print-kit 3PLs like SHIPHYPE and Harte Hanks handle inventory, kit assembly, custom packaging, and quality control.
 

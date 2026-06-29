@@ -44,7 +44,7 @@ sources:
 
 You send PDFs to the print shop every day. But have you ever wondered what is actually inside one?
 
-Open the hood and you will find something surprising. A PDF is not a picture of a page, and it is not a stream of text like a web page. It is closer to a tiny database with a built-in map. Once you understand that map, the three most common print disasters — wrong fonts, muddy color, and pixelated images — stop being mysteries and start being things you can prevent.
+Open the hood and you will find something surprising. A PDF is not a picture of a page, and it is not a stream of text like a web page. It is closer to a tiny database with a built-in map. Once you understand that map, the three most common print disasters - wrong fonts, muddy color, and pixelated images - stop being mysteries and start being things you can prevent.
 
 This is a plain-English tour. No programming required.
 
@@ -70,10 +70,10 @@ Here is the analogy that makes it click.
 
 Every PDF file has four physical sections, top to bottom:
 
-1. **Header** — the first line, like `%PDF-1.7`, declaring the version. It is followed by some binary characters so email and transfer tools treat the file as binary, not text.
-2. **Body** — the actual content: every page, font, image, and piece of artwork.
-3. **Cross-reference table (xref)** — an index giving the exact byte position of every object, so a reader can jump straight to anything without scanning the file.
-4. **Trailer** — a tiny note at the very end. It says where the index starts and which object is the document's root.
+1. **Header** - the first line, like `%PDF-1.7`, declaring the version. It is followed by some binary characters so email and transfer tools treat the file as binary, not text.
+2. **Body** - the actual content: every page, font, image, and piece of artwork.
+3. **Cross-reference table (xref)** - an index giving the exact byte position of every object, so a reader can jump straight to anything without scanning the file.
+4. **Trailer** - a tiny note at the very end. It says where the index starts and which object is the document's root.
 
 Here is the part that surprises people: **a PDF reader opens the file from the bottom.** It reads the trailer, finds the index, then jumps directly to the objects it needs. That is the opposite of how you read a book, and it is exactly what makes a PDF fast to open even when it has 5,000 pages.
 
@@ -81,10 +81,10 @@ Here is the part that surprises people: **a PDF reader opens the file from the b
 
 Everything in a PDF body is built from a small set of object types. Four of them do most of the work, and you do not need to memorize the rest:
 
-- **Name** — a label starting with a slash, like `/Type` or `/Font`. Think of it as a tag, not a piece of readable text.
-- **Array** — an ordered list in square brackets, like `[0 0 612 792]` describing a page size.
-- **Dictionary** — key-and-value pairs, the workhorse that describes most things ("this is a Page, its size is this, its content is over there").
-- **Stream** — a dictionary followed by raw bytes. This is where the bulky stuff lives: page drawings, embedded fonts, and images, usually compressed.
+- **Name** - a label starting with a slash, like `/Type` or `/Font`. Think of it as a tag, not a piece of readable text.
+- **Array** - an ordered list in square brackets, like `[0 0 612 792]` describing a page size.
+- **Dictionary** - key-and-value pairs, the workhorse that describes most things ("this is a Page, its size is this, its content is over there").
+- **Stream** - a dictionary followed by raw bytes. This is where the bulky stuff lives: page drawings, embedded fonts, and images, usually compressed.
 
 Objects point at each other by number, like footnotes referencing each other. That referencing system is why the xref table exists: it is simply the index of where every numbered object sits in the file.
 
@@ -98,15 +98,15 @@ If a document is sensitive, do not just delete on screen and resend. Flatten or 
 
 ## How a page gets drawn
 
-The look of a page comes from its **content stream**, which is a tiny program written in an unusual order: the values come first, then the command. It is a step-by-step set of paint instructions — move the pen here, draw this line, fill this shape, place this glyph at this spot.
+The look of a page comes from its **content stream**, which is a tiny program written in an unusual order: the values come first, then the command. It is a step-by-step set of paint instructions - move the pen here, draw this line, fill this shape, place this glyph at this spot.
 
 Crucially, there is no concept of "this is a paragraph." There is only "put this letter at this position." Meaning has to be reconstructed afterward, which is exactly why copying text out of a PDF can produce a jumbled mess.
 
 Pages are drawn in three flavors:
 
-- **Vector art** — lines, rectangles, and smooth Bezier curves. Because these are math, not pixels, they stay razor-sharp at any size. Logos and type love this.
-- **Images** — a raster picture placed by mapping a one-by-one square to the size and spot you want on the page.
-- **Text** — letters placed glyph by glyph, with a font, a size, and a position.
+- **Vector art** - lines, rectangles, and smooth Bezier curves. Because these are math, not pixels, they stay razor-sharp at any size. Logos and type love this.
+- **Images** - a raster picture placed by mapping a one-by-one square to the size and spot you want on the page.
+- **Text** - letters placed glyph by glyph, with a font, a size, and a position.
 
 A quick note on measurement: PDF measures everything in **points, where 1 point equals 1/72 of an inch**. US Letter is 612 by 792 points (8.5 by 11 inches); A4 is roughly 595 by 842. The origin sits at the **bottom-left** corner and moves upward, the math convention rather than the screen one.
 
@@ -114,21 +114,21 @@ A quick note on measurement: PDF measures everything in **points, where 1 point 
 
 Because a placed image's size lives in that one-by-one square and not in the pixels, you can stretch a photo bigger just by enlarging the square.
 
-Do it too far and the **effective resolution silently drops below 300 dpi**. On screen it still looks crisp. On the press it prints pixelated. The file never warned you, because nothing technically broke — you just asked too few pixels to cover too much paper.
+Do it too far and the **effective resolution silently drops below 300 dpi**. On screen it still looks crisp. On the press it prints pixelated. The file never warned you, because nothing technically broke - you just asked too few pixels to cover too much paper.
 
 ### Why text sometimes copies out as garbage
 
-For text to be searchable and selectable, the font needs a **ToUnicode** map that translates the internal glyph codes back into real characters. Forget it, and the page prints beautifully but copies out as gibberish — and screen readers cannot read it at all. It is an invisible accessibility and search problem hiding inside a perfect-looking page.
+For text to be searchable and selectable, the font needs a **ToUnicode** map that translates the internal glyph codes back into real characters. Forget it, and the page prints beautifully but copies out as gibberish - and screen readers cannot read it at all. It is an invisible accessibility and search problem hiding inside a perfect-looking page.
 
 ## Fonts: the number-one cause of print disasters
 
 If you remember one thing from this whole tour, make it this section.
 
-When a font is not stored inside the PDF, the print machine cannot use your font. It has to **substitute** — usually falling back to Courier or Helvetica. And here is the killer: substitute fonts have different letter shapes *and different letter widths*.
+When a font is not stored inside the PDF, the print machine cannot use your font. It has to **substitute** - usually falling back to Courier or Helvetica. And here is the killer: substitute fonts have different letter shapes *and different letter widths*.
 
 Different widths mean the text **reflows**. Words overlap, lines rewrap, a two-line headline becomes three, paragraphs push off the page, and special characters turn into empty boxes. The layout you approved quietly falls apart.
 
-> Embedding a font is like packing the typewriter *with* the letter. If you ship only the words and assume the recipient owns the same typewriter, they will retype your letter on whatever machine they have — different key widths, so the whole thing reflows and no longer fits the page.
+> Embedding a font is like packing the typewriter *with* the letter. If you ship only the words and assume the recipient owns the same typewriter, they will retype your letter on whatever machine they have - different key widths, so the whole thing reflows and no longer fits the page.
 
 ### Embedding and subsetting, explained
 
@@ -147,7 +147,7 @@ A designer builds a brochure in a licensed display font and forgets to embed it.
 
 Nothing was corrupted. The proof simply looked fine on the only computer that already owned the font.
 
-A word of caution about the so-called "standard" fonts — Helvetica, Times, Courier, Symbol, and a few others. They were historically never embedded because every print device had them built in. **Embed them anyway.** Print machines are stricter than screen viewers, and the cost of embedding is tiny next to the cost of a reprint.
+A word of caution about the so-called "standard" fonts - Helvetica, Times, Courier, Symbol, and a few others. They were historically never embedded because every print device had them built in. **Embed them anyway.** Print machines are stricter than screen viewers, and the cost of embedding is tiny next to the cost of a reprint.
 
 ## Color: why black goes muddy
 
@@ -165,13 +165,13 @@ The safe one is **ICCBased** color, which attaches a profile that pins down an e
 Two real-world failures show why this matters:
 
 - **RGB black turns muddy.** A logo built in pure RGB black gets converted at the press into a mix of all four inks. Instead of crisp, single-ink black text, you get a fuzzy version that is sensitive to tiny press misalignments.
-- **Pantone prints as process.** Packaging specifies a spot color like "PANTONE 286 C," expecting a dedicated ink plate. The job gets set up as four-color only, so the press approximates the brand blue with process inks — and the result looks dull and off-brand.
+- **Pantone prints as process.** Packaging specifies a spot color like "PANTONE 286 C," expecting a dedicated ink plate. The job gets set up as four-color only, so the press approximates the brand blue with process inks - and the result looks dull and off-brand.
 
 For print, keep named **spot colors** only when you genuinely want an extra ink plate, and otherwise convert to a known press condition on purpose, never by accident.
 
 ## Common misconceptions
 
-**"A PDF is basically an image of the page."** No. It is a structured database of objects and instructions. That is precisely why text can be searched, fonts can go missing, and color can shift — none of which could happen to a flat image.
+**"A PDF is basically an image of the page."** No. It is a structured database of objects and instructions. That is precisely why text can be searched, fonts can go missing, and color can shift - none of which could happen to a flat image.
 
 **"If it looks right on my screen, it will print right."** The most expensive myth in prepress. Your screen uses your installed fonts and a forgiving color model. The press uses neither.
 
@@ -185,7 +185,7 @@ For print, keep named **spot colors** only when you genuinely want an extra ink 
 
 Here is a concrete checklist you can actually follow:
 
-1. **Export to PDF/X-4** (or X-1a for older CMYK-flat workflows). PDF/X formats *require* every font to be embedded — a missing font becomes a hard error, not a silent surprise.
+1. **Export to PDF/X-4** (or X-1a for older CMYK-flat workflows). PDF/X formats *require* every font to be embedded - a missing font becomes a hard error, not a silent surprise.
 2. **Confirm fonts are embedded and subset.** Open the document's font properties and look for the six-letter `ABCDEF+Name` prefix on each one.
 3. **Check image resolution at final size.** Make sure placed images stay at or above 300 dpi *after* any scaling, not before.
 4. **Set up bleed and trim correctly.** Define the **TrimBox** (final cut size) and **BleedBox** (trim plus bleed) so nothing important sits in the cut zone.
@@ -201,4 +201,4 @@ The single idea to carry with you: **a PDF is a set of instructions, not a photo
 
 You cannot fix what you cannot see. Now you can see inside.
 
-And here is the thread worth pulling next: that "muddy black" problem is really a story about color management — how a screen's glowing red, green, and blue gets translated into four wet inks soaking into paper. That translation is where a surprising amount of print quality is won or lost, and it deserves a tour of its own.
+And here is the thread worth pulling next: that "muddy black" problem is really a story about color management - how a screen's glowing red, green, and blue gets translated into four wet inks soaking into paper. That translation is where a surprising amount of print quality is won or lost, and it deserves a tour of its own.

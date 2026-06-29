@@ -109,7 +109,7 @@ This is the distinction the exam loves most, and it is genuinely worth slowing d
 
 Here is the key fact people miss: **every S3 storage class shares the same 11 nines of durability.** A class with lower availability is not riskier for your data. It just might be momentarily unreachable a little more often. Your files are equally safe from loss either way.
 
-So if a question says "this class has lower availability," the correct read is "slightly harder to reach sometimes, but equally protected against loss" — never "more likely to lose my data."
+So if a question says "this class has lower availability," the correct read is "slightly harder to reach sometimes, but equally protected against loss" - never "more likely to lose my data."
 
 ## Choosing the right storage class
 
@@ -117,13 +117,13 @@ Almost every S3 class question comes down to two sliders: **how often do you rea
 
 ### The frequent and the unknown
 
-- **S3 Standard** — Frequent access, instant retrieval, most expensive. The default for hot data.
-- **S3 Intelligent-Tiering** — For **unpredictable or changing** access patterns. It automatically moves each object between tiers based on real usage, with no retrieval fees on the frequent and infrequent tiers. When a scenario says "we don't know the pattern" or "objects suddenly get hot again months later," this is your answer. Don't reach for Standard-IA just because the word "infrequent" appears.
+- **S3 Standard** - Frequent access, instant retrieval, most expensive. The default for hot data.
+- **S3 Intelligent-Tiering** - For **unpredictable or changing** access patterns. It automatically moves each object between tiers based on real usage, with no retrieval fees on the frequent and infrequent tiers. When a scenario says "we don't know the pattern" or "objects suddenly get hot again months later," this is your answer. Don't reach for Standard-IA just because the word "infrequent" appears.
 
 ### The infrequent-access pair
 
-- **S3 Standard-IA** — Accessed a few times a month, still needs **millisecond** retrieval and **multi-AZ** resilience. Cheaper storage than Standard, but it charges a per-GB retrieval fee.
-- **S3 One Zone-IA** — Same infrequent profile, but stored in a **single** Availability Zone, so it is even cheaper. Use it only for data that is easy to regenerate if that one zone is lost (think thumbnails you can rebuild from originals).
+- **S3 Standard-IA** - Accessed a few times a month, still needs **millisecond** retrieval and **multi-AZ** resilience. Cheaper storage than Standard, but it charges a per-GB retrieval fee.
+- **S3 One Zone-IA** - Same infrequent profile, but stored in a **single** Availability Zone, so it is even cheaper. Use it only for data that is easy to regenerate if that one zone is lost (think thumbnails you can rebuild from originals).
 
 The trap here: when a scenario keeps **multi-AZ protection**, the answer is Standard-IA. When it explicitly accepts single-AZ risk for reproducible data, it's One Zone-IA.
 
@@ -131,29 +131,29 @@ The trap here: when a scenario keeps **multi-AZ protection**, the answer is Stan
 
 All three are for rarely-touched data. The difference is retrieval speed versus cost:
 
-- **S3 Glacier Instant Retrieval** — Rarely accessed (a couple times a year) but still needs the file back in **milliseconds**. This is the answer when a scenario pairs "archive" with "instant access." Most people forget it exists.
-- **S3 Glacier Flexible Retrieval** — Rarely accessed, and waits of **minutes to hours** are fine. Cheaper to store than Instant Retrieval.
-- **S3 Glacier Deep Archive** — The **absolute cheapest** class. For data you might never read, where restore times around **12 hours** are perfectly acceptable. Think 7-year compliance logs touched only if regulators ask.
+- **S3 Glacier Instant Retrieval** - Rarely accessed (a couple times a year) but still needs the file back in **milliseconds**. This is the answer when a scenario pairs "archive" with "instant access." Most people forget it exists.
+- **S3 Glacier Flexible Retrieval** - Rarely accessed, and waits of **minutes to hours** are fine. Cheaper to store than Instant Retrieval.
+- **S3 Glacier Deep Archive** - The **absolute cheapest** class. For data you might never read, where restore times around **12 hours** are perfectly acceptable. Think 7-year compliance logs touched only if regulators ask.
 
-The lever to remember: among the archive tiers, **accepting slower restores buys you cheaper storage.** Faster is not "better" — it costs more, and you only pay for speed you actually need.
+The lever to remember: among the archive tiers, **accepting slower restores buys you cheaper storage.** Faster is not "better" - it costs more, and you only pay for speed you actually need.
 
-> **Mini case study:** A media company stores thumbnails read a few times a month, needs them in milliseconds, and wants multi-AZ safety. That's **Standard-IA**. Now change one detail — the thumbnails are trivially regenerated and single-AZ is fine — and the right answer slides to **One Zone-IA**. Change it again — they're audit logs read maybe once a year and a 12-hour wait is fine — and it becomes **Glacier Deep Archive**. Same data, three answers, driven entirely by access frequency and speed needs.
+> **Mini case study:** A media company stores thumbnails read a few times a month, needs them in milliseconds, and wants multi-AZ safety. That's **Standard-IA**. Now change one detail - the thumbnails are trivially regenerated and single-AZ is fine - and the right answer slides to **One Zone-IA**. Change it again - they're audit logs read maybe once a year and a 12-hour wait is fine - and it becomes **Glacier Deep Archive**. Same data, three answers, driven entirely by access frequency and speed needs.
 
 ## Lifecycle and versioning: hands-off data management
 
 Two features handle the "over time" questions.
 
-**Lifecycle policies** automatically move objects between classes as they age and can delete them on schedule. A classic pattern: frequent for 30 days, occasional for the next 60, then archived cheaply for 7 years, then deleted — all automatically. When a question asks for **age-based, automatic** transitions with **no manual moves**, it's a lifecycle policy. You never script tier changes by hand.
+**Lifecycle policies** automatically move objects between classes as they age and can delete them on schedule. A classic pattern: frequent for 30 days, occasional for the next 60, then archived cheaply for 7 years, then deleted - all automatically. When a question asks for **age-based, automatic** transitions with **no manual moves**, it's a lifecycle policy. You never script tier changes by hand.
 
-**Versioning** keeps every version of an object. Overwrite a file or delete it by mistake, and the old copy is still there to restore. This is the specific answer for **recovering accidental deletes or overwrites** — not lifecycle rules, not "backups," not encryption.
+**Versioning** keeps every version of an object. Overwrite a file or delete it by mistake, and the old copy is still there to restore. This is the specific answer for **recovering accidental deletes or overwrites** - not lifecycle rules, not "backups," not encryption.
 
 ## Encryption: who holds the keys
 
 S3 offers three server-side encryption options, and the exam tells them apart by **who manages the keys**:
 
-- **SSE-S3** — AWS creates, rotates, and manages the keys entirely. Zero effort for you. Pick this when the scenario wants "automatic encryption with no key management."
-- **SSE-KMS** — Keys live in AWS Key Management Service, so **you** control key policies, rotation, and get a full audit trail of every key use via CloudTrail. Pick this when the words "control" or "audit the keys" appear.
-- **SSE-C** — **You** supply your own key with every single request. AWS uses it to encrypt and decrypt but never stores it, so you keep full custody. Pick this when "customer provides the key each request and AWS doesn't store it" shows up.
+- **SSE-S3** - AWS creates, rotates, and manages the keys entirely. Zero effort for you. Pick this when the scenario wants "automatic encryption with no key management."
+- **SSE-KMS** - Keys live in AWS Key Management Service, so **you** control key policies, rotation, and get a full audit trail of every key use via CloudTrail. Pick this when the words "control" or "audit the keys" appear.
+- **SSE-C** - **You** supply your own key with every single request. AWS uses it to encrypt and decrypt but never stores it, so you keep full custody. Pick this when "customer provides the key each request and AWS doesn't store it" shows up.
 
 The most common mix-up is SSE-S3 versus SSE-KMS. Both use AWS-managed encryption, but SSE-S3 is hands-off and silent, while SSE-KMS exists precisely so you can govern and audit the keys.
 
@@ -161,9 +161,9 @@ The most common mix-up is SSE-S3 versus SSE-KMS. Both use AWS-managed encryption
 
 Three mechanisms, three jobs:
 
-- **Block Public Access** — A top-level safety switch at the account and bucket level that **overrides** any policy or ACL trying to make data public. It's the guardrail. It's on by default, and it beats any conflicting setting.
-- **Bucket policy** — A single JSON document attached to a bucket. The **modern, recommended** way to manage access at scale, including granting another AWS account read access in one centralized place.
-- **ACLs** — The **legacy**, per-object grant mechanism AWS now discourages. They don't scale and can be overridden by other settings.
+- **Block Public Access** - A top-level safety switch at the account and bucket level that **overrides** any policy or ACL trying to make data public. It's the guardrail. It's on by default, and it beats any conflicting setting.
+- **Bucket policy** - A single JSON document attached to a bucket. The **modern, recommended** way to manage access at scale, including granting another AWS account read access in one centralized place.
+- **ACLs** - The **legacy**, per-object grant mechanism AWS now discourages. They don't scale and can be overridden by other settings.
 
 One scenario worth internalizing: an admin turns off Block Public Access and writes a public-read policy for a static site. Months later, someone uploads sensitive files to that same bucket and they're exposed. The lesson is that a bucket policy applies **broadly** to the bucket, so anything you add later inherits the exposure. **Mixing public and private data in one bucket is risky**, and turning off Block Public Access removed the net that would have caught it. Separate public and private data into different buckets.
 
@@ -186,10 +186,10 @@ When an S3 question lands, walk this checklist:
 4. **Decode encryption by key ownership.** No effort → SSE-S3. Control and audit → SSE-KMS. You supply the key each request → SSE-C.
 5. **Match the access feature to the goal.** Account-wide guardrail → Block Public Access. Centralized or cross-account grant → bucket policy. Recover deleted files → Versioning. Auto-tiering over time → Lifecycle policy. Speed up far-away uploads → Transfer Acceleration.
 
-Read every scenario for the deciding clue — "milliseconds," "single AZ," "audit the keys," "many instances" — and let that one phrase pick the answer.
+Read every scenario for the deciding clue - "milliseconds," "single AZ," "audit the keys," "many instances" - and let that one phrase pick the answer.
 
 ## Conclusion
 
 The single takeaway: **S3 questions aren't about memorizing services, they're about reading one decisive clue in the scenario and letting it choose for you.** Frequency and speed pick the storage class. Key ownership picks the encryption. The number of instances picks object, block, or file. Master those triggers and the trivia takes care of itself.
 
-Here's a thread worth pulling next: durability protects a *single* copy of your data, but what happens when an entire AWS Region goes dark, or when you need that data physically close to users on another continent? That's where Cross-Region Replication and the Region-and-Availability-Zone model come in — and they reshape how you think about "safe" all over again.
+Here's a thread worth pulling next: durability protects a *single* copy of your data, but what happens when an entire AWS Region goes dark, or when you need that data physically close to users on another continent? That's where Cross-Region Replication and the Region-and-Availability-Zone model come in - and they reshape how you think about "safe" all over again.

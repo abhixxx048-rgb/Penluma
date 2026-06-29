@@ -53,7 +53,7 @@ So the goal is not "do more marketing." The goal is to **find the one or two cha
 
 ## A running example: software for print shops
 
-To keep this concrete, picture a small software company. Call it a "Shopify for print shops" — a tool that lets local print and apparel businesses run a branded online store where their customers can order, upload artwork, and approve proofs without endless back-and-forth emails.
+To keep this concrete, picture a small software company. Call it a "Shopify for print shops" - a tool that lets local print and apparel businesses run a branded online store where their customers can order, upload artwork, and approve proofs without endless back-and-forth emails.
 
 Three facts about this business decide everything, and they are worth checking against your own:
 
@@ -69,7 +69,7 @@ Before picking channels, you need a way to pick. The cleanest method comes from 
 
 ### Outer ring: what is possible
 
-Brainstorm at least one concrete test idea for every major channel — SEO, paid search, content, email, partnerships, communities, events, referral programs, free tools, and so on. This step exists to fight your own bias. Most founders only seriously consider the two or three channels they personally like, which is usually whichever ones feel familiar.
+Brainstorm at least one concrete test idea for every major channel - SEO, paid search, content, email, partnerships, communities, events, referral programs, free tools, and so on. This step exists to fight your own bias. Most founders only seriously consider the two or three channels they personally like, which is usually whichever ones feel familiar.
 
 ### Middle ring: what is probable
 
@@ -91,9 +91,9 @@ This is not a one-time exercise. Weinberg ran this loop "six or seven times" whi
 
 ## Bet 1: Founder-led outreach, done by hand
 
-For a finite, findable, visual product, your strongest early channel is you — the founder — reaching out to ideal customers one at a time.
+For a finite, findable, visual product, your strongest early channel is you - the founder - reaching out to ideal customers one at a time.
 
-Here is the motion. Build a list of 100 to 200 ideal shops that have a weak website or no online ordering. For the best ones, record a 60-second screen video showing **their** logo and colors already live on a demo storefront you built for them. Then send a short, human note: *"I built you a demo store — want the keys?"*
+Here is the motion. Build a list of 100 to 200 ideal shops that have a weak website or no online ordering. For the best ones, record a 60-second screen video showing **their** logo and colors already live on a demo storefront you built for them. Then send a short, human note: *"I built you a demo store - want the keys?"*
 
 That is wildly more persuasive than any feature list, because the buyer sees their own business transformed in under a minute.
 
@@ -106,24 +106,24 @@ Why this works so well early:
 A few principles keep it effective:
 
 1. Speak in your customer's language, never in software jargon. "Let your customers order and approve their own print jobs online, 24/7, without the back-and-forth" beats anything with the word "platform" in it.
-2. Offer a zero-risk first step: "I'll set up your store for free this week — you only pay if you keep it."
+2. Offer a zero-risk first step: "I'll set up your store for free this week - you only pay if you keep it."
 3. Treat every conversation as research. Log the objections.
 
-**The one rule that matters most: keep it manual.** It is tempting to scale this into automated cold email, but the math breaks. For software companies, cold email is one of the worst-replying categories, and the path from email to a closed deal is brutally thin — on the order of one customer per few hundred emails. A low-priced subscription cannot absorb that, and automated outreach adds real legal exposure under spam and privacy laws. Founder-led outreach wins the first customers. It is not a scale engine, and that is fine.
+**The one rule that matters most: keep it manual.** It is tempting to scale this into automated cold email, but the math breaks. For software companies, cold email is one of the worst-replying categories, and the path from email to a closed deal is brutally thin - on the order of one customer per few hundred emails. A low-priced subscription cannot absorb that, and automated outreach adds real legal exposure under spam and privacy laws. Founder-led outreach wins the first customers. It is not a scale engine, and that is fine.
 
 ## Bet 2: A narrow, compounding SEO and free-tool asset
 
 Run this second bet quietly in the background while outreach produces your first sales.
 
-The mistake most founders make with SEO is chasing huge, generic search terms. Those are owned by giants and unwinnable for years. The money for a young company is at the **bottom of the funnel** — pages aimed at people who are already comparing solutions and close to buying.
+The mistake most founders make with SEO is chasing huge, generic search terms. Those are owned by giants and unwinnable for years. The money for a young company is at the **bottom of the funnel** - pages aimed at people who are already comparing solutions and close to buying.
 
 Concretely, build these first:
 
-- **Comparison and alternatives pages.** "[Competitor] alternatives," "X vs Y," "web-to-print software comparison." People searching these are ready to switch. These pages convert far better than generic blog posts — in documented cases, several times better.
+- **Comparison and alternatives pages.** "[Competitor] alternatives," "X vs Y," "web-to-print software comparison." People searching these are ready to switch. These pages convert far better than generic blog posts - in documented cases, several times better.
 - **Category terms you can actually win.** Narrow phrases like "online ordering software for print shops" have low competition and high intent.
-- **A free standalone tool.** This is the highest-leverage move for a visual product. Expose part of your product — say, the design editor — as a free business-card or flyer maker. It pulls in search traffic, earns links, and doubles as a live demo of your product. Companies like Ahrefs and Canva built enormous funnels this way; their free tools out-traffic their blogs.
+- **A free standalone tool.** This is the highest-leverage move for a visual product. Expose part of your product - say, the design editor - as a free business-card or flyer maker. It pulls in search traffic, earns links, and doubles as a live demo of your product. Companies like Ahrefs and Canva built enormous funnels this way; their free tools out-traffic their blogs.
 
-The catch is speed. A new website takes 4 to 6 months to rank for easy terms and 9 to 12 months for competitive ones. **Do not expect customers from SEO in your first quarter.** That is exactly why it runs as the second, compounding bet alongside the fast founder-led motion — never as your only plan on a short runway.
+The catch is speed. A new website takes 4 to 6 months to rank for easy terms and 9 to 12 months for competitive ones. **Do not expect customers from SEO in your first quarter.** That is exactly why it runs as the second, compounding bet alongside the fast founder-led motion - never as your only plan on a short runway.
 
 The beautiful part: Bet 1 feeds Bet 2. The objections and phrases you capture in outreach tell you precisely which pages to write and what words to use.
 
@@ -131,7 +131,7 @@ The beautiful part: Bet 1 feeds Bet 2. The objections and phrases you capture in
 
 **"More channels means more growth."** The opposite is usually true early on. More channels means thinner effort everywhere and mastery nowhere.
 
-**"Paid ads are the fast way to get customers."** For a niche, low-priced product, paid search is often the slowest path to nowhere. Thin search volume gets exhausted quickly, click costs run high, and the cost to acquire one customer can exceed what they pay you in a year. Ads have a place later — a small layer on your own brand name and a few competitor terms, after you know your numbers — but not as an opening bet.
+**"Paid ads are the fast way to get customers."** For a niche, low-priced product, paid search is often the slowest path to nowhere. Thin search volume gets exhausted quickly, click costs run high, and the cost to acquire one customer can exceed what they pay you in a year. Ads have a place later - a small layer on your own brand name and a few competitor terms, after you know your numbers - but not as an opening bet.
 
 **"Big partnerships will launch us."** Reseller and equipment-vendor deals can have the highest ceiling of any channel, but they are a 6-to-18-month effort that requires reference customers and a track record you do not have yet. Established vendors partner with proven players. Earn ten to twenty happy customers first, then approach one regional partner.
 
@@ -143,12 +143,12 @@ The beautiful part: Bet 1 feeds Bet 2. The objections and phrases you capture in
 
 Here is how to run the two bets as parallel tests.
 
-1. **Week 0 — Set kill-criteria.** Decide in advance what success looks like. For outreach: a positive-reply rate above roughly 8 to 10 percent and demos that close. For SEO: pages indexed and first long-tail rankings within 90 days. Set up a tracking link per channel so you can tell what is working.
-2. **Week 1 — Build the list and join the rooms.** Pull 100 to 200 ideal prospects from Google Maps, Yelp, and trade directories, filtered to those with weak or no online ordering. Join the one or two communities where your buyers actually gather, and start by being genuinely helpful — answer questions, share knowledge, mention your product only when it is honestly the best answer.
-3. **Weeks 1 to 4 — Run outreach by hand.** One prospect at a time: a tailored demo video, plain-language framing, a zero-risk offer. Log every objection.
-4. **Weeks 2 to 6 — Build the SEO assets.** Five to ten comparison pages, each with a simple dedicated landing page and a live demo. Stand up your free tool. Write a few guides using the exact objection language outreach surfaced.
-5. **Weeks 4 to 6 — First read.** Compare cost, volume, and fit. Expect outreach to produce your first paying customers and your richest learning. Judge SEO on leading indicators like rankings, not revenue yet.
-6. **Weeks 6 to 12 — Double down and look ahead.** Pour effort into whatever is converting. Keep the SEO asset compounding. Before your current channel plateaus, start testing the next one — for a business like this, that is usually a small reseller or partnership play, now that you have demo-ready reference customers.
+1. **Week 0 - Set kill-criteria.** Decide in advance what success looks like. For outreach: a positive-reply rate above roughly 8 to 10 percent and demos that close. For SEO: pages indexed and first long-tail rankings within 90 days. Set up a tracking link per channel so you can tell what is working.
+2. **Week 1 - Build the list and join the rooms.** Pull 100 to 200 ideal prospects from Google Maps, Yelp, and trade directories, filtered to those with weak or no online ordering. Join the one or two communities where your buyers actually gather, and start by being genuinely helpful - answer questions, share knowledge, mention your product only when it is honestly the best answer.
+3. **Weeks 1 to 4 - Run outreach by hand.** One prospect at a time: a tailored demo video, plain-language framing, a zero-risk offer. Log every objection.
+4. **Weeks 2 to 6 - Build the SEO assets.** Five to ten comparison pages, each with a simple dedicated landing page and a live demo. Stand up your free tool. Write a few guides using the exact objection language outreach surfaced.
+5. **Weeks 4 to 6 - First read.** Compare cost, volume, and fit. Expect outreach to produce your first paying customers and your richest learning. Judge SEO on leading indicators like rankings, not revenue yet.
+6. **Weeks 6 to 12 - Double down and look ahead.** Pour effort into whatever is converting. Keep the SEO asset compounding. Before your current channel plateaus, start testing the next one - for a business like this, that is usually a small reseller or partnership play, now that you have demo-ready reference customers.
 
 A note on communities, since it pairs naturally with outreach: pick **two** to truly own rather than ten to haunt invisibly. Spend the first six to eight weeks just contributing before you mention your product, aim for something like a 95-to-5 ratio of helping to promoting, and consider a moderator-approved "ask me anything" once you have earned standing. Forum answers also index in Google and pull traffic for years, so the value compounds.
 
@@ -156,6 +156,6 @@ A note on communities, since it pairs naturally with outreach: pick **two** to t
 
 If you remember one thing, make it this: **traction comes from concentration, not coverage.** Find the one or two channels that fit your exact buyer and product, go deep enough to know whether they work, and let everything else wait.
 
-For most small, focused businesses that means a founder selling by hand while a compounding asset like SEO or a free tool grows quietly in the background — cheap, owned, and built to last.
+For most small, focused businesses that means a founder selling by hand while a compounding asset like SEO or a free tool grows quietly in the background - cheap, owned, and built to last.
 
-Here is the question that opens the next door. Once you have your first ten or twenty happy customers, your best new channel is often hiding inside them: the referrals they make, the "powered by" footer on every store you build, the case studies the whole community trusts more than any ad. Your earliest customers are not just revenue. They are your next acquisition channel — and learning to turn them into one is where durable growth really begins.
+Here is the question that opens the next door. Once you have your first ten or twenty happy customers, your best new channel is often hiding inside them: the referrals they make, the "powered by" footer on every store you build, the case studies the whole community trusts more than any ad. Your earliest customers are not just revenue. They are your next acquisition channel - and learning to turn them into one is where durable growth really begins.

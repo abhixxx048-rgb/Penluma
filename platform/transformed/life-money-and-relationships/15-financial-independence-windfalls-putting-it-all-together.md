@@ -105,10 +105,10 @@ Treat 25x as the optimistic floor and 30x-plus as the safer target. These are pl
 
 You'll hear these terms, so here's the quick vocabulary:
 
-- **Lean FIRE** — a frugal, bare-bones life on a smaller corpus (your "corpus" is just your total invested pot).
-- **Fat FIRE** — a generous lifestyle that needs a much larger corpus.
-- **Coast FIRE** — you've invested *enough early* that compounding alone will reach your retirement number. You only need to earn enough to cover today's bills. A natural fit for a founder.
-- **Barista FIRE** — part-time or passion income covers some of your spending, so your portfolio only has to cover the rest.
+- **Lean FIRE** - a frugal, bare-bones life on a smaller corpus (your "corpus" is just your total invested pot).
+- **Fat FIRE** - a generous lifestyle that needs a much larger corpus.
+- **Coast FIRE** - you've invested *enough early* that compounding alone will reach your retirement number. You only need to earn enough to cover today's bills. A natural fit for a founder.
+- **Barista FIRE** - part-time or passion income covers some of your spending, so your portfolio only has to cover the rest.
 
 The master lever behind all of them is your **savings rate** (the share of income you invest rather than spend), not your income. A high savings rate grows the corpus faster *and* lowers the corpus you need, because you live on less. A doctor who spends every rupee stays trapped; a modest earner who saves half can walk free.
 
@@ -119,7 +119,7 @@ One risk deserves a name: **sequence-of-returns risk**. It's the danger that a m
 Two defenses:
 
 1. Keep a **2 to 3 year cash or debt-fund buffer** so you never have to sell stocks low.
-2. Use **flexible withdrawals** — spend a little less in bad years.
+2. Use **flexible withdrawals** - spend a little less in bad years.
 
 And because India has no strong social-security net and healthcare is largely self-funded, a solid **health insurance policy** is a permanent part of any FIRE plan, never an afterthought.
 
@@ -184,7 +184,7 @@ Without a will, the law decides your heirs (under the Hindu Succession Act or In
 ### Your practical estate checklist
 
 1. **Write a will.** Registration isn't legally required, but a *registered* will is far harder to challenge.
-2. **Set or refresh nominees everywhere** — bank accounts, mutual funds, your Demat (share-holding) account, EPF, PPF, NPS, and every insurance policy.
+2. **Set or refresh nominees everywhere** - bank accounts, mutual funds, your Demat (share-holding) account, EPF, PPF, NPS, and every insurance policy.
 3. **Keep a "death file."** One secure document listing every account, policy, login, and where the will is. Your family cannot claim what they cannot find.
 4. **Hold adequate term life insurance** to cover dependents plus any liabilities.
 5. **Name a guardian** for minor children in the will.

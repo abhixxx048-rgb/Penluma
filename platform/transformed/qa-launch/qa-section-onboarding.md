@@ -37,7 +37,7 @@ transformed: true
 sources: []
 ---
 
-A new store owner finishes setup. Every item on the checklist is green. The dashboard says the store is ready. So they share the link, a customer adds something to the cart, hits "Pay" — and checkout dies with a cryptic gateway error.
+A new store owner finishes setup. Every item on the checklist is green. The dashboard says the store is ready. So they share the link, a customer adds something to the cart, hits "Pay" - and checkout dies with a cryptic gateway error.
 
 Nothing was broken in an obvious way. The checklist just lied. And the worst possible moment to discover that lie is in front of your very first paying customer.
 
@@ -45,7 +45,7 @@ This is one of the most common and most expensive failures in product onboarding
 
 ## Why this matters
 
-The first ten minutes a new user spends in your product decides whether they trust it. If those minutes end in a confident "you're all set" that turns out to be false, you have not just lost a sale — you have taught the user that your green checkmarks mean nothing.
+The first ten minutes a new user spends in your product decides whether they trust it. If those minutes end in a confident "you're all set" that turns out to be false, you have not just lost a sale - you have taught the user that your green checkmarks mean nothing.
 
 For a store owner, a false "ready" state means a failed order in front of a real customer. For any product, it means a support ticket, a refund, or a quiet uninstall. The damage is rarely a crash you can see in your logs. It is a confident success message sitting on top of a broken feature.
 
@@ -61,13 +61,13 @@ Think about a "Connect your payment provider" step. The simplest way to mark it 
 
 That only proves someone filled in a form and hit save. It does **not** prove the saved keys are valid, unexpired, or reachable. A non-technical owner who fat-fingers a secret key, or pastes test keys into a live store, gets the same green check as someone who set it up perfectly.
 
-The same trap hides in shipping. If the step completes the moment "at least one shipping rate exists," it goes green automatically when the system seeds a default rate — before the owner has even looked at it. Nobody checked whether that rate is active, carries a real charge, or promises a delivery date. The customer at checkout is then offered "free shipping, no delivery date," which reads as broken.
+The same trap hides in shipping. If the step completes the moment "at least one shipping rate exists," it goes green automatically when the system seeds a default rate - before the owner has even looked at it. Nobody checked whether that rate is active, carries a real charge, or promises a delivery date. The customer at checkout is then offered "free shipping, no delivery date," which reads as broken.
 
 **The pattern:** the checklist measures *existence of a record*, not *a working configuration*. Existence is cheap to check. Working is what the user actually needs.
 
 ### A simple way to think about it
 
-Imagine a pre-flight checklist where "fuel" is checked off because there is a fuel tank installed — not because there is fuel in it. The box is technically accurate. The plane still won't fly.
+Imagine a pre-flight checklist where "fuel" is checked off because there is a fuel tank installed - not because there is fuel in it. The box is technically accurate. The plane still won't fly.
 
 Every onboarding step that gates real money or real delivery deserves the stricter test. "Is the tank there?" is not the same question as "Can this actually take off?"
 
@@ -80,15 +80,15 @@ To you, the builder, that screen is obvious. To a first-time user, an empty room
 There are two cheap fixes here, and they compound:
 
 - **Create the first thing for them.** On signup, auto-create a starter project or store, named after the user, pre-seeded with sample data. Now their first screen is something to react to, not a void to fill.
-- **Walk them through what's next.** A short post-creation wizard — logo, first product, payment, shipping, preview — beats dropping someone onto a dashboard and hoping they find the settings pages on their own.
+- **Walk them through what's next.** A short post-creation wizard - logo, first product, payment, shipping, preview - beats dropping someone onto a dashboard and hoping they find the settings pages on their own.
 
 The goal is that the very first login lands on something alive and customizable, with a clear "do this next."
 
 ## The expiring-guidance problem
 
-Here is a subtle one. Many onboarding checklists are set to auto-hide after a while — say, 30 days — to avoid nagging users who clearly don't need it.
+Here is a subtle one. Many onboarding checklists are set to auto-hide after a while - say, 30 days - to avoid nagging users who clearly don't need it.
 
-But picture the realistic case: a small business owner gets busy, sets the project aside for a month, and comes back. On day 31, the checklist is gone — whether or not setup was ever finished. Their only piece of guidance has quietly disappeared, leaving a half-configured product and no prompt to complete it.
+But picture the realistic case: a small business owner gets busy, sets the project aside for a month, and comes back. On day 31, the checklist is gone - whether or not setup was ever finished. Their only piece of guidance has quietly disappeared, leaving a half-configured product and no prompt to complete it.
 
 The rule is simple: **do not expire guidance while launch-critical steps are still incomplete.** Reserve any auto-hide for users who are genuinely finished. A checklist that vanishes mid-setup is worse than one that lingers.
 
@@ -116,13 +116,13 @@ Walk through your own onboarding with these steps and you'll surface most of the
 4. **Build one source of truth for "can this take an order?"** Have it require verified payment, at least one active valid shipping option, and at least one published product. Drive both the checklist and the public-facing store from that single signal, so the owner's view and the customer's view can never disagree.
 5. **Fix the empty room.** Auto-create a first project with sample data on signup, and add a short wizard that orders the critical steps with inline help.
 6. **Stop guidance from expiring early.** Keep the checklist visible until launch-critical steps are complete, no matter how much time has passed.
-7. **Speak human in every step.** Replace "Configure gateway credentials" with "Connect a way to get paid," and add a one-line "the one thing that matters" note ("your secret key is private — never share it").
+7. **Speak human in every step.** Replace "Configure gateway credentials" with "Connect a way to get paid," and add a one-line "the one thing that matters" note ("your secret key is private - never share it").
 8. **Write tests for the lie.** Add automated checks that assert the checklist does *not* report complete when credentials are invalid or no active shipping rate exists. That is the exact failure you most want to catch before a customer does.
 
 ## Conclusion
 
-The single takeaway: **a checkmark should mean "this works," never "a form was saved."** Every step that gates real value deserves a test against the real thing — and if you can't test it, say "configured but not verified" rather than pretending it's done.
+The single takeaway: **a checkmark should mean "this works," never "a form was saved."** Every step that gates real value deserves a test against the real thing - and if you can't test it, say "configured but not verified" rather than pretending it's done.
 
 Honest onboarding is quieter than flashy onboarding. It has fewer triumphant green checks, more "let's confirm this actually works" moments. But it's the difference between a first customer who checks out smoothly and one who watches your product fail.
 
-Once you trust your "ready" signal, a new question opens up: what should happen the moment a user is *truly* ready — the first email, the first nudge, the first taste of the product doing real work for them? That first activation moment is where retention is quietly won or lost, and it's worth designing with the same care.
+Once you trust your "ready" signal, a new question opens up: what should happen the moment a user is *truly* ready - the first email, the first nudge, the first taste of the product doing real work for them? That first activation moment is where retention is quietly won or lost, and it's worth designing with the same care.

@@ -182,10 +182,10 @@ Even with the right tools, three failure modes haunt concurrent code.
 
 **Deadlock** is when two or more threads each hold a resource the other needs, and nobody lets go. Frozen forever. It requires all **four Coffman conditions** at once:
 
-1. **Mutual exclusion** — a resource can't be shared.
-2. **Hold and wait** — a thread holds one resource while waiting for another.
-3. **No preemption** — resources are given up only voluntarily.
-4. **Circular wait** — a cycle where A waits on B waits on ... waits on A.
+1. **Mutual exclusion** - a resource can't be shared.
+2. **Hold and wait** - a thread holds one resource while waiting for another.
+3. **No preemption** - resources are given up only voluntarily.
+4. **Circular wait** - a cycle where A waits on B waits on ... waits on A.
 
 The beautiful part: break *any one* condition and deadlock becomes impossible.
 

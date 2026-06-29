@@ -45,7 +45,7 @@ sources: []
 
 A brilliant electric blue glows on your monitor. You send the file off, the cards arrive, and the blue is now a dull, sulky purple. Nobody made a mistake at the print shop. The color was doomed the moment it left the screen.
 
-That gap between what you see and what prints is the whole reason **prepress** exists. Prepress means "before the press" — everything you do to a design file so it prints correctly the first time. Get it right and customers send clean files. Get it wrong and someone eats the cost of a reprint.
+That gap between what you see and what prints is the whole reason **prepress** exists. Prepress means "before the press" - everything you do to a design file so it prints correctly the first time. Get it right and customers send clean files. Get it wrong and someone eats the cost of a reprint.
 
 ## Why this matters
 
@@ -53,22 +53,22 @@ Printing is fast, expensive, and unforgiving. Once a press is running, you canno
 
 Think of prepress as the airport check-in before a flight. The plane is costly and quick, and once it takes off you cannot fix a problem mid-air. Check-in is where someone weighs your bags and catches the issue on the ground, where fixing it is still cheap.
 
-If you build software — an online design editor, an upload validator, a PDF generator — this is the engine room. The rules below are exactly what your code needs to enforce so non-expert customers cannot submit broken files. And if you design for print, these are the traps that quietly cost you reprints.
+If you build software - an online design editor, an upload validator, a PDF generator - this is the engine room. The rules below are exactly what your code needs to enforce so non-expert customers cannot submit broken files. And if you design for print, these are the traps that quietly cost you reprints.
 
 ## Light versus ink: the root of every color surprise
 
 Color works two completely different ways depending on whether you are looking at light or at ink.
 
-- **RGB** (Red, Green, Blue) mixes *light*. It is **additive** — it starts at black (no light) and adds light to build color. All three at full strength make white. Anything that glows uses RGB: monitors, phones, cameras.
-- **CMYK** (Cyan, Magenta, Yellow, and Key, which means black) mixes *ink*. It is **subtractive** — it starts with white paper, and each ink absorbs some of the light bouncing off the page. This is how all physical printing works.
+- **RGB** (Red, Green, Blue) mixes *light*. It is **additive** - it starts at black (no light) and adds light to build color. All three at full strength make white. Anything that glows uses RGB: monitors, phones, cameras.
+- **CMYK** (Cyan, Magenta, Yellow, and Key, which means black) mixes *ink*. It is **subtractive** - it starts with white paper, and each ink absorbs some of the light bouncing off the page. This is how all physical printing works.
 
-Why is black called "Key"? Because black is the key plate that all the fine text and detail line up to, and "B" could be confused with Blue. In theory cyan plus magenta plus yellow should make black, but real ink makes a muddy brown — so a true black ink (K) is added for deep blacks and crisp text.
+Why is black called "Key"? Because black is the key plate that all the fine text and detail line up to, and "B" could be confused with Blue. In theory cyan plus magenta plus yellow should make black, but real ink makes a muddy brown - so a true black ink (K) is added for deep blacks and crisp text.
 
 Here is the fact that explains every color complaint: **the RGB range is much larger than the CMYK range.** A glowing screen can show colors that ink on paper simply cannot make.
 
 ### Gamut: the printable color box
 
-A **gamut** is the full range of colors a system can produce. When a color exists in RGB but cannot be made in CMYK, it is **out of gamut**. During conversion, that color gets pushed to the nearest printable one — and you *see* the difference.
+A **gamut** is the full range of colors a system can produce. When a color exists in RGB but cannot be made in CMYK, it is **out of gamut**. During conversion, that color gets pushed to the nearest printable one - and you *see* the difference.
 
 That brilliant blue turning purple is out of gamut. So is neon green going flat, and vivid orange dulling down. Smooth screen gradients can even show visible "banding" (stripes) once converted, because CMYK has fewer steps to work with.
 
@@ -80,9 +80,9 @@ There are two fundamentally different ways to lay color on paper.
 
 **Process color** (also called 4-color or CMYK) builds *every* color from tiny dots of four inks. Look at a magazine photo through a magnifying glass and you will see millions of overlapping colored dots; your eye blends them into smooth color. This is how all photographs print.
 
-**Spot color** is a single, *pre-mixed* ink applied as one solid, even coat — no dots, no blending. It usually comes from the **Pantone Matching System (PMS)**, a worldwide library where every ink has a number, like "Pantone 185 C." The promise is consistency: the same Pantone number means the same exact color on any press, anywhere in the world. That is why brands depend on it.
+**Spot color** is a single, *pre-mixed* ink applied as one solid, even coat - no dots, no blending. It usually comes from the **Pantone Matching System (PMS)**, a worldwide library where every ink has a number, like "Pantone 185 C." The promise is consistency: the same Pantone number means the same exact color on any press, anywhere in the world. That is why brands depend on it.
 
-That coffee-shop green, that famous soda red, that luxury jewelry blue — those are spot colors, so they print identically on every box, bag, and sign. A full-color brochure photo, by contrast, is process color.
+That coffee-shop green, that famous soda red, that luxury jewelry blue - those are spot colors, so they print identically on every box, bag, and sign. A full-color brochure photo, by contrast, is process color.
 
 | Aspect | Process (CMYK) | Spot (Pantone) |
 |---|---|---|
@@ -90,18 +90,18 @@ That coffee-shop green, that famous soda red, that luxury jewelry blue — those
 | Best for | Photos, gradients, multicolor art | Logos, exact brand colors, large solid fills |
 | Cost | Cheap for full color | Pricey past 1–2 spot inks |
 | Consistency | Can drift run to run | Exact and repeatable |
-| Special effects | No | Yes — metallic, neon, pastels outside CMYK |
+| Special effects | No | Yes - metallic, neon, pastels outside CMYK |
 
 One detail trips people constantly: **the letter suffix matters.** "C" means Coated paper, "U" means Uncoated, "M" means Matte. The same Pantone number looks noticeably different on coated versus uncoated stock, so "Pantone 185 C" and "Pantone 185 U" are not interchangeable.
 
-You can also combine them — 4-color process for photos *plus* one spot ink for a precise brand color. Pantone publishes "bridge" charts showing the closest CMYK recipe for each spot color, but for vivid or metallic Pantones that CMYK version is noticeably off. That is a frequent source of client disappointment.
+You can also combine them - 4-color process for photos *plus* one spot ink for a precise brand color. Pantone publishes "bridge" charts showing the closest CMYK recipe for each spot color, but for vivid or metallic Pantones that CMYK version is noticeably off. That is a frequent source of client disappointment.
 
 ## Resolution: why "300 DPI" is not enough on its own
 
 People mix up two terms constantly.
 
-- **PPI (Pixels Per Inch)** describes a digital image — how many pixels are packed into each inch. This actually governs how much detail your file holds.
-- **DPI (Dots Per Inch)** describes the printer — how many ink dots it lays per inch. In everyday speech people say "DPI" for both, but technically they differ.
+- **PPI (Pixels Per Inch)** describes a digital image - how many pixels are packed into each inch. This actually governs how much detail your file holds.
+- **DPI (Dots Per Inch)** describes the printer - how many ink dots it lays per inch. In everyday speech people say "DPI" for both, but technically they differ.
 
 The targets:
 
@@ -114,21 +114,21 @@ The targets:
 
 ### The trap that catches everyone
 
-Resolution and physical size are tied together. Take a 300 PPI image, stretch it to twice its size, and the **effective resolution** drops to 150 PPI — the same pixels now cover twice the area. What matters is the resolution *at the final placed size*, not the number stored in the file.
+Resolution and physical size are tied together. Take a 300 PPI image, stretch it to twice its size, and the **effective resolution** drops to 150 PPI - the same pixels now cover twice the area. What matters is the resolution *at the final placed size*, not the number stored in the file.
 
-Here is the biggest myth in print: changing the "DPI" field in software from 72 to 300 does *not* add real detail. The software just invents new pixels by guessing (called upsampling). A "72-turned-300" image is still a low-resolution image wearing a costume — soft and blurry. You can safely shrink an image, but you can never truly turn a small low-res image into sharp print.
+Here is the biggest myth in print: changing the "DPI" field in software from 72 to 300 does *not* add real detail. The software just invents new pixels by guessing (called upsampling). A "72-turned-300" image is still a low-resolution image wearing a costume - soft and blurry. You can safely shrink an image, but you can never truly turn a small low-res image into sharp print.
 
-For software builders: when a customer drags a 600×400 logo into your editor and stretches it across an 8-inch banner, the stored label might say 300 DPI, but the effective resolution is only about 75 PPI. Your preflight should compute resolution at the placed size and warn, "This may print blurry — please upload a larger version." Never silently upscale it for them.
+For software builders: when a customer drags a 600×400 logo into your editor and stretches it across an 8-inch banner, the stored label might say 300 DPI, but the effective resolution is only about 75 PPI. Your preflight should compute resolution at the placed size and warn, "This may print blurry - please upload a larger version." Never silently upscale it for them.
 
 ## Bleed, trim, and safe zone: surviving an imperfect cut
 
 Paper is cut after it is printed, and cutting is never perfectly precise. Five terms exist to make the cut look clean no matter how the blade drifts.
 
-- **Trim** — the final cut size, what the customer holds (a 5"×7" card).
-- **Bleed** — artwork extended *past* the trim edge, so a slightly drifting blade still hits ink instead of leaving a white sliver. Backgrounds and images must run into the bleed.
-- **Safe zone** — a margin *inside* the trim where all important content (text, logos) must stay, so nothing critical gets chopped.
-- **Crop marks** — short corner lines telling the cutter where to slice.
-- **Registration marks** — crosshair targets printed in all four plates, used to check the colors line up.
+- **Trim** - the final cut size, what the customer holds (a 5"×7" card).
+- **Bleed** - artwork extended *past* the trim edge, so a slightly drifting blade still hits ink instead of leaving a white sliver. Backgrounds and images must run into the bleed.
+- **Safe zone** - a margin *inside* the trim where all important content (text, logos) must stay, so nothing critical gets chopped.
+- **Crop marks** - short corner lines telling the cutter where to slice.
+- **Registration marks** - crosshair targets printed in all four plates, used to check the colors line up.
 
 The standard amounts:
 
@@ -163,32 +163,32 @@ There is also more than one way to make black:
 
 Use plain 100K on small text (extra plates blur the edges if registration drifts) and rich black on large fills (100K alone looks like flat dark gray).
 
-That total-ink number matters too. **Total Area Coverage (TAC)** is the sum of the four CMYK percentages at any single point — the total wet ink the paper must absorb there. Coated commercial paper typically allows about 300%. Go over the limit and the ink cannot dry: you get "set-off" (wet ink stamping onto the back of the next sheet), smearing, and wavy paper. Print-on-demand vendors simply reject files that exceed their ink limit.
+That total-ink number matters too. **Total Area Coverage (TAC)** is the sum of the four CMYK percentages at any single point - the total wet ink the paper must absorb there. Coated commercial paper typically allows about 300%. Go over the limit and the ink cannot dry: you get "set-off" (wet ink stamping onto the back of the next sheet), smearing, and wavy paper. Print-on-demand vendors simply reject files that exceed their ink limit.
 
 ## Common misconceptions
 
 - **"I'll just bump the DPI to 300."** Upsampling invents fake pixels. It does not add detail; it adds blur.
 - **"RGB is fine, the printer will convert it."** It will, but you lose control over how those out-of-gamut colors shift. Convert yourself and preview the result.
 - **"More ink means a richer black."** Past the TAC limit it means smearing and ink that never dries. Registration black (400%) as a design color is a guaranteed disaster.
-- **"White can't cause problems."** A white object accidentally set to overprint *disappears completely* — white "ink" over a color shows nothing at all. This is a silent failure that ruins jobs.
+- **"White can't cause problems."** A white object accidentally set to overprint *disappears completely* - white "ink" over a color shows nothing at all. This is a silent failure that ruins jobs.
 - **"The on-screen proof looks right, so the color is right."** A monitor glows in RGB on an often-uncalibrated screen. For color-critical work, you need a physical proof.
 
 ## How to use this: a clean-file checklist
 
-1. **Design and convert in CMYK** using the printer's output profile, and soft-proof with it on a calibrated screen. (An **ICC profile** is just a color "translation map" for one press-and-paper combo, like GRACoL/CRPC6 in the US or FOGRA51/39 in Europe — ask your printer which to use.)
+1. **Design and convert in CMYK** using the printer's output profile, and soft-proof with it on a calibrated screen. (An **ICC profile** is just a color "translation map" for one press-and-paper combo, like GRACoL/CRPC6 in the US or FOGRA51/39 in Europe - ask your printer which to use.)
 2. **Ask the printer four things up front:** output profile, TAC/ink limit, bleed size, and required PDF standard.
 3. **Build at trim plus 0.125"/3mm bleed** on all sides. Run backgrounds into the bleed; keep all important content inside the safe margin.
 4. **Keep images at 300 PPI (400 for text-in-image) at final placed size.** Shrinking is fine; never upscale.
 5. **Embed or outline every font.** A missing font gets substituted on the printer's machine, which breaks your layout.
 6. **Use the right black:** K100 for small text, rich black (C60 M40 Y40 K100) for large areas, registration black never.
 7. **Overprint small 100% black text and rules;** let the printer's software handle trapping.
-8. **Run preflight, then export PDF/X-1a** (or PDF/X-4 if the printer's RIP supports it). PDF/X-1a forces all-CMYK color, embedded fonts, and flattened transparency — conservative and bulletproof.
+8. **Run preflight, then export PDF/X-1a** (or PDF/X-4 if the printer's RIP supports it). PDF/X-1a forces all-CMYK color, embedded fonts, and flattened transparency - conservative and bulletproof.
 9. **Review a proof.** A free soft proof catches typos and layout. When exact color matters, pay for a hard proof, or a certified contract proof when the color must be legally binding.
 
-If you are building web-to-print software, turn this list into per-product configuration: color mode, required output profile, minimum effective resolution, bleed size, safe-zone margin, ink limit, allowed spot colors, and delivery PDF standard. Validate every uploaded file against it automatically — tools like Enfocus PitStop and callas pdfToolbox are the industry engines for exactly this. And translate the jargon for buyers: say "We'll add a 1/8-inch safety border so nothing important gets cut off," not "configure bleed and TAC."
+If you are building web-to-print software, turn this list into per-product configuration: color mode, required output profile, minimum effective resolution, bleed size, safe-zone margin, ink limit, allowed spot colors, and delivery PDF standard. Validate every uploaded file against it automatically - tools like Enfocus PitStop and callas pdfToolbox are the industry engines for exactly this. And translate the jargon for buyers: say "We'll add a 1/8-inch safety border so nothing important gets cut off," not "configure bleed and TAC."
 
 ## Conclusion
 
-The single thing to remember: **a print file is not a screen image — it is a set of physical instructions for ink, paper, and a blade.** Once you start thinking in ink (CMYK, bleed, total coverage) instead of light (RGB, pixels), most "mystery" print problems stop being mysteries.
+The single thing to remember: **a print file is not a screen image - it is a set of physical instructions for ink, paper, and a blade.** Once you start thinking in ink (CMYK, bleed, total coverage) instead of light (RGB, pixels), most "mystery" print problems stop being mysteries.
 
-There is one more layer beyond getting a single sheet right: how dozens of pages get arranged on one giant press sheet so they fold and bind into the correct reading order. That puzzle is called **imposition** — where page 16 ends up printed right next to page 1, and somehow comes out perfect after folding. It is the next rabbit hole worth falling into.
+There is one more layer beyond getting a single sheet right: how dozens of pages get arranged on one giant press sheet so they fold and bind into the correct reading order. That puzzle is called **imposition** - where page 16 ends up printed right next to page 1, and somehow comes out perfect after folding. It is the next rabbit hole worth falling into.

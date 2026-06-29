@@ -63,14 +63,14 @@ When you hear a problem, your brain rushes to fix it. That feels productive. It 
 
 There are really two activities here, and we blur them together:
 
-- **Problem-finding** — figuring out what the real problem actually is. This is the slow, valuable part.
-- **Problem-solving** — building the fix once you know the real problem. This part is easier and faster.
+- **Problem-finding** - figuring out what the real problem actually is. This is the slow, valuable part.
+- **Problem-solving** - building the fix once you know the real problem. This part is easier and faster.
 
 Einstein is often quoted, loosely, as saying that if he had an hour to save the world he'd spend 55 minutes defining the problem and 5 minutes solving it. Whether or not he actually said it, the lesson holds: **most failures come from solving a poorly defined problem.** Get the definition right and the solution often becomes obvious. Get it wrong and no amount of effort saves you.
 
 The biggest trap is treating the first symptom you notice as "the problem." "We need a new website" is a solution wearing a disguise. The real problem might be "visitors don't trust us enough to buy." Fix the symptom and you've spent money on the wrong thing.
 
-## Step 1 — Define the real problem
+## Step 1 - Define the real problem
 
 Before anything else, write the problem as one clear sentence. Then stress-test it.
 
@@ -81,13 +81,13 @@ Before anything else, write the problem as one clear sentence. Then stress-test 
 
 **Key takeaway:** a well-defined problem is a measurable gap between today's reality and a desired state, with no solution smuggled inside it.
 
-## Step 2 — Decompose into parts
+## Step 2 - Decompose into parts
 
-A big problem is overwhelming because your working memory — the small mental "desk" where you hold ideas — can only juggle a handful of things at once. Decomposing means breaking one big problem into smaller, separate pieces you can handle one at a time.
+A big problem is overwhelming because your working memory - the small mental "desk" where you hold ideas - can only juggle a handful of things at once. Decomposing means breaking one big problem into smaller, separate pieces you can handle one at a time.
 
 Consultants draw an **issue tree**: the problem sits at the top, branching into its parts.
 
-The trick is to keep those branches **MECE** — "Mutually Exclusive, Collectively Exhaustive." Fancy words for a simple idea: the branches don't overlap, and together they cover everything. No double-counting, no gaps.
+The trick is to keep those branches **MECE** - "Mutually Exclusive, Collectively Exhaustive." Fancy words for a simple idea: the branches don't overlap, and together they cover everything. No double-counting, no gaps.
 
 ```
 Repeat orders fell (100 -> 60)
@@ -103,17 +103,17 @@ Repeat orders fell (100 -> 60)
 
 "Fewer customers" and "they buy less" don't overlap, and together they explain the whole drop. That's MECE. Now you can attack one branch at a time instead of staring at a wall.
 
-**Analogy:** decomposing is like sorting a messy drawer into labelled boxes. The junk didn't shrink, but now each box is a small, solvable task — and you can instantly see which box is overflowing.
+**Analogy:** decomposing is like sorting a messy drawer into labelled boxes. The junk didn't shrink, but now each box is a small, solvable task - and you can instantly see which box is overflowing.
 
-## Step 3 — Generate hypotheses
+## Step 3 - Generate hypotheses
 
-A **hypothesis** is a smart guess you can check — a possible answer stated as a sentence, not a vague feeling. Instead of investigating everything, you guess the likely cause and test that first. Consultants call this being "hypothesis-driven": start with a best guess, then look for evidence to confirm or kill it.
+A **hypothesis** is a smart guess you can check - a possible answer stated as a sentence, not a vague feeling. Instead of investigating everything, you guess the likely cause and test that first. Consultants call this being "hypothesis-driven": start with a best guess, then look for evidence to confirm or kill it.
 
 - **Write hypotheses as full sentences.** "Repeat orders fell because we stopped sending the monthly reminder email."
 - **Aim for 3 to 5,** one per promising branch of your tree.
-- **Make each one falsifiable** — it must be possible to prove it wrong. "Customers are sad" isn't testable. "Customers who didn't reorder gave low ratings" is.
+- **Make each one falsifiable** - it must be possible to prove it wrong. "Customers are sad" isn't testable. "Customers who didn't reorder gave low ratings" is.
 
-## Step 4 — Prioritize by impact versus effort
+## Step 4 - Prioritize by impact versus effort
 
 You can't test everything. Rank your hypotheses by two questions: **If true, how much does it matter (impact)?** and **How cheap is it to check (effort)?** Do the high-impact, low-effort ones first.
 
@@ -122,13 +122,13 @@ You can't test everything. Rank your hypotheses by two questions: **If true, how
 | **Low effort** | Do first (quick wins) | Do if spare time |
 | **High effort** | Plan carefully | Skip |
 
-## Step 5 — Test cheaply
+## Step 5 - Test cheaply
 
-Test the smallest, fastest way to get a real signal. You're not committing to a fix yet — you're checking whether a hypothesis is true. Look at existing data, ask five customers, run a tiny one-week trial. Cheap tests let you be wrong quickly and at low cost.
+Test the smallest, fastest way to get a real signal. You're not committing to a fix yet - you're checking whether a hypothesis is true. Look at existing data, ask five customers, run a tiny one-week trial. Cheap tests let you be wrong quickly and at low cost.
 
-**Key takeaway:** the goal of a test is to *change your mind* if you're wrong — fast and for little money. A test that can only confirm you is theatre, not evidence.
+**Key takeaway:** the goal of a test is to *change your mind* if you're wrong - fast and for little money. A test that can only confirm you is theatre, not evidence.
 
-## Step 6 — Iterate
+## Step 6 - Iterate
 
 Read the result. If the hypothesis held, design the real fix. If it didn't, cross it off and test the next one. Loop back as needed. Each pass narrows the truth. This mirrors the scientific method: guess, test, learn, repeat.
 
@@ -143,27 +143,27 @@ Define -> Decompose -> Hypothesize -> Prioritize
 
 - **"The problem is whatever I noticed first."** Usually that's a symptom or a solution in disguise. The real problem sits a few "whys" deeper.
 - **"A good plan means picking the right answer up front."** No. A good plan means picking the right *guess* to test first, then letting evidence decide.
-- **"Once I have a hypothesis, my job is to prove it."** This is **confirmation bias** — only hunting for evidence that agrees with you. Force yourself to ask, "What would I see if this were *false*?"
+- **"Once I have a hypothesis, my job is to prove it."** This is **confirmation bias** - only hunting for evidence that agrees with you. Force yourself to ask, "What would I see if this were *false*?"
 - **"More analysis is always better."** Past a point, more analysis just delays the cheap test that would actually settle the question. Bias toward testing.
 
 ## A worked example you can copy
 
-Maya runs a small print shop. She panics: "Sales are down, I need to advertise more!" — a solution in disguise. Instead, she runs the framework.
+Maya runs a small print shop. She panics: "Sales are down, I need to advertise more!" - a solution in disguise. Instead, she runs the framework.
 
 1. **Define.** "Why are sales down?" Repeat orders fell from 100 to 60 a month over three months. Real problem: *"Repeat orders dropped 40%; goal is back to 100."*
 2. **Decompose.** Either fewer customers return, or returning ones spend less. The data shows the customer *count* dropped while spend-per-order is flat. So the problem lives in the "fewer return" branch.
 3. **Hypothesize.** (1) "We quietly stopped the reorder reminder email in March." (2) "A new competitor undercut our price." (3) "Quality complaints rose."
 4. **Prioritize.** H1 is high-impact and free to check (look at the email log), so it goes first. H3 is cheap too (read support tickets). H2 needs research, so it waits.
-5. **Test cheaply.** The email log shows reminders stopped exactly in March — the same month sales fell. Support tickets show no rise in complaints, so H3 is killed.
-6. **Iterate.** She restarts reminder emails for one week to 50 lapsed customers as a tiny trial. Twelve reorder. The fix is real, not a guess — and she never wasted money on ads.
+5. **Test cheaply.** The email log shows reminders stopped exactly in March - the same month sales fell. Support tickets show no rise in complaints, so H3 is killed.
+6. **Iterate.** She restarts reminder emails for one week to 50 lapsed customers as a tiny trial. Twelve reorder. The fix is real, not a guess - and she never wasted money on ads.
 
 Notice she ended up somewhere completely different from "advertise more." That's the framework earning its keep.
 
 ## How to use this
 
-Take a real problem you have right now — work, money, or a habit. On one page:
+Take a real problem you have right now - work, money, or a habit. On one page:
 
-1. Write it as a **measurable gap** (what is, versus what you want — no fix inside).
+1. Write it as a **measurable gap** (what is, versus what you want - no fix inside).
 2. Draw a **two-branch issue tree** and check the branches don't overlap.
 3. Write **three hypotheses** as full sentences, each one you could prove wrong.
 4. Circle the one that is **high-impact and cheapest to check.**
@@ -175,10 +175,10 @@ Twenty minutes, one page. A few drills to sharpen the muscle:
 - **5 Whys.** Take one complaint and ask "why?" five times, writing each answer. The deepest one is your real problem.
 - **Cheapest test.** For your top hypothesis, list three ways to test it and pick the fastest one that could prove you wrong.
 
-This process also makes you a clearer writer. An issue tree is a ready-made outline — your branches become your paragraphs, so your writing stops rambling. And stating hypotheses as full sentences forces the fuzzy idea in your head into words, which is exactly the "I know it but can't express it" gap.
+This process also makes you a clearer writer. An issue tree is a ready-made outline - your branches become your paragraphs, so your writing stops rambling. And stating hypotheses as full sentences forces the fuzzy idea in your head into words, which is exactly the "I know it but can't express it" gap.
 
 ## Conclusion
 
-If you remember one thing, remember this: **define the gap before you reach for a fix, then let a cheap test decide.** Most wasted effort in life and work isn't bad solutions — it's brilliant solutions to the wrong problem.
+If you remember one thing, remember this: **define the gap before you reach for a fix, then let a cheap test decide.** Most wasted effort in life and work isn't bad solutions - it's brilliant solutions to the wrong problem.
 
-The deeper you go, the more you'll notice that the hardest part is staying honest about what you don't yet know. That's where the next skill comes in: spotting the quiet biases — confirmation bias, anchoring, the urge to be right — that bend your hypotheses before you ever run the test.
+The deeper you go, the more you'll notice that the hardest part is staying honest about what you don't yet know. That's where the next skill comes in: spotting the quiet biases - confirmation bias, anchoring, the urge to be right - that bend your hypotheses before you ever run the test.

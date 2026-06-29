@@ -93,11 +93,11 @@ Robert Bjork coined the term **desirable difficulties** in 1994 for learning con
 
 It's the idea that ties everything together, because the most powerful study techniques are *all* desirable difficulties:
 
-- **Retrieval practice** — pulling an answer out of your head instead of rereading it.
-- **Spacing** — spreading practice over time instead of cramming.
-- **Interleaving** — mixing problem types instead of blocking them.
-- **Generation** — trying to produce an answer *before* you're told it.
-- **Variation** — practising in changing conditions rather than identical ones.
+- **Retrieval practice** - pulling an answer out of your head instead of rereading it.
+- **Spacing** - spreading practice over time instead of cramming.
+- **Interleaving** - mixing problem types instead of blocking them.
+- **Generation** - trying to produce an answer *before* you're told it.
+- **Variation** - practising in changing conditions rather than identical ones.
 
 Every one of them slows you down and makes you stumble in the moment. And every one of them builds memory that endures and transfers to new situations.
 

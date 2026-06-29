@@ -1,17 +1,17 @@
-# 06 — Prepositions (in, on, at, to, for, with)
+# 06 - Prepositions (in, on, at, to, for, with)
 
-*What this fixes for you: prepositions are the small words you keep guessing — "depend on" or "depend to"? This doc gives you a cheat table so you stop guessing and just know.*
+*What this fixes for you: prepositions are the small words you keep guessing - "depend on" or "depend to"? This doc gives you a cheat table so you stop guessing and just know.*
 
 ## The rule in 30 seconds
 
 - **Time/place** follow a zoom rule: **in** = big/inside (in June, in the repo), **on** = surface/day (on Monday, on the branch), **at** = exact point (at 9am, at line 42).
-- Most dev prepositions are **fixed pairings** (collocations) — `depend on`, `based on`, `responsible for`. You **memorize** these; you do not work them out from logic.
+- Most dev prepositions are **fixed pairings** (collocations) - `depend on`, `based on`, `responsible for`. You **memorize** these; you do not work them out from logic.
 - Direction uses **to**: `push to`, `deploy to`, `merge to`. Being inside something uses **in/on**: `in the repo`, `on the branch`.
 - When in doubt, check the cheat table at the bottom. Real English speakers also just memorized these.
 
 ## Why this trips you up
 
-In your native language one preposition often covers several English ones, so you translate word-for-word and get "depend to" or "responsible of." You also mix the zoom levels — writing "on the repo" when it's "in the repo." The fix is not grammar logic; it's pairing the verb and its preposition together as one chunk and reusing it.
+In your native language one preposition often covers several English ones, so you translate word-for-word and get "depend to" or "responsible of." You also mix the zoom levels - writing "on the repo" when it's "in the repo." The fix is not grammar logic; it's pairing the verb and its preposition together as one chunk and reusing it.
 
 ## See it / fix it
 
@@ -32,7 +32,7 @@ In your native language one preposition often covers several English ones, so yo
 
 ## Patterns to remember
 
-**Time & place — the zoom rule (big → small):**
+**Time & place - the zoom rule (big → small):**
 
 | Word | Time | Place |
 |---|---|---|
@@ -64,10 +64,10 @@ In your native language one preposition often covers several English ones, so yo
 
 ## In your daily writing
 
-- **Commits:** "Fix crash that **depends on** a null tenant" — not "depend to."
+- **Commits:** "Fix crash that **depends on** a null tenant" - not "depend to."
 - **PR titles:** "Deploy worker **to** staging" / "Merge feature **into** main."
-- **Slack standups:** "Today I'm **working on** the cache ticket and will **comment on** Pravin's PR." — not "working in" / "comment in."
-- **Code comments:** `// Service listens on port 4000` — not "listens in port."
+- **Slack standups:** "Today I'm **working on** the cache ticket and will **comment on** Pravin's PR." - not "working in" / "comment in."
+- **Code comments:** `// Service listens on port 4000` - not "listens in port."
 - **Bug reports:** "The error happens **in** production **at** the checkout endpoint **on** the release branch." Notice each zoom level gets its own word.
 
 ## Drills
@@ -91,17 +91,17 @@ Fix the preposition (and any spelling/capital/punctuation slips you notice).
 
 ## Answer key
 
-1. **The build depends on an env variable that is not set.** — `depend on`; add `-s`, capitalize, use `an env`, add full stop.
-2. **I'm interested in picking up the payment ticket.** — `interested in`; capitalize `I`.
-3. **We deploy to production every Friday.** — Direction → `to`; capitalize the day `Friday`.
-4. **Can you comment on my pull request when you get time?** — `comment on`; spell out `you`; it's a question → `?`.
-5. **The price calculation is based on the product size.** — Fixed pair `based on`, not `based of`.
-6. **Who is responsible for the queue worker?** — `responsible for`; add the question mark.
-7. **Our API listens on port 8000 by default.** — A service listens **on** a port; add `-s`.
-8. **She is really good at writing clean tests.** — `good at` a skill, not `good in`.
-9. **A — `to`.** — Pushing is direction, so `push to the remote`.
-10. **B (`in` the repo), A (`on` the dev branch).** — You're inside the repo but on a branch.
-11. **of** — `consist of`. (The migration consists **of** two reversible steps.)
-12. **I fixed so many bugs today. I'll merge into main and then deploy to staging.** — `so many bugs` (countable, plural); split the run-on into sentences; `merge into`; `deploy to`; capitalize `I`.
+1. **The build depends on an env variable that is not set.** - `depend on`; add `-s`, capitalize, use `an env`, add full stop.
+2. **I'm interested in picking up the payment ticket.** - `interested in`; capitalize `I`.
+3. **We deploy to production every Friday.** - Direction → `to`; capitalize the day `Friday`.
+4. **Can you comment on my pull request when you get time?** - `comment on`; spell out `you`; it's a question → `?`.
+5. **The price calculation is based on the product size.** - Fixed pair `based on`, not `based of`.
+6. **Who is responsible for the queue worker?** - `responsible for`; add the question mark.
+7. **Our API listens on port 8000 by default.** - A service listens **on** a port; add `-s`.
+8. **She is really good at writing clean tests.** - `good at` a skill, not `good in`.
+9. **A - `to`.** - Pushing is direction, so `push to the remote`.
+10. **B (`in` the repo), A (`on` the dev branch).** - You're inside the repo but on a branch.
+11. **of** - `consist of`. (The migration consists **of** two reversible steps.)
+12. **I fixed so many bugs today. I'll merge into main and then deploy to staging.** - `so many bugs` (countable, plural); split the run-on into sentences; `merge into`; `deploy to`; capitalize `I`.
 
-*Part of the Developer English course — see [00-index.md](./00-index.md).*
+*Part of the Developer English course - see [00-index.md](./00-index.md).*

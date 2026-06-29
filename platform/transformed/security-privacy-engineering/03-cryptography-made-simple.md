@@ -58,9 +58,9 @@ The good news: you don't need a math degree. You need a mental model. Every piec
 
 Whenever you face a crypto decision, ask one question first: **which goal do I actually need?**
 
-- **Confidentiality** — only the intended reader can see the content. Tool: **encryption**.
-- **Integrity** — the content was not changed, not even by one bit. Tool: **hashing**.
-- **Authenticity** — it really came from who it claims to be from. Tool: **digital signatures**.
+- **Confidentiality** - only the intended reader can see the content. Tool: **encryption**.
+- **Integrity** - the content was not changed, not even by one bit. Tool: **hashing**.
+- **Authenticity** - it really came from who it claims to be from. Tool: **digital signatures**.
 
 That's the whole map. Everything below is just detail hanging off these three hooks. Most breaches happen because someone picked the wrong hook, not because the algorithm was weak.
 

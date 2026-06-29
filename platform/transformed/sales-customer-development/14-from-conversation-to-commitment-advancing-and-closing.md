@@ -78,10 +78,10 @@ You may know the phrase "Always Be Closing" from the film *Glengarry Glen Ross*.
 
 There is a better idea, and it comes from Neil Rackham's research in *SPIN Selling*, one of the most studied sales books ever written. Rackham found that every sales conversation ends in one of four ways:
 
-1. **Order** — they buy. Wonderful, but rare in a single conversation for anything big.
-2. **Advance** — the buyer agrees to a real action that moves things forward.
-3. **Continuation** — the call ends warm and friendly, but with no agreed action. It *feels* good and goes nowhere.
-4. **No-sale** — a clear no.
+1. **Order** - they buy. Wonderful, but rare in a single conversation for anything big.
+2. **Advance** - the buyer agrees to a real action that moves things forward.
+3. **Continuation** - the call ends warm and friendly, but with no agreed action. It *feels* good and goes nowhere.
+4. **No-sale** - a clear no.
 
 Your job in almost every conversation is to earn an **advance**. So your new motto is **Always Be Advancing**: never end a conversation without a clear, specific, mutually agreed next step.
 

@@ -114,8 +114,8 @@ If vectors are "math instructions," the most important instruction is the curve.
 
 Two building blocks:
 
-- **Anchor point** — an *on-curve* point where a segment starts or ends. The line actually passes through it.
-- **Control handle** — an *off-curve* point that pulls the curve like a magnet. It sets direction and tension, but the line does **not** pass through it.
+- **Anchor point** - an *on-curve* point where a segment starts or ends. The line actually passes through it.
+- **Control handle** - an *off-curve* point that pulls the curve like a magnet. It sets direction and tension, but the line does **not** pass through it.
 
 The standard curve (in PDF, SVG, Illustrator, and Fabric.js) is the **cubic Bézier**: four points, `P0` to `P3`. The curve runs between the two anchors `P0` and `P3`, while `P1` and `P2` are the handles. The curve leaves `P0` heading toward `P1`, and arrives at `P3` coming from `P2`. **Handle length** controls how strongly the curve bows; **handle angle** sets its direction.
 
@@ -129,9 +129,9 @@ When the software draws this on screen, it steps along the curve in tiny increme
 
 These three abbreviations get thrown around interchangeably in print shops, and mixing them up is the root of most "why is it blurry?" confusion. They're three different layers of the same process.
 
-- **PPI — Pixels Per Inch.** The pixel density of your **digital file**. This is the number that actually governs raster sharpness. When someone says "300 dpi file," they almost always mean 300 PPI.
-- **DPI — Dots Per Inch.** The physical **ink dots a printer lays on paper**. Much higher than PPI (inkjet runs 1200 to 2880) because many tiny ink dots build a single image pixel.
-- **LPI — Lines Per Inch.** The halftone **screen frequency** in offset printing. Newspaper is about 85 lpi; magazines run 133 to 150; fine-art books reach 175 to 200.
+- **PPI - Pixels Per Inch.** The pixel density of your **digital file**. This is the number that actually governs raster sharpness. When someone says "300 dpi file," they almost always mean 300 PPI.
+- **DPI - Dots Per Inch.** The physical **ink dots a printer lays on paper**. Much higher than PPI (inkjet runs 1200 to 2880) because many tiny ink dots build a single image pixel.
+- **LPI - Lines Per Inch.** The halftone **screen frequency** in offset printing. Newspaper is about 85 lpi; magazines run 133 to 150; fine-art books reach 175 to 200.
 
 The flow is simple: **PPI is your file, LPI is the halftone screen, DPI is the printer's ink.** Only PPI is something you control in your artwork. Get that right and the press handles the rest.
 
@@ -178,10 +178,10 @@ Reducing always raises it, which is why it's always safe:
 
 **Resampling** means changing an image's pixel count, and the algorithm decides how the new pixels are computed. The common ones, roughly worst to best for quality:
 
-- **Nearest neighbor** — copies the closest pixel. Fast but blocky. Only for pixel art.
-- **Bilinear** — averages the 4 nearest pixels. Smoother, but soft.
-- **Bicubic** — uses 16 neighbors. Smooth and detail-preserving; Photoshop's default.
-- **Lanczos** — sharpest, best detail retention, heaviest to compute. The favorite for downscaling.
+- **Nearest neighbor** - copies the closest pixel. Fast but blocky. Only for pixel art.
+- **Bilinear** - averages the 4 nearest pixels. Smoother, but soft.
+- **Bicubic** - uses 16 neighbors. Smooth and detail-preserving; Photoshop's default.
+- **Lanczos** - sharpest, best detail retention, heaviest to compute. The favorite for downscaling.
 
 Why does enlarging degrade so badly? There's **no real information between the original pixels**, so the algorithm can only guess or blur. Detail gets invented, never recovered.
 

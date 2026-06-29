@@ -59,11 +59,11 @@ In the US, the same logic shows up as "max your 401(k) and Roth IRA first." It i
 
 Every retirement account can be taxed at **three moments**. At each moment it is either **E** (Exempt, no tax) or **T** (Taxed):
 
-1. **Contribution** — when you put money in. Does it reduce your taxable income?
-2. **Growth** — the interest or gains along the way. Taxed each year, or left alone?
-3. **Withdrawal** — when you take it out at the end. Taxed, or free?
+1. **Contribution** - when you put money in. Does it reduce your taxable income?
+2. **Growth** - the interest or gains along the way. Taxed each year, or left alone?
+3. **Withdrawal** - when you take it out at the end. Taxed, or free?
 
-The dream is **EEE** — exempt at all three points, so the money is never taxed. **PPF** and **EPF** are EEE. An **EET** account only taxes you on the way out.
+The dream is **EEE** - exempt at all three points, so the money is never taxed. **PPF** and **EPF** are EEE. An **EET** account only taxes you on the way out.
 
 **Think of each account as a greenhouse for your money plant.** A normal taxable account is an open field, where every winter (tax season) a frost kills some growth. An EEE greenhouse keeps the frost out at planting, while growing, *and* at harvest. Same seed, same sun, far bigger plant after 25 years.
 
@@ -110,14 +110,14 @@ If you are a founder with no EPF, **PPF is your retirement debt anchor.** It is 
 
 The **National Pension System (NPS)** is a low-cost, market-linked retirement account where *you choose* the mix of equity, corporate bonds, and government bonds (or let it auto-adjust by age). It has two parts:
 
-- **Tier 1** — the real retirement account, locked until age 60, with the tax benefits.
-- **Tier 2** — a flexible, no-lock-in account with *no* tax benefit. It behaves like a cheap mutual fund.
+- **Tier 1** - the real retirement account, locked until age 60, with the tax benefits.
+- **Tier 2** - a flexible, no-lock-in account with *no* tax benefit. It behaves like a cheap mutual fund.
 
 **The tax superpower:** beyond the 1.5 lakh 80C bucket, NPS gives an *extra* **50,000** deduction under **Section 80CCD(1B)** (old regime). Better still, **Section 80CCD(2)** lets an employer contribute up to **14% of Basic+DA** tax-free, and this one deduction **survives even in the new tax regime**, which strips out almost everything else.
 
 **If you run payroll for yourself, route an employer NPS contribution to your own account.** This captures the only meaningful tax break left in the new regime. (For the US-minded: it works much like an employer 401(k) contribution.)
 
-**The NPS catch worth knowing up front:** at 60, you can take up to **60% as a tax-free lump sum**, but at least **40% is forced into an annuity** — a product you buy that pays a fixed monthly pension for life — and that annuity income is taxed at your slab. This forced annuity, plus the lock-in to 60, is why NPS suits the disciplined retirement portion of your money, not your flexible wealth.
+**The NPS catch worth knowing up front:** at 60, you can take up to **60% as a tax-free lump sum**, but at least **40% is forced into an annuity** - a product you buy that pays a fixed monthly pension for life - and that annuity income is taxed at your slab. This forced annuity, plus the lock-in to 60, is why NPS suits the disciplined retirement portion of your money, not your flexible wealth.
 
 ## ELSS: the only equity option inside 80C
 

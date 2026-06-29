@@ -108,9 +108,9 @@ Why weekly instead of monthly? Because startups don't run out of money on a tidy
 
 Building one is simpler than it sounds. For each week, track three numbers:
 
-1. **Starting cash** — the balance at the start of the week.
-2. **Cash in** — payments you truly expect to *arrive* that week, dated by when the money actually hits the account, not the invoice date.
-3. **Cash out** — payroll on its real pay dates, plus rent, supplier payments, taxes, and subscriptions.
+1. **Starting cash** - the balance at the start of the week.
+2. **Cash in** - payments you truly expect to *arrive* that week, dated by when the money actually hits the account, not the invoice date.
+3. **Cash out** - payroll on its real pay dates, plus rent, supplier payments, taxes, and subscriptions.
 
 Then: **Ending cash = Starting + In − Out.** That ending number becomes next week's starting number. Roll it forward 13 weeks.
 
@@ -172,9 +172,9 @@ Two modest moves bought you about 2.5 extra months, often exactly enough to clos
 
 **Working capital** is the cash tied up in the gap between paying out and getting paid in. Three things drive it:
 
-- **Accounts receivable (AR)** — money customers owe you but haven't paid. The longer they take, the more of your cash is stuck outside your bank.
-- **Accounts payable (AP)** — money you owe suppliers but haven't paid. Paying later keeps cash with you longer.
-- **Inventory** — cash frozen in stock sitting on a shelf, not yet sold.
+- **Accounts receivable (AR)** - money customers owe you but haven't paid. The longer they take, the more of your cash is stuck outside your bank.
+- **Accounts payable (AP)** - money you owe suppliers but haven't paid. Paying later keeps cash with you longer.
+- **Inventory** - cash frozen in stock sitting on a shelf, not yet sold.
 
 Together these form your **cash conversion cycle**: the number of days from spending a dollar (on stock or work) until that dollar comes back as customer cash. Shorter is better, because it means you fund your own growth instead of raising money just to operate. A rough version: *days to sell inventory + days customers take to pay − days you take to pay suppliers.*
 
@@ -185,7 +185,7 @@ Together these form your **cash conversion cycle**: the number of days from spen
 Raising money and cutting costs both take longer than founders expect. A funding round commonly takes **3 to 6 months** from "start talking to investors" to "money in the bank." So if you wait until you have two months of runway to begin, you're already too late. You'll be negotiating from desperation, on bad terms, or not at all.
 
 ```
-RUNWAY DEPLETION — act early, not at the cliff
+RUNWAY DEPLETION - act early, not at the cliff
 
 Cash
 $600k |*
@@ -206,11 +206,11 @@ When runway drops to about six months, it's decision time: either raise money *n
 
 A simple weekly rhythm keeps you out of trouble. Do these:
 
-1. **Know two numbers cold** — cash in the bank, and net monthly burn. You should be able to say them from memory at any moment.
+1. **Know two numbers cold** - cash in the bank, and net monthly burn. You should be able to say them from memory at any moment.
 2. **Know your zero-cash date.** A single calendar date is far more motivating than "a few months."
 3. **Update your 13-week forecast every Monday**, then compare it to what actually happened last week.
 4. **Re-check "default alive or dead?" monthly.** If you're dead, decide the fix this month, not next quarter.
-5. **Run a worst-case scenario** — what if revenue comes in 30% lower and a big payment slips? If that breaks you, fix the plan before it happens.
+5. **Run a worst-case scenario** - what if revenue comes in 30% lower and a big payment slips? If that breaks you, fix the plan before it happens.
 6. **Start raising or cutting at about 6 months of runway**, while you still have leverage and time.
 
 Put a recurring 30-minute "cash review" on your calendar every week. Founders who survive aren't the ones who never hit trouble. They're the ones who saw it coming early enough to do something about it.

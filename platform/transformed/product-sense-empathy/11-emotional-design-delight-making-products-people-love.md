@@ -57,7 +57,7 @@ sources:
   - https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule
 ---
 
-A product can be flawless and still be forgotten. People do not remember feature lists. They remember how a product made them *feel* — and that feeling is what they pass along to a friend.
+A product can be flawless and still be forgotten. People do not remember feature lists. They remember how a product made them *feel* - and that feeling is what they pass along to a friend.
 
 This is the layer most teams skip. They make a product people *can* use, then wonder why nobody loves it. The missing craft is **emotional design**: making people not just able to use your product, but glad they did, proud they did, and eager to come back.
 
@@ -65,7 +65,7 @@ This is the layer most teams skip. They make a product people *can* use, then wo
 
 You can ship something usable and watch it sink. Usability gets a user across the finish line once. Emotion is what makes them come back, tell others, and forgive you when something goes slightly wrong.
 
-Think about the feeling you most want to leave behind. For a lot of products it is **confidence** — the user should finish a task feeling capable and a little proud, never lost or stupid. Get that right and you win loyalty. Get it wrong and a technically perfect product still feels cold.
+Think about the feeling you most want to leave behind. For a lot of products it is **confidence** - the user should finish a task feeling capable and a little proud, never lost or stupid. Get that right and you win loyalty. Get it wrong and a technically perfect product still feels cold.
 
 Here is the encouraging part: emotion is not luck or "good taste." It follows patterns that researchers have studied for decades. You can design it on purpose.
 
@@ -77,15 +77,15 @@ These are not steps or a ladder. They all fire at once, like three radio station
 
 ### Visceral: your gut reaction
 
-The instant, automatic response to how something **looks and sounds** — color, shape, motion. It happens in a split second, before any thinking, and answers one animal question: *approach or avoid?*
+The instant, automatic response to how something **looks and sounds** - color, shape, motion. It happens in a split second, before any thinking, and answers one animal question: *approach or avoid?*
 
-When a page loads and feels "premium" — or feels "cheap and broken" — before you have read a single word, that is your visceral channel talking.
+When a page loads and feels "premium" - or feels "cheap and broken" - before you have read a single word, that is your visceral channel talking.
 
 ### Behavioral: the feel of using it
 
 The layer of *doing*. Does the tool work? Was it easy? Did I feel capable while using it? This is where the emotion of **competence and control** lives.
 
-Good behavioral design feels like *"I'm in charge, I know what's happening."* Bad behavioral design feels like confusion and helplessness — even if the screen looks gorgeous.
+Good behavioral design feels like *"I'm in charge, I know what's happening."* Bad behavioral design feels like confusion and helplessness - even if the screen looks gorgeous.
 
 ### Reflective: the story you tell
 
@@ -99,9 +99,9 @@ This is where word of mouth and loyalty live, and it can override the other two.
 
 Norman's most quoted line is **"attractive things work better."** It sounds like wishful thinking. It is not.
 
-His reasoning: when people feel good, they relax, think more flexibly, and forgive small bumps. When they feel anxious, their attention narrows and every tiny problem feels enormous. So beauty is not just decoration sitting on top of function — it changes how well people cope and succeed.
+His reasoning: when people feel good, they relax, think more flexibly, and forgive small bumps. When they feel anxious, their attention narrows and every tiny problem feels enormous. So beauty is not just decoration sitting on top of function - it changes how well people cope and succeed.
 
-There is even a name for the evidence: the **aesthetic-usability effect** — people perceive attractive products as easier to use, whether or not they really are.
+There is even a name for the evidence: the **aesthetic-usability effect** - people perceive attractive products as easier to use, whether or not they really are.
 
 **The classic study.** In 1995, researchers Masaaki Kurosu and Kaori Kashimura at Hitachi tested 26 versions of an ATM interface with 252 people. The link between how *attractive* an interface looked and how *easy people thought it was* turned out stronger than the link between attractiveness and how easy it *actually* was. Looks shaped the verdict.
 
@@ -123,37 +123,37 @@ There is even a name for the evidence: the **aesthetic-usability effect** — pe
 
 The order is non-negotiable. There is a hierarchy underneath every good product:
 
-1. **Functional** — it does the job at all. Without this, nothing else counts.
-2. **Reliable** — it does the job consistently.
-3. **Usable** — people can figure it out. *Confidence is built here.*
-4. **Convenient** — it fits smoothly into their life.
-5. **Pleasurable** — it feels good. *Surface touches live here.*
+1. **Functional** - it does the job at all. Without this, nothing else counts.
+2. **Reliable** - it does the job consistently.
+3. **Usable** - people can figure it out. *Confidence is built here.*
+4. **Convenient** - it fits smoothly into their life.
+5. **Pleasurable** - it feels good. *Surface touches live here.*
 
 Delight sits at the very top. You earn the right to delight only after the base holds. You cannot sprinkle charm onto a confusing flow and call it love.
 
 ## Micro-interactions: where competence becomes delight
 
-A **micro-interaction** is a small, single-task moment — flipping a toggle, watching a spinner, seeing a "Saved!" confirmation. Designer Dan Saffer breaks every one into four parts, and it makes a handy checklist:
+A **micro-interaction** is a small, single-task moment - flipping a toggle, watching a spinner, seeing a "Saved!" confirmation. Designer Dan Saffer breaks every one into four parts, and it makes a handy checklist:
 
-1. **Trigger** — what starts it (the user clicks "Publish").
-2. **Rules** — what happens behind the scenes.
-3. **Feedback** — what the user sees or hears, so they *know* it worked.
-4. **Loops and modes** — how it behaves over time and on repeat.
+1. **Trigger** - what starts it (the user clicks "Publish").
+2. **Rules** - what happens behind the scenes.
+3. **Feedback** - what the user sees or hears, so they *know* it worked.
+4. **Loops and modes** - how it behaves over time and on repeat.
 
 The **feedback** step is where confidence is born. A clear *"Your product is now live!"* tells the user they did it right. That tiny message is competence and a drop of delight at the same time.
 
 Two practical rules:
 
-- **Replace machine talk with human feedback.** Not "200 OK" or "No data." Say *"Nice — your first product is live!"* Every confirmation is a chance to make a non-technical user feel capable.
-- **Never let delight block the job.** An animation the user must wait through, an easter egg that interrupts a task, a "cute" empty screen with no next step — these are friction in disguise. Animation should reduce uncertainty, not add a speed bump.
+- **Replace machine talk with human feedback.** Not "200 OK" or "No data." Say *"Nice - your first product is live!"* Every confirmation is a chance to make a non-technical user feel capable.
+- **Never let delight block the job.** An animation the user must wait through, an easter egg that interrupts a task, a "cute" empty screen with no next step - these are friction in disguise. Animation should reduce uncertainty, not add a speed bump.
 
 ## The peak-end rule: design the high point and the ending
 
-Psychologists Daniel Kahneman and Barbara Fredrickson found that people judge an experience by just two moments: its **peak** (the most intense point) and its **end** — not the average of every moment. The length barely registers, an effect called *duration neglect*.
+Psychologists Daniel Kahneman and Barbara Fredrickson found that people judge an experience by just two moments: its **peak** (the most intense point) and its **end** - not the average of every moment. The length barely registers, an effect called *duration neglect*.
 
-**The cold-water study.** In 1993, people held a hand in painfully cold water for 60 seconds (trial A), versus the same 60 seconds *plus* 30 more seconds at water one degree warmer but still unpleasant (trial B). Trial B is objectively more total discomfort — yet people chose to repeat *B*, because it *ended* less badly. A better ending rewrote the memory.
+**The cold-water study.** In 1993, people held a hand in painfully cold water for 60 seconds (trial A), versus the same 60 seconds *plus* 30 more seconds at water one degree warmer but still unpleasant (trial B). Trial B is objectively more total discomfort - yet people chose to repeat *B*, because it *ended* less badly. A better ending rewrote the memory.
 
-Kahneman called this the split between two selves: the **experiencing self** that lives each moment, and the **remembering self** that stores the impression and decides what to do next time. The remembering self obeys the peak-end rule — and it is the same "story I tell" as Norman's reflective channel.
+Kahneman called this the split between two selves: the **experiencing self** that lives each moment, and the **remembering self** that stores the impression and decides what to do next time. The remembering self obeys the peak-end rule - and it is the same "story I tell" as Norman's reflective channel.
 
 Think of a movie with a dull middle but a stunning ending; people recommend it. Think of a great movie with a terrible final five minutes; people trash it. Your product is a story your user narrates afterward, so write a strong climax and a clean final scene.
 
@@ -164,13 +164,13 @@ The best place to put a designed peak is the user's moment of triumph. Two well-
 - **Mailchimp's "Freddie high five."** Sending an email campaign is nerve-wracking. Before the send, the mascot's sweaty hand hovers nervously over the button and the copy gently tells you to take a breath. After you hit send, Freddie gives you a high five. It names both feelings: the tension peak, then the relief peak as a strong ending.
 - **Empty states as a teachable moment.** A blank screen reads as "broken." Slack, Dropbox, and Notion turn first-run empty screens into a friendly explanation plus one clear next action. A cue at the exact moment of need beats a forced tutorial up front.
 
-The takeaway: find your user's biggest win and engineer a peak there. A first order, a first published post, a first invoice paid — wrap it in a plain-language celebration like *"You just received your first order!"* That turns a database row into a memory and a point of pride they will mention to others. That last part is word of mouth, the reflective channel paying you back.
+The takeaway: find your user's biggest win and engineer a peak there. A first order, a first published post, a first invoice paid - wrap it in a plain-language celebration like *"You just received your first order!"* That turns a database row into a memory and a point of pride they will mention to others. That last part is word of mouth, the reflective channel paying you back.
 
 ## Design for the real emotional job
 
-Emotion also shapes *what* you build. Clayton Christensen's **Jobs to Be Done** theory says people "hire" a product to make progress in a situation — and that progress is often emotional.
+Emotion also shapes *what* you build. Clayton Christensen's **Jobs to Be Done** theory says people "hire" a product to make progress in a situation - and that progress is often emotional.
 
-**The milkshake story.** A restaurant chain tried to boost milkshake sales by surveying buyers: thicker? cheaper? Nothing moved. Then researchers asked a different question — what *job* was the shake hired for? About 40% were bought early in the morning by lone commuters facing a long, boring drive. The real job: fill a dull commute, keep one hand busy, and stave off hunger until mid-morning. The shake won because it was thick (slow to drink), one-handed, and filling — beating bananas, bagels, and donuts. People do not buy features. They hire products to make progress and to feel a certain way.
+**The milkshake story.** A restaurant chain tried to boost milkshake sales by surveying buyers: thicker? cheaper? Nothing moved. Then researchers asked a different question - what *job* was the shake hired for? About 40% were bought early in the morning by lone commuters facing a long, boring drive. The real job: fill a dull commute, keep one hand busy, and stave off hunger until mid-morning. The shake won because it was thick (slow to drink), one-handed, and filling - beating bananas, bagels, and donuts. People do not buy features. They hire products to make progress and to feel a certain way.
 
 The lesson: when a user asks for a button in a specific spot, the request is the surface. Design for the real job and the real feeling behind it.
 
@@ -188,4 +188,4 @@ The lesson: when a user asks for a button in a specific spot, the request is the
 
 If you remember one thing, make it this: **usability earns the right to delight, and emotion is what people actually carry away.** A product that makes someone feel capable and proud will be remembered and recommended long after they have forgotten its feature list.
 
-The deeper question this opens up is *who* you are designing those feelings for. Confidence for a nervous first-time user and confidence for a seasoned power user look completely different. That is where emotional design hands off to empathy and user research — learning the specific person on the other side of the screen, so the peak you design lands on the moment that actually matters to them.
+The deeper question this opens up is *who* you are designing those feelings for. Confidence for a nervous first-time user and confidence for a seasoned power user look completely different. That is where emotional design hands off to empathy and user research - learning the specific person on the other side of the screen, so the peak you design lands on the moment that actually matters to them.

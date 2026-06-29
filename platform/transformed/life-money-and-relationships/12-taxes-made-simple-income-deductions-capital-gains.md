@@ -100,9 +100,9 @@ Here are the slabs for **FY 2025-26 (AY 2026-27)**. These reset every year, so a
 | ₹4 – 8 lakh | 5% | ₹2.5 – 5 lakh | 5% |
 | ₹8 – 12 lakh | 10% | ₹5 – 10 lakh | 20% |
 | ₹12 – 16 lakh | 15% | Above ₹10 lakh | 30% |
-| ₹16 – 20 lakh | 20% | — | — |
-| ₹20 – 24 lakh | 25% | — | — |
-| Above ₹24 lakh | 30% | — | — |
+| ₹16 – 20 lakh | 20% | - | - |
+| ₹20 – 24 lakh | 25% | - | - |
+| Above ₹24 lakh | 30% | - | - |
 
 Two extra rules sit on top:
 

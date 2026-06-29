@@ -112,9 +112,9 @@ At the back of your eye sits the **retina**, a light-sensitive layer with two ki
 
 Here is the part that unlocks everything. You have **three** types of cone, each tuned to a different slice of the spectrum:
 
-- **S cones** — most sensitive to short wavelengths (loosely "blue")
-- **M cones** — most sensitive to medium wavelengths (loosely "green")
-- **L cones** — most sensitive to long wavelengths (loosely "red")
+- **S cones** - most sensitive to short wavelengths (loosely "blue")
+- **M cones** - most sensitive to medium wavelengths (loosely "green")
+- **L cones** - most sensitive to long wavelengths (loosely "red")
 
 (The blue/green/red labels are rough. The "red" L cone actually peaks in the yellow-green range. S/M/L is the accurate naming.)
 
@@ -129,9 +129,9 @@ This is the whole game. Any two completely different light recipes that produce 
 
 There used to be two rival theories of color vision. Modern science says both are right; they just describe different stages of the same pipeline.
 
-**Stage one — three cones capture the light.** This is the survey above. It explains color *matching*: how two different stimuli can end up looking the same.
+**Stage one - three cones capture the light.** This is the survey above. It explains color *matching*: how two different stimuli can end up looking the same.
 
-**Stage two — the brain rewires those signals into three opposing channels:**
+**Stage two - the brain rewires those signals into three opposing channels:**
 
 - Red versus Green
 - Blue versus Yellow

@@ -182,17 +182,17 @@ Here's a complete monthly P&L for a small software company doing $100,000 in rev
 
 | Line | Amount | Math / Margin |
 |---|---|---|
-| Revenue (top line) | $100,000 | — |
-| − COGS (hosting, support) | $30,000 | — |
+| Revenue (top line) | $100,000 | - |
+| − COGS (hosting, support) | $30,000 | - |
 | **Gross Profit** | **$70,000** | Gross Margin = 70% |
-| − Sales & Marketing | $25,000 | — |
-| − R&D | $15,000 | — |
-| − G&A | $10,000 | — |
+| − Sales & Marketing | $25,000 | - |
+| − R&D | $15,000 | - |
+| − G&A | $10,000 | - |
 | **Operating Income (EBIT)** | **$20,000** | Operating Margin = 20% |
 | + Depreciation & Amortization | $3,000 | added back |
 | **EBITDA** | **$23,000** | EBITDA Margin = 23% |
-| − Interest | $2,000 | — |
-| − Taxes | $4,000 | — |
+| − Interest | $2,000 | - |
+| − Taxes | $4,000 | - |
 | **Net Income (bottom line)** | **$14,000** | Net Margin = 14% |
 
 Walk the math:

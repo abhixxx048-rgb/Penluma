@@ -89,7 +89,7 @@ You can do better by reading the **decline reason**:
 
 Payment processors like Stripe offer **smart retries** that time attempts using historical success data and the customer's time zone, adding another **10-15%** on top of a fixed schedule. If your processor does this, lean on it. Just remember the processor handles only the *charging*. It does not handle your warning emails, your grace period, or your recovery page. That part is yours.
 
-## Pause, don't cancel — use a grace window
+## Pause, don't cancel - use a grace window
 
 The moment a payment fails, your instinct might be to flip the account off. Resist it.
 
@@ -97,11 +97,11 @@ Give failing accounts a **grace period of 7-14 days** with a clear, calm banner:
 
 A useful way to think about the account is as a small state machine:
 
-1. **Active** — everything's fine.
-2. **Past due** — a payment failed; retries and dunning emails are running.
-3. **Grace / paused** — soft suspension, read-only, prominent recovery banner.
-4. **Suspended** — hard block, but with an obvious one-click path back.
-5. **Cancelled** — the very last resort, only after the full sequence has run.
+1. **Active** - everything's fine.
+2. **Past due** - a payment failed; retries and dunning emails are running.
+3. **Grace / paused** - soft suspension, read-only, prominent recovery banner.
+4. **Suspended** - hard block, but with an obvious one-click path back.
+5. **Cancelled** - the very last resort, only after the full sequence has run.
 
 At every step there's a recovery edge back to **Active** the instant the card is updated or a retry succeeds. A common mistake is a grace period of just **one day**, which is far too short for a busy person to even notice the email. Seven to fourteen days is the norm for a reason.
 
@@ -111,10 +111,10 @@ Retries work in the background. Emails bring the human into the loop. The two to
 
 A proven sequence is **four to seven emails over about 30 days**, escalating gently in tone:
 
-- **Day 0** — friendly: "Your payment didn't go through, probably just an expired card."
-- **Day 3** — helpful reminder.
-- **Day 5** — a little more urgency.
-- **Day 7** — clear warning that access will be limited soon.
+- **Day 0** - friendly: "Your payment didn't go through, probably just an expired card."
+- **Day 3** - helpful reminder.
+- **Day 5** - a little more urgency.
+- **Day 7** - clear warning that access will be limited soon.
 
 The non-negotiable detail: **every email contains a single one-click link** straight to a page where they can update their card. No login maze, no hunting through settings. The harder it is to pay you, the more revenue you lose to pure friction.
 

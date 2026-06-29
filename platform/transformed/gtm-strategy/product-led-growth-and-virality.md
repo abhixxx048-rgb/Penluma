@@ -94,9 +94,9 @@ A classic mistake is to build an onboarding checklist that ends at setup. "You p
 
 Think of onboarding in three stages:
 
-1. **Setup** — the first configuration to get going.
-2. **Aha** — the first real taste of value (the order lands, the report generates, the meeting gets booked).
-3. **Habit** — value happening again and again, so the product becomes part of the routine.
+1. **Setup** - the first configuration to get going.
+2. **Aha** - the first real taste of value (the order lands, the report generates, the meeting gets booked).
+3. **Habit** - value happening again and again, so the product becomes part of the routine.
 
 Most products engineer stage one beautifully and forget the other two. The fix is to make sure your onboarding pushes people all the way to a genuine aha, then hands them off to something that brings them back.
 
@@ -126,9 +126,9 @@ If k is above 1, every cohort spawns a bigger one and growth sustains itself wit
 
 Not all virality is referral programs. There are three broad types:
 
-- **Inherent virality** — using the product naturally exposes other people to it, with no extra effort. The classic example is the old Hotmail signature: *"PS: I love you. Get your free email at Hotmail."* Every email was a tiny ad.
-- **Referral** — you deliberately ask users to invite others, often with a reward.
-- **Word of mouth** — people talk about you because you are good.
+- **Inherent virality** - using the product naturally exposes other people to it, with no extra effort. The classic example is the old Hotmail signature: *"PS: I love you. Get your free email at Hotmail."* Every email was a tiny ad.
+- **Referral** - you deliberately ask users to invite others, often with a reward.
+- **Word of mouth** - people talk about you because you are good.
 
 Inherent virality is the cheapest of the three because it requires **zero behavior change**. The product does the spreading just by being used.
 
@@ -140,7 +140,7 @@ This is the single most accessible viral move for many products, because:
 
 - It rides on traffic you already have.
 - It costs the user nothing and changes none of their behavior.
-- It doubles as a clean upgrade reason: **"Remove the badge — go premium."** That is exactly how Shopify, Wix, and countless others monetize it.
+- It doubles as a clean upgrade reason: **"Remove the badge - go premium."** That is exactly how Shopify, Wix, and countless others monetize it.
 
 If you run any surface that your users' own audiences see, a storefront, an invoice, an exported file, a shared link, that surface is free advertising you are probably wasting right now.
 
@@ -164,9 +164,9 @@ A few myths cause real damage, so let us clear them up.
 
 This is where a lot of money is won or lost, so here is the plain comparison.
 
-- **Freemium** — a free plan that lasts forever, with paid upgrades. Typically converts around **2 to 5%**. You carry roughly **20 to 50 free users per paying one**.
-- **Opt-in free trial** (no card) — full product for a limited time, then it ends. Converts around **8 to 22%** depending on the product.
-- **Reverse trial** — you start *every* new user on the full premium plan for a fixed window, then automatically downgrade them to a limited state if they do not pay.
+- **Freemium** - a free plan that lasts forever, with paid upgrades. Typically converts around **2 to 5%**. You carry roughly **20 to 50 free users per paying one**.
+- **Opt-in free trial** (no card) - full product for a limited time, then it ends. Converts around **8 to 22%** depending on the product.
+- **Reverse trial** - you start *every* new user on the full premium plan for a fixed window, then automatically downgrade them to a limited state if they do not pay.
 
 The reverse trial is the quiet winner for many low-priced, self-serve tools. People experience the best version first, build habits around premium features, and feel the loss when the trial ends. Conservative estimates put it around **8 to 15%**, with optimistic best-case profiles claiming higher. Either way, treat any benchmark you read as a hypothesis to test against your own numbers, never a forecast.
 

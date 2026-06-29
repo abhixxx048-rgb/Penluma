@@ -153,7 +153,7 @@ A **VPC endpoint** lets resources in your VPC reach AWS services privately, with
 
 - Works for **only two services: S3 and DynamoDB**.
 - Works by adding an entry to your **route table**.
-- Is **free** — no hourly or data charges.
+- Is **free** - no hourly or data charges.
 
 **Interface VPC endpoint (AWS PrivateLink)**
 
@@ -179,11 +179,11 @@ A subnet is **public only when its route table has a route to an Internet Gatewa
 And remember the scope rules while you are here:
 
 - A **VPC spans an entire Region.**
-- A **subnet lives in exactly one Availability Zone** — never two.
+- A **subnet lives in exactly one Availability Zone** - never two.
 
 For high availability you create *multiple* subnets in *different* AZs and spread resources across them. A single subnet can never span two AZs, so if a teammate claims it can, they are mistaken.
 
-One last role to keep straight: a **route table decides where traffic goes** (to an Internet Gateway, a NAT Gateway, a peer, or local). It does not decide *whether* traffic is allowed — that is the firewalls' job. Direction versus permission is the classic mix-up.
+One last role to keep straight: a **route table decides where traffic goes** (to an Internet Gateway, a NAT Gateway, a peer, or local). It does not decide *whether* traffic is allowed - that is the firewalls' job. Direction versus permission is the classic mix-up.
 
 ## Common misconceptions
 
@@ -206,10 +206,10 @@ When you hit a VPC question on the exam, work it in this order:
 5. **Match the endpoint.** S3 or DynamoDB → Gateway (free). Anything else → Interface (PrivateLink).
 6. **Remember scope.** VPC = Region. Subnet = one AZ. Public subnet = has a route to an Internet Gateway.
 
-Memorize the two short lists — the **Gateway endpoint list (S3, DynamoDB)** and the **stateful/stateless pairing (security group / network ACL)** — and you have neutralized most of the traps.
+Memorize the two short lists - the **Gateway endpoint list (S3, DynamoDB)** and the **stateful/stateless pairing (security group / network ACL)** - and you have neutralized most of the traps.
 
 ## Conclusion
 
 If you take one thing away, take this: **every VPC component has exactly one job, and the exam tests whether you can name it under pressure.** The Internet Gateway is the front door, the NAT Gateway is the staff exit, the security group hugs the instance, the network ACL guards the subnet, and the route table decides where everyone goes.
 
-Once these clicks, a natural next question appears: how do you watch all this traffic and prove your network is actually behaving the way you designed it? That is where VPC Flow Logs, CloudWatch, and the AWS shared responsibility model come in — and they are the perfect next stop on your CLF-C02 journey.
+Once these clicks, a natural next question appears: how do you watch all this traffic and prove your network is actually behaving the way you designed it? That is where VPC Flow Logs, CloudWatch, and the AWS shared responsibility model come in - and they are the perfect next stop on your CLF-C02 journey.

@@ -76,11 +76,11 @@ The product they use today is just their current best guess. If something does t
 
 You don't find jobs by asking people "what do you want?" People are surprisingly bad at answering that. You find jobs by watching for **signals of struggle**. These are gold:
 
-- **Workarounds** (sticky notes, spreadsheets, duct tape) — the official tool isn't doing the job, so people patch it themselves. This is the single strongest signal there is.
-- **Complaints** ("I hate that I have to...") — a job is being done badly, and the pain is named for you.
-- **Repeated effort** (doing the same fiddly thing every week) — a job done often means high value if you remove the friction.
-- **"Good enough" sighs** (people quietly settling) — an underserved job, tolerated but not solved.
-- **Money and time spent** (hiring help, buying gadgets) — proof the job matters enough to pay for.
+- **Workarounds** (sticky notes, spreadsheets, duct tape) - the official tool isn't doing the job, so people patch it themselves. This is the single strongest signal there is.
+- **Complaints** ("I hate that I have to...") - a job is being done badly, and the pain is named for you.
+- **Repeated effort** (doing the same fiddly thing every week) - a job done often means high value if you remove the friction.
+- **"Good enough" sighs** (people quietly settling) - an underserved job, tolerated but not solved.
+- **Money and time spent** (hiring help, buying gadgets) - proof the job matters enough to pay for.
 
 Two terms to lock in:
 
@@ -118,16 +118,16 @@ Write down where things stand today. Then write where the person *wishes* they s
 
 **"They need an app!"** Reality: jumping straight to a solution before naming the job and the gap is the most common mistake there is. If you lead with the solution, you'll build something nobody hired. Always go job → gap → *then* brainstorm fixes.
 
-**"If the problem were real, someone would've solved it already."** Reality: most good gaps have existed for years. What changes is the *timing* — a new tool, a falling cost, a shift in behavior that suddenly makes the gap solvable.
+**"If the problem were real, someone would've solved it already."** Reality: most good gaps have existed for years. What changes is the *timing* - a new tool, a falling cost, a shift in behavior that suddenly makes the gap solvable.
 
 ## The four-part filter: is this opportunity real?
 
 Not every gap is worth chasing. Run each idea through four questions. If you can't answer one, that's your next thing to research, not a reason to quit.
 
-1. **Problem** — what's the struggle, stated plainly? Can you describe it in one sentence a stranger would understand?
-2. **Who** — exactly who has it? Aim for a specific group ("freelance bakers"), not "everyone."
-3. **How big** — how many people, how painful, how often? Frequent plus painful plus many people equals strong.
-4. **Why now** — what changed that makes this solvable or valuable today? A new trend, tool, cost drop, or rule that opens a door.
+1. **Problem** - what's the struggle, stated plainly? Can you describe it in one sentence a stranger would understand?
+2. **Who** - exactly who has it? Aim for a specific group ("freelance bakers"), not "everyone."
+3. **How big** - how many people, how painful, how often? Frequent plus painful plus many people equals strong.
+4. **Why now** - what changed that makes this solvable or valuable today? A new trend, tool, cost drop, or rule that opens a door.
 
 That last one, **"why now,"** is the question beginners skip and experts obsess over. Most good gaps existed for years. The real question is what recently shifted to make solving it possible or urgent.
 
@@ -145,7 +145,7 @@ Use this exact sentence shape:
 
 **An example.** "Because more small shops now sell online (trend), *looking professional cheaply* becomes more valuable (effect), so a tool that turns a phone photo into a clean product listing is worth pursuing (opportunity)." Notice the chain: a real-world change → a specific need → a concrete idea. That chain is what makes the idea persuasive when you say it out loud.
 
-This is also how you sound sharp in conversation. Instead of "AI is big these days," you offer a thesis: "Because AI now writes decent first drafts, the bottleneck shifts to *editing judgment* — so people who can quickly tell good from bad become more valuable." Same fact, but you've connected it and made a point. That's critical thinking made visible.
+This is also how you sound sharp in conversation. Instead of "AI is big these days," you offer a thesis: "Because AI now writes decent first drafts, the bottleneck shifts to *editing judgment* - so people who can quickly tell good from bad become more valuable." Same fact, but you've connected it and made a point. That's critical thinking made visible.
 
 ## How to use this: one observation, end to end
 
@@ -164,7 +164,7 @@ You started with a neighbor's mild annoyance and ended with a defined, defensibl
 
 - **Job-finder.** Take one product you used today (an app, a tool, a snack). Fill in: "I hired ___ to ___." Then name one thing that could do that job better.
 - **Gap pair.** Pick a situation that annoyed you this week. Write its current state and desired state in two lines. Name the gap in one phrase.
-- **Run the filter.** Take one entry from your friction log and answer all four questions. Mark the answer you're least sure of — that's your next research step.
+- **Run the filter.** Take one entry from your friction log and answer all four questions. Mark the answer you're least sure of - that's your next research step.
 - **Write a thesis.** Pick any trend you've heard about lately and fill in the sentence shape. Say it out loud once.
 
 ## Conclusion

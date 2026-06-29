@@ -95,9 +95,9 @@ The **log** is an **append-only** list of **entries**. Append-only means you onl
 
 Each log entry carries three things:
 
-- **An index** — the entry's position: 1, 2, 3, 4. Think of it as the line number. It defines the order.
-- **A command** — the actual instruction for the state machine, like `SET x 3`.
-- **A term** (Raft's word), also called an **epoch** (ZooKeeper) or **ballot** (Paxos) — a number telling you which leadership period created this entry. More on that soon.
+- **An index** - the entry's position: 1, 2, 3, 4. Think of it as the line number. It defines the order.
+- **A command** - the actual instruction for the state machine, like `SET x 3`.
+- **A term** (Raft's word), also called an **epoch** (ZooKeeper) or **ballot** (Paxos) - a number telling you which leadership period created this entry. More on that soon.
 
 Here is one server's log. Top number is the term, bottom is the command, and the index runs left to right:
 
@@ -117,14 +117,14 @@ Here is one server's log. Top number is the term, bottom is the command, and the
 
 This distinction trips people up constantly, so let's be precise. An entry passes through milestones on its way to being real.
 
-1. **Appended** — the entry exists in some server's log, but might still be lost or overwritten. Not safe yet.
-2. **Committed** — the entry has been safely stored on a **majority** of servers. Majority means more than half: for 5 servers, at least 3. Once committed, the entry is **permanent** and can never be lost or changed, because any future majority must overlap with this one on at least one server that still holds the entry. Committed means *this decision is final*.
-3. **Applied** — the command has actually been **run against the local state machine**, changing the data. Applied means *this decision has taken effect on my copy*.
+1. **Appended** - the entry exists in some server's log, but might still be lost or overwritten. Not safe yet.
+2. **Committed** - the entry has been safely stored on a **majority** of servers. Majority means more than half: for 5 servers, at least 3. Once committed, the entry is **permanent** and can never be lost or changed, because any future majority must overlap with this one on at least one server that still holds the entry. Committed means *this decision is final*.
+3. **Applied** - the command has actually been **run against the local state machine**, changing the data. Applied means *this decision has taken effect on my copy*.
 
 Two per-server fields track this (these are the real Raft names):
 
-- `commitIndex` — the highest index known to be **committed**.
-- `lastApplied` — the highest index this server has actually **applied**.
+- `commitIndex` - the highest index known to be **committed**.
+- `lastApplied` - the highest index this server has actually **applied**.
 
 The rule every server runs in a loop is simply: whenever `commitIndex > lastApplied`, increment `lastApplied` and apply that next entry. So "applied" always chases "committed." **Commit is the agreement; apply is the side effect.**
 
@@ -199,10 +199,10 @@ To make this concrete, here are the two messages a leader-based system uses. We 
 
 **`AppendEntries`** replicates log entries and doubles as a heartbeat. When sent with an empty entry list, it just says "I'm still alive, don't start an election." Its key fields:
 
-- `term` — the leader's current term, so a follower can reject a stale leader.
-- `prevLogIndex` and `prevLogTerm` — the index and term of the entry *immediately before* the new ones. Together these form the **consistency check** (more below).
-- `entries[]` — the new entries to store (empty for a heartbeat).
-- `leaderCommit` — the leader's commit index, so the follower learns which entries are now safe to apply.
+- `term` - the leader's current term, so a follower can reject a stale leader.
+- `prevLogIndex` and `prevLogTerm` - the index and term of the entry *immediately before* the new ones. Together these form the **consistency check** (more below).
+- `entries[]` - the new entries to store (empty for a heartbeat).
+- `leaderCommit` - the leader's commit index, so the follower learns which entries are now safe to apply.
 
 **`RequestVote`** is sent by a **candidate** during an election. It carries the candidate's new `term`, plus `lastLogIndex` and `lastLogTerm`, which prove the candidate's log is "up to date" enough to lead.
 
@@ -218,8 +218,8 @@ So matching just one `(index, term)` pair proves the entire history up to that p
 
 Here is how the consistency check enforces it. Every `AppendEntries` says, in effect, "before these new entries, you should already have an entry at `prevLogIndex` with term `prevLogTerm`." The follower checks: do I have that exact entry?
 
-- **Yes** — our histories match up to that point. Accept the new entries.
-- **No** — **reject**. The leader then steps `prevLogIndex` back one and retries, walking backward until it finds the last point where the two logs agree. From there it ships everything forward, and the follower **overwrites** any conflicting entries.
+- **Yes** - our histories match up to that point. Accept the new entries.
+- **No** - **reject**. The leader then steps `prevLogIndex` back one and retries, walking backward until it finds the last point where the two logs agree. From there it ships everything forward, and the follower **overwrites** any conflicting entries.
 
 ```
   BEFORE REPAIR

@@ -65,8 +65,8 @@ This points to a deeper rule about all investing: **you are either an owner or a
 
 A **stock exchange** is simply a marketplace where buyers and sellers of shares meet. India has two main ones:
 
-- **NSE** — the National Stock Exchange
-- **BSE** — formerly the Bombay Stock Exchange, now officially "BSE Limited," and Asia's oldest exchange
+- **NSE** - the National Stock Exchange
+- **BSE** - formerly the Bombay Stock Exchange, now officially "BSE Limited," and Asia's oldest exchange
 
 You don't walk into a building. It all happens electronically through a broker's app. A share's price moves second by second based on what people are willing to pay. Pure supply and demand.
 
@@ -92,8 +92,8 @@ The IPO is like buying a brand-new car from the showroom: the cash goes to the m
 
 There are two ways a share pays you.
 
-1. **Capital appreciation** — the price rises, so your slice is worth more. You only realise this gain when you sell.
-2. **Dividends** — the company hands you some of its profit in cash while you keep holding the share.
+1. **Capital appreciation** - the price rises, so your slice is worth more. You only realise this gain when you sell.
+2. **Dividends** - the company hands you some of its profit in cash while you keep holding the share.
 
 Your **total return = price appreciation + dividends**. Over decades, reinvested dividends turn out to be a surprisingly large chunk of equity returns, so don't dismiss them.
 

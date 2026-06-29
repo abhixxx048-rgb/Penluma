@@ -109,10 +109,10 @@ Be nice first. Punish a betrayal once. Forgive the moment they cooperate again.
 
 The strongest strategies shared four traits:
 
-- **Nice** — never defect first. Extend trust at the start of a relationship.
-- **Retaliatory** — hit back immediately when cheated. Do not be a pushover.
-- **Forgiving** — return to cooperation as soon as they do. Do not poison a recoverable relationship with a grudge.
-- **Clear** — be easy to read, so partners can learn to trust you.
+- **Nice** - never defect first. Extend trust at the start of a relationship.
+- **Retaliatory** - hit back immediately when cheated. Do not be a pushover.
+- **Forgiving** - return to cooperation as soon as they do. Do not poison a recoverable relationship with a grudge.
+- **Clear** - be easy to read, so partners can learn to trust you.
 
 A small business with a long-term supplier is Tit-for-Tat in a suit and tie. Pay on time and be fair (nice). If they shortchange you on a shipment, raise it firmly and adjust terms (retaliatory). When they fix it, return to the normal relationship rather than punishing forever (forgiving). Keep your own dealings consistent so they know what to expect (clear). This is exactly why reputation is one of the most valuable assets in business.
 
@@ -159,12 +159,12 @@ Knowing your own default settings is the first step to overriding them.
 
 The most expensive biases are the self-flattering ones you never notice. Watch for these:
 
-- **Confirmation bias** — hunting for evidence that supports what you already believe. The cure is to ask, on purpose, "what would change my mind?" and go find it.
-- **Sunk cost fallacy** — throwing more money or time after a failing project because of what you *already* spent. The spent resources are gone either way.
-- **Overconfidence** — being more certain than your accuracy warrants, especially giving one number when you should give a range.
-- **Planning fallacy** — underestimating how long things take, how much they cost, and what could go wrong.
-- **Hindsight bias** — "I knew it all along." After an event we rewrite our memory, which destroys our ability to learn.
-- **Resulting** — judging the *quality of a decision* by the *quality of its outcome*. Annie Duke's term, and maybe the most important reframe in the whole discipline.
+- **Confirmation bias** - hunting for evidence that supports what you already believe. The cure is to ask, on purpose, "what would change my mind?" and go find it.
+- **Sunk cost fallacy** - throwing more money or time after a failing project because of what you *already* spent. The spent resources are gone either way.
+- **Overconfidence** - being more certain than your accuracy warrants, especially giving one number when you should give a range.
+- **Planning fallacy** - underestimating how long things take, how much they cost, and what could go wrong.
+- **Hindsight bias** - "I knew it all along." After an event we rewrite our memory, which destroys our ability to learn.
+- **Resulting** - judging the *quality of a decision* by the *quality of its outcome*. Annie Duke's term, and maybe the most important reframe in the whole discipline.
 
 Here is the sunk cost test in action. You have spent two years and your savings building a product nobody is buying. The honest question is not "look how much I have invested." It is: *"Knowing what I know now, would I start this project today?"* If the answer is no, continuing is throwing good money after bad. The two years are already gone whichever way you choose.
 

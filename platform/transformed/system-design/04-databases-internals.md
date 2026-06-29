@@ -178,10 +178,10 @@ As a bonus, that same log is how databases ship changes to replicas and how they
 
 ACID is the promise a transactional database makes. Four letters:
 
-- **Atomicity** — a transaction is all-or-nothing. Transfer money and the system crashes halfway? Either both the debit and credit happen, or neither does.
-- **Consistency** — the database moves from one valid state to another, respecting the rules you declared (foreign keys, uniqueness, checks). Part of this is your job; the database enforces the rules you give it.
-- **Isolation** — concurrent transactions do not corrupt each other's view of the world. This is the slippery one, covered next.
-- **Durability** — once committed, it survives a crash. That is the WAL.
+- **Atomicity** - a transaction is all-or-nothing. Transfer money and the system crashes halfway? Either both the debit and credit happen, or neither does.
+- **Consistency** - the database moves from one valid state to another, respecting the rules you declared (foreign keys, uniqueness, checks). Part of this is your job; the database enforces the rules you give it.
+- **Isolation** - concurrent transactions do not corrupt each other's view of the world. This is the slippery one, covered next.
+- **Durability** - once committed, it survives a crash. That is the WAL.
 
 One warning that trips people up constantly: the **"C" in ACID is not the "C" in CAP.** ACID consistency is about your declared rules. CAP consistency is about replicas agreeing with each other. Different ideas, same unfortunate word.
 
@@ -189,11 +189,11 @@ One warning that trips people up constantly: the **"C" in ACID is not the "C" in
 
 When many transactions run at once, things can go wrong in specific, named ways. Knowing these names lets you reason about correctness instead of hoping.
 
-- **Dirty read** — you read a change another transaction made but has not committed, and then it rolls back. You read a value that never truly existed.
-- **Non-repeatable read** — you read a row, someone else updates and commits it, you read again in the same transaction and get a different value.
-- **Phantom read** — you run a query that returns five rows, someone inserts a sixth matching row, you rerun the query and now see six. A new row appeared inside your range.
-- **Lost update** — you and I both read `count = 10`, both write `11`. One of those updates vanishes. This is the classic read-modify-write bug.
-- **Write skew** — the subtle one. You and I each read an overlapping set of data, each check a rule that still holds, then each change a *different* row. Individually fine; together we broke the rule. Example: two doctors each check "at least one doctor is on call" (true), each takes themselves off call, and now nobody is on call.
+- **Dirty read** - you read a change another transaction made but has not committed, and then it rolls back. You read a value that never truly existed.
+- **Non-repeatable read** - you read a row, someone else updates and commits it, you read again in the same transaction and get a different value.
+- **Phantom read** - you run a query that returns five rows, someone inserts a sixth matching row, you rerun the query and now see six. A new row appeared inside your range.
+- **Lost update** - you and I both read `count = 10`, both write `11`. One of those updates vanishes. This is the classic read-modify-write bug.
+- **Write skew** - the subtle one. You and I each read an overlapping set of data, each check a rule that still holds, then each change a *different* row. Individually fine; together we broke the rule. Example: two doctors each check "at least one doctor is on call" (true), each takes themselves off call, and now nobody is on call.
 
 Isolation levels are defined by which of these they forbid:
 
@@ -244,10 +244,10 @@ SQL tells the database *what* you want; the **query planner** decides *how* to g
 
 `EXPLAIN` shows you the plan it chose. The node names you will see most:
 
-- **Seq Scan** — read the whole table. Fine for small tables; a red flag on a big table with a selective filter, meaning a missing index.
-- **Index Scan** — use an index, then fetch the matching rows.
-- **Index Only Scan** — the index covered everything; no table fetch needed.
-- **Nested Loop / Hash Join / Merge Join** — three ways to join tables.
+- **Seq Scan** - read the whole table. Fine for small tables; a red flag on a big table with a selective filter, meaning a missing index.
+- **Index Scan** - use an index, then fetch the matching rows.
+- **Index Only Scan** - the index covered everything; no table fetch needed.
+- **Nested Loop / Hash Join / Merge Join** - three ways to join tables.
 
 ```
 EXPLAIN ANALYZE

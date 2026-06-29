@@ -106,9 +106,9 @@ The single trickiest trap is treating a smile as a signal. It isn't.
 
 A real signal is **commitment**: the person gives up something they value. That comes in three currencies:
 
-- **Time** — they agree to a real follow-up meeting.
-- **Reputation** — they introduce you to their boss or peers.
-- **Money** — they put down a deposit or pre-order.
+- **Time** - they agree to a real follow-up meeting.
+- **Reputation** - they introduce you to their boss or peers.
+- **Money** - they put down a deposit or pre-order.
 
 A compliment is free. Commitment costs something. Only the second one means anything.
 

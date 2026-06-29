@@ -77,13 +77,13 @@ For a physical cake, marginal cost is mostly ingredients. Making one more always
 
 ### The U-shaped curve: why bigger is better, until it isn't
 
-Divide total cost by the number of units and you get **average total cost** — the cost per unit. As you make more, the fixed cost spreads over more units, so cost per unit falls.
+Divide total cost by the number of units and you get **average total cost** - the cost per unit. As you make more, the fixed cost spreads over more units, so cost per unit falls.
 
 But push past your capacity (overtime pay, crowded machines, rushed mistakes) and cost per unit climbs again. Plot it and you get the famous **U-shaped cost curve**: expensive when you make too little, cheapest in a sweet spot in the middle, expensive again when you overstretch.
 
 The bottom of that U has a name: **minimum efficient scale**, the smallest output where your cost per unit bottoms out.
 
-When that low-cost stretch runs wide, you get **economies of scale** — bulk discounts on materials, dedicated machinery, research costs spread over millions of units. Walmart and Amazon are the textbook cases. Their sheer volume lets them buy and ship cheaper than anyone, which lets them charge less, which brings more volume. A reinforcing loop that's brutally hard to break into.
+When that low-cost stretch runs wide, you get **economies of scale** - bulk discounts on materials, dedicated machinery, research costs spread over millions of units. Walmart and Amazon are the textbook cases. Their sheer volume lets them buy and ship cheaper than anyone, which lets them charge less, which brings more volume. A reinforcing loop that's brutally hard to break into.
 
 But bigger isn't infinitely better. Past a point you hit **diseconomies of scale**: bureaucracy, slow decisions, layers of managers who don't talk to each other. The chain is real. More people means more coordination, which means slower decisions and duplicated work, which pushes cost per unit *back up* despite the size.
 
@@ -151,9 +151,9 @@ Set your price relative to rivals: match them, undercut them, or charge a premiu
 
 Charging different buyers different prices for nearly the same thing. It sounds unfair, but it lets a firm serve both rich and poor customers profitably. There are three flavours:
 
-- **First degree** — each buyer's personal maximum. Haggling at a bazaar, or some AI-set personalised prices.
-- **Second degree** — by quantity or version. Bulk discounts, or software tiers like Basic, Pro, and Enterprise.
-- **Third degree** — by identifiable group. Student and senior discounts, regional pricing, airline business-versus-leisure fares.
+- **First degree** - each buyer's personal maximum. Haggling at a bazaar, or some AI-set personalised prices.
+- **Second degree** - by quantity or version. Bulk discounts, or software tiers like Basic, Pro, and Enterprise.
+- **Third degree** - by identifiable group. Student and senior discounts, regional pricing, airline business-versus-leisure fares.
 
 Airlines are the masters. The same seat can sell at dozens of fares depending on when you book and whether it's refundable. But price discrimination only works if the firm can do two things: **segment** buyers, and **prevent resale**. If a student could resell their cheap ticket to a businessman, the whole scheme collapses. That resale loophole is called **arbitrage**, and blocking it (region-locked software, non-transferable tickets) is essential.
 
@@ -173,11 +173,11 @@ People happily accept dynamic pricing for flights, hotels, and concert tickets, 
 
 So you've found a profitable business. Now the hard part: keeping it. A **moat** is a durable structural advantage that protects a firm's profits from competitors, a term Warren Buffett popularised in his 1990s shareholder letters. There are five classic kinds.
 
-- **Network effects** — the product gets more valuable as more people use it. Visa, social networks, marketplaces. Each new user pulls in the next.
-- **Switching costs** — painful or expensive to leave. Enterprise software your whole staff is trained on, or a bank holding all your records.
-- **Cost or scale advantage** — you simply make or deliver it cheaper. Walmart, Amazon, GEICO's direct-to-customer model.
-- **Intangible assets** — brands, patents, regulatory licences. The Coca-Cola name, a pharma company's 20-year drug patent.
-- **Efficient scale** — a market just big enough for one or two players, so nobody else bothers entering. A pipeline, or a regional utility.
+- **Network effects** - the product gets more valuable as more people use it. Visa, social networks, marketplaces. Each new user pulls in the next.
+- **Switching costs** - painful or expensive to leave. Enterprise software your whole staff is trained on, or a bank holding all your records.
+- **Cost or scale advantage** - you simply make or deliver it cheaper. Walmart, Amazon, GEICO's direct-to-customer model.
+- **Intangible assets** - brands, patents, regulatory licences. The Coca-Cola name, a pharma company's 20-year drug patent.
+- **Efficient scale** - a market just big enough for one or two players, so nobody else bothers entering. A pipeline, or a regional utility.
 
 ### Why competition eats profit alive
 

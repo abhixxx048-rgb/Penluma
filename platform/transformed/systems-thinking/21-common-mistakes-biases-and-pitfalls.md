@@ -92,10 +92,10 @@ His famous **Red Bead Experiment** makes this physical. Workers scoop 50 beads w
 
 The **iceberg model** describes four levels of reality, from visible to hidden:
 
-- **Events** — "What just happened?" (the visible 10%)
-- **Patterns** — "What keeps happening?"
-- **Structure** — "What causes the pattern?"
-- **Mental models** — "What beliefs hold it in place?"
+- **Events** - "What just happened?" (the visible 10%)
+- **Patterns** - "What keeps happening?"
+- **Structure** - "What causes the pattern?"
+- **Mental models** - "What beliefs hold it in place?"
 
 Most management lives at the top: reactive firefighting, jumping from one crisis to the next. As Donella Meadows put it, "The behavior of a system is its performance over time." Stay stuck at the event level and the same crises keep returning, because you keep treating symptoms.
 

@@ -55,8 +55,8 @@ There is a classic phrasing worth burning into memory:
 
 That is the whole model in one line. The hard part is that the words "of" and "in" are easy to flip under pressure, so anchor them with a plain-language version:
 
-- **AWS protects the cloud itself** — the buildings, the hardware, the network cables, the hypervisor, and the host software that runs managed services.
-- **You protect what you do inside it** — your data, who can access it, and how you configure things.
+- **AWS protects the cloud itself** - the buildings, the hardware, the network cables, the hypervisor, and the host software that runs managed services.
+- **You protect what you do inside it** - your data, who can access it, and how you configure things.
 
 Think of it like renting an apartment in a secure building. The landlord guards the lobby, the locks on the front entrance, the foundation, and the wiring. But what you keep inside your unit, who you hand a key to, and whether you bolt your own door are entirely on you. AWS is the landlord. You are the tenant.
 
@@ -66,25 +66,25 @@ Here is the nuance most people miss. The split is not fixed. It slides depending
 
 Picture a dial that runs from "you manage almost everything" to "AWS manages almost everything."
 
-### EC2 — you manage the most
+### EC2 - you manage the most
 
 EC2 is **Infrastructure as a Service** (raw virtual servers). AWS secures the physical host and the hypervisor (the software that carves one big machine into many virtual ones). Everything from the operating system upward is yours.
 
 So when a new flaw appears in the Linux OS running inside your EC2 instance, **you** apply the patch. AWS owning the hardware does not make the guest OS theirs; the line is drawn at the hypervisor. The same goes if you run containers on EC2 you manage yourself: you own the guest OS and the container images, AWS owns the host underneath.
 
-### RDS — AWS takes over the engine and OS
+### RDS - AWS takes over the engine and OS
 
 Move that same database from EC2 to **Amazon RDS** (a managed database) and the dial swings toward AWS. Now AWS patches the database engine and the underlying operating system for you, on maintenance windows you can schedule.
 
 But notice what does *not* move: the data inside the database, and the database user accounts and passwords you create. If you set a weak password for a database user, AWS patching the engine does nothing to protect you. Patching the engine and securing access are two different jobs with two different owners.
 
-### S3 and DynamoDB — fully managed, but access is still yours
+### S3 and DynamoDB - fully managed, but access is still yours
 
 With **S3** (object storage) and **DynamoDB** (a managed database), AWS runs essentially all the infrastructure. Yet the most famous cloud mistakes happen right here, because "fully managed" never covers your access decisions.
 
 Bucket policies, access control settings, and Block Public Access are configured by you. Store personal data in DynamoDB and the data plus access control still belong entirely to you, not "fifty-fifty," not AWS. (Worth knowing: AWS now blocks public access by default on new S3 buckets, precisely because this trips so many people up.)
 
-### Lambda — serverless, where your slice is smallest
+### Lambda - serverless, where your slice is smallest
 
 With **AWS Lambda** (run code without managing servers), AWS handles the servers, the OS, and the language runtime maintenance. Your remaining job shrinks to two things: the **code you write** and the **IAM permissions** that code uses to reach other resources.
 

@@ -70,9 +70,9 @@ Why does this one fact carry so much weight? Because if resources were truly inf
 Scarcity sets off a chain of consequences, and this chain is the spine of the whole subject:
 
 1. **Scarcity** means we can't have everything.
-2. So we face **choice** — we must pick.
-3. Every choice is a **tradeoff** — more of one thing means less of another.
-4. The cost of the choice is its **opportunity cost** — the best option we gave up.
+2. So we face **choice** - we must pick.
+3. Every choice is a **tradeoff** - more of one thing means less of another.
+4. The cost of the choice is its **opportunity cost** - the best option we gave up.
 
 Because resources are scarce, we are **forced to choose**. Every choice means giving something up. That "giving something up" is a tradeoff: any situation where more of one thing means less of another. And the *cost* of any choice is measured by what you sacrifice.
 

@@ -132,15 +132,15 @@ If you take on this role, your attention shifts in a few specific ways. These ha
 
 Over the decades, researchers turned these instincts into named, reusable frameworks. You don't need them memorized today. You just need to know what each one is *for*, because they operate at different zoom levels.
 
-### ADDIE — the big picture
+### ADDIE - the big picture
 
 A five-phase process for building a whole course: **A**nalysis, **D**esign, **D**evelopment, **I**mplementation, **E**valuation. Think of it as the project plan for the entire course.
 
-### Gagne's Nine Events — the single lesson
+### Gagne's Nine Events - the single lesson
 
 A nine-step script for running one lesson: gain attention, state the objective, recall prior learning, present the content, guide, let them practice, give feedback, assess, and help it transfer to real life. Think of it as the script for one session.
 
-### Merrill's First Principles — the lesson shape
+### Merrill's First Principles - the lesson shape
 
 Five things every good lesson shares, built around a real-world problem: anchor to a real task, activate prior knowledge, demonstrate, let them apply, and integrate it into their life. Think of it as the shape each session takes.
 

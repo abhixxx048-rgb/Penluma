@@ -176,14 +176,14 @@ A concrete build order for a founder-led team:
 3. **Default the hardest setup step.** Find the step where non-technical users stall (pricing, in the print-shop case) and ship a sensible default so they can never get trapped before they reach value.
 4. **Move activation to days 1–3.** End your setup checklist on a first *test* win the user fully controls. Instrument the five events that drive every trigger.
 5. **Define two PQL signals, no more.** Pick your single hottest "real value" signal and your single clearest "intent" signal. Watch your first fifty trials, then refine.
-6. **Ship two automations — they *are* your sales process.** A stalled-trial alert (no setup by day three) and a hot-PQL alert (reached real value). One feeds nudges, the other feeds you.
-7. **Touch only hot PQLs, as coaching.** Within 24 hours, in their channel: "Saw your store just took its first order — want a quick 15-minute call to dial in your setup before you push volume?" Not a pitch. A hand on the shoulder at peak intent.
+6. **Ship two automations - they *are* your sales process.** A stalled-trial alert (no setup by day three) and a hot-PQL alert (reached real value). One feeds nudges, the other feeds you.
+7. **Touch only hot PQLs, as coaching.** Within 24 hours, in their channel: "Saw your store just took its first order - want a quick 15-minute call to dial in your setup before you push volume?" Not a pitch. A hand on the shoulder at peak intent.
 8. **Send milestone emails, not calendar drips.** Plain text, from your own address, each one pointing at the next milestone. Start the trial-end sequence a few days early and explain honestly what the downgrade keeps.
 9. **Forecast as two stacks.** Self-serve run-rate plus a hand-counted list of named assisted deals. A spreadsheet is a legitimate version one.
-10. **Don't stop at "live."** Drive *real, repeated* use for two to four weeks — that's the habit that becomes retention, and it feeds the word-of-mouth that fills the top of your funnel.
+10. **Don't stop at "live."** Drive *real, repeated* use for two to four weeks - that's the habit that becomes retention, and it feeds the word-of-mouth that fills the top of your funnel.
 
 ## Conclusion
 
-If you remember one thing, remember this: **at a low price, the product is the closer — and your scarcest resource is your own attention, so spend it only on the accounts the product has already half-sold.** The math that seems to limit you is actually setting you free. You don't have to learn enterprise sales. You have to make one user's first three days unforgettable.
+If you remember one thing, remember this: **at a low price, the product is the closer - and your scarcest resource is your own attention, so spend it only on the accounts the product has already half-sold.** The math that seems to limit you is actually setting you free. You don't have to learn enterprise sales. You have to make one user's first three days unforgettable.
 
-There's a deeper question hiding underneath all of this, and it's worth sitting with: the same activation quality that converts a trial is also what makes that user *tell another shop owner about you.* Retention and acquisition aren't separate funnels — they're the same loop. Which raises the real frontier for a tiny team with no marketing budget: how do you design a product so good at its first job that your customers become the channel? That's where the next leverage lives.
+There's a deeper question hiding underneath all of this, and it's worth sitting with: the same activation quality that converts a trial is also what makes that user *tell another shop owner about you.* Retention and acquisition aren't separate funnels - they're the same loop. Which raises the real frontier for a tiny team with no marketing budget: how do you design a product so good at its first job that your customers become the channel? That's where the next leverage lives.

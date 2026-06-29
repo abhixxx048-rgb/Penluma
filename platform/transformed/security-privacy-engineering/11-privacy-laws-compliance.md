@@ -60,7 +60,7 @@ The good news: most of compliance is just good engineering done on purpose. Let'
 
 ## First, two words you'll use constantly
 
-**PII** means *personally identifiable information* — any data that points to a specific human: name, email, IP address, device ID, location, purchase history. **Personal data** is the broader term GDPR uses for the same idea.
+**PII** means *personally identifiable information* - any data that points to a specific human: name, email, IP address, device ID, location, purchase history. **Personal data** is the broader term GDPR uses for the same idea.
 
 Privacy law is, at its core, a set of rules about how you treat PII. Keep that anchor in mind and the rest falls into place.
 
@@ -68,7 +68,7 @@ Privacy law is, at its core, a set of rules about how you treat PII. Keep that a
 
 Engineers mix these up constantly. They answer two different questions.
 
-- **Security** asks: is the data protected from people who shouldn't see it? It's measured by the **CIA triad** — Confidentiality, Integrity, and Availability.
+- **Security** asks: is the data protected from people who shouldn't see it? It's measured by the **CIA triad** - Confidentiality, Integrity, and Availability.
 - **Privacy** asks: should you have this data at all, and are you respecting the person's rights over it? Collect only what's justified, use it only for the stated reason, delete it when asked.
 
 **An analogy.** Security is locking the filing cabinet so burglars can't get in. Privacy is only putting files in the cabinet that you're allowed to keep, and shredding them when you're done.
@@ -127,11 +127,11 @@ Three more ideas you'll build around:
 
 GDPR fines have topped **€7.1B** since 2018. The headline cases rhyme:
 
-- **Meta — €1.2B (2023):** illegal EU-to-US data transfers. The record.
-- **TikTok — €530M (2025):** sending EEA user data to China without adequate safeguards.
-- **LinkedIn — €310M (2024):** behavioral advertising with no valid lawful basis.
-- **Uber — €290M (2024):** transferring driver data to the US without safeguards.
-- **Meta — €251M (2024):** the 2018 "View As" breach that exposed around 29M accounts.
+- **Meta - €1.2B (2023):** illegal EU-to-US data transfers. The record.
+- **TikTok - €530M (2025):** sending EEA user data to China without adequate safeguards.
+- **LinkedIn - €310M (2024):** behavioral advertising with no valid lawful basis.
+- **Uber - €290M (2024):** transferring driver data to the US without safeguards.
+- **Meta - €251M (2024):** the 2018 "View As" breach that exposed around 29M accounts.
 
 Notice the pattern: the biggest fines are almost always about **(a) cross-border transfers** or **(b) ad-tech and profiling without a lawful basis**. Remember those two and you've internalized most of the risk.
 
@@ -143,9 +143,9 @@ There's no single federal US privacy law. Instead, as of 2025–26, about **20 s
 
 Recent enforcement shows exactly what regulators hate:
 
-- **Honda — $632,500 (2025):** made opting out too hard and used lopsided cookie-banner choices.
-- **Healthline — $1.55M (2025):** leaked article titles that revealed readers' health conditions to ad partners.
-- **Tractor Supply — $1.35M (2025):** the largest CPPA fine to date.
+- **Honda - $632,500 (2025):** made opting out too hard and used lopsided cookie-banner choices.
+- **Healthline - $1.55M (2025):** leaked article titles that revealed readers' health conditions to ad partners.
+- **Tractor Supply - $1.35M (2025):** the largest CPPA fine to date.
 
 The lessons repeat: regulators target **dark patterns** (deceptive UI that nudges you away from privacy), broken "Do Not Sell" links, ignoring the **Global Privacy Control** (an automatic browser opt-out signal you're supposed to honor), and missing data terms in vendor contracts.
 
@@ -153,11 +153,11 @@ The lessons repeat: regulators target **dark patterns** (deceptive UI that nudge
 
 Some data is special and gets its own rulebook.
 
-### HIPAA — US health information
+### HIPAA - US health information
 
 Covers protected health information (PHI). A major Security Rule overhaul proposed in 2025 would make safeguards mandatory: encryption of health data at rest and in transit, MFA, annual penetration testing, network segmentation, and fast system restoration. It applies to vendors ("business associates"), not just hospitals. Treat it as imminent and tightening.
 
-### PCI DSS — payment-card data
+### PCI DSS - payment-card data
 
 Technically an industry standard, not a law, but mandatory the moment you touch card data. Newer web rules require you to inventory and integrity-check every script on payment pages (anti-skimming) and detect tampering. The core rule never changed:
 
@@ -165,7 +165,7 @@ Technically an industry standard, not a law, but mandatory the moment you touch 
 
 Storing the CVV "to make recharging easier" is a flat violation, and a classic real-world bug. Tokenize through your payment processor instead, so raw card data never reaches your database.
 
-### COPPA — children under 13
+### COPPA - children under 13
 
 Recent amendments expanded "personal information" to include biometrics like face and voice templates, and require separate opt-in parental consent before sharing kids' data with third parties or advertisers.
 
@@ -173,11 +173,11 @@ Recent amendments expanded "personal information" to include biometrics like fac
 
 Thanks to the Brussels Effect, GDPR-shaped laws now circle the globe. If you have users abroad, assume a privacy law applies to you.
 
-- **Brazil — LGPD:** very GDPR-like.
-- **China — PIPL:** GDPR-style consent *plus* strict data-localization. Getting data out of China is genuinely hard.
-- **UK — UK GDPR:** the post-Brexit clone.
-- **India — DPDP Act:** rolling out in phases, with penalties up to ₹250 crore (around $30M) and a new Data Protection Board.
-- **Canada — PIPEDA**, and dozens more.
+- **Brazil - LGPD:** very GDPR-like.
+- **China - PIPL:** GDPR-style consent *plus* strict data-localization. Getting data out of China is genuinely hard.
+- **UK - UK GDPR:** the post-Brexit clone.
+- **India - DPDP Act:** rolling out in phases, with penalties up to ₹250 crore (around $30M) and a new Data Protection Board.
+- **Canada - PIPEDA**, and dozens more.
 
 The myth to kill here: *"We're US-only, so GDPR doesn't apply to us."* GDPR applies based on *who you serve*, not where you're incorporated. If EU residents can sign up, you're in scope.
 
@@ -187,9 +187,9 @@ This is where most of the giant fines come from, so it deserves real attention.
 
 GDPR restricts sending personal data outside the EEA unless the destination offers "adequate" protection. There are three legal paths:
 
-1. **Adequacy decisions** — the EU declares an entire country or scheme safe (for example, the UK, or US firms certified under the Data Privacy Framework).
-2. **SCCs** (Standard Contractual Clauses) — EU-approved contract templates signed between the data exporter and importer. The most common tool.
-3. **BCRs** (Binding Corporate Rules) — internal rules approved for transfers within one corporate group.
+1. **Adequacy decisions** - the EU declares an entire country or scheme safe (for example, the UK, or US firms certified under the Data Privacy Framework).
+2. **SCCs** (Standard Contractual Clauses) - EU-approved contract templates signed between the data exporter and importer. The most common tool.
+3. **BCRs** (Binding Corporate Rules) - internal rules approved for transfers within one corporate group.
 
 If none of these apply, the transfer is simply **illegal**. That's what cost Meta €1.2B.
 
@@ -208,7 +208,7 @@ The **EU AI Act**, in force since August 2024, is the first big risk-tiered AI l
 
 - **Unacceptable (banned):** social scoring, manipulative AI, most real-time public biometric ID.
 - **High-risk:** recruitment, credit scoring, education, law enforcement. Requires risk management, data governance, human oversight, and logging.
-- **Limited-risk:** chatbots and AI-generated content. Requires transparency — tell users it's a bot, label AI content.
+- **Limited-risk:** chatbots and AI-generated content. Requires transparency - tell users it's a bot, label AI content.
 - **Minimal:** most other AI. No special obligations.
 
 Fines reach **€35M or 7% of global turnover**, even steeper than GDPR. The signal is clear: AI governance is becoming a formal compliance discipline (model documentation, dataset governance, impact assessments), and US states like California are heading the same way with automated-decision rules.

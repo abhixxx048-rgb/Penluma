@@ -81,9 +81,9 @@ The fix? Make the shake *thicker* so it lasts longer, and move the machine to th
 
 A job is never just practical. It always has three layers:
 
-- **Functional** — what it actually does.
-- **Emotional** — how it makes me feel.
-- **Social** — how it makes me look to others.
+- **Functional** - what it actually does.
+- **Emotional** - how it makes me feel.
+- **Social** - how it makes me look to others.
 
 The milkshake fills the stomach (functional), fights boredom (emotional), and is easy to manage one-handed at the wheel (practical). Miss the emotional and social layers, and you'll spend your energy improving the wrong thing.
 
@@ -155,9 +155,9 @@ Behavioral economist Dan Ariely tested this with *The Economist*'s real subscrip
 
 | Option | With the decoy | Without the decoy |
 | --- | --- | --- |
-| Web only — $59 | 16% chose it | 68% chose it |
-| Print only — $125 (the decoy) | 0% chose it | removed |
-| Print + Web — $125 | 84% chose it | 32% chose it |
+| Web only - $59 | 16% chose it | 68% chose it |
+| Print only - $125 (the decoy) | 0% chose it | removed |
+| Print + Web - $125 | 84% chose it | 32% chose it |
 
 Nobody ever picked "print only." But its mere presence made "print + web" look like an obvious steal, get the web edition for free. Remove that useless decoy, and most people downgraded to the cheap option, cutting revenue.
 

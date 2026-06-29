@@ -39,7 +39,7 @@ sources: []
 
 You write code that handles null tenants, race conditions, and distributed locks without breaking a sweat. Then you type "this fix depend to the cache layer" in a pull request and a tiny two-letter word betrays you.
 
-Prepositions — those small connecting words like **in**, **on**, **at**, **to**, and **for** — cause more professional-English mistakes than almost anything else. Not because they are hard to understand, but because there is rarely a logical rule. You don't reason your way to the right one. You either know the pairing or you guess.
+Prepositions - those small connecting words like **in**, **on**, **at**, **to**, and **for** - cause more professional-English mistakes than almost anything else. Not because they are hard to understand, but because there is rarely a logical rule. You don't reason your way to the right one. You either know the pairing or you guess.
 
 This article hands you the pairings, so you stop guessing.
 
@@ -53,7 +53,7 @@ The good news: prepositions follow a small set of patterns plus a short list of 
 
 Two ideas carry most of the weight.
 
-**1. Time and place follow a "zoom" rule — big to small.**
+**1. Time and place follow a "zoom" rule - big to small.**
 
 - **in** = big container or inside something: *in June, in the repo, in production*
 - **on** = a surface, a day, or a list: *on Monday, on the branch, on line 42*
@@ -63,13 +63,13 @@ Think of zooming a map. You start zoomed out (**in** the country), zoom to a str
 
 **2. Most dev phrases are fixed pairings you memorize, not solve.**
 
-`depend on`, `based on`, `responsible for`, `interested in` — these are **collocations**, meaning words that habitually travel together. Native speakers didn't reason these out either. They just heard them ten thousand times. You will treat each one as a single chunk: never `depend`, always `depend on`.
+`depend on`, `based on`, `responsible for`, `interested in` - these are **collocations**, meaning words that habitually travel together. Native speakers didn't reason these out either. They just heard them ten thousand times. You will treat each one as a single chunk: never `depend`, always `depend on`.
 
 ## Why this trips you up
 
 In your first language, one preposition often does the job of several English ones. So you translate word-for-word and land on "depend to" or "responsible of."
 
-You also mix the zoom levels — writing "on the repo" when a repo is a container, so it's "in the repo."
+You also mix the zoom levels - writing "on the repo" when a repo is a container, so it's "in the repo."
 
 The fix is not grammar logic. It's pairing the verb and its preposition together as one unit and reusing that unit until it feels automatic.
 
@@ -126,16 +126,16 @@ A quick mnemonic to glue it together: *Moving somewhere → `to`. Sitting inside
 1. **Pick your top five offenders.** For most developers that's `depend on`, `based on`, `deploy to`, `responsible for`, and `comment on`. Master these first.
 2. **Store each as a chunk, never as a single word.** Don't memorize "depend." Memorize "depend on." Say the preposition in the same breath.
 3. **Apply the zoom rule to time and place.** Big container → in, surface or day → on, exact point → at. Build the sentence from wide to narrow.
-4. **For movement, default to `to`.** Push, deploy, reply, connect, migrate — if something travels toward a destination, reach for `to` first.
+4. **For movement, default to `to`.** Push, deploy, reply, connect, migrate - if something travels toward a destination, reach for `to` first.
 5. **Proofread your PR titles and commits specifically for prepositions.** They're short and public, so a single fix there has outsized payoff.
 6. **Keep the table above pinned.** When in doubt, check it for two seconds instead of guessing. Real speakers also just looked these up once and remembered.
 
 A few patterns in the wild:
 
-- **Commit:** "Fix crash that **depends on** a null tenant" — not "depend to."
+- **Commit:** "Fix crash that **depends on** a null tenant" - not "depend to."
 - **PR title:** "Deploy worker **to** staging" and "Merge feature **into** main."
-- **Standup:** "Today I'm **working on** the cache ticket and will **comment on** Pravin's PR" — not "working in" or "comment in."
-- **Code comment:** `// Service listens on port 4000` — not "listens in port."
+- **Standup:** "Today I'm **working on** the cache ticket and will **comment on** Pravin's PR" - not "working in" or "comment in."
+- **Code comment:** `// Service listens on port 4000` - not "listens in port."
 
 ## Practice: fix the preposition
 
@@ -159,10 +159,10 @@ Correct the preposition (and any spelling or capitalization slips you spot). Ans
 5. Who is **responsible for** the queue worker?
 6. Our API **listens on** port 8000 by default.
 7. She is really **good at** writing clean tests.
-8. **(B) in** the repo, **(A) on** the dev branch — you're inside the container but on the branch.
+8. **(B) in** the repo, **(A) on** the dev branch - you're inside the container but on the branch.
 
 ## Conclusion
 
 The single takeaway: **prepositions are pairs you memorize, not rules you solve.** Lock in fifteen collocations and the zoom rule for time and place, and you've fixed the mistake that trips up developers more than any other.
 
-Here's the thing those pairings hint at, though. "Depend on," "based on," "responsible for" — once you start treating English as chunks rather than individual words, a lot more than prepositions clicks into place. Articles (a, an, the) work the same way, and they're the next small word quietly shaping how your writing reads. Worth a look next.
+Here's the thing those pairings hint at, though. "Depend on," "based on," "responsible for" - once you start treating English as chunks rather than individual words, a lot more than prepositions clicks into place. Articles (a, an, the) work the same way, and they're the next small word quietly shaping how your writing reads. Worth a look next.

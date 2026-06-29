@@ -91,9 +91,9 @@ A warning while you're here: write to *express*, not to *impress*. Reaching for 
 
 Over 2,000 years ago Aristotle named three ways to persuade anyone. They still run the show.
 
-- **Ethos (credibility)** — persuasion through who you are. "Why should I believe *you*?"
-- **Pathos (emotion)** — persuasion through feelings and values: hope, fear, fairness, pride. "Why should I *care*?"
-- **Logos (logic)** — persuasion through reasoning and evidence. "Does this actually *add up*?"
+- **Ethos (credibility)** - persuasion through who you are. "Why should I believe *you*?"
+- **Pathos (emotion)** - persuasion through feelings and values: hope, fear, fairness, pride. "Why should I *care*?"
+- **Logos (logic)** - persuasion through reasoning and evidence. "Does this actually *add up*?"
 
 Picture a three-legged stool. Drop any leg and the argument tips over. Pure logic with no emotion feels cold and gets ignored. Pure emotion with no evidence feels like a scam. Either one with no credibility behind it is just noise.
 
@@ -127,11 +127,11 @@ The honest way to use this list is as a checklist for surfacing what is **alread
 
 **"If my argument feels convincing, it's sound."** Not always. Persuasion has a dark twin: arguments that *feel* right but are broken. Learn to spot them so you're neither fooled nor accidentally cheating.
 
-- **Strawman** — attacking a weaker, distorted version of what someone actually said.
-- **Ad hominem** — attacking the person ("he's not even a real expert") instead of the argument.
-- **False dichotomy** — pretending there are only two options ("cut staff or go bankrupt") when more exist.
-- **Slippery slope** — claiming one small step inevitably ends in disaster, with no real chain of cause.
-- **Correlation is not causation** — assuming that because two things happen together, one caused the other.
+- **Strawman** - attacking a weaker, distorted version of what someone actually said.
+- **Ad hominem** - attacking the person ("he's not even a real expert") instead of the argument.
+- **False dichotomy** - pretending there are only two options ("cut staff or go bankrupt") when more exist.
+- **Slippery slope** - claiming one small step inevitably ends in disaster, with no real chain of cause.
+- **Correlation is not causation** - assuming that because two things happen together, one caused the other.
 
 If your case needs a fallacy to stand up, you don't have a case yet.
 
@@ -147,11 +147,11 @@ Stories work because the brain is built to follow a character through a problem 
 
 The writer Gustav Freytag described the classic five-part shape, often called **Freytag's Pyramid**:
 
-1. **Exposition** — the setup: who, where, the normal world.
-2. **Rising action** — a problem appears and tension builds.
-3. **Climax** — the turning point: the hardest moment or biggest decision.
-4. **Falling action** — the consequences play out.
-5. **Resolution** — the new normal, what changed.
+1. **Exposition** - the setup: who, where, the normal world.
+2. **Rising action** - a problem appears and tension builds.
+3. **Climax** - the turning point: the hardest moment or biggest decision.
+4. **Falling action** - the consequences play out.
+5. **Resolution** - the new normal, what changed.
 
 Joseph Campbell's **Hero's Journey** is the epic version: an ordinary person leaves their familiar world, faces trials, and returns transformed. You don't need the full epic for a work email. The core engine is always the same: **a character wants something, hits an obstacle, and either overcomes it or learns from it.**
 
@@ -171,12 +171,12 @@ So when the stakes are high and you need people to *remember*, lead with one con
 
 Chip and Dan Heath studied why some ideas survive and spread while others vanish. Their answer is a checklist whose first letters spell **SUCCESs**:
 
-- **Simple** — strip it to one core idea, not ten.
-- **Unexpected** — break a pattern to grab attention.
-- **Concrete** — use things people can picture, not vague abstractions.
-- **Credible** — give a reason to believe: a source, a test, a vivid detail.
-- **Emotional** — make them feel something, not just know something.
-- **Stories** — wrap it in a narrative so it travels.
+- **Simple** - strip it to one core idea, not ten.
+- **Unexpected** - break a pattern to grab attention.
+- **Concrete** - use things people can picture, not vague abstractions.
+- **Credible** - give a reason to believe: a source, a test, a vivid detail.
+- **Emotional** - make them feel something, not just know something.
+- **Stories** - wrap it in a narrative so it travels.
 
 Notice how this braids the whole craft together: clarity (Simple, Concrete), persuasion (Credible is ethos and logos; Emotional is pathos), and storytelling (Stories). It's a handy last check before you send something important.
 
@@ -209,7 +209,7 @@ To see it work, picture convincing a busy manager to approve a $5,000 tool. The 
 
 No point to grab, no reason to care, no clear ask. Now the strong version:
 
-> "**I'd like to approve Tool X ($5,000/yr) — it should save our team about 6 hours a week.** Last sprint we missed a deadline because three people edited the same plan in different chat threads and the changes got lost. Tool X keeps one shared plan everyone can see. Two teams in our own company switched last quarter and cut their missed deadlines in half. I've trialed it; it does what we need. Can I get sign-off by Friday so we start next sprint?"
+> "**I'd like to approve Tool X ($5,000/yr) - it should save our team about 6 hours a week.** Last sprint we missed a deadline because three people edited the same plan in different chat threads and the changes got lost. Tool X keeps one shared plan everyone can see. Two teams in our own company switched last quarter and cut their missed deadlines in half. I've trialed it; it does what we need. Can I get sign-off by Friday so we start next sprint?"
 
 Same facts. But the second names the destination first, gives a reason to care, backs it with real evidence and proof, and ends with an unmistakable, time-bound ask. That's the whole craft in one message.
 

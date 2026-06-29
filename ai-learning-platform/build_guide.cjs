@@ -2,7 +2,7 @@
  * Usage: node build_guide.cjs <output.json> <out-basename> <title|with|newlines> <subtitle> <kicker>
  * Example:
  *   node build_guide.cjs /tmp/.../task.output Consensus-Raft-Paxos \
- *     "Distributed Systems:|Consensus" "Raft & Paxos — A Beginner-to-Advanced Study Guide" \
+ *     "Distributed Systems:|Consensus" "Raft & Paxos - A Beginner-to-Advanced Study Guide" \
  *     "Study Guide · Series 2 of the Distributed Systems track"
  */
 const fs = require('fs');
@@ -112,7 +112,7 @@ const today = '2026-06-28';
 
 const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
-<title>${titleHtml.replace(/<br>/g, ' ')} — Study Guide</title>
+<title>${titleHtml.replace(/<br>/g, ' ')} - Study Guide</title>
 <style>${CSS}</style></head><body>
 
 <section class="cover">

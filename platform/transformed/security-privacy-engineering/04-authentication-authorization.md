@@ -85,9 +85,9 @@ The good news is that the fixes are well understood. You do not need to invent a
 
 **Authorization** (**AuthZ**) is the act of granting or denying a specific action to someone whose identity is already proven.
 
-Here is the analogy that makes it stick. **Authentication is showing your passport at the airport** — proving you are who you say. **Authorization is whether your boarding pass lets you into the first-class lounge.** The passport tells the guard *who* you are. The boarding pass tells them *what* you may do.
+Here is the analogy that makes it stick. **Authentication is showing your passport at the airport** - proving you are who you say. **Authorization is whether your boarding pass lets you into the first-class lounge.** The passport tells the guard *who* you are. The boarding pass tells them *what* you may do.
 
-The order never changes. You authenticate once, then you authorize every single action. When authentication fails, a system returns **401 Unauthorized**. When authorization fails — you are known but not allowed — it returns **403 Forbidden**.
+The order never changes. You authenticate once, then you authorize every single action. When authentication fails, a system returns **401 Unauthorized**. When authorization fails - you are known but not allowed - it returns **403 Forbidden**.
 
 Keep that picture in mind. Most of the rest of this article is just doing each step well.
 
@@ -95,19 +95,19 @@ Keep that picture in mind. Most of the rest of this article is just doing each s
 
 Proof of identity comes from **factors**, and there are three classic kinds:
 
-- **Something you KNOW** — a password, a PIN, a security question. A secret in your head.
-- **Something you HAVE** — your phone, a hardware key like a YubiKey, or an authenticator app that generates rotating six-digit codes (called **TOTP**, time-based one-time passwords).
-- **Something you ARE** — biometrics: your fingerprint, face, or iris.
+- **Something you KNOW** - a password, a PIN, a security question. A secret in your head.
+- **Something you HAVE** - your phone, a hardware key like a YubiKey, or an authenticator app that generates rotating six-digit codes (called **TOTP**, time-based one-time passwords).
+- **Something you ARE** - biometrics: your fingerprint, face, or iris.
 
 **Multi-factor authentication (MFA)** means requiring proof from two or more *different* categories. That difference is the whole point.
 
-A password plus a phone tap is real MFA, because an attacker who phishes your password still does not have your phone. **Two passwords are not MFA** — they are both "something you know," so one successful phishing attack gets both. This is a genuinely common mistake, and it quietly defeats the entire purpose.
+A password plus a phone tap is real MFA, because an attacker who phishes your password still does not have your phone. **Two passwords are not MFA** - they are both "something you know," so one successful phishing attack gets both. This is a genuinely common mistake, and it quietly defeats the entire purpose.
 
 ## Why passwords are the weak link
 
-A password is a shared secret the server has to store, and humans handle them badly. People reuse one password across dozens of sites, so a single breach lets attackers replay those stolen logins everywhere — an attack called **credential stuffing**. People pick guessable passwords. People type them into fake login pages.
+A password is a shared secret the server has to store, and humans handle them badly. People reuse one password across dozens of sites, so a single breach lets attackers replay those stolen logins everywhere - an attack called **credential stuffing**. People pick guessable passwords. People type them into fake login pages.
 
-The numbers back this up. IBM's *Cost of a Data Breach 2025* report found phishing has overtaken stolen credentials as the number one way attackers first get in. And breaches that used stolen or compromised credentials took the longest to clean up — nearly **ten months** on average to detect and contain.
+The numbers back this up. IBM's *Cost of a Data Breach 2025* report found phishing has overtaken stolen credentials as the number one way attackers first get in. And breaches that used stolen or compromised credentials took the longest to clean up - nearly **ten months** on average to detect and contain.
 
 So passwords are not going away tomorrow, which means you need to handle them correctly. Two things matter: the rules you set, and how you store them.
 
@@ -117,7 +117,7 @@ For years, security advice did real harm. The latest NIST guidance reverses much
 
 - **Stop forcing periodic rotation.** No 60- or 90-day expiry. Forced changes just produce `Password1` then `Password2`. Require a change only when you have evidence the password leaked.
 - **Drop composition rules.** Mandatory "one uppercase, one symbol" pushes people toward predictable patterns. Length matters far more.
-- **Allow long passphrases** — support at least 64 characters, and allow spaces and any character a user wants.
+- **Allow long passphrases** - support at least 64 characters, and allow spaces and any character a user wants.
 - **Screen new passwords against breach lists** like Have I Been Pwned, so nobody can choose a password already known to attackers.
 - **Allow paste**, because it helps password managers, which are the single best habit a user can have.
 
@@ -125,9 +125,9 @@ For years, security advice did real harm. The latest NIST guidance reverses much
 
 If your database is stolen, the way you stored passwords decides whether it is a disaster or a shrug.
 
-Never store passwords in plain text. Never use a plain fast hash like MD5 or SHA-256 — modern graphics cards crack billions of those per second. And never *encrypt* passwords, because encryption is reversible by design.
+Never store passwords in plain text. Never use a plain fast hash like MD5 or SHA-256 - modern graphics cards crack billions of those per second. And never *encrypt* passwords, because encryption is reversible by design.
 
-Instead, use a slow, **memory-hard password hashing function** with a unique random **salt** for each password. (A salt is random data mixed into each password before hashing, stored alongside it, which defeats precomputed lookup tables.) OWASP currently recommends **Argon2id**. Acceptable alternatives are **bcrypt** or **PBKDF2**. Always use a trusted library — this is never something to hand-roll.
+Instead, use a slow, **memory-hard password hashing function** with a unique random **salt** for each password. (A salt is random data mixed into each password before hashing, stored alongside it, which defeats precomputed lookup tables.) OWASP currently recommends **Argon2id**. Acceptable alternatives are **bcrypt** or **PBKDF2**. Always use a trusted library - this is never something to hand-roll.
 
 ## MFA is strong, but not bulletproof
 
@@ -137,26 +137,26 @@ Adding a second factor stops the overwhelming majority of account takeovers. But
 
 **Authenticator apps and push approvals** are better, but still beatable. Two attacks stand out:
 
-- **MFA fatigue** (also called push bombing) — the attacker, who already has your password, spams approval prompts to your phone until a tired or distracted user finally taps "approve."
-- **Adversary-in-the-Middle** — a fake login page sits between you and the real site, relaying your password *and* your one-time code to the real site in real time. Off-the-shelf phishing kits make this easy.
+- **MFA fatigue** (also called push bombing) - the attacker, who already has your password, spams approval prompts to your phone until a tired or distracted user finally taps "approve."
+- **Adversary-in-the-Middle** - a fake login page sits between you and the real site, relaying your password *and* your one-time code to the real site in real time. Off-the-shelf phishing kits make this easy.
 
-A real-world example: the group known as *Scattered Spider* chained SIM swaps, push fatigue, and help-desk social engineering to break into major companies. The lesson is not that MFA is pointless. It is that *legacy* MFA reduces risk without eliminating it — which is exactly why the industry is moving to something an attacker in the middle cannot capture.
+A real-world example: the group known as *Scattered Spider* chained SIM swaps, push fatigue, and help-desk social engineering to break into major companies. The lesson is not that MFA is pointless. It is that *legacy* MFA reduces risk without eliminating it - which is exactly why the industry is moving to something an attacker in the middle cannot capture.
 
 ## Passkeys: login that cannot be phished
 
 The clearest direction the whole industry is heading is **passwordless login built on public-key cryptography**. The technology is called **FIDO2**, built from a browser standard (**WebAuthn**) and a device protocol (**CTAP**). You will mostly hear it called by its friendly name: **passkeys**.
 
-Here is how it works in plain terms. When you register, your device creates a pair of cryptographic keys. The **private key never leaves your device** — it is sealed in secure hardware. The server only ever stores the matching **public key**, which is useless to a thief on its own. To log in, your device signs a one-time challenge from the server, unlocked by your fingerprint, face, or PIN.
+Here is how it works in plain terms. When you register, your device creates a pair of cryptographic keys. The **private key never leaves your device** - it is sealed in secure hardware. The server only ever stores the matching **public key**, which is useless to a thief on its own. To log in, your device signs a one-time challenge from the server, unlocked by your fingerprint, face, or PIN.
 
 **Why this cannot be phished:** the passkey is cryptographically tied to the real site's domain. A fake site at a look-alike address simply cannot trigger it. And because the server never holds a shared secret, there is nothing to steal in a breach, nothing to phish, and nothing to reuse.
 
-This is not theoretical. By 2025, over a billion people had activated a passkey, and roughly half of the top 100 websites supported them. Google reports passkey sign-ins succeed about **four times more often** than passwords — partly because there is nothing to forget. Passkeys are where authentication is going. If you build login systems, this is the thing to adopt.
+This is not theoretical. By 2025, over a billion people had activated a passkey, and roughly half of the top 100 websites supported them. Google reports passkey sign-ins succeed about **four times more often** than passwords - partly because there is nothing to forget. Passkeys are where authentication is going. If you build login systems, this is the thing to adopt.
 
 ## Remembering who you are: sessions and tokens
 
 Once you are authenticated, the server needs to remember you across requests. There are two broad approaches.
 
-A **stateful session** keeps the real data on the server. Your browser holds only an opaque ID, and the server looks you up on each request. Revoking access is easy — delete the session and you are out.
+A **stateful session** keeps the real data on the server. Your browser holds only an opaque ID, and the server looks you up on each request. Revoking access is easy - delete the session and you are out.
 
 A **stateless token** (typically a **JWT**, JSON Web Token) carries the information inside itself, signed by the server. The server just checks the signature, with no lookup. This scales beautifully across many services, but revocation is hard: a leaked token stays valid until it expires.
 
@@ -174,18 +174,18 @@ JWTs are powerful and easy to get wrong. A few essentials:
 
 - **A JWT is not encrypted.** The payload is just encoded text that anyone can read. Never put secrets in it.
 - **Reject unsigned tokens.** The spec allows an "algorithm: none" token; a careless library will accept a forged one. Pin your server to a specific algorithm and reject the rest.
-- **Always set a short expiry** and validate it. "Stateless means no revocation needed" is a myth — a leaked token is valid until it expires, so keep lifetimes short.
+- **Always set a short expiry** and validate it. "Stateless means no revocation needed" is a myth - a leaked token is valid until it expires, so keep lifetimes short.
 - **Prefer HttpOnly cookies over localStorage** for storing them, because localStorage is readable by any injected script.
 
 ## Letting other apps in: OAuth and OpenID Connect
 
 Two protocols get confused constantly, and the confusion causes real security holes.
 
-**OAuth 2.0 is about authorization, not login.** It lets one app get *delegated access* to your stuff without handing over your password — for example, "let this app read your Google Drive files." It grants access through **scopes** that define exactly what the app may touch.
+**OAuth 2.0 is about authorization, not login.** It lets one app get *delegated access* to your stuff without handing over your password - for example, "let this app read your Google Drive files." It grants access through **scopes** that define exactly what the app may touch.
 
 **OpenID Connect (OIDC)** is a thin identity layer built on top of OAuth. It adds an **ID Token** that tells the app *who* just logged in. This is what powers "Sign in with Google" and "Sign in with Apple."
 
-The mnemonic that keeps them straight: **OAuth is a valet key (access); OIDC is an ID card (who you are).** Using bare OAuth as a login system is a classic, dangerous mistake — it can grant access without ever truly verifying who the user is.
+The mnemonic that keeps them straight: **OAuth is a valet key (access); OIDC is an ID card (who you are).** Using bare OAuth as a login system is a classic, dangerous mistake - it can grant access without ever truly verifying who the user is.
 
 Closely related is **single sign-on (SSO)**, logging in once to reach many apps. In big companies this often runs on the older **SAML** standard; new and consumer-facing apps generally use OIDC.
 
@@ -193,9 +193,9 @@ Closely related is **single sign-on (SSO)**, logging in once to reach many apps.
 
 Authentication is only half the job. Once you know who someone is, you have to decide what they can touch. There are a few common ways to model this:
 
-- **RBAC (role-based):** access depends on a user's role — admin, editor, viewer. Simple and everywhere, but roles tend to multiply, and it struggles with rules like "only *your own* records."
-- **ABAC (attribute-based):** decisions use attributes of the user, the resource, and the situation — "a manager in Finance, during work hours." Flexible, but harder to audit.
-- **ReBAC (relationship-based):** access follows relationships — "you can view this document if you can view the folder it lives in." Powerful for the way modern apps actually share things.
+- **RBAC (role-based):** access depends on a user's role - admin, editor, viewer. Simple and everywhere, but roles tend to multiply, and it struggles with rules like "only *your own* records."
+- **ABAC (attribute-based):** decisions use attributes of the user, the resource, and the situation - "a manager in Finance, during work hours." Flexible, but harder to audit.
+- **ReBAC (relationship-based):** access follows relationships - "you can view this document if you can view the folder it lives in." Powerful for the way modern apps actually share things.
 - **PBAC (policy-based):** rules live in a central policy engine outside your app code, which makes them reusable and auditable.
 
 A landmark example is Google's **Zanzibar** system, which models authorization as simple relationship tuples and answers millions of permission checks per second across Google's products. It inspired a wave of open tools. The broader lesson: instead of scattering `if` checks throughout your code, modern systems increasingly move authorization into one dedicated, auditable place.
@@ -204,9 +204,9 @@ A landmark example is Google's **Zanzibar** system, which models authorization a
 
 Two principles tie the authorization story together.
 
-The **principle of least privilege** means giving each person and service the minimum access they need, for the shortest time they need it. If an account is compromised, this shrinks the "blast radius." It pairs naturally with regular access reviews — forgotten, orphaned accounts are a top way attackers get in.
+The **principle of least privilege** means giving each person and service the minimum access they need, for the shortest time they need it. If an account is compromised, this shrinks the "blast radius." It pairs naturally with regular access reviews - forgotten, orphaned accounts are a top way attackers get in.
 
-**Zero trust** means "never trust, always verify." It throws out the old idea that being "inside the network" makes you trustworthy. Every request gets authenticated, authorized, and encrypted on its own merits, no matter where it comes from. The old castle-and-moat model — hard shell, soft inside — does not survive a single stolen laptop. Zero trust assumes the attacker is already inside and checks everything anyway.
+**Zero trust** means "never trust, always verify." It throws out the old idea that being "inside the network" makes you trustworthy. Every request gets authenticated, authorized, and encrypted on its own merits, no matter where it comes from. The old castle-and-moat model - hard shell, soft inside - does not survive a single stolen laptop. Zero trust assumes the attacker is already inside and checks everything anyway.
 
 ## Common misconceptions
 
@@ -219,9 +219,9 @@ The **principle of least privilege** means giving each person and service the mi
 
 ## The number one mistake: broken access control
 
-If you remember one threat from this entire article, make it this one. **Broken access control sits at the top of the OWASP Top 10** — almost every application tested has some form of it.
+If you remember one threat from this entire article, make it this one. **Broken access control sits at the top of the OWASP Top 10** - almost every application tested has some form of it.
 
-The classic case is called **IDOR** (insecure direct object reference): an app fetches an object by an ID the user controls, *without checking who owns it*. Change `GET /api/orders/12345` to `12346` in the URL and you read someone else's order. The root cause is always the same — an authorization check that was done on the client, forgotten on one endpoint, or replaced with the hope that nobody would notice.
+The classic case is called **IDOR** (insecure direct object reference): an app fetches an object by an ID the user controls, *without checking who owns it*. Change `GET /api/orders/12345` to `12346` in the URL and you read someone else's order. The root cause is always the same - an authorization check that was done on the client, forgotten on one endpoint, or replaced with the hope that nobody would notice.
 
 A real example shows how authentication failures compound this. In 2024, around 165 organizations were breached on a single cloud platform because attackers reused stolen credentials to log into accounts that had **no MFA enforced**. A pure authentication-hygiene failure, at scale. The platform's response was to make MFA mandatory.
 
@@ -234,13 +234,13 @@ Here is the modern playbook, as concrete steps:
 3. **Hash passwords with Argon2id** (or bcrypt / PBKDF2) using a trusted library, and screen new passwords against breach lists.
 4. **Roll out passkeys / FIDO2** for phishing-resistant login, and require MFA on every privileged or admin account without exception.
 5. **Use short-lived access tokens** with rotating refresh tokens, stored in HttpOnly, Secure, SameSite cookies.
-6. **Validate every JWT** — signature, algorithm, and expiry — and reject unsigned tokens.
+6. **Validate every JWT** - signature, algorithm, and expiry - and reject unsigned tokens.
 7. **Centralize authorization** in one auditable place instead of scattering ad-hoc checks through your code.
 8. **Apply least privilege** with just-in-time access and routine cleanup of unused accounts.
 
 ## Conclusion
 
-The whole subject collapses into one sentence: **prove who you are, then check what you may do — and never let the second step be optional.** Most real breaches are a gap in one of those two steps: stolen credentials with no second factor, or a missing ownership check.
+The whole subject collapses into one sentence: **prove who you are, then check what you may do - and never let the second step be optional.** Most real breaches are a gap in one of those two steps: stolen credentials with no second factor, or a missing ownership check.
 
 The modern answer is clear. Phishing-resistant passkeys for proving identity, properly hashed passwords as a fallback, short-lived validated tokens to hold sessions, and centralized, deny-by-default authorization checked on every single request.
 

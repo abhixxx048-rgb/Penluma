@@ -94,10 +94,10 @@ For over a century, classical economics ran on a fictional character nicknamed *
 
 This imaginary person was **perfectly rational**: complete information, no fatigue, no emotions, unlimited mental math, and a single goal of maximizing their own benefit. The model rested on four assumptions:
 
-1. **Perfect rationality** — always chooses the best possible option.
-2. **Perfect information** — knows every option and outcome in advance.
-3. **Perfect self-interest** — cares only about personal gain. No fairness, kindness, or spite.
-4. **Unlimited brainpower** — flawless memory, infinite calculation, no tiredness.
+1. **Perfect rationality** - always chooses the best possible option.
+2. **Perfect information** - knows every option and outcome in advance.
+3. **Perfect self-interest** - cares only about personal gain. No fairness, kindness, or spite.
+4. **Unlimited brainpower** - flawless memory, infinite calculation, no tiredness.
 
 Every one of those is false for real people. A perfectly rational person would never tip a stranger, would happily accept any free money, and would instantly switch to an identical cheaper product.
 

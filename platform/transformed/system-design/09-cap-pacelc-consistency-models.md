@@ -145,20 +145,20 @@ The two ends most people know are PA/EL (DynamoDB) and PC/EC (Spanner). The inte
 
 Between fully strong and fully eventual sits a ladder of genuinely useful guarantees. From strongest to weakest:
 
-- **Linearizability** — every read returns the latest completed write, in real-time order. Strongest, most expensive, unavailable under partition. *Used by etcd, ZooKeeper, Spanner.*
-- **Sequential** — everyone agrees on one order of operations, but that order need not match the wall clock. Mostly a theoretical baseline.
-- **Causal** — if A caused B, everyone sees A before B. Unrelated events can appear in any order. *This is the strongest model a still-available system can offer.*
+- **Linearizability** - every read returns the latest completed write, in real-time order. Strongest, most expensive, unavailable under partition. *Used by etcd, ZooKeeper, Spanner.*
+- **Sequential** - everyone agrees on one order of operations, but that order need not match the wall clock. Mostly a theoretical baseline.
+- **Causal** - if A caused B, everyone sees A before B. Unrelated events can appear in any order. *This is the strongest model a still-available system can offer.*
 - **Session guarantees** (the practical sweet spot, explained below).
-- **Eventual** — the copies converge someday, with no promise about now. Cheapest, always available. *Used by DNS and Dynamo's default reads.*
+- **Eventual** - the copies converge someday, with no promise about now. Cheapest, always available. *Used by DNS and Dynamo's default reads.*
 
 ### Session guarantees: the practical sweet spot
 
 Four client-focused guarantees (from Terry and colleagues, 1994) kill the bugs users actually notice, and they are cheap, often just a sticky session or a version cookie.
 
-- **Read-your-writes** — you always see your own latest change. This is the cure for "I saved my profile, refreshed, and it was gone."
-- **Monotonic reads** — time never goes backward for you. Once you have seen version 5, you will not later see version 3.
-- **Monotonic writes** — your own writes apply in the order you made them.
-- **Writes-follow-reads** — a write you make after reading version 5 lands after version 5 everywhere. No replying to a comment that appears to predate it.
+- **Read-your-writes** - you always see your own latest change. This is the cure for "I saved my profile, refreshed, and it was gone."
+- **Monotonic reads** - time never goes backward for you. Once you have seen version 5, you will not later see version 3.
+- **Monotonic writes** - your own writes apply in the order you made them.
+- **Writes-follow-reads** - a write you make after reading version 5 lands after version 5 everywhere. No replying to a comment that appears to predate it.
 
 A simple way to remember the whole ladder: session guarantees are the **practical** sweet spot (cheap, kills visible bugs), and **causal consistency is the theoretical ceiling** for any system that wants to stay available during a partition. You cannot do better than causal without giving up availability.
 
@@ -222,11 +222,11 @@ Name the invariant first, and the pole follows. You do not pick consistency by t
 
 The most useful lesson from Azure Cosmos DB is that consistency is **per operation, not per database**. It exposes five named levels you choose per request, from strongest to weakest:
 
-1. **Strong** — linearizable. For balances and inventory where overselling is unacceptable.
-2. **Bounded staleness** — reads lag by at most K versions or T seconds, a *quantified* staleness. For leaderboards and dashboards.
-3. **Session** (the default) — read-your-writes plus monotonic reads, scoped to a user's session. The 90% case: a logged-in user must see their own edits. Cheap and globally available.
-4. **Consistent prefix** — you never see writes out of order, but may see an older snapshot. For activity feeds.
-5. **Eventual** — converges, no order promise, lowest latency. For like counts and view counters where staleness is harmless.
+1. **Strong** - linearizable. For balances and inventory where overselling is unacceptable.
+2. **Bounded staleness** - reads lag by at most K versions or T seconds, a *quantified* staleness. For leaderboards and dashboards.
+3. **Session** (the default) - read-your-writes plus monotonic reads, scoped to a user's session. The 90% case: a logged-in user must see their own edits. Cheap and globally available.
+4. **Consistent prefix** - you never see writes out of order, but may see an older snapshot. For activity feeds.
+5. **Eventual** - converges, no order promise, lowest latency. For like counts and view counters where staleness is harmless.
 
 Mature systems let you buy strength only where it matters and bank the latency and availability everywhere else.
 
@@ -243,7 +243,7 @@ Mature systems let you buy strength only where it matters and bank the latency a
 A practical checklist for your next design or review:
 
 1. **Name the invariant out loud first.** "Never double-charge" demands linearizability. "Never drop a write" demands availability. The invariant picks the pole, not your preference.
-2. **Reserve strong consistency for the few things that need it** — balances, inventory counts, locks, leader election. Let likes, feeds, and counters run on session or eventual.
+2. **Reserve strong consistency for the few things that need it** - balances, inventory counts, locks, leader election. Let likes, feeds, and counters run on session or eventual.
 3. **Translate every "consistent" claim** into a precise model before you trust it: linearizable, causal, bounded-stale, or session-scoped.
 4. **Default to session consistency for logged-in users.** Read-your-writes plus monotonic reads kills the bugs people actually notice, for the price of a sticky session or a version token.
 5. **Check the quorum math** when tuning N, W, and R. Want strong reads? Make sure `W + R > N`. Want speed and availability? Knowingly break it.

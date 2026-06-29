@@ -125,12 +125,12 @@ When something is on fire, you do not want to improvise. An incident response pr
 
 The operational favorite is **SANS PICERL**, six steps:
 
-1. **Preparation** — tools, plans, and training, in place before anything happens.
-2. **Identification** — confirm the incident is real and figure out its scope.
-3. **Containment** — isolate fast in the short term, then plan a clean rebuild.
-4. **Eradication** — remove the malware, backdoors, and persistence the attacker left behind.
-5. **Recovery** — restore from known-good backups and watch closely for reinfection.
-6. **Lessons Learned** — fix the system so it does not happen the same way again.
+1. **Preparation** - tools, plans, and training, in place before anything happens.
+2. **Identification** - confirm the incident is real and figure out its scope.
+3. **Containment** - isolate fast in the short term, then plan a clean rebuild.
+4. **Eradication** - remove the malware, backdoors, and persistence the attacker left behind.
+5. **Recovery** - restore from known-good backups and watch closely for reinfection.
+6. **Lessons Learned** - fix the system so it does not happen the same way again.
 
 The other model comes from **NIST**. Its newer guidance maps incident response onto the six functions of the Cybersecurity Framework (Govern, Identify, Protect, Detect, Respond, Recover) and treats improvement as continuous rather than a one-time wrap-up. The older four-phase NIST model (Preparation, Detection and Analysis, Containment/Eradication/Recovery, Post-Incident Activity) still shows up everywhere in practice and on exams, so it is worth recognizing both.
 

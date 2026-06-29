@@ -37,10 +37,10 @@ icon: "\U0001F916"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
-  - "Building Effective Agents — Anthropic — https://www.anthropic.com/engineering/building-effective-agents"
-  - "How we built our multi-agent research system — Anthropic — https://www.anthropic.com/engineering/multi-agent-research-system"
-  - "ReAct: Synergizing Reasoning and Acting in Language Models — Yao et al. — https://arxiv.org/abs/2210.03629"
-  - "Why Do Multi-Agent LLM Systems Fail? (MAST) — Cemri, Pan, Yang et al. — https://arxiv.org/abs/2503.13657"
+  - "Building Effective Agents - Anthropic - https://www.anthropic.com/engineering/building-effective-agents"
+  - "How we built our multi-agent research system - Anthropic - https://www.anthropic.com/engineering/multi-agent-research-system"
+  - "ReAct: Synergizing Reasoning and Acting in Language Models - Yao et al. - https://arxiv.org/abs/2210.03629"
+  - "Why Do Multi-Agent LLM Systems Fail? (MAST) - Cemri, Pan, Yang et al. - https://arxiv.org/abs/2503.13657"
 ---
 
 The word "agent" has quietly become one of the most overloaded terms in tech. A chatbot is called an agent. A script that calls an API twice is called an agent. A swarm of language models arguing with each other? Also an agent.
@@ -106,9 +106,9 @@ The cleanest concrete version of this loop comes from a 2022 paper, *ReAct: Syne
 
 You interleave three things, over and over:
 
-- **Thought** — the model reasons in plain language about what to do.
-- **Action** — it takes a step, like querying an API.
-- **Observation** — it reads back the result.
+- **Thought** - the model reasons in plain language about what to do.
+- **Action** - it takes a step, like querying an API.
+- **Observation** - it reads back the result.
 
 Why does mixing reasoning and acting work so well? Because each one fixes the other's weakness. Pure reasoning ("chain of thought") tends to drift into confident nonsense, since nothing checks it against reality. ReAct grounds every thought in a real observation from the world, which the paper showed cuts down hallucination. On interactive benchmarks like ALFWorld and WebShop, it beat the baselines by wide margins.
 

@@ -53,17 +53,17 @@ The good news is that this is a learnable game with a handful of rules. Let's wa
 
 ## The honest truth about salaries
 
-A salary is **linear income** — money you earn by trading hours for pay. It's capped, and it stops the moment you stop working. There are only so many hours in a week, and your pay has a ceiling set by your role.
+A salary is **linear income** - money you earn by trading hours for pay. It's capped, and it stops the moment you stop working. There are only so many hours in a week, and your pay has a ceiling set by your role.
 
 The investor Naval Ravikant put it bluntly: "You're not going to get rich renting out your time."
 
-So if a job can't make you rich, why take one seriously? Because a job is the cheapest place on earth to build the three ingredients that *can* create wealth — and to build them on someone else's downside risk.
+So if a job can't make you rich, why take one seriously? Because a job is the cheapest place on earth to build the three ingredients that *can* create wealth - and to build them on someone else's downside risk.
 
 Naval's recipe for wealth is **specific knowledge, accountability, and leverage**, in that order. A job is a paid apprenticeship in all three:
 
-- **Specific knowledge** — skills society can't easily train or replace, built by following genuine curiosity into hard problems. As Naval warns, "If society can train you, it can train someone else and replace you."
-- **Accountability** — taking visible risk under your own name. Society rewards visible responsibility with equity and leverage.
-- **Leverage** — anything that multiplies your output without multiplying your hours.
+- **Specific knowledge** - skills society can't easily train or replace, built by following genuine curiosity into hard problems. As Naval warns, "If society can train you, it can train someone else and replace you."
+- **Accountability** - taking visible risk under your own name. Society rewards visible responsibility with equity and leverage.
+- **Leverage** - anything that multiplies your output without multiplying your hours.
 
 Hold onto that last one. It's the spine of everything.
 
@@ -72,11 +72,11 @@ Hold onto that last one. It's the spine of everything.
 Naval describes four kinds of leverage, stacked from weakest to strongest. Understanding them tells you which jobs deserve a few years of your life.
 
 1. **Your own time.** A plain salary lives here. It's capped, and it stops when you stop.
-2. **Labor** — people working for you. The oldest form of leverage, and the hardest and most fragile to manage.
-3. **Capital** — money put to work. Powerful, but it needs other people's trust before they hand it to you.
-4. **Code and media** — write once, and it runs or serves a million times. This is the leverage behind almost everyone newly rich. It works while you sleep.
+2. **Labor** - people working for you. The oldest form of leverage, and the hardest and most fragile to manage.
+3. **Capital** - money put to work. Powerful, but it needs other people's trust before they hand it to you.
+4. **Code and media** - write once, and it runs or serves a million times. This is the leverage behind almost everyone newly rich. It works while you sleep.
 
-Here's the key split. Labor and capital need **permission** — someone has to hire you or fund you. Code and media are **permissionless**: nobody has to sign off for you to write software, a newsletter, or a course, and it costs nothing to copy.
+Here's the key split. Labor and capital need **permission** - someone has to hire you or fund you. Code and media are **permissionless**: nobody has to sign off for you to write software, a newsletter, or a course, and it costs nothing to copy.
 
 A salaried job is where you safely learn to manage labor and capital on someone else's risk, while quietly building the specific knowledge that later becomes your own code-and-media leverage. That's the real prize hiding inside the paycheck.
 
@@ -86,27 +86,27 @@ Working hard in a low-leverage seat loses to working sensibly in a high-leverage
 
 ### Pick fast-growing companies and markets
 
-Sheryl Sandberg's famous "rocket ship" rule: *"If you're offered a seat on a rocket ship, don't ask what seat — just get on."*
+Sheryl Sandberg's famous "rocket ship" rule: *"If you're offered a seat on a rocket ship, don't ask what seat - just get on."*
 
 Growth manufactures opportunity. A fast-growing company constantly opens new roles to be promoted into, its equity appreciates, and its people scatter to start companies and hire their old colleagues. A stagnant company has no open slots to grow into, no matter how good you are. You can be the best player on a team that never gets promoted.
 
 ### Get close to revenue or the core product
 
-A high-leverage role is one where your output is **measurable and compounding** — it ships the core product, or it visibly moves revenue or customer retention.
+A high-leverage role is one where your output is **measurable and compounding** - it ships the core product, or it visibly moves revenue or customer retention.
 
 Support roles where "impact" is diffuse make it hard to prove your value, because nobody can point to the number you moved. When promotion season comes, ambiguity is the enemy.
 
-> **Counterintuitive move:** Early in your career, optimize for *rate of learning* over pay. A lower-paying role at a fast-growing product company where you ship real things often beats a higher-paying role at a stagnant one — because in three years the first builds rare skills and a network the second never will. The pay gap reverses, and then some.
+> **Counterintuitive move:** Early in your career, optimize for *rate of learning* over pay. A lower-paying role at a fast-growing product company where you ship real things often beats a higher-paying role at a stagnant one - because in three years the first builds rare skills and a network the second never will. The pay gap reverses, and then some.
 
 ## Get promoted for impact, not hours
 
-Above the junior level, promotions are granted for exactly one thing: **how much impact you provide** — output that matters to company goals, not the hours you log.
+Above the junior level, promotions are granted for exactly one thing: **how much impact you provide** - output that matters to company goals, not the hours you log.
 
-As engineering-leadership writers like to say, "your work cannot advocate for itself — someone needs to translate it into impact, and that someone needs to be you."
+As engineering-leadership writers like to say, "your work cannot advocate for itself - someone needs to translate it into impact, and that someone needs to be you."
 
 Four levers do most of the lifting:
 
-1. **Clarify the rubric.** Find out exactly what the next level requires. Promotions are usually granted for *already operating* at that level — so you have to perform the job before you get the title.
+1. **Clarify the rubric.** Find out exactly what the next level requires. Promotions are usually granted for *already operating* at that level - so you have to perform the job before you get the title.
 2. **Say no, and go deep.** Protect your focus for the few high-impact projects. Ten shallow tasks rarely beat one thing done at the next level.
 3. **Manage up.** Align early and often with your manager's goals. Surprise them with results, never with direction.
 4. **Make work visible by teaching, not telling.** Share what you did through the lens of *why it matters*. Document it, demo it, write the internal post explaining the win.
@@ -116,10 +116,10 @@ Four levers do most of the lifting:
 A few beliefs quietly cost people years and lakhs of rupees. Here's the myth versus the reality.
 
 **Myth: Long hours equal promotion.**
-Hours are invisible and they don't compound. A person who ships one revenue-moving feature and clearly explains its impact will pass someone grinding 60-hour weeks on low-leverage tasks. Visibility isn't theatre — but the real work still has to be *translated* into impact, by you.
+Hours are invisible and they don't compound. A person who ships one revenue-moving feature and clearly explains its impact will pass someone grinding 60-hour weeks on low-leverage tasks. Visibility isn't theatre - but the real work still has to be *translated* into impact, by you.
 
 **Myth: Negotiating an offer is greedy or risky.**
-It's expected. The asymmetric risk is in *not* asking — one conversation can raise your income for years and compound across every future raise. The one honest caveat: have a real fallback before you hardball.
+It's expected. The asymmetric risk is in *not* asking - one conversation can raise your income for years and compound across every future raise. The one honest caveat: have a real fallback before you hardball.
 
 **Myth: Equity is worth its valuation times your percentage.**
 It usually isn't, because of liquidation preferences and the simple fact that most startups fail or exit below the option price. Employee options frequently expire worthless.
@@ -133,14 +133,14 @@ Let's turn the two biggest ones into concrete playbooks.
 
 One conversation can change your income for years and compound across every future raise. Four moves, drawn from negotiation guides like Levels.fyi's and university career offices:
 
-1. **Anchor high, stay flexible.** When asked early for a number, give a range, then add: *"This is flexible — I'd like to keep learning through the process."* Never name a hard number before you understand the level and the comp structure.
+1. **Anchor high, stay flexible.** When asked early for a number, give a range, then add: *"This is flexible - I'd like to keep learning through the process."* Never name a hard number before you understand the level and the comp structure.
 2. **Use market data.** Pull role, level, and city numbers from sites like Levels.fyi, Glassdoor, or AmbitionBox (popular in India). Negotiate against data, not feelings.
 3. **Get competing offers.** This is the single strongest lever. Use strategically vague language: *"I'm wrapping up interviews with a few other companies."* You can ask for time; processes don't have to finish the same week.
-4. **Negotiate total comp, not just base.** Total comp is base plus bonus plus equity plus sign-on. Candidates routinely leave money on the table by fixating on base. A sign-on bonus is often the *easiest* lever — it's one-time and off-budget, so a manager can say yes without resetting their salary bands.
+4. **Negotiate total comp, not just base.** Total comp is base plus bonus plus equity plus sign-on. Candidates routinely leave money on the table by fixating on base. A sign-on bonus is often the *easiest* lever - it's one-time and off-budget, so a manager can say yes without resetting their salary bands.
 
-**A quick example.** A candidate is offered ₹24 LPA base and nothing else. They mention a competing process, supply AmbitionBox data for the level, and ask about total comp. The revised offer comes back as ₹26 LPA base, ₹4 LPA target bonus, ₹3 LPA one-time sign-on, plus ESOPs — total first-year comp around ₹33 LPA, roughly a 30% jump. The ask cost one email and one awkward pause.
+**A quick example.** A candidate is offered ₹24 LPA base and nothing else. They mention a competing process, supply AmbitionBox data for the level, and ask about total comp. The revised offer comes back as ₹26 LPA base, ₹4 LPA target bonus, ₹3 LPA one-time sign-on, plus ESOPs - total first-year comp around ₹33 LPA, roughly a 30% jump. The ask cost one email and one awkward pause.
 
-One word of caution: before you push hard, have a real fallback — what negotiators call a **BATNA**, your *Best Alternative To a Negotiated Agreement*, meaning your next-best option. Bluff with nothing behind you and you can lose the offer.
+One word of caution: before you push hard, have a real fallback - what negotiators call a **BATNA**, your *Best Alternative To a Negotiated Agreement*, meaning your next-best option. Bluff with nothing behind you and you can lose the offer.
 
 ## Cash versus equity: value ESOPs like a lottery ticket
 
@@ -148,10 +148,10 @@ An **ESOP** (Employee Stock Ownership Plan) is the right to buy company shares a
 
 Two things quietly destroy that value:
 
-- **Liquidation preferences** — a clause that pays investors back *first* when a company is sold. Common-stock employees can walk away with far less than valuation times their ownership percentage. Sometimes ₹0.
-- **Failure rates** — most startups fail or exit below the strike price, so the option to buy is worth nothing.
+- **Liquidation preferences** - a clause that pays investors back *first* when a company is sold. Common-stock employees can walk away with far less than valuation times their ownership percentage. Sometimes ₹0.
+- **Failure rates** - most startups fail or exit below the strike price, so the option to buy is worth nothing.
 
-So treat equity as a lottery ticket layered *on top of* a livable salary, never as a substitute for one. As a rough rule of thumb, expect somewhere around 0.1% to 0.25% extra equity for each ~$10K (roughly ₹8.5 lakh) of below-market salary you accept. The expected-value math can genuinely favor a smaller, higher-growth company — but it's a bet, not a promise.
+So treat equity as a lottery ticket layered *on top of* a livable salary, never as a substitute for one. As a rough rule of thumb, expect somewhere around 0.1% to 0.25% extra equity for each ~$10K (roughly ₹8.5 lakh) of below-market salary you accept. The expected-value math can genuinely favor a smaller, higher-growth company - but it's a bet, not a promise.
 
 ### A note for readers in India: how ESOPs are taxed
 
@@ -168,13 +168,13 @@ Here's the most underrated thing you take from a job. It isn't the salary. It's 
 
 Accountability, in Naval's words, is "reputational skin in the game." Inside a job you compound a track record cheaply: ship real things, take public credit, and build relationships with colleagues who will go on to become founders, hiring managers, and customers.
 
-Think of it this way: your **salary is the rent** the company pays you. Your **reputation and network are the property** you walk out with — portable equity that no resignation can claw back.
+Think of it this way: your **salary is the rent** the company pays you. Your **reputation and network are the property** you walk out with - portable equity that no resignation can claw back.
 
 ## When the job becomes a trap: golden handcuffs
 
-**Golden handcuffs** are retention tools — RSUs, options, or deferred bonuses where quitting forfeits unvested value. The pay keeps you tied even after the job stops being right for you.
+**Golden handcuffs** are retention tools - RSUs, options, or deferred bonuses where quitting forfeits unvested value. The pay keeps you tied even after the job stops being right for you.
 
-This works through **vesting**. Vesting is the schedule, often four years, over which equity actually becomes yours. A one-year "cliff" means you get nothing if you leave inside the first year. And because companies stack new grants on top each year, there's *always* something unvested — so the cost of leaving rises every single year.
+This works through **vesting**. Vesting is the schedule, often four years, over which equity actually becomes yours. A one-year "cliff" means you get nothing if you leave inside the first year. And because companies stack new grants on top each year, there's *always* something unvested - so the cost of leaving rises every single year.
 
 This is by design. Equity programs are estimated to cut voluntary turnover by 25% to 40%. The trap, as one advisor describes it: "you make too much to quit, but the job requires so much of your soul the money no longer feels worth it." Money quietly becomes an instrument of control rather than freedom.
 
@@ -190,10 +190,10 @@ Turn all of the above into a short personal checklist:
 4. **Translate your wins.** Document, demo, and write up what you did through the lens of why it mattered. Don't make your boss reconstruct your value.
 5. **Always negotiate, on total comp.** Use market data, hint at competing processes, and ask for the sign-on bonus. Just have a genuine fallback first.
 6. **Treat equity as a bonus, never a salary.** Make sure the cash alone is livable, and understand the tax events before you exercise.
-7. **Disarm the handcuffs in advance.** Sell vested stock on a fixed schedule to diversify, and decide your **walk-away number** — the savings at which you can afford to leave on your own terms.
+7. **Disarm the handcuffs in advance.** Sell vested stock on a fixed schedule to diversify, and decide your **walk-away number** - the savings at which you can afford to leave on your own terms.
 
 ## Conclusion
 
-The single takeaway is this: a job is not where you get rich, but it is the safest place to build the things that make you rich — rare skills, a strong reputation, a network, and the savings that buy you future choices. Only **ownership** scales past the wage ceiling, so the whole point of doing the job well is to fund and learn your way toward something you own.
+The single takeaway is this: a job is not where you get rich, but it is the safest place to build the things that make you rich - rare skills, a strong reputation, a network, and the savings that buy you future choices. Only **ownership** scales past the wage ceiling, so the whole point of doing the job well is to fund and learn your way toward something you own.
 
-Which raises the obvious next question. Once you've stacked the skills, the network, and the runway, what exactly do you build with them — and how do you climb from level one of the leverage stack to level four, where the work keeps paying while you sleep? That's where the real game begins.
+Which raises the obvious next question. Once you've stacked the skills, the network, and the runway, what exactly do you build with them - and how do you climb from level one of the leverage stack to level four, where the work keeps paying while you sleep? That's where the real game begins.

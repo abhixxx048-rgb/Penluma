@@ -83,13 +83,13 @@ Norman breaks that little drama into seven stages. Don't memorize them as a stri
 
 Let's walk through one concrete task: **saving changes to your store settings.**
 
-1. **Goal** — what you want: "I want to keep my changes."
-2. **Plan** — the approach: "I'll save it."
-3. **Specify** — the concrete steps: "I'll click the Save button" (or press Ctrl+S).
-4. **Perform** — actually do it: move the mouse, click.
-5. **Perceive** — notice what changed: a "Saved successfully" message appears, the little "unsaved changes" dot disappears.
-6. **Interpret** — make sense of it: "green message in plain words means it worked."
-7. **Compare** — check against the goal: "Yes, saved. Done." (Or: "An error, I'll try again.")
+1. **Goal** - what you want: "I want to keep my changes."
+2. **Plan** - the approach: "I'll save it."
+3. **Specify** - the concrete steps: "I'll click the Save button" (or press Ctrl+S).
+4. **Perform** - actually do it: move the mouse, click.
+5. **Perceive** - notice what changed: a "Saved successfully" message appears, the little "unsaved changes" dot disappears.
+6. **Interpret** - make sense of it: "green message in plain words means it worked."
+7. **Compare** - check against the goal: "Yes, saved. Done." (Or: "An error, I'll try again.")
 
 Stages 2 to 4 (plan, specify, perform) bridge the **Gulf of Execution**. Stages 5 to 7 (perceive, interpret, compare) bridge the **Gulf of Evaluation**. One goal sits at the top, and the whole loop either repeats or stops.
 
@@ -134,13 +134,13 @@ Use these numbers to decide between instant feedback and a loading indicator. A 
 
 If feedback closes the evaluation gulf, these seven principles close the execution gulf. Use them as a checklist when reviewing any screen.
 
-1. **Discoverability** — Can the user figure out what's possible just by looking? Is the primary action obviously present and reachable?
-2. **Feedback** — Is every action's result communicated immediately and in plain words? (This is Nielsen's heuristic number one.)
-3. **Conceptual model** — Does the design tell a coherent story, so the user's mental picture matches reality? Would the labels and structure make sense to a shopkeeper?
-4. **Affordances** — The properties of an object that determine how it *could* be used. A button affords pressing, a link affords clicking.
-5. **Signifiers** — The perceivable *cue* that an affordance exists: the underline on a link, the raised look of a button. Norman's big point: worry more about signifiers than affordances. Does the clickable thing actually *look* clickable?
-6. **Mappings** — The relationship between a control and its effect should be natural: up means more, and the control sits next to what it changes.
-7. **Constraints** — Limit possible actions to prevent errors. Disable or hide what can't be done now, instead of warning after the fact. Have you made the wrong action impossible?
+1. **Discoverability** - Can the user figure out what's possible just by looking? Is the primary action obviously present and reachable?
+2. **Feedback** - Is every action's result communicated immediately and in plain words? (This is Nielsen's heuristic number one.)
+3. **Conceptual model** - Does the design tell a coherent story, so the user's mental picture matches reality? Would the labels and structure make sense to a shopkeeper?
+4. **Affordances** - The properties of an object that determine how it *could* be used. A button affords pressing, a link affords clicking.
+5. **Signifiers** - The perceivable *cue* that an affordance exists: the underline on a link, the raised look of a button. Norman's big point: worry more about signifiers than affordances. Does the clickable thing actually *look* clickable?
+6. **Mappings** - The relationship between a control and its effect should be natural: up means more, and the control sits next to what it changes.
+7. **Constraints** - Limit possible actions to prevent errors. Disable or hide what can't be done now, instead of warning after the fact. Have you made the wrong action impossible?
 
 ### The "Norman door" test
 
@@ -154,9 +154,9 @@ A Save button styled like plain gray text is the same door. It can be pressed, b
 
 Any screen that loads data must handle three states. Each one is really *feedback about system status*. Leave one out, and the evaluation gulf reopens.
 
-- **Loading** — Show a skeleton (greyed placeholder shapes) or a spinner, never a blank page. A blank screen reads as "broken," and the uncertainty makes users repeatedly re-check whether it's still working.
-- **Empty** — Never show a raw "No data." Give a next action: *"You haven't added any products yet. Click 'Add Product.'"* An empty state is an onboarding moment that answers "what do I do now?"
-- **Error** — Plain-language message plus a recovery action. Never a status code, stack trace, or untranslated text key. State the problem and suggest a fix. (The best error, of course, is the one a constraint prevented entirely.)
+- **Loading** - Show a skeleton (greyed placeholder shapes) or a spinner, never a blank page. A blank screen reads as "broken," and the uncertainty makes users repeatedly re-check whether it's still working.
+- **Empty** - Never show a raw "No data." Give a next action: *"You haven't added any products yet. Click 'Add Product.'"* An empty state is an onboarding moment that answers "what do I do now?"
+- **Error** - Plain-language message plus a recovery action. Never a status code, stack trace, or untranslated text key. State the problem and suggest a fix. (The best error, of course, is the one a constraint prevented entirely.)
 
 ## Common misconceptions
 

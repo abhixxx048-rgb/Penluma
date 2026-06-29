@@ -19,7 +19,7 @@ keywords:
   - how to price a service
 faq:
   - q: "What is value-based pricing?"
-    a: "Value-based pricing means setting your price on how much benefit the customer gets — money saved, money earned, time returned — rather than on your costs or a competitor's number. It is the only model that scales as you deliver more value."
+    a: "Value-based pricing means setting your price on how much benefit the customer gets - money saved, money earned, time returned - rather than on your costs or a competitor's number. It is the only model that scales as you deliver more value."
   - q: "Why is raising prices so powerful for profit?"
     a: "Every extra rupee or dollar of price flows almost straight to profit because it costs nothing extra to produce. A 1% price increase usually lifts operating profit far more than a 1% cut in costs."
   - q: "How do I figure out what customers will pay?"
@@ -59,7 +59,7 @@ And the slice matters more than almost any other number you control.
 
 ## Price is the strongest profit lever you own
 
-A classic McKinsey study found that for a typical company, a **1% improvement in price** — with sales volume unchanged — lifts operating profit far more than a 1% cut in costs.
+A classic McKinsey study found that for a typical company, a **1% improvement in price** - with sales volume unchanged - lifts operating profit far more than a 1% cut in costs.
 
 The reason is simple. Every extra rupee of price flows almost straight to the bottom line. It carries no extra cost to produce. You already built the thing.
 
@@ -69,7 +69,7 @@ The flip side is brutal, because **a discount is never free**.
 
 The takeaway: a small price increase you can defend beats a large volume gain you have to chase.
 
-## The three ways to set a price — and why two are traps
+## The three ways to set a price - and why two are traps
 
 There are really only three ways to land on a number.
 
@@ -85,19 +85,19 @@ This outsources your strategy to a competitor who might be wrong. It is a race t
 
 Harder, because you have to actually quantify the benefit. But it is the only durable model.
 
-> **The fire-extinguisher analogy.** An extinguisher costs 800 to make. In a hardware shop it sells for 1,200. In a burning building it is worth everything you own. Same object, same cost — but the value, and the price a sane person will pay, depends entirely on the situation. Value-based pricing means finding the people whose building is on fire.
+> **The fire-extinguisher analogy.** An extinguisher costs 800 to make. In a hardware shop it sells for 1,200. In a burning building it is worth everything you own. Same object, same cost - but the value, and the price a sane person will pay, depends entirely on the situation. Value-based pricing means finding the people whose building is on fire.
 
 ## Charge for value delivered, not effort spent
 
 This single shift separates founders who get rich from freelancers who stay tired.
 
-If you bill by the hour, you are punished for getting faster, and your income is capped at hours-in-a-day. Think about how differently time gets priced: a taxi driver earns a modest hourly rate, a surgeon far more, a large-company CEO more still. Same sixty minutes, wildly different price — because of specific knowledge, accountability, and leverage, not effort.
+If you bill by the hour, you are punished for getting faster, and your income is capped at hours-in-a-day. Think about how differently time gets priced: a taxi driver earns a modest hourly rate, a surgeon far more, a large-company CEO more still. Same sixty minutes, wildly different price - because of specific knowledge, accountability, and leverage, not effort.
 
-> **The consultant's weekend.** A consultant fixes a factory's billing bug over a weekend, saving them 10 lakh a year. Billing 16 hours at 2,000 each comes to 32,000. Pricing on *value* — say 2 lakh, one-fifth of the first year's savings — is cheap for the client, who still nets 8 lakh, and rich for the consultant. The weekend did not get more valuable. The framing did.
+> **The consultant's weekend.** A consultant fixes a factory's billing bug over a weekend, saving them 10 lakh a year. Billing 16 hours at 2,000 each comes to 32,000. Pricing on *value* - say 2 lakh, one-fifth of the first year's savings - is cheap for the client, who still nets 8 lakh, and rich for the consultant. The weekend did not get more valuable. The framing did.
 
 The move that makes this repeatable is to **productize**. Turn "my time" into an outcome or an asset: a fixed-scope package, a subscription, a software seat. The moment price decouples from your hours, your income can grow while your effort stays flat.
 
-## Measure willingness to pay — don't guess it
+## Measure willingness to pay - don't guess it
 
 **Willingness to pay** is the most a given type of customer will pay before walking away. It is the ceiling on your price.
 
@@ -110,7 +110,7 @@ The **Van Westendorp method** uses four questions about your product:
 3. At what price is it *a good deal*?
 4. At what price is it *so cheap* you'd doubt the quality?
 
-Plot the answers and the lines cross at an acceptable price range. Run it separately for each **buyer persona** — a specific kind of customer, like a solo print-shop owner versus a 20-staff commercial printer — because different groups value you differently.
+Plot the answers and the lines cross at an acceptable price range. Run it separately for each **buyer persona** - a specific kind of customer, like a solo print-shop owner versus a 20-staff commercial printer - because different groups value you differently.
 
 ## How the price is shown changes what people pick
 
@@ -137,7 +137,7 @@ In a famous example from Dan Ariely's *Predictably Irrational*, *The Economist* 
 
 ### Charm versus round numbers
 
-A price like 999 (charm pricing) signals "deal" for consumer goods. Round numbers — 1,000, 50,000 — signal premium, quality, and trust in business and luxury sales. Match the number's feel to the buyer.
+A price like 999 (charm pricing) signals "deal" for consumer goods. Round numbers - 1,000, 50,000 - signal premium, quality, and trust in business and luxury sales. Match the number's feel to the buyer.
 
 ## Charge by the right unit: your value metric
 
@@ -151,13 +151,13 @@ Get it right and the customer sees value the way you do, so there is no reason t
 | Usage-based | Price tracks value, scales with success | Unpredictable bills cause anxiety |
 | Flat / tiered | Easy to buy | Leaves money on the table at the top |
 
-> **A print-software example.** Charging "per admin login" is nonsense — a one-person shop and a busy commercial printer pay the same while getting wildly different value. The real value metric is orders processed, total order value, or number of stores. A shop pushing 50 lakh a year of print orders gets far more value than a hobbyist, so order-based tiers capture that automatically — and they feel fair, because the customer only pays more once they are succeeding.
+> **A print-software example.** Charging "per admin login" is nonsense - a one-person shop and a busy commercial printer pay the same while getting wildly different value. The real value metric is orders processed, total order value, or number of stores. A shop pushing 50 lakh a year of print orders gets far more value than a hobbyist, so order-based tiers capture that automatically - and they feel fair, because the customer only pays more once they are succeeding.
 
 ## When and how to raise prices
 
 **Signs you are underpriced:**
 
-- Churn is near zero *and* price never comes up in sales calls — you've made it a no-brainer.
+- Churn is near zero *and* price never comes up in sales calls - you've made it a no-brainer.
 - You shipped many big features in twelve months but your price is flat.
 - You win every deal without a fight.
 
@@ -165,13 +165,13 @@ Get it right and the customer sees value the way you do, so there is no reason t
 
 1. **Grandfather or stage it.** Let existing customers keep their rate, or move them up gradually.
 2. **Lead with added value**, never with "our costs went up."
-3. **Give notice** — 30 days for monthly plans, 45 to 60 for annual ones.
+3. **Give notice** - 30 days for monthly plans, 45 to 60 for annual ones.
 
 > **The costly mistake.** Treating a price rise as a maths problem. Customers rarely churn over a modest increase. They churn because they felt blindsided, undervalued, or trapped. A failed increase is almost always a *communication* failure, not a price failure.
 
 ## Common misconceptions
 
-**"The lowest price wins."** Usually false. Buyers use price as a proxy for quality, and enterprise buyers often eliminate the cheapest option first — it signals weak capability, hidden costs, or a vendor who may not survive. Industry surveys find a majority of software founders avoid pricing conversations and default to a "safe" low price. Underpricing is fear dressed up as prudence, and it starves the very support and development that would justify charging more. Customers won with discounts also tend to churn faster and demand more.
+**"The lowest price wins."** Usually false. Buyers use price as a proxy for quality, and enterprise buyers often eliminate the cheapest option first - it signals weak capability, hidden costs, or a vendor who may not survive. Industry surveys find a majority of software founders avoid pricing conversations and default to a "safe" low price. Underpricing is fear dressed up as prudence, and it starves the very support and development that would justify charging more. Customers won with discounts also tend to churn faster and demand more.
 
 **"Set the price once, then forget it."** This is the most expensive belief of all. Value-based pricing is ongoing work: quantifying customer ROI, re-running willingness-to-pay research, and testing changes on small groups before touching your whole base.
 
@@ -192,14 +192,14 @@ Thresholds and schemes are revised periodically, so verify the current figures a
 A quick checklist to put pricing to work this week:
 
 1. **Write down the value you create** in money or time saved for one real customer. That number is your ceiling, not your cost.
-2. **Pick a value metric** that grows as the customer succeeds — orders, transactions, stores — not one that punishes adoption.
+2. **Pick a value metric** that grows as the customer succeeds - orders, transactions, stores - not one that punishes adoption.
 3. **Build three tiers**, anchor with a high top tier, and make the middle one your real target.
 4. **Ask five customers the four Van Westendorp questions** instead of guessing the number.
 5. **Check the underpriced signals.** If you never lose a deal, you are leaving money on the table.
-6. **Plan your next increase like a message, not a maths change** — lead with value and give plenty of notice.
+6. **Plan your next increase like a message, not a maths change** - lead with value and give plenty of notice.
 
 ## Conclusion
 
 If you remember one thing, make it this: **price on the value you create, not the cost you incur or the number your competitor picked.** Cost is your floor. The customer's value is your ceiling. Your job is to capture a fair slice of the space between.
 
-Pricing is the loudest signal your business sends about what it is worth — but it is only half of the profit equation. The other half is what happens *after* someone says yes: how you keep them, expand them, and turn a single sale into years of revenue. That is where the real fortunes are quietly made, and it is worth your attention next.
+Pricing is the loudest signal your business sends about what it is worth - but it is only half of the profit equation. The other half is what happens *after* someone says yes: how you keep them, expand them, and turn a single sale into years of revenue. That is where the real fortunes are quietly made, and it is worth your attention next.

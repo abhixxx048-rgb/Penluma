@@ -91,11 +91,11 @@ Ask these in order, out loud or on paper, whenever you face a chart, table, or r
 
 A few of those words deserve plain definitions before we lean on them:
 
-- **Units** — what each number actually measures: rupees, people, percent, orders. A "5" means nothing until you know it is 5 *what*.
-- **Trend** — the direction over time: up, down, or flat.
-- **Baseline** — a starting point you measure against: last week, last year, the day before a change.
-- **Benchmark** — an outside standard you compare to: a target, an industry average, a competitor.
-- **Base rate** — how common something normally is. "10 complaints" sounds bad until you learn it came from 10,000 orders, so it is 0.1%.
+- **Units** - what each number actually measures: rupees, people, percent, orders. A "5" means nothing until you know it is 5 *what*.
+- **Trend** - the direction over time: up, down, or flat.
+- **Baseline** - a starting point you measure against: last week, last year, the day before a change.
+- **Benchmark** - an outside standard you compare to: a target, an industry average, a competitor.
+- **Base rate** - how common something normally is. "10 complaints" sounds bad until you learn it came from 10,000 orders, so it is 0.1%.
 
 ## Climb the ladder: describe, then compare, then explain
 
@@ -103,15 +103,15 @@ Beginners freeze because they leap straight to the hardest question: *why did th
 
 Instead, climb the ladder in order. This mirrors how real analysts think.
 
-### Layer 1 — Descriptive (easiest)
+### Layer 1 - Descriptive (easiest)
 
 Just read it back in plain words, with no opinion yet. "Tuesday had 120 orders." That's it.
 
-### Layer 2 — Comparative
+### Layer 2 - Comparative
 
 Put two numbers side by side. "Tuesday's 120 is double Monday's 60." Now the number has meaning, because meaning lives in the comparison.
 
-### Layer 3 — Causal (hardest)
+### Layer 3 - Causal (hardest)
 
 Offer a possible reason, and clearly label it as a guess. "Maybe the Tuesday discount drove it." Never a fact, always a question to test.
 

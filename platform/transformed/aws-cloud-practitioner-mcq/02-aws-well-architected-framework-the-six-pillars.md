@@ -39,7 +39,7 @@ faq:
 sources: []
 ---
 
-Picture this: the exam hands you a one-sentence scenario, four pillar names, and sixty seconds. "A company spreads its app across multiple Availability Zones." Quick — is that Reliability or Performance Efficiency? Most people freeze right there.
+Picture this: the exam hands you a one-sentence scenario, four pillar names, and sixty seconds. "A company spreads its app across multiple Availability Zones." Quick - is that Reliability or Performance Efficiency? Most people freeze right there.
 
 Here's the good news. The AWS Well-Architected Framework isn't a memory test. It's a pattern-matching game. Once you know the single "job" each pillar does, those scenario questions stop being scary and start being almost automatic.
 
@@ -57,12 +57,12 @@ Beyond the exam, this is genuinely how good cloud teams think. When something br
 
 Think of the six pillars as six different jobs. A single workload needs all of them, but each answers a different question.
 
-- **Operational Excellence** — *How do we run, monitor, and keep improving the system?* Automation, infrastructure as code, runbooks, small frequent changes.
-- **Security** — *How do we protect data, systems, and identities?* Least-privilege access (IAM), encryption at rest and in transit, audit trails.
-- **Reliability** — *How do we recover from failure and stay available?* Multi-AZ design, auto-replacing failed instances, disaster recovery, RTO/RPO.
-- **Performance Efficiency** — *How do we use the right resources to meet speed needs?* Picking the best-matched instance type, caching, load testing.
-- **Cost Optimization** — *How do we avoid paying for what we don't use?* Right-sizing, shutting down idle resources, paying only for what you need.
-- **Sustainability** — *How do we reduce our environmental impact?* Lower energy use and carbon footprint, fewer resources per unit of work.
+- **Operational Excellence** - *How do we run, monitor, and keep improving the system?* Automation, infrastructure as code, runbooks, small frequent changes.
+- **Security** - *How do we protect data, systems, and identities?* Least-privilege access (IAM), encryption at rest and in transit, audit trails.
+- **Reliability** - *How do we recover from failure and stay available?* Multi-AZ design, auto-replacing failed instances, disaster recovery, RTO/RPO.
+- **Performance Efficiency** - *How do we use the right resources to meet speed needs?* Picking the best-matched instance type, caching, load testing.
+- **Cost Optimization** - *How do we avoid paying for what we don't use?* Right-sizing, shutting down idle resources, paying only for what you need.
+- **Sustainability** - *How do we reduce our environmental impact?* Lower energy use and carbon footprint, fewer resources per unit of work.
 
 If you remember nothing else, remember the verb attached to each: *run, protect, recover, speed up, save money, go green.*
 
@@ -70,7 +70,7 @@ If you remember nothing else, remember the verb attached to each: *run, protect,
 
 A company wants to **automatically replace failed EC2 instances** and **spread its app across multiple Availability Zones** so it survives a zone outage.
 
-The tempting answer is Performance Efficiency, because "multiple Availability Zones" sounds like a performance trick. It isn't. The goal here is *surviving failure* — recovery and availability — which is the heart of **Reliability**.
+The tempting answer is Performance Efficiency, because "multiple Availability Zones" sounds like a performance trick. It isn't. The goal here is *surviving failure* - recovery and availability - which is the heart of **Reliability**.
 
 That instinct to grab the wrong pillar is exactly what the exam is testing. So let's name the traps directly.
 
@@ -100,12 +100,12 @@ Same action, different motive. Read for the motive.
 
 Both "give recommendations," which is why people swap them.
 
-- **Well-Architected Tool** — a *manual, guided questionnaire* you answer to review **one workload's** design against the pillars, then get a risk report. It's a self-review.
-- **Trusted Advisor** — *automated, real-time checks* across your **whole account** in five categories: cost optimization, performance, security, fault tolerance, and service limits (quotas).
+- **Well-Architected Tool** - a *manual, guided questionnaire* you answer to review **one workload's** design against the pillars, then get a risk report. It's a self-review.
+- **Trusted Advisor** - *automated, real-time checks* across your **whole account** in five categories: cost optimization, performance, security, fault tolerance, and service limits (quotas).
 
 Deciding question: *One workload's design review, or live account-wide checks?*
 
-One more nuance: Trusted Advisor's five categories do **not** map one-to-one onto the six pillars. Don't assume "Sustainability" is a Trusted Advisor category — it isn't.
+One more nuance: Trusted Advisor's five categories do **not** map one-to-one onto the six pillars. Don't assume "Sustainability" is a Trusted Advisor category - it isn't.
 
 ### Six pillars vs CAF perspectives
 
@@ -119,9 +119,9 @@ CAF is organized into six **perspectives**: Business, People, Governance, Platfo
 
 The exam also quotes a few Well-Architected design principles almost word-for-word. Three come up often.
 
-1. **Stop guessing your capacity needs.** In the cloud you scale automatically as demand changes, so you never have to over-provision up front. The wrong answers always involve buying the biggest box or signing a fixed long-term hardware contract — that's the old data-center mindset.
+1. **Stop guessing your capacity needs.** In the cloud you scale automatically as demand changes, so you never have to over-provision up front. The wrong answers always involve buying the biggest box or signing a fixed long-term hardware contract - that's the old data-center mindset.
 2. **Scale horizontally to increase availability.** Add *more small resources* behind a load balancer (scale out) instead of making one server bigger (scale up). Losing one of many small resources barely hurts; losing one giant server takes everything down.
-3. **Stop treating audits as one-time events.** The framework's whole value is a *repeatable* set of best practices to evaluate and improve workloads over time — not a single point-in-time check.
+3. **Stop treating audits as one-time events.** The framework's whole value is a *repeatable* set of best practices to evaluate and improve workloads over time - not a single point-in-time check.
 
 And a meta-tip: any answer promising a **guarantee** ("zero downtime," "automatically lowers your bill") is almost always wrong. AWS describes the framework as guidance and best practice, never a guarantee.
 
@@ -129,18 +129,18 @@ And a meta-tip: any answer promising a **guarantee** ("zero downtime," "automati
 
 When a Well-Architected scenario appears, run this quick checklist:
 
-1. **Find the verb.** What is the company actually trying to do — run it, protect it, recover it, speed it up, save money, or go green? The verb usually names the pillar.
+1. **Find the verb.** What is the company actually trying to do - run it, protect it, recover it, speed it up, save money, or go green? The verb usually names the pillar.
 2. **Spot the deciding cue.** If two pillars seem to fit, hunt for the trap-pair keyword: "recover" vs "faster," "stop paying" vs "carbon footprint."
 3. **Check the scope.** One workload's design → pillars or the Well-Architected Tool. Whole organization → CAF. Live account-wide checks → Trusted Advisor.
 4. **Distrust guarantees.** Cross out any option promising perfection or automatic results.
-5. **Watch for "NOT" questions.** "Which is NOT a pillar?" — Scalability is the classic decoy.
+5. **Watch for "NOT" questions.** "Which is NOT a pillar?" - Scalability is the classic decoy.
 
 Practice by re-reading any scenario and saying the pillar out loud *before* you look at the options. If you can name it cold, you've internalized the pattern.
 
 ## Conclusion
 
-The whole framework collapses into one habit: **match the verb to the pillar.** Run, protect, recover, speed up, save money, go green — six jobs, six pillars, one quick mental move that turns a guessing game into a reflex.
+The whole framework collapses into one habit: **match the verb to the pillar.** Run, protect, recover, speed up, save money, go green - six jobs, six pillars, one quick mental move that turns a guessing game into a reflex.
 
 Master that, and the trap pairs lose their teeth. The exam writers are betting you'll grab the plausible answer instead of the precise one.
 
-Next, dig into the Security pillar on its own — because the moment you understand the **shared responsibility model** (what AWS secures versus what *you* secure), a surprising number of "which pillar" and "whose job is it" questions answer themselves.
+Next, dig into the Security pillar on its own - because the moment you understand the **shared responsibility model** (what AWS secures versus what *you* secure), a surprising number of "which pillar" and "whose job is it" questions answer themselves.

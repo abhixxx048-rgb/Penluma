@@ -1,6 +1,6 @@
-# Module 19 — Specialized Systems: Search, Geospatial, Time-Series & Analytics
+# Module 19 - Specialized Systems: Search, Geospatial, Time-Series & Analytics
 
-**What you'll learn:** When a relational table (`SELECT ... WHERE col LIKE '%foo%'`) is the wrong tool, and which purpose-built store replaces it. We cover the four most common "my Postgres can't do this efficiently" workloads — full-text search, geospatial proximity, time-series telemetry, and analytical aggregation — down to the index data structures, ranking math, and failure modes that surface in production and in interviews.
+**What you'll learn:** When a relational table (`SELECT ... WHERE col LIKE '%foo%'`) is the wrong tool, and which purpose-built store replaces it. We cover the four most common "my Postgres can't do this efficiently" workloads - full-text search, geospatial proximity, time-series telemetry, and analytical aggregation - down to the index data structures, ranking math, and failure modes that surface in production and in interviews.
 
 **Prerequisites:** Read `04-storage-engines-btree-lsm.md` (B-tree vs LSM, since these stores reuse both), `05-indexing-and-query-execution.md`, and `13-replication-and-partitioning.md` (sharding shows up everywhere here). For the OLAP section, `09-cap-pacelc-consistency-models.md` helps frame why analytical stores relax consistency.
 
@@ -27,7 +27,7 @@ The skill being taught: **recognize the shape, name the structure, justify the t
 
 ---
 
-## 1. Search — the inverted index
+## 1. Search - the inverted index
 
 ### Intuition
 
@@ -52,10 +52,10 @@ TERM       POSTINGS (docID:freq:[positions])
 
 The pipeline (Lucene calls it an **analyzer**) is the single most important and most misused part. *The same analyzer must run at index time and query time.* If you stem at index time but not query time, "running" never matches "run". Components:
 
-- **Tokenizer** — splits on whitespace/punctuation, or uses n-grams (for CJK languages with no spaces), or edge n-grams (for typeahead).
-- **Token filters** — lowercasing, stemming (Porter/Snowball), synonym expansion, ASCII-folding (café → cafe), stopword removal.
+- **Tokenizer** - splits on whitespace/punctuation, or uses n-grams (for CJK languages with no spaces), or edge n-grams (for typeahead).
+- **Token filters** - lowercasing, stemming (Porter/Snowball), synonym expansion, ASCII-folding (café → cafe), stopword removal.
 
-A **postings list** stores, per term, the documents containing it plus per-doc frequency and positions (positions enable phrase queries — "red card" as an ordered pair, not just both words anywhere). Postings are stored compressed (delta-encoded doc IDs + variable-byte/FOR encoding) so a term appearing in 10M docs isn't 80MB.
+A **postings list** stores, per term, the documents containing it plus per-doc frequency and positions (positions enable phrase queries - "red card" as an ordered pair, not just both words anywhere). Postings are stored compressed (delta-encoded doc IDs + variable-byte/FOR encoding) so a term appearing in 10M docs isn't 80MB.
 
 ### Ranking: TF-IDF → BM25
 
@@ -66,8 +66,8 @@ You don't just want matches, you want them *ranked*. Two classic intuitions:
 
 TF-IDF = `TF × log(N / df)`. **BM25** (Lucene/Elasticsearch default since ES 5.0) fixes two TF-IDF flaws:
 
-1. **TF saturation** — the 20th occurrence of a word shouldn't add as much as the 2nd. BM25 has a saturation curve controlled by `k1` (default 1.2).
-2. **Length normalization** — a 10,000-word doc naturally contains more terms; penalize length via `b` (default 0.75) relative to average doc length.
+1. **TF saturation** - the 20th occurrence of a word shouldn't add as much as the 2nd. BM25 has a saturation curve controlled by `k1` (default 1.2).
+2. **Length normalization** - a 10,000-word doc naturally contains more terms; penalize length via `b` (default 0.75) relative to average doc length.
 
 ```
                 IDF(term)  ·  TF(term,doc) · (k1 + 1)
@@ -99,8 +99,8 @@ BM25 = Σ      ─────────────────────�
 Key architectural facts that bite people:
 
 - **Segments are immutable.** A document update = mark old doc deleted (tombstone) + write new doc to a new segment. Deletes reclaim space only on **merge**. This is an LSM-style design (see `04-...`).
-- **Near-real-time, not real-time.** A write goes to an in-memory buffer + translog; it's not searchable until a **refresh** (default 1s). So ES is eventually consistent for reads-after-write. Don't build "user posts comment, immediately re-query ES to show it" — read your own write from the source DB.
-- **Doc values** are a columnar, on-disk structure (separate from the inverted index) used for sorting, aggregations, and faceting — because the inverted index is term→doc, but sorting needs doc→value.
+- **Near-real-time, not real-time.** A write goes to an in-memory buffer + translog; it's not searchable until a **refresh** (default 1s). So ES is eventually consistent for reads-after-write. Don't build "user posts comment, immediately re-query ES to show it" - read your own write from the source DB.
+- **Doc values** are a columnar, on-disk structure (separate from the inverted index) used for sorting, aggregations, and faceting - because the inverted index is term→doc, but sorting needs doc→value.
 - **Shard count is fixed at creation.** Over-shard and you get tiny-segment overhead + scatter-gather fan-out cost; under-shard and you can't scale or rebalance. Rule of thumb: target **10–50 GB per shard**.
 
 ### Fuzzy / typeahead / did-you-mean
@@ -113,11 +113,11 @@ Key architectural facts that bite people:
 | **n-gram (non-edge)** | Index all substrings | Infix/"contains" matching; very large index |
 | **Phonetic (Soundex/Metaphone)** | Index by how it sounds | Name search ("Smith"/"Smyth") |
 
-War-story trade-off: edge n-grams blow up index size and force you to reindex to change min/max gram size. The completion suggester is faster but lives in heap memory — large suggestion sets cause GC pressure.
+War-story trade-off: edge n-grams blow up index size and force you to reindex to change min/max gram size. The completion suggester is faster but lives in heap memory - large suggestion sets cause GC pressure.
 
 ---
 
-## 2. Geospatial — making 2-D queries fast
+## 2. Geospatial - making 2-D queries fast
 
 ### Intuition
 
@@ -152,7 +152,7 @@ R-TREE (bounding boxes)                 S2 (Google) / H3 (Uber)
 
 With pure geohash prefix matching, two points 10 m apart can sit in cells with different prefixes (you're on a cell boundary). A naive "same prefix = nearby" query *misses neighbors across the seam*. Fix: query your cell **plus its 8 neighbors**, then post-filter by true Haversine distance. Redis GEO does this internally (`GEOSEARCH`).
 
-### PostGIS — the workhorse
+### PostGIS - the workhorse
 
 PostGIS extends Postgres with a `geography`/`geometry` type and a **GiST index** (R-tree variant). A nearby query:
 
@@ -163,7 +163,7 @@ ORDER BY location <-> ST_MakePoint(:lng,:lat)::geography              -- KNN, in
 LIMIT 50;
 ```
 
-The `<->` KNN operator uses the GiST index to walk the tree in nearest-first order — it does **not** scan all rows. `ST_DWithin` uses a bounding-box pre-filter (cheap) then exact distance (expensive) only on candidates. Use `geography` (treats Earth as a spheroid, meters) for real distances; `geometry` (planar, faster) only if your data is small-area and projected.
+The `<->` KNN operator uses the GiST index to walk the tree in nearest-first order - it does **not** scan all rows. `ST_DWithin` uses a bounding-box pre-filter (cheap) then exact distance (expensive) only on candidates. Use `geography` (treats Earth as a spheroid, meters) for real distances; `geometry` (planar, faster) only if your data is small-area and projected.
 
 > Numbers: GiST KNN over ~10M points returns 50 nearest in **single-digit ms**. The cost is tree height (~log of node count). PostGIS scales to tens of millions of points on one node before you need to shard by region (and region-sharding reintroduces the edge problem at shard boundaries).
 
@@ -177,7 +177,7 @@ Built on a sorted set where the score *is* the 52-bit geohash. `GEOADD`/`GEOSEAR
 
 ### Intuition
 
-Metrics/IoT/telemetry are append-only, timestamp-ordered, and queried by *range over time* + *grouped by series*. You write 1M points/sec, never update them, and care about "last 5 min" far more than "this point from 90 days ago". A general DB treats each point as a precious mutable row with a B-tree — catastrophic write amplification. A TSDB treats time as the primary axis.
+Metrics/IoT/telemetry are append-only, timestamp-ordered, and queried by *range over time* + *grouped by series*. You write 1M points/sec, never update them, and care about "last 5 min" far more than "this point from 90 days ago". A general DB treats each point as a precious mutable row with a B-tree - catastrophic write amplification. A TSDB treats time as the primary axis.
 
 ### What makes a TSDB different
 
@@ -194,7 +194,7 @@ Storage layout (conceptual):
 
 Core techniques every TSDB shares:
 
-1. **Columnar / delta-of-delta compression.** Timestamps are near-uniform, so store deltas-of-deltas (often 1 bit each); values use XOR float compression (Facebook **Gorilla** paper — ~1.37 bytes/point vs 16). 10×+ compression is normal.
+1. **Columnar / delta-of-delta compression.** Timestamps are near-uniform, so store deltas-of-deltas (often 1 bit each); values use XOR float compression (Facebook **Gorilla** paper - ~1.37 bytes/point vs 16). 10×+ compression is normal.
 2. **Downsampling / rollups.** Raw 10 s data → 1 min avg/max → 1 h avg. Old high-resolution data is aggregated and discarded.
 3. **Retention policies.** Drop data older than N days *by dropping whole time-partitioned chunks*, not row-by-row `DELETE` (which would be O(rows) and fragment the heap).
 4. **Time-partitioned chunks.** Data lands in the "hot" recent chunk (in memory/WAL), older chunks become immutable and compressed.
@@ -221,7 +221,7 @@ Rule: labels must be **bounded, low-cardinality dimensions**. High-cardinality I
 | Best for | Infra/k8s monitoring, alerting | General IoT/metrics, push pipelines | Teams wanting SQL + joins to relational data |
 | Gotcha | Local storage = not durable long-term; cardinality limits | Storage engine churn across versions | Inherits Postgres write ceiling; cardinality via chunk bloat |
 
-Prometheus deliberately keeps each node **simple and ephemeral** — it scrapes, stores ~weeks locally, and you bolt on Thanos/Mimir for global query + object-storage long-term retention. This is a CAP/operational choice: monitoring must keep working even when the rest of the world is on fire, so it avoids distributed dependencies.
+Prometheus deliberately keeps each node **simple and ephemeral** - it scrapes, stores ~weeks locally, and you bolt on Thanos/Mimir for global query + object-storage long-term retention. This is a CAP/operational choice: monitoring must keep working even when the rest of the world is on fire, so it avoids distributed dependencies.
 
 > Numbers: a single Prometheus node ingests **~1M samples/sec** and holds millions of active series in ~GBs of RAM (each series ~constant overhead). The wall you hit is RAM ∝ active series, not disk ∝ samples.
 
@@ -229,7 +229,7 @@ Prometheus deliberately keeps each node **simple and ephemeral** — it scrapes,
 
 ## 4. Analytics / OLAP
 
-### OLTP vs OLAP — the foundational split
+### OLTP vs OLAP - the foundational split
 
 | | OLTP (transactional) | OLAP (analytical) |
 |---|---|---|
@@ -253,9 +253,9 @@ reads EVERY column of EVERY row.    reads 2 of 5 columns.
 ```
 
 Three compounding wins:
-1. **I/O reduction** — read only the columns the query needs. A 5-column-aggregate over a 200-column table reads ~2.5% of the data.
-2. **Compression** — a column is one data type with low entropy → run-length encoding, dictionary encoding, bit-packing give 10×+ ratios. Better compression = even less I/O.
-3. **Vectorized / SIMD execution** — process a column as a contiguous array in CPU cache, one SIMD instruction over many values. (C-Store/Vertica and MonetDB pioneered this.)
+1. **I/O reduction** - read only the columns the query needs. A 5-column-aggregate over a 200-column table reads ~2.5% of the data.
+2. **Compression** - a column is one data type with low entropy → run-length encoding, dictionary encoding, bit-packing give 10×+ ratios. Better compression = even less I/O.
+3. **Vectorized / SIMD execution** - process a column as a contiguous array in CPU cache, one SIMD instruction over many values. (C-Store/Vertica and MonetDB pioneered this.)
 
 The catch: **columnar is terrible at OLTP.** Inserting one row touches every column file; point updates are expensive. So OLAP stores are append/bulk-load oriented, often immutable+merge (ClickHouse `MergeTree`, an LSM cousin). Don't point a transactional app at a warehouse.
 
@@ -274,10 +274,10 @@ The catch: **columnar is terrible at OLTP.** Inserting one row touches every col
  └────────┘
 ```
 
-- **Fact table** — the events/measures (one row per order line), huge, numeric, foreign keys to dims.
-- **Dimension tables** — the descriptive context (product, customer, date, geography), small, wide.
-- **Star** = dims are denormalized/flat (fast, fewer joins). **Snowflake** = dims normalized into sub-dims (less redundancy, more joins). Warehouses overwhelmingly prefer **star** — storage is cheap, joins are the cost.
-- **Slowly Changing Dimensions (SCD Type 2):** when a customer moves region, you don't overwrite — you add a new dim row with validity dates, so historical facts join to the region that was true *at the time*. Forgetting this silently corrupts historical reports (a real war story).
+- **Fact table** - the events/measures (one row per order line), huge, numeric, foreign keys to dims.
+- **Dimension tables** - the descriptive context (product, customer, date, geography), small, wide.
+- **Star** = dims are denormalized/flat (fast, fewer joins). **Snowflake** = dims normalized into sub-dims (less redundancy, more joins). Warehouses overwhelmingly prefer **star** - storage is cheap, joins are the cost.
+- **Slowly Changing Dimensions (SCD Type 2):** when a customer moves region, you don't overwrite - you add a new dim row with validity dates, so historical facts join to the region that was true *at the time*. Forgetting this silently corrupts historical reports (a real war story).
 
 ### Warehouse vs Lake vs Lakehouse
 
@@ -289,11 +289,11 @@ The catch: **columnar is terrible at OLTP.** Inserting one row touches every col
 | Weakness | Expensive, rigid, hard for ML | "Data swamp", no ACID, slow ad-hoc | Newer, operational complexity |
 | Examples | Snowflake, BigQuery, Redshift | S3 + Hive/Athena | Databricks (Delta), Iceberg + Trino |
 
-The lakehouse is the current convergence: keep data in cheap S3 **Parquet** files, but add a metadata/transaction layer (**Apache Iceberg / Delta Lake / Hudi**) that gives ACID commits, schema evolution, time-travel, and `MERGE` — so one copy of data serves both BI SQL engines and ML, no copy-into-warehouse step.
+The lakehouse is the current convergence: keep data in cheap S3 **Parquet** files, but add a metadata/transaction layer (**Apache Iceberg / Delta Lake / Hudi**) that gives ACID commits, schema evolution, time-travel, and `MERGE` - so one copy of data serves both BI SQL engines and ML, no copy-into-warehouse step.
 
 ---
 
-## 5. Decision guide — pick the right store
+## 5. Decision guide - pick the right store
 
 ```
 Is the query...
@@ -304,7 +304,7 @@ Is the query...
 └─ "fetch/update a few rows by key, ACID"    -> stay on Postgres/MySQL ✅
 ```
 
-**The senior move is usually polyglot persistence with the relational DB as source of truth + a derived index.** E.g. orders live in Postgres; a CDC stream (Debezium → Kafka) materializes them into Elasticsearch for search and ClickHouse for analytics. This keeps writes ACID and reads specialized — at the cost of eventual consistency between the source and the derived stores (see `09-...` and the CDC discussion in `15-...`).
+**The senior move is usually polyglot persistence with the relational DB as source of truth + a derived index.** E.g. orders live in Postgres; a CDC stream (Debezium → Kafka) materializes them into Elasticsearch for search and ClickHouse for analytics. This keeps writes ACID and reads specialized - at the cost of eventual consistency between the source and the derived stores (see `09-...` and the CDC discussion in `15-...`).
 
 ---
 
@@ -327,28 +327,28 @@ Is the query...
 
 ### The problem
 
-Uber's marketplace is one continuous spatial-matching engine: at any instant it tracks **millions of live drivers**, and at peak handles on the order of **tens of millions of trips per day** — well over a million ride requests per hour globally. Every one of those requests is the geospatial query from §2: *"of all the drivers near this rider right now, which are the closest?"* — answered in tens of milliseconds, continuously, for every city on Earth.
+Uber's marketplace is one continuous spatial-matching engine: at any instant it tracks **millions of live drivers**, and at peak handles on the order of **tens of millions of trips per day** - well over a million ride requests per hour globally. Every one of those requests is the geospatial query from §2: *"of all the drivers near this rider right now, which are the closest?"* - answered in tens of milliseconds, continuously, for every city on Earth.
 
-Two harder layers sit on top of plain proximity. **Surge pricing** needs to aggregate supply (drivers) and demand (open requests) into pricing *zones* and recompute multipliers every few minutes. **Marketplace analysis** needs to compare "how busy is this area" across cities — but a fixed lat/lng grid has cells of wildly different real-world area near the poles vs. the equator, so a zone in London isn't comparable to one in Lima. They needed a spatial unit that is (a) fast to look up, (b) hierarchical for roll-ups, and (c) **uniform in area** so cross-city aggregation is honest.
+Two harder layers sit on top of plain proximity. **Surge pricing** needs to aggregate supply (drivers) and demand (open requests) into pricing *zones* and recompute multipliers every few minutes. **Marketplace analysis** needs to compare "how busy is this area" across cities - but a fixed lat/lng grid has cells of wildly different real-world area near the poles vs. the equator, so a zone in London isn't comparable to one in Lima. They needed a spatial unit that is (a) fast to look up, (b) hierarchical for roll-ups, and (c) **uniform in area** so cross-city aggregation is honest.
 
 ### Why a relational DB fails here
 
-This is the exact §2 "wrong tool" story. A row in Postgres lives in a B-tree, which is one-dimensional — it sorts on a single key. A nearby query is irreducibly 2-D: a driver close in latitude can be far in longitude. The naive fixes all break at Uber's scale:
+This is the exact §2 "wrong tool" story. A row in Postgres lives in a B-tree, which is one-dimensional - it sorts on a single key. A nearby query is irreducibly 2-D: a driver close in latitude can be far in longitude. The naive fixes all break at Uber's scale:
 
-- **Two B-tree indexes (one on lat, one on lng) intersected** — the §0 table's "2-D range needs 2 indexes intersected" trap. Each index is unselective (a thin latitude band still spans the whole planet's longitude), so the intersection scans enormous candidate sets.
-- **PostGIS GiST/R-tree on one node** — genuinely good (the §2 workhorse), but §2's own number is the ceiling: "tens of millions of points on one node before you need to shard by region — *and region-sharding reintroduces the edge problem at shard boundaries*." Uber's write rate (every driver pinging GPS every few seconds = millions of *updates* per second) and global footprint blow past a single spatial node.
-- **`SELECT ... WHERE distance < 5km`** scanning every driver — a full scan per request, millions of times an hour. Dead on arrival.
+- **Two B-tree indexes (one on lat, one on lng) intersected** - the §0 table's "2-D range needs 2 indexes intersected" trap. Each index is unselective (a thin latitude band still spans the whole planet's longitude), so the intersection scans enormous candidate sets.
+- **PostGIS GiST/R-tree on one node** - genuinely good (the §2 workhorse), but §2's own number is the ceiling: "tens of millions of points on one node before you need to shard by region - *and region-sharding reintroduces the edge problem at shard boundaries*." Uber's write rate (every driver pinging GPS every few seconds = millions of *updates* per second) and global footprint blow past a single spatial node.
+- **`SELECT ... WHERE distance < 5km`** scanning every driver - a full scan per request, millions of times an hour. Dead on arrival.
 
 So Uber did the §5 "recognize the shape, name the structure, justify the trade-off" move and reached for a **specialized spatial index** instead of a general DB.
 
 ### Applying the module's concepts: H3
 
-H3 is precisely the **"S2/H3" row of the §2 data-structures table** — "project sphere onto a polyhedron, use a hierarchical curve, fixes geohash's poles/edge distortion." The key implementation choices map straight onto §2:
+H3 is precisely the **"S2/H3" row of the §2 data-structures table** - "project sphere onto a polyhedron, use a hierarchical curve, fixes geohash's poles/edge distortion." The key implementation choices map straight onto §2:
 
-- **Flatten 2-D into 1-D while preserving locality** (§2 intuition). H3 projects the globe onto an icosahedron (20 triangular faces) and tiles each face with **hexagons**, addressed by a 64-bit `H3Index`. `latLngToCell(lat,lng,res)` turns any coordinate into one integer key — the same trick as geohash, but on a better surface.
-- **Hexagons over squares** — H3's deliberate divergence from geohash/S2 squares. A hexagon has only **one class of neighbor** (all 6 share an edge, all roughly equidistant from center), whereas a square has edge-neighbors *and* corner-neighbors at different distances. This makes "expand the search ring" and flow/movement modeling clean.
-- **Hierarchy for roll-ups** — 16 resolutions (res 0 ≈ continent, res 9 ≈ ~0.1 km² city block). `cellToParent` / `cellToChildren` let surge aggregate fine cells into coarse zones, the spatial analogue of TSDB downsampling (§3).
-- **The edge problem, handled by design** (§2's "classic interview trap"). A nearby search isn't "same prefix"; it's `gridDisk(cell, k)` — return this hex plus all hexes within `k` rings — then post-filter by true Haversine distance. This is §2's "query your cell **plus its neighbors**, then post-filter by true distance," made first-class.
+- **Flatten 2-D into 1-D while preserving locality** (§2 intuition). H3 projects the globe onto an icosahedron (20 triangular faces) and tiles each face with **hexagons**, addressed by a 64-bit `H3Index`. `latLngToCell(lat,lng,res)` turns any coordinate into one integer key - the same trick as geohash, but on a better surface.
+- **Hexagons over squares** - H3's deliberate divergence from geohash/S2 squares. A hexagon has only **one class of neighbor** (all 6 share an edge, all roughly equidistant from center), whereas a square has edge-neighbors *and* corner-neighbors at different distances. This makes "expand the search ring" and flow/movement modeling clean.
+- **Hierarchy for roll-ups** - 16 resolutions (res 0 ≈ continent, res 9 ≈ ~0.1 km² city block). `cellToParent` / `cellToChildren` let surge aggregate fine cells into coarse zones, the spatial analogue of TSDB downsampling (§3).
+- **The edge problem, handled by design** (§2's "classic interview trap"). A nearby search isn't "same prefix"; it's `gridDisk(cell, k)` - return this hex plus all hexes within `k` rings - then post-filter by true Haversine distance. This is §2's "query your cell **plus its neighbors**, then post-filter by true distance," made first-class.
 
 Data flow for "find nearby drivers":
 
@@ -363,29 +363,29 @@ Data flow for "find nearby drivers":
                   return top-N by Haversine(rider, driver)    ← exact post-filter
 ```
 
-Because the key is just a `uint64`, the index is **not a database** (the §2 caveat: "library, not a DB") — Uber shards driver-location maps by H3 cell across an in-memory fleet, exactly the §5 "specialized index, relational DB as source of truth" polyglot pattern. Trips and payments stay in the durable store; the hot spatial layer is derived and rebuildable.
+Because the key is just a `uint64`, the index is **not a database** (the §2 caveat: "library, not a DB") - Uber shards driver-location maps by H3 cell across an in-memory fleet, exactly the §5 "specialized index, relational DB as source of truth" polyglot pattern. Trips and payments stay in the durable store; the hot spatial layer is derived and rebuildable.
 
 ### The trade-off they accepted
 
-H3's headline win — **uniform-area cells** for honest cross-city comparison — is bought with **a small, permanent geometric lie**: you *cannot* perfectly tile a sphere with hexagons. Every H3 grid contains exactly **12 pentagons** (inherited from the icosahedron's 12 vertices), and parent/child hexagons don't nest perfectly (a child isn't fully contained by one parent — "containment" is approximate). Uber accepted approximate hierarchy and 12 special-case cells (placed over oceans, where almost no rides happen) in exchange for near-uniform area and clean neighbor math. For a marketplace that cares about *relative* density and fast neighbor expansion, approximate nesting is a fine price; for legal/cadastral boundary work it would be the wrong choice (use PostGIS polygons, §2).
+H3's headline win - **uniform-area cells** for honest cross-city comparison - is bought with **a small, permanent geometric lie**: you *cannot* perfectly tile a sphere with hexagons. Every H3 grid contains exactly **12 pentagons** (inherited from the icosahedron's 12 vertices), and parent/child hexagons don't nest perfectly (a child isn't fully contained by one parent - "containment" is approximate). Uber accepted approximate hierarchy and 12 special-case cells (placed over oceans, where almost no rides happen) in exchange for near-uniform area and clean neighbor math. For a marketplace that cares about *relative* density and fast neighbor expansion, approximate nesting is a fine price; for legal/cadastral boundary work it would be the wrong choice (use PostGIS polygons, §2).
 
 ### Results
 
-- Nearby-driver lookups become a `uint64` map hit + a bounded `gridDisk` expansion — **single-digit-millisecond** matching, holding up under millions of location updates per second.
+- Nearby-driver lookups become a `uint64` map hit + a bounded `gridDisk` expansion - **single-digit-millisecond** matching, holding up under millions of location updates per second.
 - One uniform grid lets surge and analytics compare any two areas worldwide without per-city grid tuning. H3 is open-sourced and now used well beyond Uber.
 
 ### Lessons
 
 - **Choose the index to fit the query shape, not the DB you already run.** A 2-D proximity query on a 1-D B-tree is the canonical mismatch; reach for a spatial index even if it means leaving your relational comfort zone.
-- **The grid's *geometry* is a design parameter.** Hexagons vs. squares, uniform vs. variable area, perfect vs. approximate nesting — each is a real trade. Uber traded perfect hierarchy for uniform, comparable cells.
+- **The grid's *geometry* is a design parameter.** Hexagons vs. squares, uniform vs. variable area, perfect vs. approximate nesting - each is a real trade. Uber traded perfect hierarchy for uniform, comparable cells.
 - **Edge/seam handling is not optional.** "Same cell" never means "all neighbors"; always expand by neighbor rings (`gridDisk`) and post-filter by true distance.
-- **Keep the spatial layer derived.** The fast in-memory H3 index is rebuildable from the durable source of truth — the §5 polyglot-persistence pattern, so you get specialized reads without risking ACID writes.
+- **Keep the spatial layer derived.** The fast in-memory H3 index is rebuildable from the durable source of truth - the §5 polyglot-persistence pattern, so you get specialized reads without risking ACID writes.
 
 ## 7. Test yourself
 
 1. Why does the same analyzer have to run at both index and query time? Give a concrete failure if it doesn't.
    *Hint: stemming/case/synonyms must align or the query term never matches the indexed term.*
-2. Two BM25 improvements over TF-IDF — name them and the parameter that controls each.
+2. Two BM25 improvements over TF-IDF - name them and the parameter that controls each.
    *Hint: `k1` (TF saturation), `b` (length normalization).*
 3. A user posts data, then immediately re-queries Elasticsearch and doesn't see it. Why, and what's the fix?
    *Hint: refresh interval (~1 s, near-real-time); read-your-write from the source DB, don't lower refresh globally.*
@@ -404,12 +404,12 @@ H3's headline win — **uniform-area cells** for honest cross-city comparison �
 
 ## 8. Further reading
 
-- **DDIA (Kleppmann)** — Ch. 3 "Storage and Retrieval" (B-tree vs LSM, column-oriented storage, data warehousing, star/snowflake schemas). The single best grounding for this module.
-- **"Finding the Needle"** — Lucene/inverted index internals; and the *Elasticsearch: The Definitive Guide* sections on analysis, relevance, and shards.
+- **DDIA (Kleppmann)** - Ch. 3 "Storage and Retrieval" (B-tree vs LSM, column-oriented storage, data warehousing, star/snowflake schemas). The single best grounding for this module.
+- **"Finding the Needle"** - Lucene/inverted index internals; and the *Elasticsearch: The Definitive Guide* sections on analysis, relevance, and shards.
 - **Robertson & Zaragoza, "The Probabilistic Relevance Framework: BM25 and Beyond."**
-- **Pelkonen et al., "Gorilla: A Fast, Scalable, In-Memory Time Series Database"** (Facebook, VLDB 2015) — delta-of-delta + XOR float compression.
-- **Stonebraker et al., "C-Store: A Column-oriented DBMS"** (VLDB 2005) — the columnar OLAP foundation.
-- **Google S2 Geometry library docs** and **Uber H3 docs** — hierarchical spherical indexing.
-- **PostGIS official docs** — `ST_DWithin`, GiST indexing, `geography` vs `geometry`, KNN `<->`.
-- **Prometheus docs** — "Storage" and "Naming/labels (cardinality)"; **Thanos/Cortex/Mimir** for long-term/global.
-- **Apache Iceberg / Delta Lake** specifications — open table formats and the lakehouse pattern.
+- **Pelkonen et al., "Gorilla: A Fast, Scalable, In-Memory Time Series Database"** (Facebook, VLDB 2015) - delta-of-delta + XOR float compression.
+- **Stonebraker et al., "C-Store: A Column-oriented DBMS"** (VLDB 2005) - the columnar OLAP foundation.
+- **Google S2 Geometry library docs** and **Uber H3 docs** - hierarchical spherical indexing.
+- **PostGIS official docs** - `ST_DWithin`, GiST indexing, `geography` vs `geometry`, KNN `<->`.
+- **Prometheus docs** - "Storage" and "Naming/labels (cardinality)"; **Thanos/Cortex/Mimir** for long-term/global.
+- **Apache Iceberg / Delta Lake** specifications - open table formats and the lakehouse pattern.

@@ -66,7 +66,7 @@ const chapters = files.map((file, i) => {
   }
   const tkBlock = tkHtml
     ? `<div class="takeaways">
-         <div class="tk-head"><span class="tk-badge">In Short — Key Takeaways</span></div>
+         <div class="tk-head"><span class="tk-badge">In Short - Key Takeaways</span></div>
          ${tkHtml}
        </div>`
     : '';
@@ -151,7 +151,7 @@ img{ max-width:100%; height:auto; }
 const today = '2026-06-26';
 const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
-<title>${esc(DISPLAY)} — Research Compendium</title>
+<title>${esc(DISPLAY)} - Research Compendium</title>
 <style>${CSS}</style></head><body>
 
 <section class="cover">

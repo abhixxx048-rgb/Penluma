@@ -73,7 +73,7 @@ This is the part that surprises people. When Anthropic analyzed what made their 
 | Number of tool calls | ~10% |
 | Which model you picked | ~5% |
 
-Notice what's missing: **clever architecture**. The fancy topology, the elaborate agent hierarchy, the delegation graph — none of it dominates. What dominates is simply *how much thinking and searching you spend*.
+Notice what's missing: **clever architecture**. The fancy topology, the elaborate agent hierarchy, the delegation graph - none of it dominates. What dominates is simply *how much thinking and searching you spend*.
 
 The takeaway is blunt and useful: multi-agent design is mostly a way to **spend more tokens productively in parallel**. It does not conjure better answers out of a fixed budget. If you're not willing to spend more, you probably don't want multi-agent.
 
@@ -117,9 +117,9 @@ Here's a finding worth sitting with. A controlled study comparing single-agent a
 
 Three things waste tokens in a multi-agent setup:
 
-1. **Redundant reasoning** — separate agents independently re-solve the same subproblems.
-2. **Coordination overhead** — the messages agents send each other cost tokens but add no actual reasoning.
-3. **Context rot** — information degrades a little at every handoff. A single focused agent keeps better hold of an interdependent chain.
+1. **Redundant reasoning** - separate agents independently re-solve the same subproblems.
+2. **Coordination overhead** - the messages agents send each other cost tokens but add no actual reasoning.
+3. **Context rot** - information degrades a little at every handoff. A single focused agent keeps better hold of an interdependent chain.
 
 So the rule sharpens: multi-agent pays off when you're willing to spend *more* total tokens to buy breadth and parallelism. It does **not** help you get more out of a *fixed* budget on interdependent reasoning. There, consolidate into one agent.
 
@@ -186,7 +186,7 @@ If you remember only one cost-control technique from this whole article, make it
 
 ### Prompt caching: the 90 percent discount
 
-When many requests share the same opening text — a system prompt, a task brief, tool definitions, a shared document — you can cache that prefix instead of paying full price for it every time.
+When many requests share the same opening text - a system prompt, a task brief, tool definitions, a shared document - you can cache that prefix instead of paying full price for it every time.
 
 | Operation | Cost vs. normal input |
 |---|---|
@@ -199,7 +199,7 @@ So you pay a small premium once to write the prefix, then roughly a tenth of the
 Why this is the number-one lever in fan-out systems:
 
 - An orchestrator spawning 50 workers that all share the same prefix pays full price **once** and about 10 percent thereafter. It nearly erases the redundancy penalty.
-- **Cached tokens don't count against your rate limits.** This often matters more than the money saved — it can hand you 5 to 10x more effective throughput.
+- **Cached tokens don't count against your rate limits.** This often matters more than the money saved - it can hand you 5 to 10x more effective throughput.
 - One real example: a retrieval pipeline dropped from $150/day to about $22/day, an 85 percent cut.
 
 ### Batch processing: another 50 percent off
@@ -218,18 +218,18 @@ Fan-out hammers rate limits faster than anything else you'll do. So it helps to 
 
 Anthropic enforces **three separate limits** per model class, replenished continuously (like a bucket that refills steadily rather than resetting all at once):
 
-- **RPM** — requests per minute
-- **ITPM** — input tokens per minute
-- **OTPM** — output tokens per minute
+- **RPM** - requests per minute
+- **ITPM** - input tokens per minute
+- **OTPM** - output tokens per minute
 
 The trap is sizing your concurrency to RPM when **ITPM or OTPM** is the real bottleneck. A handful of token-heavy subagents can blow past your token-per-minute limit long before you run out of requests.
 
 When you get throttled:
 
 - A **429 error** means you hit a tier limit. The response includes a `retry-after` header telling you how many seconds to wait.
-- A **529 error** means the service is overloaded — a different problem; back off and retry.
+- A **529 error** means the service is overloaded - a different problem; back off and retry.
 
-When you keep getting 429s, retries alone won't save you. As the guidance goes, "you have a capacity problem that retries will not fix — upgrade tier, enable prompt caching, or shed load."
+When you keep getting 429s, retries alone won't save you. As the guidance goes, "you have a capacity problem that retries will not fix - upgrade tier, enable prompt caching, or shed load."
 
 **Rule of thumb:** size your max concurrent subagents to your tier's token limits, not just its request limit. Add exponential backoff with jitter on 429s. Cap how wide you fan out. And cache the shared prefix, since cached tokens don't count against the limit.
 
@@ -239,7 +239,7 @@ Here are the concrete patterns, roughly in order of impact.
 
 1. **Scale effort to the question.** Agents can't reliably judge how hard to try, so tell them. Bake budget rules into the prompt: a simple fact-finding query gets 1 agent and a few tool calls; a direct comparison gets 2 to 4 subagents; only genuinely complex research gets 10 or more. This prevents overspending on easy questions, a common early failure.
 
-2. **Cache the shared prefix.** System prompt, task brief, tool definitions, shared corpus — anything reused across workers. Roughly 90 percent off input, 75 percent off latency, and exempt from rate limits. This is the highest-ROI move in any fan-out system.
+2. **Cache the shared prefix.** System prompt, task brief, tool definitions, shared corpus - anything reused across workers. Roughly 90 percent off input, 75 percent off latency, and exempt from rate limits. This is the highest-ROI move in any fan-out system.
 
 3. **Tier your models.** Strong orchestrator, cheap workers. Upgrade the model before you buy more tokens.
 
@@ -247,7 +247,7 @@ Here are the concrete patterns, roughly in order of impact.
 
 5. **Set hard caps on everything.** Maximum subagents, maximum tool calls, maximum turns, a per-task dollar ceiling, and a timeout. Set them at the agent, workflow, and organization levels. A stuck loop with no ceiling is how the 50x-token blowup happens.
 
-6. **Exit early on diminishing returns.** Stop iterating once the marginal confidence gain flattens out. Dynamic turn limits based on the probability of success can cut costs by about 24 percent while holding solve rates steady. Watch for low-yield loops — repeated retries, premium-model calls that don't actually reduce uncertainty — and cut that path's budget.
+6. **Exit early on diminishing returns.** Stop iterating once the marginal confidence gain flattens out. Dynamic turn limits based on the probability of success can cut costs by about 24 percent while holding solve rates steady. Watch for low-yield loops - repeated retries, premium-model calls that don't actually reduce uncertainty - and cut that path's budget.
 
 7. **Pass references, not payloads.** Have subagents store their work in external memory and pass back lightweight pointers, instead of copying giant outputs through the conversation history. Retrieving from a cached plan can drop latency from 30 seconds to 300 milliseconds and cost to near zero.
 
@@ -265,8 +265,8 @@ Here are the concrete patterns, roughly in order of impact.
 
 ## Conclusion
 
-The one thing to carry with you: **multi-agent is not a way to do the same work better — it's a way to do more work, in parallel, for more money.** That reframing answers almost every decision. If the task is high-value, breadth-first, and bigger than one context window, fan out and spend. If it's a fixed budget on a tightly-linked chain of reasoning, keep it to one agent.
+The one thing to carry with you: **multi-agent is not a way to do the same work better - it's a way to do more work, in parallel, for more money.** That reframing answers almost every decision. If the task is high-value, breadth-first, and bigger than one context window, fan out and spend. If it's a fixed budget on a tightly-linked chain of reasoning, keep it to one agent.
 
 And whichever way you go, the levers that keep the bill sane are the same handful: cache the shared prefix, tier your models, batch the patient work, and cap everything.
 
-Here's the thread worth pulling next: if 80 percent of your outcome comes from how many tokens you spend, then *where* you spend them — which subtask, which model, which retry — becomes the real craft. That's the orchestration design problem, and it's where the next big gains hide.
+Here's the thread worth pulling next: if 80 percent of your outcome comes from how many tokens you spend, then *where* you spend them - which subtask, which model, which retry - becomes the real craft. That's the orchestration design problem, and it's where the next big gains hide.

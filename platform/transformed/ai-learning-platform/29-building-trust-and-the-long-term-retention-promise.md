@@ -51,8 +51,8 @@ And the bar is rising fast. A "large language model" (an AI system trained on hu
 
 The two things almost every learning tool fails at are the two things worth charging for:
 
-- **Deeper understanding** — the learner can use an idea in a new situation, not just repeat it. Researchers call this *transfer*.
-- **Durable memory** — the learner still knows it weeks and months later, not just on quiz day.
+- **Deeper understanding** - the learner can use an idea in a new situation, not just repeat it. Researchers call this *transfer*.
+- **Durable memory** - the learner still knows it weeks and months later, not just on quiz day.
 
 Get those right and you have a product. Skip them and you have a worse chatbot with a logo.
 
@@ -112,7 +112,7 @@ To deliver personalized review, your tutor stores a detailed record of what each
 - **Never let learning data become surveillance.** Mistakes are how learning works. A learner's errors must never be used against them or sold.
 - **Let people see and delete their data.** Real control builds trust. Holding data hostage destroys it.
 
-One feature does double duty here. **"Bring your own documents"** — letting a learner upload their own notes, slides, or textbook and having the tutor teach strictly from those — is both a trust feature and a privacy story. The answers come from *their* material, with citations they can verify, and you are clearly working for them rather than mining them.
+One feature does double duty here. **"Bring your own documents"** - letting a learner upload their own notes, slides, or textbook and having the tutor teach strictly from those - is both a trust feature and a privacy story. The answers come from *their* material, with citations they can verify, and you are clearly working for them rather than mining them.
 
 ## How to build it: the order that respects the science
 
@@ -121,7 +121,7 @@ You cannot build everything at once. Build the spine before the trimmings. Each 
 1. **Start with the goal.** Write a precise, observable objective: "the learner can solve a two-step equation," not "understands algebra." If you cannot test it, the tutor cannot know when the learner has arrived.
 2. **Build the curriculum as a map, not a list.** Order skills so prerequisites come first. This lets the tutor trace a failure to its root. If equations break because fractions are shaky, it teaches fractions, not more equations.
 3. **Layer the lessons.** Present one idea at a time to respect working memory, the tiny mental workspace that holds only about four chunks. For beginners, show a fully worked example, then a half-finished one, then let them go solo. The support fades as skill grows.
-4. **Check continuously.** Make the learner *retrieve* — recall, explain, produce. The effort of pulling information out is what builds memory, far more than reading it again. Quiz constantly and gently, and adapt on the spot.
+4. **Check continuously.** Make the learner *retrieve* - recall, explain, produce. The effort of pulling information out is what builds memory, far more than reading it again. Quiz constantly and gently, and adapt on the spot.
 5. **Review weak concepts on a schedule.** This is the retention engine. Track each item per learner and resurface it at expanding intervals, ideally just before it would be forgotten. This is what makes long-term memory affordable.
 6. **Make it conversational last.** Wrap the whole thing in a Socratic style: ask before telling, give the smallest next hint, and have the learner teach the idea back so the tutor can spot gaps. The friendly chat is the wrapper, not the substance.
 
@@ -140,7 +140,7 @@ That is the entire philosophy in one small lesson. Retention is the spine; the c
 
 ## How it all ties together
 
-Every piece points at the same destination. The science — working memory, the forgetting curve, retrieval, spacing, desirable difficulty — tells you *why* to teach in small chunks, ask instead of tell, and review on a schedule.
+Every piece points at the same destination. The science - working memory, the forgetting curve, retrieval, spacing, desirable difficulty - tells you *why* to teach in small chunks, ask instead of tell, and review on a schedule.
 
 Design frameworks tell you *how* to sequence and scaffold. Motivation and self-awareness keep the learner coming back and honest about their own gaps. Learner modeling and spaced-repetition timing make it personal. The AI plumbing makes it scale. Measurement keeps you honest. And strategy reminds you to win one niche deeply rather than be a worse general chatbot.
 

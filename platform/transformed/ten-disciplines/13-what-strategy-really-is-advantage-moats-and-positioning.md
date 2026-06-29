@@ -189,11 +189,11 @@ Before asking "Can *we* win?" you must ask "Is this industry even worth competin
 
 Porter's **Five Forces** are five sources of pressure that decide how much profit an industry lets its players keep:
 
-1. **Rivalry among existing competitors** — how fiercely current players fight (price wars, ad wars).
-2. **Threat of new entrants** — how easily newcomers can show up and grab share. Low barriers mean constant new competition.
-3. **Threat of substitutes** — different products that meet the same need (a video call substitutes for a flight).
-4. **Bargaining power of buyers** — how much leverage customers have to push your prices down.
-5. **Bargaining power of suppliers** — how much leverage your suppliers have to push your costs up.
+1. **Rivalry among existing competitors** - how fiercely current players fight (price wars, ad wars).
+2. **Threat of new entrants** - how easily newcomers can show up and grab share. Low barriers mean constant new competition.
+3. **Threat of substitutes** - different products that meet the same need (a video call substitutes for a flight).
+4. **Bargaining power of buyers** - how much leverage customers have to push your prices down.
+5. **Bargaining power of suppliers** - how much leverage your suppliers have to push your costs up.
 
 Picture the industry's profit as air inside a balloon, and the five forces as five hands squeezing it. The harder the hands press, the less profit is left for everyone inside.
 
@@ -207,12 +207,12 @@ We have seen *how* firms win. Now the deepest question: *why does the advantage 
 
 Warren Buffett popularized the image: a great business is "an economic castle protected by a moat." A castle (your profits) is worthless if anyone can walk in. The moat keeps invaders out. The strategist Hamilton Helmer, in his book *7 Powers*, made the main sources precise. In plain language:
 
-- **Economies of scale** — the bigger you are, the lower your cost per unit, so small rivals cannot match your prices. Think Amazon's logistics.
-- **Network effects** — each new user makes the product more valuable for everyone, so users will not leave. Think WhatsApp, Visa, marketplaces.
-- **Switching costs** — leaving you is painful or expensive, so customers stay even when tempted. Think enterprise software like SAP, or Apple's ecosystem.
-- **Brand power** — trust and identity let you charge more for an otherwise similar product. Think Coca-Cola or Tiffany's blue box.
-- **Proprietary resources** — a unique asset rivals cannot get, like a patent, a location, or a mine sitting on the cheapest ore.
-- **Process power** — a way of operating so deeply embedded that copying it takes rivals years. Think Toyota's production system.
+- **Economies of scale** - the bigger you are, the lower your cost per unit, so small rivals cannot match your prices. Think Amazon's logistics.
+- **Network effects** - each new user makes the product more valuable for everyone, so users will not leave. Think WhatsApp, Visa, marketplaces.
+- **Switching costs** - leaving you is painful or expensive, so customers stay even when tempted. Think enterprise software like SAP, or Apple's ecosystem.
+- **Brand power** - trust and identity let you charge more for an otherwise similar product. Think Coca-Cola or Tiffany's blue box.
+- **Proprietary resources** - a unique asset rivals cannot get, like a patent, a location, or a mine sitting on the cheapest ore.
+- **Process power** - a way of operating so deeply embedded that copying it takes rivals years. Think Toyota's production system.
 
 Helmer's sharp insight: **power = benefit + barrier.** A low price or a cool feature is only a *benefit*, and benefits get copied. A moat needs a *barrier* that prevents imitation. Always ask both: "What's the benefit?" *and* "What stops a competitor from giving the same benefit?"
 
@@ -232,9 +232,9 @@ Your **unit economics** is the profit or loss on a *single* customer or sale. A 
 
 Three terms you will hear constantly:
 
-- **CAC (Customer Acquisition Cost)** — what it costs, all in, to win one new customer.
-- **LTV (Lifetime Value)** — the total profit a customer brings you over their whole time with you (use gross margin, not raw revenue).
-- **CAC payback period** — how many months it takes to earn back what you spent acquiring a customer.
+- **CAC (Customer Acquisition Cost)** - what it costs, all in, to win one new customer.
+- **LTV (Lifetime Value)** - the total profit a customer brings you over their whole time with you (use gross margin, not raw revenue).
+- **CAC payback period** - how many months it takes to earn back what you spent acquiring a customer.
 
 Spend $20 to win a customer who will pay you $60 in profit over time, and that is a good business. Spend $60 to win a customer worth $20, and you bleed money on every "win." A widely cited healthy benchmark for subscription software is roughly **3:1** (LTV at least three times CAC), with payback under about 12 months for small-business customers.
 

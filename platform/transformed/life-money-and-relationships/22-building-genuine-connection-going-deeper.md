@@ -59,10 +59,10 @@ Break it into plain words. **Self-disclosure** means telling someone something r
 
 Psychologist Arthur Aron, who studied how strangers become close, described the recipe as "sustained, escalating, reciprocal, personalistic self-disclosure." That is a dense phrase, but every word earns its place:
 
-- **Sustained** — it happens over time, not in one burst.
-- **Escalating** — you start light and gradually go deeper.
-- **Reciprocal** — you both share.
-- **Personalistic** — what you share is real and specific to *you*, not small talk anyone could recite.
+- **Sustained** - it happens over time, not in one burst.
+- **Escalating** - you start light and gradually go deeper.
+- **Reciprocal** - you both share.
+- **Personalistic** - what you share is real and specific to *you*, not small talk anyone could recite.
 
 ### The famous "36 questions" experiment
 

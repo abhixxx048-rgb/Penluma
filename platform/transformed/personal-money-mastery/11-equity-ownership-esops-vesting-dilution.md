@@ -23,14 +23,14 @@ keywords:
 faq:
   - q: What is the difference between ESOP and RSU?
     a: >-
-      An ESOP is an option — a right to buy shares later at a fixed strike
+      An ESOP is an option - a right to buy shares later at a fixed strike
       price. An RSU is shares granted outright when they vest, with no strike
       price to pay. Startups usually offer ESOPs; later-stage and listed firms
       lean on RSUs.
   - q: Does vested mean I own the shares?
     a: >-
       No. Vested options are still only a right to buy. You own nothing and can
-      sell nothing until you exercise — that is, actually pay the strike price
+      sell nothing until you exercise - that is, actually pay the strike price
       to convert options into real shares.
   - q: Is dilution always bad for employees?
     a: >-
@@ -46,7 +46,7 @@ faq:
     a: >-
       Twice. At exercise you pay slab-rate tax on the gain between FMV and
       strike price (treated as salary). At sale you pay capital gains tax on the
-      gain above the exercise FMV — 12.5% long-term for unlisted shares held
+      gain above the exercise FMV - 12.5% long-term for unlisted shares held
       over 24 months.
   - q: What is the exercise window and why should I care?
     a: >-
@@ -67,7 +67,7 @@ sources: []
 
 Almost nobody gets rich from a salary. A salary keeps the lights on. Ownership is what builds real wealth, because owning a slice of a company lets that slice grow in value and one day turn into a large pile of cash.
 
-That slice usually arrives in the form of ESOPs — and most of the people holding them have no idea what theirs are actually worth. Some are sitting on life-changing money. Many are sitting on a number that will quietly become zero. The difference is almost never luck. It is whether you understood the fine print.
+That slice usually arrives in the form of ESOPs - and most of the people holding them have no idea what theirs are actually worth. Some are sitting on life-changing money. Many are sitting on a number that will quietly become zero. The difference is almost never luck. It is whether you understood the fine print.
 
 ## Why this matters
 
@@ -81,13 +81,13 @@ Equity is the single biggest wealth lever most employees will ever touch. But it
 
 Before anything else, here are the words you will keep meeting. Skim them once and the rest of this article will click.
 
-- **Equity** — ownership of the company, measured as a percentage of all shares.
-- **ESOP (Employee Stock Option Plan)** — a right the company gives you to *buy* a set number of shares later, at a fixed price. It is an option, not shares yet.
-- **Strike price** (or exercise price) — the locked-in price you will pay per share when you convert options into shares. It is set on the day you are granted.
-- **Vesting** — earning your options gradually by staying employed.
-- **Cliff** — a minimum time before *anything* vests. Leave before the cliff and you get zero.
-- **Exercise** — actually paying the strike price to turn vested options into real shares you own.
-- **Cap table** — the ledger that lists who owns what percentage: founders, the employee pool, angels, venture capitalists.
+- **Equity** - ownership of the company, measured as a percentage of all shares.
+- **ESOP (Employee Stock Option Plan)** - a right the company gives you to *buy* a set number of shares later, at a fixed price. It is an option, not shares yet.
+- **Strike price** (or exercise price) - the locked-in price you will pay per share when you convert options into shares. It is set on the day you are granted.
+- **Vesting** - earning your options gradually by staying employed.
+- **Cliff** - a minimum time before *anything* vests. Leave before the cliff and you get zero.
+- **Exercise** - actually paying the strike price to turn vested options into real shares you own.
+- **Cap table** - the ledger that lists who owns what percentage: founders, the employee pool, angels, venture capitalists.
 
 One trap is worth flagging right away. Many people believe **vested equals owned**. It does not. Vested options are still only a *right to buy*. You own nothing, and can sell nothing, until you exercise and pay the strike price.
 
@@ -95,7 +95,7 @@ One trap is worth flagging right away. Many people believe **vested equals owned
 
 The global standard, used widely in India too, is a **four-year vest with a one-year cliff**.
 
-Here is what that means in practice. Nothing vests for the first 12 months. Cross that one-year cliff and a chunk — usually 25% — vests all at once. The rest then drips in monthly or quarterly over the remaining three years.
+Here is what that means in practice. Nothing vests for the first 12 months. Cross that one-year cliff and a chunk - usually 25% - vests all at once. The rest then drips in monthly or quarterly over the remaining three years.
 
 Say you are granted 4,800 options:
 
@@ -106,7 +106,7 @@ Say you are granted 4,800 options:
 
 The cliff exists to protect the company from people who join, collect equity, and leave in a few months. Fair enough. But it means timing your exit matters: quitting at month 11 versus month 13 is the difference between nothing and a quarter of your grant.
 
-### The exercise window — the deadline most people miss
+### The exercise window - the deadline most people miss
 
 Here is the term that quietly destroys more equity than anything else: the **exercise window**.
 
@@ -124,13 +124,13 @@ You will also hear about **RSUs (Restricted Stock Units)**. An RSU is shares gra
 
 Every time a startup raises money, it issues *new* shares to investors. That shrinks everyone's percentage. This is **dilution**, and it sounds scary until you see the full picture.
 
-The **ESOP pool** — typically 10 to 15% of the company, reserved for employees — is usually carved out of the founders' shares before a round, which is why founders feel dilution most sharply.
+The **ESOP pool** - typically 10 to 15% of the company, reserved for employees - is usually carved out of the founders' shares before a round, which is why founders feel dilution most sharply.
 
 Here is the key insight: a smaller slice of a much bigger pie is still a bigger meal.
 
 > **Example.** You hold **1%** of a company valued at **₹50 crore**, so your stake is worth ₹50 lakh. Two funding rounds later, you have been diluted down to **0.5%**. But the company is now worth **₹500 crore**, so your stake is worth **₹2.5 crore**.
 
-Your percentage fell by half. Your wealth went up fivefold. Dilution is perfectly fine as long as valuation rises faster than your percentage falls. The problem is never dilution by itself — it is dilution without growth.
+Your percentage fell by half. Your wealth went up fivefold. Dilution is perfectly fine as long as valuation rises faster than your percentage falls. The problem is never dilution by itself - it is dilution without growth.
 
 ## The hidden killer: liquidation preference
 
@@ -144,13 +144,13 @@ The terms vary, and the differences are huge:
 
 | Term | What it means | How common |
 | --- | --- | --- |
-| **1x non-participating** | The investor takes *either* their money back *or* converts to common and shares pro-rata — whichever is higher. No double dip. | The fair standard (~80%+ of deals) |
-| **Participating ("double dip")** | The investor takes their 1x back *and then also* shares the leftover pro-rata. Hurts common in modest exits. | Less common — a red flag |
-| **2x / 3x or stacked** | Bigger multiples or layered seniority. Worse for common still. | Rare — avoid |
+| **1x non-participating** | The investor takes *either* their money back *or* converts to common and shares pro-rata - whichever is higher. No double dip. | The fair standard (~80%+ of deals) |
+| **Participating ("double dip")** | The investor takes their 1x back *and then also* shares the leftover pro-rata. Hurts common in modest exits. | Less common - a red flag |
+| **2x / 3x or stacked** | Bigger multiples or layered seniority. Worse for common still. | Rare - avoid |
 
 Why does this matter so much? Because in a small exit, the preference stack can swallow nearly the entire sale.
 
-> **A real cautionary tale.** In one widely-cited acquisition worth roughly ₹80 million, *all* the common shareholders combined — every founder and employee — split under ₹2 million between them. The investors' stacked participating preferences ate almost everything. On paper, the staff "owned" a meaningful chunk of a company that sold for a healthy sum. In reality, they got crumbs.
+> **A real cautionary tale.** In one widely-cited acquisition worth roughly ₹80 million, *all* the common shareholders combined - every founder and employee - split under ₹2 million between them. The investors' stacked participating preferences ate almost everything. On paper, the staff "owned" a meaningful chunk of a company that sold for a healthy sum. In reality, they got crumbs.
 
 The lesson: never value an offer as simply "my shares times the headline share price." Always subtract the preference stack first.
 
@@ -158,13 +158,13 @@ The lesson: never value an offer as simply "my shares times the headline share p
 
 Your strike price is anchored to the **Fair Market Value (FMV)** of a common share, certified in India by a registered merchant banker or Category-I valuer. (In the US, the equivalent is a "409A valuation.") This same FMV later determines your tax.
 
-Here is a useful quirk: common shares are usually valued *well below* the price investors paid in the last round. That is not a trick — it reflects reality. Common shares lack the protections that make preferred shares safer, so they are genuinely worth less per share.
+Here is a useful quirk: common shares are usually valued *well below* the price investors paid in the last round. That is not a trick - it reflects reality. Common shares lack the protections that make preferred shares safer, so they are genuinely worth less per share.
 
 ## How ESOPs are taxed in India: two bites at the apple
 
 This is where unprepared employees get hurt. In India, you are taxed **twice**, at two different moments.
 
-### Stage 1 — at exercise (taxed as salary)
+### Stage 1 - at exercise (taxed as salary)
 
 The moment you exercise, the government treats the discount you got as a perk:
 
@@ -172,7 +172,7 @@ The moment you exercise, the government treats the discount you got as a perk:
 
 This is added to your salary and taxed at your slab rate, with the employer deducting TDS. The painful part: you pay this *even though you have not sold anything*. It is tax on paper gains, due in real cash.
 
-### Stage 2 — at sale (capital gains)
+### Stage 2 - at sale (capital gains)
 
 When you eventually sell, you pay capital gains tax on the rest of the gain:
 
@@ -189,13 +189,13 @@ Let's put it all together with one worked example.
 
 > **Example.** You exercise 4,800 options. Your strike price is ₹10, and the FMV at exercise is ₹60.
 >
-> **Stage 1 (now):** perquisite = (₹60 − ₹10) × 4,800 = **₹2,40,000**. At a 30% slab, that is ₹72,000 of tax — payable now, with no sale to fund it.
+> **Stage 1 (now):** perquisite = (₹60 − ₹10) × 4,800 = **₹2,40,000**. At a 30% slab, that is ₹72,000 of tax - payable now, with no sale to fund it.
 >
 > **Stage 2 (three years later):** you sell at ₹260 (unlisted, held over 24 months). Gain = (₹260 − ₹60) × 4,800 = ₹9,60,000. Long-term tax at 12.5% = **₹1,20,000**.
 >
 > Your sale brings in ₹12,48,000. After both tax bills, you keep roughly **₹10.56 lakh**.
 
-The takeaway is not the exact arithmetic. It is that the first tax bill can land years before you ever see cash — so you need a plan to fund it.
+The takeaway is not the exact arithmetic. It is that the first tax bill can land years before you ever see cash - so you need a plan to fund it.
 
 ## The DPIIT deferral relief (and why most people don't get it)
 
@@ -209,7 +209,7 @@ So do not assume your startup qualifies. Confirm it in writing before you count 
 
 ## Secondary sales: getting cash before an IPO
 
-Because Indian IPOs can take a decade, the main way to turn paper wealth into real money early is a **secondary sale** — selling your shares to another investor before any IPO or acquisition.
+Because Indian IPOs can take a decade, the main way to turn paper wealth into real money early is a **secondary sale** - selling your shares to another investor before any IPO or acquisition.
 
 Expect a few things: a discount to the last round's price, possible board consent or a right-of-first-refusal, and capital gains tax on (sale price − FMV at exercise).
 
@@ -232,7 +232,7 @@ Before you accept any equity offer, get all of these in writing. If a company wo
 3. **Vesting schedule and cliff.** Confirm the standard four-year vest with a one-year cliff, or note how it differs.
 4. **The exercise window.** Ninety days versus several years is an enormous difference. Negotiate for a long one.
 5. **The preference stack.** Ask directly: what multiple, participating or not, and what seniority? This decides whether your shares survive a small exit.
-6. **Then do the honest math.** Calculate the *net-of-tax, post-preference, probability-weighted* value — not the headline number a recruiter quotes you.
+6. **Then do the honest math.** Calculate the *net-of-tax, post-preference, probability-weighted* value - not the headline number a recruiter quotes you.
 
 Think of an ESOP grant like a coupon for a meal at a restaurant that is still being built. The coupon only feeds you if the restaurant actually opens (an exit happens), you pay the cover charge to redeem it (strike price plus tax), and the kitchen serves regular diners (common shareholders) only *after* the investors who funded the build have eaten their guaranteed portions first (liquidation preference).
 
@@ -240,6 +240,6 @@ Think of an ESOP grant like a coupon for a meal at a restaurant that is still be
 
 The single most important shift is this: stop seeing equity as a lottery ticket and start reading it as a contract. A great grant and a worthless one can carry the exact same number on the offer letter. What separates them lives in the vesting terms, the exercise window, the preference stack, and the tax timing.
 
-Most option grants do end at zero. That is not a reason to fear equity — it is a reason to evaluate it clearly, ask the hard questions, and join companies where the upside is real and the terms are fair.
+Most option grants do end at zero. That is not a reason to fear equity - it is a reason to evaluate it clearly, ask the hard questions, and join companies where the upside is real and the terms are fair.
 
-And here is the thread worth pulling next. Once you understand that ownership beats salary, the natural question becomes: how do the founders and early investors decide who gets what slice in the first place? That is the story of the cap table — and learning to read one tells you, at a glance, whether there is any room left for you to win.
+And here is the thread worth pulling next. Once you understand that ownership beats salary, the natural question becomes: how do the founders and early investors decide who gets what slice in the first place? That is the story of the cap table - and learning to read one tells you, at a glance, whether there is any room left for you to win.

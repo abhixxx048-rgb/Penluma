@@ -90,9 +90,9 @@ Gini is handy because it is a single comparable number. But it has blind spots. 
 
 So economists pair Gini with more intuitive measures:
 
-- **Top 1% / top 10% share** — what slice the richest group takes.
-- **90/10 ratio** — income at the 90th percentile divided by income at the 10th. (Your percentile is your rank out of 100; someone at the 90th percentile out-earns 90% of people.)
-- **Palma ratio** — the top 10%'s share divided by the bottom 40%'s share, designed to spotlight the very tails that Gini blurs.
+- **Top 1% / top 10% share** - what slice the richest group takes.
+- **90/10 ratio** - income at the 90th percentile divided by income at the 10th. (Your percentile is your rank out of 100; someone at the 90th percentile out-earns 90% of people.)
+- **Palma ratio** - the top 10%'s share divided by the bottom 40%'s share, designed to spotlight the very tails that Gini blurs.
 
 ## Why is inequality rising? Four big forces
 

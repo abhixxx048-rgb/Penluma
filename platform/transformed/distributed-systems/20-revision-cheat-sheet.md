@@ -96,7 +96,7 @@ So instead of physical time, distributed systems use **logical ordering** based 
 - **Same node, in order:** if A runs then B runs on one machine, then A → B.
 - **Messages:** sending a message → receiving that message. The send always comes before the receive.
 - **Transitive:** if A → B and B → C, then A → C.
-- **Concurrent:** if neither A → B nor B → A, the events are concurrent — independent, with no defined order.
+- **Concurrent:** if neither A → B nor B → A, the events are concurrent - independent, with no defined order.
 
 That last case is the key insight. Two events can be genuinely *concurrent*, meaning neither caused the other. Trying to force an order on them is where many bugs are born.
 
@@ -130,7 +130,7 @@ On real networks, partitions *will* happen, so partition tolerance isn't optiona
 - A **CP system** refuses some requests during a partition rather than serve stale data. It prefers being correct over being available.
 - An **AP system** always answers, even if the data might be stale, and reconciles later. It prefers being available over being perfectly fresh.
 
-**PACELC** completes the picture. It says: *if there's a Partition, choose A vs C; Else (normal operation), choose Latency vs C.* In plain terms: even when nothing is broken, keeping copies strongly consistent costs you latency. The price of consistency never fully disappears — it just shows up as availability during partitions and as latency the rest of the time.
+**PACELC** completes the picture. It says: *if there's a Partition, choose A vs C; Else (normal operation), choose Latency vs C.* In plain terms: even when nothing is broken, keeping copies strongly consistent costs you latency. The price of consistency never fully disappears - it just shows up as availability during partitions and as latency the rest of the time.
 
 A real example: a shopping cart is usually built **AP**. If two data centers briefly disagree about your cart, the system would rather show you *something* and merge later than show an error. A bank ledger leans **CP**: better to reject a transaction than to risk double-spending.
 
@@ -164,7 +164,7 @@ A social feed is fine with **causal** consistency: you just need to see a reply 
 
 When you design or debug a distributed system, walk through these checks:
 
-1. **Assume the network drops messages.** Never write code that's only correct when every packet arrives. Lost, slow, duplicated, reordered — design for all of it.
+1. **Assume the network drops messages.** Never write code that's only correct when every packet arrives. Lost, slow, duplicated, reordered - design for all of it.
 2. **Never order cross-machine events by wall-clock time.** Use logical clocks (Lamport or vector) when order matters across nodes.
 3. **Make every retried operation idempotent.** Since you can't tell a lost request from a lost reply, retrying must be safe to do twice. Use unique request IDs so duplicates are ignored.
 4. **Pick the weakest consistency model that's still correct.** Start at the bottom of the ladder and climb only as far as your use case forces you.
@@ -175,4 +175,4 @@ When you design or debug a distributed system, walk through these checks:
 
 If you take one thing from this page, take this: **the network is not reliable, and a slow message looks exactly like a lost one.** Almost every hard distributed systems problem unfolds from that single fact. Design as if silence tells you nothing, because it doesn't.
 
-Once that clicks, a natural next question appears: if nodes can't trust the network or each other, how do they ever *agree* on anything — like who's the leader, or what the next entry in the log is? That's the world of consensus algorithms like Paxos and Raft, and it's where these fundamentals turn into real machinery worth exploring next.
+Once that clicks, a natural next question appears: if nodes can't trust the network or each other, how do they ever *agree* on anything - like who's the leader, or what the next entry in the log is? That's the world of consensus algorithms like Paxos and Raft, and it's where these fundamentals turn into real machinery worth exploring next.

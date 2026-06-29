@@ -87,12 +87,12 @@ That single shift, from "answer from memory" to "answer from retrieved source te
 
 "Pipeline" is just a fancy word for an assembly line. A document goes in one end, and a tutor that can answer questions about it comes out the other. There are six stations:
 
-1. **Ingest** — pull the raw text out of the file.
-2. **Chunk** — cut that text into small, manageable pieces.
-3. **Embed** — turn each piece into numbers a computer can compare.
-4. **Store** — save the pieces in a searchable index.
-5. **Retrieve** — when a question arrives, find the pieces that match it.
-6. **Generate** — write an answer using *only* those pieces, and cite the source.
+1. **Ingest** - pull the raw text out of the file.
+2. **Chunk** - cut that text into small, manageable pieces.
+3. **Embed** - turn each piece into numbers a computer can compare.
+4. **Store** - save the pieces in a searchable index.
+5. **Retrieve** - when a question arrives, find the pieces that match it.
+6. **Generate** - write an answer using *only* those pieces, and cite the source.
 
 Most of these are plumbing. Two of them, chunking and embedding, are where the magic and the mistakes happen. Let's unpack those.
 
@@ -100,8 +100,8 @@ Most of these are plumbing. Two of them, chunking and embedding, are where the m
 
 **Chunking** means slicing the document into small, self-contained pieces before anything else happens. Why not keep the book whole? Because there is a real trade-off:
 
-- **Chunks too big** — one piece tries to cover a whole chapter, so its meaning gets blurry and the specific details you need get lost in the crowd.
-- **Chunks too small** — a single dangling sentence retrieves cleanly but gives the AI no surrounding context to reason with.
+- **Chunks too big** - one piece tries to cover a whole chapter, so its meaning gets blurry and the specific details you need get lost in the crowd.
+- **Chunks too small** - a single dangling sentence retrieves cleanly but gives the AI no surrounding context to reason with.
 
 The benchmark-tested sweet spot is roughly **256 to 512 tokens per chunk**. A token is about three-quarters of a word, so think 100 to 200 words. You also want a **10 to 20 percent overlap** between neighboring chunks, so a sentence sitting on a boundary doesn't get sliced in half.
 
@@ -125,10 +125,10 @@ So far RAG *answers questions*. To *build a course*, you flip the process around
 
 Instead of waiting for a learner to ask something, you walk the document's own structure, its table of contents and headings, and prompt the AI section by section to draft teaching material grounded in the chunks for that section:
 
-- **Lessons and summaries** — a clean explanation of each section in plain language.
-- **Worked examples and analogies** — ideally tuned to what the learner cares about.
-- **Quizzes** — multiple-choice, true/false, matching, and short written-answer questions.
-- **A lesson chatbot** — a tutor the learner can ask follow-up questions, answering only from the uploaded material and citing the page.
+- **Lessons and summaries** - a clean explanation of each section in plain language.
+- **Worked examples and analogies** - ideally tuned to what the learner cares about.
+- **Quizzes** - multiple-choice, true/false, matching, and short written-answer questions.
+- **A lesson chatbot** - a tutor the learner can ask follow-up questions, answering only from the uploaded material and citing the page.
 
 This is the "bring your own content" feature that makes a tutor feel magical. It teaches the material the learner *actually* has to master, not a generic curriculum. Google's NotebookLM is the famous example: upload your sources, then chat with citations and auto-generate flashcards, quizzes, and summaries, all grounded in what you uploaded.
 

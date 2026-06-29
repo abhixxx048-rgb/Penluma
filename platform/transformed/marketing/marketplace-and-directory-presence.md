@@ -133,18 +133,18 @@ A useful way to think about it: some competitors are **built for reach** (dozens
 
 Don't try to be everywhere at once. Work in tiers.
 
-### Tier 1 — this month (free, high intent)
+### Tier 1 - this month (free, high intent)
 
 1. **Claim your Capterra cluster profile.** One claim covers Capterra, GetApp, and Software Advice. Pick the most *specific* category that fits you, not a generic catch-all where you'll drown next to giants. Spend a full day making it great: real screenshots, a product demo, a plain-language feature list, and clear pricing.
 2. **Claim your free G2 profile.** Complete it fully and aim for the free "Users Love Us" badge at 10 reviews. Skip the paid badge plan for now.
 3. **Add free listings on GoodFirms and SourceForge.** Both have real category pages that rank in Google. Roughly two hours each.
 
-### Tier 2 — next 60 days (industry and editorial)
+### Tier 2 - next 60 days (industry and editorial)
 
 4. **Join the relevant industry directory.** Trade association directories carry a credibility halo that generic sites can't match. Membership usually costs something, but the co-marketing and trust are often worth more than the listing alone.
 5. **Get written into the "best of" listicles.** Find the roundup posts that rank for your exact buyer query. Email each author, offer a free account and a crisp two-line positioning blurb. Prioritize neutral or affiliate posts; skip the ones owned by competitors.
 
-### Tier 3 — later (paid and integration plays)
+### Tier 3 - later (paid and integration plays)
 
 6. **Add a plugin or marketplace listing** for the platforms your customers already use, starting with the most natural fit. Free listings here are SEO-valuable even if they're not your main motion.
 7. **Only then consider paid ads or premium badges**, and only once you can prove that demos turn into closed deals. Until that's proven, paid placement just burns cash.

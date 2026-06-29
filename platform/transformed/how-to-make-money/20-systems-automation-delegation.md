@@ -94,9 +94,9 @@ As Naval puts it: *"You're not going to get rich renting out your time."* Wealth
 
 When a repetitive task lands on your desk, walk it down this ladder **in order**. Stop at the first rung that works.
 
-1. **Automate** — can software do this? Cost per task is roughly zero.
-2. **Delegate** — if it can't be automated, can a person do it for less than your time is worth?
-3. **Do it yourself** — only if no one and nothing else can. This is the most expensive option, because your time is the scarcest thing you own.
+1. **Automate** - can software do this? Cost per task is roughly zero.
+2. **Delegate** - if it can't be automated, can a person do it for less than your time is worth?
+3. **Do it yourself** - only if no one and nothing else can. This is the most expensive option, because your time is the scarcest thing you own.
 
 Founders instinctively do the reverse. They do it themselves first, delegate when desperate, and automate never. Flip that.
 

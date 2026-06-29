@@ -99,11 +99,11 @@ That last link is a fresh thought you can now say out loud. It did not come from
 
 When you face a long chapter, you need more than questions. You need a route. **SQ3R** is a classic study method created by educator Francis Robinson in 1946, and it has five steps.
 
-- **S — Survey.** Skim the headings, bold words, and summary before you read properly. This builds an empty map so new facts have a place to land.
-- **Q — Question.** Turn each heading into a question. "Costs" becomes "What are the costs?" Now your brain has a target to hunt for.
-- **R — Read.** Read the section to answer that question. You are reading with purpose, not drifting.
-- **R — Recite.** Look away and say the answer in your own words. This forces retrieval, the single act that builds memory.
-- **R — Review.** Go back over your answers later, after a gap.
+- **S - Survey.** Skim the headings, bold words, and summary before you read properly. This builds an empty map so new facts have a place to land.
+- **Q - Question.** Turn each heading into a question. "Costs" becomes "What are the costs?" Now your brain has a target to hunt for.
+- **R - Read.** Read the section to answer that question. You are reading with purpose, not drifting.
+- **R - Recite.** Look away and say the answer in your own words. This forces retrieval, the single act that builds memory.
+- **R - Review.** Go back over your answers later, after a gap.
 
 Those last two steps lean on two of the most reliable findings in learning science. **Retrieval practice** means pulling an answer from memory instead of re-reading it. **Spaced practice** means revisiting it after a gap. Together they make learning dramatically more durable.
 

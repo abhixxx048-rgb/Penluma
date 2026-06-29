@@ -82,10 +82,10 @@ For pages built from a template (a product detail page, an order view, a custome
 
 A simple status legend keeps the pass honest:
 
-- **Not yet visited** — be ruthless about what is still on this list.
-- **Visited, no errors** — looked and worked.
-- **Visited, minor issue** — works, but something is off. Note it.
-- **Visited, broken** — errors or wrong behavior. Note it loudly.
+- **Not yet visited** - be ruthless about what is still on this list.
+- **Visited, no errors** - looked and worked.
+- **Visited, minor issue** - works, but something is off. Note it.
+- **Visited, broken** - errors or wrong behavior. Note it loudly.
 
 The discipline is finishing the list. A half-checked list is a false sense of safety.
 
@@ -117,9 +117,9 @@ You would never find this by reading the code that displays images. You find it 
 
 ### Success messages that aren't true
 
-An offline payment (a cheque, which obviously hadn't arrived yet) produced a customer-facing page that cheerfully announced "Payment Successful — Paid." The admin panel, correctly, showed the payment as merely "Initiated."
+An offline payment (a cheque, which obviously hadn't arrived yet) produced a customer-facing page that cheerfully announced "Payment Successful - Paid." The admin panel, correctly, showed the payment as merely "Initiated."
 
-Nothing crashed. The copy was just wrong, and wrong copy about money erodes trust fast. The honest message was "Order placed — payment pending." You only catch the mismatch by reading what the customer sees and comparing it to what staff see.
+Nothing crashed. The copy was just wrong, and wrong copy about money erodes trust fast. The honest message was "Order placed - payment pending." You only catch the mismatch by reading what the customer sees and comparing it to what staff see.
 
 ## Run real end-to-end flows, not just page visits
 

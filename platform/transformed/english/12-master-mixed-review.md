@@ -165,23 +165,23 @@ Try the drills before reading on. Here's how each one resolves, with the reason 
 
 ### Part B
 
-11. **on** — "depends **on** something." A fixed pairing.
-12. **into** — you merge changes **into** a branch (movement toward a target).
-13. **are** — "three failing tests" is plural.
-14. **Is** — "the queue worker" is singular; capital at the start of the sentence.
-15. **it's** — "it's ready" = "it is ready."
-16. **your** — possessive: the `.env` belonging to you.
-17. **much** — "time" is uncountable.
-18. **many** — "rows" is countable.
-19. **when** — the bug appears **when** a condition is met. ("then" = next/after.)
-20. **than** — comparisons use **than**.
+11. **on** - "depends **on** something." A fixed pairing.
+12. **into** - you merge changes **into** a branch (movement toward a target).
+13. **are** - "three failing tests" is plural.
+14. **Is** - "the queue worker" is singular; capital at the start of the sentence.
+15. **it's** - "it's ready" = "it is ready."
+16. **your** - possessive: the `.env` belonging to you.
+17. **much** - "time" is uncountable.
+18. **many** - "rows" is countable.
+19. **when** - the bug appears **when** a condition is met. ("then" = next/after.)
+20. **than** - comparisons use **than**.
 
 ### Part C
 
-21. **B** — "its payload" (belonging to it). "it's" would mean "it is payload," which is nonsense.
-22. **B** — "Each tenant" is singular, so **has** + **its**.
-23. **B** — "yesterday" is a finished time, so use simple past **deployed**. Don't mix "already... yesterday."
-24. **A** — **separate** is correct. Mnemonic: there's **a rat** in sep**a**rate.
+21. **B** - "its payload" (belonging to it). "it's" would mean "it is payload," which is nonsense.
+22. **B** - "Each tenant" is singular, so **has** + **its**.
+23. **B** - "yesterday" is a finished time, so use simple past **deployed**. Don't mix "already... yesterday."
+24. **A** - **separate** is correct. Mnemonic: there's **a rat** in sep**a**rate.
 
 ### Part D
 

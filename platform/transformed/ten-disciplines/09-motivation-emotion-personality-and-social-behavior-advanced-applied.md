@@ -58,8 +58,8 @@ This is the practical payoff: most of the leverage to change behavior lives in t
 
 It comes in two flavors:
 
-- **Intrinsic motivation** — doing something because the activity itself is satisfying, interesting, or meaningful.
-- **Extrinsic motivation** — doing something for an outside reward (money, grades, praise) or to dodge a punishment.
+- **Intrinsic motivation** - doing something because the activity itself is satisfying, interesting, or meaningful.
+- **Extrinsic motivation** - doing something for an outside reward (money, grades, praise) or to dodge a punishment.
 
 Someone who codes a small app on a Sunday for the fun of the puzzle is intrinsically motivated. The same person writing code at work for a paycheck is, at least partly, extrinsically motivated. Both can run at once.
 
@@ -79,9 +79,9 @@ You've seen Maslow's pyramid: needs stacked from food and safety at the bottom u
 
 The model that actually holds up after decades of testing is **Self-Determination Theory** (Deci and Ryan). It says intrinsic motivation thrives when three basic needs are met:
 
-1. **Autonomy** — the feeling that *I chose this* and it fits my values. Not "do whatever you want," but acting from your own will instead of being controlled.
-2. **Competence** — the feeling that *I'm getting good at this*, meeting challenges that stretch you without crushing you.
-3. **Relatedness** — the feeling that *I belong* and I matter to other people.
+1. **Autonomy** - the feeling that *I chose this* and it fits my values. Not "do whatever you want," but acting from your own will instead of being controlled.
+2. **Competence** - the feeling that *I'm getting good at this*, meeting challenges that stretch you without crushing you.
+3. **Relatedness** - the feeling that *I belong* and I matter to other people.
 
 Picture two jobs at identical pay. In Job A a manager dictates every step, the work never grows your skills, and you feel like a stranger to your team. In Job B you decide *how* to do the work, you're visibly improving, and you feel part of a tight crew. Job B is far more motivating, exactly as the theory predicts, with no change in salary.
 
@@ -109,8 +109,8 @@ That's one of the most useful findings in all of psychology. If interpretation d
 
 **Emotion regulation** is how you influence which emotions you have and how you show them. Two common strategies:
 
-- **Reappraisal** — reinterpreting a situation to change its emotional meaning.
-- **Suppression** — trying to bottle up an emotion you're already feeling.
+- **Reappraisal** - reinterpreting a situation to change its emotional meaning.
+- **Suppression** - trying to bottle up an emotion you're already feeling.
 
 The research is clear: reappraisal wins. Suppression takes real mental effort, barely reduces the inner experience, and can leave you more stressed. Reappraisal changes the emotion at its source.
 
@@ -133,11 +133,11 @@ Someone calm by nature can still be terrified in a real emergency, and that tell
 
 The most replicated, evidence-based model is the **Big Five**. The advanced point: each one is a *spectrum*, not a box. You're not simply "an extravert." You sit somewhere on a continuous scale, and most people cluster in the middle.
 
-- **Openness** — high: curious, imaginative, loves novelty. Low: conventional, practical, prefers the familiar.
-- **Conscientiousness** — high: organized, disciplined, reliable. Low: spontaneous, flexible, less structured.
-- **Extraversion** — high: outgoing, energized by people. Low: reserved, energized by solitude.
-- **Agreeableness** — high: warm, cooperative, trusting. Low: competitive, skeptical, blunt.
-- **Neuroticism** — high: emotionally reactive, prone to worry. Low: calm, emotionally stable.
+- **Openness** - high: curious, imaginative, loves novelty. Low: conventional, practical, prefers the familiar.
+- **Conscientiousness** - high: organized, disciplined, reliable. Low: spontaneous, flexible, less structured.
+- **Extraversion** - high: outgoing, energized by people. Low: reserved, energized by solitude.
+- **Agreeableness** - high: warm, cooperative, trusting. Low: competitive, skeptical, blunt.
+- **Neuroticism** - high: emotionally reactive, prone to worry. Low: calm, emotionally stable.
 
 These dimensions aren't arbitrary. They emerged from analyzing the words languages use to describe people, and they replicate across 50+ cultures. They also predict real outcomes: conscientiousness predicts job performance and academic success; low neuroticism predicts well-being.
 
@@ -170,10 +170,10 @@ Closing that gap, extending to others the situational benefit you give yourself,
 
 A few everyday social forces worth naming:
 
-- **Social proof** — when unsure, we copy others. An empty restaurant feels risky; a packed one feels safe.
-- **Groupthink** — tight-knit groups suppress dissent to keep harmony, and make worse decisions because nobody voices the doubt.
-- **Bystander effect** — the more witnesses there are, the *less* likely any one person helps. Everyone assumes someone else will.
-- **Cognitive dissonance** — the discomfort of holding two conflicting beliefs. We relieve it by quietly changing one. ("My grandfather smoked and lived to 90.")
+- **Social proof** - when unsure, we copy others. An empty restaurant feels risky; a packed one feels safe.
+- **Groupthink** - tight-knit groups suppress dissent to keep harmony, and make worse decisions because nobody voices the doubt.
+- **Bystander effect** - the more witnesses there are, the *less* likely any one person helps. Everyone assumes someone else will.
+- **Cognitive dissonance** - the discomfort of holding two conflicting beliefs. We relieve it by quietly changing one. ("My grandfather smoked and lived to 90.")
 
 ## How to use this
 

@@ -65,7 +65,7 @@ This is the single most important call to get right. Here is how the two reveal 
 | Clue | Forgetting | Misconception |
 |------|-----------|---------------|
 | History | Got it right recently | Has been getting it wrong consistently |
-| Error pattern | Random, fuzzy ("I forget the rule") | Systematic — the *same* wrong move every time |
+| Error pattern | Random, fuzzy ("I forget the rule") | Systematic - the *same* wrong move every time |
 | Timing | Appears after a long gap | Appears even right after teaching |
 | The fix | A reminder, then spaced review | Re-teach the idea a different way |
 
@@ -75,7 +75,7 @@ This is the single most important call to get right. Here is how the two reveal 
 
 > **Example.** A student insists 0.5 is smaller than 0.45 "because 45 is bigger than 5." That is not forgetting a fact. It is a misconception: they are comparing decimals as if they were whole numbers. Reminding them of the right answer won't stick. You have to re-teach *place value* a fresh way, like money: $0.50 versus $0.45.
 
-A good AI tutor can tell these apart because it keeps a **learner model** — a running, per-skill estimate of what each person knows. A classic method here, Bayesian Knowledge Tracing, even builds in numbers for a *slip* (a wrong answer when you actually know the material, a careless flub) and a *guess* (a right answer by luck). The lesson holds for humans too: one wrong answer is weak evidence. A streak of the *same* wrong answer is the real signal.
+A good AI tutor can tell these apart because it keeps a **learner model** - a running, per-skill estimate of what each person knows. A classic method here, Bayesian Knowledge Tracing, even builds in numbers for a *slip* (a wrong answer when you actually know the material, a careless flub) and a *guess* (a right answer by luck). The lesson holds for humans too: one wrong answer is weak evidence. A streak of the *same* wrong answer is the real signal.
 
 ## Error analysis: reading mistakes for clues
 
@@ -89,7 +89,7 @@ A good AI tutor can tell these apart because it keeps a **learner model** — a 
 
 Here is the trap: when a learner keeps failing fraction equations, it is tempting to assign more fraction-equation practice. But the real gap might be that *adding fractions* itself is weak. Drilling the visible skill does nothing if the rot is one level down.
 
-The fix is to walk backward through the **prerequisite chain** — the map of which concepts depend on which. Probe each earlier skill until you find the first weak link. That earliest broken piece is almost always the true culprit, and repairing it often clears up several downstream problems at once.
+The fix is to walk backward through the **prerequisite chain** - the map of which concepts depend on which. Probe each earlier skill until you find the first weak link. That earliest broken piece is almost always the true culprit, and repairing it often clears up several downstream problems at once.
 
 ```
    Learner fails: "solve fraction equations"
@@ -112,7 +112,7 @@ A **diagnostic assessment** is a short, low-pressure check whose only job is to 
 Two design tricks make a diagnostic genuinely useful:
 
 1. **Ask focused questions per prerequisite.** Instead of one big test, ask a couple of pointed questions about each underlying skill. A wrong answer then points straight at the broken concept.
-2. **Capture confidence before the answer.** Ask "how sure are you?" first, then reveal whether they were right. This measures *calibration* — how well someone's confidence matches reality. A confidently wrong learner has a misconception. An unsure and wrong learner is probably just hazy or forgetting.
+2. **Capture confidence before the answer.** Ask "how sure are you?" first, then reveal whether they were right. This measures *calibration* - how well someone's confidence matches reality. A confidently wrong learner has a misconception. An unsure and wrong learner is probably just hazy or forgetting.
 
 > **Tip.** Write your wrong multiple-choice options on purpose. Make each *distractor* match a specific known misconception. When a learner picks one, you instantly know which broken idea they hold. The answer they chose diagnoses the problem for you.
 
@@ -135,11 +135,11 @@ Whether you are tutoring someone, studying solo, or designing a learning system,
 3. **Trace it to the root.** Before drilling the failing skill, check its prerequisites. Find the earliest weak link and repair *that*.
 4. **Match the repair to the cause:**
    - *Forgetting* → a brief refresher, then schedule the item for spaced review so it resurfaces before it fades again.
-   - *Misconception* → re-teach a *different way*. Switch the analogy, use a concrete real-world example, or pair words with a meaningful picture (this is *dual coding* — two routes to the same idea, as long as the image carries real meaning and isn't just decoration).
-   - *A large gap* → drop down a level. Move to an easier prerequisite where success is possible, rebuild confidence, then climb back up. This keeps the work inside the *Zone of Proximal Development* — hard enough to grow, achievable with help.
+   - *Misconception* → re-teach a *different way*. Switch the analogy, use a concrete real-world example, or pair words with a meaningful picture (this is *dual coding* - two routes to the same idea, as long as the image carries real meaning and isn't just decoration).
+   - *A large gap* → drop down a level. Move to an easier prerequisite where success is possible, rebuild confidence, then climb back up. This keeps the work inside the *Zone of Proximal Development* - hard enough to grow, achievable with help.
    - *Overload* → add temporary support, or *scaffolding*. Show a fully worked example, then a problem with only the last step blank, then a fully independent one. This "scaffold-then-fade" sequence stops a novice from drowning.
 5. **Frame errors as information, not verdicts.** Say "not yet, let's look at this part again" instead of "wrong." The language you use shapes whether a learner keeps trying.
-6. **Close the loop.** Don't declare victory on one correct answer. Bring the repaired concept back at expanding intervals — a day, a few days, a week, a month — until it holds reliably.
+6. **Close the loop.** Don't declare victory on one correct answer. Bring the repaired concept back at expanding intervals - a day, a few days, a week, a month - until it holds reliably.
 
 > **Analogy.** Repairing a weak area is like fixing a leaky roof. Forgetting is a tile that slipped: pop it back and check it next storm (spaced review). A misconception is a tile installed upside-down: no amount of re-checking helps, you have to pull it out and lay it right (re-teach differently). A big structural gap means going back down to repair the rafter underneath before you touch the tiles at all (drop a level).
 
@@ -147,7 +147,7 @@ Whether you are tutoring someone, studying solo, or designing a learning system,
 
 Finding and repairing a weak spot is worthless if the same gap quietly reopens next week. **Closing the loop** means a concept keeps coming back until the learner reliably gets it right, and only *then* gets to rest.
 
-This blends two ideas. **Mastery learning** sets a high bar — often around 90% correct — before a skill counts as learned. **Spaced repetition** then schedules each repaired item to reappear just before it would be forgotten, so every successful recall makes the memory more durable.
+This blends two ideas. **Mastery learning** sets a high bar - often around 90% correct - before a skill counts as learned. **Spaced repetition** then schedules each repaired item to reappear just before it would be forgotten, so every successful recall makes the memory more durable.
 
 One caution: don't celebrate the first correct answer. A single success could be a lucky guess. Mastery needs several wins spread over time, ideally on slightly varied problems, so the learner practices *choosing* the right method rather than repeating one they were just primed to use.
 
@@ -157,6 +157,6 @@ Done well, this is something a textbook or a one-shot video can never be: a proc
 
 If you remember one thing, make it this: **forgetting and misconceptions look the same but need opposite repairs.** Refresh a faded memory; replace a broken model. Get that fork right and almost everything else follows.
 
-The deeper move is to stop trusting single answers and start reading patterns — the streak of identical errors, the confidently-wrong choice, the prerequisite quietly rotting one level down.
+The deeper move is to stop trusting single answers and start reading patterns - the streak of identical errors, the confidently-wrong choice, the prerequisite quietly rotting one level down.
 
 Which raises the next question worth chasing: how does a tutor *schedule* all that resurfacing so each weak spot returns at exactly the right moment, not too soon to be boring and not too late to be forgotten? That timing is its own quiet science, and it is where spaced repetition gets genuinely clever.

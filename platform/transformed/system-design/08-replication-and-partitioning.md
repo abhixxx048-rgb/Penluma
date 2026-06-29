@@ -91,7 +91,7 @@ The crucial decision here is **when the leader tells the client "done."**
 
 Cross-region async replication typically lags 10 to 500 milliseconds. For a "last seen online" timestamp, losing that tail is fine. For an order checkout, it is a disaster. The common compromise is **semi-synchronous**: one synchronous follower in the same local zone (sub-millisecond confirm, no single-machine data loss) plus async copies shipped to other regions.
 
-The genuinely hard part of single-leader is **failover** — what happens when the boss dies:
+The genuinely hard part of single-leader is **failover** - what happens when the boss dies:
 
 1. **Detecting the death.** You decide it's dead after a timeout. Too short and you get false alarms; too long and you sit in downtime.
 2. **Picking a successor.** You want the follower that is most caught up, to lose the least data.
@@ -167,7 +167,7 @@ The timestamp hot spot is a classic war story. The fix is a **compound key**: pr
 
 The naive way to hash-partition is `hash(key) mod N`, where N is your node count. It works until you add or remove a node. The moment N changes, the result changes for *almost every key*, so nearly all your data has to move at once. Catastrophic.
 
-**Consistent hashing** fixes this. Picture a circle. You place both your keys and your nodes on the ring. Each key belongs to the first node you hit going clockwise. Now add a node, and only the keys between it and its neighbor move — about 1/N of the data, not all of it. Remove a node, and only its keys shift to the next node.
+**Consistent hashing** fixes this. Picture a circle. You place both your keys and your nodes on the ring. Each key belongs to the first node you hit going clockwise. Now add a node, and only the keys between it and its neighbor move - about 1/N of the data, not all of it. Remove a node, and only its keys shift to the next node.
 
 There's one wrinkle. With only a few real machines, the ring is lumpy: one node randomly owns a giant arc and gets overloaded. The fix is **virtual nodes**. Each physical machine claims many points on the ring (Cassandra uses 256 by default). Load averages out, a dead node's work spreads across *all* survivors instead of dumping on one neighbor, and a more powerful machine can simply claim more points.
 
@@ -178,13 +178,13 @@ Moving data is expensive and happens while you're still serving live traffic. A 
 - **Fixed partition count:** create many more partitions than nodes up front (say 1000 partitions on 10 nodes). Adding a node just reassigns whole partitions, no re-hashing. Elasticsearch and Kafka work this way. The downside is you must guess your maximum scale in advance.
 - **Dynamic splitting:** split a partition once it grows past a size threshold. Adapts to data volume automatically, but a fresh cluster starts with one partition and no parallelism until the first split.
 
-A hard-won lesson: **keep a human in the loop for rebalancing.** Fully automatic rebalancing combined with automatic failure detection can create a feedback loop from hell — a node looks slow, so the system moves load off it, which somehow makes things worse, and it cascades. Most production systems let a human approve a rebalance even when failover is automatic.
+A hard-won lesson: **keep a human in the loop for rebalancing.** Fully automatic rebalancing combined with automatic failure detection can create a feedback loop from hell - a node looks slow, so the system moves load off it, which somehow makes things worse, and it cascades. Most production systems let a human approve a rebalance even when failover is automatic.
 
 ### Finding the key, and the secondary index trap
 
 Once data is split, something has to know which node holds key K. Three patterns: a **routing proxy** in front (Vitess, MongoDB's mongos), a **smart client** that holds the map itself (Cassandra's driver), or **any node forwards** the request internally (Cassandra, Dynamo). The genuinely hard part is keeping that map current as rebalancing moves data, usually via a coordination service like ZooKeeper or a peer-to-peer gossip protocol.
 
-There's one more sharp edge worth knowing. Your data is partitioned by its *primary* key, but you often want to query by something else, like `WHERE color = 'red'`. If each partition indexes only its own data, a query by color must ask *every* partition and merge the results — a **scatter-gather**.
+There's one more sharp edge worth knowing. Your data is partitioned by its *primary* key, but you often want to query by something else, like `WHERE color = 'red'`. If each partition indexes only its own data, a query by color must ask *every* partition and merge the results - a **scatter-gather**.
 
 Here's why that hurts. If a single-partition query is fast 99% of the time, a scatter-gather across 100 partitions has to wait for the slowest of the hundred. The odds that *all 100* are fast is 0.99 to the 100th power, roughly 0.37. So about **63% of those queries hit at least one slow partition.** This is why "just add a secondary index" doesn't scale, and why teams either build global indexes or pre-build query-specific tables.
 
@@ -208,7 +208,7 @@ When you're designing or reviewing a system that crosses one machine, walk this 
 4. **Stick reads to the primary right after a write.** This kills the "I saved it but it's gone" bug class before it ships.
 5. **Never partition by a sequential key alone.** Timestamps and auto-increment IDs create hot spots. Prefix with something high-variety and keep the timestamp as a sort key.
 6. **Never use plain `hash mod N`.** Use consistent hashing with virtual nodes, or a fixed pool of partitions you reassign.
-7. **Shard along your transaction boundary.** Co-locate data that must change together — usually all of one customer's or tenant's data — so your core invariants don't span shards.
+7. **Shard along your transaction boundary.** Co-locate data that must change together - usually all of one customer's or tenant's data - so your core invariants don't span shards.
 8. **Add capacity before you reshard, and throttle rebalancing.** Don't split a shard at 95% CPU during peak; there's no spare capacity to copy data, and the movement competes with your users.
 
 ## Case study: how Amazon Dynamo never refused a cart
@@ -225,7 +225,7 @@ So Amazon flipped the usual priority. Their hard requirement was the opposite of
 - **Sloppy quorums and hinted handoff** deliberately *broke* the clean overlap guarantee when a partition struck, accepting stale reads so that writes never stopped. Availability over consistency, on purpose.
 - **Vector clocks** tracked concurrent writes instead of silently dropping one. When two versions of a cart were truly concurrent, Dynamo handed both to the application, which merged them by taking the union of the items.
 
-That union has a famous wart: a deleted item can resurrect, because a union can't tell "never added" from "added then removed." Amazon accepted it. Re-adding a deleted item to a cart is recoverable; *refusing the write is lost money.* That trade-off — pushing conflict resolution up to the application in exchange for always-on availability — is the entire lesson of Dynamo.
+That union has a famous wart: a deleted item can resurrect, because a union can't tell "never added" from "added then removed." Amazon accepted it. Re-adding a deleted item to a cart is recoverable; *refusing the write is lost money.* That trade-off - pushing conflict resolution up to the application in exchange for always-on availability - is the entire lesson of Dynamo.
 
 The result: Dynamo met its 99.9th-percentile latency target while staying writable through node failures, disk failures, and network partitions during peak load. The goal of never rejecting a customer's write was achieved.
 
@@ -235,4 +235,4 @@ The deepest idea here isn't a formula. It's that **your consistency choices shou
 
 So the next time you reach for a read replica or a new shard, ask what happens at the edges: what does a user see when a copy lags, what moves when a node joins, what breaks when two writes collide.
 
-And there's a thread we kept tugging without fully unspooling: every time a quorum "isn't quite linearizable" or two leaders "have no global order," we brushed up against the deepest question in distributed systems — what does it even mean for separated machines to *agree*? That's the world of consensus, logical clocks, and the CAP theorem, and it's where this story goes next.
+And there's a thread we kept tugging without fully unspooling: every time a quorum "isn't quite linearizable" or two leaders "have no global order," we brushed up against the deepest question in distributed systems - what does it even mean for separated machines to *agree*? That's the world of consensus, logical clocks, and the CAP theorem, and it's where this story goes next.

@@ -26,7 +26,7 @@ faq:
       (the underlying paradigm).
   - q: What is the most powerful leverage point?
     a: >-
-      The paradigm — the shared, unspoken belief the whole system grows from —
+      The paradigm - the shared, unspoken belief the whole system grows from -
       is the most powerful, along with the ability to hold any paradigm
       lightly. Below it sit goals, then rules, then feedback loops, with raw
       numbers being the weakest.
@@ -61,9 +61,9 @@ sources:
   - https://en.wikipedia.org/wiki/Donella_Meadows
 ---
 
-You want to change something big and stubborn — a city choked with traffic, a team that keeps missing deadlines, a country fighting poverty. You have limited time, money, and attention. So where do you push?
+You want to change something big and stubborn - a city choked with traffic, a team that keeps missing deadlines, a country fighting poverty. You have limited time, money, and attention. So where do you push?
 
-Most people push where it is easiest to see: budgets, targets, tax rates, headcounts. And most of the time, almost nothing moves. The systems scientist Donella Meadows spent her career on a sharper answer — and it turns the obvious instinct upside down.
+Most people push where it is easiest to see: budgets, targets, tax rates, headcounts. And most of the time, almost nothing moves. The systems scientist Donella Meadows spent her career on a sharper answer - and it turns the obvious instinct upside down.
 
 ## Why this matters
 
@@ -83,27 +83,27 @@ Before the list, hold one idea: these levels are **stacked and causal**. Each on
 - The loops act on **stocks and flows** through **delays**.
 - And the visible **numbers** at the surface simply *describe* the result.
 
-An intervention changes everything *below* it — but nothing above it. Change a number, and nothing higher up shifts at all. That single rule explains why so much effort goes nowhere: people keep tugging at the bottom of the stack and wondering why the top never moves.
+An intervention changes everything *below* it - but nothing above it. Change a number, and nothing higher up shifts at all. That single rule explains why so much effort goes nowhere: people keep tugging at the bottom of the stack and wondering why the top never moves.
 
 Think of it as an iceberg. Laws, prices, org charts, and programs float above the waterline. Below sit the goals and beliefs that generate all of it. Tinkering with the visible tip leaves the iceberg whole.
 
 ## The weak levers: numbers, buffers, and structure
 
-### #12 Parameters — the numbers
+### #12 Parameters - the numbers
 
 Parameters are the constants in a system: a tax rate, a speed limit, a subsidy amount. Changing them rarely changes *behaviour*.
 
-Meadows estimated that roughly 95% of management attention goes to parameters — budget figures, milestones, headcount — and yet they are the weakest lever. A number only matters when it pushes the system past a tipping point that flips how it behaves. Short of that, you are adjusting the faucet, not the plumbing.
+Meadows estimated that roughly 95% of management attention goes to parameters - budget figures, milestones, headcount - and yet they are the weakest lever. A number only matters when it pushes the system past a tipping point that flips how it behaves. Short of that, you are adjusting the faucet, not the plumbing.
 
-### #11 Buffers — the shock absorbers
+### #11 Buffers - the shock absorbers
 
-A buffer is a stabilising stock, a reserve that soaks up shocks. (A *stock* is just an accumulation — water in a tub, fish in the sea, cash in the bank.)
+A buffer is a stabilising stock, a reserve that soaks up shocks. (A *stock* is just an accumulation - water in a tub, fish in the sea, cash in the bank.)
 
 A large lake can absorb fertiliser runoff before it tips into a toxic algae bloom; a small pond cannot. Buffers are stronger than parameters, but they are usually physical and expensive to change. You cannot quickly build a bigger lake.
 
-### #10 Stock-and-flow structure — the physical layout
+### #10 Stock-and-flow structure - the physical layout
 
-This is the plumbing itself. Hungary once routed all national traffic through central Budapest, and no clever traffic policy could fix the congestion — the road network *was* the constraint.
+This is the plumbing itself. Hungary once routed all national traffic through central Budapest, and no clever traffic policy could fix the congestion - the road network *was* the constraint.
 
 Structures like road networks, factory floors, and the age profile of a population are slow and costly to redesign. But when you do redesign them, behaviour changes permanently.
 
@@ -111,19 +111,19 @@ Structures like road networks, factory floors, and the age profile of a populati
 
 ## The middle levers: delays and feedback loops
 
-### #9 Delays — the lag between action and result
+### #9 Delays - the lag between action and result
 
 When a delay is badly out of step with how fast a system changes, you get oscillation, overshoot, or collapse.
 
 Picture a hotel shower. It runs cold, so you crank it to hot. Ninety seconds later, scalding water arrives, so you jerk it back. Then freezing water arrives, and you swing again. The wild oscillation is caused entirely by the *delay*, not the temperature dial. Install an instant-hot heater and the swinging stops.
 
-### #8 Balancing loops — the self-correcting kind
+### #8 Balancing loops - the self-correcting kind
 
 A balancing (negative) feedback loop detects a gap from a goal and pushes to close it: a thermostat, a market price responding to demand, a welfare program catching people up. Its leverage is its *strength* relative to the disturbances it has to fight.
 
-### #7 Reinforcing loops — the self-amplifying kind
+### #7 Reinforcing loops - the self-amplifying kind
 
-A reinforcing (positive) feedback loop feeds on itself: compound interest, arms races, addiction, runaway inequality. Its leverage is its *gain* — how fast it compounds.
+A reinforcing (positive) feedback loop feeds on itself: compound interest, arms races, addiction, runaway inequality. Its leverage is its *gain* - how fast it compounds.
 
 | Balancing loop (#8) | Reinforcing loop (#7) |
 | --- | --- |
@@ -134,49 +134,49 @@ A reinforcing (positive) feedback loop feeds on itself: compound interest, arms 
 
 Here is Meadows' sharp insight: it is usually **more effective to slow down a runaway reinforcing loop than to strengthen a corrective balancing loop**.
 
-Take wealth inequality. The rich collect interest, hire accountants to cut taxes, and pass on inheritance and good schooling. The poor pay interest and inherit debt. Those are reinforcing loops compounding the gap. Trying to outrun them with welfare alone is like cancelling compound interest with a flat handout — the loop always gains. Progressive tax, inheritance tax, and universal education work better because they weaken the *compounding itself*.
+Take wealth inequality. The rich collect interest, hire accountants to cut taxes, and pass on inheritance and good schooling. The poor pay interest and inherit debt. Those are reinforcing loops compounding the gap. Trying to outrun them with welfare alone is like cancelling compound interest with a flat handout - the loop always gains. Progressive tax, inheritance tax, and universal education work better because they weaken the *compounding itself*.
 
 ## The strong levers: information, rules, and self-organization
 
-### #6 Information flows — who knows what, and when
+### #6 Information flows - who knows what, and when
 
 Missing feedback is one of the most common causes of system failure, and restoring it is often more powerful than any number.
 
-Meadows' famous case: imagine a factory dumping toxins into a river were required to draw its own drinking water from *downstream* of its own outflow. Pollution would collapse almost overnight — no new emission limit needed. The missing feedback loop is restored, and the consequence finally reaches the decision-maker.
+Meadows' famous case: imagine a factory dumping toxins into a river were required to draw its own drinking water from *downstream* of its own outflow. Pollution would collapse almost overnight - no new emission limit needed. The missing feedback loop is restored, and the consequence finally reaches the decision-maker.
 
-### #5 Rules — the laws and incentives
+### #5 Rules - the laws and incentives
 
 Rules define what is even possible: laws, incentives, punishments, constraints. A carbon tax changes the rules of the energy economy far more deeply than tweaking any single number.
 
 Meadows worried about trade agreements like NAFTA and the WTO for exactly this reason: rules set at a high level can override the environmental rules of an individual nation. Whoever writes the rules holds extraordinary power, which is why rule-making is fiercely contested.
 
-### #4 Self-organization — the power to evolve
+### #4 Self-organization - the power to evolve
 
-This is a system's ability to grow new structures from within — to experiment, adapt, and reinvent itself. Living things evolve; economies innovate; societies invent new institutions. Diversity, experimentation, and slack are its fuel, which is why monocultures and over-optimization are so dangerous.
+This is a system's ability to grow new structures from within - to experiment, adapt, and reinvent itself. Living things evolve; economies innovate; societies invent new institutions. Diversity, experimentation, and slack are its fuel, which is why monocultures and over-optimization are so dangerous.
 
-Soviet collective agriculture suppressed local experimentation; farmers could not adapt or feed back what worked. The fix was never tweaking quotas (#12) or even incentives (#5) — it was restoring the *capacity to self-organize* (#4), with local people free to try, fail, and learn.
+Soviet collective agriculture suppressed local experimentation; farmers could not adapt or feed back what worked. The fix was never tweaking quotas (#12) or even incentives (#5) - it was restoring the *capacity to self-organize* (#4), with local people free to try, fail, and learn.
 
 ## The most powerful levers: goals, paradigms, and letting go
 
-### #3 Goals — what the system is really for
+### #3 Goals - what the system is really for
 
 A system's true goal is revealed by where it puts its resources, not by what it says. If a city's goal is maximum car throughput, it builds highways. Shift the goal, and everything beneath it reconfigures.
 
-In 2020, Paris changed its stated goal from "traffic flow" to "every resident can meet daily needs within 15 minutes on foot or bike." Same city, same budget — but parking became bike lanes and zoning allowed mixed use. The goal sits upstream of every infrastructure decision.
+In 2020, Paris changed its stated goal from "traffic flow" to "every resident can meet daily needs within 15 minutes on foot or bike." Same city, same budget - but parking became bike lanes and zoning allowed mixed use. The goal sits upstream of every infrastructure decision.
 
-### #2 Paradigm — the deepest shared belief
+### #2 Paradigm - the deepest shared belief
 
 A paradigm is the assumption everything else grows from: "growth is always good," or "nature is a resource to convert." Copernicus, Darwin, and Einstein each shifted a paradigm and restructured entire fields in the process.
 
-### #1 Transcending paradigms — holding beliefs lightly
+### #1 Transcending paradigms - holding beliefs lightly
 
-The highest leverage of all is the ability to hold *no* belief as absolute truth — to see every model as a simplification and pick the most useful one for the moment. Meadows called this radical empowerment, "the ability to dance with great uncertainty." Not paralysis — freedom.
+The highest leverage of all is the ability to hold *no* belief as absolute truth - to see every model as a simplification and pick the most useful one for the moment. Meadows called this radical empowerment, "the ability to dance with great uncertainty." Not paralysis - freedom.
 
 ## Common misconceptions
 
-**"The biggest, most-fought-over lever must be the most powerful."** It is usually the opposite. We fight over parameters precisely because they are *legible* — measurable, claimable, press-release-friendly. The real leverage in goals and paradigms is invisible in a spreadsheet, slow to act, and threatening to whoever benefits from the status quo.
+**"The biggest, most-fought-over lever must be the most powerful."** It is usually the opposite. We fight over parameters precisely because they are *legible* - measurable, claimable, press-release-friendly. The real leverage in goals and paradigms is invisible in a spreadsheet, slow to act, and threatening to whoever benefits from the status quo.
 
-**"High leverage means safe and good."** It only means high *impact* — in either direction. The hierarchy tells you where to look, not that the answer is correct. A misjudged paradigm shift can backfire as spectacularly as a wise one succeeds.
+**"High leverage means safe and good."** It only means high *impact* - in either direction. The hierarchy tells you where to look, not that the answer is correct. A misjudged paradigm shift can backfire as spectacularly as a wise one succeeds.
 
 **"Change the rule and the system will follow."** Not if the paradigm underneath stays put. US Prohibition changed the law but not the belief that alcohol was a normal social good, so the system simply routed around it with speakeasies and crime, then repealed it. Rules sit *below* paradigms in the stack for a reason.
 
@@ -185,15 +185,15 @@ The highest leverage of all is the ability to hold *no* belief as absolute truth
 You do not need a computer model to think in leverage points. You need a habit of climbing the stack before you push. Try this:
 
 1. **Name the behaviour you want to change**, not the number. "Reduce congestion," not "raise the toll."
-2. **Find the number everyone is already fighting over.** That is almost always a #12 parameter — the weakest lever, and a sign you are at the bottom of the stack.
+2. **Find the number everyone is already fighting over.** That is almost always a #12 parameter - the weakest lever, and a sign you are at the bottom of the stack.
 3. **Climb one rung and ask why.** What rule, feedback loop, or goal *generated* that number? The answer usually points to a higher leverage point.
-4. **Look for a missing feedback loop (#6) first.** Restoring information — making consequences reach the decision-maker — is often the cheapest powerful move available. Ask: who is shielded from the results of their own choices?
+4. **Look for a missing feedback loop (#6) first.** Restoring information - making consequences reach the decision-maker - is often the cheapest powerful move available. Ask: who is shielded from the results of their own choices?
 5. **Hunt for the runaway loop (#7) before you reinforce the corrective one (#8).** Slowing the thing that compounds usually beats chasing it.
 6. **Check the goal (#3).** If the system's true purpose (where it spends its resources) contradicts what you want, no lower lever will hold.
 7. **Find the single binding constraint.** Eliyahu Goldratt's *Theory of Constraints*, from his 1984 novel *The Goal*, makes the operational version of this point: a factory's output is set by its one bottleneck, and effort spent anywhere else is waste. Push only there.
 
 ## Conclusion
 
-The one thing to carry away: **the most visible levers are the least powerful, and the real power is upstream — in goals and beliefs that never show up on a dashboard.** Before you push harder on a number, climb one rung and ask what generated it.
+The one thing to carry away: **the most visible levers are the least powerful, and the real power is upstream - in goals and beliefs that never show up on a dashboard.** Before you push harder on a number, climb one rung and ask what generated it.
 
-But notice the quiet danger in all of this. High-leverage points are powerful in *both* directions, which means the same understanding that lets you fix a system lets someone else break it. So the next question worth sitting with is this: in the systems you live inside right now — your workplace, your city, your own habits — who is holding the high levers, and what paradigm are they pushing from?
+But notice the quiet danger in all of this. High-leverage points are powerful in *both* directions, which means the same understanding that lets you fix a system lets someone else break it. So the next question worth sitting with is this: in the systems you live inside right now - your workplace, your city, your own habits - who is holding the high levers, and what paradigm are they pushing from?

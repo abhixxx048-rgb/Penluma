@@ -60,7 +60,7 @@ A heart surgeon earns roughly ten times what a daycare worker earns, even though
 
 Most people explain this with a moral instinct: harder or more important work should pay more. That instinct feels right, and it is almost always wrong.
 
-Your wage is not a reward for effort or virtue. It is a **price** — the price of your labor — and like every price, it is set by supply and demand. Once you see the handful of forces behind it, nearly every pay gap you will ever encounter suddenly makes sense.
+Your wage is not a reward for effort or virtue. It is a **price** - the price of your labor - and like every price, it is set by supply and demand. Once you see the handful of forces behind it, nearly every pay gap you will ever encounter suddenly makes sense.
 
 ## Why this matters
 
@@ -72,11 +72,11 @@ This is also how you read the news with clear eyes. Debates over the minimum wag
 
 ## A wage is a price, not a trophy
 
-Start with the single most important idea here. The demand for workers is what economists call **derived demand** — demand that exists only because of demand for something else.
+Start with the single most important idea here. The demand for workers is what economists call **derived demand** - demand that exists only because of demand for something else.
 
 A bakery does not want bakers because it enjoys their company. It wants the bread they produce and the money customers pay for it. When people buy more bread, the bakery wants more bakers. When bread sales collapse, those jobs vanish. Labor demand is always a shadow of product demand.
 
-Think of a worker as a fishing rod. Nobody wants a fishing rod for its own sake — they want the fish it catches. If fish become valuable, rods become valuable. If nobody eats fish anymore, the finest rod in the world is worth almost nothing.
+Think of a worker as a fishing rod. Nobody wants a fishing rod for its own sake - they want the fish it catches. If fish become valuable, rods become valuable. If nobody eats fish anymore, the finest rod in the world is worth almost nothing.
 
 Your wage tracks the value of what you "catch," not how hard you work the rod.
 
@@ -84,31 +84,31 @@ Your wage tracks the value of what you "catch," not how hard you work the rod.
 
 Here is the workhorse model, formalized in the 1890s by John Bates Clark in the US and Philip Wicksteed in England.
 
-A firm chasing profit keeps hiring as long as each new worker brings in more money than they cost. The money an extra worker brings in is the **value of the marginal product** — the extra output one more worker produces, multiplied by the price the firm sells that output for. Call it VMP for short.
+A firm chasing profit keeps hiring as long as each new worker brings in more money than they cost. The money an extra worker brings in is the **value of the marginal product** - the extra output one more worker produces, multiplied by the price the firm sells that output for. Call it VMP for short.
 
 The rule is simple: **hire until VMP equals the wage.**
 
 - If a new worker adds $30 an hour of sellable output and the wage is $20, hire them. That is $10 an hour of pure profit.
-- Keep hiring — but output per extra worker eventually falls. The tenth cook in a small kitchen adds less than the second.
+- Keep hiring - but output per extra worker eventually falls. The tenth cook in a small kitchen adds less than the second.
 - Once the next worker's VMP drops to $20, stop.
 
 So in this model your wage equals the value of what the last worker like you adds. Raise your productivity, and the ceiling on your pay rises with it.
 
-You can trace the whole chain in one breath. Product demand rises, so the price of output rises, so the value of each worker's output rises, so the firm is willing to pay more, so the wage climbs — which then pulls more workers into that job.
+You can trace the whole chain in one breath. Product demand rises, so the price of output rises, so the value of each worker's output rises, so the firm is willing to pay more, so the wage climbs - which then pulls more workers into that job.
 
 ### A caution before you take this too literally
 
 Marginal productivity sets a **ceiling** on pay, not the exact number. The model assumes near-perfect competition and that each worker's output is cleanly measurable, which is rarely true.
 
-There is an important exception. When one employer dominates a local job market — a classic "company town" — it can pay workers *below* their true value because they have nowhere else to go. Economists call a single dominant buyer of labor a **monopsony**. Hold onto that word. It will reappear when we get to the minimum wage.
+There is an important exception. When one employer dominates a local job market - a classic "company town" - it can pay workers *below* their true value because they have nowhere else to go. Economists call a single dominant buyer of labor a **monopsony**. Hold onto that word. It will reappear when we get to the minimum wage.
 
 ## Human capital: you are an investment
 
-**Human capital** is the stock of skills, knowledge, training, and experience inside a worker, treated as an *investment* — just like a firm buying a better machine.
+**Human capital** is the stock of skills, knowledge, training, and experience inside a worker, treated as an *investment* - just like a firm buying a better machine.
 
 The idea was developed around 1958 to 1964 by Gary Becker, Jacob Mincer, and Theodore Schultz at the University of Chicago. Becker won the 1992 Nobel Prize for it. Spend years and money building skills, and you become a more productive "machine" that earns more for decades.
 
-The numbers are striking. In 2024, US Bureau of Labor Statistics data showed a worker with only a high-school diploma earned about **$946** a week, while a worker with a bachelor's degree earned about **$1,533** — a **62% college wage premium**, roughly $31,000 more per year.
+The numbers are striking. In 2024, US Bureau of Labor Statistics data showed a worker with only a high-school diploma earned about **$946** a week, while a worker with a bachelor's degree earned about **$1,533** - a **62% college wage premium**, roughly $31,000 more per year.
 
 But that average hides a lot. Returns vary hugely by field: technical and math-heavy majors earn far more than non-technical ones. The degree label alone is not the magic. **What you learned matters more than the certificate.**
 
@@ -140,7 +140,7 @@ This insight is over two centuries old. Adam Smith, in *The Wealth of Nations* (
 
 A **compensating differential** is the extra pay a worker demands to accept a worse job. Nobody wants to clean sewers or work an oil rig in a storm, so to fill those roles employers must pay a premium.
 
-Modern economists turned this into the "value of a statistical life," estimating how much extra wage workers demand for each unit of added fatality risk. The premium is real, but often smaller and noisier than theory predicts — which is why it remains a live debate.
+Modern economists turned this into the "value of a statistical life," estimating how much extra wage workers demand for each unit of added fatality risk. The premium is real, but often smaller and noisier than theory predicts - which is why it remains a live debate.
 
 The deeper lesson lands hard: a job's pay reflects supply, demand, and productivity, not how noble or exhausting it is. Childcare is precious work, but if many people can and will do it, ample supply keeps the wage low. **Scarcity, not virtue, sets the price.**
 
@@ -161,13 +161,13 @@ The common mistake is thinking superstars are paid for being slightly better. Th
 
 ## The minimum wage: economics' most contested fight
 
-A **minimum wage** is a legal price floor on labor — employers may not pay below it.
+A **minimum wage** is a legal price floor on labor - employers may not pay below it.
 
 The US federal minimum was created by the Fair Labor Standards Act of 1938, starting at $0.25 an hour and also bringing the 40-hour week and overtime. It was last raised on July 24, 2009, to **$7.25**, the longest freeze in its history. Inflation has eroded its real buying power to roughly $5 in today's money. By 2026, 30 states plus DC set higher minimums, many automatically indexed to inflation.
 
 The **standard model** predicts harm. Set the price of labor above the market-clearing level, and firms want less of it: fewer low-skill jobs and more unemployment. For decades that was the textbook consensus.
 
-Then came a famous test. When New Jersey raised its minimum wage in 1992, economists David Card and Alan Krueger compared fast-food employment there against neighboring Pennsylvania, which had not changed its wage. They found **no job loss — if anything, a slight rise.** Card shared the 2021 Nobel Prize partly for pioneering this "natural experiment" method.
+Then came a famous test. When New Jersey raised its minimum wage in 1992, economists David Card and Alan Krueger compared fast-food employment there against neighboring Pennsylvania, which had not changed its wage. They found **no job loss - if anything, a slight rise.** Card shared the 2021 Nobel Prize partly for pioneering this "natural experiment" method.
 
 What explains it? Our friend **monopsony**. When employers have wage-setting power, a higher minimum can lift both wages *and* employment, up to a point.
 
@@ -177,9 +177,9 @@ But do not over-learn that lesson. Neumark and Wascher (2000) re-examined the qu
 
 A **union** is a group of workers bargaining collectively to shift power toward labor.
 
-In 2024, US union membership hit a record low of **9.9%**, down from 20.1% in 1983, with a stark split: 32.2% in the public sector versus just 5.9% in the private sector. The **union wage premium** is real — nonunion workers earned about 85% of what union members made each week. The counterargument is that unions can raise costs and protect "insiders" at the expense of "outsiders" who never get hired in the first place.
+In 2024, US union membership hit a record low of **9.9%**, down from 20.1% in 1983, with a stark split: 32.2% in the public sector versus just 5.9% in the private sector. The **union wage premium** is real - nonunion workers earned about 85% of what union members made each week. The counterargument is that unions can raise costs and protect "insiders" at the expense of "outsiders" who never get hired in the first place.
 
-At the other end sits **gig work** — app-based, on-demand jobs like driving for Uber (roughly 1.5 million US drivers). The central fight is **classification**:
+At the other end sits **gig work** - app-based, on-demand jobs like driving for Uber (roughly 1.5 million US drivers). The central fight is **classification**:
 
 - An **independent contractor** is flexible but gets no minimum wage, overtime, or benefits.
 - An **employee** is protected but less flexible.
@@ -205,8 +205,8 @@ California's AB5 law (effective 2020) imposed a strict test pushing toward emplo
 
 ## Conclusion
 
-Here is the one idea to carry with you: a wage is a price, and prices answer to scarcity and demand, never to virtue or sweat. Master the six levers — scarcity, training cost, danger, scalability, bargaining power, and location — and almost any pay puzzle becomes readable.
+Here is the one idea to carry with you: a wage is a price, and prices answer to scarcity and demand, never to virtue or sweat. Master the six levers - scarcity, training cost, danger, scalability, bargaining power, and location - and almost any pay puzzle becomes readable.
 
 That reframing is freeing and a little uncomfortable at once. It means your income is not a verdict on your worth as a person. It also means you can move it, by steering toward scarce and scalable skills instead of waiting to be rewarded for effort.
 
-Which raises the next question worth chasing: if pay flows from supply and demand, what decides the *prices* of the things those workers produce — the loaf of bread, the song, the surgery? That is where supply and demand stop being about jobs and start governing the entire economy around you.
+Which raises the next question worth chasing: if pay flows from supply and demand, what decides the *prices* of the things those workers produce - the loaf of bread, the song, the surgery? That is where supply and demand stop being about jobs and start governing the entire economy around you.

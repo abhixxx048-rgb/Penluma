@@ -75,10 +75,10 @@ That last one is where most "anonymous" datasets quietly fall apart.
 
 Privacy law sounds abstract until you notice it comes down to four engineering controls. These come from GDPR Article 5 and are mirrored in the NIST Privacy Framework and California's CCPA/CPRA.
 
-1. **Data minimization** — collect only what the stated purpose needs. This is the single most powerful control there is, because you cannot leak, mishandle, or be forced to hand over data you never stored.
-2. **Purpose limitation** — data collected for purpose A may not be silently reused for purpose B. The pattern: tag every data element with its purpose when it arrives, then enforce that purpose at query time.
-3. **Storage limitation** — keep data only as long as you need it, then delete it on a schedule (a TTL, or "time to live"). "Keep forever by default" is a violation, not a convenience.
-4. **Accountability** — you must be able to *prove* you do all of the above, with records, logs, and impact assessments.
+1. **Data minimization** - collect only what the stated purpose needs. This is the single most powerful control there is, because you cannot leak, mishandle, or be forced to hand over data you never stored.
+2. **Purpose limitation** - data collected for purpose A may not be silently reused for purpose B. The pattern: tag every data element with its purpose when it arrives, then enforce that purpose at query time.
+3. **Storage limitation** - keep data only as long as you need it, then delete it on a schedule (a TTL, or "time to live"). "Keep forever by default" is a violation, not a convenience.
+4. **Accountability** - you must be able to *prove* you do all of the above, with records, logs, and impact assessments.
 
 ## Privacy by Design, and by Default
 
@@ -126,9 +126,9 @@ Most privacy failures trace back to one boring gap: nobody knows where the data 
 
 That map is what makes user rights buildable as real infrastructure instead of frantic manual work.
 
-- **Access requests** — confirm what you hold and hand over a copy, usually within one month. Build a "collect everything for this person" pipeline that fans out across every store.
-- **Erasure (the right to be forgotten)** — the hardest to engineer. A soft-delete flag is *not* erasure; regulators reject it, because an admin can still read the row. You need a real purge across primary stores, indexes, caches, and derived data.
-- **Portability** — hand back the data the person gave you in a structured, machine-readable format like JSON or CSV, so they can switch providers.
+- **Access requests** - confirm what you hold and hand over a copy, usually within one month. Build a "collect everything for this person" pipeline that fans out across every store.
+- **Erasure (the right to be forgotten)** - the hardest to engineer. A soft-delete flag is *not* erasure; regulators reject it, because an admin can still read the row. You need a real purge across primary stores, indexes, caches, and derived data.
+- **Portability** - hand back the data the person gave you in a structured, machine-readable format like JSON or CSV, so they can switch providers.
 
 For backups you cannot rewrite, the elegant trick is **crypto-shredding**: encrypt each person's data with a unique per-person key, then destroy that key. The leftover ciphertext becomes mathematically equivalent to random noise, even inside untouched backups. Regulators accept this as valid erasure.
 

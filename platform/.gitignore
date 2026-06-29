@@ -15,3 +15,4 @@ src/featured.generated.json
 # misc
 .DS_Store
 *.log
+src/posts.generated.json

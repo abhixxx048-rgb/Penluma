@@ -112,7 +112,7 @@ const today = '2026-06-23';
 
 const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
-<title>${titleHtml.replace(/<br>/g, ' ')} — Study Guide</title>
+<title>${titleHtml.replace(/<br>/g, ' ')} - Study Guide</title>
 <style>${CSS}</style></head><body>
 
 <section class="cover">

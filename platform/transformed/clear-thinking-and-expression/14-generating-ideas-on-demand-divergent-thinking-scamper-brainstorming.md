@@ -93,13 +93,13 @@ When you stare at a problem, your mind keeps circling the same groove. **SCAMPER
 
 Each letter is a verb you apply to your subject:
 
-- **S — Substitute:** What can I swap out? A different material, person, place, or ingredient?
-- **C — Combine:** What if I merge it with something else? Two features, two products, two steps?
-- **A — Adapt:** What works elsewhere that I could copy here? Who else solved this?
-- **M — Modify:** What if I make it bigger, smaller, louder, slower, more frequent?
-- **P — Put to other use:** What else could this be used for? A new user, a new setting?
-- **E — Eliminate:** What can I remove? What if half of it were gone?
-- **R — Reverse:** What if I flip the order, or do the exact opposite?
+- **S - Substitute:** What can I swap out? A different material, person, place, or ingredient?
+- **C - Combine:** What if I merge it with something else? Two features, two products, two steps?
+- **A - Adapt:** What works elsewhere that I could copy here? Who else solved this?
+- **M - Modify:** What if I make it bigger, smaller, louder, slower, more frequent?
+- **P - Put to other use:** What else could this be used for? A new user, a new setting?
+- **E - Eliminate:** What can I remove? What if half of it were gone?
+- **R - Reverse:** What if I flip the order, or do the exact opposite?
 
 ### A worked example: the boring coffee mug
 
@@ -117,7 +117,7 @@ Seven questions, seven ideas, in two minutes, from a boring mug. None of them re
 
 SCAMPER works because it gives your working memory a *handle* to grab. Your working memory, the small mental workspace that holds only a few things at once, can't search "everything." But it can answer one narrow question at a time. Each letter is a doorway your mind wouldn't have opened on its own.
 
-## "How might we..." — ask the question that opens doors
+## "How might we..." - ask the question that opens doors
 
 The way you phrase a problem decides which ideas are even possible.
 

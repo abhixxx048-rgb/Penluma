@@ -57,9 +57,9 @@ Here is the trap most people fall into: they believe real relationships should f
 
 When you were in school, friendships formed almost by accident because three things were always present without any effort from you:
 
-1. **Continuous unplanned interaction** — you bumped into the same people every day without scheduling it.
-2. **Shared vulnerability** — you were all figuring things out together, slightly lost, in the same boat.
-3. **Repeated proximity** — you were physically near the same faces, week after week.
+1. **Continuous unplanned interaction** - you bumped into the same people every day without scheduling it.
+2. **Shared vulnerability** - you were all figuring things out together, slightly lost, in the same boat.
+3. **Repeated proximity** - you were physically near the same faces, week after week.
 
 Adult life removes all three. You work alone or in a tiny team. Your days are scheduled to the minute. Nobody is randomly assigned to sit beside you.
 
@@ -107,12 +107,12 @@ Reach out with no ask. Just: *"What are you working on these days?"*
 
 There is a real cognitive limit, often called **Dunbar's number** after researcher Robin Dunbar. Humans can sustain only around 150 meaningful relationships at once, arranged in nested layers. Each outer layer is roughly three times bigger and needs about three times *less* contact:
 
-- **~5** — your innermost circle, the people you turn to first
-- **~15** — close friends
-- **~50** — good friends
-- **~150** — your active network
-- **~500** — acquaintances
-- **~1,500** — faces you recognize
+- **~5** - your innermost circle, the people you turn to first
+- **~15** - close friends
+- **~50** - good friends
+- **~150** - your active network
+- **~500** - acquaintances
+- **~1,500** - faces you recognize
 
 These are useful averages, not exact laws. Some researchers debate the precise figures, so treat them as a rough guide.
 
@@ -122,12 +122,12 @@ The point stands either way: your relationship time is a **fixed budget**. The s
 
 Here are the venues that work, roughly in order of relationship value:
 
-- **Recurring real-world communities** — classes, clubs, gyms, run or cycle groups, hobby groups, volunteer organizations, religious or civic groups, co-working spaces. These win on repeated exposure.
-- **Niche online communities** — focused Slack and Discord groups, founder forums, hobby boards. Pick ones tied to your *specific* interest or field, not generic mega-groups.
-- **Open-source or public projects** — contributing code, docs, or even thoughtful ideas builds real, visible, trust-rich relationships. Your work speaks before you do.
-- **Small curated gatherings** — intimate dinners, small roundtables, domain-specific meetups. Smaller and focused means deeper conversations and more relevant ties.
-- **Alumni networks** — your school, past employers, an old cohort. These come pre-loaded with shared history, an instant warm topic, and are easy to reactivate.
-- **Conferences and large events** — useful, but lowest on this list for *building* relationships. Treat them as a place to find people to follow up with later, not where relationships are made.
+- **Recurring real-world communities** - classes, clubs, gyms, run or cycle groups, hobby groups, volunteer organizations, religious or civic groups, co-working spaces. These win on repeated exposure.
+- **Niche online communities** - focused Slack and Discord groups, founder forums, hobby boards. Pick ones tied to your *specific* interest or field, not generic mega-groups.
+- **Open-source or public projects** - contributing code, docs, or even thoughtful ideas builds real, visible, trust-rich relationships. Your work speaks before you do.
+- **Small curated gatherings** - intimate dinners, small roundtables, domain-specific meetups. Smaller and focused means deeper conversations and more relevant ties.
+- **Alumni networks** - your school, past employers, an old cohort. These come pre-loaded with shared history, an instant warm topic, and are easy to reactivate.
+- **Conferences and large events** - useful, but lowest on this list for *building* relationships. Treat them as a place to find people to follow up with later, not where relationships are made.
 
 ### Be where your field already gathers
 

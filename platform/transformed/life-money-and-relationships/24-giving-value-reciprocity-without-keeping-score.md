@@ -59,11 +59,11 @@ The good news is you already have plenty to give, even with a small network and 
 
 Value comes in many flavors, and most are cheap:
 
-- **Introductions** — connecting two people who should know each other. The highest-leverage gift you can give.
-- **Knowledge** — answering a question, sharing what you learned the hard way, pointing to a resource.
-- **Promotion** — amplifying someone's work: sharing their launch, leaving a review, a public shout-out, a recommendation.
-- **Help** — honest feedback on a draft or pitch, a referral, a useful contact.
-- **Gratitude** — a specific, sincere thank-you. Underrated, free, and almost nobody does it well.
+- **Introductions** - connecting two people who should know each other. The highest-leverage gift you can give.
+- **Knowledge** - answering a question, sharing what you learned the hard way, pointing to a resource.
+- **Promotion** - amplifying someone's work: sharing their launch, leaving a review, a public shout-out, a recommendation.
+- **Help** - honest feedback on a draft or pitch, a referral, a useful contact.
+- **Gratitude** - a specific, sincere thank-you. Underrated, free, and almost nobody does it well.
 
 You don't need to be powerful to do any of these. You just need to pay attention to what the other person is working on right now.
 

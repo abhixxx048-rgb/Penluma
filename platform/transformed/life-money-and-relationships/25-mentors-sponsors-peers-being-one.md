@@ -79,9 +79,9 @@ Get the distinctions right and you stop wasting effort. You ask for the right th
 
 Let's define the words first, because mixing them up is the number one mistake here.
 
-- **Mentor** — someone who *gives you advice*. They share wisdom, perspective, and feedback. They help you *see* things: your blind spots, your strengths, a better path. Mostly a one-way gift of their time and knowledge.
-- **Sponsor** — someone who *spends their own reputation on you*. They advocate for you in rooms you're not in: recommending you for the deal, the role, the funding, the speaking slot. They don't just *advise* you; they *act* for you.
-- **Peer** — someone walking *the same path at the same time* as you. A fellow founder, a classmate, a person one step ahead or behind. The relationship is equal and two-way: mutual support, honest feedback, and accountability.
+- **Mentor** - someone who *gives you advice*. They share wisdom, perspective, and feedback. They help you *see* things: your blind spots, your strengths, a better path. Mostly a one-way gift of their time and knowledge.
+- **Sponsor** - someone who *spends their own reputation on you*. They advocate for you in rooms you're not in: recommending you for the deal, the role, the funding, the speaking slot. They don't just *advise* you; they *act* for you.
+- **Peer** - someone walking *the same path at the same time* as you. A fellow founder, a classmate, a person one step ahead or behind. The relationship is equal and two-way: mutual support, honest feedback, and accountability.
 
 Author Sylvia Ann Hewlett, in her book *Forget a Mentor, Find a Sponsor*, sums up the most important distinction in four words: **"Mentors advise, while sponsors act."**
 
@@ -121,7 +121,7 @@ Do this instead:
 
 Here's what a good first message actually looks like:
 
-> "Hi Priya — I run a small print-shop SaaS and I've been studying your talk on pricing for non-technical buyers. Your point about hiding complexity behind one number really changed how I think about my checkout. I'm wrestling with one specific decision about tiered pricing. Could I ask you a single question by email, or grab 15 minutes whenever suits you? Completely understand if you're too busy."
+> "Hi Priya - I run a small print-shop SaaS and I've been studying your talk on pricing for non-technical buyers. Your point about hiding complexity behind one number really changed how I think about my checkout. I'm wrestling with one specific decision about tiered pricing. Could I ask you a single question by email, or grab 15 minutes whenever suits you? Completely understand if you're too busy."
 
 Notice what it does: specific praise, a clear goal, one small ask, and an easy exit.
 

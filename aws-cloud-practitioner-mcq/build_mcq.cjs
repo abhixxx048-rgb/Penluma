@@ -132,12 +132,12 @@ tbody tr:nth-child(even){ background:#f6f8fb; }
 
 const today = '2026-06-28';
 const titleHtml = 'AWS Certified Cloud Practitioner<br>(CLF-C02)';
-const subtitle = 'Scenario-Based MCQ Workbook — Master the Confusing Topics & Common Traps';
+const subtitle = 'Scenario-Based MCQ Workbook - Master the Confusing Topics & Common Traps';
 const kicker = 'Exam-Prep Question Bank';
 
 const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
-<title>AWS Cloud Practitioner (CLF-C02) — MCQ Workbook</title>
+<title>AWS Cloud Practitioner (CLF-C02) - MCQ Workbook</title>
 <style>${CSS}</style></head><body>
 
 <section class="cover">

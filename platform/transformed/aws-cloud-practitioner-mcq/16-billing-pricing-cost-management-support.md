@@ -73,10 +73,10 @@ Knowing which tool answers which question is the difference between **planning y
 
 Here is the mental model that makes everything else click. Think of the four tools as points on a timeline of your spending.
 
-- **AWS Pricing Calculator** — *estimates costs before you build.* Nothing is running yet, so there is no usage to analyze. You describe a proposed setup (say, some EC2 instances, an RDS database, and an S3 bucket) and it gives you a forward-looking monthly estimate.
-- **AWS Cost Explorer** — *analyzes and visualizes spend that already happened.* Interactive graphs let you slice your bill by service, region, tag, and time to answer "why did last quarter go up?"
-- **AWS Budgets** — *alerts you when spend crosses a threshold.* Set a limit, and it emails you (or fires an SNS notification) when actual or forecasted spend reaches it.
-- **Cost & Usage Report (CUR)** — *the most granular, line-item billing data.* It exports hourly, resource-level detail to an S3 bucket so a data team can crunch it in Athena, QuickSight, or Redshift.
+- **AWS Pricing Calculator** - *estimates costs before you build.* Nothing is running yet, so there is no usage to analyze. You describe a proposed setup (say, some EC2 instances, an RDS database, and an S3 bucket) and it gives you a forward-looking monthly estimate.
+- **AWS Cost Explorer** - *analyzes and visualizes spend that already happened.* Interactive graphs let you slice your bill by service, region, tag, and time to answer "why did last quarter go up?"
+- **AWS Budgets** - *alerts you when spend crosses a threshold.* Set a limit, and it emails you (or fires an SNS notification) when actual or forecasted spend reaches it.
+- **Cost & Usage Report (CUR)** - *the most granular, line-item billing data.* It exports hourly, resource-level detail to an S3 bucket so a data team can crunch it in Athena, QuickSight, or Redshift.
 
 A quick way to remember it: **Calculator = before, Cost Explorer = after, Budgets = warn me, CUR = give me everything.**
 
@@ -90,9 +90,9 @@ Now fast-forward a year. The finance manager wants an email the moment actual sp
 
 AWS frames almost every bill around three fundamental drivers:
 
-1. **Compute** — what you run (EC2, for example).
-2. **Storage** — what you keep (S3, EBS).
-3. **Data transfer out** — what you send out of AWS to the internet.
+1. **Compute** - what you run (EC2, for example).
+2. **Storage** - what you keep (S3, EBS).
+3. **Data transfer out** - what you send out of AWS to the internet.
 
 Notice what is *not* on the list. IAM users and roles are free. Tags are free. Availability Zones do not carry a charge by themselves. And pricing models like Reserved Instances, Savings Plans, and Spot are ways to *pay* for compute, not separate cost categories.
 
@@ -106,9 +106,9 @@ Say you move 500 GB from your data center into AWS and serve 500 GB out to inter
 
 People treat "free tier" as one thing. It is actually three, and the exam loves the distinction:
 
-- **Always Free** — never expires as long as you stay under the limits. Examples: a monthly allotment of AWS Lambda requests, or DynamoDB storage.
-- **12-Month Free** — free only for the first year after you create your account. Examples: the small EC2 and RDS allowances.
-- **Trials** — short-term offers that expire after 30 or 60 days.
+- **Always Free** - never expires as long as you stay under the limits. Examples: a monthly allotment of AWS Lambda requests, or DynamoDB storage.
+- **12-Month Free** - free only for the first year after you create your account. Examples: the small EC2 and RDS allowances.
+- **Trials** - short-term offers that expire after 30 or 60 days.
 
 This is behind a classic surprise bill. A small EC2 instance under the 12-month tier runs continuously, and in **month 13** the charges appear, because the free year ended and it now bills at standard On-Demand rates. AWS does not bill retroactively for the free months; it just starts charging once the clock runs out. Forgetting to stop a 12-month-tier resource after a year is one of the most common ways beginners get burned.
 
@@ -126,19 +126,19 @@ There are five plans, but two boundaries matter most.
 
 Two lines are worth memorizing:
 
-- **Business is the first plan with 24/7 access to Cloud Support Engineers and the full set of Trusted Advisor checks** — without a dedicated TAM. If a company needs round-the-clock engineers and complete Trusted Advisor but not a personal account manager, Business is the lowest-cost fit.
+- **Business is the first plan with 24/7 access to Cloud Support Engineers and the full set of Trusted Advisor checks** - without a dedicated TAM. If a company needs round-the-clock engineers and complete Trusted Advisor but not a personal account manager, Business is the lowest-cost fit.
 - **A *designated* TAM (a named person who knows your environment) starts at Enterprise.** Enterprise On-Ramp gives you a *pool* of TAMs, not a single assigned one. The exam tests this exact wording difference.
 
-Even the free **Basic** plan is not nothing: it includes a limited set of Trusted Advisor checks (service limits and a few basic security ones) plus 24/7 customer service for account and billing questions. What it does not include is technical help from engineers — that requires a paid plan.
+Even the free **Basic** plan is not nothing: it includes a limited set of Trusted Advisor checks (service limits and a few basic security ones) plus 24/7 customer service for account and billing questions. What it does not include is technical help from engineers - that requires a paid plan.
 
 ## Buying compute: Spot, Reserved, Savings Plans
 
 For EC2 pricing, match the workload to the purchase option:
 
-- **On-Demand** — no commitment, no discount. Maximum flexibility, highest price.
-- **Spot Instances** — spare AWS capacity at up to ~90% off, but AWS can reclaim it on short notice. Perfect for a fault-tolerant batch job that can restart, wrong for anything that cannot tolerate interruption.
-- **Reserved Instances (RIs)** — big savings in exchange for committing to a **specific instance configuration** (type, region) for 1 or 3 years.
-- **Savings Plans** — commit to a steady **dollar amount of spend per hour** for 1 or 3 years and get RI-level discounts, while staying flexible across instance family, size, OS, tenancy, region, and even Fargate and Lambda.
+- **On-Demand** - no commitment, no discount. Maximum flexibility, highest price.
+- **Spot Instances** - spare AWS capacity at up to ~90% off, but AWS can reclaim it on short notice. Perfect for a fault-tolerant batch job that can restart, wrong for anything that cannot tolerate interruption.
+- **Reserved Instances (RIs)** - big savings in exchange for committing to a **specific instance configuration** (type, region) for 1 or 3 years.
+- **Savings Plans** - commit to a steady **dollar amount of spend per hour** for 1 or 3 years and get RI-level discounts, while staying flexible across instance family, size, OS, tenancy, region, and even Fargate and Lambda.
 
 The one-liner that keeps RIs and Savings Plans straight: **Savings Plan = commit to $/hour spend; Reserved Instance = commit to a specific instance setup.** So a steady, predictable workload that wants deep discounts *and* the freedom to change instance family or region points to **Compute Savings Plans**.
 
@@ -158,7 +158,7 @@ One catch worth remembering: tagging a resource is not enough. You must **activa
 - **"Only Enterprise has Trusted Advisor checks."** No. Basic has a limited set, and Business already unlocks the full set at lower cost than Enterprise.
 - **"Enterprise On-Ramp gives me my own TAM."** No. It gives a shared pool. A designated TAM is an Enterprise-only benefit.
 - **"AWS pricing is the same in every region."** No. The same service can cost different amounts in different regions due to differing operating costs.
-- **"Budgets and Budgets actions are the same."** Plain Budgets only *alerts*. **Budgets actions** can automatically *enforce* — applying a restrictive IAM/SCP policy or stopping instances when a threshold is crossed.
+- **"Budgets and Budgets actions are the same."** Plain Budgets only *alerts*. **Budgets actions** can automatically *enforce* - applying a restrictive IAM/SCP policy or stopping instances when a threshold is crossed.
 
 ## How to use this
 
@@ -176,4 +176,4 @@ When you face a billing question (on the exam or at work), run through this chec
 
 If you remember one thing, make it the timeline: **Calculator before you build, Cost Explorer after, Budgets to warn you, CUR for the raw detail.** Almost every cost question collapses into "which moment on that timeline am I asking about?"
 
-That same pay-as-you-go pricing that makes these tools necessary is also what makes the cloud so flexible — but flexibility cuts both ways. Once you are comfortable watching your spend, the natural next question is how AWS keeps that spend *secure*: who is allowed to spin up those resources in the first place, and how the shared responsibility model draws the line between what AWS protects and what you do.
+That same pay-as-you-go pricing that makes these tools necessary is also what makes the cloud so flexible - but flexibility cuts both ways. Once you are comfortable watching your spend, the natural next question is how AWS keeps that spend *secure*: who is allowed to spin up those resources in the first place, and how the shared responsibility model draws the line between what AWS protects and what you do.

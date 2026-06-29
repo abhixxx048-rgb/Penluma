@@ -33,7 +33,7 @@ faq:
   - q: "Is offset cheaper than digital printing?"
     a: "It depends on quantity. Offset has a high one-time setup cost but a tiny cost per copy, so it gets cheaper as the run grows. Below the crossover point digital wins; above it, offset wins."
   - q: "What is the crossover point in printing?"
-    a: "It is the quantity where offset and digital cost the same per copy. Below it, digital is cheaper; above it, offset is cheaper. There is no fixed number — it depends on size, colors, and stock, so it should be calculated per job."
+    a: "It is the quantity where offset and digital cost the same per copy. Below it, digital is cheaper; above it, offset is cheaper. There is no fixed number - it depends on size, colors, and stock, so it should be calculated per job."
   - q: "What does CMYK mean?"
     a: "Cyan, Magenta, Yellow, and Key (black). Offset prints full-color images by overlapping tiny dots of these four inks, which your eye blends into millions of colors at reading distance."
   - q: "Why can't offset print a different name on each copy?"
@@ -42,21 +42,21 @@ faq:
 
 Pick up a glossy magazine, a paperback, a cereal box, or a stack of full-color brochures. Almost everything printed that you touch in a day was made the same way: **offset lithography**.
 
-It is the quiet giant of print. People in the trade call it the "workhorse" because it does the heavy lifting of commercial printing — high volume, dependable quality, and a cost per copy that drops to pennies. Here is how a 200-year-old idea built on oil and water still runs the world's print shops, and the one number that decides whether your job goes to offset or digital.
+It is the quiet giant of print. People in the trade call it the "workhorse" because it does the heavy lifting of commercial printing - high volume, dependable quality, and a cost per copy that drops to pennies. Here is how a 200-year-old idea built on oil and water still runs the world's print shops, and the one number that decides whether your job goes to offset or digital.
 
 ## Why this matters
 
-If you ever order printing — flyers, packaging, a book, a catalog — the method behind it quietly decides your price, your turnaround, and what your file needs to look like.
+If you ever order printing - flyers, packaging, a book, a catalog - the method behind it quietly decides your price, your turnaround, and what your file needs to look like.
 
 Get it wrong and you overpay or get a surprise. Order 500 copies on a process built for 50,000, and the setup cost lands on every copy like a brick. Send the wrong kind of file, and your reds shift, your edges go white, and your photos turn fuzzy.
 
-And if you build software for print — pricing engines, web-to-print storefronts — this is the model your whole product rests on. The economics here aren't a detail. They're the spine.
+And if you build software for print - pricing engines, web-to-print storefronts - this is the model your whole product rests on. The economics here aren't a detail. They're the spine.
 
 ## The name tells you the whole trick
 
 "Offset lithography" is two ideas glued together, and each word does real work.
 
-**Lithography** means printing from a *flat* surface. On the plate, the image areas and the blank areas sit at the **same level** — no raised letters like a rubber stamp, no carved grooves like an engraving. The image and the background are separated **by chemistry, not by shape**.
+**Lithography** means printing from a *flat* surface. On the plate, the image areas and the blank areas sit at the **same level** - no raised letters like a rubber stamp, no carved grooves like an engraving. The image and the background are separated **by chemistry, not by shape**.
 
 It was invented in 1796 by Alois Senefelder, who drew on flat slabs of limestone (the word means "stone writing" in Greek). Modern plates are thin metal, but the principle hasn't changed in over two centuries.
 
@@ -78,7 +78,7 @@ On every single turn of the press, two things happen in order:
 1. **Water first.** Dampening rollers wet the plate with a thin film of **fountain solution** (mostly water plus a few helpers). The water clings only to the water-loving blank areas.
 2. **Ink second.** Inking rollers roll oil-based ink across the plate. The ink sticks only to the oil-loving image areas and slides off everywhere that is already wet.
 
-The hardest skill in the pressroom is getting that mix exactly right — it's called **ink-water balance**. Too much water washes the color out. Too little lets ink creep into the blank areas (a fault called *scumming*).
+The hardest skill in the pressroom is getting that mix exactly right - it's called **ink-water balance**. Too much water washes the color out. Too little lets ink creep into the blank areas (a fault called *scumming*).
 
 There's even a waterless variant: the blank areas are coated with **silicone**, which naturally repels ink, so no fountain solution is needed at all. It gives sharper dots but needs special inks and temperature control, so it stays a specialist choice.
 
@@ -90,13 +90,13 @@ An offset press builds its image with three rotating drums stacked so they touch
 |---|---|---|
 | **Plate cylinder** | The thin metal plate (one per color) | Gets dampened, then inked. Carries the inked image. |
 | **Blanket cylinder** | A soft rubber blanket | Takes the image from the plate, then presses it onto paper. The rubber conforms to the sheet for an even lay-down. |
-| **Impression cylinder** | A hard backing roller | Squeezes the paper against the blanket — the "kiss" of pressure that transfers the ink. |
+| **Impression cylinder** | A hard backing roller | Squeezes the paper against the blanket - the "kiss" of pressure that transfers the ink. |
 
 The path is simple: **plate → blanket → paper**, pressed home by the impression cylinder.
 
-Here's the fact that drives everything else: **each color needs its own complete set** — its own plate, cylinder, blanket, and bank of inking rollers. That bundle is called a **printing unit**. A four-color press is really four units in a row, and the sheet picks up one color at each station as it travels through.
+Here's the fact that drives everything else: **each color needs its own complete set** - its own plate, cylinder, blanket, and bank of inking rollers. That bundle is called a **printing unit**. A four-color press is really four units in a row, and the sheet picks up one color at each station as it travels through.
 
-More colors means more units, more plates, and — as you'll see — more cost to set up.
+More colors means more units, more plates, and - as you'll see - more cost to set up.
 
 ## Building color from four inks
 
@@ -111,9 +111,9 @@ The press never mixes these in a bucket. Each color is broken into a pattern of 
 
 ### When CMYK isn't enough: spot colors
 
-Sometimes a color has to be *exactly* right every time — Coca-Cola red, Tiffany blue, a precise corporate orange. Building those from four overlapping dot patterns can drift slightly from press to press.
+Sometimes a color has to be *exactly* right every time - Coca-Cola red, Tiffany blue, a precise corporate orange. Building those from four overlapping dot patterns can drift slightly from press to press.
 
-The fix is a **spot color**: an ink pre-mixed to one exact hue, like paint mixed to a recipe, printed from its own dedicated plate and unit. The most common system is **Pantone** (PMS, the Pantone Matching System). Each color gets a number — "PMS 165" is a specific orange — so any shop in the world mixes the same ink.
+The fix is a **spot color**: an ink pre-mixed to one exact hue, like paint mixed to a recipe, printed from its own dedicated plate and unit. The most common system is **Pantone** (PMS, the Pantone Matching System). Each color gets a number - "PMS 165" is a specific orange - so any shop in the world mixes the same ink.
 
 Spot colors also unlock things CMYK simply can't reproduce: **metallics** (gold, silver), **fluorescents**, and certain bright pastels.
 
@@ -121,13 +121,13 @@ Spot colors also unlock things CMYK simply can't reproduce: **metallics** (gold,
 
 This is the single most important idea here. Offset has a big **fixed setup cost** you pay once per job, then a tiny cost for each additional copy.
 
-**The plates.** A laser burns the image onto each plate straight from the digital file — a process called **CTP (Computer-to-Plate)**. The rule to remember: **one plate per color, per side**. So a double-sided full-color job needs `4 colors × 2 sides = 8 plates`. Plates often run a few hundred dollars each, so the plates alone can total hundreds to low thousands of dollars before one sellable sheet exists.
+**The plates.** A laser burns the image onto each plate straight from the digital file - a process called **CTP (Computer-to-Plate)**. The rule to remember: **one plate per color, per side**. So a double-sided full-color job needs `4 colors × 2 sides = 8 plates`. Plates often run a few hundred dollars each, so the plates alone can total hundreds to low thousands of dollars before one sellable sheet exists.
 
-**The make-ready.** This is all the prep to get good sheets: mounting plates, setting ink-water balance, lining up the colors (**registration**), and running test sheets until everything's right. Those test sheets are **spoilage** — waste. Either way, it's a fixed cost you pay once, whether you print 500 copies or 50,000.
+**The make-ready.** This is all the prep to get good sheets: mounting plates, setting ink-water balance, lining up the colors (**registration**), and running test sheets until everything's right. Those test sheets are **spoilage** - waste. Either way, it's a fixed cost you pay once, whether you print 500 copies or 50,000.
 
 > **Example.** A double-sided full-color flyer needs 8 plates. Say plates run $500 each ($4,000), plus an hour of make-ready and a few hundred waste sheets. That's a few thousand dollars spent *before the first good copy*. Print 1,000 copies and that setup is brutal per copy. Print 100,000 and it disappears into pennies each.
 
-That shape — **high fixed cost, very low cost per extra sheet** — is the reason the per-copy price falls steeply as the run grows. It's also exactly what a pricing engine has to model.
+That shape - **high fixed cost, very low cost per extra sheet** - is the reason the per-copy price falls steeply as the run grows. It's also exactly what a pricing engine has to model.
 
 ## Two families: sheet-fed and web
 
@@ -137,13 +137,13 @@ Offset presses split into two broad types, defined by how paper is fed in.
 |---|---|---|
 | **Paper feed** | Pre-cut sheets, one at a time | A continuous roll ("web") |
 | **Speed** | Up to ~18,000 sheets/hour | Roughly 4–5× faster |
-| **Stock** | Very flexible — thick board, specialty stocks | Limited to roll-friendly stocks |
+| **Stock** | Very flexible - thick board, specialty stocks | Limited to roll-friendly stocks |
 | **Best for** | Short-to-medium runs, top quality | Very high volume (tens of thousands+) |
 | **Typical work** | Brochures, books, posters, packaging | Magazines, catalogs, newspapers |
 
-Web presses split again by how the ink dries. **Coldset** ink soaks into porous stock like newsprint — cheap, fast, lower quality (this is how newspapers print). **Heatset** runs the web through hot-air dryers and chill rollers, which works on coated stock and gives the glossy finish of magazines.
+Web presses split again by how the ink dries. **Coldset** ink soaks into porous stock like newsprint - cheap, fast, lower quality (this is how newspapers print). **Heatset** runs the web through hot-air dryers and chill rollers, which works on coated stock and gives the glossy finish of magazines.
 
-Because of its enormous setup and waste, **web offset only pays off at very high volumes** — generally well into the tens of thousands. Below that, sheet-fed or digital wins.
+Because of its enormous setup and waste, **web offset only pays off at very high volumes** - generally well into the tens of thousands. Below that, sheet-fed or digital wins.
 
 ## The big decision: offset vs digital
 
@@ -160,21 +160,21 @@ Plot both as cost-per-copy against quantity and the two lines **cross**. That in
 
 > **Example.** Offset setup $700, digital $0.22/copy, offset $0.11/copy. Break-even = 700 ÷ (0.22 − 0.11) = **~6,364 copies**. Below that, print digital; above it, print offset.
 
-There's one more thing only digital can do: **Variable Data Printing (VDP)** — changing the content on every copy (names, addresses, QR codes, languages). **Offset cannot do this at all.** The plate is fixed, so every copy in the run is identical.
+There's one more thing only digital can do: **Variable Data Printing (VDP)** - changing the content on every copy (names, addresses, QR codes, languages). **Offset cannot do this at all.** The plate is fixed, so every copy in the run is identical.
 
 ## Common misconceptions
 
-**"Offset is the cheap option."** Only at volume. For 200 copies, the setup cost makes offset wildly expensive per copy — digital wins easily. It's cheap *per copy at scale*, not cheap to start.
+**"Offset is the cheap option."** Only at volume. For 200 copies, the setup cost makes offset wildly expensive per copy - digital wins easily. It's cheap *per copy at scale*, not cheap to start.
 
 **"There's a magic crossover number like 1,000."** No. The crossover shifts with size, page count, colors, spot inks, finishing, and stock. Trade rules of thumb scatter from 500 to 3,500 for the same kind of job. The lesson: *calculate* it per product, never hard-code it.
 
-**"More spot colors make it look nicer, so add a few."** Every spot color is an extra plate, an extra unit, and extra wash-up time — real money. Reserve spot inks for brand-critical or special-effect needs and do the rest in CMYK.
+**"More spot colors make it look nicer, so add a few."** Every spot color is an extra plate, an extra unit, and extra wash-up time - real money. Reserve spot inks for brand-critical or special-effect needs and do the rest in CMYK.
 
 **"I can personalize each copy on any product."** Not if it routes to offset. Personalization is physically impossible there. It only works on digital.
 
 ## How to order (or build) offset right
 
-If you're specifying a print job — or designing the software that prices one — work through these in order:
+If you're specifying a print job - or designing the software that prices one - work through these in order:
 
 1. **Estimate your quantity first.** It decides everything. Roughly compute the offset setup-amortized price versus the flat digital price and pick the cheaper. Big run, static content → offset. Small run or per-copy differences → digital.
 2. **Only add spot colors you truly need.** Each one adds a plate, a unit, and cost. Brand color that must match exactly? Worth it. Otherwise, CMYK.
@@ -188,8 +188,8 @@ If you're specifying a print job — or designing the software that prices one �
 
 ## Conclusion
 
-Strip away the machinery and offset is one elegant idea: a flat plate where oil and water sort the ink for you, offset through a rubber blanket, one printing unit per color. Its whole personality comes from a single economic shape — **expensive to start, cheap to repeat** — which creates a crossover quantity that decides offset versus digital on price.
+Strip away the machinery and offset is one elegant idea: a flat plate where oil and water sort the ink for you, offset through a rubber blanket, one printing unit per color. Its whole personality comes from a single economic shape - **expensive to start, cheap to repeat** - which creates a crossover quantity that decides offset versus digital on price.
 
 Remember that one thing and you'll never be surprised by a print quote again: small runs love digital, big runs love offset, and the line between them is a number you can actually compute.
 
-But pressing ink onto paper is only half the story. A flat printed sheet still has to become a folded brochure, a bound book, or a die-cut box — and that world of **finishing and bindery** is where a good print job either comes alive or falls apart. That's where we head next.
+But pressing ink onto paper is only half the story. A flat printed sheet still has to become a folded brochure, a bound book, or a die-cut box - and that world of **finishing and bindery** is where a good print job either comes alive or falls apart. That's where we head next.

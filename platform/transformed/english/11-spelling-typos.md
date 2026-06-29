@@ -17,13 +17,13 @@ faq:
   - q: Why do I keep misspelling the same words even though I know them?
     a: Most repeated spelling mistakes are muscle-memory typos, not knowledge gaps. Your fingers move faster than your attention, so the same slips repeat. A two-second re-read plus spell-check retrains the habit.
   - q: How do you spell "separate" correctly?
-    a: It is s-e-p-a-r-a-t-e. Remember "there's a rat in separate" — the tricky middle is sep-a-RAT-e, not "seper".
+    a: It is s-e-p-a-r-a-t-e. Remember "there's a rat in separate" - the tricky middle is sep-a-RAT-e, not "seper".
   - q: Is using spell-check cheating?
     a: No. Spell-check is a professional tool, like a linter for your writing. Turn it on in your editor, your PR box, and Slack so the machine catches what your eyes skim past.
   - q: What does "i before e except after c" actually mean?
     a: Use "ie" in most words (believe, achieve, field), but flip to "ei" after the letter c (receive, deceive, ceiling). A few exceptions like "weird" exist, but the rule covers the words you type most.
   - q: Is it okay to write "u", "ur", or "plz" at work?
-    a: In a quick chat with a friend, sure. In commit messages, PRs, and team channels, spell out "you", "your", and "please" — full words read as careful and professional.
+    a: In a quick chat with a friend, sure. In commit messages, PRs, and team channels, spell out "you", "your", and "please" - full words read as careful and professional.
   - q: When do I double the last letter before adding -ing or -ed?
     a: "Double it when a short word is stressed on its last syllable: run becomes running, commit becomes committed. Do not double when the stress is elsewhere: open becomes opening, offer becomes offered."
 topic: english
@@ -51,17 +51,17 @@ The fix costs you about two seconds per message. No slowing down your typing, no
 
 ## The handful of words almost everyone gets wrong
 
-A small set of words trips up nearly every developer. Learn these as fixed shapes — don't sound them out, just memorize the picture.
+A small set of words trips up nearly every developer. Learn these as fixed shapes - don't sound them out, just memorize the picture.
 
-- **separate** — there's *a rat* in sep-a-RAT-e
-- **definitely** — the word *finite* is hiding inside: de-FINITE-ly
-- **recommend** — one c, two m: re-COMM-end
-- **occurred** — double everything: oc-CURR-ed
-- **necessary** — one c, two s: "one collar, two sleeves"
-- **environment** — keep the n before -ment: enviro**N**-ment
-- **parameter** — a *meter* measures it: para-METER
-- **maintenance** — ends in -enance, not "-ainance"
-- **receive** — i before e, except after c
+- **separate** - there's *a rat* in sep-a-RAT-e
+- **definitely** - the word *finite* is hiding inside: de-FINITE-ly
+- **recommend** - one c, two m: re-COMM-end
+- **occurred** - double everything: oc-CURR-ed
+- **necessary** - one c, two s: "one collar, two sleeves"
+- **environment** - keep the n before -ment: enviro**N**-ment
+- **parameter** - a *meter* measures it: para-METER
+- **maintenance** - ends in -enance, not "-ainance"
+- **receive** - i before e, except after c
 
 Pin that list somewhere you can see it. After a week of glancing at it, your fingers learn the shapes on their own.
 
@@ -79,7 +79,7 @@ But after the letter c, flip it to "ei":
 
 - rec**ei**ve, dec**ei**ve, c**ei**ling
 
-Yes, English has rebels — "weird" and "seize" break the rule. But the rule still covers the words you actually type at work, so use it.
+Yes, English has rebels - "weird" and "seize" break the rule. But the rule still covers the words you actually type at work, so use it.
 
 ### Double the last letter (sometimes) before -ing and -ed
 
@@ -102,9 +102,9 @@ Say the word out loud. If the punch lands on the last part, double up. If it lan
 
 Spell-check won't catch these, because each one is a real word. You have to know which is which.
 
-- **which** vs **witch** — "the branch *which* broke CI" (the witch is for Halloween, never your PR)
-- **parameter** vs **perimeter** — "pass the timeout *parameter*" (a perimeter is a boundary length, that's geometry)
-- **a lot** vs "alot" — "fixed *a lot* of typos" is two words; "alot" is not a word at all
+- **which** vs **witch** - "the branch *which* broke CI" (the witch is for Halloween, never your PR)
+- **parameter** vs **perimeter** - "pass the timeout *parameter*" (a perimeter is a boundary length, that's geometry)
+- **a lot** vs "alot" - "fixed *a lot* of typos" is two words; "alot" is not a word at all
 
 ## The texting habits that leak into work
 
@@ -117,7 +117,7 @@ Your phone trained you to type "u", "ur", "plz", and "thx". Those shortcuts are 
 | plz review thx | **please** review, **thanks** |
 | this is depricated, dont use it | this is **deprecated**, **don't** use it |
 
-It's not about being formal. It's about a team channel and a PR being shared, semi-permanent records — worth a few full words.
+It's not about being formal. It's about a team channel and a PR being shared, semi-permanent records - worth a few full words.
 
 ## Common misconceptions
 
@@ -130,7 +130,7 @@ It's not about being formal. It's about a team channel and a PR being shared, se
 ## How to use this today
 
 1. **Turn on spell-check everywhere you write.** Your editor (enable it for Markdown and code comments), your browser's PR box, and Slack. Let the machine do the boring catching.
-2. **Re-read every commit subject line once before you save.** A typo there is permanent in git history. "fix: handle null **parameter** in webhook **receive** handler" — five seconds, zero regret.
+2. **Re-read every commit subject line once before you save.** A typo there is permanent in git history. "fix: handle null **parameter** in webhook **receive** handler" - five seconds, zero regret.
 3. **Pin the "always misspelled" list** near your screen: separate, definitely, recommend, occurred, necessary, environment, parameter, maintenance, receive. Glance at it until it sticks.
 4. **Spell out you, your, please, and thanks** in any shared channel. Save "u" and "thx" for direct messages with friends.
 5. **Treat code comments like docs.** They live in the codebase forever. `// receive the response, then retry if it occurred to fail` deserves the same care as a commit.
@@ -155,4 +155,4 @@ Fix the issue in each. Answers below.
 
 The single takeaway: your spelling slips are habits, not flaws, and habits respond to a pinned list plus a two-second re-read. Fix the same nine words and turn on spell-check, and most of the problem disappears this week.
 
-And once the spelling is clean, the next thing reviewers notice is the *shape* of your sentences — whether a commit message and a PR description actually read clearly. That's where punctuation and tense start doing real work, and it's worth a closer look next.
+And once the spelling is clean, the next thing reviewers notice is the *shape* of your sentences - whether a commit message and a PR description actually read clearly. That's where punctuation and tense start doing real work, and it's worth a closer look next.

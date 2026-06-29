@@ -47,7 +47,7 @@ That is three or four sentences crammed into one breathless line, with no full s
 
 ## Why this matters
 
-Your writing is read more than your code is. Commit messages, PR descriptions, standups, bug reports, code comments — these are the interface other people use to understand your work.
+Your writing is read more than your code is. Commit messages, PR descriptions, standups, bug reports, code comments - these are the interface other people use to understand your work.
 
 And here is the uncomfortable part: **nobody reads carefully.** Reviewers scan. A wall of run-on text gets skimmed, and skimmed text loses details. When the detail that got missed was "this only happens in production," that is a bug shipped because of punctuation.
 
@@ -57,9 +57,9 @@ Clear sentences are not about sounding smart. They are about being understood on
 
 A **complete sentence** needs three things:
 
-1. A **subject** — who or what (`The build`)
-2. A **verb** — the action (`failed`)
-3. A **complete thought** — it can stand on its own (`The build failed.`)
+1. A **subject** - who or what (`The build`)
+2. A **verb** - the action (`failed`)
+3. A **complete thought** - it can stand on its own (`The build failed.`)
 
 When you have two complete sentences, you cannot just run them together or staple them with a comma. You have to join or separate them properly. That is the entire topic.
 
@@ -89,7 +89,7 @@ When you have two complete thoughts, pick one of these. That is the whole toolki
 
 | Fix | Looks like | Use when |
 |---|---|---|
-| **Full stop** `.` | `It failed. I fixed it.` | The two ideas are independent. Your safest default — use this most. |
+| **Full stop** `.` | `It failed. I fixed it.` | The two ideas are independent. Your safest default - use this most. |
 | **Semicolon** `;` | `It failed; I fixed it.` | The ideas are closely linked and you want them on one line. |
 | **Comma + conjunction** | `It failed, so I fixed it.` | You want to show the relationship: `and` (adds), `but` (contrasts), `so` (result). |
 | **Subordinating word** | `Because it failed, I fixed it.` | One idea depends on the other: `because / when / after / if / which`. |
@@ -106,12 +106,12 @@ Real lines from real dev chatter, cleaned up.
 | `the tests pass, the deploy is green` | `The tests pass. The deploy is green.` | Comma splice. A comma can't join two sentences. |
 | `i refactored the service it is faster now` | `I refactored the service, and it is faster now.` | Run-on. Comma + `and` joins two complete thoughts. |
 | `we hit a 429, we should add a retry` | `We hit a 429, so we should add a retry.` | Comma splice. `so` shows cause leading to effect. |
-| `merged the PR` (standalone Slack line) | `I merged the PR.` | Fragment. No subject — add `I`. |
+| `merged the PR` (standalone Slack line) | `I merged the PR.` | Fragment. No subject - add `I`. |
 | `because the token expired` (alone) | `The request failed because the token expired.` | Fragment. A `because` clause can't stand alone. |
 
 ## A fragment is the opposite problem
 
-A run-on is too much in one sentence. A **fragment** is not enough — a piece pretending to be a whole.
+A run-on is too much in one sentence. A **fragment** is not enough - a piece pretending to be a whole.
 
 > Because the token expired.
 
@@ -129,15 +129,15 @@ Same with a bare verb on a Slack line: "Restarting the worker queue." It has no 
 
 **"Long sentences sound more thorough."** They read as harder, not deeper. The clearest engineers write short. Length hides your point; it does not strengthen it.
 
-**"This only matters in formal docs."** It matters most in the fast stuff — Slack, commits, PRs — because that is what gets skimmed under time pressure.
+**"This only matters in formal docs."** It matters most in the fast stuff - Slack, commits, PRs - because that is what gets skimmed under time pressure.
 
 ## How to use this in your daily writing
 
-1. **Commit messages — one line, one idea.** `Fix stale cache so users see current prices` beats `fixed cache it was stale users saw old prices`.
-2. **PR descriptions — short sentences, each ending in a full stop.** Reviewers scan. A run-on paragraph gets skimmed and your "note: skip the migration" disappears.
-3. **Standups — split the three parts.** `Yesterday I finished the retry logic. Today I'm on the 429 handler. No blockers.` Three clean sentences, not one chain.
-4. **Code comments — use the join to show cause.** `// Token can expire mid-request, so we refresh before retrying.` is clearer than `// token expired refresh and retry it works now`.
-5. **Bug reports — separate what happened from what you expected.** `The export returns an empty file. I expected the full order list.` Two sentences, instantly clear.
+1. **Commit messages - one line, one idea.** `Fix stale cache so users see current prices` beats `fixed cache it was stale users saw old prices`.
+2. **PR descriptions - short sentences, each ending in a full stop.** Reviewers scan. A run-on paragraph gets skimmed and your "note: skip the migration" disappears.
+3. **Standups - split the three parts.** `Yesterday I finished the retry logic. Today I'm on the 429 handler. No blockers.` Three clean sentences, not one chain.
+4. **Code comments - use the join to show cause.** `// Token can expire mid-request, so we refresh before retrying.` is clearer than `// token expired refresh and retry it works now`.
+5. **Bug reports - separate what happened from what you expected.** `The export returns an empty file. I expected the full order list.` Two sentences, instantly clear.
 
 Keep three mnemonics in your head:
 
@@ -165,4 +165,4 @@ Fix these before reading the answers.
 
 If you remember one thing: **when you can split a line into two sentences that each stand alone, you must put a full stop, a semicolon, or a "comma + and/but/so" between them.** That single habit clears up most of what makes writing hard to read.
 
-Punctuation is where structure lives. But the other half of being understood is *word choice* — the small countable-versus-uncountable slips like "so much mistake" instead of "so many mistakes" that quietly mark writing as non-native. That is the next thing worth getting right, and it is easier than it looks.
+Punctuation is where structure lives. But the other half of being understood is *word choice* - the small countable-versus-uncountable slips like "so much mistake" instead of "so many mistakes" that quietly mark writing as non-native. That is the next thing worth getting right, and it is easier than it looks.

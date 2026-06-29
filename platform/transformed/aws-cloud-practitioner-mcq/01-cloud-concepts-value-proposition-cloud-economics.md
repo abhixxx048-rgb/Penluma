@@ -164,12 +164,12 @@ A few cost ideas round out this topic.
 
 The exam frequently asks which of the six AWS advantages a scenario illustrates. Several feel related, so anchor each to its keyword.
 
-1. **Trade capital expense for variable expense** — own versus rent; the cost *structure*.
-2. **Benefit from massive economies of scale** — aggregated demand gives lower prices.
-3. **Stop guessing capacity** — right-size to real demand, no over-buying "just in case."
-4. **Increase speed and agility** — experiments that took weeks now take minutes; cheap to try and fail.
-5. **Stop spending money running and maintaining data centers** — offload undifferentiated heavy lifting.
-6. **Go global in minutes** — deploy to Regions worldwide for low-latency, local access.
+1. **Trade capital expense for variable expense** - own versus rent; the cost *structure*.
+2. **Benefit from massive economies of scale** - aggregated demand gives lower prices.
+3. **Stop guessing capacity** - right-size to real demand, no over-buying "just in case."
+4. **Increase speed and agility** - experiments that took weeks now take minutes; cheap to try and fail.
+5. **Stop spending money running and maintaining data centers** - offload undifferentiated heavy lifting.
+6. **Go global in minutes** - deploy to Regions worldwide for low-latency, local access.
 
 Watch the two that overlap most. **"Stop guessing capacity"** is about matching capacity to demand and avoiding idle hardware. **"Trade CapEx for variable expense"** is about owning versus paying-as-you-go. A finance team that ends "just in case" server purchases is *stopping guessing capacity*. A retailer launching across three continents in a day is *going global in minutes*. A startup shipping a feature in days instead of weeks is *speed and agility*.
 

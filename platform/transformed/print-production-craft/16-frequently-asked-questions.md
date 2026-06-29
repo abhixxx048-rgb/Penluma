@@ -90,10 +90,10 @@ The fix is threefold: design and proof in CMYK, use a shared **color profile** (
 
 A quick map:
 
-- **80 to 120 gsm** — letterhead, copy paper, cheap flyers
-- **130 to 170 gsm** — quality flyers, posters, magazine pages
-- **200 to 300 gsm** — postcards, menus, light covers
-- **300 to 400 gsm** — business cards, premium cards, packaging
+- **80 to 120 gsm** - letterhead, copy paper, cheap flyers
+- **130 to 170 gsm** - quality flyers, posters, magazine pages
+- **200 to 300 gsm** - postcards, menus, light covers
+- **300 to 400 gsm** - business cards, premium cards, packaging
 
 If you've ever felt a restaurant menu that bends like cardboard versus one that flops like a napkin, that difference is GSM.
 
@@ -103,9 +103,9 @@ If you've ever felt a restaurant menu that bends like cardboard versus one that 
 
 There are three zones to think about:
 
-- **Bleed** — the area that gets cut into
-- **Trim** — the final size
-- **Safe zone** — keep important text about 3 mm inside the trim so it isn't sliced off
+- **Bleed** - the area that gets cut into
+- **Trim** - the final size
+- **Safe zone** - keep important text about 3 mm inside the trim so it isn't sliced off
 
 Your preflight code should confirm uploaded files actually include bleed. Most don't, unless you tell people to add it.
 
@@ -113,10 +113,10 @@ Your preflight code should confirm uploaded files actually include bleed. Most d
 
 This is printer code for **ink colors front / back**. The "4" means full-color CMYK (four inks).
 
-- **4/4** — full color both sides
-- **4/0** — full color front, blank back
-- **1/0** — one ink (e.g. black) on front only
-- **4/1** — full color front, black-only back (common for flyers)
+- **4/4** - full color both sides
+- **4/0** - full color front, blank back
+- **1/0** - one ink (e.g. black) on front only
+- **4/1** - full color front, black-only back (common for flyers)
 
 In software, model this as two fields, `front_colors` and `back_colors`. It drives both pricing and plate/press setup.
 
@@ -130,11 +130,11 @@ The trade-off: ganged jobs run on standard sizes and stocks, on the shop's sched
 
 A quote is built from layers, not a single number:
 
-1. **Setup / make-ready** — fixed cost per job (plates, press tuning, file prep), spread across the run
-2. **Materials** — paper plus ink, scaled by quantity and size
-3. **Running / click cost** — press time on offset, or per-impression "click" charges on digital
-4. **Finishing** — cutting, folding, binding, lamination, and so on
-5. **Overhead and margin** — the shop's fixed costs and profit
+1. **Setup / make-ready** - fixed cost per job (plates, press tuning, file prep), spread across the run
+2. **Materials** - paper plus ink, scaled by quantity and size
+3. **Running / click cost** - press time on offset, or per-impression "click" charges on digital
+4. **Finishing** - cutting, folding, binding, lamination, and so on
+5. **Overhead and margin** - the shop's fixed costs and profit
 
 Because setup is fixed, the **per-unit price drops as quantity rises**. That's why print uses quantity-tier pricing instead of one flat unit price, and why your pricing engine should think in tiers from day one.
 
@@ -146,12 +146,12 @@ Because setup is fixed, the **per-unit price drops as quantity rises**. That's w
 
 Offer the common, high-demand options and tie each to a price modifier:
 
-- **Lamination / coating** — gloss, matte, or soft-touch (protects and changes the feel)
-- **Folding** — half, tri-fold, gate, and others for brochures
-- **Binding** — saddle-stitch (stapled), perfect bound (glued spine), spiral or wire
-- **Cutting / shaping** — rounded corners, die-cut shapes
-- **Embellishments** — foil stamping, embossing, spot UV (premium upsells)
-- **Drilling, scoring, perforation** — for hang tags, tear-offs, easy folds
+- **Lamination / coating** - gloss, matte, or soft-touch (protects and changes the feel)
+- **Folding** - half, tri-fold, gate, and others for brochures
+- **Binding** - saddle-stitch (stapled), perfect bound (glued spine), spiral or wire
+- **Cutting / shaping** - rounded corners, die-cut shapes
+- **Embellishments** - foil stamping, embossing, spot UV (premium upsells)
+- **Drilling, scoring, perforation** - for hang tags, tear-offs, easy folds
 
 Model finishing as a list of selectable options, each with its own pricing rule and any constraints. Saddle-stitch, for example, needs a page count divisible by four.
 
@@ -208,11 +208,11 @@ For reference, the two pricing formulas:
 
 If you're modeling print in software, here's a concrete starting checklist:
 
-1. **Store color as two fields** — `front_colors` and `back_colors` so pricing and press setup both have what they need.
+1. **Store color as two fields** - `front_colors` and `back_colors` so pricing and press setup both have what they need.
 2. **Price in quantity tiers**, never a flat unit price, because fixed setup makes per-unit cost fall as volume rises.
-3. **Run preflight on upload** — check bleed, effective DPI (target 300), color mode, fonts, and page size; warn loudly on RGB and low resolution.
+3. **Run preflight on upload** - check bleed, effective DPI (target 300), color mode, fonts, and page size; warn loudly on RGB and low resolution.
 4. **Capture dimensions, not just weight**, so your shipping estimator can handle dimensional weight on bulky items.
-5. **Model finishing as options with constraints** — for example, enforce page counts divisible by four for saddle-stitch.
+5. **Model finishing as options with constraints** - for example, enforce page counts divisible by four for saddle-stitch.
 6. **Use a clear status spine** customers understand: `Order Received → File Check (Preflight) → Approved / Proof Sent → In Production → Finishing → Quality Check → Shipped → Delivered`. Add side states for **Action Needed**, **On Hold**, and **Cancelled/Refunded**, and log every transition (who, what, when) for support and disputes.
 
 You don't need to do **imposition** math (arranging pages on a big sheet so they end up in the right order after folding and cutting) or **batching** (grouping same-stock, same-size jobs to share setup). But capture the attributes that let a shop do it: size, stock, color setup, and finishing.

@@ -114,10 +114,10 @@ Here's the most famous equation in monetary economics, and it's gentler than it 
 
 **M × V = P × Q**
 
-- **M (money supply)** — how much money exists in the economy.
-- **V (velocity)** — how many times, on average, each unit of money is spent in a year.
-- **P (price level)** — the average price of things.
-- **Q (real output)** — the actual quantity of goods and services produced.
+- **M (money supply)** - how much money exists in the economy.
+- **V (velocity)** - how many times, on average, each unit of money is spent in a year.
+- **P (price level)** - the average price of things.
+- **Q (real output)** - the actual quantity of goods and services produced.
 
 The left side is total spending. The right side is the total value of everything bought. They're equal *by definition*, because every dollar spent is a dollar received. This is an **accounting identity**, always true, like saying "what I paid equals what the seller got."
 

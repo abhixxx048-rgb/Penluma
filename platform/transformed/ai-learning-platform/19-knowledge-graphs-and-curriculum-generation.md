@@ -49,8 +49,8 @@ Get it right and every lesson lands on solid ground. Get it wrong and the learne
 
 Two connected ideas make the good version possible:
 
-- A **knowledge graph** — a map of a subject's concepts and which ones must come first.
-- **Curriculum generation** — turning one learner's personal goal into a step-by-step path across that map.
+- A **knowledge graph** - a map of a subject's concepts and which ones must come first.
+- **Curriculum generation** - turning one learner's personal goal into a step-by-step path across that map.
 
 And because letting an AI draw the map unsupervised is genuinely risky, we'll also see exactly where a human has to step in.
 
@@ -58,7 +58,7 @@ And because letting an AI draw the map unsupervised is genuinely risky, we'll al
 
 A **knowledge graph** is a map of a subject broken into small concepts, with arrows showing which concepts you need *before* you can learn another.
 
-Each small concept is a **knowledge component** — a single teachable idea, like "what a variable is" or "how a for-loop repeats." The arrows are **prerequisites**. An arrow from A to B means "understand A before B."
+Each small concept is a **knowledge component** - a single teachable idea, like "what a variable is" or "how a for-loop repeats." The arrows are **prerequisites**. An arrow from A to B means "understand A before B."
 
 **Think of a video-game skill tree.** You can't unlock the fireball spell until you've earned the basic-magic node that feeds into it. A knowledge graph is that skill tree for a subject. The tutor walks you up it, never offering a branch whose earlier nodes aren't lit yet.
 
@@ -78,7 +78,7 @@ This structure isn't a nice-to-have. It's what turns "what should I learn next?"
 
 Real systems prove the point. The adaptive math platform **ALEKS** maps middle-school math into roughly 1,000 linked concepts. China's **Squirrel AI** broke the same subject into over 10,000 fine-grained "knowledge points" so it could pinpoint a learner's exact gap. Finer maps diagnose more precisely, but each extra node costs real expert effort to build and maintain.
 
-**Granularity is a dial, not a free upgrade.** Start coarse — a few dozen concepts a human can actually verify — then split nodes only where learners keep getting stuck and you need finer aim.
+**Granularity is a dial, not a free upgrade.** Start coarse - a few dozen concepts a human can actually verify - then split nodes only where learners keep getting stuck and you need finer aim.
 
 ## Why prerequisites are the heart of it
 
@@ -88,21 +88,21 @@ Suppose a learner keeps getting fraction *equations* wrong. A naive tutor drills
 
 You fix the foundation, and the upper floor stops collapsing.
 
-This is also how a good tutor stays in the **Zone of Proximal Development** — the sweet spot just beyond what you can already do alone. Hard enough to grow, reachable with a little help. The graph tells you which steps are even *reachable* (all their prerequisites are met). The learner model tells you which ones are still *needed*. ALEKS calls this reachable-and-needed set the **outer fringe**: the concepts you're ready to learn right now.
+This is also how a good tutor stays in the **Zone of Proximal Development** - the sweet spot just beyond what you can already do alone. Hard enough to grow, reachable with a little help. The graph tells you which steps are even *reachable* (all their prerequisites are met). The learner model tells you which ones are still *needed*. ALEKS calls this reachable-and-needed set the **outer fringe**: the concepts you're ready to learn right now.
 
 ## Turning a goal into a personal path
 
 Now the second half: **curriculum generation**.
 
-A learner shows up with a goal in plain English — "become a Python web developer in four months, I already know a little HTML." Your job is to turn that into an ordered path. Here's the recipe:
+A learner shows up with a goal in plain English - "become a Python web developer in four months, I already know a little HTML." Your job is to turn that into an ordered path. Here's the recipe:
 
 1. **Pin down the destination.** Translate the fuzzy goal into concrete, checkable objectives. Not "understand Python" but "can build and deploy a small web app with a database." Use observable verbs (build, write, debug) so the tutor knows when the learner has actually arrived.
 2. **Find the start.** A short diagnostic quiz marks which concepts the learner already owns, so you don't burn their four months re-teaching HTML.
 3. **Select the needed concepts.** Walk the graph backward from the goal, collecting every prerequisite that isn't already mastered. This is the learner's personal slice of the map.
 4. **Order them safely.** Sort that slice so every concept comes *after* everything it depends on. (Computer scientists call this a topological sort. In plain terms: never teach B before its arrow-parents.)
-5. **Pace it.** Cut the ordered list into weeks that fit the time budget and respect working memory — a few new ideas at a time, not ten.
+5. **Pace it.** Cut the ordered list into weeks that fit the time budget and respect working memory - a few new ideas at a time, not ten.
 
-**A quick example.** Two learners give the identical goal: "Python web developer in 4 months." One already codes in JavaScript; the other has never programmed. Same destination, same graph — but the diagnostic produces two very different paths. The first skips loops and functions and starts near web frameworks. The second begins at variables. The graph is shared. The curriculum is personal.
+**A quick example.** Two learners give the identical goal: "Python web developer in 4 months." One already codes in JavaScript; the other has never programmed. Same destination, same graph - but the diagnostic produces two very different paths. The first skips loops and functions and starts near web frameworks. The second begins at variables. The graph is shared. The curriculum is personal.
 
 ## Sequencing: the one rule you can't break
 
@@ -110,7 +110,7 @@ If your path ever places a concept before something it depends on, every lesson 
 
 The topological sort guarantees a *valid* order. But there's usually more than one valid order, and that's where judgment comes in. Once the foundations are solid, you can:
 
-- **Interleave** related skills — mix problem types instead of drilling one to death, so the learner practices *choosing* the right approach.
+- **Interleave** related skills - mix problem types instead of drilling one to death, so the learner practices *choosing* the right approach.
 - **Space out reviews** of shaky earlier concepts so they don't quietly fade.
 
 The graph defines the legal orders. Good teaching picks the best one.
@@ -125,11 +125,11 @@ The graph defines the legal orders. Good teaching picks the best one.
 
 ## Where AI helps, and where it must be checked
 
-Building a knowledge graph by hand is slow, expert work. This is exactly where a **large language model (LLM)** — an AI trained to read and write human language — earns its keep.
+Building a knowledge graph by hand is slow, expert work. This is exactly where a **large language model (LLM)** - an AI trained to read and write human language - earns its keep.
 
 Ask it to draft the first version of the map: list the concepts, propose the prerequisite arrows, even sketch a week-by-week curriculum. It's a tireless junior author that produces a complete first draft in seconds.
 
-But a first draft is not a finished map. LLMs **hallucinate** — they state wrong things with total confidence. Left alone, an LLM will invent a backwards prerequisite, miss a crucial dependency, or place an advanced topic far too early. In a learning product, a confident wrong answer is *worse* than no answer, because the learner trusts it and builds on the mistake.
+But a first draft is not a finished map. LLMs **hallucinate** - they state wrong things with total confidence. Left alone, an LLM will invent a backwards prerequisite, miss a crucial dependency, or place an advanced topic far too early. In a learning product, a confident wrong answer is *worse* than no answer, because the learner trusts it and builds on the mistake.
 
 **The cautionary tale here is Knewton**, the heavily funded "robot tutor in the sky." Confident algorithms and big claims are not the same as real learning; a government study found its adaptive course produced no significant gains. The systems that lasted, like Carnegie Mellon's **Cognitive Tutor**, were slow, theory-grounded, and independently checked.
 
@@ -142,7 +142,7 @@ So the workflow is a partnership, not a handoff:
 | Generate path | Sequences a curriculum for the goal | Confirms order is sound and well-paced |
 | Write lessons | Drafts explanations, examples, quizzes | Checks facts, fixes quiz answers |
 
-One practical safeguard: don't let the model improvise from memory. Use **retrieval-augmented generation (RAG)** — feed it the actual source material (a textbook, a syllabus) and tell it to build the graph and lessons *only* from that text, with citations back to the page. That sharply cuts invented prerequisites and gives a human a fast way to spot-check each claim.
+One practical safeguard: don't let the model improvise from memory. Use **retrieval-augmented generation (RAG)** - feed it the actual source material (a textbook, a syllabus) and tell it to build the graph and lessons *only* from that text, with citations back to the page. That sharply cuts invented prerequisites and gives a human a fast way to spot-check each claim.
 
 ## How to use this
 
@@ -157,8 +157,8 @@ If you're building or evaluating an AI tutor, work through these in order:
 
 ## Conclusion
 
-A knowledge graph turns the most important question in learning — *what next?* — from a guess into a principled choice: the next step that's reachable, still needed, and just a small stretch.
+A knowledge graph turns the most important question in learning - *what next?* - from a guess into a principled choice: the next step that's reachable, still needed, and just a small stretch.
 
 The graph is the stable, reusable map of a whole subject. The curriculum is the personal, throwaway route across it for one learner with one goal. Let the AI draft both, fast. Let a human guard the foundations.
 
-Here's the thread worth pulling next: that "running estimate of what each learner knows" is doing quiet, heavy lifting in everything above. How does a tutor actually *measure* what's in your head from a handful of answers — and how does it stay honest when you guess right by luck? That's the learner model, and it's where this all gets personal.
+Here's the thread worth pulling next: that "running estimate of what each learner knows" is doing quiet, heavy lifting in everything above. How does a tutor actually *measure* what's in your head from a handful of answers - and how does it stay honest when you guess right by luck? That's the learner model, and it's where this all gets personal.

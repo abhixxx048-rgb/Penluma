@@ -67,11 +67,11 @@ When growth feels overwhelming, it is usually because you are tracking a dozen n
 
 It breaks the customer journey into five stages:
 
-- **Acquisition** — people find you.
-- **Activation** — they get first value.
-- **Retention** — they keep coming back.
-- **Referral** — they tell others.
-- **Revenue** — they pay.
+- **Acquisition** - people find you.
+- **Activation** - they get first value.
+- **Retention** - they keep coming back.
+- **Referral** - they tell others.
+- **Revenue** - they pay.
 
 The discipline is simple: find your single biggest leak and fix that one stage. If people vanish right after signing up, that is an Activation problem, and no amount of extra ad spend will save you.
 
@@ -153,10 +153,10 @@ A note on famous "aha moment" stories: Facebook's "7 friends in 10 days," Slack'
 Five steps, plain language, each one wired to do the actual thing:
 
 1. **"What do you sell?"** One question at signup that personalizes everything after it.
-2. **Add your first product** — pre-filled with a demo product you can edit in place.
-3. **Set your price** — a sensible default already applied.
-4. **Publish your store** — one click, then celebrate: "Your store is live!"
-5. **Share your link or place a test order** — drive to the first sale, then celebrate again.
+2. **Add your first product** - pre-filled with a demo product you can edit in place.
+3. **Set your price** - a sensible default already applied.
+4. **Publish your store** - one click, then celebrate: "Your store is live!"
+5. **Share your link or place a test order** - drive to the first sale, then celebrate again.
 
 Cut signup itself to three fields or fewer. Set defaults so nothing *must* be configured to go live. Aim for the aha moment in the first session, and certainly within 24 hours.
 

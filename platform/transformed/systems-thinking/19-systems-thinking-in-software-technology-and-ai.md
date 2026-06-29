@@ -82,7 +82,7 @@ It sounds backwards. More hands should mean more work. But Brooks spotted a dest
 
 1. The project is late, so managers add developers.
 2. New developers need training, which eats the time of the experienced people.
-3. Every pair of people who must coordinate adds a communication link, and links grow as **n(n−1)/2** — far faster than the headcount.
+3. Every pair of people who must coordinate adds a communication link, and links grow as **n(n−1)/2** - far faster than the headcount.
 4. Coordination overhead rises, the project slips further, so managers add even more people.
 
 The communication math is brutal. A team of 5 has 10 links. Grow to 10 and you have 45. Grow to 20 and you have 190. You hired more people and bought yourself a coordination nightmare.

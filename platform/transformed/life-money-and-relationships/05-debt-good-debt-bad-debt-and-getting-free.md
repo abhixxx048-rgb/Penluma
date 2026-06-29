@@ -162,7 +162,7 @@ Now the heart of it. Here's the test that sorts every loan you'll ever consider:
 | Home loan (~8-9% reducing; builds an asset, plus tax benefits) | Credit-card balance you carry (~42%) |
 | Education loan (raises your earning power) | Payday or instant-app loans |
 | Business loan with a clear return above its rate | Phone and gadget EMIs (often flat-rate) |
-| — | "Buy Now Pay Later" for lifestyle; loans on a fast-depreciating car |
+| - | "Buy Now Pay Later" for lifestyle; loans on a fast-depreciating car |
 
 ### Good debt can still go bad
 

@@ -97,13 +97,13 @@ Prompt engineering polishes the one sentence you say. Context engineering design
 
 A well-built context has recognizable parts, and the job is deciding how much of each to include:
 
-1. **System prompt** — the model's role and firm rules.
-2. **Task instructions** — what to do right now.
-3. **Examples** — a handful of canonical demonstrations.
-4. **Retrieved knowledge** — documents fetched for this query.
-5. **Tool definitions** — the functions the model may call.
-6. **Long-term memory** — durable notes from past sessions.
-7. **Conversation history** — the running dialogue.
+1. **System prompt** - the model's role and firm rules.
+2. **Task instructions** - what to do right now.
+3. **Examples** - a handful of canonical demonstrations.
+4. **Retrieved knowledge** - documents fetched for this query.
+5. **Tool definitions** - the functions the model may call.
+6. **Long-term memory** - durable notes from past sessions.
+7. **Conversation history** - the running dialogue.
 
 One subtle point worth pausing on: **tools are part of the context too.** Every tool definition consumes tokens and shapes behavior. A good rule of thumb is to keep your three to five most-used tools always loaded and only switch to dynamic discovery past roughly ten. If a human engineer cannot tell which tool to use in a situation, neither can the agent.
 

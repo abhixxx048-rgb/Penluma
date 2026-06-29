@@ -91,7 +91,7 @@ People treat this like a personality test. It is not. It is a trade between four
 | **Speed** | Slow, you spend only what you earn | Fast, a big cash injection now |
 | **Risk** | Lower, no debt and no pressure to exit | Higher, you owe results and must grow fast |
 
-Think of it this way. **Bootstrapping is rowing your own boat** — slow, but you choose the direction and keep every fish you catch. **Raising money is bolting on a giant engine someone else owns** — you fly forward, but now they sit in the boat and expect a share of the catch.
+Think of it this way. **Bootstrapping is rowing your own boat** - slow, but you choose the direction and keep every fish you catch. **Raising money is bolting on a giant engine someone else owns** - you fly forward, but now they sit in the boat and expect a share of the catch.
 
 Bootstrapping wins on control and profit. Raising wins on speed and scale. Neither is "better." The right call depends on your market: if it rewards getting big fast, raise; if it rewards being steady and profitable, bootstrap.
 
@@ -118,7 +118,7 @@ A quick warning. Taking on **debt before you have steady cash coming in** is one
 
 The trick most founders miss: dilution is not automatically bad.
 
-Picture this. You own 100% of a pizza the size of a coin. An investor adds ingredients and the pizza grows to the size of a table. Now you own only 80% — but **80% of a table beats 100% of a coin**, every time.
+Picture this. You own 100% of a pizza the size of a coin. An investor adds ingredients and the pizza grows to the size of a table. Now you own only 80% - but **80% of a table beats 100% of a coin**, every time.
 
 A smaller slice of a much bigger pie can be worth far more than your whole original tiny pie. The question is never "how much am I giving up?" alone. It is "does this money grow the pie by more than the slice it costs?"
 
@@ -172,7 +172,7 @@ That figure is no accident. Across the market, seed rounds typically cost founde
 
 ## The scorecards investors use to judge you
 
-Investors are buying a piece of your *future*. To size it up, they lean on a handful of numbers. Several use **ARR** — Annual Recurring Revenue, the yearly value of subscriptions you can count on repeating. Here they are in plain English.
+Investors are buying a piece of your *future*. To size it up, they lean on a handful of numbers. Several use **ARR** - Annual Recurring Revenue, the yearly value of subscriptions you can count on repeating. Here they are in plain English.
 
 ### Growth rate
 
@@ -209,7 +209,7 @@ Burn Multiple  =      Net Burn
                     Net New ARR
 ```
 
-Say you burned $2,000,000 this year and added $1,000,000 of new ARR. Your burn multiple is 2.0x — you spent two dollars to win each new recurring dollar.
+Say you burned $2,000,000 this year and added $1,000,000 of new ARR. Your burn multiple is 2.0x - you spent two dollars to win each new recurring dollar.
 
 | Burn multiple | What it means |
 |---|---|
@@ -235,7 +235,7 @@ The widely cited rule of thumb (from investor Lars Leckie, 2008): **above 0.75 i
 - The cost of **debt** is easy to see: the interest rate. Borrow at 10% and the cost is 10% a year.
 - The cost of **equity** is hidden and usually far higher: it is all the future profit you gave away, forever. Equity investors take big risks, so they expect big returns, far more than a loan's interest.
 
-Here is the analogy that makes it click. A loan is like **renting a tool** — you pay a fee and give it back. Selling equity is like **giving a neighbor part-ownership of your house** so they fund a renovation. They share every future gain in its value, for as long as you both own it.
+Here is the analogy that makes it click. A loan is like **renting a tool** - you pay a fee and give it back. Selling equity is like **giving a neighbor part-ownership of your house** so they fund a renovation. They share every future gain in its value, for as long as you both own it.
 
 Equity is the most expensive money you will ever take, because you pay for it out of your future upside, forever. It only makes sense when the cash lets you build something worth far more than the slice you gave up.
 

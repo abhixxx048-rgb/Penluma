@@ -91,8 +91,8 @@ Here is the theorem in one sentence: **when a network partition happens, a distr
 
 Why is that forced? Walk through it. The network has split your two replicas into two groups that cannot talk. A write request arrives at one side. That side faces a fork with only two doors.
 
-1. **Door 1 — stay Consistent, sacrifice Availability.** Refuse the request, because this side cannot safely confirm the change with the other side. It returns an error or just waits. Data stays correct everywhere, but the user was not served.
-2. **Door 2 — stay Available, sacrifice Consistency.** Accept the write anyway and reply "OK." The user is served, but now the two sides hold *different* values for the same data. They have diverged.
+1. **Door 1 - stay Consistent, sacrifice Availability.** Refuse the request, because this side cannot safely confirm the change with the other side. It returns an error or just waits. Data stays correct everywhere, but the user was not served.
+2. **Door 2 - stay Available, sacrifice Consistency.** Accept the write anyway and reply "OK." The user is served, but now the two sides hold *different* values for the same data. They have diverged.
 
 There is no third door. You cannot both accept the write *and* keep both replicas identical when those replicas physically cannot communicate. That impossibility *is* the theorem.
 
@@ -170,7 +170,7 @@ Every system therefore carries a two-part label, like `PC/EC`: the first part is
 | VoltDB / H-Store | **PC/EC** | Strongly consistent in all conditions. |
 | Google Spanner | **PC/EC** | Consistency-first everywhere; accepts extra latency to stay linearizable. |
 
-> **Example — Google Spanner.** Spanner is globally distributed yet linearizable, which sounds like it "beats" CAP. It does not. Spanner is **PC/EC**: when partitioned it chooses Consistency over Availability, and in normal operation it chooses Consistency over Latency, deliberately waiting out a small clock-uncertainty window (its "TrueTime" mechanism) on commits to keep ordering correct. People call it "effectively CA" only because Google's private network makes partitions so rare and so short that availability looks near-perfect. It still obeys the theorem. It just hides the cost behind excellent infrastructure.
+> **Example - Google Spanner.** Spanner is globally distributed yet linearizable, which sounds like it "beats" CAP. It does not. Spanner is **PC/EC**: when partitioned it chooses Consistency over Availability, and in normal operation it chooses Consistency over Latency, deliberately waiting out a small clock-uncertainty window (its "TrueTime" mechanism) on commits to keep ordering correct. People call it "effectively CA" only because Google's private network makes partitions so rare and so short that availability looks near-perfect. It still obeys the theorem. It just hides the cost behind excellent infrastructure.
 
 > **Analogy.** You text a group of friends to confirm dinner. *Consistency* means you wait until *everyone* replies "yes" before booking: slow, but nobody shows up at the wrong place. *Low latency* means you book the instant the first person replies: fast, but someone might have wanted a different restaurant. No phone is broken here, no partition. The trade between waiting-for-agreement and answering-fast exists anyway. That everyday trade is exactly PACELC's "Else" branch.
 

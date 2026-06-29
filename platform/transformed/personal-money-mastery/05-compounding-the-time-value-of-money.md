@@ -58,9 +58,9 @@ Let's build it up from scratch, with real numbers in rupees.
 
 Three plain-language terms unlock everything:
 
-- **Present Value (PV)** — what a future sum is worth *today*.
-- **Future Value (FV)** — what money you have today will *grow into* by a future date.
-- **Rate (r)** — the percentage your money grows each period.
+- **Present Value (PV)** - what a future sum is worth *today*.
+- **Future Value (FV)** - what money you have today will *grow into* by a future date.
+- **Rate (r)** - the percentage your money grows each period.
 
 Two simple relationships connect them:
 

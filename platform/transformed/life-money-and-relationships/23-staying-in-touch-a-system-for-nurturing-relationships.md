@@ -131,7 +131,7 @@ Here's the counterintuitive part, and it's backed by research: people are reliab
 
 Good no-ask touches, all of which take under five minutes:
 
-- **"Saw this and thought of you"** — an article, tool, or opportunity relevant to *their* current project, not a generic forward.
+- **"Saw this and thought of you"** - an article, tool, or opportunity relevant to *their* current project, not a generic forward.
 - **A congratulations** on a job change, launch, award, or work anniversary. (LinkedIn surfaces these for free.)
 - **A specific memory:** "Was just remembering that talk we had about pricing. Hope you're doing well."
 - **A genuine, specific thank-you** for something they did, even long ago.

@@ -67,9 +67,9 @@ Everything else is detail in service of that one order. **Consensus** is how the
 
 These terms describe what consensus is trying to do at all.
 
-- **Consensus** — Getting multiple nodes to agree on a single value, or a single ordering of events, despite crashes and an unreliable network. This is the whole game.
-- **Replicated State Machine (RSM)** — Identical state machines on each node that stay in lockstep because they process the same commands in the same order. Consensus exists to agree on that order.
-- **Log / log entry** — The ordered, append-only list of commands each node stores. An entry holds a command plus the term it was created in. Agreeing on the log is how nodes stay identical.
+- **Consensus** - Getting multiple nodes to agree on a single value, or a single ordering of events, despite crashes and an unreliable network. This is the whole game.
+- **Replicated State Machine (RSM)** - Identical state machines on each node that stay in lockstep because they process the same commands in the same order. Consensus exists to agree on that order.
+- **Log / log entry** - The ordered, append-only list of commands each node stores. An entry holds a command plus the term it was created in. Agreeing on the log is how nodes stay identical.
 
 Think of an RSM like a row of people transcribing the same dictation. If everyone writes the same words in the same order, every page comes out identical. The hard part is the dictation arriving out of order, or the speaker occasionally vanishing mid-sentence.
 
@@ -77,17 +77,17 @@ Think of an RSM like a row of people transcribing the same dictation. If everyon
 
 Consensus protocols make promises. These terms name them precisely.
 
-- **Safety** — Nothing bad ever happens. Two nodes never commit different values at the same position. Crucially, protocols hold safety even during network partitions; they will pause progress rather than risk it.
-- **Liveness** — Something good eventually happens. A decision gets reached, progress gets made.
+- **Safety** - Nothing bad ever happens. Two nodes never commit different values at the same position. Crucially, protocols hold safety even during network partitions; they will pause progress rather than risk it.
+- **Liveness** - Something good eventually happens. A decision gets reached, progress gets made.
 
 That tension is the heartbeat of the whole field: **when you cannot have both, you keep safety and sacrifice liveness.** A database that stalls is annoying. A database that hands two clients contradictory answers is broken.
 
 Consensus is usually defined by four properties:
 
-1. **Agreement** — No two correct nodes ever decide different values. One outcome, not several.
-2. **Validity** — The decided value must be one some node actually proposed. You cannot agree on something nobody asked for.
-3. **Termination** — Every correct node eventually decides. The algorithm does not run forever.
-4. **Integrity / single decision** — A node decides at most once.
+1. **Agreement** - No two correct nodes ever decide different values. One outcome, not several.
+2. **Validity** - The decided value must be one some node actually proposed. You cannot agree on something nobody asked for.
+3. **Termination** - Every correct node eventually decides. The algorithm does not run forever.
+4. **Integrity / single decision** - A node decides at most once.
 
 ### The FLP impossibility result
 
@@ -103,29 +103,29 @@ Raft was deliberately designed to be teachable, by splitting consensus into lead
 
 ### Server states
 
-- **Follower** — The default, passive state. Followers do nothing on their own; they just answer messages from leaders and candidates.
-- **Candidate** — A follower whose patience ran out. It times out waiting for a leader, bumps the term, votes for itself, and asks everyone else for votes.
-- **Leader** — The single elected server that handles all client writes and is the only source of new log entries. Everything flows leader to followers.
+- **Follower** - The default, passive state. Followers do nothing on their own; they just answer messages from leaders and candidates.
+- **Candidate** - A follower whose patience ran out. It times out waiting for a leader, bumps the term, votes for itself, and asks everyone else for votes.
+- **Leader** - The single elected server that handles all client writes and is the only source of new log entries. Everything flows leader to followers.
 
 ### How leaders get chosen and stay in power
 
-- **Term** — Raft's logical clock. A number that only increases, marking one leadership period. At most one leader per term, and higher terms always beat lower ones, which is how stale leaders get exposed.
-- **Election timeout** — The randomized wait a follower endures without hearing from a leader before starting an election. The randomization is the clever bit; it staggers timeouts so candidates rarely clash.
-- **RequestVote** — The message a candidate sends to collect votes. A server grants its vote only if it has not voted this term and the candidate's log is at least as current as its own.
-- **Split vote** — An election where votes scattered and nobody got a majority, forcing a do-over. Randomized timeouts make repeated split votes rare.
-- **AppendEntries** — The message a leader sends to copy new log entries to followers. Sent empty, it doubles as the heartbeat.
-- **Heartbeat** — A periodic empty AppendEntries that says "I'm still here," resetting follower timeouts and preserving the one-leader rule.
+- **Term** - Raft's logical clock. A number that only increases, marking one leadership period. At most one leader per term, and higher terms always beat lower ones, which is how stale leaders get exposed.
+- **Election timeout** - The randomized wait a follower endures without hearing from a leader before starting an election. The randomization is the clever bit; it staggers timeouts so candidates rarely clash.
+- **RequestVote** - The message a candidate sends to collect votes. A server grants its vote only if it has not voted this term and the candidate's log is at least as current as its own.
+- **Split vote** - An election where votes scattered and nobody got a majority, forcing a do-over. Randomized timeouts make repeated split votes rare.
+- **AppendEntries** - The message a leader sends to copy new log entries to followers. Sent empty, it doubles as the heartbeat.
+- **Heartbeat** - A periodic empty AppendEntries that says "I'm still here," resetting follower timeouts and preserving the one-leader rule.
 
 A useful mental image: a classroom where the teacher must constantly say "still here, still here." The moment students stop hearing it, one of them stands up and calls a vote to become the new teacher. The random wait keeps two students from standing at the exact same second.
 
 ### Keeping the logs honest
 
-- **Committed entry** — A log entry stored on a majority of servers by the current leader. Once committed, it will never be lost and will eventually appear, in the same slot, on every node.
-- **Commit index** — The index of the highest entry known to be committed. It only moves forward.
-- **Log matching** — If two logs share an entry with the same index and term, they are identical up to that point. This lets a follower's log be repaired with a simple backward check.
-- **Leader completeness** — Any entry committed in one term shows up in the logs of all later leaders. The voting rules guarantee only an up-to-date server can win, so committed history is never lost.
-- **Snapshot** — A compacted image of the state machine at a moment in time. It lets you throw away old log entries and fast-forward a server that fell behind or just joined.
-- **Joint consensus** — Raft's safe way to add or remove members. The cluster passes through a transition that needs majorities from *both* the old and new member sets, so there is never a moment when two separate majorities could each elect their own leader.
+- **Committed entry** - A log entry stored on a majority of servers by the current leader. Once committed, it will never be lost and will eventually appear, in the same slot, on every node.
+- **Commit index** - The index of the highest entry known to be committed. It only moves forward.
+- **Log matching** - If two logs share an entry with the same index and term, they are identical up to that point. This lets a follower's log be repaired with a simple backward check.
+- **Leader completeness** - Any entry committed in one term shows up in the logs of all later leaders. The voting rules guarantee only an up-to-date server can win, so committed history is never lost.
+- **Snapshot** - A compacted image of the state machine at a moment in time. It lets you throw away old log entries and fast-forward a server that fell behind or just joined.
+- **Joint consensus** - Raft's safe way to add or remove members. The cluster passes through a transition that needs majorities from *both* the old and new member sets, so there is never a moment when two separate majorities could each elect their own leader.
 
 ## Paxos: the original
 
@@ -133,17 +133,17 @@ Paxos came first and is famous for being hard to follow. The roles split differe
 
 ### The roles
 
-- **Proposer** — Drives the protocol. Picks a ballot number, proposes a value, and tries to win over a majority.
-- **Acceptor** — A voting member. A value is chosen only when a majority of acceptors accept it. Acceptors remember the highest proposal they have promised and the last value they accepted.
-- **Learner** — Finds out which value was chosen and acts on it, without voting. In practice, learners often catch the application's state machine up.
+- **Proposer** - Drives the protocol. Picks a ballot number, proposes a value, and tries to win over a majority.
+- **Acceptor** - A voting member. A value is chosen only when a majority of acceptors accept it. Acceptors remember the highest proposal they have promised and the last value they accepted.
+- **Learner** - Finds out which value was chosen and acts on it, without voting. In practice, learners often catch the application's state machine up.
 
 ### The mechanics
 
-- **Ballot (ballot number)** — A globally ordered, unique proposal number used to rank competing proposals. Paxos's equivalent of Raft's term.
-- **Prepare / Promise (Phase 1)** — The proposer asks acceptors to "promise" not to accept any lower-numbered proposal. They reply with that promise plus any value they have already accepted, so the proposer respects choices already made.
-- **Accept / Accepted (Phase 2)** — The proposer asks acceptors to accept a specific value. If a majority accept, it is chosen.
-- **Multi-Paxos** — Paxos tuned for a continuous stream of decisions. Elect a stable leader once, then skip the prepare phase for later slots so steady-state commits take a single round trip. This is what real "Paxos" deployments actually run.
-- **EPaxos (Egalitarian Paxos)** — A leaderless variant where any node can commit commands. Non-conflicting commands commit in one round trip with no fixed leader, trading complexity for better latency and balance.
+- **Ballot (ballot number)** - A globally ordered, unique proposal number used to rank competing proposals. Paxos's equivalent of Raft's term.
+- **Prepare / Promise (Phase 1)** - The proposer asks acceptors to "promise" not to accept any lower-numbered proposal. They reply with that promise plus any value they have already accepted, so the proposer respects choices already made.
+- **Accept / Accepted (Phase 2)** - The proposer asks acceptors to accept a specific value. If a majority accept, it is chosen.
+- **Multi-Paxos** - Paxos tuned for a continuous stream of decisions. Elect a stable leader once, then skip the prepare phase for later slots so steady-state commits take a single round trip. This is what real "Paxos" deployments actually run.
+- **EPaxos (Egalitarian Paxos)** - A leaderless variant where any node can commit commands. Non-conflicting commands commit in one round trip with no fixed leader, trading complexity for better latency and balance.
 
 If Raft is one teacher running the room, classic single-decree Paxos is a committee with a strict two-phase voting ritual: first lock out lower bids, then ratify a value. **Multi-Paxos** is that same committee finally electing a chair so it can stop re-running the opening ritual every single time.
 
@@ -151,8 +151,8 @@ If Raft is one teacher running the room, classic single-decree Paxos is a commit
 
 This idea sits under both Raft and Paxos, and it is the quiet genius of the whole field.
 
-- **Majority (quorum)** — More than half the nodes. Any two majorities must overlap in at least one node, so requiring a majority for every decision means two conflicting decisions are impossible.
-- **Quorum** — The minimum set of nodes whose agreement counts as the cluster's decision, almost always a strict majority. That overlap property is exactly what makes consensus safe.
+- **Majority (quorum)** - More than half the nodes. Any two majorities must overlap in at least one node, so requiring a majority for every decision means two conflicting decisions are impossible.
+- **Quorum** - The minimum set of nodes whose agreement counts as the cluster's decision, almost always a strict majority. That overlap property is exactly what makes consensus safe.
 
 Picture a five-seat council where every motion needs three votes. There is no way to pass two contradictory motions, because any two groups of three must share at least one person, and that person will not vote both ways. The whole edifice of consensus rests on this small, stubborn fact about overlapping majorities.
 
@@ -160,15 +160,15 @@ Picture a five-seat council where every motion needs three votes. There is no wa
 
 Everything above assumes nodes fail by *crashing*, going silent. They do not assume nodes *lie*.
 
-- **Byzantine Fault Tolerance (BFT)** — Tolerating nodes that behave arbitrarily or maliciously, lying or sending conflicting messages, not just crashing. Raft and classic Paxos are crash-only; BFT needs different, more expensive algorithms.
-- **PBFT (Practical Byzantine Fault Tolerance)** — A landmark BFT protocol that tolerates up to f malicious nodes out of 3f+1, using multiple voting rounds. The foundation for many later blockchain and permissioned-ledger systems.
+- **Byzantine Fault Tolerance (BFT)** - Tolerating nodes that behave arbitrarily or maliciously, lying or sending conflicting messages, not just crashing. Raft and classic Paxos are crash-only; BFT needs different, more expensive algorithms.
+- **PBFT (Practical Byzantine Fault Tolerance)** - A landmark BFT protocol that tolerates up to f malicious nodes out of 3f+1, using multiple voting rounds. The foundation for many later blockchain and permissioned-ledger systems.
 
 The jump in cost is real: surviving liars needs more nodes and more message rounds than surviving crashes. Use BFT when participants might be adversarial, like an open blockchain, and skip it inside your own trusted data center.
 
 ## A few more you will meet
 
-- **Epoch** — Another name for term or ballot: a monotonically increasing number marking a leadership reign. Used in ZAB and elsewhere to detect and reject stale leaders.
-- **ZAB (ZooKeeper Atomic Broadcast)** — The leader-based protocol behind Apache ZooKeeper. Like Raft, it uses a single leader and epochs to deliver a totally ordered, replicated log.
+- **Epoch** - Another name for term or ballot: a monotonically increasing number marking a leadership reign. Used in ZAB and elsewhere to detect and reject stale leaders.
+- **ZAB (ZooKeeper Atomic Broadcast)** - The leader-based protocol behind Apache ZooKeeper. Like Raft, it uses a single leader and epochs to deliver a totally ordered, replicated log.
 
 Notice the pattern: term, ballot, epoch. Three names, one idea, a number that climbs so the system can always tell new authority from old.
 

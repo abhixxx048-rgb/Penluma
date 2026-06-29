@@ -85,9 +85,9 @@ So the rest of this is your playbook for doing things that don't scale, on purpo
 
 A **channel** is just a path you use to reach people. You have three, and you should work them in this order, because each one is harder and colder than the last.
 
-1. **Warm intros** — someone you both know vouches for you. (Warmest, best.)
-2. **Communities** — you show up where your customers already gather.
-3. **Cold outreach** — you contact a stranger by email or direct message. (Coldest.)
+1. **Warm intros** - someone you both know vouches for you. (Warmest, best.)
+2. **Communities** - you show up where your customers already gather.
+3. **Cold outreach** - you contact a stranger by email or direct message. (Coldest.)
 
 Start warm. A **warm intro** is when a person who knows you both connects you to someone you want to meet. It's the highest-converting path by a wide margin. (To **convert** here means "turns into a real reply or meeting.")
 
@@ -115,7 +115,7 @@ This idea comes from Rob Fitzpatrick's short, brilliant book *The Mom Test*. The
 
 People are nice. They tell you what you want to hear. That false praise feels wonderful and teaches you nothing.
 
-The fix is to stop pitching and start asking about *their* life. Ask what they actually do today, not what they think of your idea. **Customer discovery** — the work of learning your customers' real problems before you sell — runs entirely on this shift.
+The fix is to stop pitching and start asking about *their* life. Ask what they actually do today, not what they think of your idea. **Customer discovery** - the work of learning your customers' real problems before you sell - runs entirely on this shift.
 
 The difference shows up in the exact words you choose:
 

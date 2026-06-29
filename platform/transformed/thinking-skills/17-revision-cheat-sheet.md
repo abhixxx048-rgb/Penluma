@@ -74,12 +74,12 @@ Most thinking starts with a copy. We see a situation, match it to something fami
 
 These are the workhorses. You rarely need all six at once, but each one cracks open a different kind of stuck.
 
-- **Socratic questioning** — ask layered questions about a belief: How clear is it? What is the evidence? What am I assuming? What follows if it is true? Use it on any conviction you have never actually tested.
-- **5 Whys** — ask "Why?" five times in a row to drill past the symptom to the root cause. Use it on a problem that keeps coming back.
-- **Feynman technique** — explain the idea in plain language as if to a child, notice exactly where you stumble, then simplify again. Use it to check whether you truly understand something or just recognize the words.
-- **Decomposition** — break a tangled problem into smaller independent parts before you analyze anything. Map the pieces first.
-- **Assumption surfacing** — list every belief you are quietly treating as fact, out loud, before you commit to a plan.
-- **Fact vs. assumption labelling** — mark each claim as a verified **fact (F)** or an untested **assumption (A)**. This one sounds trivial and is shockingly powerful.
+- **Socratic questioning** - ask layered questions about a belief: How clear is it? What is the evidence? What am I assuming? What follows if it is true? Use it on any conviction you have never actually tested.
+- **5 Whys** - ask "Why?" five times in a row to drill past the symptom to the root cause. Use it on a problem that keeps coming back.
+- **Feynman technique** - explain the idea in plain language as if to a child, notice exactly where you stumble, then simplify again. Use it to check whether you truly understand something or just recognize the words.
+- **Decomposition** - break a tangled problem into smaller independent parts before you analyze anything. Map the pieces first.
+- **Assumption surfacing** - list every belief you are quietly treating as fact, out loud, before you commit to a plan.
+- **Fact vs. assumption labelling** - mark each claim as a verified **fact (F)** or an untested **assumption (A)**. This one sounds trivial and is shockingly powerful.
 
 ### Run the 10-minute first-principles checklist
 
@@ -117,14 +117,14 @@ Adjust a number and you get a small, temporary nudge. Change the paradigm and ev
 
 If first principles tell you what is true and systems thinking tells you where to push, mental models tell you what your blind spots are likely hiding:
 
-- **Second-order thinking** — "and then what?" Ask it twice.
-- **Inversion** — work backwards from how this could fail.
-- **Opportunity cost** — every yes is a no to something else.
-- **Circle of competence** — know the edge of what you actually understand, and stay inside it.
-- **Base rate (outside view)** — what usually happens to cases like this, before you decide yours is special.
-- **Confirmation-bias guard** — go looking for the evidence that would prove you wrong.
-- **Sunk-cost flush** — what you already spent is irrelevant to what you should do next.
-- **Latticework** — no single lens is enough; apply several at once.
+- **Second-order thinking** - "and then what?" Ask it twice.
+- **Inversion** - work backwards from how this could fail.
+- **Opportunity cost** - every yes is a no to something else.
+- **Circle of competence** - know the edge of what you actually understand, and stay inside it.
+- **Base rate (outside view)** - what usually happens to cases like this, before you decide yours is special.
+- **Confirmation-bias guard** - go looking for the evidence that would prove you wrong.
+- **Sunk-cost flush** - what you already spent is irrelevant to what you should do next.
+- **Latticework** - no single lens is enough; apply several at once.
 
 **The one-line summary:** first-principles tools tell you what is true, systems thinking tells you where to intervene, and mental models tell you what you are probably missing. Use all three before you commit.
 
@@ -145,7 +145,7 @@ Every habit runs on a loop. Charles Duhigg framed it in three parts; James Clear
 | Stage | Duhigg | Clear | Your lever |
 | --- | --- | --- | --- |
 | 1 | Cue | Cue | Make it **obvious** |
-| 2 | — | Craving | Make it **attractive** |
+| 2 | - | Craving | Make it **attractive** |
 | 3 | Routine | Response | Make it **easy** |
 | 4 | Reward | Reward | Make it **satisfying** |
 
@@ -155,19 +155,19 @@ To build a habit, use the four laws. To break one, invert each law. That symmetr
 
 | To build a habit | To break a habit |
 | --- | --- |
-| Make it **obvious** — put the cue in plain sight, stack it on an existing habit | Make it **invisible** — remove the cue from your environment |
-| Make it **attractive** — bundle it with something you enjoy | Make it **unattractive** — reframe what it really costs you |
-| Make it **easy** — shrink it to two minutes, strip out friction | Make it **hard** — add steps, add friction, raise the effort |
-| Make it **satisfying** — reward it immediately, track it | Make it **unsatisfying** — add an accountability partner, a public cost |
+| Make it **obvious** - put the cue in plain sight, stack it on an existing habit | Make it **invisible** - remove the cue from your environment |
+| Make it **attractive** - bundle it with something you enjoy | Make it **unattractive** - reframe what it really costs you |
+| Make it **easy** - shrink it to two minutes, strip out friction | Make it **hard** - add steps, add friction, raise the effort |
+| Make it **satisfying** - reward it immediately, track it | Make it **unsatisfying** - add an accountability partner, a public cost |
 
 ### Diagnose why a behavior is not happening
 
 When a behavior refuses to stick, do not push harder. Diagnose. A few models pinpoint the missing ingredient:
 
-- **Fogg's B = MAP** — Behavior happens only when Motivation, Ability, and a Prompt all show up at the same moment. When something is not happening, raising **Ability** (making it easier) is usually a better bet than trying to summon more willpower.
-- **COM-B** — Capability, Opportunity, and Motivation combine to produce Behavior. Ask which of the three is actually missing.
-- **The Hook Model** (Nir Eyal) — Trigger, Action, Variable Reward, Investment. This is how products build automatic return visits.
-- **Nudge / choice architecture** — defaults, framing, friction, and social norms steer behavior at scale without removing anyone's choice.
+- **Fogg's B = MAP** - Behavior happens only when Motivation, Ability, and a Prompt all show up at the same moment. When something is not happening, raising **Ability** (making it easier) is usually a better bet than trying to summon more willpower.
+- **COM-B** - Capability, Opportunity, and Motivation combine to produce Behavior. Ask which of the three is actually missing.
+- **The Hook Model** (Nir Eyal) - Trigger, Action, Variable Reward, Investment. This is how products build automatic return visits.
+- **Nudge / choice architecture** - defaults, framing, friction, and social norms steer behavior at scale without removing anyone's choice.
 
 ### The tactics that actually move the needle
 
@@ -205,10 +205,10 @@ You cannot pick a great option out of a thin list. This pillar is about widening
 
 Creativity is less magic than process. Graham Wallas described it in four stages, and they only work in order:
 
-1. **Preparation** — load the problem deeply. Read, gather, immerse.
-2. **Incubation** — step away. Walk, sleep, do something else entirely. Your mind keeps working in the background.
-3. **Illumination** — the "aha" arrives, often when you are not looking for it. Write it down immediately.
-4. **Verification** — test it, refine it, ship it.
+1. **Preparation** - load the problem deeply. Read, gather, immerse.
+2. **Incubation** - step away. Walk, sleep, do something else entirely. Your mind keeps working in the background.
+3. **Illumination** - the "aha" arrives, often when you are not looking for it. Write it down immediately.
+4. **Verification** - test it, refine it, ship it.
 
 The trap is skipping the first stage. Illumination only follows deep preparation. Step away from a problem you never loaded, and incubation has nothing to chew on.
 
@@ -216,16 +216,16 @@ The trap is skipping the first stage. Illumination only follows deep preparation
 
 You do not need ten techniques in one session. You need the right one for the moment you are in:
 
-- **Brainstorming** — fast generation, judgment suspended. Good as a warm-up with a diverse group.
-- **Brainwriting (6-3-5)** — write ideas silently and pass them around. Use it when one loud voice would otherwise anchor the room.
-- **SCAMPER** — seven systematic mutations of an idea you already have (more below).
-- **Lateral thinking** — a deliberate, even absurd, logical jump to break a rut when the obvious ideas are exhausted.
-- **Six Thinking Hats** — the group examines the problem one mode at a time (facts, feelings, risks, optimism, creativity, process), so no one agenda dominates.
-- **Forced connections** — pick a random word or object and link it to your problem to jolt loose an unexpected angle.
-- **Analogical thinking and biomimicry** — borrow a solution from a distant field or from nature.
-- **How Might We (HMW)** — reframe the problem as an open invitation to re-energize a stuck group.
-- **First-principles decomposition** — break to fundamentals and recombine freely for deep structural innovation.
-- **Constraint-driven creativity** — impose a tight limit on purpose to force you out of the defaults.
+- **Brainstorming** - fast generation, judgment suspended. Good as a warm-up with a diverse group.
+- **Brainwriting (6-3-5)** - write ideas silently and pass them around. Use it when one loud voice would otherwise anchor the room.
+- **SCAMPER** - seven systematic mutations of an idea you already have (more below).
+- **Lateral thinking** - a deliberate, even absurd, logical jump to break a rut when the obvious ideas are exhausted.
+- **Six Thinking Hats** - the group examines the problem one mode at a time (facts, feelings, risks, optimism, creativity, process), so no one agenda dominates.
+- **Forced connections** - pick a random word or object and link it to your problem to jolt loose an unexpected angle.
+- **Analogical thinking and biomimicry** - borrow a solution from a distant field or from nature.
+- **How Might We (HMW)** - reframe the problem as an open invitation to re-energize a stuck group.
+- **First-principles decomposition** - break to fundamentals and recombine freely for deep structural innovation.
+- **Constraint-driven creativity** - impose a tight limit on purpose to force you out of the defaults.
 
 ### SCAMPER, the one to memorize
 

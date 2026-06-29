@@ -59,16 +59,16 @@ The good news: the fixes are concrete and repeatable. There's a small vocabulary
 
 Norman gives us six ideas that sit underneath everything else. These are the words of the craft, so it's worth learning them.
 
-- **Affordance** — what a thing lets you do. A chair affords sitting; a button affords pressing. It's a relationship between the object and the person, not just a feature of the object.
-- **Signifier** — the visible cue that tells you *where* and *how* to act. A label, an icon, a highlighted field. A field labelled `Store Name` signifies "type your shop name here." A field labelled `tenant identifier` signifies nothing to a shopkeeper.
-- **Constraints** — limits that shrink the set of possible actions, so the right one stands out and the wrong ones get hard or impossible.
-- **Mapping** — the link between a control and its effect. Good mapping is spatial and natural, like a stove where each knob sits beside the burner it controls.
-- **Feedback** — immediate, informative confirmation of what just happened. Norman is blunt here: feedback has to be both fast *and* informative. Slow or vague feedback is worse than none.
-- **Conceptual model** — the mental picture a person builds of how the thing works. Good design behaves the way that picture predicts.
+- **Affordance** - what a thing lets you do. A chair affords sitting; a button affords pressing. It's a relationship between the object and the person, not just a feature of the object.
+- **Signifier** - the visible cue that tells you *where* and *how* to act. A label, an icon, a highlighted field. A field labelled `Store Name` signifies "type your shop name here." A field labelled `tenant identifier` signifies nothing to a shopkeeper.
+- **Constraints** - limits that shrink the set of possible actions, so the right one stands out and the wrong ones get hard or impossible.
+- **Mapping** - the link between a control and its effect. Good mapping is spatial and natural, like a stove where each knob sits beside the burner it controls.
+- **Feedback** - immediate, informative confirmation of what just happened. Norman is blunt here: feedback has to be both fast *and* informative. Slow or vague feedback is worse than none.
+- **Conceptual model** - the mental picture a person builds of how the thing works. Good design behaves the way that picture predicts.
 
-Norman has one more phrase worth memorizing: **knowledge in the world versus knowledge in the head**. Anything you make visible — a label, a sensible default, a clear cue — is knowledge in the world, and it spares the user from having to remember anything. Steve Krug compressed this whole idea into a book title: *Don't Make Me Think*.
+Norman has one more phrase worth memorizing: **knowledge in the world versus knowledge in the head**. Anything you make visible - a label, a sensible default, a clear cue - is knowledge in the world, and it spares the user from having to remember anything. Steve Krug compressed this whole idea into a book title: *Don't Make Me Think*.
 
-## Tool 1 — Smart defaults: set what 90% want
+## Tool 1 - Smart defaults: set what 90% want
 
 A **default** is the value already filled in before anyone touches it. A *smart* default is an educated guess at what most people want, so the common case needs zero setup.
 
@@ -78,15 +78,15 @@ For a print-shop product, this means a new item should arrive pre-set to what 90
 
 This is also **Hick's Law** at work: the more choices you show, the longer the decision takes. Fewer visible options plus a good default equals a faster, more obvious decision.
 
-A word of care: a default is a recommendation, never a trap. Always make it reversible — offer "Restore defaults" or an undo. And because so few people ever change it, choose it ethically. The default has to serve the user's interest, not yours.
+A word of care: a default is a recommendation, never a trap. Always make it reversible - offer "Restore defaults" or an undo. And because so few people ever change it, choose it ethically. The default has to serve the user's interest, not yours.
 
-## Tool 2 — Constraints: make bad actions impossible
+## Tool 2 - Constraints: make bad actions impossible
 
 The best design stops problems before they happen instead of explaining them afterward. That's Nielsen's heuristic on **error prevention**.
 
 It helps to know the two kinds of errors you're guarding against:
 
-- A **slip** is the right intention but the wrong action — a typo, a misclick.
+- A **slip** is the right intention but the wrong action - a typo, a misclick.
 - A **mistake** is the wrong plan altogether.
 
 Constraints and good defaults prevent slips. Confirmations (Tool 5) guard against mistakes. For slips, a few simple moves go a long way:
@@ -97,7 +97,7 @@ Constraints and good defaults prevent slips. Confirmations (Tool 5) guard agains
 
 The failure to avoid: letting a bad value slip through to the server and surface as a crash. Never let "abc" in a price field become a 500 error. Catch it inline, in plain words, before it ever leaves the form.
 
-## Tool 3 — Discoverability and placement
+## Tool 3 - Discoverability and placement
 
 People shouldn't have to remember something from one screen to use it on another. Nielsen calls this **recognition rather than recall**, and the practical rule is mapping: put a control where its effect lives.
 
@@ -105,7 +105,7 @@ Think of a light switch. A switch beside the door it controls needs no thought. 
 
 So a setting *about a product* belongs next to the product, not buried in global Settings just because that's where the code happens to live. **Jakob's Law** backs this up: people spend most of their time on other websites, so they expect yours to work like the ones they already know. Reuse familiar patterns instead of inventing clever new layouts.
 
-## Tool 4 — Plain labels
+## Tool 4 - Plain labels
 
 Speak the user's language, not your internal jargon. Every label is a signifier, and the wrong word signals nothing at all.
 
@@ -116,22 +116,22 @@ Speak the user's language, not your internal jargon. Every label is a signifier,
 | Customer Email | customer payload |
 | Web address | uuid / handler / metadata |
 
-Ask one question of every visible string: **would a shopkeeper understand this?** A UUID, a slug, a database column name, or an engine type name like `textbox` or `Path bTSxCeDjco` showing up anywhere a user can see it is a failure of the last mile — the small final gap between working code and a usable product.
+Ask one question of every visible string: **would a shopkeeper understand this?** A UUID, a slug, a database column name, or an engine type name like `textbox` or `Path bTSxCeDjco` showing up anywhere a user can see it is a failure of the last mile - the small final gap between working code and a usable product.
 
-## Tool 5 — Forgiving design for destructive actions
+## Tool 5 - Forgiving design for destructive actions
 
 Norman's rule for errors: assume people will do something wrong, make actions reversible, and make irreversible actions hard.
 
-When you can, prefer **undo** over a pre-emptive "Are you sure?" Undo lets people move fast and recover. And when you over-use confirmations, you train people to click through them blindly — a habit so common it has a name, **confirmation fatigue**.
+When you can, prefer **undo** over a pre-emptive "Are you sure?" Undo lets people move fast and recover. And when you over-use confirmations, you train people to click through them blindly - a habit so common it has a name, **confirmation fatigue**.
 
 For the most dangerous deletes, require a non-standard action. MailChimp makes you *type the list name* before deleting a mailing list. GitHub makes you type the repository name. This "type-to-confirm" pattern forces real attention. Keep the Delete button far from Save, too (**Fitts's Law**: the size and distance of a target change how easy it is to hit, so make the dangerous one harder to reach).
 
 Here's the difference in practice:
 
 - **Bad:** "Are you sure?" with a "Yes" button sitting right next to "Save."
-- **Good:** "This will permanently delete 'Premium Business Cards' and remove it from all active orders. This cannot be undone." — and the confirm button reads **Delete Product**, restating the verb, not "Yes."
+- **Good:** "This will permanently delete 'Premium Business Cards' and remove it from all active orders. This cannot be undone." - and the confirm button reads **Delete Product**, restating the verb, not "Yes."
 
-## Tool 6 — Immediate feedback
+## Tool 6 - Immediate feedback
 
 People need to know the system heard them. That's Nielsen's first heuristic, **visibility of system status**, and you can pair it with the **Doherty Threshold**: productivity soars when a system responds in under about 400 milliseconds. Below that, it feels instant.
 
@@ -148,7 +148,7 @@ User action
            +-- error ---> plain message + recovery action
 ```
 
-When something fails, state the problem in human language, suggest a fix, and **keep the user's typed input** so they can edit rather than start over. Avoid blaming words like "invalid" or "illegal." Never show a raw status code, a stack trace, "System error," or an untranslated key like `message.exportError` — a visible dotted key is a missing string and a broken last mile. **Postel's Law** helps at the input edge: be generous in what you accept ("UK" means "United Kingdom") and normalize it quietly on the backend.
+When something fails, state the problem in human language, suggest a fix, and **keep the user's typed input** so they can edit rather than start over. Avoid blaming words like "invalid" or "illegal." Never show a raw status code, a stack trace, "System error," or an untranslated key like `message.exportError` - a visible dotted key is a missing string and a broken last mile. **Postel's Law** helps at the input edge: be generous in what you accept ("UK" means "United Kingdom") and normalize it quietly on the backend.
 
 ## Common misconceptions
 
@@ -164,24 +164,24 @@ When something fails, state the problem in human language, suggest a fix, and **
 
 None of this is guesswork. You learn the right default, the right place, and the right word by studying what people actually do.
 
-Clayton Christensen's milkshake study is the classic example. A fast-food chain found that about 40% of its milkshakes were bought early in the morning, by solo commuters, to go, as their only purchase. The shake was "hired" to make a dull commute bearable and keep one hand busy. The same chain's afternoon buyers were parents treating their kids, who wanted something thinner and smaller. Same product, two completely different jobs — and two different right designs. You find the obvious default by studying the real *job*, not the demographics.
+Clayton Christensen's milkshake study is the classic example. A fast-food chain found that about 40% of its milkshakes were bought early in the morning, by solo commuters, to go, as their only purchase. The shake was "hired" to make a dull commute bearable and keep one hand busy. The same chain's afternoon buyers were parents treating their kids, who wanted something thinner and smaller. Same product, two completely different jobs - and two different right designs. You find the obvious default by studying the real *job*, not the demographics.
 
-To gather that evidence honestly, use Rob Fitzpatrick's *The Mom Test*. Don't ask "do you like my idea?" — people lie to be kind. Ask about specific past behavior instead: "Walk me through the last time you set up a product." "How do you do this today?" That's how a vague hunch turns into a real answer.
+To gather that evidence honestly, use Rob Fitzpatrick's *The Mom Test*. Don't ask "do you like my idea?" - people lie to be kind. Ask about specific past behavior instead: "Walk me through the last time you set up a product." "How do you do this today?" That's how a vague hunch turns into a real answer.
 
 Then run every screen and control through this checklist:
 
 1. **Default** is set to the 90% choice, and it's reversible.
-2. **Label** is plain language — it passes "would a shopkeeper understand this?"
+2. **Label** is plain language - it passes "would a shopkeeper understand this?"
 3. **Placement** puts the setting near the thing it affects.
 4. **Constraints** make wrong actions hard or impossible, and any disabled control says why.
 5. **Destructive actions** state the exact consequence, the button restates the verb, and undo is offered when feasible.
 6. **Feedback** is immediate and plain ("Saved successfully," not "200 OK").
 7. **All three states** exist: loading (skeleton), empty (a helpful next step), and error (plain message plus recovery).
-8. **No raw technical output** is visible — no status codes, exception text, untranslated keys, UUIDs, slugs, or engine type names.
-9. **Consistent** with patterns people already know — no novel one-offs.
+8. **No raw technical output** is visible - no status codes, exception text, untranslated keys, UUIDs, slugs, or engine type names.
+9. **Consistent** with patterns people already know - no novel one-offs.
 
 ## Conclusion
 
-If you remember one thing, remember this: the right action should be the obvious one, and when it isn't, that's a design problem you can fix — not a user you have to train. Smart defaults are your highest-leverage tool, because what you pre-select quietly becomes what almost everyone chooses.
+If you remember one thing, remember this: the right action should be the obvious one, and when it isn't, that's a design problem you can fix - not a user you have to train. Smart defaults are your highest-leverage tool, because what you pre-select quietly becomes what almost everyone chooses.
 
-There's a deeper question lurking under all of this, though. A default that flips behavior from 15% to 90% is enormous power, and the user rarely notices it's there. So when you set the default, whose interest are you really serving — and how would they know? That line between a helpful nudge and a quiet manipulation is where design stops being a craft and starts being an ethic.
+There's a deeper question lurking under all of this, though. A default that flips behavior from 15% to 90% is enormous power, and the user rarely notices it's there. So when you set the default, whose interest are you really serving - and how would they know? That line between a helpful nudge and a quiet manipulation is where design stops being a craft and starts being an ethic.

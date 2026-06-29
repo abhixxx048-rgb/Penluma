@@ -102,9 +102,9 @@ Nothing changed except the grouping. Good teaching does this regrouping for you 
 
 Getting something into long-term memory and back out again happens in three stages. These three words are worth keeping.
 
-1. **Encoding** — getting information *in*: paying attention to it and connecting it to things you already know.
-2. **Storage** — keeping it filed away over time.
-3. **Retrieval** — pulling it back *out* when you need it.
+1. **Encoding** - getting information *in*: paying attention to it and connecting it to things you already know.
+2. **Storage** - keeping it filed away over time.
+3. **Retrieval** - pulling it back *out* when you need it.
 
 Here is the quiet but powerful part. **Retrieval isn't just a way of checking what you stored. The act of pulling something out actually strengthens it.**
 

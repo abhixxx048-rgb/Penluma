@@ -84,23 +84,23 @@ Accept: application/json         Content-Length: 48
 
 **Methods** (also called verbs) tell the server your intent:
 
-- `GET` — read or fetch a resource (no body).
-- `POST` — create something or submit data.
-- `PUT` — replace a whole resource with what you send.
-- `PATCH` — partially update a resource.
-- `DELETE` — remove a resource.
-- `HEAD` — like GET, but headers only, no body (great for "did this change?").
-- `OPTIONS` — ask what the server allows (used in CORS preflight checks).
+- `GET` - read or fetch a resource (no body).
+- `POST` - create something or submit data.
+- `PUT` - replace a whole resource with what you send.
+- `PATCH` - partially update a resource.
+- `DELETE` - remove a resource.
+- `HEAD` - like GET, but headers only, no body (great for "did this change?").
+- `OPTIONS` - ask what the server allows (used in CORS preflight checks).
 
 ### Status codes, grouped by their first digit
 
 Every response starts with a three-digit code, and the first digit tells you the family:
 
-- **1xx informational** — e.g. `103 Early Hints`.
-- **2xx success** — `200 OK`, `201 Created`, `204 No Content`.
-- **3xx redirection** — `301` (moved permanently), `302/307` (temporary), `304 Not Modified` (used by caches, more on that later).
-- **4xx client error** — *you* made a mistake: `400`, `401`, `403`, `404`, `409`, `422`, `429`.
-- **5xx server error** — the *server* failed: `500`, `502`, `503`, `504`.
+- **1xx informational** - e.g. `103 Early Hints`.
+- **2xx success** - `200 OK`, `201 Created`, `204 No Content`.
+- **3xx redirection** - `301` (moved permanently), `302/307` (temporary), `304 Not Modified` (used by caches, more on that later).
+- **4xx client error** - *you* made a mistake: `400`, `401`, `403`, `404`, `409`, `422`, `429`.
+- **5xx server error** - the *server* failed: `500`, `502`, `503`, `504`.
 
 Two pairs trip people up constantly, so memorize them:
 
@@ -125,9 +125,9 @@ There are three common flavors of "remember me," each with a trade-off:
 
 Whichever you use, three cookie flags are non-negotiable for security:
 
-- **`HttpOnly`** — JavaScript can't read it, which blocks theft via XSS attacks (XSS = injecting malicious scripts into a page).
-- **`Secure`** — only sent over HTTPS.
-- **`SameSite`** — limits cross-site sending, which blocks CSRF attacks (CSRF = tricking your browser into sending a request you didn't mean to).
+- **`HttpOnly`** - JavaScript can't read it, which blocks theft via XSS attacks (XSS = injecting malicious scripts into a page).
+- **`Secure`** - only sent over HTTPS.
+- **`SameSite`** - limits cross-site sending, which blocks CSRF attacks (CSRF = tricking your browser into sending a request you didn't mean to).
 
 Skip these flags and a session cookie can be stolen by a script or ridden by a forged request. They are five minutes of work that prevent a very bad day.
 
@@ -141,13 +141,13 @@ Each version of HTTP chipped away at it.
 
 **HTTP/2 (2015)** keeps the same meaning but changes the wire format. Its wins:
 
-- **Binary framing** — machine-friendly, not text.
-- **Multiplexing** — many requests (called *streams*) interleaved over *one* TCP connection, killing the six-connection hack.
-- **HPACK** header compression — strips out repeated header bytes.
+- **Binary framing** - machine-friendly, not text.
+- **Multiplexing** - many requests (called *streams*) interleaved over *one* TCP connection, killing the six-connection hack.
+- **HPACK** header compression - strips out repeated header bytes.
 
 (Server Push existed here but is now deprecated; Chrome removed it in 2022. Use `103 Early Hints` instead.)
 
-**HTTP/3 (2022)** runs over **QUIC**, a new transport built on **UDP** instead of TCP. QUIC handles reliability and ordering *per stream*, so one lost packet only stalls its own stream. It also folds the TLS handshake into setup (faster connections) and supports **connection migration** — a phone switching from Wi-Fi to cellular keeps the same connection via a Connection ID instead of its IP address.
+**HTTP/3 (2022)** runs over **QUIC**, a new transport built on **UDP** instead of TCP. QUIC handles reliability and ordering *per stream*, so one lost packet only stalls its own stream. It also folds the TLS handshake into setup (faster connections) and supports **connection migration** - a phone switching from Wi-Fi to cellular keeps the same connection via a Connection ID instead of its IP address.
 
 ```
 HTTP/1.1:  [Req A]--wait--[Req B]--wait--[Req C]   one at a time
@@ -180,9 +180,9 @@ One more trap: never design a `GET` with side effects, like `GET /delete?id=5`. 
 
 **HTTPS** is just HTTP carried inside a **TLS**-encrypted channel. TLS (Transport Layer Security) gives you three guarantees:
 
-- **Confidentiality** — eavesdroppers see only scrambled ciphertext.
-- **Integrity** — if anyone tampers with the data, it's detected.
-- **Authentication** — you're really talking to the right server, proven by its certificate.
+- **Confidentiality** - eavesdroppers see only scrambled ciphertext.
+- **Integrity** - if anyone tampers with the data, it's detected.
+- **Authentication** - you're really talking to the right server, proven by its certificate.
 
 That last one leans on an **X.509 certificate**, a document that binds a domain name to a public key, signed by a **Certificate Authority (CA)** your browser already trusts. This forms a **chain of trust** up to a root CA stored in your operating system. (Let's Encrypt made these certificates free and automatic, which is a big reason the whole web moved to HTTPS.)
 
@@ -205,9 +205,9 @@ One myth to drop: HTTPS does *not* make a request safe to retry. TLS is about en
 
 These three get blurred together constantly, and the confusion leads to expensive wrong fixes.
 
-- **Latency** — time for *one* trip (delay), measured in milliseconds.
-- **Throughput** — actual work done per second (e.g. requests/sec achieved).
-- **Bandwidth** — the *maximum capacity* of the pipe (bits/sec).
+- **Latency** - time for *one* trip (delay), measured in milliseconds.
+- **Throughput** - actual work done per second (e.g. requests/sec achieved).
+- **Bandwidth** - the *maximum capacity* of the pipe (bits/sec).
 
 > **The highway analogy.** A highway's number of lanes is bandwidth. How long your single car takes end-to-end is latency. Cars arriving per minute is throughput. Adding lanes never makes *your* drive shorter. Likewise, a cargo ship full of hard drives has *huge* bandwidth but terrible latency (it takes days to arrive); a tiny ping packet has almost no bandwidth but arrives in milliseconds.
 
@@ -239,11 +239,11 @@ User
 
 HTTP gives you headers to steer it:
 
-- `Cache-Control: max-age=N` — fresh for N seconds.
-- `s-maxage` — overrides max-age, but only for *shared* caches like a CDN.
-- `no-cache` — may store, but must revalidate before using.
-- `no-store` — never store at all (for private/sensitive data).
-- `private` — browser only, never a shared cache. `public` — anyone may cache.
+- `Cache-Control: max-age=N` - fresh for N seconds.
+- `s-maxage` - overrides max-age, but only for *shared* caches like a CDN.
+- `no-cache` - may store, but must revalidate before using.
+- `no-store` - never store at all (for private/sensitive data).
+- `private` - browser only, never a shared cache. `public` - anyone may cache.
 
 When a cached copy might be stale, the cache **revalidates** using a **validator**. An **ETag** is a fingerprint of the content. The cache asks `If-None-Match: "v7"`; if nothing changed, the server replies `304 Not Modified` with *no body*, saving the bandwidth of resending it. The `stale-while-revalidate` directive serves the old copy instantly while quietly refreshing in the background, hiding the delay entirely.
 
@@ -271,10 +271,10 @@ The first big decision is **L4 vs L7** (those are OSI layer numbers):
 
 Then there is the **balancing algorithm**:
 
-- **Round Robin** — cycle through servers evenly. Fine when requests are uniform.
-- **Weighted** — bigger servers get more traffic.
-- **Least Connections** — send to the server with the fewest active requests. Best when request durations vary.
-- **IP Hash / Consistent Hashing** — the same client always lands on the same server, with minimal reshuffling when servers come and go. Vital for sharded caches.
+- **Round Robin** - cycle through servers evenly. Fine when requests are uniform.
+- **Weighted** - bigger servers get more traffic.
+- **Least Connections** - send to the server with the fewest active requests. Best when request durations vary.
+- **IP Hash / Consistent Hashing** - the same client always lands on the same server, with minimal reshuffling when servers come and go. Vital for sharded caches.
 
 **Health checks** keep traffic away from broken servers. *Active* checks probe on a schedule ("does `GET /health` return 200?"). *Passive* checks watch real traffic for errors. Use both.
 

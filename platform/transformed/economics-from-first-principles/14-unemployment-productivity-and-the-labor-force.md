@@ -90,10 +90,10 @@ To be counted as **unemployed**, you have to clear three hurdles at once:
 
 Miss even one and you are *not* unemployed. You get sorted into a separate bucket called **not in the labor force**. This three-way split is the foundation of everything:
 
-- **Employed** — did any paid work last week, even one hour. A retiree who mowed a neighbor's lawn for cash counts as employed.
-- **Unemployed** — no job, available, and actively searched in the last four weeks.
-- **Labor force** — employed plus unemployed. The people actively in the job market.
-- **Not in the labor force** — everyone else aged 16 and up: students, retirees, caregivers, the disabled, and anyone who has stopped looking.
+- **Employed** - did any paid work last week, even one hour. A retiree who mowed a neighbor's lawn for cash counts as employed.
+- **Unemployed** - no job, available, and actively searched in the last four weeks.
+- **Labor force** - employed plus unemployed. The people actively in the job market.
+- **Not in the labor force** - everyone else aged 16 and up: students, retirees, caregivers, the disabled, and anyone who has stopped looking.
 
 Now the formula that matters most:
 
@@ -117,8 +117,8 @@ The rule to remember: a falling unemployment rate *next to* a falling participat
 
 The famous number, called **U-3**, is just one of six measures the BLS publishes. The broadest, **U-6**, adds two groups the headline ignores:
 
-- **Marginally attached workers** — people who want a job and looked within the last year, but not the last four weeks. A subset are **discouraged workers**, who stopped searching because they believe no jobs exist for them.
-- **Involuntary part-timers** — people working part-time who want full-time hours but cannot get them.
+- **Marginally attached workers** - people who want a job and looked within the last year, but not the last four weeks. A subset are **discouraged workers**, who stopped searching because they believe no jobs exist for them.
+- **Involuntary part-timers** - people working part-time who want full-time hours but cannot get them.
 
 The gap is big. In May 2026, U-3 was roughly **4.3%** while U-6 was about **8.1%**, nearly double. On top of that, around **a million people not in the labor force said they wanted a job** yet stayed invisible to U-3.
 
@@ -148,11 +148,11 @@ This rises and falls with the **business cycle**. When sales collapse in a reces
 
 This is the "bad" unemployment that stimulus, whether from central banks or government spending, is designed to attack by lifting demand. It climbs in slumps and falls toward zero at a boom's peak.
 
-(There is a fourth kind, **seasonal** — think retail jobs vanishing after Christmas. Because it is predictable, the BLS "seasonally adjusts" the data to strip it out.)
+(There is a fourth kind, **seasonal** - think retail jobs vanishing after Christmas. Because it is predictable, the BLS "seasonally adjusts" the data to strip it out.)
 
 ## The natural rate, and what "full employment" really means
 
-Add frictional and structural unemployment together and you get the **natural rate of unemployment** — the rate that remains when cyclical unemployment is zero. The idea came from **Milton Friedman in a 1968 address** and, independently, from Edmund Phelps.
+Add frictional and structural unemployment together and you get the **natural rate of unemployment** - the rate that remains when cyclical unemployment is zero. The idea came from **Milton Friedman in a 1968 address** and, independently, from Edmund Phelps.
 
 This reframes a phrase politicians love: **full employment**. It does *not* mean zero unemployment. It means the economy is sitting at its natural rate, where anyone who wants a job at the going wage can find one within a reasonable time.
 
@@ -174,11 +174,11 @@ Why is the loss bigger than the simple headcount of jobless people? Three reason
 
 - Firms **cut hours** for the workers they keep.
 - Discouraged workers **leave the labor force**.
-- "**Labor hoarding**" — keeping idle staff on the payroll — drags down productivity per worker.
+- "**Labor hoarding**" - keeping idle staff on the payroll - drags down productivity per worker.
 
 But Okun's Law is a rule of thumb, not a law of physics. The relationship swells in deep recessions and shrinks in expansions, and it has broken down before, like the "jobless recoveries" of the early 2000s and 2009, when unemployment rose more than the rule predicted.
 
-## Why wages are "sticky" — and why that creates unemployment
+## Why wages are "sticky" - and why that creates unemployment
 
 Here is a puzzle. In a textbook market, a surplus pushes the price down until it clears. So in a recession, why don't wages just fall until everyone who wants work gets hired?
 
@@ -188,8 +188,8 @@ Why are wages so sticky on the way down?
 
 - **Contracts and unions** lock pay in for months or years.
 - **Minimum wage** laws set a legal floor.
-- **Fairness and morale** — pay cuts crush motivation. When economist Truman Bewley interviewed managers, he found they feared cuts would tank productivity.
-- **Efficiency wages** — firms deliberately pay above the market rate to attract better people, reduce quitting, and discourage slacking. They would rather lay some workers off than cut everyone's pay.
+- **Fairness and morale** - pay cuts crush motivation. When economist Truman Bewley interviewed managers, he found they feared cuts would tank productivity.
+- **Efficiency wages** - firms deliberately pay above the market rate to attract better people, reduce quitting, and discourage slacking. They would rather lay some workers off than cut everyone's pay.
 
 So when demand falls, employers adjust through **quantity (layoffs)** rather than **price (wage cuts)**. That is precisely how cyclical unemployment is born.
 
@@ -197,11 +197,11 @@ A vivid fact backs this up: nominal wage changes cluster tightly at *zero* and a
 
 Keynes's warning was that cutting wages across the board would backfire. Lower incomes mean lower spending, which means even less demand for labor, a downward spiral. His fix was to boost demand, not slash pay.
 
-**The Great Depression made the case.** U.S. unemployment ran near 3% in 1929 and exploded to about **25% by 1933** — roughly 12.8 million jobless out of a 51-million labor force. Wages did not fall fast enough to clear the market, so output and incomes collapsed instead. That catastrophe is the very event that pushed Keynes to put sticky wages at the heart of macroeconomics.
+**The Great Depression made the case.** U.S. unemployment ran near 3% in 1929 and exploded to about **25% by 1933** - roughly 12.8 million jobless out of a 51-million labor force. Wages did not fall fast enough to clear the market, so output and incomes collapsed instead. That catastrophe is the very event that pushed Keynes to put sticky wages at the heart of macroeconomics.
 
 ## Will the robots take all the jobs?
 
-This fear is centuries old, and it rests on a tempting but wrong idea economists call the **lump-of-labor fallacy** — the belief that there is a fixed amount of work in the world, so every job a machine does is one fewer for a human.
+This fear is centuries old, and it rests on a tempting but wrong idea economists call the **lump-of-labor fallacy** - the belief that there is a fixed amount of work in the world, so every job a machine does is one fewer for a human.
 
 History flatly contradicts it. Automation destroys specific jobs but raises productivity and incomes, which creates entirely new kinds of work. Two centuries of mechanization have gone hand in hand with *rising* total employment.
 
@@ -235,6 +235,6 @@ Next time the headline number drops, run through this:
 
 ## Conclusion
 
-If you remember one thing, make it this: the unemployment rate is **unemployed divided by the labor force, not the population** — and that single design choice is why the number can fall while real distress rises. Read it next to the participation rate, glance at U-6, and you will see what the headline hides.
+If you remember one thing, make it this: the unemployment rate is **unemployed divided by the labor force, not the population** - and that single design choice is why the number can fall while real distress rises. Read it next to the participation rate, glance at U-6, and you will see what the headline hides.
 
 But notice what we have quietly assumed throughout: that wages, prices, and inflation are riding along in the background, bending the labor market in ways no one fully controls. Pull on that thread and you arrive at the next great question in economics: where does inflation actually come from, and why can't central bankers simply switch it off? That is where the story goes next.

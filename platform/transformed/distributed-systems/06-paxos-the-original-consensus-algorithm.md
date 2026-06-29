@@ -69,9 +69,9 @@ But Paxos remains the bedrock. Google's Chubby lock service and Spanner database
 
 Paxos splits the work into three **roles**. A role is just a job a machine performs, and one physical machine usually plays all three at once. We separate them only to explain the logic cleanly.
 
-- **Proposer** — the one who suggests a value. It drives the whole protocol by sending requests, trying to get a value agreed.
-- **Acceptor** — the voter and the memory. It votes on proposals and *remembers* what it has promised and accepted, even across crashes. The acceptors are the system's durable memory.
-- **Learner** — the one who finds out the result. It learns which value was finally chosen so it can act on it, like applying it to a database.
+- **Proposer** - the one who suggests a value. It drives the whole protocol by sending requests, trying to get a value agreed.
+- **Acceptor** - the voter and the memory. It votes on proposals and *remembers* what it has promised and accepted, even across crashes. The acceptors are the system's durable memory.
+- **Learner** - the one who finds out the result. It learns which value was finally chosen so it can act on it, like applying it to a database.
 
 The goal is precise and it has two halves.
 

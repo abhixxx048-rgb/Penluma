@@ -76,10 +76,10 @@ For real work, IAM is the difference between "a contractor's leaked laptop expos
 
 IAM is built from four pieces. Get these straight and most of the exam falls into place.
 
-- **User** — a permanent identity for one person or one application. It has a password (for console login) and/or access keys (for code).
-- **Group** — a bucket of users that share the same permissions. You attach permissions once and every member inherits them.
-- **Role** — a temporary identity you *assume* when needed. AWS hands out short-lived credentials that expire. No stored password, no long-term keys.
-- **Policy** — a JSON document that says what is allowed or denied. You attach policies to users, groups, roles, or resources.
+- **User** - a permanent identity for one person or one application. It has a password (for console login) and/or access keys (for code).
+- **Group** - a bucket of users that share the same permissions. You attach permissions once and every member inherits them.
+- **Role** - a temporary identity you *assume* when needed. AWS hands out short-lived credentials that expire. No stored password, no long-term keys.
+- **Policy** - a JSON document that says what is allowed or denied. You attach policies to users, groups, roles, or resources.
 
 A simple analogy: think of an office building. A **user** is an employee badge. A **group** is a department (everyone in "Finance" gets the same door access). A **role** is a temporary visitor pass that expires at 5 PM. And a **policy** is the printed rulebook taped to each door listing who may enter.
 
@@ -113,8 +113,8 @@ Roles also power **cross-account access**. If an app in Account A needs a Dynamo
 
 A **policy** is just a JSON document listing the *effect* (allow or deny), the *actions*, and the *resources*. There are two flavors:
 
-- **Identity-based policy** — attached to a user, group, or role. It says what *that identity* can do.
-- **Resource-based policy** — attached directly to a resource. It says *who* may access that resource.
+- **Identity-based policy** - attached to a user, group, or role. It says what *that identity* can do.
+- **Resource-based policy** - attached directly to a resource. It says *who* may access that resource.
 
 The textbook example of a resource-based policy is an **S3 bucket policy**. If a policy "lives on the bucket," it is resource-based. Both types are always JSON, never YAML.
 

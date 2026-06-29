@@ -70,7 +70,7 @@ Capitalize in exactly these cases:
 
 1. **The first word of a sentence.** Every time, no exceptions.
 2. **The word "I".** Always, even mid-sentence: *"I think I broke staging."*
-3. **Proper nouns** — names of people, products, tools, days, and months: `GitHub`, `Redis`, `Nuxt`, `Stripe`, `Monday`, `June`.
+3. **Proper nouns** - names of people, products, tools, days, and months: `GitHub`, `Redis`, `Nuxt`, `Stripe`, `Monday`, `June`.
 
 That last one trips up developers most. Tool names are not yours to lowercase. It's `GitHub`, not `github`. It's `PostgreSQL`, not `postgresql`. These products chose their own capitalization, and using it correctly shows you actually pay attention. When in doubt, copy the spelling straight from the project's homepage.
 
@@ -103,7 +103,7 @@ Commas feel mysterious, but at work you only need four patterns. Master these an
 
 The trickiest one is the third. Here's a foolproof test: **if both sides could stand alone as their own sentence, put a comma before `but`, `and`, or `so`.**
 
-Try it. *"It built"* — could that be its own sentence? Yes. *"the tests failed"* — its own sentence? Yes. So you get a comma: *"It built, but the tests failed."* This test never fails you.
+Try it. *"It built"* - could that be its own sentence? Yes. *"the tests failed"* - its own sentence? Yes. So you get a comma: *"It built, but the tests failed."* This test never fails you.
 
 A run-on like *"i deployed to prod but it failed i rolled back"* becomes clean and readable as *"I deployed to prod, but it failed, so I rolled back."* Same words, suddenly professional.
 
@@ -120,7 +120,7 @@ And here's your escape hatch: **if you're ever unsure, just use a full stop.** A
 
 This one is specific to writing as a developer, and it's a quiet superpower.
 
-- **Wrap code in backticks** — commands, file names, branches, values. Write *"the `main` branch"* and *"set `status` to `paid`."* Without backticks, `prod` looks like a typo for "product" and `main` reads as the English word.
+- **Wrap code in backticks** - commands, file names, branches, values. Write *"the `main` branch"* and *"set `status` to `paid`."* Without backticks, `prod` looks like a typo for "product" and `main` reads as the English word.
 - **Use "quotes" for spoken phrases or UI labels.** *Click "Save changes".*
 
 The example *"to open pull request run gh pr create"* has two problems: a missing article and code that blends into prose. Fixed: *"To open a pull request, run `gh pr create`."* Now the command is unmistakably a command.
@@ -143,7 +143,7 @@ Here are the same messages developers actually send, cleaned up:
 |---|---|
 | `can u do reaseach on grammer for me` | Can you do research on grammar for me? |
 | `i already know but as of now i am making so much mistake` | I already know it, but right now I'm making so many mistakes. |
-| `the api returns 500 check the logs` | The API returns 500 — check the logs. |
+| `the api returns 500 check the logs` | The API returns 500 - check the logs. |
 | `done with task lgtm` | Done with the task. LGTM! |
 | `i think we need three thing migration seeder and test` | I think we need three things: a migration, a seeder, and a test. |
 
@@ -154,7 +154,7 @@ Notice the pattern in every fix: capital at the start, real words instead of `u`
 You don't need to become a grammar nerd. You need a few reflexes. Try this:
 
 1. **Before you hit send, read your message once.** Just once. You'll catch the lowercase `i` and the missing full stop almost every time.
-2. **Capitalize `I` and the first word — always.** Make this so automatic you do it without thinking. It's the highest-impact habit on this list.
+2. **Capitalize `I` and the first word - always.** Make this so automatic you do it without thinking. It's the highest-impact habit on this list.
 3. **One thought, one sentence.** If you find yourself writing `and` or `but` to bolt a third idea on, stop and start a new sentence instead.
 4. **For commit messages**, capitalize the first word and skip the trailing period on the summary line: `Fix null pointer in OrderService`. Put full sentences in the body.
 5. **For PR descriptions and standups**, write full sentences with end marks. *"Yesterday I shipped the cache fix. Today I'm on the migration. No blockers."* reads worlds better than the lowercase version.
@@ -173,14 +173,14 @@ Try these before peeking. Fix each one:
 
 **Answers:**
 
-1. *I pushed the branch. Can you check it?* — Capital `I`, two sentences, `u` becomes `you`, and the second part is a question.
-2. *We use PostgreSQL in dev and SQLite in test.* — Product names get their real capitals; add the full stop.
-3. *The deploy failed. I checked the logs — it was a config issue.* — Three thoughts, so don't chain them.
-4. *I think we have so many bugs in this release.* — `bug` is countable, so `many bugs`, not `much bug`.
-5. *Can you open a pull request for this?* — Add the article `a`, end with a `?`.
+1. *I pushed the branch. Can you check it?* - Capital `I`, two sentences, `u` becomes `you`, and the second part is a question.
+2. *We use PostgreSQL in dev and SQLite in test.* - Product names get their real capitals; add the full stop.
+3. *The deploy failed. I checked the logs - it was a config issue.* - Three thoughts, so don't chain them.
+4. *I think we have so many bugs in this release.* - `bug` is countable, so `many bugs`, not `much bug`.
+5. *Can you open a pull request for this?* - Add the article `a`, end with a `?`.
 
 ## Conclusion
 
-If you take one thing away, make it this: **two thoughts means two sentences.** That single habit — a full stop and a fresh capital between ideas — fixes the run-ons that make smart people look rushed, and it costs you nothing but a half-second of attention before you press send.
+If you take one thing away, make it this: **two thoughts means two sentences.** That single habit - a full stop and a fresh capital between ideas - fixes the run-ons that make smart people look rushed, and it costs you nothing but a half-second of attention before you press send.
 
-Punctuation is the easiest writing skill to master because the rules are fixed. But the next level up isn't about rules at all — it's about *tone*. The same correctly punctuated sentence can sound warm or cold, confident or hesitant, depending on word choice. That's where writing stops being mechanical and starts being a craft worth getting good at. We'll go there next.
+Punctuation is the easiest writing skill to master because the rules are fixed. But the next level up isn't about rules at all - it's about *tone*. The same correctly punctuated sentence can sound warm or cold, confident or hesitant, depending on word choice. That's where writing stops being mechanical and starts being a craft worth getting good at. We'll go there next.

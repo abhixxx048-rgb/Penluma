@@ -2,7 +2,7 @@
 title: 'Much vs Many: The Grammar Tell That Outs You in PRs'
 metaTitle: 'Much vs Many: Countable vs Uncountable Made Easy'
 description: >-
-  Learn when to use much vs many, few vs less, and when to add an "s" — the one
+  Learn when to use much vs many, few vs less, and when to add an "s" - the one
   countable vs uncountable rule that quietly fixes your commits, PRs, and standups.
 keywords:
   - much vs many
@@ -27,7 +27,7 @@ faq:
   - q: What is the difference between "few" and "a few"?
     a: "\"Few\" means almost none and sounds like a complaint (\"few tests cover this\"). \"A few\" means some, a positive amount (\"a few tests cover this\"). The same gap exists between \"little\" and \"a little.\""
   - q: Why do I keep writing "so much mistake"?
-    a: Many languages don't mark countable vs uncountable the way English does, so the habit is invisible. "Mistake" is countable, so it needs "many" plus the plural -s — "so many mistakes."
+    a: Many languages don't mark countable vs uncountable the way English does, so the habit is invisible. "Mistake" is countable, so it needs "many" plus the plural -s - "so many mistakes."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: english
@@ -47,7 +47,7 @@ It is one of the most common English slips for non-native speakers, and it is on
 
 Your writing is on display all day. Commit messages, PR descriptions, Slack standups, code review comments, bug reports. Every one of them is read by teammates who quietly form an impression of you.
 
-Most grammar mistakes are forgivable noise. But the **much/many** mix-up is a *tell* — it instantly signals "English isn't my first language," even to readers who can't explain the rule themselves. It draws the eye away from your actual point.
+Most grammar mistakes are forgivable noise. But the **much/many** mix-up is a *tell* - it instantly signals "English isn't my first language," even to readers who can't explain the rule themselves. It draws the eye away from your actual point.
 
 The good news: this is not a vocabulary problem you fix by memorizing lists. It is one small habit. Once the habit is automatic, an entire category of mistakes disappears from everything you write.
 
@@ -61,8 +61,8 @@ English sorts nouns into two buckets.
 
 The test that does all the work: **can you put a number directly in front of it?**
 
-- "Three bugs" — sounds fine, so *bug* is **countable**.
-- "Three codes" — sounds wrong, so *code* is **uncountable** (you'd say "three lines of code").
+- "Three bugs" - sounds fine, so *bug* is **countable**.
+- "Three codes" - sounds wrong, so *code* is **uncountable** (you'd say "three lines of code").
 
 That's it. Run that test before you choose *much* or *many*, and you're done.
 
@@ -70,7 +70,7 @@ That's it. Run that test before you choose *much* or *many*, and you're done.
 
 By default, your hand reaches for **much**, and you drop the plural **-s**: "so much mistake," "few bug left." This isn't carelessness.
 
-Many languages — including a lot of the ones spoken by developers worldwide — simply don't mark countability the way English does. There's no equivalent forced choice, so the distinction is invisible to your ear. You can't hear the mistake the way a native speaker can.
+Many languages - including a lot of the ones spoken by developers worldwide - simply don't mark countability the way English does. There's no equivalent forced choice, so the distinction is invisible to your ear. You can't hear the mistake the way a native speaker can.
 
 That's why memorizing won't fix it. You need a *check*, not a *list*. The number test is that check.
 
@@ -92,7 +92,7 @@ Here are the exact mistakes that show up in dev writing, and why the fix is the 
 
 Notice the pattern: every fix is the same two-step. Decide if the noun is countable, then pick the matching word *and* the matching -s.
 
-## The pairing table — never mix the columns
+## The pairing table - never mix the columns
 
 Think of these as two sealed lanes. A countable word never borrows from the uncountable lane, and vice versa.
 
@@ -104,7 +104,7 @@ Think of these as two sealed lanes. A countable word never borrows from the unco
 | a number of files | an amount of data |
 | too many tickets | too much feedback |
 
-**A mnemonic that sticks:** *Many = "manys"* — things you can count get the plural **-s**. *Much = "mush"* — stuff you can't pull apart into pieces.
+**A mnemonic that sticks:** *Many = "manys"* - things you can count get the plural **-s**. *Much = "mush"* - stuff you can't pull apart into pieces.
 
 ## The two pairs that catch people
 
@@ -128,7 +128,7 @@ The cheat code: **if the noun ends in -s, you almost always want "fewer."** Fewe
 
 ## Common misconceptions
 
-**"Data is countable, so it's many data."** No. In everyday tech writing, *data* is treated as uncountable: "much data," "a lot of data," "less data" — never "many data."
+**"Data is countable, so it's many data."** No. In everyday tech writing, *data* is treated as uncountable: "much data," "a lot of data," "less data" - never "many data."
 
 **"Feedback can be plural if there's a lot of it."** No. Volume doesn't make a noun countable. It's "a lot of feedback," not "many feedbacks." Same with *research*, *advice*, *information*, and *progress*.
 
@@ -151,7 +151,7 @@ Where it shows up most:
 - **Commit messages:** "Fix many flaky tests" (not "much flaky test"); "Remove unused code" (uncountable, no -s).
 - **Standups:** "I closed three bugs and got some feedback on the design." Count the bugs, measure the feedback.
 - **Code review:** "Too many responsibilities in this class" (countable) vs "This adds too much complexity" (uncountable).
-- **Bug reports:** "These steps produce many errors in the console" — errors are countable, so plural -s.
+- **Bug reports:** "These steps produce many errors in the console" - errors are countable, so plural -s.
 
 ## Quick drills
 
@@ -167,9 +167,9 @@ Try these, then check yourself against the rule, not a key. For each, ask "can I
 Answers, with reasons:
 
 1. **"I'm making so many mistakes in my commit messages."** *Mistake* is countable → **many** + -s (and capital I).
-2. **fewer** — *queries* is countable (it even ends in -s).
-3. **feedback** — uncountable, no -s.
-4. **many** — *files* is countable.
+2. **fewer** - *queries* is countable (it even ends in -s).
+3. **feedback** - uncountable, no -s.
+4. **many** - *files* is countable.
 5. **fewer** bugs (countable) and **less** downtime (uncountable).
 6. **"How many commits are in this PR?"** *Commits* is countable → many, plural verb, question mark.
 
@@ -177,6 +177,6 @@ Answers, with reasons:
 
 If you take one thing away, make it this reflex: **before you write "much" or "many," ask "can I count this?"** That single question, asked in under a second, erases a whole family of mistakes from your commits, PRs, and standups.
 
-The deeper lesson is that fluent-sounding writing usually isn't about knowing more words — it's about one or two tiny habits that run automatically while you focus on the actual message.
+The deeper lesson is that fluent-sounding writing usually isn't about knowing more words - it's about one or two tiny habits that run automatically while you focus on the actual message.
 
-And here's the next thread to pull: the same instinct that makes you drop an -s also shapes when you reach for *a*, *an*, or *the* — or skip the article entirely. Articles are the *other* great non-native tell, and they're driven by the very same countable-vs-uncountable distinction you just learned. Master one, and you're already halfway through the other.
+And here's the next thread to pull: the same instinct that makes you drop an -s also shapes when you reach for *a*, *an*, or *the* - or skip the article entirely. Articles are the *other* great non-native tell, and they're driven by the very same countable-vs-uncountable distinction you just learned. Master one, and you're already halfway through the other.

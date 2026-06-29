@@ -105,9 +105,9 @@ In the 1980s, Polish researcher Piotr Woźniak built SuperMemo and published the
 
 After each review you grade your recall, typically on a 0-to-5 scale (Anki simplifies this to buttons like *Again, Hard, Good, Easy*). SM-2 tracks three numbers per card:
 
-1. **Interval** — how many days until the next review.
-2. **Ease factor** — a multiplier, starting around 2.5, that says how fast this card's interval should grow.
-3. **Repetitions** — how many times in a row you've passed it.
+1. **Interval** - how many days until the next review.
+2. **Ease factor** - a multiplier, starting around 2.5, that says how fast this card's interval should grow.
+3. **Repetitions** - how many times in a row you've passed it.
 
 When you pass a card, the next interval is roughly the old interval times the ease factor. So a card at 10 days with an ease of 2.5 jumps to about 25 days, then ~62, then ~156. The gaps balloon as the memory hardens.
 
@@ -131,9 +131,9 @@ That gap is what the newest system closes.
 
 FSRS describes each card with three separate ideas, not one:
 
-- **Difficulty** — how inherently hard this card is for you.
-- **Stability** — how many days until your chance of recalling it drops to a set level. Higher stability means a slower forgetting curve.
-- **Retrievability** — your probability of recalling it *right now*, which falls as time passes since the last review.
+- **Difficulty** - how inherently hard this card is for you.
+- **Stability** - how many days until your chance of recalling it drops to a set level. Higher stability means a slower forgetting curve.
+- **Retrievability** - your probability of recalling it *right now*, which falls as time passes since the last review.
 
 The headline feature is that **you choose your target retention** directly, say 90 percent. FSRS then schedules each card for the day your predicted recall dips to that number, no sooner, no later. Want to study less and accept a bit more forgetting? Drop the target. Cramming for a high-stakes exam? Raise it. The algorithm recomputes every interval to hit your goal.
 

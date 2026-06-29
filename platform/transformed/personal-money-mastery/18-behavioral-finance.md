@@ -44,7 +44,7 @@ sources:
 
 It is 9:30 on a Monday morning. The market just opened down 6%. Your phone is buzzing, your portfolio is bleeding red, and your thumb is hovering over the "sell" button.
 
-In that moment, none of your spreadsheets matter. Not your index funds, not your tax planning, not your carefully chosen asset mix. The single factor that decides whether all that good planning actually works is **you** — or more precisely, your nervous system under stress.
+In that moment, none of your spreadsheets matter. Not your index funds, not your tax planning, not your carefully chosen asset mix. The single factor that decides whether all that good planning actually works is **you** - or more precisely, your nervous system under stress.
 
 This is the part of money that no one teaches you, and it is the part that matters most.
 
@@ -133,7 +133,7 @@ Riya carries a **200,000** credit-card balance at about 3.5% per month, which wo
 
 Mental accounting keeps these in two separate boxes in her head. The math refuses to play along. The 42% debt is destroying about 84,000 of value a year, while the 12% investment earns far less.
 
-**Paying off that card first is a guaranteed, tax-free 42% "return"** — better than almost any investment on earth. Clear the high-interest debt, then invest. Always.
+**Paying off that card first is a guaranteed, tax-free 42% "return"** - better than almost any investment on earth. Clear the high-interest debt, then invest. Always.
 
 ## Common misconceptions
 

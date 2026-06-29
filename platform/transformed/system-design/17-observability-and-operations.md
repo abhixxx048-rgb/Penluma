@@ -93,15 +93,15 @@ You cannot measure everything, so two simple frameworks tell you what counts.
 
 **RED** is for services, and looks at what users experience:
 
-- **Rate** — requests per second
-- **Errors** — failed requests per second
-- **Duration** — how long requests take
+- **Rate** - requests per second
+- **Errors** - failed requests per second
+- **Duration** - how long requests take
 
 **USE** is for infrastructure (CPU, disk, queues, connection pools):
 
-- **Utilization** — how busy the resource is
-- **Saturation** — how much work is queued and waiting
-- **Errors** — error events
+- **Utilization** - how busy the resource is
+- **Saturation** - how much work is queued and waiting
+- **Errors** - error events
 
 The key insight is that **saturation leads utilization**. A disk at 100% busy is not necessarily a problem. A disk with a *growing queue* is about to be one. The classic trap is the database connection pool: utilization can read "fine" while requests silently pile up waiting for a free connection. Watch the queue, not just the busy-ness.
 
@@ -167,9 +167,9 @@ The rule is a clean division of labour:
 
 This is the spine of Site Reliability Engineering. It turns the vague question "is it up?" into an engineering contract.
 
-- **SLI (Indicator)** — a number you actually measure, as a ratio of good events to total. For example, "the fraction of checkouts served in under 300ms with a success code."
-- **SLO (Objective)** — your internal target for that number. "99.9% of checkouts succeed under 300ms over 28 days."
-- **SLA (Agreement)** — the external promise to customers, with financial penalties, always looser than your SLO.
+- **SLI (Indicator)** - a number you actually measure, as a ratio of good events to total. For example, "the fraction of checkouts served in under 300ms with a success code."
+- **SLO (Objective)** - your internal target for that number. "99.9% of checkouts succeed under 300ms over 28 days."
+- **SLA (Agreement)** - the external promise to customers, with financial penalties, always looser than your SLO.
 
 The healthy ordering is **SLA < SLO < actual performance**. You keep internal headroom so you get warned long before you break a customer's contract.
 

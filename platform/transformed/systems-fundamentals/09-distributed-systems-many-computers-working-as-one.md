@@ -124,14 +124,14 @@ The practical lesson: a remote call is nothing like a local function call. "Chat
 
 The **CAP theorem** (proposed by Eric Brewer in 2000, proved by Gilbert and Lynch in 2002) names three properties:
 
-- **Consistency** — every read sees the most recent write, as if there were a single copy of the data.
-- **Availability** — every request to a working node gets a real, non-error answer, even if that answer might be slightly out of date.
-- **Partition tolerance** — the system keeps working even when messages between nodes are dropped or delayed.
+- **Consistency** - every read sees the most recent write, as if there were a single copy of the data.
+- **Availability** - every request to a working node gets a real, non-error answer, even if that answer might be slightly out of date.
+- **Partition tolerance** - the system keeps working even when messages between nodes are dropped or delayed.
 
 People summarize it as "pick 2 of 3," but here's the honest framing: in any real network, partitions *will* happen, so partition tolerance is not optional. You don't get to "pick CA." Saying "we chose CA" really means "we didn't think about what happens during a partition." The only real decision is what to do *during* one:
 
-- **CP** — refuse to answer rather than risk giving wrong data.
-- **AP** — keep answering with possibly-stale data rather than go down.
+- **CP** - refuse to answer rather than risk giving wrong data.
+- **AP** - keep answering with possibly-stale data rather than go down.
 
 A bank ATM picks **CP**: during a partition, "try again later" beats showing a wrong balance and letting you withdraw money twice. A social-media like-count picks **AP**: a slightly stale count is fine, but the page going down is not.
 
@@ -147,15 +147,15 @@ It's tempting to sort events across machines by the time on each server's clock.
 
 Consistency isn't all-or-nothing. It runs from strongest (easiest to reason about, most expensive) to weakest (cheapest and fastest, hardest to reason about).
 
-- **Strong (linearizable)** — behaves as if there's one single copy; a read always returns the latest committed write. Simplest to think about, highest coordination cost.
-- **Causal** — operations with a cause-and-effect link (like a reply to a comment) appear in that order everywhere, while unrelated operations may be seen in different orders on different nodes. A pleasant middle ground that keeps things that "make sense together" in order without forcing global agreement.
-- **Eventual** — if writes stop, all copies eventually converge. Until then, reads may be stale or out of order. Cheapest and most available.
+- **Strong (linearizable)** - behaves as if there's one single copy; a read always returns the latest committed write. Simplest to think about, highest coordination cost.
+- **Causal** - operations with a cause-and-effect link (like a reply to a comment) appear in that order everywhere, while unrelated operations may be seen in different orders on different nodes. A pleasant middle ground that keeps things that "make sense together" in order without forcing global agreement.
+- **Eventual** - if writes stop, all copies eventually converge. Until then, reads may be stale or out of order. Cheapest and most available.
 
 To make eventual consistency feel sane for a single user, systems layer on **session guarantees**:
 
-- **Read-your-writes** — after *you* change something, *you* always see your own change (you post a comment and immediately see it).
-- **Monotonic reads** — once you've seen a value, you never see an older one. No "going back in time."
-- **Monotonic writes** — your writes are applied in the order you made them.
+- **Read-your-writes** - after *you* change something, *you* always see your own change (you post a comment and immediately see it).
+- **Monotonic reads** - once you've seen a value, you never see an older one. No "going back in time."
+- **Monotonic writes** - your writes are applied in the order you made them.
 
 ### PACELC: the fuller picture
 
@@ -182,8 +182,8 @@ A **majority quorum** means more than half. It tolerates a minority failing and 
 
 **Consensus** is the act of making many nodes agree on a single ordered sequence of operations (a **replicated log**, the same append-only list in the same order on every node) despite crashes. Two algorithms dominate:
 
-- **Paxos** (Leslie Lamport) — correct and foundational, but famously hard to understand and build.
-- **Raft** (Ongaro and Ousterhout, 2014) — deliberately designed to be understandable. At any moment one node is the **leader** and the rest are followers. If the leader goes quiet, a follower times out, becomes a candidate, asks for votes, and whoever gets a majority becomes the new leader. Clients send writes to the leader, which appends each entry and forwards it to followers; once a majority confirms, the entry is committed.
+- **Paxos** (Leslie Lamport) - correct and foundational, but famously hard to understand and build.
+- **Raft** (Ongaro and Ousterhout, 2014) - deliberately designed to be understandable. At any moment one node is the **leader** and the rest are followers. If the leader goes quiet, a follower times out, becomes a candidate, asks for votes, and whoever gets a majority becomes the new leader. Clients send writes to the leader, which appends each entry and forwards it to followers; once a majority confirms, the entry is committed.
 
 ```
  Follower --(no heartbeat, times out)--> Candidate
@@ -204,8 +204,8 @@ Consider the difference. `SET balance = 100` run twice still leaves 100, so it's
 
 This is also why systems describe how hard they try to deliver a message:
 
-- **At-most-once** — never retry; may lose messages. Simple but lossy.
-- **At-least-once** — retry until confirmed; may deliver duplicates. The common, practical default.
+- **At-most-once** - never retry; may lose messages. Simple but lossy.
+- **At-least-once** - retry until confirmed; may deliver duplicates. The common, practical default.
 - **Exactly-once delivery** over an unreliable channel is **impossible**.
 
 That impossibility is captured by the classic **Two Generals Problem**: two armies on opposite hills must attack at the same time, but every messenger crossing the valley might be captured. Even a confirmation can be lost, and so can the confirmation of the confirmation. Neither general can ever be 100% certain the other received the message.
@@ -216,8 +216,8 @@ So when a product advertises "exactly-once," what it really delivers is **exactl
 
 Since wall clocks lie, distributed systems use **logical clocks** that order events by cause and effect rather than by time.
 
-- **Lamport timestamps** — each node keeps a counter, bumps it on every event, and on receiving a message sets its counter to `max(local, received) + 1`. The guarantee: if A caused B, A's number is smaller. But the reverse isn't true; a smaller number does *not* prove a causal link.
-- **Vector clocks** — each node tracks a list of counters, one per node. By comparing two vectors you can tell whether two events are causally ordered or genuinely **concurrent** (neither caused the other). This is how systems detect conflicting writes that must be reconciled. The cost is that the vector grows with the number of nodes.
+- **Lamport timestamps** - each node keeps a counter, bumps it on every event, and on receiving a message sets its counter to `max(local, received) + 1`. The guarantee: if A caused B, A's number is smaller. But the reverse isn't true; a smaller number does *not* prove a causal link.
+- **Vector clocks** - each node tracks a list of counters, one per node. By comparing two vectors you can tell whether two events are causally ordered or genuinely **concurrent** (neither caused the other). This is how systems detect conflicting writes that must be reconciled. The cost is that the vector grows with the number of nodes.
 
 Picture three people editing a shared document. A Lamport number can say "edit 5 came after edit 3" but can't tell you whether two edits happened independently. Vector clocks like `[A:2, B:1, C:0]` versus `[A:1, B:2, C:0]` reveal that neither came before the other; they're concurrent and conflict, so a human or a merge rule must resolve them.
 

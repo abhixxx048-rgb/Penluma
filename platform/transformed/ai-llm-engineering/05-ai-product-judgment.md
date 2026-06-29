@@ -79,12 +79,12 @@ Once you know AI belongs in a task, the next question is *how much* AI. The answ
 
 Picture your options as rungs on a ladder. Each rung up buys more capability but costs more money, adds more delay, and adds more ways to fail.
 
-- **Rung 0 — No AI.** Code, regex, SQL, rules, classical machine learning. Cheapest, fastest, most predictable.
-- **Rung 1 — Single LLM call.** One good prompt, maybe a few examples.
-- **Rung 2 — RAG.** One call plus retrieved private or current facts.
-- **Rung 3 — Workflow.** LLM steps running on predefined, hardcoded paths.
-- **Rung 4 — Agent.** The LLM decides its own steps and tools at runtime.
-- **Rung 5 — Multi-agent.** Several agents with separable ownership. Most teams never need this.
+- **Rung 0 - No AI.** Code, regex, SQL, rules, classical machine learning. Cheapest, fastest, most predictable.
+- **Rung 1 - Single LLM call.** One good prompt, maybe a few examples.
+- **Rung 2 - RAG.** One call plus retrieved private or current facts.
+- **Rung 3 - Workflow.** LLM steps running on predefined, hardcoded paths.
+- **Rung 4 - Agent.** The LLM decides its own steps and tools at runtime.
+- **Rung 5 - Multi-agent.** Several agents with separable ownership. Most teams never need this.
 
 The decision flow, in order:
 

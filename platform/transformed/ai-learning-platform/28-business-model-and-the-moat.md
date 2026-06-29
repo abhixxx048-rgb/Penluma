@@ -20,10 +20,10 @@ faq:
     a: A thin wrapper is a product that's basically a clever instruction plus a nice screen on top of someone else's AI model. Anyone can call the same model, so there's almost nothing to stop a competitor from copying it.
   - q: Is my system prompt a moat?
     a: No. A system prompt like "You are a friendly tutor" is just a sentence anyone can retype. Real moats come from accumulated user data, workflows, and outcomes that can't be copied in a day.
-  - q: Which business model is best for an AI tutor — B2C, B2B, or B2B2C?
+  - q: Which business model is best for an AI tutor - B2C, B2B, or B2B2C?
     a: It depends on your unit economics. B2B institutional contracts tend to be more valuable per signup and renew for years, while B2C sells faster but churns more. Many winners blend models.
   - q: What is the strongest moat for an AI learning product?
-    a: The learner model — a private, accumulating map of exactly what each student knows, has forgotten, and should see next. A new competitor literally cannot reproduce a returning user's years of history.
+    a: The learner model - a private, accumulating map of exactly what each student knows, has forgotten, and should see next. A new competitor literally cannot reproduce a returning user's years of history.
   - q: Why should an AI tutor focus on a niche instead of teaching everything?
     a: A "teach everything" tutor competes head-on with free general chatbots and wins on nothing. A niche product built around one domain's real workflow retains customers far better and can prove measurable outcomes.
   - q: What is "bring your own content" and why does it matter?
@@ -57,11 +57,11 @@ A **moat**, by the way, is the old castle idea: a ditch of water that makes the 
 
 First, plain definitions, because the rest depends on them.
 
-- A **large language model (LLM)** is the kind of AI that powers chatbots — a system trained to produce human-like text. Companies like OpenAI, Anthropic, and Google rent access to theirs.
+- A **large language model (LLM)** is the kind of AI that powers chatbots - a system trained to produce human-like text. Companies like OpenAI, Anthropic, and Google rent access to theirs.
 - An **API** (Application Programming Interface) is the doorway that lets your software send a question to their model and get an answer back.
 - A **thin wrapper** is a product that is little more than a clever instruction plus a pretty screen sitting on top of someone else's model.
 
-Here is the problem with a thin wrapper: anyone can knock on the same doorway. Your only profit is the small gap between what the API costs you and what you charge — and that gap is shrinking every year.
+Here is the problem with a thin wrapper: anyone can knock on the same doorway. Your only profit is the small gap between what the API costs you and what you charge - and that gap is shrinking every year.
 
 Meanwhile the model makers ship competing features for free. When a tool like a built-in "study mode" or a free document-chat app appears overnight, the thin wrapper underneath it has nowhere to hide.
 
@@ -71,15 +71,15 @@ The most common self-deception is thinking your **system prompt is a moat**. It 
 
 Before moats, you need to decide who actually hands you money. There are three classic shapes for an education business, and here is the part people miss: these are not just billing choices. **Each one demands a different product.**
 
-### B2C — the learner pays you directly
+### B2C - the learner pays you directly
 
-Business-to-consumer. A commuter pays $15/month to practice Spanish. One person decides, so the sale is fast — but people quit easily, which means high **churn** (the rate at which customers cancel). To win here you need a delightful self-serve app and maybe a progress view a parent can check.
+Business-to-consumer. A commuter pays $15/month to practice Spanish. One person decides, so the sale is fast - but people quit easily, which means high **churn** (the rate at which customers cancel). To win here you need a delightful self-serve app and maybe a progress view a parent can check.
 
-### B2B — an institution pays you
+### B2B - an institution pays you
 
 Business-to-business. A school, university, or company licenses your tutor. The sale is slow because a committee decides, but the contracts last one to three years and renew. To win here you need teacher and admin dashboards, reporting, and integrations into systems they already use.
 
-### B2B2C — an institution buys it for its learners
+### B2B2C - an institution buys it for its learners
 
 The university pays; every student uses it free. You need *both* skill sets: institutional contracts on one side, consumer-grade engagement on the other.
 
@@ -93,13 +93,13 @@ Picture one AI Spanish tutor sold three ways:
 
 Identical engine. Three completely different products wrapped around it.
 
-How do you choose? Look at the unit economics, not your gut. A useful measure is **LTV:CAC** — Lifetime Value (total money one customer brings over the whole relationship) compared to Customer Acquisition Cost (what you spent to win them). B2B education tends to run around **8 to 10×** there, while B2C is around **5 to 7×**, because long institutional contracts are worth more per signup. Many winners blend models — Coursera leaned harder on universities and employers as solo-learner numbers fell after the pandemic.
+How do you choose? Look at the unit economics, not your gut. A useful measure is **LTV:CAC** - Lifetime Value (total money one customer brings over the whole relationship) compared to Customer Acquisition Cost (what you spent to win them). B2B education tends to run around **8 to 10×** there, while B2C is around **5 to 7×**, because long institutional contracts are worth more per signup. Many winners blend models - Coursera leaned harder on universities and employers as solo-learner numbers fell after the pandemic.
 
 ## Bring your own content
 
 Here is a feature that quietly does double duty as both a trust-builder and a way into institutions.
 
-Instead of only teaching *your* curriculum, you let learners or schools upload their **own** material — lecture slides, notes, a textbook — and the tutor teaches strictly from that.
+Instead of only teaching *your* curriculum, you let learners or schools upload their **own** material - lecture slides, notes, a textbook - and the tutor teaches strictly from that.
 
 The technique behind it is **Retrieval-Augmented Generation (RAG)**: the AI answers from the uploaded sources rather than its fuzzy memory. That sharply cuts made-up answers and lets it show **citations** pointing to the exact page.
 
@@ -108,7 +108,7 @@ This wins for two reasons:
 - **Trust.** A nervous student can verify every claim against the source instead of hoping the AI got it right.
 - **Instant relevance.** Nobody waits months for you to build content for their specific course. They upload it and start.
 
-And it *complements* your own material rather than replacing it. Your expert-verified curriculum is the backbone; the upload feature handles the long tail of "the exact thing my professor assigned." A well-known example of this pattern is Google's NotebookLM — upload your sources, then chat, quiz, and make flashcards grounded in them with citations.
+And it *complements* your own material rather than replacing it. Your expert-verified curriculum is the backbone; the upload feature handles the long tail of "the exact thing my professor assigned." A well-known example of this pattern is Google's NotebookLM - upload your sources, then chat, quiz, and make flashcards grounded in them with citations.
 
 There is a strategic bonus, too. A university can run your tutor over its own private course packs without you ever licensing third-party books. That is a doorway the giant general-purpose players tend to under-serve.
 
@@ -116,14 +116,14 @@ There is a strategic bonus, too. A university can run your tutor over its own pr
 
 To move from a thin wrapper to a "thick" product, you stack advantages that **grow stronger the more the product is used**. That last part is the whole trick. A moat that compounds cannot be copied by a newcomer, because they are starting from zero *today*.
 
-### 1. The learner model — the strongest one
+### 1. The learner model - the strongest one
 
 Over months you build a private map of exactly what each student knows, has forgotten, and should see next. It comes from two ideas working together:
 
-- **Knowledge tracing** — continuously estimating how well someone has mastered each skill.
-- **Spaced repetition** — resurfacing each item just before the learner is about to forget it.
+- **Knowledge tracing** - continuously estimating how well someone has mastered each skill.
+- **Spaced repetition** - resurfacing each item just before the learner is about to forget it.
 
-A rival starting fresh literally cannot reproduce a returning user's years of history. The model vendor has the foundation model — it does **not** have *your* student's long-term mastery record. That record is yours, and it only gets richer.
+A rival starting fresh literally cannot reproduce a returning user's years of history. The model vendor has the foundation model - it does **not** have *your* student's long-term mastery record. That record is yours, and it only gets richer.
 
 ### 2. The data and feedback moat
 
@@ -131,11 +131,11 @@ Every answer, mistake, and reaction to a hint quietly improves your scheduling a
 
 ### 3. The content moat
 
-Curated, expert-verified material mapped to the real exam blueprint or curriculum, with citations. Hard to copy *at quality* — though, as we'll see, the content alone is not enough.
+Curated, expert-verified material mapped to the real exam blueprint or curriculum, with citations. Hard to copy *at quality* - though, as we'll see, the content alone is not enough.
 
-### 4. Workflow lock-in — becoming the "system of record"
+### 4. Workflow lock-in - becoming the "system of record"
 
-When the learning genuinely *lives* in your product — progress, schedules, cohorts, teacher dashboards, links into the school's other systems — leaving means throwing away years of history and retraining everyone. That switching pain is operational, not just a line in a contract.
+When the learning genuinely *lives* in your product - progress, schedules, cohorts, teacher dashboards, links into the school's other systems - leaving means throwing away years of history and retraining everyone. That switching pain is operational, not just a line in a contract.
 
 Think of **Duolingo**. It uses a powerful general model under the hood, so the raw model is not its edge. Its moat is the streaks, the per-user difficulty model, and the years of spaced-repetition history that make quitting feel like setting fire to your own progress. The castle isn't the bricks (the model). It's the moat of accumulated personal data around it.
 
@@ -149,11 +149,11 @@ A **niche-first** product picks one domain and builds the whole experience aroun
 
 Choose a niche where:
 
-1. The outcome is **measurable and high-stakes** — a test score, a certification, fluency.
+1. The outcome is **measurable and high-stakes** - a test score, a certification, fluency.
 2. Learners **already pay** for help today.
 3. Generic chatbots do the job **badly**.
 
-The retention difference is real: vertical, focused software keeps customers far better (around **91 to 96%**) than broad horizontal tools (around **78 to 85%**). The proof shows in winners like ELSA Speak (pronunciation only) and Photomath (solving math from a photo) — each the best in the world at one job, not a worse version of a general chatbot.
+The retention difference is real: vertical, focused software keeps customers far better (around **91 to 96%**) than broad horizontal tools (around **78 to 85%**). The proof shows in winners like ELSA Speak (pronunciation only) and Photomath (solving math from a photo) - each the best in the world at one job, not a worse version of a general chatbot.
 
 ## Common misconceptions
 
@@ -174,14 +174,14 @@ Reality: a broader product usually means thinner differentiation and worse reten
 If you're building (or rescuing) an AI learning product, work through these in order:
 
 1. **Audit your moat honestly.** If a competitor could rebuild your product in a weekend with API access, you are a thin wrapper. Find the layer that gets stronger with every session.
-2. **Pick the business model from the math.** Estimate LTV:CAC for B2C, B2B, and B2B2C in your space. Let the unit economics — not your gut — pick the product surface you build first (parent view vs. teacher dashboard vs. admin console).
+2. **Pick the business model from the math.** Estimate LTV:CAC for B2C, B2B, and B2B2C in your space. Let the unit economics - not your gut - pick the product surface you build first (parent view vs. teacher dashboard vs. admin console).
 3. **Start the learner model on day one.** Even crude knowledge tracing and spaced repetition begin accumulating history that a future rival can never backfill.
 4. **Add "bring your own content" with citations.** Use retrieval so answers stay grounded and verifiable. It builds trust and becomes a wedge into institutions.
 5. **Choose one measurable, high-stakes niche.** Outcome must be countable, learners must already pay, and general chatbots must currently do it badly.
-6. **Prove the outcome and publish it.** In a high-stakes niche, your strongest marketing and your strongest retention driver are the same thing: results. Khanmigo, Khan Academy's Socratic tutor, grew from 40,000 to 700,000 users across 380+ school districts in a single year — not on a better raw model, but by embedding into school workflows and showing pilot gains of roughly 1.4 grade levels in math. Generic chatbots cannot casually claim numbers like that.
+6. **Prove the outcome and publish it.** In a high-stakes niche, your strongest marketing and your strongest retention driver are the same thing: results. Khanmigo, Khan Academy's Socratic tutor, grew from 40,000 to 700,000 users across 380+ school districts in a single year - not on a better raw model, but by embedding into school workflows and showing pilot gains of roughly 1.4 grade levels in math. Generic chatbots cannot casually claim numbers like that.
 
 ## Conclusion
 
 The single takeaway: **the model is rented, but the moat is yours to build.** Anyone can call the same API; nobody else can hold your returning student's three years of mastery history, your accumulated feedback loop, or your proven score lift. Those compound. They are the castle wall that gets taller every time someone uses the product.
 
-Which raises the next question worth chewing on. If your real asset is a private, ever-growing map of how each person learns — what each one knows, forgets, and needs next — then how do you build and protect that map responsibly, without crossing the line into surveillance your users would resent? The moat and the trust it depends on turn out to be the same wall, viewed from two sides.
+Which raises the next question worth chewing on. If your real asset is a private, ever-growing map of how each person learns - what each one knows, forgets, and needs next - then how do you build and protect that map responsibly, without crossing the line into surveillance your users would resent? The moat and the trust it depends on turn out to be the same wall, viewed from two sides.

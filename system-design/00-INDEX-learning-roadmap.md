@@ -1,7 +1,7 @@
-# System Design — Complete Learning Curriculum
+# System Design - Complete Learning Curriculum
 
 This is a **self-study course**, not a stack of cheat-sheets. The goal is to take an
-experienced web developer — someone comfortable shipping a CRUD app against one database —
+experienced web developer - someone comfortable shipping a CRUD app against one database -
 all the way to **staff-level reasoning about distributed systems**: why linearizability is
 expensive, why every cross-service "transaction" is a lie you have to engineer around, why
 the speed of light shows up in your p99, and how to make defensible trade-offs under
@@ -18,21 +18,21 @@ They are meant to be *read in order and worked through*, not skimmed.
 ## How to use this curriculum
 
 - **Read in tier order.** Later modules assume the vocabulary of earlier ones. The
-  Distributed Systems Core (Tier 3) is the hard, load-bearing middle — don't skip to the
+  Distributed Systems Core (Tier 3) is the hard, load-bearing middle - don't skip to the
   interview module before it.
 - **Do every Test-Yourself question before moving on.** If you can't answer in your own
-  words, re-read — recognition is not understanding.
+  words, re-read - recognition is not understanding.
 - **Build small versions.** A toy consistent-hash ring (300 lines), a token-bucket limiter
   in Redis, a tiny event-sourced ledger that rebuilds state by folding events. You learn
   replication lag by *causing* it, not by reading about it.
 - **Read the cited papers.** The summaries here compress 30-page papers into paragraphs.
-  Read Dynamo, Raft, and the Spanner paper in full at least once — they're more readable
+  Read Dynamo, Raft, and the Spanner paper in full at least once - they're more readable
   than their reputation.
 - **Re-read after a real incident.** The modules land much harder once you've watched a
   retry storm take down your own service.
 
 Budget roughly **one focused evening per module** for the fundamentals, **two** for the
-Tier 3 distributed-systems modules. The whole curriculum is a multi-week effort — that's
+Tier 3 distributed-systems modules. The whole curriculum is a multi-week effort - that's
 expected.
 
 ---
@@ -42,19 +42,19 @@ expected.
 The 20 modules group into five tiers. Within a tier, modules listed as "parallel-OK" can be
 read in any order; across tiers, finish the earlier tier first.
 
-### Tier 1 — Fundamentals *(everyone, first)*
+### Tier 1 - Fundamentals *(everyone, first)*
 `01 → 02 → 03 → 06`
 Estimation, networking, API design, and caching. This is the shared vocabulary and the
 mental math (latency numbers, QPS, bytes) the whole rest of the course leans on. Module 01
 is the absolute starting point.
 
-### Tier 2 — Data & State
+### Tier 2 - Data & State
 `04 → 05 → 07 → 08`
 How a single database actually works (storage engines, indexes, transactions), how to model
 data across SQL/NoSQL, then how to scale the serving tier (load balancing, stateless design)
 and the data tier (replication, partitioning). **08 is the bridge into distributed systems.**
 
-### Tier 3 — Distributed Systems Core *(the advanced heart)*
+### Tier 3 - Distributed Systems Core *(the advanced heart)*
 `09 → 10 → 11 → 12 → 13 → 14 → 15`
 The conceptual center of gravity. CAP/PACELC and consistency models (09) and consensus (10)
 are prerequisites for almost everything after. Distributed transactions/sagas (11), messaging
@@ -62,15 +62,15 @@ are prerequisites for almost everything after. Distributed transactions/sagas (1
 Probabilistic structures (15) is more standalone and can be read in parallel with the others
 once you have 09.
 
-### Tier 4 — Architecture & Operating at Scale
+### Tier 4 - Architecture & Operating at Scale
 `16 → 17 → 18 → 19`
-Resiliency/rate-limiting (16) and observability/SRE (17) — parallel-OK with each other.
+Resiliency/rate-limiting (16) and observability/SRE (17) - parallel-OK with each other.
 Then architecture patterns (18, monolith→microservices→cells) and specialized stores (19,
 search/geo/time-series/OLAP), which assume Tiers 2 and 3.
 
-### Tier 5 — Applied / Interview
+### Tier 5 - Applied / Interview
 `20`
-The 7-step interview framework + ten worked case studies. Read it **last** — it's where every
+The 7-step interview framework + ten worked case studies. Read it **last** - it's where every
 prior concept gets exercised under a time budget. (You *can* skim it first to see where the
 course is going, then return to it for real.)
 
@@ -144,7 +144,7 @@ course is going, then return to it for real.)
 These big ideas recur across nearly every module. If you internalize only ten things, make
 it these:
 
-1. **There is no free lunch — every choice is a trade-off.** Latency vs consistency, space
+1. **There is no free lunch - every choice is a trade-off.** Latency vs consistency, space
    vs accuracy, throughput vs durability. "Best" is meaningless without a workload.
 2. **You can't beat the speed of light.** Cross-region round trips cost tens of
    milliseconds no matter how fast your code is. Geography sets the floor on your p99.
@@ -152,7 +152,7 @@ it these:
    broken. Design for partial failure, not for the happy path.
 4. **State is the enemy of scaling.** Stateless services scale trivially; the hard problems
    all live where state must be shared, replicated, or agreed upon.
-5. **Consistency, availability, and partitions force a choice** (CAP/PACELC) — and even
+5. **Consistency, availability, and partitions force a choice** (CAP/PACELC) - and even
    without a partition you still trade latency against consistency on every request.
 6. **Coordination is expensive; avoid it when you can.** Consensus, distributed locks, and
    linearizable reads cost round trips. The cheapest distributed system is one that needs
@@ -162,12 +162,12 @@ it these:
 8. **Idempotency is the antidote to "exactly-once."** True exactly-once delivery doesn't
    exist across a network; at-least-once + idempotent handlers is how production gets it.
 9. **Indexes (and data layouts) are shaped like queries.** The right store/index is the one
-   whose structure mirrors your read pattern — that's why polyglot persistence exists.
+   whose structure mirrors your read pattern - that's why polyglot persistence exists.
 10. **Bound everything: timeouts, retries, queues, blast radius.** Unbounded anything
     becomes a cascading or metastable failure. Backpressure and isolation keep failures
     local.
 11. **Eventual consistency is a UX problem as much as a data problem.** Read-your-writes and
-    monotonic reads are often what users actually need — not full linearizability.
+    monotonic reads are often what users actually need - not full linearizability.
 12. **Don't over-engineer.** A modular monolith on one Postgres handles more than most teams
     ever reach. Distribute only when a concrete forcing function demands it.
 
@@ -178,26 +178,26 @@ it these:
 The course stands on these. Read the book; read the papers at least once each.
 
 **Books**
-- **Designing Data-Intensive Applications** (Kleppmann) — *the* companion to Tiers 2–3. If
+- **Designing Data-Intensive Applications** (Kleppmann) - *the* companion to Tiers 2–3. If
   you read one book, read DDIA.
-- **Google SRE Book** (+ *The SRE Workbook*) — backs Module 17; SLOs, error budgets, on-call.
-- **The System Design Primer** (GitHub, donnemartin) — breadth review + interview drilling.
+- **Google SRE Book** (+ *The SRE Workbook*) - backs Module 17; SLOs, error budgets, on-call.
+- **The System Design Primer** (GitHub, donnemartin) - breadth review + interview drilling.
 
 **Foundational papers**
-- **Dynamo** (Amazon, 2007) — leaderless replication, quorums, consistent hashing, vector
+- **Dynamo** (Amazon, 2007) - leaderless replication, quorums, consistent hashing, vector
   clocks (Modules 08, 09, 15).
-- **Spanner / TrueTime** (Google, 2012) — external consistency via bounded-uncertainty clocks
+- **Spanner / TrueTime** (Google, 2012) - external consistency via bounded-uncertainty clocks
   (Modules 09, 10).
-- **Raft — In Search of an Understandable Consensus Algorithm** (Ongaro & Ousterhout, 2014)
+- **Raft - In Search of an Understandable Consensus Algorithm** (Ongaro & Ousterhout, 2014)
   (Module 10).
-- **MapReduce** (Google, 2004) and the **Kafka** paper (LinkedIn, 2011) — batch + the log
+- **MapReduce** (Google, 2004) and the **Kafka** paper (LinkedIn, 2011) - batch + the log
   (Modules 12, 14).
-- **Bigtable** (Google, 2006) — wide-column/LSM design (Modules 04, 05).
+- **Bigtable** (Google, 2006) - wide-column/LSM design (Modules 04, 05).
 - *Also worth it:* the **Paxos Made Simple** note, the **CAP** retrospective (Brewer, 2012),
   the **FLP impossibility** result, and the **HyperLogLog** paper.
 
 **Courses**
-- **MIT 6.824 Distributed Systems** — lectures + labs (build Raft yourself). The single best
+- **MIT 6.824 Distributed Systems** - lectures + labs (build Raft yourself). The single best
   practical complement to Tier 3.
 
 ---
@@ -206,13 +206,13 @@ The course stands on these. Read the book; read the papers at least once each.
 
 You've internalized the curriculum when you can honestly check these off:
 
-- [ ] I can **size a system for 10M users** — estimate QPS, storage, and bandwidth on a
+- [ ] I can **size a system for 10M users** - estimate QPS, storage, and bandwidth on a
       napkin and know the key latency numbers from memory. *(01)*
 - [ ] I can explain **why linearizability is expensive** and when eventual/causal/session
       consistency is the right call instead. *(09)*
 - [ ] I can **design a rate limiter that works across N servers** without a single hot
       counter, and reason about its accuracy/memory trade-off. *(16)*
-- [ ] I can describe **how a write becomes durable** — WAL, replication, quorum — and what
+- [ ] I can describe **how a write becomes durable** - WAL, replication, quorum - and what
       data you lose in each failover mode. *(04, 08)*
 - [ ] I can explain **why you can't have a distributed transaction** across two services and
       design a saga with compensations + idempotency keys instead. *(11)*

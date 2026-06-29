@@ -180,7 +180,7 @@ Two investors can earn the *exact same gain* and keep very different amounts, pu
 | Asset | Short-term tax | Long-term tax |
 |---|---|---|
 | Equity / equity MF | 20% (held ≤12 months) | 12.5% on gains over ₹1.25 lakh/yr |
-| Debt MF (bought on/after 1 Apr 2023) | Slab rate | Slab rate — **no long-term benefit** |
+| Debt MF (bought on/after 1 Apr 2023) | Slab rate | Slab rate - **no long-term benefit** |
 | Gold ETF / gold MF | Slab rate | 12.5% (held >12 months) |
 | Physical gold | Slab rate | 12.5% (held >24 months) |
 | SGB (held to maturity) | Capital gain **fully tax-exempt**; 2.5% interest taxed at slab | |

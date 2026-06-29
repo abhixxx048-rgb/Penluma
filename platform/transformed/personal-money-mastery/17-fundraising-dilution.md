@@ -98,7 +98,7 @@ You'll hear people say "SAFEs aren't dilutive." That's flatly false. A SAFE is *
 
 If you're raising in India, three instruments do almost all the work. Getting these wrong creates legal headaches that can stall a round for months.
 
-### CCPS — the workhorse
+### CCPS - the workhorse
 
 **Compulsorily Convertible Preference Shares** are the default Indian VC instrument. They're preference shares that *must* convert to equity later.
 
@@ -106,11 +106,11 @@ If you're raising in India, three instruments do almost all the work. Getting th
 - Treated as **equity** under FEMA for foreign investment purposes.
 - They carry a liquidation preference and anti-dilution rights (we'll cover liquidation preference shortly).
 
-### CCDs — the debt-flavored cousin
+### CCDs - the debt-flavored cousin
 
 **Compulsorily Convertible Debentures** look like debt but *must* convert to equity. Like CCPS, they're treated as equity under FEMA for foreign direct investment.
 
-### Convertible Note — the closest thing to a SAFE
+### Convertible Note - the closest thing to a SAFE
 
 This is the Indian legal version of a convertible, and it comes with strict conditions:
 

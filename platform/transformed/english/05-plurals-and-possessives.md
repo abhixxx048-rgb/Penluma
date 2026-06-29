@@ -104,10 +104,10 @@ A handful of words ignore the `-s` pattern completely. These are worth memorizin
 
 When something **belongs to** one thing, add `'s`.
 
-- `the server's logs` — the logs belonging to the server
-- `the bug's root cause` — the cause belonging to the bug
-- `Redis's config` — the config belonging to Redis
-- `the team's decision` — the decision belonging to the team
+- `the server's logs` - the logs belonging to the server
+- `the bug's root cause` - the cause belonging to the bug
+- `Redis's config` - the config belonging to Redis
+- `the team's decision` - the decision belonging to the team
 
 So `the team decision was to revert` becomes `the team's decision was to revert`. The decision belongs to the team, so it earns an apostrophe.
 
@@ -115,9 +115,9 @@ So `the team decision was to revert` becomes `the team's decision was to revert`
 
 This is the one people forget. When the owners are already plural and end in `-s`, you don't add another `s`. You just add the apostrophe at the end.
 
-- `the developers' commits` — commits of many developers
-- `the users' sessions` — sessions of many users
-- `the workers' retry logic` — retry logic shared by all the workers
+- `the developers' commits` - commits of many developers
+- `the users' sessions` - sessions of many users
+- `the workers' retry logic` - retry logic shared by all the workers
 
 So `the developers commits are messy` becomes `the developers' commits are messy`. Add the `-s` to make "developers" plural first, then drop an apostrophe on the end.
 
@@ -166,7 +166,7 @@ A few real-world spots where this pays off:
 - **Commit messages:** `Fix the API's rate limiter` only if you mean one API. For a plain count, prefer `Update 4 endpoints` and skip the ambiguity.
 - **PR titles:** `Refactor the worker's retry logic` (one worker) versus `Standardize the workers' retry logic` (all of them). Never write `worker's` when you just mean several workers.
 - **Standups:** "All the tests are green," not "test's." "It's deployed" (it is) versus "its config changed" (the config belonging to it).
-- **Code comments:** `// the cache stores its own TTL` — possessive, no apostrophe. A wrong `it's` here outlives the feature.
+- **Code comments:** `// the cache stores its own TTL` - possessive, no apostrophe. A wrong `it's` here outlives the feature.
 
 ## Practice drills
 
@@ -186,15 +186,15 @@ Fix the sentence, fill the blank, or choose A or B. Answers below, no peeking.
 ### Answer key
 
 1. **I merged 5 PRs and closed 3 tickets today.** Capital **I**; plain plurals take no apostrophe.
-2. **B — it's.** "It is missing a dependency" expands cleanly.
-3. **A — its.** The response belongs to it, so possessive `its`, no apostrophe.
+2. **B - it's.** "It is missing a dependency" expands cleanly.
+3. **A - its.** The response belongs to it, so possessive `its`, no apostrophe.
 4. **microservices.** Plural of a regular noun, just add `-s`.
 5. **The developers' commits broke the pipeline.** Several developers means plural possessive, apostrophe *after* the `-s`.
 6. **I fixed so many typos in the docs.** Typos are countable, so **many** plus plural `-s`; capital **I**.
-7. **A — its.** The ordering belongs to the queue.
+7. **A - its.** The ordering belongs to the queue.
 8. **legacy APIs.** Acronym plural, just `-s`, never `API's`.
 9. **The server's logs are full of 500s.** Logs belong to the server (`server's`); `logs` is plural so use **are**; plural of a number (`500s`) has no apostrophe.
-10. **B — It's.** "It has been flaky" expands; and `2020s` takes no apostrophe.
+10. **B - It's.** "It has been flaky" expands; and `2020s` takes no apostrophe.
 
 ## Conclusion
 

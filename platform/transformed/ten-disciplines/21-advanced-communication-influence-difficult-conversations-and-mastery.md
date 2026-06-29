@@ -85,7 +85,7 @@ Over two thousand years ago, Aristotle noticed that persuasion runs on three eng
 
 Think of a three-legged stool. A stool missing one leg does not "mostly work." It falls over. Yet most people build a one-legged stool out of pure logos, pile on the facts, and then wonder why nobody moved.
 
-Here is the uncomfortable truth: people decide emotionally and then justify the decision with logic. A fact-only argument fails because it answers a question the listener has not yet agreed to ask. So the expert sequence is usually: **establish credibility, connect to what the person cares about, then back it with evidence** — woven together, not listed.
+Here is the uncomfortable truth: people decide emotionally and then justify the decision with logic. A fact-only argument fails because it answers a question the listener has not yet agreed to ask. So the expert sequence is usually: **establish credibility, connect to what the person cares about, then back it with evidence** - woven together, not listed.
 
 ### One example, three different results
 
@@ -165,7 +165,7 @@ Carl Rogers, who pioneered **active listening**, defined it as fully concentrati
 
 Most people "listen" the way a tennis player watches their own racket instead of the ball. They are loading their reply while the other person is still mid-sentence. A real listener keeps their eye on the ball: the speaker's actual meaning.
 
-The single most powerful move is **paraphrasing** — restating what you heard in your own words before you respond:
+The single most powerful move is **paraphrasing** - restating what you heard in your own words before you respond:
 
 > "So what I'm hearing is that the deadline isn't the real issue. It's that you weren't consulted. Did I get that right?"
 
@@ -188,7 +188,7 @@ The second version is fixable. The first is just an insult.
 - **Obnoxious aggression:** you challenge but don't care. Honest but cruel.
 - **Manipulative insincerity:** neither. Flattery and backstabbing.
 
-And please, kill the **feedback sandwich** — burying criticism between two slices of praise. It dilutes the message, because people only hear the praise. Worse, it trains people to dread your compliments, because they learn a "but" is always coming. Good feedback is a GPS recalculation: calm, specific, forward-looking. "In 300 feet, turn right." Bad feedback is the passenger yelling "you're a terrible driver," which is true or not but changes nothing about the next turn.
+And please, kill the **feedback sandwich** - burying criticism between two slices of praise. It dilutes the message, because people only hear the praise. Worse, it trains people to dread your compliments, because they learn a "but" is always coming. Good feedback is a GPS recalculation: calm, specific, forward-looking. "In 300 feet, turn right." Bad feedback is the passenger yelling "you're a terrible driver," which is true or not but changes nothing about the next turn.
 
 ## Difficult conversations: staying in the room
 
@@ -204,9 +204,9 @@ Here is the core insight: **people leave a conversation when they no longer feel
 
 Researchers at the Harvard Negotiation Project found that every difficult conversation is really three stacked together:
 
-1. **What happened** — the facts and the blame. The trap is assuming you already know the other person's intentions.
-2. **Feelings** — the emotions nobody is naming but everyone is feeling.
-3. **Identity** — the quiet inner question: "Does this mean I'm incompetent, or a bad person?" This is why feedback stings far past its actual content.
+1. **What happened** - the facts and the blame. The trap is assuming you already know the other person's intentions.
+2. **Feelings** - the emotions nobody is naming but everyone is feeling.
+3. **Identity** - the quiet inner question: "Does this mean I'm incompetent, or a bad person?" This is why feedback stings far past its actual content.
 
 Most arguments stay stuck on layer one, because the real fight is on layers two and three.
 
@@ -248,7 +248,7 @@ Before your next hard conversation or important pitch, run this checklist:
 2. **Lead with the answer.** Open with your ask and its benefit, then add support. "I'm asking for two weeks to fix our test suite; it'll cut release delays roughly in half."
 3. **Reframe to what they care about.** Translate your goal into their world. "Clean code" becomes "fewer late-night emergencies."
 4. **Bring one story and one fact.** A concrete tale plus a single clear number beats a wall of data.
-5. **Write the bare facts a camera would catch** — separate from your judgments about them.
+5. **Write the bare facts a camera would catch** - separate from your judgments about them.
 6. **List what you might be wrong about.** This alone keeps you humble and out of "violence."
 7. **Open with shared purpose, then state facts, then ask before you accuse.** Make it safe first. Deliver content second.
 8. **Paraphrase when they push back.** Surface the real interest under the stated position.

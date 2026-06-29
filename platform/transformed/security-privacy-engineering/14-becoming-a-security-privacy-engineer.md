@@ -50,14 +50,14 @@ The wild part is that the barrier to start has never been lower, and the need ha
 
 Most tech careers are tied to a tool or a framework. Learn the hot thing, ride it for a few years, then scramble when it fades. Security is different, and the difference is permanent.
 
-Security has an **adversary** — a real human attacker who never quits, gets paid to find new ways in, and treats every new technology you adopt as a fresh opportunity. Every new feature, cloud service, or AI model is more **attack surface**: more places someone can try to break in.
+Security has an **adversary** - a real human attacker who never quits, gets paid to find new ways in, and treats every new technology you adopt as a fresh opportunity. Every new feature, cloud service, or AI model is more **attack surface**: more places someone can try to break in.
 
 As long as software exists and has value, someone will attack it, and someone must defend it. That makes the demand structurally permanent in a way almost no other job is.
 
 The 2025-2026 numbers tell the story:
 
 - The global average data breach now costs about **$4.44 million** (IBM, *Cost of a Data Breach 2025*). In the US, the average hit a record **$10.22 million**.
-- Employees quietly using unapproved AI tools — "shadow AI" — added roughly **$670,000** to the average breach.
+- Employees quietly using unapproved AI tools - "shadow AI" - added roughly **$670,000** to the average breach.
 - The workforce gap sits near **4.8 million roles**, up 19% year over year.
 
 But here is the honest, important shift: in 2025, *budget* overtook talent scarcity as the top staffing constraint. ISC2 now calls this a **skills gap, not a headcount gap**. Generic "bodies" are oversupplied. Demonstrable skill is scarce.
@@ -69,19 +69,19 @@ That single fact is your strategy. The way in is proof-of-work, not just a diplo
 "Security engineer" is a category, not a role. Most people who thrive specialise. Here are the main tracks and who each one fits.
 
 ### AppSec engineer
-You secure software and code: review designs, run scanners, threat-model features, and fix the classic web vulnerabilities. **Best fit if you are a developer** — this is the closest track to coding.
+You secure software and code: review designs, run scanners, threat-model features, and fix the classic web vulnerabilities. **Best fit if you are a developer** - this is the closest track to coding.
 
 ### Security engineer (infrastructure / generalist)
 You build and harden defensive plumbing: identity, network controls, Zero Trust, secrets management, logging. **Best fit if you like building systems.**
 
 ### Cloud security engineer
-You wrangle AWS, Azure, and GCP: misconfigurations, identity and access management, container and Kubernetes security. **Best fit if you want the fastest-growing track** — a large share of employers pay a premium for it.
+You wrangle AWS, Azure, and GCP: misconfigurations, identity and access management, container and Kubernetes security. **Best fit if you want the fastest-growing track** - a large share of employers pay a premium for it.
 
 ### Detection & Response / SOC (Blue Team)
 You build detections, investigate alerts, run incident response, and hunt for threats. **Best fit if you like puzzles and staying calm under pressure.** The SOC analyst role is the most common entry door in the whole field.
 
 ### Penetration tester / Red Team (Offensive)
-You simulate attackers, find exploitable holes, and write reports. **Best fit if you love breaking things** — and explaining exactly how you did it.
+You simulate attackers, find exploitable holes, and write reports. **Best fit if you love breaking things** - and explaining exactly how you did it.
 
 ### Security architect
 You design secure systems end to end and set standards. This is a senior role. **Best fit once you have years of breadth.**
@@ -103,23 +103,23 @@ Tools rot. Principles compound. The engineers who thrive for decades invest in a
 
 Five things never go out of style.
 
-**1. Fundamentals.** How networks actually work (TCP/IP, DNS, TLS, HTTP), how operating systems behave (especially Linux), and how authentication, authorization, and sessions really function. Plus crypto *basics* — meaning what to use, and the iron rule: never roll your own crypto.
+**1. Fundamentals.** How networks actually work (TCP/IP, DNS, TLS, HTTP), how operating systems behave (especially Linux), and how authentication, authorization, and sessions really function. Plus crypto *basics* - meaning what to use, and the iron rule: never roll your own crypto.
 
-**2. Threat modeling.** This is the single most transferable skill in security: systematically asking "what can go wrong?" Adam Shostack's four questions capture it perfectly — *What are we building? What can go wrong? What are we going to do about it? Did we do a good job?* A flaw caught at design time costs roughly **100x less** than the same flaw in production. That is the entire payoff of "shift-left."
+**2. Threat modeling.** This is the single most transferable skill in security: systematically asking "what can go wrong?" Adam Shostack's four questions capture it perfectly - *What are we building? What can go wrong? What are we going to do about it? Did we do a good job?* A flaw caught at design time costs roughly **100x less** than the same flaw in production. That is the entire payoff of "shift-left."
 
 **3. Adversarial thinking.** Assume breach. Think like an attacker. Distrust all input.
 
 **4. Communication.** Security is mostly a people job. Writing a finding that a busy developer or a non-technical executive will actually act on matters more than the exploit itself. Translating risk into business language is the skill that gets things fixed.
 
-**5. Risk prioritisation.** You can never fix everything, so you rank by likelihood times impact. Know the frameworks by name — OWASP, NIST CSF, MITRE ATT&CK, and MITRE ATLAS (the attacker playbook for AI systems).
+**5. Risk prioritisation.** You can never fix everything, so you rank by likelihood times impact. Know the frameworks by name - OWASP, NIST CSF, MITRE ATT&CK, and MITRE ATLAS (the attacker playbook for AI systems).
 
 ## A few facts worth knowing right now
 
 You do not need to memorise frozen lists. You need to track the trends. Here is what is moving in 2025-2026.
 
-- **OWASP Top 10:2025.** Built on 175,000+ real vulnerabilities. **Broken Access Control** stays #1. **Security Misconfiguration** jumped from #5 to #2 — every tested app had some misconfiguration. Two brand-new categories appeared: **Software Supply Chain Failures** and **Mishandling of Exceptional Conditions**. The lesson is the trend: supply chain, misconfiguration, and access control now dominate.
+- **OWASP Top 10:2025.** Built on 175,000+ real vulnerabilities. **Broken Access Control** stays #1. **Security Misconfiguration** jumped from #5 to #2 - every tested app had some misconfiguration. Two brand-new categories appeared: **Software Supply Chain Failures** and **Mishandling of Exceptional Conditions**. The lesson is the trend: supply chain, misconfiguration, and access control now dominate.
 - **OWASP Top 10 for LLMs.** **Prompt Injection** is the #1 AI risk, with attack success rates of 50-84%, and *no complete fix exists* even for frontier models.
-- **NIST CSF 2.0.** Added a sixth function, **Govern**, at the centre of the wheel — a signal that leadership and accountability now sit at the core of security, not the edge.
+- **NIST CSF 2.0.** Added a sixth function, **Govern**, at the centre of the wheel - a signal that leadership and accountability now sit at the core of security, not the edge.
 - **EU AI Act.** Now phasing in real obligations, which is creating genuine privacy and AI-governance hiring across Europe and beyond.
 
 ## Real incidents that teach the lesson
@@ -130,7 +130,7 @@ Abstract advice fades. Stories stick. Three recent breaches teach more than any 
 
 **The human cost (Change Healthcare, 2024).** Ransomware hit the health records of more than 190 million people, a $22 million ransom was paid, and US healthcare billing froze. It is a stark reminder that third-party risk has a human cost far beyond dollars.
 
-**Identity beats exploits (Snowflake, 2024).** Attackers used credentials stolen by malware to log into customer cloud data warehouses that lacked multi-factor authentication. This was not a clever hack — it was an identity-hygiene failure. The lesson is one you will repeat your whole career: **MFA and basic identity discipline defeat most attacks more reliably than any exotic exploit.**
+**Identity beats exploits (Snowflake, 2024).** Attackers used credentials stolen by malware to log into customer cloud data warehouses that lacked multi-factor authentication. This was not a clever hack - it was an identity-hygiene failure. The lesson is one you will repeat your whole career: **MFA and basic identity discipline defeat most attacks more reliably than any exotic exploit.**
 
 ## Common misconceptions
 
@@ -142,7 +142,7 @@ Abstract advice fades. Stories stick. Three recent breaches teach more than any 
 
 **"You have to stay a generalist to keep your options open."** The opposite is true. Specialising into one track and going deep is what makes you hireable.
 
-**"AI tools can do the analysis for me."** AI is a force-multiplier for drafting, triage, and review — but treating its output as an oracle instead of verifying it is how mistakes ship. Human judgment is the part that does not get automated away.
+**"AI tools can do the analysis for me."** AI is a force-multiplier for drafting, triage, and review - but treating its output as an oracle instead of verifying it is how mistakes ship. Human judgment is the part that does not get automated away.
 
 ## How to learn and practise (doing beats watching)
 
@@ -151,7 +151,7 @@ Watching tutorial videos feels productive. It is not, on its own. You learn secu
 Here is a sensible order to climb the ladder:
 
 1. **Linux and fundamentals.** Work through **OverTheWire Bandit** for Linux command-line basics. Learn TCP/IP, DNS, HTTP, and TLS well enough to explain them to a friend.
-2. **Web hacking.** Do the **PortSwigger Web Security Academy** end to end — it is free and uses the same Burp Suite tooling professionals use. Add **TryHackMe** beginner rooms alongside it.
+2. **Web hacking.** Do the **PortSwigger Web Security Academy** end to end - it is free and uses the same Burp Suite tooling professionals use. Add **TryHackMe** beginner rooms alongside it.
 3. **Real targets.** Move to **HackTheBox** machines and beginner CTF (capture-the-flag) challenges like **picoCTF**.
 4. **Bug bounties.** Open an account on **HackerOne** or **Bugcrowd**. Real targets, real money, and a real portfolio.
 
@@ -163,10 +163,10 @@ And here is the multiplier: **document everything in public.** Write-ups, a GitH
 
 You do not need to read more guides. You need to start. Here is a concrete plan you can begin tomorrow.
 
-1. **Days 1-30 — Fundamentals.** Linux via OverTheWire Bandit. Networking (TCP/IP, DNS, HTTP, TLS). How auth and sessions work. Read the OWASP Top 10:2025. Start studying for CompTIA Security+ if you want a first cert.
-2. **Days 31-60 — Web and offence.** Complete the PortSwigger Web Security Academy with Burp Suite. Do TryHackMe beginner paths. Knock out 5-10 CTF challenges. Learn threat modeling and threat-model a real app you use.
-3. **Days 61-90 — Specialise and prove it.** Pick one track (AppSec, cloud, blue team, privacy, or AI security). Go deeper with HTB machines, a cloud free-tier lab, or AI security labs. Open a bug-bounty account. Publish 2-3 write-ups. Sit your first cert if you are ready.
-4. **After 90 days.** Ship one lab plus one write-up every month. Join a community (a local DEF CON group, security Discords). Apply to entry roles — SOC analyst, junior AppSec, GRC analyst — with your portfolio as the evidence.
+1. **Days 1-30 - Fundamentals.** Linux via OverTheWire Bandit. Networking (TCP/IP, DNS, HTTP, TLS). How auth and sessions work. Read the OWASP Top 10:2025. Start studying for CompTIA Security+ if you want a first cert.
+2. **Days 31-60 - Web and offence.** Complete the PortSwigger Web Security Academy with Burp Suite. Do TryHackMe beginner paths. Knock out 5-10 CTF challenges. Learn threat modeling and threat-model a real app you use.
+3. **Days 61-90 - Specialise and prove it.** Pick one track (AppSec, cloud, blue team, privacy, or AI security). Go deeper with HTB machines, a cloud free-tier lab, or AI security labs. Open a bug-bounty account. Publish 2-3 write-ups. Sit your first cert if you are ready.
+4. **After 90 days.** Ship one lab plus one write-up every month. Join a community (a local DEF CON group, security Discords). Apply to entry roles - SOC analyst, junior AppSec, GRC analyst - with your portfolio as the evidence.
 
 A note on certs, since people obsess over them: get **Security+** first (or skip it if you already have skills), then specialise. **OSCP** for offence (the hands-on gold standard for pentesting). A cloud cert for cloud. **CIPT** for privacy (the engineer's privacy cert). **CISSP** later, once you have the required years. Do not become a certificate collector.
 
@@ -178,4 +178,4 @@ If you remember one thing, remember this: the field rewards proof, not permissio
 
 Pick the 90-day path. Break a vulnerable box. Write up what you learned. Do it again next month. That is genuinely the whole secret.
 
-And here is the door worth walking through next: AI security is the newest, fastest-growing, lowest-barrier corner of the entire field — a place where even the biggest companies admit they lack talent. Prompt injection has no complete fix, your own apps' AI features are fresh attack surface, and almost nobody has years of experience yet. Which means, for the first time in a long time, you could get in near the ground floor of something huge. What would you build first?
+And here is the door worth walking through next: AI security is the newest, fastest-growing, lowest-barrier corner of the entire field - a place where even the biggest companies admit they lack talent. Prompt injection has no complete fix, your own apps' AI features are fresh attack surface, and almost nobody has years of experience yet. Which means, for the first time in a long time, you could get in near the ground floor of something huge. What would you build first?

@@ -69,7 +69,7 @@ This is the uncomfortable truth about agents that do long, multi-step work: the 
 
 A simple AI call is easy to reason about. One input, one output, success or failure. You can read the result and trust your eyes.
 
-The moment an agent starts to **plan, call tools, hold state, and talk to other agents**, that simplicity is gone. You inherit every classic failure of complex software — race conditions, partial failures, inconsistent state, cascading errors — and then you bolt a probabilistic engine on top.
+The moment an agent starts to **plan, call tools, hold state, and talk to other agents**, that simplicity is gone. You inherit every classic failure of complex software - race conditions, partial failures, inconsistent state, cascading errors - and then you bolt a probabilistic engine on top.
 
 The result is a system that can be impressively capable and quietly unreliable at the same time. If you are building anything that runs for more than a few steps, the hard part is no longer "can the model do it?" It is "will it keep doing it correctly, and will I know when it doesn't?"
 
@@ -79,7 +79,7 @@ Here is the pattern that should reshape how you think about agents.
 
 Frontier models hit near-perfect success on tasks a human could finish in under about four minutes. But success drops **below 10%** on tasks that need more than roughly four hours of human-equivalent work.
 
-As you push agents into longer work, the dominant source of cost and unreliability is not raw model intelligence. It is **time** — the sheer number of chances to go wrong.
+As you push agents into longer work, the dominant source of cost and unreliability is not raw model intelligence. It is **time** - the sheer number of chances to go wrong.
 
 ### The compounding-error math
 
@@ -112,7 +112,7 @@ The failures cluster into three families.
 
 ### Bad instructions and missing stop signs
 
-These are specification problems — the agent was never set up to succeed.
+These are specification problems - the agent was never set up to succeed.
 
 - It **ignores stated constraints** or acts **outside its assigned role**.
 - It **needlessly redoes** completed work, or **loses earlier context** and reverts to an old state.
@@ -126,7 +126,7 @@ When agents collaborate, new failure modes appear that no single agent has.
 
 - One agent **fails to ask for clarification** and proceeds on a guess.
 - One **withholds information** a teammate needed, or **ignores a teammate's input** entirely.
-- An agent's **reasoning and its actual action diverge** — it explains one plan and executes another.
+- An agent's **reasoning and its actual action diverge** - it explains one plan and executes another.
 
 Here is the dangerous part. A misaligned agent produces an output, the next agent accepts it as authoritative, and the verification step that should have caught the problem never fires. Multi-agent systems **amplify** errors across agents rather than averaging them out. Treat every handoff between agents as an untrusted boundary: check the shape and origin of what you received, and never assume the upstream agent actually did what it claimed.
 
@@ -136,7 +136,7 @@ The third family is about endings.
 
 - The agent **stops too early**, before the objective is met.
 - It **skips verification**, so errors slip through unchallenged.
-- It **verifies, but badly** — going through the motions without actually catching anything.
+- It **verifies, but badly** - going through the motions without actually catching anything.
 
 ### When tools get hallucinated
 
@@ -148,7 +148,7 @@ The defenses are concrete: strict schemas for every tool, argument validation *b
 
 ## Guardrails: layers that keep agents in bounds
 
-**Guardrails** are the controls that constrain what an agent can do — blocking harmful outputs, rejecting adversarial inputs, and keeping the agent inside its authorized scope. Think of them as guard rails on a mountain road, not a destination.
+**Guardrails** are the controls that constrain what an agent can do - blocking harmful outputs, rejecting adversarial inputs, and keeping the agent inside its authorized scope. Think of them as guard rails on a mountain road, not a destination.
 
 The practical pattern is to layer them:
 
@@ -158,7 +158,7 @@ The practical pattern is to layer them:
 - **Permission gating.** Least privilege per tool. The agent can only act within the scope you explicitly granted.
 - **Human-in-the-loop checkpoints.** When risk crosses a threshold, pause the run and ask a person. This matters most **early in deployment**, when you are still discovering edge cases.
 
-Both OpenAI and LangGraph ship primitives for this — relevance and safety classifiers, tool scoping, and interrupt-and-approve flows that literally pause a run until a human signs off. The shape is consistent across vendors, so you can adopt the pattern even if you switch tools.
+Both OpenAI and LangGraph ship primitives for this - relevance and safety classifiers, tool scoping, and interrupt-and-approve flows that literally pause a run until a human signs off. The shape is consistent across vendors, so you can adopt the pattern even if you switch tools.
 
 ## Evaluation: judging agents that won't follow a script
 
@@ -166,14 +166,14 @@ Both OpenAI and LangGraph ship primitives for this — relevance and safety clas
 
 Traditional testing checks output against a known-correct answer. That falls apart for agents, because **agents take many valid paths to the same goal.** Even from identical starting points, two runs might reach the right answer completely differently.
 
-Imagine your reference solution calls `search_web`, but the agent calls `search_documentation` — and both genuinely solve the task. Exact match labels that success a failure. You need fuzzy and semantic checks, not string equality.
+Imagine your reference solution calls `search_web`, but the agent calls `search_documentation` - and both genuinely solve the task. Exact match labels that success a failure. You need fuzzy and semantic checks, not string equality.
 
 ### Outcome evals versus trajectory evals
 
 There are two questions you can ask, and you need both.
 
 - **Outcome evals** ask: did the task succeed? They tolerate many valid paths and are the natural default. But an agent "can call every tool correctly and still fail," and a correct-looking answer can hide broken reasoning or a lucky-but-wrong shortcut.
-- **Trajectory evals** ask: was the *path* sound? They inspect which tools were chosen and how the agent reasoned. This catches failures a correct answer would mask — for example, an agent that issued a refund **without verifying identity first.**
+- **Trajectory evals** ask: was the *path* sound? They inspect which tools were chosen and how the agent reasoned. This catches failures a correct answer would mask - for example, an agent that issued a refund **without verifying identity first.**
 
 A good rule: run three levels together.
 
@@ -187,13 +187,13 @@ Use **deterministic checks** for exact things like tool names and output format,
 
 ### LLM-as-judge, and its blind spot
 
-**LLM-as-judge** means using one model to score another's output against a rubric — factual accuracy, citation accuracy, completeness, source quality, tool efficiency — producing a score and a pass/fail grade. It scales to hundreds of outputs and aligns reasonably well with human judgment.
+**LLM-as-judge** means using one model to score another's output against a rubric - factual accuracy, citation accuracy, completeness, source quality, tool efficiency - producing a score and a pass/fail grade. It scales to hundreds of outputs and aligns reasonably well with human judgment.
 
 But be honest about its limits. **No judge is good everywhere.** Production studies of transaction agents still find judges miss a meaningful share of failures. Strengthen them with structured rubrics, multiple passes that you aggregate, and regular calibration against human-labeled examples. Judges are necessary, not sufficient.
 
 ### Start small, start now
 
-You do not need a giant test suite to begin. Anthropic started with about **20 queries** that reflected real usage — and that tiny set was enough to watch early success climb from **30% to 80%.** A change that large is easy to see with few examples. Start evaluating immediately, and resist over-engineering the infrastructure before you have any signal.
+You do not need a giant test suite to begin. Anthropic started with about **20 queries** that reflected real usage - and that tiny set was enough to watch early success climb from **30% to 80%.** A change that large is easy to see with few examples. Start evaluating immediately, and resist over-engineering the infrastructure before you have any signal.
 
 ### Humans still catch what metrics miss
 
@@ -217,28 +217,28 @@ One honest caveat: most of these conventions are still **experimental** as of ea
 
 On tooling, the landscape sorts roughly like this:
 
-- **LangSmith** — the least friction if you live in LangChain or LangGraph, with node-by-node state diffs and replay against new model versions. Managed only.
-- **Langfuse** — the leading open-source path, framework-agnostic, strong on cost analytics. Self-hostable.
-- **Arize Phoenix** — open-source, OpenTelemetry-native, strong on RAG evaluation and judge-based eval.
-- **W&B Weave** — best when your focus is experiment and prompt tracking.
+- **LangSmith** - the least friction if you live in LangChain or LangGraph, with node-by-node state diffs and replay against new model versions. Managed only.
+- **Langfuse** - the leading open-source path, framework-agnostic, strong on cost analytics. Self-hostable.
+- **Arize Phoenix** - open-source, OpenTelemetry-native, strong on RAG evaluation and judge-based eval.
+- **W&B Weave** - best when your focus is experiment and prompt tracking.
 
-> **A pricing trap worth knowing.** Billing **per trace** punishes agent complexity. A 50-step agent costs the same as one model call if you're billed per *span* — but **50× more** if billed per *trace*. Check the billing unit before you commit; it can quietly reshape your architecture.
+> **A pricing trap worth knowing.** Billing **per trace** punishes agent complexity. A 50-step agent costs the same as one model call if you're billed per *span* - but **50× more** if billed per *trace*. Check the billing unit before you commit; it can quietly reshape your architecture.
 
 One thoughtful touch: Anthropic monitors **decision patterns and interaction structures** while deliberately *not* reading individual conversation content. You can do root-cause analysis without reading private messages.
 
 ## The determinism problem nobody warns you about
 
-Here is a fact that surprises most engineers: **even at temperature 0, model output is not guaranteed to be identical run to run.** Numerical-precision effects under greedy decoding still cause drift. OpenAI's own guidance is that its API is only ever "mostly deterministic," and a `seed` improves reproducibility without guaranteeing it — because system updates and load-balancing across different hardware change the math underneath.
+Here is a fact that surprises most engineers: **even at temperature 0, model output is not guaranteed to be identical run to run.** Numerical-precision effects under greedy decoding still cause drift. OpenAI's own guidance is that its API is only ever "mostly deterministic," and a `seed` improves reproducibility without guaranteeing it - because system updates and load-balancing across different hardware change the math underneath.
 
 The same agent setup can produce different outputs from temperature sampling, model version updates, tool-latency variation, and context-window effects. That makes **reproducing a specific failure extraordinarily hard.**
 
 So you test differently:
 
 1. **Run a replay regression suite as your first CI gate.** Replay journaled tool and model results instead of calling live services. It's fast, cheap, and actually deterministic.
-2. **Aggregate over many sessions before comparing A/B arms.** A single run can wander *within* an arm, so compare distributions, not single points — with the same seed policy on both sides.
+2. **Aggregate over many sessions before comparing A/B arms.** A single run can wander *within* an arm, so compare distributions, not single points - with the same seed policy on both sides.
 3. **Mix assertion types.** Deterministic checks for exact things, model-judge for free-form quality.
 
-As one nice mantra puts it: "temperature defines how wild the model can be; seeds make that wildness replayable" — a partial fix, not a complete one.
+As one nice mantra puts it: "temperature defines how wild the model can be; seeds make that wildness replayable" - a partial fix, not a complete one.
 
 ## Don't restart. Resume.
 
@@ -246,14 +246,14 @@ Remember the compounding-error math. If a long run fails at step 38, restarting 
 
 The production playbook looks like this:
 
-- **Don't restart on failure — resume from where the error happened.** Pair retry logic with regular checkpoints so the agent recovers gracefully when a tool fails.
+- **Don't restart on failure - resume from where the error happened.** Pair retry logic with regular checkpoints so the agent recovers gracefully when a tool fails.
 - **Manage the context window for very long runs.** Have agents summarize finished phases, push essential details to external memory, and spawn fresh agents with clean context before hitting limits.
 - **Deploy without disrupting in-flight runs.** Because these systems run almost continuously, shift traffic from old to new gradually while both versions run, so agents mid-task aren't cut off.
 
 **Durable execution** is the deeper version of this idea: state is saved after every logical step, so a crash resumes from the **last checkpoint, not the start.** A few frameworks do it differently:
 
-- **LangGraph** saves graph state as checkpoints organized into threads, and its interrupt feature pauses, saves, and waits indefinitely — perfect for human approval. Watch out: it saves state *between* nodes, not inside them.
-- **Temporal** replays a durable event log to rebuild state after a crash. The catch — and it's the key insight — is that workflow code must be deterministic. Since **LLM calls are not deterministic, you wrap them as "activity" steps** whose results are journaled on first run and never re-executed on replay. That single discipline is what makes durable execution and probabilistic models coexist.
+- **LangGraph** saves graph state as checkpoints organized into threads, and its interrupt feature pauses, saves, and waits indefinitely - perfect for human approval. Watch out: it saves state *between* nodes, not inside them.
+- **Temporal** replays a durable event log to rebuild state after a crash. The catch - and it's the key insight - is that workflow code must be deterministic. Since **LLM calls are not deterministic, you wrap them as "activity" steps** whose results are journaled on first run and never re-executed on replay. That single discipline is what makes durable execution and probabilistic models coexist.
 
 One caveat to keep you honest: **plain checkpointing is not full durable execution.** A checkpoint gives you a save point but leaves detection, coordination, and de-duplication to you. Production-grade fault tolerance usually wants a real durable-execution runtime, not just snapshots.
 
@@ -281,6 +281,6 @@ One caveat to keep you honest: **plain checkpointing is not full durable executi
 
 If you remember one thing, make it this: **with agents, reliability is a horizon problem, not an intelligence problem.** The math of compounding errors means small per-step gains and early detection beat any amount of raw model power on long tasks.
 
-There's a reason this discipline is worth the effort. Multi-agent setups can deliver large quality gains on broad, parallelizable work — but at roughly **15× the token cost** of a single chat. When you're spending that much, you had better be able to tell whether it actually worked.
+There's a reason this discipline is worth the effort. Multi-agent setups can deliver large quality gains on broad, parallelizable work - but at roughly **15× the token cost** of a single chat. When you're spending that much, you had better be able to tell whether it actually worked.
 
-Which raises the next question worth chasing: if a slow subagent can stall an entire synchronous pipeline, when is it worth the added hazards of running agents in parallel — and how do you coordinate them without trading one failure mode for three new ones?
+Which raises the next question worth chasing: if a slow subagent can stall an entire synchronous pipeline, when is it worth the added hazards of running agents in parallel - and how do you coordinate them without trading one failure mode for three new ones?

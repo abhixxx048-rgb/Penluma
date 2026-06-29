@@ -59,9 +59,9 @@ So at any moment, your replicas can disagree. That raises one sharp question: **
 
 A consistency model is the precise answer. It is a written promise from the storage system to you, the programmer, about what reads can legally return. And the model you pick decides three things at once:
 
-- **Correctness** — how fresh and well-ordered the data your code sees will be.
-- **Latency** — how long a read or write takes. Strict promises force machines to talk to each other before answering, which is slow.
-- **Availability** — whether the system can still answer you when the network is partly broken.
+- **Correctness** - how fresh and well-ordered the data your code sees will be.
+- **Latency** - how long a read or write takes. Strict promises force machines to talk to each other before answering, which is slow.
+- **Availability** - whether the system can still answer you when the network is partly broken.
 
 Stronger promise means easier to reason about, but slower and more fragile. Weaker promise means faster and more available, but your code has to tolerate surprises. That tension is the entire game.
 
@@ -70,7 +70,7 @@ Stronger promise means easier to reason about, but slower and more fragile. Weak
 Before going further, clear up one source of endless confusion. The word "consistency" is overloaded, and three common uses have nothing to do with each other.
 
 - The **C in ACID** (database transactions) means "the database never breaks its own rules," like "an account balance can't go negative."
-- The **C in the CAP theorem** means linearizability — every read sees the latest write.
+- The **C in the CAP theorem** means linearizability - every read sees the latest write.
 - The **consistency models** in this article are a third, broader idea: across many replicas, what ordering of reads and writes is each observer allowed to see?
 
 They share a letter and almost nothing else. Keep them separate in your head and half the arguments about "consistency" dissolve.
@@ -81,11 +81,11 @@ Think of consistency models as rungs on a ladder. The top rung gives the most gu
 
 From strongest to weakest:
 
-1. **Linearizability** — behaves like one single up-to-date copy.
-2. **Sequential consistency** — one agreed order, but it may lag real time.
-3. **Causal consistency** — cause always comes before effect.
-4. **Client-centric (session) guarantees** — sane within your own session.
-5. **Eventual consistency** — agree later, if writes ever stop.
+1. **Linearizability** - behaves like one single up-to-date copy.
+2. **Sequential consistency** - one agreed order, but it may lag real time.
+3. **Causal consistency** - cause always comes before effect.
+4. **Client-centric (session) guarantees** - sane within your own session.
+5. **Eventual consistency** - agree later, if writes ever stop.
 
 Let's climb down it, one rung at a time.
 
@@ -99,7 +99,7 @@ The clever part is the **real-time rule**: if operation A finishes before operat
 
 > **Analogy:** Linearizability is a single shared whiteboard in one room. Whoever walks up writes on it, and the instant they step back, the next person to look sees exactly what was written. There is only one board, so stale information is impossible. The company secretly keeps synced copies of the board in other cities, but it keeps them perfectly in step, so it *looks* like one board.
 
-**Where it shows up.** Tools like **etcd** and **ZooKeeper** use linearizability to hold distributed locks and elect leaders. If two servers both try to grab the same lock, linearizability guarantees exactly one wins and everyone agrees who — which is the whole point of a lock. **Google Spanner** pushes this even further across the globe using GPS receivers and atomic clocks to timestamp transactions, then deliberately waiting out the tiny clock uncertainty before committing. That wait is the price of strong consistency, made visible.
+**Where it shows up.** Tools like **etcd** and **ZooKeeper** use linearizability to hold distributed locks and elect leaders. If two servers both try to grab the same lock, linearizability guarantees exactly one wins and everyone agrees who - which is the whole point of a lock. **Google Spanner** pushes this even further across the globe using GPS receivers and atomic clocks to timestamp transactions, then deliberately waiting out the tiny clock uncertainty before committing. That wait is the price of strong consistency, made visible.
 
 **The cost is real.** To honor "every read sees the latest write," replicas must coordinate, usually by reaching a majority of nodes (a **quorum**) or going through one leader. That means network round-trips on every single operation. A nearby stale read might take about 1 millisecond; a linearizable read that has to reach a leader in another region can take 50 to 200 milliseconds. And during a network partition, a linearizable system *cannot* stay available. Some nodes must stop answering rather than risk returning stale data.
 
@@ -111,17 +111,17 @@ Why bother? Because the real-time rule is the expensive part. If you only need e
 
 > **Analogy:** Picture a movie everyone watches on a slight broadcast delay. Everybody worldwide sees the exact same scenes in the exact same order, so nobody disagrees about what happened. But it is a few seconds behind real life. Linearizability is the live broadcast. Sequential consistency is the synchronized-but-delayed one.
 
-Here is a concrete case. Alice posts "A" then "B"; Bob posts "X" then "Y". Under sequential consistency, every reader might see `A, X, B, Y` — Alice's A-before-B and Bob's X-before-Y are both preserved, and *everyone* sees that same interleaving. What is forbidden is one reader seeing `A, B` while another sees `B, A`. That would break the single agreed order.
+Here is a concrete case. Alice posts "A" then "B"; Bob posts "X" then "Y". Under sequential consistency, every reader might see `A, X, B, Y` - Alice's A-before-B and Bob's X-before-Y are both preserved, and *everyone* sees that same interleaving. What is forbidden is one reader seeing `A, B` while another sees `B, A`. That would break the single agreed order.
 
 ## Causal consistency: cause before effect
 
-Causal consistency is weaker than sequential, but it nails the ordering humans actually notice: **cause before effect**. The rule is simple. If one operation *causally precedes* another, every node must show them in that order. Operations that are **concurrent** — neither caused the other — may appear in different orders on different nodes, and that is allowed.
+Causal consistency is weaker than sequential, but it nails the ordering humans actually notice: **cause before effect**. The rule is simple. If one operation *causally precedes* another, every node must show them in that order. Operations that are **concurrent** - neither caused the other - may appear in different orders on different nodes, and that is allowed.
 
 What counts as "causally precedes"? Operation A causally precedes B if they came from the same client with A first, or if B read the value A wrote, or if a chain of such links connects them. (This is the same "happens-before" relationship that vector clocks track, if you have met those before.)
 
-> **Analogy:** A group chat. A question and its answer must always appear in that order — an answer before its question is nonsense, because the answer was *caused* by reading the question. But two unrelated people each saying "good morning" at the same moment? It does not matter who shows first. Different phones briefly disagreeing on the order confuses no one.
+> **Analogy:** A group chat. A question and its answer must always appear in that order - an answer before its question is nonsense, because the answer was *caused* by reading the question. But two unrelated people each saying "good morning" at the same moment? It does not matter who shows first. Different phones briefly disagreeing on the order confuses no one.
 
-Picture Alice posting "Lost my keys" and Bob replying "Found them by the door!" Bob's reply was caused by reading Alice's post, so every node must show the post before the reply. A node that shows "Found them!" with no visible post makes Bob look unhinged. Causal consistency forbids exactly that, even across continents — research systems like **COPS** do this by attaching dependency metadata to each write so a replica waits for everything that write depends on before revealing it.
+Picture Alice posting "Lost my keys" and Bob replying "Found them by the door!" Bob's reply was caused by reading Alice's post, so every node must show the post before the reply. A node that shows "Found them!" with no visible post makes Bob look unhinged. Causal consistency forbids exactly that, even across continents - research systems like **COPS** do this by attaching dependency metadata to each write so a replica waits for everything that write depends on before revealing it.
 
 Here is why this rung is special: causal consistency stays **available during network partitions**, unlike linearizability, yet still rules out the most jarring anomalies. It is often called the strongest consistency a system can offer while remaining always-available.
 
@@ -133,9 +133,9 @@ Why would anyone want so little? Because it buys maximum speed and maximum uptim
 
 Under the hood, replicas accept writes locally and gossip the changes to each other in the background. When two replicas discover they disagree, they resolve it with a rule, like **last-write-wins** (highest timestamp wins) or merging with conflict-free data types designed to combine cleanly.
 
-> **Analogy:** Postal mail. If you and a friend each mail a letter, neither sees the other's instantly. They arrive after a delay, maybe out of order. But once you both stop sending, eventually you each receive every letter and agree on the full picture. The mail system is always available — you can always drop a letter in the box — but never "live."
+> **Analogy:** Postal mail. If you and a friend each mail a letter, neither sees the other's instantly. They arrive after a delay, maybe out of order. But once you both stop sending, eventually you each receive every letter and agree on the full picture. The mail system is always available - you can always drop a letter in the box - but never "live."
 
-**Where it shows up.** **Amazon DynamoDB** defaults to eventually consistent reads because most reads tolerate slightly stale data and a strongly consistent read costs twice as much. **Apache Cassandra** is eventually consistent but *tunable*: you choose how many replicas must acknowledge each read (R) and write (W). Pick R and W so they overlap a majority (for example, quorum reads and writes with three replicas), and you regain strong consistency for that operation — at the cost of more coordination.
+**Where it shows up.** **Amazon DynamoDB** defaults to eventually consistent reads because most reads tolerate slightly stale data and a strongly consistent read costs twice as much. **Apache Cassandra** is eventually consistent but *tunable*: you choose how many replicas must acknowledge each read (R) and write (W). Pick R and W so they overlap a majority (for example, quorum reads and writes with three replicas), and you regain strong consistency for that operation - at the cost of more coordination.
 
 ## Client-centric guarantees: don't gaslight one user
 
@@ -143,10 +143,10 @@ Plain eventual consistency is often *too* surprising. You save your profile, rel
 
 There are four classic guarantees:
 
-- **Read-your-writes** — after you write something, your own later reads will see it (or something newer). Prevents: you change your password, immediately log in, and the old one still works.
-- **Monotonic reads** — once you have seen a value, you never see an older one later. Time only moves forward for you. Prevents: you refresh a thread, see 10 comments, refresh again, and see only 8.
-- **Monotonic writes** — your writes apply in the order you made them. Prevents: you set name to "Bob" then "Robert," but a replica applies them backwards and you end up "Bob."
-- **Writes-follow-reads** — a write you make after reading something is ordered after what you read. Prevents: you reply to a post, but your reply lands on a replica that does not have the post yet — a reply to nothing.
+- **Read-your-writes** - after you write something, your own later reads will see it (or something newer). Prevents: you change your password, immediately log in, and the old one still works.
+- **Monotonic reads** - once you have seen a value, you never see an older one later. Time only moves forward for you. Prevents: you refresh a thread, see 10 comments, refresh again, and see only 8.
+- **Monotonic writes** - your writes apply in the order you made them. Prevents: you set name to "Bob" then "Robert," but a replica applies them backwards and you end up "Bob."
+- **Writes-follow-reads** - a write you make after reading something is ordered after what you read. Prevents: you reply to a post, but your reply lands on a replica that does not have the post yet - a reply to nothing.
 
 > **Analogy:** These are the "don't gaslight one user" rules. The rest of the world can lag and stay fuzzy, but *your own* experience must be self-consistent. What you typed is still there, your view never rewinds, your edits land in order, and your replies never precede what they replied to. It is a notebook only you write in: even if the shared library is chaotic, your personal notebook always makes sense to you.
 
@@ -160,11 +160,11 @@ In plain terms, the consistency-versus-latency tax is paid **even when nothing i
 
 - **Linearizability = more coordination.** Every operation talks to a majority, so it is slower and must stop during partitions. It gives up availability to stay correct.
 - **Eventual = less coordination.** Answer locally, gossip later. Fast and always available, but reads can be stale.
-- **Causal** sits in the available band — the strongest contract you can keep while still answering during a partition.
+- **Causal** sits in the available band - the strongest contract you can keep while still answering during a partition.
 
 ## Common misconceptions
 
-**"Consistency is binary — a database is either consistent or not."** It is a ladder of named contracts. "We need a consistent database" means nothing until you say *which* model: linearizable, causal, eventual, and so on.
+**"Consistency is binary - a database is either consistent or not."** It is a ladder of named contracts. "We need a consistent database" means nothing until you say *which* model: linearizable, causal, eventual, and so on.
 
 **"Strong-sounding models guarantee fresh reads."** Only linearizability adds the real-time rule. Sequential consistency guarantees one *agreed* order, which can still lag reality. A reader can sit on a stale-but-consistent view indefinitely.
 
@@ -180,7 +180,7 @@ In plain terms, the consistency-versus-latency tax is paid **even when nothing i
 
 The professional move is not "pick one model for the whole system." It is "pick the weakest model that is still correct for *this specific piece of data*." Strong where it must be, weak where you can get away with it.
 
-1. **Map each data type to a model.** Money, inventory, locks, and identity need linearizability — a stale read here is a real money bug, like overselling the last unit. Feeds, carts, counters, and caches are fine on causal or eventual.
+1. **Map each data type to a model.** Money, inventory, locks, and identity need linearizability - a stale read here is a real money bug, like overselling the last unit. Feeds, carts, counters, and caches are fine on causal or eventual.
 2. **Default to the weakest correct model, then strengthen only where a real bug appears.** Weak-by-default keeps you fast and available. Pay for strength only where staleness causes harm.
 3. **Layer session guarantees onto eventual stores.** Add read-your-writes and monotonic reads to kill the "my change disappeared" and "the list went backwards" glitches. Cheap fix, huge UX win.
 4. **Use tunable consistency where the database offers it.** Cassandra's per-query R/W levels and DynamoDB's optional strong reads let you pay the strong-read price only on the operations that need it.
@@ -196,6 +196,6 @@ A quick reference for the common cases:
 
 ## Conclusion
 
-If you take away one thing, make it this: **consistency is not a feature you turn on, it is a deliberate choice you make per piece of data.** Climbing up the ladder buys simpler reasoning and fresher reads, paid for in coordination, latency, and lost availability. Climbing down buys speed and uptime, paid for with staleness your code must handle. There is no free lunch — only an honest trade-off you should make on purpose.
+If you take away one thing, make it this: **consistency is not a feature you turn on, it is a deliberate choice you make per piece of data.** Climbing up the ladder buys simpler reasoning and fresher reads, paid for in coordination, latency, and lost availability. Climbing down buys speed and uptime, paid for with staleness your code must handle. There is no free lunch - only an honest trade-off you should make on purpose.
 
-The deepest version of that trade-off lives one layer down, in how a fleet of machines reaches agreement at all. That is the job of **consensus algorithms** like Raft and Paxos — the machinery that actually makes linearizability possible. Once you see how a handful of servers vote on a single source of truth, the cost of strong consistency stops being abstract and starts being something you can feel.
+The deepest version of that trade-off lives one layer down, in how a fleet of machines reaches agreement at all. That is the job of **consensus algorithms** like Raft and Paxos - the machinery that actually makes linearizability possible. Once you see how a handful of servers vote on a single source of truth, the cost of strong consistency stops being abstract and starts being something you can feel.

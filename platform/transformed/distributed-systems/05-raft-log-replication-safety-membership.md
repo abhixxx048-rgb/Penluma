@@ -60,10 +60,10 @@ Picture a shared notebook that a team copies by hand. Only one person, the **lea
 
 That notebook is the **replicated log**. A few terms you'll need, in plain words:
 
-- **Log entry** — one line in the notebook. It holds a **command** (the actual operation, like `set x = 5`), the **term** it was created in (a numbered period with at most one leader), and its position number, the **index**.
-- **State machine** — your application's data, built by applying the commands in log order. Same commands, same order, same final state on every server. That is the entire point of consensus.
-- **Committed** — an entry is committed once Raft guarantees it can never be lost. Only then is it safe to apply and reply to the client.
-- **Majority** — more than half the servers. In a 5-server cluster, that's 3. Here's the magic: any two majorities always share at least one server. That overlap is the mathematical trick the whole protocol leans on.
+- **Log entry** - one line in the notebook. It holds a **command** (the actual operation, like `set x = 5`), the **term** it was created in (a numbered period with at most one leader), and its position number, the **index**.
+- **State machine** - your application's data, built by applying the commands in log order. Same commands, same order, same final state on every server. That is the entire point of consensus.
+- **Committed** - an entry is committed once Raft guarantees it can never be lost. Only then is it safe to apply and reply to the client.
+- **Majority** - more than half the servers. In a 5-server cluster, that's 3. Here's the magic: any two majorities always share at least one server. That overlap is the mathematical trick the whole protocol leans on.
 
 The trouble is that copiers crash, lose pages, and copy stale versions. So the leader needs a disciplined way to detect "your page 4 doesn't match mine" and fix it, without ever tearing out a line the team has already officially agreed on.
 
@@ -75,8 +75,8 @@ The leader sends it to every follower to copy new entries, and, when there's not
 
 The clever part is two fields the leader includes:
 
-- **`prevLogIndex`** — the index of the entry *immediately before* the new ones.
-- **`prevLogTerm`** — the term of that entry.
+- **`prevLogIndex`** - the index of the entry *immediately before* the new ones.
+- **`prevLogTerm`** - the term of that entry.
 
 Together these act as a **fingerprint** of the follower's log up to the join point. When a follower receives the message, it checks its own entry at `prevLogIndex`. If it's missing, or the term doesn't match, the follower replies `false`: "our logs disagree here, don't append yet." Otherwise it appends the new entries, deletes anything that conflicts, and advances how far it can safely apply.
 

@@ -82,9 +82,9 @@ This is the core idea of **systems thinking**, and the clearest guide to it is t
 
 A **system** is a set of parts, connected by relationships, organized so that it produces its own pattern of behavior over time. Three things make something a system:
 
-1. **Elements** — the visible parts (trees in a forest, people in a company, cars on a road).
-2. **Interconnections** — the relationships linking them (nutrient flows, hiring rules, traffic signals).
-3. **A purpose** — what the system actually does, which is often not what anyone says it does.
+1. **Elements** - the visible parts (trees in a forest, people in a company, cars on a road).
+2. **Interconnections** - the relationships linking them (nutrient flows, hiring rules, traffic signals).
+3. **A purpose** - what the system actually does, which is often not what anyone says it does.
 
 Here is Meadows' most useful insight: the **interconnections and purpose matter far more than the individual elements**.
 

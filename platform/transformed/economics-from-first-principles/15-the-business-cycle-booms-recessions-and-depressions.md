@@ -81,10 +81,10 @@ You will never time it perfectly. Nobody can. But you can stop being surprised b
 
 Every complete cycle moves through four phases. Picture a single loop from the bottom, up to the top, and back down.
 
-1. **Expansion** — the climb from the bottom up toward the top. Output, jobs, and incomes all rise. These are the good times.
-2. **Peak** — the highest point. The expansion has run out of room. This is the moment things turn from rising to falling.
-3. **Recession** (also called a contraction) — the slide from the peak down to the bottom. Output falls, firms cut jobs, incomes shrink. These are the bad times.
-4. **Trough** — the lowest point. The decline ends here, and the next expansion begins.
+1. **Expansion** - the climb from the bottom up toward the top. Output, jobs, and incomes all rise. These are the good times.
+2. **Peak** - the highest point. The expansion has run out of room. This is the moment things turn from rising to falling.
+3. **Recession** (also called a contraction) - the slide from the peak down to the bottom. Output falls, firms cut jobs, incomes shrink. These are the bad times.
+4. **Trough** - the lowest point. The decline ends here, and the next expansion begins.
 
 Think of the four seasons. Expansion is spring into summer, when everything grows. The peak is the longest day. Recession is autumn into winter, when things shrink. The trough is the deepest cold before spring returns.
 
@@ -105,9 +105,9 @@ In the United States, recessions are dated by a group of economists at the **NBE
 
 An easy way to remember it is the **three Ds**:
 
-- **Depth** — the fall must be serious, not a blip.
-- **Diffusion** — it must spread across many industries, not just one.
-- **Duration** — it must last a while.
+- **Depth** - the fall must be serious, not a blip.
+- **Diffusion** - it must spread across many industries, not just one.
+- **Duration** - it must last a while.
 
 The NBER watches real personal income and the number of people on company payrolls most closely. And it dates recessions *after the fact* on purpose, so that later data revisions don't make its calls look foolish. It didn't announce the dates of the COVID recession until July 2021, more than a year after it ended.
 
@@ -197,7 +197,7 @@ During a long boom, optimism grows and lenders relax. Borrowers who started out 
 
 Then comes the **Minsky moment**: the tipping point when asset prices stop rising. The doomed borrowers can't refinance. Fire-sales begin, credit freezes, and the collapse cascades like falling dominoes, dragging down even the careful borrowers who suddenly can't get a loan.
 
-**Case study — the 2008 subprime crisis.** Millions of mortgages were written on the assumption that house prices would rise forever, so borrowers could just refinance instead of ever truly repaying. That is textbook Ponzi finance. When US house prices finally fell in 2006 and 2007, the refinancing chain snapped, mortgage-backed securities collapsed, banks froze, and a housing wobble became a global financial crisis. The long calm had invited the capsize.
+**Case study - the 2008 subprime crisis.** Millions of mortgages were written on the assumption that house prices would rise forever, so borrowers could just refinance instead of ever truly repaying. That is textbook Ponzi finance. When US house prices finally fell in 2006 and 2007, the refinancing chain snapped, mortgage-backed securities collapsed, banks froze, and a housing wobble became a global financial crisis. The long calm had invited the capsize.
 
 Picture sailors after a long stretch of calm seas. The flat water tempts them to dump the heavy ballast, since it feels pointless to carry. So when the storm finally comes, they capsize. Good times breed exactly the carelessness that causes the crash.
 

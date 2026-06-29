@@ -159,7 +159,7 @@ But real caches cheat for speed. Redis does *not* keep a perfect global LRU list
 
 ## Cache invalidation: one of the genuinely hard problems
 
-> "There are only two hard things in Computer Science: cache invalidation and naming things." — Phil Karlton
+> "There are only two hard things in Computer Science: cache invalidation and naming things." - Phil Karlton
 
 Invalidation is hard because the cached copy and the real data drift apart, and you have to decide *when* and *how* to reconcile them across many readers, writers, and layers. Here are the strategies, weakest to strongest:
 

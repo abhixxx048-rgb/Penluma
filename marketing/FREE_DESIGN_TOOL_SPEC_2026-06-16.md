@@ -1,10 +1,10 @@
-# Free Standalone Design Tool — Engineering-as-Marketing Spec
+# Free Standalone Design Tool - Engineering-as-Marketing Spec
 
 > **Type:** Product-build spec for Bet 2's top-of-funnel magnet (the highest-leverage SEO + demo asset).
 > **Companion:** strategy `readme/ACQUISITION_CHANNELS_2026-06-15.md` · kit `readme/ACQUISITION_EXECUTION_KIT_2026-06-16.md` §8.
 > **Thesis:** Expose the existing **Fabric.js design studio** (`designer/`) as a free, no-login tool (a business-card / flyer maker). It is simultaneously (a) a search-traffic magnet for high-volume "free X maker" queries, (b) a live, hands-on demo of our single biggest differentiator, and (c) the top of a funnel that converts a slice of designers into store trials. This is the Ahrefs/Canva "free tool" playbook applied to our own engine.
 >
-> **Status:** spec only — not built. This documents *what to build and why*, grounded in what already exists in the repo. Hand to engineering as the brief.
+> **Status:** spec only - not built. This documents *what to build and why*, grounded in what already exists in the repo. Hand to engineering as the brief.
 
 ---
 
@@ -13,9 +13,9 @@
 We already own the hard part. The `designer/` app (Vue 3 + Fabric.js, port 5174) is a battle-tested editor with text, shapes, images, filters, multi-page templates, undo/redo with IndexedDB crash recovery, and export to PNG/JPG/SVG/PDF. A free standalone tool is mostly **packaging + gating + SEO surface**, not a new product.
 
 **Three returns from one build:**
-1. **SEO / traffic** — "free business card maker", "free flyer maker", "online [product] designer" are high-volume, evergreen queries. Free tools are link magnets (Ahrefs' free tools out-pull its blog).
-2. **Live demo** — instead of a screenshot, the prospect *uses* the studio. The "wow" of our differentiator is experienced, not described.
-3. **Funnel** — a soft, well-placed gate converts a fraction of designers into account/trial signups, attributable end-to-end.
+1. **SEO / traffic** - "free business card maker", "free flyer maker", "online [product] designer" are high-volume, evergreen queries. Free tools are link magnets (Ahrefs' free tools out-pull its blog).
+2. **Live demo** - instead of a screenshot, the prospect *uses* the studio. The "wow" of our differentiator is experienced, not described.
+3. **Funnel** - a soft, well-placed gate converts a fraction of designers into account/trial signups, attributable end-to-end.
 
 ---
 
@@ -38,13 +38,13 @@ We already own the hard part. The `designer/` app (Vue 3 + Fabric.js, port 5174)
 
 ---
 
-## 3. Scope — v1 (ship small)
+## 3. Scope - v1 (ship small)
 
-**Product types:** start with **2** — business card + flyer. (Highest search volume, simplest geometry.) Add t-shirt and poster in v2.
+**Product types:** start with **2** - business card + flyer. (Highest search volume, simplest geometry.) Add t-shirt and poster in v2.
 
 **Per tool:**
 - A dedicated, indexable landing page (`/tools/business-card-maker`, `/tools/flyer-maker`).
-- "Start designing — free, no signup" CTA opening the canvas with that product's dimensions + bleed/safe guides preset.
+- "Start designing - free, no signup" CTA opening the canvas with that product's dimensions + bleed/safe guides preset.
 - A curated gallery of **free starter templates** for that product.
 - Editor: text, fonts, shapes, image upload, the free clipart/template set, undo/redo. (Hide tenant-only / pro-only controls.)
 - Export gated behind a one-field account create (§4).
@@ -55,7 +55,7 @@ We already own the hard part. The `designer/` app (Vue 3 + Fabric.js, port 5174)
 
 ## 4. The gate (where the funnel converts)
 
-Let people **design freely with no friction** — gating too early kills the SEO/UX value. Gate only at the **moment of value capture**: export / download / save.
+Let people **design freely with no friction** - gating too early kills the SEO/UX value. Gate only at the **moment of value capture**: export / download / save.
 
 - Designing: 100% open, no login, anonymous local draft (reuse IndexedDB).
 - On **Export / Download / Save**: show a single-field "Create a free account to download your design" wall (email + password, or Google). On success: deliver the file **and** persist the design to the new account.
@@ -70,7 +70,7 @@ Let people **design freely with no friction** — gating too early kills the SEO
 
 - **Target queries:** `free business card maker`, `free flyer maker`, `online [product] designer`, `[product] template free`. High volume; the gate converts a slice to product trials. (Stay off saturated head terms per the kit's guardrails.)
 - **One indexable landing page per tool** with: H1 matching the query, a live "start designing" embed/CTA above the fold, the template gallery (each template a thumbnail with its own crawlable detail), a short "how it works", and a single soft CTA to the store trial.
-- **Programmatic/template SEO:** generate a crawlable page per starter template (e.g. `/tools/business-card-maker/templates/minimal-bold`) — the Notion/Canva template-directory playbook. Seed from product/template data; keep thin pages out (only index templates with a real preview).
+- **Programmatic/template SEO:** generate a crawlable page per starter template (e.g. `/tools/business-card-maker/templates/minimal-bold`) - the Notion/Canva template-directory playbook. Seed from product/template data; keep thin pages out (only index templates with a real preview).
 - Internal-link these pages from the relevant BOFU comparison pages and JTBD guides, and vice-versa.
 
 ---
@@ -88,8 +88,8 @@ Per the metrics work, instrument server-side where possible and tag everything:
 ## 7. Guardrails (house rules that apply)
 
 - **Anonymous uploads:** route through a marketing/landlord upload path with **short-TTL auto-cleanup**; never into a tenant bucket. Store relative paths only.
-- **No raw technical output:** loading/empty/error states required; plain-language messages; no UUIDs/slugs/engine type names on screen (a text layer is named by its text, an image by its filename — already the designer's standard).
-- **Mobile:** the canvas must be usable (or gracefully degrade) at 375px; if full editing isn't viable on phone, offer template pick + text edit and prompt desktop for full design — never a broken canvas.
+- **No raw technical output:** loading/empty/error states required; plain-language messages; no UUIDs/slugs/engine type names on screen (a text layer is named by its text, an image by its filename - already the designer's standard).
+- **Mobile:** the canvas must be usable (or gracefully degrade) at 375px; if full editing isn't viable on phone, offer template pick + text edit and prompt desktop for full design - never a broken canvas.
 - **Abuse/cost control:** rate-limit anonymous exports and uploads; cap canvas size/upload size; the tool is a magnet, not free unlimited rendering.
 - **Don't leak tenant features:** hide pro/tenant-only controls; the free tool is intentionally a subset.
 
@@ -97,22 +97,22 @@ Per the metrics work, instrument server-side where possible and tag everything:
 
 ## 8. Build sequence (matches kit week 2–6 front-load sprint)
 
-1. **Standalone anonymous entry** — render the existing canvas outside tenant context, with business-card dimensions + guides preset; anonymous local draft. *(De-risk the architecture first — this is the only genuinely new plumbing.)*
-2. **Landing page #1** (`/tools/business-card-maker`) — indexable, live CTA, curated free templates.
-3. **The export gate** — single-field account create on export; carry the draft across; post-signup trial CTA.
-4. **Instrumentation** — events + UTM + the funnel report.
-5. **Landing page #2** (flyer) — reuse everything; second product type.
-6. **Template-detail pages** — programmatic SEO from the seeded template set.
+1. **Standalone anonymous entry** - render the existing canvas outside tenant context, with business-card dimensions + guides preset; anonymous local draft. *(De-risk the architecture first - this is the only genuinely new plumbing.)*
+2. **Landing page #1** (`/tools/business-card-maker`) - indexable, live CTA, curated free templates.
+3. **The export gate** - single-field account create on export; carry the draft across; post-signup trial CTA.
+4. **Instrumentation** - events + UTM + the funnel report.
+5. **Landing page #2** (flyer) - reuse everything; second product type.
+6. **Template-detail pages** - programmatic SEO from the seeded template set.
 
-**Definition of done (v1):** a stranger can land from Google on the business-card maker, design with no login, hit export, create an account, receive their file, see the "start your store trial" CTA — and every step shows up in the funnel report.
+**Definition of done (v1):** a stranger can land from Google on the business-card maker, design with no login, hit export, create an account, receive their file, see the "start your store trial" CTA - and every step shows up in the funnel report.
 
 ---
 
 ## 9. What this is NOT
 
-- Not a second product to maintain — it's a thin marketing skin over the existing `designer/`.
-- Not an ordering/checkout flow — design→signup only.
-- Not a place to ship the 3D preview or pricing engine — those stay as the *in-product* demo that rewards the trial.
+- Not a second product to maintain - it's a thin marketing skin over the existing `designer/`.
+- Not an ordering/checkout flow - design→signup only.
+- Not a place to ship the 3D preview or pricing engine - those stay as the *in-product* demo that rewards the trial.
 
 ---
 

@@ -151,11 +151,11 @@ Good teardowns name causes, not vibes. "This feels off" is useless. "The signifi
 
 Don Norman co-founded the Nielsen Norman Group and gave us **discoverability**: can a user figure out what's possible and how to do it? It rests on five ideas.
 
-- **Affordance** — what an object lets you do (a chair affords sitting). The *possible action*.
-- **Signifier** — the visible cue that signals how or where to act (a "PUSH" label, a handle's shape). Affordance is what's possible; the signifier is the visible signal of it.
-- **Constraint** — a limit that prevents error.
-- **Mapping** — the relationship between a control and its effect (stove knobs laid out like the burners).
-- **Feedback** — an immediate, informative response to an action.
+- **Affordance** - what an object lets you do (a chair affords sitting). The *possible action*.
+- **Signifier** - the visible cue that signals how or where to act (a "PUSH" label, a handle's shape). Affordance is what's possible; the signifier is the visible signal of it.
+- **Constraint** - a limit that prevents error.
+- **Mapping** - the relationship between a control and its effect (stove knobs laid out like the burners).
+- **Feedback** - an immediate, informative response to an action.
 
 You already know a **Norman door**: the door with a pull handle that you actually have to push. The signifier lies to you. Bad software does this constantly, with a button that looks like a link or a "Save" that gives no feedback. Norman's lesson is worth tattooing on your brain: when users fail, it's usually **design error, not human error**.
 

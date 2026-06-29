@@ -83,11 +83,11 @@ Think of a workflow like a recipe and an agent like a chef. A recipe is reliable
 
 Most "I need an agent" moments are really one of these in disguise:
 
-1. **Prompt chaining** — sequential calls where each step builds on the last. Trades a little speed for a lot of accuracy.
-2. **Routing** — classify the input, then send it to a specialized handler.
-3. **Parallelization** — split a task into parallel subtasks, or run several attempts and vote on the best.
-4. **Orchestrator and workers** — one model breaks a task into pieces and hands them out.
-5. **Evaluator and optimizer** — one model generates, another critiques, and the feedback loops back to refine.
+1. **Prompt chaining** - sequential calls where each step builds on the last. Trades a little speed for a lot of accuracy.
+2. **Routing** - classify the input, then send it to a specialized handler.
+3. **Parallelization** - split a task into parallel subtasks, or run several attempts and vote on the best.
+4. **Orchestrator and workers** - one model breaks a task into pieces and hands them out.
+5. **Evaluator and optimizer** - one model generates, another critiques, and the feedback loops back to refine.
 
 If one of these solves your problem, you may never need a framework at all.
 
@@ -149,9 +149,9 @@ It shines for emergent problem-solving and code-execution loops where you let ag
 
 **The model** rests on three small primitives:
 
-1. **Agents** — models equipped with instructions and tools.
-2. **Handoffs** — one agent transfers control to another specialist without you wiring up routing and state by hand.
-3. **Guardrails** — input and output checks that run before and after the model, so you can block prompt injection at the boundary and enforce your schema or policy.
+1. **Agents** - models equipped with instructions and tools.
+2. **Handoffs** - one agent transfers control to another specialist without you wiring up routing and state by hand.
+3. **Guardrails** - input and output checks that run before and after the model, so you can block prompt injection at the boundary and enforce your schema or policy.
 
 It also adds **sessions** for persistent memory and **tracing**, where every run emits a structured record of which agents ran, which tools fired, and which handoffs happened, with a built-in viewer.
 
@@ -168,11 +168,11 @@ Its stated philosophy: enough features to be worth using, few enough primitives 
 **Why it stands out:** you inherit a battle-tested coding-agent harness rather than assembling one. Its standout primitives:
 
 - **Agent-loop control** for interactive or one-shot runs.
-- **Built-in tools** — Claude Code's full toolset for reading, writing, editing, and running commands.
-- **In-process MCP servers** — define custom tools as plain Python or TypeScript functions running **inside your own app**, no separate subprocess, mixed freely with external tools.
-- **Hooks** — functions that fire at specific points in the loop for deterministic checks, automated feedback, or blocking dangerous commands.
-- **Subagents** — delegate to specialized child agents.
-- **Permission modes** — fine-grained gating on which tools an agent may touch.
+- **Built-in tools** - Claude Code's full toolset for reading, writing, editing, and running commands.
+- **In-process MCP servers** - define custom tools as plain Python or TypeScript functions running **inside your own app**, no separate subprocess, mixed freely with external tools.
+- **Hooks** - functions that fire at specific points in the loop for deterministic checks, automated feedback, or blocking dangerous commands.
+- **Subagents** - delegate to specialized child agents.
+- **Permission modes** - fine-grained gating on which tools an agent may touch.
 
 **Reach for it when** you are building coding, file-operating, or computer-use agents on Claude and want the proven Claude Code loop with in-process tools, hooks, subagents, and permission gating.
 

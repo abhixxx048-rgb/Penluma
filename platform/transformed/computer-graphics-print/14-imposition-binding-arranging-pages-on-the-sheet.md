@@ -57,9 +57,9 @@ Understanding the basics lets you prep files the printer can actually use, plan 
 
 A few terms make the rest of this easy:
 
-- **Flat** — the big unfolded printed sheet, before any folding.
-- **Signature** — a flat after it's folded into a book section. One folded sheet holding several pages.
-- **Form** — the set of pages printed on one side of a plate. There's a front form and a back form.
+- **Flat** - the big unfolded printed sheet, before any folding.
+- **Signature** - a flat after it's folded into a book section. One folded sheet holding several pages.
+- **Form** - the set of pages printed on one side of a plate. There's a front form and a back form.
 
 Big presses print 8, 16, 32, or more pages on each side of one huge sheet. To make those pages land in reading order after folding, the software places them in non-obvious spots and rotates about half of them 180 degrees.
 
@@ -108,9 +108,9 @@ The clean distinction: **step-and-repeat is one job repeated; a gang run is many
 
 Once the front is printed, the sheet has to flip for the second side. There are three ways to do it, and each has a trade-off.
 
-- **Sheetwise (work-and-back)** — Front and back come from two separate plates. The sheet is flipped and fed again. Most flexible, but you pay for two plate sets.
-- **Work-and-turn** — Both sides live on one plate. The sheet flips left-to-right (around the vertical axis) and keeps the same gripper edge. Half the plate cost; cut the result in half and you get two finished copies.
-- **Work-and-tumble (work-and-flop)** — One plate again, but the sheet flips top-to-bottom (around the horizontal axis), using a *different* gripper edge on the second pass. Cheap, but it demands very square, accurately cut stock or registration drifts.
+- **Sheetwise (work-and-back)** - Front and back come from two separate plates. The sheet is flipped and fed again. Most flexible, but you pay for two plate sets.
+- **Work-and-turn** - Both sides live on one plate. The sheet flips left-to-right (around the vertical axis) and keeps the same gripper edge. Half the plate cost; cut the result in half and you get two finished copies.
+- **Work-and-tumble (work-and-flop)** - One plate again, but the sheet flips top-to-bottom (around the horizontal axis), using a *different* gripper edge on the second pass. Cheap, but it demands very square, accurately cut stock or registration drifts.
 
 ## Page order depends on how the book is bound
 
@@ -165,8 +165,8 @@ Also watch your **crossovers**, images that span the gutter from one page to the
 
 These two views of the same book matter for how you hand off files.
 
-- **Reader's (designer's) spread** — Pages in natural reading order, facing pages side by side: 1, then 2-3, 4-5, 6-7. This is how you *design*, because it lets you build crossovers correctly across the gutter.
-- **Printer's spread** — The imposed, non-consecutive arrangement that lands in order after print, fold, and trim. On a 16-page cover sheet, that means 16+1 on one side and 2+15 on the other.
+- **Reader's (designer's) spread** - Pages in natural reading order, facing pages side by side: 1, then 2-3, 4-5, 6-7. This is how you *design*, because it lets you build crossovers correctly across the gutter.
+- **Printer's spread** - The imposed, non-consecutive arrangement that lands in order after print, fold, and trim. On a 16-page cover sheet, that means 16+1 on one side and 2+15 on the other.
 
 The workflow rule is simple: **design in reader's spreads, and convert to printer's spreads only at output** (using InDesign's Print Booklet, dedicated imposition software, or the printer's RIP).
 
@@ -174,11 +174,11 @@ The workflow rule is simple: **design in reader's spreads, and convert to printe
 
 A few zones on the sheet are off-limits or need breathing room.
 
-- **Gripper margin** — The leading edge where the press jaws clamp to pull the sheet through. **No printing is possible there.** It's typically 3/8" to 1/2" (about 9 to 13 mm), minimum around 1/4" (6 mm). Keep all live image off it.
-- **Gutter** — Two meanings: the inner spine margin where pages meet at the binding, and the blank lane *between* imposed pages that leaves room for trim, bleed, and fold.
-- **Bleed** — Image extended past the trim so cutting variance never reveals a white edge. Standard is **3 mm (0.125") per edge**; some books want 5 mm. Add overlap into the spine for crossovers.
-- **Trim, fold, and registration marks** — Where to cut, where to fold, and bullseye targets printed by all four plates so the operator can confirm color-to-color alignment.
-- **Color bars** — Density patches along the gripper or tail edge, one per ink, so the operator can read and adjust ink density and gray balance.
+- **Gripper margin** - The leading edge where the press jaws clamp to pull the sheet through. **No printing is possible there.** It's typically 3/8" to 1/2" (about 9 to 13 mm), minimum around 1/4" (6 mm). Keep all live image off it.
+- **Gutter** - Two meanings: the inner spine margin where pages meet at the binding, and the blank lane *between* imposed pages that leaves room for trim, bleed, and fold.
+- **Bleed** - Image extended past the trim so cutting variance never reveals a white edge. Standard is **3 mm (0.125") per edge**; some books want 5 mm. Add overlap into the spine for crossovers.
+- **Trim, fold, and registration marks** - Where to cut, where to fold, and bullseye targets printed by all four plates so the operator can confirm color-to-color alignment.
+- **Color bars** - Density patches along the gripper or tail edge, one per ink, so the operator can read and adjust ink density and gray balance.
 
 These marks live in the waste area outside the trim. A typical edge stack, inside to out, runs: trim line, bleed (3 mm), offset (3 mm), mark zone (5 mm), margin. Budget about **11 mm of extra sheet space per side** for marks plus bleed.
 

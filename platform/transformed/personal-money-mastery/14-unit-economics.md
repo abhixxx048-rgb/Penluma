@@ -57,11 +57,11 @@ Throughout this article we'll use a running example: a **print-SaaS** business, 
 
 Before the math, meet the cast. These five numbers, in plain language, tell you whether your business is a real engine or a leaky bucket.
 
-- **CAC (Customer Acquisition Cost)** — what it costs you, all-in, to win one new paying customer.
-- **Gross margin** — of every ₹100 a customer pays, how many rupees are left after the direct cost of serving them.
-- **Contribution margin** — the cash one customer adds after you subtract everything it costs to serve *that* customer.
-- **LTV (Lifetime Value)** — the total *margin* (not revenue) one customer brings over their entire relationship with you.
-- **CAC payback period** — how many months until a new customer has repaid what you spent to acquire them.
+- **CAC (Customer Acquisition Cost)** - what it costs you, all-in, to win one new paying customer.
+- **Gross margin** - of every ₹100 a customer pays, how many rupees are left after the direct cost of serving them.
+- **Contribution margin** - the cash one customer adds after you subtract everything it costs to serve *that* customer.
+- **LTV (Lifetime Value)** - the total *margin* (not revenue) one customer brings over their entire relationship with you.
+- **CAC payback period** - how many months until a new customer has repaid what you spent to acquire them.
 
 Each one is simple on its own. The magic, and the danger, is in how they fit together.
 

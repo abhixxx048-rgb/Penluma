@@ -92,10 +92,10 @@ Picture a CEO who declares, "We compete on premium service." But the call-centre
 
 When you choose a strategy, four things must be redrawn to match it. Leave any one pointing the old way, and it fights you.
 
-- **Priorities** — the few things that truly matter.
-- **Resources** — where the money and people actually move.
-- **Structure** — who owns what and who decides.
-- **Incentives** — what gets rewarded and measured.
+- **Priorities** - the few things that truly matter.
+- **Resources** - where the money and people actually move.
+- **Structure** - who owns what and who decides.
+- **Incentives** - what gets rewarded and measured.
 
 These four flow down into **daily behaviour**, which produces **results**. The crucial part most companies skip: results should loop back up and re-test the strategy itself.
 
@@ -107,9 +107,9 @@ A strategy that only flows downward (decide, cascade, hope) is brittle. The stro
 
 Strategist **Richard Rumelt**, in *Good Strategy / Bad Strategy*, offers the cleanest test for whether you even have a strategy worth executing. He calls it the **kernel**, and all three parts must be present:
 
-1. **Diagnosis** — a clear-eyed statement of the real problem. Not "sales are down" but "our core customer is defecting to a cheaper substitute because our value-add is no longer worth the premium."
-2. **Guiding policy** — the overall approach you choose, including what you will *not* do.
-3. **Coherent action** — coordinated steps that reinforce each other instead of scattering effort.
+1. **Diagnosis** - a clear-eyed statement of the real problem. Not "sales are down" but "our core customer is defecting to a cheaper substitute because our value-add is no longer worth the premium."
+2. **Guiding policy** - the overall approach you choose, including what you will *not* do.
+3. **Coherent action** - coordinated steps that reinforce each other instead of scattering effort.
 
 Rumelt's warning about **bad strategy** is really an execution failure in disguise. Bad strategy is fluff (impressive words with no content), a failure to face the actual problem, and most commonly, *mistaking goals for strategy*. "Grow 20% and become the market leader" tells nobody what to *do*. It is a wish dressed as a plan.
 
@@ -193,8 +193,8 @@ Here is the idea that separates investors from empire-builders: **growth only cr
 
 Two terms make this precise:
 
-- **ROIC (Return on Invested Capital)** — the profit a business earns as a percentage of the money tied up in it.
-- **Cost of capital** — the minimum return investors require for the risk they take. The "hurdle rate" growth must clear.
+- **ROIC (Return on Invested Capital)** - the profit a business earns as a percentage of the money tied up in it.
+- **Cost of capital** - the minimum return investors require for the risk they take. The "hurdle rate" growth must clear.
 
 A quick analogy makes it vivid. Suppose you borrow money at 10% interest and invest it in projects that return 7%. The more you "grow" by borrowing and investing, the faster you go broke. Every new dollar loses three cents. Now flip it: borrow at 10%, invest at 25%, and every dollar of growth mints value.
 
@@ -221,11 +221,11 @@ This is the capstone. Every strategy you have studied (positioning, moats, growt
 
 There are essentially five places cash can go. A disciplined allocator weighs them against each other every time, like an investor managing a portfolio:
 
-1. **Reinvest in the business** — new factories, products, hiring (organic growth).
+1. **Reinvest in the business** - new factories, products, hiring (organic growth).
 2. **Acquire** another company (M&A).
-3. **Pay down debt** — reduce risk and interest cost.
-4. **Pay dividends** — return cash to owners directly.
-5. **Buy back shares** — when the stock is cheap, repurchasing it raises every remaining owner's slice.
+3. **Pay down debt** - reduce risk and interest cost.
+4. **Pay dividends** - return cash to owners directly.
+5. **Buy back shares** - when the stock is cheap, repurchasing it raises every remaining owner's slice.
 
 The discipline is simple to state and hard to live: compare each option's risk-adjusted return, then put the dollar where it earns the most.
 

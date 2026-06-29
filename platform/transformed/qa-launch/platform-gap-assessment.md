@@ -63,7 +63,7 @@ On this platform, files reached production with none of those checks. The output
 
 ### Break 2: No stock reservation at checkout
 
-When two customers buy the last item at the same moment, something has to hold that inventory the instant an order is placed. This platform deducted stock manually later, which means under real concurrent traffic you can **oversell** — promise the same unit to two people.
+When two customers buy the last item at the same moment, something has to hold that inventory the instant an order is placed. This platform deducted stock manually later, which means under real concurrent traffic you can **oversell** - promise the same unit to two people.
 
 A simple analogy: it is like a restaurant that only counts how many steaks it has *after* taking the orders. On a quiet night, fine. On a Friday rush, you are apologizing.
 
@@ -78,7 +78,7 @@ So the order arrived at the finish line and had nowhere to go.
 
 ## The plot twist: most of the fix was already built
 
-Here is the part that changes the whole story. When the team looked past the documentation and into the actual code, much of Tier 1 was not missing. It was **dormant** — written, then never wired up.
+Here is the part that changes the whole story. When the team looked past the documentation and into the actual code, much of Tier 1 was not missing. It was **dormant** - written, then never wired up.
 
 A carrier shipping driver existed. A `runPreflight()` function existed. A CMYK conversion routine, `processImageForPrint()`, existed. They were just disconnected from the order flow, like a finished room in a house with no door cut into it yet.
 
@@ -97,7 +97,7 @@ The lesson: strength and weakness can live side by side in the same product. Kno
 
 ## Common misconceptions
 
-Two items on this platform were repeatedly reported as launch blockers. Both turned out to be **false alarms** — and how they happened is the most transferable lesson here.
+Two items on this platform were repeatedly reported as launch blockers. Both turned out to be **false alarms** - and how they happened is the most transferable lesson here.
 
 **Myth: "Tax is hardcoded to $0 at checkout."**
 Reality: a real tax engine was running the whole time. It read the store's tax settings and correctly handled tax-inclusive and tax-exclusive pricing. The actual gap was narrower and less scary: the engine supported only a *single rate* per store, not zero tax. Single-rate is a real limitation for businesses that owe different taxes in different regions, but it is a feature gap, not a broken checkout.
@@ -105,7 +105,7 @@ Reality: a real tax engine was running the whole time. It read the store's tax s
 **Myth: "Trial signups are commented out and broken."**
 Reality: the old inline code *was* commented out, but it had been replaced by a newer service that auto-approves the trial, sends a confirmation email, and notifies an admin. The feature worked fine.
 
-Both myths came from the same mistake: **seeing a commented-out block of code and treating it as proof the feature is gone.** It usually means the opposite — that someone replaced it with something better nearby. Always trace the live replacement before you file a blocker.
+Both myths came from the same mistake: **seeing a commented-out block of code and treating it as proof the feature is gone.** It usually means the opposite - that someone replaced it with something better nearby. Always trace the live replacement before you file a blocker.
 
 ## How to use this: a gap assessment you can run yourself
 
@@ -115,7 +115,7 @@ You can apply this same method to any platform before launch.
 2. **Check the code, not the docs.** Documentation drifts. Confirm a gap is truly missing in the code before you call it missing. Every gap in this assessment was verified that way.
 3. **Rank by business impact, not engineering size.** A tiny missing tracking-number link costs more than a large, polished feature nobody is blocked on.
 4. **Separate "absent" from "dormant."** Search for half-built code before you scope new work. The cheapest wins are features that already exist and just need wiring up.
-5. **Fix the spine as one continuous effort.** Repair the order path in order — preflight and CMYK output, then stock reservation, then partial fulfillment, then carrier integration and tracking. A spine half-repaired is still a broken spine.
+5. **Fix the spine as one continuous effort.** Repair the order path in order - preflight and CMYK output, then stock reservation, then partial fulfillment, then carrier integration and tracking. A spine half-repaired is still a broken spine.
 6. **Only then widen scope.** After the order path is whole, move outward: correct tax-by-destination and refunds, wire up dormant pricing, then reach for new markets with translation and multi-currency, and finally deepen production tooling like scheduling and materials inventory.
 
 ## Conclusion

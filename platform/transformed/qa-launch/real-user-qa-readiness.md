@@ -20,7 +20,7 @@ keywords:
 faq:
   - q: What is a "silent lie" bug?
     a: >-
-      It is when your interface reports success — "Saved," "Paid," "Link sent" —
+      It is when your interface reports success - "Saved," "Paid," "Link sent" -
       while the underlying write actually failed or never happened. The user
       trusts the message, walks away, and only discovers the truth later when
       something is broken.
@@ -64,7 +64,7 @@ sources: []
 
 Imagine a customer clicks "Pay," sees a cheerful **"Payment Successful"** page, and closes the tab. The order was never paid. Nobody knows. Not the customer, not the store owner, not you.
 
-That single screen — a green checkmark over a failure — is the most dangerous kind of bug a product can ship. It doesn't crash. It doesn't throw an error. It smiles and lies.
+That single screen - a green checkmark over a failure - is the most dangerous kind of bug a product can ship. It doesn't crash. It doesn't throw an error. It smiles and lies.
 
 Before you put your app in front of real, non-technical users, you need to hunt for this exact pattern. Here's how to think about launch readiness when the people using your product will never file a good bug report.
 
@@ -72,11 +72,11 @@ Before you put your app in front of real, non-technical users, you need to hunt 
 
 When engineers test software, they read error logs and stack traces. When real users hit a problem, they shrug and leave.
 
-A non-technical store owner won't tell you the shipping cost calculated to zero. A locked-out customer won't email you to say the "reset your password" link never arrived — they'll just assume your product is broken and never come back.
+A non-technical store owner won't tell you the shipping cost calculated to zero. A locked-out customer won't email you to say the "reset your password" link never arrived - they'll just assume your product is broken and never come back.
 
 This is the trap of a pre-launch product: **the absence of complaints is not proof that things work.** It often means the failures are silent, and your most honest feedback is walking out the door without a word.
 
-So launch readiness isn't about whether the happy path works in a demo. It's about what happens when something goes wrong — and whether anyone finds out.
+So launch readiness isn't about whether the happy path works in a demo. It's about what happens when something goes wrong - and whether anyone finds out.
 
 ## The silent-lie bug: the one to fear most
 
@@ -85,13 +85,13 @@ A silent lie is when your interface says one thing while the system did another.
 You've probably seen these in the wild:
 
 - **"Payment Successful"** shown for an offline or pending order that was never actually paid.
-- **"You'll receive a reset link shortly"** when no email is ever sent — the feature is a placeholder that just logs a note to nobody.
+- **"You'll receive a reset link shortly"** when no email is ever sent - the feature is a placeholder that just logs a note to nobody.
 - **"Saved"** when the write failed and the form data evaporated.
-- A confirmation email that says **"received and being processed"** — sent before payment even clears.
+- A confirmation email that says **"received and being processed"** - sent before payment even clears.
 
 Why are these so toxic? Because the user *trusts the message*. A loud error at least prompts a retry. A silent lie sends people away confident that everything is fine, and the damage surfaces hours or days later, far from the cause.
 
-**Mini case study.** Picture an order confirmation email that lists only the item subtotal — say $49 — while the real charge with shipping and tax is $100. The customer sees $49, gets billed $100, and now you have a chargeback, a furious email, and a trust problem. Nothing "broke." The numbers just didn't match.
+**Mini case study.** Picture an order confirmation email that lists only the item subtotal - say $49 - while the real charge with shipping and tax is $100. The customer sees $49, gets billed $100, and now you have a chargeback, a furious email, and a trust problem. Nothing "broke." The numbers just didn't match.
 
 The fix is a principle: **never display success until the thing actually succeeded.** Read the real status. If payment is pending, the page says pending. If the write failed, the form says so. Truth over reassurance, every time.
 
@@ -101,22 +101,22 @@ If your product takes money, one rule sits above all others:
 
 > Cart total = checkout total = order total = invoice. Always. Including shipping, tax, and coupons.
 
-The moment those four numbers can disagree, you have a money-mismatch bug — and money bugs are the ones that generate refunds, disputes, and reputational damage.
+The moment those four numbers can disagree, you have a money-mismatch bug - and money bugs are the ones that generate refunds, disputes, and reputational damage.
 
 Common ways the chain breaks:
 
 - **Tax is calculated differently** in the cart than at checkout (one uses a store-wide rate, the other goes per-item).
 - **Shipping silently resolves to $0** for a method the code didn't anticipate.
 - **The cart shows one shipping option** but checkout lets the customer pick a different, more expensive one.
-- **Inventory never decrements**, so you can sell the same limited item an unlimited number of times — an oversell waiting to disappoint someone.
+- **Inventory never decrements**, so you can sell the same limited item an unlimited number of times - an oversell waiting to disappoint someone.
 
 The defense here is not manual checking. It's an automated **money-truth test** that asserts those totals match across the whole flow, plus a shipping round-trip test that proves no path can ever produce a $0 charge.
 
-**Analogy:** think of the money path like a relay race. The baton (the total) is handed from cart to checkout to order to invoice. If any runner quietly swaps the baton for a different one, the race is corrupted — even though everyone crossed the finish line.
+**Analogy:** think of the money path like a relay race. The baton (the total) is handed from cart to checkout to order to invoice. If any runner quietly swaps the baton for a different one, the race is corrupted - even though everyone crossed the finish line.
 
 ## Security shortcuts have a way of shipping
 
-Two failures deserve a category of their own because they aren't just bugs — they're open doors.
+Two failures deserve a category of their own because they aren't just bugs - they're open doors.
 
 - **Hardcoded backdoors.** A "master code" that logs in as any admin when an environment variable is unset is the kind of dev convenience that quietly rides into production. Anyone who learns the code owns every account.
 - **Broken account recovery.** A password reset that returns "link sent" but sends nothing means a locked-out user is locked out *forever*, while being told help is on the way. That's a silent lie with a security blast radius.
@@ -127,14 +127,14 @@ These should be treated as the top priority regardless of launch timing. A featu
 
 Even your setup guidance can fall into the silent-lie trap.
 
-A first-run checklist that marks "Payment configured" as done just because a toggle is on — **without ever testing the credentials** — gives the owner a green checkmark over a store that can't actually take money. Same story when "Shipping" shows complete because *some* rate exists, even if none of them are valid.
+A first-run checklist that marks "Payment configured" as done just because a toggle is on - **without ever testing the credentials** - gives the owner a green checkmark over a store that can't actually take money. Same story when "Shipping" shows complete because *some* rate exists, even if none of them are valid.
 
 Two practical onboarding failures to watch for:
 
 1. **No guided first run.** A brand-new owner lands on an empty screen with no wizard, no first store created, no sense of what to do next.
 2. **A checklist that expires on a timer.** Guidance that auto-hides after 30 days abandons the half-configured owner exactly when they still need it.
 
-The better pattern is a **server-computed "can this store actually take a real order?" signal**: payment gateway truly verified, at least one published product, valid shipping, complete store info. That single honest signal should drive both the checklist and a real "you're ready to sell" state — replacing flimsy "is this toggle on?" checks.
+The better pattern is a **server-computed "can this store actually take a real order?" signal**: payment gateway truly verified, at least one published product, valid shipping, complete store info. That single honest signal should drive both the checklist and a real "you're ready to sell" state - replacing flimsy "is this toggle on?" checks.
 
 ## A support spine: what happens when a user gets stuck
 
@@ -142,12 +142,12 @@ Most early products can transact but cannot *help*. There's no spine holding up 
 
 Signs you're missing one:
 
-- A contact form that accepts a message and returns **no reference number, no confirmation, no status** — the user has no idea if anyone heard them.
-- **No ticketing at all** — submissions write to a table and stop. No escalation, no reply, no follow-up.
+- A contact form that accepts a message and returns **no reference number, no confirmation, no status** - the user has no idea if anyone heard them.
+- **No ticketing at all** - submissions write to a table and stop. No escalation, no reply, no follow-up.
 - **Owners locked out of their own error logs**, so when their storefront throws a 500, they're blind and can't self-diagnose.
 - A crash page with **no contact info and no error reference**, leaving a stuck user at a dead end.
 
-Here's the encouraging part: the cheapest, highest-impact fix is usually to **surface what already exists.** Link your help docs into a visible Help menu. Show contact details and an error reference on every error page. Give owners a view into their own diagnostics. You don't need a full help-desk on day one — you need to stop hiding the help you already have.
+Here's the encouraging part: the cheapest, highest-impact fix is usually to **surface what already exists.** Link your help docs into a visible Help menu. Show contact details and an error reference on every error page. Give owners a view into their own diagnostics. You don't need a full help-desk on day one - you need to stop hiding the help you already have.
 
 ## Feedback: a product that transacts but cannot listen
 
@@ -164,7 +164,7 @@ The good news mirrors the support fix: you probably already have the plumbing. I
 ## Common misconceptions
 
 **"If users hit a bug, they'll tell us."**
-Non-technical users almost never do. They assume it's their fault, or they simply leave. Your churn *is* your bug report — you just can't read it.
+Non-technical users almost never do. They assume it's their fault, or they simply leave. Your churn *is* your bug report - you just can't read it.
 
 **"It works in the demo, so it's ready."**
 Demos walk the happy path. Launch readiness lives in the unhappy paths: failed payments, network errors, empty states, and small screens.
@@ -177,7 +177,7 @@ Later is after the customer is already gone. The minimum support spine and a sin
 
 ## How to use this: a launch-gate checklist
 
-Run this before any real user touches your product. Treat the first six as hard gates — they must be green.
+Run this before any real user touches your product. Treat the first six as hard gates - they must be green.
 
 1. **Close every backdoor.** Remove hardcoded master credentials. Ship a password reset that genuinely sends the email.
 2. **Make money agree with itself.** Add an automated test asserting cart = checkout = order = invoice, including shipping, tax, and coupons.
@@ -188,14 +188,14 @@ Run this before any real user touches your product. Treat the first six as hard 
 7. **Stand up a support spine v1.** Visible contact info, an error reference, linked help docs, and owner-accessible diagnostics.
 8. **Add one feedback hook.** A one-click post-delivery survey and an abandoned-cart email on your existing email pipeline.
 9. **Test on desktop *and* at 375px.** For every page, check all three states: loading, empty, and error.
-10. **Write a regression test for every blocker you fix.** A finding with no test is not fixed — it's waiting to come back.
+10. **Write a regression test for every blocker you fix.** A finding with no test is not fixed - it's waiting to come back.
 
 A useful working rule for the whole effort: **for every screen, ask "what does this show when the thing behind it fails?"** If the answer is "the same as success" or "a blank page," you've found your next bug.
 
 ## Conclusion
 
-The single takeaway: **a confident "Success" message is worthless unless it's wired to a real success — and your quietest users are the ones telling you it isn't.**
+The single takeaway: **a confident "Success" message is worthless unless it's wired to a real success - and your quietest users are the ones telling you it isn't.**
 
 Launch readiness isn't about making the happy path shine. It's about refusing to lie when things go wrong, and building just enough of a spine to catch the users who would otherwise slip away in silence.
 
-Once you start hunting silent lies, you'll notice they hide everywhere there's a gap between *what the code did* and *what the screen said*. The natural next question: how do you catch them automatically, before a customer ever does? That's where proactive telemetry comes in — error-spike alerts and checkout-failure events that turn your next class of bugs into a dashboard signal instead of a lost sale. But that's a story for another post.
+Once you start hunting silent lies, you'll notice they hide everywhere there's a gap between *what the code did* and *what the screen said*. The natural next question: how do you catch them automatically, before a customer ever does? That's where proactive telemetry comes in - error-spike alerts and checkout-failure events that turn your next class of bugs into a dashboard signal instead of a lost sale. But that's a story for another post.

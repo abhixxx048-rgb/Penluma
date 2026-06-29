@@ -130,9 +130,9 @@ So define your competitive set by the **job**, not the product category. Your re
 
 A job is never purely practical. Every one has three layers, and you have to design for all three:
 
-- **Functional** — the practical task. Get the storefront up, take the order, accept payment.
-- **Emotional** — how the person wants to feel. In control and confident, not anxious that they're about to break something.
-- **Social** — how the person wants to be seen. As legitimate and modern, not "behind the times."
+- **Functional** - the practical task. Get the storefront up, take the order, accept payment.
+- **Emotional** - how the person wants to feel. In control and confident, not anxious that they're about to break something.
+- **Social** - how the person wants to be seen. As legitimate and modern, not "behind the times."
 
 Miss the emotional and social layers and you'll build something that technically works but feels wrong, and people will quietly fire it.
 

@@ -76,7 +76,7 @@ Most of us were taught to explain things the way a textbook does: state it corre
 
 That approach quietly wastes enormous effort. Students reread chapters and remember little. Trainers run through slides and watch eyes glaze. Smart people explain a concept perfectly and still get blank stares.
 
-The reason is not effort or intelligence. It is **working memory** — the tiny mental workbench where you hold whatever you are thinking about right now. It is shockingly small, holding only about four items at a time, and it empties out within seconds if your attention drifts. Every lesson that fails usually fails because it floods that small workbench.
+The reason is not effort or intelligence. It is **working memory** - the tiny mental workbench where you hold whatever you are thinking about right now. It is shockingly small, holding only about four items at a time, and it empties out within seconds if your attention drifts. Every lesson that fails usually fails because it floods that small workbench.
 
 Once you understand how to work *with* that limit instead of against it, you can teach almost anything more clearly. So can an AI tutor built on the same principles.
 
@@ -84,22 +84,22 @@ Once you understand how to work *with* that limit instead of against it, you can
 
 There is a comforting myth that some people are "visual learners" and others are "verbal learners," so you should match the medium to the person. Research does not support this. Matching a teaching style to a supposed learner type does not improve results.
 
-What research *does* support is more useful. Nobody understands a new idea from a single angle. Each person arrives with different **prior knowledge** — the patterns already stored in their memory — and a new idea only clicks when it connects to something already there.
+What research *does* support is more useful. Nobody understands a new idea from a single angle. Each person arrives with different **prior knowledge** - the patterns already stored in their memory - and a new idea only clicks when it connects to something already there.
 
 The catch: you cannot know in advance which connection will fire. One person grasps a concept through a sports analogy, another through a worked-out number, another by trying it and failing once. So instead of guessing, a great explanation offers the same idea through several complementary doorways and lets understanding catch on whichever one fits.
 
 ## The lesson is a system, not a wall of text
 
-A wall of text dumps ten ideas at once. Working memory overflows, and almost nothing reaches **long-term memory** — the vast, durable warehouse where lasting knowledge lives. The learner tried hard and learned nothing.
+A wall of text dumps ten ideas at once. Working memory overflows, and almost nothing reaches **long-term memory** - the vast, durable warehouse where lasting knowledge lives. The learner tried hard and learned nothing.
 
 The fix is to treat a lesson as an ordered *system* of small parts. Each part does one job. Each is small enough to fit through that four-item doorway. Here is the structure, from gentlest to most demanding:
 
-1. **Simple** — a plain, one-line "what is it."
-2. **Deeper** — the precise, technical version.
-3. **Analogy** — map it onto something familiar.
-4. **Example** — one concrete, worked-out case.
-5. **Real use** — where it matters in actual life.
-6. **Practice** — the learner retrieves it or does it.
+1. **Simple** - a plain, one-line "what is it."
+2. **Deeper** - the precise, technical version.
+3. **Analogy** - map it onto something familiar.
+4. **Example** - one concrete, worked-out case.
+5. **Real use** - where it matters in actual life.
+6. **Practice** - the learner retrieves it or does it.
 
 Notice the shape. It starts easy to give the mind a foothold, then deepens, then makes the learner *do* something. That final practice layer is not decoration. Pulling information *out* of memory strengthens learning far more than reading it *in* again. This is the **testing effect**, and it is the single most underused tool in weak lessons.
 
@@ -119,7 +119,7 @@ An analogy maps a new idea onto something the learner already owns. It is the br
 
 For example: working memory is like a small kitchen counter, and long-term memory is the giant pantry. You can only chop on the counter what fits on it. Everything else must be put away in the pantry, organized, so you can grab a whole shelf at once later. A good lesson keeps the counter uncluttered.
 
-One warning: analogies are powerful but leaky. Every analogy breaks somewhere, so a great explanation names the limit out loud — "this is like a counter, except the counter wipes itself clean every few seconds."
+One warning: analogies are powerful but leaky. Every analogy breaks somewhere, so a great explanation names the limit out loud - "this is like a counter, except the counter wipes itself clean every few seconds."
 
 ### Layer 4: The worked example
 
@@ -127,7 +127,7 @@ Beginners learn far more from studying a fully worked-out example than from bein
 
 Here is one. Suppose you want to teach "spacing beats cramming." Don't just state it. Walk through it:
 
-> Maria studies 4 hours the night before and scores 80% the next morning, then forgets most of it by Friday. Tom studies 1 hour on four separate days. He scores 78% the next morning — slightly worse — but still remembers 70% three weeks later. Same total hours. Very different durable result.
+> Maria studies 4 hours the night before and scores 80% the next morning, then forgets most of it by Friday. Tom studies 1 hour on four separate days. He scores 78% the next morning - slightly worse - but still remembers 70% three weeks later. Same total hours. Very different durable result.
 
 The numbers turn an abstract rule into something concrete and memorable.
 
@@ -135,13 +135,13 @@ The numbers turn an abstract rule into something concrete and memorable.
 
 Answer the silent question every learner is asking: "When would I ever use this?" Tying an idea to a real situation gives memory an extra hook and supplies motivation.
 
-It also pushes toward **transfer** — the ability to use knowledge in a new, unfamiliar setting. Transfer is the actual goal of learning. Facts you can only repeat in the exact context you learned them are barely learned at all.
+It also pushes toward **transfer** - the ability to use knowledge in a new, unfamiliar setting. Transfer is the actual goal of learning. Facts you can only repeat in the exact context you learned them are barely learned at all.
 
 ### Layer 6: Practice through retrieval
 
 End by making the learner produce something from memory: answer a question, predict an outcome, or explain the idea back in their own words.
 
-The **Feynman technique** lives here — if you can't explain it simply, you don't understand it well enough. When the learner stumbles while explaining, that stumble is a gift. It pinpoints the exact gap to revisit. A tutor (human or AI) can ask the learner to "explain this to me like I'm new," then target review precisely where the explanation went vague. That single move bakes in both retrieval and self-explanation.
+The **Feynman technique** lives here - if you can't explain it simply, you don't understand it well enough. When the learner stumbles while explaining, that stumble is a gift. It pinpoints the exact gap to revisit. A tutor (human or AI) can ask the learner to "explain this to me like I'm new," then target review precisely where the explanation went vague. That single move bakes in both retrieval and self-explanation.
 
 ## How this maps onto proven teaching
 
@@ -162,9 +162,9 @@ This structure is not invented from nowhere. It lines up with two long-establish
 
 **"Match the medium to the learner's style."** The visual-versus-verbal learner idea is a myth. Everyone benefits from multiple angles. Offer the same idea several ways, not one way tailored to a guessed type.
 
-**"If they didn't get it, repeat it."** Re-explaining the same way, only louder or slower, rarely helps. If the first phrasing didn't land, a *different* layer — an analogy, an example, a try-it-yourself — usually does.
+**"If they didn't get it, repeat it."** Re-explaining the same way, only louder or slower, rarely helps. If the first phrasing didn't land, a *different* layer - an analogy, an example, a try-it-yourself - usually does.
 
-**"More content makes a richer lesson."** Decorative pictures, extra jargon, and padding add what learning scientists call **extraneous load** — wasted effort that steals room from the tiny workbench. A glossy stock photo teaches nothing. A labeled diagram synced to the words can teach a lot. Pair words with *relevant* visuals only, and keep them close together.
+**"More content makes a richer lesson."** Decorative pictures, extra jargon, and padding add what learning scientists call **extraneous load** - wasted effort that steals room from the tiny workbench. A glossy stock photo teaches nothing. A labeled diagram synced to the words can teach a lot. Pair words with *relevant* visuals only, and keep them close together.
 
 **"More layers is always better."** Not so. This is the **expertise reversal effect**: support that helps a novice becomes clutter for an expert. Forcing the simple layer and the analogy on someone who already gets it wastes attention and feels patronizing.
 
@@ -175,16 +175,16 @@ You don't need to be a teacher to apply this. Use it the next time you explain s
 1. **Name the one idea.** A lesson teaches a single concept. If you have three, you have three lessons.
 2. **Open simple.** Write one plain sentence first, with no jargon. If you can't, you don't yet understand it.
 3. **Then go precise.** Add the accurate, technical version, defining each new term before using it.
-4. **Bridge with an analogy** to something the listener already knows — and name where the analogy breaks.
+4. **Bridge with an analogy** to something the listener already knows - and name where the analogy breaks.
 5. **Show a worked example** all the way through before asking anyone to solve anything alone.
 6. **Anchor it to real life** so the learner sees when they'd use it.
-7. **End with retrieval.** Ask a question, request a prediction, or have them explain it back. Never finish on "does that make sense?" — finish on "show me."
+7. **End with retrieval.** Ask a question, request a prediction, or have them explain it back. Never finish on "does that make sense?" - finish on "show me."
 8. **Cut, then cut again.** Drop the gentle layers for advanced learners, and delete anything decorative.
 
 If you're studying alone, run the same loop on yourself: read it, close the book, and explain it out loud. The places you go vague are your homework.
 
 ## Conclusion
 
-The single takeaway: understanding is a connection, not a transmission. You cannot pour an idea into someone's head fully formed. You can only offer enough doorways that it links to something already there — and then make them reach for it, because reaching is what makes it stick.
+The single takeaway: understanding is a connection, not a transmission. You cannot pour an idea into someone's head fully formed. You can only offer enough doorways that it links to something already there - and then make them reach for it, because reaching is what makes it stick.
 
-That last part hints at something bigger. Retrieval doesn't just check learning; it *builds* it, and *when* you retrieve matters as much as *whether* you do. Recall something just before you'd forget it, and the memory hardens for far longer. That timing is the engine behind spaced repetition — and it is where a great lesson stops being a one-time event and becomes a system that defeats forgetting itself.
+That last part hints at something bigger. Retrieval doesn't just check learning; it *builds* it, and *when* you retrieve matters as much as *whether* you do. Recall something just before you'd forget it, and the memory hardens for far longer. That timing is the engine behind spaced repetition - and it is where a great lesson stops being a one-time event and becomes a system that defeats forgetting itself.

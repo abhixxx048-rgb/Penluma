@@ -60,10 +60,10 @@ Think of a good doctor. They do not walk in and say, "Here, take this pill, it i
 
 Most discovery calls are booked for 30 minutes. Keep them there unless both sides are clearly engaged and want more. Here is a simple time-box you can reuse every single time:
 
-- **0–3 min — Opening.** Build a little warmth, set the agenda, get permission.
-- **3–22 min — The middle.** Discovery questions. This is the real work, and it moves from Situation to Problem to Impact to what they have already tried.
-- **22–26 min — You talk.** A little about your product, and only now.
-- **26–30 min — Closing.** Summarize and confirm a concrete next step.
+- **0–3 min - Opening.** Build a little warmth, set the agenda, get permission.
+- **3–22 min - The middle.** Discovery questions. This is the real work, and it moves from Situation to Problem to Impact to what they have already tried.
+- **22–26 min - You talk.** A little about your product, and only now.
+- **26–30 min - Closing.** Summarize and confirm a concrete next step.
 - **After the call.** Notes, then CRM, then a follow-up email within 24 hours.
 
 That is the whole map. Each part below shows you exactly what to do.
@@ -98,25 +98,25 @@ The most common mistake here is diving straight into your product because you ar
 
 This is the heart of the call. The cleanest framework is **SPIN Selling**, created by Neil Rackham after studying 35,000 sales calls. SPIN is four kinds of questions, asked in order, moving from the calm outside of a problem toward its painful center.
 
-### S — Situation: where are you now?
+### S - Situation: where are you now?
 
 Understand how they do things today. Keep these short, since you already researched, and do not over-ask.
 
 *"Walk me through how your team handles [task] right now."*
 
-### P — Problem: what is broken?
+### P - Problem: what is broken?
 
 Find the pain.
 
 *"What's the most frustrating part of that process?" "Where does it tend to break down?"*
 
-### I — Implication: what does that cost you?
+### I - Implication: what does that cost you?
 
 This is the most powerful and most-skipped type. You help them feel the size of the problem.
 
 *"When that happens, what's the knock-on effect? How much time does that eat per week? What does that cost you?"*
 
-### N — Need-payoff: what would solving it unlock?
+### N - Need-payoff: what would solving it unlock?
 
 Let *them* say the value out loud.
 

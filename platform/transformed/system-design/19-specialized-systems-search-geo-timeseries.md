@@ -81,9 +81,9 @@ That single flip is why search engines like Elasticsearch and OpenSearch (both b
 
 Before text can go into the index, it gets cleaned up by a pipeline Lucene calls an **analyzer**:
 
-1. **Tokenize** — split "Red Business Cards!" into separate words.
-2. **Filter** — lowercase everything, strip punctuation, reduce words to their root ("cards" becomes "card"), and drop noise words like "the" and "a".
-3. **Index** — store the result as a list of which documents contain each term.
+1. **Tokenize** - split "Red Business Cards!" into separate words.
+2. **Filter** - lowercase everything, strip punctuation, reduce words to their root ("cards" becomes "card"), and drop noise words like "the" and "a".
+3. **Index** - store the result as a list of which documents contain each term.
 
 Here's the rule that trips up almost everyone the first time:
 
@@ -132,10 +132,10 @@ Unless... you **flatten 2-D into 1-D while keeping nearby things nearby.** If yo
 
 ### The four ways people do it
 
-- **Geohash** — Carve the world into a grid and encode each cell as a short string like `9q8yy`. Points in the same area share a prefix. Dead simple, works in any key-value store. Its weakness is the **edge problem** (more on that next).
-- **Quadtree** — Recursively split a square into four smaller squares wherever there are too many points. Dense cities get a deep, detailed tree; empty oceans stay shallow. Great for loading map tiles in a viewport.
-- **R-tree** — Group nearby objects into bounding rectangles, nested in a tree. The only one of the four that handles real shapes and polygons, not just points. This is what **PostGIS** uses.
-- **S2 (Google) and H3 (Uber)** — Project the round Earth onto a solid shape and tile each face. They fix the distortion geohash suffers near the poles and give you uniform, comparable cells. S2 uses squares; H3 uses hexagons.
+- **Geohash** - Carve the world into a grid and encode each cell as a short string like `9q8yy`. Points in the same area share a prefix. Dead simple, works in any key-value store. Its weakness is the **edge problem** (more on that next).
+- **Quadtree** - Recursively split a square into four smaller squares wherever there are too many points. Dense cities get a deep, detailed tree; empty oceans stay shallow. Great for loading map tiles in a viewport.
+- **R-tree** - Group nearby objects into bounding rectangles, nested in a tree. The only one of the four that handles real shapes and polygons, not just points. This is what **PostGIS** uses.
+- **S2 (Google) and H3 (Uber)** - Project the round Earth onto a solid shape and tile each face. They fix the distortion geohash suffers near the poles and give you uniform, comparable cells. S2 uses squares; H3 uses hexagons.
 
 ### The edge problem (a classic interview trap)
 
@@ -185,9 +185,9 @@ Each series needs an index entry and an open chunk in memory. Add one high-cardi
 
 ### The big three at a glance
 
-- **Prometheus** — Pulls metrics by scraping your servers. Deliberately simple and single-node so it keeps working when everything else is on fire. Bolt on Thanos or Mimir for long-term, global storage. The wall you hit is RAM, which scales with the number of active series.
-- **InfluxDB** — Push-based, general-purpose IoT and metrics, with its own query language.
-- **TimescaleDB** — It *is* Postgres, with time-series superpowers. Pick it when you want plain SQL and the ability to join your metrics against relational data.
+- **Prometheus** - Pulls metrics by scraping your servers. Deliberately simple and single-node so it keeps working when everything else is on fire. Bolt on Thanos or Mimir for long-term, global storage. The wall you hit is RAM, which scales with the number of active series.
+- **InfluxDB** - Push-based, general-purpose IoT and metrics, with its own query language.
+- **TimescaleDB** - It *is* Postgres, with time-series superpowers. Pick it when you want plain SQL and the ability to join your metrics against relational data.
 
 ## Analytics: counting billions of rows
 
@@ -195,8 +195,8 @@ Each series needs an index entry and an open chunk in memory. Add one high-cardi
 
 There are two completely different jobs a database might do:
 
-- **OLTP (transactional)** — Read and write a handful of rows by key, in milliseconds. Checkout, login, posting a comment. This is MySQL and Postgres.
-- **OLAP (analytical)** — Read millions or billions of rows, touch only a few columns, and aggregate. "Revenue by region by month." Seconds are fine. This is BigQuery, Snowflake, and ClickHouse.
+- **OLTP (transactional)** - Read and write a handful of rows by key, in milliseconds. Checkout, login, posting a comment. This is MySQL and Postgres.
+- **OLAP (analytical)** - Read millions or billions of rows, touch only a few columns, and aggregate. "Revenue by region by month." Seconds are fine. This is BigQuery, Snowflake, and ClickHouse.
 
 The deepest difference is how they store data on disk.
 
@@ -222,9 +222,9 @@ One subtle trap worth knowing by name: **Slowly Changing Dimensions.** When a cu
 
 ### Warehouse vs lake vs lakehouse
 
-- **Data warehouse** — Structured, modeled, fast SQL, governed. Snowflake, BigQuery. Powerful but pricier and more rigid.
-- **Data lake** — Cheap object storage (like S3) holding raw files of any kind. Flexible and great for machine learning, but with no guarantees it can become a "data swamp."
-- **Lakehouse** — The modern convergence. Keep cheap files in S3, but add a transaction layer (Apache Iceberg, Delta Lake, or Hudi) that gives you reliable commits, schema changes, and time-travel. One copy of data serves both SQL dashboards and ML, with no expensive copy-into-the-warehouse step.
+- **Data warehouse** - Structured, modeled, fast SQL, governed. Snowflake, BigQuery. Powerful but pricier and more rigid.
+- **Data lake** - Cheap object storage (like S3) holding raw files of any kind. Flexible and great for machine learning, but with no guarantees it can become a "data swamp."
+- **Lakehouse** - The modern convergence. Keep cheap files in S3, but add a transaction layer (Apache Iceberg, Delta Lake, or Hudi) that gives you reliable commits, schema changes, and time-travel. One copy of data serves both SQL dashboards and ML, with no expensive copy-into-the-warehouse step.
 
 ## Common misconceptions
 

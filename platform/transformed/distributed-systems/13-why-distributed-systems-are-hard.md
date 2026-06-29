@@ -55,10 +55,10 @@ If you ignore that, your system does not gently warn you. It corrupts data, doub
 
 A few plain-English words we will use throughout:
 
-- **Node** — one computer or running process in the system (a server, a database replica, a microservice).
-- **Network** — the cables, routers, and software that carry messages between nodes. The postal service between computers.
-- **Message** — a chunk of data one node sends another: a request, a reply, a heartbeat.
-- **State** — the data a node holds right now: account balances, sessions, counters.
+- **Node** - one computer or running process in the system (a server, a database replica, a microservice).
+- **Network** - the cables, routers, and software that carry messages between nodes. The postal service between computers.
+- **Message** - a chunk of data one node sends another: a request, a reply, a heartbeat.
+- **State** - the data a node holds right now: account balances, sessions, counters.
 
 ## Partial failure: the problem with no single-machine equivalent
 
@@ -88,10 +88,10 @@ This is the cruel heart of the field: **from the outside, a crashed node looks i
 
 The thing carrying your messages is not a reliable pipe. Messages can be:
 
-- **Lost** — they never arrive.
-- **Delayed** — they arrive much later than expected.
-- **Duplicated** — they arrive more than once.
-- **Reordered** — they arrive in a different order than you sent them.
+- **Lost** - they never arrive.
+- **Delayed** - they arrive much later than expected.
+- **Duplicated** - they arrive more than once.
+- **Reordered** - they arrive in a different order than you sent them.
 
 This is not bad luck. A network is a long chain of cables, switches, and routers spanning buildings, cities, or continents. Each hop has buffers that overflow and drop packets. Routers reboot. Cables get cut. Retransmission software sometimes produces duplicates. No physical law guarantees that what you send arrives, arrives once, or arrives in order.
 

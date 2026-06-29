@@ -70,10 +70,10 @@ Let's reframe it once, clearly: **networking is relationship-building, not schmo
 
 Before we go further, here are the words this guide leans on:
 
-- **Introvert** — someone who *recharges* by being alone and *spends* energy in social situations. (An extrovert is the reverse, they get energy from people.) It is not shyness and it is not a flaw. It is just how your battery works.
-- **Async (asynchronous) communication** — talking to someone *not* in real time. A message, email, or comment they answer whenever they can, instead of a live call where you both have to be "on" at once.
-- **DM (direct message)** — a private, one-to-one message on a platform, separate from any public comment thread.
-- **Give-first posture** — entering any interaction asking "What can I offer here?" instead of "What can I get?"
+- **Introvert** - someone who *recharges* by being alone and *spends* energy in social situations. (An extrovert is the reverse, they get energy from people.) It is not shyness and it is not a flaw. It is just how your battery works.
+- **Async (asynchronous) communication** - talking to someone *not* in real time. A message, email, or comment they answer whenever they can, instead of a live call where you both have to be "on" at once.
+- **DM (direct message)** - a private, one-to-one message on a platform, separate from any public comment thread.
+- **Give-first posture** - entering any interaction asking "What can I offer here?" instead of "What can I get?"
 
 ## Why introverts have an unfair advantage
 

@@ -121,7 +121,7 @@ To price on value, you have to understand your customer's world: the outcome the
 
 Here's how the three methods fit together:
 
-- **Cost-plus** tells you the **floor** — never sell below cost for long.
+- **Cost-plus** tells you the **floor** - never sell below cost for long.
 - **Competitor pricing** tells you the **market range**.
 - **Value** tells you the **ceiling**.
 
@@ -129,7 +129,7 @@ Good founders keep an eye on all three but let **value** lead.
 
 ## The value metric: what you charge *per*
 
-A **value metric** is the unit you bill by — the thing that climbs as the customer gets more value. Picking the right one matters as much as picking the number.
+A **value metric** is the unit you bill by - the thing that climbs as the customer gets more value. Picking the right one matters as much as picking the number.
 
 - An email tool charges per **subscriber** or per **email sent**.
 - A storage service charges per **gigabyte**.
@@ -151,7 +151,7 @@ The method tells you *how to find the number*. The model is the *structure* you 
 | Tiered (good-better-best) | 2-4 packages at rising prices | Mixed customers, big and small |
 | Freemium | Free base, pay to unlock more | Wide top-of-funnel, viral growth |
 
-Subscriptions create **recurring revenue** — money that arrives again every period without a fresh sale, which makes a business far steadier and more valuable. Usage pricing feels fair but can spook customers who fear a surprise bill. Many companies blend the two: a base subscription with usage stacked on top.
+Subscriptions create **recurring revenue** - money that arrives again every period without a fresh sale, which makes a business far steadier and more valuable. Usage pricing feels fair but can spook customers who fear a surprise bill. Many companies blend the two: a base subscription with usage stacked on top.
 
 ## Good-better-best: why three tiers works
 

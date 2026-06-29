@@ -447,6 +447,27 @@ if (fs.existsSync(TRANSFORMED_DIR)) {
   }
 }
 
+// Posts manifest (id + final title) - consumed by the OG-image route so it can
+// build a card per post WITHOUT calling getCollection() (which breaks the
+// Cloudflare worker's content-asset bundling in a prerendered endpoint).
+const postsManifest = [];
+for (const topicDir of fs.readdirSync(OUT_DIR, { withFileTypes: true })) {
+  if (!topicDir.isDirectory()) continue;
+  for (const file of fs.readdirSync(path.join(OUT_DIR, topicDir.name))) {
+    if (!file.endsWith('.md')) continue;
+    const fm = matter(fs.readFileSync(path.join(OUT_DIR, topicDir.name, file), 'utf8')).data;
+    postsManifest.push({
+      id: `${topicDir.name}/${file.replace(/\.md$/, '')}`,
+      title: fm.title || '',
+      topicTitle: fm.topicTitle || '',
+    });
+  }
+}
+fs.writeFileSync(
+  path.join(PLATFORM_DIR, 'src/posts.generated.json'),
+  JSON.stringify(postsManifest, null, 2)
+);
+
 // homepage spotlight manifest (featured standalone posts)
 fs.writeFileSync(
   path.join(PLATFORM_DIR, 'src/featured.generated.json'),

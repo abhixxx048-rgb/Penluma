@@ -79,12 +79,12 @@ A **taxonomy** is just an ordered classification, like the way biologists sort l
 
 Here are the six levels, from the ground floor up. Each rung leans on the ones below it, you can't analyze a poem you don't first understand.
 
-1. **Remember** — recall facts. *(easiest)*
-2. **Understand** — explain an idea in your own words.
-3. **Apply** — use a procedure in a new situation.
-4. **Analyze** — break something into parts and see how they relate.
-5. **Evaluate** — judge something against criteria.
-6. **Create** — produce something original. *(hardest)*
+1. **Remember** - recall facts. *(easiest)*
+2. **Understand** - explain an idea in your own words.
+3. **Apply** - use a procedure in a new situation.
+4. **Analyze** - break something into parts and see how they relate.
+5. **Evaluate** - judge something against criteria.
+6. **Create** - produce something original. *(hardest)*
 
 The cleanest way to feel the difference is to watch one skill climb all six rungs. Take learning to cook:
 

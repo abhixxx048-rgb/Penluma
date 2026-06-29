@@ -104,11 +104,11 @@ So `.ttf` versus `.otf` tells you the *outline math inside*, not "TrueType versu
 
 Added to OpenType in 2016, a **variable font** stores an entire continuous "design space" in a single file. Instead of shipping twelve separate files (Light, Regular, Bold, and so on), one file smoothly interpolates between master designs along named **axes**, each a lowercase four-letter tag:
 
-- `wght` — Weight (1 to 1000)
-- `wdth` — Width (a percentage)
-- `ital` — Italic (0 or 1)
-- `slnt` — Slant (in degrees)
-- `opsz` — Optical Size (in points)
+- `wght` - Weight (1 to 1000)
+- `wdth` - Width (a percentage)
+- `ital` - Italic (0 or 1)
+- `slnt` - Slant (in degrees)
+- `opsz` - Optical Size (in points)
 
 Adoption climbed from about 11% of web pages in 2020 to roughly a third by 2024, for an obvious reason: one small file replaces dozens. For a storefront, a variable font lets a theme nudge heading weight up or down without downloading anything extra. Fewer requests, faster pages.
 
@@ -152,11 +152,11 @@ Now the practical bit: **hinting only matters below roughly 24 pixels on screens
 
 Every letter sits in a structure of invisible lines. Knowing the names turns a confusing font menu into a map.
 
-- **Baseline** — the invisible line glyphs rest on.
-- **x-height** — the height of a lowercase "x". A tall x-height reads better at small sizes.
-- **Cap-height** — the top of the capital letters, usually a touch below the ascenders.
-- **Ascender / Descender** — the parts that rise above the x-height (b, d, h, k, l) or drop below the baseline (g, j, p, q, y).
-- **Counter, bowl, overshoot** — the enclosed space inside an "o"; the round stroke of a "b"; and the tiny amount round letters spill past the lines so they *look* the same size as flat ones.
+- **Baseline** - the invisible line glyphs rest on.
+- **x-height** - the height of a lowercase "x". A tall x-height reads better at small sizes.
+- **Cap-height** - the top of the capital letters, usually a touch below the ascenders.
+- **Ascender / Descender** - the parts that rise above the x-height (b, d, h, k, l) or drop below the baseline (g, j, p, q, y).
+- **Counter, bowl, overshoot** - the enclosed space inside an "o"; the round stroke of a "b"; and the tiny amount round letters spill past the lines so they *look* the same size as flat ones.
 
 If you only remember one of these, make it **x-height**. When you are choosing a font for tiny labels or fine print, a generous x-height is the difference between readable and squinting.
 

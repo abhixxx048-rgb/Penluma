@@ -64,9 +64,9 @@ And the good news: you do not need precision. You need to stay within one power 
 
 Everything in estimation comes down to three inputs and a lot of multiplication.
 
-1. **Latency numbers** — how long operations take.
-2. **Powers of two** — how data sizes relate.
-3. **A few system thresholds** — what one machine can do.
+1. **Latency numbers** - how long operations take.
+2. **Powers of two** - how data sizes relate.
+3. **A few system thresholds** - what one machine can do.
 
 Let's take them one at a time.
 
@@ -137,10 +137,10 @@ A **read-heavy** system (most consumer apps) is *cacheable*. Your main lever is 
 
 Every machine has exactly four finite resources. Good capacity planning asks one blunt question: *which one runs out first?*
 
-- **CPU** — runs out on encryption, compression, image and video processing, ML inference.
-- **Memory** — runs out on large caches, in-memory datasets, big per-connection buffers.
-- **Disk** — runs out on space, or on IOPS (operations per second), or on throughput; databases and logging live here.
-- **Network** — runs out when you serve lots of bytes: media, replication, big payloads.
+- **CPU** - runs out on encryption, compression, image and video processing, ML inference.
+- **Memory** - runs out on large caches, in-memory datasets, big per-connection buffers.
+- **Disk** - runs out on space, or on IOPS (operations per second), or on throughput; databases and logging live here.
+- **Network** - runs out when you serve lots of bytes: media, replication, big payloads.
 
 The discipline is to estimate demand on all four and find the **binding constraint**, the one that saturates first.
 
@@ -188,10 +188,10 @@ Picture ten requests, with these times in milliseconds: nine of them at 10 ms, a
 
 The mean got dragged around by a single outlier and told you about no actual person. Percentiles describe real experiences:
 
-- **p50** — half of requests are faster. The typical experience.
-- **p95** — 1 in 20 is slower. Power users notice.
-- **p99** — 1 in 100 is slower. The standard SLA target for serious services.
-- **p999** — 1 in 1,000 is slower. Your biggest customers hit this constantly.
+- **p50** - half of requests are faster. The typical experience.
+- **p95** - 1 in 20 is slower. Power users notice.
+- **p99** - 1 in 100 is slower. The standard SLA target for serious services.
+- **p999** - 1 in 1,000 is slower. Your biggest customers hit this constantly.
 
 Here is the counterintuitive part: **your best customers live on the tail.** The users who make the most requests are statistically the most likely to hit the slow ones. Amazon famously found that 100 ms of extra latency cost about 1 percent in sales, which is why they optimize p999, not the average.
 
@@ -213,9 +213,9 @@ It is why a mesh of microservices with deep call graphs can have terrible p99 ev
 
 The real fixes used in production:
 
-- **Hedged requests** — after a short delay, send a duplicate to a second replica and take whichever returns first. Cuts the tail dramatically for about 5 percent extra load.
-- **Reduce the fan-out width** — talk to fewer, larger shards.
-- **Tighten each backend's own tail** — the only durable fix is making per-backend p99 smaller.
+- **Hedged requests** - after a short delay, send a duplicate to a second replica and take whichever returns first. Cuts the tail dramatically for about 5 percent extra load.
+- **Reduce the fan-out width** - talk to fewer, larger shards.
+- **Tighten each backend's own tail** - the only durable fix is making per-backend p99 smaller.
 
 ## Common misconceptions
 
@@ -248,7 +248,7 @@ Keep these single-box thresholds in your back pocket:
 
 Let's size a Twitter-like feed service. **Assumptions, stated:** 10 million daily users; each posts twice a day and reads their feed 20 times a day; an average post is 300 bytes of text, with 10 percent including a 200 KB image; peak is 3× average; keep posts 5 years with 3× replication.
 
-**Write QPS.** 10M users × 2 posts = 20M posts/day. Divide by 100,000 ≈ 230 writes/sec average, × 3 ≈ **700 writes/sec peak**. That fits comfortably inside a single Postgres primary. *No write sharding needed yet* — a real, money-saving conclusion.
+**Write QPS.** 10M users × 2 posts = 20M posts/day. Divide by 100,000 ≈ 230 writes/sec average, × 3 ≈ **700 writes/sec peak**. That fits comfortably inside a single Postgres primary. *No write sharding needed yet* - a real, money-saving conclusion.
 
 **Read QPS.** 10M × 20 = 200M reads/day. Divide by 100,000 ≈ 2,300/sec, × 3 ≈ **7,000 reads/sec peak**. That exceeds one primary's comfort zone, so you need a Redis cache plus read replicas. At a 90 percent cache hit rate, only about 700 reads/sec actually reach the database. The read/write ratio predicted this exact lever.
 

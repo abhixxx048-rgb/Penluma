@@ -113,10 +113,10 @@ Don't fire questions at random. Move like a funnel. Start **wide** to find where
 
 Once you've found a real problem, SPIN gives you four question types to layer in:
 
-1. **Situation** — context. "How many orders do you handle a week?" Ask only a few of these; don't interrogate.
-2. **Problem** — difficulties. "Where does that process break down?"
-3. **Implication** — the cost of the problem. "When proofs get rejected, what does that do to your delivery dates?" This is the powerful one. It helps the person *feel* the size of the pain in their own words.
-4. **Need-payoff** — the value of fixing it. "If that never happened again, what would change for you?" Notice that *they* describe the value. It isn't your sales pitch; it's their conclusion.
+1. **Situation** - context. "How many orders do you handle a week?" Ask only a few of these; don't interrogate.
+2. **Problem** - difficulties. "Where does that process break down?"
+3. **Implication** - the cost of the problem. "When proofs get rejected, what does that do to your delivery dates?" This is the powerful one. It helps the person *feel* the size of the pain in their own words.
+4. **Need-payoff** - the value of fixing it. "If that never happened again, what would change for you?" Notice that *they* describe the value. It isn't your sales pitch; it's their conclusion.
 
 ## The most underrated skill: silence
 
@@ -128,7 +128,7 @@ Here's how it plays out:
 
 > **You:** "What's the hardest part of fulfilling a rush order?"
 >
-> **Them:** "Honestly... the timing, I guess." *(pause — you say nothing for four seconds)*
+> **Them:** "Honestly... the timing, I guess." *(pause - you say nothing for four seconds)*
 >
 > **Them:** "...okay, the real problem is I have no idea where the job is on the floor. I have to physically walk over and ask Dave. Twice a day. It drives me insane."
 

@@ -50,7 +50,7 @@ That number is **economic growth**, and once you understand how it works, you un
 
 ## Why this matters
 
-Almost everything you care about over the long run — whether your kids live better than you, whether a poor country escapes hunger, whether wages rise — traces back to growth. It is the quiet force underneath headlines about jobs, poverty, and national power.
+Almost everything you care about over the long run - whether your kids live better than you, whether a poor country escapes hunger, whether wages rise - traces back to growth. It is the quiet force underneath headlines about jobs, poverty, and national power.
 
 And here is the surprising part: the differences that matter look tiny on paper. The gap between a country growing at 1% and one growing at 2% does not sound dramatic. Over a lifetime, it is the difference between standing still and doubling your standard of living. Understanding why is one of the most useful mental upgrades you can give yourself.
 
@@ -59,14 +59,14 @@ And here is the surprising part: the differences that matter look tiny on paper.
 Let's pin down a few terms in plain language.
 
 - **Economic growth** is a lasting increase in the goods and services an economy produces. We measure it as the yearly percentage change in **real GDP**.
-- **Real GDP** is the total value of everything a country produces, with price increases stripped out. "Real" means we are counting actual stuff — more cars, more haircuts, more software — not just bigger price tags.
+- **Real GDP** is the total value of everything a country produces, with price increases stripped out. "Real" means we are counting actual stuff - more cars, more haircuts, more software - not just bigger price tags.
 - **Real GDP per capita** is real GDP divided by the number of people. This is the number that tracks living standards, because it shows the average person's slice of the pie, not just the size of the whole pie.
 
 That per-capita distinction matters more than almost anything else here. A country can grow its total output by 3% a year, but if its population also grows 3% a year, the average person is no better off. The pie got bigger, and so did the number of hands reaching for it.
 
 **Watch out:** Treating total GDP growth as if it automatically means rising living standards is a classic mistake. If population grows faster than output, the average person gets *poorer* even as the headline economy "grows." For welfare, always look at real GDP **per capita**.
 
-One more distinction to lock in. **Growth** is the long-run upward trend, the slow rise over decades. The **business cycle** is the short-run wiggle around that trend — booms and recessions lasting months or a few years. Don't confuse a recession (a temporary dip) with slow growth (a weak trend). They are different problems with different cures.
+One more distinction to lock in. **Growth** is the long-run upward trend, the slow rise over decades. The **business cycle** is the short-run wiggle around that trend - booms and recessions lasting months or a few years. Don't confuse a recession (a temporary dip) with slow growth (a weak trend). They are different problems with different cures.
 
 ## The central magic: growth compounds
 
@@ -117,12 +117,12 @@ Economists break an economy's output into the inputs that create it. This is cal
 | Source | What it means | Everyday picture |
 |---|---|---|
 | **Physical capital** | Machines, tools, buildings, roads. Giving each worker more of it is called *capital deepening*. | A farmer with a tractor vs. a hand hoe. |
-| **Labor** | More workers, and better ones — *human capital* from education, skills, and health. | A literate, trained, healthy workforce. |
+| **Labor** | More workers, and better ones - *human capital* from education, skills, and health. | A literate, trained, healthy workforce. |
 | **Technology (TFP)** | The growth *not* explained by more capital or labor. Better ideas, methods, and organization. | Knowing how to use the tractor, the seeds, and the logistics around it. |
 
-That third one is the interesting one. **Total Factor Productivity (TFP)** is the "leftover" growth that remains after you account for measured increases in capital and labor. It captures better technology and know-how — how cleverly you combine your inputs, not just how many you have.
+That third one is the interesting one. **Total Factor Productivity (TFP)** is the "leftover" growth that remains after you account for measured increases in capital and labor. It captures better technology and know-how - how cleverly you combine your inputs, not just how many you have.
 
-How big is this mysterious leftover? Robert Solow, who won the Nobel Prize in 1987, studied US output per hour from 1909 to 1949 and found something that stunned his profession: roughly **seven-eighths of the growth came from "technical change"** — TFP — not from piling up more machines. The capital mattered, but knowing what to do with it was the real story.
+How big is this mysterious leftover? Robert Solow, who won the Nobel Prize in 1987, studied US output per hour from 1909 to 1949 and found something that stunned his profession: roughly **seven-eighths of the growth came from "technical change"** - TFP - not from piling up more machines. The capital mattered, but knowing what to do with it was the real story.
 
 ## Why building more factories isn't enough
 
@@ -130,7 +130,7 @@ Solow's 1956 model rests on one powerful idea: **diminishing returns to capital.
 
 Imagine a kitchen with a fixed number of cooks. The first oven you add helps a lot. The second helps less. By the tenth, the cooks are tripping over equipment they can't all use. Each extra machine, added to the same number of workers, adds less and less.
 
-This has a profound consequence. If a country just keeps building factories and nothing else changes, it eventually reaches a **steady state** — a point where all new investment barely replaces the machines wearing out. There, output per worker *stops rising*. Capital accumulation, on its own, runs out of road.
+This has a profound consequence. If a country just keeps building factories and nothing else changes, it eventually reaches a **steady state** - a point where all new investment barely replaces the machines wearing out. There, output per worker *stops rising*. Capital accumulation, on its own, runs out of road.
 
 So what keeps living standards climbing *forever*? In the model, only one thing: **technological progress.** New ideas lift the whole curve, so the same workers and machines produce more. This is the rigorous reason behind Krugman's line. In the long run, productivity driven by technology is almost everything, because it is the *only* source of growth that doesn't fizzle out.
 
@@ -141,7 +141,7 @@ Solow treated technology as if it just fell from the sky. Later, **Paul Romer** 
 The Solow model makes a bold prediction. Poor countries *should* grow faster than rich ones and close the gap, for two reasons:
 
 1. **Diminishing returns cut both ways.** Where capital is scarce, each new machine earns a high return, so investment should flood in and output should jump.
-2. **Latecomers can copy.** A developing country doesn't need to invent electricity or the smartphone. It can adopt proven technology cheaply — what one historian called the "advantages of backwardness."
+2. **Latecomers can copy.** A developing country doesn't need to invent electricity or the smartphone. It can adopt proven technology cheaply - what one historian called the "advantages of backwardness."
 
 This idea is called **convergence**. Does it actually happen? The honest answer: partly, and it's contested.
 
@@ -150,25 +150,25 @@ This idea is called **convergence**. Does it actually happen? The honest answer:
 | **Absolute convergence** | All poor countries catch up to rich ones. | **No.** Globally false. Many stayed poor; some fell further behind. |
 | **Conditional convergence** | Countries converge toward *their own* steady state, once you account for savings, education, and institutions. | **Yes.** This holds up well in the data. |
 
-The success stories are real. The East Asian "Tigers" — South Korea, Taiwan, Singapore, Hong Kong — then China and India genuinely closed in on rich-world incomes. But much of sub-Saharan Africa stagnated for decades, and the *speed* of catch-up for poorer countries has actually slowed in recent years, so global gaps are proving stubborn. (Recent country forecasts move fast; treat any single year's number as approximate.)
+The success stories are real. The East Asian "Tigers" - South Korea, Taiwan, Singapore, Hong Kong - then China and India genuinely closed in on rich-world incomes. But much of sub-Saharan Africa stagnated for decades, and the *speed* of catch-up for poorer countries has actually slowed in recent years, so global gaps are proving stubborn. (Recent country forecasts move fast; treat any single year's number as approximate.)
 
 ## Common misconceptions
 
 - **"A growing economy means everyone is getting richer."** Not necessarily. If population outpaces output, the average person loses ground. Per-capita is what counts.
 - **"Hard-working countries are rich because they work more hours."** Rich countries usually work *fewer* hours per person. They get rich by producing more per hour, not by grinding longer.
 - **"Pour in enough capital and any country will take off."** Capital alone hits a steady state and stalls. Without new ideas and good institutions, the money's payoff fades.
-- **"Poor countries are poor because of bad geography or culture."** These are the lazy explanations. The cleaner predictor is institutions — the rules that decide whether ordinary people can invest and keep the rewards.
+- **"Poor countries are poor because of bad geography or culture."** These are the lazy explanations. The cleaner predictor is institutions - the rules that decide whether ordinary people can invest and keep the rewards.
 
 ## The deepest answer: institutions
 
-If catch-up is only *conditional*, the obvious question is: what conditions decide whether a country grows? The most influential modern answer points to **institutions** — the rules, laws, and political arrangements that shape people's incentives.
+If catch-up is only *conditional*, the obvious question is: what conditions decide whether a country grows? The most influential modern answer points to **institutions** - the rules, laws, and political arrangements that shape people's incentives.
 
 This view won the **2024 Nobel Prize** for Daron Acemoglu, Simon Johnson, and James Robinson, "for studies of how institutions are formed and affect prosperity." Their framework, from the book *Why Nations Fail*, splits institutions into two kinds:
 
-- **Inclusive institutions** — secure property rights, the rule of law, broad participation, and checks on power. They give ordinary people a reason to invest, work hard, and innovate, because they get to keep the rewards. These *generate* growth.
-- **Extractive institutions** — rules built so a narrow elite siphons off wealth and power. They crush the will to invest, because anything you build can be taken. These *strangle* growth.
+- **Inclusive institutions** - secure property rights, the rule of law, broad participation, and checks on power. They give ordinary people a reason to invest, work hard, and innovate, because they get to keep the rewards. These *generate* growth.
+- **Extractive institutions** - rules built so a narrow elite siphons off wealth and power. They crush the will to invest, because anything you build can be taken. These *strangle* growth.
 
-The cleanest evidence sits on the Korean peninsula. In 1948, one nation was split in two. Same people, same culture, same geography, same history. Seventy-five years later, South Korea — with markets and the rule of law — is a wealthy democracy, while North Korea — command-and-control and extractive — is desperately poor, an income gap of roughly **20 to 1**. Geography and culture were held constant. Only the institutions differed. It is one of the cleanest natural experiments in social science.
+The cleanest evidence sits on the Korean peninsula. In 1948, one nation was split in two. Same people, same culture, same geography, same history. Seventy-five years later, South Korea - with markets and the rule of law - is a wealthy democracy, while North Korea - command-and-control and extractive - is desperately poor, an income gap of roughly **20 to 1**. Geography and culture were held constant. Only the institutions differed. It is one of the cleanest natural experiments in social science.
 
 The same researchers, in a famous study of former colonies, found that where European settlers faced deadly disease they built extractive institutions to grab resources and leave, and where they could safely settle they built inclusive ones to protect themselves. Those colonial-era rules *persisted* for centuries and still predict prosperity today. The punchline reframes the whole rich-versus-poor debate: it is mostly about **politics and rules**, not destiny, geography, or culture.
 
@@ -178,7 +178,7 @@ Growth is powerful, but GDP is an imperfect ruler. It counts production while ig
 
 ## Where things stand now: the AI question
 
-Recent data is intriguing and uncertain. US labor productivity rose strongly in 2024 — the best in over a decade outside the pandemic whiplash — after a weak patch in 2022. But early 2025 softened again.
+Recent data is intriguing and uncertain. US labor productivity rose strongly in 2024 - the best in over a decade outside the pandemic whiplash - after a weak patch in 2022. But early 2025 softened again.
 
 The big open debate: is this the start of an **AI-driven productivity boom**, or just a blip? History urges caution. Big general-purpose technologies usually take years to show up in the statistics. The famous "Solow paradox" of the 1980s and 90s was that "we see computers everywhere except in the productivity figures." The rich world has suffered a productivity *slowdown* since around 2005, and AI optimists hope to reverse it. Whether they will is, honestly, not yet known.
 
@@ -196,4 +196,4 @@ Whether you're reading the news, choosing where to invest, or just trying to thi
 
 If you remember one thing, remember this: **lasting prosperity comes from producing more per hour, and that ultimately depends on ideas and the rules that let people pursue them.** Capital alone runs out of road. Long hours don't make a nation rich. New ideas, protected by good institutions, do.
 
-Which raises a question worth sitting with. If the secret is mostly rules and incentives rather than geography or luck, then poverty is not a life sentence — it is, at least in principle, a choice societies make and can unmake. So why is it so hard to change them? That is where the study of power, politics, and the short-run booms and busts of the business cycle picks up, and it is every bit as gripping as the growth story you just read.
+Which raises a question worth sitting with. If the secret is mostly rules and incentives rather than geography or luck, then poverty is not a life sentence - it is, at least in principle, a choice societies make and can unmake. So why is it so hard to change them? That is where the study of power, politics, and the short-run booms and busts of the business cycle picks up, and it is every bit as gripping as the growth story you just read.

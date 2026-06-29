@@ -170,12 +170,12 @@ Keep these last two straight: **Auto Scaling changes the number of servers; ELB 
 
 EC2 instances also come in families tuned for different work:
 
-- **General purpose** — balanced CPU, memory, and networking. The right default for typical web and app servers.
-- **Burstable (T-family)** — cheap instances that bank **CPU credits** while idle and spend them during short spikes. Ideal for a mostly-quiet server with occasional bursts.
-- **Compute optimized (C-family)** — sustained high-CPU work.
-- **Memory optimized (R-family)** — large in-memory datasets, like an in-memory database or analytics cache.
-- **Storage optimized (I-family)** — heavy disk throughput and IOPS.
-- **Accelerated computing** — GPUs for machine learning and graphics.
+- **General purpose** - balanced CPU, memory, and networking. The right default for typical web and app servers.
+- **Burstable (T-family)** - cheap instances that bank **CPU credits** while idle and spend them during short spikes. Ideal for a mostly-quiet server with occasional bursts.
+- **Compute optimized (C-family)** - sustained high-CPU work.
+- **Memory optimized (R-family)** - large in-memory datasets, like an in-memory database or analytics cache.
+- **Storage optimized (I-family)** - heavy disk throughput and IOPS.
+- **Accelerated computing** - GPUs for machine learning and graphics.
 
 A quick gotcha: "occasional CPU burst" means **burstable (T-family)**, not compute-optimized. Sustained high CPU is the C-family. And a "large dataset" sitting in RAM means **memory optimized**, while large data on fast disks means storage optimized.
 

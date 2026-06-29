@@ -94,8 +94,8 @@ Basic Paxos agrees on *one* value. But a database never wants to agree on one th
 
 The catch is cost. Basic Paxos agrees on a value using two phases of network round-trips:
 
-- **Phase 1 (Prepare / Promise)** — a proposer picks an ever-increasing **proposal number** and asks the other nodes for permission to lead. This phase is really about *winning the right to propose* and *learning any value that might already be chosen*. It never mentions a specific command.
-- **Phase 2 (Accept / Accepted)** — the proposer sends the actual value; once a majority accepts it, the value is chosen.
+- **Phase 1 (Prepare / Promise)** - a proposer picks an ever-increasing **proposal number** and asks the other nodes for permission to lead. This phase is really about *winning the right to propose* and *learning any value that might already be chosen*. It never mentions a specific command.
+- **Phase 2 (Accept / Accepted)** - the proposer sends the actual value; once a majority accepts it, the value is chosen.
 
 If you naively ran both phases for every command, each one would pay the full cost. Worse, if several nodes try to lead at once, they keep interrupting each other with higher proposal numbers, a deadlock-by-politeness called **dueling proposers**, and make no progress.
 
@@ -127,8 +127,8 @@ Two terms unlock the comparison:
 
 Raft needs just two network calls:
 
-- **`RequestVote`** — sent by a candidate during an election. Crucially, voters only back a candidate whose log is at least as up-to-date as their own. That single rule is what keeps already-committed entries safe.
-- **`AppendEntries`** — sent by the leader to replicate new entries *and* as an empty heartbeat to keep its leadership alive. It carries a consistency check (the entry just before the new ones) so a follower only accepts entries that line up with what it already has.
+- **`RequestVote`** - sent by a candidate during an election. Crucially, voters only back a candidate whose log is at least as up-to-date as their own. That single rule is what keeps already-committed entries safe.
+- **`AppendEntries`** - sent by the leader to replicate new entries *and* as an empty heartbeat to keep its leadership alive. It carries a consistency check (the entry just before the new ones) so a follower only accepts entries that line up with what it already has.
 
 Now look at the mapping that demystifies everything:
 

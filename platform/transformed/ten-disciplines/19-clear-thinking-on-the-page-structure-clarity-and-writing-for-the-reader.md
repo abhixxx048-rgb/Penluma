@@ -45,9 +45,9 @@ polished: true
 sources: []
 ---
 
-Most people think writing is about putting words on a page. It isn't. Writing is about getting an idea out of *your* head and into *someone else's* head — accurately, quickly, and with as little effort on their part as possible.
+Most people think writing is about putting words on a page. It isn't. Writing is about getting an idea out of *your* head and into *someone else's* head - accurately, quickly, and with as little effort on their part as possible.
 
-The words are just the delivery vehicle. If your reader closes the email more confused than before they opened it, your writing failed — no matter how elegant the sentences looked.
+The words are just the delivery vehicle. If your reader closes the email more confused than before they opened it, your writing failed - no matter how elegant the sentences looked.
 
 Here's the good news: clear writing is not a talent you're born with. It's a short stack of habits anyone can learn, and you can apply the first one to your very next message.
 
@@ -55,9 +55,9 @@ Here's the good news: clear writing is not a talent you're born with. It's a sho
 
 Think about how much of your life runs on written words. The email that decides whether you get the meeting. The message that tells your team what to do. The update that either calms your boss or sets off a panic.
 
-When that writing is unclear, the cost is invisible but real: people re-read it, misunderstand it, ask follow-up questions, or quietly do the wrong thing. You pay for muddy writing in wasted time — yours and theirs.
+When that writing is unclear, the cost is invisible but real: people re-read it, misunderstand it, ask follow-up questions, or quietly do the wrong thing. You pay for muddy writing in wasted time - yours and theirs.
 
-The fix isn't fancier vocabulary or longer sentences. It's the opposite. And once it clicks, every other writing skill — persuasion, storytelling, presenting data — builds directly on top of it.
+The fix isn't fancier vocabulary or longer sentences. It's the opposite. And once it clicks, every other writing skill - persuasion, storytelling, presenting data - builds directly on top of it.
 
 **The core idea:** Communication is the *transfer of meaning*, not the transmission of words. Success is measured at the **receiver**. Did the idea land? The burden of being understood always sits with the writer, never the reader.
 
@@ -77,7 +77,7 @@ You've been living inside a project for three weeks. You write, "The migration b
 
 The curse of knowledge is the number-one cause of confusing writing. The cure is to forget you're a local.
 
-> Giving directions: a local says, "Turn at the old mill." Perfectly clear — to another local. A stranger needs, "Drive two miles, then turn left at the gas station." To write well, picture someone who has never been to your town.
+> Giving directions: a local says, "Turn at the old mill." Perfectly clear - to another local. A stranger needs, "Drive two miles, then turn left at the gas station." To write well, picture someone who has never been to your town.
 
 A doctor who says "you have hypertension" is technically correct but leaves a frightened patient guessing. A doctor who says "your blood pressure is too high" has transferred the actual meaning. The first writes from inside their own knowledge. The second writes for the receiver.
 
@@ -95,13 +95,13 @@ Every message should have one job. Before writing a word, finish this sentence:
 
 *"After reading this, my reader will ___ (think / feel / do) ___."*
 
-If you can't finish it, you're not ready to write. You're still thinking — and you should do that thinking first.
+If you can't finish it, you're not ready to write. You're still thinking - and you should do that thinking first.
 
 > A taxi won't move until you name the destination. An email without a purpose is a taxi driving in circles, burning the reader's time. Name the destination first.
 
 ## Clear sentences: one idea at a time
 
-With the mindset in place, we get to the smallest unit of clear writing: the sentence. The goal is for your sentence to be like a clean window — the reader notices the *view* (your meaning), not the *glass* (your prose).
+With the mindset in place, we get to the smallest unit of clear writing: the sentence. The goal is for your sentence to be like a clean window - the reader notices the *view* (your meaning), not the *glass* (your prose).
 
 Three habits produce clear sentences, and you can learn all three today.
 
@@ -117,7 +117,7 @@ Same facts. But now each sentence holds one idea, so the reader follows it on th
 
 ### 2. Use the simple shape: who did what
 
-The clearest sentences put a real person or thing as the subject — the *doer* — followed by a strong verb, the *action*. Concrete nouns and strong verbs beat vague abstractions every time. (The writing teacher Joseph Williams called this "characters as subjects, actions as verbs.")
+The clearest sentences put a real person or thing as the subject - the *doer* - followed by a strong verb, the *action*. Concrete nouns and strong verbs beat vague abstractions every time. (The writing teacher Joseph Williams called this "characters as subjects, actions as verbs.")
 
 "The implementation of the new system resulted in an improvement in efficiency" is foggy. Who did what?
 
@@ -127,9 +127,9 @@ Rewrite it: "The new system made the team faster." Now there's a doer (the syste
 
 In the **active voice**, the subject does the action: "The team shipped the feature." You can see who's responsible.
 
-In the **passive voice**, the action is done *to* the subject, and the doer often vanishes: "The feature was shipped" — by whom? Or the infamous "Mistakes were made" — by *whom*?
+In the **passive voice**, the action is done *to* the subject, and the doer often vanishes: "The feature was shipped" - by whom? Or the infamous "Mistakes were made" - by *whom*?
 
-> Passive voice is a person hiding behind a curtain. "Mistakes were made" lets the guilty party stay anonymous. "I made a mistake" names them. That's why politicians love the passive — and why honest writers usually avoid it.
+> Passive voice is a person hiding behind a curtain. "Mistakes were made" lets the guilty party stay anonymous. "I made a mistake" names them. That's why politicians love the passive - and why honest writers usually avoid it.
 
 Active voice is your default because it's shorter, clearer, and assigns responsibility. But it's a default, not a law (more on that below).
 
@@ -137,15 +137,15 @@ Active voice is your default because it's shorter, clearer, and assigns responsi
 
 Use the simplest word that still carries the full meaning. Say "use," not "utilize." Say "now," not "at this present point in time."
 
-Jargon — insider vocabulary — is fine among experts who share it, but it's a wall to everyone else. Plain language matters so much that the United States passed the **Plain Writing Act of 2010**, legally requiring federal agencies to write clearly for the public.
+Jargon - insider vocabulary - is fine among experts who share it, but it's a wall to everyone else. Plain language matters so much that the United States passed the **Plain Writing Act of 2010**, legally requiring federal agencies to write clearly for the public.
 
 ## Concision: win the war on clutter
 
-Once your sentences are clear, make them *lean*. In his classic *On Writing Well*, William Zinsser called clutter "the disease of American writing." **Clutter** is every word that adds length but no meaning. Cut it and the sentence still says the same thing — so it was never earning its place.
+Once your sentences are clear, make them *lean*. In his classic *On Writing Well*, William Zinsser called clutter "the disease of American writing." **Clutter** is every word that adds length but no meaning. Cut it and the sentence still says the same thing - so it was never earning its place.
 
 Cutting clutter is one of the highest-respect things you can do for a reader, because it returns their time.
 
-> Concision is packing a carry-on bag. If you have to ask, "Do I really need this?" — you don't. Every word has to earn its place, or it gets left behind.
+> Concision is packing a carry-on bag. If you have to ask, "Do I really need this?" - you don't. Every word has to earn its place, or it gets left behind.
 
 ### Where clutter hides
 
@@ -172,7 +172,7 @@ There's a famous line, often attributed to Pascal: "I would have written a short
 
 ## Structure: organize so the reader never has to
 
-Clear sentences and lean words still fail if the ideas arrive in a jumble. Structure is the order you put your ideas in, so the reader receives them already sorted — they don't have to rearrange anything in their head.
+Clear sentences and lean words still fail if the ideas arrive in a jumble. Structure is the order you put your ideas in, so the reader receives them already sorted - they don't have to rearrange anything in their head.
 
 > Structure is a well-organized closet. Shirts with shirts, shoes with shoes. You find what you need without searching. A disorganized message is a closet where everything is in one pile on the floor.
 
@@ -210,7 +210,7 @@ The power of the pyramid is that the reader gets the conclusion immediately, the
 
 ### SCQA: a gentle on-ramp before the answer
 
-Sometimes leading with the bare conclusion feels abrupt — especially when the reader doesn't yet feel the problem. **SCQA** is a short, story-shaped opening that earns attention before you deliver the answer. It stands for **Situation, Complication, Question, Answer**:
+Sometimes leading with the bare conclusion feels abrupt - especially when the reader doesn't yet feel the problem. **SCQA** is a short, story-shaped opening that earns attention before you deliver the answer. It stands for **Situation, Complication, Question, Answer**:
 
 - **Situation:** "Our checkout has worked reliably for two years." (A fact the reader already agrees with.)
 - **Complication:** "Last week, sales on mobile dropped 30%." (Something changed.)
@@ -229,12 +229,12 @@ They cost almost nothing and dramatically lower the reader's effort. "However" w
 
 Here's a secret that frees a lot of beginners: **nobody writes a clear first draft.** Good writing is rewriting. The first draft exists only to get your messy thoughts out of your head and onto the page. Clarity comes in the editing.
 
-> Editing is sculpting. A sculptor doesn't *add* a statue onto a block of marble — they reveal it by *removing* the stone that isn't the statue. You don't polish a draft by piling on words; you reveal the meaning by cutting away everything that isn't it.
+> Editing is sculpting. A sculptor doesn't *add* a statue onto a block of marble - they reveal it by *removing* the stone that isn't the statue. You don't polish a draft by piling on words; you reveal the meaning by cutting away everything that isn't it.
 
 Two mental modes are at work, and they fight each other if you try to do both at once:
 
-- **Generating** — getting ideas out, fast, messy, no judgment. Let it be bad.
-- **Editing** — cutting, sharpening, reordering, judging every word.
+- **Generating** - getting ideas out, fast, messy, no judgment. Let it be bad.
+- **Editing** - cutting, sharpening, reordering, judging every word.
 
 Trying to write and edit at the same time is like driving with one foot on the gas and one on the brake. You stall on the first sentence. Separate the two and both get easier.
 
@@ -265,12 +265,12 @@ Here's all of it applied to a single message.
 
 **Original draft (no skills):** "Hi, I wanted to reach out because at this point in time we've been doing a lot of thinking and analysis around the project timeline, and it turns out that due to the fact that the vendor had some delays, a decision was made that we might possibly need to push things, although nothing is final yet."
 
-**Rewritten (every tool applied):** "Hi Sam — **we need to push the launch by one week, to June 30.** Our vendor was delayed. Two things from you: confirm the new date works, and tell the client by Friday. Details below if you want them."
+**Rewritten (every tool applied):** "Hi Sam - **we need to push the launch by one week, to June 30.** Our vendor was delayed. Two things from you: confirm the new date works, and tell the client by Friday. Details below if you want them."
 
 Same facts. A fraction of the effort to read. The rewrite leads with the answer, names the doer, uses active voice, cuts the clutter, and tells the reader exactly what to do.
 
 ## Conclusion
 
-If you remember one thing, remember this: clear writing isn't about the words you put down — it's about the meaning that lands at the other end. You're playing catch, not throwing. Every habit here, from BLUF to cutting clutter to reading aloud, exists to make the ball easier to catch.
+If you remember one thing, remember this: clear writing isn't about the words you put down - it's about the meaning that lands at the other end. You're playing catch, not throwing. Every habit here, from BLUF to cutting clutter to reading aloud, exists to make the ball easier to catch.
 
-Master these foundations and you've unlocked something bigger than tidy emails. Persuasion, storytelling, presenting data — they all sit on top of this same base. And there's a quieter skill waiting on the other side of it, too: *listening*. Because listening is simply this entire discipline run in reverse, where now *you* are the receiver, trying to catch someone else's throw — and most people, it turns out, are terrible at catching.
+Master these foundations and you've unlocked something bigger than tidy emails. Persuasion, storytelling, presenting data - they all sit on top of this same base. And there's a quieter skill waiting on the other side of it, too: *listening*. Because listening is simply this entire discipline run in reverse, where now *you* are the receiver, trying to catch someone else's throw - and most people, it turns out, are terrible at catching.

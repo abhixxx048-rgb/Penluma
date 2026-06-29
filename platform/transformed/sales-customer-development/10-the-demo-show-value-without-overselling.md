@@ -19,7 +19,7 @@ keywords:
   - tell show tell demo
 faq:
   - q: What is the biggest mistake in a product demo?
-    a: The "feature dump" — clicking through every feature in screen order instead of focusing on the buyer's actual problem. It bores the prospect and hides the one thing they came to see.
+    a: The "feature dump" - clicking through every feature in screen order instead of focusing on the buyer's actual problem. It bores the prospect and hides the one thing they came to see.
   - q: Should I ask questions before demoing?
     a: Yes, always. This is called discovery. Diagnose the buyer's real pain first, then show only the two or three things that solve it. Never demo blind.
   - q: What is the difference between a demo and a trial?
@@ -50,7 +50,7 @@ That instinct is the trap. The most common bad demo is a tour of everything you 
 
 A demo is the moment a curious person decides whether you are worth their money. Get it right and they lean in and start asking "can it also do X?" Get it wrong and you hear the politest sentence in business: "Looks comprehensive. We'll think about it."
 
-For a solo or technical founder, the stakes are higher than they look. You don't have a polished sales team to smooth things over. You *are* the sales team. And the demo is where a lot of founders accidentally undo their own work — either by drowning the buyer in features or by promising things the product can't actually do.
+For a solo or technical founder, the stakes are higher than they look. You don't have a polished sales team to smooth things over. You *are* the sales team. And the demo is where a lot of founders accidentally undo their own work - either by drowning the buyer in features or by promising things the product can't actually do.
 
 Here is the single idea to hold onto:
 
@@ -58,7 +58,7 @@ Here is the single idea to hold onto:
 
 ## Never demo blind: diagnose before you prescribe
 
-**Discovery** is the set of questions you ask to learn someone's real problem *before* you show anything. **Demoing blind** is the opposite — showing the product before you understand what they care about, so you show everything and hope something sticks.
+**Discovery** is the set of questions you ask to learn someone's real problem *before* you show anything. **Demoing blind** is the opposite - showing the product before you understand what they care about, so you show everything and hope something sticks.
 
 Sales coaches are blunt about this. Peter Cohan, who wrote the classic book *Great Demo!*, and the wider presales community repeat the same line: **never demo blind.** If a prospect says "just show me the product," that is not an order to obey. It is a moment to gently redirect.
 
@@ -83,7 +83,7 @@ There's a simple trick that makes this land even harder: use *their* world insid
 
 ## Show the destination before the journey
 
-Cohan's most famous principle is "**Do the Last Thing First.**" Most demos build up slowly: setup, then steps, then finally the payoff. Cohan flips it. Show the **finished, impressive result first** — the destination — get the "wow," and *then* show how easy it was to get there.
+Cohan's most famous principle is "**Do the Last Thing First.**" Most demos build up slowly: setup, then steps, then finally the payoff. Cohan flips it. Show the **finished, impressive result first** - the destination - get the "wow," and *then* show how easy it was to get there.
 
 Why does the order matter so much? Because if people see the payoff first, they suddenly care about the steps. If you make them sit through the steps first, they tune out before the payoff ever arrives.
 
@@ -127,7 +127,7 @@ Here is the cheapest quality check in all of selling. After every sentence in yo
 
 A demo should feel like a conversation, not a TED talk. If you talk for ten minutes straight, you have lost the room.
 
-Build in **check-ins** — small questions that keep them talking and tell you whether you're on target. Aim to stop and check in roughly every 90 seconds. A few you can copy:
+Build in **check-ins** - small questions that keep them talking and tell you whether you're on target. Aim to stop and check in roughly every 90 seconds. A few you can copy:
 
 - "Is that how you'd want it to work?"
 - "Does this look like the problem you described?"
@@ -138,7 +138,7 @@ And let them drive when it's safe to. People believe what they touch. "Here, you
 
 ## Common misconceptions
 
-**"Silence means they're happy."** No. Silence in a demo usually means confusion or boredom, not agreement. When you go quiet and ask a question, you find out which — and you hand them back the wheel.
+**"Silence means they're happy."** No. Silence in a demo usually means confusion or boredom, not agreement. When you go quiet and ask a question, you find out which - and you hand them back the wheel.
 
 **"A trial is always better than a demo."** A **trial** (them using the product themselves over days or weeks) is powerful, but risky if they're left alone. Most people poke around, get stuck, and quietly give up. A demo should usually come *first*, so they know what success looks like. If you do offer a trial, give them one tiny "first win" goal and check in.
 
@@ -151,7 +151,7 @@ And let them drive when it's safe to. People believe what they touch. "Here, you
 Prospects will ask about features you don't have. The instinct is to fudge it: "um, sort of, kind of, we're working on it." Don't. Vague answers read as a "no" wrapped in fear, and they quietly cost you trust. There are only three honest answers:
 
 1. **Yes.** "Yes, let me show you." Then actually show it. Never claim it without proof.
-2. **Not yet.** "No, not today. It's on our roadmap for next quarter. Is that a must-have for you, or a nice-to-have?" Their answer is gold — it tells you whether this is a dealbreaker. Then turn it into discovery: "Out of curiosity, what would you use that for?" You may learn it isn't really needed, or find your next feature.
+2. **Not yet.** "No, not today. It's on our roadmap for next quarter. Is that a must-have for you, or a nice-to-have?" Their answer is gold - it tells you whether this is a dealbreaker. Then turn it into discovery: "Out of curiosity, what would you use that for?" You may learn it isn't really needed, or find your next feature.
 3. **Never / not us.** "No, that's not what we're built for. Tools like that one do it better. We're focused on this." Saying no to the wrong fit builds enormous trust.
 
 ## How to use this: your demo checklist
@@ -175,7 +175,7 @@ Then keep going. Don't spend three minutes debugging while they watch you sweat.
 
 ## Why overselling quietly destroys you later
 
-Overselling — promising more than the product really does — feels like winning the deal. It's actually borrowing against your future. The customer signs up expecting the thing you implied, doesn't find it, feels lied to, and leaves. A single broken promise is one of the fastest ways to lose a customer, and many people will switch after just one bad experience.
+Overselling - promising more than the product really does - feels like winning the deal. It's actually borrowing against your future. The customer signs up expecting the thing you implied, doesn't find it, feels lied to, and leaves. A single broken promise is one of the fastest ways to lose a customer, and many people will switch after just one bad experience.
 
 For a solo founder this is doubly dangerous. A churned, angry customer doesn't just leave. They tell others, leave a bad review, and ask for a refund. You spent real effort to win a customer who now *costs* you money. The honest "no" you avoided in the demo would have been free.
 
@@ -203,6 +203,6 @@ Same product. Same features. The only thing that changed was that the second dem
 
 ## Conclusion
 
-If you remember one thing, remember this: **a demo is proof that one specific pain will go away — not a tour of your software.** Diagnose first, show the destination, answer honestly, and the buyer starts selling themselves.
+If you remember one thing, remember this: **a demo is proof that one specific pain will go away - not a tour of your software.** Diagnose first, show the destination, answer honestly, and the buyer starts selling themselves.
 
-But notice what happened in that last example. The strong demo didn't end with a signature — it ended with a *new question*. "Can it also handle bulk orders?" That's the buyer raising an objection, which is actually a buying signal in disguise. Knowing how to hear those signals, and what to say next, is where the real deal gets made.
+But notice what happened in that last example. The strong demo didn't end with a signature - it ended with a *new question*. "Can it also handle bulk orders?" That's the buyer raising an objection, which is actually a buying signal in disguise. Knowing how to hear those signals, and what to say next, is where the real deal gets made.

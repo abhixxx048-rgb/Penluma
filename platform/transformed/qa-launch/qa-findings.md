@@ -78,9 +78,9 @@ The second big theme was screens that did not know how to fail gracefully. This 
 
 Every screen that loads data can be in one of these states. It must handle all three:
 
-1. **Loading** — show a skeleton or spinner, and *only* that.
-2. **Empty** — the request succeeded and there is genuinely nothing yet. Show a warm, helpful message ("You haven't added team members yet — invite your team").
-3. **Error** — the request failed. Show a plain-language message and a **Retry** button.
+1. **Loading** - show a skeleton or spinner, and *only* that.
+2. **Empty** - the request succeeded and there is genuinely nothing yet. Show a warm, helpful message ("You haven't added team members yet - invite your team").
+3. **Error** - the request failed. Show a plain-language message and a **Retry** button.
 
 The pass found nearly every variation of getting this wrong:
 
@@ -98,7 +98,7 @@ Some bugs are not in the screen at all. They live in the plumbing.
 
 This app's dashboard loads about a dozen widgets at once, each making its own request. A flat rate limit of 60 requests per minute meant that opening two or three tabs caused a single user to **trip the rate limiter and get a "429 Too Many Requests" error** during normal use. The app was attacking itself.
 
-The fix split the limit: authenticated users got a generous ceiling sized for the app's own parallel boot, while anonymous traffic kept the tighter limit that guards against abuse. Once that landed, a separate mystery solved itself too — a dashboard that took ten seconds to load behind a long blank "Setting things up…" splash. It had been slow because its own parallel requests were tripping the limiter and retrying.
+The fix split the limit: authenticated users got a generous ceiling sized for the app's own parallel boot, while anonymous traffic kept the tighter limit that guards against abuse. Once that landed, a separate mystery solved itself too - a dashboard that took ten seconds to load behind a long blank "Setting things up…" splash. It had been slow because its own parallel requests were tripping the limiter and retrying.
 
 **The lesson:** measure your limits against how your app actually behaves, not against an imagined attacker. A real dashboard fires many requests at once. If your own product can trip your own defenses, real traffic will too.
 
@@ -106,7 +106,7 @@ The fix split the limit: authenticated users got a generous ceiling sized for th
 
 A subtler class of bug erases information that was deliberately saved.
 
-When customers were deleted, every one of their past orders showed **"Deleted customer / — / — / —"**. But each order also carried a full snapshot of that customer — name, email, phone — captured at order time for exactly this reason. The screen ignored the snapshot entirely.
+When customers were deleted, every one of their past orders showed **"Deleted customer / - / - / -"**. But each order also carried a full snapshot of that customer - name, email, phone - captured at order time for exactly this reason. The screen ignored the snapshot entirely.
 
 Orders are financial records. "Who placed this $540 order, and how do I reach them?" must survive a customer being deleted. The data was there; the interface just never reached for it. The fix was to fall back to the saved snapshot whenever the live record is gone.
 
@@ -118,13 +118,13 @@ Not every investigation ends in a fix. The most important one in this pass ended
 
 The question: in a system serving many separate businesses, **can one company read another company's data?** This is the question that ends companies, so it deserves paranoid attention.
 
-The audit found the admin panel was passing a tenant ID as a query parameter — a value supplied by the client, which looks alarming. But three independent layers made a leak impossible:
+The audit found the admin panel was passing a tenant ID as a query parameter - a value supplied by the client, which looks alarming. But three independent layers made a leak impossible:
 
 1. **The real tenant is derived from the logged-in user on the server**, not from the request, so it cannot be faked.
 2. **A global database scope** silently adds "where this tenant" to every query automatically.
 3. Because of that scope, a forged tenant ID can only ever **narrow** results to nothing, never widen them to someone else's data.
 
-No leak. But the report still flagged the client-supplied tenant ID as a "latent risk" — harmless today only because the global scope is doing the real work. If a future change ever bypassed that scope, the forged value would become the only guard.
+No leak. But the report still flagged the client-supplied tenant ID as a "latent risk" - harmless today only because the global scope is doing the real work. If a future change ever bypassed that scope, the forged value would become the only guard.
 
 **The lesson, and it is the heart of good QA:** "it works" and "it is safe" are different questions. Verify *why* something is safe, not just *that* it appears to be. Note the latent risks even when nothing is broken yet, because today's harmless shortcut is tomorrow's foot-gun.
 
@@ -134,10 +134,10 @@ No leak. But the report still flagged the client-supplied tenant ID as a "latent
 The opposite. A first exploratory pass that surfaces a dozen issues is a pass that is *working*. The bugs existed whether or not you looked. Finding them now, before customers do, is the entire point.
 
 **"Automated tests mean I don't need to click through it myself."**
-Automated tests check what you thought to ask. They would never catch a price that "feels" like a bait-and-switch or a splash screen that "looks" hung. Some bugs only reveal themselves to a human walking the real path. In this pass, the test suite itself was silently broken by a stray character — a reminder that even your safety nets need checking.
+Automated tests check what you thought to ask. They would never catch a price that "feels" like a bait-and-switch or a splash screen that "looks" hung. Some bugs only reveal themselves to a human walking the real path. In this pass, the test suite itself was silently broken by a stray character - a reminder that even your safety nets need checking.
 
 **"A bug that recovers on reload isn't a real bug."**
-Several "0 records" displays vanished on refresh. That does not make them harmless — your customer does not know to refresh. They see "your data is gone" and they react accordingly. Transient and trust-damaging are not opposites.
+Several "0 records" displays vanished on refresh. That does not make them harmless - your customer does not know to refresh. They see "your data is gone" and they react accordingly. Transient and trust-damaging are not opposites.
 
 ## How to run your own pre-launch QA pass
 
@@ -154,8 +154,8 @@ You do not need a QA department. You need an hour, a fresh perspective, and a wi
 
 ## Conclusion
 
-The single takeaway: **the bugs that hurt most are not the ones that crash — they are the ones that make an honest product look broken or dishonest.** A price that shifts at payment, a screen stuck loading, a page that says your data is gone. None of them throw an error. All of them spend trust you cannot easily earn back.
+The single takeaway: **the bugs that hurt most are not the ones that crash - they are the ones that make an honest product look broken or dishonest.** A price that shifts at payment, a screen stuck loading, a page that says your data is gone. None of them throw an error. All of them spend trust you cannot easily earn back.
 
 One careful pass, run with a stranger's eyes, catches the whole family of them before a single customer does.
 
-And here is the thread worth pulling next: nearly every issue above traced back to a handful of root causes — one source of truth, three honest screen states, limits that match real behavior. Learn to recognize those patterns, and you stop fixing bugs one at a time and start preventing entire categories of them. That shift, from firefighting to design, is where reliable products actually come from.
+And here is the thread worth pulling next: nearly every issue above traced back to a handful of root causes - one source of truth, three honest screen states, limits that match real behavior. Learn to recognize those patterns, and you stop fixing bugs one at a time and start preventing entire categories of them. That shift, from firefighting to design, is where reliable products actually come from.

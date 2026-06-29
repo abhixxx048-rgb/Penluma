@@ -122,17 +122,17 @@ Sometimes the data simply will not fit. Google's web index and Facebook's photo 
 
 Learn these words now and the rest of the field reads easily.
 
-- **Node** — one computer (or running process) that is part of the system. The basic building block.
-- **Cluster** — a group of nodes working together as one system.
-- **Server** — a node that provides a service and answers requests.
-- **Client** — the thing asking the server for something (your browser or phone app).
-- **Replica** — a copy of the same data kept on another node, for safety and speed. *Replication* is making those copies.
-- **Partition / Shard** — a *slice* of the data, so different nodes hold different pieces. *Sharding* is splitting data into slices.
-- **Latency** — how long one request takes, the wait time.
-- **Throughput** — how much work the system does per second, the volume.
-- **Availability** — the fraction of time the system is up and answering. "99.9% available" is about 8.7 hours of downtime a year.
-- **Fault** — something going wrong underneath, like a disk error or a dropped message.
-- **Failure** — when the system actually fails to do its job, as the user sees it.
+- **Node** - one computer (or running process) that is part of the system. The basic building block.
+- **Cluster** - a group of nodes working together as one system.
+- **Server** - a node that provides a service and answers requests.
+- **Client** - the thing asking the server for something (your browser or phone app).
+- **Replica** - a copy of the same data kept on another node, for safety and speed. *Replication* is making those copies.
+- **Partition / Shard** - a *slice* of the data, so different nodes hold different pieces. *Sharding* is splitting data into slices.
+- **Latency** - how long one request takes, the wait time.
+- **Throughput** - how much work the system does per second, the volume.
+- **Availability** - the fraction of time the system is up and answering. "99.9% available" is about 8.7 hours of downtime a year.
+- **Fault** - something going wrong underneath, like a disk error or a dropped message.
+- **Failure** - when the system actually fails to do its job, as the user sees it.
 
 Two pairs trip up almost every beginner, so pause on them.
 

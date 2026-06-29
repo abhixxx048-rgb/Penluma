@@ -63,11 +63,11 @@ Think of them as the food groups of investing. A healthy diet mixes grains, prot
 
 There are four core asset classes an everyday investor uses, plus cash as a fifth:
 
-1. **Equity** — ownership in companies (individual stocks, equity mutual funds, index funds, ETFs).
-2. **Debt / fixed income** — lending your money out for interest (FDs, bonds, government securities, debt funds, PPF, EPF).
-3. **Gold and commodities** — a store of value (Sovereign Gold Bonds, gold ETFs, physical gold).
-4. **Real estate** — property you own, or REITs (more on those below).
-5. **Cash and liquid** — savings accounts and liquid funds.
+1. **Equity** - ownership in companies (individual stocks, equity mutual funds, index funds, ETFs).
+2. **Debt / fixed income** - lending your money out for interest (FDs, bonds, government securities, debt funds, PPF, EPF).
+3. **Gold and commodities** - a store of value (Sovereign Gold Bonds, gold ETFs, physical gold).
+4. **Real estate** - property you own, or REITs (more on those below).
+5. **Cash and liquid** - savings accounts and liquid funds.
 
 ### The one idea that unlocks everything: own vs lend
 
@@ -104,19 +104,19 @@ That "extra" return equity gives you over a safe government bond has a name: the
 
 ## How each asset class behaves
 
-### Equity — the growth engine
+### Equity - the growth engine
 
 When you buy equity, you own a slice of real businesses. Over decades, those businesses grow their profits, and your slice grows with them.
 
 Equity is the only asset class that has reliably **beaten Indian inflation over the long run**. The price of admission is volatility: a 30–50% drop in a single bad year is normal, not a malfunction. Equity is for money you won't touch for **7+ years**.
 
-### Debt — the stabilizer
+### Debt - the stabilizer
 
 When you buy debt, an FD or a bond or a debt fund, you're lending money and collecting interest. Returns are lower but far steadier.
 
 Debt is what you lean on for goals that are **1–5 years away**, and it cushions your portfolio when equity falls.
 
-### Gold — the worry hedge
+### Gold - the worry hedge
 
 Gold earns no profits and pays no interest. Its value comes from people trusting it as a store of wealth, especially during crises and when the rupee weakens.
 
@@ -124,7 +124,7 @@ It tends to do well exactly when equity does badly, which is precisely why a lit
 
 One note: the government recently stopped issuing new SGB tranches, so you may only be able to buy older SGBs on the exchange. Check what's currently on offer.
 
-### Real estate — the illiquid giant
+### Real estate - the illiquid giant
 
 Property can appreciate and earn rent, but it demands huge upfront money, carries large transaction costs (stamp duty, brokerage), and is deeply **illiquid**. You can't sell half a flat in a hurry.
 

@@ -80,9 +80,9 @@ Get the tools straight and the payoff is concrete. You stop making confident dec
 
 Start with one plain sentence for each, then we will put them to work.
 
-- **Deduction** — You start with a general rule and apply it to a specific case. If the rule is true, the conclusion *must* be true. It is certain.
-- **Induction** — You look at many specific cases and guess the general pattern behind them. The conclusion is *probable*, not certain. More examples make it stronger.
-- **Abduction** — You see a surprising fact and ask, "What is the best explanation for this?" You pick the most likely cause. This is the everyday detective move.
+- **Deduction** - You start with a general rule and apply it to a specific case. If the rule is true, the conclusion *must* be true. It is certain.
+- **Induction** - You look at many specific cases and guess the general pattern behind them. The conclusion is *probable*, not certain. More examples make it stronger.
+- **Abduction** - You see a surprising fact and ask, "What is the best explanation for this?" You pick the most likely cause. This is the everyday detective move.
 
 A quick way to hold them in your head:
 
@@ -116,7 +116,7 @@ This is most of what reading gives you, too. Authors show examples, and your min
 
 But induction is a guess, and it gets stronger or weaker with evidence. Two cases is a hunch. Two hundred is a reliable pattern.
 
-The classic trap is the **hasty generalization** — building a big rule on a tiny sample. "Two customers complained about the price, so the price is too high." Two voices out of a thousand silent buyers is not a pattern. It is an anecdote wearing a pattern's clothes.
+The classic trap is the **hasty generalization** - building a big rule on a tiny sample. "Two customers complained about the price, so the price is too high." Two voices out of a thousand silent buyers is not a pattern. It is an anecdote wearing a pattern's clothes.
 
 Before you trust an inductive rule, ask two questions: *how many cases, and how varied?*
 
@@ -148,8 +148,8 @@ The person who asks "what would have to be true for this to happen?" finds the g
 
 Now to argument. When you disagree with someone, you can represent their view two ways.
 
-- **Strawmanning** — You attack a weak, dumbed-down version of their view, one that is easy to knock down. It feels like winning. It teaches you nothing and convinces no one who actually holds the view.
-- **Steelmanning** — You build the *strongest* version of their argument, even stronger than they stated it, and respond to *that*. If you still disagree, your position is genuinely strong.
+- **Strawmanning** - You attack a weak, dumbed-down version of their view, one that is easy to knock down. It feels like winning. It teaches you nothing and convinces no one who actually holds the view.
+- **Steelmanning** - You build the *strongest* version of their argument, even stronger than they stated it, and respond to *that*. If you still disagree, your position is genuinely strong.
 
 Picture a teammate who says, "We should stop doing customer interviews."
 

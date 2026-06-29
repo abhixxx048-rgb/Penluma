@@ -3,7 +3,7 @@ title: Finance for Founders Who Skipped the MBA
 metaTitle: "Finance for Founders: Where to Start"
 description: >-
   A plain-English finance guide for founders with no accounting background. Learn
-  the three faces of money — revenue, profit, and cash — and read your numbers.
+  the three faces of money - revenue, profit, and cash - and read your numbers.
 topic: business-financial-literacy
 topicTitle: Business & Financial Literacy
 category: Money & Business
@@ -55,7 +55,7 @@ sources: []
 
 You can build a product people love, grow your sales every month, and still wake up one morning to find your bank account empty. It happens to good founders constantly. The reason almost always comes down to one thing: they were watching the wrong number.
 
-Most founders learn finance the expensive way — by getting blindsided. This guide is the cheaper way. No accounting degree, no MBA, no spreadsheet wizardry. If you can read a restaurant bill and tell whether you got the right change, you already have enough to start.
+Most founders learn finance the expensive way - by getting blindsided. This guide is the cheaper way. No accounting degree, no MBA, no spreadsheet wizardry. If you can read a restaurant bill and tell whether you got the right change, you already have enough to start.
 
 ## Why this matters
 
@@ -65,7 +65,7 @@ By the time you finish learning this material, you'll be able to read your own f
 
 That last part matters more than it sounds. The founders who raise money and survive aren't the ones with the fanciest decks. They're the ones who understand their own numbers well enough to defend them.
 
-## Money has three faces — learn to see all three
+## Money has three faces - learn to see all three
 
 Here's the single idea that unlocks most of finance. The "money" in your business isn't one thing. It's three different things wearing the same costume, and they almost never move together.
 
@@ -73,13 +73,13 @@ Here's the single idea that unlocks most of finance. The "money" in your busines
 
 **Revenue** is the money you charge customers. It's the top-line number everyone brags about.
 
-Revenue answers one question: do people want this enough to pay for it? That's important — but it's only the first question, not the last. Plenty of businesses with soaring revenue have gone bankrupt.
+Revenue answers one question: do people want this enough to pay for it? That's important - but it's only the first question, not the last. Plenty of businesses with soaring revenue have gone bankrupt.
 
 ### Profit: does your business model actually work?
 
 **Profit** is what's left after you subtract your costs from your revenue.
 
-Profit answers a deeper question: is the *machine* sound? You can sell a million dollars of something, but if it costs you $1.1 million to make and deliver, you don't have a business — you have an expensive hobby.
+Profit answers a deeper question: is the *machine* sound? You can sell a million dollars of something, but if it costs you $1.1 million to make and deliver, you don't have a business - you have an expensive hobby.
 
 Think of a lemonade stand. Selling 100 cups at $1 each is $100 of revenue. But if the lemons, sugar, cups, and your cousin's wages cost $90, your profit is $10. The revenue was loud; the profit was the truth.
 
@@ -89,7 +89,7 @@ Think of a lemonade stand. Selling 100 cups at $1 each is $100 of revenue. But i
 
 This is the one that kills companies. Cash answers the most urgent question of all: can you pay rent and payroll on Friday?
 
-Here's the trap. Imagine you land a huge $50,000 order — fantastic for revenue, fantastic for profit. But the customer pays in 90 days, and meanwhile you have to buy materials *now* and pay your team *now*. On paper you're thriving. In the bank, you're sinking. This gap between "profitable on paper" and "money in the account" is where most founders get ambushed.
+Here's the trap. Imagine you land a huge $50,000 order - fantastic for revenue, fantastic for profit. But the customer pays in 90 days, and meanwhile you have to buy materials *now* and pay your team *now*. On paper you're thriving. In the bank, you're sinking. This gap between "profitable on paper" and "money in the account" is where most founders get ambushed.
 
 A business can have all three healthy. Or it can be growing revenue while losing profit. Or be profitable on paper yet weeks away from running out of cash. They are not the same thing, and confusing them is the most common way founders get blindsided.
 
@@ -105,15 +105,15 @@ They're not, and the difference has sunk thousands of companies. Profit counts a
 Your accountant records the past. *You* make the decisions about the future. You can't delegate understanding the numbers any more than a pilot can delegate knowing which way is up.
 
 **"I need to master all of accounting first."**
-You don't. You need fluency, not mastery — enough to make decisions, spot a number that looks wrong, and ask sharp questions.
+You don't. You need fluency, not mastery - enough to make decisions, spot a number that looks wrong, and ask sharp questions.
 
 ## How to use this guide
 
-1. **Read it in order.** The sections build on each other deliberately. The early ones teach you the language and the three financial statements, so that later topics — unit economics, pricing, runway, and fundraising — actually make sense. Jump ahead to "should I raise money?" before you understand cash flow, and the answer won't stick.
+1. **Read it in order.** The sections build on each other deliberately. The early ones teach you the language and the three financial statements, so that later topics - unit economics, pricing, runway, and fundraising - actually make sense. Jump ahead to "should I raise money?" before you understand cash flow, and the answer won't stick.
 
 2. **Don't skip the "obvious" sections.** Even when a topic feels basic, the framing matters. The way these ideas connect is half the value.
 
-3. **Use your own numbers.** After each section, open your real figures — your bank balance, your invoices, last month's sales — and find the thing the section just described. Finance only becomes real when it's *your* money on the page.
+3. **Use your own numbers.** After each section, open your real figures - your bank balance, your invoices, last month's sales - and find the thing the section just described. Finance only becomes real when it's *your* money on the page.
 
 4. **Let the surprises teach you.** Reading about gross margin is forgettable. Calculating *your* gross margin and being shocked by it is not. The discomfort is the lesson.
 
@@ -123,6 +123,6 @@ You don't. You need fluency, not mastery — enough to make decisions, spot a nu
 
 If you remember nothing else, remember this: **revenue, profit, and cash are three different things, and the one that ends businesses is cash.** Keep those three straight and most of finance quietly falls into place.
 
-You don't need to become an accountant. You need to become fluent enough to make good decisions and ask good questions — and that's a learnable skill you're closer to than you think.
+You don't need to become an accountant. You need to become fluent enough to make good decisions and ask good questions - and that's a learnable skill you're closer to than you think.
 
-So here's the question the next section answers, the one that trips up nearly everyone: if a sale shows up as profit the moment you make it, but the cash doesn't arrive for months, how do you ever know how much money you *really* have? That's where the three financial statements come in — and once you can read them, the fog lifts for good.
+So here's the question the next section answers, the one that trips up nearly everyone: if a sale shows up as profit the moment you make it, but the cash doesn't arrive for months, how do you ever know how much money you *really* have? That's where the three financial statements come in - and once you can read them, the fog lifts for good.

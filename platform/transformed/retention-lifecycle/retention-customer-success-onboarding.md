@@ -17,7 +17,7 @@ keywords:
   - proactive customer success
 faq:
   - q: What is the most important moment in SaaS onboarding?
-    a: The activation event — the first time a user reaches real value. For a store owner that means seeing their first actual order land in the admin. Finishing a setup checklist is not the same thing, and users who only complete setup still churn.
+    a: The activation event - the first time a user reaches real value. For a store owner that means seeing their first actual order land in the admin. Finishing a setup checklist is not the same thing, and users who only complete setup still churn.
   - q: Why does so much SaaS churn happen early?
     a: Around 70% of B2B SaaS churn happens in the first 90 days. New users decide fast whether the product works for them, so the biggest lever on retention is shortening time-to-first-value.
   - q: What is time-to-value (TTV) and what is a good target?
@@ -44,11 +44,11 @@ A new shop owner signs up on a Tuesday night, full of momentum. They upload a lo
 
 That is how most software loses customers. Not with a dramatic complaint, but with a quiet drop-off in the first week. And the painful part is this: the product worked fine. The onboarding just never got them to the moment where they could feel it working.
 
-Let's close that gap for the hardest audience to serve well — people who are great at running their business but were never trained to read docs or speak fluent software.
+Let's close that gap for the hardest audience to serve well - people who are great at running their business but were never trained to read docs or speak fluent software.
 
 ## Why this matters
 
-Here is the number that should reframe how you think about onboarding: **about 70% of B2B SaaS churn happens in the first 90 days.** Most of the customers you will ever lose, you lose right at the start — before they had a real chance to succeed.
+Here is the number that should reframe how you think about onboarding: **about 70% of B2B SaaS churn happens in the first 90 days.** Most of the customers you will ever lose, you lose right at the start - before they had a real chance to succeed.
 
 The single biggest lever on that loss is **time-to-first-value (TTV)**: how fast a new user reaches a moment where they think "oh, this actually works for my business." The faster they get there, the more likely they stay.
 
@@ -60,11 +60,11 @@ And there is a second, quieter cost when onboarding is weak. If you cannot see w
 
 Most onboarding is built around a checklist: upload a logo, add a product, connect payments, set shipping. Tick all the boxes and a banner says "You're all set!"
 
-The problem is that **finishing setup and reaching value are not the same thing.** A store can be perfectly configured — every box green — and still never take an order. That owner did the work and got nothing back. They are exactly as likely to churn as someone who never finished.
+The problem is that **finishing setup and reaching value are not the same thing.** A store can be perfectly configured - every box green - and still never take an order. That owner did the work and got nothing back. They are exactly as likely to churn as someone who never finished.
 
 This is the core insight from modern customer success thinking: **define one observable activation event before you design anything else.** Activation means real value was reached, not that buttons were clicked.
 
-A quick analogy. Imagine a gym that celebrates when you finish the tour — locker room, treadmills, the smoothie bar. Nice, but you haven't worked out. The real moment is your first sweaty, satisfying session. That is the thing that brings you back. Setup is the tour. The first order is the workout.
+A quick analogy. Imagine a gym that celebrates when you finish the tour - locker room, treadmills, the smoothie bar. Nice, but you haven't worked out. The real moment is your first sweaty, satisfying session. That is the thing that brings you back. Setup is the tour. The first order is the workout.
 
 So the question to answer for your own product is: **what is the one event that proves a new user got real value?** For a store, it is the first order. For an analytics tool, it might be the first dashboard shared. For a messaging app, the first message sent that gets a reply. Pick it deliberately, and make your whole onboarding chase it.
 
@@ -72,7 +72,7 @@ So the question to answer for your own product is: **what is the one event that 
 
 Non-technical owners do not stall because your interface is broken. They stall because they hit a word they do not understand.
 
-"Connect a payment gateway" is not a hard click. It is a hard concept. The owner does not need a better button — they need someone to lean over and say, in plain words, "A payment gateway is just the thing that lets customers pay you online. We'll walk you through it."
+"Connect a payment gateway" is not a hard click. It is a hard concept. The owner does not need a better button - they need someone to lean over and say, in plain words, "A payment gateway is just the thing that lets customers pay you online. We'll walk you through it."
 
 A few principles that make a real difference here:
 
@@ -82,11 +82,11 @@ A few principles that make a real difference here:
 
 ## Give them a sandbox: the test order
 
-Here is a chicken-and-egg problem. The activation moment is "see your first real order." But a real order requires a real customer, which can take days or weeks. So the owner sits in limbo — fully set up, nothing happening, momentum draining away.
+Here is a chicken-and-egg problem. The activation moment is "see your first real order." But a real order requires a real customer, which can take days or weeks. So the owner sits in limbo - fully set up, nothing happening, momentum draining away.
 
 The fix is simple and cheap: **let the owner place a test order themselves.**
 
-Seed the new store with a sample product, a sample discount code, and a simple offline payment method so they can run their own checkout from start to finish. They place the order. It lands in their admin. They feel the thing work — today, not next week.
+Seed the new store with a sample product, a sample discount code, and a simple offline payment method so they can run their own checkout from start to finish. They place the order. It lands in their admin. They feel the thing work - today, not next week.
 
 Mini case study, the pattern in practice: a store gets seeded on day one with a few clearly-labeled demo products and a "Remove samples" button for when they are ready to go live. Add a "Place a test order" action that walks the owner through buying one of those demo products, and you have manufactured the aha-moment on demand. You collapsed time-to-value from "whenever a stranger happens to buy something" to "five minutes from now."
 
@@ -101,10 +101,10 @@ No. Checklist completion is a proxy, and a weak one. A user can complete every s
 The opposite. Long 15-step tours convert under 20%. Three to five focused steps work far better, because each open task nags pleasantly at the brain until it is done, and visible progress pulls people forward.
 
 **"Onboarding state can live in the browser."**
-Tempting, but costly. If progress is stored only in the browser, it resets when the owner switches devices, vanishes for a second staff member, and — critically — is invisible to you. You cannot run proactive customer success on data you cannot see. Store activation state on the server.
+Tempting, but costly. If progress is stored only in the browser, it resets when the owner switches devices, vanishes for a second staff member, and - critically - is invisible to you. You cannot run proactive customer success on data you cannot see. Store activation state on the server.
 
 **"A reminder email when the trial ends is enough."**
-A trial-expiry email is a panic tap on the shoulder at the worst possible moment. Real proactive success reaches out earlier and gently — on day 3 and day 7 — while there is still momentum to save.
+A trial-expiry email is a panic tap on the shoulder at the worst possible moment. Real proactive success reaches out earlier and gently - on day 3 and day 7 - while there is still momentum to save.
 
 **"Self-serve means no help."**
 Self-serve means help that scales. A searchable help center, plain-language explainers, and ready-made templates let people unblock themselves without waiting for you. That is more help, not less.
@@ -114,27 +114,27 @@ Self-serve means help that scales. A searchable help center, plain-language expl
 Here is a concrete sequence you can apply to almost any product onboarding, roughly in priority order:
 
 1. **Name your one activation event.** Write it down. "Store live AND first order within 7 days," or your product's equivalent. This becomes your North Star.
-2. **Track onboarding state on the server, not the browser.** Record a timestamp for each step and for the activation event itself. Timestamps answer both "is it done?" and "when did it happen?" — which lets you measure time-to-value later.
+2. **Track onboarding state on the server, not the browser.** Record a timestamp for each step and for the activation event itself. Timestamps answer both "is it done?" and "when did it happen?" - which lets you measure time-to-value later.
 3. **Trim the checklist to 3–5 core steps**, each tied to reaching value. Cut or defer the rest.
 4. **Add a plain-language explainer to every step** that uses a technical word. One sentence. No jargon.
-5. **Build a "try it" path** so users hit the value moment without waiting on the outside world — a test order, sample data, a sandbox.
+5. **Build a "try it" path** so users hit the value moment without waiting on the outside world - a test order, sample data, a sandbox.
 6. **Celebrate the activation moment loudly.** When the first order lands, fire a banner and a cheerful message. Make the win feel like a win.
-7. **Send a short nudge sequence to people who stall** — for example day 3 and day 7 — pointing them at the exact next step they are missing.
+7. **Send a short nudge sequence to people who stall** - for example day 3 and day 7 - pointing them at the exact next step they are missing.
 8. **Give yourself visibility.** Build a simple funnel: registered → setup complete → first order. Now you can see who activated, who stalled, and who needs a human.
 9. **Don't let guidance expire on a timer.** If someone hasn't activated, keep the guidance on screen and escalate it, instead of hiding the checklist after 30 days and leaving them stranded.
 
-You do not need all nine on day one. The highest-leverage moves are usually 1, 2, and 5 — define the event, see it server-side, and let people reach it fast.
+You do not need all nine on day one. The highest-leverage moves are usually 1, 2, and 5 - define the event, see it server-side, and let people reach it fast.
 
 ## Watch for the early-warning signs
 
 Once activation lives on the server, you can build a simple **health score** for each new customer: how many days since they signed up versus how far they've gotten, whether they've hit the value event, how recently they logged in, where their order volume is trending.
 
-Roll that into three buckets — Healthy, Stable, At-Risk — and you get something powerful: a way to spot a struggling customer **weeks before they churn**, while you can still do something about it. Reserve scarce human attention for the At-Risk and high-value accounts, and let automation handle the rest. That mix — self-serve for everyone, automated nudges when someone gets stuck, human help for the accounts that need it — is how small teams run customer success that actually scales.
+Roll that into three buckets - Healthy, Stable, At-Risk - and you get something powerful: a way to spot a struggling customer **weeks before they churn**, while you can still do something about it. Reserve scarce human attention for the At-Risk and high-value accounts, and let automation handle the rest. That mix - self-serve for everyone, automated nudges when someone gets stuck, human help for the accounts that need it - is how small teams run customer success that actually scales.
 
 ## Conclusion
 
-If you remember one thing, make it this: **onboarding is not finished when setup is finished. It is finished when the customer feels real value for the first time.** For a store owner, that is the first order landing in their admin — and your job is to make that happen in hours, not weeks, even before a real customer shows up.
+If you remember one thing, make it this: **onboarding is not finished when setup is finished. It is finished when the customer feels real value for the first time.** For a store owner, that is the first order landing in their admin - and your job is to make that happen in hours, not weeks, even before a real customer shows up.
 
 Get that right and the rest of retention gets easier, because a customer who has felt the product work has a reason to come back.
 
-Which raises the next question, and it is a good one to sit with: once a customer is activated and happy, what is the early signal that they are quietly starting to drift away — and how do you catch it before the renewal date forces the conversation? That is where customer health scoring earns its keep, and it is worth a closer look.
+Which raises the next question, and it is a good one to sit with: once a customer is activated and happy, what is the early signal that they are quietly starting to drift away - and how do you catch it before the renewal date forces the conversation? That is where customer health scoring earns its keep, and it is worth a closer look.

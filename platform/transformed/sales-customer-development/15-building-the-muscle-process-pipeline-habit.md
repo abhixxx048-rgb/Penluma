@@ -78,12 +78,12 @@ Here's a simple set of stages that works well for a solo founder. A **stage** is
 
 **Lead → Contacted → Discovery → Demo/Eval → Proposal → Closed**
 
-- **Lead** — A person or company that matches your ideal customer. No contact yet.
-- **Contacted** — You sent the first message. Waiting to hear back.
-- **Discovery** — You had a real conversation and confirmed they have the problem you solve.
-- **Demo / Eval** — They've seen it work, or are trying it ("eval" is short for evaluation, a trial period).
-- **Proposal** — You've sent pricing and terms. The decision is now in their hands.
-- **Closed** — Done, either *Closed Won* (they bought) or *Closed Lost* (they didn't).
+- **Lead** - A person or company that matches your ideal customer. No contact yet.
+- **Contacted** - You sent the first message. Waiting to hear back.
+- **Discovery** - You had a real conversation and confirmed they have the problem you solve.
+- **Demo / Eval** - They've seen it work, or are trying it ("eval" is short for evaluation, a trial period).
+- **Proposal** - You've sent pricing and terms. The decision is now in their hands.
+- **Closed** - Done, either *Closed Won* (they bought) or *Closed Lost* (they didn't).
 
 Here's the rule that keeps this honest: a deal only moves to the next stage when something **real** happens. A reply. A confirmed problem. A price sent. Don't move a deal forward just because you feel hopeful after a nice chat.
 
@@ -99,12 +99,12 @@ The most common mistake is keeping deals in your head, your inbox, and scattered
 
 Here is the **minimum** to track. Six columns, that's it.
 
-- **Who** (name and company) — so you know the person, not "that one lead."
-- **Stage** — where they are in the process above.
-- **Next step** — the single next action *you* owe them. "Send pricing." "Call back."
-- **Next date** — when you'll do it. This is the one that saves deals.
-- **Notes** — what they said, in their own words. Pain, budget, who decides.
-- **Reason lost** — for dead deals, *why* it died. This is gold.
+- **Who** (name and company) - so you know the person, not "that one lead."
+- **Stage** - where they are in the process above.
+- **Next step** - the single next action *you* owe them. "Send pricing." "Call back."
+- **Next date** - when you'll do it. This is the one that saves deals.
+- **Notes** - what they said, in their own words. Pain, budget, who decides.
+- **Reason lost** - for dead deals, *why* it died. This is gold.
 
 The two fields that matter most are **Next step** and **Next date**. Every live deal must always have both. A deal with no next step isn't a deal, it's a memory. Each morning, you sort by date and do today's row.
 
@@ -118,8 +118,8 @@ Lost reasons turn vague failure into a concrete to-do list. As Steve Blank's ide
 
 This is the single most freeing idea here. There are two kinds of numbers.
 
-- **Lagging indicator** — the *result*: deals closed, revenue, customers won. It tells you about the past, shows up late, and you can't directly control it.
-- **Leading indicator** — the *activity* that causes results: conversations booked, demos given, follow-ups sent. It happens first, and you **fully control it**.
+- **Lagging indicator** - the *result*: deals closed, revenue, customers won. It tells you about the past, shows up late, and you can't directly control it.
+- **Leading indicator** - the *activity* that causes results: conversations booked, demos given, follow-ups sent. It happens first, and you **fully control it**.
 
 Here's the analogy. Revenue is your weight on the scale. You can't will the number down. But you *can* control your workouts and your meals, the leading indicators. Watch those daily and the scale follows on its own. Staring at the scale every hour just makes you anxious.
 

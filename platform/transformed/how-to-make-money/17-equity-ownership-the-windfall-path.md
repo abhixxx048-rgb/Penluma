@@ -75,18 +75,18 @@ The decisive number is **outcome size × ownership percentage**, not the percent
 
 Naval describes three forms of **leverage**, meaning things that multiply the output of your effort:
 
-1. **Capital** — money working for you.
-2. **People** — a team executing on your behalf.
-3. **Products with zero marginal cost** — code and media that copy for free, so one app can serve a million users.
+1. **Capital** - money working for you.
+2. **People** - a team executing on your behalf.
+3. **Products with zero marginal cost** - code and media that copy for free, so one app can serve a million users.
 
 Equity is how you **capture** the value that leverage creates, instead of handing it all to an employer. The price of admission is **accountability**: taking real risk under your own name. That risk is exactly what earns you ownership rather than a paycheck.
 
 Here is the full ladder of how people get paid, from safest and smallest at the bottom to riskiest and largest at the top:
 
-- **Own equity** (founder or early employee) — uncapped upside, real risk.
-- **Profit-share or carry** — a direct share of the win.
-- **Commission or bonus** — some skin in the game.
-- **Salary** — rent your time, capped and safe, stops when you stop.
+- **Own equity** (founder or early employee) - uncapped upside, real risk.
+- **Profit-share or carry** - a direct share of the win.
+- **Commission or bonus** - some skin in the game.
+- **Salary** - rent your time, capped and safe, stops when you stop.
 
 ## How employees get equity: ESOPs
 
@@ -94,12 +94,12 @@ You don't have to found a company to own equity. Most early employees get it thr
 
 Here is the vocabulary every offer letter uses, decoded:
 
-- **Grant** — the options you are awarded, that is the right to buy a set number of shares.
-- **Vesting** — earning those options over time so you stay. The standard is **four years**.
-- **Cliff** — usually **one year**. Leave before the cliff and you get nothing. After it, the rest vests monthly.
-- **Strike price** (also called exercise price) — the fixed price you pay to turn an option into a real share. It is set at fair market value on the grant date. Your gain rides on (current value − strike).
-- **Exercise** — actually paying the strike to own the shares. This costs cash and triggers tax.
-- **Fully-diluted shares** — the real denominator. This is the total share count including the whole option pool, warrants, and convertibles. Always ask for your percentage of fully-diluted shares, never a raw number.
+- **Grant** - the options you are awarded, that is the right to buy a set number of shares.
+- **Vesting** - earning those options over time so you stay. The standard is **four years**.
+- **Cliff** - usually **one year**. Leave before the cliff and you get nothing. After it, the rest vests monthly.
+- **Strike price** (also called exercise price) - the fixed price you pay to turn an option into a real share. It is set at fair market value on the grant date. Your gain rides on (current value − strike).
+- **Exercise** - actually paying the strike to own the shares. This costs cash and triggers tax.
+- **Fully-diluted shares** - the real denominator. This is the total share count including the whole option pool, warrants, and convertibles. Always ask for your percentage of fully-diluted shares, never a raw number.
 
 ## Common misconceptions
 

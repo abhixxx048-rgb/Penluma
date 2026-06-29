@@ -135,13 +135,13 @@ The income statement, also called the **P&L** (profit and loss), covers a stretc
 
 You read it top to bottom, peeling away costs in layers. Learn this sequence once and you will recognize it in nearly every company on earth:
 
-- **Revenue** (total sales): $100,000 — the "top line"
+- **Revenue** (total sales): $100,000 - the "top line"
 - minus **Cost of Goods Sold (COGS)**, the direct cost of making what you sold: $40,000
 - = **Gross profit**: $60,000
 - minus **Operating expenses** (rent, salaries, marketing): $35,000
 - = **Operating income (EBIT)**, profit from the core business before interest and taxes: $25,000
 - minus **Interest and taxes**: $8,000
-- = **Net income**: $17,000 — the "bottom line"
+- = **Net income**: $17,000 - the "bottom line"
 
 That is literally where the phrases come from. Revenue is the top row; net income is the bottom row. EBIT, by the way, just stands for "Earnings Before Interest and Taxes."
 

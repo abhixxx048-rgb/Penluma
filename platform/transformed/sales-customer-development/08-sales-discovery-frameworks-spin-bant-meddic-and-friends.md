@@ -89,10 +89,10 @@ SPIN comes from **Neil Rackham**, who studied over 35,000 real sales calls acros
 
 SPIN is four *types* of question:
 
-- **S — Situation:** Facts about how things work today. The background.
-- **P — Problem:** What is frustrating, broken, or hard right now.
-- **I — Implication:** What that problem *costs* them in money, time, or stress. This makes the pain feel bigger.
-- **N — Need-payoff:** What life would look like if the problem were solved. You let *them* describe the value.
+- **S - Situation:** Facts about how things work today. The background.
+- **P - Problem:** What is frustrating, broken, or hard right now.
+- **I - Implication:** What that problem *costs* them in money, time, or stress. This makes the pain feel bigger.
+- **N - Need-payoff:** What life would look like if the problem were solved. You let *them* describe the value.
 
 The genius is the order. You move from harmless facts, to a sore spot, to *why the sore spot matters*, and finally to *the buyer talking themselves into wanting a fix*. Rackham's research showed the Implication and Need-payoff questions are what actually move bigger deals, and they are exactly the ones most beginners skip.
 
