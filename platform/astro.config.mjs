@@ -5,8 +5,8 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
-// Update this to your real domain before deploying.
-const SITE = process.env.SITE_URL || 'https://research-blog.pages.dev';
+// Production domain. Override per-environment with SITE_URL if needed.
+const SITE = process.env.SITE_URL || 'https://penluma.com';
 
 export default defineConfig({
   site: SITE,
@@ -17,7 +17,12 @@ export default defineConfig({
   adapter: cloudflare({
     platformProxy: { enabled: true },
   }),
-  integrations: [mdx(), sitemap()],
+  integrations: [
+    mdx(),
+    sitemap({
+      filter: (page) => !page.includes('/api/'),
+    }),
+  ],
   vite: {
     plugins: [tailwindcss()],
   },

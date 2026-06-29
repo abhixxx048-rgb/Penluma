@@ -305,6 +305,88 @@ for (const folder of folders) {
   publishedTopics.push({ ...topic, postCount: topicPosts });
 }
 
+// ---------------------------------------------------------------------------
+// Standalone, hand-written posts (independent of the research folders).
+// Drop a markdown file with frontmatter in platform/posts/ — it survives
+// regeneration because it lives here, not in src/content/blog.
+//
+//   ---
+//   title: Why I publish my research
+//   topic: essays            # topic slug (its own topic if new)
+//   topicTitle: Essays       # optional pretty name for a new topic
+//   category: Essays         # optional nav category
+//   icon: ✍️                 # optional
+//   date: 2026-06-29
+//   featured: true           # optional → eligible for the homepage spotlight
+//   ---
+//   ...markdown body...
+// ---------------------------------------------------------------------------
+const POSTS_DIR = path.join(PLATFORM_DIR, 'posts');
+const topicBySlug = new Map(publishedTopics.map((t) => [t.slug, t]));
+const featuredPosts = [];
+
+if (fs.existsSync(POSTS_DIR)) {
+  const files = fs.readdirSync(POSTS_DIR).filter((f) => f.endsWith('.md') && !SKIP_FILE.test(f));
+  for (const file of files) {
+    const raw = fs.readFileSync(path.join(POSTS_DIR, file), 'utf8');
+    const { data: fm, content } = matter(raw);
+    const topicSlug = fm.topic || 'essays';
+
+    // ensure a topic exists for this standalone post
+    let topic = topicBySlug.get(topicSlug);
+    if (!topic) {
+      const cfg = TOPICS[topicSlug] || {};
+      topic = {
+        slug: topicSlug,
+        title: fm.topicTitle || cfg.title || prettify(topicSlug),
+        description: cfg.description || `Independent posts on ${prettify(topicSlug).toLowerCase()}.`,
+        category: fm.category || cfg.category || 'Essays',
+        icon: fm.icon || cfg.icon || '✍️',
+        order: cfg.order ?? 0,
+        featured: cfg.featured || false,
+        postCount: 0,
+      };
+      topicBySlug.set(topicSlug, topic);
+      publishedTopics.push(topic);
+    }
+
+    const { title, body } = extractTitle(content, prettify(file.replace(/\.md$/, '')));
+    const finalTitle = fm.title || title;
+    const slug = cleanSlug(file);
+    const excerpt = fm.description || buildExcerpt(path.join(POSTS_DIR, file), body);
+    const frontmatter = {
+      title: finalTitle,
+      description: excerpt || topic.description,
+      topic: topic.slug,
+      topicTitle: topic.title,
+      category: topic.category,
+      date: fm.date ? new Date(fm.date).toISOString().slice(0, 10) : statSafe(POSTS_DIR, file),
+      order: fm.order ?? 0,
+      icon: fm.icon || topic.icon,
+    };
+    const outTopicDir = path.join(OUT_DIR, topic.slug);
+    fs.mkdirSync(outTopicDir, { recursive: true });
+    fs.writeFileSync(path.join(outTopicDir, `${slug}.md`), matter.stringify('\n' + body, frontmatter));
+    topic.postCount++;
+    postCount++;
+    if (fm.featured) featuredPosts.push({ ...frontmatter, id: `${topic.slug}/${slug}` });
+  }
+}
+
+function statSafe(dir, file) {
+  try {
+    return fs.statSync(path.join(dir, file)).mtime.toISOString().slice(0, 10);
+  } catch {
+    return new Date(0).toISOString().slice(0, 10);
+  }
+}
+
+// homepage spotlight manifest (featured standalone posts)
+fs.writeFileSync(
+  path.join(PLATFORM_DIR, 'src/featured.generated.json'),
+  JSON.stringify(featuredPosts, null, 2)
+);
+
 // Emit a topics manifest the site uses for nav & topic pages.
 publishedTopics.sort((a, b) => a.category.localeCompare(b.category) || a.order - b.order);
 fs.writeFileSync(

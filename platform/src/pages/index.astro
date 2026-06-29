@@ -2,41 +2,65 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PostCard from '../components/PostCard.astro';
 import { SITE } from '../consts';
-import { topics, topicsByCategory, allPosts } from '../lib/content';
+import { topics, topicsByCategory, allPosts, featuredPosts } from '../lib/content';
 
 const posts = await allPosts();
-const recent = posts.slice(0, 6);
-const featured = topics.filter((t) => t.featured);
+const recent = posts.slice(0, 12);
+const featuredTopics = topics.filter((t) => t.featured);
 const grouped = topicsByCategory();
 const totalPosts = posts.length;
+const totalTopics = topics.length;
 ---
 
 <BaseLayout>
-  <!-- Hero -->
-  <section class="mx-auto max-w-5xl px-4 pt-16 pb-12 sm:px-6 sm:pt-24">
-    <p class="text-sm font-semibold uppercase tracking-wider text-brand-600 dark:text-brand-400">
-      {totalPosts} deep-dives · {topics.length} topics
-    </p>
-    <h1 class="mt-3 max-w-3xl text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl dark:text-white">
-      {SITE.tagline}
-    </h1>
-    <p class="mt-5 max-w-2xl text-lg text-slate-600 dark:text-slate-400">{SITE.description}</p>
-    <div class="mt-8 flex flex-wrap gap-3">
-      <a href="/topics" class="rounded-xl bg-brand-600 px-5 py-2.5 font-medium text-white transition-colors hover:bg-brand-700">
-        Browse topics
-      </a>
-      <a href="/blog" class="rounded-xl border border-slate-300 px-5 py-2.5 font-medium transition-colors hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-900">
-        All posts
-      </a>
+  <!-- Hero / branding -->
+  <section class="relative overflow-hidden border-b border-slate-200 dark:border-slate-800">
+    <div class="pointer-events-none absolute -top-24 left-1/2 h-72 w-[42rem] -translate-x-1/2 rounded-full bg-brand-500/10 blur-3xl"></div>
+    <div class="mx-auto max-w-5xl px-4 pt-16 pb-14 sm:px-6 sm:pt-24">
+      <div class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/60 px-3 py-1 text-xs font-medium text-slate-500 backdrop-blur dark:border-slate-800 dark:bg-slate-900/60">
+        <span class="text-brand-500">✦</span>
+        {totalPosts} deep-dives · {totalTopics} topics · always growing
+      </div>
+      <h1 class="mt-5 max-w-3xl text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl dark:text-white">
+        {SITE.name}
+      </h1>
+      <p class="mt-4 max-w-2xl text-xl text-slate-600 dark:text-slate-300">{SITE.tagline}</p>
+      <p class="mt-3 max-w-2xl text-slate-500 dark:text-slate-400">
+        <span class="font-medium text-slate-700 dark:text-slate-300">Pen + lumen</span> — the light of the pen.
+        Each topic goes from plain-language intuition, to precise mechanics, to the failure modes that show up in the real world.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="/blog" class="rounded-xl bg-brand-400 px-5 py-2.5 font-semibold text-slate-950 shadow-[0_0_24px_-6px_rgba(245,181,68,0.6)] transition-colors hover:bg-brand-300">
+          Browse all {totalPosts} posts
+        </a>
+        <a href="/topics" class="rounded-xl border border-slate-300 px-5 py-2.5 font-medium transition-colors hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-900">
+          Explore topics →
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- Featured topics -->
-  {featured.length > 0 && (
-    <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6">
+  <!-- Featured essays (standalone, hand-written) -->
+  {featuredPosts.length > 0 && (
+    <section class="mx-auto max-w-5xl px-4 pt-12 sm:px-6">
+      <div class="grid gap-5 sm:grid-cols-2">
+        {featuredPosts.slice(0, 2).map((p) => (
+          <a href={`/blog/${p.id}`} class="group rounded-2xl border border-brand-200 bg-brand-50/50 p-6 transition-all hover:-translate-y-0.5 hover:shadow-lg dark:border-brand-900 dark:bg-brand-950/20">
+            <p class="text-xs font-semibold uppercase tracking-wider text-brand-600 dark:text-brand-400">{p.icon} Featured · {p.topicTitle}</p>
+            <h3 class="mt-2 text-lg font-semibold text-slate-900 group-hover:text-brand-700 dark:text-white dark:group-hover:text-brand-300">{p.title}</h3>
+            <p class="mt-1.5 line-clamp-2 text-sm text-slate-600 dark:text-slate-400">{p.description}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- Start here -->
+  {featuredTopics.length > 0 && (
+    <section class="mx-auto max-w-5xl px-4 py-10 sm:px-6">
       <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-500">Start here</h2>
       <div class="mt-4 grid gap-5 sm:grid-cols-2">
-        {featured.map((t) => (
+        {featuredTopics.map((t) => (
           <a href={`/topics/${t.slug}`} class="group rounded-2xl border border-slate-200 bg-gradient-to-br from-brand-50 to-white p-6 transition-all hover:-translate-y-0.5 hover:shadow-lg dark:border-slate-800 dark:from-slate-900 dark:to-slate-950">
             <div class="text-3xl">{t.icon}</div>
             <h3 class="mt-3 text-lg font-semibold text-slate-900 group-hover:text-brand-700 dark:text-white dark:group-hover:text-brand-300">{t.title}</h3>
@@ -48,18 +72,18 @@ const totalPosts = posts.length;
     </section>
   )}
 
-  <!-- Recent posts -->
+  <!-- Latest -->
   <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6">
     <div class="flex items-baseline justify-between">
       <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-500">Latest</h2>
-      <a href="/blog" class="text-sm font-medium text-brand-600 hover:underline dark:text-brand-400">View all →</a>
+      <a href="/blog" class="text-sm font-medium text-brand-600 hover:underline dark:text-brand-400">View all {totalPosts} →</a>
     </div>
     <div class="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {recent.map((post) => <PostCard post={post} />)}
     </div>
   </section>
 
-  <!-- All categories -->
+  <!-- Explore by category -->
   <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6">
     <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-500">Explore by category</h2>
     <div class="mt-4 space-y-8">
@@ -76,6 +100,24 @@ const totalPosts = posts.length;
           </div>
         </div>
       ))}
+    </div>
+  </section>
+
+  <!-- Penluma story band -->
+  <section class="mx-auto mt-8 max-w-5xl px-4 sm:px-6">
+    <div class="rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-8 sm:p-12 dark:border-slate-800 dark:from-slate-900 dark:to-slate-950">
+      <p class="text-3xl">✦</p>
+      <h2 class="mt-3 text-2xl font-bold tracking-tight text-slate-900 dark:text-white">The Penluma story</h2>
+      <p class="mt-3 max-w-2xl text-slate-600 dark:text-slate-400">
+        Penluma is <em>pen</em> + <em>lumen</em> — the light of the pen. It started as a personal
+        research habit: going deep on one hard topic at a time and writing until the fog cleared.
+        These are the evergreen results, published so they can help others learning the same things.
+        New topics get added all the time.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="/about" class="rounded-xl border border-slate-300 px-4 py-2 text-sm font-medium transition-colors hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800">Read more about Penluma</a>
+        <a href="/topics" class="rounded-xl bg-brand-400 px-4 py-2 text-sm font-semibold text-slate-950 transition-colors hover:bg-brand-300">Start exploring →</a>
+      </div>
     </div>
   </section>
 </BaseLayout>

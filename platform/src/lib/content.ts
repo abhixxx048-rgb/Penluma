@@ -1,5 +1,16 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import topicsManifest from '../topics.generated.json';
+import featuredManifest from '../featured.generated.json';
+
+export type FeaturedPost = {
+  title: string;
+  description: string;
+  topicTitle: string;
+  icon: string;
+  id: string;
+};
+
+export const featuredPosts = featuredManifest as FeaturedPost[];
 
 export type Topic = {
   slug: string;
