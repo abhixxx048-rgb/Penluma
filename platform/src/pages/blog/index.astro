@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { topicsByCategory, postsForTopic } from '../../lib/content';
+
+const grouped = topicsByCategory();
+const data = await Promise.all(
+  grouped.map(async (g) => ({
+    category: g.category,
+    topics: await Promise.all(
+      g.topics.map(async (t) => ({ topic: t, posts: await postsForTopic(t.slug) }))
+    ),
+  }))
+);
+---
+
+<BaseLayout title="All Posts" description="The full archive of research posts.">
+  <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+    <h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">All posts</h1>
+    <p class="mt-3 text-slate-600 dark:text-slate-400">The complete archive, organized by topic. Use <a href="/search" class="text-brand-600 hover:underline dark:text-brand-400">search</a> to find something specific.</p>
+
+    <div class="mt-10 space-y-12">
+      {data.map((g) => (
+        <div>
+          <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-500">{g.category}</h2>
+          <div class="mt-4 space-y-8">
+            {g.topics.map(({ topic, posts }) => (
+              <div>
+                <a href={`/topics/${topic.slug}`} class="inline-flex items-center gap-2 font-semibold text-slate-900 hover:text-brand-700 dark:text-white dark:hover:text-brand-300">
+                  <span>{topic.icon}</span>{topic.title}
+                  <span class="text-xs font-normal text-slate-400">{posts.length}</span>
+                </a>
+                <ul class="mt-2 space-y-1 border-l border-slate-200 pl-4 dark:border-slate-800">
+                  {posts.map((post) => (
+                    <li>
+                      <a href={`/blog/${post.id}`} class="block py-0.5 text-sm text-slate-600 hover:text-brand-600 dark:text-slate-400 dark:hover:text-brand-400">{post.data.title}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,53 @@
+---
+---
+<div>
+  <p class="font-semibold">Get new deep-dives by email</p>
+  <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
+    No spam. One email when a substantial new topic or post lands.
+  </p>
+  <form id="newsletter-form" class="mt-4 flex max-w-sm gap-2">
+    <input
+      type="email"
+      name="email"
+      required
+      placeholder="you@example.com"
+      class="min-w-0 flex-1 rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/30 dark:border-slate-700 dark:bg-slate-900"
+    />
+    <button
+      type="submit"
+      class="rounded-lg bg-brand-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-brand-700"
+      >Subscribe</button
+    >
+  </form>
+  <p id="newsletter-msg" class="mt-2 hidden text-sm"></p>
+</div>
+
+<script is:inline>
+  const form = document.getElementById('newsletter-form');
+  const msg = document.getElementById('newsletter-msg');
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = new FormData(form).get('email');
+    msg.classList.remove('hidden', 'text-red-500', 'text-green-600');
+    msg.textContent = 'Subscribing…';
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.ok) {
+        msg.classList.add('text-green-600');
+        msg.textContent = data.message || 'Thanks — you’re subscribed!';
+        form.reset();
+      } else {
+        msg.classList.add('text-red-500');
+        msg.textContent = data.error || 'Something went wrong. Try again.';
+      }
+    } catch {
+      msg.classList.add('text-red-500');
+      msg.textContent = 'Network error. Please try again.';
+    }
+  });
+</script>

@@ -105,6 +105,110 @@ function cleanSlug(filename) {
     .replace(/^-+|-+$/g, '');
 }
 
+function decodeEntities(s) {
+  return s
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&mdash;/g, '—')
+    .replace(/&ndash;/g, '–')
+    .replace(/&nbsp;/g, ' ');
+}
+
+function stripTags(html) {
+  return decodeEntities(html.replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ').trim();
+}
+
+// Recursively find the first array that looks like a list of content sections
+// (objects that carry an `html` string). Handles all the build-JSON shapes.
+function findSections(node, depth = 0) {
+  if (depth > 6 || node == null || typeof node !== 'object') return null;
+  if (Array.isArray(node)) {
+    const objs = node.filter((x) => x && typeof x === 'object');
+    const withHtml = objs.filter((x) => typeof x.html === 'string' && x.html.trim().length > 40);
+    if (objs.length && withHtml.length >= Math.max(1, Math.floor(objs.length * 0.5))) {
+      return withHtml;
+    }
+    for (const item of node) {
+      const found = findSections(item, depth + 1);
+      if (found) return found;
+    }
+    return null;
+  }
+  for (const key of Object.keys(node)) {
+    if (key === 'logs') continue; // skip workflow logs
+    const found = findSections(node[key], depth + 1);
+    if (found) return found;
+  }
+  return null;
+}
+
+function titleFromSection(sec, idx) {
+  let t = sec.title || sec.name || sec.heading || '';
+  if (!t) {
+    const m = (sec.html || '').match(/<h[12][^>]*>(.*?)<\/h[12]>/is);
+    t = m ? m[1] : `Part ${idx + 1}`;
+  }
+  return decodeEntities(t.replace(/<[^>]+>/g, '').replace(/^\s*\d+[.)·\s-]+/, '').trim());
+}
+
+// Drop a leading <h1>/<h2> (the layout renders the title itself).
+function stripLeadingHeading(html) {
+  return html.replace(/^\s*<h[12][^>]*>.*?<\/h[12]>\s*/is, '');
+}
+
+// Last resort: split a built HTML document into posts by <section> blocks.
+const HTML_EXCLUDE = /(master|cheat|revision|rebuild|_test|index)/i;
+function booksFromHtml(folderPath) {
+  const htmlFiles = fs
+    .readdirSync(folderPath)
+    .filter((f) => f.endsWith('.html') && !HTML_EXCLUDE.test(f))
+    .sort();
+  const posts = [];
+  let idx = 0;
+  for (const hf of htmlFiles) {
+    const raw = fs.readFileSync(path.join(folderPath, hf), 'utf8');
+    const blocks = raw.match(/<section class="section"[^>]*>[\s\S]*?<\/section>/gi) || [];
+    for (const block of blocks) {
+      const inner = block.replace(/^<section[^>]*>/i, '').replace(/<\/section>\s*$/i, '');
+      const hm = inner.match(/<h2[^>]*>([\s\S]*?)<\/h2>/i);
+      if (!hm) continue;
+      const title = decodeEntities(hm[1].replace(/<[^>]+>/g, '').replace(/^\s*\d+[.)·\s-]+/, '').trim());
+      const html = stripLeadingHeading(inner);
+      if (stripTags(html).length < 80) continue; // skip nav/toc stubs
+      posts.push({ title, html, excerpt: stripTags(inner), order: idx });
+      idx++;
+    }
+  }
+  return posts;
+}
+
+// Build posts from a folder's build-JSON "book" (chapters/sections of HTML).
+function booksFromFolder(folderPath) {
+  const jsonFiles = fs.readdirSync(folderPath).filter((f) => f.endsWith('.json'));
+  const posts = [];
+  let idx = 0;
+  for (const jf of jsonFiles) {
+    let data;
+    try {
+      data = JSON.parse(fs.readFileSync(path.join(folderPath, jf), 'utf8'));
+    } catch {
+      continue;
+    }
+    const sections = findSections(data);
+    if (!sections) continue;
+    for (const sec of sections) {
+      const title = titleFromSection(sec, idx);
+      const html = stripLeadingHeading(sec.html);
+      posts.push({ title, html, excerpt: stripTags(sec.html), order: idx });
+      idx++;
+    }
+  }
+  return posts;
+}
+
 // --- main ------------------------------------------------------------------
 
 // reset output
@@ -129,9 +233,43 @@ for (const folder of folders) {
     .readdirSync(folderPath)
     .filter((f) => f.endsWith('.md') && !SKIP_FILE.test(f));
 
-  if (mdFiles.length === 0) continue;
-
   let topicPosts = 0;
+  const outTopicDir = path.join(OUT_DIR, topic.slug);
+
+  // --- Book folders: no markdown, content lives in build-JSON ---
+  if (mdFiles.length === 0) {
+    const stat = fs.statSync(folderPath);
+    let bookPosts = booksFromFolder(folderPath);
+    if (bookPosts.length === 0) bookPosts = booksFromHtml(folderPath);
+    if (bookPosts.length === 0) {
+      console.warn(`   ⚠ ${folder}: no markdown, JSON, or HTML content found — skipped.`);
+      continue;
+    }
+    fs.mkdirSync(outTopicDir, { recursive: true });
+    const date = stat.mtime.toISOString().slice(0, 10);
+    for (const bp of bookPosts) {
+      const excerpt = bp.excerpt.length > 280 ? bp.excerpt.slice(0, 277).replace(/\s+\S*$/, '') + '…' : bp.excerpt;
+      const frontmatter = {
+        title: bp.title,
+        description: excerpt || topic.description,
+        topic: topic.slug,
+        topicTitle: topic.title,
+        category: topic.category,
+        date,
+        order: bp.order,
+        icon: topic.icon,
+      };
+      const slug = cleanSlug(`${String(bp.order + 1).padStart(2, '0')}-${bp.title}`) || `part-${bp.order + 1}`;
+      const outFile = path.join(outTopicDir, `${slug}.md`);
+      // Raw HTML is valid markdown body; wrapped so our prose styles apply.
+      fs.writeFileSync(outFile, matter.stringify(`\n${bp.html}\n`, frontmatter));
+      postCount++;
+      topicPosts++;
+    }
+    publishedTopics.push({ ...topic, postCount: topicPosts });
+    continue;
+  }
+
   for (const file of mdFiles) {
     const srcPath = path.join(folderPath, file);
     const raw = fs.readFileSync(srcPath, 'utf8');
@@ -157,7 +295,6 @@ for (const folder of folders) {
       icon: topic.icon,
     };
 
-    const outTopicDir = path.join(OUT_DIR, topic.slug);
     fs.mkdirSync(outTopicDir, { recursive: true });
     const outFile = path.join(outTopicDir, `${slug}.md`);
     fs.writeFileSync(outFile, matter.stringify('\n' + body, frontmatter));

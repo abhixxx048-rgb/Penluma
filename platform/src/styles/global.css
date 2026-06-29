@@ -1,0 +1,89 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+/* Dark mode driven by a class on <html> (toggled + persisted in localStorage) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --color-brand-50: #eef5ff;
+  --color-brand-100: #d9e8ff;
+  --color-brand-200: #bcd6ff;
+  --color-brand-300: #8ebbff;
+  --color-brand-400: #5994ff;
+  --color-brand-500: #336bf7;
+  --color-brand-600: #1f4ee4;
+  --color-brand-700: #1a3dc4;
+  --color-brand-800: #1b349f;
+  --color-brand-900: #1c317e;
+  --color-brand-950: #131d4d;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  @apply bg-white text-slate-800 antialiased dark:bg-slate-950 dark:text-slate-200;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+/* Readable, polished article typography */
+.prose-research {
+  @apply prose prose-slate dark:prose-invert max-w-none
+    prose-headings:scroll-mt-24 prose-headings:font-semibold
+    prose-h2:mt-12 prose-h2:border-b prose-h2:border-slate-200 prose-h2:pb-2 dark:prose-h2:border-slate-800
+    prose-a:text-brand-600 prose-a:no-underline hover:prose-a:underline dark:prose-a:text-brand-400
+    prose-code:rounded prose-code:bg-slate-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:text-[0.85em] prose-code:font-normal prose-code:before:content-none prose-code:after:content-none dark:prose-code:bg-slate-800
+    prose-pre:rounded-xl prose-pre:border prose-pre:border-slate-200 dark:prose-pre:border-slate-800
+    prose-table:text-sm prose-blockquote:border-brand-400 prose-blockquote:font-normal prose-blockquote:not-italic;
+}
+
+/* Callouts carried over from the original research HTML (key/warn/tip/analogy/example) */
+.prose-research :where(.key, .warn, .tip, .analogy, .example, .callout) {
+  @apply my-5 rounded-lg border-l-4 px-4 py-3 text-[0.95em];
+}
+.prose-research :where(.key, .warn, .tip, .analogy, .example) > :first-child {
+  @apply mt-0;
+}
+.prose-research :where(.key, .warn, .tip, .analogy, .example) > :last-child {
+  @apply mb-0;
+}
+.prose-research :where(.key, .callout.key) {
+  @apply border-brand-400 bg-brand-50 dark:bg-brand-950/40;
+}
+.prose-research :where(.warn, .callout.warn) {
+  @apply border-rose-400 bg-rose-50 dark:bg-rose-950/30;
+}
+.prose-research :where(.tip, .callout.tip) {
+  @apply border-emerald-400 bg-emerald-50 dark:bg-emerald-950/30;
+}
+.prose-research .analogy {
+  @apply border-violet-400 bg-violet-50 dark:bg-violet-950/30;
+}
+.prose-research .example {
+  @apply border-amber-400 bg-amber-50 dark:bg-amber-950/30;
+}
+.prose-research :where(.key, .warn, .tip, .analogy, .example) strong {
+  @apply font-semibold;
+}
+.prose-research dl {
+  @apply my-4;
+}
+.prose-research dt {
+  @apply font-semibold text-slate-900 dark:text-white;
+}
+.prose-research dd {
+  @apply mb-3 ml-0 pl-4 text-slate-600 dark:text-slate-400;
+}
+
+/* Shiki: show the right theme per color-mode */
+html.dark .astro-code,
+html.dark .astro-code span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+  font-style: var(--shiki-dark-font-style) !important;
+}

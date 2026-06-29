@@ -1,0 +1,32 @@
+---
+import type { CollectionEntry } from 'astro:content';
+interface Props {
+  post: CollectionEntry<'blog'>;
+  compact?: boolean;
+}
+const { post, compact = false } = Astro.props;
+const { title, description, icon, topicTitle, date, topic } = post.data;
+const fmtDate = date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+---
+
+<a
+  href={`/blog/${post.id}`}
+  class="group flex flex-col rounded-2xl border border-slate-200 bg-white p-5 transition-all hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900 dark:hover:border-brand-700"
+>
+  <div class="flex items-center gap-2 text-xs font-medium text-brand-600 dark:text-brand-400">
+    <span class="text-base">{icon}</span>
+    <span>{topicTitle}</span>
+  </div>
+  <h3 class="mt-2 font-semibold leading-snug text-slate-900 group-hover:text-brand-700 dark:text-white dark:group-hover:text-brand-300">
+    {title}
+  </h3>
+  {!compact && description && (
+    <p class="mt-2 line-clamp-3 text-sm text-slate-600 dark:text-slate-400">{description}</p>
+  )}
+  <div class="mt-4 flex items-center gap-3 text-xs text-slate-400">
+    <time datetime={date.toISOString()}>{fmtDate}</time>
+    <span class="ml-auto inline-flex items-center gap-1 opacity-0 transition-opacity group-hover:opacity-100">
+      Read <span aria-hidden="true">→</span>
+    </span>
+  </div>
+</a>

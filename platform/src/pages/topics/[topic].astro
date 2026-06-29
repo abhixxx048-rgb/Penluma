@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { topics, topicBySlug, postsForTopic } from '../../lib/content';
+
+export async function getStaticPaths() {
+  return topics.map((t) => ({ params: { topic: t.slug } }));
+}
+
+const { topic: slug } = Astro.params;
+const topic = topicBySlug(slug!)!;
+const posts = await postsForTopic(slug!);
+---
+
+<BaseLayout title={topic.title} description={topic.description}>
+  <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+    <a href="/topics" class="text-sm text-brand-600 hover:underline dark:text-brand-400">← All topics</a>
+    <div class="mt-4 flex items-start gap-4">
+      <div class="text-4xl">{topic.icon}</div>
+      <div>
+        <h1 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">{topic.title}</h1>
+        <p class="mt-2 text-slate-600 dark:text-slate-400">{topic.description}</p>
+        <p class="mt-2 text-sm text-slate-400">{posts.length} posts · {topic.category}</p>
+      </div>
+    </div>
+
+    <ol class="mt-10 space-y-3">
+      {posts.map((post, i) => (
+        <li>
+          <a href={`/blog/${post.id}`} class="group flex items-start gap-4 rounded-xl border border-slate-200 bg-white p-4 transition-colors hover:border-brand-300 hover:bg-brand-50/40 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-brand-700 dark:hover:bg-slate-800/50">
+            <span class="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-slate-100 text-xs font-semibold text-slate-500 dark:bg-slate-800">{i + 1}</span>
+            <div class="min-w-0">
+              <h2 class="font-semibold text-slate-900 group-hover:text-brand-700 dark:text-white dark:group-hover:text-brand-300">{post.data.title}</h2>
+              <p class="mt-1 line-clamp-2 text-sm text-slate-600 dark:text-slate-400">{post.data.description}</p>
+            </div>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </section>
+</BaseLayout>

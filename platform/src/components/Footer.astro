@@ -1,0 +1,26 @@
+---
+import { SITE } from '../consts';
+import NewsletterForm from './NewsletterForm.astro';
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-20 border-t border-slate-200 dark:border-slate-800">
+  <div class="mx-auto max-w-5xl px-4 py-12 sm:px-6">
+    <div class="grid gap-10 sm:grid-cols-2">
+      <div>
+        <p class="font-semibold">{SITE.title}</p>
+        <p class="mt-2 max-w-sm text-sm text-slate-600 dark:text-slate-400">{SITE.tagline}</p>
+        <div class="mt-4 flex gap-4 text-sm text-slate-500">
+          {SITE.social.twitter && <a class="hover:text-brand-600" href={SITE.social.twitter}>Twitter</a>}
+          {SITE.social.github && <a class="hover:text-brand-600" href={SITE.social.github}>GitHub</a>}
+          {SITE.social.linkedin && <a class="hover:text-brand-600" href={SITE.social.linkedin}>LinkedIn</a>}
+          <a class="hover:text-brand-600" href="/rss.xml">RSS</a>
+        </div>
+      </div>
+      <NewsletterForm />
+    </div>
+    <p class="mt-10 text-xs text-slate-400">
+      © {year} {SITE.author}. Built with Astro on Cloudflare.
+    </p>
+  </div>
+</footer>
