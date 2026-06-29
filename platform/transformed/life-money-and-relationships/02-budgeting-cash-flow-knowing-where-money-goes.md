@@ -38,8 +38,7 @@ order: 1
 icon: "\U0001F331"
 author: Pritesh Yadav
 transformed: true
-sources:
-  - 'https://en.wikipedia.org/wiki/All_Your_Worth'
+sources: []
 ---
 
 Picture your bank account at the end of last month. Now answer one question: where did the money go? If you hesitated, you are in good company. Most people genuinely cannot say. Their salary lands, the month happens, and somehow it is gone.

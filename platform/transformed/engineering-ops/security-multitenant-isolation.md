@@ -1,7 +1,7 @@
 ---
 title: "Multi-Tenant Isolation: Why One Bug Leaks Every Customer"
 metaTitle: "Multi-Tenant Isolation Security Guide"
-description: "Multi-tenant isolation breaks when one query forgets the tenant filter. Learn the real failure modes—IDOR, fail-open scopes, spoofed headers—and how to fix them."
+description: "Multi-tenant isolation breaks when one query forgets the tenant filter. Learn the failure modes—IDOR, fail-open scopes, spoofed headers—and how to fix them."
 keywords:
   - multi-tenant isolation
   - tenant data isolation

@@ -1,7 +1,7 @@
 ---
 title: "Unit Economics: Does Each Sale Actually Make You Money?"
 metaTitle: "Unit Economics: Does Each Sale Make Money?"
-description: "Unit economics reveals whether one sale leaves you richer or poorer. Learn contribution margin, LTV, CAC, and the math that quietly decides if a business survives."
+description: "Unit economics reveals whether one sale leaves you richer or poorer. Learn contribution margin, LTV, CAC, and the math that decides if a business survives."
 keywords:
   - unit economics
   - contribution margin

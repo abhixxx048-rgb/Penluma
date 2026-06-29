@@ -3,7 +3,7 @@ title: 'Interest Rates Explained: How Loans and Debt Really Work'
 metaTitle: 'Interest Rates Explained: Loans, Credit & Debt'
 description: >-
   Interest rates explained in plain English: why interest exists, how your credit
-  score sets your rate, why real beats nominal, and how leverage builds or breaks wealth.
+  score sets your rate, and why real returns beat the number on your statement.
 keywords:
   - interest rates explained
   - how interest rates work

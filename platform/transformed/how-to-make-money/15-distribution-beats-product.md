@@ -40,7 +40,6 @@ faq:
     a: Building an audience first is often cheaper and safer. The cheapest customer is one who already trusts you, so creating useful content and a following before launch means you have people ready to buy on day one.
 sources:
   - https://en.wikipedia.org/wiki/Zero_to_One
-  - https://en.wikipedia.org/wiki/1,000_True_Fans
 ---
 
 There is one sentence that has quietly killed more startups than bad code, bad timing, or bad luck ever did: *"If we build something great, people will find it."*

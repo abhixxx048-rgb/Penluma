@@ -1,5 +1,5 @@
 ---
-title: 'How Companies Grow, Raise Capital, and Create Value'
+title: 'How Companies Grow, Raise Capital, and Fund Your Raise'
 metaTitle: 'How Companies Grow and Raise Capital'
 description: >-
   Learn how companies create value, raise capital, and grow — from bootstrapping

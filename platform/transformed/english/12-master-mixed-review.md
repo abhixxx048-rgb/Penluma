@@ -1,7 +1,7 @@
 ---
 title: "Fix the Grammar Mistakes in Your Commits and Slack Messages"
 metaTitle: "Developer English: Master Mixed Grammar Review"
-description: "A practical grammar workout for developers. Fix real commit messages, PRs, and Slack standups with mixed drills covering articles, much vs many, tenses, and more."
+description: "A practical grammar workout for developers: fix real commit messages, PRs, and Slack standups with drills on articles, much vs many, tenses, and run-ons."
 keywords:
   - developer english grammar
   - grammar for programmers

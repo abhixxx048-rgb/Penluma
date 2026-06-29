@@ -1,7 +1,7 @@
 ---
 title: "Distributed Systems Cheat Sheet: The Ideas You Actually Need"
 metaTitle: "Distributed Systems Cheat Sheet (Core Concepts)"
-description: "A plain-English distributed systems cheat sheet: the 8 fallacies, CAP vs PACELC, logical clocks, and consistency models you can actually remember under pressure."
+description: "A plain-English distributed systems cheat sheet: the 8 fallacies, CAP vs PACELC, logical clocks, and consistency models you can remember under pressure."
 keywords:
   - distributed systems cheat sheet
   - 8 fallacies of distributed computing

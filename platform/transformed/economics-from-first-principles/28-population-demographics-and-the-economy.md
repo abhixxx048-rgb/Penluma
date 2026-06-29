@@ -3,7 +3,7 @@ title: 'How Population and Demographics Shape Every Economy'
 metaTitle: 'How Demographics Shape the Economy'
 description: >-
   Why population age and fertility rates quietly decide whether an economy grows or
-  stalls — demographics explained in plain language, with real examples you can use.
+  stalls. Demographics in plain language, with real examples you can use.
 topic: economics-from-first-principles
 topicTitle: Economics from First Principles
 category: Money & Business

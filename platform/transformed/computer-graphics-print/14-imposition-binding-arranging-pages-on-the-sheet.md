@@ -1,5 +1,5 @@
 ---
-title: "Why Printed Pages Look Scrambled on the Press Sheet"
+title: "Why Printed Pages Look Scrambled: Imposition Explained"
 metaTitle: "Imposition & Binding Explained"
 description: "Imposition is why a press sheet looks scrambled yet folds into perfect page order. Learn signatures, binding, creep, bleed, and how to prep files right."
 keywords:

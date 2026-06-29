@@ -3,7 +3,7 @@ title: What Money Actually Is (And Why It Quietly Caps Your Income)
 metaTitle: What Money Actually Is — A Plain Guide
 description: >-
   Understand what money actually is — a claim on other people's effort — and why
-  the wrong mental model quietly caps how much you ever earn. A clear, practical guide.
+  the wrong mental model quietly caps how much you earn. A clear, practical guide.
 keywords:
   - what money actually is
   - what is money

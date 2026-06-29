@@ -1,7 +1,7 @@
 ---
 title: "Pricing Research Methods: How to Find the Right Price Without Guessing"
 metaTitle: "Pricing Research Methods That Actually Work"
-description: "Learn pricing research methods like Van Westendorp and Gabor-Granger to find your acceptable price range and revenue-maximizing point without expensive guesswork."
+description: "Learn pricing research methods like Van Westendorp and Gabor-Granger to find your acceptable price range and revenue-maximizing point without guesswork."
 keywords:
   - pricing research methods
   - van westendorp price sensitivity meter

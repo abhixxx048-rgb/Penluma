@@ -2,8 +2,8 @@
 title: 'Write Like a Senior Dev: Commits, PRs, and Code Reviews'
 metaTitle: 'Write Like a Senior Dev: Commits & PRs'
 description: >-
-  Learn to write professional commit messages, pull requests, code review comments,
-  and Slack standups. Small writing fixes that make your engineering work read as senior.
+  Learn to write professional commit messages, pull requests, and code review comments.
+  Small writing fixes that make your engineering work read as senior.
 keywords:
   - how to write a commit message
   - commit message best practices
@@ -84,7 +84,7 @@ Start with an imperative verb in its base form: **Add, Fix, Remove, Update, Refa
 Two small rules that catch most people:
 
 1. **No period at the end of the subject.** It's a title, not a sentence. Periods are fine in the body.
-2. **Keep the subject under about 50 characters.** Tools truncate long subjects, so the front-load the important words.
+2. **Keep the subject under about 50 characters.** Tools truncate long subjects, so front-load the important words.
 
 **And the body?** If the *why* isn't obvious, leave a blank line and explain it in full sentences. The diff already shows *what* changed — the body's job is to answer *why* it needed changing. Future-you, debugging at 2 a.m., will be grateful.
 

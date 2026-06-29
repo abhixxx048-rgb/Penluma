@@ -1,7 +1,7 @@
 ---
 title: How to Get Rich From a Job (Without Staying One)
 metaTitle: How to Build Wealth as an Employee
-description: A salaried job won't make you rich on its own, but it's the lowest-risk way to build the skills, network, and capital that can. Here's how to play it right.
+description: Building wealth as an employee feels impossible on salary alone, but a job is the lowest-risk way to gain the skills, network, and capital that get you there.
 topic: how-to-make-money
 topicTitle: How to Make Money
 category: Money & Business

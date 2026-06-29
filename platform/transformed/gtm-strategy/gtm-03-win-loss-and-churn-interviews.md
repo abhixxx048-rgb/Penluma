@@ -1,7 +1,7 @@
 ---
 title: "Why Customers Lie About Why They Leave (and How to Hear the Truth)"
 metaTitle: "Win/Loss & Churn Interviews That Work"
-description: "Win/loss and churn interviews reveal why deals really die. Learn the laddering technique to get past 'too expensive' and find the root cause customers won't say out loud."
+description: "Win/loss and churn interviews reveal why deals really die. Use laddering to get past 'too expensive' and find the real reason customers actually leave."
 keywords:
   - win loss interviews
   - churn interviews

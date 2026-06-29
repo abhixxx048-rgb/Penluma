@@ -38,7 +38,6 @@ order: 999
 icon: "\U0001F3AF"
 sources:
   - https://medium.com/point-nine-news/five-ways-to-build-a-100-million-business-82ac6ea8ffd9
-  - https://a16z.com/the-20m-to-500m-question-adding-top-down-sales/
 ---
 
 # How to Pick the Right GTM Motion for Your Price Point

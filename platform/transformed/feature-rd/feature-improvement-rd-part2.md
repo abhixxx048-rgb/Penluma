@@ -1,7 +1,7 @@
 ---
 title: When Your App Lies - Fixing Silent Software Failures
 metaTitle: Silent Software Failures - How to Find & Fix Them
-description: Your app says "Paid" but recorded nothing. Learn why software silently lies to users, the patterns behind it, and how to fix these failures for good.
+description: Your app says "Paid" but saved nothing. Learn why silent software failures happen, the patterns behind apps that lie, and how to fix them for good.
 keywords:
   - silent software failures
   - software UI lies

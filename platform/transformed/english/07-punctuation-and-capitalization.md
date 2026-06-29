@@ -1,7 +1,7 @@
 ---
 title: "Why Your Slack Messages Look Junior (And the Quick Fix)"
 metaTitle: "Punctuation & Capitalization for Developers"
-description: "Lowercase i, missing full stops, and run-on sentences make your writing look rushed. Learn the punctuation and capitalization rules that make you read as senior."
+description: "Lowercase i, missing full stops, and run-on sentences make your writing look rushed. Learn the punctuation and capitalization rules that read as senior."
 keywords:
   - punctuation rules for developers
   - capitalization rules

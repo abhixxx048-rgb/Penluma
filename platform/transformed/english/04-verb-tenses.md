@@ -1,7 +1,7 @@
 ---
 title: "Verb Tenses for Developers: Stop Writing \"I Am Fix the Bug\""
 metaTitle: "Verb Tenses for Developers (Plain Guide)"
-description: "Learn which verb tense to use in commits, standups, and PRs - and how to stop your sentences from drifting between past and present. A clear guide for developers."
+description: "Learn which verb tense to use in commits, standups, and PRs - and stop your sentences drifting between past and present. A clear guide for developers."
 keywords:
   - verb tenses for developers
   - english for developers

@@ -2,9 +2,8 @@
 title: 'Run-On Sentences: Why Your PRs Get Skimmed (and How to Fix It)'
 metaTitle: 'Fix Run-On Sentences & Comma Splices Fast'
 description: >-
-  Learn to fix run-on sentences, comma splices, and fragments so your commits,
-  PRs, and Slack messages read clearly the first time. Four simple fixes, real
-  dev examples.
+  Fix run-on sentences, comma splices, and fragments so your commits, PRs, and
+  Slack messages read clearly the first time. Four simple fixes, real examples.
 keywords:
   - run-on sentences
   - comma splice

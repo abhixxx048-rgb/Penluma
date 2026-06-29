@@ -1,7 +1,7 @@
 ---
 title: "Jobs to Be Done: Why Customers Really Hire Your Product"
 metaTitle: "Jobs to Be Done: Why Customers Switch"
-description: "Jobs to Be Done explains why customers actually switch products. Learn the struggling moment, the four forces, and how to turn the job into messaging that sells."
+description: "Jobs to Be Done explains why customers switch products. Learn the struggling moment, the four forces, and how to turn the job into messaging that sells."
 keywords:
   - jobs to be done
   - jobs to be done framework
@@ -37,7 +37,7 @@ icon: "\U0001F3AF"
 author: Pritesh Yadav
 transformed: true
 sources:
-  - https://en.wikipedia.org/wiki/Jobs_to_be_done
+  - https://en.wikipedia.org/wiki/Outcome-driven_innovation
 ---
 
 It's 9:40 on a Sunday night. A client emailed yesterday asking to reorder 5,000 flyers, "same as last time, just change the date." So here you are, digging through old emails to find the file and an old spreadsheet to find the price. You're annoyed you're even doing this on a Sunday.

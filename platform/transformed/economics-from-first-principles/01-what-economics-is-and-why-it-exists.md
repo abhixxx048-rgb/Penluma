@@ -39,7 +39,7 @@ Here's a surprise to start with: economics is not really about money. Money is j
 
 At its heart, economics is about something far more universal: **how people and societies make choices when they cannot have everything they want.** If you have ever picked between sleeping in and going to the gym, or between paying rent and taking a trip, you have already done economics. You just didn't call it that.
 
-This article gives you the whole foundation in one read. We'll find the single fact that makes economics necessary, follow the chain of ideas it forces on us, see the two altitudes economists work from, learn to tell a fact from an opinion, and end with the quiet miracle economics exists to explain.
+By the end of this one read, you'll have the whole foundation: the single fact that makes economics necessary, the chain of ideas it forces on us, the two altitudes economists work from, how to tell a fact from an opinion, and the quiet miracle the field exists to explain.
 
 ## Why this matters
 

@@ -2,8 +2,8 @@
 title: 'Why a Software Firm Keeps 70 Cents and a Grocer Keeps 2'
 metaTitle: 'Business Economics: Costs, Profit & Pricing'
 description: >-
-  Why does the same iPhone cost twice as much in one country? Learn how costs,
-  margins, pricing, and competitive moats decide which businesses actually win.
+  Why does the same iPhone cost twice as much abroad? This business economics
+  guide shows how costs, margins, pricing, and moats decide which firms win.
 keywords:
   - business economics
   - fixed and variable costs

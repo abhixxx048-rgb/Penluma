@@ -1,7 +1,7 @@
 ---
 title: "Why Distributed Systems Are Hard (and How to Survive It)"
 metaTitle: "Why Distributed Systems Are Hard"
-description: "Why distributed systems are hard: partial failure, unreliable networks, no global clock, and concurrency, plus the timeouts, retries, and idempotency that save you."
+description: "Why distributed systems are hard: partial failure, unreliable networks, no shared clock, plus the timeouts, retries, and idempotency that save you."
 keywords:
   - why distributed systems are hard
   - partial failure

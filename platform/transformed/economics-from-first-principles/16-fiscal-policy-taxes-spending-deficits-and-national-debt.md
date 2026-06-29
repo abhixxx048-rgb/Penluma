@@ -3,7 +3,7 @@ title: 'Deficit vs Debt: What the $37 Trillion Really Means'
 metaTitle: 'Fiscal Policy: Deficits, Debt & Taxes Explained'
 description: >-
   Fiscal policy explained simply: how taxes, spending, deficits, and the national
-  debt actually work, why the debt isn't like your mortgage, and what really limits it.
+  debt work, why the debt isn't like your mortgage, and what really limits it.
 keywords:
   - fiscal policy
   - national debt explained

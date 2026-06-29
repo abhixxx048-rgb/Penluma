@@ -1,7 +1,7 @@
 ---
 title: "Why You Can't Trust Clocks to Order Events Across Machines"
 metaTitle: "Lamport Clocks & Ordering Events Explained"
-description: "Wall-clock timestamps lie across machines. Learn how Lamport logical clocks and the happens-before relation order events in distributed systems without a shared clock."
+description: "Wall-clock timestamps lie across machines. See how Lamport logical clocks and the happens-before relation order events in distributed systems, no shared clock."
 keywords:
   - lamport clocks
   - happens-before relation

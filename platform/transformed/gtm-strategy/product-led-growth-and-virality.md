@@ -1,7 +1,7 @@
 ---
-title: "Product-Led Growth and Virality: A Plain-English Guide"
+title: "Product-Led Growth and Virality: How Products Sell Themselves"
 metaTitle: "Product-Led Growth & Virality Explained"
-description: "Learn how product-led growth and viral loops actually work, why most freemium plans backfire, and the simple moves that turn your product into its own salesperson."
+description: "Learn how product-led growth and viral loops really work, why most freemium plans backfire, and the simple moves that turn your product into a salesperson."
 keywords:
   - product-led growth
   - PLG

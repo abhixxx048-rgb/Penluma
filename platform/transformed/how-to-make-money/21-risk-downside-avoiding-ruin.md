@@ -2,7 +2,7 @@
 title: 'Avoiding Ruin: Why Survival Beats Every Big Win'
 metaTitle: 'Avoiding Ruin: The Rule That Protects Your Wealth'
 description: >-
-  Avoiding ruin is the one money rule that makes all the others matter. Learn why
+  Avoiding ruin is the one money rule that makes the others matter. Learn why
   survival beats every big win, and how to take bold bets without getting wiped out.
 keywords:
   - avoiding ruin

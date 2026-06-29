@@ -1,7 +1,7 @@
 ---
 title: "Why Government Exists: The Economics of When Markets Fail"
 metaTitle: "Public Economics: When Markets Fail"
-description: "Public economics explains when government should step in, how it taxes, and why Social Security is at risk. Learn market failure, the Laffer curve, and UBI in plain language."
+description: "Public economics explains when government should step in, how it taxes, and why Social Security is at risk, covering market failure, the Laffer curve, and UBI."
 keywords:
   - public economics
   - market failure

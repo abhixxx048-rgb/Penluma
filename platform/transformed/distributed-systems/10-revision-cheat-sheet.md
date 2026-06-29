@@ -1,7 +1,7 @@
 ---
 title: "Consensus, Decoded: Raft & Paxos Without the Pain"
 metaTitle: "Consensus Explained: Raft vs Paxos"
-description: "A clear guide to distributed consensus: how Raft and Paxos keep replicas in sync with majority quorums, why 3 or 5 nodes, and the primary keyword consensus made simple."
+description: "A clear guide to distributed consensus: how Raft and Paxos keep replicas in sync with majority quorums, why you need 3 or 5 nodes, and how to avoid split-brain."
 keywords:
   - distributed consensus
   - raft vs paxos

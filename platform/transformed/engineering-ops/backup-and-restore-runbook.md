@@ -1,7 +1,7 @@
 ---
 title: "Backup & Restore Runbook: The Plan You Hope to Never Use"
 metaTitle: "Backup & Restore Runbook for SaaS Apps"
-description: "Learn how to build a backup and restore runbook that actually works: PostgreSQL PITR, S3 versioning, restore drills, and the consistency check most teams forget."
+description: "Learn how to build a backup and restore runbook that actually works: PostgreSQL PITR, S3 versioning, restore drills, and the consistency check teams forget."
 keywords:
   - backup and restore runbook
   - database backup strategy

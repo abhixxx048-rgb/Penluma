@@ -192,6 +192,6 @@ You can't control the macro forces, but you can position yourself wisely.
 
 ## Conclusion
 
-If you remember one thing, make it this: **automation almost never causes long-run mass unemployment, it reallocates and reinvents work, but the gains and the pain are distributed by choice, not by the machine.** Technology reliably grows total wealth. Shared prosperity is built, not guaranteed.
+If you remember one thing, make it this: **automation almost never causes long-run mass unemployment. It reallocates and reinvents work. But who keeps the gains, and who absorbs the pain, is decided by choice, not by the machine.** Technology reliably grows total wealth. Shared prosperity is built, not guaranteed.
 
 Which raises a question worth sitting with. If a new technology can make a whole economy richer while leaving specific workers worse off, what exactly *should* a society do about the people caught in the gap? That's where economics stops being about machines and starts being about power, policy, and who gets a seat at the table, the thread we'll pull on next.
