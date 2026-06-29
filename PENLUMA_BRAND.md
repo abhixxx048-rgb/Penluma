@@ -146,53 +146,56 @@ Near-instant pages at the edge and clean markup, without hosting headaches or ha
 
 ## Visual Identity
 
-The whole register inverts the templated SaaS default. Instead of cool blue on clinical white, Penluma is **warm amber-gold light on warm ink** — the product literally looks like a dark page waiting to be lit, a natural home for long-form night reading. Even light mode is parchment, never `#FFFFFF`: paper, not app.
+**Direction: Typewriter Two-Tone.** The identity is built from one real artifact — a two-ink ribbon. Nearly the entire page is **black ink on typing paper**; a single **deep indigo** (fountain-pen ink) carries everything that matters. The signature is the *two-ink system itself*, not decoration laid on top of it. This deliberately avoids the AI-default look (dark page + warm glow): there are **no gradients and no glows** anywhere, and emphasis is achieved only through indigo, weight, and the monospace "ribbon" voice.
 
-**Mood:** luminous · warm · literary · contemplative · crafted · nocturnal · precise · intimate · incandescent · considered.
+Three anti-cliché guards keep it specific rather than templated:
+
+- The accent is **deep fountain-pen indigo (`#294069`)** used as a single second ink — calm and serious, not a bright SaaS accent.
+- The ink is **true warm-black (`#1B1916`)**, never the brown-black of the cream cluster.
+- The paper is a **typing-paper neutral (`#F5F3EC`)**, never the AI cream `#F4F1EA`.
+
+**Mood:** mechanical · editorial · precise · two-tone · tactile · considered · disciplined · printed · confident.
 
 **Palette.**
 
 | Name | Hex | Role |
 |---|---|---|
-| Ink Black | `#0B0A0F` | Primary dark base — the "unlit" page; near-black with a faint violet-ink cast, richer than flat `#000` |
-| Deep Ink | `#15131C` | Elevated dark surface — cards, code blocks, nav |
-| Ink Slate | `#2A2733` | Borders, dividers, muted UI lines on dark |
-| **Lumen Gold** | `#F5B544` | **Primary accent — "the light of the pen":** links, focus glow, active states, logo mark, CTA fills |
-| Lumen Amber | `#E08A2B` | Accent deep / gradient anchor — pairs with Lumen Gold for the glow and hover states |
-| Warm Halo | `#FFE9B8` | Pale lumen tint — soft highlight backgrounds, glow halos, selection highlight on dark |
-| Parchment | `#F7F3EA` | Light-mode page base — warm off-white that evokes paper, not screen |
-| Manuscript | `#FBF8F1` | Light-mode elevated surface — slightly warmer than Parchment, for cards |
-| Reading Ink | `#1C1A22` | Primary body text in light mode — soft black for long-form comfort |
-| Faded Ink | `#6B6675` | Secondary text, captions, metadata (both modes) |
-| Ember Rose | `#E5604D` | Semantic warning / "warn" callout — kept warm, candlelit family |
-| Verdigris | `#3FA68A` | Semantic success / "tip" callout — aged-copper green, the single cool note, used sparingly |
+| Paper | `#F5F3EC` | Light-mode page base — warm-neutral typing paper, not cream |
+| Manuscript | `#FBFAF5` | Elevated light surface — cards, sheets |
+| **Ribbon Black** | `#1B1916` | **First ink:** body text, headings, the wordmark |
+| **Indigo Ink** | `#294069` | **Second ink — the whole signature:** links, emphasis, CTAs, draft stamps |
+| Indigo Deep | `#1E3052` | Hover / active / pressed indigo on light |
+| Carbon Grey | `#6F685D` | Secondary text, captions, metadata |
+| Rule | `#DAD5C7` | Hairline rules, borders, dividers |
+| Carbon | `#1A1714` | Dark-mode base — "carbon copy" |
+| Carbon Raised | `#241F1A` | Dark-mode elevated surface |
+| Ink Ivory | `#ECE7DB` | Text on dark |
+| Indigo Lit | `#6E8FC7` | Indigo brightened for contrast on the carbon-copy dark theme |
 
-**Typography.**
+Dark mode is **"Carbon Copy"** — the same two inks pressed through carbon paper: warm near-black ground, ivory text, the indigo brightened just enough to hold contrast. It's a real metaphor, not an inverted palette.
 
-- **Headings — Fraunces.** A soft-serif optical display face with high contrast, ink traps, and wedge details. Set tight (−0.01 to −0.02em) at optical sizes for editorial weight. Fraunces *is* "the pen": warm, humanist, calligraphic — an authored, literary voice no blue-and-Inter template carries. Its variable optical / SOFT / WONK axes let us dial expressiveness up on display sizes and down for sub-heads from a single typeface.
-- **Body — Inter.** Clean, neutral, high-x-height; tuned for screen reading at length. Pair with ~1.7 line-height and a 66–72ch measure. Inter is the lumen-side discipline: it disappears so the ideas read cleanly across thousands of words.
-- **Code — JetBrains Mono**, recolored toward warm ink/gold rather than the usual cool syntax themes.
+**Typography.** Boldness is spent on the two-ink rule, so type stays disciplined — two families, three roles. Critically, **no high-contrast display serif** (the other half of the cream cliché); the typewriter world drives the choices instead.
 
-The contrast — expressive serif title above quiet sans prose — visually stages the promise: *thought brought into the light, clearly.*
+- **Newsreader (serif) — display + body.** An editorial reading serif with real character in its italics, built for screens. One family covers headlines and long-form prose through size, weight, and italic — literary and readable without the over-used Fraunces look.
+- **IBM Plex Mono — the ribbon voice.** Used with restraint for eyebrows, post dates, tags, code, and the `DRAFT` / `PUBLISHED` status stamps. The monospace *is* the typed-manuscript reference, and it's where the red most often appears — so the typewriter idea lives in the type system itself, not in ornament.
 
 **Logo directions.**
 
-1. **The Lit Nib (signature).** A calligraphic pen nib pointing up; its slit emits a soft radial Lumen Gold glow, and the slit doubles as the stroke of a lowercase "l." Wordmark in Fraunces with the "l" of *luma* carrying a gold tittle. Works standalone as nib-in-halo for favicon/app icon.
-2. **Eclipse "P" / Crescent of Light.** A geometric "P" whose bowl is a dark ink disc with a thin crescent of gold along one edge — an idea rising out of darkness. Ownable; scales to 16px.
-3. **Ascending Dawn-line (primary lockup).** The full "Penluma" wordmark on a horizon with a faint gold glow bleeding up from behind the baseline — text emerging from the dark. Best for the site header.
-4. **Ink-drop-to-light (reserve).** A drop of ink, lower half Ink Black, center holding a warm amber filament — the pen→lumen transformation in one mark. Most abstract; for stamps, loaders, watermarks.
+1. **Two-Ink Wordmark (signature).** "Penluma" set in Newsreader, all black except a single indigo glyph — the **"l" struck in indigo**, reading as the lit stroke of the pen *and* the second ink of the ribbon. The one indigo letter is the entire mark's idea.
+2. **The Ribbon Bar.** The wordmark sitting on a two-segment underline — a longer black bar and a short indigo bar butted together, the black/indigo split of a ribbon spool. Crisp, ownable, scales to a header.
+3. **Strike-Key "P."** A monospace-derived "P" inside a subtle keycap silhouette, the bowl printed half in black, half in indigo. Mechanical, distinct at 16px for the favicon/app icon.
+4. **Indigo Tittle (reserve).** Full black wordmark with only the dot of the "i"/tittle in indigo — the smallest possible expression of the two-ink rule. For stamps, loaders, watermarks.
 
 **Reusable motifs.**
 
-- **Glow gradient** — a soft radial Lumen-Gold-to-transparent halo behind featured titles, active nav, and hover/focus. Always warm, never a hard blue ring.
-- **The nib slit** — a thin gold line used as divider, list bullet, drop-cap rule, and the blinking "cursor" at the end of the tagline.
-- **Drop-cap illumination** — long-form articles open with a gold, faintly-glowing Fraunces drop-cap; a nod to illuminated manuscripts.
-- **Candlelit callouts** — tip/warn/key blocks lit from a 4px left edge-glow bleeding inward, like light spilling onto the page (not flat fills).
-- **Ink-to-light fade** — the signature background: a vertical Ink-Black→Deep-Ink wash with a low amber bloom at the focal point.
-- **Filament underline** — links underlined in a thin gold stroke that warms and glows on hover.
-- **Lumen dot** — the smallest unit of the brand light: tittle on i/j, bullet, favicon core.
+- **The two-ink rule** — the governing system: prose is black, *anything that matters* (links, key terms, the publish action, live status) is indigo. Nothing else gets color.
+- **Mono ribbon-labels** — eyebrows, dates, and tags set in IBM Plex Mono, letterspaced and often indigo, like the editorial slugs typed above a manuscript.
+- **Status stamps** — `DRAFT` (indigo outline) and `PUBLISHED` (grey outline) as monospace stamps, evoking a rubber stamp on paper.
+- **Hairline rules** — thin `Rule`-colored dividers; structure comes from rules and the type scale, not boxes or shadows.
+- **Indigo strike-underline** — links carry a thin indigo underline that deepens to pressed-indigo on hover. No glow, ever.
+- **Carbon-copy dark mode** — the dark theme reads as a carbon duplicate of the light page, not a separate design.
 
-**How it differs from typical platforms.** Warm ink base instead of white. A single warm amber-gold accent — candlelight, emotionally tied to the name — instead of corporate blue. Parchment light mode, never pure white. An expressive optical serif where others play it safe with geometric sans. And motifs all derived from one metaphor — light from a pen — so the system feels *designed around a story*, not assembled from a UI kit. Net effect: a quiet, lamplit study where ideas come into view, not another blue dashboard.
+**How it differs from typical platforms.** No gradients, no glow, no soft-shadow card stack, no five-color accent palette. The entire visual language is a constraint borrowed from a real machine — two inks and a typed label — applied with discipline. Because emphasis is rationed to a single deep indigo, the indigo *means something* wherever it appears (this matters, click this, this is live), which most platforms dilute across many accent colors. The result reads as printed and authored, not assembled from a UI kit — and it could not be mistaken for a generic SaaS dashboard or the AI-default lamplit theme it replaced.
 
 > **Build note (token-first).** Ship the palette as semantic design tokens, never hardcoded hex, with a shared primitive layer (button, input, modal) before content-block and theme features. This is double-important for a platform offering writer-selectable themes: a token contract keeps every theme and any future rebrand consistent instead of accruing one-off styling. And because Penluma is multi-tenant on shared edge infrastructure, isolate tenant rendering and edge caching from day one so one writer's theme, content, or custom domain can never bleed into another's page.
 
@@ -231,7 +234,7 @@ The contrast — expressive serif title above quiet sans prose — visually stag
 - **Whitespace owned:** Beautiful by default **+** truly owned **+** low effort — the empty quadrant. The anti-feed, illuminated-reading sanctuary.
 - **Three pillars:** Beautiful by default · Truly yours · Fast, no fuss.
 - **Voice:** Warm, clear, unhurried, honest. Outcomes over features. Plain words. Same voice in marketing *and* product.
-- **Look:** Warm ink base (`#0B0A0F`), single amber-gold "lumen" accent (`#F5B544`), parchment light mode (`#F7F3EA`). Fraunces headings + Inter body + JetBrains Mono code.
-- **Signature motifs:** Glow gradient · nib slit · illuminated drop-cap · candlelit edge-glow callouts · filament underline · lumen dot.
+- **Look:** "Typewriter Two-Tone" — black ink (`#1B1916`) on typing paper (`#F5F3EC`), one deep indigo (`#294069`) for all emphasis. Carbon-copy dark mode (`#1A1714`). Newsreader serif + IBM Plex Mono labels. No gradients, no glows.
+- **Signature motifs:** The two-ink rule (black prose / indigo emphasis) · mono ribbon-labels · `DRAFT`/`PUBLISHED` status stamps · hairline rules · indigo strike-underline · carbon-copy dark mode.
 - **Non-negotiables:** No fake stats. No feed/algorithm. Token-first design system. Tenant isolation at the edge. Tasteful, optional "Powered by Penluma." Build in the open.
 - **Lead domain / handles:** penluma.com · GitHub & npm `penluma`. Caveat handled: don't confuse with the unrelated "Penuma."

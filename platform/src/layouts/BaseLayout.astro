@@ -1,5 +1,10 @@
 ---
 import '../styles/global.css';
+// Self-hosted variable fonts (bundled, subset, served same-origin) — no
+// render-blocking request to Google Fonts, better LCP and privacy.
+import '@fontsource-variable/inter';
+import '@fontsource-variable/fraunces';
+import '@fontsource-variable/jetbrains-mono';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE } from '../consts';
@@ -77,7 +82,7 @@ const structuredData = [...baseLd, ...jsonLd];
 
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#0b0a0f" />
+    <meta name="theme-color" content="#0a0a0a" />
 
     {/* Open Graph */}
     <meta property="og:type" content={type} />
@@ -111,13 +116,6 @@ const structuredData = [...baseLd, ...jsonLd];
     {structuredData.map((data) => (
       <script type="application/ld+json" set:html={JSON.stringify(data)} />
     ))}
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
 
     {/* Set theme before paint to avoid a flash. Penluma is lamplit by default:
         dark unless the reader has explicitly chosen light. */}

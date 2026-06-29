@@ -5,47 +5,52 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* ===========================================================================
-   Penluma — "the light of the pen."
-   Warm ink base, a single amber-gold "lumen" accent, parchment light mode.
-   The slate + white scales are intentionally remapped to warm ink / parchment
-   so existing utility classes (bg-white, dark:bg-slate-900, text-slate-600 …)
-   reskin to the brand without touching every component.
+   Penluma — pure monochrome.
+   True black & white only: white page / near-black text in light mode,
+   near-black page / near-white text in dark mode, neutral greys for
+   hierarchy. NO accent colour and no warm tints — emphasis comes from
+   weight, italics, and underlines. The brand-* and slate-* ramps are both
+   remapped to neutral greys so existing utility classes reskin app-wide.
+   NOTE: fonts still reference the previous pairing — type is a separate pass.
    =========================================================================== */
 @theme {
-  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-serif: 'Fraunces', ui-serif, Georgia, 'Times New Roman', serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --font-sans: 'Inter Variable', 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif: 'Fraunces Variable', 'Fraunces', ui-serif, Georgia, 'Times New Roman', serif;
+  --font-mono: 'JetBrains Mono Variable', 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
 
-  /* Lumen gold accent ramp (brand-*) — candlelight, not corporate blue */
-  --color-brand-50: #fff7e6;
-  --color-brand-100: #ffe9b8; /* Warm Halo */
-  --color-brand-200: #fbd894;
-  --color-brand-300: #f8c86b;
-  --color-brand-400: #f5b544; /* Lumen Gold — primary accent */
-  --color-brand-500: #f0a52e;
-  --color-brand-600: #e08a2b; /* Lumen Amber — CTA fill / gradient anchor */
-  --color-brand-700: #bc6f22;
-  --color-brand-800: #91551c;
-  --color-brand-900: #6e4318;
-  --color-brand-950: #3e2710;
+  /* "Accent" ramp (brand-*) neutralised to greys. Dark-end (600–800) reads on
+     white; light-end (300–400) reads on black — so existing dual-mode classes
+     (text-brand-600 dark:text-brand-400, text-brand-700 dark:text-brand-300)
+     resolve to near-black on light and near-white on dark. */
+  --color-brand-50: #f2f2f2;
+  --color-brand-100: #e6e6e6;
+  --color-brand-200: #d4d4d4;
+  --color-brand-300: #ededed; /* accent text on dark → near-white */
+  --color-brand-400: #d0d0d0; /* secondary accent on dark / subtle border */
+  --color-brand-500: #6f6f6f; /* focus ring, rules, mid grey */
+  --color-brand-600: #2a2a2a; /* accent text on light → near-black */
+  --color-brand-700: #141414; /* links + button fill on light */
+  --color-brand-800: #000000; /* button hover */
+  --color-brand-900: #0a0a0a;
+  --color-brand-950: #0a0a0a;
 
-  /* Warm ink + parchment, mapped onto white/slate so the whole UI reskins */
-  --color-white: #f7f3ea; /* Parchment — light-mode page base (never #fff) */
-  --color-slate-50: #fbf8f1; /* Manuscript — light elevated surface */
-  --color-slate-100: #f2ead9;
-  --color-slate-200: #e7dccb; /* light borders */
-  --color-slate-300: #d6cab2;
-  --color-slate-400: #9c95a4;
-  --color-slate-500: #6b6675; /* Faded Ink — muted text (both modes) */
-  --color-slate-600: #4c4856;
-  --color-slate-700: #322e3c;
-  --color-slate-800: #1c1a22; /* Reading Ink — light-mode body text */
-  --color-slate-900: #15131c; /* Deep Ink — dark elevated surface */
-  --color-slate-950: #0b0a0f; /* Ink Black — dark page base */
+  /* Neutral greyscale mapped onto white/slate so the whole UI reskins */
+  --color-white: #ffffff; /* light-mode page base — pure white */
+  --color-slate-50: #fafafa; /* light elevated surface */
+  --color-slate-100: #f2f2f2;
+  --color-slate-200: #e2e2e2; /* light borders/dividers */
+  --color-slate-300: #cfcfcf;
+  --color-slate-400: #9a9a9a; /* muted on dark / placeholders */
+  --color-slate-500: #6f6f6f; /* muted text (both modes) */
+  --color-slate-600: #444444;
+  --color-slate-700: #2a2a2a;
+  --color-slate-800: #141414; /* light-mode body text — near-black */
+  --color-slate-900: #161616; /* dark elevated surface */
+  --color-slate-950: #0a0a0a; /* dark page base — near-black */
 
-  /* Semantic callouts — kept in the candlelit family */
-  --color-ember: #e5604d; /* warn */
-  --color-verdigris: #3fa68a; /* tip — the single cool note */
+  /* Content callouts neutralised to greys (no red/green) */
+  --color-ember: #3a3a3a; /* warn */
+  --color-verdigris: #3a3a3a; /* tip */
 }
 
 html {
@@ -54,26 +59,20 @@ html {
 }
 
 body {
-  @apply bg-white text-slate-800 antialiased dark:bg-slate-950 dark:text-[#e7ded0];
+  @apply bg-white text-slate-800 antialiased dark:bg-slate-950 dark:text-[#f2f2f2];
   font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
 }
 
-/* The signature ink-to-light wash sits behind the dark page */
-.dark body {
-  background-image: radial-gradient(60rem 40rem at 50% -10%, rgba(245, 181, 68, 0.06), transparent 70%);
-  background-attachment: fixed;
-}
-
-/* Editorial serif for all headings — Fraunces "is the pen" */
+/* Editorial serif for all headings */
 h1, h2, h3, h4, .font-serif {
   font-family: var(--font-serif);
   letter-spacing: -0.015em;
 }
 
-/* Filament underline — links warm and glow on hover */
+/* Underline tracks the text colour, softened — works in both modes */
 .prose-research a,
 a.filament {
-  text-decoration-color: var(--color-brand-400);
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
 }
 
 /* Readable, polished article typography */
@@ -81,21 +80,21 @@ a.filament {
   @apply prose prose-slate dark:prose-invert max-w-none
     prose-headings:scroll-mt-24 prose-headings:font-semibold prose-headings:font-serif
     prose-h2:mt-12 prose-h2:border-b prose-h2:border-slate-200 prose-h2:pb-2 dark:prose-h2:border-slate-800
-    prose-a:text-brand-700 prose-a:underline prose-a:decoration-brand-400/50 prose-a:underline-offset-2 hover:prose-a:decoration-brand-500 dark:prose-a:text-brand-300
+    prose-a:text-brand-700 prose-a:underline prose-a:decoration-slate-300 dark:prose-a:decoration-slate-600 prose-a:underline-offset-2 hover:prose-a:decoration-slate-500 dark:prose-a:text-brand-300
     prose-code:rounded prose-code:bg-slate-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:text-[0.85em] prose-code:font-normal prose-code:before:content-none prose-code:after:content-none dark:prose-code:bg-slate-800
     prose-pre:rounded-xl prose-pre:border prose-pre:border-slate-200 dark:prose-pre:border-slate-800
     prose-table:text-sm prose-blockquote:border-brand-400 prose-blockquote:font-normal prose-blockquote:not-italic;
-  --tw-prose-body: #2d2a36;
-  --tw-prose-headings: #1c1a22;
-  --tw-prose-bold: #15131c;
-  --tw-prose-quotes: #4c4856;
-  --tw-prose-invert-body: #d7cfc2;
-  --tw-prose-invert-headings: #f7f3ea;
-  --tw-prose-invert-bold: #fbf8f1;
-  --tw-prose-invert-quotes: #c9c1b4;
+  --tw-prose-body: #262626;
+  --tw-prose-headings: #0a0a0a;
+  --tw-prose-bold: #0a0a0a;
+  --tw-prose-quotes: #444444;
+  --tw-prose-invert-body: #d6d6d6;
+  --tw-prose-invert-headings: #f2f2f2;
+  --tw-prose-invert-bold: #f2f2f2;
+  --tw-prose-invert-quotes: #b0b0b0;
 }
 
-/* Illuminated drop-cap — a nod to illuminated manuscripts */
+/* Drop-cap in indigo — a nod to illuminated manuscripts, no glow */
 .prose-research > p:first-of-type::first-letter {
   font-family: var(--font-serif);
   float: left;
@@ -103,14 +102,15 @@ a.filament {
   font-size: 3.1rem;
   line-height: 0.82;
   padding: 0.1rem 0.6rem 0 0;
-  color: var(--color-brand-500);
-  text-shadow: 0 0 18px rgba(245, 181, 68, 0.35);
+  color: var(--color-brand-700);
+}
+.dark .prose-research > p:first-of-type::first-letter {
+  color: var(--color-brand-300);
 }
 
-/* Candlelit callouts — lit from a left edge-glow, not flat fills */
+/* Callouts — a flat left ink-rule, no glow */
 .prose-research :where(.key, .warn, .tip, .analogy, .example, .callout) {
   @apply my-5 rounded-lg border-l-4 px-4 py-3 text-[0.95em];
-  box-shadow: inset 4px 0 12px -6px rgba(245, 181, 68, 0.5);
 }
 .prose-research :where(.key, .warn, .tip, .analogy, .example) > :first-child {
   @apply mt-0;
@@ -125,22 +125,20 @@ a.filament {
   @apply border-brand-300 bg-brand-50/60 dark:bg-brand-950/20;
 }
 .prose-research :where(.example) {
-  @apply border-brand-500 bg-[#fdf4e1] dark:bg-[#241a0c];
+  @apply border-brand-500 bg-[#f4f4f4] dark:bg-[#161616];
 }
 .prose-research :where(.warn, .callout.warn) {
   border-color: var(--color-ember);
-  @apply bg-[#fdecea] dark:bg-[#2a1512];
+  @apply bg-[#f4f4f4] dark:bg-[#161616];
 }
 .prose-research :where(.tip, .callout.tip) {
   border-color: var(--color-verdigris);
-  @apply bg-[#e9f6f1] dark:bg-[#10241e];
+  @apply bg-[#f4f4f4] dark:bg-[#161616];
 }
-.prose-research :where(.warn) strong { color: #c5402d; }
-.prose-research :where(.tip) strong { color: #2c7d68; }
 .prose-research :where(.key, .analogy, .example) strong { @apply text-brand-700 dark:text-brand-300; }
 
 .prose-research dl { @apply my-4; }
-.prose-research dt { @apply font-semibold text-slate-900 dark:text-[#f7f3ea]; }
+.prose-research dt { @apply font-semibold text-slate-900 dark:text-[#f2f2f2]; }
 .prose-research dd { @apply mb-3 ml-0 pl-4 text-slate-600 dark:text-slate-400; }
 
 /* Shiki: show the right theme per color-mode */

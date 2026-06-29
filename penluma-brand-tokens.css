@@ -1,86 +1,101 @@
 /* ============================================================================
    Penluma — Brand Design Tokens
-   Reference spec for the platform/ app. Copy into the design system as
-   needed. See PENLUMA_BRAND.md for the full rationale.
-   "The light of the pen." — warm amber-gold light on warm ink.
+   Direction: "Typewriter Two-Tone" — black ink on typing paper, one deep
+   indigo ink carrying all emphasis. The signature is the two-ink system, not
+   decoration. See PENLUMA_BRAND.md for rationale.
+
+   Anti-cliché guards (do not drift):
+     - ACCENT is deep fountain-pen indigo (#294069), one ink only.
+     - INK is true warm-black (#1B1916), never brown-black.
+     - PAPER is typing-paper neutral, never the AI cream (#F4F1EA).
+     - NO gradients, NO glows. Emphasis = indigo + weight + mono, nothing else.
    ============================================================================ */
 
-/* --- Font loading (Google Fonts) --------------------------------------------
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   Fraunces (headings, variable optical/SOFT/WONK), Inter (body),
-   JetBrains Mono (code).
-   @import only if you can't use <link> (slower):
+/* --- Fonts -------------------------------------------------------------------
+   Newsreader  — editorial reading serif (display + body via size/weight/italic)
+   IBM Plex Mono — utility/ribbon voice: eyebrows, dates, tags, stamps, code
+   <link> is faster than @import; use it in the app head.
 */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400..700&family=JetBrains+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
 :root {
-  /* --- Primitive palette (raw values — never reference directly in UI) ----- */
-  --ink-black:    #0B0A0F; /* primary dark base — the "unlit" page */
-  --deep-ink:     #15131C; /* elevated dark surface — cards, code, nav */
-  --ink-slate:    #2A2733; /* borders, dividers, muted lines on dark */
-  --lumen-gold:   #F5B544; /* THE LIGHT — primary accent */
-  --lumen-amber:  #E08A2B; /* accent deep / gradient anchor */
-  --warm-halo:    #FFE9B8; /* pale lumen tint — glows, highlight bg */
-  --parchment:    #F7F3EA; /* light-mode page base — paper, not white */
-  --manuscript:   #FBF8F1; /* light-mode elevated surface */
-  --reading-ink:  #1C1A22; /* light-mode body text — soft black */
-  --faded-ink:    #6B6675; /* secondary text, captions, metadata */
-  --ember-rose:   #E5604D; /* semantic: warning (warm) */
-  --verdigris:    #3FA68A; /* semantic: success (the one cool note) */
+  /* --- Primitive palette (raw — don't reference directly in components) ---- */
+  --paper:        #F5F3EC; /* typing-paper base (warm-neutral, not cream) */
+  --manuscript:   #FBFAF5; /* brighter elevated surface — cards, sheets */
+  --ribbon-black: #1B1916; /* true warm-black ink — text, headings */
+  --carbon-grey:  #6F685D; /* secondary text, captions, metadata */
+  --indigo:       #294069; /* THE second ink — emphasis, links, accents */
+  --indigo-deep:  #1E3052; /* pressed-harder ink — active/hover on light */
+  --rule:         #DAD5C7; /* hairline rules, borders, dividers */
+
+  /* carbon-copy (dark) primitives */
+  --carbon:        #1A1714; /* dark base — "carbon copy" */
+  --carbon-raised: #241F1A; /* dark elevated surface */
+  --ink-ivory:     #ECE7DB; /* text on dark */
+  --carbon-grey-d: #9A9082; /* secondary text on dark */
+  --indigo-lit:    #6E8FC7; /* indigo brightened for contrast on dark */
+  --rule-d:        #38322B; /* rules on dark */
 
   /* --- Typography ---------------------------------------------------------- */
-  --font-heading: 'Fraunces', Georgia, 'Times New Roman', serif;
-  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
-  --font-mono:    'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+  --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif; /* display + body */
+  --font-mono:  'IBM Plex Mono', ui-monospace, 'SF Mono', monospace; /* labels, stamps, code */
 
-  --measure:      68ch;   /* ideal reading line length (66–72ch) */
-  --leading-body: 1.7;    /* body line-height for long-form comfort */
-  --tracking-display: -0.02em; /* tight tracking for optical headings */
+  --measure:      66ch;   /* reading line length */
+  --leading-body: 1.65;   /* long-form line-height */
+  --tracking-mono: 0.04em; /* letterspace mono labels/eyebrows */
+  --tracking-display: -0.015em;
 
-  /* --- Semantic tokens (reference THESE in components) ---------------------
-     Default theme is DARK — the page waiting to be lit. */
-  --bg-page:        var(--ink-black);
-  --bg-surface:     var(--deep-ink);
-  --border:         var(--ink-slate);
-  --text-primary:   var(--parchment);
-  --text-secondary: var(--faded-ink);
-  --accent:         var(--lumen-gold);
-  --accent-deep:    var(--lumen-amber);
-  --accent-soft:    var(--warm-halo);
-  --link:           var(--lumen-gold);
-  --focus-ring:     var(--lumen-gold);
-  --success:        var(--verdigris);
-  --warning:        var(--ember-rose);
-
-  /* --- Signature effects --------------------------------------------------- */
-  /* Glow gradient — soft radial halo behind featured titles / hover / focus */
-  --glow:           radial-gradient(circle at center,
-                      rgba(245, 181, 68, 0.28) 0%,
-                      rgba(245, 181, 68, 0) 70%);
-  /* Ink-to-light fade — signature page background */
-  --bg-ink-fade:    linear-gradient(180deg, #0B0A0F 0%, #15131C 100%);
-  --focus-shadow:   0 0 0 3px rgba(245, 181, 68, 0.45);
-}
-
-/* --- Light mode (parchment, never pure white) ------------------------------ */
-:root[data-theme="light"],
-.theme-light {
-  --bg-page:        var(--parchment);
+  /* --- Semantic tokens (reference THESE) — default theme: light/paper ------ */
+  --bg-page:        var(--paper);
   --bg-surface:     var(--manuscript);
-  --border:         #E5DFD2;
-  --text-primary:   var(--reading-ink);
-  --text-secondary: var(--faded-ink);
-  --link:           var(--lumen-amber); /* deeper for contrast on parchment */
-  --bg-ink-fade:    linear-gradient(180deg, #FBF8F1 0%, #F7F3EA 100%);
+  --border:         var(--rule);
+  --text-primary:   var(--ribbon-black);
+  --text-secondary: var(--carbon-grey);
+  --accent:         var(--indigo);
+  --accent-strong:  var(--indigo-deep); /* hover/active/pressed */
+  --link:           var(--indigo);
+  --focus-ring:     var(--indigo);
+  /* semantic states stay inside the two-ink world */
+  --warning:        var(--indigo);      /* attention drawn with the one ink */
+  --success:        var(--carbon-grey); /* confirmations are quiet, not green */
+
+  /* --- Signature: the two-ink ribbon system, no glow ----------------------- */
+  --rule-hair:      1px solid var(--border);
+  --focus-shadow:   0 0 0 2px var(--bg-page), 0 0 0 4px var(--focus-ring);
+  --underline-ink:  underline 0.06em var(--indigo);
 }
 
-/* --- Optional usage hints (delete in production) ---------------------------
+/* --- Dark mode ("Carbon Copy") --------------------------------------------- */
+:root[data-theme="dark"],
+.theme-dark {
+  --bg-page:        var(--carbon);
+  --bg-surface:     var(--carbon-raised);
+  --border:         var(--rule-d);
+  --text-primary:   var(--ink-ivory);
+  --text-secondary: var(--carbon-grey-d);
+  --accent:         var(--indigo-lit);
+  --accent-strong:  var(--indigo);
+  --link:           var(--indigo-lit);
+  --focus-ring:     var(--indigo-lit);
+  --warning:        var(--indigo-lit);
+  --success:        var(--carbon-grey-d);
+}
+
+/* --- Usage hints (delete in production) ------------------------------------
    body          { background: var(--bg-page); color: var(--text-primary);
-                   font-family: var(--font-body); line-height: var(--leading-body); }
-   h1, h2, h3    { font-family: var(--font-heading); letter-spacing: var(--tracking-display); }
-   a             { color: var(--link); }
-   a:focus-visible { outline: none; box-shadow: var(--focus-shadow); }
+                   font-family: var(--font-serif); line-height: var(--leading-body); }
+   h1, h2, h3    { font-family: var(--font-serif); letter-spacing: var(--tracking-display); }
+   a             { color: var(--link); text-decoration: var(--underline-ink); }
+   a:hover       { color: var(--accent-strong); }
+   :focus-visible{ outline: none; box-shadow: var(--focus-shadow); }
    article       { max-width: var(--measure); }
-   code, pre     { font-family: var(--font-mono); }
+
+   --- the ribbon voice: labels, dates, tags, status stamps, code ---
+   .eyebrow, .post-date, .tag, time, code, pre {
+     font-family: var(--font-mono);
+     letter-spacing: var(--tracking-mono);
+     text-transform: uppercase;        (eyebrows/labels only)
+   }
+   .stamp--draft     { font-family: var(--font-mono); color: var(--accent); border: 1px solid var(--accent); }
+   .stamp--published { font-family: var(--font-mono); color: var(--text-secondary); border: 1px solid var(--border); }
    --------------------------------------------------------------------------- */

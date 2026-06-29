@@ -78,22 +78,52 @@ function extractOrder(filename) {
   return m ? parseInt(m[1], 10) : 999;
 }
 
-// Build a short plain-English excerpt, preferring the sibling takeaways file.
-function buildExcerpt(srcPath, body) {
-  const takeaways = srcPath.replace(/\.md$/, '.takeaways.md');
-  let text = '';
-  if (fs.existsSync(takeaways)) {
-    text = fs.readFileSync(takeaways, 'utf8');
-  } else {
-    text = body;
+// Turn raw text into a clean ~155-char meta description: strip markdown and any
+// leading enumeration, drop a repeated copy of the title, and cut on a sentence
+// or word boundary so search snippets read as whole thoughts (no mid-word chops).
+const DESC_MAX = 160;
+function makeDescription(text, title = '') {
+  let s = decodeEntities(String(text || ''))
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, '')   // images
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1') // links -> their text
+    .replace(/[#>*`_]/g, '')                 // emphasis / heading marks
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/^\d+[.)]\s+/, '');             // leading "1. " / "1) "
+
+  // Drop a leading copy of the title (posts often open by restating it).
+  const t = title.replace(/[*`_]/g, '').trim();
+  if (t && s.toLowerCase().startsWith(t.toLowerCase())) {
+    s = s.slice(t.length).replace(/^[\s:–—-]+/, '');
   }
-  // first substantial paragraph, stripped of markdown
+
+  // Strip weak filler openers ("This document teaches you…") that waste the
+  // ~155 chars Google shows — lead with the substance instead.
+  s = s.replace(
+    /^(?:in\s+)?this\s+(?:document|chapter|guide|post|article|section|page|note|piece)\s+(?:is\s+about|covers|explains|teaches\s+you|teaches|describes|shows\s+you|shows|walks\s+you\s+through|will\s+(?:teach|show|explain|cover|help))\s+/i,
+    '',
+  );
+  // Re-capitalise the new first letter if we trimmed anything off the front.
+  s = s.charAt(0).toUpperCase() + s.slice(1);
+
+  if (s.length <= DESC_MAX) return s;
+  const clip = s.slice(0, DESC_MAX);
+  // Prefer ending on a sentence boundary if one sits past the halfway mark.
+  const sentence = clip.match(/^[\s\S]*[.!?](?=\s|$)/);
+  if (sentence && sentence[0].length >= DESC_MAX * 0.6) return sentence[0].trim();
+  return clip.replace(/\s+\S*$/, '').trim() + '…';
+}
+
+// Build a short plain-English excerpt, preferring the sibling takeaways file.
+function buildExcerpt(srcPath, body, title = '') {
+  const takeaways = srcPath.replace(/\.md$/, '.takeaways.md');
+  const text = fs.existsSync(takeaways) ? fs.readFileSync(takeaways, 'utf8') : body;
+  // first substantial paragraph (skip headings / short stubs)
   const para = text
     .split(/\n\s*\n/)
-    .map((p) => p.replace(/[#>*`_\[\]]/g, '').replace(/\s+/g, ' ').trim())
-    .find((p) => p.length > 60);
-  const clean = (para || '').trim();
-  return clean.length > 280 ? clean.slice(0, 277).replace(/\s+\S*$/, '') + '…' : clean;
+    .map((p) => p.replace(/\s+/g, ' ').trim())
+    .find((p) => p.replace(/[#>*`_[\]]/g, '').trim().length > 60);
+  return makeDescription(para || '', title);
 }
 
 function cleanSlug(filename) {
@@ -248,7 +278,7 @@ for (const folder of folders) {
     fs.mkdirSync(outTopicDir, { recursive: true });
     const date = stat.mtime.toISOString().slice(0, 10);
     for (const bp of bookPosts) {
-      const excerpt = bp.excerpt.length > 280 ? bp.excerpt.slice(0, 277).replace(/\s+\S*$/, '') + '…' : bp.excerpt;
+      const excerpt = makeDescription(bp.excerpt, bp.title);
       const frontmatter = {
         title: bp.title,
         description: excerpt || topic.description,
@@ -281,7 +311,9 @@ for (const folder of folders) {
     const { title, body } = extractTitle(parsed.content, fallbackTitle);
     const date = extractDate(file, parsed.content, stat);
     const order = extractOrder(file);
-    const excerpt = buildExcerpt(srcPath, body);
+    // Curated `description:` in the source frontmatter wins; else auto-excerpt.
+    const sourceDesc = parsed.data.description && String(parsed.data.description).trim();
+    const excerpt = sourceDesc || buildExcerpt(srcPath, body, title);
     const slug = cleanSlug(file);
 
     const frontmatter = {
@@ -353,7 +385,9 @@ if (fs.existsSync(POSTS_DIR)) {
     const { title, body } = extractTitle(content, prettify(file.replace(/\.md$/, '')));
     const finalTitle = fm.title || title;
     const slug = cleanSlug(file);
-    const excerpt = fm.description || buildExcerpt(path.join(POSTS_DIR, file), body);
+    const excerpt =
+      (fm.description && String(fm.description).trim()) ||
+      buildExcerpt(path.join(POSTS_DIR, file), body, finalTitle);
     const frontmatter = {
       title: finalTitle,
       description: excerpt || topic.description,
