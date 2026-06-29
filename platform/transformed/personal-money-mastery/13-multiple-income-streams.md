@@ -32,7 +32,7 @@ faq:
     a: "Under the FY 2025-26 new regime, the Section 87A rebate makes income up to 12 lakh tax-free. With the 75,000 standard deduction, a salaried person pays zero income tax up to 12.75 lakh. But the new regime removes most deductions like 80C and 80D."
   - q: "What is presumptive taxation for freelancers?"
     a: "It lets eligible professionals declare a fixed percentage of receipts as profit and skip detailed bookkeeping. Under Section 44ADA, professionals declare just 50% of gross receipts as taxable income, treating the rest as expenses without keeping records."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

@@ -23,10 +23,10 @@ faq:
   - q: How much runway should I keep?
     a: A common rule is to never drop below six months and to start raising or cutting at around twelve, because finding money or savings always takes longer than you expect. Below three months is a genuine emergency.
   - q: What is the difference between markup and margin?
-    a: Both measure the same profit dollars but divide by a different number. Markup is profit as a percentage of cost; margin is profit as a percentage of selling price. Buy for $50, sell for $100: that is a 100% markup but only a 50% margin.
+    a: "Both measure the same profit dollars but divide by a different number. Markup is profit as a percentage of cost; margin is profit as a percentage of selling price. Buy for $50, sell for $100: that is a 100% markup but only a 50% margin."
   - q: What does default alive mean?
     a: Default alive means that at your current growth and spending you will become profitable before the cash runs out, without raising more money. Default dead means you will not, unless something changes. Project burn and revenue forward to find out which you are.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: business-financial-literacy
 topicTitle: Business & Financial Literacy

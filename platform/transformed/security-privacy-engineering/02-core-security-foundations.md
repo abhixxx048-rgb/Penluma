@@ -1,7 +1,7 @@
 ---
 title: "Security Foundations: The 5 Ideas Every Engineer Needs"
 metaTitle: "Core Security Foundations Explained Simply"
-description: "Learn the core security foundations every engineer reasons from: the CIA triad, AAA access control, design principles, risk vocabulary, and the attacker's mindset."
+description: "Learn the core security foundations every engineer reasons from: CIA triad, AAA access control, design principles, risk vocabulary, and the attacker's mindset."
 keywords:
   - core security foundations
   - CIA triad
@@ -20,7 +20,7 @@ keywords:
   - security design principles
 faq:
   - q: What is the CIA triad in security?
-    a: The CIA triad is the model of three properties security exists to protect: Confidentiality (only authorized people can read data), Integrity (data is accurate and only changed by authorized actions), and Availability (the system is reachable when needed). Nearly every attack maps to breaking one or more of these.
+    a: "The CIA triad is the model of three properties security exists to protect: Confidentiality (only authorized people can read data), Integrity (data is accurate and only changed by authorized actions), and Availability (the system is reachable when needed). Nearly every attack maps to breaking one or more of these."
   - q: What is the difference between authentication and authorization?
     a: Authentication answers "who are you?" by proving identity, such as with a password or fingerprint. Authorization answers "what are you allowed to do?" and happens after authentication. Confusing the two causes Broken Access Control, the web's number one security risk.
   - q: What is the difference between a threat, a vulnerability, and a risk?
@@ -31,8 +31,9 @@ faq:
     a: Responsibility is shared. The provider secures the cloud itself (hardware, datacenters, managed-service internals) while you secure what you put in it (your data, access configuration, and app code). Gartner estimated about 99% of cloud security failures are the customer's fault, usually misconfiguration.
   - q: What is the security mindset?
     a: The security mindset, named by Bruce Schneier, is the habit of asking "how can this be abused or made to fail?" instead of "how do I make this work?" You think like an attacker, hunt for unintended paths, and distrust assumptions. It is a learnable skill, not an innate talent.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 topic: security-privacy-engineering
 topicTitle: Security & Privacy Engineering
 category: Engineering
@@ -46,7 +47,7 @@ In early 2025, UnitedHealth confirmed that around 190 million Americans had thei
 
 That is the uncomfortable truth about security. The biggest disasters almost never come from genius hackers. They come from a missing basic, a confused concept, or a wrong assumption about who was responsible.
 
-This article gives you the mental scaffolding that every security engineer reasons from. Master these five building blocks and almost everything else in security becomes a variation on a theme you already understand.
+So here is the mental scaffolding that every security engineer reasons from. Master these five building blocks, and almost everything else in security turns into a variation on a theme you already understand.
 
 ## Why this matters
 

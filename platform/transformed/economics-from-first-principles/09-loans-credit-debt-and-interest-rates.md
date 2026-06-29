@@ -39,15 +39,14 @@ faq:
       the way a family runs out of cash. Its real risks are a rising interest burden and
       the inflation that comes from printing too much money.
   - q: What is the Rule of 72?
-    a: It's a quick shortcut for how long money takes to double: divide 72 by the interest
-      rate. At 8%, money doubles in about 9 years; at 6%, about 12 years.
+    a: "It's a quick shortcut for how long money takes to double: divide 72 by the interest rate. At 8%, money doubles in about 9 years; at 6%, about 12 years."
 topic: economics-from-first-principles
 topicTitle: Economics from First Principles
 category: Money & Business
 date: '2026-06-22'
 order: 8
 icon: "\U0001F4C8"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

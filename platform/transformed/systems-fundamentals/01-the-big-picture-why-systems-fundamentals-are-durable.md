@@ -54,14 +54,15 @@ faq:
       Finding the bottleneck resource — CPU, memory, disk, network, or time —
       before optimizing anything. Speeding up a resource that is not the
       constraint buys you nothing.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 
 A reference table of computer latency numbers was popularized back in 2012. It is still essentially correct in 2026. In an industry where the "framework of the month" expires before your coffee gets cold, that is almost unheard of.
 
-So here is a question worth answering before you touch a single database or network protocol: why learn this stuff at all, and why will it still be useful in twenty years? This article is the map for everything else. Stick with it and the rest will hang off a few ideas you already understand.
+So here is a question worth answering before you touch a single database or network protocol: why learn this stuff at all, and why will it still be useful in twenty years? Think of what follows as the map for everything else. Stick with it and the rest will hang off a few ideas you already understand.
 
 ## Why this matters
 

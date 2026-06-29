@@ -1,5 +1,5 @@
 ---
-title: 'How Web Apps Survive Traffic Spikes Without Falling Over'
+title: 'Load Balancing and Scaling: How Web Apps Survive Traffic Spikes'
 metaTitle: 'Load Balancing & Scaling Explained Simply'
 description: >-
   Learn how load balancing, stateless design, and autoscaling let one web app
@@ -60,8 +60,9 @@ category: Engineering
 date: '2026-06-15'
 order: 7
 icon: "\U0001F3D7️"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

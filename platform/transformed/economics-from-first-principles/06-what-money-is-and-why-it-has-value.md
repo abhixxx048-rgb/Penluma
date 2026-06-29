@@ -34,7 +34,7 @@ faq:
     a: "Hyperinflation happens when a government prints money recklessly to cover its bills, people lose faith in the currency, and everyone rushes to spend before prices climb higher. The currency then collapses, as in Weimar Germany, Zimbabwe, and Venezuela."
   - q: "Is Bitcoin real money?"
     a: "Not quite yet. Bitcoin is scarce and widely held, but it is too volatile to reliably serve as a unit of account or everyday store of value. For now it behaves more like a speculative asset than like money."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

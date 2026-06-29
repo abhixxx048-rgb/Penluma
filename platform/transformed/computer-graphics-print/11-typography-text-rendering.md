@@ -36,7 +36,7 @@ faq:
     a: A variable font is a single file that stores a whole range of weights, widths, and other styles along adjustable axes. Instead of shipping a dozen separate files, one file interpolates between designs, which means fewer downloads and faster pages.
   - q: Why do I sometimes see an empty box instead of a letter?
     a: That box is called tofu, or .notdef. It appears when your font has no glyph for the character you typed, such as a rare currency symbol or emoji. The text exists, but the font has no shape to draw for it.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Glyph

@@ -23,8 +23,9 @@ category: Engineering
 date: '2026-06-15'
 order: 3
 icon: "\U0001F3D7️"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 faq:
   - q: "What is the difference between REST, GraphQL, and gRPC?"

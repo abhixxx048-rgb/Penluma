@@ -28,7 +28,7 @@ faq:
     a: "Not by itself. Roughly 80 percent of performance variance comes from total token usage, not architecture. Multi-agent design is a way to spend more tokens productively in parallel, not a way to squeeze more quality out of a fixed budget."
   - q: "Should I use a single strong model or many cheap ones?"
     a: "Use both: a strong model as the orchestrator and final synthesizer, plus cheaper models for high-volume subtasks. Upgrading the model often beats simply doubling the token budget."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: agent-orchestration
 topicTitle: Multi-Agent LLM Systems

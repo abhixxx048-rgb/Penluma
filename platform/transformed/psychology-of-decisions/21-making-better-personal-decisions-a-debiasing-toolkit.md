@@ -51,7 +51,7 @@ faq:
       Ask how you'll feel about a decision in 10 minutes, 10 months, and 10 years.
       Spreading your emotion across those timeframes cools off hot feelings so you
       decide with your calm self, not your reactive one.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: psychology-of-decisions
 topicTitle: Psychology of Decisions

@@ -34,8 +34,9 @@ faq:
     a: Pre-dunning means warning customers about 30 days before their saved card expires and asking them to update it. It has a higher action rate than any after-the-fact email because it prevents the failure entirely.
   - q: Should I cancel or pause a subscription when payment fails?
     a: Pause, don't cancel. A grace period of 7-14 days with read-only access and a clear banner keeps the relationship alive while you retry the card. Hard cancellation should be the last step, not the first.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 
@@ -63,7 +64,7 @@ Card-related failures are overwhelmingly **involuntary**: the card expired, the 
 
 That reframe changes everything. You're not trying to win back a defector. You're trying to help a loyal customer past a paperwork problem. The tone, the urgency, and the design of your recovery flow should all reflect that.
 
-## Insight 1: Catch the failure before it happens (pre-dunning)
+## Catch the failure before it happens (pre-dunning)
 
 The single highest-return move costs almost nothing, because the data is already sitting in your database: **the card's expiration date.**
 
@@ -75,7 +76,7 @@ Think of it like a "your passport expires in 3 months" reminder. Nobody resents 
 
 **Mini case:** A customer's card expires in 30 days. With pre-dunning, they get one calm email, click once, paste in their new card, and the next renewal sails through. Without it, the renewal fails, access cuts off, support gets a "your app is down!" ticket, and you spend goodwill solving a problem you could have prevented for the price of one scheduled email.
 
-## Insight 2: Retry the charge on a smart schedule
+## Retry the charge on a smart schedule
 
 When a charge does fail, don't give up after one try, and don't hammer the card every hour either. Banks have rhythms, and so should you.
 
@@ -88,7 +89,7 @@ You can do better by reading the **decline reason**:
 
 Payment processors like Stripe offer **smart retries** that time attempts using historical success data and the customer's time zone, adding another **10-15%** on top of a fixed schedule. If your processor does this, lean on it. Just remember the processor handles only the *charging*. It does not handle your warning emails, your grace period, or your recovery page. That part is yours.
 
-## Insight 3: Pause, don't cancel — use a grace window
+## Pause, don't cancel — use a grace window
 
 The moment a payment fails, your instinct might be to flip the account off. Resist it.
 
@@ -104,7 +105,7 @@ A useful way to think about the account is as a small state machine:
 
 At every step there's a recovery edge back to **Active** the instant the card is updated or a retry succeeds. A common mistake is a grace period of just **one day**, which is far too short for a busy person to even notice the email. Seven to fourteen days is the norm for a reason.
 
-## Insight 4: A short dunning email sequence with a one-click fix
+## A short dunning email sequence with a one-click fix
 
 Retries work in the background. Emails bring the human into the loop. The two together beat either alone.
 

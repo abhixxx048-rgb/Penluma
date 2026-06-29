@@ -1,6 +1,6 @@
 ---
 title: Finance for Founders Who Skipped the MBA
-metaTitle: Finance for Founders: Where to Start
+metaTitle: "Finance for Founders: Where to Start"
 description: >-
   A plain-English finance guide for founders with no accounting background. Learn
   the three faces of money — revenue, profit, and cash — and read your numbers.
@@ -48,7 +48,7 @@ faq:
     a: >-
       Apply each concept to your own numbers immediately. Reading about gross margin
       is forgettable; calculating your own gross margin and being shocked by it is not.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

@@ -45,7 +45,7 @@ faq:
       The generation effect is the finding that we understand and remember
       things much better when we produce them ourselves — answer, finish, or
       explain — rather than simply reading them.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: clear-thinking-and-expression
 topicTitle: Clear Thinking & Expression

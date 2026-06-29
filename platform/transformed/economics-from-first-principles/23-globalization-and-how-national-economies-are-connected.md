@@ -17,7 +17,7 @@ keywords:
   - trade as share of GDP
 faq:
   - q: What does globalization actually mean?
-    a: Globalization is the growing integration of national economies through four cross-border flows: trade (goods and services), capital (investment money), labor (people moving for work), and information and technology (ideas and know-how). These flows knit separate economies into one connected system.
+    a: "Globalization is the growing integration of national economies through four cross-border flows: trade (goods and services), capital (investment money), labor (people moving for work), and information and technology (ideas and know-how). These flows knit separate economies into one connected system."
   - q: What is comparative advantage in simple terms?
     a: Comparative advantage means a country gains by specializing in whatever it makes at the lowest relative cost, then trading for the rest. It works even if that country is worse at making everything in absolute terms, because focusing on its best use of time makes the total pie bigger.
   - q: Does "Made in China" mean all the value is Chinese?
@@ -34,7 +34,7 @@ category: Money & Business
 date: '2026-06-22'
 order: 22
 icon: "\U0001F4C8"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

@@ -31,7 +31,7 @@ faq:
     a: "It means reading real traces, the full record of each request, and bucketing failures by root cause. This error analysis is the highest-ROI activity in eval work and decides which metrics are even worth building."
   - q: "What is the difference between pass@k and pass^k?"
     a: "pass@k means the agent succeeds at least once in k tries. pass^k means it succeeds on all k tries. For customer-facing reliability you want pass^k, since users need it to work every time, not just sometimes."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: ai-llm-engineering
 topicTitle: AI & LLM Engineering

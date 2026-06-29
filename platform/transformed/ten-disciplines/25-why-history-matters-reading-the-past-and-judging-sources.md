@@ -2,8 +2,8 @@
 title: 'How to Read History Like a Detective (Not Memorize It)'
 metaTitle: 'How to Read History Like a Detective'
 description: >-
-  History isn't a list of dates. Learn how to read the past, judge a source, and
-  spot the thinking traps that make smart people easy to fool.
+  History isn't a list of dates. Learn how to read history like a detective: weigh
+  evidence, judge any source, and spot the thinking traps that fool smart people.
 keywords:
   - how to read history
   - primary vs secondary sources
@@ -55,8 +55,9 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 24
 icon: "\U0001F9ED"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

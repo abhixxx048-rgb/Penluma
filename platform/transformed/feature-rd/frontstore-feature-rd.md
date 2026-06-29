@@ -28,7 +28,7 @@ faq:
     a: "Make every success message correspond to a real result, and show honest error states instead of going blank or green. These are often hours of work, not weeks."
   - q: "Why is mobile so important for store trust?"
     a: "Most shoppers are on phones. If your hero text overflows, search is crushed, or 'Place Order' shows before the payment form, the store feels broken before they even try to buy."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: feature-rd
 topicTitle: Feature R&D

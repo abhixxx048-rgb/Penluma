@@ -54,8 +54,9 @@ faq:
       No. Denormalization deliberately duplicates data to make reads faster by
       avoiding joins. It is a trade-off, not a mistake, as long as you accept the
       write complexity and consistency risk it introduces.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 topic: system-design
 topicTitle: System Design
 category: Engineering

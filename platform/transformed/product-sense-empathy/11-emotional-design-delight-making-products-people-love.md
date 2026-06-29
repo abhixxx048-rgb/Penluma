@@ -50,7 +50,7 @@ faq:
       Surface delight is small touches like animations or playful copy that give
       an occasional wow. Deep delight is whole-product satisfaction that feels
       like a helpful assistant, and you only earn it once the basics are solid.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Emotional_Design

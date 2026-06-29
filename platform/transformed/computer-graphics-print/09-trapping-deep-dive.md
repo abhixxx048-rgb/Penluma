@@ -34,7 +34,7 @@ faq:
     a: Skip trapping on continuous-tone photographs, process colors that already share a lot of common ink, and high-quality digital or tightly registered presses, where trap artifacts can look worse than the rare misalignment.
   - q: How wide should a trap be?
     a: Very small — roughly 0.24 to 0.48 points (0.08 to 0.16 mm) at 150 lpi. Black and dark traps run 1.5 to 2 times wider because dark ink hides the overlap.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

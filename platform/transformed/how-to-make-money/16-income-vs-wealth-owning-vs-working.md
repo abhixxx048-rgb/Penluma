@@ -1,6 +1,6 @@
 ---
 title: "Income vs Wealth: Why a Big Salary Won't Make You Rich"
-metaTitle: Income vs Wealth: Owning vs Working
+metaTitle: "Income vs Wealth: Owning vs Working"
 description: >-
   Income vs wealth explained simply: why high earners stay broke, how owning
   assets beats renting your time, and the savings rate that quietly makes you rich.
@@ -36,7 +36,7 @@ category: Money & Business
 date: '2026-06-22'
 order: 15
 icon: "\U0001FA99"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

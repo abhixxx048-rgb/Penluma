@@ -21,7 +21,7 @@ faq:
   - q: How do I come up with ideas when my mind goes blank?
     a: Separate making ideas from judging them. Set a timer, force yourself to list 10+ ideas without criticizing any, and use prompts like the SCAMPER checklist or a random word to break out of obvious thinking.
   - q: What is the SCAMPER technique?
-    a: SCAMPER is a seven-question checklist for generating ideas: Substitute, Combine, Adapt, Modify, Put to other use, Eliminate, and Reverse. You apply each verb to your subject to find fresh angles.
+    a: "SCAMPER is a seven-question checklist for generating ideas: Substitute, Combine, Adapt, Modify, Put to other use, Eliminate, and Reverse. You apply each verb to your subject to find fresh angles."
   - q: Why does quantity matter more than quality in brainstorming?
     a: Your first few ideas are usually obvious clichés. The original, excellent ideas tend to appear later in the list, so producing many ideas raises the odds that your best one is genuinely great.
   - q: What is divergent thinking versus convergent thinking?
@@ -36,7 +36,7 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 13
 icon: ✍️
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Divergent_thinking

@@ -32,7 +32,7 @@ faq:
     a: The 3-5 evaluators rule is for heuristic evaluation, where experts inspect the design. The 5 users rule is for usability testing, where real people try the product. Both come from Nielsen but they are different methods.
   - q: Is heuristic evaluation still relevant today?
     a: Yes. The 10 heuristics have not changed since 1994; only the wording and examples were modernized in 2020. It remains the most widely used quick usability inspection method.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Heuristic_evaluation

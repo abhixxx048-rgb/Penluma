@@ -50,7 +50,7 @@ faq:
       Anthropologist Robin Dunbar suggests humans manage roughly 150 meaningful
       relationships, nested in layers of about 5, 15, and 50. Treat 150 as a
       rough guide, not an exact law.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Interpersonal_ties

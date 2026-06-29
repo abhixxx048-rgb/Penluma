@@ -31,10 +31,10 @@ faq:
   - q: What are the 19 traction channels?
     a: They range from SEO, content marketing, and email to PR, paid ads, sales, partnerships, trade shows, community building, and engineering as marketing (free tools). The point is to consider all of them, including ones you would never naturally pick.
   - q: Is the "one channel" rule still true today?
-    a: The core idea holds: concentration beats diffusion. Modern growth teams soften it slightly, often running one or two complementary channels (like SEO plus the community where that content gets shared) rather than a single one.
+    a: "The core idea holds: concentration beats diffusion. Modern growth teams soften it slightly, often running one or two complementary channels (like SEO plus the community where that content gets shared) rather than a single one."
   - q: When should I re-run the Bullseye Framework?
     a: Re-run it when your winning channel plateaus or saturates its audience. Most teams stall because they get one channel working and never run the loop again.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://medium.com/@yegg/the-bullseye-framework-for-getting-traction-ef49d05bfd7e

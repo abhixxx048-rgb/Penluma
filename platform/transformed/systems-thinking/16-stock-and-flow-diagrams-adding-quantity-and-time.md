@@ -36,8 +36,9 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 15
 icon: "\U0001F504"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - 'https://en.wikipedia.org/wiki/Stock_and_flow'
   - 'https://en.wikipedia.org/wiki/System_dynamics'

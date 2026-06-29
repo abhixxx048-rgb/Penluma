@@ -55,7 +55,7 @@ faq:
       CloudWatch Logs is the storage layer that centralizes your log text. Logs
       Insights is the interactive query tool that runs on top of that storage to
       filter, aggregate, and group those logs.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

@@ -55,7 +55,7 @@ faq:
       The tool itself was invented to reduce risk by letting farmers and
       airlines lock in prices. The danger is misuse, specifically piling on
       borrowed money to gamble, which is what sank Barings Bank and LTCM.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

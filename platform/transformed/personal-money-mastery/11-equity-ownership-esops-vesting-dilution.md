@@ -54,7 +54,7 @@ faq:
       exercise your vested options or lose them. A common window is just 90
       days. If you cannot fund the strike and tax bill in time, the options
       vanish.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 topic: personal-money-mastery
 topicTitle: Personal Money Mastery
 category: Money & Business

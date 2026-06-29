@@ -30,7 +30,7 @@ faq:
     a: By adding structured data (schema.org markup) like AggregateRating and Review to your product pages, search engines can display star ratings directly in results, which improves click-through.
   - q: Why do shoppers abandon their carts at checkout?
     a: The biggest reasons are unexpected costs and security doubt. If the pay screen does not clearly signal that the transaction is safe and reversible, anxious buyers leave even after adding items.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: marketing-growth
 topicTitle: Growth & Acquisition

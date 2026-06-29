@@ -21,8 +21,9 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 5
 icon: "\U0001F504"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 faq:
   - q: What is a delay in systems thinking?
     a: A delay is the lag between an action and its visible effect. When a delay sits inside a feedback loop, the system tends to overshoot and swing back and forth, because corrections are aimed at a problem that has already changed.

@@ -25,7 +25,7 @@ faq:
   - q: What is the difference between System 1 and System 2 thinking?
     a: System 1 is fast, automatic, and intuitive, running constantly in the background. System 2 is slow, effortful, and logical, and it only kicks in when needed. System 1 usually drives, and lazy System 2 often accepts its answers without checking.
   - q: Why can't I remember things even though I studied them?
-    a: Forgetting can fail at three points: encoding (getting it in), storage (keeping it), or retrieval (pulling it back out). A name on the tip of your tongue is a retrieval failure, not a loss, which is why it often pops up later.
+    a: "Forgetting can fail at three points: encoding (getting it in), storage (keeping it), or retrieval (pulling it back out). A name on the tip of your tongue is a retrieval failure, not a loss, which is why it often pops up later."
   - q: Is multitasking real?
     a: For demanding tasks, no. What feels like multitasking is fast task-switching, and every switch leaves a mental residue that slows you down and raises errors. True parallel work only happens when one task is fully automatic, like walking while talking.
   - q: What is the best way to study so I actually remember?
@@ -38,8 +38,9 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 6
 icon: "\U0001F9ED"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

@@ -57,7 +57,7 @@ faq:
       Raising trades ownership and control for speed and scale. The right choice
       depends on whether your market rewards getting big fast or being steady and
       profitable.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Rule_of_40

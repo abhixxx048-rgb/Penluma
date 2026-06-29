@@ -36,7 +36,7 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 11
 icon: ✍️
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

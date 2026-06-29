@@ -29,7 +29,7 @@ faq:
   - q: What is value-based pricing?
     a: Value-based pricing sets the price by what the product is worth to the buyer, not what it cost to make. Software that saves a company 100 hours of labour can charge thousands even if it costs almost nothing to run. This approach earns the fattest margins.
   - q: Why does the same product cost different prices in different countries?
-    a: A shelf price is a stack of layers: base cost, local wages and rent, taxes and tariffs, currency strength, and how much locals can pay. Change any layer and the price changes, even for an identical product.
+    a: "A shelf price is a stack of layers: base cost, local wages and rent, taxes and tariffs, currency strength, and how much locals can pay. Change any layer and the price changes, even for an identical product."
   - q: What is a competitive moat?
     a: A moat is a durable advantage that protects a firm's profits from rivals. The five classic kinds are network effects, switching costs, cost or scale advantages, intangible assets like brands and patents, and efficient scale.
 topic: economics-from-first-principles
@@ -38,7 +38,7 @@ category: Money & Business
 date: '2026-06-22'
 order: 16
 icon: "\U0001F4C8"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Price_discrimination

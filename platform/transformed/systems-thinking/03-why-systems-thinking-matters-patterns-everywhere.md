@@ -2,9 +2,8 @@
 title: 'Systems Thinking: Why the Same Patterns Repeat Everywhere'
 metaTitle: 'Systems Thinking: Patterns That Repeat'
 description: >-
-  Systems thinking reveals why the same patterns repeat across business, ecology,
-  and economics. Learn to spot the loops and delays that drive behavior—and predict
-  what happens next.
+  Systems thinking explains why the same patterns repeat across business, ecology,
+  and software. Spot the feedback loops and delays that drive what happens next.
 keywords:
   - systems thinking
   - systems archetypes
@@ -48,8 +47,9 @@ faq:
       Finding the delay in the feedback loop. Most management and policy errors happen
       because people react to a stock as it was, not as it is, which causes overshoot
       and oscillation.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 topic: systems-thinking
 topicTitle: Systems Thinking
 category: Thinking & Decisions

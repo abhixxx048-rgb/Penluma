@@ -8,7 +8,7 @@
 // DEFAULTS: any folder NOT listed here is auto-published with a prettified
 // title — so when you add a brand-new research folder later, it appears on the
 // blog automatically. List a folder with `published: false` to keep it private
-// (used here for the internal PrintFlow360 business/strategy research).
+// (used here for internal product business/strategy research).
 // ---------------------------------------------------------------------------
 
 export const CATEGORIES = [

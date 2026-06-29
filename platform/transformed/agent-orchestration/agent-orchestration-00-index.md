@@ -34,7 +34,7 @@ category: AI & LLMs
 date: '2026-06-16'
 order: 999
 icon: "\U0001F916"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - "Building effective agents — Anthropic — https://www.anthropic.com/research/building-effective-agents"

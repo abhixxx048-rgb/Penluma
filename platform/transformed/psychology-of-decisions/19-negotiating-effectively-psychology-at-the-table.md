@@ -52,7 +52,7 @@ faq:
       Use the transparency test: would this still work if the other side knew
       exactly what you were doing? Honest persuasion reveals what is true and
       survives that test. Manipulation manufactures something false and collapses.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

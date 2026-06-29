@@ -30,7 +30,7 @@ faq:
     a: No. Since April 2023, debt and liquid funds are taxed at your slab rate like FD interest, with no long-term benefit. Choose between them purely on liquidity and convenience.
   - q: What is the fastest way to wreck my credit card?
     a: Paying only the minimum due. It is about 5% of your balance, so the debt drags on for years and total interest can exceed what you originally spent. Always pay the full statement balance.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: personal-money-mastery
 topicTitle: Personal Money Mastery

@@ -30,7 +30,7 @@ faq:
     a: "Usually not. The Laffer curve shows revenue is zero at both 0% and 100% rates, with a peak in between. But that peak for top income taxes is estimated around 70%, so most countries sit on the left side where cuts lose revenue."
   - q: "What is the difference between moral hazard and adverse selection?"
     a: "Moral hazard is a hidden action after a contract starts (an insured driver drives faster). Adverse selection is hidden information before it (the sickest people are keenest to buy insurance), which can spiral premiums upward."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: economics-from-first-principles
 topicTitle: Economics from First Principles

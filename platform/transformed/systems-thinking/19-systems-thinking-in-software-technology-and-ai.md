@@ -49,8 +49,9 @@ faq:
       Monitoring tells you when a known metric crosses a threshold.
       Observability lets you investigate problems you never anticipated by
       reading the system's outputs like metrics, logs, and traces.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

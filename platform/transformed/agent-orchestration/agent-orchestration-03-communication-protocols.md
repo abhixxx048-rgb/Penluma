@@ -50,7 +50,7 @@ faq:
       read from and write to instead of messaging each other directly. It cuts
       message traffic and adds transparency, but introduces consistency and
       concurrency challenges when several agents touch the same state at once.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: agent-orchestration
 topicTitle: Multi-Agent LLM Systems

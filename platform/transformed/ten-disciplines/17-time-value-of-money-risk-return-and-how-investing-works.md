@@ -30,7 +30,7 @@ faq:
     a: Staying invested almost always wins. The market's best days often cluster right after sharp drops, and missing just a handful of them can severely damage long-term returns. Time in the market beats timing the market.
   - q: What is the safest first step before investing?
     a: Build an emergency fund of three to six months of expenses in cash, then pay off high-interest debt like credit cards. Clearing a 20 percent credit card is a guaranteed 20 percent return.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 topic: ten-disciplines
 topicTitle: Ten Disciplines
 category: Thinking & Decisions
@@ -38,6 +38,7 @@ date: '2026-06-22'
 order: 16
 icon: "\U0001F9ED"
 transformed: true
+polished: true
 sources: []
 ---
 

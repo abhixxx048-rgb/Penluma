@@ -54,7 +54,7 @@ category: AI & LLMs
 date: '2026-06-28'
 order: 23
 icon: "\U0001F393"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

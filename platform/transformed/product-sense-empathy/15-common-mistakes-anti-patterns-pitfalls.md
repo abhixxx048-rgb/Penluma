@@ -50,7 +50,7 @@ faq:
       Loading, empty, and error. A view that only handles the happy path will show
       a blank or frozen screen the moment something is slow or missing, and users
       read blank as broken.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

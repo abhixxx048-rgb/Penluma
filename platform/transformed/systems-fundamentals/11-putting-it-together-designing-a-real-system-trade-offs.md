@@ -30,8 +30,9 @@ faq:
     a: An SLI is the measured number (e.g. percent of requests under 200 ms). An SLO is your internal target for it. An SLA is a contractual promise to customers with penalties if you miss it, usually set looser than the SLO.
   - q: Should I look at average or p99 latency?
     a: Watch percentiles like p99, never the average. The average hides the slow tail; p99 = 800 ms means the slowest 1 percent of requests are worse than 800 ms, and those are real users having a bad time.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 topic: systems-fundamentals
 topicTitle: Systems Fundamentals
 category: Engineering

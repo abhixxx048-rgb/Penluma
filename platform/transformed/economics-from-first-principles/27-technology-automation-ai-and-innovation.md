@@ -21,7 +21,7 @@ keywords:
   - labor share of income
   - Schumpeter creative destruction
   - how technology drives economic growth
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 faq:
   - q: "Will AI take my job?"

@@ -51,7 +51,7 @@ faq:
       375 pixels is a common phone screen width. Many users buy on mobile, and
       pages that look fine on a desktop can break, overflow, or hide critical
       buttons on a small screen.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: qa-launch
 topicTitle: QA & Launch Readiness

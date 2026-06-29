@@ -29,7 +29,7 @@ faq:
     a: "Any two majorities of a group must share at least one member. That single overlapping machine remembers the agreed value and forces every future proposal to honor it, which is what keeps Paxos safe."
   - q: "Is Paxos still used today?"
     a: "Yes, directly and indirectly. Google's Chubby and Spanner, Microsoft Azure storage, and many others build on Paxos or close relatives. Even Raft and ZAB inherit ideas Paxos proved correct first."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: distributed-systems
 topicTitle: Distributed Systems

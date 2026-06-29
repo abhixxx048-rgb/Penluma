@@ -30,7 +30,7 @@ faq:
     a: "In the primary market a company sells shares for the first time through an IPO, and the cash goes to the company. In the secondary market investors trade those existing shares among themselves on the exchange."
   - q: "Do I need a Demat account to invest in index funds?"
     a: "No. Plain index funds need no Demat account. You only need a Demat and trading account if you want to buy individual stocks or ETFs directly on the exchange."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: life-money-and-relationships
 topicTitle: 'Life, Money & Relationships'

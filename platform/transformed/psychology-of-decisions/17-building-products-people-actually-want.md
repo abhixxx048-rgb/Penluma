@@ -1,7 +1,7 @@
 ---
 title: Building Products People Actually Want (Without Tricks)
 metaTitle: Build Products People Actually Want
-description: Learn behavioral design the honest way: reduce friction, set generous defaults, and build products people actually want and keep coming back to.
+description: "Learn behavioral design the honest way: reduce friction, set generous defaults, and build products people actually want and keep coming back to."
 keywords:
   - behavioral design
   - building products people want
@@ -23,7 +23,7 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 16
 icon: "\U0001F3AF"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 faq:
   - q: What is behavioral design?

@@ -34,7 +34,7 @@ category: Engineering
 date: '2026-06-21'
 order: 14
 icon: "\U0001F310"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Vector_clock

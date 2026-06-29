@@ -29,7 +29,7 @@ faq:
     a: Hick's Law states that the more choices you show, the longer a decision takes. The practical takeaway is to trim options or reveal them in stages so users decide faster.
   - q: What is a dark pattern?
     a: A dark pattern is a design that tricks or pressures users into actions against their own interest — like a hidden unsubscribe link or a pre-checked box that opts you into something. It's the deliberate misuse of these very principles.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: product-sense-empathy
 topicTitle: Product Sense & Empathy

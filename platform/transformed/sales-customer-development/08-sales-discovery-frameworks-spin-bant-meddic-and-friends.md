@@ -46,8 +46,9 @@ faq:
       Less than half the time. Research from Gong found that top reps talk about
       46% of a discovery call and listen 54%. If you have been speaking for more
       than 30 seconds, stop and ask a question.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 topic: sales-customer-development
 topicTitle: Sales & Customer Development
 category: Money & Business

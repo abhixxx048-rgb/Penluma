@@ -30,7 +30,7 @@ faq:
     a: Stay calm, name the glitch plainly, skip it, and follow up later with a recording. Your composure under pressure sells more than the broken feature would have.
   - q: How long should a product demo be?
     a: Keep it short and make it a dialogue, not a monologue. Check in roughly every 90 seconds with a quick question to confirm you are still on target.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 topic: sales-customer-development
 topicTitle: Sales & Customer Development
 category: Money & Business
@@ -38,6 +38,7 @@ date: '2026-06-21'
 order: 9
 icon: "\U0001F91D"
 transformed: true
+polished: true
 sources: []
 ---
 

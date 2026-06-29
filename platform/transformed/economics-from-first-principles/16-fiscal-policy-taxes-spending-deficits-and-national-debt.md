@@ -36,7 +36,7 @@ faq:
     a: No. The famous "90% of GDP" danger line came from a 2010 paper later found to contain a spreadsheet error. Japan runs over 200% with low interest rates. Context matters more than any single number.
   - q: Does government borrowing hurt private business?
     a: It depends on the economy. At full employment it can crowd out private investment by competing for savings. In a recession with idle resources, it fills a vacuum and revives demand instead.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Fiscal_policy

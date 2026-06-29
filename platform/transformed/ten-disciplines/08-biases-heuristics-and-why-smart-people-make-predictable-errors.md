@@ -58,8 +58,9 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 7
 icon: "\U0001F9ED"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow
   - https://en.wikipedia.org/wiki/Cognitive_bias

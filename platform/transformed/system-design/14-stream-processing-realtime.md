@@ -28,7 +28,7 @@ faq:
     a: Lambda runs two pipelines, a slow accurate batch one and a fast approximate streaming one, which means maintaining the same logic twice. Kappa keeps only the streaming pipeline and reprocesses by replaying the log, avoiding the duplicate-code problem.
   - q: When should I use stream processing instead of a nightly batch job?
     a: Use streaming when stale data costs money or safety, such as fraud detection, live dashboards, leaderboards, and alerting. Stick with batch for daily reports, model training, and backfills that tolerate hours of lag.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 topic: system-design
 topicTitle: System Design
 category: Engineering
@@ -36,6 +36,7 @@ date: '2026-06-15'
 order: 14
 icon: "\U0001F3D7️"
 transformed: true
+polished: true
 sources: []
 ---
 
@@ -43,7 +44,7 @@ A trip happens in San Francisco at 14:03. The driver's phone is in a parking gar
 
 If your system counts events as they arrive, you just got the wrong answer. Worse, you'd get a *different* wrong answer if you ran the same data again tomorrow. This is the whole drama of real-time systems in one example, and it's why stream processing exists as its own craft.
 
-This article walks you through that craft, from the big mental model down to the specific tricks that make live pipelines correct instead of merely fast.
+You're about to learn that craft, from the big mental model down to the specific tricks that make live pipelines correct instead of merely fast.
 
 ## Why this matters
 

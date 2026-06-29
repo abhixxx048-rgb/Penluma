@@ -1,6 +1,6 @@
 ---
 title: How to Stop Your AI Tutor From Confidently Lying
-metaTitle: AI Tutor Accuracy: Build One That Won't Lie
+metaTitle: "AI Tutor Accuracy: Build One That Won't Lie"
 description: Learn how to keep an AI tutor accurate and pedagogically sound with grounding, verification, Socratic prompts, and LLM-as-judge so it teaches instead of cheats.
 keywords:
   - AI tutor accuracy
@@ -32,7 +32,7 @@ category: AI & LLMs
 date: '2026-06-28'
 order: 24
 icon: "\U0001F393"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

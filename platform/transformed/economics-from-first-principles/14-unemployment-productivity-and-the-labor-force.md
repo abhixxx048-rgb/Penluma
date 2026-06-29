@@ -54,7 +54,7 @@ faq:
       centuries while total employment kept rising. The bigger effect is
       changing what tasks people do, though the transition is genuinely hard
       for displaced workers.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Unemployment

@@ -50,7 +50,7 @@ faq:
       It depends on your industry. For ecommerce, around 10% is average and 20%
       is excellent. For early SaaS, low profit can be fine if growth is high,
       that's the idea behind the Rule of 40.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

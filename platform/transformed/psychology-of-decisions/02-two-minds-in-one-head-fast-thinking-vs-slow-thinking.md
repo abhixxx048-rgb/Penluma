@@ -30,7 +30,7 @@ faq:
     a: Add friction. Write the decision down, sleep on it, say your answer out loud and check it, or use a checklist. Small speed bumps force your slow, deliberate mind to actually run.
   - q: What is dual-process theory?
     a: Dual-process theory is the idea that your mind runs in two modes — one fast and automatic, one slow and effortful — and that they often disagree about what to do.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: psychology-of-decisions
 topicTitle: Psychology of Decisions

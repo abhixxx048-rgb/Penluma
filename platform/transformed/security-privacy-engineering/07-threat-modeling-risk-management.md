@@ -48,8 +48,9 @@ faq:
     a: A living log with one row per risk, recording its description, owner, likelihood,
       impact, chosen treatment, and review date. It proves risks were considered, not
       ignored.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

@@ -29,7 +29,7 @@ faq:
     a: A gang run places several separate jobs on one shared press sheet to split setup and paper cost. Your model needs a batch entity that groups jobs by shared stock, color, and size, because jobs flow individually through proof, merge at printing, then split again for finishing and shipping.
   - q: What is preflight in print production?
     a: Preflight is the automated validation of a customer's file before printing, checking resolution, color mode, bleed, and fonts. If a file fails, production cannot start until it is corrected, and the software should return a plain-language reason plus a re-upload path.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: print-production-craft
 topicTitle: Print Production Craft

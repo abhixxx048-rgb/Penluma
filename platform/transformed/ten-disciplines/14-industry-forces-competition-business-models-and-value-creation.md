@@ -2,8 +2,8 @@
 title: 'Why Some Companies Stay Rich While Rivals Get Copied to Death'
 metaTitle: 'Business Strategy: Five Forces, Moats & Value'
 description: >-
-  Learn how real business strategy works: industry forces, moats, value
-  creation, and why being better than rivals is not a strategy at all.
+  Learn how real business strategy actually works: industry forces, moats, value
+  creation, and why simply being better than rivals is not a strategy at all.
 keywords:
   - business strategy
   - competitive advantage
@@ -52,8 +52,9 @@ faq:
       It is a cheaper, simpler, initially worse product that serves the low end
       or a new market, then improves until it is good enough for everyone and
       displaces the incumbent. Netflix versus Blockbuster is the classic case.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 topic: ten-disciplines
 topicTitle: Ten Disciplines
 category: Thinking & Decisions

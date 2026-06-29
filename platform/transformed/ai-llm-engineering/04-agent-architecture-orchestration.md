@@ -30,7 +30,7 @@ faq:
     a: Because errors compound. If each step is 95 percent reliable, a 20-step task succeeds only about 36 percent of the time. Push each step to 99 percent and end-to-end success jumps to about 82 percent. Fewer steps and verified intermediate results matter most.
   - q: What is the Model Context Protocol (MCP)?
     a: MCP is an open standard from Anthropic that lets an agent discover and securely call external tools and data through one uniform interface, instead of hand-coding glue for each integration. It is often described as the USB-C for AI tools.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: ai-llm-engineering
 topicTitle: AI & LLM Engineering

@@ -23,8 +23,9 @@ category: Engineering
 date: '2026-06-15'
 order: 4
 icon: "\U0001F3D7️"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 faq:
   - q: "What is the difference between a B-tree and an LSM-tree database?"
     a: "A B-tree updates data in place and gives fast, predictable reads, so it suits read-heavy or balanced workloads. An LSM-tree only appends and merges files later, giving very high write throughput at the cost of slower, more variable reads. Postgres and MySQL use B-trees; Cassandra and RocksDB use LSM-trees."

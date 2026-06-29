@@ -57,14 +57,15 @@ faq:
       It describes a company trying to be both the cheapest and the most premium
       at once, and excelling at neither. The cost leader undercuts its prices and
       the differentiator wins its premium customers, leaving it squeezed.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 
 A founder says, "Our strategy is to grow 30% this year." A manager says, "Our strategy is to be the best." A team writes a 50-page deck and calls it "the strategy." Here is the uncomfortable truth: none of those is a strategy. They are a wish, a slogan, and some paperwork.
 
-By the end of this article you will be able to look at any company and ask the three questions that separate a real strategy from a hopeful one. You do not need a business degree. You just need to see one idea clearly.
+By the time you finish reading, you will be able to look at any company and ask the three questions that separate a real strategy from a hopeful one. You do not need a business degree. You just need to see one idea clearly.
 
 That idea is this: **a real strategy = choice + trade-off + a barrier to imitation.** If any of the three is missing, you have a wish, not a strategy.
 

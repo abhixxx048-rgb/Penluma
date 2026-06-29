@@ -1,5 +1,5 @@
 ---
-title: Product Sense and Empathy: Build Things That Feel Obvious
+title: "Product Sense and Empathy: Build Things That Feel Obvious"
 metaTitle: Product Sense and User Empathy Guide
 description: Learn product sense and user empathy so the things you build feel obvious, not just functional. A practical guide for builders who want fewer confused users.
 keywords:
@@ -34,7 +34,7 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 0
 icon: ❤️
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

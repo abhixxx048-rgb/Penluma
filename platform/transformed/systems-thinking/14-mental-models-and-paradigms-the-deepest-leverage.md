@@ -1,7 +1,7 @@
 ---
 title: "Mental Models: The Hidden Lever That Changes Everything"
 metaTitle: "Mental Models: The Deepest Leverage Point"
-description: "Mental models and paradigms are the deepest leverage in any system. Learn the iceberg model, double-loop learning, and how to change the beliefs that run everything."
+description: "Mental models and paradigms are the deepest leverage in any system. Learn the iceberg model, double-loop learning, and how to shift the beliefs that run it."
 keywords:
   - mental models
   - paradigm shift
@@ -28,8 +28,9 @@ faq:
     a: "Because they decide which facts you notice in the first place. Through the ladder of inference, your beliefs filter the data, so the world appears to confirm you even when it contradicts you."
   - q: "Why is a paradigm such a powerful leverage point?"
     a: "In Donella Meadows' famous ranking, the paradigm is the second-strongest place to change a system, far above prices or rules. Change what people assume is obviously true, and goals, structures, and behaviours reorganise around the new belief."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 topic: systems-thinking
 topicTitle: Systems Thinking
 category: Thinking & Decisions

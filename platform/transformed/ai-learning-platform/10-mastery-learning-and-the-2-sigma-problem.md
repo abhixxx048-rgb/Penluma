@@ -19,7 +19,7 @@ faq:
   - q: What is the 2-sigma problem?
     a: It is a challenge posed by researcher Benjamin Bloom in 1984. He found that one-to-one tutoring plus mastery learning made the average student outperform about 98% of a normal classroom, then asked whether we could match that result affordably at scale, since a human tutor for every student is too expensive.
   - q: What does "2 sigma" actually mean?
-    a: "Sigma" is another word for standard deviation, a measure of how spread out test scores are. Moving up two standard deviations is a huge jump. In plain terms, the average tutored student scored higher than roughly 98% of students in an ordinary classroom.
+    a: "\"Sigma\" is another word for standard deviation, a measure of how spread out test scores are. Moving up two standard deviations is a huge jump. In plain terms, the average tutored student scored higher than roughly 98% of students in an ordinary classroom."
   - q: What is mastery learning?
     a: It is a teaching rule where a learner must prove they understand the current topic, usually around 90% on a check, before moving to the next one. Anyone who falls short gets targeted help on the exact gap and is re-tested, instead of being pushed forward with the rest of the group.
   - q: How is mastery learning different from a normal classroom?
@@ -34,7 +34,7 @@ category: AI & LLMs
 date: '2026-06-28'
 order: 9
 icon: "\U0001F393"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Bloom%27s_2_sigma_problem

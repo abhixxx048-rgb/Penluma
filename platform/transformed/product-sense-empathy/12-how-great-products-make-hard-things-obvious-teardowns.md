@@ -36,7 +36,7 @@ faq:
     a: Give users a clear mental model, choose strong defaults so almost nobody configures anything, give instant plain-language feedback after every action, and remove every step and choice you can.
   - q: What is direct manipulation?
     a: Direct manipulation means you see the object you care about, act on it with gestures or labelled buttons rather than typed commands, and watch the effect change instantly and reversibly. Pinch-to-zoom on a phone is a classic example.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

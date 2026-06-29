@@ -36,8 +36,9 @@ faq:
     a: Latency is how long one trip takes (delay). Bandwidth is the maximum capacity of the connection. Buying more bandwidth never shortens a single trip, just like adding highway lanes never makes your own drive faster.
   - q: What does a load balancer do?
     a: A load balancer spreads incoming traffic across many backend servers. This adds capacity (more servers handle more requests) and high availability (it routes around servers that have failed).
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

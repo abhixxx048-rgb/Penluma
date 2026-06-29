@@ -23,8 +23,9 @@ category: Engineering
 date: '2026-06-15'
 order: 1
 icon: "\U0001F3D7️"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - https://en.wikipedia.org/wiki/Little%27s_law
   - https://en.wikipedia.org/wiki/Tail_latency

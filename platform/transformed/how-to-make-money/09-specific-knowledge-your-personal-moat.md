@@ -1,6 +1,6 @@
 ---
 title: "Specific Knowledge: How to Build a Moat No One Can Copy"
-metaTitle: Specific Knowledge: Your Personal Moat
+metaTitle: "Specific Knowledge: Your Personal Moat"
 description: Learn what specific knowledge is, how the wealth equation works, and how to build a personal moat with permissionless leverage that competitors can't copy.
 keywords:
   - specific knowledge
@@ -34,7 +34,7 @@ category: Money & Business
 date: '2026-06-22'
 order: 8
 icon: "\U0001FA99"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

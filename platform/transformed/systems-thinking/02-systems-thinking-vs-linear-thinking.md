@@ -1,6 +1,6 @@
 ---
 title: "Systems Thinking vs Linear Thinking: Why Problems Return"
-metaTitle: "Systems Thinking vs Linear Thinking"
+metaTitle: "Systems Thinking vs Linear Thinking: Why Problems Return"
 description: "Linear thinking finds a cause and fixes it. Systems thinking explains why problems come back. Learn the difference, the Iceberg Model, and when to use each."
 keywords:
   - systems thinking vs linear thinking
@@ -30,8 +30,9 @@ faq:
     a: "It is when small changes in customer demand create wild swings further up a supply chain. Each player over-orders slightly to feel safe, and the ripples grow at every step, even though no single person is at fault."
   - q: "When should I use systems thinking instead of a quick fix?"
     a: "Use it when the parts are genuinely interdependent, when feedback and delays matter, and when a problem keeps returning after you fix it. If a simple rule of thumb gives the right answer fast, stick with linear thinking."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 topic: systems-thinking
 topicTitle: Systems Thinking
 category: Thinking & Decisions

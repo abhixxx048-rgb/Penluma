@@ -50,7 +50,7 @@ faq:
     a: Build guard-rails. Automate your SIPs, write a one-page Investment Policy Statement,
       use index funds, check your portfolio less often, and pre-decide your crash plan while
       you are calm.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

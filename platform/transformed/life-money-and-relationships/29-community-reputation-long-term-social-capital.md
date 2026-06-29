@@ -11,7 +11,7 @@ date: '2026-06-21'
 order: 28
 icon: "\U0001F331"
 transformed: true
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 keywords:
   - social capital
   - how to build a reputation

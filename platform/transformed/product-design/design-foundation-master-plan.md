@@ -32,7 +32,7 @@ faq:
     a: Share one base layer of components and rules across all themes, then let each theme only change token values (colors, fonts), never re-copy the components. That way a fix in the base improves every theme at once.
   - q: What is a CMS block?
     a: A CMS block is a self-contained, reusable section of a page — a hero, a product grid, a testimonial row. Treating every section as a standardized block means it follows the same design rules and can be rearranged without breaking the look.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

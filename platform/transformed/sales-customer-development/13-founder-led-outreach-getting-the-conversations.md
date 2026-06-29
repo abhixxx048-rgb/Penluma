@@ -48,8 +48,9 @@ faq:
     a: At founder scale, send personal one-to-one emails from your normal work
       account, keep them short and specific, and don't blast hundreds at once.
       Turn on SPF, DKIM, and DMARC on your domain once.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

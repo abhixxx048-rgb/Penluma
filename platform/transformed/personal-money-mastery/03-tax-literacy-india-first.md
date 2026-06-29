@@ -28,7 +28,7 @@ faq:
     a: "Not necessarily. Under Section 44ADA, professionals with gross receipts up to ₹50 lakh can declare 50% of receipts as profit and pay tax at slab rates, with no books and no audit required."
   - q: "When do I have to pay advance tax?"
     a: "If your total tax for the year will exceed ₹10,000, you must pay advance tax in installments through the year. Presumptive-scheme filers get a break and can pay it all by 15 March."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: personal-money-mastery
 topicTitle: Personal Money Mastery

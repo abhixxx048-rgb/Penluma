@@ -21,7 +21,7 @@ faq:
   - q: When should you use an LLM instead of regular code?
     a: Use an LLM only for fuzzy, language-shaped tasks like summarizing, classifying free text, or extracting fields from messy documents. If a task has one correct, checkable answer (validation, math, lookups, fixed rules), plain code is cheaper, faster, and reliable.
   - q: What is the difference between an AI workflow and an AI agent?
-    a: A workflow runs LLM steps along paths your code controls in advance. An agent lets the model decide its own steps and tools at runtime. The rule of thumb is simple: if you can describe the steps ahead of time, build a workflow; use an agent only when you genuinely cannot hardcode the path.
+    a: "A workflow runs LLM steps along paths your code controls in advance. An agent lets the model decide its own steps and tools at runtime. The rule of thumb is simple: if you can describe the steps ahead of time, build a workflow; use an agent only when you genuinely cannot hardcode the path."
   - q: Can you eliminate AI hallucinations?
     a: No. Hallucination is a permanent property of how language models work, since they predict likely text rather than store verified facts. Techniques like RAG and lower randomness reduce confident wrongness but never reach zero, so design your product to catch and recover from wrong answers cheaply.
   - q: Why do most AI products fail?
@@ -36,7 +36,7 @@ category: AI & LLMs
 date: '2026-06-21'
 order: 4
 icon: "\U0001F9E0"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

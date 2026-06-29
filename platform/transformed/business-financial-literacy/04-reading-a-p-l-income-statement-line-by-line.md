@@ -23,7 +23,7 @@ keywords:
   - revenue vs profit
   - income statement for beginners
   - reading financial statements
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 faq:
   - q: What is a P&L statement in simple terms?

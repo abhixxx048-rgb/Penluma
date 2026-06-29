@@ -19,14 +19,14 @@ faq:
   - q: Is a single web server with a database a distributed system?
     a: No. One server and one database is just a normal app. It only becomes a distributed system when multiple machines must coordinate over a network and present themselves to users as one thing.
   - q: Why do companies build distributed systems if they are harder?
-    a: For four reasons: to handle more load (scalability), to survive machine failures (fault tolerance), to serve users close to them (low latency), and to store data too big for one machine.
+    a: "For four reasons: to handle more load (scalability), to survive machine failures (fault tolerance), to serve users close to them (low latency), and to store data too big for one machine."
   - q: What is the difference between latency and throughput?
     a: Latency is how long one request takes to finish. Throughput is how many requests the system finishes per second. A system can have great throughput but still feel slow to each user.
   - q: What is the difference between a fault and a failure?
     a: A fault is a broken part, like one dead disk or one dropped message. A failure is when the whole system can no longer do its job for the user. Good design stops faults from becoming failures.
   - q: What is the hardest part of distributed systems?
     a: Uncertainty. When you send a request and get no reply, you cannot tell whether the work was done, is just slow, or failed. Managing that not-knowing is the core challenge.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: distributed-systems
 topicTitle: Distributed Systems

@@ -1,6 +1,6 @@
 ---
 title: "Money, Inflation, and Interest Rates: How the Economy Works"
-metaTitle: "How the Macro Economy Really Works"
+metaTitle: "How the Economy Works: Money, Inflation, Rates"
 description: "Understand money, inflation, GDP, and interest rates in plain language. Learn the macroeconomics ideas that explain every news headline you read."
 keywords:
   - how the economy works
@@ -26,8 +26,9 @@ faq:
     a: "Not necessarily. GDP is like a country's revenue. It can rise while wages stagnate, inequality grows, or unpaid work goes uncounted. It is a scoreboard, not a happiness meter."
   - q: What is the difference between monetary and fiscal policy?
     a: "Monetary policy is the central bank changing interest rates and the money supply. Fiscal policy is the government changing its spending and taxes. One is fast, the other is slow."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 topic: ten-disciplines
 topicTitle: Ten Disciplines
 category: Thinking & Decisions

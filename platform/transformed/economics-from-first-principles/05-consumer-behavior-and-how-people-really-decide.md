@@ -1,6 +1,6 @@
 ---
 title: How People Really Decide What to Buy
-metaTitle: Consumer Behavior: How People Really Decide
+metaTitle: "Consumer Behavior: How People Really Decide"
 description: Why does cheap water cost nothing while diamonds cost a fortune? Consumer behavior explains how people really decide what to buy, and how sellers use it.
 topic: economics-from-first-principles
 topicTitle: Economics from First Principles
@@ -34,7 +34,7 @@ faq:
     a: No. It says people make errors in systematic, predictable patterns rather than at random. That predictability is exactly why these biases can be studied by economists and used by marketers.
   - q: What is price discrimination?
     a: Price discrimination is selling the same product to different buyers at different prices for reasons unrelated to cost. Student discounts, bulk pricing, and matinee tickets are all examples.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

@@ -19,16 +19,16 @@ keywords:
   - English for non-native speakers
 faq:
   - q: When do you use "much" and when do you use "many"?
-    a: Use "many" with things you can count one by one (many bugs, many files) and "much" with stuff you measure (much code, much feedback). Quick test: if you can put a number in front of it, use "many."
+    a: "Use \"many\" with things you can count one by one (many bugs, many files) and \"much\" with stuff you measure (much code, much feedback). Quick test: if you can put a number in front of it, use \"many.\""
   - q: Is it "less" or "fewer"?
-    a: Use "fewer" with countable plural nouns (fewer commits, fewer conflicts) and "less" with uncountable nouns (less downtime, less work). Cheat: if the noun ends in -s, you almost always want "fewer."
+    a: "Use \"fewer\" with countable plural nouns (fewer commits, fewer conflicts) and \"less\" with uncountable nouns (less downtime, less work). Cheat: if the noun ends in -s, you almost always want \"fewer.\""
   - q: Is "feedback" countable or uncountable?
-    a: "Feedback" is uncountable, so it never takes an -s. Say "some feedback" or "a little feedback," never "few feedbacks."
+    a: "\"Feedback\" is uncountable, so it never takes an -s. Say \"some feedback\" or \"a little feedback,\" never \"few feedbacks.\""
   - q: What is the difference between "few" and "a few"?
-    a: "Few" means almost none and sounds like a complaint ("few tests cover this"). "A few" means some, a positive amount ("a few tests cover this"). The same gap exists between "little" and "a little."
+    a: "\"Few\" means almost none and sounds like a complaint (\"few tests cover this\"). \"A few\" means some, a positive amount (\"a few tests cover this\"). The same gap exists between \"little\" and \"a little.\""
   - q: Why do I keep writing "so much mistake"?
     a: Many languages don't mark countable vs uncountable the way English does, so the habit is invisible. "Mistake" is countable, so it needs "many" plus the plural -s — "so many mistakes."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: english
 topicTitle: English for Developers

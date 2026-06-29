@@ -17,7 +17,7 @@ keywords:
   - SaaS metrics
 faq:
   - q: What is unit economics in simple terms?
-    a: Unit economics is the money math of a single sale, order, or customer instead of the big company total. It answers one question: when you make one sale, do you end up with more money than you started with?
+    a: "Unit economics is the money math of a single sale, order, or customer instead of the big company total. It answers one question: when you make one sale, do you end up with more money than you started with?"
   - q: What is the difference between gross margin and contribution margin?
     a: Gross margin only subtracts the direct cost to make the product. Contribution margin subtracts all variable costs, including shipping, payment fees, returns, and marketing. Contribution margin is the honest per-sale number and is always lower than gross margin.
   - q: What is a good LTV to CAC ratio?
@@ -28,7 +28,7 @@ faq:
     a: MoviePass charged about $9.95 a month but paid theaters $12 to $15 per ticket, losing money on every active customer. Growth made things worse, not better, because each new subscriber added to the losses.
   - q: Does growing faster fix bad unit economics?
     a: No. If you lose money on every sale, more sales mean bigger losses. Growth amplifies your unit economics, good or bad, so the math has to work on a single unit first.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: how-to-make-money
 topicTitle: How to Make Money

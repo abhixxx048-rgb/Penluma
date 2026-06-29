@@ -58,8 +58,9 @@ faq:
       It means looking past what a document intends to say to what it
       accidentally reveals. Hammurabi's Code lists penalties, but read against
       the grain it exposes Babylon's whole social hierarchy.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

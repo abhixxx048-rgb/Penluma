@@ -56,7 +56,7 @@ faq:
       The evidence is mixed. Decades of large-scale aid produced little growth,
       so economists now test specific programs with experiments. Some work, some
       do not, and there is no single magic bullet.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Why_Nations_Fail

@@ -9,7 +9,7 @@ date: '2026-06-07'
 order: 999
 icon: ✅
 transformed: true
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 keywords:
   - print platform gap assessment
   - web-to-print software

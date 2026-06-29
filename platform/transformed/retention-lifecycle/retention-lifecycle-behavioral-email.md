@@ -28,8 +28,9 @@ faq:
     a: A win-back email targets customers who have gone quiet, who have not opened, logged in, or purchased in a while. It tries to re-engage them before they drift away for good, and it stops automatically if they come back.
   - q: Should transactional emails be subject to frequency caps?
     a: No. Order confirmations, shipping notices, and payment-failed alerts are expected and important. They should always be exempt from marketing frequency caps so a customer never misses one.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 topic: retention-lifecycle
 topicTitle: Retention & Lifecycle
 category: Business & Growth

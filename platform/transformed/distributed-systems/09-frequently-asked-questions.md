@@ -36,7 +36,7 @@ faq:
     a: "Safety always survives, so you never get conflicting commits. Availability does not: only the side holding a majority keeps making progress, while the minority side pauses writes until the partition heals."
   - q: "If the FLP result proves consensus is impossible, how do real systems work?"
     a: "FLP only rules out a deterministic guarantee of termination in a fully asynchronous network. Real systems add timeouts and randomness, assuming the network is usually timely. They never break safety; they only risk a brief stall in rare conditions."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Raft_(algorithm)

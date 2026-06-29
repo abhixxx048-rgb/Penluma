@@ -56,8 +56,9 @@ faq:
       The partition key decides which partition a message lands on, and Kafka
       only guarantees order within a partition. Keying by entity (like order_id)
       keeps that entity's events in order but risks a hot partition.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - https://en.wikipedia.org/wiki/Apache_Kafka
   - https://en.wikipedia.org/wiki/Message_queue

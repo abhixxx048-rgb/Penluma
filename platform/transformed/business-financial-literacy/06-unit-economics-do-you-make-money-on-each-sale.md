@@ -19,7 +19,7 @@ keywords:
   - startup metrics for founders
 faq:
   - q: What is unit economics in simple terms?
-    a: Unit economics is the money in and money out for one single sale or one customer. It answers a basic question: when you sell one thing to one person, do you make money or lose money?
+    a: "Unit economics is the money in and money out for one single sale or one customer. It answers a basic question: when you sell one thing to one person, do you make money or lose money?"
   - q: What is a good LTV:CAC ratio?
     a: Around 3:1 is the common minimum, and 4:1 to 6:1 is the sweet spot. Surprisingly, much higher than that (like 8:1) often means you are under-spending on growth and leaving profitable customers for competitors.
   - q: How do you calculate customer lifetime value (LTV)?
@@ -36,7 +36,7 @@ category: Money & Business
 date: '2026-06-21'
 order: 5
 icon: "\U0001F4BC"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

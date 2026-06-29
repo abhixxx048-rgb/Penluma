@@ -148,7 +148,7 @@ Subtotal is identical, but **shipping silently jumps $49 → $100** and the tota
 
 ## 🟢 12. "0 roles / 0 stores / 0 users" - NOT an onboarding gap (investigated)
 
-**Trigger:** During tenant testing the admin showed a tenant (Brexis Wazik, `a1bb81a2`) with **0 roles**, **0 stores**, and **0 users** - looked like onboarding failed to seed.
+**Trigger:** During tenant testing the admin showed a tenant (Pritesh Yadav (priteshyadav444), `a1bb81a2`) with **0 roles**, **0 stores**, and **0 users** - looked like onboarding failed to seed.
 
 **Reality - the data is all there and loads fine:**
 - DB for this tenant: **7 roles** (admin/designer/sales-rep/project-manager/manager/prepress-manager/production-manager), **2 active stores** (Printdesign + B2B store; 7 more are soft-deleted), **1 user** (the owner-admin). Dashboard invoice/quote numbers (7 invoices / 4 quotes) matched this tenant exactly.
@@ -166,7 +166,7 @@ Subtotal is identical, but **shipping silently jumps $49 → $100** and the tota
 **Where:** Admin → Orders (`nuxt/app/components/order/List.vue` customer block, lines 235–254).
 **Detail:** All 28 orders for the test tenant render **"Deleted customer / - / - / -"**. The 2 customers behind those orders were soft-deleted (2026-05-31), so the live `customer` relation is null and the UI falls back to "Deleted customer". *Technically* the null-guard is working - **but** every order also carries a populated `customer_snapshot` captured at order time:
 ```json
-{"id":6,"uuid":"…","name":"Brexis Wazik","email":"abhixxx048@gmail.com","phone":"1231231231","company_name":"Company Name"}
+{"id":6,"uuid":"…","name":"Pritesh Yadav (priteshyadav444)","email":"abhixxx048@gmail.com","phone":"1231231231","company_name":"Company Name"}
 ```
 The order list (and the order resource) **ignore the snapshot entirely** - `customer_snapshot` is not exposed by any API Resource and not referenced anywhere in `nuxt/app`. So a print shop that removes a customer instantly loses the name, email, and phone on **every past order** from them, even though the data was deliberately snapshotted to prevent exactly that.
 

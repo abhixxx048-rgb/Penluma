@@ -28,7 +28,7 @@ faq:
     a: It's your inability to predict how a future intense state will hijack your behavior. When calm, you can't simulate hunger, anger, or craving, so you make plans your future self can't keep. It's a forecasting failure, not weak willpower.
   - q: Is hiding my emotions a good way to stay rational?
     a: No. Suppressing feelings hides them on the outside while they keep churning inside, hurting memory and raising stress. Reappraising, or reinterpreting the situation before the emotion peaks, works far better.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 topic: psychology-of-decisions
 topicTitle: Psychology of Decisions
 category: Thinking & Decisions

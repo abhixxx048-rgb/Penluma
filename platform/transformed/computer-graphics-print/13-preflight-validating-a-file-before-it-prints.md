@@ -44,7 +44,7 @@ faq:
     a: Many, yes. It can convert RGB to CMYK, downsample heavy images, flatten transparency,
       add bleed, embed fonts, and reduce ink. But low-resolution images and stray spot colors
       still need a human to decide.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: computer-graphics-print
 topicTitle: Computer Graphics for Print

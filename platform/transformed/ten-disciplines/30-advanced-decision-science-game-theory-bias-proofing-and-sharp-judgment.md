@@ -38,14 +38,15 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 29
 icon: "\U0001F9ED"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 
-Picture two rival coffee shops on the same street. Both would earn more by keeping prices normal, yet both slash prices anyway and end up worse off. Neither is stupid. They are trapped by logic. Welcome to the part of decision-making where your smartest move depends on what someone else does, where your own brain quietly sabotages you, and where the only way to win is to build a process that is smarter than you are.
+Picture two rival coffee shops on the same street. Both would earn more by keeping prices normal, yet both slash prices anyway and end up worse off. Neither owner is stupid. They are trapped by logic. This is the part of decision-making where your smartest move depends on what someone else does, where your own brain quietly sabotages you, and where the only way to win is to build a process that is smarter than you are.
 
-You may already know that a good decision is not the same as a good outcome. This article picks up there and pushes into the deep end: deciding well when other people are deciding too, when your mind works against you, and when you have to judge your own judgment over a lifetime.
+You may already know that a good decision is not the same as a good outcome. Here we pick up there and push into the deep end: deciding well when other people are deciding too, when your mind works against you, and when you have to judge your own judgment over a lifetime.
 
 ## Why this matters
 

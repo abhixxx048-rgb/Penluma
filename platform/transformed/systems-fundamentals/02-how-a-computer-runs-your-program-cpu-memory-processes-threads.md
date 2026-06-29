@@ -2,9 +2,8 @@
 title: 'How a Computer Actually Runs Your Code: CPU, Memory & Threads'
 metaTitle: 'How a Computer Runs Your Code'
 description: >-
-  See how a computer runs your program from source code to CPU, memory, and
-  threads. Learn the fundamentals that turn guesswork about performance into real
-  understanding.
+  See how a computer runs your program, from source code to CPU, memory, and
+  threads, and turn performance guesswork into real, confident understanding.
 keywords:
   - how a computer runs a program
   - CPU fetch decode execute
@@ -50,8 +49,9 @@ category: Engineering
 date: '2026-06-21'
 order: 1
 icon: ⚙️
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

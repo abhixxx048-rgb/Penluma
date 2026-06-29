@@ -43,7 +43,7 @@ faq:
       Recall questions are cheap to generate and grade, but they only prove a
       learner can recognize facts. They create an illusion of fluency that
       collapses the moment a problem asks the learner to apply anything.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: ai-learning-platform
 topicTitle: AI Learning Platform

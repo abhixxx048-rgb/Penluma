@@ -21,7 +21,7 @@ keywords:
   - prompt injection
   - LLM memory
   - contextual retrieval
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 faq:
   - q: What is context engineering?

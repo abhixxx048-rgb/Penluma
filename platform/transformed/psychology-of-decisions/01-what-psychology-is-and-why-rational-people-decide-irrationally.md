@@ -10,7 +10,7 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 0
 icon: "\U0001F3AF"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 keywords:
   - why people make irrational decisions

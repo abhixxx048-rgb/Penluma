@@ -25,9 +25,7 @@ keywords:
   - 1:1 sales demo
 faq:
   - q: What does "show, don't tell" mean in marketing?
-    a: It means letting buyers see your product actually work instead of describing
-      it in feature lists or sales pitches. For visual, hands-on products it answers
-      the buyer's real question faster than any words can: "Can I actually use this?"
+    a: "It means letting buyers see your product actually work instead of describing it in feature lists or sales pitches. For visual, hands-on products it answers the buyer's real question faster than any words can: \"Can I actually use this?\""
   - q: What is an interactive demo?
     a: An interactive demo is a clickable, guided copy of your real product embedded
       on your website. Visitors click through a real flow with tooltips guiding them,
@@ -48,7 +46,7 @@ faq:
     a: Reserve 1:1 demos for people who already attended a workshop or tried your
       self-serve demo and clicked "talk to us." Make it a "let's set up your account"
       session, not a generic product tour.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

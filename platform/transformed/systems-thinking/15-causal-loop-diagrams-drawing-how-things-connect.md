@@ -1,5 +1,5 @@
 ---
-title: 'Causal Loop Diagrams: A Simple Way to See Feedback'
+title: 'Causal Loop Diagrams: Draw How Things Really Connect'
 metaTitle: 'Causal Loop Diagrams: Map How Things Connect'
 description: >-
   Causal loop diagrams turn tangled cause-and-effect into a clear picture. Learn
@@ -51,8 +51,9 @@ faq:
       No. A CLD is qualitative. It shows the direction and shape of
       relationships but never the speed or size. For timing and real numbers you
       move on to a stock-and-flow diagram and simulation.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - https://en.wikipedia.org/wiki/Causal_loop_diagram
   - https://en.wikipedia.org/wiki/Thinking_in_Systems

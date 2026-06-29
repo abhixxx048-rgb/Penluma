@@ -1,7 +1,7 @@
 ---
 title: "Replication and Sharding: How Big Sites Never Go Down"
 metaTitle: "Replication & Partitioning Explained"
-description: "Learn how replication keeps copies of your data alive and how partitioning (sharding) splits huge datasets across machines, plus the failure modes that bite at 3 a.m."
+description: "Learn how replication keeps copies of your data alive and how partitioning (sharding) splits huge datasets across machines, plus the failures that bite at 3am."
 keywords:
   - replication
   - database partitioning
@@ -36,8 +36,9 @@ faq:
     a: "When one key gets far more traffic than the rest (a viral product, a celebrity account), even perfect sharding cannot help, because a single key lives on a single shard. You fix it by splitting that key across many sub-keys or caching it separately."
   - q: "Is last-write-wins safe for resolving conflicts?"
     a: "Often not. It relies on synchronized clocks, and clock skew across machines is commonly 10 to 100 milliseconds, so a 'later' timestamp can belong to an earlier write. It silently drops the loser. Use it only for fields where losing a write is acceptable."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - https://en.wikipedia.org/wiki/Consistent_hashing
   - https://en.wikipedia.org/wiki/Dynamo_(storage_system)

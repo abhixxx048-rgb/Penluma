@@ -26,7 +26,7 @@ faq:
     a: "Because a blank screen is ambiguous. The user can't tell if there's genuinely no data or if the request failed. For anything involving money or production, that ambiguity is dangerous—always say which it is and offer a one-click retry."
   - q: "How do I make technical labels readable for everyday users?"
     a: "Build one shared map from internal codes to plain words and reuse it everywhere. 'ecommerce' becomes 'Physical Product,' 'void' becomes 'Cancelled,' 'Critical' becomes 'Urgent.' Consistency across every screen is what makes it feel finished."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: feature-rd
 topicTitle: Feature R&D

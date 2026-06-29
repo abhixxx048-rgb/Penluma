@@ -49,7 +49,7 @@ faq:
       Yes. Idea-generation and clear expression are skills, like cooking or
       driving. The brain rewires with focused, repeated practice, so your
       weakest skill today is your most improvable one.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

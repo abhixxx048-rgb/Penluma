@@ -32,8 +32,9 @@ category: Money & Business
 date: '2026-06-21'
 order: 5
 icon: "\U0001F91D"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - "https://en.wikipedia.org/wiki/Active_listening"
   - "https://en.wikipedia.org/wiki/Never_Split_the_Difference"

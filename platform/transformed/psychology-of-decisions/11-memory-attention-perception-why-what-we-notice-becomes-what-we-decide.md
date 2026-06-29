@@ -54,7 +54,7 @@ faq:
       Design the ending well, build one genuine high point, and avoid
       manipulative tricks like fake "original" prices. End on a warm, clear note
       and that is what people will remember.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

@@ -30,7 +30,7 @@ faq:
     a: An idempotency key is a unique token a client attaches to a request so the server can recognize retries. The server stores the result against that key and returns the same answer on replay, which prevents network retries from charging a customer twice.
   - q: Do I need to memorize latency numbers for system design interviews?
     a: A small handful helps a lot — memory is about 100 nanoseconds, an SSD read is tens of microseconds, a same-datacenter round trip is about half a millisecond, and a cross-continent trip is 80 to 150 milliseconds. These let you justify caching, sharding, and replication with real math.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: system-design
 topicTitle: System Design
@@ -39,6 +39,7 @@ date: '2026-06-15'
 order: 20
 icon: "\U0001F3D7️"
 sources: []
+polished: true
 ---
 
 Most people don't fail the system design interview because they don't know enough. They fail because they panic, blurt out "I'll use Kafka," and then spend forty minutes explaining a system nobody agreed they were building.

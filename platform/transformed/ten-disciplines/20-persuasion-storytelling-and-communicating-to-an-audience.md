@@ -42,7 +42,7 @@ faq:
       Honesty. Persuasion surfaces reasons to say yes that are real. Manipulation
       invents fake scarcity, fake reviews, or borrowed authority. The trick may
       win one sale, but trust collapses the moment the lie is found.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 topic: ten-disciplines
 topicTitle: Ten Disciplines
 category: Thinking & Decisions
@@ -50,6 +50,7 @@ date: '2026-06-22'
 order: 19
 icon: "\U0001F9ED"
 transformed: true
+polished: true
 sources: []
 ---
 

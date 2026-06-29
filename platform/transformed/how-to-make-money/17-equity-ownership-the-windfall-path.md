@@ -28,7 +28,7 @@ faq:
     a: "ESOPs are taxed twice. First at exercise as a salary perquisite (roughly 31 to 43 percent), even though the shares may be unsellable. Then at sale as capital gains, with unlisted shares held over 24 months taxed at 12.5 percent."
   - q: "Why should I ask for my fully-diluted percentage?"
     a: "A raw share count like 5,000 shares is meaningless without the total. Your fully-diluted percentage counts every share, option, and convertible, so it tells you what slice of the company you truly own."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: how-to-make-money
 topicTitle: How to Make Money

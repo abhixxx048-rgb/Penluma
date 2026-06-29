@@ -1,7 +1,7 @@
 ---
 title: "Cloud Security: Why 99% of Breaches Are Your Fault"
-metaTitle: "Cloud & Infrastructure Security Basics"
-description: "Most cloud breaches aren't broken encryption — they're misconfigs, leaked keys, and poisoned dependencies. Here's how cloud security actually fails, and how to fix it."
+metaTitle: "Cloud Security: 99% of Breaches Are Your Fault"
+description: "Most cloud breaches aren't broken encryption — they're misconfigs, leaked keys, and poisoned dependencies. Here's how cloud security fails, and how to fix it."
 keywords:
   - cloud security
   - infrastructure security
@@ -30,7 +30,7 @@ faq:
     a: "An SBOM (Software Bill of Materials) is a full ingredient list of every dependency, version, and checksum in your software. It lets you instantly answer 'are we affected?' when a new vulnerability or backdoor is discovered in a library you use."
   - q: "How should I decide which security patches to apply first?"
     a: "Prioritize by real-world risk, not just severity. Patch anything in CISA's Known Exploited Vulnerabilities (KEV) catalog first — those are being attacked right now — then use CVSS and EPSS scores to rank the rest."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 topic: security-privacy-engineering
 topicTitle: Security & Privacy Engineering
 category: Engineering
@@ -38,6 +38,7 @@ date: '2026-06-21'
 order: 5
 icon: "\U0001F512"
 transformed: true
+polished: true
 sources: []
 ---
 

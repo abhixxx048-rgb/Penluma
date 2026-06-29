@@ -17,7 +17,7 @@ keywords:
   - last write wins clock drift
 faq:
   - q: Why are distributed systems so much harder than single-machine programs?
-    a: Because three guarantees you rely on quietly disappear: shared memory, a shared clock, and shared fate. Parts can fail independently while the rest keeps running, and a crashed machine looks identical to a slow one.
+    a: "Because three guarantees you rely on quietly disappear: shared memory, a shared clock, and shared fate. Parts can fail independently while the rest keeps running, and a crashed machine looks identical to a slow one."
   - q: What is partial failure in distributed systems?
     a: It is when some parts of a system fail while others keep running, unaware. On one computer a crash stops everything together. Across machines, one node can die while the rest carry on, and you often cannot tell whether your request succeeded.
   - q: What is an idempotency key and why does it matter?
@@ -34,7 +34,7 @@ category: Engineering
 date: '2026-06-21'
 order: 12
 icon: "\U0001F310"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

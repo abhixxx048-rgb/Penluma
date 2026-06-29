@@ -25,8 +25,9 @@ category: Money & Business
 date: '2026-06-21'
 order: 2
 icon: "\U0001F91D"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 faq:
   - q: What does "get out of the building" mean?
     a: >-

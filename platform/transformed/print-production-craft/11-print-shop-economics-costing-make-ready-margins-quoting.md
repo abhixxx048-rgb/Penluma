@@ -23,7 +23,7 @@ faq:
   - q: When is offset cheaper than digital printing?
     a: Offset wins once the run is big enough for its cheap per-copy cost to overcome its high setup cost. For standard color work the break-even is often around 3,000 to 5,000 pieces, but you should calculate it from real setup and click costs.
   - q: What is make-ready in printing?
-    a: Make-ready is all the one-time work to prepare a press for a specific job before any sellable copies print: mounting plates, registering color, balancing ink, and running test sheets. It is a fixed per-job cost.
+    a: "Make-ready is all the one-time work to prepare a press for a specific job before any sellable copies print: mounting plates, registering color, balancing ink, and running test sheets. It is a fixed per-job cost."
   - q: Why do print shops charge for more pieces than I ordered?
     a: Some sheets are always ruined during setup and the run, so shops buy and bill extra material to guarantee your full count. Sheet-fed jobs average around 7.5% running waste plus make-ready spoilage.
   - q: What is a Budgeted Hourly Rate?
@@ -34,7 +34,7 @@ category: Engineering
 date: '2026-06-21'
 order: 10
 icon: "\U0001F4D0"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

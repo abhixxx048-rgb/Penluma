@@ -49,7 +49,7 @@ faq:
       Use chunking, sensible grouping, and progressive disclosure. Bundle items
       into meaningful units, group related controls together, and hide advanced
       options behind an "Advanced" link so beginners are not overwhelmed.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Cognitive_load

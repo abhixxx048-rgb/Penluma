@@ -32,7 +32,7 @@ category: Business & Growth
 order: 999
 icon: "\U0001F9EA"
 date: '2026-06-02'
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

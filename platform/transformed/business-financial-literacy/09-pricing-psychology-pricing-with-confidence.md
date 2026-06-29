@@ -28,7 +28,7 @@ faq:
     a: Use charm prices ending in 9 (like $49 or $9.99) for consumer, e-commerce, and volume products. Use clean round numbers ($50, $2,000) for premium, luxury, and high-trust B2B offers, where a "9" can read as discount-bin.
   - q: How should I say my price on a sales call?
     a: State it plainly and then stop talking. Anchor it to the value the buyer gets, never apologize, and resist filling the silence with a discount nobody asked for.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: business-financial-literacy
 topicTitle: Business & Financial Literacy

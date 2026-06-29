@@ -34,7 +34,7 @@ faq:
     a: Golden handcuffs are pay structures like unvested stock or deferred bonuses where quitting forfeits a lot of value. They keep you tied to a job even after it stops being right for you.
   - q: What is the most important thing I keep when I leave a job?
     a: Your reputation and your network. Unlike salary or unvested equity, those are portable, they compound over time, and no resignation can take them back.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

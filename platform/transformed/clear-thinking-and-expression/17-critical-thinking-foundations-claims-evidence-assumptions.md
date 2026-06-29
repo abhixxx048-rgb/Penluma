@@ -29,14 +29,14 @@ faq:
   - q: What does "strong opinions, loosely held" mean?
     a: It means forming a clear view so you have something to test, while staying willing to drop it the moment the facts turn against it. You commit to a position and to changing your mind, both at once.
   - q: How can I practice critical thinking every day?
-    a: Pick any article, ad, or post and answer four questions about it: What is claimed? What is the evidence? What is assumed? What could make this wrong? Five minutes a day builds the habit fast.
+    a: "Pick any article, ad, or post and answer four questions about it: What is claimed? What is the evidence? What is assumed? What could make this wrong? Five minutes a day builds the habit fast."
 topic: clear-thinking-and-expression
 topicTitle: Clear Thinking & Expression
 category: Thinking & Decisions
 date: '2026-06-22'
 order: 16
 icon: ✍️
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

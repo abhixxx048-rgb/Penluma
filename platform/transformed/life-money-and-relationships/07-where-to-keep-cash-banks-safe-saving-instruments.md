@@ -56,7 +56,7 @@ faq:
       Interest is added to your income and taxed at your slab rate. In the 30%
       bracket, an 8% FD nets only about 5.6% after tax. Banks also deduct TDS once
       your FD interest from that bank crosses the annual threshold.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

@@ -28,7 +28,7 @@ faq:
     a: It is the idea that at any moment a system has exactly one bottleneck, and total output only improves when you fix that bottleneck. Improving anything else just raises local efficiency while the whole system stays stuck.
   - q: Why do economic policies like interest rate hikes take so long to work?
     a: Economic systems are full of delays. Spending plans, contracts, and prices set months ago keep flowing, so a rate hike can take roughly two years to fully show up in inflation, which causes policymakers to over- or under-correct.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 topic: systems-thinking
 topicTitle: Systems Thinking
 category: Thinking & Decisions
@@ -36,6 +36,7 @@ date: '2026-06-22'
 order: 17
 icon: "\U0001F504"
 transformed: true
+polished: true
 sources: []
 ---
 

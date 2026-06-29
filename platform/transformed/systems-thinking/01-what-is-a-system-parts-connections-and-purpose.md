@@ -50,8 +50,9 @@ faq:
       Watch its behavior over time, not its stated goals. Where does the money go,
       who gets promoted, and what happens under pressure? As Donella Meadows put
       it, purposes are deduced from behavior, not from rhetoric.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - https://en.wikipedia.org/wiki/Thinking_In_Systems:_A_Primer
 ---

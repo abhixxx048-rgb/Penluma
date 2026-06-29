@@ -28,7 +28,7 @@ faq:
     a: "Networks drop and retry messages, so the same request can arrive twice. An idempotent operation has the same effect whether it runs once or ten times, which prevents bugs like double charging a customer."
   - q: "What is the difference between linearizability and serializability?"
     a: "Linearizability is about a single object always being current in real time. Serializability is about multi-step transactions appearing to run one at a time. They are different guarantees and often confused."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: distributed-systems
 topicTitle: Distributed Systems

@@ -46,7 +46,7 @@ faq:
       Jakob's Law says users spend most of their time on other apps, so they
       expect yours to work the same way. Reusing familiar conventions lets people
       reuse a mental model they already own.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: product-sense-empathy
 topicTitle: Product Sense & Empathy

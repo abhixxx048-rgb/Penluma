@@ -53,7 +53,7 @@ faq:
       so the agent resumes from the failure point instead of the start. Wrap
       non-deterministic LLM calls as journaled steps so they are never re-run on
       replay.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://www.anthropic.com/engineering/built-multi-agent-research-system

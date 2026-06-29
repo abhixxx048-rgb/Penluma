@@ -34,7 +34,7 @@ faq:
     a: A smart default is the value already filled in that matches what about 90% of users actually want, so the common case needs zero configuration. It should always be reversible and chosen to serve the user, not you.
   - q: How fast does feedback need to be in an interface?
     a: Aim for under about 400 milliseconds, the Doherty Threshold, where a response feels instant. When you can't be that fast, show a skeleton or spinner so the screen never looks blank, since a blank screen reads as broken.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things

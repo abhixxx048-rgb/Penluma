@@ -30,7 +30,7 @@ faq:
     a: "A good niche is specific enough that you can win it, painful enough that buyers will pay to escape the problem, and connected enough that customers talk to each other and spread the word."
   - q: "Who are the main thinkers behind these ideas?"
     a: "Category design comes from the book Play Bigger. The niche-ownership counterview comes from April Dunford (Obviously Awesome), Louis Grenier, and Aaron Ross and Jason Lemkin (From Impossible to Inevitable). The narrative tools draw on Andy Raskin's work on strategic storytelling."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: marketing
 topicTitle: Marketing

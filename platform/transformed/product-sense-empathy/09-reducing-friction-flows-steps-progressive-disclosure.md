@@ -50,7 +50,7 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 8
 icon: ❤️
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

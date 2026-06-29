@@ -60,7 +60,7 @@ faq:
       ugly wavy pattern called moire. Rotating each color to a different angle
       (cyan 15, magenta 75, yellow 0, black 45) turns that clash into a tidy,
       intended pattern called a rosette.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Halftone

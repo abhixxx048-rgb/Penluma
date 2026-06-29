@@ -23,7 +23,7 @@ keywords:
   - concise writing tips
 faq:
   - q: Why is editing my own writing so hard?
-    a: Because you are usually trying to invent ideas and polish words at the same time, which overloads your working memory. Split the work: draft messily first, then edit in separate passes.
+    a: "Because you are usually trying to invent ideas and polish words at the same time, which overloads your working memory. Split the work: draft messily first, then edit in separate passes."
   - q: What does "omit needless words" actually mean?
     a: It means cutting any word that does not change the meaning if you remove it. Most first drafts are 20 to 40 percent padding, so editing is mostly deletion, not addition.
   - q: What is the Paramedic Method?
@@ -34,7 +34,7 @@ faq:
     a: A good target is at least 30 percent. Many bloated paragraphs shrink by half or more once you remove hedges, repeats, and flabby phrases.
   - q: What is the "stranger test"?
     a: You imagine someone who knows nothing about your topic and ask whether they would understand your writing on the first read, without asking a question. If not, you add the missing piece.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/The_Elements_of_Style

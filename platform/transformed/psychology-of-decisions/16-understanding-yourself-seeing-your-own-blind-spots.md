@@ -26,7 +26,7 @@ faq:
     a: Mostly no. Knowing the name of a bias does not switch it off, because there is nothing for willpower to grab. The reliable fix is building processes outside your own head, like a decision journal or a pre-mortem.
   - q: What is the easiest way to start reducing my bias?
     a: Keep a decision journal. When you make an important call, write down what you expect to happen and why, with the date. It is cheap, takes two minutes, and the paper remembers what you actually thought.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: psychology-of-decisions
 topicTitle: Psychology of Decisions

@@ -38,8 +38,9 @@ faq:
     a: Producing something at a lower opportunity cost than someone else. Even if one person or country is better at everything, both still gain by specialising in what they give up the least to make, then trading.
   - q: Do price controls like rent caps help with shortages?
     a: Usually not. A price cap does not make a thing less scarce; it silences the signal. Rent held below equilibrium leads to fewer apartments, queues, and decay rather than affordability.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - https://en.wikipedia.org/wiki/Opportunity_cost
   - https://en.wikipedia.org/wiki/Comparative_advantage

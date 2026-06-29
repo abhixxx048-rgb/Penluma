@@ -21,8 +21,9 @@ category: Engineering
 date: '2026-06-15'
 order: 2
 icon: "\U0001F3D7️"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 faq:
   - q: "Why does my website feel slow even though my server is fast?"
     a: "Most of the delay happens before your server does any work. Opening a fresh encrypted connection takes several network round-trips for DNS, TCP, and TLS. On a long-distance link each round-trip can cost 80ms or more, so a cold visit can lose hundreds of milliseconds to handshakes alone."

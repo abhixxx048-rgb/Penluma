@@ -1,7 +1,7 @@
 ---
 title: "Selling for Founders Who Hate Selling: A Calm Start"
 metaTitle: "Sales for Technical Founders: Where to Start"
-description: "If the word sales makes you cringe, you are not broken. Learn the calm, honest way technical founders sell, and how to talk to customers without fooling yourself."
+description: "If the word sales makes you cringe, you are not broken. Learn the calm, honest way technical founders sell and talk to customers without fooling yourself."
 keywords:
   - sales for technical founders
   - how to sell as a founder
@@ -34,8 +34,9 @@ category: Money & Business
 date: '2026-06-21'
 order: 0
 icon: "\U0001F91D"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

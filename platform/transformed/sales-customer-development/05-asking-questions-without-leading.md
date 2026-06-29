@@ -1,7 +1,7 @@
 ---
 title: "How to Ask Sales Questions Without Leading the Answer"
 metaTitle: "Asking Sales Questions Without Leading"
-description: "Leading questions get you a fake yes and the wrong product. Learn how to ask neutral sales questions that surface the truth you can actually build a business on."
+description: "Leading questions get you a fake yes and the wrong product. Learn how to ask sales questions without leading, so you surface truth you can build on."
 keywords:
   - asking questions without leading
   - leading questions in sales
@@ -26,8 +26,9 @@ faq:
     a: "Don't ask what they 'would' pay, which is a fantasy. Ask what they already spend on the problem today in tools, time, or workarounds. Spending is fact; willingness is fiction."
   - q: "Why does silence work in a sales conversation?"
     a: "After a real question, a few seconds of silence feels painful to you but is just thinking time to them. Most people will fill the pause with the deeper, truer answer they were holding back."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 topic: sales-customer-development
 topicTitle: Sales & Customer Development
 category: Money & Business

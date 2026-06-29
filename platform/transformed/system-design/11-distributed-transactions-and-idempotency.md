@@ -2,9 +2,8 @@
 title: 'Distributed Transactions: Sagas, Outbox & Idempotency Explained'
 metaTitle: 'Distributed Transactions & Idempotency'
 description: >-
-  Why a database transaction breaks the moment it crosses two services, and how
-  sagas, the transactional outbox, and idempotency keys keep distributed systems
-  correct.
+  Distributed transactions break the moment data crosses two services. See how
+  sagas, the transactional outbox, and idempotency keys keep systems correct.
 topic: system-design
 topicTitle: System Design
 category: Engineering
@@ -56,8 +55,9 @@ faq:
       You write your business row and an event row in the same local database
       transaction, then a separate relay ships the event to your message broker.
       This avoids the dual-write problem and guarantees at-least-once delivery.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

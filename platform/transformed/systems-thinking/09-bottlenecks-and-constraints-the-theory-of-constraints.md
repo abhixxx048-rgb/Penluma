@@ -36,8 +36,9 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 8
 icon: "\U0001F504"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - https://en.wikipedia.org/wiki/Theory_of_constraints
   - https://en.wikipedia.org/wiki/The_Goal_(novel)

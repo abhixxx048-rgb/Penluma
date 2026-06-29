@@ -43,7 +43,7 @@ faq:
       It means leading with thoughtful written messages instead of defaulting to
       live video calls. A clear message respects everyone's time zone and energy,
       and you reserve live calls only for moments that truly need them.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: life-money-and-relationships
 topicTitle: 'Life, Money & Relationships'

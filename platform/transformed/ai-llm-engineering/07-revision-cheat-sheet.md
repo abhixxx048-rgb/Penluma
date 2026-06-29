@@ -22,7 +22,7 @@ category: AI & LLMs
 date: '2026-06-21'
 order: 6
 icon: "\U0001F9E0"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 faq:
   - q: What is the difference between model eval and product eval?

@@ -25,8 +25,9 @@ keywords:
   - privacy enhancing technologies
   - data subject rights
   - GDPR lawful basis
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 faq:
   - q: What is the difference between security and privacy?
     a: Security keeps out people who should not have your data, like attackers. Privacy governs what the people who are allowed to touch the data may actually do with it. You can have perfect security and still fail at privacy.

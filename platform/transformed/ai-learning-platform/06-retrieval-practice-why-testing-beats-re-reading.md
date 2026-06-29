@@ -55,7 +55,7 @@ faq:
       You explain an idea simply, as if teaching it to a younger student,
       entirely from memory. It is one of the most demanding forms of retrieval
       and instantly reveals exactly where your understanding is thin.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

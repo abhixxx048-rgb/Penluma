@@ -1,6 +1,6 @@
 ---
 title: The UX Cheat Sheet to Read Before You Ship Any Screen
-metaTitle: UX Cheat Sheet: Check Before You Ship
+metaTitle: "UX Cheat Sheet: Check Before You Ship"
 description: A fast, scannable UX cheat sheet of the laws, heuristics, and checks to run before you ship any screen — so users find it, read it, and know it worked.
 keywords:
   - UX cheat sheet
@@ -32,7 +32,7 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 17
 icon: ❤️
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

@@ -51,7 +51,7 @@ faq:
       Before you need it. The worst time to start helping people is the week you
       are job-hunting or fundraising, because every message screams "I need
       something." Generosity offered when you want nothing lands far better.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: life-money-and-relationships
 topicTitle: 'Life, Money & Relationships'

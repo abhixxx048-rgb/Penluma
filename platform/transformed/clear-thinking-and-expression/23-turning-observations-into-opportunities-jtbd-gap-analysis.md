@@ -23,7 +23,7 @@ faq:
   - q: What is gap analysis?
     a: Gap analysis means naming the current state ("how it is now") and the desired state ("how it could be"). The space between them is the gap, and the opportunity lives inside that gap.
   - q: How do I know if an opportunity is worth pursuing?
-    a: Run it through four questions: What is the problem? Who exactly has it? How big is it (how many people, how painful, how often)? And why now (what recently changed)? If you can't answer one, that's your next research step.
+    a: "Run it through four questions: What is the problem? Who exactly has it? How big is it (how many people, how painful, how often)? And why now (what recently changed)? If you can't answer one, that's your next research step."
   - q: What is the milkshake study in JTBD?
     a: It's a famous example where researchers found commuters bought milkshakes in the morning to stay occupied and full during a boring drive. The job wasn't "taste good," it was "keep me busy and full on the road," which a milkshake did better than a banana or bagel.
 topic: clear-thinking-and-expression
@@ -32,7 +32,7 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 22
 icon: ✍️
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

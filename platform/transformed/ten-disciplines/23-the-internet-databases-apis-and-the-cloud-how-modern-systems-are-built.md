@@ -21,7 +21,7 @@ faq:
   - q: What is the difference between a client and a server?
     a: The client is the device in front of you that requests things, like your phone or browser. The server is an always-on computer elsewhere that does the heavy work, stores the data, and sends answers back.
   - q: What is an API in simple terms?
-    a: An API is an agreed-upon way for one program to ask another program for data or services. Think of it as a menu: it lists the exact requests you are allowed to make and what you will get back.
+    a: "An API is an agreed-upon way for one program to ask another program for data or services. Think of it as a menu: it lists the exact requests you are allowed to make and what you will get back."
   - q: What is the difference between SQL and NoSQL databases?
     a: SQL databases store data in strict, linked tables of rows and columns and are great when relationships matter. NoSQL databases use flexible documents or key-value pairs and suit data that changes shape often.
   - q: Is the cloud just someone else's computer?
@@ -34,14 +34,15 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 22
 icon: "\U0001F9ED"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 
 Press Enter on a web address and, in less than a second, your tap travels thousands of kilometers, gets translated from a name into a number, is chopped into postcards, reassembled by a stranger's computer, checked against a database, maybe routed through three other companies, and painted back onto your screen.
 
-You do this hundreds of times a day without a thought. This article pulls back the curtain on that journey.
+You do this hundreds of times a day without a thought. Let's slow that journey down and watch every step.
 
 By the end, you will be able to trace exactly what happens behind any app you use, and you will understand the words engineers throw around (server, API, JSON, SQL, container, SaaS) well enough to follow any technical conversation.
 

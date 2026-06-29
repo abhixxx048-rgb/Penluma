@@ -26,7 +26,7 @@ faq:
     a: "Yes. An accountant records what already happened and goes home if the money runs out. You make the forward decisions and carry the consequences, so you must be able to read your own numbers."
   - q: "What are vanity metrics?"
     a: "Vanity metrics are numbers that look impressive but do not tell you if the business works — like total revenue, signups, or followers. Real metrics, like profit per sale and retained customers, actually change a decision."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: business-financial-literacy
 topicTitle: Business & Financial Literacy

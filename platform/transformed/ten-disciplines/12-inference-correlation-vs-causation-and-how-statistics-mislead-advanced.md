@@ -27,7 +27,7 @@ faq:
   - q: What is the difference between correlation and causation?
     a: Correlation means two things move together. Causation means one actually makes the other happen. Correlation can be caused by coincidence or a hidden third factor, so it never proves cause on its own.
   - q: Does a 95% confidence interval mean there's a 95% chance the true value is inside it?
-    a: No. The true value is fixed and is either in the range or not. The 95% describes the method: if you repeated the study many times, about 95% of the intervals you built would capture the truth.
+    a: "No. The true value is fixed and is either in the range or not. The 95% describes the method: if you repeated the study many times, about 95% of the intervals you built would capture the truth."
   - q: What does a p-value actually tell you?
     a: A p-value is the probability of seeing data at least this extreme if there were truly no effect. It is not the chance your hypothesis is true, and it says nothing about how big or important the effect is.
   - q: What is a confounding variable?
@@ -36,8 +36,9 @@ faq:
     a: The gold standard is a randomized controlled trial, where you randomly assign who gets the treatment. Randomization makes the groups alike in every way except the treatment, so any difference in outcome points to a real cause.
   - q: What is statistical significance versus practical significance?
     a: Statistical significance means an effect is unlikely to be pure luck. Practical significance asks whether the effect is big enough to matter. With huge samples, trivial effects can be highly significant yet useless.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation
   - https://en.wikipedia.org/wiki/Simpson%27s_paradox
@@ -49,7 +50,7 @@ Ice cream sales and drownings rise together every summer. The link is real and s
 
 That gap, between "these two things move together" and "one causes the other," is where most bad decisions are born. It fools shoppers, voters, executives, and even the experts who produce the statistics in the first place.
 
-This article hands you the small set of questions that separate real signal from convincing noise. Learn them and you will never read a headline, a study, or a dashboard the same way again.
+Here is the small set of questions that separate real signal from convincing noise. Learn them and you will never read a headline, a study, or a dashboard the same way again.
 
 ## Why this matters
 

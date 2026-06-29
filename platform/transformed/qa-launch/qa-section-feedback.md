@@ -34,7 +34,7 @@ faq:
     a: No. A stack trace like "SQLSTATE General error" means nothing to a shop owner. Map errors to plain language such as "Database connection issue" and tuck the technical detail behind a collapsed Debug section.
   - q: What feedback work can wait until after launch?
     a: Helpdesk ticketing, risk scoring, session-replay heatmaps, and review sentiment tagging are real gaps but not blockers. Several are better validated against real traffic than built on guesses.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

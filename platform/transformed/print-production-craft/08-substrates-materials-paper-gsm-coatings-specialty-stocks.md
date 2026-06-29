@@ -21,7 +21,7 @@ category: Engineering
 date: '2026-06-21'
 order: 7
 icon: "\U0001F4D0"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 faq:
   - q: "What is GSM in paper?"

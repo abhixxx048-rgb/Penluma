@@ -23,7 +23,7 @@ category: Certifications
 date: '2026-06-28'
 order: 5
 icon: ☁️
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 faq:
   - q: What is the cheapest EC2 purchasing option?

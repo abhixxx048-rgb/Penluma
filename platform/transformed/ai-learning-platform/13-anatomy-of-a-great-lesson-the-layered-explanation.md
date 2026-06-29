@@ -25,7 +25,7 @@ keywords:
   - scaffolding in teaching
   - expertise reversal effect
   - how AI tutors teach
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 faq:
   - q: What is a layered explanation?

@@ -30,7 +30,7 @@ faq:
     a: Plain language lowers the buyer's fear of not understanding or not being capable enough. For non-technical audiences, an honest, helpful voice consistently outperforms a premium or jargon-heavy one because it removes hesitation.
   - q: How often should I change my positioning?
     a: Rarely, and only deliberately. Positioning is cheap to decide but expensive to execute because everything downstream depends on it. Validate it with real customers, then hold it stable until the position itself genuinely changes.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: marketing
 topicTitle: Marketing

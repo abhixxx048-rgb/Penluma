@@ -46,7 +46,7 @@ faq:
       Keep all critical content at least 3 mm inside the trim, and push to 5 mm
       near a fold or binding. The blade can drift up to about 1.5 mm in either
       direction, so this buffer keeps important elements from being cut.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: computer-graphics-print
 topicTitle: Computer Graphics for Print

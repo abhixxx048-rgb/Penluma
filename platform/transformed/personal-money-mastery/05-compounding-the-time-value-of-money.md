@@ -34,7 +34,7 @@ faq:
     a: A lot, over time. A fund charging 1% more per year can shrink your final corpus by roughly 25% over 30 years, because the fee compounds against you every single year.
   - q: How much should I invest monthly to reach 1 crore?
     a: At 12% a year, roughly 1,550 rupees a month if you start at 25, about 5,300 at 35, and around 20,000 at 45. Delaying ten years roughly triples the monthly amount needed.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

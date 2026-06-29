@@ -19,7 +19,7 @@ keywords:
   - content security policy
 faq:
   - q: What is the most common web application security vulnerability?
-    a: Broken Access Control is ranked #1 in the OWASP Top 10. It happens when an app confirms who you are but never checks whether you are allowed to touch a specific record, which leads to bugs like IDOR.
+    a: "Broken Access Control is ranked #1 in the OWASP Top 10. It happens when an app confirms who you are but never checks whether you are allowed to touch a specific record, which leads to bugs like IDOR."
   - q: How do I prevent SQL injection?
     a: Use parameterized queries (prepared statements) so the database treats your input as data, never as part of the query structure. Avoid string concatenation and raw SQL builders that let input change the query's meaning.
   - q: What is the difference between authentication and authorization?
@@ -30,8 +30,9 @@ faq:
     a: Security headers are HTTP response headers like Content-Security-Policy and Strict-Transport-Security that add cheap, high-leverage defense. They reduce the damage from XSS, clickjacking, and protocol downgrade attacks.
   - q: What was the Capital One breach and how did it happen?
     a: In 2019 an SSRF flaw tricked a misconfigured firewall into requesting the AWS metadata endpoint, which returned temporary credentials. Combined with an over-privileged role, the attacker accessed data on 106 million customers.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 topic: security-privacy-engineering
 topicTitle: Security & Privacy Engineering
 category: Engineering

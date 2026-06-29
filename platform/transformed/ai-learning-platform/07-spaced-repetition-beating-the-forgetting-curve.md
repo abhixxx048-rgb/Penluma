@@ -50,7 +50,7 @@ faq:
       The spacing effect is the scientific finding that spreading study out
       improves memory. Spaced repetition is the practical system, such as a
       flashcard app, that puts that finding to work with a review schedule.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: ai-learning-platform
 topicTitle: AI Learning Platform

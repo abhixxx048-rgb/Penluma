@@ -23,7 +23,7 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 24
 icon: "\U0001F331"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 faq:
   - q: What is the difference between a mentor and a sponsor?

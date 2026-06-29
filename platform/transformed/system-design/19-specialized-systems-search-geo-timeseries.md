@@ -1,7 +1,7 @@
 ---
 title: "When Postgres Says No: Search, Geo & Time-Series Stores"
 metaTitle: "Specialized Databases: Search, Geo, Time-Series"
-description: "Learn when a standard database can't answer your query efficiently and which specialized database to use instead for search, geospatial, time-series, and analytics."
+description: "Learn when a standard database can't answer your query, and which specialized database to reach for instead: search, geospatial, time-series, or analytics."
 keywords:
   - specialized databases
   - inverted index
@@ -23,8 +23,9 @@ category: Engineering
 date: '2026-06-15'
 order: 19
 icon: "\U0001F3D7️"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 faq:
   - q: "When should I stop using Postgres and reach for a specialized database?"
     a: "When the query shape doesn't fit a B-tree lookup: ranked text search, nearest-by-distance, metrics over time, or aggregating billions of rows across a few columns. For fetching and updating a few rows by key, stay on Postgres."

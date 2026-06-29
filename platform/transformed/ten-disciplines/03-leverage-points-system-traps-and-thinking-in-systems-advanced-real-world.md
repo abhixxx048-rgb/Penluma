@@ -3,8 +3,8 @@ title: 'Leverage Points: Where to Push to Actually Change a System'
 metaTitle: 'Leverage Points & System Traps Explained'
 description: >-
   Most fixes fail because they push where the system barely moves. Learn the
-  recurring system traps and leverage points that decide where small effort
-  creates lasting change.
+  system traps and leverage points that decide where small effort creates real
+  change.
 topic: ten-disciplines
 topicTitle: Ten Disciplines
 category: Thinking & Decisions
@@ -55,8 +55,9 @@ faq:
       The paradigm — the deep, usually unspoken assumption a whole system runs
       on. It chooses the goals, which set the rules, which shape the structure.
       Above even that sits the ability to hold any paradigm lightly.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - https://en.wikipedia.org/wiki/Twelve_leverage_points
   - https://en.wikipedia.org/wiki/System_archetype

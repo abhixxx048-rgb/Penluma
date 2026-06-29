@@ -36,7 +36,7 @@ category: Money & Business
 date: '2026-06-22'
 order: 11
 icon: "\U0001F4C8"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Solow%E2%80%93Swan_model

@@ -23,8 +23,9 @@ category: Engineering
 date: '2026-06-21'
 order: 9
 icon: ⚙️
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 faq:
   - q: What is data engineering in simple terms?
     a: Data engineering is the craft of building the "plumbing" that moves, cleans, combines, and delivers data. The product it ships isn't a screen or feature — it's a trustworthy, on-time, well-shaped dataset that analysts and machine-learning models can rely on.

@@ -21,16 +21,16 @@ faq:
   - q: Does AWS encrypt my data automatically?
     a: No. AWS gives you the tools, like KMS and built-in encryption options, but you decide what data is sensitive and whether to turn encryption on. Classification and the choice to encrypt stay with you.
   - q: If S3 is fully managed, why was a public bucket leak my fault?
-    a: "Fully managed" covers the infrastructure, not your access decisions. Bucket policies, access control lists, and Block Public Access settings are configured by you, so exposure from a public bucket is a customer responsibility.
+    a: "\"Fully managed\" covers the infrastructure, not your access decisions. Bucket policies, access control lists, and Block Public Access settings are configured by you, so exposure from a public bucket is a customer responsibility."
   - q: What does the customer always own, no matter the service?
-    a: Two things never shift to AWS regardless of how managed the service is: your data and who can access it through IAM. Even with serverless services like Lambda or DynamoDB, those remain your job.
+    a: "Two things never shift to AWS regardless of how managed the service is: your data and who can access it through IAM. Even with serverless services like Lambda or DynamoDB, those remain your job."
 topic: aws-cloud-practitioner-mcq
 topicTitle: AWS Cloud Practitioner
 category: Certifications
 date: '2026-06-28'
 order: 2
 icon: ☁️
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

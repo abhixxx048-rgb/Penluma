@@ -21,7 +21,7 @@ category: Money & Business
 date: '2026-06-22'
 order: 8
 icon: "\U0001F4B0"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 faq:
   - q: "What is the difference between price and value in stocks?"

@@ -36,7 +36,7 @@ faq:
     a: Sometimes, yes. PDFs save edits by appending new data rather than rewriting the file, so the original bytes can linger. To truly remove content, flatten or sanitize the file rather than just deleting on screen.
   - q: What is a PDF/X file?
     a: PDF/X is a print-focused subset of the PDF standard. It enforces rules like embedding every font and declaring a print color condition, turning common mistakes into hard errors instead of silent surprises.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/PDF

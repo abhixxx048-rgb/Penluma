@@ -54,8 +54,9 @@ faq:
       Treat it as a hidden worry, not a no. Ask whether it is the price, the timing,
       or the fit, then offer to solve that exact concern now. If they still need
       time, book a specific follow-up.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

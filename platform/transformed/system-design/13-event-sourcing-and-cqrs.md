@@ -37,8 +37,9 @@ faq:
     a: "A read model is a query-optimized table built by consuming the event log. It is derived, disposable data: if it gets corrupted or you need a new shape, you delete it and rebuild it by replaying events from the beginning."
   - q: "Can you do CQRS without event sourcing?"
     a: "Yes, and it is the common case. You keep a normal CRUD database for writes, emit change events through the outbox pattern or change data capture, and build separate read models from those events. No event store required."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - https://en.wikipedia.org/wiki/Event-driven_architecture
   - https://martinfowler.com/eaaDev/EventSourcing.html

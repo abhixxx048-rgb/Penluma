@@ -25,14 +25,14 @@ faq:
   - q: Is it okay to write "u", "ur", or "plz" at work?
     a: In a quick chat with a friend, sure. In commit messages, PRs, and team channels, spell out "you", "your", and "please" — full words read as careful and professional.
   - q: When do I double the last letter before adding -ing or -ed?
-    a: Double it when a short word is stressed on its last syllable: run becomes running, commit becomes committed. Do not double when the stress is elsewhere: open becomes opening, offer becomes offered.
+    a: "Double it when a short word is stressed on its last syllable: run becomes running, commit becomes committed. Do not double when the stress is elsewhere: open becomes opening, offer becomes offered."
 topic: english
 topicTitle: English for Developers
 category: Communication
 date: '2026-06-15'
 order: 11
 icon: "\U0001F4DD"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

@@ -44,7 +44,7 @@ faq:
       Mostly no. Anchoring still works on people who watch the wheel being rigged.
       The reliable defense is a procedure, like writing your own number first or
       restating a choice both ways, not willpower.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: psychology-of-decisions
 topicTitle: Psychology of Decisions

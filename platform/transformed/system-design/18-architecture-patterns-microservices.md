@@ -10,8 +10,9 @@ category: Engineering
 date: '2026-06-15'
 order: 18
 icon: "\U0001F3D7️"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 keywords:
   - monolith vs microservices
   - when to use microservices

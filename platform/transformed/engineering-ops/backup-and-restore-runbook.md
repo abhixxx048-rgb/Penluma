@@ -34,7 +34,7 @@ category: Business & Growth
 date: '2026-06-15'
 order: 999
 icon: "\U0001F6E0️"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---
@@ -141,7 +141,7 @@ Two safeguards fix it:
 **1. Make file storage forgive deletion.** Turn on **versioning** so a delete becomes a recoverable "delete marker" instead of a real erase, and copy files to a second region automatically:
 
 ```bash
-aws s3api put-bucket-versioning --bucket printflow360 \
+aws s3api put-bucket-versioning --bucket your-app-files \
   --versioning-configuration Status=Enabled
 ```
 

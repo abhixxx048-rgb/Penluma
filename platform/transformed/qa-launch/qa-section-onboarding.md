@@ -1,5 +1,5 @@
 ---
-title: When Your Setup Checklist Lies: The Green-Check Trap
+title: "When Your Setup Checklist Lies: The Green-Check Trap"
 metaTitle: Onboarding Checklists That Lie to New Users
 description: Your onboarding checklist shows all green, but checkout still fails. Learn why setup checklists lie to new users and how to build a first-run flow you trust.
 keywords:
@@ -32,7 +32,7 @@ category: Business & Growth
 date: '2026-06-15'
 order: 999
 icon: ✅
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

@@ -28,7 +28,7 @@ faq:
     a: Not always. Vector databases shine for large corpora needing semantic search. For small or stable document sets, keyword search or a plain database is often simpler and good enough. Add a vector store only when scale demands it.
   - q: What is the most important habit for new LLM engineers?
     a: Look at your data. Read real model outputs, especially the failures, before theorizing about fixes. The actual failure modes are almost never the ones you would guess.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: ai-llm-engineering
 topicTitle: AI & LLM Engineering

@@ -23,9 +23,9 @@ order: 13
 icon: "\U0001F4B0"
 faq:
   - q: What is unit economics in simple terms?
-    a: Unit economics zooms in from your whole business to a single customer and asks one question: does one more customer make you money or lose you money? If serving and acquiring a customer costs more than they ever pay back, growth just loses money faster.
+    a: "Unit economics zooms in from your whole business to a single customer and asks one question: does one more customer make you money or lose you money? If serving and acquiring a customer costs more than they ever pay back, growth just loses money faster."
   - q: How do you calculate LTV (lifetime value)?
-    a: Use the margin-based formula: LTV = (ARPU x gross margin %) / churn rate. ARPU is average revenue per user per month, and churn is the fraction of customers who leave each month. Always use margin, never raw revenue.
+    a: "Use the margin-based formula: LTV = (ARPU x gross margin %) / churn rate. ARPU is average revenue per user per month, and churn is the fraction of customers who leave each month. Always use margin, never raw revenue."
   - q: What is a good LTV to CAC ratio?
     a: About 3:1 is the classic healthy target. Below 1:1 means you lose money on every customer. Far above 5:1 can signal you are under-investing in growth and leaving market share on the table.
   - q: What is CAC payback period and why does it matter?
@@ -34,7 +34,7 @@ faq:
     a: Revenue ignores the cost of serving the customer. For a low-margin business, that cost is most of the bill, so a revenue-based LTV can make a barely-breakeven customer look extremely profitable.
   - q: How much does reducing churn improve lifetime value?
     a: A lot. Cutting monthly churn from 5% to 2% extends average customer lifetime from 20 to 50 months, multiplying LTV by 2.5x with no change to price or margin. Retention is the cheapest growth lever you have.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

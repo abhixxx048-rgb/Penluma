@@ -54,8 +54,9 @@ faq:
       A position is what someone says they want. An interest is why they want it.
       Two people fighting over one orange may both win if one needs the juice and
       the other needs the peel. Ask "why does this matter to you?" before negotiating.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - https://en.wikipedia.org/wiki/Modes_of_persuasion
   - https://en.wikipedia.org/wiki/Nonviolent_Communication

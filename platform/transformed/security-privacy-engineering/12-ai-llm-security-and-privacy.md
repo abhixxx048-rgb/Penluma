@@ -23,8 +23,9 @@ category: Engineering
 date: '2026-06-21'
 order: 11
 icon: "\U0001F512"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 faq:
   - q: What is prompt injection?
     a: Prompt injection is when untrusted text tricks a large language model into ignoring its real instructions and following the attacker's instead. It happens because the model reads commands and data in the same stream and cannot reliably tell them apart.

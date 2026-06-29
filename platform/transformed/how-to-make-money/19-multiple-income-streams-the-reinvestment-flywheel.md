@@ -1,6 +1,6 @@
 ---
 title: "Multiple Income Streams: The Reinvestment Flywheel"
-metaTitle: Multiple Income Streams: The Right Order
+metaTitle: "Multiple Income Streams: The Right Order"
 description: "Most people chase multiple income streams in the wrong order. Here's how the reinvestment flywheel turns one mastered income into many that compound."
 keywords:
   - multiple income streams
@@ -25,12 +25,12 @@ faq:
   - q: Is passive income really passive?
     a: No. "Passive" means you do not trade hours one-for-one at the moment of earning, not that it is effortless. You did the work or spent the capital earlier, and most assets still need ongoing upkeep.
   - q: What is the reinvestment flywheel?
-    a: It is a simple loop: take the surplus from one income engine, reinvest it into more leverage like hires or a product, then route that new income into investments. Each turn makes the next turn easier.
+    a: "It is a simple loop: take the surplus from one income engine, reinvest it into more leverage like hires or a product, then route that new income into investments. Each turn makes the next turn easier."
   - q: Why does focusing on one thing beat diversifying early?
     a: Until you are genuinely good at one thing, a second only adds complexity and keeps you sub-scale at everything. You cannot reinvest a surplus you do not yet have, so the surplus has to come first.
   - q: When does a freelancer in India need to register for GST?
     a: A service provider must register once aggregate turnover crosses ₹20 lakh (₹10 lakh in special-category states). Any inter-state supply requires registration regardless of turnover, so track combined turnover across all streams.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: how-to-make-money
 topicTitle: How to Make Money

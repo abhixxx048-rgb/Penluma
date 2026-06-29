@@ -21,7 +21,7 @@ category: Business & Growth
 date: '2026-06-16'
 order: 999
 icon: "\U0001F3AF"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 faq:
   - q: What is a moat in SaaS?
@@ -33,7 +33,7 @@ faq:
   - q: Is counter-positioning a real moat?
     a: Only partly. Counter-positioning gets you in the door against high-touch incumbents who can't copy you without hurting their own business. But it erodes once they decide the loss is acceptable, so treat it as an entry wedge, not a permanent defense.
   - q: What are the 7 Powers?
-    a: Hamilton Helmer's framework names seven durable advantages: scale economies, network economies, counter-positioning, switching costs, branding, cornered resource, and process power. Each must pair a benefit with a barrier.
+    a: "Hamilton Helmer's framework names seven durable advantages: scale economies, network economies, counter-positioning, switching costs, branding, cornered resource, and process power. Each must pair a benefit with a barrier."
   - q: Do network effects work for vertical SaaS?
     a: Usually no, because your customers are often competitors who won't share. The exception is a two-sided supply network where the two sides are different populations, like shops on one side and wholesale suppliers on the other.
 sources:

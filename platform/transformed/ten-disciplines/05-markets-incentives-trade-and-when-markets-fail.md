@@ -36,8 +36,9 @@ faq:
     a: A price cap set below the natural market price guarantees a shortage. It also silences the signal that would have summoned more supply, so landlords stop building and sellers stop stocking, making the thing you wanted to keep affordable harder to find.
   - q: What is a perverse incentive?
     a: A perverse incentive rewards the opposite of what you intended. The classic case is a bounty on dead cobras that led people to breed cobras for cash, leaving more snakes than before once the scheme ended.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

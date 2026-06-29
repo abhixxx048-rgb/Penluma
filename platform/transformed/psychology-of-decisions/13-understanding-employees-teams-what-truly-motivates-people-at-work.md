@@ -55,7 +55,7 @@ faq:
       Make it timely, specific, and genuine. "Great job" is weak. Naming the exact
       action and its impact is strong. Connecting people to the real human their
       work helped is recognition's most powerful form.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

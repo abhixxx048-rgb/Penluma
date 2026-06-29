@@ -27,8 +27,8 @@ faq:
   - q: Why do prompt tricks stop working over time?
     a: Phrases like "you are an expert" or "take a deep breath" are tuned to one model's temporary quirks. When the model is replaced every few months, those tricks can fade or even backfire. Skills built around the system — measurement, context, agents, judgment — carry over.
   - q: What skills should I learn for AI engineering?
-    a: Focus on four durable pillars: evaluation (measuring quality), context engineering and retrieval (feeding the model the right information), agent architecture (multi-step systems with tools), and product judgment (deciding what to build and where the model can be wrong).
-author: Pritesh Yadav
+    a: "Focus on four durable pillars: evaluation (measuring quality), context engineering and retrieval (feeding the model the right information), agent architecture (multi-step systems with tools), and product judgment (deciding what to build and where the model can be wrong)."
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: ai-llm-engineering
 topicTitle: AI & LLM Engineering

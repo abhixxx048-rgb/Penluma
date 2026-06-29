@@ -9,7 +9,7 @@ date: '2026-06-21'
 order: 15
 icon: "\U0001F310"
 transformed: true
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 keywords:
   - CAP theorem
   - PACELC

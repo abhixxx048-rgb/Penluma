@@ -36,7 +36,7 @@ faq:
     a: Dot gain is the tendency of printed dots to spread and print larger than intended, making the result darker. Coated paper seals the surface so ink sits on top and dots stay sharp (low dot gain), while uncoated paper soaks ink in and spreads it (high dot gain).
   - q: What is total ink coverage and why does it matter?
     a: Total Area Coverage (TAC) is the maximum combined CMYK percentage allowed in your darkest shadows. Go over the limit, around 300% on coated offset, and the ink will not dry properly, causing smearing. Build rich blacks like 60/40/40/100 to stay safe.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

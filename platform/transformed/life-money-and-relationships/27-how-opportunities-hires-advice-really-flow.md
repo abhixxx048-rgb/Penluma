@@ -49,7 +49,7 @@ faq:
       Don't over-apologize for the gap. Lead with a specific, genuine reason you thought of
       them, ask one sincere question about their work, and make no request. The awkwardness is
       almost always smaller than you fear.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Interpersonal_ties

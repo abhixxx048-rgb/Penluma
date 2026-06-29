@@ -1,6 +1,6 @@
 ---
 title: A 15-Minute Daily Thinking Practice That Actually Sticks
-metaTitle: Daily Thinking Practice: Drills That Stick
+metaTitle: "Daily Thinking Practice: Drills That Stick"
 description: Build sharper thinking with a simple daily thinking practice. Fifteen minutes of small drills beats one heroic session you never repeat. Here's the routine.
 keywords:
   - daily thinking practice
@@ -21,7 +21,7 @@ faq:
   - q: How long should a daily thinking practice take?
     a: About 15 to 30 minutes is plenty. Four short drills — a freewrite, capturing three ideas, one summary, and one voice memo — fit inside 20 minutes. The point is something small you repeat daily, not a marathon you do once.
   - q: Why does consistency beat intensity for thinking skills?
-    a: Your brain learns like a muscle grows: through small, regular, slightly challenging reps. Fifteen honest minutes a day for a month reshapes how you think far more than a single six-hour session you never come back to.
+    a: "Your brain learns like a muscle grows: through small, regular, slightly challenging reps. Fifteen honest minutes a day for a month reshapes how you think far more than a single six-hour session you never come back to."
   - q: What is deliberate practice?
     a: It means practising just past the edge of what you can do — slightly harder than comfortable — while getting feedback on how you did. Psychologist Anders Ericsson found this focused, feedback-driven practice is what builds real skill, not just repeating an activity.
   - q: What's the most useful single thinking drill?
@@ -36,7 +36,7 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 23
 icon: ✍️
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

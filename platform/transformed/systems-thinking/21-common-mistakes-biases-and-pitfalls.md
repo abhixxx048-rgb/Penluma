@@ -1,10 +1,9 @@
 ---
-title: '21 Systems Thinking Mistakes That Trip Up Smart People'
+title: '12 Systems Thinking Mistakes That Trip Up Smart People'
 metaTitle: 'Systems Thinking Mistakes and Biases to Avoid'
 description: >-
-  The most common systems thinking mistakes are not failures of intelligence but
-  of instinct. Learn the biases and pitfalls that fool smart people, and how to
-  dodge them.
+  The most common systems thinking mistakes come from instinct, not intelligence.
+  Learn the biases and pitfalls that fool smart people, and how to dodge them.
 keywords:
   - systems thinking mistakes
   - systems thinking biases
@@ -55,8 +54,9 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 20
 icon: "\U0001F504"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

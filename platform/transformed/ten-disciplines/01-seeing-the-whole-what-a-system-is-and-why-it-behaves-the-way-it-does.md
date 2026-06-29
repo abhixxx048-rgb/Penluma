@@ -44,8 +44,9 @@ faq:
       Climb down the "iceberg" from event to pattern to structure, and use the 5
       Whys: keep asking why until you reach a structural cause you can change.
       Then ask, "If I fix this, will the problem regenerate?"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 topic: ten-disciplines
 topicTitle: Ten Disciplines
 category: Thinking & Decisions

@@ -21,7 +21,7 @@ faq:
   - q: How do I stop saying "um" and "like" so much?
     a: Replace the filler with a closed mouth and a breath. A one or two second silence feels long to you but reads as thoughtful to the listener. Recording yourself once is usually enough to cut your most-used filler word in half.
   - q: What is the PREP method?
-    a: PREP is a four-part answer structure: Point (your answer in one sentence), Reason (why), Example (one concrete case), and Point again (restate). It lets you sound organised without inventing the order while you talk.
+    a: "PREP is a four-part answer structure: Point (your answer in one sentence), Reason (why), Example (one concrete case), and Point again (restate). It lets you sound organised without inventing the order while you talk."
   - q: How can I sound more confident when speaking?
     a: Take one slow breath before you start, speak slightly slower than feels natural, and finish each sentence cleanly with a full stop. Confidence comes mostly from preparation and structure, not personality.
   - q: How do I buy time to think without looking lost?
@@ -34,7 +34,7 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 7
 icon: ✍️
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

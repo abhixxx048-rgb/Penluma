@@ -51,7 +51,7 @@ faq:
       triggers a chain reaction: threads pile up, pools exhaust, health checks
       fail, nodes get ejected, survivors get more load, and the whole tier falls
       over. The trigger is trivial; the feedback loop is fatal.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: system-design
 topicTitle: System Design
@@ -60,13 +60,14 @@ date: '2026-06-15'
 order: 16
 icon: "\U0001F3D7️"
 sources: []
+polished: true
 ---
 
 Most outages do not start with a server bursting into flames. They start with something tiny: a database that got 100 milliseconds slower. That extra wait makes web servers pile up requests. Threads run out. Health checks time out. The load balancer pulls "unhealthy" nodes offline, which dumps even more traffic on the survivors, which then fall over too.
 
 The failure was 100 milliseconds of latency. The outage was the system's *response* to it.
 
-This article is about controlling that response. You will learn how to throttle traffic on purpose, and how to keep a system standing when the things it depends on start misbehaving.
+Controlling that response is the whole game. You will learn how to throttle traffic on purpose, and how to keep your system standing when the things it depends on start misbehaving.
 
 ## Why this matters
 

@@ -36,7 +36,7 @@ faq:
     a: Under about 0.1 seconds feels instant. Past 1 second, signal that the system is working. Past 10 seconds, show a progress bar and a way to cancel, or users assume it froze.
   - q: What is the difference between an affordance and a signifier?
     a: An affordance is what an object lets you do, like a button affording a press. A signifier is the visible cue that the affordance exists, like the raised look that tells you it is clickable.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things

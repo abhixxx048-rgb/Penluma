@@ -29,7 +29,7 @@ faq:
     a: Markup is added on top of cost as a percentage of cost; margin is profit as a percentage of the selling price. A 50 dollar item sold for 100 dollars is a 100% markup but only a 50% margin.
   - q: What is gross margin and why does it matter?
     a: Gross margin is the percentage of revenue left after the direct cost of delivering your product. It shows how profitable each sale is before other expenses, and it largely determines how much room you have to grow.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 topic: business-financial-literacy
 topicTitle: Business & Financial Literacy
 category: Money & Business

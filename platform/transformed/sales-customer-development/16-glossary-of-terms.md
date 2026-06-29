@@ -1,7 +1,7 @@
 ---
 title: "Sales & Customer Development Glossary: 30 Terms, Plain English"
 metaTitle: "Sales Glossary: 30 Key Terms in Plain English"
-description: "A plain-English sales and customer development glossary. Learn ICP, BANT, MEDDIC, churn, the Mom Test, and 25 more terms you'll actually use in real conversations."
+description: "A plain-English sales and customer development glossary. Learn ICP, BANT, MEDDIC, churn, the Mom Test, and 25 more terms you'll use in real conversations."
 keywords:
   - sales glossary
   - customer development terms
@@ -28,8 +28,9 @@ faq:
     a: The Mom Test is Rob Fitzpatrick's set of rules for honest customer conversations. Talk about their life not your idea, ask about the past not the future, and listen more than you talk.
   - q: What is the difference between value and features in selling?
     a: A feature is what your product has, like "exports to CSV." Value is what it does for the customer, like "you stop spending Friday afternoons copying data by hand." Buyers pay for value.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 topic: sales-customer-development
 topicTitle: Sales & Customer Development
 category: Money & Business

@@ -3,7 +3,7 @@ title: 'Tipping Points: Why Systems Break All at Once'
 metaTitle: 'Tipping Points and Nonlinearity Explained'
 description: >-
   Why nothing happens, then everything changes at once. A plain-language guide to
-  tipping points, thresholds, nonlinearity, and the hidden feedback loops behind them.
+  tipping points, thresholds, nonlinearity, and the feedback loops behind them.
 keywords:
   - tipping point
   - nonlinearity
@@ -40,8 +40,9 @@ faq:
     a: Usually no. You can often tell from a system's structure that a threshold exists,
       but the exact timing of nonlinear, self-organizing systems is inherently
       unpredictable. The practical move is to keep a wide safety margin.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 topic: systems-thinking
 topicTitle: Systems Thinking
 category: Thinking & Decisions

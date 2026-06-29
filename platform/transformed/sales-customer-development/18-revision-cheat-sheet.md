@@ -32,8 +32,9 @@ category: Money & Business
 date: '2026-06-21'
 order: 17
 icon: "\U0001F91D"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 
@@ -51,7 +52,7 @@ A good call gets you facts you can act on: what people actually do, what actuall
 
 ## The three rules that make people honest
 
-This comes from *The Mom Test* by Rob Fitzgerald — named for questions so well-built that even your mom could not lie to you to spare your feelings.
+This comes from *The Mom Test* by Rob Fitzpatrick — named for questions so well-built that even your mom could not lie to you to spare your feelings.
 
 1. **Talk about their life, not your idea.** The moment you describe your product, they start being nice instead of being honest.
 2. **Ask about the past and the specific, not opinions about the future.** "What did you do last time?" beats "What would you do?" every time. People are terrible predictors of their own future behavior and great reporters of their past.

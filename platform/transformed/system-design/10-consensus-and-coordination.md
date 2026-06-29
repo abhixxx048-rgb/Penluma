@@ -1,5 +1,5 @@
 ---
-title: "How Computers Agree When Some Crash, Lie, or Freeze"
+title: "Distributed Consensus: How Computers Agree When Some Crash, Lie, or Freeze"
 metaTitle: "Consensus & Coordination in Distributed Systems"
 description: "Learn how distributed systems reach agreement when nodes crash or stall — Paxos, Raft, distributed locks, fencing tokens, and why consensus is hard."
 keywords:
@@ -36,8 +36,9 @@ category: Engineering
 date: '2026-06-15'
 order: 10
 icon: "\U0001F3D7️"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - https://en.wikipedia.org/wiki/Consensus_(computer_science)
   - https://en.wikipedia.org/wiki/Raft_(algorithm)

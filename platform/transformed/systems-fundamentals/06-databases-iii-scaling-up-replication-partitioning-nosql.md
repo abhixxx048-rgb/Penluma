@@ -57,8 +57,9 @@ faq:
       PostgreSQL forks a separate OS process per connection, costing megabytes
       each, and caps total connections. A pool reuses a few open connections for
       many requests so the database never gets overwhelmed.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

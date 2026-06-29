@@ -49,8 +49,9 @@ faq:
       Nominal return is the headline number, like 4%. Real return is what is left
       after inflation, roughly nominal minus inflation. If you earn 4% while
       inflation runs 5%, your real return is negative 1%.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

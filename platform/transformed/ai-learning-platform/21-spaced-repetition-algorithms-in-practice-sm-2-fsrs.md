@@ -48,7 +48,7 @@ faq:
       Around 85 to 90 percent is the usual sweet spot. Higher retention means
       more reviews for diminishing returns, while lower retention saves time but
       lets too much slip away. FSRS lets you set this number directly.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: ai-learning-platform
 topicTitle: AI Learning Platform

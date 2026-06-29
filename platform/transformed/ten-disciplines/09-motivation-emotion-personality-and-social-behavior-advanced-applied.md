@@ -34,8 +34,9 @@ faq:
     a: "It's the habit of blaming someone's personality for their behavior while ignoring their situation, then doing the reverse for yourself. When you snap, it was a bad day; when they snap, they're rude."
   - q: "What are Cialdini's principles of persuasion?"
     a: "Reciprocity, commitment and consistency, social proof, authority, liking, scarcity, and unity. They're reliable levers of influence, useful both for persuading ethically and for spotting when they're being used on you."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

@@ -41,7 +41,7 @@ faq:
       No. The idea will rarely get fully clear in your head, because your head is
       where it stays fuzzy. Write the messy version first, then use it to find
       and fix the gaps.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: clear-thinking-and-expression
 topicTitle: Clear Thinking & Expression

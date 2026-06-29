@@ -52,7 +52,7 @@ faq:
       Basic wins like claiming your profile and fixing your category can show
       up in a few weeks. Reviews, citations, and ranking momentum build over a
       few months, and they need ongoing upkeep rather than a one-time setup.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: marketing
 topicTitle: Marketing

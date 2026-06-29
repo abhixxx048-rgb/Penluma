@@ -21,7 +21,7 @@ keywords:
   - how G2 ranking works
   - get listed on software review sites
   - best software listicle outreach
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 faq:
   - q: Is it free to list my software on Capterra and G2?

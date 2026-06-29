@@ -19,7 +19,7 @@ keywords:
   - founder networking
 faq:
   - q: Why is it so hard to make friends as an adult?
-    a: School and university handed you three things for free: bumping into the same people daily, a shared sense of figuring life out, and constant physical proximity. Adult life quietly removes all three, so connection no longer happens by accident. You have to recreate those conditions on purpose.
+    a: "School and university handed you three things for free: bumping into the same people daily, a shared sense of figuring life out, and constant physical proximity. Adult life quietly removes all three, so connection no longer happens by accident. You have to recreate those conditions on purpose."
   - q: What is the mere exposure effect?
     a: It is the well-studied finding that we tend to like people more simply because we see them more often. Familiarity itself creates warmth, even without conversation. It is the strongest argument for choosing recurring communities over one-time events.
   - q: Are weak ties really more useful than close friends for opportunities?
@@ -36,7 +36,7 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 19
 icon: "\U0001F331"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

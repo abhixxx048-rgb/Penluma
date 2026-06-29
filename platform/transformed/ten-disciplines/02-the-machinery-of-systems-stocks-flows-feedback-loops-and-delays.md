@@ -38,8 +38,9 @@ faq:
     a: A tipping point is a threshold beyond which a system suddenly flips into a new and often irreversible state, like water boiling at 100 degrees or a clear lake turning green and lifeless. Little seems to change until everything changes at once.
   - q: Can a reinforcing loop grow forever?
     a: No. A reinforcing loop always runs into a limit, which is a balancing loop. Money compounding meets the size of the economy, a growing population meets the food supply, and a spreading rumor runs out of new people to tell.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - https://en.wikipedia.org/wiki/Stock_and_flow
   - https://en.wikipedia.org/wiki/The_Limits_to_Growth

@@ -1,7 +1,7 @@
 ---
 title: 'Observability and SRE: Knowing Your System Is Healthy'
 metaTitle: 'Observability & SRE: Metrics, Logs, Traces, SLOs'
-description: 'Learn observability the practical way: metrics, logs, traces, SLIs and SLOs, error budgets, smart alerting, and safe deploys that recover without a second outage.'
+description: 'Learn observability the practical way: metrics, logs, traces, SLIs and SLOs, error budgets, smart alerting, and deploys that recover without a second outage.'
 keywords:
   - observability
   - SRE
@@ -37,8 +37,9 @@ category: Engineering
 date: '2026-06-15'
 order: 17
 icon: "\U0001F3D7️"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

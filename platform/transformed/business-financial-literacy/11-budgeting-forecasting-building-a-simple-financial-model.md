@@ -36,7 +36,7 @@ faq:
     a: Most teams investigate any gap between plan and actual that is larger than roughly 5 to 10 percent. Smaller wiggles are usually just noise and not worth chasing.
   - q: Should I use top-down or bottoms-up forecasting?
     a: Use bottoms-up (customers times price, or traffic times conversion times order value) as your real plan, then build a quick top-down as a sanity check. Founders who compare both hit their goals more reliably.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

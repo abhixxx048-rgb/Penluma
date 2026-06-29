@@ -1,7 +1,7 @@
 ---
 title: "How Computers Actually Work: From Bits to AI, Explained"
-metaTitle: How Computers Work: Bits to AI Explained
-description: A plain-language tour of how computers and software actually work, from a single bit to programs, the internet, the cloud, and AI. No jargon, no prior knowledge.
+metaTitle: "How Computers Work: Bits to AI Explained"
+description: A plain-language tour of how computers and software actually work, from a single bit to programs, the internet, the cloud, and AI. No jargon needed.
 keywords:
   - how computers work
   - how computers and software work
@@ -36,8 +36,9 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 21
 icon: "\U0001F9ED"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

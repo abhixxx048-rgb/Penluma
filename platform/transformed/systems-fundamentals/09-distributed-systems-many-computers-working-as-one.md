@@ -24,8 +24,9 @@ category: Engineering
 date: '2026-06-21'
 order: 8
 icon: ⚙️
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 faq:
   - q: What is a distributed system in simple terms?
     a: It's a group of separate computers connected over a network that work together so they look and behave like a single system to the user. When you open Netflix or search Google, you're really talking to thousands of machines pretending to be one.

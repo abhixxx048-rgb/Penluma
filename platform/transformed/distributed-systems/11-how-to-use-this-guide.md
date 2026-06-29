@@ -24,7 +24,7 @@ faq:
     a: Start with what a distributed system is, then why it's hard, then time and ordering, then causality, then the CAP theorem, and finally consistency models. Each idea builds on the one before it.
   - q: Is the CAP theorem still relevant?
     a: Yes, but it's widely misunderstood. It only describes the trade-off during a network failure. The PACELC extension adds what happens during normal operation, which matters far more day to day.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: distributed-systems
 topicTitle: Distributed Systems

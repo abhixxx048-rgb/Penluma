@@ -43,7 +43,7 @@ faq:
       No. Reviving dormant ties is one of the highest-return social moves there
       is. The trust already exists, and people are usually happier to hear from
       you out of the blue than you expect.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: life-money-and-relationships
 topicTitle: 'Life, Money & Relationships'

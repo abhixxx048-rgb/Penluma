@@ -19,7 +19,7 @@ faq:
   - q: What does it mean to qualify a lead in sales?
     a: Qualifying means figuring out whether someone is a real, good-fit potential customer before you invest serious time in them. You check whether they have the problem you solve, can pay, can decide, and want to act soon.
   - q: What is the BANT framework?
-    a: BANT is a simple qualifying checklist from the 1950s. It stands for Budget, Authority, Need, and Timing. In plain words: Can they pay, can they decide, do they truly have the problem, and are they ready soon?
+    a: "BANT is a simple qualifying checklist from the 1950s. It stands for Budget, Authority, Need, and Timing. In plain words: Can they pay, can they decide, do they truly have the problem, and are they ready soon?"
   - q: What is the difference between a lead, a prospect, and an opportunity?
     a: A lead is anyone who showed a flicker of interest. A prospect is a lead you have qualified who fits your ideal customer and shows real intent. An opportunity is a prospect with a concrete next step and a real chance of buying soon.
   - q: What are "happy ears" in sales?
@@ -27,15 +27,16 @@ faq:
   - q: Is disqualifying a lead a bad thing?
     a: No, it is often the kindest and smartest move. A fast, honest "this isn't right for you" protects your time and respects theirs, and it frequently earns goodwill and referrals.
   - q: How do I write an Ideal Customer Profile?
-    a: Look at your happiest current users, even if you only have two, and find what they share: business type, size, the painful problem, how they work today, and who actually buys. Keep it narrow on purpose.
+    a: "Look at your happiest current users, even if you only have two, and find what they share: business type, size, the painful problem, how they work today, and who actually buys. Keep it narrow on purpose."
 topic: sales-customer-development
 topicTitle: Sales & Customer Development
 category: Money & Business
 date: '2026-06-21'
 order: 8
 icon: "\U0001F91D"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

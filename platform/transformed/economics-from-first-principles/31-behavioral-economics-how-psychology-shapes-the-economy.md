@@ -52,7 +52,7 @@ faq:
       A story spreads ("prices only go up"), herd behavior pulls in more buyers,
       and rising prices seem to confirm the story — a feedback loop. Loss
       aversion then flips it into panic selling on the way down.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: economics-from-first-principles
 topicTitle: Economics from First Principles

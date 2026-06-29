@@ -28,7 +28,7 @@ faq:
     a: The Mom Test is a way to interview users so that even your mother couldn't lie to you. You talk about their actual past behavior instead of pitching your idea or asking whether they would use it.
   - q: How many users do I need for a usability test?
     a: Watching about five real target users will surface roughly 85% of the usability problems in a design, according to Nielsen Norman Group. You learn far more from a handful of real sessions than from a large survey.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: product-sense-empathy
 topicTitle: Product Sense & Empathy

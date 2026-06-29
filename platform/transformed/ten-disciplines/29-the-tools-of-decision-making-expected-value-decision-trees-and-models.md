@@ -59,14 +59,15 @@ faq:
       information. A two-way door is easily reversed, so decide fast and learn
       from the result. Matching speed to reversibility saves your scarce
       attention.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 
 Last week you bought a lottery ticket, and somewhere a casino owner smiled. Not because you lost—you probably did—but because the math was on their side the moment you handed over the cash. That same math is available to you, and it works just as well for choosing a job, pricing a product, or buying a piece of equipment.
 
-Here's the uncomfortable truth that runs underneath all of it: a good decision and a good outcome are not the same thing. You decide *forward*, with patchy information and real uncertainty. Outcomes get judged *backward*, after luck has had its say. This article is about the working tools that help you make the best forward-looking choice you can—the instruments you can actually pick up and use on Monday morning.
+Here's the uncomfortable truth that runs underneath all of it: a good decision and a good outcome are not the same thing. You decide *forward*, with patchy information and real uncertainty. Outcomes get judged *backward*, after luck has had its say. So how do you make the best forward-looking choice you can? With a handful of working tools you can actually pick up and use on Monday morning.
 
 ## Why this matters
 

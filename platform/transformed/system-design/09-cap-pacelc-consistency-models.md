@@ -2,9 +2,8 @@
 title: 'CAP, PACELC & Consistency Models, Finally Made Clear'
 metaTitle: 'CAP & PACELC Consistency Models Explained'
 description: >-
-  CAP theorem and PACELC explained in plain language. Learn what your database
-  really guarantees during a network partition, and how to pick the right
-  consistency model.
+  CAP theorem and PACELC made clear. Learn what your database really guarantees
+  during a network partition and how to choose the right consistency model.
 topic: system-design
 topicTitle: System Design
 category: Engineering
@@ -60,8 +59,9 @@ faq:
       Spanner uses TrueTime, a clock that returns a time interval with bounded
       uncertainty. It waits out that uncertainty before confirming a commit, so
       every transaction lands in a globally agreed real-time order.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - https://en.wikipedia.org/wiki/CAP_theorem
   - https://en.wikipedia.org/wiki/PACELC_theorem
@@ -72,7 +72,7 @@ Two ticket clerks sell seats for the same concert. One sits in London, one in To
 
 Now each clerk has only two choices. Keep selling and risk both of them selling seat 42 to different people. Or stop selling and turn away paying customers until the line comes back. There is no third option that keeps the booth open *and* never oversells.
 
-That tiny, frustrating moment is the entire heart of the CAP theorem. Everything else in this article is just getting precise about it, and that precision is exactly where real engineering mistakes hide.
+That tiny, frustrating moment is the entire heart of the CAP theorem. Everything below is just getting precise about it, and that precision is exactly where real engineering mistakes hide.
 
 ## Why this matters
 

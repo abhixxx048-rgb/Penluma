@@ -23,8 +23,9 @@ category: Engineering
 date: '2026-06-15'
 order: 6
 icon: "\U0001F3D7️"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 faq:
   - q: "What is the difference between cache-aside and write-through caching?"
     a: "With cache-aside, your app loads data into the cache on a miss and writes to the database directly, deleting the cache key afterward. With write-through, every write goes through the cache, which synchronously updates the database, so the cache is always consistent at the cost of slower writes."
@@ -43,7 +44,7 @@ sources: []
 
 Picture this: your app has been fast and stable for months. Then one Redis node restarts, your cache hit ratio quietly slips from 99% to 90%, and within seconds your database is on fire. Nothing about your traffic changed. The cache did.
 
-That is the strange power of caching. It is the single cheapest way to make software faster, and also one of the most reliable ways to cause an outage if you misunderstand it. This article walks through how caching actually works, the patterns and trade-offs that matter, and the failure modes that bite real teams.
+That is the strange power of caching. It is the single cheapest way to make software faster, and also one of the most reliable ways to cause an outage if you misunderstand it. By the end here you will know how caching actually works, the patterns and trade-offs that decide your consistency, and the failure modes that quietly bite real teams.
 
 ## Why this matters
 

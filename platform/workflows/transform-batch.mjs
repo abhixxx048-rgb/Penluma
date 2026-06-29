@@ -44,7 +44,7 @@ SEO frontmatter (ALL required):
 - description: 140-160 chars, compelling, contains the primary keyword
 - keywords: 8-15 real search terms (mix head + long-tail)
 - faq: 4-6 entries of {q, a}. q = a real searched question; a = concise 1-3 sentence answer.
-- author: Pritesh Yadav
+- author: Pritesh Yadav (priteshyadav444)
 - transformed: true
 - PRESERVE from the source file exactly: topic, topicTitle, category, order, icon, date.
 - sources: optional. ONLY include if certain the URL is stable/canonical (e.g. an

@@ -36,8 +36,9 @@ faq:
     a: Trust is a stock. Kept promises and honest communication are inflows that build it slowly. Broken promises and scandals are outflows that can drain it fast. That asymmetry is why reputation must be managed defensively.
   - q: What are the two ways to fill a bathtub?
     a: You can increase the inflow or decrease the outflow. To grow your savings you can earn more or spend less. Stopping a leak works just as well as turning up the supply, and is often cheaper and faster.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - 'https://en.wikipedia.org/wiki/Stock_and_flow'
   - 'https://en.wikipedia.org/wiki/Thinking_In_Systems:_A_Primer'

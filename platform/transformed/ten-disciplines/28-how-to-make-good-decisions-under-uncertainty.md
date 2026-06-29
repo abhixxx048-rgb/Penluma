@@ -30,8 +30,9 @@ faq:
     a: "Keep a decision journal, think in probabilities and ranges instead of certainties, start from base rates, run a premortem before big irreversible choices, and match your speed to how reversible the decision is. Better decisions come from a better process, not from being smarter in the moment."
   - q: "What is a premortem?"
     a: "A premortem, developed by psychologist Gary Klein, is a quick exercise where you imagine your decision has already failed badly and ask why. It is far easier to spot risks when you are explaining a failure than predicting one, so it surfaces problems while you can still fix them."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 topic: ten-disciplines
 topicTitle: Ten Disciplines
 category: Thinking & Decisions

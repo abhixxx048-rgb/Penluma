@@ -1,7 +1,7 @@
 ---
 title: "Probabilistic Data Structures: Count Billions in Kilobytes"
 metaTitle: "Probabilistic Data Structures Explained"
-description: "How probabilistic data structures like Bloom filters and HyperLogLog let big systems count billions of items in kilobytes by trading a little accuracy for huge memory savings."
+description: "Probabilistic data structures like Bloom filters and HyperLogLog count billions of items in kilobytes, trading a little accuracy for huge memory savings."
 keywords:
   - probabilistic data structures
   - Bloom filter
@@ -30,8 +30,9 @@ faq:
     a: Many can. HyperLogLog sketches merge by taking the element-wise maximum, and Count-Min sketches add. This mergeability is what lets you compute a global answer by combining per-server summaries.
   - q: Are probabilistic data structures used in real databases?
     a: Yes, widely. RocksDB, Cassandra, and HBase use Bloom filters, Redis ships HyperLogLog and Count-Min commands, and BigQuery's APPROX_COUNT_DISTINCT runs on HyperLogLog.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 topic: system-design
 topicTitle: System Design
 category: Engineering

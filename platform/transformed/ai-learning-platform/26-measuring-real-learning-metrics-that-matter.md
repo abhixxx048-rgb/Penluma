@@ -32,9 +32,7 @@ faq:
       weeks later, with no warning and no chance to re-study, reveals what was
       actually retained rather than what was briefly memorized.
   - q: What are the Kirkpatrick four levels?
-    a: They are a ladder for evaluating learning programs: Reaction (did they like
-      it), Learning (did they gain skill), Behavior (do they apply it), and
-      Results (did the outcome that matters move). Higher levels are harder to fake.
+    a: "They are a ladder for evaluating learning programs: Reaction (did they like it), Learning (did they gain skill), Behavior (do they apply it), and Results (did the outcome that matters move). Higher levels are harder to fake."
   - q: What is the difference between validity and reliability?
     a: Reliability is consistency; the same learner gets a similar score on a
       retake. Validity is accuracy; the test measures what you claim. A test can be
@@ -48,7 +46,7 @@ category: AI & LLMs
 date: '2026-06-28'
 order: 25
 icon: "\U0001F393"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

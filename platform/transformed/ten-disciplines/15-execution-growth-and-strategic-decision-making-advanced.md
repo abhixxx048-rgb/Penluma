@@ -51,8 +51,9 @@ faq:
       Richard Rumelt says a real strategy has three parts: a clear diagnosis of
       the problem, a guiding policy for the approach, and coherent action. If you
       cannot state the diagnosis in one sentence, you have a wish, not a strategy.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

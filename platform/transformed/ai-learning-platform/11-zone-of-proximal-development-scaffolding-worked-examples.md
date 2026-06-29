@@ -48,7 +48,7 @@ faq:
       It is effort that feels harder now but builds stronger, longer-lasting
       learning. It only works if the learner has the background to overcome it;
       otherwise it is just hopeless frustration.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Zone_of_proximal_development

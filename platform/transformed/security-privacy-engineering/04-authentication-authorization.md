@@ -59,8 +59,9 @@ category: Engineering
 date: '2026-06-21'
 order: 3
 icon: "\U0001F512"
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 
@@ -68,7 +69,7 @@ Two questions stand between an attacker and your data, and almost every breach i
 
 Mix those two up and you get the most expensive class of bugs in software. Someone proves they are a real user, and then the app simply forgets to check whether that user is allowed to read the file they just requested. That is not a rare edge case. It is the single most common security flaw on the web.
 
-This article walks you from proving identity, through modern passwordless login, into how systems decide what each person can touch.
+Get comfortable with both, and you can reason about almost any login bug. We will go from proving identity, through modern passwordless login, into how systems decide what each person is allowed to touch.
 
 ## Why this matters
 

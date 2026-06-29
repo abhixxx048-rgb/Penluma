@@ -49,7 +49,7 @@ faq:
       Wanting is the craving that pulls you to pursue something; liking is the
       pleasure of actually having it. They use different brain systems, which is
       why you can crave something you do not even enjoy.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

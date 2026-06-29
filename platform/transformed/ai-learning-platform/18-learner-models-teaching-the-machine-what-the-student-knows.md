@@ -51,7 +51,7 @@ faq:
       A returning student's history of what they've mastered, forgotten, and
       stumbled over is built up over months and can't be copied by a rival
       starting from scratch. That deeply personal record becomes a durable moat.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

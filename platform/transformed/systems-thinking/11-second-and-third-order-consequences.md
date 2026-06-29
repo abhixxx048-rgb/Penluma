@@ -25,8 +25,9 @@ keywords:
   - systems thinking
   - rent control unintended consequences
   - pre-mortem decision making
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 faq:
   - q: What is a second-order consequence?
     a: >-

@@ -58,7 +58,7 @@ faq:
       Money now moves with a tap on a phone, and fear spreads on social media. In
       2023, Silicon Valley Bank lost about $42 billion in withdrawals in a single
       day, a run that once would have taken weeks.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Financial_crisis

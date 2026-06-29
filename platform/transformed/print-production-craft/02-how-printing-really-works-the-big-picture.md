@@ -34,7 +34,7 @@ faq:
     a: "CMYK stands for Cyan, Magenta, Yellow, and Key (black) — the four process inks that mix to make full color in print. Screens use RGB instead, which is why colors shift when an RGB file is forced onto a press."
   - q: "What is a job ticket in printing?"
     a: "A job ticket (or docket) is the traveling instruction record that follows a job through every station. Often barcoded today, it lists every spec and decision and is scanned at each step so staff and customers can see where the job is."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

@@ -39,7 +39,7 @@ faq:
     a: Imposition is arranging multiple copies or pages on one large press sheet so that after printing, folding, and trimming, every piece ends up the right size and in the right order. It is how one big sheet becomes many finished products.
   - q: Why did I receive more pieces than I ordered?
     a: Shops deliberately print a few percent extra, called overs, to cover setup waste and pieces rejected during quality control. Running extras is cheaper than coming up short and reprinting a tiny batch.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

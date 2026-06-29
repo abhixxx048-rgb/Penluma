@@ -57,8 +57,9 @@ faq:
       No. UDP trades reliability for speed on purpose. Skipping handshakes and
       retransmission means lower latency, which is exactly what live voice,
       video, and gaming need, where a delayed packet is worse than a missing one.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources:
   - https://en.wikipedia.org/wiki/Internet_protocol_suite
   - https://en.wikipedia.org/wiki/Transmission_Control_Protocol

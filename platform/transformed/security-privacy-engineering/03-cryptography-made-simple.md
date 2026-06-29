@@ -30,8 +30,9 @@ faq:
     a: "TLS verifies the server's identity with a certificate, agrees on a shared secret key using ECDHE key exchange, then encrypts all traffic with fast symmetric crypto like AES-GCM. TLS 1.3 does this in a single round trip."
   - q: "Is quantum computing a real threat to encryption today?"
     a: "Yes, indirectly. Attackers are recording encrypted data now to decrypt later once quantum computers mature, a tactic called Harvest Now, Decrypt Later. Long-lived secrets are already at risk, so start planning for post-quantum algorithms."
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 topic: security-privacy-engineering
 topicTitle: Security & Privacy Engineering
 category: Engineering

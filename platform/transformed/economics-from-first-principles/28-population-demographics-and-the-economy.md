@@ -56,7 +56,7 @@ faq:
       At the aggregate level, research consensus finds immigration is a net
       positive for host economies: small overall wage effects, higher total GDP,
       and a net fiscal contribution — especially valuable for aging countries.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - 'https://en.wikipedia.org/wiki/Thomas_Robert_Malthus'

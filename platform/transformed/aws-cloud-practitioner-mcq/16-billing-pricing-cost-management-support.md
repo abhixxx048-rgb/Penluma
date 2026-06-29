@@ -54,7 +54,7 @@ category: Certifications
 date: '2026-06-28'
 order: 15
 icon: ☁️
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
 ---

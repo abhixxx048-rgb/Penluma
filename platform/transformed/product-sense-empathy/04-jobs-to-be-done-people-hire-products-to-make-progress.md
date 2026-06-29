@@ -35,7 +35,7 @@ faq:
   - q: How do I find out what job my product is hired for?
     a: >-
       Use a "switch interview" with people who recently changed solutions. Walk their decision backwards: when did the old way stop working, what pushed them to look, and what worried them? Focus on real past behavior, not hypothetical "would you buy this" questions.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 topic: product-sense-empathy
 topicTitle: Product Sense & Empathy
 category: Thinking & Decisions

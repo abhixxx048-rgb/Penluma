@@ -54,8 +54,9 @@ faq:
       Gross margin is gross profit divided by revenue, measuring how much you keep
       after the direct cost of your product. Net margin is net income divided by
       revenue, measuring how much you keep after every cost.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 

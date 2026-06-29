@@ -38,8 +38,9 @@ faq:
     a: It depends on the regime. GDPR requires notifying the authority within 72 hours of awareness, and US public companies have four business days after deciding a breach is material. Importantly, the clock starts when you become aware, not when the investigation ends.
   - q: What is a blameless postmortem?
     a: It is a review that assumes everyone acted in good faith and focuses on systemic causes like missing tooling or unclear runbooks, never on punishing a person. Blame makes people hide incidents, which quietly destroys your ability to detect them.
-author: Pritesh Yadav
+author: Pritesh Yadav (priteshyadav444)
 transformed: true
+polished: true
 sources: []
 ---
 
