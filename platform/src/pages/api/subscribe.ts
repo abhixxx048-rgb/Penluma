@@ -26,5 +26,5 @@ export const POST: APIRoute = async ({ request, locals }) => {
     await store.put(`subscriber:${email}`, new Date().toISOString());
   }
   // If you wire a provider (Buttondown/ConvertKit/Resend), call it here.
-  return json({ message: 'Thanks — you’re subscribed!' });
+  return json({ message: 'Thanks - you’re subscribed!' });
 };

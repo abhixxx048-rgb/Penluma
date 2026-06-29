@@ -22,14 +22,14 @@ const TOPICS = [
 ];
 
 const GUIDELINES = `
-PENLUMA BLOG STANDARD — a blog is NOT a research paper. Transform, don't copy.
+PENLUMA BLOG STANDARD - a blog is NOT a research paper. Transform, don't copy.
 Voice: warm, clear, unhurried, conversational, no academic jargon (define unavoidable
 terms). Second person, outcome-first. Must have: catchy curiosity-driven H1 (keyword-
 bearing); strong hook (never "Welcome"/"In this article"); "## Why this matters"; core
 ideas under ##/### with a real example/analogy each; "## Common misconceptions" if apt;
 "## How to use this" numbered actionable tips; memorable "## Conclusion" + curiosity hook.
 Short paragraphs, descriptive headings, bullets, **bold** key terms, clean markdown (no
-raw <div>). Keep technical depth where the source is deep — clarify, don't dumb down.
+raw <div>). Keep technical depth where the source is deep - clarify, don't dumb down.
 SEO frontmatter: title; metaTitle (<=60); description (140-160, keyword); keywords (8-15
 head+long-tail); faq (4-6 {q,a} real searched questions); author: Pritesh Yadav (priteshyadav444);
 transformed: true; PRESERVE topic/topicTitle/category/order/icon/date; sources only if the

@@ -67,9 +67,9 @@ This is why backups sit at the very top of any production-readiness list. Not be
 
 You do not need an enterprise budget. You need layers:
 
-- **Tier 1 — continuous database recovery.** This is the must-have. Tools like **pgBackRest** or **WAL-G** continuously archive your database changes (a weekly full backup plus a steady stream of small change logs), so you can restore to almost any minute in time. This is called **point-in-time recovery (PITR)** — the ability to rewind your database to, say, 3:47 PM yesterday. For a small team, a **managed database with PITR built in** (the kind cloud providers offer) removes most of the work. One warning: free-tier databases often have *no* backups at all, so never trust production data to them.
-- **Tier 2 — an offsite logical copy.** Add a nightly full export to a *separate* storage bucket in a *different* region, encrypted, and locked so it cannot be deleted or overwritten. This is your survival copy if ransomware or a bad delete hits everything else.
-- **Tier 3 — protect the files, not just the database.** If you store customer files (designs, print-ready PDFs), turn on **versioning** (keep old versions when files change) and **replication** (auto-copy to a second location). Make deletes "soft" — quarantine files for a while instead of erasing them instantly.
+- **Tier 1 - continuous database recovery.** This is the must-have. Tools like **pgBackRest** or **WAL-G** continuously archive your database changes (a weekly full backup plus a steady stream of small change logs), so you can restore to almost any minute in time. This is called **point-in-time recovery (PITR)** - the ability to rewind your database to, say, 3:47 PM yesterday. For a small team, a **managed database with PITR built in** (the kind cloud providers offer) removes most of the work. One warning: free-tier databases often have *no* backups at all, so never trust production data to them.
+- **Tier 2 - an offsite logical copy.** Add a nightly full export to a *separate* storage bucket in a *different* region, encrypted, and locked so it cannot be deleted or overwritten. This is your survival copy if ransomware or a bad delete hits everything else.
+- **Tier 3 - protect the files, not just the database.** If you store customer files (designs, print-ready PDFs), turn on **versioning** (keep old versions when files change) and **replication** (auto-copy to a second location). Make deletes "soft" - quarantine files for a while instead of erasing them instantly.
 
 The classic shorthand is **3-2-1-1-0**: 3 copies, 2 types of media, 1 offsite, 1 immutable, 0 errors when you verify a restore.
 
@@ -86,7 +86,7 @@ It is like a barista taking your payment, then dropping your order ticket on the
 ### The fix: real queues, idempotent jobs, and alerts
 
 1. **Move off `sync`.** Use a real queue backed by a persistent store (Redis is the common choice) so jobs run in the background with **retries and a dead-letter list** for failures.
-2. **Make jobs idempotent.** This is the single most important correctness rule. Modern queues deliver "at least once," meaning a job can run twice. So a file-generating job must check first: *does this file already exist for this order?* If yes, reuse it — never regenerate, never re-charge, never re-notify.
+2. **Make jobs idempotent.** This is the single most important correctness rule. Modern queues deliver "at least once," meaning a job can run twice. So a file-generating job must check first: *does this file already exist for this order?* If yes, reuse it - never regenerate, never re-charge, never re-notify.
 3. **Only enqueue after the data is committed.** A job should never start before the order and payment rows are safely saved, or it may act on data that gets rolled back.
 4. **Bound every job.** Set sensible retry counts, **backoff with jitter** (wait a little longer between each retry, with a random nudge so retries don't stampede), and timeouts. When a job finally fails, mark the order's status and give a human and the customer a recovery path.
 5. **Alert on three signals:** how deep the backlog is, how old the oldest waiting job is, and whether failures are growing. On a revenue-critical queue, a failed job should page a real person.
@@ -103,7 +103,7 @@ The fix is a mindset shift: **a missing file is an error, not an edge case to sm
 
 ## Flying blind: monitoring only one room of the house
 
-You cannot fix what you cannot see. In this platform, one service (the PDF generator) was genuinely well-instrumented — error tracking, metrics, health checks, the works. Almost everything else was dark.
+You cannot fix what you cannot see. In this platform, one service (the PDF generator) was genuinely well-instrumented - error tracking, metrics, health checks, the works. Almost everything else was dark.
 
 The main backend had local log files but no real-time error alerting. The customer-facing design editor had **zero** error monitoring. So when a paying customer hit a bug mid-design, no one found out unless they complained.
 
@@ -120,7 +120,7 @@ The fix is to **standardize one error-monitoring tool across every app** (Sentry
 
 **"A daily backup is good enough."** A daily dump means your worst-case loss is a full day of orders. For payment data, that is often unacceptable. Continuous archiving shrinks that window from 24 hours to roughly 5 minutes.
 
-**"Restoring the database brings everything back."** Not if your files live elsewhere. Rewinding the database does *not* rewind your file storage. You can end up with database rows pointing at files that no longer exist — the same "missing file" silent-lie problem, now caused by your own recovery. The fix is versioning, replication, soft-deletes, and a **reconciliation step** after restore that checks every file path actually resolves.
+**"Restoring the database brings everything back."** Not if your files live elsewhere. Rewinding the database does *not* rewind your file storage. You can end up with database rows pointing at files that no longer exist - the same "missing file" silent-lie problem, now caused by your own recovery. The fix is versioning, replication, soft-deletes, and a **reconciliation step** after restore that checks every file path actually resolves.
 
 **"Our code is clean, so we're production-ready."** Clean code and production readiness are different things. This platform had genuinely tidy code and almost no safety net. They are independent investments.
 
@@ -143,8 +143,8 @@ A useful way to size targets is the **RTO/RPO** pair. Set your most critical dat
 
 ## Conclusion
 
-If you remember one thing, make it this: **good code does not protect your data — backups, real queues, and tested recovery do.** A platform can be elegant and still be one bad night from oblivion, and the gap between "looks solid" and "is recoverable" is exactly the work in this article.
+If you remember one thing, make it this: **good code does not protect your data - backups, real queues, and tested recovery do.** A platform can be elegant and still be one bad night from oblivion, and the gap between "looks solid" and "is recoverable" is exactly the work in this article.
 
 Start with the backup. Then prove you can restore it. Everything else is a refinement on top of that foundation.
 
-Here is the thread worth pulling next: every fix above assumes you can *tell* when something breaks. So how do you design alerts that wake a human for real emergencies without crying wolf at 3 AM over a routine blip? That balance — meaningful signal versus alert fatigue — is where reliable systems are quietly won or lost.
+Here is the thread worth pulling next: every fix above assumes you can *tell* when something breaks. So how do you design alerts that wake a human for real emergencies without crying wolf at 3 AM over a routine blip? That balance - meaningful signal versus alert fatigue - is where reliable systems are quietly won or lost.

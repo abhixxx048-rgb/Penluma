@@ -12,7 +12,7 @@ const PLATFORM = '/home/priteshyadav/work/research-paper/platform';
 const LIMIT = 240; // posts per run → ~480 agents, under the 1000/run cap
 
 const GUIDELINES = `
-PENLUMA BLOG STANDARD — a blog is NOT a research paper. Transform, don't copy.
+PENLUMA BLOG STANDARD - a blog is NOT a research paper. Transform, don't copy.
 
 Voice: warm, clear, unhurried, conversational, quietly confident. Plain words, short
 sentences, no academic jargon (define any unavoidable term in plain language). Lead with
@@ -22,20 +22,20 @@ Every article MUST have, in this order:
 1. A catchy, curiosity-driven H1 title (frontmatter 'title') that targets a real search
    phrase AND accurately reflects the content. No misleading clickbait.
 2. A strong 2-4 sentence HOOK opening (surprising fact, vivid scenario, or sharp question)
-   — never "Welcome" or "In this article we will".
-3. "## Why this matters" — why the reader should care, concretely.
+   - never "Welcome" or "In this article we will".
+3. "## Why this matters" - why the reader should care, concretely.
 4. The core insight(s) in simple language, each under its own "##"/"###" heading, with at
    least one real-world example, analogy, or mini case study per major idea.
-5. "## Common misconceptions" (if applicable) — myths vs reality.
-6. "## How to use this" / actionable tips — concrete, numbered, do-this steps.
+5. "## Common misconceptions" (if applicable) - myths vs reality.
+6. "## How to use this" / actionable tips - concrete, numbered, do-this steps.
 7. A memorable "## Conclusion" with the single key takeaway + a curiosity hook toward a
    related topic (do NOT just summarize the article).
-8. The article must STAND ALONE — complete value even if it's the only thing they read.
+8. The article must STAND ALONE - complete value even if it's the only thing they read.
 
 Formatting: short paragraphs (1-3 sentences), descriptive H2/H3, bullet/numbered lists,
 **bold** key terms. Keep the research's substance and accuracy, but drop methodology,
 excessive stats, and unexplained jargon. Use markdown (not raw <div> HTML). Match the
-article's depth to the source — a deep technical topic stays substantive; don't dumb it
+article's depth to the source - a deep technical topic stays substantive; don't dumb it
 down, just make it clear and engaging.
 
 SEO frontmatter (ALL required):
@@ -107,7 +107,7 @@ const items = (disc?.paths || [])
 
 log(`Discovered ${items.length} untransformed posts this batch.`);
 if (items.length === 0) {
-  return { batch: 0, message: 'Nothing left to transform — all posts are done.' };
+  return { batch: 0, message: 'Nothing left to transform - all posts are done.' };
 }
 
 // --- Rewrite → adversarial edit (pipeline, per post) ---------------------

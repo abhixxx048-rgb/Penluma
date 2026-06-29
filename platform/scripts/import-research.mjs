@@ -94,11 +94,13 @@ function makeDescription(text, title = '') {
   // Drop a leading copy of the title (posts often open by restating it).
   const t = title.replace(/[*`_]/g, '').trim();
   if (t && s.toLowerCase().startsWith(t.toLowerCase())) {
-    s = s.slice(t.length).replace(/^[\s:–—-]+/, '');
+    // Unicode escapes (not literal dashes) so editor "smart-dash" normalization
+    // can't turn this character class into an invalid range again.
+    s = s.slice(t.length).replace(/^[\s:\u2013\u2014-]+/, '');
   }
 
   // Strip weak filler openers ("This document teaches you…") that waste the
-  // ~155 chars Google shows — lead with the substance instead.
+  // ~155 chars Google shows - lead with the substance instead.
   s = s.replace(
     /^(?:in\s+)?this\s+(?:document|chapter|guide|post|article|section|page|note|piece)\s+(?:is\s+about|covers|explains|teaches\s+you|teaches|describes|shows\s+you|shows|walks\s+you\s+through|will\s+(?:teach|show|explain|cover|help))\s+/i,
     '',
@@ -142,7 +144,7 @@ function decodeEntities(s) {
     .replace(/&gt;/g, '>')
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
-    .replace(/&mdash;/g, '—')
+    .replace(/&mdash;/g, '-')
     .replace(/&ndash;/g, '–')
     .replace(/&nbsp;/g, ' ');
 }
@@ -272,7 +274,7 @@ for (const folder of folders) {
     let bookPosts = booksFromFolder(folderPath);
     if (bookPosts.length === 0) bookPosts = booksFromHtml(folderPath);
     if (bookPosts.length === 0) {
-      console.warn(`   ⚠ ${folder}: no markdown, JSON, or HTML content found — skipped.`);
+      console.warn(`   ⚠ ${folder}: no markdown, JSON, or HTML content found - skipped.`);
       continue;
     }
     fs.mkdirSync(outTopicDir, { recursive: true });
@@ -339,7 +341,7 @@ for (const folder of folders) {
 
 // ---------------------------------------------------------------------------
 // Standalone, hand-written posts (independent of the research folders).
-// Drop a markdown file with frontmatter in platform/posts/ — it survives
+// Drop a markdown file with frontmatter in platform/posts/ - it survives
 // regeneration because it lives here, not in src/content/blog.
 //
 //   ---
@@ -419,28 +421,30 @@ function statSafe(dir, file) {
 // Transformed-content overlay. The transform workflow rewrites raw research
 // posts into engaging, SEO-optimized blogs and saves them (with full frontmatter)
 // under platform/transformed/<topic>/<slug>.md. These are committed and survive
-// regeneration. Here we overlay them on top of the raw import — same path, so a
+// regeneration. Here we overlay them on top of the raw import - same path, so a
 // transformed post cleanly REPLACES its raw counterpart (URLs stay stable).
 // ---------------------------------------------------------------------------
 const TRANSFORMED_DIR = path.join(PLATFORM_DIR, 'transformed');
 let overlaid = 0;
 if (fs.existsSync(TRANSFORMED_DIR)) {
-  const walk = (dir) => {
-    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-      const full = path.join(dir, entry.name);
-      if (entry.isDirectory()) walk(full);
-      else if (entry.name.endsWith('.md')) {
-        const rel = path.relative(TRANSFORMED_DIR, full); // <topic>/<slug>.md
-        const dest = path.join(OUT_DIR, rel);
-        const existed = fs.existsSync(dest);
-        fs.mkdirSync(path.dirname(dest), { recursive: true });
-        fs.copyFileSync(full, dest);
-        overlaid++;
-        if (!existed) postCount++; // a transformed-only post (no raw original)
-      }
+  // Only overlay topics that are actually published - otherwise a transformed
+  // copy of an unpublished (e.g. private business) topic would leak back in as
+  // an orphan live page.
+  for (const topicDir of fs.readdirSync(TRANSFORMED_DIR, { withFileTypes: true })) {
+    if (!topicDir.isDirectory()) continue;
+    if (!isPublished(topicDir.name)) continue;
+    const srcTopic = path.join(TRANSFORMED_DIR, topicDir.name);
+    for (const entry of fs.readdirSync(srcTopic)) {
+      if (!entry.endsWith('.md')) continue;
+      const full = path.join(srcTopic, entry);
+      const dest = path.join(OUT_DIR, topicDir.name, entry);
+      const existed = fs.existsSync(dest);
+      fs.mkdirSync(path.dirname(dest), { recursive: true });
+      fs.copyFileSync(full, dest);
+      overlaid++;
+      if (!existed) postCount++; // a transformed-only post (no raw original)
     }
-  };
-  walk(TRANSFORMED_DIR);
+  }
 }
 
 // homepage spotlight manifest (featured standalone posts)
@@ -458,4 +462,4 @@ fs.writeFileSync(
 
 console.log(`✓ Imported ${postCount} posts across ${publishedTopics.length} topics.`);
 if (overlaid > 0) console.log(`   ✨ ${overlaid} posts overlaid from transformed/ (SEO blog rewrites).`);
-for (const t of publishedTopics) console.log(`   ${t.icon}  ${t.title} — ${t.postCount} posts`);
+for (const t of publishedTopics) console.log(`   ${t.icon}  ${t.title} - ${t.postCount} posts`);

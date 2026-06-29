@@ -50,7 +50,7 @@ This is the heart of **Jobs to Be Done** (JTBD), and once you see it, you can't 
 
 Most teams build a *better tool* when what the customer actually wants is *a different Monday morning*.
 
-Features and personas tell you **who** is buying and **what** they want. Jobs to Be Done tells you **why they switch** — the exact struggling moment that pushes someone to rip out the old way they've tolerated for years.
+Features and personas tell you **who** is buying and **what** they want. Jobs to Be Done tells you **why they switch** - the exact struggling moment that pushes someone to rip out the old way they've tolerated for years.
 
 That "why" is the spine of everything that matters in your business:
 
@@ -64,7 +64,7 @@ Get the job right and your messaging almost writes itself. Get it wrong and you'
 
 JTBD has one founding claim: customers don't "buy products," they **hire** a product to make **progress** in a specific **circumstance**.
 
-The unit of analysis is the *job* — the progress someone is trying to make — not the customer and not the product.
+The unit of analysis is the *job* - the progress someone is trying to make - not the customer and not the product.
 
 Harvard professor Clayton Christensen put it famously: people don't want a quarter-inch drill, they want a quarter-inch hole. And really, they want the shelf on the wall and the quiet satisfaction of having put it up themselves.
 
@@ -74,13 +74,13 @@ The job is stable over time. The products that get hired to do it change.
 
 Christensen and researcher Bob Moesta once studied milkshake sales for a fast-food chain. They found the *same milkshake* was hired for two completely different jobs.
 
-In the morning, commuters bought it to make a boring solo drive less dull — it was thick, it lasted, and it fit in a cup holder. In the afternoon, parents bought it as a small treat to make a child happy after running errands.
+In the morning, commuters bought it to make a boring solo drive less dull - it was thick, it lasted, and it fit in a cup holder. In the afternoon, parents bought it as a small treat to make a child happy after running errands.
 
 Same product, two jobs, two different "right" answers about how to improve it. If you only knew the demographics, you'd have missed both.
 
 ### Two consequences that change how you think
 
-**1. Your competition is anything that does the job today.** That includes spreadsheets, sticky notes, "I'll just do it by hand," and doing nothing at all. For our Sunday-night print shop owner, the real competitor isn't another fancy SaaS tool — it's the Wix site plus the phone call plus the chain of email attachments plus the spreadsheet. *That tangle* is what you have to beat.
+**1. Your competition is anything that does the job today.** That includes spreadsheets, sticky notes, "I'll just do it by hand," and doing nothing at all. For our Sunday-night print shop owner, the real competitor isn't another fancy SaaS tool - it's the Wix site plus the phone call plus the chain of email attachments plus the spreadsheet. *That tangle* is what you have to beat.
 
 **2. The struggling moment is the trigger.** Nobody switches because a feature exists. They switch because something broke their tolerance for the status quo on a specific day. Find that day and you've found your story.
 
@@ -90,9 +90,9 @@ Here's where most products go wrong. They sell the practical task and ignore eve
 
 A job has three layers stacked on top of each other:
 
-- **Functional** — the practical thing to get done. *"Produce a correct price for a custom order."*
-- **Emotional** — how the person wants to *feel* while doing it. *"Not stressed. In control. Competent."*
-- **Social** — how they want to be *seen* by others. *"A real, professional business — not a hobbyist with a Gmail address."*
+- **Functional** - the practical thing to get done. *"Produce a correct price for a custom order."*
+- **Emotional** - how the person wants to *feel* while doing it. *"Not stressed. In control. Competent."*
+- **Social** - how they want to be *seen* by others. *"A real, professional business - not a hobbyist with a Gmail address."*
 
 Most vendors sell only the functional layer, then wonder why the "objectively better" product loses. For a lot of buyers, the emotional and social layers are what actually decide the purchase.
 
@@ -118,9 +118,9 @@ These three lenses aren't competing. They're complementary. The trap is confusin
 
 The healthy relationship: the **persona** tells you whom to recruit for interviews. The **job** tells you the strategy and the messaging. **Features** are simply how you deliver the job better than the current messy solution.
 
-A quick translation habit for any team — for every feature, name the job it serves and rewrite the pitch:
+A quick translation habit for any team - for every feature, name the job it serves and rewrite the pitch:
 
-- *"Configurable tiered pricing engine"* becomes *"Customers see exact prices instantly — you stop quoting by hand."*
+- *"Configurable tiered pricing engine"* becomes *"Customers see exact prices instantly - you stop quoting by hand."*
 - *"Browser-based vector editor"* becomes *"Customers create finished, ready-to-print artwork themselves."*
 
 Same feature. One sentence is about your code. The other is about their life.
@@ -129,16 +129,16 @@ Same feature. One sentence is about your code. The other is about their life.
 
 Whether someone switches comes down to a tug-of-war between four forces. Two pull them toward change. Two hold them in place.
 
-- **Push** — frustration with the current way. *"I'm quoting at 10pm again."* Drives change.
-- **Pull** — the attraction of the new thing, the vision of a better life. *"Customers could just order themselves."* Drives change.
-- **Anxiety** — fear about the new thing. *"Will it actually work? Will I lose something?"* Resists change.
-- **Habit** — inertia, comfort, sunk cost in the old way. *"Email works, sorta. I already paid for Wix."* Resists change.
+- **Push** - frustration with the current way. *"I'm quoting at 10pm again."* Drives change.
+- **Pull** - the attraction of the new thing, the vision of a better life. *"Customers could just order themselves."* Drives change.
+- **Anxiety** - fear about the new thing. *"Will it actually work? Will I lose something?"* Resists change.
+- **Habit** - inertia, comfort, sunk cost in the old way. *"Email works, sorta. I already paid for Wix."* Resists change.
 
 The rule is simple:
 
 > A switch happens only when **Push + Pull > Anxiety + Habit**.
 
-Here's the trap almost everyone falls into. Vendors pour all their energy into **pull** — more features, more shine — and ignore anxiety and habit entirely. That's exactly why "better" products keep losing to "good enough" incumbents.
+Here's the trap almost everyone falls into. Vendors pour all their energy into **pull** - more features, more shine - and ignore anxiety and habit entirely. That's exactly why "better" products keep losing to "good enough" incumbents.
 
 ### Anxiety is usually your highest-leverage lever
 
@@ -146,7 +146,7 @@ Imagine rating each force from 1 to 10 after a customer interview.
 
 Push 8 + Pull 8 = 16, fighting against Anxiety 9 + Habit 6 = 15. The customer *barely* switches, and only if a salesperson personally talks them down.
 
-Now knock anxiety from 9 down to 5 — maybe with a promise like "we'll import your whole catalog for you and guarantee the files come out right." Suddenly it's 16 versus 11. Easy switch.
+Now knock anxiety from 9 down to 5 - maybe with a promise like "we'll import your whole catalog for you and guarantee the files come out right." Suddenly it's 16 versus 11. Easy switch.
 
 Notice what moved the needle. Not adding more pull. **Reducing anxiety.** That's the counterintuitive lesson: your most valuable work is often calming fears, not stacking features.
 
@@ -178,7 +178,7 @@ A few questions worth stealing:
 - *"What were you secretly hoping to find?"* (listen for **pull**)
 - *"What worried you about each option you looked at?"* (list every **anxiety**, word for word)
 - *"What did you have to give up to make the switch?"* (the **habit** you broke)
-- *"What does a good day look like now versus before? What did you get back?"* (this is the job *done* — the progress itself)
+- *"What does a good day look like now versus before? What did you get back?"* (this is the job *done* - the progress itself)
 
 And the two things you must never do: don't ask about features, and don't fill silences too fast.
 
@@ -200,7 +200,7 @@ Some examples:
 
 A quick quality check before you trust a job story:
 
-- No persona, no demographics — situation only.
+- No persona, no demographics - situation only.
 - No feature names in the "I want to" part. Describe the progress, not the button.
 - The "so I can" is an outcome or a feeling, not a feature.
 - Ideally it's pulled from a real interview quote.
@@ -209,24 +209,24 @@ A quick quality check before you trust a job story:
 
 Researchers Tony Ulwick and Lance Bettencourt studied hundreds of jobs and found that almost any functional job breaks down into some of the same **eight universal steps**:
 
-1. **Define** — figure out the goal and what's needed.
-2. **Locate** — gather the inputs and information.
-3. **Prepare** — set up the environment before doing the job.
-4. **Confirm** — verify everything is correct before executing.
-5. **Execute** — do the core job.
-6. **Monitor** — track that it's going right.
-7. **Modify** — adjust and correct as needed.
-8. **Conclude** — finish, close out, and deliver.
+1. **Define** - figure out the goal and what's needed.
+2. **Locate** - gather the inputs and information.
+3. **Prepare** - set up the environment before doing the job.
+4. **Confirm** - verify everything is correct before executing.
+5. **Execute** - do the core job.
+6. **Monitor** - track that it's going right.
+7. **Modify** - adjust and correct as needed.
+8. **Conclude** - finish, close out, and deliver.
 
 The trick is to map the *entire* job, not just the part your product touches. That's how you spot where customers still struggle today.
 
-When you do this honestly, a pattern usually emerges: you're strong on some steps and weak on others. And here's the strategic insight — the weak step that generates the most **anxiety** during the buying decision punches far above its weight, even if it's not your headline feature.
+When you do this honestly, a pattern usually emerges: you're strong on some steps and weak on others. And here's the strategic insight - the weak step that generates the most **anxiety** during the buying decision punches far above its weight, even if it's not your headline feature.
 
 For our print shop, the tool nails the front half of the job (selling online) but is weak on a step like "confirm the order is print-ready." That weak step is the loudest source of buyer anxiety. So even though it's not the headline job, fixing it unblocks sales. The rule of thumb: **fix the step that creates anxiety before the step that's merely a post-sale annoyance.** Anxiety blocks the deal. Inconvenience you can phase in.
 
 ## Score what to build next with desired outcomes
 
-Interviews tell you the job. To decide what to *build*, you need numbers. This is where the second school of JTBD — Ulwick's **Outcome-Driven Innovation** — comes in.
+Interviews tell you the job. To decide what to *build*, you need numbers. This is where the second school of JTBD - Ulwick's **Outcome-Driven Innovation** - comes in.
 
 You express success as **desired-outcome statements**: solution-free, measurable metrics customers use to judge *any* solution. The structure:
 
@@ -243,14 +243,14 @@ And you run the **opportunity formula**:
 
 > Opportunity = Importance + max(Importance − Satisfaction, 0)
 
-Two things make this clever. Importance is **double-weighted** on purpose — it's importance plus the gap, not a simple average. And the `max(…, 0)` floor means an over-served outcome never scores below its importance; over-delivering just earns no bonus, it doesn't go negative.
+Two things make this clever. Importance is **double-weighted** on purpose - it's importance plus the gap, not a simple average. And the `max(…, 0)` floor means an over-served outcome never scores below its importance; over-delivering just earns no bonus, it doesn't go negative.
 
 A rough way to read the scores (on a 0–20 scale):
 
-- **Above 15** — extremely underserved. Rare and ripe.
-- **12 to 15** — underserved. Strong opportunity. Prioritize.
-- **10 to 12** — appropriately served. Leave it.
-- **Below 10** — over-served. Stop investing here, maybe even do less.
+- **Above 15** - extremely underserved. Rare and ripe.
+- **12 to 15** - underserved. Strong opportunity. Prioritize.
+- **10 to 12** - appropriately served. Leave it.
+- **Below 10** - over-served. Stop investing here, maybe even do less.
 
 ### The two patterns that decide your roadmap
 
@@ -270,19 +270,19 @@ The opposite. The job is deliberately solution-free. The moment you put a featur
 Usually not. Switching is Push + Pull *minus* Anxiety + Habit. Past a certain point, more features add pull while doing nothing about the fear and inertia that are actually losing you the sale.
 
 **"My competitor is the other software in my category."**
-Your real competitor is whatever does the job today — including spreadsheets, email, and doing nothing. Underestimate the duct-tape solution and you'll wonder why "objectively better" keeps losing.
+Your real competitor is whatever does the job today - including spreadsheets, email, and doing nothing. Underestimate the duct-tape solution and you'll wonder why "objectively better" keeps losing.
 
 **"I should run the big quantitative survey first."**
 Do the interviews first. If you jump straight to scoring outcomes, you'll write beautiful, precise outcome statements for the *wrong job*. Qualitative discovery comes before quantitative ranking, every time.
 
 **"Personas are useless, then."**
-No — they're just a different tool. Personas tell you whom to recruit and build empathy for. They simply don't predict the buying trigger. Use them to find the right people to interview, then let the job drive strategy.
+No - they're just a different tool. Personas tell you whom to recruit and build empathy for. They simply don't predict the buying trigger. Use them to find the right people to interview, then let the job drive strategy.
 
 ## How to use this, this week
 
 You don't need a quarter-long research project to start. Here's a concrete sequence:
 
-1. **Book five switch interviews.** Find recent switchers in your market — communities, forums, a short LinkedIn note. Offer a small gift card for 15 minutes. Use the switch-interview questions above, word for word.
+1. **Book five switch interviews.** Find recent switchers in your market - communities, forums, a short LinkedIn note. Offer a small gift card for 15 minutes. Use the switch-interview questions above, word for word.
 2. **Run one "concierge" test.** Find one friendly customer and do the job *for* them, by hand. Watch their reaction the moment they see the result. Did you remove the anxiety? Their words are gold. It costs you almost nothing and it's a real signal.
 3. **Draft your job story library in an hour.** Write the five jobs you think you serve using the "When… I want to… so I can…" template. After three interviews, rewrite each one in your customers' *actual words*. The phrases that make people lean in become your homepage.
 4. **Stand up a 10-question outcome survey.** List your candidate outcomes, ask the importance and satisfaction questions, and post it where your customers gather. Even 20 to 30 responses will tell you which outcomes top the list before you commit a sprint.
@@ -291,8 +291,8 @@ You don't need a quarter-long research project to start. Here's a concrete seque
 
 ## Conclusion
 
-The single idea worth keeping: **customers don't buy your product, they hire it to make progress in a moment of struggle.** Find that struggling moment — the Sunday night, the ghosted quote, the embarrassment — and you've found the thread that runs through your messaging, your onboarding, and your roadmap.
+The single idea worth keeping: **customers don't buy your product, they hire it to make progress in a moment of struggle.** Find that struggling moment - the Sunday night, the ghosted quote, the embarrassment - and you've found the thread that runs through your messaging, your onboarding, and your roadmap.
 
 The most surprising part is where the leverage lives. It's not in adding more pull. It's in quietly removing the *anxiety* that keeps people stuck in a system they already hate.
 
-Which raises the next question worth chasing: if anxiety and habit are what lose you the deal, what do the customers who *didn't* buy — and the ones who left — actually have to teach you? That's where win-loss and churn interviews come in, and they tend to be the most uncomfortable, most valuable conversations you'll ever have.
+Which raises the next question worth chasing: if anxiety and habit are what lose you the deal, what do the customers who *didn't* buy - and the ones who left - actually have to teach you? That's where win-loss and churn interviews come in, and they tend to be the most uncomfortable, most valuable conversations you'll ever have.

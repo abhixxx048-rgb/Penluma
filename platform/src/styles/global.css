@@ -5,13 +5,13 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* ===========================================================================
-   Penluma — pure monochrome.
+   Penluma - pure monochrome.
    True black & white only: white page / near-black text in light mode,
    near-black page / near-white text in dark mode, neutral greys for
-   hierarchy. NO accent colour and no warm tints — emphasis comes from
+   hierarchy. NO accent colour and no warm tints - emphasis comes from
    weight, italics, and underlines. The brand-* and slate-* ramps are both
    remapped to neutral greys so existing utility classes reskin app-wide.
-   NOTE: fonts still reference the previous pairing — type is a separate pass.
+   NOTE: fonts still reference the previous pairing - type is a separate pass.
    =========================================================================== */
 @theme {
   --font-sans: 'Inter Variable', 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -19,7 +19,7 @@
   --font-mono: 'JetBrains Mono Variable', 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
 
   /* "Accent" ramp (brand-*) neutralised to greys. Dark-end (600–800) reads on
-     white; light-end (300–400) reads on black — so existing dual-mode classes
+     white; light-end (300–400) reads on black - so existing dual-mode classes
      (text-brand-600 dark:text-brand-400, text-brand-700 dark:text-brand-300)
      resolve to near-black on light and near-white on dark. */
   --color-brand-50: #f2f2f2;
@@ -35,7 +35,7 @@
   --color-brand-950: #0a0a0a;
 
   /* Neutral greyscale mapped onto white/slate so the whole UI reskins */
-  --color-white: #ffffff; /* light-mode page base — pure white */
+  --color-white: #ffffff; /* light-mode page base - pure white */
   --color-slate-50: #fafafa; /* light elevated surface */
   --color-slate-100: #f2f2f2;
   --color-slate-200: #e2e2e2; /* light borders/dividers */
@@ -44,9 +44,9 @@
   --color-slate-500: #6f6f6f; /* muted text (both modes) */
   --color-slate-600: #444444;
   --color-slate-700: #2a2a2a;
-  --color-slate-800: #141414; /* light-mode body text — near-black */
+  --color-slate-800: #141414; /* light-mode body text - near-black */
   --color-slate-900: #161616; /* dark elevated surface */
-  --color-slate-950: #0a0a0a; /* dark page base — near-black */
+  --color-slate-950: #0a0a0a; /* dark page base - near-black */
 
   /* Content callouts neutralised to greys (no red/green) */
   --color-ember: #3a3a3a; /* warn */
@@ -69,7 +69,7 @@ h1, h2, h3, h4, .font-serif {
   letter-spacing: -0.015em;
 }
 
-/* Underline tracks the text colour, softened — works in both modes */
+/* Underline tracks the text colour, softened - works in both modes */
 .prose-research a,
 a.filament {
   text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
@@ -94,7 +94,7 @@ a.filament {
   --tw-prose-invert-quotes: #b0b0b0;
 }
 
-/* Drop-cap in indigo — a nod to illuminated manuscripts, no glow */
+/* Drop-cap in indigo - a nod to illuminated manuscripts, no glow */
 .prose-research > p:first-of-type::first-letter {
   font-family: var(--font-serif);
   float: left;
@@ -108,7 +108,7 @@ a.filament {
   color: var(--color-brand-300);
 }
 
-/* Callouts — a flat left ink-rule, no glow */
+/* Callouts - a flat left ink-rule, no glow */
 .prose-research :where(.key, .warn, .tip, .analogy, .example, .callout) {
   @apply my-5 rounded-lg border-l-4 px-4 py-3 text-[0.95em];
 }

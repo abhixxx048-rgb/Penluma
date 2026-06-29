@@ -1,4 +1,4 @@
-# Research Notes — blog platform
+# Research Notes - blog platform
 
 A fast, SEO-friendly blog built with **Astro** and deployed on **Cloudflare Pages**.
 It turns the research markdown/HTML/JSON in this repo's topic folders (`../system-design`,
@@ -19,16 +19,16 @@ npm run dev          # imports content, then starts http://localhost:4321
 
 `npm run dev` runs `scripts/import-research.mjs` first, which regenerates
 `src/content/blog/` from the research folders. The generated content is **not**
-committed (see `.gitignore`) — the research folders are the source of truth.
+committed (see `.gitignore`) - the research folders are the source of truth.
 
 ## How content is imported
 
 `scripts/import-research.mjs` walks every folder in the repo root and, per folder, uses
 whichever source exists:
 
-1. **Markdown** (`system-design`, `english`, `agent-orchestration`, …) — one `.md` → one post.
-2. **Build JSON** (`economics`, `psychology-of-decisions`, …) — each chapter/section → one post.
-3. **Built HTML** (`distributed-systems`, `thinking-skills`, …) — split on `<section>` → one post.
+1. **Markdown** (`system-design`, `english`, `agent-orchestration`, …) - one `.md` → one post.
+2. **Build JSON** (`economics`, `psychology-of-decisions`, …) - each chapter/section → one post.
+3. **Built HTML** (`distributed-systems`, `thinking-skills`, …) - split on `<section>` → one post.
 
 Titles, dates, ordering and plain-English excerpts (from the `*.takeaways.md` siblings) are
 derived automatically.
@@ -37,7 +37,7 @@ derived automatically.
 
 Edit **`topics.config.mjs`**:
 
-- Any folder **not listed** is auto-published with a prettified title — so when you add a
+- Any folder **not listed** is auto-published with a prettified title - so when you add a
   brand-new research folder later, **it appears on the blog automatically**.
 - The internal PrintFlow360 business/strategy folders are listed with `published: false`
   to keep them private. Flip to `true` to share one.
@@ -90,7 +90,7 @@ npm run cf:preview   # build + wrangler pages dev (simulates KV locally)
 - **Colors / typography / callout styles:** `src/styles/global.css`
 - **Topic titles, icons, categories, what's published:** `topics.config.mjs`
 - **Newsletter provider:** wire Buttondown/ConvertKit/Resend in `src/pages/api/subscribe.ts`
-  (emails are stored in KV in the meantime — export with `wrangler kv key list`).
+  (emails are stored in KV in the meantime - export with `wrangler kv key list`).
 
 ## Exporting newsletter subscribers
 

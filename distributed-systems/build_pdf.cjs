@@ -123,7 +123,7 @@ const html = `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Distributed Systems Foundations — A Beginner-to-Advanced Study Guide</title>
+<title>Distributed Systems Foundations - A Beginner-to-Advanced Study Guide</title>
 <style>${CSS}</style>
 </head>
 <body>

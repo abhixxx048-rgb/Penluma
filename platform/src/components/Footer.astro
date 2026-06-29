@@ -14,13 +14,14 @@ const year = new Date().getFullYear();
           {SITE.social.twitter && <a class="hover:text-brand-600" href={SITE.social.twitter}>Twitter</a>}
           {SITE.social.github && <a class="hover:text-brand-600" href={SITE.social.github}>GitHub</a>}
           {SITE.social.linkedin && <a class="hover:text-brand-600" href={SITE.social.linkedin}>LinkedIn</a>}
+          <a class="hover:text-brand-600" href="/sitemap">Sitemap</a>
           <a class="hover:text-brand-600" href="/rss.xml">RSS</a>
         </div>
       </div>
       <NewsletterForm />
     </div>
     <p class="mt-10 text-xs text-slate-400">
-      © {year} {SITE.author}. Built with Astro on Cloudflare.
+      © {year} {SITE.author}.
     </p>
   </div>
 </footer>

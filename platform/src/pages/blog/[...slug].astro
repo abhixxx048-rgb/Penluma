@@ -32,7 +32,8 @@ const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
 
 const canonicalUrl = new URL(`/blog/${post.id}/`, Astro.site).toString();
 const publishedISO = post.data.date.toISOString();
-const ogImageUrl = new URL(SITE.ogImage, Astro.site).toString();
+const ogImagePath = `/og/${post.id}.png`;
+const ogImageUrl = new URL(ogImagePath, Astro.site).toString();
 
 const jsonLd = [
   {
@@ -82,6 +83,7 @@ const jsonLd = [
 <BaseLayout
   title={post.data.metaTitle || post.data.title}
   description={post.data.description}
+  image={ogImagePath}
   type="article"
   publishedTime={publishedISO}
   jsonLd={jsonLd}
@@ -126,7 +128,7 @@ const jsonLd = [
       <Content />
     </div>
 
-    {/* FAQ — also emitted as FAQPage schema above */}
+    {/* FAQ - also emitted as FAQPage schema above */}
     {faq.length > 0 && (
       <section class="mt-16" aria-labelledby="faq-heading">
         <h2 id="faq-heading" class="font-serif text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
@@ -146,7 +148,7 @@ const jsonLd = [
       </section>
     )}
 
-    {/* Further reading — trusted external sources */}
+    {/* Further reading - trusted external sources */}
     {sources.length > 0 && (
       <section class="mt-12">
         <h2 class="font-serif text-xl font-bold tracking-tight text-slate-900 dark:text-white">Further reading</h2>
@@ -162,7 +164,7 @@ const jsonLd = [
       </section>
     )}
 
-    {/* Continue reading — related posts (internal links) */}
+    {/* Continue reading - related posts (internal links) */}
     {related.length > 0 && (
       <section class="mt-16 border-t border-slate-200 pt-10 dark:border-slate-800">
         <h2 class="font-serif text-xl font-bold tracking-tight text-slate-900 dark:text-white">Continue reading</h2>

@@ -19,11 +19,11 @@ const blog = defineCollection({
     metaTitle: z.string().optional(),
     /** Target search keywords for this article. */
     keywords: z.array(z.string()).default([]),
-    /** FAQ entries — rendered as a section + FAQPage schema. */
+    /** FAQ entries - rendered as a section + FAQPage schema. */
     faq: z
       .array(z.object({ q: z.string(), a: z.string() }))
       .default([]),
-    /** Trusted external sources — rendered as "Further reading".
+    /** Trusted external sources - rendered as "Further reading".
         Accepts either a bare URL string or a {title, url} object. */
     sources: z
       .array(

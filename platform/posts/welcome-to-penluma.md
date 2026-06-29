@@ -11,7 +11,7 @@ order: 0
 
 # Welcome to Penluma
 
-**Penluma** comes from *pen* + *lumen* — the light of the pen. Writing is how
+**Penluma** comes from *pen* + *lumen* - the light of the pen. Writing is how
 unspoken thoughts come into view: vague intuitions become precise, and precise
 ideas become teachable.
 
@@ -24,7 +24,7 @@ incident or a hard interview question.
 
 - **Topics** are bodies of work you can read like a short course.
 - **Posts** are the individual chapters within a topic.
-- **Essays** like this one are standalone pieces — written by hand, not generated
+- **Essays** like this one are standalone pieces - written by hand, not generated
   from research notes.
 
 > This file is also a template. To publish your own independent post, drop a
@@ -32,4 +32,4 @@ incident or a hard interview question.
 > and optionally `featured: true`) and re-run the build. It will not be
 > overwritten when research content regenerates.
 
-Thanks for reading — and welcome.
+Thanks for reading - and welcome.

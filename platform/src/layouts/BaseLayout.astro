@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-// Self-hosted variable fonts (bundled, subset, served same-origin) — no
+// Self-hosted variable fonts (bundled, subset, served same-origin) - no
 // render-blocking request to Google Fonts, better LCP and privacy.
 import '@fontsource-variable/inter';
 import '@fontsource-variable/fraunces';
@@ -15,14 +15,16 @@ interface Props {
   image?: string;
   /** 'article' for blog posts, 'website' for everything else. */
   type?: 'website' | 'article';
-  /** ISO date — emitted as article:published_time on posts. */
+  /** ISO date - emitted as article:published_time on posts. */
   publishedTime?: string;
-  /** ISO date — emitted as article:modified_time on posts. */
+  /** ISO date - emitted as article:modified_time on posts. */
   modifiedTime?: string;
   /** Page-specific JSON-LD objects (Article, BreadcrumbList, …). */
   jsonLd?: Record<string, unknown>[];
-  /** Target keywords — emitted as a <meta name="keywords"> tag. */
+  /** Target keywords - emitted as a <meta name="keywords"> tag. */
   keywords?: string[];
+  /** When true, emit <meta name="robots" content="noindex, follow"> (thin/utility pages). */
+  noindex?: boolean;
 }
 
 const {
@@ -34,9 +36,10 @@ const {
   modifiedTime,
   jsonLd = [],
   keywords = [],
+  noindex = false,
 } = Astro.props;
 
-const pageTitle = title ? `${title} · ${SITE.title}` : `${SITE.title} — ${SITE.tagline}`;
+const pageTitle = title ? `${title} · ${SITE.title}` : `${SITE.title} - ${SITE.tagline}`;
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 const ogImage = new URL(image ?? SITE.ogImage, Astro.site).toString();
 const twitterHandle = SITE.social.twitter ? `@${SITE.social.twitter}` : undefined;
@@ -62,7 +65,7 @@ const baseLd: Record<string, unknown>[] = [
     '@type': 'Organization',
     name: SITE.name,
     url: siteUrl,
-    logo: new URL('/favicon.svg', Astro.site).toString(),
+    logo: new URL('/logo.png', Astro.site).toString(),
     description: SITE.description,
     sameAs: [
       SITE.social.twitter && `https://x.com/${SITE.social.twitter}`,
@@ -80,21 +83,16 @@ const structuredData = [...baseLd, ...jsonLd];
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    {/* Google tag (gtag.js) */}
-    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-3P5Z6TRP9Y"></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-3P5Z6TRP9Y');
-    </script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/logo.png" type="image/png" sizes="1024x1024" />
+    <link rel="apple-touch-icon" href="/logo.png" />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" type="application/rss+xml" title={SITE.title} href="/rss.xml" />
 
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
+    {noindex && <meta name="robots" content="noindex, follow" />}
     <meta name="theme-color" content="#0a0a0a" />
 
     {/* Open Graph */}
@@ -129,6 +127,25 @@ const structuredData = [...baseLd, ...jsonLd];
     {structuredData.map((data) => (
       <script type="application/ld+json" set:html={JSON.stringify(data)} />
     ))}
+
+    {/* Google Analytics 4 - production only, so local dev isn't counted */}
+    {import.meta.env.PROD && SITE.gaId && (
+      <Fragment>
+        <script
+          is:inline
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${SITE.gaId}`}
+        ></script>
+        <script is:inline define:vars={{ gaId: SITE.gaId }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', gaId);
+        </script>
+      </Fragment>
+    )}
 
     {/* Set theme before paint to avoid a flash. Penluma is lamplit by default:
         dark unless the reader has explicitly chosen light. */}

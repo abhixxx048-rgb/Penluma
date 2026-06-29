@@ -39,7 +39,7 @@
       const data = await res.json().catch(() => ({}));
       if (res.ok) {
         msg.classList.add('text-green-600');
-        msg.textContent = data.message || 'Thanks — you’re subscribed!';
+        msg.textContent = data.message || 'Thanks - you’re subscribed!';
         form.reset();
       } else {
         msg.classList.add('text-red-500');

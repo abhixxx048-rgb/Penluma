@@ -1,4 +1,4 @@
-# Docker Runbook — Print-Flow-360
+# Docker Runbook - Print-Flow-360
 
 > Hands-on runbook for containerizing the **whole** Print-Flow-360 stack: concrete Dockerfiles, a corrected `docker-compose.yml`, the env-var matrix, build/run commands, a reverse-proxy sketch, and a troubleshooting table.
 >
@@ -10,22 +10,22 @@
 
 ## 0. The one bug that blocks everything
 
-The committed compose wires the database clients to **MySQL** (`DB_HOST=${MYSQL_DB_HOST}`, `DB_PORT=3306`, `DB_DATABASE=printing_702`). The platform runs on **PostgreSQL 16**, single shared database, isolation by `tenant_id` column only (all `stancl/tenancy` bootstrappers are commented out — there is **no per-tenant database**).
+The committed compose wires the database clients to **MySQL** (`DB_HOST=${MYSQL_DB_HOST}`, `DB_PORT=3306`, `DB_DATABASE=printing_702`). The platform runs on **PostgreSQL 16**, single shared database, isolation by `tenant_id` column only (all `stancl/tenancy` bootstrappers are commented out - there is **no per-tenant database**).
 
 Before anything in this runbook works you must:
 
 1. Add a `postgres` service (none exists today).
 2. Pass `DB_DIALECT=postgres`, `DB_HOST=postgres`, `DB_PORT=5432`, `DB_DATABASE=live_db` to **pdf-service** (its code defaults to Postgres anyway; the compose env actively overrides it wrong).
-3. Set `ADMIN_DB_PORT=5432` explicitly — `config/database.php` `admin_pgsql` defaults its port to `3306` (latent MySQL bug).
-4. Add a real `GET /api/health` route (it does not exist — orchestrator probes 404 today).
+3. Set `ADMIN_DB_PORT=5432` explicitly - `config/database.php` `admin_pgsql` defaults its port to `3306` (latent MySQL bug).
+4. Add a real `GET /api/health` route (it does not exist - orchestrator probes 404 today).
 
 ---
 
 ## 1. Per-service Dockerfile recommendations
 
-All Dockerfiles below are **RECOMMENDED** (new), except `pdf-service/Dockerfile` which is **EXISTING** and good — reuse it as-is.
+All Dockerfiles below are **RECOMMENDED** (new), except `pdf-service/Dockerfile` which is **EXISTING** and good - reuse it as-is.
 
-### 1.1 Laravel API (Octane) — `deploy/docker/api.Dockerfile` (RECOMMENDED)
+### 1.1 Laravel API (Octane) - `deploy/docker/api.Dockerfile` (RECOMMENDED)
 
 Multi-stage: composer deps → PHP runtime with the extensions listed in `SETUP.md §2` plus `pdo_pgsql`, `gd`/`imagick`, `zip`, `pcntl`/`posix`, `redis`. Octane defaults to **RoadRunner** (`config/octane.php` → `env('OCTANE_SERVER','roadrunner')`); the cleanest single-binary container option is **FrankenPHP**, shown here. (Alternative: install the RoadRunner binary, or set `OCTANE_SERVER=swoole` + the swoole extension.)
 
@@ -38,7 +38,7 @@ WORKDIR /designer
 COPY designer/package*.json ./
 RUN npm ci
 COPY designer/ ./
-# VITE_APP_BASE_API is BAKED at build time — pass the prod storefront API URL.
+# VITE_APP_BASE_API is BAKED at build time - pass the prod storefront API URL.
 ARG DESIGNER_BASE_API=https://api.printflow360.com/api/v1/storefront
 ENV VITE_APP_BASE_API=$DESIGNER_BASE_API
 RUN npm run build          # -> designer/dist
@@ -73,9 +73,9 @@ CMD ["php", "artisan", "octane:start", "--host=0.0.0.0", "--port=8000"]
 
 > **Gotchas**
 > - `--watch` is dev-only. Production uses the plain `octane:start`.
-> - Run `migrate --force` + `config:cache route:cache view:cache event:cache` at **deploy time** (an entrypoint or a one-shot job), not in the image build — they need live env/DB. See §4.
+> - Run `migrate --force` + `config:cache route:cache view:cache event:cache` at **deploy time** (an entrypoint or a one-shot job), not in the image build - they need live env/DB. See §4.
 > - **dompdf needs fonts** and a writable cache dir in the image (`storage/fonts` above).
-> - **Never bake `.env`** — the committed `.env`/`.env.example` contain real-looking secrets. Mount env at runtime.
+> - **Never bake `.env`** - the committed `.env`/`.env.example` contain real-looking secrets. Mount env at runtime.
 
 ### 1.2 Queue worker + scheduler (REUSE API image, different command) (RECOMMENDED)
 
@@ -89,18 +89,18 @@ CMD ["php", "artisan", "queue:work", "--tries=3", "--timeout=90"]
 CMD ["php", "artisan", "schedule:work"]
 ```
 
-(Both set as `command:` overrides in compose — see §2.)
+(Both set as `command:` overrides in compose - see §2.)
 
-### 1.3 Nuxt 3 Admin (`nuxt/`, :3000) — `deploy/docker/admin.Dockerfile` (RECOMMENDED)
+### 1.3 Nuxt 3 Admin (`nuxt/`, :3000) - `deploy/docker/admin.Dockerfile` (RECOMMENDED)
 
 Multi-stage node build → slim runtime serving the self-contained Nitro output.
 
 > **Critical gotchas for this app**
-> - Deps come from the **ROOT** `package.json` + root `nuxt.config.ts` (`rootDir: 'nuxt/'`). The `nuxt/package-lock.json` is a stub — build context must include repo-root files.
+> - Deps come from the **ROOT** `package.json` + root `nuxt.config.ts` (`rootDir: 'nuxt/'`). The `nuxt/package-lock.json` is a stub - build context must include repo-root files.
 > - Output is **`nuxt/.output/`**, not `.output/` (because of `rootDir`).
 > - SSR uses `API_LOCAL_URL` (internal), browser uses `APP_URL` (public). Both required, different in Docker.
-> - `GOOGLE_MAPS_PLACE_API_KEY` + the `meet.printflow360.com` Jitsi script are **baked at build** from `import.meta.env` — not runtime-swappable. `APP_URL` is also baked into `image.domains` + CSP.
-> - Build is memory-heavy (fullcalendar/apexcharts/tiptap/quill/firebase/pdfjs) — set `--max-old-space-size=4096`.
+> - `GOOGLE_MAPS_PLACE_API_KEY` + the `meet.printflow360.com` Jitsi script are **baked at build** from `import.meta.env` - not runtime-swappable. `APP_URL` is also baked into `image.domains` + CSP.
+> - Build is memory-heavy (fullcalendar/apexcharts/tiptap/quill/firebase/pdfjs) - set `--max-old-space-size=4096`.
 
 ```dockerfile
 # ---- build stage ----
@@ -127,7 +127,7 @@ RUN npm run build                           # -> nuxt/.output/  (NOTE: under nux
 FROM node:22-bookworm-slim AS runtime
 WORKDIR /app
 RUN useradd -m -u 10001 app
-# Nitro output is self-contained — no node_modules needed at runtime.
+# Nitro output is self-contained - no node_modules needed at runtime.
 COPY --from=build /app/nuxt/.output ./nuxt/.output
 USER app
 ENV PORT=3000 HOST=0.0.0.0
@@ -136,12 +136,12 @@ EXPOSE 3000
 CMD ["node", "nuxt/.output/server/index.mjs"]
 ```
 
-### 1.4 Nuxt 4 Storefront (`frontstore/`, :3001) — `deploy/docker/storefront.Dockerfile` (RECOMMENDED)
+### 1.4 Nuxt 4 Storefront (`frontstore/`, :3001) - `deploy/docker/storefront.Dockerfile` (RECOMMENDED)
 
-Own `package.json`. The `build:themes` step compiles per-theme CSS and runs **automatically via the prebuild hook**, so `nuxt build` triggers it — but run it explicitly to be safe. Copies the designer `dist` into `frontstore/public/designer` (static, iframe-embedded).
+Own `package.json`. The `build:themes` step compiles per-theme CSS and runs **automatically via the prebuild hook**, so `nuxt build` triggers it - but run it explicitly to be safe. Copies the designer `dist` into `frontstore/public/designer` (static, iframe-embedded).
 
 > **Critical gotchas**
-> - Set **`NITRO_REDIS_URL`** at runtime for shared/persistent ISR cache — without it every restart cold-starts and replicas don't share cache.
+> - Set **`NITRO_REDIS_URL`** at runtime for shared/persistent ISR cache - without it every restart cold-starts and replicas don't share cache.
 > - Per-tenant cache key varies on `x-tenant-host` + `x-device-type` (`server/plugins/tenant-cache-key.ts`). The proxy **must preserve the real `Host`**.
 > - `FRONTSTORE_CACHE_PURGE_INTERNAL_URL` must hit the Nuxt process **directly** (`http://storefront:3001`), never via the proxy/Cloudflare (returns 403).
 
@@ -181,11 +181,11 @@ CMD ["node", "frontstore/.output/server/index.mjs"]
 
 ### 1.5 Designer SPA (`designer/`, build-only) (RECOMMENDED, as a stage)
 
-**Not a runtime service.** It is a Vite SPA whose `VITE_APP_BASE_API` is **baked at build time** (`DESIGNER_BASE_API` env). In prod it is built once and the `dist/` is copied into both the Laravel `public/designer/` and the storefront `frontstore/public/designer/` web roots (mirrors `scripts/publish-designer.sh`). It is shown above as the `designer` build stage inside both the API and storefront Dockerfiles — there is no standalone designer container.
+**Not a runtime service.** It is a Vite SPA whose `VITE_APP_BASE_API` is **baked at build time** (`DESIGNER_BASE_API` env). In prod it is built once and the `dist/` is copied into both the Laravel `public/designer/` and the storefront `frontstore/public/designer/` web roots (mirrors `scripts/publish-designer.sh`). It is shown above as the `designer` build stage inside both the API and storefront Dockerfiles - there is no standalone designer container.
 
-> Do **not** run a designer build casually (CLAUDE.md §5 — a hook even blocks it). Only build it in CI/image build for a release.
+> Do **not** run a designer build casually (CLAUDE.md §5 - a hook even blocks it). Only build it in CI/image build for a release.
 
-### 1.6 pdf-service (`pdf-service/`, :4000) — `pdf-service/Dockerfile` (EXISTING — reuse)
+### 1.6 pdf-service (`pdf-service/`, :4000) - `pdf-service/Dockerfile` (EXISTING - reuse)
 
 The **only correct, finished Dockerfile in the repo.** Multi-stage `node:20-alpine`, build deps `vips-dev build-base python3 pkgconfig` (for `sharp`/canvas), runtime libs `vips tini curl`, non-root `app` user, `tini` as PID 1, `HEALTHCHECK` on `/health`. **Do not rewrite it.**
 
@@ -202,7 +202,7 @@ The only **fix needed** is the *compose env* (not the Dockerfile): pass `DB_DIAL
 Replaces the broken Sail file. Fixes the MySQL→PostgreSQL bug, adds postgres/redis/minio/proxy, splits pdf API vs worker, adds queue-worker + scheduler sidecars, uses YAML anchors for shared env, and adds healthchecks + named volumes.
 
 ```yaml
-# docker-compose.yml — dev stack for Print-Flow-360 (RECOMMENDED, replaces Sail stub)
+# docker-compose.yml - dev stack for Print-Flow-360 (RECOMMENDED, replaces Sail stub)
 x-laravel-env: &laravel-env
   APP_KEY: ${APP_KEY}                       # MUST match pdf-service APP_KEY exactly
   DB_CONNECTION: pgsql
@@ -239,7 +239,7 @@ services:
       POSTGRES_DB: ${DB_DATABASE:-live_db}
     volumes:
       - pgdata:/var/lib/postgresql/data
-      # one-shot: create the landlord DB too (admin_db) — both live in one instance
+      # one-shot: create the landlord DB too (admin_db) - both live in one instance
       - ./deploy/docker/initdb:/docker-entrypoint-initdb.d:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${DB_USERNAME:-printflow}"]
@@ -260,7 +260,7 @@ services:
       retries: 5
     networks: [printflow]
 
-  minio:                                    # dev only — real S3 in prod
+  minio:                                    # dev only - real S3 in prod
     image: minio/minio
     command: server /data --console-address ":9001"
     environment:
@@ -450,16 +450,16 @@ networks:
 
 ---
 
-## 3. Env-var matrix — who needs what, and what MUST match
+## 3. Env-var matrix - who needs what, and what MUST match
 
 ### 3.1 Secrets that MUST be byte-identical across services
 
 | Var | Laravel | pdf-service | storefront | Failure if mismatched |
 |---|---|---|---|---|
-| `APP_KEY` | `APP_KEY` | `APP_KEY` | — | silent **401** on every delegated file op |
-| `PDF_SERVICE_INTERNAL_SECRET` ↔ `INTERNAL_API_SECRET` | `PDF_SERVICE_INTERNAL_SECRET` | `INTERNAL_API_SECRET` | — | **401** between Laravel ↔ pdf-service |
-| `FRONTSTORE_CACHE_PURGE_TOKEN` | set | — | `FRONTSTORE_CACHE_PURGE_TOKEN` | cache purge rejected |
-| `INTERNAL_API_SECRET` (subscription `X-Internal-Secret`) | set | — | set (if used) | subscription verify fails |
+| `APP_KEY` | `APP_KEY` | `APP_KEY` | - | silent **401** on every delegated file op |
+| `PDF_SERVICE_INTERNAL_SECRET` ↔ `INTERNAL_API_SECRET` | `PDF_SERVICE_INTERNAL_SECRET` | `INTERNAL_API_SECRET` | - | **401** between Laravel ↔ pdf-service |
+| `FRONTSTORE_CACHE_PURGE_TOKEN` | set | - | `FRONTSTORE_CACHE_PURGE_TOKEN` | cache purge rejected |
+| `INTERNAL_API_SECRET` (subscription `X-Internal-Secret`) | set | - | set (if used) | subscription verify fails |
 
 ### 3.2 Per-service env
 
@@ -507,7 +507,7 @@ docker compose build
 docker compose up -d postgres redis minio
 docker compose up -d
 
-# 3. Create the MinIO bucket (dev S3) — one-shot
+# 3. Create the MinIO bucket (dev S3) - one-shot
 docker compose exec minio sh -c \
   "mc alias set local http://localhost:9000 $AWS_ACCESS_KEY_ID $AWS_SECRET_ACCESS_KEY && \
    mc mb -p local/printflow360"
@@ -535,11 +535,11 @@ docker compose logs -f pdf-service pdf-worker
 docker compose exec api php artisan pdf-service:status
 ```
 
-> **Memory note for the builders:** the admin and storefront builds are memory-heavy — `NODE_OPTIONS=--max-old-space-size=4096` is set inside their Dockerfiles. Laravel's bare-metal build uses the same flag in `deploy/deploy.sh`.
+> **Memory note for the builders:** the admin and storefront builds are memory-heavy - `NODE_OPTIONS=--max-old-space-size=4096` is set inside their Dockerfiles. Laravel's bare-metal build uses the same flag in `deploy/deploy.sh`.
 
 ---
 
-## 5. Reverse-proxy sketch — tenant subdomains + `X-Tenant` (RECOMMENDED)
+## 5. Reverse-proxy sketch - tenant subdomains + `X-Tenant` (RECOMMENDED)
 
 No proxy exists in the repo. Tenant resolution: **storefront requests carry the store hostname as the `X-Tenant` header** (the storefront Nuxt sets it via `useStorefrontHeaders()`; SSR reads request headers and prefers `x-tenant-host`, **not** `useRequestURL().hostname` which returns `localhost` behind a proxy and breaks tenancy). `config/tenancy.php` `central_domains = ['127.0.0.1','localhost']` are the non-tenant (admin/landlord) hosts.
 
@@ -576,7 +576,7 @@ Routing rules:
       - traefik.http.services.api.loadbalancer.server.port=8000
 ```
 
-> Traefik can't templatize a header from `Host` purely via labels — for production-grade `X-Tenant=Host` injection use a small ForwardAuth/plugin, or do it in nginx (below). The storefront Nuxt already derives the tenant from the forwarded `Host`/`x-tenant-host`, so the key requirement is **preserve the real `Host`**.
+> Traefik can't templatize a header from `Host` purely via labels - for production-grade `X-Tenant=Host` injection use a small ForwardAuth/plugin, or do it in nginx (below). The storefront Nuxt already derives the tenant from the forwarded `Host`/`x-tenant-host`, so the key requirement is **preserve the real `Host`**.
 
 ### nginx equivalent (explicit header injection)
 
@@ -606,7 +606,7 @@ server {                       # api
 }
 ```
 
-> **Local dev:** `*.localhost` resolves to `127.0.0.1` automatically in modern browsers, so `printdesign.localhost` works without `/etc/hosts` edits — but the wildcard proxy still needs the Host rule. `.env`: `TEST_STORE_SUBDOMAIN=printdesign.localhost:3001`, `BASE_DOMAIN=localhost:3001`.
+> **Local dev:** `*.localhost` resolves to `127.0.0.1` automatically in modern browsers, so `printdesign.localhost` works without `/etc/hosts` edits - but the wildcard proxy still needs the Host rule. `.env`: `TEST_STORE_SUBDOMAIN=printdesign.localhost:3001`, `BASE_DOMAIN=localhost:3001`.
 >
 > **Cache-purge loopback:** `FRONTSTORE_CACHE_PURGE_INTERNAL_URL=http://storefront:3001` must hit Nuxt **directly**, never the proxy/Cloudflare (returns 403).
 
@@ -633,13 +633,13 @@ server {                       # api
 | dompdf **export fails / missing fonts** | Font cache dir not present/writable in the Laravel image | Ship fonts + a writable `storage/fonts` cache dir |
 | Octane won't start | Image has no RoadRunner binary (`OCTANE_SERVER` default) | Install RoadRunner, or set `OCTANE_SERVER=frankenphp`/`swoole` and install that runtime |
 | MinIO uploads 403 / bucket missing | Path-style/endpoint not set, or bucket not created | `AWS_ENDPOINT=http://minio:9000`, `AWS_USE_PATH_STYLE_ENDPOINT=true`, `mc mb local/printflow360` |
-| pdf-service appears **dormant** (no effect) | `PDF_SERVICE_FEAT_*` flags default **OFF** — Laravel uses its own dompdf path | Expected; flip the relevant flags to route work to pdf-service |
+| pdf-service appears **dormant** (no effect) | `PDF_SERVICE_FEAT_*` flags default **OFF** - Laravel uses its own dompdf path | Expected; flip the relevant flags to route work to pdf-service |
 
 ---
 
 ## 7. Rollout order (de-risked)
 
-Because **pdf-service feature flags default OFF**, Laravel keeps using its own dompdf path — so you can ship the **proxy + web + db tier first** and add the pdf tier later:
+Because **pdf-service feature flags default OFF**, Laravel keeps using its own dompdf path - so you can ship the **proxy + web + db tier first** and add the pdf tier later:
 
 1. `postgres` + `redis` (+ `minio` for dev) → healthchecks green.
 2. `api` (with the **new `/api/health` route** + Postgres wiring) → `migrate --force` + caches.
@@ -648,4 +648,4 @@ Because **pdf-service feature flags default OFF**, Laravel keeps using its own d
 5. `proxy` (wildcard tenant routing, preserve `Host`).
 6. `pdf-service` + `pdf-worker` last (low-risk; flip `PDF_SERVICE_FEAT_*` when ready).
 
-> Keep `deploy/deploy.sh` + PM2 as the bare-metal fallback until the container path is proven — note `deploy/pm2/ecosystem.config.cjs` is referenced but **missing**, and there is **no nginx config in `deploy/`**, so Docker here is genuinely greenfield.
+> Keep `deploy/deploy.sh` + PM2 as the bare-metal fallback until the container path is proven - note `deploy/pm2/ecosystem.config.cjs` is referenced but **missing**, and there is **no nginx config in `deploy/`**, so Docker here is genuinely greenfield.

@@ -120,7 +120,7 @@ In a typical storefront platform, the split looks like this:
 | Data | Controller | Processor |
 |------|-----------|-----------|
 | A merchant's shoppers (names, emails, addresses, orders, designs) | The merchant | Your platform |
-| Your own business data (merchant accounts, billing, your marketing) | Your platform | — |
+| Your own business data (merchant accounts, billing, your marketing) | Your platform | - |
 
 ### The trap that flips the switch
 

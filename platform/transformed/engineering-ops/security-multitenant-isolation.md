@@ -1,7 +1,7 @@
 ---
 title: "Multi-Tenant Isolation: Why One Bug Leaks Every Customer"
 metaTitle: "Multi-Tenant Isolation Security Guide"
-description: "Multi-tenant isolation breaks when one query forgets the tenant filter. Learn the failure modes—IDOR, fail-open scopes, spoofed headers—and how to fix them."
+description: "Multi-tenant isolation breaks when one query forgets the tenant filter. Learn the failure modes-IDOR, fail-open scopes, spoofed headers-and how to fix them."
 keywords:
   - multi-tenant isolation
   - tenant data isolation
@@ -23,7 +23,7 @@ faq:
   - q: What is an IDOR vulnerability in a multi-tenant app?
     a: IDOR (insecure direct object reference) is when an endpoint trusts an ID from the request without checking that the caller owns it. With sequential integer IDs, an attacker just increments the number to read or modify another tenant's records.
   - q: Why shouldn't I trust a tenant header from the client?
-    a: Any header the browser or an attacker can set—like X-Tenant or X-Store-Id—is attacker-controllable. If you resolve tenancy from that header instead of the trusted hostname, someone can impersonate another tenant by changing one line in their request.
+    a: Any header the browser or an attacker can set-like X-Tenant or X-Store-Id-is attacker-controllable. If you resolve tenancy from that header instead of the trusted hostname, someone can impersonate another tenant by changing one line in their request.
   - q: Do background jobs respect tenant isolation automatically?
     a: Not usually. In many setups the tenant context is not restored inside queued jobs, so an Eloquent query that relies on a global scope runs unscoped across all tenants. Jobs that touch tenant data must re-initialize tenancy explicitly.
   - q: Is authentication the same as isolation?
@@ -43,7 +43,7 @@ sources:
 
 A staff engineer ran a security review on a SaaS platform that serves hundreds of stores from one database. The login was solid. The admin tokens were bound tightly to their owners. And yet, with a single guessed number in a URL, one store's admin could quietly delete another store's data.
 
-That is the uncomfortable truth about multi-tenant systems: the front door can be locked while a window in the back stays wide open. This article walks through the real ways tenant isolation fails, using a concrete review as the map—so you can find your own open windows before someone else does.
+That is the uncomfortable truth about multi-tenant systems: the front door can be locked while a window in the back stays wide open. This article walks through the real ways tenant isolation fails, using a concrete review as the map-so you can find your own open windows before someone else does.
 
 ## Why this matters
 
@@ -51,7 +51,7 @@ If you run a SaaS product, you almost certainly share infrastructure between cus
 
 It is also one mistake away from a breach.
 
-When tenants share a database, there is no wall between them. There is only a filter—`where tenant_id = ?`—that your code is supposed to add to every single query. Miss it once, and Customer A sees Customer B's orders, invoices, or designs. A leak like this is not a bug report. It is a regulatory incident, a churned account, and a headline.
+When tenants share a database, there is no wall between them. There is only a filter-`where tenant_id = ?`-that your code is supposed to add to every single query. Miss it once, and Customer A sees Customer B's orders, invoices, or designs. A leak like this is not a bug report. It is a regulatory incident, a churned account, and a headline.
 
 The review we are drawing from rated the platform's cross-tenant isolation **red**. Not because the team was careless, but because the design quietly assumed every developer would remember the filter, forever, in every code path. Let's look at why that assumption breaks.
 
@@ -59,7 +59,7 @@ The review we are drawing from rated the platform's cross-tenant isolation **red
 
 In a shared database, there is no physical separation between tenants. A single global scope appends `where tenant_id = <current tenant>` to every query on tenant-owned models. When tenancy is active, the database returns only the current customer's rows. That is the whole isolation model.
 
-Think of it like a shared warehouse where every box has a customer label. The forklift driver is told "only touch boxes labeled Acme." There is no fence around Acme's boxes. If the driver ever forgets to check the label—or someone hands them a box with the label peeled off—they will happily grab a competitor's shipment.
+Think of it like a shared warehouse where every box has a customer label. The forklift driver is told "only touch boxes labeled Acme." There is no fence around Acme's boxes. If the driver ever forgets to check the label-or someone hands them a box with the label peeled off-they will happily grab a competitor's shipment.
 
 This design has one fatal property you must internalize: **the filter is the only thing protecting you.** There is no second line of defense underneath it. So the interesting question is never "does the filter work?" It almost always does. The question is: **where does the filter silently not run?**
 
@@ -88,12 +88,12 @@ This is the one that turned the review red, and it is worth understanding in det
 
 Most of the platform used **UUIDs** as the public identifier for records. UUIDs are long and random, so you cannot guess your way to someone else's data. Good.
 
-But two controllers were the exception. They handled custom workflow statuses using **sequential integer IDs**—`/order-statuses/5`, `/order-statuses/6`, and so on. Worse, to display shared system statuses, the code deliberately *removed* the tenant filter with `withoutGlobalScopes()`—and then never re-checked ownership before letting the caller edit or delete the record.
+But two controllers were the exception. They handled custom workflow statuses using **sequential integer IDs**-`/order-statuses/5`, `/order-statuses/6`, and so on. Worse, to display shared system statuses, the code deliberately *removed* the tenant filter with `withoutGlobalScopes()`-and then never re-checked ownership before letting the caller edit or delete the record.
 
 Put those two facts together and you get a textbook **IDOR** (insecure direct object reference):
 
 1. Tenant A's admin opens their own status list and sees IDs like `12`, `13`, `14`.
-2. They send a `DELETE` request for ID `15`, `16`, `17`—numbers they never saw.
+2. They send a `DELETE` request for ID `15`, `16`, `17`-numbers they never saw.
 3. The server loads those records *with the tenant filter turned off*, finds them, and deletes them.
 4. Tenant B's workflow just got rearranged by a stranger.
 
@@ -101,7 +101,7 @@ The attacker does not need anything clever. They count.
 
 ### The pattern to memorize
 
-Whenever you turn off the global scope—and sometimes you legitimately must—you take on a manual obligation to re-check ownership yourself. The fix is a single guard right after you load the record:
+Whenever you turn off the global scope-and sometimes you legitimately must-you take on a manual obligation to re-check ownership yourself. The fix is a single guard right after you load the record:
 
 ```php
 abort_unless(
@@ -128,17 +128,17 @@ The storefront path got it backwards. It resolved the tenant from request header
 
 1. The `X-Tenant` header (attacker-controllable).
 2. An `X-Store-Id` header (also attacker-controllable).
-3. The actual hostname (trustworthy)—but only as a last resort.
+3. The actual hostname (trustworthy)-but only as a last resort.
 
 So the system trusted a header *the browser can set to anything* ahead of the real hostname. An attacker could point a request at one store's address while setting `X-Tenant` to a different store, and the server would believe the header.
 
 For reads, that is information disclosure. For **writes**, it is worse: because new records get auto-stamped with "the current tenant," a spoofed header could attribute an attacker's write to a victim tenant.
 
-> **The rule:** identify the tenant from a trusted signal—the verified hostname or the authenticated user. If you must accept a header (for server-side rendering or an edge proxy), require a shared internal secret that only your own infrastructure knows, and fall back to the hostname otherwise.
+> **The rule:** identify the tenant from a trusted signal-the verified hostname or the authenticated user. If you must accept a header (for server-side rendering or an edge proxy), require a shared internal secret that only your own infrastructure knows, and fall back to the hostname otherwise.
 
 ## Failure 4: Background jobs forget who they're working for
 
-Queued jobs are isolation's blind spot. When a job is picked up by a worker minutes later, the tenant context from the original request is gone. If the job runs an Eloquent query expecting the global scope to protect it—and the scope is fail-open—that query runs across **every tenant at once.**
+Queued jobs are isolation's blind spot. When a job is picked up by a worker minutes later, the tenant context from the original request is gone. If the job runs an Eloquent query expecting the global scope to protect it-and the scope is fail-open-that query runs across **every tenant at once.**
 
 Imagine a "send notification" job that loads unread notifications and emails them out. Queued without restoring tenancy, it cheerfully emails Tenant A's notifications to whoever the job happens to process. The code looks correct. The scope was supposed to handle it. The scope wasn't there.
 
@@ -152,8 +152,8 @@ The fix is a discipline, not a config flag:
 
 A few findings had nothing to do with tenancy and everything to do with the doors being unlocked:
 
-- **A hardcoded master OTP.** The two-factor check accepted a default code (`702702`) for *any* user when an environment variable was unset—a universal 2FA bypass shipped in the code. Break-glass mechanisms must fail *closed* on an empty config, be limited to non-production, and be audit-logged. Never default to a working secret.
-- **An inverted expiry check.** A token service returned the payload *when the token was expired*—a single flipped condition that made every signed token valid forever. One-character logic bugs in auth code are catastrophic, which is exactly why expiry deserves a unit test.
+- **A hardcoded master OTP.** The two-factor check accepted a default code (`702702`) for *any* user when an environment variable was unset-a universal 2FA bypass shipped in the code. Break-glass mechanisms must fail *closed* on an empty config, be limited to non-production, and be audit-logged. Never default to a working secret.
+- **An inverted expiry check.** A token service returned the payload *when the token was expired*-a single flipped condition that made every signed token valid forever. One-character logic bugs in auth code are catastrophic, which is exactly why expiry deserves a unit test.
 - **Wildcard CORS with credentials.** Allowing any origin (`*`) to make credentialed requests means a malicious website can read your API using a logged-in victim's token. Use an explicit origin allowlist, never `*` with credentials.
 - **Customer tokens that never expire, with full abilities.** Set a finite token lifetime, prune expired tokens on a schedule, and scope each token to the minimum abilities it needs.
 
@@ -165,7 +165,7 @@ None of these are exotic. They are the ordinary ways auth rots, and they compoun
 Authentication proves *who* you are. Isolation decides *what* your request may touch. A fully authenticated user can still reach another tenant's data through an IDOR hole or an unscoped query. They are different layers, and you need both.
 
 **"The ORM scopes every query, so we're safe."**
-Only when the scope actually runs. Raw queries, `withoutGlobalScopes()`, background jobs, and uninitialized contexts all slip past it. The scope is load-bearing *and* easy to bypass—a dangerous combination.
+Only when the scope actually runs. Raw queries, `withoutGlobalScopes()`, background jobs, and uninitialized contexts all slip past it. The scope is load-bearing *and* easy to bypass-a dangerous combination.
 
 **"UUIDs alone stop IDOR."**
 Unguessable IDs make enumeration impractical, which is a real and valuable defense. But they are not authorization. If an attacker obtains a valid UUID (shared in a URL, a referrer header, a log), you still need a server-side ownership check.
@@ -183,18 +183,18 @@ Walk your own system through these steps. Each one maps to a real failure above.
 1. **Make your tenant scope fail closed.** Querying a tenant model with no tenant context should throw, not return everything. This single change neutralizes whole categories of leak.
 2. **Use unguessable IDs in every URL.** Default to UUIDs. Audit any endpoint that still takes a sequential integer.
 3. **Re-check ownership on every mutating handler.** Especially anywhere you call `withoutGlobalScopes()`. Load the record, then `abort(404)` unless the caller owns it.
-4. **Resolve tenancy from a trusted signal.** The verified hostname or the authenticated user—never a raw client header. Gate any header-based path behind an internal secret.
+4. **Resolve tenancy from a trusted signal.** The verified hostname or the authenticated user-never a raw client header. Gate any header-based path behind an internal secret.
 5. **Re-initialize tenancy inside every job.** Pass IDs, re-fetch models, and lint for jobs that skip it.
 6. **Kill auth shortcuts.** No hardcoded master codes, no default signing keys, no wildcard CORS with credentials. Fail closed on empty config.
 7. **Expire and scope your tokens.** Finite lifetimes, scheduled pruning of expired tokens, least-privilege abilities.
-8. **Rate-limit every auth surface.** Login, register, forgot-password, and token issuance—keyed by email and IP, backed by a shared store (like Redis) so the limit holds across servers.
+8. **Rate-limit every auth surface.** Login, register, forgot-password, and token issuance-keyed by email and IP, backed by a shared store (like Redis) so the limit holds across servers.
 9. **Return one generic message on failed login.** "Invalid email or password" for every case stops attackers from enumerating which accounts exist.
-10. **Write a cross-tenant penetration test.** Set up Tenant A and Tenant B, then assert that A literally cannot read or mutate B's records through any route—checking the database state, not just the HTTP status code. Make it run in CI so a future change can't quietly reopen the hole.
+10. **Write a cross-tenant penetration test.** Set up Tenant A and Tenant B, then assert that A literally cannot read or mutate B's records through any route-checking the database state, not just the HTTP status code. Make it run in CI so a future change can't quietly reopen the hole.
 
 That last step is the one that lasts. Documentation drifts and good intentions fade, but a failing test stops a regression cold.
 
 ## Conclusion
 
-The single takeaway: **in a shared database, isolation is a filter you must never forget, and the system should refuse to run when you do.** Every failure in this review—IDOR, spoofed headers, unscoped jobs, fail-open scopes—is a variation of the same theme: a query that ran without the tenant filter and faced no consequence for it. Build the consequence in. Make the absence of a tenant context a loud error, not a silent leak.
+The single takeaway: **in a shared database, isolation is a filter you must never forget, and the system should refuse to run when you do.** Every failure in this review-IDOR, spoofed headers, unscoped jobs, fail-open scopes-is a variation of the same theme: a query that ran without the tenant filter and faced no consequence for it. Build the consequence in. Make the absence of a tenant context a loud error, not a silent leak.
 
-This sits at the top of the OWASP risk list for a reason—**Broken Access Control** is the most common serious flaw on the web, and IDOR is its most common shape. Which raises a sharper question worth chasing next: if your application code is the *only* thing standing between two customers, should it be? Database-level **row-level security**—where the database itself enforces `tenant_id`, no matter what query reaches it—turns that single filter into an actual wall. That is where a fail-open design goes to die, and it's worth a look.
+This sits at the top of the OWASP risk list for a reason-**Broken Access Control** is the most common serious flaw on the web, and IDOR is its most common shape. Which raises a sharper question worth chasing next: if your application code is the *only* thing standing between two customers, should it be? Database-level **row-level security**-where the database itself enforces `tenant_id`, no matter what query reaches it-turns that single filter into an actual wall. That is where a fail-open design goes to die, and it's worth a look.

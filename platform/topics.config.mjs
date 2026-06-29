@@ -6,7 +6,7 @@
 // and `published`.
 //
 // DEFAULTS: any folder NOT listed here is auto-published with a prettified
-// title — so when you add a brand-new research folder later, it appears on the
+// title - so when you add a brand-new research folder later, it appears on the
 // blog automatically. List a folder with `published: false` to keep it private
 // (used here for internal product business/strategy research).
 // ---------------------------------------------------------------------------
@@ -34,7 +34,7 @@ export const TOPICS = {
   },
   'distributed-systems': {
     title: 'Distributed Systems',
-    description: 'The hard middle of modern engineering — replication, partitioning, and failure.',
+    description: 'The hard middle of modern engineering - replication, partitioning, and failure.',
     category: 'Engineering',
     icon: '🌐',
     order: 2,
@@ -146,7 +146,7 @@ export const TOPICS = {
   },
   'psychology-of-decisions': {
     title: 'Psychology of Decisions',
-    description: 'How we actually decide — biases, heuristics, and how to do better.',
+    description: 'How we actually decide - biases, heuristics, and how to do better.',
     category: 'Thinking & Decisions',
     icon: '🎯',
     order: 3,
@@ -199,73 +199,20 @@ export const TOPICS = {
   },
 
   // ------------------------------------------------------------------
-  // Business & Growth — now PUBLIC (per 2026-06-29 decision).
-  // NOTE: these contain product/GTM strategy. To make any one private
-  // again, set `published: false`. They go live only when you deploy.
+  // Internal PrintFlow360 business/strategy research - PRIVATE.
+  // Kept off the live site (competitive playbook). The transformed blog
+  // versions still exist in platform/transformed/ if you ever choose to
+  // publish one: just remove its `published: false`.
   // ------------------------------------------------------------------
-  'gtm-strategy': {
-    title: 'Go-to-Market Strategy',
-    description: 'ICP & positioning, JTBD, pricing, competitive intel, TAM/SAM/SOM, and GTM motion.',
-    category: 'Business & Growth',
-    icon: '🎯',
-    order: 1,
-  },
-  marketing: {
-    title: 'Marketing',
-    description: 'Demand generation vs capture, category design, comparisons, and live selling.',
-    category: 'Business & Growth',
-    icon: '📣',
-    order: 2,
-  },
-  'marketing-growth': {
-    title: 'Growth & Acquisition',
-    description: 'Acquisition channels, content/SEO engine, conversion funnel, brand & trust signals.',
-    category: 'Business & Growth',
-    icon: '🚀',
-    order: 3,
-  },
-  'metrics-analytics': {
-    title: 'Metrics & Analytics',
-    description: 'Unit economics, cohort retention, MRR/ARR/NRR, attribution, and event taxonomy.',
-    category: 'Business & Growth',
-    icon: '📊',
-    order: 4,
-  },
-  'retention-lifecycle': {
-    title: 'Retention & Lifecycle',
-    description: 'Onboarding, behavioral email, dunning, NPS/CSAT, and community moats.',
-    category: 'Business & Growth',
-    icon: '🔁',
-    order: 5,
-  },
-  'engineering-ops': {
-    title: 'Engineering & Ops',
-    description: 'Production readiness, backups, Docker, multi-tenant isolation, billing correctness, compliance.',
-    category: 'Business & Growth',
-    icon: '🛠️',
-    order: 6,
-  },
-  'feature-rd': {
-    title: 'Feature R&D',
-    description: 'Feature improvement rounds, design councils, and game-changer ideas.',
-    category: 'Business & Growth',
-    icon: '🧪',
-    order: 7,
-  },
-  'qa-launch': {
-    title: 'QA & Launch Readiness',
-    description: 'Real-user QA readiness, platform audits, gap assessments, and launch findings.',
-    category: 'Business & Growth',
-    icon: '✅',
-    order: 8,
-  },
-  'product-design': {
-    title: 'Product & Design',
-    description: 'Design foundation master plan and storefront design audits.',
-    category: 'Business & Growth',
-    icon: '🎨',
-    order: 9,
-  },
+  'gtm-strategy': { published: false },
+  marketing: { published: false },
+  'marketing-growth': { published: false },
+  'metrics-analytics': { published: false },
+  'retention-lifecycle': { published: false },
+  'engineering-ops': { published: false },
+  'feature-rd': { published: false },
+  'qa-launch': { published: false },
+  'product-design': { published: false },
 };
 
 // Folders that are never topics (build output, this app, etc.)

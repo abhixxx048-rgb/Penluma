@@ -104,7 +104,7 @@ function glossaryChapter(glossary){
   const rows = glossary
     .sort((a,b)=>a.term.toLowerCase().localeCompare(b.term.toLowerCase()))
     .map(g=>`<tr><td>${g.term}</td><td>${g.definition}</td></tr>`).join('\n');
-  return `<section class="chapter" id="glossary"><h2>Glossary — Plain-English Definitions</h2>
+  return `<section class="chapter" id="glossary"><h2>Glossary - Plain-English Definitions</h2>
   <p>Quick reference for every key term used in this guide.</p>
   <table class="glossary-table"><thead><tr><th>Term</th><th>What it means</th></tr></thead><tbody>${rows}</tbody></table></section>`;
 }

@@ -21,7 +21,7 @@ faq:
   - q: What is the difference between MRR and ARR?
     a: >-
       MRR is your normalized monthly recurring subscription revenue. ARR is
-      simply MRR multiplied by 12 — a snapshot of your current run rate
+      simply MRR multiplied by 12 - a snapshot of your current run rate
       annualized. ARR is not the cash you collected over the past year or the
       total value of contracts you signed.
   - q: What counts as a good net revenue retention rate?
@@ -35,7 +35,7 @@ faq:
       NRR (net revenue retention) includes expansion from existing customers,
       so it can exceed 100%. GRR (gross revenue retention) excludes expansion
       and only measures losses from churn and downgrades, so it caps at 100%.
-      Read them together — a few big upsells can hide heavy churn.
+      Read them together - a few big upsells can hide heavy churn.
   - q: Why should you not include one-time fees in MRR?
     a: >-
       Setup fees, custom work and usage overages are real revenue but they are
@@ -45,10 +45,10 @@ faq:
     a: >-
       Spread it evenly. A $600 annual plan contributes $50 of MRR each month for
       the full term. The upfront cash sits as deferred revenue and is recognized
-      one-twelfth at a time — it is never a single-month revenue spike.
+      one-twelfth at a time - it is never a single-month revenue spike.
   - q: What is the MRR movement waterfall?
     a: >-
-      It breaks your monthly MRR change into five parts — new, expansion,
+      It breaks your monthly MRR change into five parts - new, expansion,
       reactivation, contraction and churn. Instead of just showing net growth,
       it tells you which lever is actually moving so you fix the right problem.
 topic: metrics-analytics
@@ -66,7 +66,7 @@ A subscription business can post a giant revenue number and still be quietly dyi
 
 The difference is almost never in the math. It is in the definitions. Blend two kinds of revenue into one figure, count an annual prepayment as a single fat month, or chase a retention target meant for someone else's business, and you will steer by a broken compass without ever seeing the crack.
 
-This is a plain-language tour of the metrics that actually describe a subscription company's health — and the popular myths that wreck them.
+This is a plain-language tour of the metrics that actually describe a subscription company's health - and the popular myths that wreck them.
 
 ## Why this matters
 
@@ -90,7 +90,7 @@ MRR = sum of the normalized monthly value of every active subscription
 ARR = MRR x 12
 ```
 
-**ARR (Annual Recurring Revenue)** is just MRR multiplied by twelve — a snapshot of your current run rate, annualized. That's the whole definition.
+**ARR (Annual Recurring Revenue)** is just MRR multiplied by twelve - a snapshot of your current run rate, annualized. That's the whole definition.
 
 ARR is **not** the cash you collected last year. It is **not** the total value of contracts you signed. It is a forward-looking picture of "if nothing changed, this is what the next year looks like."
 
@@ -109,7 +109,7 @@ This is where most of the damage happens. The following are real revenue, but th
 
 Including any of these makes MRR look bigger and instantly breaks every retention and efficiency metric you calculate from it. A clean base is the foundation everything else stands on.
 
-**Quick analogy:** MRR is the salary you can count on. The bonus, the side gig, the tax refund — all real money, but you don't plan your rent around them.
+**Quick analogy:** MRR is the salary you can count on. The bonus, the side gig, the tax refund - all real money, but you don't plan your rent around them.
 
 ## The MRR movement waterfall: find the real problem
 
@@ -132,7 +132,7 @@ Why this beats a single growth number: two companies can both grow MRR by $10,00
 
 Most teams fixate on New and Churn and ignore the two movements in between. That's a mistake.
 
-- **Reactivation** — winning back a lapsed customer — is often cheaper than landing a brand-new one. They already know your product.
+- **Reactivation** - winning back a lapsed customer - is often cheaper than landing a brand-new one. They already know your product.
 - **Contraction is an early-warning signal.** A customer who downgrades is frequently a customer about to leave. Watch it weekly and you get a head start on saving the account *before* the full cancellation lands.
 
 ## NRR and GRR: how leaky is the bucket?
@@ -141,7 +141,7 @@ Imagine your existing customers as a bucket of water. Churn and downgrades are l
 
 ### Net Revenue Retention (NRR)
 
-How much recurring revenue you keep from your **existing customers** over a period — including their expansion, but excluding any brand-new logos.
+How much recurring revenue you keep from your **existing customers** over a period - including their expansion, but excluding any brand-new logos.
 
 ```
 NRR = (Starting MRR + Expansion - Contraction - Churn) / Starting MRR
@@ -159,7 +159,7 @@ The honest leak-only number. GRR strips out expansion entirely and measures just
 GRR = (Starting MRR - Contraction - Churn) / Starting MRR
 ```
 
-**Always read them together.** A handful of big upsells can prop NRR up to look wonderful while GRR quietly bleeds. Picture **115% NRR sitting on top of 82% GRR**: the headline looks fantastic, but underneath, nearly a fifth of your revenue is walking out the door — papered over by a few expansions that may not repeat. Around 90% GRR is widely treated as table stakes.
+**Always read them together.** A handful of big upsells can prop NRR up to look wonderful while GRR quietly bleeds. Picture **115% NRR sitting on top of 82% GRR**: the headline looks fantastic, but underneath, nearly a fifth of your revenue is walking out the door - papered over by a few expansions that may not repeat. Around 90% GRR is widely treated as table stakes.
 
 ### What's a "good" number? Read your own row
 
@@ -172,7 +172,7 @@ This is the single most misused idea in SaaS metrics, so slow down here. The rig
 | Enterprise | ~118% (top performers above 130%) |
 | All private SaaS, blended | ~101% |
 
-If you sell affordable, self-serve software to small businesses, **NRR below 100% is normal and healthy**, not a failure. The ceiling on how much a small customer can expand is simply lower. Holding that business to an enterprise number is comparing a corner café to an airport food court — same trade, totally different physics.
+If you sell affordable, self-serve software to small businesses, **NRR below 100% is normal and healthy**, not a failure. The ceiling on how much a small customer can expand is simply lower. Holding that business to an enterprise number is comparing a corner café to an airport food court - same trade, totally different physics.
 
 ## The SaaS Quick Ratio
 
@@ -184,7 +184,7 @@ Quick Ratio = (New MRR + Expansion MRR) / (Churned MRR + Contraction MRR)
 
 A common rule of thumb is that a healthy company adds about **$4 for every $1 it loses**, so a Quick Ratio near 4 is the informal bar.
 
-One honest caveat: very young companies post enormous Quick Ratios simply because they've barely lost anything yet — the denominator is tiny, so the number is near-meaningless. It only becomes useful once your churn base is big enough to mean something. Don't obsess over it at small scale.
+One honest caveat: very young companies post enormous Quick Ratios simply because they've barely lost anything yet - the denominator is tiny, so the number is near-meaningless. It only becomes useful once your churn base is big enough to mean something. Don't obsess over it at small scale.
 
 ## Hybrid businesses: keep subscription and transaction revenue apart
 
@@ -195,15 +195,15 @@ Subscription revenue  = customers x plan price              → this is your MRR
 Transaction revenue   = buyers x transactions x value x take-rate
 ```
 
-**Folding transaction revenue into MRR is the classic distortion.** It makes MRR look huge and wildly volatile, breaks every retention metric, and quietly tanks your valuation — because transactional revenue earns a much lower multiple than recurring revenue. Investors who spot the blend either discount it heavily or treat it as a red flag.
+**Folding transaction revenue into MRR is the classic distortion.** It makes MRR look huge and wildly volatile, breaks every retention metric, and quietly tanks your valuation - because transactional revenue earns a much lower multiple than recurring revenue. Investors who spot the blend either discount it heavily or treat it as a red flag.
 
-The fix is simple: **report them on separate lines.** Track total transaction volume (often called GMV, the dollar value of everything flowing through the platform) as a health and engagement signal — a customer doing lots of volume rarely churns — but never sum it into recurring revenue. You can show both in one table for the board. You must never collapse them into a single "ARR" number.
+The fix is simple: **report them on separate lines.** Track total transaction volume (often called GMV, the dollar value of everything flowing through the platform) as a health and engagement signal - a customer doing lots of volume rarely churns - but never sum it into recurring revenue. You can show both in one table for the board. You must never collapse them into a single "ARR" number.
 
 ## The annual prepayment trap
 
 When a customer prepays a year up front, the cash is wonderful. But you cannot call it all revenue on day one.
 
-The unearned portion sits on your books as **deferred revenue** — a liability, technically, because you still owe a year of service. You recognize it gradually, about one-twelfth each month, as you actually deliver.
+The unearned portion sits on your books as **deferred revenue** - a liability, technically, because you still owe a year of service. You recognize it gradually, about one-twelfth each month, as you actually deliver.
 
 ```
 On the sale:  Cash +annual amount,  Deferred Revenue +annual amount
@@ -211,7 +211,7 @@ Each month:   recognize annual / 12 as revenue
               → MRR contribution = annual / 12 across the whole term
 ```
 
-So annual plans are great for two reasons — they pull cash forward and they reduce churn (the customer is locked in). Just don't let that upfront cash masquerade as a single giant revenue month. It will overstate that month and understate all the others.
+So annual plans are great for two reasons - they pull cash forward and they reduce churn (the customer is locked in). Just don't let that upfront cash masquerade as a single giant revenue month. It will overstate that month and understate all the others.
 
 ## Common misconceptions
 
@@ -219,11 +219,11 @@ A lot of "facts" circulate in SaaS-metrics folklore. Here are the ones to stop r
 
 - **"Every SaaS should hit 120% NRR."** No. The 100/110/120% "good/better/best" framing is real, but it's an enterprise, expansion-heavy benchmark. For low-price SMB software, ~97% is the median. Holding yourself to 120% with the wrong business model just produces bad strategy.
 
-- **"Look at Snowflake's NRR as the target."** Snowflake's net retention was around 158% at IPO and peaked near 169% — extreme numbers driven by enterprise data-warehouse consumption that balloons as usage grows. It's irrelevant to a self-serve tool. Borrowing a metric from a wildly different business model only misleads you.
+- **"Look at Snowflake's NRR as the target."** Snowflake's net retention was around 158% at IPO and peaked near 169% - extreme numbers driven by enterprise data-warehouse consumption that balloons as usage grows. It's irrelevant to a self-serve tool. Borrowing a metric from a wildly different business model only misleads you.
 
-- **"ARR is the cash we collected this year."** It isn't. ARR is strictly MRR x 12, a run rate. Summing a year of collected cash — especially if it includes one-time fees — and calling it ARR is the most common and most damaging recurring-revenue misstatement there is.
+- **"ARR is the cash we collected this year."** It isn't. ARR is strictly MRR x 12, a run rate. Summing a year of collected cash - especially if it includes one-time fees - and calling it ARR is the most common and most damaging recurring-revenue misstatement there is.
 
-- **"A 5% increase in retention boosts profits 25–95%."** The *direction* is sound — retention compounds, and the original research (Reichheld and Bain) is real. The folklore is the false precision. Use the principle, not the exact band.
+- **"A 5% increase in retention boosts profits 25–95%."** The *direction* is sound - retention compounds, and the original research (Reichheld and Bain) is real. The folklore is the false precision. Use the principle, not the exact band.
 
 - **"It's revenue, so it belongs in MRR."** Setup fees and usage overages are revenue, yes. But they're not *recurring*, and including them inflates MRR while corrupting every metric built on top of it.
 
@@ -232,10 +232,10 @@ A lot of "facts" circulate in SaaS-metrics folklore. Here are the ones to stop r
 If you're setting up subscription metrics from scratch, here's a concrete order of operations.
 
 1. **Lock one clean recurring-revenue base.** MRR/ARR = subscription plan fees only, normalized monthly. Exclude every one-time fee, usage overage and transaction dollar. Write this definition down and defend it.
-2. **Track any non-recurring revenue on its own line.** Transaction volume, services, hardware — separate dashboard, separate P&L line. Show totals as an explicit sum, never collapsed into "ARR."
+2. **Track any non-recurring revenue on its own line.** Transaction volume, services, hardware - separate dashboard, separate P&L line. Show totals as an explicit sum, never collapsed into "ARR."
 3. **Emit clean subscription events.** Capture `subscription_started`, `plan_upgraded`, `plan_downgraded`, `subscription_canceled` and `subscription_reactivated`, each with the before-and-after amount. A movement you don't capture is a diagnosis you can't make.
 4. **Build the MRR waterfall as your core weekly view.** New / Expansion / Reactivation / Contraction / Churn. Let it tell you which lever is actually moving.
-5. **Watch contraction weekly as a churn early-warning.** Wire up a save motion — an in-app nudge or a personal message — the moment an account downgrades.
+5. **Watch contraction weekly as a churn early-warning.** Wire up a save motion - an in-app nudge or a personal message - the moment an account downgrades.
 6. **Engineer one realistic expansion path.** For SMB, the durable lever is usage-based graduation: as a customer grows, nudge them up a tier. That's how their success becomes your expansion MRR.
 7. **Set targets against your own segment, not someone else's.** If you're SMB, plan around ~97% NRR and grow mostly through new logos plus modest expansion.
 8. **Account for annual plans correctly.** Book as deferred revenue, recognize one-twelfth monthly, and keep the MRR contribution flat across the term.
@@ -244,8 +244,8 @@ And a short list of what to *defer* until you have real scale: the Quick Ratio (
 
 ## Conclusion
 
-If you remember one thing, make it this: **the most dangerous SaaS metric mistakes are never math errors — they're definition errors.** A clean, honest MRR base, kept strictly separate from one-time and transactional revenue, is the foundation that makes every other number trustworthy.
+If you remember one thing, make it this: **the most dangerous SaaS metric mistakes are never math errors - they're definition errors.** A clean, honest MRR base, kept strictly separate from one-time and transactional revenue, is the foundation that makes every other number trustworthy.
 
 Get that right and your metrics start working *for* you instead of flattering you.
 
-The natural next question is what to actually *do* with a leaky bucket. Retention and expansion don't improve by watching the dashboard — they improve upstream, in how quickly a new customer reaches their first real win. That's the activation problem, and it's where the most durable retention gains are quietly made.
+The natural next question is what to actually *do* with a leaky bucket. Retention and expansion don't improve by watching the dashboard - they improve upstream, in how quickly a new customer reaches their first real win. That's the activation problem, and it's where the most durable retention gains are quietly made.

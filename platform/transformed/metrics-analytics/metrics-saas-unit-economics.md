@@ -19,7 +19,7 @@ keywords:
   - early stage saas metrics
 faq:
   - q: What is the most important SaaS unit economics metric for an early startup?
-    a: CAC payback period — how many months it takes to earn back the cost of acquiring a customer from gross margin. It needs no long-term churn guesswork, so it is the most trustworthy number for a cash-tight, early-stage business.
+    a: CAC payback period - how many months it takes to earn back the cost of acquiring a customer from gross margin. It needs no long-term churn guesswork, so it is the most trustworthy number for a cash-tight, early-stage business.
   - q: What is a good LTV to CAC ratio?
     a: The classic target is 3:1, meaning a customer is worth three times what you paid to acquire them. But that rule came from mature public companies; for early or high-churn businesses it can look healthy while the company quietly loses money.
   - q: Why is my CAC higher than my ad platform says?
@@ -43,7 +43,7 @@ sources: []
 
 A startup can show investors a beautiful "3:1 LTV to CAC" slide and still be quietly going broke. The ratio looks healthy. The bank account disagrees.
 
-That gap — between a metric that looks good and a business that actually works — is what SaaS unit economics is all about. And most of the famous numbers people quote are either misunderstood, misattributed, or flat-out wrong for the stage they are being applied to.
+That gap - between a metric that looks good and a business that actually works - is what SaaS unit economics is all about. And most of the famous numbers people quote are either misunderstood, misattributed, or flat-out wrong for the stage they are being applied to.
 
 This guide cuts through it. You will learn what each core metric really measures, which one deserves to be your north star, and which "rules" to politely ignore until you are much bigger.
 
@@ -71,9 +71,9 @@ The problem is there are three different versions, and people quote whichever on
 
 Your ad platform reports a cost per conversion. People copy that number, call it CAC, and feel great.
 
-But that figure ignores salaries, your own hours, the design tools, the content you wrote, and the overhead keeping the lights on. Once you add those in, true fully-loaded CAC is commonly **2 to 4 times higher** than the platform number — sometimes more.
+But that figure ignores salaries, your own hours, the design tools, the content you wrote, and the overhead keeping the lights on. Once you add those in, true fully-loaded CAC is commonly **2 to 4 times higher** than the platform number - sometimes more.
 
-Here is the trap that bites founders hardest. If you grow mostly through your own effort — founder outreach, community posts, SEO, a free tool you built — your cash ad spend might be near zero. So CAC looks tiny. It is not tiny. You are paying with your time, and time has a real hourly cost. Leave it out and you have fooled yourself.
+Here is the trap that bites founders hardest. If you grow mostly through your own effort - founder outreach, community posts, SEO, a free tool you built - your cash ad spend might be near zero. So CAC looks tiny. It is not tiny. You are paying with your time, and time has a real hourly cost. Leave it out and you have fooled yourself.
 
 **Rule of thumb:** if your CAC went *down* because you got more organic, you probably just stopped counting the cost. Allocate your hours at a real rate and watch the number become honest.
 
@@ -83,7 +83,7 @@ Here is the trap that bites founders hardest. If you grow mostly through your ow
 
 > LTV = (average revenue per account × gross margin %) ÷ churn rate
 
-Two things matter here. First, always use **gross margin**, not revenue — subtract the real cost to serve that customer (hosting, storage, support, payment fees). Revenue-only LTV systematically overstates what a customer is worth.
+Two things matter here. First, always use **gross margin**, not revenue - subtract the real cost to serve that customer (hosting, storage, support, payment fees). Revenue-only LTV systematically overstates what a customer is worth.
 
 Second, and more dangerous: that little `÷ churn rate` term is `1 ÷ churn`, which is your assumed customer lifetime. And it is wildly unstable.
 
@@ -93,9 +93,9 @@ Imagine churn is 2% a month. That implies customers stick around about 50 months
 
 A tiny error in your churn guess swings LTV by *years* of revenue. That is the whole problem.
 
-It gets worse for younger or smaller-customer businesses, where churn is often 3 to 7% a month and **front-loaded** — lots of people leave early, then the survivors stay. A single blended churn rate smears over that reality and projects revenue from customers who may not last a quarter.
+It gets worse for younger or smaller-customer businesses, where churn is often 3 to 7% a month and **front-loaded** - lots of people leave early, then the survivors stay. A single blended churn rate smears over that reality and projects revenue from customers who may not last a quarter.
 
-This is why seasoned operators are blunt about it: **LTV is a projection, not a fact.** If someone shows you a confident single-number LTV, ask what churn assumption is hiding underneath it. Better still, look at real cohort retention curves — actual revenue kept, month by month, from each group of signups — instead of trusting one formula.
+This is why seasoned operators are blunt about it: **LTV is a projection, not a fact.** If someone shows you a confident single-number LTV, ask what churn assumption is hiding underneath it. Better still, look at real cohort retention curves - actual revenue kept, month by month, from each group of signups - instead of trusting one formula.
 
 ## The famous 3:1 rule, and why it misleads
 
@@ -103,7 +103,7 @@ Put LTV over CAC and you get the **LTV to CAC ratio**, the most quoted number in
 
 The folklore: **3:1 is healthy. Below 1:1 you lose money on every customer. Above 5:1 you might be underinvesting in growth.**
 
-That rule is not wrong so much as misapplied. It was derived from **mature, stable public software companies** with predictable churn and fast payback. Applying it to a pre-product-market-fit startup — as nearly every seed pitch deck does — is using a ruler built for skyscrapers to measure a sandcastle.
+That rule is not wrong so much as misapplied. It was derived from **mature, stable public software companies** with predictable churn and fast payback. Applying it to a pre-product-market-fit startup - as nearly every seed pitch deck does - is using a ruler built for skyscrapers to measure a sandcastle.
 
 Here is how a pretty 3:1 can hide a sick business:
 
@@ -123,11 +123,11 @@ Why this beats LTV for most early businesses: it **requires no long-horizon chur
 
 But there is one rule you must never break: **always read payback next to churn.**
 
-A 10-month payback is wonderful if customers stay three years. It is lethal if half of them leave before month 12 — you would never recover the cost. If your payback period is longer than your average customer's life, you are paying to acquire customers who vanish before they ever pay you back. Pair every payback chart with the matching cohort churn, every time.
+A 10-month payback is wonderful if customers stay three years. It is lethal if half of them leave before month 12 - you would never recover the cost. If your payback period is longer than your average customer's life, you are paying to acquire customers who vanish before they ever pay you back. Pair every payback chart with the matching cohort churn, every time.
 
 ## The big-company metrics you can ignore (for now)
 
-Three more metrics dominate SaaS conversations. They are real and useful — but mostly for scaled companies, and they will waste your time if you obsess over them too early.
+Three more metrics dominate SaaS conversations. They are real and useful - but mostly for scaled companies, and they will waste your time if you obsess over them too early.
 
 ### Magic Number
 
@@ -135,15 +135,15 @@ The **Magic Number** measures how much new annual recurring revenue each sales-a
 
 > Magic Number = (this quarter's revenue − last quarter's revenue) ÷ last quarter's S&M spend
 
-Above roughly 0.75 means "step on the gas," below means "fix your engine first." But two different formula variants circulate and produce different numbers, so a quoted "0.75" is meaningless unless you know which one. And it only makes sense once you have a **repeatable, separately measured marketing budget** — not when "spend" is mostly your own hours. Defer it.
+Above roughly 0.75 means "step on the gas," below means "fix your engine first." But two different formula variants circulate and produce different numbers, so a quoted "0.75" is meaningless unless you know which one. And it only makes sense once you have a **repeatable, separately measured marketing budget** - not when "spend" is mostly your own hours. Defer it.
 
 ### Rule of 40
 
-The **Rule of 40** says a healthy software company's growth rate plus its profit margin should clear 40%. Grow fast and lose money, or grow slowly and profit — either can pass.
+The **Rule of 40** says a healthy software company's growth rate plus its profit margin should clear 40%. Grow fast and lose money, or grow slowly and profit - either can pass.
 
 > Rule of 40 = growth rate % + profit margin % ≥ 40%
 
-It is a genuinely useful balance check — for **scaled companies past roughly 5 million dollars in revenue.** Early on it falls apart: growth off a tiny base is a huge percentage, and your margins are deeply negative *by design* because you are buying market share. Even Bessemer, who track it closely, note it "does not compute for early-stage startups."
+It is a genuinely useful balance check - for **scaled companies past roughly 5 million dollars in revenue.** Early on it falls apart: growth off a tiny base is a huge percentage, and your margins are deeply negative *by design* because you are buying market share. Even Bessemer, who track it closely, note it "does not compute for early-stage startups."
 
 ### Rule of X
 
@@ -181,8 +181,8 @@ And a hard rule for targets: **don't borrow benchmarks.** Aim for payback well u
 
 ## Conclusion
 
-The single takeaway: **a metric that looks healthy is not the same as a business that is healthy.** The most trustworthy unit-economics number for most early companies is not the famous 3:1 ratio or a confident lifetime value — it is the humble CAC payback period, read honestly next to churn, on fully-loaded costs and real margin.
+The single takeaway: **a metric that looks healthy is not the same as a business that is healthy.** The most trustworthy unit-economics number for most early companies is not the famous 3:1 ratio or a confident lifetime value - it is the humble CAC payback period, read honestly next to churn, on fully-loaded costs and real margin.
 
 Everything else is a more advanced instrument for a bigger ship.
 
-Once your payback math is solid, the natural next question is *why* customers leave before they pay you back — because churn is the lever that quietly decides whether any of these numbers are good news or a slow leak. That is where retention curves and cohort analysis come in, and it is where the real compounding lives.
+Once your payback math is solid, the natural next question is *why* customers leave before they pay you back - because churn is the lever that quietly decides whether any of these numbers are good news or a slow leak. That is where retention curves and cohort analysis come in, and it is where the real compounding lives.

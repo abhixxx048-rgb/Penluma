@@ -74,7 +74,7 @@ Set it too short and you undercount slow-but-real conversions, like the shop own
 
 For a self-serve product whose goal is "a real first order within a week," a **7 to 14 day window** is usually the sweet spot. Long enough to catch the genuine slow converter, short enough to stay honest.
 
-> **A myth worth killing:** you may have seen a slide claiming a tool's conversion window "runs from 2 seconds to 90 days." That's two unrelated facts mashed together. The 2-second figure is a *grace period* for near-simultaneous steps (more on that below), not a minimum window. And the real maximum window in Mixpanel, for example, is 366 days, with a default of 7 — not 90. If you see "2s to 90d," it's wrong on both ends.
+> **A myth worth killing:** you may have seen a slide claiming a tool's conversion window "runs from 2 seconds to 90 days." That's two unrelated facts mashed together. The 2-second figure is a *grace period* for near-simultaneous steps (more on that below), not a minimum window. And the real maximum window in Mixpanel, for example, is 366 days, with a default of 7 - not 90. If you see "2s to 90d," it's wrong on both ends.
 
 ### Strict vs loose ordering
 
@@ -167,7 +167,7 @@ And if your product is multi-tenant (one account, many users), decide your **ide
 
 Client-side events travel through the browser, where **ad-blockers, privacy protections, and ordinary JavaScript failures quietly drop a chunk of them.** Server-side events fire straight from your backend and **cannot be blocked.**
 
-The cruel twist: the events most likely to be lost are the **most valuable ones**. Signups, orders, payments — the exact events your revenue depends on — are the ones that vanish when a pixel gets blocked.
+The cruel twist: the events most likely to be lost are the **most valuable ones**. Signups, orders, payments - the exact events your revenue depends on - are the ones that vanish when a pixel gets blocked.
 
 So the smart pattern is **hybrid**:
 
@@ -208,4 +208,4 @@ If you remember one thing, make it this: **the goal isn't more data, it's data y
 
 Start with your North Star, name your events like they'll outlive you, and put a governance gate in front of the whole thing.
 
-And once you can trust your funnel, a sharper question waits: of the users who *do* convert, which ones actually stick around a month later? Conversion gets people in the door. **Retention** is where you find out whether what you built was worth coming back to — and that's a different, even more revealing curve to read.
+And once you can trust your funnel, a sharper question waits: of the users who *do* convert, which ones actually stick around a month later? Conversion gets people in the door. **Retention** is where you find out whether what you built was worth coming back to - and that's a different, even more revealing curve to read.

@@ -1,6 +1,6 @@
 /* ============================================================================
-   Penluma — Brand Design Tokens
-   Direction: "Typewriter Two-Tone" — black ink on typing paper, one deep
+   Penluma - Brand Design Tokens
+   Direction: "Typewriter Two-Tone" - black ink on typing paper, one deep
    indigo ink carrying all emphasis. The signature is the two-ink system, not
    decoration. See PENLUMA_BRAND.md for rationale.
 
@@ -12,24 +12,24 @@
    ============================================================================ */
 
 /* --- Fonts -------------------------------------------------------------------
-   Newsreader  — editorial reading serif (display + body via size/weight/italic)
-   IBM Plex Mono — utility/ribbon voice: eyebrows, dates, tags, stamps, code
+   Newsreader  - editorial reading serif (display + body via size/weight/italic)
+   IBM Plex Mono - utility/ribbon voice: eyebrows, dates, tags, stamps, code
    <link> is faster than @import; use it in the app head.
 */
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
 :root {
-  /* --- Primitive palette (raw — don't reference directly in components) ---- */
+  /* --- Primitive palette (raw - don't reference directly in components) ---- */
   --paper:        #F5F3EC; /* typing-paper base (warm-neutral, not cream) */
-  --manuscript:   #FBFAF5; /* brighter elevated surface — cards, sheets */
-  --ribbon-black: #1B1916; /* true warm-black ink — text, headings */
+  --manuscript:   #FBFAF5; /* brighter elevated surface - cards, sheets */
+  --ribbon-black: #1B1916; /* true warm-black ink - text, headings */
   --carbon-grey:  #6F685D; /* secondary text, captions, metadata */
-  --indigo:       #294069; /* THE second ink — emphasis, links, accents */
-  --indigo-deep:  #1E3052; /* pressed-harder ink — active/hover on light */
+  --indigo:       #294069; /* THE second ink - emphasis, links, accents */
+  --indigo-deep:  #1E3052; /* pressed-harder ink - active/hover on light */
   --rule:         #DAD5C7; /* hairline rules, borders, dividers */
 
   /* carbon-copy (dark) primitives */
-  --carbon:        #1A1714; /* dark base — "carbon copy" */
+  --carbon:        #1A1714; /* dark base - "carbon copy" */
   --carbon-raised: #241F1A; /* dark elevated surface */
   --ink-ivory:     #ECE7DB; /* text on dark */
   --carbon-grey-d: #9A9082; /* secondary text on dark */
@@ -45,7 +45,7 @@
   --tracking-mono: 0.04em; /* letterspace mono labels/eyebrows */
   --tracking-display: -0.015em;
 
-  /* --- Semantic tokens (reference THESE) — default theme: light/paper ------ */
+  /* --- Semantic tokens (reference THESE) - default theme: light/paper ------ */
   --bg-page:        var(--paper);
   --bg-surface:     var(--manuscript);
   --border:         var(--rule);

@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../consts';
+import { topicsByCategory, allPosts } from '../lib/content';
+
+// Group every published post under its topic, in reading order.
+const posts = await allPosts();
+const byTopic = new Map<string, typeof posts>();
+for (const p of posts) {
+  if (!byTopic.has(p.data.topic)) byTopic.set(p.data.topic, []);
+  byTopic.get(p.data.topic)!.push(p);
+}
+for (const arr of byTopic.values()) {
+  arr.sort(
+    (a, b) =>
+      a.data.order - b.data.order || b.data.date.getTime() - a.data.date.getTime()
+  );
+}
+
+const grouped = topicsByCategory();
+
+const mainPages = [
+  { href: '/', label: 'Home' },
+  { href: '/blog', label: 'All posts' },
+  { href: '/topics', label: 'All topics' },
+  { href: '/about', label: 'About' },
+  { href: '/search', label: 'Search' },
+  { href: '/rss.xml', label: 'RSS feed' },
+];
+---
+
+<BaseLayout title="Sitemap" description={`Every page and post on ${SITE.name}, in one place.`}>
+  <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+    <h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">Sitemap</h1>
+    <p class="mt-2 text-slate-600 dark:text-slate-400">
+      Every page and post on {SITE.name}, in one place — {posts.length} posts across {grouped.reduce((n, g) => n + g.topics.length, 0)} topics.
+    </p>
+
+    <!-- Main pages -->
+    <h2 class="mt-10 text-sm font-semibold uppercase tracking-wider text-slate-500">Pages</h2>
+    <ul class="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+      {mainPages.map((p) => (
+        <li>
+          <a href={p.href} class="text-brand-700 hover:underline dark:text-brand-300">{p.label}</a>
+        </li>
+      ))}
+    </ul>
+
+    <!-- Topics & posts, grouped by category -->
+    {grouped.map((g) => (
+      <div class="mt-12">
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-500">{g.category}</h2>
+        <div class="mt-4 space-y-8">
+          {g.topics.map((t) => (
+            <div>
+              <h3 class="font-semibold text-slate-900 dark:text-white">
+                <a href={`/topics/${t.slug}`} class="inline-flex items-center gap-2 hover:text-brand-700 dark:hover:text-brand-300">
+                  <span>{t.icon}</span>{t.title}
+                  <span class="text-xs font-normal text-slate-400">{(byTopic.get(t.slug) || []).length} posts</span>
+                </a>
+              </h3>
+              <ul class="mt-2 grid gap-x-6 gap-y-1 sm:grid-cols-2">
+                {(byTopic.get(t.slug) || []).map((p) => (
+                  <li class="min-w-0">
+                    <a href={`/blog/${p.id}`} class="block truncate text-sm text-slate-600 hover:text-brand-700 dark:text-slate-400 dark:hover:text-brand-300">
+                      {p.data.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+  </section>
+</BaseLayout>

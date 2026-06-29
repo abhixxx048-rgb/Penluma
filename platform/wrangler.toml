@@ -6,7 +6,7 @@ compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "dist"
 
 # ---------------------------------------------------------------------------
-# KV namespace — powers per-post view counts, likes, and newsletter signups.
+# KV namespace - powers per-post view counts, likes, and newsletter signups.
 # OPTIONAL: the site deploys and runs fine without it (those endpoints no-op).
 #
 # To enable, run once:

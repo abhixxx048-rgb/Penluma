@@ -127,7 +127,7 @@ const html = `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Data Engineering &amp; Systems Fundamentals — A Beginner-to-Advanced Study Guide</title>
+<title>Data Engineering &amp; Systems Fundamentals - A Beginner-to-Advanced Study Guide</title>
 <style>${CSS}</style>
 </head>
 <body>
@@ -137,7 +137,7 @@ const html = `<!doctype html>
   <h1>Data Engineering &amp;<br>Systems Fundamentals</h1>
   <div class="rule"></div>
   <p class="sub">A Beginner-to-Advanced Study Guide</p>
-  <p class="pillars">The four durable pillars that everything — including AI — runs on:<br>
+  <p class="pillars">The four durable pillars that everything - including AI - runs on:<br>
   <strong>Databases · Distributed Systems · Networking · Concurrency</strong></p>
   <p class="meta">Prepared ${today} · Read the sections in order</p>
 </section>
