@@ -1,0 +1,86 @@
+/* ============================================================================
+   Penluma — Brand Design Tokens
+   Reference spec for the platform/ app. Copy into the design system as
+   needed. See PENLUMA_BRAND.md for the full rationale.
+   "The light of the pen." — warm amber-gold light on warm ink.
+   ============================================================================ */
+
+/* --- Font loading (Google Fonts) --------------------------------------------
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   Fraunces (headings, variable optical/SOFT/WONK), Inter (body),
+   JetBrains Mono (code).
+   @import only if you can't use <link> (slower):
+*/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400..700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  /* --- Primitive palette (raw values — never reference directly in UI) ----- */
+  --ink-black:    #0B0A0F; /* primary dark base — the "unlit" page */
+  --deep-ink:     #15131C; /* elevated dark surface — cards, code, nav */
+  --ink-slate:    #2A2733; /* borders, dividers, muted lines on dark */
+  --lumen-gold:   #F5B544; /* THE LIGHT — primary accent */
+  --lumen-amber:  #E08A2B; /* accent deep / gradient anchor */
+  --warm-halo:    #FFE9B8; /* pale lumen tint — glows, highlight bg */
+  --parchment:    #F7F3EA; /* light-mode page base — paper, not white */
+  --manuscript:   #FBF8F1; /* light-mode elevated surface */
+  --reading-ink:  #1C1A22; /* light-mode body text — soft black */
+  --faded-ink:    #6B6675; /* secondary text, captions, metadata */
+  --ember-rose:   #E5604D; /* semantic: warning (warm) */
+  --verdigris:    #3FA68A; /* semantic: success (the one cool note) */
+
+  /* --- Typography ---------------------------------------------------------- */
+  --font-heading: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+
+  --measure:      68ch;   /* ideal reading line length (66–72ch) */
+  --leading-body: 1.7;    /* body line-height for long-form comfort */
+  --tracking-display: -0.02em; /* tight tracking for optical headings */
+
+  /* --- Semantic tokens (reference THESE in components) ---------------------
+     Default theme is DARK — the page waiting to be lit. */
+  --bg-page:        var(--ink-black);
+  --bg-surface:     var(--deep-ink);
+  --border:         var(--ink-slate);
+  --text-primary:   var(--parchment);
+  --text-secondary: var(--faded-ink);
+  --accent:         var(--lumen-gold);
+  --accent-deep:    var(--lumen-amber);
+  --accent-soft:    var(--warm-halo);
+  --link:           var(--lumen-gold);
+  --focus-ring:     var(--lumen-gold);
+  --success:        var(--verdigris);
+  --warning:        var(--ember-rose);
+
+  /* --- Signature effects --------------------------------------------------- */
+  /* Glow gradient — soft radial halo behind featured titles / hover / focus */
+  --glow:           radial-gradient(circle at center,
+                      rgba(245, 181, 68, 0.28) 0%,
+                      rgba(245, 181, 68, 0) 70%);
+  /* Ink-to-light fade — signature page background */
+  --bg-ink-fade:    linear-gradient(180deg, #0B0A0F 0%, #15131C 100%);
+  --focus-shadow:   0 0 0 3px rgba(245, 181, 68, 0.45);
+}
+
+/* --- Light mode (parchment, never pure white) ------------------------------ */
+:root[data-theme="light"],
+.theme-light {
+  --bg-page:        var(--parchment);
+  --bg-surface:     var(--manuscript);
+  --border:         #E5DFD2;
+  --text-primary:   var(--reading-ink);
+  --text-secondary: var(--faded-ink);
+  --link:           var(--lumen-amber); /* deeper for contrast on parchment */
+  --bg-ink-fade:    linear-gradient(180deg, #FBF8F1 0%, #F7F3EA 100%);
+}
+
+/* --- Optional usage hints (delete in production) ---------------------------
+   body          { background: var(--bg-page); color: var(--text-primary);
+                   font-family: var(--font-body); line-height: var(--leading-body); }
+   h1, h2, h3    { font-family: var(--font-heading); letter-spacing: var(--tracking-display); }
+   a             { color: var(--link); }
+   a:focus-visible { outline: none; box-shadow: var(--focus-shadow); }
+   article       { max-width: var(--measure); }
+   code, pre     { font-family: var(--font-mono); }
+   --------------------------------------------------------------------------- */
