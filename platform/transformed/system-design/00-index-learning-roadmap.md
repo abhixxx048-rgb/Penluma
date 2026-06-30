@@ -71,42 +71,42 @@ The whole field groups into five tiers. Finish an earlier tier before starting a
 
 The shared language and the mental math the rest of the course leans on.
 
-1. **Foundations and back-of-the-envelope estimation** - the latency, throughput, and storage numbers every engineer should know by heart, and how to size a system from a user count on a napkin. This is the absolute starting point.
-2. **Networking and protocols** - TCP/UDP, TLS, the evolution from HTTP/1.1 to HTTP/3, DNS, and where the speed of light bites your latency budget.
-3. **API design and service communication** - REST vs gRPC vs GraphQL, versioning, pagination, idempotency, and when to talk synchronously vs asynchronously.
-4. **Caching** - cache-aside vs read-through vs write-behind, eviction, invalidation, TTLs, stampedes, and every layer from CPU cache to CDN.
+1. **[Foundations and back-of-the-envelope estimation](/blog/system-design/01-foundations-and-estimation)** - the latency, throughput, and storage numbers every engineer should know by heart, and how to size a system from a user count on a napkin. This is the absolute starting point.
+2. **[Networking and protocols](/blog/system-design/02-networking-and-protocols)** - TCP/UDP, TLS, the evolution from HTTP/1.1 to HTTP/3, DNS, and where the speed of light bites your latency budget.
+3. **[API design and service communication](/blog/system-design/03-api-design-and-communication)** - REST vs gRPC vs GraphQL, versioning, pagination, idempotency, and when to talk synchronously vs asynchronously.
+4. **[Caching](/blog/system-design/06-caching-deep)** - cache-aside vs read-through vs write-behind, eviction, invalidation, TTLs, stampedes, and every layer from CPU cache to CDN.
 
 ### Tier 2 - Data and state
 
 How storage actually works, and how to scale it.
 
-5. **Database internals** - B-trees vs LSM-trees, the write-ahead log, MVCC, isolation levels, and how an index really speeds up a query.
-6. **Data modeling** - normalization vs denormalization, document/wide-column/key-value/graph models, and picking the right store per access pattern.
-7. **Load balancing, scaling, and stateless design** - L4 vs L7, balancing algorithms, health checks, externalized state, autoscaling, and load shedding.
-8. **Replication and partitioning (sharding)** - single/multi/leaderless replication, sync vs async durability, replication-lag anomalies, consistent hashing, and rebalancing. **This is the bridge into distributed systems.**
+5. **[Database internals](/blog/system-design/04-databases-internals)** - B-trees vs LSM-trees, the write-ahead log, MVCC, isolation levels, and how an index really speeds up a query.
+6. **[Data modeling](/blog/system-design/05-data-modeling-sql-nosql)** - normalization vs denormalization, document/wide-column/key-value/graph models, and picking the right store per access pattern.
+7. **[Load balancing, scaling, and stateless design](/blog/system-design/07-load-balancing-and-scaling)** - L4 vs L7, balancing algorithms, health checks, externalized state, autoscaling, and load shedding.
+8. **[Replication and partitioning (sharding)](/blog/system-design/08-replication-and-partitioning)** - single/multi/leaderless replication, sync vs async durability, replication-lag anomalies, consistent hashing, and rebalancing. **This is the bridge into distributed systems.**
 
 ### Tier 3 - Distributed systems core (the hard, load-bearing middle)
 
 The conceptual center of gravity. Don't skip it to get to the interview material faster.
 
-9. **CAP, PACELC, and consistency models** - CAP stated correctly, the linearizable-to-eventual spectrum, and quorum math.
-10. **Consensus and coordination** - FLP impossibility, Paxos/Raft/ZAB, ZooKeeper/etcd, distributed locks with fencing tokens, leases, and clocks.
-11. **Distributed transactions, sagas, and idempotency** - why cross-service ACID fails, why 2PC blocks, and the outbox/CDC pattern that fixes the dual-write problem.
-12. **Messaging and event-driven architecture** - queues vs logs, Kafka internals, ordering and delivery guarantees, backpressure, retries, and dead-letter queues.
-13. **Event sourcing and CQRS** - state as an append-only event log, folding and snapshots, read projections, and when it's overkill.
-14. **Stream processing and real-time systems** - batch vs stream, Lambda vs Kappa, event time vs processing time, windowing, watermarks, and checkpointing.
-15. **Probabilistic data structures at scale** - Bloom and Cuckoo filters, HyperLogLog, Count-Min, Merkle trees, and geo indexes. This one is fairly standalone; you can read it in parallel once you've done topic 9.
+9. **[CAP, PACELC, and consistency models](/blog/system-design/09-cap-pacelc-consistency-models)** - CAP stated correctly, the linearizable-to-eventual spectrum, and quorum math.
+10. **[Consensus and coordination](/blog/system-design/10-consensus-and-coordination)** - FLP impossibility, Paxos/Raft/ZAB, ZooKeeper/etcd, distributed locks with fencing tokens, leases, and clocks.
+11. **[Distributed transactions, sagas, and idempotency](/blog/system-design/11-distributed-transactions-and-idempotency)** - why cross-service ACID fails, why 2PC blocks, and the outbox/CDC pattern that fixes the dual-write problem.
+12. **[Messaging and event-driven architecture](/blog/system-design/12-messaging-and-event-driven)** - queues vs logs, Kafka internals, ordering and delivery guarantees, backpressure, retries, and dead-letter queues.
+13. **[Event sourcing and CQRS](/blog/system-design/13-event-sourcing-and-cqrs)** - state as an append-only event log, folding and snapshots, read projections, and when it's overkill.
+14. **[Stream processing and real-time systems](/blog/system-design/14-stream-processing-realtime)** - batch vs stream, Lambda vs Kappa, event time vs processing time, windowing, watermarks, and checkpointing.
+15. **[Probabilistic data structures at scale](/blog/system-design/15-probabilistic-structures-and-algorithms)** - Bloom and Cuckoo filters, HyperLogLog, Count-Min, Merkle trees, and geo indexes. This one is fairly standalone; you can read it in parallel once you've done topic 9.
 
 ### Tier 4 - Architecture and operating at scale
 
-16. **Rate limiting, resiliency, and fault tolerance** - the core rate-limiter algorithms, distributed Redis variants, timeouts, jittered retries, circuit breakers, bulkheads, and chaos testing.
-17. **Observability and SRE** - metrics, logs, and traces; RED and USE methods; SLI/SLO/error budgets; burn-rate alerts; and safe canary and blue-green deploys.
-18. **Architecture patterns** - monolith to microservices to cells, bounded contexts, the strangler-fig migration, gateways and meshes, and the distributed-monolith trap.
-19. **Specialized systems** - inverted indexes and BM25 for search, geohash/quadtree/S2 for geo, time-series compression, and columnar OLAP for analytics.
+16. **[Rate limiting, resiliency, and fault tolerance](/blog/system-design/16-rate-limiting-and-resiliency)** - the core rate-limiter algorithms, distributed Redis variants, timeouts, jittered retries, circuit breakers, bulkheads, and chaos testing.
+17. **[Observability and SRE](/blog/system-design/17-observability-and-operations)** - metrics, logs, and traces; RED and USE methods; SLI/SLO/error budgets; burn-rate alerts; and safe canary and blue-green deploys.
+18. **[Architecture patterns](/blog/system-design/18-architecture-patterns-microservices)** - monolith to microservices to cells, bounded contexts, the strangler-fig migration, gateways and meshes, and the distributed-monolith trap.
+19. **[Specialized systems](/blog/system-design/19-specialized-systems-search-geo-timeseries)** - inverted indexes and BM25 for search, geohash/quadtree/S2 for geo, time-series compression, and columnar OLAP for analytics.
 
 ### Tier 5 - Applied and interview
 
-20. **Case studies and the interview framework** - a 7-step design loop plus ten worked designs (URL shortener, news feed, chat, rideshare, payments, and more). Read it **last** - it's where every prior concept gets exercised under a time budget. You can skim it first to see where you're heading, then return for real.
+20. **[Case studies and the interview framework](/blog/system-design/20-case-studies-and-interview-framework)** - a 7-step design loop plus ten worked designs (URL shortener, news feed, chat, rideshare, payments, and more). Read it **last** - it's where every prior concept gets exercised under a time budget. You can skim it first to see where you're heading, then return for real.
 
 ## Twelve mental models that recur everywhere
 
