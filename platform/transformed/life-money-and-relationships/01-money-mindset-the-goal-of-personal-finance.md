@@ -52,6 +52,7 @@ faq:
       other money rather than free play money.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: life-money-and-relationships
 topicTitle: 'Life, Money & Relationships'
 category: Thinking & Decisions
@@ -63,7 +64,7 @@ sources: []
 
 Two founders earn good money. Ten years later, one is free to walk away from any client she dislikes, and the other is broke with a nice watch and a leased car.
 
-The difference was never the income. It was a handful of quiet habits, decided long before either of them touched a mutual fund. Before we talk about a single rupee, a fixed deposit, or an index fund, we have to fix the one thing that sits underneath all of it: how you think about money.
+The difference was never the income. It was a handful of quiet habits, decided long before either of them touched a mutual fund. Before we talk about a single rupee, a fixed deposit, or an [index fund](/blog/life-money-and-relationships/09-mutual-funds-index-funds-sips-the-core-engine), we have to fix the one thing that sits underneath all of it: how you think about money.
 
 ## Why this matters
 
@@ -123,7 +124,7 @@ Wealth spent as *stuff* is just spent money. Wealth kept as *investments* buys t
 
 How you *feel* about money quietly steers every decision you make.
 
-A **scarcity mindset** whispers "there's never enough." Oddly, it produces two opposite and equally damaging behaviours: anxious hoarding in low-return "safe" places where inflation slowly eats your money, *or* impulsive "treat myself, you only live once" splurges that sabotage every plan.
+A **scarcity mindset** whispers "there's never enough." Oddly, it produces two opposite and equally damaging behaviours: anxious hoarding in low-return "safe" places where [inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) slowly eats your money, *or* impulsive "treat myself, you only live once" splurges that sabotage every plan.
 
 An **abundance mindset** says "money is a renewable resource I can manage calmly." This lets you take *sensible* risk, be generous without flinching, and make decisions from a plan instead of from fear.
 
@@ -173,7 +174,7 @@ A few stubborn myths quietly keep people poor. Here is the reality next to each.
 
 Two mental glitches drain wealth so quietly you barely notice. Naming them helps you fight them.
 
-**Present bias** is your brain massively over-valuing rewards *now* and under-valuing rewards *later*. Investing, stripped to its core, is simply choosing a bigger reward later over a small one today. That tug-of-war is the entire discipline in one sentence.
+**[Present bias](/blog/life-money-and-relationships/14-behaviour-risk-the-psychology-of-money)** is your brain massively over-valuing rewards *now* and under-valuing rewards *later*. Investing, stripped to its core, is simply choosing a bigger reward later over a small one today. That tug-of-war is the entire discipline in one sentence.
 
 **Lifestyle creep** is what happens when income rises and spending quietly rises to match, so you never actually get ahead - you just collect nicer problems. It's the engine behind "I'll save when I earn more."
 
@@ -188,9 +189,9 @@ You don't need to overhaul your life this week. You need a few decisions, made o
 3. **Pre-commit your raises.** Decide now: a fixed percentage of every raise, bonus, or great month goes straight to investing *before* your lifestyle gets a vote.
 4. **Split your stuff into two piles.** Productive assets that grow, consumption assets that shrink. Feed the first pile.
 5. **Track net worth, not salary.** Check it once a quarter. It's the only scoreboard that tells the truth.
-6. **Have a windfall rule ready.** When a lump of money lands: park it, pause, clear bad debt, top up your emergency fund, then invest the rest gradually. Don't let euphoria make the call.
+6. **Have a windfall rule ready.** When a lump of money lands: park it, pause, clear [bad debt](/blog/life-money-and-relationships/05-debt-good-debt-bad-debt-and-getting-free), top up your [emergency fund](/blog/life-money-and-relationships/03-the-emergency-fund-protecting-your-downside), then invest the rest gradually. Don't let euphoria make the call.
 
-A reassuring note: every idea here is universal. The instruments change from country to country, but pay-yourself-first, lifestyle creep, present bias, and compounding work identically everywhere. Someone abroad automates contributions into a retirement account exactly the way you'll automate an investment plan. The tools differ; the mindset does not.
+A reassuring note: every idea here is universal. The instruments change from country to country, but pay-yourself-first, lifestyle creep, present bias, and [compounding](/blog/life-money-and-relationships/06-compounding-the-time-value-of-money) work identically everywhere. Someone abroad automates contributions into a retirement account exactly the way you'll automate an investment plan. The tools differ; the mindset does not.
 
 ## Conclusion
 

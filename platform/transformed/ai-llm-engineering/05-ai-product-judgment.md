@@ -38,6 +38,7 @@ order: 4
 icon: "\U0001F9E0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -55,7 +56,7 @@ Every time you reach for an AI model, you quietly pay three taxes.
 
 When you use AI on a task that plain code could solve, you pay all three taxes and get nothing back. The headline you actually want is not "we use AI." It is "we solved the problem better."
 
-A **large language model** (a system trained to predict the next word in text, which lets it understand and generate human language) is genuinely powerful. But power tempts misuse. When you have a hammer, everything looks like a nail. Good product judgment is the ability to look at a problem and see which parts are nails (fuzzy, language-shaped) and which are screws (exact, rule-shaped) that need an entirely different tool.
+A **[large language model](/blog/ai-llm-engineering/01-foundations-how-llms-work-why-these-skills-endure)** (a system trained to predict the next word in text, which lets it understand and generate human language) is genuinely powerful. But power tempts misuse. When you have a hammer, everything looks like a nail. Good product judgment is the ability to look at a problem and see which parts are nails (fuzzy, language-shaped) and which are screws (exact, rule-shaped) that need an entirely different tool.
 
 ## Use AI for judgment, not arithmetic
 
@@ -92,10 +93,10 @@ The decision flow, in order:
 2. **Try the non-AI baseline.** Can code, a regex, a database query, a lookup table, a rules engine, or a simple classical model solve it acceptably? If yes, stop.
 3. **Check if the task is genuinely AI-shaped.** Use AI only when the work involves natural language, fuzzy judgment, generation, or pattern-matching that resists explicit rules.
 4. **Start at Rung 1:** a single LLM call with a good prompt. Build evals immediately so you can tell if it is good enough.
-5. **Add RAG (Rung 2)** only if the model needs current, private, or domain-specific facts it does not reliably know. **RAG** (Retrieval-Augmented Generation) fetches relevant documents at question time and feeds them into the prompt, so answers are grounded in real data instead of the model's memory, and you can cite sources.
+5. **Add RAG (Rung 2)** only if the model needs current, private, or domain-specific facts it does not reliably know. **RAG** ([Retrieval-Augmented Generation](/blog/ai-llm-engineering/03-context-engineering-retrieval)) fetches relevant documents at question time and feeds them into the prompt, so answers are grounded in real data instead of the model's memory, and you can cite sources.
 6. **Add a workflow (Rung 3)** when the task has multiple distinct steps you can describe in advance.
 7. **Escalate to an agent (Rung 4)** only when the path cannot be hardcoded because the steps depend on intermediate results.
-8. **Consider multi-agent (Rung 5)** only when one agent's responsibilities genuinely do not fit in one loop.
+8. **Consider [multi-agent](/blog/agent-orchestration/agent-orchestration-00-index) (Rung 5)** only when one agent's responsibilities genuinely do not fit in one loop.
 
 ### Workflow versus agent: the sharpest line
 
@@ -103,7 +104,7 @@ This is where teams most often overshoot, so it deserves a clean rule.
 
 A **workflow** is a system where LLM steps follow predefined code paths that *your* code controls. Predictable, testable, cheaper, faster.
 
-An **agent** is a system where the LLM dynamically decides how to accomplish the task, choosing its own sequence of tool calls over many turns.
+An **[agent](/blog/ai-llm-engineering/04-agent-architecture-orchestration)** is a system where the LLM dynamically decides how to accomplish the task, choosing its own sequence of tool calls over many turns.
 
 The test: **if you can describe the steps in advance, build a workflow. Use an agent only when you genuinely cannot hardcode the path.**
 
@@ -204,7 +205,7 @@ A blank or broken output reads as "the product is broken." A fabricated answer i
 
 ### Build evals from real failures
 
-If there is one root cause behind failed AI products, it is the absence of robust **evals**: systematic tests of whether the system meets its quality bar. And evals must be *domain-specific*. A generic "helpfulness" score tells you almost nothing about *your* app.
+If there is one root cause behind failed AI products, it is the absence of robust **[evals](/blog/ai-llm-engineering/02-evaluation-measurement)**: systematic tests of whether the system meets its quality bar. And evals must be *domain-specific*. A generic "helpfulness" score tells you almost nothing about *your* app.
 
 The durable practice is **error analysis**:
 

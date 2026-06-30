@@ -58,6 +58,7 @@ faq:
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 A single hedge fund, run partly by Nobel Prize winners, once borrowed so much money that one bad bet nearly took the global financial system down with it. That fund held trades worth over a trillion dollars on less than five billion of its own.
@@ -92,7 +93,7 @@ The **secondary market** is where those existing securities then trade between i
 
 > **Think of it like a used car.** Buying a second-hand Toyota from your neighbor doesn't put a single rupee in Toyota's pocket. Only the original sale from the dealership did. The secondary market is the giant used-car lot for financial assets.
 
-So why does the secondary market matter at all? Because of **liquidity**, the ease of selling something quickly without crashing its price. Nobody would buy a stock at the IPO if they could never sell it again. The promise of an easy exit later is exactly what makes people willing to invest now. A deep secondary market lowers the cost of raising money in the primary market. Liquidity is the quiet engine under everything.
+So why does the secondary market matter at all? Because of **liquidity**, the ease of selling something quickly without crashing its price. Nobody would buy a stock at the IPO if they could never sell it again. The promise of an easy exit later is exactly what makes people willing to invest now. A deep secondary market lowers the cost of [raising money](/blog/economics-from-first-principles/18-how-companies-grow-raise-capital-and-create-value) in the primary market. Liquidity is the quiet engine under everything.
 
 ## What a stock price actually represents
 
@@ -120,7 +121,7 @@ But diversification is widely misunderstood, which brings us to the myths.
 
 ## Common misconceptions
 
-**"More holdings means I'm diversified."** Not necessarily. Diversification is about **correlation**, whether your investments move together, not how many you own. Fifty different tech stocks that all rise and fall as one are not diversified. That is a single big bet wearing fifty hats. Worse, in a true crisis correlations spike toward 1 and *everything* falls at once, as in 2008. Diversification can erase the risk specific to one company (**idiosyncratic risk**) but never the risk of the whole market (**systematic risk**).
+**"More holdings means I'm diversified."** Not necessarily. Diversification is about **correlation**, whether your investments move together, not how many you own. Fifty different tech stocks that all rise and fall as one are not diversified. That is a single big bet wearing fifty hats. Worse, in [a true crisis](/blog/economics-from-first-principles/24-financial-crises-why-they-happen-spread-and-how-economies-recover) correlations spike toward 1 and *everything* falls at once, as in 2008. Diversification can erase the risk specific to one company (**idiosyncratic risk**) but never the risk of the whole market (**systematic risk**).
 
 **"Bonds are safe."** Safer than stocks, usually. Never risk-free. Bonds carry interest-rate risk (prices fall when rates rise), inflation risk (fixed payments lose buying power), and default risk (the issuer fails to pay).
 
@@ -134,7 +135,7 @@ This one trips up nearly everyone, so go slowly. A bond's coupon is fixed in dol
 
 The rule never breaks: **a bond's price and its yield always move in opposite directions.** Rates up, old bond looks worse, its price falls, its yield rises. Rates down, old bond looks better, its price rises, its yield falls.
 
-Plot the yields of bonds across different maturities and you get the **yield curve**. Normally it slopes upward, because locking your money away longer should pay more. But sometimes it **inverts**, with short-term rates rising above long-term ones, which means markets expect rates and growth to fall ahead. An inverted yield curve has preceded nearly every U.S. recession since the 1950s. It inverted again in 2022 to 2023. It is a famous warning bell, though not a perfect one.
+Plot the yields of bonds across different maturities and you get the **yield curve**. Normally it slopes upward, because locking your money away longer should pay more. But sometimes it **inverts**, with short-term rates rising above long-term ones, which means markets expect rates and growth to fall ahead. An inverted yield curve has preceded nearly every [U.S. recession](/blog/economics-from-first-principles/15-the-business-cycle-booms-recessions-and-depressions) since the 1950s. It inverted again in 2022 to 2023. It is a famous warning bell, though not a perfect one.
 
 ## Derivatives: the double-edged sword
 
@@ -182,7 +183,7 @@ You don't need to trade derivatives to put these ideas to work. Start here.
 
 1. **Pick your rung on the risk ladder first.** From safest to riskiest: cash, Treasury bills, government bonds, investment-grade corporate bonds, high-yield "junk" bonds, blue-chip and index stocks, small-cap and emerging-market stocks, commodities, speculative stocks and crypto, and leveraged derivatives. Higher rungs reward patience over decades; lower rungs protect money you can't afford to lose.
 
-2. **Match the rung to the goal and your nerves.** Money you need in two years does not belong in stocks. Money you won't touch for thirty years probably shouldn't sit entirely in cash, where inflation slowly eats it.
+2. **Match the rung to the goal and your nerves.** Money you need in two years does not belong in stocks. Money you won't touch for thirty years probably shouldn't sit entirely in cash, where [inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) slowly eats it.
 
 3. **Diversify by correlation, not by count.** Own things that don't all move together. A handful of genuinely different assets beats fifty flavors of the same bet.
 
@@ -196,4 +197,4 @@ You don't need to trade derivatives to put these ideas to work. Start here.
 
 If you remember one thing, make it this: **price is a guess about the future, and every reward is rented from risk.** Stocks, bonds, commodities, and derivatives are just different ways of carrying that risk, and the whole game is matching the risk you take to the life you're trying to fund.
 
-Markets are mostly rational, occasionally mad, and always repricing as the risk-free rate moves underneath everything. Which raises the next question worth chasing: who actually sets that risk-free rate, and why does a committee of central bankers adjusting it by a fraction of a percent ripple through every mortgage, startup, and pension on the planet? That is where money itself gets made, and it is its own story.
+Markets are mostly rational, occasionally mad, and always repricing as the risk-free rate moves underneath everything. Which raises the next question worth chasing: who actually sets that risk-free rate, and why does a committee of [central bankers](/blog/economics-from-first-principles/08-central-banks-and-monetary-policy) adjusting it by a fraction of a percent ripple through every mortgage, startup, and pension on the planet? That is where money itself gets made, and it is its own story.

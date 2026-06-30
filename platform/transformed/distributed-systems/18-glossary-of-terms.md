@@ -30,6 +30,7 @@ faq:
     a: "Linearizability is about a single object always being current in real time. Serializability is about multi-step transactions appearing to run one at a time. They are different guarantees and often confused."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: distributed-systems
 topicTitle: Distributed Systems
 category: Engineering
@@ -81,7 +82,7 @@ A **partition** (or network partition) is a specific, nasty fault: the network s
 
 This is the most quoted idea in the field, and the most misquoted.
 
-The **CAP theorem** says that when a partition happens, a distributed system must choose between two things:
+The [**CAP theorem**](/blog/distributed-systems/16-the-cap-theorem-and-pacelc) says that when a partition happens, a distributed system must choose between two things:
 
 - **Consistency** (in the CAP sense): every read sees the most recent write, so all machines show the same data at the same instant.
 - **Availability**: the system answers every request it receives, even if the answer might be a little out of date.
@@ -96,7 +97,7 @@ A handy analogy: two shop tills lose their shared connection. They can either st
 
 ## How fresh is your data? Consistency models
 
-A **consistency model** is the specific promise a system makes about how current and well-ordered your data looks. Think of it as a menu, from strictest to loosest.
+A [**consistency model**](/blog/distributed-systems/17-consistency-models) is the specific promise a system makes about how current and well-ordered your data looks. Think of it as a menu, from strictest to loosest.
 
 **Linearizability** is the strongest model for a single piece of data. The system behaves as if there is exactly one copy and every operation happens instantly at a single point in time. It is the closest a distributed system gets to feeling like one machine. **Strong consistency** is the umbrella term for models like this, where reads always reflect the latest write.
 
@@ -118,7 +119,7 @@ A **replica** is a copy of the data on another node. **Replication** is the act 
 
 To make safe decisions without waiting for every node, systems use a **quorum**: a minimum number of nodes that must agree before an action counts, often "more than half." If a majority agrees, the system can move forward even if some nodes are slow or dead.
 
-**Consensus** is the deeper problem underneath: getting several machines to agree on a single value, like "who is the leader?" or "what is the next entry in the log?", even while some machines and messages are failing. It sounds simple. It is one of the hardest problems in the field.
+[**Consensus**](/blog/distributed-systems/02-the-consensus-problem) is the deeper problem underneath: getting several machines to agree on a single value, like "who is the leader?" or "what is the next entry in the log?", even while some machines and messages are failing. It sounds simple. It is one of the hardest problems in the field.
 
 ## Ordering events without a shared clock
 
@@ -129,7 +130,7 @@ The obvious fix, "just check the timestamps," fails. **Wall-clock time** is the 
 - **Clock skew**: the difference between two machines' clocks at a single moment. Even well-synced servers are off by a few milliseconds, which is plenty to order two events wrongly.
 - **Clock drift**: a single machine's clock gradually speeding up or slowing down, wandering away from real time until something corrects it.
 
-**NTP (Network Time Protocol)** is the standard service that nudges clocks back toward real time. It helps, but it only narrows skew. It never eliminates it. A **timestamp** based on wall-clock time is therefore a shaky basis for ordering anything across machines.
+**NTP (Network Time Protocol)** is the standard service that nudges clocks back toward real time. It helps, but it only narrows skew. It never eliminates it. A **timestamp** based on wall-clock time is therefore a shaky basis for [ordering anything across machines](/blog/distributed-systems/14-time-clocks-the-ordering-of-events).
 
 So instead of asking "what time was it?", we ask "what *could have caused* what?"
 
@@ -138,7 +139,7 @@ So instead of asking "what time was it?", we ask "what *could have caused* what?
 To track this without real clocks, we use a **logical clock**: a counter that tracks order, not seconds. There are two main kinds:
 
 - A **Lamport clock** is a single counter per machine, bumped on every event and carried along with messages. It guarantees that if A happened before B, A's number is smaller. But the reverse is not true: a smaller number does *not* prove causality.
-- A **vector clock** is a list of counters, one per node, carried with each event. By comparing two vectors you can tell whether one event happened before the other *or* whether they were concurrent. It carries more information than a Lamport clock, at the cost of more bookkeeping.
+- A [**vector clock**](/blog/distributed-systems/15-vector-clocks-causality) is a list of counters, one per node, carried with each event. By comparing two vectors you can tell whether one event happened before the other *or* whether they were concurrent. It carries more information than a Lamport clock, at the cost of more bookkeeping.
 
 This is also where **total order** versus partial order comes in. A total order means every pair of events has a definite "this one is first" answer. Lamport clocks can produce one, using a tie-breaker. But real causality only gives a *partial* order, because genuinely concurrent events have no natural "first."
 

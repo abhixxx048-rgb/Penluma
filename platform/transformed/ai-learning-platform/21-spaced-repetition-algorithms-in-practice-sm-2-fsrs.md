@@ -50,6 +50,7 @@ faq:
       lets too much slip away. FSRS lets you set this number directly.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: ai-learning-platform
 topicTitle: AI Learning Platform
 category: AI & LLMs
@@ -67,9 +68,9 @@ That single trick is the engine behind every flashcard app you've ever used. But
 
 ## Why this matters
 
-Whether you're learning a language, memorizing anatomy for a med-school exam, or building an AI tutor that schedules reviews for thousands of learners, the scheduling rule is the whole game. Get it right and a learner retains years of material with minutes a day. Get it wrong and they either burn out from over-reviewing or watch knowledge quietly leak away.
+Whether you're learning a language, memorizing anatomy for a med-school exam, or building an AI tutor that [schedules reviews for thousands of learners](/blog/ai-learning-platform/20-sequencing-what-comes-next-and-when-to-review), the scheduling rule is the whole game. Get it right and a learner retains years of material with minutes a day. Get it wrong and they either burn out from over-reviewing or watch knowledge quietly leak away.
 
-The same idea powers Duolingo streaks, Anki decks used by medical students worldwide, and the memory systems inside modern learning platforms. Understanding how these algorithms decide "when next" tells you which app to trust, how to tune it, and why some setups feel magical while others feel like a treadmill.
+The same idea powers Duolingo streaks, Anki decks used by medical students worldwide, and [the memory systems inside modern learning platforms](/blog/ai-learning-platform/18-learner-models-teaching-the-machine-what-the-student-knows). Understanding how these algorithms decide "when next" tells you which app to trust, how to tune it, and why some setups feel magical while others feel like a treadmill.
 
 Here's the reassuring part. The four systems below are not four rival inventions. They are **one idea getting sharper** over fifty years.
 
@@ -132,7 +133,7 @@ That gap is what the newest system closes.
 FSRS describes each card with three separate ideas, not one:
 
 - **Difficulty** - how inherently hard this card is for you.
-- **Stability** - how many days until your chance of recalling it drops to a set level. Higher stability means a slower forgetting curve.
+- **Stability** - how many days until your chance of recalling it drops to a set level. Higher stability means a slower [forgetting curve](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve).
 - **Retrievability** - your probability of recalling it *right now*, which falls as time passes since the last review.
 
 The headline feature is that **you choose your target retention** directly, say 90 percent. FSRS then schedules each card for the day your predicted recall dips to that number, no sooner, no later. Want to study less and accept a bit more forgetting? Drop the target. Cramming for a high-stakes exam? Raise it. The algorithm recomputes every interval to hit your goal.
@@ -155,7 +156,7 @@ It also dissolves "ease hell." Because difficulty and stability are tracked sepa
 2. **Set a retention target you can sustain.** Start at **90 percent**. If your daily review count feels crushing, lower it to 85. If you're prepping for a critical exam, nudge it up, knowing reviews will rise.
 3. **Grade quickly and honestly.** Did you recall it without real effort? *Good* or *Easy*. Did you stall or guess? *Hard* or *Again*. Don't overthink the exact button.
 4. **Cap new cards.** Adding 200 cards a day creates a review avalanche next week. A steady 10 to 30 new cards keeps the workload flat and predictable.
-5. **Trust the long intervals.** When a card jumps to "8 months," resist the urge to review it early. Reviewing too soon weakens the spacing effect and wastes the gain.
+5. **Trust the long intervals.** When a card jumps to "8 months," resist the urge to review it early. Reviewing too soon weakens [the spacing effect](/blog/ai-learning-platform/03-how-humans-learn-a-plain-tour-of-memory) and wastes the gain.
 6. **Write atomic cards.** One fact per card. The algorithms schedule a card as a single unit, so a card crammed with five facts will always feel "hard" and never settle.
 7. **If you can't use software, run Leitner.** Five physical boxes and the move-up / drop-to-front rule capture most of the benefit with zero setup.
 
@@ -163,4 +164,4 @@ It also dissolves "ease hell." Because difficulty and stability are tracked sepa
 
 The one idea to carry away: **the best moment to review something is the moment just before you'd forget it**, and these four systems are a fifty-year march toward pinpointing that moment. Leitner guessed with boxes, SM-2 gave each card its own clock, Anki polished the edges, and FSRS finally predicts your forgetting from real data so you study less and remember more.
 
-But scheduling is only half the story. An algorithm can tell you *when* to review, yet it can't tell you *what's worth putting on a card in the first place* or how to phrase it so your brain actually grabs it. That craft of writing memorable, recallable cards is where good learners pull ahead of great algorithms, and it's where we head next.
+But scheduling is only half the story. An algorithm can tell you *when* to review, yet it can't tell you *what's worth putting on a card in the first place* or how to phrase it so your brain actually grabs it. That craft of [writing memorable, recallable cards](/blog/ai-learning-platform/06-retrieval-practice-why-testing-beats-re-reading) is where good learners pull ahead of great algorithms, and it's where we head next.

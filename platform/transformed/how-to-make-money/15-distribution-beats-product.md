@@ -19,6 +19,7 @@ keywords:
   - ESOP taxation India
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: how-to-make-money
 topicTitle: How to Make Money
 category: Money & Business
@@ -174,14 +175,14 @@ The middle-ring test measures *cost*, not just volume. Two terms you need:
 Three numbers worth memorizing:
 
 1. **CAC payback under 12 months.** For B2B software, 6 to 12 months is healthy; under 90 days is elite. You want a customer turning profitable inside their first year.
-2. **LTV:CAC around 3 to 1.** A customer's lifetime value should be about three times what you paid to acquire them. Top performers hit 4:1 to 6:1. Below 3:1 is unsustainable. Way above it might mean you're under-investing in growth.
-3. **Channel cost varies wildly.** Referrals can cost as little as ~$150 per customer (cheapest, because trust does the selling), while outbound sales can run ~$1,980 (priciest, but fine for big deals). The right channel is simply the one whose cost fits your price.
+2. **LTV:CAC around 3 to 1.** A customer's [lifetime value](/blog/how-to-make-money/13-unit-economics-does-each-sale-make-money) should be about three times what you paid to acquire them. Top performers hit 4:1 to 6:1. Below 3:1 is unsustainable. Way above it might mean you're under-investing in growth.
+3. **Channel cost varies wildly.** Referrals can cost as little as ~$150 per customer (cheapest, because trust does the selling), while outbound sales can run ~$1,980 (priciest, but fine for big deals). The right channel is simply the one whose cost fits [your price](/blog/how-to-make-money/14-pricing-value-capture).
 
 ## Common misconceptions
 
 **"A huge following means success."** This is the vanity-channel trap. A million followers or a viral PR hit *feels* like winning, but it produces zero buyers if none of them convert. The median software company now spends about **$2.00 to acquire just $1.00 of new annual revenue**, and paid channels keep getting more expensive. Judge every channel on cost and conversion, never on reach.
 
-**"Distribution beats product means product doesn't matter."** It does not mean that. A great channel feeding a *bad* product just makes you lose money faster and lose customers harder. Distribution wins *between comparable products*. You still need a product people genuinely want, and referrals only ignite when the product is actually good.
+**"Distribution beats product means product doesn't matter."** It does not mean that. A great channel feeding a *bad* product just makes you lose money faster and lose customers harder. Distribution wins *between comparable products*. You still need [a product people genuinely want](/blog/how-to-make-money/11-finding-a-real-problem-validating-demand), and referrals only ignite when the product is actually good.
 
 **"Distribution is a growth hack you do once."** Channels saturate. Ad costs rise. Algorithms change overnight. Treat distribution as a system you compound over time, and lean toward **owned channels**, your SEO, your email list, your referrals, because nobody can revoke them or bid up their price.
 
@@ -193,7 +194,7 @@ Three numbers worth memorizing:
 4. **Track CAC and payback from day one.** A channel that brings cheap traffic but no payback is a leak, not a win.
 5. **Go all-in on the winner.** When one channel clearly works, double down and ignore the rest until it saturates.
 6. **Start your audience now, even before launch.** Publish something useful, consistently. An audience that already trusts you is the cheapest customer base you'll ever have.
-7. **Do the unscalable thing first.** Email people one by one. Onboard them by hand. Learn their exact words, then automate.
+7. **Do the unscalable thing first.** Email people one by one. Onboard them by hand. Learn their exact words, then [automate](/blog/how-to-make-money/20-systems-automation-delegation).
 
 ## A note for founders in India
 
@@ -201,7 +202,7 @@ Once distribution actually produces revenue, two Indian rules start to bite. Kno
 
 **GST registration:** GST (Goods and Services Tax) is India's value-added tax. If you sell **services or anything digital**, registration becomes mandatory once your annual turnover crosses **₹20 lakh** (₹10 lakh in special-category states). The higher **₹40 lakh** threshold applies to **goods only**, a distinction many solo founders miss.
 
-**ESOP taxation:** An ESOP (Employee Stock Option Plan) gives employees company shares as part of their pay, and it's taxed twice: once when you exercise the options (treated as salary at your slab rate) and again when you sell the shares (capital gains). The relief worth knowing: employees of **DPIIT-recognised startups** can defer the exercise-stage tax for up to 48 months, so you aren't taxed on paper gains you can't yet cash.
+**ESOP taxation:** An ESOP (Employee Stock Option Plan) gives employees [company shares](/blog/how-to-make-money/17-equity-ownership-the-windfall-path) as part of their pay, and it's taxed twice: once when you exercise the options (treated as salary at your slab rate) and again when you sell the shares (capital gains). The relief worth knowing: employees of **DPIIT-recognised startups** can defer the exercise-stage tax for up to 48 months, so you aren't taxed on paper gains you can't yet cash.
 
 For distribution channels specifically, India offers Upwork and Fiverr for service freelancers, Amazon.in and Flipkart for products, and **ONDC** (Open Network for Digital Commerce), a newer interoperable network worth watching as an emerging way to borrow built-in demand.
 

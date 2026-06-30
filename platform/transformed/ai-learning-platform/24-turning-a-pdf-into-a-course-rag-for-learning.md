@@ -48,6 +48,7 @@ faq:
       Usually the source material is wrong, contradictory, or duplicated. RAG
       faithfully repeats whatever is in the document, so clean, curated sources
       are a prerequisite, not a nice-to-have.
+linked: true
 topic: ai-learning-platform
 topicTitle: AI Learning Platform
 category: AI & LLMs
@@ -81,7 +82,7 @@ A plain AI answering from memory is a student taking a **closed-book exam**: flu
 
 RAG turns it into an **open-book exam**. Before answering, the AI flips to the exact pages of your document that matter, reads them, and answers only from what it sees there.
 
-That single shift, from "answer from memory" to "answer from retrieved source text," is the entire game. Published work shows that grounding answers in real passages cuts errors by roughly **35 to 60 percent**, and it gives you something just as valuable: you can show the learner the precise page a claim came from.
+That single shift, from "answer from memory" to "answer from retrieved source text," is the entire game. Published work shows that [grounding answers in real passages](/blog/ai-llm-engineering/03-context-engineering-retrieval) cuts errors by roughly **35 to 60 percent**, and it gives you something just as valuable: you can show the learner the precise page a claim came from.
 
 ## The pipeline: how a document becomes a tutor
 
@@ -127,8 +128,8 @@ Instead of waiting for a learner to ask something, you walk the document's own s
 
 - **Lessons and summaries** - a clean explanation of each section in plain language.
 - **Worked examples and analogies** - ideally tuned to what the learner cares about.
-- **Quizzes** - multiple-choice, true/false, matching, and short written-answer questions.
-- **A lesson chatbot** - a tutor the learner can ask follow-up questions, answering only from the uploaded material and citing the page.
+- **[Quizzes](/blog/ai-learning-platform/15-practice-exercises-and-adaptive-quizzes)** - multiple-choice, true/false, matching, and short written-answer questions.
+- **[A lesson chatbot](/blog/ai-learning-platform/17-the-lesson-scoped-tutor-chatbot)** - a tutor the learner can ask follow-up questions, answering only from the uploaded material and citing the page.
 
 This is the "bring your own content" feature that makes a tutor feel magical. It teaches the material the learner *actually* has to master, not a generic curriculum. Google's NotebookLM is the famous example: upload your sources, then chat with citations and auto-generate flashcards, quizzes, and summaries, all grounded in what you uploaded.
 
@@ -140,13 +141,13 @@ One honest caveat: quality varies sharply by what you are generating. Prose expl
 It sounds right, but it often isn't. So-called semantic chunking (splitting wherever the meaning shifts) seems clever, yet in tests it produced tiny 43-word fragments that retrieved well but starved the AI of context, dropping end-to-end accuracy to about 54 percent. Boring, even-sized chunks with overlap beat it.
 
 **"The model is hallucinating, so the model is the problem."**
-Usually it isn't. Many "hallucinations" trace straight back to the source material being wrong, contradictory, or duplicated. RAG faithfully repeats whatever it is given, so if the textbook contradicts itself, the tutor will too. Clean, curated sources are a prerequisite, not a bonus.
+Usually it isn't. Many ["hallucinations"](/blog/ai-learning-platform/25-keeping-the-ai-accurate-and-pedagogically-sound) trace straight back to the source material being wrong, contradictory, or duplicated. RAG faithfully repeats whatever it is given, so if the textbook contradicts itself, the tutor will too. Clean, curated sources are a prerequisite, not a bonus.
 
 **"RAG means the AI knows my document."**
 Not exactly. The AI never memorizes your document. At answer time it is handed a few relevant chunks and asked to respond using only those. Get the retrieval step wrong and even a brilliant model gives a poor answer.
 
 **"Bigger model fixes everything."**
-Chunking quality and retrieval quality matter as much as which AI model you use. A great model fed the wrong passages still fails.
+Chunking quality and retrieval quality matter as much as [which AI model you use](/blog/ai-learning-platform/23-where-llms-fit-and-where-they-fail). A great model fed the wrong passages still fails.
 
 ## How to build this without getting burned
 

@@ -55,6 +55,7 @@ order: 6
 icon: "\U0001F5A8️"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -148,7 +149,7 @@ At the common commercial screen of 150 lpi: **150 × 2 = 300 ppi.** That's the e
 | 175 lpi | High-end work | 350 ppi |
 | 200 lpi | Fine-art books | 400 ppi |
 
-Going below about 1.5× risks soft, artifact-prone halftones. Going above 2× just wastes data; the RIP throws away the extra pixels, leaving you with a bigger file and no visible gain.
+Going below about 1.5× risks soft, artifact-prone [halftones](/blog/computer-graphics-print/08-halftoning-screening-turning-tone-into-dots). Going above 2× just wastes data; [the RIP](/blog/computer-graphics-print/17-the-rip-press-operation-color-measurement) throws away the extra pixels, leaving you with a bigger file and no visible gain.
 
 The big exception is **large format**. Banners and billboards are viewed from far away, so 100 to 150 ppi (or far less for billboards) is plenty, because your eye can't resolve the dots at distance.
 
@@ -170,7 +171,7 @@ Reducing always raises it, which is why it's always safe:
 - 72 ppi at 50% = 144 ppi
 - 300 ppi at 50% = 600 ppi
 
-**The drag-to-fit trap:** a designer places a 300-ppi photo in InDesign, then drags the frame corner to fill the page, scaling it to 220%. Preflight flags the effective resolution at ~136 ppi. It will print soft. The only real fixes are a bigger source file or a smaller placement, never just dragging it larger.
+**The drag-to-fit trap:** a designer places a 300-ppi photo in InDesign, then drags the frame corner to fill the page, scaling it to 220%. [Preflight](/blog/computer-graphics-print/13-preflight-validating-a-file-before-it-prints) flags the effective resolution at ~136 ppi. It will print soft. The only real fixes are a bigger source file or a smaller placement, never just dragging it larger.
 
 **Rule of thumb:** enlarging up to about **120%** keeps very good quality. Beyond that, the resolution falls below target. Always check effective resolution *after scaling*, not the file's stored PPI.
 
@@ -203,7 +204,7 @@ Why care? Heavy edits on an 8-bit image, like big curves moves on a sky gradient
 
 When layers overlap, the software does real math to combine them, using each layer's **alpha** (its opacity). **Multiply** blend mode darkens and mimics real ink layering; **Screen** lightens. **Flattening** bakes all those layers and blend effects down into one opaque image, and once flattened it's permanent.
 
-The catch: many RIPs can't render live transparency, so prepress flattens it for them. Done badly, this causes "white box" artifacts, color shifts, or hairline stitching lines wherever transparent objects overlap. Export a **PDF/X-4** (it keeps transparency live) rather than **PDF/X-1a** (which forces flattening), and always embed fonts or outline type so the RIP can't substitute the wrong font.
+The catch: many RIPs can't render live transparency, so prepress flattens it for them. Done badly, this causes "white box" artifacts, color shifts, or hairline stitching lines wherever transparent objects overlap. Export a [**PDF/X-4**](/blog/computer-graphics-print/12-pdf-x-output-intent-page-boxes-the-print-ready-target) (it keeps transparency live) rather than **PDF/X-1a** (which forces flattening), and always [embed fonts](/blog/computer-graphics-print/11-typography-text-rendering) or outline type so the RIP can't substitute the wrong font.
 
 ## Common misconceptions
 
@@ -227,4 +228,4 @@ The catch: many RIPs can't render live transparency, so prepress flattens it for
 
 If you remember one thing, make it this: **raster bakes its detail in at birth and can only lose quality from there, while vector carries instructions and is rendered fresh at the printer's full resolution.** Match the type to the element, and most "why is it blurry?" problems vanish before they start.
 
-Here's the thread worth pulling next. We've talked about sharpness, but not color. Why does a glowing sunset on your screen turn muddy and dull on paper? That's the gap between RGB light and CMYK ink, and it surprises designers far more often than resolution ever does.
+Here's the thread worth pulling next. We've talked about sharpness, but not color. Why does a glowing sunset on your screen turn muddy and dull on paper? That's the gap between [RGB light and CMYK ink](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color), and it surprises designers far more often than resolution ever does.

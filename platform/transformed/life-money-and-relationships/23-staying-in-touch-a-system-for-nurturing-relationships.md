@@ -50,6 +50,7 @@ faq:
       reminder your memory cannot provide.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: life-money-and-relationships
 topicTitle: 'Life, Money & Relationships'
 category: Thinking & Decisions
@@ -59,7 +60,7 @@ icon: "\U0001F331"
 sources: []
 ---
 
-Here is the quiet truth about networking: the hard part isn't meeting people. It's not losing them.
+Here is the quiet truth about [networking](/blog/life-money-and-relationships/16-why-relationships-networks-truly-matter): the hard part isn't meeting people. It's not losing them.
 
 You go to an event, have a great chat, swap details, feel that little spark of "we should stay in touch." Then life happens. Three years later you need a favor, open your contacts, and realize you haven't spoken to that person since the day you met. The relationship didn't end in a fight. It just quietly faded.
 
@@ -69,7 +70,7 @@ This is about building a simple system so that doesn't happen. The good news: it
 
 Relationships rarely die from conflict. They die from neglect.
 
-That matters because your network is where your best opportunities, introductions, advice, and support actually come from, and almost all of it depends on ties staying warm. A cold contact you met once can't help you. A warm one often will, gladly.
+That matters because your network is where your best [opportunities, introductions, advice, and support](/blog/life-money-and-relationships/27-how-opportunities-hires-advice-really-flow) actually come from, and almost all of it depends on ties staying warm. A cold contact you met once can't help you. A warm one often will, gladly.
 
 A staying-in-touch system turns "I really should call them" (guilt) into a scheduled, frictionless habit (action). It does the remembering so you don't have to.
 
@@ -105,7 +106,7 @@ Here's a starter layout you can build in five minutes:
 | Tom Ray | 50 | 2026-03-10 | 2026-06-10 | new job @X |
 | Old prof | 150 | 2024-11-01 | 2026-07-01 | reconnect! |
 
-One warning: don't treat your CRM like a sales pipeline, logging people as "targets to convert." That mindset leaks into your messages, and people can smell it. Frame the system as *remembering that I care*, not *tracking who owes me*.
+One warning: don't treat your CRM like a sales pipeline, logging people as "targets to convert." That mindset leaks into your messages, and people can smell it. Frame the system as *remembering that I care*, not [*tracking who owes me*](/blog/life-money-and-relationships/24-giving-value-reciprocity-without-keeping-score).
 
 ## Cadence and tiers: how often to reach out
 
@@ -147,7 +148,7 @@ A **weak tie** is someone you know only loosely: an acquaintance, a friend of a 
 
 A **dormant tie** is a once-active relationship that's gone quiet: an old classmate, a former boss, a collaborator from two startups ago.
 
-Research by Levin, Walter, and Murnighan found that dormant ties are goldmines. There's **leftover trust**, so reconnecting is easy, *plus* **fresh information**, because you've both moved into new circles since you last spoke. In short, a dormant tie gives you a weak tie's fresh information with a close tie's trust already in place.
+Research by Levin, Walter, and Murnighan found that [dormant ties](/blog/life-money-and-relationships/18-mapping-your-network-strong-weak-dormant-ties) are goldmines. There's **leftover trust**, so reconnecting is easy, *plus* **fresh information**, because you've both moved into new circles since you last spoke. In short, a dormant tie gives you a weak tie's fresh information with a close tie's trust already in place.
 
 How to reconnect well:
 
@@ -155,7 +156,7 @@ How to reconnect well:
 - **Lead with catching up or giving, never an ask.** "What are you working on these days?" beats "Can you intro me to..."
 - **Offer an easy out:** "No need to reply, just sending a good thought your way."
 
-A relationship doesn't "expire" because you went silent. Trust residue lasts for years, and the awkwardness you're imagining is almost always overblown. Reconnections are usually received warmly.
+A relationship doesn't "expire" because you went silent. [Trust residue](/blog/life-money-and-relationships/19-how-trust-rapport-actually-form) lasts for years, and the awkwardness you're imagining is almost always overblown. Reconnections are usually received warmly.
 
 ## Common misconceptions
 

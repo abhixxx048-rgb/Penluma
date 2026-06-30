@@ -460,6 +460,7 @@ for (const topicDir of fs.readdirSync(OUT_DIR, { withFileTypes: true })) {
       id: `${topicDir.name}/${file.replace(/\.md$/, '')}`,
       title: fm.title || '',
       topicTitle: fm.topicTitle || '',
+      author: fm.author || '',
     });
   }
 }

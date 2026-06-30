@@ -58,6 +58,7 @@ faq:
       do not, and there is no single magic bullet.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Why_Nations_Fail
   - https://en.wikipedia.org/wiki/Great_Divergence
@@ -80,7 +81,7 @@ Understanding why some countries are rich and others poor helps you:
 
 - See through lazy explanations like "that culture just doesn't work hard."
 - Judge whether a development policy or aid program is likely to help.
-- Understand the deep reason behind headlines about corruption, migration, and inequality.
+- Understand the deep reason behind headlines about corruption, migration, and [inequality](/blog/economics-from-first-principles/25-inequality-wealth-distribution-and-poverty).
 
 Let's start with the fact that reframes everything.
 
@@ -90,7 +91,7 @@ There is a name for the sudden split between the rich West and everyone else: th
 
 The shock is how *equal* the world was before it. Around 1750, the wealthiest parts of China and India had wages, life expectancy, and living standards roughly comparable to the most advanced parts of Europe. The world was poor almost everywhere, and fairly evenly so.
 
-Then Britain's **Industrial Revolution** (roughly 1760 to 1840) lit a fuse. Machines powered by coal and steam replaced handmade goods. Output per person in the industrializing West began to compound, year after year, while most of the world stayed flat. Within a century, the gap was enormous.
+Then Britain's **Industrial Revolution** (roughly 1760 to 1840) lit a fuse. Machines powered by coal and steam replaced handmade goods. [Output per person](/blog/economics-from-first-principles/12-economic-growth-and-productivity) in the industrializing West began to compound, year after year, while most of the world stayed flat. Within a century, the gap was enormous.
 
 Why Britain first is still debated. Some historians credit luck: Britain happened to sit on coal near its cities and had colonies supplying cheap land, cotton, and food. Others credit its institutions: secure contracts, banks, patent law, a scientific culture. The honest answer is that the exact cause is still argued.
 
@@ -206,9 +207,9 @@ China is also the great *challenge* to the institutions theory. It grew explosiv
 
 Oil or diamonds should make a country rich. Often they do the opposite. The **resource curse** is the observed tendency for resource-rich countries to grow *slower*, be more corrupt, and stay less democratic. Three mechanisms drive it:
 
-1. **Dutch disease.** Big resource exports raise the value of the country's currency, which makes its factories and farms too expensive to compete abroad - so the rest of the economy withers.
+1. **Dutch disease.** Big resource exports [raise the value of the country's currency](/blog/economics-from-first-principles/22-exchange-rates-currency-markets-and-why-currencies-rise-or-fall), which makes its factories and farms too expensive to compete abroad - so the rest of the economy withers.
 2. **Volatility.** Resource prices swing wildly, so government budgets lurch through booms and crashes.
-3. **Weak accountability.** When a government funds itself from oil instead of taxing its citizens, it doesn't need their consent. The money fuels corruption, and sometimes conflict, instead of public services.
+3. **Weak accountability.** When a government funds itself from oil instead of [taxing its citizens](/blog/economics-from-first-principles/16-fiscal-policy-taxes-spending-deficits-and-national-debt), it doesn't need their consent. The money fuels corruption, and sometimes conflict, instead of public services.
 
 Compare two cases. **Nigeria** leaned on oil, neglected farming and manufacturing, and lurched through boom and bust. **Botswana**, the world's top diamond producer, did the opposite: with strong institutions and careful management after independence in 1966, it became one of the fastest-growing economies in the world for decades, saving and diversifying its diamond money.
 
@@ -229,4 +230,4 @@ Apply these four questions and most lazy explanations fall apart on contact.
 
 If you remember one thing, make it this: poor countries are not full of bad people, bad weather, or bad culture. They are usually good people living under rules that punish building and reward grabbing. **The wealth of nations is mostly about the rules of the game - and rules can be rewritten.**
 
-That hands us an unsettling question for our own time. The same economists who decoded the past are now asking whether automation and artificial intelligence will widen the global gap or narrow it - and, crucially, *who captures the gains*. Technology, like oil, is not automatically a blessing. Whether it lifts the many or enriches a few will, once again, come down to the rules we choose. Which means the most important economic decisions of the next century may be political ones.
+That hands us an unsettling question for our own time. The same economists who decoded the past are now asking whether [automation and artificial intelligence](/blog/economics-from-first-principles/27-technology-automation-ai-and-innovation) will widen the global gap or narrow it - and, crucially, *who captures the gains*. Technology, like oil, is not automatically a blessing. Whether it lifts the many or enriches a few will, once again, come down to the rules we choose. Which means the most important economic decisions of the next century may be political ones.

@@ -60,6 +60,7 @@ faq:
       day, a run that once would have taken weeks.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Financial_crisis
   - https://en.wikipedia.org/wiki/Minsky_moment
@@ -75,7 +76,7 @@ It is neither. Financial crises follow a surprisingly regular pattern, driven by
 
 You do not run a bank, so why should you care how one collapses?
 
-Because crises reach straight into ordinary life. They decide whether your savings are safe, whether you can get a mortgage, whether your employer is hiring or firing, and whether the value of your money holds. The 2008 crisis wiped out trillions in household wealth and pushed unemployment in the US to 10%. The recovery took years.
+Because crises reach straight into ordinary life. They decide whether your savings are safe, whether you can [get a mortgage](/blog/economics-from-first-principles/20-real-estate-and-housing-economics), whether your employer is hiring or firing, and whether the value of your money holds. The 2008 crisis wiped out trillions in household wealth and pushed unemployment in the US to 10%. The recovery took years.
 
 Understanding the pattern does two things for you. It helps you spot the warning signs of a bubble before it bursts, when "prices only go up" becomes the popular wisdom. And it lets you cut through the noise during the next crisis, so you can tell a genuine collapse from a survivable scare. That calm is worth a lot when everyone around you is panicking.
 
@@ -132,7 +133,7 @@ The longer the good times last, the more of the system slides toward that fragil
 
 This is where solvency and liquidity matter most.
 
-Banks **borrow short and lend long**. They take your deposits, which you can withdraw instantly, and use them to fund 30-year mortgages, which they cannot get back for decades. That mismatch is normal and usually fine.
+Banks **borrow short and lend long**. They take [your deposits](/blog/economics-from-first-principles/07-how-banks-work-and-how-they-create-money), which you can withdraw instantly, and use them to fund 30-year mortgages, which they cannot get back for decades. That mismatch is normal and usually fine.
 
 But if every depositor demands cash on the same morning, the bank cannot sell its long-term loans fast enough. So it fails, *even if every one of those loans is perfectly good*. The famous **Diamond-Dybvig model** showed that this kind of run can be **self-fulfilling**: you withdraw your money not because the bank is bad, but because you are afraid everyone else will withdraw first and leave nothing for you. Belief alone causes the failure.
 
@@ -159,7 +160,7 @@ US industrial production fell about 47%, GDP dropped roughly 30%, and unemployme
 
 ### The Asian Financial Crisis (1997)
 
-Thailand had pegged its currency, the baht, to the US dollar. When speculators attacked, Thailand burned through its reserves defending the peg, then gave up and let the baht float on 2 July 1997. It promptly lost over half its value.
+Thailand had pegged its currency, the baht, to the US dollar. When speculators attacked, Thailand burned through its reserves defending the peg, then gave up and let [the baht float](/blog/economics-from-first-principles/22-exchange-rates-currency-markets-and-why-currencies-rise-or-fall) on 2 July 1997. It promptly lost over half its value.
 
 The trouble spread to Indonesia, Malaysia, the Philippines, and South Korea as foreign money fled. The root cause was what economists call "original sin": these countries had borrowed heavily in **short-term dollar debt**. When their local currencies collapsed, those dollar debts effectively doubled overnight. The IMF arranged rescues worth more than $110 billion regionally, but the harsh austerity it demanded in return is still fiercely debated. Many argue it deepened the slump.
 
@@ -183,7 +184,7 @@ The deep flaw was structural: Europe shared a currency but had no shared budget 
 
 This one broke the mold. The trigger was external (a pandemic and lockdowns), not a financial bust. The collapse was the fastest deep one on record, but so was the response.
 
-From 15 March 2020, the Fed cut rates to near zero and launched massive bond-buying, ballooning its balance sheet from about $4.5 trillion to over $7 trillion in two months. Congress passed more than $3 trillion in stimulus, about 14.5% of GDP. The recovery was V-shaped, far quicker than after 2008. The lesson many drew was *act early and big*. The contested downside: that firehose of money likely fed the 2021-2023 inflation surge.
+From 15 March 2020, the Fed cut rates to near zero and launched massive bond-buying, ballooning its balance sheet from about $4.5 trillion to over $7 trillion in two months. Congress passed more than $3 trillion in stimulus, about 14.5% of GDP. The recovery was V-shaped, far quicker than after 2008. The lesson many drew was *act early and big*. The contested downside: that firehose of money likely fed the 2021-2023 [inflation surge](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money).
 
 ### The pattern at a glance
 
@@ -254,4 +255,4 @@ If you remember one thing, make it this: a financial crisis is not bad luck and 
 
 Crisis-fighting, then, is a permanent trade-off. Rescues stop today's contagion but encourage tomorrow's recklessness. The real art is to save the *system* while making the gamblers bear genuine losses, through wiped-out shareholders, fired managers, and tougher rules afterward.
 
-Which raises a question worth sitting with. If every bailout quietly funds the next crisis, the most important policy is the one that prevents the boom from turning fragile in the first place. So how does a central bank decide when cheap money is fueling growth, and when it is quietly inflating the next bubble? That is the knife-edge of monetary policy, and it is where the next chapter begins.
+Which raises a question worth sitting with. If every bailout quietly funds the next crisis, the most important policy is the one that prevents the boom from turning fragile in the first place. So how does a central bank decide when cheap money is fueling growth, and when it is quietly inflating the next bubble? That is the knife-edge of [monetary policy](/blog/economics-from-first-principles/08-central-banks-and-monetary-policy), and it is where the next chapter begins.

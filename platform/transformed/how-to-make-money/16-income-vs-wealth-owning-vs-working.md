@@ -38,6 +38,7 @@ order: 15
 icon: "\U0001FA99"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -57,7 +58,7 @@ Most money confusion comes from blurring three different ideas. Pull them apart 
 
 - **Income** is a *flow*. Money arriving over time - salary, fees, rent. You measure it per month or per year, and it stops when the source stops.
 - **Wealth** is a *stock*. The total value of the assets you own: businesses, shares, property, intellectual property. It sits there whether you work or not.
-- **Money** is just the *medium* - the way we move wealth around. As Paul Graham wrote in his essay *How to Make Wealth*, money is "a way of moving wealth," not wealth itself. You can even create wealth with no money changing hands at all: fix your own car and you have created real value without spending a rupee.
+- **Money** is just the *medium* - the way we move wealth around. As Paul Graham wrote in his essay *How to Make Wealth*, money is "a way of moving wealth," not wealth itself. You can even create wealth with no money changing hands at all: fix your own car and you have [created real value](/blog/how-to-make-money/02-value-creation-vs-value-capture) without spending a rupee.
 
 Investor Naval Ravikant compressed the whole lesson into one line worth memorising:
 
@@ -86,11 +87,11 @@ That line gets misused, so let's be precise about it below.
 
 ## The two ways to get paid - and why one has a ceiling
 
-There are fundamentally two ways to earn. The difference between them is the difference between a comfortable life and a free one.
+There are fundamentally [two ways to earn](/blog/how-to-make-money/03-the-four-ways-anyone-gets-paid). The difference between them is the difference between a comfortable life and a free one.
 
 **Renting your time** - a salary or freelancing - is *linear*. One hour equals one unit of pay. It is *capped*, because there are only 24 hours in a day. It stops the moment you stop. And it is taxed at the highest rates, withheld at source with almost no room to defer.
 
-**Owning equity** - a piece of a business or asset - *scales*. One good decision can serve a million customers. The upside is *uncapped*: value can multiply 10x or 100x. It earns while you sleep, and gains are often taxed lower and on your own timing.
+[**Owning equity**](/blog/how-to-make-money/17-equity-ownership-the-windfall-path) - a piece of a business or asset - *scales*. One good decision can serve a million customers. The upside is *uncapped*: value can multiply 10x or 100x. It earns while you sleep, and gains are often taxed lower and on your own timing.
 
 Naval again, blunt as ever:
 
@@ -116,7 +117,7 @@ Same skill. Same hours at the whiteboard. Arjun captured an ownership multiple t
 
 Here's the part nobody likes to hear: your income barely predicts your wealth. Your **savings rate** does.
 
-Your savings rate is simply the gap between what you earn and what you spend, expressed as a percentage - and then invested into assets so the returns compound.
+Your savings rate is simply the gap between what you earn and what you spend, expressed as a percentage - and then invested into assets so [the returns compound](/blog/how-to-make-money/18-making-money-with-money-cash-flow-assets-compounding).
 
 Watch what it does over a career:
 
@@ -149,7 +150,7 @@ Notice the lever hiding in plain sight: lower expenses cut your target *and* rai
 If you're employed, the most concrete path from renting time to owning equity is **ESOPs** - Employee Stock Option Plans, the right to buy your company's shares at a fixed price. The catch is the tax, which lands in two stages, and the timing matters enormously.
 
 1. **At exercise (when you buy the shares):** you're taxed on a *perquisite* = (fair market value at exercise − your exercise price) × number of shares. This gets added to your salary and taxed at slab rates - *even if you sell nothing.* That's the famous "liquidity trap": tax due on paper gains you can't spend yet.
-2. **At sale:** capital gains = sale price − the value at exercise. After Budget 2024 (effective 23 July 2024), listed shares are taxed at **12.5%** long-term (first ₹1.25 lakh a year exempt) and **20%** short-term.
+2. **At sale:** [capital gains](/blog/life-money-and-relationships/12-taxes-made-simple-income-deductions-capital-gains) = sale price − the value at exercise. After Budget 2024 (effective 23 July 2024), listed shares are taxed at **12.5%** long-term (first ₹1.25 lakh a year exempt) and **20%** short-term.
 
 There's relief worth knowing. If you work at a DPIIT-recognised eligible startup, you can **defer** the exercise-stage perquisite tax under Section 192(1C) to the earliest of: 5 years from allotment, the date you sell, or the date you leave. That directly eases the liquidity trap - you can exercise without an immediate cash tax hit.
 

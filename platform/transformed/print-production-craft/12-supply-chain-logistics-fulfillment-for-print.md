@@ -38,6 +38,7 @@ order: 11
 icon: "\U0001F4D0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -53,7 +54,7 @@ Most shipping advice assumes you are selling things off a shelf. Print breaks th
 
 In a normal online store, the product already exists as a finished item in a warehouse. Fulfillment means pick it, pack it, ship it. In print, **the finished product does not exist until someone buys it**. Your shelves hold paper and ink, not booklets and banners.
 
-That one difference changes everything downstream: what you stock, when you can promise delivery, how you price a job, and what your software must remember. If you sell print, build print software, or just want to stop overpaying carriers, the rules below are the ones that bite.
+That one difference changes everything downstream: what you stock, when you can promise delivery, how you price a job, and what your software must remember. If you sell print, [build print software](/blog/print-production-craft/01-how-to-use-this-guide), or just want to stop overpaying carriers, the rules below are the ones that bite.
 
 ## Print is made to order, and that changes the whole game
 
@@ -63,7 +64,7 @@ So three things flip compared to normal ecommerce:
 
 - Your **inventory is raw material** (paper, ink, finishing supplies), not finished goods.
 - **Fulfillment overlaps with production.** "Is it ready to ship?" really means "is it printed yet?"
-- The big risks move to **having the right material on hand** and **production lead time**, not warehouse picking.
+- The big risks move to **having the right material on hand** and **[production lead time](/blog/print-production-craft/10-print-shop-operations-workflow-imposition-batching-turnaround)**, not warehouse picking.
 
 A normal store with 200 mugs can ship one within the hour. A print shop selling custom wedding invitations has zero finished invitations, just reams of paper. The order triggers printing, then cutting, then drying, then packing. Shipping cannot even begin until production ends.
 
@@ -92,7 +93,7 @@ Say your shop uses 5 boxes of gloss cardstock a day, your supplier takes 6 days 
 
 ### Stop sourcing by hand
 
-The old manual loop goes: spot low stock, call suppliers, gather quotes, compare, get approval, issue the PO, wait. That is fine for standard paper. It is painful for a specialty substrate, where just *finding* the stock can take days.
+The old manual loop goes: spot low stock, call suppliers, gather quotes, compare, get approval, issue the PO, wait. That is fine for standard paper. It is painful for a [specialty substrate](/blog/print-production-craft/08-substrates-materials-paper-gsm-coatings-specialty-stocks), where just *finding* the stock can take days.
 
 Modern **automated procurement** reverses the flow. The production floor reports what it consumed, the system forecasts demand, and when stock hits the reorder point it auto-generates a PO to a pre-approved supplier. Shops that move from manual to automated sourcing commonly report material-cost savings in the range of **5 to 20 percent**, mostly from better timing and easier supplier comparison.
 
@@ -182,7 +183,7 @@ Two rules quietly make this worse for oddly-sized print:
 
 Picture a fine-art poster rolled in a 24 × 6 × 6 inch tube. Volume is 24 × 6 × 6 = 864 cubic inches. DIM weight is 864 ÷ 139 ≈ 6.2 lbs, rounded up to about **7 lbs**. The rolled prints actually weigh under 2 lbs, but you are billed at 7 because the box is bulky for its weight.
 
-The print-specific lesson is sharp: **your packaging choice directly changes the bill**. Sometimes a strong, compact tube beats an over-reinforced flat box on *both* protection and DIM cost. Every packaging decision is also a pricing decision.
+The print-specific lesson is sharp: **your packaging choice directly changes the bill**. Sometimes a strong, compact tube beats an over-reinforced flat box on *both* protection and DIM cost. Every packaging decision is also a [pricing decision](/blog/print-production-craft/11-print-shop-economics-costing-make-ready-margins-quoting).
 
 ## Shipping zones: distance measured by ZIP, not miles
 
@@ -282,7 +283,7 @@ The split itself is fine. The *silence* about it is what breaks trust. Receiving
 
 A few beliefs cause most of the expensive mistakes in print fulfillment:
 
-- **"Finished print is a stocked product like any other."** It is not. There is no shelf of finished booklets to pick. Your real constraints are raw stock on hand and available press time. Software that models print as finished-goods counts will mislead everyone.
+- **"Finished print is a stocked product like any other."** It is not. There is no shelf of finished booklets to pick. Your real constraints are raw stock on hand and available press time. Software that [models print as finished-goods counts](/blog/print-production-craft/14-putting-it-together-modeling-print-in-software-pf360-lens) will mislead everyone.
 - **"Shipping cost equals the weight on the scale."** Not even close. Dimensional weight means a light, bulky box can be billed at several times its actual weight.
 - **"Small international orders ship duty-free."** That era is ending. With de minimis gone in the US and the EU, even a low-value order owes duty and needs proper customs data.
 - **"One tracking number per order is enough."** Print orders split constantly. A single tracking field cannot represent "half shipped, half on the press."

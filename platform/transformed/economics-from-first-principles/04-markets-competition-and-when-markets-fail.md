@@ -62,6 +62,7 @@ faq:
       governments fund public goods.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -117,7 +118,7 @@ Why do economists love competition so much? Because of the *value it creates eve
 - **Consumer surplus** is the deal you got. If you'd have paid $50 for a pair of shoes but bought them for $30, you pocketed $20 of value.
 - **Producer surplus** is the seller's version. If the shop would have accepted $22 but sold for $30, it gained $8.
 
-In perfect competition, the market settles at a magic point: **price equals marginal cost** - the cost of making one more unit. At that point, the two pots added together are as large as they can possibly be. *Every trade that would make both sides better off actually happens.* Nothing is wasted.
+In perfect competition, [the market settles at a magic point](/blog/economics-from-first-principles/03-supply-demand-and-how-prices-are-determined): **price equals marginal cost** - the cost of making one more unit. At that point, the two pots added together are as large as they can possibly be. *Every trade that would make both sides better off actually happens.* Nothing is wasted.
 
 There's a famous phrase that trips people up here: in the long run, competition drives firms to **zero economic profit**.
 
@@ -151,7 +152,7 @@ Two things people usually get wrong about this. Smith used the phrase exactly *o
 
 The rigorous modern version is the **First Welfare Theorem**, formalized in the 20th century by Kenneth Arrow and Gérard Debreu. It says a competitive market reaches an efficient outcome - one where you can't help anyone without hurting someone else.
 
-But - and this is everything - it only holds under strict conditions: no market power, no externalities, no public goods, and full information. When one of those breaks, the invisible hand drops the ball. That's **market failure**, and it's the real justification for the government stepping in.
+But - and this is everything - it only holds under strict conditions: no market power, no externalities, no public goods, and full information. When one of those breaks, the invisible hand drops the ball. That's **market failure**, and it's the real justification for [the government stepping in](/blog/economics-from-first-principles/29-public-economics-welfare-social-security-and-the-role-of-government).
 
 > **Common mistake:** Treating "the market always knows best" as a law of nature. It's a *conditional* result. The interesting question is always: which assumption is broken here?
 
@@ -213,7 +214,7 @@ Next time you hear "the government should fix this market" - or "leave it alone"
 
 1. **Name the failure.** Is it market power, an externality, a public good, or an information gap? If you can't point to one of the four, the market may be working fine and intervention could make things worse.
 2. **Check the match.** Does the proposed cure address *that exact* failure? Pricing pollution fixes an externality. Breaking up a firm fixes market power. Mismatched cures - like breaking up a natural monopoly, or banning a product instead of taxing its pollution - usually cause more harm than the original problem.
-3. **Spot the externality in your own choices.** When something feels mispriced - cheap fast fashion, "free" social media - ask who's bearing a cost that isn't on the price tag.
+3. **Spot the externality in your own choices.** When something feels mispriced - cheap fast fashion, "free" social media - ask [who's bearing a cost that isn't on the price tag](/blog/economics-from-first-principles/30-environmental-economics-and-sustainable-development).
 4. **Read "low price" carefully.** A price near marginal cost signals healthy competition. A price far above it, protected by barriers to entry, signals market power - and probably deadweight loss you're helping pay for.
 
 ## Conclusion
@@ -222,4 +223,4 @@ Here's the one idea to carry with you: **markets are extraordinary at creating v
 
 That single habit - asking "which of the four failures is this?" - will make you sharper than most pundits arguing on TV.
 
-And it raises a deeper question we've only hinted at. If markets can fail in these four neat ways, why do they so often fail in messier, more human ones - people buying things they regret, chasing trends, ignoring obvious math? That's where economics stops being about supply curves and starts being about the strange machinery of the human mind. Worth a look next.
+And it raises a deeper question we've only hinted at. If markets can fail in these four neat ways, why do they so often fail in messier, more human ones - people buying things they regret, chasing trends, ignoring obvious math? That's where economics stops being about supply curves and starts being about [the strange machinery of the human mind](/blog/economics-from-first-principles/31-behavioral-economics-how-psychology-shapes-the-economy). Worth a look next.

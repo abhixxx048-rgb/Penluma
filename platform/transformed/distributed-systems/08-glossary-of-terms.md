@@ -38,6 +38,7 @@ order: 7
 icon: "\U0001F310"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -59,9 +60,9 @@ Learn the vocabulary and two things happen. You can read the original papers and
 
 Before the definitions, here is the story they all serve.
 
-You want several machines to behave like one reliable machine, even though some of them will crash and the network between them will drop and delay messages. The trick is the **replicated state machine**: give every node an identical program, feed all of them the exact same commands in the exact same order, and they stay perfectly in sync.
+You want several machines to behave like one reliable machine, even though some of them will crash and the network between them will drop and delay messages. The trick is the **[replicated state machine](/blog/distributed-systems/03-replicated-state-machines-the-log)**: give every node an identical program, feed all of them the exact same commands in the exact same order, and they stay perfectly in sync.
 
-Everything else is detail in service of that one order. **Consensus** is how the nodes agree on the order. **Raft** and **Paxos** are two ways to run consensus. The rest of this glossary is the supporting cast.
+Everything else is detail in service of that one order. **Consensus** is how the nodes agree on the order. **Raft** and **[Paxos](/blog/distributed-systems/06-paxos-the-original-consensus-algorithm)** are two ways to run consensus. The rest of this glossary is the supporting cast.
 
 ## The core problem
 
@@ -99,7 +100,7 @@ So why does anything work? Because real systems cheat, gracefully. They add **ti
 
 ## Raft: the understandable one
 
-Raft was deliberately designed to be teachable, by splitting consensus into leader election, log replication, and safety. These are its working parts.
+Raft was deliberately designed to be teachable, by splitting consensus into [leader election](/blog/distributed-systems/04-raft-leader-election), log replication, and safety. These are its working parts.
 
 ### Server states
 
@@ -145,7 +146,7 @@ Paxos came first and is famous for being hard to follow. The roles split differe
 - **Multi-Paxos** - Paxos tuned for a continuous stream of decisions. Elect a stable leader once, then skip the prepare phase for later slots so steady-state commits take a single round trip. This is what real "Paxos" deployments actually run.
 - **EPaxos (Egalitarian Paxos)** - A leaderless variant where any node can commit commands. Non-conflicting commands commit in one round trip with no fixed leader, trading complexity for better latency and balance.
 
-If Raft is one teacher running the room, classic single-decree Paxos is a committee with a strict two-phase voting ritual: first lock out lower bids, then ratify a value. **Multi-Paxos** is that same committee finally electing a chair so it can stop re-running the opening ritual every single time.
+If Raft is one teacher running the room, classic single-decree Paxos is a committee with a strict two-phase voting ritual: first lock out lower bids, then ratify a value. **[Multi-Paxos](/blog/distributed-systems/07-multi-paxos-raft-vs-paxos-the-real-world)** is that same committee finally electing a chair so it can stop re-running the opening ritual every single time.
 
 ## The shared foundation: majorities
 
@@ -194,4 +195,4 @@ Notice the pattern: term, ballot, epoch. Three names, one idea, a number that cl
 
 If you remember one thing, remember this: **every consensus algorithm is an elaborate machine for safely agreeing on the order of a log, built on the stubborn fact that any two majorities must overlap.** Once you see that overlap, the leaders, terms, ballots, and quorums stop being jargon and start being moves in a single, coherent game.
 
-The natural next question is the one the **CAP theorem** poses out loud: when the network splits your cluster in two, do you keep answering and risk disagreement, or stay consistent and go quiet? Consensus has already made its choice. Understanding *why* it chooses consistency, and what you give up for it, is where distributed systems get genuinely interesting.
+The natural next question is the one the **[CAP theorem](/blog/distributed-systems/16-the-cap-theorem-and-pacelc)** poses out loud: when the network splits your cluster in two, do you keep answering and risk disagreement, or stay consistent and go quiet? Consensus has already made its choice. Understanding *why* it chooses consistency, and what you give up for it, is where distributed systems get genuinely interesting.

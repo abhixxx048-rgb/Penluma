@@ -53,6 +53,7 @@ order: 2
 icon: "\U0001F4C8"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -66,7 +67,7 @@ Prices run your life whether you think about them or not. They decide what you c
 
 Most people treat prices as something that just happens to them. But once you understand the forces underneath, you can read a price like a sentence. A jump in rent, a sale that does not feel like a sale, a "shortage" in the news, all of it starts to make sense.
 
-This is also the model behind real policy fights, from rent control to the minimum wage. Knowing how it works lets you cut through slogans and see what is actually going on.
+This is also the model behind real policy fights, from rent control to [the minimum wage](/blog/economics-from-first-principles/13-wages-labor-markets-and-why-some-jobs-pay-more). Knowing how it works lets you cut through slogans and see what is actually going on.
 
 ## Demand: what buyers want, at each price
 
@@ -77,7 +78,7 @@ That phrase "willing and able" does real work. Wanting a yacht is not demand. Be
 The **law of demand** says it plainly: when a price rises, people buy less; when it falls, they buy more. That is why a demand curve slopes downward. Two quiet forces drive it:
 
 - **The substitution effect.** When coffee gets pricey, some people switch to tea.
-- **The income effect.** A higher price makes your money stretch less far, so you feel a bit poorer and cut back.
+- **The [income effect](/blog/economics-from-first-principles/05-consumer-behavior-and-how-people-really-decide).** A higher price makes your money stretch less far, so you feel a bit poorer and cut back.
 
 Picture a sale rack. Drop the price and more hands reach in. Raise it and hands pull back. A demand curve is just a map of how many hands reach in at every possible price.
 
@@ -87,7 +88,7 @@ One quirk to file away now, because it trips up beginners: economists put **pric
 
 **Supply** is the mirror image: the relationship between price and how much sellers are willing to produce and sell over the same period.
 
-The **law of supply** says when price rises, sellers offer more, so the supply curve slopes upward. Why? A higher price covers the extra cost of squeezing out one more unit, what economists call the **marginal cost**. It also tempts new sellers to jump into the business.
+The **law of supply** says when price rises, sellers offer more, so the supply curve slopes upward. Why? A higher price covers the extra cost of squeezing out one more unit, what economists call the **[marginal cost](/blog/economics-from-first-principles/02-how-economists-think-incentives-margins-and-models)**. It also tempts new sellers to jump into the business.
 
 So the two sides pull in opposite directions:
 
@@ -233,4 +234,4 @@ You do not need a chart to put this to work. Try these moves:
 
 Here is the one thing to carry with you: a price is not a number someone hands down. It is a meeting point, the place where what buyers want and what sellers will offer finally agree. Mess with the meeting point and the forces do not vanish; they just escape somewhere else, as a queue, a surplus, or a black market.
 
-That raises a sharper question. If markets settle so neatly on their own, why do they sometimes fail so badly, producing pollution, monopolies, and crashes nobody wanted? That is where supply and demand meets its limits, and where the next part of the story begins.
+That raises a sharper question. If markets settle so neatly on their own, why do they sometimes [fail so badly, producing pollution, monopolies, and crashes nobody wanted](/blog/economics-from-first-principles/04-markets-competition-and-when-markets-fail)? That is where supply and demand meets its limits, and where the next part of the story begins.

@@ -39,6 +39,7 @@ faq:
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 Most business numbers tell you whether you are alive right now. Almost none of them tell you whether you will still be alive in six months. That gap is exactly where founders get blindsided.
@@ -49,7 +50,7 @@ A financial model closes the gap. And no, it is not a thing only a banker in a s
 
 Looking back tells you if you are alive. Looking forward tells you if you will **stay** alive.
 
-The founders who run out of cash rarely do it because the business was doomed. They do it because the slow leak never showed up on a spreadsheet until the bank balance hit zero. A plan for the next 12 months, written in numbers, turns "we ran out of money in March" into "we can see March getting tight, so we act in January."
+The founders who [run out of cash](/blog/business-financial-literacy/07-cash-flow-burn-rate-runway-don-t-run-out-of-money) rarely do it because the business was doomed. They do it because the slow leak never showed up on a spreadsheet until the bank balance hit zero. A plan for the next 12 months, written in numbers, turns "we ran out of money in March" into "we can see March getting tight, so we act in January."
 
 This guide gives you the whole toolkit: the three words people confuse, two ways to plan revenue, how to model so your numbers can actually be improved, and the monthly habit that catches problems early.
 
@@ -59,7 +60,7 @@ These get tossed around as if they mean the same thing. They do not, and the dif
 
 - **Budget** - your **plan** for a period, usually one year. It is a promise to yourself: "We plan to make $40,000 a month and spend $30,000." You set it once at the start and mostly leave it fixed, so you have a fixed line to measure yourself against.
 - **Forecast** - your **best honest guess** of where you are actually heading, updated as new facts arrive. The budget says what you planned. The forecast says where you are really going, based on what you now know.
-- **Financial model** - the **machine** that produces both. You feed it assumptions (price, customers, costs) and it calculates revenue, profit, and cash. Change one assumption and every number downstream updates by itself.
+- **Financial model** - the **machine** that produces both. You feed it assumptions (price, customers, costs) and it calculates [revenue, profit, and cash](/blog/business-financial-literacy/03-the-three-financial-statements-the-whole-picture). Change one assumption and every number downstream updates by itself.
 
 **An analogy.** Picture a road trip. The **budget** is the plan you made at home: "We'll drive 500 miles a day and arrive Friday." The **forecast** is your GPS recalculating after you hit traffic: "Now arriving Saturday morning." The **model** is the GPS app itself - the engine that turns speed and distance into an arrival time.
 
@@ -77,7 +78,7 @@ Easy to say. But where did "0.1%" come from? Usually thin air. Top-down numbers 
 
 ### Bottoms-up: start with what you actually do
 
-You build revenue from your real activities: how many customers, at what price, how often. Slower, but far more honest - because every number is something you can actually change.
+You build revenue from your real activities: how many customers, [at what price](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive), how often. Slower, but far more honest - because every number is something you can actually change.
 
 Two common formulas:
 
@@ -205,4 +206,4 @@ The flow runs top to bottom:
 
 The single thing to remember: a financial model is not a prediction, it is a steering wheel. Explicit drivers on one tab, three honest scenarios, and a monthly habit of comparing plan to actual - built that way, it catches cash surprises long before they can kill you.
 
-There is a deeper question lurking underneath all of this, though. Your model assumes customers keep paying, but how long do they really stay, and what is each one actually worth over their lifetime? That is where churn, retention, and customer lifetime value come in - and once you can model those, your forecasts stop being hopeful and start being honest.
+There is a deeper question lurking underneath all of this, though. Your model assumes customers keep paying, but how long do they really stay, and what is each one actually worth over their lifetime? That is where churn, retention, and [customer lifetime value](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale) come in - and once you can model those, your forecasts stop being hopeful and start being honest.

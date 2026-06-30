@@ -28,6 +28,7 @@ faq:
     a: Not automatically. The original number came from human studies, and matching it with software is a goal, not a proven fact. An AI tutor only earns part of that gain if it genuinely enforces mastery, checks understanding honestly, and helps with the specific gap rather than just handing over answers.
   - q: What is the difference between formative and summative assessment?
     a: Formative assessment is constant, low-pressure checking during learning that guides what happens next. Summative assessment is a final, formal test of what was ultimately learned, like an end-of-term exam.
+linked: true
 topic: ai-learning-platform
 topicTitle: AI Learning Platform
 category: AI & LLMs
@@ -48,7 +49,7 @@ That silent crack is the single biggest flaw in how we teach groups of people. A
 
 Here is the uncomfortable part: the student who fell behind is rarely "bad at the subject." They were moved forward too soon, then again, then again, until the gaps became a wall.
 
-If you learn, teach, build learning tools, or are raising a kid through school, this is the difference between effort that compounds and effort that quietly leaks. Understanding why one teaching method beats the standard one by a landslide tells you exactly what to demand from a class, a course, or an AI tutor before you trust it with your time.
+If you learn, teach, build learning tools, or are raising a kid through school, this is the difference between effort that compounds and effort that quietly leaks. Understanding why one teaching method beats the standard one by a landslide tells you exactly what to demand from a class, a course, or an [AI tutor](/blog/ai-learning-platform/01-the-real-challenge-why-ai-tutors-are-not-teachers-yet) before you trust it with your time.
 
 ## The 2-sigma finding: the result that started everything
 
@@ -78,7 +79,7 @@ For decades, that question had no satisfying answer. It is the open challenge th
 
 Notice something easy to miss. The second-best group in Bloom's study had **no personal tutor at all.** It just used mastery learning, and that alone produced a large gain. So what exactly is it?
 
-Mastery learning is a simple rule: a learner must **prove they have truly understood the current topic before being allowed to move to the next one.** Bloom used a high bar, around 90% on a check, not a barely-passing 60%. Anyone who falls short does not get dragged forward. They get **targeted help on the exact gap**, then get re-tested until they clear the bar.
+Mastery learning is a simple rule: a learner must **prove they have truly understood the current topic before being allowed to move to the next one.** Bloom used a high bar, around 90% on a check, not a barely-passing 60%. Anyone who falls short does not get dragged forward. They get **[targeted help on the exact gap](/blog/ai-learning-platform/22-finding-and-repairing-weak-areas)**, then get re-tested until they clear the bar.
 
 Compare that to the normal model, which is built around **fixed time**. Everyone gets the same two weeks on a topic, and whatever you have learned by the deadline is what you keep, gaps and all. Mastery learning flips the two variables.
 
@@ -93,7 +94,7 @@ Compare that to the normal model, which is built around **fixed time**. Everyone
 
 ### Why it works so well
 
-The reason loops right back to the foundation problem from the opening. Most subjects are **cumulative**. Later ideas sit on top of earlier ones. Algebra needs fractions. Fractions need division.
+The reason loops right back to the foundation problem from the opening. Most subjects are **[cumulative](/blog/ai-learning-platform/19-knowledge-graphs-and-curriculum-generation)**. Later ideas sit on top of earlier ones. Algebra needs fractions. Fractions need division.
 
 When you let someone advance on a shaky foundation, every new layer makes the wobble worse, until the learner concludes, "I'm just bad at math." They are not bad at math. They were moved forward too soon, over and over. Mastery learning refuses to let that happen.
 
@@ -108,7 +109,7 @@ Mastery learning combined with the personal attention of a tutor boils down to a
 
 The crucial detail is that step 2 is not a once-a-month exam. It happens constantly, in low-pressure ways, so the tutor always knows whether to push forward or circle back.
 
-That continuous gentle checking has a name: **formative assessment**, meaning assessment *for* learning, used to guide what happens next. It is the opposite of **summative assessment**, the final formal test *of* what was ultimately learned, like an end-of-term exam.
+That continuous gentle checking has a name: **[formative assessment](/blog/ai-learning-platform/06-retrieval-practice-why-testing-beats-re-reading)**, meaning assessment *for* learning, used to guide what happens next. It is the opposite of **summative assessment**, the final formal test *of* what was ultimately learned, like an end-of-term exam.
 
 ## Common misconceptions
 
@@ -129,7 +130,7 @@ An AI tutor fits the mastery loop in ways a single teacher with thirty students 
 - **Infinite patience and individual pace.** It can spend ten minutes or ten sessions on one chunk for one learner without holding anyone else back.
 - **Constant low-stakes checking.** It can ask a quick question after every concept and adjust instantly, running the formative loop nonstop.
 - **Targeted help, not generic re-teaching.** Because it tracks what each learner knows, it can re-explain the precise step that broke down instead of repeating the whole lesson.
-- **A memory of the learner.** Across days and sessions it remembers what is mastered and what is shaky, something a busy classroom teacher cannot do for every student at once.
+- **[A memory of the learner](/blog/ai-learning-platform/18-learner-models-teaching-the-machine-what-the-student-knows).** Across days and sessions it remembers what is mastered and what is shaky, something a busy classroom teacher cannot do for every student at once.
 
 ## How to use this
 
@@ -145,4 +146,4 @@ Whether you are choosing a course, studying on your own, or building a learning 
 
 The one idea worth keeping: **fix the standard, vary the time.** Almost everything that feels broken about ordinary teaching comes from doing the reverse, and almost everything promising about modern tutoring comes from finally getting it right.
 
-But a warning hides inside the promise. A chatbot that cheerfully hands over answers and lets you click "next" is not solving the 2-sigma problem. It is recreating the silent classroom crack at massive scale, dressed up to look like progress. Which raises the real question worth chasing next: how do you actually check whether a learner *understands* something, rather than just recognizes the right-looking answer? That is where good assessment quietly separates real tutors from convincing imitations.
+But a warning hides inside the promise. A [chatbot that cheerfully hands over answers](/blog/ai-learning-platform/17-the-lesson-scoped-tutor-chatbot) and lets you click "next" is not solving the 2-sigma problem. It is recreating the silent classroom crack at massive scale, dressed up to look like progress. Which raises the real question worth chasing next: how do you actually check whether a learner *understands* something, rather than just recognizes the right-looking answer? That is where good assessment quietly separates real tutors from convincing imitations.

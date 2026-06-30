@@ -3,9 +3,46 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE } from '../consts';
 import { topics, allPosts } from '../lib/content';
 const posts = await allPosts();
+
+const aboutUrl = new URL('/about', Astro.site).toString();
+const description = `About Penluma: ${posts.length} in-depth, worked-through notes on system design, distributed systems, economics, money, and clear thinking - from intuition to mechanics to failure modes.`;
+
+const keywords = [
+  'Penluma',
+  'about',
+  'deep-dive notes',
+  'system design',
+  'distributed systems',
+  'economics',
+  'clear thinking',
+  'money',
+];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: `About ${SITE.name}`,
+    description,
+    url: aboutUrl,
+    mainEntity: {
+      '@type': 'Person',
+      name: SITE.author,
+      url: new URL('/', Astro.site).toString(),
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).toString() },
+      { '@type': 'ListItem', position: 2, name: 'About', item: aboutUrl },
+    ],
+  },
+];
 ---
 
-<BaseLayout title="About" description="About this research library.">
+<BaseLayout title="About" description={description} keywords={keywords} jsonLd={jsonLd}>
   <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
     <h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">About Penluma</h1>
     <div class="prose-research mt-8">

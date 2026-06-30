@@ -37,11 +37,12 @@ icon: ✍️
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 Someone asks you a direct question in a meeting. You actually know the answer. But the words come out tangled, you trail off into "um, basically," and you sit down wishing you'd said it better.
 
-Here's the thing most people get wrong about that moment: you weren't short of ideas. You were short of a system for getting them out under pressure. Writing gives you time to fix your words. Speaking does not. You have to build the sentence while everyone watches.
+Here's the thing most people get wrong about that moment: you weren't short of ideas. You were short of a system for getting them out under pressure. [Writing gives you time to fix your words](/blog/clear-thinking-and-expression/03-think-on-paper-why-externalizing-beats-thinking-in-your-head). Speaking does not. You have to build the sentence while everyone watches.
 
 This article hands you a small set of tools to organise your thoughts on the spot, buy yourself thinking time without looking lost, and sound confident even when your heart is racing.
 
@@ -64,9 +65,9 @@ The takeaway: you usually don't lack ideas, you lack a system for delivering the
 
 ## Why your mind goes blank
 
-Your **working memory** is the small mental "desk" where you hold information while you use it. Researchers who studied it, like George Miller and later Alan Baddeley, found it only holds a handful of items at once.
+Your **[working memory](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits)** is the small mental "desk" where you hold information while you use it. Researchers who studied it, like George Miller and later Alan Baddeley, found it only holds a handful of items at once.
 
-When you speak, that desk is doing far too much at the same time: remember the question, find the answer, build a sentence, watch the listener's face, and fight nervousness. The desk overflows, and you go blank.
+When you speak, that desk is doing far too much at the same time: remember the question, find the answer, build a sentence, watch the listener's face, and fight nervousness. The desk overflows, and [you go blank](/blog/clear-thinking-and-expression/01-nothing-is-wrong-with-you-the-science-of-going-blank).
 
 So the cure is simple to state: take work off the desk. There are two ways.
 
@@ -169,6 +170,6 @@ One more reframe to carry in: speaking on the spot is like cooking for a surpris
 
 ## Conclusion
 
-If you remember one thing, remember this: confidence is a prepared structure, not a personality trait. Pause to think, lead with your headline, pour your points into PREP or "three things," and slow your breath. The words follow.
+If you remember one thing, remember this: confidence is a prepared structure, not a personality trait. Pause to think, lead with your headline, pour your points into [PREP](/blog/clear-thinking-and-expression/06-structure-frameworks-pyramid-principle-scqa-prep) or "three things," and slow your breath. The words follow.
 
 And here's the quiet bonus. Explaining an idea out loud is one of the strongest ways to actually *get* it. When you force yourself to say something simply, gaps and connections appear that silent reading hid. Speaking isn't just output, it's thinking made audible. Which raises a worthwhile question for next time: if saying things clearly sharpens your thinking, what could a daily habit of explaining out loud do to how well you understand everything you read?

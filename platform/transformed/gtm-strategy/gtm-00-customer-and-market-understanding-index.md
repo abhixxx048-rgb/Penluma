@@ -37,6 +37,7 @@ icon: "\U0001F3AF"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 A brilliant marketing funnel pointed at the wrong customer just acquires the wrong people faster. A flawless sales pitch aimed at a market that isn't there just burns money more efficiently.
@@ -86,7 +87,7 @@ A customer doesn't buy a product. They "hire" it to do a job, and they "fire" wh
 
 This practice captures the real jobs Maria is hiring software to do - functional ("get orders online without hassle"), emotional ("stop feeling behind"), and social ("look professional to my customers"). It also names what she fires: the spreadsheets, the email chaos, the do-it-yourself website.
 
-**Use this when you write copy, decide which feature to lead with, or design your first onboarding steps.** Jobs-to-be-done is the raw material that turns vague positioning into something concrete. If your positioning feels mushy, it's almost always because this layer is thin.
+**Use this when you write copy, decide which feature to lead with, or design your first onboarding steps.** [Jobs-to-be-done](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress) is the raw material that turns vague positioning into something concrete. If your positioning feels mushy, it's almost always because this layer is thin.
 
 ### 3. Win/loss and churn interviews - the truth source
 
@@ -124,7 +125,7 @@ Three numbers, in plain language:
 
 - **TAM (Total Addressable Market):** everyone who could theoretically be a customer for your category.
 - **SAM (Serviceable Addressable Market):** the slice you can actually serve given your product and constraints - for example, only the regions where your payment system works, and only the customer type you've defined.
-- **SOM (Serviceable Obtainable Market):** the realistic share you can capture given your actual resources and founder-led approach.
+- **SOM (Serviceable Obtainable Market):** the realistic share you can capture given your actual resources and [founder-led approach](/blog/sales-customer-development/15-building-the-muscle-process-pipeline-habit).
 
 **Use TAM/SAM/SOM for your investor story and for grounding annual planning targets.** But it only means something once your customer profile and pricing are credible - which is why it comes at the end.
 
@@ -135,7 +136,7 @@ The biggest mindset shift: this is a set of **feedback loops, not a linear funne
 - **Jobs to be done feeds positioning.** The jobs and the "what gets fired" become the substance of your category claim.
 - **Win/loss feeds everything.** It validates or breaks your customer profile, names the competitors to track, and surfaces which product gaps are really killing deals - which then drives what you build next.
 - **Pricing research shapes packaging.** Willingness-to-pay and value-metric findings drive your tiers. But you can't set price without understanding value (jobs) and competitive anchors.
-- **Competitive intelligence and positioning loop into each other.** Knowing where to claim difference versus reach parity sharpens both your messaging and your objection-handling.
+- **Competitive intelligence and positioning loop into each other.** Knowing where to claim difference versus reach parity sharpens both your messaging and your [objection-handling](/blog/sales-customer-development/11-handling-objections-with-honesty).
 - **Market sizing rolls it all up.** The top-line number is the fundraising narrative; the obtainable number sets realistic targets - and it's only as credible as the customer profile and pricing feeding it.
 
 In one breath: your customer profile **anchors**, jobs-to-be-done **supplies the substance**, win/loss is the **truth source that corrects the rest**, pricing and competitive work **shape your offer**, and market sizing **rolls it up** for investors and planning.
@@ -143,7 +144,7 @@ In one breath: your customer profile **anchors**, jobs-to-be-done **supplies the
 ## Common misconceptions
 
 **"Research means surveys and big reports."**
-Not at this stage. Your highest-signal research is a founder having direct conversations - win/loss interviews and jobs-to-be-done chats. A few honest conversations beat a hundred survey responses.
+Not at this stage. Your highest-signal research is a founder having [direct conversations](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself) - win/loss interviews and jobs-to-be-done chats. A few honest conversations beat a hundred survey responses.
 
 **"Market sizing should come first because it tells me if the market is big enough."**
 It feels logical, but a TAM/SAM/SOM built before you understand your customer and pricing is just a spreadsheet of guesses. Build it last, when the inputs are real.
@@ -177,7 +178,7 @@ When attention is your binding constraint, here's the short list:
 
 1. **Interview every win, loss, and churn - no exceptions.** Highest signal, lowest cost. It tells you faster than anything whether your customer profile holds and which gap is the real deal-killer. Do this before building any new feature.
 2. **Pin down the one job your customer is really hiring you for, and rewrite your positioning to match.** Until your message reflects how customers describe their own pain, your funnel will under-convert.
-3. **Validate your pricing against real willingness to pay.** Get five to ten honest conversations before locking tiers, so packaging is grounded in value rather than guesswork.
+3. **Validate your pricing against real [willingness to pay](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive).** Get five to ten honest conversations before locking tiers, so packaging is grounded in value rather than guesswork.
 
 Defer the full market-sizing rebuild and the deep competitive sweep to next quarter - unless fundraising forces the market numbers sooner.
 

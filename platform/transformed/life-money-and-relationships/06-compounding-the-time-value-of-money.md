@@ -28,6 +28,7 @@ faq:
     a: Yes, in a quiet way. If your bank pays 3% but prices rise 6%, you lose about 3% of real purchasing power every year. Your balance looks safe, but what it can actually buy keeps shrinking.
   - q: What is the difference between nominal and real return?
     a: Nominal return is the headline rate you are quoted. Real return is what is left after inflation, which is your true gain in buying power. Real return is roughly nominal return minus inflation.
+linked: true
 topic: life-money-and-relationships
 topicTitle: 'Life, Money & Relationships'
 category: Thinking & Decisions
@@ -96,7 +97,7 @@ A few quick examples:
 
 So at 12%, ₹1 lakh becomes roughly ₹2 lakh in 6 years, ₹4 lakh in 12, ₹8 lakh in 18, ₹16 lakh in 24, and ₹32 lakh in 30. Five doublings from a single lakh. That is compounding made visible.
 
-> **Watch out:** the Rule of 72 cuts *both* ways. Credit-card debt in India often runs at **~40% a year or more** (many cards charge 3–4% *per month* - check yours). That means an unpaid balance can double in under 2 years. The same force that builds wealth destroys it when you owe instead of own.
+> **Watch out:** the Rule of 72 cuts *both* ways. [Credit-card debt in India](/blog/economics-from-first-principles/09-loans-credit-debt-and-interest-rates) often runs at **~40% a year or more** (many cards charge 3–4% *per month* - check yours). That means an unpaid balance can double in under 2 years. The same force that builds wealth destroys it when you owe instead of own.
 
 ## Why starting early beats investing more
 
@@ -130,7 +131,7 @@ This quietly sits underneath almost every big decision: *take a lump sum now or 
 
 ## Inflation: the silent tax on idle cash
 
-**Inflation** simply means prices rise over time, so the *same rupee buys less* next year than this year. It is the dark twin of compounding - it compounds *against* your purchasing power.
+**Inflation** simply means [prices rise over time](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money), so the *same rupee buys less* next year than this year. It is the dark twin of compounding - it compounds *against* your purchasing power.
 
 > **The big mistake:** believing cash in a savings account is "safe." If your bank pays ~3% but prices rise ~6%, you lose about **3% of real purchasing power every single year - guaranteed.** Your rupee *balance* goes up, so it feels safe, but what it can actually *buy* shrinks. Parking lakhs in a low-rate account is a slow, certain loss.
 
@@ -149,7 +150,7 @@ Two more plain-English terms:
 
 Here is why it bites. Imagine someone in the 30% tax bracket puts money in an 8% fixed deposit. Tax takes roughly a third, leaving about 5.6% after tax. If inflation is 6%, the **real return is slightly negative** - the "safe" FD quietly lost purchasing power.
 
-That is the case for not letting long-term money sit in cash. Money you won't need for 7+ years generally belongs in growth assets like equity index funds, which have historically out-run Indian inflation over decades, rather than slowly bleeding value in a savings account.
+That is the case for not letting long-term money sit in cash. Money you won't need for 7+ years generally belongs in growth assets like [equity index funds](/blog/life-money-and-relationships/09-mutual-funds-index-funds-sips-the-core-engine), which have historically out-run Indian inflation over decades, rather than slowly bleeding value in a savings account.
 
 ## SIP compounding: putting it on autopilot
 
@@ -176,7 +177,7 @@ Why it works so well:
 1. **See your own number.** Open any online compound-interest or SIP calculator, plug in your age, a monthly amount you can spare, and 12%. Watch what 20–30 years does. *Your* number motivates far more than any example.
 2. **Start one small SIP this week** - even ₹1,000/month. Starting beats optimising. You can always raise it later, and increasing it with every salary hike is the cheat code.
 3. **Run the Rule of 72 on every rate you meet** - your FD, your home loan, your credit card - so you instantly know whether time is working *for* you or *against* you.
-4. **Stop hoarding large balances in a low-rate savings account.** Keep an emergency buffer, then move the rest toward growth. Idle cash is paying the inflation tax.
+4. **Stop hoarding large balances in a [low-rate savings account](/blog/life-money-and-relationships/07-where-to-keep-cash-banks-safe-saving-instruments).** Keep an emergency buffer, then move the rest toward growth. Idle cash is paying the inflation tax.
 5. **Judge by real return.** Before celebrating any rate, subtract tax and inflation. If what's left is negative, it isn't an investment - it's a polite loss.
 
 One more thing: this is all universal. Compounding, the Rule of 72, the time value of money, and real-vs-nominal returns work the same everywhere. A US saver automating into a 401(k) or Roth IRA is doing exactly what an Indian saver does with a SIP - and the "cash loses to inflation" warning applies in dollars just as much as in rupees.
@@ -185,4 +186,4 @@ One more thing: this is all universal. Compounding, the Rule of 72, the time val
 
 If you remember one sentence, make it this: **compounding rewards time more than it rewards effort.** The person who starts small at 25 usually beats the person who tries hard at 40, because the early years buy decades the late starter can never get back.
 
-So the real question isn't "how much should I invest?" It's "what is stopping me from starting today?" And here's the thread worth pulling next: if time is this powerful, the fastest way to *lose* is to let high-interest debt compound against you. That same snowball, rolling the wrong way, is the one financial mistake that can quietly undo everything else.
+So the real question isn't "how much should I invest?" It's "what is stopping me from starting today?" And here's the thread worth pulling next: if time is this powerful, the fastest way to *lose* is to let [high-interest debt](/blog/life-money-and-relationships/05-debt-good-debt-bad-debt-and-getting-free) compound against you. That same snowball, rolling the wrong way, is the one financial mistake that can quietly undo everything else.

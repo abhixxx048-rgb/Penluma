@@ -38,13 +38,14 @@ order: 7
 icon: "\U0001F4C8"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Central_bank
   - https://en.wikipedia.org/wiki/Monetary_policy
   - https://en.wikipedia.org/wiki/Quantitative_easing
 ---
 
-There is one dial in the economy that can make borrowing easier or harder for millions of people at once. It can cool a runaway housing market, rescue a collapsing bank, or tip the country into recession by accident.
+There is one dial in the economy that can make borrowing easier or harder for millions of people at once. It can cool a runaway housing market, rescue a collapsing bank, or tip the country into [recession](/blog/economics-from-first-principles/15-the-business-cycle-booms-recessions-and-depressions) by accident.
 
 A handful of officials in a marble building turn that dial. They were never elected. And the strangest part? When they move it today, you won't feel the full effect for more than a year.
 
@@ -102,7 +103,7 @@ The exact 2% figure is a bit arbitrary - it traces back to an offhand choice in 
 
 Why insulate it from politics? Because of a trap economists call **inflation bias**.
 
-Imagine a politician heading into an election. They're tempted to juice the economy with cheap money to manufacture a short-term boom - even though it stokes inflation later, after the votes are counted. Now imagine *everyone* knows politicians do this. People build higher inflation into their expectations, and you end up with permanently higher inflation and no lasting boost to show for it.
+Imagine a politician heading into an election. They're tempted to juice the economy with cheap money to manufacture a short-term boom - even though it stokes inflation later, after the votes are counted. Now imagine *everyone* knows politicians do this. People build higher inflation into their expectations, and you end up with [permanently higher inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) and no lasting boost to show for it.
 
 Hand the dial to insulated technocrats, and the temptation vanishes. History is clear: independent central banks deliver lower, steadier inflation. Fed governors get 14-year terms precisely so they outlast election cycles.
 
@@ -150,9 +151,9 @@ This is the part worth truly understanding. When the central bank moves its sing
 
 Let's follow the chain when the bank *raises* rates to cool inflation. Read it as a story:
 
-- **Borrowing costs more.** A business weighing a new factory now faces a pricier loan, so it waits. A family eyeing a bigger car sees costlier financing, so they keep the old one.
+- **Borrowing costs more.** A business weighing a new factory now faces [a pricier loan](/blog/economics-from-first-principles/09-loans-credit-debt-and-interest-rates), so it waits. A family eyeing a bigger car sees costlier financing, so they keep the old one.
 - **Credit tightens.** Banks turn cautious and lend less, especially to weaker borrowers.
-- **Asset prices dip.** Stocks and bonds fall, so investors feel less wealthy and spend less. (This is the "wealth effect.")
+- **Asset prices dip.** [Stocks and bonds](/blog/economics-from-first-principles/19-financial-markets-stocks-bonds-commodities-and-derivatives) fall, so investors feel less wealthy and spend less. (This is the "wealth effect.")
 - **The currency strengthens.** Higher rates attract foreign money chasing better returns. A stronger currency makes imports cheaper and exports dearer - cooling both prices and factory orders.
 - **Expectations shift.** Just by signaling resolve, the bank lowers everyone's expectation of *future* inflation, which feeds into the wages and prices people set today.
 
@@ -192,4 +193,4 @@ Here's the one idea to carry with you: a central bank steers an entire economy b
 
 That delay is the whole drama. It's why these officials act on forecasts instead of facts, why they sometimes overshoot, and why the 2% target and their hard-won independence exist at all: to anchor what people *expect*, long before the furnace warms the room.
 
-But notice something. Everything here assumes the central bank can simply create money when it needs to. So what actually *is* money - and what stops a country from just printing its way out of every problem? That question opens a door into one of the most contested ideas in all of economics.
+But notice something. Everything here assumes the central bank can simply create money when it needs to. So [what actually *is* money](/blog/economics-from-first-principles/06-what-money-is-and-why-it-has-value) - and what stops a country from just printing its way out of every problem? That question opens a door into one of the most contested ideas in all of economics.

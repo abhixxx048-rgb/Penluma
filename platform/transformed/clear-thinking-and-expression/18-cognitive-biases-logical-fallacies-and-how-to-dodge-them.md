@@ -36,6 +36,7 @@ order: 17
 icon: ✍️
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow
   - https://en.wikipedia.org/wiki/List_of_cognitive_biases
@@ -44,7 +45,7 @@ sources:
 
 Your brain is fast. And fast usually means sloppy.
 
-Right now, dozens of times a day, your mind is taking shortcuts that feel exactly like clear thinking, but quietly bend the truth. The unsettling part is that smart people fall for them just as easily as everyone else. Sometimes more, because they're better at building convincing reasons for whatever they already believed.
+Right now, dozens of times a day, your mind is taking shortcuts that feel exactly like clear thinking, but quietly bend the truth. The unsettling part is that [smart people fall for them just as easily](/blog/economics-from-first-principles/31-behavioral-economics-how-psychology-shapes-the-economy) as everyone else. Sometimes more, because they're better at building convincing reasons for whatever they already believed.
 
 This is a field guide to the most common shortcuts that fool people, and the most common tricks that fool people in arguments, plus a few simple moves to catch all of them.
 
@@ -61,7 +62,7 @@ The cost is real: you buy things you didn't need, you cling to projects that are
 Psychologist Daniel Kahneman, in his book *Thinking, Fast and Slow*, described two modes your mind runs in. Think of them as two different employees sharing one desk.
 
 - **System 1** is fast, automatic, and effortless. It guesses, jumps to conclusions, and runs on gut feeling. It's the part that yanks your hand off a hot stove before you've finished the thought "that's hot."
-- **System 2** is slow, effortful, and deliberate. It checks, calculates, and weighs evidence. It's the part you use to work out whether a deal is actually a good price.
+- **System 2** is slow, effortful, and deliberate. It checks, calculates, and [weighs evidence](/blog/clear-thinking-and-expression/17-critical-thinking-foundations-claims-evidence-assumptions). It's the part you use to work out whether a deal is actually a good price.
 
 System 1 is on all day. System 2 is lazy and expensive to run, so your mind avoids waking it unless it has to.
 
@@ -79,7 +80,7 @@ Here are the big ones. Read each name slowly, because naming a bias is the first
 You notice evidence that agrees with you and quietly ignore the rest. You decide a coworker is lazy, so you only remember the times they slacked off, never the times they stayed late. This is the engine behind most of the others.
 
 ### Anchoring
-The first number you hear drags every later judgment toward it. A shirt tagged "₹3000, now ₹1200" feels like a steal, but only because the ₹3000 anchored you. Cover the original price and the ₹1200 might feel like plenty.
+The first number you hear drags every later judgment toward it. A shirt tagged "₹3000, now ₹1200" feels like a steal, but only because [the ₹3000 anchored you](/blog/business-financial-literacy/09-pricing-psychology-pricing-with-confidence). Cover the original price and the ₹1200 might feel like plenty.
 
 ### Availability bias
 Events that are easy to recall feel more common than they actually are. After a plane crash dominates the news, flying *feels* risky, even though driving to the airport was the dangerous part of the trip.
@@ -135,7 +136,7 @@ You don't need to memorize twenty traps in the heat of the moment. You need thre
 
 1. **Slow down.** When a claim makes you feel instantly sure or excited, that rush is System 1 talking. Pause and ask, "Is this a quick gut answer, or have I actually checked?" The feeling of certainty is not evidence. It just feels like it.
 2. **Seek disconfirming evidence.** Confirmation bias makes you hunt for "yes." Flip it. Ask, "What facts would prove me *wrong*?" Then go look for them on purpose. Find none, and your idea is stronger. Find plenty, and you just dodged a mistake.
-3. **Consider the opposite.** Researchers Lord, Lepper, and colleagues found that simply asking people to argue the *other* side reduced biased judgment. Before you decide, spend two minutes building the strongest possible case against your own view.
+3. **Consider the opposite.** Researchers Lord, Lepper, and colleagues found that simply asking people to argue the *other* side reduced biased judgment. Before you decide, spend two minutes [building the strongest possible case against your own view](/blog/clear-thinking-and-expression/19-reasoning-well-deduction-induction-abduction-steelmanning).
 
 Think of biases as your brain's autocorrect. Usually fast and helpful, but every so often it confidently "fixes" something you never meant to say. You don't switch autocorrect off. You learn to glance back and re-read before you hit send.
 

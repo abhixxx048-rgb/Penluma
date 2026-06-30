@@ -35,6 +35,7 @@ icon: "\U0001F4B0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 A profitable company can go bankrupt next month. An unprofitable one can survive for a decade. The difference is not in any income statement. It comes down to a single, brutally simple fact: how much cash is in the bank, and how fast it is leaving.
@@ -118,7 +119,7 @@ So manage to the cash number first. Profitability is a long-term goal. Cash is a
 
 Paul Graham, co-founder of Y Combinator, coined the cleanest health test in his 2015 essay *Default Alive or Default Dead?*
 
-The question is this: at your current growth and spending trajectory, do you reach profitability *before* the cash runs out?
+The question is this: at your current growth and spending trajectory, do you [reach profitability](/blog/business-financial-literacy/10-break-even-margins-profitability) *before* the cash runs out?
 
 - **Default Alive** means yes. You can survive without raising another rupee. Fundraising becomes a *choice*, not a lifeline.
 - **Default Dead** means no. You run out before reaching profitability. Survival *requires* a successful raise. You are betting the company on investors saying yes.
@@ -133,7 +134,7 @@ A few beliefs that quietly kill companies:
 
 **"Revenue is growing, so we're safe."** Growth and survival are different axes. Net burn decides survival. You can grow fast and still run dry.
 
-**"Our P&L shows a profit, so cash is fine."** Accrual profit and cash are not the same thing. Your profit-and-loss statement can show a profit while your bank balance falls, because customers haven't paid yet, or because of timing on **GST** (you pay tax before collecting it back) and **TDS** (tax deducted at source delays your inflows). Always model the movement of actual cash.
+**"Our P&L shows a profit, so cash is fine."** Accrual profit and cash are not the same thing. Your [profit-and-loss statement](/blog/personal-money-mastery/15-the-three-financial-statements) can show a profit while your bank balance falls, because customers haven't paid yet, or because of timing on **GST** (you pay tax before collecting it back) and **TDS** (tax deducted at source delays your inflows). Always model the movement of actual cash.
 
 **"Runway is a fixed cushion."** It drains daily and accelerates when burn outpaces revenue. Treat it as a live gauge, not a static buffer.
 
@@ -172,7 +173,7 @@ When you need more time, you have five levers. Pull them in roughly this order o
 
 1. **Cut gross burn.** The biggest lever is almost always headcount (salaries), then marketing and ad spend, then tooling and cloud costs.
 2. **Grow revenue and collect faster.** Every rupee of revenue directly reduces net burn, as the 12-to-24 month example showed.
-3. **Improve unit economics and gross margin.** Higher margin per customer means each new rupee of revenue does more work.
+3. **Improve [unit economics](/blog/personal-money-mastery/14-unit-economics) and gross margin.** Higher margin per customer means each new rupee of revenue does more work.
 4. **Manage working capital.** Stretch payables (pay vendors later, within terms), accelerate receivables (collect from customers sooner), and defer non-critical hires.
 5. **Use bridge financing or venture debt.** This buys months but adds dilution or repayment obligations. Use it deliberately, not as a habit.
 
@@ -180,7 +181,7 @@ Every extra month you buy is **optionality**: the freedom to time your raise fro
 
 ### Build a cash-flow forecast
 
-Don't run your company on a single guessed runway number. Build a simple monthly cash model and project it 18 to 24 months out:
+Don't run your company on a single guessed runway number. Build a [simple monthly cash model](/blog/business-financial-literacy/11-budgeting-forecasting-building-a-simple-financial-model) and project it 18 to 24 months out:
 
 ```
 Opening cash + Cash in − Cash out = Closing cash
@@ -217,4 +218,4 @@ If you remember one thing, make it this: **net burn is gross burn minus revenue,
 
 The founders who survive aren't the ones who spend the least. They're the ones who *see the gauge clearly* and refuel with margin to spare.
 
-But knowing your runway only tells you *when* you need money. It says nothing about how much your company is worth when you go ask for it, or how much of it you'll have to give away. That's the next conversation: valuation, dilution, and the cap table math that quietly decides who really owns the company you're building.
+But knowing your runway only tells you *when* you need money. It says nothing about how much your company is worth when you go ask for it, or how much of it you'll have to give away. That's the next conversation: valuation, [dilution](/blog/personal-money-mastery/17-fundraising-dilution), and the cap table math that quietly decides who really owns the company you're building.

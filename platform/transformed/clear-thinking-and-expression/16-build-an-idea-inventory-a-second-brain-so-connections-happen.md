@@ -52,6 +52,7 @@ order: 15
 icon: ✍️
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -61,7 +62,7 @@ Here is the quietly liberating part: you did not lose those ideas because you la
 
 ## Why this matters
 
-Your working memory - the small mental desk where you hold thoughts right now - fits only a few items at once. Psychologist George Miller famously put the number around seven; later research narrowed it to **three or four**. That is tiny.
+Your [working memory](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits) - the small mental desk where you hold thoughts right now - fits only a few items at once. Psychologist George Miller famously put the number around seven; later research narrowed it to **three or four**. That is tiny.
 
 So a thought you do not write down is gone in minutes, shoved off the desk by the next thing demanding attention. Most people are not short on insight. They are short on **capture**.
 
@@ -92,7 +93,7 @@ Beginners skip straight to "I need to write something brilliant right now" while
 
 ## Why connections happen on their own
 
-Science writer Matt Ridley argues that human progress comes from ideas **meeting and combining** - he memorably calls it "ideas having sex." A genuinely new idea is rarely born from nothing. It is usually two old ideas that finally met: *printing press + movable type*, *wheels + suitcase*.
+Science writer Matt Ridley argues that human progress comes from ideas **meeting and combining** - he memorably calls it "ideas having sex." [A genuinely new idea](/blog/clear-thinking-and-expression/13-what-creativity-actually-is-recombination-not-magic) is rarely born from nothing. It is usually two old ideas that finally met: *printing press + movable type*, *wheels + suitcase*.
 
 But two ideas cannot meet if they are not in the same place. Your second brain is the room where your scattered thoughts finally get introduced to each other.
 
@@ -119,13 +120,13 @@ Do not build a giant filing system on day one. You will quit.
 
 Start with **tags** - keywords like `#pricing`, `#ux`, `#quotes` - or a handful of **topic files** such as "Ideas for the store" or "Things customers say." The only goal is *findability*: later you want to pull up everything on one theme in seconds.
 
-If your tool supports **links** between notes (Obsidian, Notion, or even plain "see also" lines), use them to connect related notes. A linked note is an idea with a doorway to its neighbors. Over time this builds a web where facts hang together instead of floating alone.
+If your tool supports **links** between notes (Obsidian, Notion, or even plain "see also" lines), use them to [connect related notes](/blog/clear-thinking-and-expression/11-note-taking-that-creates-insight-zettelkasten-cornell-progressive-summarization). A linked note is an idea with a doorway to its neighbors. Over time this builds a web where facts hang together instead of floating alone.
 
 ## Review on a schedule - this is where it compounds
 
 Capturing without reviewing just builds a junk drawer. **Review is what makes ideas collide.** Two notes you saved months apart only meet when you read them side by side again.
 
-A short, regular review also quietly uses **spaced practice** - revisiting material over time, which fixes it in memory far better than one long cram session.
+A short, regular review also quietly uses **spaced practice** - [revisiting material over time](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve), which fixes it in memory far better than one long cram session.
 
 - **Weekly (10 minutes):** Skim what you captured this week. Move stray notes into the right topic. Add a link wherever two notes clearly relate.
 - **Monthly (20 minutes):** Read one topic file end to end. Ask: *Do any of these combine? What is the pattern?* Then write one new note capturing the connection.
@@ -156,4 +157,4 @@ Do this and your second brain is born. Tomorrow, add three more captures.
 
 The single takeaway is this: **you don't lose ideas because you aren't smart enough - you lose them because you never wrote down the raw material.** Capture is the input, but review is the engine, and the whole thing grows like savings with interest. A person who captured three things a day for a year owns a private goldmine. A person waiting for the perfect setup owns an empty page.
 
-The deeper question this raises: once your notes start colliding into new ideas, how do you tell a genuine insight from a clever-sounding one? That is the next skill - turning a captured spark into a claim you can actually trust.
+The deeper question this raises: once your notes start colliding into new ideas, how do you tell a genuine insight from a clever-sounding one? That is the next skill - turning a captured spark into [a claim you can actually trust](/blog/clear-thinking-and-expression/17-critical-thinking-foundations-claims-evidence-assumptions).

@@ -30,6 +30,7 @@ faq:
     a: No. For every visible success there are thousands of public projects nobody saw, which is survivorship bias. Building in public works because of consistency plus genuine specific knowledge, not because the tactic is magic.
 topic: how-to-make-money
 topicTitle: How to Make Money
+linked: true
 category: Money & Business
 date: '2026-06-22'
 order: 8
@@ -47,7 +48,7 @@ If your honest answer is "they shouldn't, really," you have a pricing problem yo
 
 A moat is a protective barrier, borrowed from medieval castles, that keeps competitors from easily copying you and taking your income. The wider your moat, the more you can charge and the longer it lasts.
 
-Most people compete on price because they never built a moat. They learned a skill anyone can learn, so anyone can undercut them. The result is a lifetime of bargaining downward.
+Most people [compete on price](/blog/how-to-make-money/14-pricing-value-capture) because they never built a moat. They learned a skill anyone can learn, so anyone can undercut them. The result is a lifetime of bargaining downward.
 
 The alternative is to become the obvious choice - the person clients seek out by name and happily pay a premium. That doesn't come from working harder. It comes from two ingredients: **specific knowledge** and a **personal brand** built on top of it.
 
@@ -81,7 +82,7 @@ Read those factors carefully:
 - **Accountability** is taking business risks publicly, under your own name, so your reputation is genuinely on the line. This is what people mean by "skin in the game." Society rewards visible accountability with responsibility, trust, and equity.
 - **Leverage** is anything that multiplies the output of a single hour of your effort.
 
-Here is the part most people miss: it is a **multiplication, not an addition**. A zero anywhere zeroes out the whole thing. Enormous leverage applied to no specific knowledge just multiplies an output of zero. A brilliant insight you never put your name on, with no way to scale it, stays a hobby.
+Here is the part most people miss: it is a **multiplication, not an addition**. A zero anywhere zeroes out the whole thing. [Enormous leverage](/blog/how-to-make-money/04-leverage-the-real-secret) applied to no specific knowledge just multiplies an output of zero. A brilliant insight you never put your name on, with no way to scale it, stays a hobby.
 
 ### The four kinds of leverage
 
@@ -102,7 +103,7 @@ Put the pieces together and you arrive at Naval's compressed advice: **"Producti
 
 Break that phrase in two:
 
-- **"Product"** is the scalable, leverage half - code and media that work while you sleep.
+- **"Product"** is the scalable, leverage half - [code and media that work while you sleep](/blog/how-to-make-money/10-products-vs-time-escaping-the-trap).
 - **"Yourself"** is the un-copyable half - your specific knowledge plus your reputation.
 
 A competitor can copy your software features in a single quarter. What they *cannot* copy is ten years of you publicly being the person who understands one niche better than anyone alive. That reputation is the one part of your business nobody can fork. **The brand is the moat, precisely because it can't be cloned.**
@@ -112,7 +113,7 @@ A competitor can copy your software features in a single quarter. What they *can
 A few beliefs quietly sabotage people here. Worth naming them.
 
 - **"Personal brand means vanity and follower counts."** Follower count is a vanity metric. The real asset is durable reputation that lowers other people's risk in working with you. 2,000 specialists in your niche who trust your name beats 200,000 random followers every time.
-- **"Follow your passion and the money will follow."** Closer to the truth: follow your *curiosity* long enough to build a skill that is rare, valuable, and un-trainable - *then* attach leverage and accountability. Passion with no specific knowledge and no distribution earns nothing.
+- **"Follow your passion and the money will follow."** Closer to the truth: follow your *curiosity* long enough to [build a skill that is rare, valuable, and un-trainable](/blog/how-to-make-money/06-building-a-high-income-skill) - *then* attach leverage and accountability. Passion with no specific knowledge and no distribution earns nothing.
 - **"Building in public guarantees growth."** For every visible success there are thousands of public projects nobody ever saw. That is survivorship bias. It works because of consistency plus real expertise, not because the tactic is magic.
 - **"This is fast."** It isn't. Specific knowledge is roughly 10,000 hours of doing the thing you couldn't stop doing anyway. The honest promise is a *durable* advantage, not a quick one. And accountability cuts both ways - your public name carries downside as well as upside. That is the point of skin in the game, but the risk is real.
 
@@ -150,7 +151,7 @@ Reading about moats builds nothing. Here is the concrete sequence.
 4. **Publish consistently, not cleverly.** One weekly post on what you're actually learning in your field, kept up for two years, will out-compound any flashy one-time launch. Boring plus consistent plus genuinely expert wins.
 5. **Put your name on it.** Take public, accountable positions in your niche. Skin in the game is what converts knowledge into trust.
 6. **Serve a small core deeply.** Aim for a few hundred true customers at high lifetime value, not a vanity follower count. Depth funds the business; breadth just flatters the ego.
-7. **Get the money basics right when income starts.** If you're earning in India, know the broad strokes early - the goods-and-services tax registration threshold for service providers, the standard rate on professional and creator work, the zero-rated treatment for service exports paid in foreign currency (which needs the right paperwork filed), and the two-stage way stock options are taxed. Thresholds and rates change every year, so treat any figure as orientation only and confirm the current numbers with a qualified accountant before you price your services or file.
+7. **Get the money basics right when income starts.** If you're earning in India, know the broad strokes early - the goods-and-services tax registration threshold for service providers, the standard rate on professional and creator work, the zero-rated treatment for service exports paid in foreign currency (which needs the right paperwork filed), and the two-stage way [stock options](/blog/how-to-make-money/17-equity-ownership-the-windfall-path) are taxed. Thresholds and rates change every year, so treat any figure as orientation only and confirm the current numbers with a qualified accountant before you price your services or file.
 
 ## Conclusion
 

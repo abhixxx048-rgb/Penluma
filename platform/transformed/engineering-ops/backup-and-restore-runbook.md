@@ -36,6 +36,7 @@ order: 999
 icon: "\U0001F6E0️"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -68,7 +69,7 @@ Before writing a single recovery step, find out what you actually have today. Wh
 - No scheduled backups at all
 - File storage versioning unverified, probably off
 - No alert if a backup silently failed
-- No standby database
+- No [standby database](/blog/aws-cloud-practitioner-mcq/11-amazon-rds-managed-relational-databases)
 
 In other words, the recovery capability was zero. And nobody knew, because nothing had ever failed loudly enough to test it.
 
@@ -103,7 +104,7 @@ Why the immutable copy matters: ransomware and panicked humans both love to dele
 
 A nightly backup means that when something breaks at 4pm, you might lose a whole day. That's often unacceptable.
 
-The fix is **point-in-time recovery (PITR)**. Think of it like a security camera for your database. A full backup is the snapshot, and the **write-ahead log** (a running record of every change) is the continuous footage. To recover, you restore the snapshot and then replay the footage up to the exact second you choose.
+The fix is **point-in-time recovery (PITR)**. Think of it like a security camera for your database. A full backup is the snapshot, and the **[write-ahead log](/blog/system-design/04-databases-internals)** (a running record of every change) is the continuous footage. To recover, you restore the snapshot and then replay the footage up to the exact second you choose.
 
 Bad migration ran at 14:07? Recover to 14:05 and it never happened.
 
@@ -130,7 +131,7 @@ Write your targets down. Then every backup choice has a clear test: does this he
 
 Here's the trap that catches even careful teams.
 
-Your database doesn't store your big files. It stores *pointers* to them. The customer's uploaded artwork and the final print-ready PDF live in object storage like S3; the database just holds the path: `designs/123/files/print-ready.pdf`.
+Your database doesn't store your big files. It stores *pointers* to them. The customer's uploaded artwork and the final print-ready PDF live in [object storage like S3](/blog/aws-cloud-practitioner-mcq/10-amazon-s3-object-storage); the database just holds the path: `designs/123/files/print-ready.pdf`.
 
 Now restore your database to yesterday. The database is perfect. But it references files that were deleted today, or it doesn't know about files added today. Result: a paid order whose download link points to a file that no longer exists. The page loads. The button is there. The file 404s. The customer just sees that you failed.
 
@@ -172,7 +173,7 @@ Versioning protects against overwrites and deletes, but check your retention. If
 For most teams, automatic *failover* is a trap. A false alarm can trigger an unnecessary, risky failover at 3am. The sweet spot is **push-button recovery**: every step is automated and ready, but a human makes the call to pull the trigger.
 
 **"Redis losing jobs is a backup problem."**
-A queue like Redis is a durability boundary, not a backup of record. The right move isn't to "restore" it but to make your jobs **idempotent**, meaning running the same job twice does no harm, so you can simply re-run anything that was in flight when it crashed.
+A queue like Redis is a durability boundary, not a backup of record. The right move isn't to "restore" it but to make your jobs **[idempotent](/blog/system-design/11-distributed-transactions-and-idempotency)**, meaning running the same job twice does no harm, so you can simply re-run anything that was in flight when it crashed.
 
 ## How to use this: building your runbook
 
@@ -208,4 +209,4 @@ If you remember one thing, make it this: **a backup is a promise, and a restore 
 
 Start small. Pick your most precious data, restore it into a throwaway environment this week, and time yourself. That one number, your real recovery time, will tell you more about your resilience than any dashboard.
 
-And once you can reliably recover, a tempting question appears: how do you make sure you rarely *need* to? That's where the conversation shifts to warm standbys, replicas, and high availability, the architecture of systems that bend instead of break. But that's a story for another day, and it only makes sense once the safety net below it is real.
+And once you can reliably recover, a tempting question appears: how do you make sure you rarely *need* to? That's where the conversation shifts to [warm standbys, replicas, and high availability](/blog/system-design/08-replication-and-partitioning), the architecture of systems that bend instead of break. But that's a story for another day, and it only makes sense once the safety net below it is real.

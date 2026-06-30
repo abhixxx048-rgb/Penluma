@@ -36,6 +36,7 @@ faq:
     a: At 12% a year, roughly 1,550 rupees a month if you start at 25, about 5,300 at 35, and around 20,000 at 45. Delaying ten years roughly triples the monthly amount needed.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -93,7 +94,7 @@ Barely more than taking the lakh now. Time value turns a vague gut-feel into a c
 
 Look at the shape. Early on, the two columns are close. By year 30, compounding is more than **four times ahead**.
 
-The compounding curve is **flat-then-vertical**. It crawls for years, then suddenly shoots up. And that is exactly why most people quit during the boring flat years, right before the magic happens.
+The compounding curve is **flat-then-vertical**. It crawls for years, then suddenly shoots up. And that is exactly why [most people quit during the boring flat years](/blog/personal-money-mastery/18-behavioral-finance), right before the magic happens.
 
 ### How often interest is added matters
 
@@ -111,7 +112,7 @@ That last one is the quiet danger we'll come back to. (Two cousins of the rule: 
 
 ## The lesson that beats everything: start early
 
-Here's the example worth tattooing on your brain. Assume 12% a year, roughly the long-run return of a broad Indian equity index (not guaranteed, but a reasonable teaching number).
+Here's the example worth tattooing on your brain. Assume 12% a year, roughly the long-run return of a [broad Indian equity index](/blog/personal-money-mastery/06-asset-classes-how-they-behave) (not guaranteed, but a reasonable teaching number).
 
 **Early Esha** invests 50,000 a year for just 10 years, from age 25 to 35, then **stops forever.** Total put in: **5 lakh.** By age 60, she has roughly **2.7 to 2.8 crore.**
 
@@ -145,7 +146,7 @@ The headline return on any investment is the **nominal return**. But the only nu
 
 The erosion is brutal. At 6% inflation, 1 lakh today buys only about **55,800** worth of goods in 10 years, and roughly **31,000** in 20 years. Your money can sit "safe" in a drawer and still lose half its power.
 
-For planning, most people assume around 6% long-run inflation in India, even when the current published figure is lower in a given month.
+For planning, most people assume around 6% [long-run inflation in India](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money), even when the current published figure is lower in a given month.
 
 ## Common misconceptions
 
@@ -165,11 +166,11 @@ Always *annualise* before judging. A fund that gave 100% total return over 10 ye
 
 Compounding is a force. It doesn't care which direction it pushes. Two things quietly drain your wealth:
 
-**1. Fees.** The **expense ratio** is the annual percentage a fund charges you. Low-cost direct index funds run roughly 0.07% to 0.20%. Active funds often charge 0.5% to 1.2%. Always prefer **direct** plans (no distributor commission) over **regular** ones. Small numbers, huge gap over 30 years.
+**1. Fees.** The **expense ratio** is the annual percentage a fund charges you. [Low-cost direct index funds](/blog/personal-money-mastery/07-index-funds-passive-investing) run roughly 0.07% to 0.20%. Active funds often charge 0.5% to 1.2%. Always prefer **direct** plans (no distributor commission) over **regular** ones. Small numbers, huge gap over 30 years.
 
 **2. High-interest debt.** This is compounding's evil twin. Credit-card interest runs about 2.5% to 3.75% **per month**, which is roughly **30% to 48% a year.** A revolving 50,000 balance at 40% can roughly double your cost in under two years.
 
-No investment reliably beats 40%. So **clearing high-interest debt is the highest-return move available to you.** Pay it off before you invest a single rupee in equity.
+No investment reliably beats 40%. So **clearing [high-interest debt](/blog/personal-money-mastery/02-emergency-fund-debt-the-true-cost-of-emis) is the highest-return move available to you.** Pay it off before you invest a single rupee in equity.
 
 ## How to use this
 

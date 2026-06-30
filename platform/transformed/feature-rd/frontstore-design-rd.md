@@ -34,6 +34,7 @@ icon: "\U0001F9EA"
 date: '2026-06-02'
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -45,7 +46,7 @@ That gap - between "technically functional" and "feels trustworthy" - is almost 
 
 ## Why this matters
 
-People buy from stores they trust, and trust is decided visually before a single word is read. A storefront that looks "stitched together by several different designers" tells shoppers, fairly or not, that nobody is minding the details - so maybe the product, the shipping, and the refund are sloppy too.
+[People buy from stores they trust](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy), and trust is decided visually before a single word is read. A storefront that looks "stitched together by several different designers" tells shoppers, fairly or not, that nobody is minding the details - so maybe the product, the shipping, and the refund are sloppy too.
 
 Here is the trap most stores fall into. The store has genuinely premium pieces - a beautiful product card, a polished checkout, elegant order-confirmation pages. But the **components that ship most often are the cheap ones**, and the cheap copy is usually the one that renders. So the store's best work hides while its worst work greets every visitor.
 
@@ -104,18 +105,18 @@ A single store-wide CSS rule can lift every sub-11px text on every page at once.
 
 Gallery arrows, Quick View, wishlist hearts, "edit address" - if these only appear when you hover, they do not exist for touch users. Phones have no cursor to hover with.
 
-This is not a minor polish issue. It means your largest audience cannot find core controls. Anything important must be visible (or tappable) without a hover.
+This is not a minor polish issue. It means your largest audience cannot find [core controls](/blog/product-sense-empathy/15-common-mistakes-anti-patterns-pitfalls). Anything important must be visible (or tappable) without a hover.
 
 ## Common misconceptions
 
 **"A premium look means more effects and animation."**
-The opposite. The premium-minimal redesign in this audit *removed* a heavy dark gradient, dropped white-text-over-photo, deleted a loud orange discount badge, and added whitespace and a slow, gentle hover. Restraint reads as expensive. Clutter reads as cheap.
+The opposite. The [premium-minimal redesign](/blog/product-sense-empathy/11-emotional-design-delight-making-products-people-love) in this audit *removed* a heavy dark gradient, dropped white-text-over-photo, deleted a loud orange discount badge, and added whitespace and a slow, gentle hover. Restraint reads as expensive. Clutter reads as cheap.
 
 **"Fake stats and countdowns boost conversions."**
-Fabricated numbers are easy to spot and they quietly destroy trust. One store shipped "On-time Delivery 25%," "4 out of 5," "2,847 Orders This Week," a fixed `2026-12-31` countdown, and a fake `1-800-PRINT` phone number. Each one is a small lie a careful shopper notices. Hide social proof until it is real.
+Fabricated numbers are easy to spot and they quietly destroy trust. One store shipped "On-time Delivery 25%," "4 out of 5," "2,847 Orders This Week," a fixed `2026-12-31` countdown, and a fake `1-800-PRINT` phone number. Each one is a small lie a careful shopper notices. Hide [social proof](/blog/psychology-of-decisions/10-the-six-levers-of-influence-how-people-get-persuaded) until it is real.
 
 **"The store works, so the design is fine."**
-Working and trustworthy are different bars. A dead button is a bug. A page that looks like four designers fought over it is a *trust* problem - and it costs you sales before anyone clicks anything.
+[Working and trustworthy are different bars](/blog/product-sense-empathy/06-closing-the-gulfs-action-feedback-the-seven-stages). A dead button is a bug. A page that looks like four designers fought over it is a *trust* problem - and it costs you sales before anyone clicks anything.
 
 **"We need a full redesign."**
 Usually you already own a premium version of every component. The work is consolidation, not creation.

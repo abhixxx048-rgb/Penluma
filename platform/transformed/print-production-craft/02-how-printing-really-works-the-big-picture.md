@@ -36,6 +36,7 @@ faq:
     a: "A job ticket (or docket) is the traveling instruction record that follows a job through every station. Often barcoded today, it lists every spec and decision and is scanned at each step so staff and customers can see where the job is."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -61,7 +62,7 @@ Three things happen to a print order that never happen to a document on your off
 
 Think of a restaurant kitchen, not a vending machine. A vending machine takes your coin and drops a product in one step. A kitchen takes your order and it flows past stations - prep, grill, plating, the pass, the runner who carries it to your table. Each station has its own setup, its own queue, its own way of getting an order wrong. Commercial print is the kitchen.
 
-The consequence for cost is huge. Because setup is paid once and then spread across the whole run, the **per-unit cost falls as quantity rises**. Printing 100 business cards and printing 5,000 do not cost "50 times more." The setup is the same, so each of the 5,000 is far cheaper. We'll come back to this fact again and again.
+The consequence for cost is huge. Because setup is paid once and then spread across the whole run, the **[per-unit cost falls as quantity rises](/blog/print-production-craft/11-print-shop-economics-costing-make-ready-margins-quoting)**. Printing 100 business cards and printing 5,000 do not cost "50 times more." The setup is the same, so each of the 5,000 is far cheaper. We'll come back to this fact again and again.
 
 ## The end-to-end spine: five phases every job flows through
 
@@ -95,11 +96,11 @@ One important catch: a finished-*looking* design is **not** the same as a print-
 
 ### 3. Press - putting ink on the material
 
-The press is where ink or toner meets the material. The machine is set up for this exact job (**make-ready**), the colors are lined up (**registration**), and then the real run prints. The three main methods are offset, digital, and screen - covered further down.
+The press is where ink or toner meets the material. The machine is set up for this exact job (**make-ready**), the colors are lined up (**registration**), and then the real run prints. The three main methods are [offset](/blog/print-production-craft/03-offset-lithography-the-workhorse-of-commercial-print), [digital](/blog/print-production-craft/04-digital-printing-toner-inkjet-variable-data), and screen - covered further down.
 
 ### 4. Finishing - shaping the printed sheet
 
-Also called post-press or bindery. A printed sheet is rarely the final product. Finishing is the mechanical transformation: trimming to size, folding, scoring (a crease so a fold is clean), binding pages into a booklet, plus decorative work like lamination, foil, embossing, or die-cutting (cutting custom shapes). Each finishing option is its own machine with its own setup and lead time.
+Also called post-press or bindery. A printed sheet is rarely the final product. Finishing is the mechanical transformation: trimming to size, folding, scoring (a crease so a fold is clean), [binding pages into a booklet](/blog/print-production-craft/09-finishing-bindery-everything-after-the-press), plus decorative work like lamination, foil, embossing, or die-cutting (cutting custom shapes). Each finishing option is its own machine with its own setup and lead time.
 
 ### 5. Fulfillment - getting it to the customer
 
@@ -163,7 +164,7 @@ Within these presses, the two dominant print *methods* have opposite cost shapes
 
 - **Offset** transfers ink from plates onto a rubber blanket and then onto the paper. **High fixed cost** (making plates plus make-ready) but a **low cost per copy**. The per-unit price keeps falling as the run grows.
 - **Digital** (toner or inkjet, like a giant office printer) has **almost no setup** but a **higher, flat cost per copy**. It wins on short runs, on-demand jobs, and personalization.
-- **Screen printing** is a third method for apparel, large-format, and specialty goods: a stencil ("screen") per color, with per-color setup. Cheap at volume, but priced per color.
+- **[Screen printing](/blog/print-production-craft/05-screen-dtg-dtf-pad-apparel-promo-specialty)** is a third method for apparel, large-format, and specialty goods: a stencil ("screen") per color, with per-color setup. Cheap at volume, but priced per color.
 
 ```
 cost
@@ -203,7 +204,7 @@ As a rough industry rule, under about 1,000 copies digital almost always wins, a
 
 Most expensive print failures aren't press failures. They're **file failures that should have been caught at intake**. This is exactly where good software pays for itself, because it can validate a file the moment a customer uploads it.
 
-**Preflight** is the inspection. The most common reasons a file gets rejected:
+**[Preflight](/blog/print-production-craft/07-color-files-prepress-cmyk-pantone-bleed-proofs-preflight)** is the inspection. The most common reasons a file gets rejected:
 
 | Problem | What goes wrong | The fix |
 | --- | --- | --- |

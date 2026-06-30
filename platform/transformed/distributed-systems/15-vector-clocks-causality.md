@@ -36,6 +36,7 @@ order: 14
 icon: "\U0001F310"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Vector_clock
   - https://en.wikipedia.org/wiki/Dynamo_(storage_system)
@@ -53,7 +54,7 @@ If you run anything across more than one machine, you eventually hit the same wa
 
 The most valuable question in a distributed database is exactly the hard one: **did these two writes happen one after another, or did they happen independently at the same time?** Get it right and you keep both meaningful updates. Get it wrong and you silently lose data, with no error and no log to explain it.
 
-Vector clocks answer that question precisely. They're the machinery behind conflict detection in systems like Amazon's Dynamo and Riak, and the same idea quietly powers tools you already use, like Git. Understanding them changes how you think about consistency, replication, and what "newer" even means when there's no shared clock.
+Vector clocks answer that question precisely. They're the machinery behind conflict detection in systems like Amazon's Dynamo and Riak, and the same idea quietly powers tools you already use, like Git. Understanding them changes how you think about [consistency](/blog/distributed-systems/17-consistency-models), replication, and what "newer" even means when there's no shared clock.
 
 ## First, a few plain words
 
@@ -68,7 +69,7 @@ Hold onto that last word. **Concurrency is the whole point.**
 
 ## Why a single number isn't enough
 
-In an earlier section you met **Lamport clocks**: simple counters that hand every event a number, written `C(e)`, so you can line events up in some order. They have one guarantee:
+In an earlier section you met [**Lamport clocks**](/blog/distributed-systems/14-time-clocks-the-ordering-of-events): simple counters that hand every event a number, written `C(e)`, so you can line events up in some order. They have one guarantee:
 
 > If `a → b` (a happened before b), then `C(a) < C(b)`.
 
@@ -177,7 +178,7 @@ The database can't decide which sibling is right, because that's a business ques
 
 ### Amazon Dynamo's shopping cart
 
-This is precisely what Amazon described in their landmark 2007 **Dynamo** paper. Dynamo chose *availability* over strong consistency, because the cart must *always* accept an "add to cart," even during network trouble. That means two replicas can take writes independently and disagree, so Dynamo uses vector clocks (it calls them **version vectors**, stored as a list of `(node, counter)` pairs) to tell genuine updates apart from real conflicts.
+This is precisely what Amazon described in their landmark 2007 **Dynamo** paper. Dynamo chose *availability* over [strong consistency](/blog/distributed-systems/16-the-cap-theorem-and-pacelc), because the cart must *always* accept an "add to cart," even during network trouble. That means two replicas can take writes independently and disagree, so Dynamo uses vector clocks (it calls them **version vectors**, stored as a list of `(node, counter)` pairs) to tell genuine updates apart from real conflicts.
 
 Here's the classic example. Servers Sx, Sy, and Sz handle writes to one cart object:
 
@@ -229,4 +230,4 @@ Here's the one idea worth keeping: **"newer" is not a fact you can read off a cl
 
 That single shift, from ordering time to tracking causality, quietly underpins always-available databases, Git merges, and CRDTs alike.
 
-But notice what we've been assuming the whole time: that nodes are honest, that a message saying `[2,3,0]` really did come from a node that did those things. What happens when a node can lie, or when a few machines flat-out disagree about reality on purpose? That's where consensus and Byzantine fault tolerance come in, and it's a very different kind of hard.
+But notice what we've been assuming the whole time: that nodes are honest, that a message saying `[2,3,0]` really did come from a node that did those things. What happens when a node can lie, or when a few machines flat-out disagree about reality on purpose? That's where [consensus](/blog/distributed-systems/02-the-consensus-problem) and Byzantine fault tolerance come in, and it's a very different kind of hard.

@@ -44,6 +44,7 @@ faq:
       you mean a specific set, like "the data we migrated last night".
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: english
 topicTitle: English for Developers
 category: Communication
@@ -55,7 +56,7 @@ sources: []
 
 You write "open pull request for this fix" and ship it. A reviewer reads it as a log line, not a sentence. The fix? One missing letter: **a**.
 
-These tiny words - *a*, *an*, *the*, and the choice to use nothing at all - are the most dropped words in developer writing. They're also the ones that quietly mark the difference between text that reads like English and text that reads like a stack trace.
+These tiny words - *a*, *an*, *the*, and the choice to use nothing at all - are the most dropped words in [developer writing](/blog/english/00-index). They're also the ones that quietly mark the difference between text that reads like English and text that reads like a stack trace.
 
 The good news: there are only three patterns to learn, and you already use them in your native language without thinking.
 
@@ -115,7 +116,7 @@ Three cases take no article:
 
 So it's "send **feedback** in **Slack**" - not "send the feedback in the Slack."
 
-But the moment an uncountable noun becomes specific, *the* comes back: "**the** data **we migrated last night**", "**the** tests **in this PR**".
+But the moment an [uncountable noun](/blog/english/02-countable-uncountable-much-many) becomes specific, *the* comes back: "**the** data **we migrated last night**", "**the** tests **in this PR**".
 
 ## The one trick for "a" vs "an": listen, don't spell
 
@@ -150,7 +151,7 @@ Reality: extra "the" usually sounds *less* native. "We store the data in the cac
 Reality: data is uncountable, so it's bare by default - "data is missing". Add "the" only for a specific set you've pointed at.
 
 **Myth: dropping articles in PRs is fine because it's "tech writing".**
-Reality: that's true for *commit messages* (imperative log style), but PR descriptions, comments, and chat are real sentences. Readers feel the difference.
+Reality: that's true for *[commit messages](/blog/english/10-professional-dev-writing)* (imperative log style), but PR descriptions, comments, and chat are real sentences. Readers feel the difference.
 
 ## How to use this today
 
@@ -179,4 +180,4 @@ Quick check. Try these, then scroll for answers.
 
 If you remember one thing, make it this: **a thing enters the conversation as "a", and once we both know it, it becomes "the".** That single arc - new, then known - quietly solves most article decisions you'll ever face.
 
-Master these three little words and your writing stops sounding like a log file and starts sounding like a person who's easy to work with. Next, watch what happens to those same sentences when you swap your verb tenses around - because "I fixed the bug" and "I've fixed the bug" tell your team two very different things about what's safe to deploy.
+Master these three little words and your writing stops sounding like a log file and starts sounding like a person who's easy to work with. Next, watch what happens to those same sentences when you swap your [verb tenses](/blog/english/04-verb-tenses) around - because "I fixed the bug" and "I've fixed the bug" tell your team two very different things about what's safe to deploy.

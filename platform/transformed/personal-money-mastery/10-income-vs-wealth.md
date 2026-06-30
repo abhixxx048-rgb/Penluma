@@ -38,6 +38,7 @@ order: 9
 icon: "\U0001F4B0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -93,7 +94,7 @@ Sort by cash-flow direction, not by how impressive something looks. A leased lux
 
 ## Why high earners stay broke
 
-Two quiet psychological forces eat every raise you will ever get.
+Two quiet [psychological forces](/blog/personal-money-mastery/18-behavioral-finance) eat every raise you will ever get.
 
 **Lifestyle inflation** is when spending rises in lockstep with income. You get a 30% hike, then upgrade the rent, the car, the phone, the holidays. Your *savings rate*, the share of income you actually keep, stays exactly where it was. The bigger salary just funds a bigger fixed-cost base.
 
@@ -172,10 +173,10 @@ Cutting expenses helps you twice over: you save more each month *and* your finis
 
 1. **Calculate your net worth today.** Add up everything you own, subtract everything you owe. This one number, not your salary, is your real scoreboard. Track it every few months.
 2. **Find your savings rate.** Divide what you keep and invest by what you earn. This is the lever. Aim to nudge it up, even by a few points a year.
-3. **Kill high-interest debt first.** Any credit-card balance gets cleared before you invest a rupee elsewhere. Nothing beats a guaranteed 40% return.
+3. **Kill [high-interest debt](/blog/personal-money-mastery/02-emergency-fund-debt-the-true-cost-of-emis) first.** Any credit-card balance gets cleared before you invest a rupee elsewhere. Nothing beats a guaranteed 40% return.
 4. **Protect your rate when income jumps.** When a raise lands, route at least half of it straight to investments before lifestyle can claim it. Beat the treadmill on purpose.
-5. **Buy assets that pay you.** Favour low-cost index funds. Nifty 50 index funds charge around 0.05 to 0.20% a year versus 1 to 2.25% for active funds, and low fees quietly compound your edge.
-6. **Use the tax rules in your favour.** Under India's new tax regime (FY 2025-26), a salaried person pays nil tax up to about 12.75 lakh thanks to the rebate and standard deduction. PPF still pays 7.1% fully tax-free. Keep more of the gap working for you.
+5. **Buy assets that pay you.** Favour [low-cost index funds](/blog/personal-money-mastery/07-index-funds-passive-investing). Nifty 50 index funds charge around 0.05 to 0.20% a year versus 1 to 2.25% for active funds, and low fees quietly compound your edge.
+6. **Use the tax rules in your favour.** Under [India's new tax regime](/blog/personal-money-mastery/03-tax-literacy-india-first) (FY 2025-26), a salaried person pays nil tax up to about 12.75 lakh thanks to the rebate and standard deduction. PPF still pays 7.1% fully tax-free. Keep more of the gap working for you.
 7. **Set your real FI number.** Multiply your *annual expenses* by 28 to 33. That, not some round salary goal, is the figure that means freedom.
 
 > **Picture it this way.** Income is the water flowing into your bathtub. Expenses are the open drain. Wealth is how high the water rises. A bigger tap means nothing if you widen the drain to match. The entire skill is keeping the drain narrower than the tap, and letting the level climb.
@@ -184,4 +185,4 @@ Cutting expenses helps you twice over: you save more each month *and* your finis
 
 Here is the one thing to carry with you: you do not get rich from what you earn, you get rich from the gap you keep. Salary is the speedometer; net worth is the odometer. Guard the gap, invest it in things that pay you, and freedom becomes a math problem you can actually solve.
 
-Which raises the obvious next question. Once you have a growing pile of savings, where exactly should it go, and how do you make compounding do the heavy lifting for you instead of against you? That is where the real fun begins.
+Which raises the obvious next question. Once you have a growing pile of savings, where exactly should it go, and how do you make [compounding](/blog/personal-money-mastery/05-compounding-the-time-value-of-money) do the heavy lifting for you instead of against you? That is where the real fun begins.

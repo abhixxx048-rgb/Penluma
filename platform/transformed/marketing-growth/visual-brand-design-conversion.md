@@ -34,6 +34,7 @@ date: '2026-06-16'
 order: 999
 icon: "\U0001F680"
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -113,7 +114,7 @@ Text the same color as its background. A cart step you can't read. A button that
 
 A slow store doesn't just annoy people - it reads as broken, and a blank screen reads as "this site doesn't work."
 
-The technical culprits are usually **render-blocking files** (resources the browser must download before it can paint anything) and **extra fetches** that delay the first meaningful pixel. The practical target: your main content should appear within roughly **2.5 seconds**. Beyond that, conversions measurably fall with each added second.
+The technical culprits are usually **[render-blocking files](/blog/system-design/02-networking-and-protocols)** (resources the browser must download before it can paint anything) and **extra fetches** that delay the first meaningful pixel. The practical target: your main content should appear within roughly **2.5 seconds**. Beyond that, conversions measurably fall with each added second.
 
 Loading, empty, and error states matter here too. A view that shows a tidy skeleton while loading, a friendly "nothing here yet" when empty, and a clear message when something fails always feels more trustworthy than one that flashes blank or silently does nothing.
 
@@ -121,7 +122,7 @@ Loading, empty, and error states matter here too. A view that shows a tidy skele
 
 There's one consistency failure so severe it deserves its own warning, especially for anyone running multiple brands or a platform serving many stores.
 
-If your system shares brand settings carelessly between visitors - a technical trap where one store's saved state leaks into another's page while the server handles many requests at once - a paying customer can momentarily see a *different company's* branding mid-purchase.
+If your system shares brand settings carelessly between visitors - a technical trap where one store's saved state leaks into another's page while [the server handles many requests at once](/blog/systems-fundamentals/03-concurrency-parallelism-doing-many-things-at-once) - a paying customer can momentarily see a *different company's* branding mid-purchase.
 
 Nothing destroys trust faster than a shopper seeing a competitor's logo appear on the store they thought they were buying from. The defense is to keep every visitor's experience strictly its own, never shared from a common pool. If you operate a multi-brand setup, this is the question to ask your developers before any other.
 
@@ -163,4 +164,4 @@ The deepest truth here is simple: **a customer's trust is built from surface sig
 
 So fix the fake reviews, the dead links, the lying forms, the mismatched colors - not because any one of them is a catastrophe, but because together they decide whether someone feels safe enough to buy.
 
-And once your visuals stop creating doubt, a new question opens up: what would happen if your design started actively creating *desire*? That's where color psychology, visual hierarchy, and the science of attention take over - turning a store people merely trust into one they can't stop scrolling.
+And once your visuals stop creating doubt, a new question opens up: what would happen if your design started actively creating *desire*? That's where [color psychology](/blog/computer-graphics-print/01-how-color-works-light-human-perception), [visual hierarchy](/blog/product-sense-empathy/07-cognitive-load-why-simple-feels-effortless), and [the science of attention](/blog/ten-disciplines/07-how-the-mind-works-perception-attention-memory-and-two-systems-of-thinking) take over - turning a store people merely trust into one they can't stop scrolling.

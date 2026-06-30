@@ -32,6 +32,7 @@ faq:
     a: The biggest reasons are unexpected costs and security doubt. If the pay screen does not clearly signal that the transaction is safe and reversible, anxious buyers leave even after adding items.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: marketing-growth
 topicTitle: Growth & Acquisition
 category: Business & Growth
@@ -53,7 +54,7 @@ Big brands get trust for free. You already know Amazon will refund you, so you c
 
 If the answer to any of those is unclear, they leave - even when they wanted the product.
 
-This matters most for **considered purchases**: things that are personalized, paid up front, or hard to return. Custom print, made-to-order goods, higher-priced items. The more a buyer has to commit, the more reassurance they need before they will.
+This matters most for **[considered purchases](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy)**: things that are personalized, paid up front, or hard to return. Custom print, made-to-order goods, higher-priced items. The more a buyer has to commit, the more reassurance they need before they will.
 
 Trust signals are the lever between "interested" and "purchased." They are not decoration. They are the difference between a browser and a buyer.
 
@@ -61,10 +62,10 @@ Trust signals are the lever between "interested" and "purchased." They are not d
 
 A trust signal is any visible cue that lowers the perceived risk of buying. The strongest ones cluster into five groups:
 
-- **Social proof** - star ratings, review counts, customer photos, testimonials, recognizable client or partner logos.
+- **[Social proof](/blog/psychology-of-decisions/10-the-six-levers-of-influence-how-people-get-persuaded)** - star ratings, review counts, customer photos, testimonials, recognizable client or partner logos.
 - **Security cues** - a secure-checkout indicator, recognized security seals, and the small padlock that says the connection is encrypted.
 - **Payment clarity** - icons of the cards and wallets you accept, so the shopper instantly sees a method they already trust.
-- **Promises** - a money-back guarantee, a clear return or refund policy, shipping commitments.
+- **Promises** - a [money-back guarantee](/blog/psychology-of-decisions/08-prospect-theory-behavioral-economics-how-we-weigh-gains-losses-risk), a clear return or refund policy, shipping commitments.
 - **Identity** - visible contact details, a business address, and a real "who we are" presence that proves a human stands behind the store.
 
 Each one answers a specific fear. Reviews answer *"is it any good?"* Security cues answer *"is my card safe?"* Guarantees answer *"what if I hate it?"* You want every major fear answered before the shopper has to ask it.
@@ -91,7 +92,7 @@ The relevant pieces are `AggregateRating` (your average and total review count) 
 
 Here is the most common and most expensive gap: stores put a wall of trust badges on the homepage and footer, then strip the payment page bare.
 
-That is backwards. The payment screen is the single highest-anxiety moment in the entire journey. It is exactly where security doubt turns into an abandoned cart.
+That is backwards. The payment screen is the single highest-anxiety moment in the entire journey. It is exactly where security doubt turns into an [abandoned cart](/blog/product-sense-empathy/09-reducing-friction-flows-steps-progressive-disclosure).
 
 A generic "SSL Encrypted" pill is not enough. At the pay button, a confident checkout shows:
 
@@ -109,7 +110,7 @@ Every business has its own real guarantees - *"30-day returns," "ships in 48 hou
 
 Worse is the payment badge that lies. If your page proudly shows a payment-method icon you do not actually accept, you have eroded trust at the worst possible moment and set up a frustrating dead end. The safest pattern is to drive payment badges from the gateways you have *genuinely connected*, so the badge can never misrepresent what a shopper can use.
 
-The rule: trust signals must always be true, and the people running the store must be able to tell their own truth.
+The rule: [trust signals must always be true](/blog/psychology-of-decisions/22-persuasion-vs-manipulation-the-ethics-of-influence), and the people running the store must be able to tell their own truth.
 
 ## Identity signals: prove a human is behind the store
 

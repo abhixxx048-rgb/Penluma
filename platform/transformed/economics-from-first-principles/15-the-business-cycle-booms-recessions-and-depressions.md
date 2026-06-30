@@ -50,6 +50,7 @@ faq:
       shocks like the 1970s oil crisis. They often combine and feed each other.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: economics-from-first-principles
 topicTitle: Economics from First Principles
 category: Money & Business
@@ -94,7 +95,7 @@ That irregularity is the single most important thing to understand. The business
 
 A few terms worth pinning down, in plain words:
 
-- **Real GDP** is the total value of everything a country produces in a year, with the effect of rising prices stripped out. It measures actual stuff made, not just bigger price tags.
+- [**Real GDP**](/blog/economics-from-first-principles/11-measuring-an-economy-gdp-gnp-cpi-ppp-and-key-indicators) is the total value of everything a country produces in a year, with the effect of rising prices stripped out. It measures actual stuff made, not just bigger price tags.
 - The **business cycle** is the repeated rise and fall of that real activity (plus employment and income) around a long-run upward growth trend.
 
 ## How a recession actually gets declared
@@ -138,7 +139,7 @@ The 2008 Great Recession is read mainly this way: a sharp collapse in demand aft
 
 Credit just means borrowed money, and banks amplify the whole cycle.
 
-In good times, banks lend freely. The value of the assets backing loans (like houses) keeps rising, so everyone borrows more. That borrowed money pumps up investment and asset prices, but it also quietly loads the system with debt.
+In good times, [banks lend freely](/blog/economics-from-first-principles/07-how-banks-work-and-how-they-create-money). The value of the assets backing loans (like houses) keeps rising, so everyone borrows more. That borrowed money pumps up investment and asset prices, but it also quietly loads the system with debt.
 
 When a shock hits, banks slam the door. Borrowers scramble to repay (this is called **deleveraging**), and the credit drought makes the downturn far worse. Banks make booms boomier and busts deeper, which economists call being **pro-cyclical**.
 
@@ -156,7 +157,7 @@ A supply shock is a sudden change in the cost or capacity of producing things.
 
 The classic example is the **1973 OPEC oil embargo**, when oil prices roughly quadrupled (and spiked again in 1979). Suddenly everything that needed energy cost more to make.
 
-This produced something pure demand-side thinking couldn't explain: **stagflation**, a recession and high inflation happening at the same time. (The COVID shock of 2020 had a supply side too, when factories and ports simply shut down.)
+This produced something pure demand-side thinking couldn't explain: **stagflation**, a recession and [high inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) happening at the same time. (The COVID shock of 2020 had a supply side too, when factories and ports simply shut down.)
 
 Supply shocks can also run the other way. Cheaper energy, new technology, and productivity gains are *positive* supply shocks that stretch expansions longer.
 
@@ -197,7 +198,7 @@ During a long boom, optimism grows and lenders relax. Borrowers who started out 
 
 Then comes the **Minsky moment**: the tipping point when asset prices stop rising. The doomed borrowers can't refinance. Fire-sales begin, credit freezes, and the collapse cascades like falling dominoes, dragging down even the careful borrowers who suddenly can't get a loan.
 
-**Case study - the 2008 subprime crisis.** Millions of mortgages were written on the assumption that house prices would rise forever, so borrowers could just refinance instead of ever truly repaying. That is textbook Ponzi finance. When US house prices finally fell in 2006 and 2007, the refinancing chain snapped, mortgage-backed securities collapsed, banks froze, and a housing wobble became a global financial crisis. The long calm had invited the capsize.
+**Case study - the 2008 subprime crisis.** Millions of mortgages were written on the assumption that house prices would rise forever, so borrowers could just refinance instead of ever truly repaying. That is textbook Ponzi finance. When US house prices finally fell in 2006 and 2007, the refinancing chain snapped, mortgage-backed securities collapsed, banks froze, and a housing wobble became a [global financial crisis](/blog/economics-from-first-principles/24-financial-crises-why-they-happen-spread-and-how-economies-recover). The long calm had invited the capsize.
 
 Picture sailors after a long stretch of calm seas. The flat water tempts them to dump the heavy ballast, since it feels pointless to carry. So when the storm finally comes, they capsize. Good times breed exactly the carelessness that causes the crash.
 
@@ -266,4 +267,4 @@ If you remember one thing, make it this: **the business cycle is driven as much 
 
 That is why no formula has ever tamed the cycle, and why the smartest move is usually to act against the mood rather than with it.
 
-But notice what the gap between 1933 and 2008 really showed. The same kind of shock produced a decade-long depression in one case and an 18-month recession in the other. The difference was almost entirely the response. So the natural next question is: what exactly are the levers a central bank and a government can pull to soften a downturn, and why do they sometimes make things worse? That is where the story turns to monetary and fiscal policy, and to the people who have to decide, in real time and with messy data, when to pull them.
+But notice what the gap between 1933 and 2008 really showed. The same kind of shock produced a decade-long depression in one case and an 18-month recession in the other. The difference was almost entirely the response. So the natural next question is: what exactly are the levers a central bank and a government can pull to soften a downturn, and why do they sometimes make things worse? That is where the story turns to [monetary](/blog/economics-from-first-principles/08-central-banks-and-monetary-policy) and [fiscal policy](/blog/economics-from-first-principles/16-fiscal-policy-taxes-spending-deficits-and-national-debt), and to the people who have to decide, in real time and with messy data, when to pull them.

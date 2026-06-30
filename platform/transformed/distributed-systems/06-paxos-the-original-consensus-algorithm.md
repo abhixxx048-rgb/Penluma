@@ -31,6 +31,7 @@ faq:
     a: "Yes, directly and indirectly. Google's Chubby and Spanner, Microsoft Azure storage, and many others build on Paxos or close relatives. Even Raft and ZAB inherit ideas Paxos proved correct first."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: distributed-systems
 topicTitle: Distributed Systems
 category: Engineering
@@ -49,13 +50,13 @@ That algorithm is **Paxos**. It is famous for two opposite things at once: it is
 
 Almost every system you rely on needs machines to agree on something. Which server is the primary? What is the next entry in the database log? Did this transaction commit or not?
 
-Get this wrong and you get the worst kind of bug: two machines that each believe they are in charge, quietly corrupting your data. This is called "split-brain," and it is the nightmare that consensus algorithms exist to prevent.
+Get this wrong and you get the worst kind of bug: two machines that each believe they are in charge, quietly corrupting your data. This is called "split-brain," and it is the nightmare that [consensus algorithms](/blog/distributed-systems/02-the-consensus-problem) exist to prevent.
 
-Paxos was the first algorithm to solve this and **prove** it could never choose two conflicting answers. You may never write raw Paxos yourself, but understanding it teaches you *why* consensus is possible at all, and that intuition shows up every time you reason about replication, leader election, or distributed databases.
+Paxos was the first algorithm to solve this and **prove** it could never choose two conflicting answers. You may never write raw Paxos yourself, but understanding it teaches you *why* consensus is possible at all, and that intuition shows up every time you reason about [replication](/blog/distributed-systems/03-replicated-state-machines-the-log), [leader election](/blog/distributed-systems/04-raft-leader-election), or distributed databases.
 
 ## A short history (and one famous joke that backfired)
 
-Leslie Lamport, the same researcher behind logical clocks and the happens-before relation, first described Paxos in a 1990 paper called *The Part-Time Parliament*.
+Leslie Lamport, the same researcher behind [logical clocks and the happens-before relation](/blog/distributed-systems/14-time-clocks-the-ordering-of-events), first described Paxos in a 1990 paper called *The Part-Time Parliament*.
 
 He wrote it as a comedy. The setting was a fictional Greek island, Paxos, whose parliament kept passing laws even though legislators wandered in and out of the chamber at random. The wandering legislators were a metaphor for unreliable machines.
 
@@ -246,4 +247,4 @@ You will rarely hand-roll Paxos, but these practices apply to any consensus syst
 
 If you remember one thing, remember this: **the first value to reach a majority of acceptors wins forever, because any future proposal is forced to inherit it.** That single sentence, built on majority overlap and acceptors that never forget, is the whole reason agreement is possible in an unreliable world.
 
-Paxos buys safety at the cost of guaranteed progress, then hires a leader to win that progress back. Which raises the natural next question: if a leader makes everything cleaner, why not design the entire algorithm around a strong leader from the start? That is precisely the bet **Raft** makes, and it is where this story goes next.
+Paxos buys safety at the cost of guaranteed progress, then hires a leader to win that progress back. Which raises the natural next question: if a leader makes everything cleaner, why not design the entire algorithm around a strong leader from the start? That is precisely the bet [**Raft**](/blog/distributed-systems/07-multi-paxos-raft-vs-paxos-the-real-world) makes, and it is where this story goes next.

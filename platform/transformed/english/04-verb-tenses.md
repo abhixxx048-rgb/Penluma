@@ -36,6 +36,7 @@ order: 4
 icon: "\U0001F4DD"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -49,7 +50,7 @@ Your tenses are a status signal whether you want them to be or not.
 
 A reviewer reading "I have pushed the fix yesterday" doesn't think *grammar mistake* - they think *rushed, maybe careless*. And if the writing feels careless, the reader starts wondering whether the code was too. That is unfair, but it is how humans read.
 
-The flip side is the opportunity. Clean, correctly-tensed updates make you sound like someone who is in control of their work. Same effort, better signal. And because most of your professional writing is short - commit titles, PR descriptions, standups, bug reports - fixing a handful of patterns covers almost everything you write all day.
+The flip side is the opportunity. Clean, correctly-tensed updates make you sound like someone who is in control of their work. Same effort, better signal. And because most of your professional writing is short - commit titles, [PR descriptions](/blog/english/10-professional-dev-writing), standups, bug reports - fixing a handful of patterns covers almost everything you write all day.
 
 ## The four tenses you actually need
 
@@ -154,7 +155,7 @@ Match the tense to the surface you're writing on:
 3. **Standups** - three clean tenses. *Yesterday* is past simple ("I fixed the webhook retry"). *Today* is present continuous ("I'm writing tests for it"). *Blockers* are present simple ("I need access to the staging DB").
 4. **Code comments and docs** - present simple, because they describe behavior every time the code runs. "Returns the cached value if present." Not "Returned" or "Will return".
 5. **Bug reports** - past simple for what happened ("The page crashed when I clicked Save"), present simple for the steady behavior ("The error appears on every submit").
-6. **Before you hit send** - scan for three things: a capital "I", a full stop, and an `-ing` after any `am`/`is`/`are`. That three-second check catches most slips.
+6. **Before you hit send** - scan for three things: a capital "I", [a full stop](/blog/english/07-punctuation-and-capitalization), and an `-ing` after any `am`/`is`/`are`. That three-second check catches most slips.
 
 ### Before and after
 
@@ -187,10 +188,10 @@ Fix each line. Answers below - no peeking.
 1. **I am fixing the failing test right now.** After "I am", the verb takes `-ing`.
 2. **Yesterday I deployed the new version.** "Yesterday" is finished time, so past simple.
 3. **Add** pagination... Commit titles use the imperative.
-4. **B - returns.** Present simple, and third person singular adds **-s**.
+4. **B - returns.** Present simple, and [third person singular](/blog/english/03-subject-verb-agreement) adds **-s**.
 5. **The migration has finished, so you can run the seeder.** Just done and relevant now, so present perfect; "u" becomes "you".
 6. **B - am working.** "Right now" plus in progress is present continuous.
-7. **I already fixed the bug, but I still make so many mistakes in the tests.** Past simple for the done fix; **many** + plural **mistakes** (it's countable).
+7. **I already fixed the bug, but I still make so many mistakes in the tests.** Past simple for the done fix; **many** + plural **mistakes** (it's [countable](/blog/english/02-countable-uncountable-much-many)).
 8. **I've just pushed** the hotfix... "Just" plus still relevant is present perfect.
 
 ## Conclusion

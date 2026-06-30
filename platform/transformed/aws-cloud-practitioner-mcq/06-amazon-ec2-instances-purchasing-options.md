@@ -25,6 +25,7 @@ order: 5
 icon: ☁️
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 faq:
   - q: What is the cheapest EC2 purchasing option?
     a: >-
@@ -68,7 +69,7 @@ That gap is not a trick. It is the single most testable idea in the AWS world, a
 
 Amazon EC2 gives you virtual servers in the cloud, called **instances**. You can rent them by the hour with no strings attached, or you can commit ahead of time for a steep discount, or you can grab leftover capacity for pennies and accept that it might vanish.
 
-Choosing well does two things at once. It saves real money, sometimes 70 to 90 percent. And it is the part of the AWS Cloud Practitioner exam that shows up again and again, dressed up in different business scenarios.
+Choosing well does two things at once. It [saves real money](/blog/aws-cloud-practitioner-mcq/01-cloud-concepts-value-proposition-cloud-economics), sometimes 70 to 90 percent. And it is the part of the AWS Cloud Practitioner exam that shows up again and again, dressed up in different business scenarios.
 
 The whole skill is matching a workload to a pricing model. So let's make each option obvious.
 
@@ -102,7 +103,7 @@ There are two flavors:
 - **Standard RIs** give the **deepest discount** but lock you to a specific instance setup. Bonus: if your plans change, you can **resell them on the Reserved Instance Marketplace**, an exit hatch nothing else offers.
 - **Convertible RIs** let you change instance family later, but discount less.
 
-> A production database must run 24/7 for the next three years on the same instance type, and the team wants the lowest price. That is a textbook **3-year Standard RI**: maximum commitment, maximum discount, and the type never changes so the extra flexibility of Convertible would just cost money.
+> A [production database](/blog/aws-cloud-practitioner-mcq/11-amazon-rds-managed-relational-databases) must run 24/7 for the next three years on the same instance type, and the team wants the lowest price. That is a textbook **3-year Standard RI**: maximum commitment, maximum discount, and the type never changes so the extra flexibility of Convertible would just cost money.
 
 ### Savings Plans: discount by the dollar, not the instance
 
@@ -151,7 +152,7 @@ Same-looking actions, opposite outcomes.
 
 ### EBS is persistent
 
-An **Amazon EBS** (Elastic Block Store) volume is **network-attached** and lives independently of the instance. Your data survives stop, start, and even termination if configured to, and you can take **point-in-time snapshots** (stored in S3) for backups.
+An **Amazon EBS** (Elastic Block Store) volume is **network-attached** and lives independently of the instance. Your data survives stop, start, and even termination if configured to, and you can take **point-in-time snapshots** (stored in [S3](/blog/aws-cloud-practitioner-mcq/10-amazon-s3-object-storage)) for backups.
 
 And about billing: when you **stop** an EBS-backed instance, you stop paying for compute hours, but the EBS volumes still exist, so you **keep paying for that storage** until you delete them. "Stopped" never means "zero charges."
 
@@ -213,4 +214,4 @@ When a scenario lands in front of you, walk these steps:
 
 If you remember one thing, make it this: **EC2 pricing is a trade between commitment and flexibility, and the workload tells you which way to lean.** Steady and predictable buys discounts; uncertain and bursty buys freedom; throwaway and fault-tolerant buys Spot's bargain.
 
-Master that, and the per-hour rate you pay starts to feel like a choice instead of a surprise on the bill. Next, it's worth asking the question that quietly shapes every one of these decisions: how does AWS actually divide the world into Regions and Availability Zones, and why does that map decide both your resilience and your latency?
+Master that, and the per-hour rate you pay starts to feel like a choice instead of a surprise on the bill. Next, it's worth asking the question that quietly shapes every one of these decisions: how does AWS actually divide the world into [Regions and Availability Zones](/blog/aws-cloud-practitioner-mcq/07-vpc-networking-fundamentals), and why does that map decide both your resilience and your latency?

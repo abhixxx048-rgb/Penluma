@@ -23,6 +23,7 @@ order: 13
 icon: ☁️
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 faq:
   - q: What is AWS CloudTrail used for?
@@ -83,7 +84,7 @@ Same building, four very different records. The exam (and real incidents) hinge 
 
 ### CloudTrail vs CloudWatch - the most common mix-up
 
-People reach for CloudWatch because "it has logs." But CloudWatch Logs hold **application and system output** - your app's print statements, performance metrics like CPU and latency, the operational health of your resources.
+People reach for CloudWatch because "it has logs." But [CloudWatch Logs](/blog/aws-cloud-practitioner-mcq/13-amazon-cloudwatch-monitoring-observability) hold **application and system output** - your app's print statements, performance metrics like CPU and latency, the operational health of your resources.
 
 If the question is *"who issued this API call?"*, that is never CloudWatch. CloudWatch tells you the server is slow; CloudTrail tells you who turned it off.
 
@@ -102,7 +103,7 @@ Whenever you see the words **"configuration history," "compliance over time," or
 
 ### CloudTrail vs VPC Flow Logs - API calls vs packets
 
-CloudTrail does not see network packets *at all*. If someone wants to know which **source IP addresses** are sending traffic to an EC2 instance, and whether those packets were **accepted or rejected** at the subnet level, that's **VPC Flow Logs**.
+CloudTrail does not see network packets *at all*. If someone wants to know which **source IP addresses** are sending traffic to an EC2 instance, and whether those packets were **accepted or rejected** at the subnet level, that's **[VPC Flow Logs](/blog/aws-cloud-practitioner-mcq/07-vpc-networking-fundamentals)**.
 
 The tell: any mention of *source/destination IPs* and *accept/reject* decisions points to Flow Logs, not CloudTrail.
 
@@ -123,7 +124,7 @@ This is the other distinction that trips people up.
 
 **Event history** is the console view that records the last **~90 days** of management events - automatically, with zero setup. An engineer who notices suspicious sign-in activity can open Event history right now and search recent actions by user, event name, or resource. No trail required.
 
-A **trail** is what you create when you need more: it continuously **delivers log files to an Amazon S3 bucket**. S3 is durable, low-cost, and built for the long haul, so this is the standard way to keep a **multi-year audit archive** for compliance.
+A **trail** is what you create when you need more: it continuously **delivers log files to an Amazon S3 bucket**. [Amazon S3](/blog/aws-cloud-practitioner-mcq/10-amazon-s3-object-storage) is durable, low-cost, and built for the long haul, so this is the standard way to keep a **multi-year audit archive** for compliance.
 
 So the rule of thumb:
 
@@ -152,7 +153,7 @@ That pairing combines CloudTrail's "who did what" record with CloudWatch's alert
 - **"Nothing is logged until I create a trail."** False. Management events are recorded automatically, and Event history shows the last ~90 days out of the box. A trail is for durable, long-term, and broader capture.
 - **"CloudTrail logs everything, including every file read."** False. Object-level data events are off by default because of their volume and cost - you must opt in.
 - **"CloudTrail can alert me on its own."** False. It records events; you pair it with CloudWatch (and SNS) to actually get notified.
-- **"CloudTrail replaces IAM permissions."** False. CloudTrail *records* what people did; IAM *controls* what they're allowed to do. Different jobs entirely.
+- **"CloudTrail replaces IAM permissions."** False. CloudTrail *records* what people did; [IAM](/blog/aws-cloud-practitioner-mcq/04-iam-identity-access-management) *controls* what they're allowed to do. Different jobs entirely.
 - **"CloudTrail only works for S3."** False. It logs API activity across a wide range of AWS services.
 - **"An audit log is automatically trustworthy."** False. That's exactly why log file integrity validation exists.
 

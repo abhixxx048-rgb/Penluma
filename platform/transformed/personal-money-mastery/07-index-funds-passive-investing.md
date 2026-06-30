@@ -23,6 +23,7 @@ order: 6
 icon: "\U0001F4B0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 faq:
   - q: Are index funds a good investment in India?
@@ -49,7 +50,7 @@ Here is the uncomfortable truth that the financial industry would rather you not
 
 Over the 10 years to mid-2025, roughly **73% of active large-cap funds in India failed to beat the simple Nifty index** they were trying to outperform. You paid a premium for underperformance.
 
-The reason matters for your money. Every rupee you lose to high fees compounds against you, year after year, for as long as you stay invested. Get this one decision right early, and it can mean lakhs of extra rupees by the time you retire - without taking on a single bit of extra risk.
+The reason matters for your money. Every rupee you lose to high fees [compounds against you](/blog/personal-money-mastery/05-compounding-the-time-value-of-money), year after year, for as long as you stay invested. Get this one decision right early, and it can mean lakhs of extra rupees by the time you retire - without taking on a single bit of extra risk.
 
 ## What "passive investing" actually means
 
@@ -82,7 +83,7 @@ And this is not bad luck - it is arithmetic. The economist William Sharpe proved
 
 Passive dominance is strongest in the **large-cap** segment, which is highly efficient and very hard to beat. But in Indian **mid- and small-cap** funds, active managers have actually done better recently - a majority beat their benchmark in this period.
 
-So a sensible Indian portfolio can be a low-cost index core with a small actively-managed mid/small-cap satellite. It is not "index or nothing."
+So a sensible Indian portfolio can be a [low-cost index core with a small actively-managed mid/small-cap satellite](/blog/personal-money-mastery/08-asset-allocation-rebalancing). It is not "index or nothing."
 
 ## The silent killer: the expense ratio
 
@@ -173,7 +174,7 @@ An equity fund (one holding at least 65% in Indian equities) is taxed only when 
 
 That tax-free slab is a quiet reward for patience.
 
-One more thing worth flagging: **ELSS**, the tax-saving equity fund with a 3-year lock-in, used to earn its keep through the Section 80C deduction. But under the **New Tax Regime - the default from FY 2025-26 - 80C is gone.** If you file under the new regime, ELSS loses its tax pitch, and a plain low-cost index fund with no lock-in is often the better choice.
+One more thing worth flagging: **ELSS**, the tax-saving equity fund with a 3-year lock-in, used to earn its keep through the Section 80C deduction. But under the **[New Tax Regime](/blog/personal-money-mastery/03-tax-literacy-india-first) - the default from FY 2025-26 - 80C is gone.** If you file under the new regime, ELSS loses its tax pitch, and a plain low-cost index fund with no lock-in is often the better choice.
 
 ## Conclusion
 
@@ -181,4 +182,4 @@ If you remember one thing, make it this: in investing, effort and cost are not t
 
 The hard part was never picking the right fund. It is having the patience to do almost nothing while everyone around you chases the next hot tip.
 
-But owning the market is only half the story. The other half is *not selling at the worst possible moment* - and that is a battle fought not in spreadsheets, but inside your own head. The psychology of staying invested through a crash is where most fortunes are quietly won or lost. That's worth understanding next.
+But owning the market is only half the story. The other half is *not selling at the worst possible moment* - and that is a battle fought not in spreadsheets, but inside your own head. The [psychology of staying invested through a crash](/blog/personal-money-mastery/18-behavioral-finance) is where most fortunes are quietly won or lost. That's worth understanding next.

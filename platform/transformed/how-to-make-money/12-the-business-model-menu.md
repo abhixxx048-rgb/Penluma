@@ -36,6 +36,7 @@ order: 11
 icon: "\U0001FA99"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -49,7 +50,7 @@ Most people pour their energy into the wrong question. They obsess over *what* t
 
 Picture a bathtub. A one-time sale is like filling it with the plug pulled out - you keep pouring, but it drains away just as fast. Recurring revenue is filling it with the plug in. Last month's water is still there when you add this month's. Same tap, the same effort, wildly different water level after a year.
 
-That single choice - how often the money comes back - decides whether each hour you work stacks on top of the last one or evaporates by month's end. Investor Naval Ravikant puts it bluntly: you don't get rich renting out your time, because the moment you stop, the money stops. You get rich by owning something that earns while you sleep.
+That single choice - how often the money comes back - decides whether each hour you work stacks on top of the last one or evaporates by month's end. Investor Naval Ravikant puts it bluntly: you don't get rich renting out your time, because the moment you stop, the money stops. You get rich by [owning something that earns while you sleep](/blog/how-to-make-money/16-income-vs-wealth-owning-vs-working).
 
 So before you chase a clever product, learn to read the menu of ways to get paid.
 
@@ -104,7 +105,7 @@ The catch: free users cost real money to serve. Freemium only works if your conv
 
 ### Usage-based
 
-You pay for exactly what you use - think Snowflake, Twilio, AWS, or a simple per-order fee. The price tracks the value, there's no awkward "upgrade" decision, and revenue grows automatically as your customer grows. The trade-off is that it's less predictable than a flat subscription.
+You pay for exactly what you use - think Snowflake, Twilio, AWS, or a simple per-order fee. [The price tracks the value](/blog/how-to-make-money/14-pricing-value-capture), there's no awkward "upgrade" decision, and revenue grows automatically as your customer grows. The trade-off is that it's less predictable than a flat subscription.
 
 ### Razor-and-blades
 
@@ -120,9 +121,9 @@ Sell the durable item cheap, even at a loss, then profit on the consumables. HP 
 
 ## The founder's secret staircase: services to product
 
-Here's the move that quietly mints fortunes. Start by doing custom work - an agency, consulting, done-for-you delivery. Then **productize the repeatable part** into software or templates.
+Here's the move that quietly mints fortunes. Start by doing custom work - an agency, [consulting](/blog/how-to-make-money/08-freelancing-consulting), done-for-you delivery. Then **productize the repeatable part** into software or templates.
 
-Naval calls this "productize yourself." Your *self* is your uniqueness; *productize* is the leverage that lets it sell while you sleep. The prize is the margin jump: services run around 40–60% gross margin, while a product hits 80%+. Countless SaaS companies began exactly this way - build it once for a client, then sell it to a thousand.
+Naval calls this "productize yourself." Your *self* is your uniqueness; *productize* is the [leverage](/blog/how-to-make-money/04-leverage-the-real-secret) that lets it sell while you sleep. The prize is the margin jump: services run around 40–60% gross margin, while a product hits 80%+. Countless SaaS companies began exactly this way - build it once for a client, then sell it to a thousand.
 
 A concrete example:
 
@@ -159,7 +160,7 @@ The subscription is the steady floor. Usage captures the upside as the customer 
 1. **Audit your current model.** Write down what you sell, who pays, and *how often*. If the answer to "how often" is "once," you're refilling a draining tub.
 2. **Find your repeatable 80%.** If you do custom work, identify the part you rebuild every single time. That's your product waiting to be born.
 3. **Anchor on one durable recurring base.** Then add a metered layer that grows automatically with your customer. Use one-time fees only to smooth early cash - never as the core engine.
-4. **Check the unit economics before scaling.** A model only works if **LTV > CAC** - the lifetime profit from a customer must beat what you spent to win them, ideally by at least 3x, with healthy margins.
+4. **Check the unit economics before scaling.** A model only works if **LTV > CAC** - [the lifetime profit from a customer must beat what you spent to win them](/blog/how-to-make-money/13-unit-economics-does-each-sale-make-money), ideally by at least 3x, with healthy margins.
 5. **Watch churn like a hawk.** Track how many customers you lose each month. Small leaks sink the boat: 5% monthly churn empties almost half your base in a year.
 6. **Plan for the India GST trigger early.** Services must register above ₹20 lakh aggregate turnover (₹10 lakh in special-category states - Manipur, Mizoram, Nagaland, Tripura); goods-only suppliers above ₹40 lakh in most states. Turnover is counted PAN-wide across all states, so you can't split it to stay under the line. Even below the threshold, *voluntary* registration often pays off for a services-to-product founder - it lets you claim input tax credit on your own tools and serve GST-registered B2B clients who need a proper invoice. (Thresholds change, so verify them at filing time.)
 

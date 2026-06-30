@@ -38,6 +38,7 @@ order: 23
 icon: ✍️
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -47,7 +48,7 @@ Most people try to "think harder" in big, occasional bursts. It almost never wor
 
 ## Why this matters
 
-You may already know the tools: how to read for ideas, how to connect facts, how to think clearly, how to write and speak so people actually understand you.
+You may already know the tools: [how to read for ideas](/blog/clear-thinking-and-expression/10-active-reading-techniques-that-generate-thoughts), how to connect facts, how to think clearly, how to write and speak so people actually understand you.
 
 But a tool you never pick up is useless.
 
@@ -59,7 +60,7 @@ Your brain learns the way muscles grow: through small, regular, slightly challen
 
 **Deliberate practice** means working right at the edge of what you can do - slightly harder than comfortable - while getting feedback on how it went. Psychologist Anders Ericsson studied experts across fields and found that *this* kind of focused, feedback-driven practice is what builds skill. Not just logging hours doing the activity.
 
-**Spaced repetition** means revisiting something at growing intervals - a day later, a week later - instead of cramming it all at once. Going back to Hermann Ebbinghaus's early memory experiments, researchers have shown again and again that spread-out review sticks far better than a single binge. This is often called the *spacing effect*.
+**[Spaced repetition](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve)** means revisiting something at growing intervals - a day later, a week later - instead of cramming it all at once. Going back to Hermann Ebbinghaus's early memory experiments, researchers have shown again and again that spread-out review sticks far better than a single binge. This is often called the *spacing effect*.
 
 **The feedback loop** is the cycle of doing something, seeing the result, and adjusting. Skip it and you just repeat your mistakes - confidently.
 
@@ -86,10 +87,10 @@ That one sentence does three things at once. It proves she understood. It links 
 
 Once a week, zoom out. Daily reps gather raw material. Weekly reps turn that material into real thinking and finished output.
 
-- **Review and link your notes (15 min).** Reread the week's captured ideas and summaries, then draw connections. "This idea about late buses is really the same as that idea about slow checkout lines - both are queue problems." Linking is how scattered facts become a connected mental map you can actually reason with.
+- **Review and [link your notes](/blog/clear-thinking-and-expression/11-note-taking-that-creates-insight-zettelkasten-cornell-progressive-summarization) (15 min).** Reread the week's captured ideas and summaries, then draw connections. "This idea about late buses is really the same as that idea about slow checkout lines - both are queue problems." Linking is how scattered facts become a connected mental map you can actually reason with.
 - **Write one short piece (20 min).** 150 to 300 words on anything you've been chewing on - a post, a journal entry, a note to a colleague. Finishing something forces you to choose, order, and cut.
-- **Run one idea session (15 min).** Take one problem and generate 10 possible answers without judging any of them. Quantity first, quality later. This stretches you past the obvious first answer.
-- **Do one analysis (20 min).** Take some data, a chart, or a strong article and ask: What is this really saying? What's missing? What would change my mind? This is your critical-thinking rep.
+- **Run one idea session (15 min).** Take one problem and [generate 10 possible answers](/blog/clear-thinking-and-expression/14-generating-ideas-on-demand-divergent-thinking-scamper-brainstorming) without judging any of them. Quantity first, quality later. This stretches you past the obvious first answer.
+- **Do one analysis (20 min).** Take some data, a chart, or a strong article and ask: What is this really saying? What's missing? What would change my mind? This is your [critical-thinking rep](/blog/clear-thinking-and-expression/17-critical-thinking-foundations-claims-evidence-assumptions).
 
 ### A simple weekly schedule
 
@@ -145,4 +146,4 @@ Here's the one thing to carry away: a sharp mind is built from a dull routine. C
 
 Start almost embarrassingly small today. Run the full daily set once - freewrite, three ideas, one summary, one voice memo - and time it. You'll notice it's under 20 minutes. Then pick one person to send your first weekly short piece to, and message them now.
 
-There's one piece of this that quietly does more work than the rest: that voice memo where you explain an idea out loud to a 12-year-old. The day you can make a hard thing genuinely simple for someone else is the day you discover whether you truly understood it - and that's a skill worth its own deep dive.
+There's one piece of this that quietly does more work than the rest: that voice memo where you explain an idea out loud to a 12-year-old. The day you can [make a hard thing genuinely simple for someone else](/blog/ai-learning-platform/16-the-teach-it-back-method-and-how-ai-evaluates-it) is the day you discover whether you truly understood it - and that's a skill worth its own deep dive.

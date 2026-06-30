@@ -40,6 +40,7 @@ order: 16
 icon: "\U0001F4C8"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Price_discrimination
   - https://en.wikipedia.org/wiki/Economic_moat
@@ -191,7 +192,7 @@ Without a moat, profit is borrowed time. The chain is relentless:
 
 Economist Joseph Schumpeter called this churn **creative destruction** back in 1942: the new constantly devours the old.
 
-Economists frame the extremes as **perfect competition** (many sellers, identical product, free entry, like commodity wheat where each farmer is a price-*taker*) versus **monopoly** (one seller, a price-*maker*). Reality usually sits in between, in **monopolistic competition** (many sellers of *differentiated* products, like restaurants and salons) or **oligopoly** (a few giants, like airlines, telecom, soft drinks).
+Economists frame the extremes as [**perfect competition**](/blog/economics-from-first-principles/04-markets-competition-and-when-markets-fail) (many sellers, identical product, free entry, like commodity wheat where each farmer is a price-*taker*) versus **monopoly** (one seller, a price-*maker*). Reality usually sits in between, in **monopolistic competition** (many sellers of *differentiated* products, like restaurants and salons) or **oligopoly** (a few giants, like airlines, telecom, soft drinks).
 
 Differentiation and moats are exactly how a firm escapes the zero-profit trap.
 
@@ -199,10 +200,10 @@ Differentiation and moats are exactly how a firm escapes the zero-profit trap.
 
 Pick up an iPhone and its price swings wildly by country. An iPhone 16 Pro ranges from roughly €900 in South Korea to about €1,850 in Turkey. Several causes *stack* on top of each other:
 
-1. **Willingness to pay.** Firms price to local incomes, which is geographic third-degree price discrimination. The idea that a sum of money *should* buy the same basket everywhere is called **purchasing power parity**. In reality it doesn't, and firms exploit the gaps.
-2. **Taxes and tariffs.** A *tariff* is a tax on imports; *VAT* is a sales tax. Turkey stacks a culture fee, a broadcast levy, a roughly 50% special consumption tax, and 20% VAT, pushing the effective tax above 100% of the base price. Nordic countries carry around 25% VAT.
+1. **Willingness to pay.** Firms price to local incomes, which is geographic third-degree price discrimination. The idea that a sum of money *should* buy the same basket everywhere is called [**purchasing power parity**](/blog/economics-from-first-principles/11-measuring-an-economy-gdp-gnp-cpi-ppp-and-key-indicators). In reality it doesn't, and firms exploit the gaps.
+2. **Taxes and tariffs.** A [*tariff* is a tax on imports](/blog/economics-from-first-principles/21-international-trade-imports-exports-tariffs-and-agreements); *VAT* is a sales tax. Turkey stacks a culture fee, a broadcast levy, a roughly 50% special consumption tax, and 20% VAT, pushing the effective tax above 100% of the base price. Nordic countries carry around 25% VAT.
 3. **Local costs.** Wages, rent, and logistics differ everywhere.
-4. **Currency strength.** Exchange-rate swings move prices even when nothing else changes.
+4. **Currency strength.** [Exchange-rate swings](/blog/economics-from-first-principles/22-exchange-rates-currency-markets-and-why-currencies-rise-or-fall) move prices even when nothing else changes.
 5. **Arbitrage prevention.** Region-locked variants stop people buying cheap and reselling dear.
 
 Two playful gauges make this visible. The **Big Mac Index** (from The Economist, launched 1986) compares the price of the identical burger worldwide. Switzerland is consistently the priciest, around $8 versus roughly $6 in the US, not because the franc is "wrong" but because Swiss wages, rents, and food standards are high. Picodi's "iPhone Index" measures the same idea in work-days: a phone costs roughly 4 days of work in Switzerland versus around 73 in Turkey.
@@ -225,4 +226,4 @@ If you remember one thing, make it this: **profit is never the same as profit.**
 
 Once you can see those gears turning, prices stop looking arbitrary. The surge fare, the regional iPhone, the bargain enterprise tier, the burger chain's PR disaster all start to make sense.
 
-Here's the loose thread worth pulling next. Everything above assumes the firm gets to *set* its price. But where does the customer's willingness to pay actually come from in the first place? That question takes you into supply and demand, where prices aren't chosen by anyone but emerge from millions of people quietly bidding against each other.
+Here's the loose thread worth pulling next. Everything above assumes the firm gets to *set* its price. But where does the customer's willingness to pay actually come from in the first place? That question takes you into [supply and demand](/blog/economics-from-first-principles/03-supply-demand-and-how-prices-are-determined), where prices aren't chosen by anyone but emerge from millions of people quietly bidding against each other.

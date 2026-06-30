@@ -15,6 +15,7 @@ keywords:
   - Cost Optimization pillar
   - Sustainability pillar
   - AWS exam tips
+linked: true
 topic: aws-cloud-practitioner-mcq
 topicTitle: AWS Cloud Practitioner
 category: Certifications
@@ -58,9 +59,9 @@ Beyond the exam, this is genuinely how good cloud teams think. When something br
 Think of the six pillars as six different jobs. A single workload needs all of them, but each answers a different question.
 
 - **Operational Excellence** - *How do we run, monitor, and keep improving the system?* Automation, infrastructure as code, runbooks, small frequent changes.
-- **Security** - *How do we protect data, systems, and identities?* Least-privilege access (IAM), encryption at rest and in transit, audit trails.
-- **Reliability** - *How do we recover from failure and stay available?* Multi-AZ design, auto-replacing failed instances, disaster recovery, RTO/RPO.
-- **Performance Efficiency** - *How do we use the right resources to meet speed needs?* Picking the best-matched instance type, caching, load testing.
+- **Security** - *How do we protect data, systems, and identities?* [Least-privilege access (IAM)](/blog/aws-cloud-practitioner-mcq/04-iam-identity-access-management), encryption at rest and in transit, audit trails.
+- **Reliability** - *How do we recover from failure and stay available?* [Multi-AZ design](/blog/aws-cloud-practitioner-mcq/11-amazon-rds-managed-relational-databases), auto-replacing failed instances, disaster recovery, RTO/RPO.
+- **Performance Efficiency** - *How do we use the right resources to meet speed needs?* Picking the [best-matched instance type](/blog/aws-cloud-practitioner-mcq/06-amazon-ec2-instances-purchasing-options), caching, load testing.
 - **Cost Optimization** - *How do we avoid paying for what we don't use?* Right-sizing, shutting down idle resources, paying only for what you need.
 - **Sustainability** - *How do we reduce our environmental impact?* Lower energy use and carbon footprint, fewer resources per unit of work.
 
@@ -83,7 +84,7 @@ Almost every confusing question comes down to one of these four lookalike pairs.
 Both can involve scaling and multiple resources, so they blur together.
 
 - **Reliability** is about *recovering from failure* and *staying available*. Cue words: recover, failover, Availability Zone outage, disaster recovery, RTO/RPO.
-- **Performance Efficiency** is about *meeting speed needs with the right resources*. Cue words: faster, slow reports, compute-optimized, caching, CloudFront, load testing.
+- **Performance Efficiency** is about *meeting speed needs with the right resources*. Cue words: faster, slow reports, compute-optimized, caching, [CloudFront](/blog/aws-cloud-practitioner-mcq/09-amazon-cloudfront-cdn-edge-delivery), load testing.
 
 Deciding question: *Is the problem "it broke" or "it's slow"?* Broke means Reliability. Slow means Performance Efficiency.
 
@@ -143,4 +144,4 @@ The whole framework collapses into one habit: **match the verb to the pillar.** 
 
 Master that, and the trap pairs lose their teeth. The exam writers are betting you'll grab the plausible answer instead of the precise one.
 
-Next, dig into the Security pillar on its own - because the moment you understand the **shared responsibility model** (what AWS secures versus what *you* secure), a surprising number of "which pillar" and "whose job is it" questions answer themselves.
+Next, dig into the Security pillar on its own - because the moment you understand the **[shared responsibility model](/blog/aws-cloud-practitioner-mcq/03-the-shared-responsibility-model)** (what AWS secures versus what *you* secure), a surprising number of "which pillar" and "whose job is it" questions answer themselves.

@@ -10,10 +10,66 @@ export async function getStaticPaths() {
 const { topic: slug } = Astro.params;
 const topic = topicBySlug(slug!)!;
 const posts = await postsForTopic(slug!);
+
+const abs = (path: string) => new URL(path, Astro.site).toString();
+const siteRoot = abs('/');
+const topicUrl = abs(`/topics/${topic.slug}`);
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteRoot },
+    { '@type': 'ListItem', position: 2, name: 'Topics', item: abs('/topics') },
+    { '@type': 'ListItem', position: 3, name: topic.title, item: topicUrl },
+  ],
+};
+
+const courseSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Course',
+  name: topic.title,
+  description: topic.description,
+  url: topicUrl,
+  provider: {
+    '@type': 'Organization',
+    name: 'Penluma',
+    url: siteRoot,
+  },
+  hasPart: posts.map((post) => ({
+    '@type': 'LearningResource',
+    name: post.data.title,
+    url: abs(`/blog/${post.id}`),
+  })),
+};
+
+const jsonLd = [breadcrumbSchema, courseSchema];
+
+// Target terms for this topic page: topic title + category, the post titles in
+// this topic, and any keywords declared on those posts — deduped.
+const keywords = Array.from(
+  new Set(
+    [
+      topic.title,
+      topic.category,
+      ...posts.map((post) => post.data.title),
+      ...posts.flatMap((post) => post.data.keywords ?? []),
+    ].filter(Boolean) as string[]
+  )
+).slice(0, 20);
 ---
 
-<BaseLayout title={topic.title} description={topic.description}>
+<BaseLayout title={topic.title} description={topic.description} jsonLd={jsonLd} keywords={keywords}>
   <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+    <nav aria-label="Breadcrumb" class="mb-4 text-sm text-slate-500 dark:text-slate-400">
+      <ol class="flex flex-wrap items-center gap-1.5">
+        <li><a href="/" class="hover:text-brand-600 hover:underline dark:hover:text-brand-400">Home</a></li>
+        <li aria-hidden="true" class="text-slate-300 dark:text-slate-600">/</li>
+        <li><a href="/topics" class="hover:text-brand-600 hover:underline dark:hover:text-brand-400">Topics</a></li>
+        <li aria-hidden="true" class="text-slate-300 dark:text-slate-600">/</li>
+        <li aria-current="page" class="text-slate-700 dark:text-slate-300">{topic.title}</li>
+      </ol>
+    </nav>
     <a href="/topics" class="text-sm text-brand-600 hover:underline dark:text-brand-400">← All topics</a>
     <div class="mt-4 flex items-start gap-4">
       <div class="text-4xl">{topic.icon}</div>

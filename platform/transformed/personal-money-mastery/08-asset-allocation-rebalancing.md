@@ -30,6 +30,7 @@ faq:
     a: "It's the danger of a market crash hitting right before you need to withdraw money. A bad year at withdrawal time can permanently dent a corpus you spent decades building, which is why you de-risk a goal 3 to 5 years out."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: personal-money-mastery
 topicTitle: Personal Money Mastery
 category: Money & Business
@@ -55,7 +56,7 @@ The practical message is simple: decide your mix carefully, and you've done most
 
 Two plain-English terms unlock the whole topic.
 
-An **asset class** is a family of investments that behaves in a similar way. For an Indian investor, there are four that matter:
+An **[asset class](/blog/personal-money-mastery/06-asset-classes-how-they-behave)** is a family of investments that behaves in a similar way. For an Indian investor, there are four that matter:
 
 - **Equity** - stocks and equity mutual funds. High growth, but big swings.
 - **Debt** - fixed deposits, PPF, EPF, bonds, debt funds. Steady, small swings.
@@ -66,7 +67,7 @@ Your **asset allocation** is simply the percentage split across these classes. F
 
 ### A useful way to picture it
 
-Allocation is the recipe; fund selection is the brand of flour. A good recipe with ordinary flour beats a brilliant flour thrown into a bad recipe. Get the proportions right first, then worry about ingredients.
+Allocation is the recipe; [fund selection](/blog/personal-money-mastery/07-index-funds-passive-investing) is the brand of flour. A good recipe with ordinary flour beats a brilliant flour thrown into a bad recipe. Get the proportions right first, then worry about ingredients.
 
 ## Common misconceptions
 
@@ -85,9 +86,9 @@ There are two ways to set your mix, and only one of them works reliably for norm
 
 **Strategic allocation (SAA)** is your long-term target, set by your goals, your risk appetite, and your time horizon. Think: "Hold 60/30/10 through all market cycles." It's cheap, low-skill, and it's the backbone of every sensible plan.
 
-**Tactical allocation (TAA)** means deliberately deviating to chase a short-term opportunity. Think: "Stocks look cheap - push equity to 70% for now." It sounds clever, but it needs timing skill most people simply don't have. The evidence that it helps everyday investors is weak, and it slides easily into panic-selling and euphoria-buying.
+**Tactical allocation (TAA)** means deliberately deviating to chase a short-term opportunity. Think: "Stocks look cheap - push equity to 70% for now." It sounds clever, but it needs timing skill most people simply don't have. The evidence that it helps everyday investors is weak, and it slides easily into [panic-selling and euphoria-buying](/blog/personal-money-mastery/18-behavioral-finance).
 
-The honest advice: **pick a strategic allocation and stick to it.** If you ever tilt tactically, do it by a small, pre-written rule - for example, "trim equity 5% only when the Nifty PE crosses X" - never by gut feeling in the middle of a crash or a boom.
+The honest advice: **pick a strategic allocation and stick to it.** If you ever tilt tactically, do it by a small, pre-written rule - for example, "trim equity 5% only when the [Nifty PE](/blog/personal-money-mastery/09-valuation-basics) crosses X" - never by gut feeling in the middle of a crash or a boom.
 
 ## How to choose your target mix
 
@@ -138,7 +139,7 @@ Here are five tactics that keep more money in your pocket:
 2. **Rebalance with new money first.** Instead of selling your overweight asset, redirect your fresh SIPs into the *underweight* one. No sale means no capital-gains event at all.
 3. **Cross the 12-month line.** Wait past one year on equity so you pay 12.5% long-term tax instead of 20% short-term.
 4. **Watch the exit load.** Many equity funds charge around 1% if you redeem within 365 days. Check before you trim.
-5. **Turn debt over the least.** Since debt-fund gains now hit your slab rate, rebalance debt sparingly. Some investors use arbitrage funds (taxed like equity) for the debt-like sleeve.
+5. **Turn debt over the least.** Since debt-fund gains now hit your [slab rate](/blog/personal-money-mastery/03-tax-literacy-india-first), rebalance debt sparingly. Some investors use arbitrage funds (taxed like equity) for the debt-like sleeve.
 
 ### A worked example
 

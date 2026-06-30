@@ -56,6 +56,7 @@ faq:
       PCI) for free. Audit Manager continuously collects evidence about your own
       environment and maps it to frameworks to prepare for an audit.
 author: Pritesh Yadav (priteshyadav444)
+linked: true
 transformed: true
 sources: []
 ---
@@ -88,7 +89,7 @@ These four all "deal with sensitive values," which is why they get mixed up. Eac
 
 ### KMS - the everyday key manager
 
-**AWS Key Management Service (KMS)** creates and manages the encryption keys that protect data at rest in services like S3 and EBS. It is **multi-tenant**: AWS runs the underlying hardware and shares it across customers, while you still control key policies, rotation, and the ability to disable a key.
+**AWS Key Management Service (KMS)** creates and manages the encryption keys that protect data at rest in services like [Amazon S3](/blog/aws-cloud-practitioner-mcq/10-amazon-s3-object-storage) and EBS. It is **multi-tenant**: AWS runs the underlying hardware and shares it across customers, while you still control key policies, rotation, and the ability to disable a key.
 
 Think of it as a high-security shared vault. You get your own locked drawer and full say over who opens it, but the building belongs to AWS. It is simpler and cheaper than running your own vault - the right default for most encryption needs. Every key use can be audited through CloudTrail.
 
@@ -164,7 +165,7 @@ The split in one line: **Hub aggregates, Detective investigates.**
 
 This is the classic pairing the exam returns to again and again. Both produce a record. They record different things.
 
-**AWS CloudTrail** records **who did what** - every API call, with the identity, time, and source IP of the actor. "Which IAM user deleted this S3 bucket, from what IP, and when?" That's a CloudTrail question, because a deletion is an API call.
+[AWS CloudTrail](/blog/aws-cloud-practitioner-mcq/14-aws-cloudtrail-auditing-api-logging) records **who did what** - every API call, with the identity, time, and source IP of the actor. "Which IAM user deleted this S3 bucket, from what IP, and when?" That's a CloudTrail question, because a deletion is an API call.
 
 **AWS Config** records **what changed** - the configuration state and history of your resources, and whether they stay compliant with rules like "encryption must be enabled." "Is this bucket encrypted, and show me a timeline of when its setting changed?" That's a Config question.
 
@@ -183,7 +184,7 @@ These all "protect web apps," so they cluster together. Each defends a different
 
 **AWS WAF** (Web Application Firewall) inspects incoming HTTP/HTTPS requests and lets you write rules to block **application-layer (layer 7)** threats like SQL injection, cross-site scripting, and bad IP ranges. Content filtering by rules is its job.
 
-**AWS Firewall Manager** is the **multi-account manager**. Sitting on top of AWS Organizations, it centrally configures and enforces WAF rules and Shield protections across dozens of accounts at once.
+**AWS Firewall Manager** is the **multi-account manager**. Sitting on top of [AWS Organizations](/blog/aws-cloud-practitioner-mcq/15-aws-organizations-multi-account-governance), it centrally configures and enforces WAF rules and Shield protections across dozens of accounts at once.
 
 The quick splits:
 
@@ -239,4 +240,4 @@ The whole secret to AWS security services is this: **don't memorize what each to
 
 Master that, and the crowded shelf of security services becomes a tidy row of labeled tools.
 
-Once you can tell these apart, a natural next question appears: who is actually *allowed* to use each one? That's where IAM policies, roles, and the principle of least privilege come in - the layer that decides not what a service does, but who gets to touch it. That's worth exploring next.
+Once you can tell these apart, a natural next question appears: who is actually *allowed* to use each one? That's where [IAM policies, roles, and the principle of least privilege](/blog/aws-cloud-practitioner-mcq/04-iam-identity-access-management) come in - the layer that decides not what a service does, but who gets to touch it. That's worth exploring next.

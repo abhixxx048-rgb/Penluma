@@ -36,6 +36,7 @@ order: 999
 icon: "\U0001F3AF"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -64,7 +65,7 @@ To keep this concrete, we'll follow a running example: a small software product 
 
 Before any survey, remember this: **what people say they'll pay is the weakest evidence there is.** People over-promise in surveys because saying yes is free.
 
-A real click on a priced "start trial" button, a real credit card, or a real "that's reasonable" in a live conversation is worth ten survey answers. So lean on **revealed** behavior first, and use surveys to fill in the picture.
+A real click on a priced "start trial" button, a real credit card, or a real "that's reasonable" in [a live conversation](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself) is worth ten survey answers. So lean on **revealed** behavior first, and use surveys to fill in the picture.
 
 With that warning in place, let's look at the methods, from the lightest to the heaviest.
 
@@ -107,7 +108,7 @@ Imagine twelve shop owners answer the four questions. After plotting, the crossi
 
 So the acceptable range is roughly **$76 to $102**, with the sweet spot near $90. That's a clean skeleton for three tiers:
 
-- A **headline tier at $99**, a hair under the ceiling. The classic "anchor high, then offer a discount on annual" move.
+- A **headline tier at $99**, a hair under the ceiling. The classic ["anchor high](/blog/business-financial-literacy/09-pricing-psychology-pricing-with-confidence), then offer a discount on annual" move.
 - A cheaper **entry tier** below the floor, but *only* as a deliberate land-and-expand play, fenced with fewer features so it doesn't drag the brand down to "cheap and nasty."
 - A **premium tier above the range**, sold on capability to buyers who shop on features, not price.
 
@@ -181,13 +182,13 @@ Here's a concrete sequence for an early-stage product, lightest and cheapest fir
 
 1. **This week, run a fake-door price test.** Put up a real pricing page with a live trial button and split your traffic across two or three prices (say $49, $99, $149). Watch which one holds clicks. If the $99 page keeps clicks within about 20% of the $49 page, you're underpricing at $49.
 
-2. **This week, anchor ten sales calls.** Before stating your price, get the buyer to put a dollar figure on their pain ("how much is all that manual quoting costing you a month?"). Then state your price as a fraction of that number and listen. "That's nothing" means test higher. A thoughtful pause means you're near their ceiling, which is good. An immediate flinch means you're over the line or the value isn't landing. Log every reaction.
+2. **This week, anchor ten sales calls.** Before stating your price in those [discovery conversations](/blog/sales-customer-development/07-running-a-great-discovery-call-start-to-finish), get the buyer to put a dollar figure on their pain ("how much is all that manual quoting costing you a month?"). Then state your price as a fraction of that number and listen. "That's nothing" means test higher. A thoughtful pause means you're near their ceiling, which is good. An immediate flinch means you're over the line or the value isn't landing. Log every reaction.
 
 3. **Over the next few weeks, run a Van Westendorp survey.** You only need about 30 to 50 responses from real decision-makers for a directional read. Use open numeric entry, never a dropdown, because a dropdown anchors people to your numbers. Build the chart in a spreadsheet and read off your floor, ceiling, and sweet spot.
 
 4. **Right after, run Gabor-Granger.** Use your Van Westendorp range to bracket the price ladder, then ladder past your respondents to find the revenue peak. Apply an honest haircut to the take-rates.
 
-5. **Ask your early users the disappointment question.** "How would you feel if you could no longer use this?" If at least 40% say "very disappointed," that's a strong product-market-fit signal. Then ask that segment, and only that segment, what monthly price would feel fair. Their answers are the ones that matter.
+5. **Ask your early users the disappointment question.** "How would you feel if you could no longer use this?" If at least 40% say "very disappointed," that's a strong signal you've [validated real demand](/blog/how-to-make-money/11-finding-a-real-problem-validating-demand). Then ask that segment, and only that segment, what monthly price would feel fair. Their answers are the ones that matter.
 
 6. **Price on value, not on your costs.** Anchor every conversation on the labor and lost sales you replace, never on your hosting bill. If a $99 plan saves a customer six hours a week of work, the price is a rounding error against what that time costs them.
 
@@ -197,4 +198,4 @@ Here's a concrete sequence for an early-stage product, lightest and cheapest fir
 
 If you remember one thing, make it this: **pricing research isn't about finding a perfect number. It's about finding the acceptable range and the right thing to charge per, then confirming with real behavior.** Van Westendorp draws the box, Gabor-Granger finds the peak inside it, and a live trial button keeps everyone honest.
 
-The number you land on is only half the story, though. The other half is your **value metric**, the unit you charge per, because that quiet choice shapes how fair your price feels and how your revenue grows as your customers grow. Charge per the wrong thing and even a perfect price will feel like a penalty. That's the question worth chasing next.
+The number you land on is only half the story, though. The other half is your **value metric**, [the unit you charge per](/blog/personal-money-mastery/12-pricing-value-capture), because that quiet choice shapes how fair your price feels and how your revenue grows as your customers grow. Charge per the wrong thing and even a perfect price will feel like a penalty. That's the question worth chasing next.

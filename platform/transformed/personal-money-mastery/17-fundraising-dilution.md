@@ -24,6 +24,7 @@ order: 16
 icon: "\U0001F4B0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 faq:
   - q: What is dilution in a startup?
     a: Dilution is the shrinking of your ownership percentage when you issue new shares to investors. If you own 100% and sell 20% to an investor, you now own 80%. Each new round shrinks your slice further, even though the company is usually worth more.
@@ -60,7 +61,7 @@ Investor money has one honest job: to fund a **growth bet with a clear return**.
 
 What it should *not* do is quietly cover losses you haven't fixed yet.
 
-Here's a sharp filter, from investor Paul Graham: the **default-alive vs default-dead** test. Look at your current revenue growth and your spending. Will you reach profitability on the cash you already have?
+Here's a sharp filter, from investor Paul Graham: the **default-alive vs default-dead** test. Look at your current revenue growth and your spending. Will you [reach profitability](/blog/personal-money-mastery/14-unit-economics) on the cash you already have?
 
 - **Default-alive:** Yes, you'll get there on your own. Raise only if it genuinely accelerates a path you'd take anyway.
 - **Default-dead:** No, you'll run out. Fix the business first. Raising into a leaky bucket just dilutes you to fund the leak.
@@ -73,7 +74,7 @@ You can hand investors ownership in two broad ways: **price it now** or **price 
 
 ### Price it now: the priced round
 
-You agree on a valuation today and issue shares immediately. It's the slowest and most expensive route because it involves full legal diligence and a hard negotiation over what the company is worth right now. This is standard from Series A onwards.
+You agree on a [valuation](/blog/personal-money-mastery/09-valuation-basics) today and issue shares immediately. It's the slowest and most expensive route because it involves full legal diligence and a hard negotiation over what the company is worth right now. This is standard from Series A onwards.
 
 ### Price it later: convertibles
 
@@ -155,7 +156,7 @@ By Series B or C, most founders hold low double-digit percentages. That's normal
 
 This is the single most expensive sentence in many term sheets, and most first-time founders don't catch it.
 
-An **ESOP pool** (Employee Stock Ownership Pool) is a set of shares reserved to grant to future hires. You need one. The trap is *when* it gets created.
+An [**ESOP pool**](/blog/personal-money-mastery/11-equity-ownership-esops-vesting-dilution) (Employee Stock Ownership Pool) is a set of shares reserved to grant to future hires. You need one. The trap is *when* it gets created.
 
 VCs almost always demand the pool be created **pre-money**. That one word quietly shifts the entire cost of the pool onto you alone.
 
@@ -211,7 +212,7 @@ In a modest exit, a participating preference can leave founders walking away wit
 3. **Do the post-money math yourself.** For any offer, calculate Investment ÷ Post-money to see the investor's real slice, then layer in the option pool before you react to the valuation.
 4. **Attack the option pool clause.** Ask for a smaller pool sized to your true 12-18 month hiring plan, or push for it to be created post-money. This single negotiation can save you several points of ownership.
 5. **Insist on 1x non-participating liquidation preference.** Treat participating preferences as a red flag worth fighting over.
-6. **Explore non-dilutive options before selling equity.** Revenue-based financing (players like Velocity and GetVantage let you repay a fixed percentage of monthly revenue up to a cap of roughly 1.3-1.5x), venture debt to extend runway, bootstrapping, and grants like the Startup India Seed Fund or SIDBI. Customer pre-payments are free money with zero dilution.
+6. **Explore non-dilutive options before selling equity.** Revenue-based financing (players like Velocity and GetVantage let you repay a fixed percentage of monthly revenue up to a cap of roughly 1.3-1.5x), venture debt to [extend runway](/blog/personal-money-mastery/16-burn-runway), bootstrapping, and grants like the Startup India Seed Fund or SIDBI. Customer pre-payments are free money with zero dilution.
 
 ## Conclusion
 

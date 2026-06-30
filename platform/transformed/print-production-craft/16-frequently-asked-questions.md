@@ -51,6 +51,7 @@ order: 15
 icon: "\U0001F4D0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -80,9 +81,9 @@ Think of it like cooking. Offset is a catering kitchen: huge effort to set up, t
 
 Your screen makes color by emitting **light**, mixing Red, Green, and Blue (**RGB**). That's an *additive* system, and bright glowing colors come easily.
 
-Print makes color by laying down **ink** that absorbs light, mixing Cyan, Magenta, Yellow, and Black (**CMYK**). That's a *subtractive* system, and it simply can't reproduce some of the vivid blues, greens, and oranges a screen can glow. So a neon screen-blue prints duller. Normal physics, not a defect.
+Print makes color by laying down **ink** that absorbs light, mixing Cyan, Magenta, Yellow, and Black (**CMYK**). That's a *subtractive* system, and it simply can't reproduce some of the [vivid blues, greens, and oranges](/blog/computer-graphics-print/05-gamut-out-of-gamut-handling-deep-dive) a screen can glow. So a neon screen-blue prints duller. Normal physics, not a defect.
 
-The fix is threefold: design and proof in CMYK, use a shared **color profile** (like GRACoL in the US or FOGRA in Europe) so everyone aims at the same target, and have your software warn customers the moment they upload an RGB file.
+The fix is threefold: design and proof in CMYK, use a shared [**color profile**](/blog/computer-graphics-print/03-color-management-icc-profiles-the-pipeline) (like GRACoL in the US or FOGRA in Europe) so everyone aims at the same target, and have your software warn customers the moment they upload an RGB file.
 
 ## Picking paper: GSM in plain terms
 
@@ -107,7 +108,7 @@ There are three zones to think about:
 - **Trim** - the final size
 - **Safe zone** - keep important text about 3 mm inside the trim so it isn't sliced off
 
-Your preflight code should confirm uploaded files actually include bleed. Most don't, unless you tell people to add it.
+Your [preflight](/blog/computer-graphics-print/13-preflight-validating-a-file-before-it-prints) code should confirm uploaded files actually include [bleed](/blog/computer-graphics-print/15-finishing-document-geometry-bleed-trim-safe-area). Most don't, unless you tell people to add it.
 
 ## Reading printer shorthand: "4/4" and "4/0"
 
@@ -169,7 +170,7 @@ Large signage viewed from far away can use far less (72 to 150 DPI) because dist
 
 ### Pantone and spot colors
 
-CMYK builds colors by overlapping four inks, which can drift slightly batch to batch. A **Pantone / spot color** is a single pre-mixed ink with a standardized recipe (a PMS number), so a brand red is identical everywhere.
+CMYK builds colors by overlapping four inks, which can drift slightly batch to batch. A [**Pantone / spot color**](/blog/computer-graphics-print/06-ink-on-the-page-spot-colors-overprint-black-generation) is a single pre-mixed ink with a standardized recipe (a PMS number), so a brand red is identical everywhere.
 
 You need spot colors for brand consistency, metallics, fluorescents, or colors CMYK simply can't reach. They add a press unit and cost, so treat them as a paid option, mostly on offset.
 
@@ -215,7 +216,7 @@ If you're modeling print in software, here's a concrete starting checklist:
 5. **Model finishing as options with constraints** - for example, enforce page counts divisible by four for saddle-stitch.
 6. **Use a clear status spine** customers understand: `Order Received → File Check (Preflight) → Approved / Proof Sent → In Production → Finishing → Quality Check → Shipped → Delivered`. Add side states for **Action Needed**, **On Hold**, and **Cancelled/Refunded**, and log every transition (who, what, when) for support and disputes.
 
-You don't need to do **imposition** math (arranging pages on a big sheet so they end up in the right order after folding and cutting) or **batching** (grouping same-stock, same-size jobs to share setup). But capture the attributes that let a shop do it: size, stock, color setup, and finishing.
+You don't need to do [**imposition**](/blog/computer-graphics-print/14-imposition-binding-arranging-pages-on-the-sheet) math (arranging pages on a big sheet so they end up in the right order after folding and cutting) or **batching** (grouping same-stock, same-size jobs to share setup). But capture the attributes that let a shop do it: size, stock, color setup, and finishing.
 
 ## Conclusion
 

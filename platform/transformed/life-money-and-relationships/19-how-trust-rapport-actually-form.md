@@ -53,6 +53,7 @@ faq:
       "tactics" look identical - the only difference is intent, and people can feel it.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: life-money-and-relationships
 topicTitle: 'Life, Money & Relationships'
 category: Thinking & Decisions
@@ -62,7 +63,7 @@ icon: "\U0001F331"
 sources: []
 ---
 
-You can know exactly who to call. You can have the most generous intentions in the world. But if people don't trust you, nothing moves - no introductions, no advice, no opportunities, no friendship.
+You can know exactly who to call. You can have the most generous intentions in the world. But if people don't trust you, nothing moves - no introductions, no advice, [no opportunities](/blog/life-money-and-relationships/27-how-opportunities-hires-advice-really-flow), no friendship.
 
 Here's the freeing part: trust is not magic, and it's not charisma you're born with. It's built from a handful of specific ingredients, in a specific way, over time. Once you can see those ingredients, you can stop hoping people will like you and start understanding exactly why they do.
 
@@ -72,7 +73,7 @@ Most people treat trust as a personality lottery - you either have "it" or you d
 
 But trust is an outcome you can engineer, one component and one kept promise at a time. That changes everything. It means rapport isn't a gift reserved for naturally charming people. It's a skill, and a learnable one.
 
-This matters whether you're building a team, growing a community, closing a deal, or just trying to turn acquaintances into real friends. Every one of those depends on the same root system. Get the root system right and everything above it grows.
+This matters whether you're building a team, growing a community, closing a deal, or just trying to [turn acquaintances into real friends](/blog/life-money-and-relationships/22-building-genuine-connection-going-deeper). Every one of those depends on the same root system. Get the root system right and everything above it grows.
 
 ## The Trust Equation: trust broken into parts you can work on
 
@@ -97,7 +98,7 @@ Think about dividing. Divide by a big number and the answer shrinks fast. So you
 
 This explains why the fastest way to *lower* trust is to make every conversation about you: your product, your needs, your pitch. People feel it instantly.
 
-It also points to the quickest lever to *raise* trust: lower your self-orientation. Be genuinely curious about the other person. Listen more than you talk. Stop making it about you.
+It also points to the quickest lever to *raise* trust: lower your self-orientation. Be genuinely curious about the other person. [Listen more than you talk](/blog/life-money-and-relationships/21-conversation-deep-listening). Stop making it about you.
 
 The second under-used lever is **intimacy**. Most people only pull the "professional" levers - credibility and reliability - and skip the human connection that actually speeds trust up. You build intimacy by being a little open yourself and by making it safe for others to be open with you. Never by faking closeness.
 
@@ -150,10 +151,10 @@ Two ideas from psychologist Robert Cialdini's work on influence are central to g
 
 **Reciprocity** is our wired-in instinct to return favors. When someone does something for us, we feel a pull to give back. To use it *honestly*:
 
-- **Be first to give.** Don't wait to be asked.
+- **[Be first to give.](/blog/life-money-and-relationships/17-the-right-mindset-give-first-authentic-long-term)** Don't wait to be asked.
 - **Make it personal and unexpected.** These two qualities massively amplify the effect. Generic giving barely registers.
 
-The trick is to give real, unexpected value - then *release* the expectation. The return often comes anyway, from directions you didn't predict.
+The trick is to [give real, unexpected value](/blog/life-money-and-relationships/24-giving-value-reciprocity-without-keeping-score) - then *release* the expectation. The return often comes anyway, from directions you didn't predict.
 
 ### Liking - the multiplier
 

@@ -39,6 +39,7 @@ order: 999
 icon: "\U0001F680"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -56,7 +57,7 @@ Get this right and you build a calm, compounding business. Get it wrong and you 
 
 ## Price for the buyer, not the spreadsheet
 
-The person buying your software is usually the owner. They are not a procurement team. They want a price they can understand in five seconds and budget for next month. That single fact should shape everything about your pricing.
+The person buying your software is usually the owner. They are not a procurement team. They want a price they can understand in five seconds and budget for next month. That single fact should shape everything about [your pricing](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive).
 
 ### Charge for something they can count
 
@@ -93,7 +94,7 @@ Neither is "right." If you serve nervous, non-technical owners, no-card trials f
 
 ### A quiet trick: the reverse trial
 
-A **reverse trial** starts everyone on the full premium experience for a limited time, then drops them to a thin free tier (or asks them to buy). Losing something you already have is about twice as motivating as gaining something new - so people convert to keep what they had. Airtable made this famous.
+A **reverse trial** starts everyone on the full premium experience for a limited time, then drops them to a thin free tier (or asks them to buy). Losing something you already have is [about twice as motivating as gaining something new](/blog/psychology-of-decisions/08-prospect-theory-behavioral-economics-how-we-weigh-gains-losses-risk) - so people convert to keep what they had. Airtable made this famous.
 
 The bonus: hesitant owners who would have churned instead fall back to a permanent free plan, and you can win them back later.
 
@@ -148,7 +149,7 @@ But that lock-in only exists if the data and the daily workflow *genuinely* live
 
 ## The numbers behind sustainable growth
 
-You do not need to be a finance person to run a healthy SaaS business, but you do need to respect a few unit-economics truths.
+You do not need to be a finance person to run a healthy SaaS business, but you do need to respect a few [unit-economics truths](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale).
 
 ### Measure lifetime value honestly
 
@@ -180,7 +181,7 @@ Channel costs roughly stack up like this, cheapest to most expensive: **referral
 
 ## Turn happy customers into your sales team
 
-This is the highest-leverage move in the whole playbook. In a tight trade where everyone knows everyone, a recommendation travels faster and lands harder than any ad.
+This is the highest-leverage move in the whole playbook. In a tight trade where everyone knows everyone, a [recommendation travels faster and lands harder than any ad](/blog/how-to-make-money/15-distribution-beats-product).
 
 ### Make the offer two-sided and in-product
 
@@ -219,7 +220,7 @@ One caution: referrals **amplify** word-of-mouth, they do not manufacture it. If
 
 ## Proof from peers, not pitches
 
-Small business owners distrust software marketing on instinct. They trust what other owners in their trade already use. So your job is to put real peer proof in front of them.
+Small business owners distrust software marketing on instinct. They [trust what other owners in their trade already use](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy). So your job is to put real peer proof in front of them.
 
 - **Collect named, specific case studies.** *"Smith Signs cut quote turnaround from two days to ten minutes and grew online orders 30 percent,"* with the owner's name, photo, and a quick phone-shot video, beats any abstract feature list. Specific, named testimonials convert far better than vague anonymous ones.
 - **Get past zero reviews.** Products with five or more reviews are dramatically more likely to be chosen than products with none. For small business tools, prioritize the review sites your customers actually browse over enterprise-focused ones.

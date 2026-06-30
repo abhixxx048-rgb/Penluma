@@ -30,6 +30,7 @@ faq:
     a: It is money you set aside a little each month for a big, predictable expense you know is coming, like an annual insurance premium or festival spending. It stops those bills from blowing up a single month's budget.
   - q: What is lifestyle inflation and how do I avoid it?
     a: Lifestyle inflation is when your spending quietly rises to match every pay raise, so you never get ahead. Beat it by pre-committing a fixed share of each raise straight to investing before you upgrade your life.
+linked: true
 topic: life-money-and-relationships
 topicTitle: 'Life, Money & Relationships'
 category: Thinking & Decisions
@@ -51,7 +52,7 @@ Wealth comes from one stubbornly simple idea: **spend less than you earn and inv
 
 Here is the part nobody tells you. A budget is not about restriction or guilt. It is about **awareness**. It is a map that tells your money where to go, instead of leaving you to wonder where it went.
 
-Two people earning the exact same salary can end up in completely different places ten years apart. The difference is rarely income. It is almost always whether they could see their own cash flow clearly enough to direct it.
+Two people earning the exact same salary can end up in completely different places ten years apart. [The difference is rarely income](/blog/life-money-and-relationships/01-money-mindset-the-goal-of-personal-finance). It is almost always whether they could see their own cash flow clearly enough to direct it.
 
 ## First, the words you actually need
 
@@ -104,7 +105,7 @@ This is the easiest on-ramp. You split your **take-home pay** - the money that a
 | **Wants** | 30% | Dining out, subscriptions, travel, gadgets, lifestyle |
 | **Savings & debt payoff** | 20% | Investments, emergency fund, extra loan prepayment |
 
-When you see **SIP** in that savings bucket, it just means a *Systematic Investment Plan* - an instruction to invest a fixed amount automatically every month, usually into a mutual fund. For now, read it as "automatic monthly investing."
+When you see **SIP** in that savings bucket, it just means a *Systematic Investment Plan* - an instruction to invest a fixed amount automatically every month, usually into a [mutual fund](/blog/life-money-and-relationships/09-mutual-funds-index-funds-sips-the-core-engine). For now, read it as "automatic monthly investing."
 
 > **Common mistake:** Budgeting off your *gross* salary. If your advertised package is large but a smaller amount actually hits your account after tax and deductions, you must budget on what you *receive*. Budgeting off the bigger number guarantees you overspend.
 
@@ -173,7 +174,7 @@ Instead of a large insurance bill blowing up one month, you save a small slice e
 
 **Lifestyle inflation** (or "lifestyle creep") is the silent killer. As your income rises, your spending quietly rises to match - so you never actually get ahead. The person who doubled their income but still feels broke has been eaten by it.
 
-> **The fix:** When income rises, route a *fixed percentage of every raise straight to investing before you upgrade your lifestyle.* Enjoy *some* of the raise - just decide the split in advance, while you are still rational.
+> **The fix:** When income rises, route a *fixed percentage of every raise straight to [investing](/blog/life-money-and-relationships/08-asset-classes-the-building-blocks-of-investing) before you upgrade your lifestyle.* Enjoy *some* of the raise - just decide the split in advance, while you are still rational.
 
 > **Example:** Your monthly income jumps by 30,000. Pre-commit: 20,000 goes straight into investments, 10,000 to lifestyle. You still feel richer, but two-thirds of the raise builds your future instead of inflating your fixed costs forever.
 
@@ -189,10 +190,10 @@ Instead of a large insurance bill blowing up one month, you save a small slice e
 
 One reassurance before you start: a budget is not a one-time thing you "get right." It is a living habit you refine. You will overspend some months. That does not mean you failed - it means you have data. Adjust and continue. The goal is never a perfect month; it is a positive *trend*, month after month.
 
-These ideas travel, too. The 50/30/20 rule was popularised in the 2005 book *All Your Worth* by Elizabeth Warren and Amelia Warren Tyagi. Wherever you live, "pay yourself first" is the same habit - someone automating into a retirement account is doing exactly what someone automating a monthly investment does. Same principle, different wrapper.
+These ideas travel, too. The 50/30/20 rule was popularised in the 2005 book *All Your Worth* by Elizabeth Warren and Amelia Warren Tyagi. Wherever you live, "pay yourself first" is the same habit - someone automating into a [retirement account](/blog/life-money-and-relationships/11-retirement-tax-advantaged-accounts-in-india) is doing exactly what someone automating a monthly investment does. Same principle, different wrapper.
 
 ## Conclusion
 
 Here is the one line to keep: **a budget tells your money where to go, instead of leaving you to wonder where it went.** Everything else - the rules, the apps, the buckets - is just plumbing around that single idea.
 
-Once you can see your cash flow clearly, a sharper question appears. That savings bucket you are now protecting - where should it actually live, and how hard should it be working for you? A pile of money sitting idle in a bank account quietly loses value to inflation every year. Knowing where your money goes is step one. Knowing where to *send* it next is where wealth really begins.
+Once you can see your cash flow clearly, a sharper question appears. That savings bucket you are now protecting - where should it actually live, and how hard should it be working for you? A pile of money sitting idle in a bank account quietly [loses value to inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) every year. Knowing where your money goes is step one. Knowing where to *send* it next is where wealth really begins.

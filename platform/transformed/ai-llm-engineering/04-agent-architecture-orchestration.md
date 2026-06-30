@@ -32,6 +32,7 @@ faq:
     a: MCP is an open standard from Anthropic that lets an agent discover and securely call external tools and data through one uniform interface, instead of hand-coding glue for each integration. It is often described as the USB-C for AI tools.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: ai-llm-engineering
 topicTitle: AI & LLM Engineering
 category: AI & LLMs
@@ -61,7 +62,7 @@ Choosing the right level of autonomy is the first and most consequential decisio
 
 **An augmented LLM** is a plain model given three new powers. It is the building block of everything agentic:
 
-- **Retrieval** is the model's ability to look things up, generating its own search query and reading the result. Think of it as a list of facts it never memorized.
+- **Retrieval** is the model's ability to look things up, [generating its own search query and reading the result](/blog/ai-llm-engineering/03-context-engineering-retrieval). Think of it as a list of facts it never memorized.
 - **Tools** are the model's hands, letting it call external functions like a weather API or a database query.
 - **Memory** is the model's notepad, letting it jot down what matters and re-read it later.
 
@@ -166,7 +167,7 @@ A generator produces a candidate, an evaluator critiques it against criteria and
 
 Autonomy brings the defining reliability problem of multi-step systems: **compounding error.** Per-step reliability multiplies.
 
-A 20-step task at 95 percent reliability per step succeeds only about **36 percent** of the time (0.95 to the 20th power). Push each step to 99 percent and you get about **82 percent**, more than doubling end-to-end success. So the levers that matter most are *fewer steps*, *verifying intermediate results*, and *isolating work* so one bad step cannot poison the rest.
+[A 20-step task at 95 percent reliability per step](/blog/agent-orchestration/agent-orchestration-06-reliability-eval-obs) succeeds only about **36 percent** of the time (0.95 to the 20th power). Push each step to 99 percent and you get about **82 percent**, more than doubling end-to-end success. So the levers that matter most are *fewer steps*, *verifying intermediate results*, and *isolating work* so one bad step cannot poison the rest.
 
 Here are the practices that fight it:
 
@@ -179,7 +180,7 @@ Here are the practices that fight it:
 
 A few myths quietly cause most agent disasters.
 
-**"More agents means more intelligence."** Reality: multi-agent setups multiply cost roughly 15-fold and fragment work across separate context windows. They shine on parallel research and hurt on tasks needing shared context, like most coding.
+**"More agents means more intelligence."** Reality: multi-agent setups [multiply cost roughly 15-fold](/blog/agent-orchestration/agent-orchestration-07-cost-performance) and fragment work across separate context windows. They shine on parallel research and hurt on tasks needing shared context, like most coding.
 
 **"The model executes its own tools."** Reality: it only requests them. Your validated code runs everything. If you skip validation, you hand a model direct control over your systems.
 
@@ -207,20 +208,20 @@ One more principle from security: **least privilege.** Give a tool only the acce
 
 The top rung is **multi-agent**: a lead agent that plans, spawns parallel **subagents** (each with its own clean context window and a bounded task), and synthesizes their short summaries.
 
-Anthropic's production research system beat a single-agent setup by over 90 percent on internal research evals, but it burns roughly **15 times the tokens of a chat**. It wins on breadth-first, parallelizable, read-heavy search, like "find all board members across S&P 500 IT companies." It *hurts* on tasks needing tightly shared context, like coding, where subagents in separate windows cannot see each other's work and end up duplicating or contradicting.
+Anthropic's production research system beat a single-agent setup by over 90 percent on internal research evals, but it burns roughly **15 times the tokens of a chat**. It wins on [breadth-first, parallelizable, read-heavy search](/blog/agent-orchestration/agent-orchestration-00-index), like "find all board members across S&P 500 IT companies." It *hurts* on tasks needing tightly shared context, like coding, where subagents in separate windows cannot see each other's work and end up duplicating or contradicting.
 
 There are two orchestration shapes:
 
 - **Manager (agents as tools).** A central agent calls specialists as bounded tools, keeps control, and writes *one* coherent answer. Use this when several specialists' results must combine into a single voice. It is a general contractor who hires subs, collects their work, and presents the finished house.
 - **Handoff.** An agent transfers *full ownership* of the conversation to a peer specialist, who then owns the final response. Use this for clean routing, like a triage agent passing a ticket to billing. It is a relay race: once you pass the baton, the next runner owns the race to the finish.
 
-Two open standards are emerging for the plumbing. **MCP (Model Context Protocol)**, Anthropic's open standard, is the "USB-C for AI": it lets an agent discover and securely call external tools and data through one uniform interface, instead of hand-coding glue for each. **A2A (Agent2Agent)**, Google's protocol, sits a layer up, letting agents publish a capability "card" and delegate tasks to each other. In short: **MCP connects an agent to its tools; A2A connects agents to other agents.**
+[Two open standards](/blog/agent-orchestration/agent-orchestration-03-communication-protocols) are emerging for the plumbing. **MCP (Model Context Protocol)**, Anthropic's open standard, is the "USB-C for AI": it lets an agent discover and securely call external tools and data through one uniform interface, instead of hand-coding glue for each. **A2A (Agent2Agent)**, Google's protocol, sits a layer up, letting agents publish a capability "card" and delegate tasks to each other. In short: **MCP connects an agent to its tools; A2A connects agents to other agents.**
 
 ## You cannot ship agents on vibes: evaluation and guardrails
 
 Agents are non-deterministic, so the same prompt can give different runs. Three disciplines make them production-worthy.
 
-**Evaluation.** Start with end-to-end task success ("did we meet the user's goal?"), then do *error analysis* to find the *first* place things went wrong. Use **LLM-as-judge**, an LLM scoring another's output against a rubric. Anthropic found a single prompt emitting a 0.0 to 1.0 score plus pass/fail more reliable than ensembles of specialized judges. You can start with just 20 realistic queries; early changes often move scores enough to see in tiny samples.
+**Evaluation.** Start with [end-to-end task success](/blog/ai-llm-engineering/02-evaluation-measurement) ("did we meet the user's goal?"), then do *error analysis* to find the *first* place things went wrong. Use **LLM-as-judge**, an LLM scoring another's output against a rubric. Anthropic found a single prompt emitting a 0.0 to 1.0 score plus pass/fail more reliable than ensembles of specialized judges. You can start with just 20 realistic queries; early changes often move scores enough to see in tiny samples.
 
 **Guardrails.** Layer them, defense in depth. *Input* guardrails sanitize incoming content on *every* turn, not just the first. *Output* guardrails filter results before the user sees them. *Tool* guardrails check each individual call. And gate irreversible, high-stakes actions, sending money, deleting data, outbound email, behind a **human-in-the-loop checkpoint**, a pause for approval that is both a safety control and cheap insurance against compounding errors.
 

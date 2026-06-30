@@ -23,6 +23,7 @@ order: 19
 icon: "\U0001F310"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 faq:
   - q: What is the most important fallacy of distributed computing?
@@ -55,7 +56,7 @@ The engineers who stay calm during those incidents are not smarter. They just ca
 
 ## The 8 fallacies: assumptions that will burn you
 
-Decades ago, engineers at Sun Microsystems noticed that newcomers kept making the same wrong assumptions about networks. They wrote them down. Every single one is **false**:
+Decades ago, engineers at Sun Microsystems noticed that newcomers kept making the same [wrong assumptions about networks](/blog/distributed-systems/13-why-distributed-systems-are-hard). They wrote them down. Every single one is **false**:
 
 1. The network is reliable
 2. Latency is zero
@@ -89,7 +90,7 @@ Your actual job is to **stop faults from turning into failures**. One bad disk s
 
 Here's a question that sounds trivial until it isn't: did event A happen before event B?
 
-On a single machine, easy. There's one clock and one timeline. Across machines, there is no shared "now." Every server's clock drifts slightly, and you cannot trust wall-clock time to order events. (NTP, the protocol that syncs clocks, narrows the gap but never closes it. Assume milliseconds of error, always.)
+On a single machine, easy. There's one clock and one timeline. Across machines, there is no shared "now." Every server's clock drifts slightly, and you cannot [trust wall-clock time to order events](/blog/distributed-systems/14-time-clocks-the-ordering-of-events). (NTP, the protocol that syncs clocks, narrows the gap but never closes it. Assume milliseconds of error, always.)
 
 So instead of physical time, distributed systems use **logical ordering** based on cause and effect. The rule is called **happens-before**, written A → B:
 
@@ -117,7 +118,7 @@ A **Lamport clock** is cheap: just one number. It gives you a consistent total o
 
 A **vector clock** carries more (a number for every node), but in exchange it can tell you exactly how any two events relate: A before B, B before A, or concurrent.
 
-To compare two vectors: if every slot of V1 is ≤ V2 and at least one is strictly less, then A → B. If some slots are bigger and others smaller, the events are **concurrent**. That comparison is how systems detect conflicting writes that need merging.
+To compare two vectors: if every slot of V1 is ≤ V2 and at least one is strictly less, then A → B. If some slots are bigger and others smaller, the events are **concurrent**. That comparison is how systems [detect conflicting writes that need merging](/blog/distributed-systems/15-vector-clocks-causality).
 
 ## CAP and PACELC: the trade-off you cannot escape
 
@@ -125,7 +126,7 @@ This is the most quoted and most misquoted idea in the field. Here's the honest 
 
 **CAP:** during a network **partition** (when nodes can't reach each other), you must choose between **consistency** (every read sees the latest write) and **availability** (every request gets an answer). You cannot have both while the network is split.
 
-On real networks, partitions *will* happen, so partition tolerance isn't optional. That means CAP really boils down to one choice during a split: **C or A**.
+On real networks, partitions *will* happen, so partition tolerance isn't optional. That means CAP really boils down to [one choice during a split](/blog/distributed-systems/16-the-cap-theorem-and-pacelc): **C or A**.
 
 - A **CP system** refuses some requests during a partition rather than serve stale data. It prefers being correct over being available.
 - An **AP system** always answers, even if the data might be stale, and reconciles later. It prefers being available over being perfectly fresh.
@@ -136,7 +137,7 @@ A real example: a shopping cart is usually built **AP**. If two data centers bri
 
 ## The consistency ladder: from strict to relaxed
 
-"Consistency" isn't one thing. It's a ladder, from strongest and most expensive at the top to weakest and cheapest at the bottom.
+"Consistency" isn't one thing. It's a ladder, [from strongest and most expensive at the top to weakest and cheapest at the bottom](/blog/distributed-systems/17-consistency-models).
 
 | Model | The promise, in plain English |
 |-------|-------------------------------|
@@ -175,4 +176,4 @@ When you design or debug a distributed system, walk through these checks:
 
 If you take one thing from this page, take this: **the network is not reliable, and a slow message looks exactly like a lost one.** Almost every hard distributed systems problem unfolds from that single fact. Design as if silence tells you nothing, because it doesn't.
 
-Once that clicks, a natural next question appears: if nodes can't trust the network or each other, how do they ever *agree* on anything - like who's the leader, or what the next entry in the log is? That's the world of consensus algorithms like Paxos and Raft, and it's where these fundamentals turn into real machinery worth exploring next.
+Once that clicks, a natural next question appears: if nodes can't trust the network or each other, how do they ever *agree* on anything - like who's the leader, or what the next entry in the log is? That's the world of [consensus algorithms like Paxos and Raft](/blog/distributed-systems/07-multi-paxos-raft-vs-paxos-the-real-world), and it's where these fundamentals turn into real machinery worth exploring next.

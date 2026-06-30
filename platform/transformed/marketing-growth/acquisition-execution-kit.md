@@ -57,6 +57,7 @@ order: 999
 icon: "\U0001F680"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -70,11 +71,11 @@ This is that plan, step by step.
 
 Most early-stage founders make the same mistake. They reach for scale before they have proof. They buy a cold-email tool, blast a thousand strangers, run a few ads, and watch the money drain while the inbox stays silent.
 
-The truth is that **your first customers are won by hand, not at scale.** Manual outreach feels slow and unglamorous, but it does two things automation can never do. It actually gets replies. And it teaches you exactly why people buy or hesitate, which is the single most valuable thing you can learn this early.
+The truth is that **your first customers are won by hand, not at scale.** Manual outreach feels slow and unglamorous, but it does two things automation can never do. It actually gets replies. And it teaches you exactly [why people buy or hesitate](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself), which is the single most valuable thing you can learn this early.
 
 Think of these first weeks as research disguised as selling. Every conversation throws off information you will reuse forever: the words people use, the competitors they name, the fears that stop them. Skip this, and you are guessing at everything that comes later.
 
-This playbook runs on roughly 12 to 15 focused hours a week. It splits into two "bets" you run in parallel: founder-led outreach for cash now, and free SEO assets that compound quietly in the background.
+This playbook runs on roughly 12 to 15 focused hours a week. It splits into two "bets" you run in parallel: [founder-led outreach](/blog/sales-customer-development/13-founder-led-outreach-getting-the-conversations) for cash now, and free SEO assets that compound quietly in the background.
 
 ## Bet 1: Founder-led outreach (the cash engine)
 
@@ -100,7 +101,7 @@ A plain spreadsheet is your CRM for now. Track the shop, the owner, contact deta
 
 Here is the whole edge of this approach. **Words cannot convey "your brand, live, in a real product." A 60-second screen recording can.**
 
-Before you reach out, build a tiny personalized demo for each top prospect. Drop in their logo. Match their brand colors. Add two or three of the things they actually sell. It takes about ten minutes per prospect, and that ten minutes is your competitive advantage.
+Before you reach out, build a tiny [personalized demo](/blog/sales-customer-development/10-the-demo-show-value-without-overselling) for each top prospect. Drop in their logo. Match their brand colors. Add two or three of the things they actually sell. It takes about ten minutes per prospect, and that ten minutes is your competitive advantage.
 
 Then record a short, casual screen recording walking through it as if you made it just for them, because you did. Something like:
 
@@ -136,7 +137,7 @@ What kills you in a small niche is spam. One drive-by "check out my tool" link, 
 
 This is the real deliverable of your first month, more valuable than the early sales.
 
-Every time someone pushes back or hesitates, write it down: the date, the source, and their **exact words.** Then tag it: price, "I already use X," too complex, no time, trust, missing feature, not ready.
+Every time someone [pushes back or hesitates](/blog/sales-customer-development/11-handling-objections-with-honesty), write it down: the date, the source, and their **exact words.** Then tag it: price, "I already use X," too complex, no time, trust, missing feature, not ready.
 
 This log quietly writes your whole funnel:
 
@@ -187,4 +188,4 @@ The single takeaway is this: **your first customers are earned one real conversa
 
 So do the unscalable thing, on purpose, for six weeks.
 
-And once you have ten reference customers and a fat objection log, a more interesting question opens up: when do you stop selling one by one and start building a machine that sells for you? That handoff, from founder hustle to repeatable growth, is where the real leverage hides, and knowing the exact moment to make it is the next thing worth mastering.
+And once you have ten reference customers and a fat objection log, a more interesting question opens up: when do you stop selling one by one and start building a machine that sells for you? That handoff, from [founder hustle to repeatable growth](/blog/sales-customer-development/15-building-the-muscle-process-pipeline-habit), is where the real leverage hides, and knowing the exact moment to make it is the next thing worth mastering.

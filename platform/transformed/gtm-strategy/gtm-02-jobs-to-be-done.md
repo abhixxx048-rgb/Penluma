@@ -36,6 +36,7 @@ order: 999
 icon: "\U0001F3AF"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Outcome-driven_innovation
 ---
@@ -94,7 +95,7 @@ A job has three layers stacked on top of each other:
 - **Emotional** - how the person wants to *feel* while doing it. *"Not stressed. In control. Competent."*
 - **Social** - how they want to be *seen* by others. *"A real, professional business - not a hobbyist with a Gmail address."*
 
-Most vendors sell only the functional layer, then wonder why the "objectively better" product loses. For a lot of buyers, the emotional and social layers are what actually decide the purchase.
+Most vendors sell only the functional layer, then wonder why the "objectively better" product loses. For a lot of buyers, the emotional and social layers are [what actually decide the purchase](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy).
 
 ### A worked example: the quoting job
 
@@ -157,14 +158,14 @@ How you dismantle each resisting force:
 
 ## The switch interview: how to find the real job
 
-You can't guess the job from your desk. You have to excavate it from people who recently lived it. The tool for that is the **switch interview**.
+You can't guess the job from your desk. You have to [excavate it from people who recently lived it](/blog/sales-customer-development/03-customer-development-get-out-of-the-building). The tool for that is the **switch interview**.
 
 A switch interview reconstructs the *timeline* of one real purchase decision, in forensic detail, from the very first thought to today. You're a documentary detective, not a survey-taker.
 
 The rules that make it work:
 
 1. **Interview recent switchers.** People who bought or adopted within the last 60 to 90 days, while the memory is still fresh and specific.
-2. **Anchor to a real moment.** *"Walk me back to the day you first thought there had to be a better way."* Never hypotheticals like *"would you want a feature that…"*
+2. **Anchor to a real moment.** *"Walk me back to the day you first thought there had to be a better way."* [Never hypotheticals](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself) like *"would you want a feature that…"*
 3. **Trace the whole arc:** the first thought, the passive looking, the active looking, the deciding moment, the first use, and life now.
 4. **Chase emotion.** When their voice changes, dig in. Ask "what else?" and learn to tolerate silence instead of filling it.
 
@@ -196,7 +197,7 @@ Some examples:
 
 > When a walk-in hands me a photo and says "make it look like this," I want them to design their own finished artwork before they commit, **so I can** stop giving away free design work to people who don't buy.
 
-> When a new customer is deciding between me and the franchise downtown, I want my store to look as polished as theirs, **so I can** win the job without competing on price alone.
+> When a new customer is deciding between me and the franchise downtown, I want my store to look as polished as theirs, **so I can** win the job without [competing on price alone](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive).
 
 A quick quality check before you trust a job story:
 
@@ -218,7 +219,7 @@ Researchers Tony Ulwick and Lance Bettencourt studied hundreds of jobs and found
 7. **Modify** - adjust and correct as needed.
 8. **Conclude** - finish, close out, and deliver.
 
-The trick is to map the *entire* job, not just the part your product touches. That's how you spot where customers still struggle today.
+The trick is to map the *entire* job, not just the part your product touches. That's how you [spot where customers still struggle today](/blog/clear-thinking-and-expression/23-turning-observations-into-opportunities-jtbd-gap-analysis).
 
 When you do this honestly, a pattern usually emerges: you're strong on some steps and weak on others. And here's the strategic insight - the weak step that generates the most **anxiety** during the buying decision punches far above its weight, even if it's not your headline feature.
 

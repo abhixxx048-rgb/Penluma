@@ -39,6 +39,7 @@ order: 4
 icon: "\U0001FA99"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -87,7 +88,7 @@ Naval's blunt test: *if society can train you, it can train someone else, and re
 
 In *So Good They Can't Ignore You*, Cal Newport calls your stockpile of rare, valuable skills your **career capital** - the currency you trade for high pay, autonomy, and interesting work. His advice is to adopt a *craftsman mindset* (relentlessly get better at hard things) rather than chase the *passion hypothesis* ("just follow your passion"). Passion, he argues, follows mastery - not the other way around.
 
-Here is the freeing part: **you do not need to be the world's number one at anything.** You stack skills instead.
+Here is the freeing part: **you do not need to be the world's number one at anything.** You [stack skills](/blog/how-to-make-money/06-building-a-high-income-skill) instead.
 
 Being in the top 25% at *two or three* complementary skills makes you a category of one. Decent backend coding, plus decent copywriting, plus deep knowledge of one boring industry - each ingredient is ordinary, but the **intersection** is rare. For a software founder, "an engineer who deeply understands a dull niche" is a far rarer and richer profile than "a great engineer."
 
@@ -119,9 +120,9 @@ The escape is **zero marginal cost**.
 | Income | hours × rate (capped) | decouples from your hours |
 | While you sleep | earns nothing | keeps earning |
 
-Naval's prescription is to **productize yourself**: take your specific knowledge and wrap it in something that scales - software, a course, a digital product, an audience. The *same* expertise that capped a consultant at 1 crore can, as a product, serve every new customer at near-zero cost.
+Naval's prescription is to **productize yourself**: take [your specific knowledge](/blog/how-to-make-money/09-specific-knowledge-your-personal-moat) and wrap it in something that scales - software, a course, a digital product, an audience. The *same* expertise that capped a consultant at 1 crore can, as a product, serve every new customer at near-zero cost.
 
-That single shift - consultant to product - is the spine of this whole idea.
+That single shift - [consultant to product](/blog/how-to-make-money/10-products-vs-time-escaping-the-trap) - is the spine of this whole idea.
 
 ## Leverage: the exponent on your judgment
 
@@ -134,7 +135,7 @@ That single shift - consultant to product - is the spine of this whole idea.
 | **Code** | Software runs for you | **No** - build it yourself |
 | **Media** | Content sells for you | **No** - publish it yourself |
 
-Code and media are the **permissionless** levers - an army of robots and content that works while you sleep. You need nobody's blessing to write a program or publish a post, and both carry zero marginal cost. This is why so much new wealth is built on code and media.
+Code and media are the **permissionless** levers - an army of robots and content that works while you sleep. You need nobody's blessing to write a program or publish a post, and both carry zero marginal cost. This is why so much new wealth is built on [code and media](/blog/how-to-make-money/04-leverage-the-real-secret).
 
 But there is a trap worth naming. Leverage multiplies *whatever judgment you feed it* - including bad judgment. Code can scale a flawed product to a million unhappy users overnight. **Judgment is the base; leverage is the exponent.** A negative base raised to a big power just gets more negative. Earn the judgment first.
 
@@ -150,7 +151,7 @@ The takeaway: **pay tracks attributable value plus risk borne, not effort expend
 
 ## From value to ownership: equity and scaling in India
 
-The highest rung is owning a slice of the value you help create, instead of renting out your time.
+The highest rung is [owning a slice of the value you help create](/blog/how-to-make-money/17-equity-ownership-the-windfall-path), instead of renting out your time.
 
 **ESOPs - the upgrade from salary to ownership.** An ESOP (Employee Stock Ownership Plan) is the right to buy company shares at a fixed "strike" price. It is how an employee captures **equity** - accountability plus leverage - instead of pure time-for-money. In India, ESOPs are taxed at two stages: first as a *perquisite* when you exercise (the fair market value minus your strike price, taxed as salary), and again as capital gains when you sell. Employees of DPIIT-recognised eligible startups can also defer that first tax for up to 48 months, on sale, or on leaving - whichever comes first. The exact rates shift with each budget, so confirm the current numbers before you act.
 
@@ -187,4 +188,4 @@ The single thing to carry with you: **pay rewards rarity, demand, and scalabilit
 
 Most people will spend their whole lives adding hours to a number that is mathematically capped. You now know where the ceiling is and where the door out of the room sits.
 
-And here is the thread worth pulling next: scalability and leverage are how you *earn* money without trading time - but earning is only half the machine. The other half is what happens to the money after it arrives. The same zero-marginal-cost logic that lets code work while you sleep has a financial cousin that lets *money* work while you sleep. That cousin is compounding - and it quietly decides who keeps the wealth they build.
+And here is the thread worth pulling next: scalability and leverage are how you *earn* money without trading time - but earning is only half the machine. The other half is what happens to the money after it arrives. The same zero-marginal-cost logic that lets code work while you sleep has a financial cousin that lets *money* work while you sleep. That cousin is [compounding](/blog/how-to-make-money/18-making-money-with-money-cash-flow-assets-compounding) - and it quietly decides who keeps the wealth they build.

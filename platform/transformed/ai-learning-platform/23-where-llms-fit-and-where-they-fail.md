@@ -38,6 +38,7 @@ order: 22
 icon: "\U0001F393"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -101,13 +102,13 @@ The difference is measurable. Studies of the Khanmigo tutor found that students 
 
 Ask the same model for "a medium question" twice and you may get one trivial item and one brutal one. It has no built-in sense of *this* learner's level, so difficulty drifts at random.
 
-That breaks the **just-right challenge** - what learning science calls the *Zone of Proximal Development*, the sweet spot that is hard enough to stretch the learner but not so hard they give up. You can't hit that target if the difficulty is a coin flip.
+That breaks the **just-right challenge** - what learning science calls the [*Zone of Proximal Development*](/blog/ai-learning-platform/11-zone-of-proximal-development-scaffolding-worked-examples), the sweet spot that is hard enough to stretch the learner but not so hard they give up. You can't hit that target if the difficulty is a coin flip.
 
 ### 5. No memory of the learner
 
 This is the deepest flaw. By itself, an LLM starts every conversation fresh. It does not remember that yesterday the student mastered fractions but kept slipping on negative signs.
 
-Without memory it cannot sequence a curriculum, schedule reviews, or know when someone has truly "got it." It is a brilliant tutor with no recollection of ever having met you.
+Without memory it cannot [sequence a curriculum](/blog/ai-learning-platform/20-sequencing-what-comes-next-and-when-to-review), schedule reviews, or know when someone has truly "got it." It is a brilliant tutor with no recollection of ever having met you.
 
 ## Common misconceptions
 
@@ -167,10 +168,10 @@ When you design or evaluate any AI tutor, run it through these checks.
 
 1. **Ask the three questions.** Where does *correctness* come from? Where does *memory* come from? Where does *teaching strategy* come from? If the honest answer to all three is "the model just decides," you have a chatbot. If each answer points to a deliberate part of your system, you have a product.
 2. **Keep math out of the model.** Route every calculation, count, or unit conversion to a calculator or code, then let the model phrase the verified result.
-3. **Ground every factual claim.** Feed the model your trusted sources via RAG, instruct it to answer only from them, and add a grounding check that confirms each claim is supported before it reaches the learner.
+3. **Ground every factual claim.** Feed the model your trusted sources via [RAG](/blog/ai-learning-platform/24-turning-a-pdf-into-a-course-rag-for-learning), instruct it to answer only from them, and add a grounding check that confirms each claim is supported before it reaches the learner.
 4. **Write the anti-cheat rules into the system prompt.** Make "ask, don't tell," "one hint at a time," and "have the learner explain their reasoning" non-negotiable standing instructions.
-5. **Store a persistent student model.** Track what each learner has mastered, what they keep missing, and when a review is due. Pass that into every prompt so the tutor remembers and so it can pick the right difficulty instead of guessing.
-6. **Let the layer choose the task; let the model word it.** Difficulty and skill selection belong to your student model and knowledge graph. The LLM's job is to make the chosen task sound human.
+5. **Store a [persistent student model](/blog/ai-learning-platform/18-learner-models-teaching-the-machine-what-the-student-knows).** Track what each learner has mastered, what they keep missing, and when a review is due. Pass that into every prompt so the tutor remembers and so it can pick the right difficulty instead of guessing.
+6. **Let the layer choose the task; let the model word it.** Difficulty and skill selection belong to your student model and [knowledge graph](/blog/ai-learning-platform/19-knowledge-graphs-and-curriculum-generation). The LLM's job is to make the chosen task sound human.
 
 ## Conclusion
 

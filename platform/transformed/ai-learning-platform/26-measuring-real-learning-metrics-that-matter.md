@@ -48,6 +48,7 @@ order: 25
 icon: "\U0001F393"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -94,7 +95,7 @@ If you only chase two things, chase these.
 
 ### Transfer: can they actually use it?
 
-**Transfer of learning** means the learner can use what they learned in a new situation, not just repeat it back. It comes in two flavors.
+**[Transfer of learning](/blog/ai-learning-platform/04-knowing-vs-understanding-vs-remembering-a-month-later)** means the learner can use what they learned in a new situation, not just repeat it back. It comes in two flavors.
 
 - **Near transfer** is applying knowledge to a situation that closely resembles where you learned it. You practiced solving x + 3 = 7, and now you solve x + 5 = 9.
 - **Far transfer** is applying it to a context that looks unrelated. You use planning skills learned in chess to make a smarter business decision.
@@ -107,7 +108,7 @@ The thing parents are actually paying for is far transfer: can the learner handl
 
 Learning that vanishes in a week was never really learning.
 
-Back in 1885, Hermann Ebbinghaus mapped the **forgetting curve**, which shows memory decaying sharply after study unless it is reinforced. A related finding, the **spacing effect**, shows that spreading practice across several days produces far more durable memory than cramming the same minutes into one sitting, even though cramming *feels* more productive.
+Back in 1885, Hermann Ebbinghaus mapped the **[forgetting curve](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve)**, which shows memory decaying sharply after study unless it is reinforced. A related finding, the **[spacing effect](/blog/ai-learning-platform/03-how-humans-learn-a-plain-tour-of-memory)**, shows that spreading practice across several days produces far more durable memory than cramming the same minutes into one sitting, even though cramming *feels* more productive.
 
 So the honest measure is a **delayed retention test**: weeks after the lesson, with no warning and no chance to re-study.
 
@@ -138,7 +139,7 @@ Notice that loving the class tells you nothing about whether dinner improved.
 
 **Summative assessment** is assessment *of* learning. It is a higher-stakes measure at the *end* that judges what was ultimately learned.
 
-An AI tutor's superpower is formative assessment at massive scale. It can check understanding after every step and instantly adapt. That is genuinely valuable.
+An AI tutor's superpower is [formative assessment at massive scale](/blog/ai-learning-platform/15-practice-exercises-and-adaptive-quizzes). It can check understanding after every step and instantly adapt. That is genuinely valuable.
 
 But you still need a separate, external, delayed summative measure to judge honestly whether the tutor worked.
 
@@ -165,7 +166,7 @@ A bathroom scale stuck 10 pounds heavy is reliable, since it gives the same numb
 
 **"If the post-test score went up, it worked."** A same-day post-test captures short-term, crammable performance. Without a delayed test, you cannot tell durable learning from fast-fading memory.
 
-**"The AI generated the quiz, so the quiz is fine."** A language model can produce questions that are perfectly consistent yet answerable by pattern-matching the wording of the prompt rather than by understanding the concept. Reliable, repeatable, and wrong. AI-written items still need a validity check.
+**"The AI generated the quiz, so the quiz is fine."** A language model can produce questions that are perfectly consistent yet answerable by pattern-matching the wording of the prompt rather than by understanding the concept. Reliable, repeatable, and wrong. [AI-written items](/blog/ai-learning-platform/25-keeping-the-ai-accurate-and-pedagogically-sound) still need a validity check.
 
 **"Mastery on the tutor equals mastery in general."** If the tutor only tests variants of what it just taught, "mastery" means near transfer at most. It is the tutor grading its own homework.
 

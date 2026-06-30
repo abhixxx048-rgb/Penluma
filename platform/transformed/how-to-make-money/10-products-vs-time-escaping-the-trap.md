@@ -38,6 +38,7 @@ author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Marginal_cost
+linked: true
 ---
 
 You want to earn more, so you do the obvious thing: work more hours, or charge a higher rate. It works. For a while. Then you hit a wall that no amount of skill or hustle can climb over, because the wall is built into the math itself.
@@ -68,11 +69,11 @@ Here is the picture that makes it click. Selling time is like carrying water fro
 
 A product is a pipe. You dig it once, and water flows whether you are standing there or not.
 
-The investor Naval Ravikant puts it bluntly: *"You're not going to get rich renting out your time. You must own equity, a piece of a business, to gain financial freedom."* A product is the simplest, most accessible piece of equity you can build with your own two hands.
+The investor Naval Ravikant puts it bluntly: *"You're not going to get rich renting out your time. You must own equity, a piece of a business, to gain financial freedom."* A product is the simplest, most accessible [piece of equity](/blog/how-to-make-money/17-equity-ownership-the-windfall-path) you can build with your own two hands.
 
 ## Wealth, money, and status are not the same thing
 
-People chase "more money" when what they actually want is wealth. They are not the same, and confusing them keeps you on the treadmill.
+People chase "more money" when what they actually want is [wealth](/blog/how-to-make-money/16-income-vs-wealth-owning-vs-working). They are not the same, and confusing them keeps you on the treadmill.
 
 - **Wealth** is assets that earn money while you sleep: a business, software, a course, royalties, equity. They keep working when you stop.
 - **Money** is just how we transfer time and wealth. It is the medium, not the goal. Your salary is money, but the skill that earns it is not wealth, because it stops the moment you do.
@@ -84,7 +85,7 @@ The whole game is the move from **"I am the product"** to **"I own a product."**
 
 ## Leverage that needs nobody's permission
 
-**Leverage** simply means getting a larger output from the same input. Naval describes a few forms of it, and the difference between them is everything.
+[**Leverage**](/blog/how-to-make-money/04-leverage-the-real-secret) simply means getting a larger output from the same input. Naval describes a few forms of it, and the difference between them is everything.
 
 - **Labour** means people work for you. To use it, someone has to agree to follow you. It needs permission.
 - **Capital** means money works for you. To use it, someone has to agree to fund you. It needs permission.
@@ -111,7 +112,7 @@ For a digital product, the cost of one more unit drops to almost nothing.
 
 Think about Microsoft Office. Say it costs roughly 10 million dollars to build. The cost of letting one more person download the 1,000th copy is a few cents of bandwidth.
 
-The entire game is reaching break-even. After that, each sale drops nearly straight to profit. A service can never do this, because every new client consumes a fresh chunk of someone's day.
+The entire game is reaching [break-even](/blog/business-financial-literacy/10-break-even-margins-profitability). After that, each sale drops nearly straight to profit. A service can never do this, because every new client consumes a fresh chunk of someone's day.
 
 ## Common misconceptions
 
@@ -141,7 +142,7 @@ The middle rung is the one most people skip, and it is the smartest move you can
 
 2. **Turn the repeatable bits into an asset.** Once your workflow is standardized, you can package the parts that don't need you: templates, checklists, a short course, a tool. A 299-rupee student-planner template made in Canva over a weekend and listed on Gumroad or Payhip, selling just 5 copies a day, brings in roughly 45,000 rupees a month with near-zero cost per extra sale. A 499-rupee two-hour workshop, marketed entirely through Instagram DMs, can earn around 18,000 rupees in its first month.
 
-3. **Lead with specific knowledge.** Naval's recipe is to arm yourself with **specific knowledge** (the kind that can't be trained into you and feels like play), accountability, and leverage. A product with no real expertise behind it is just a commodity racing to the bottom.
+3. **Lead with specific knowledge.** Naval's recipe is to arm yourself with [**specific knowledge**](/blog/how-to-make-money/09-specific-knowledge-your-personal-moat) (the kind that can't be trained into you and feels like play), accountability, and leverage. A product with no real expertise behind it is just a commodity racing to the bottom.
 
 4. **Fund the runway, don't leap into the void.** Let your service or salary income pay the bills while you build. The path is service, then productized service, then product, not a blind jump off the cliff.
 
@@ -153,4 +154,4 @@ The single idea worth keeping: **your time has a ceiling, but an asset does not.
 
 You don't have to gamble to do it. Start with the skill you already have, box it up, and turn the repeatable parts into a product, one rung at a time.
 
-But here is the question that decides whether any of this works: once you have built the thing, how do strangers ever find it? Because the file is the easy part. Distribution is where the real money, and the real challenge, begins.
+But here is the question that decides whether any of this works: once you have built the thing, how do strangers ever find it? Because the file is the easy part. [Distribution](/blog/how-to-make-money/15-distribution-beats-product) is where the real money, and the real challenge, begins.

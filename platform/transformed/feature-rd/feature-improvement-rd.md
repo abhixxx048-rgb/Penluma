@@ -29,6 +29,7 @@ faq:
   - q: How do I find silent failures in my own product?
     a: Trace every "success" message back to the line of code that writes the data. If the message can appear before the write is confirmed, or when the write returns an error, you have found one.
 topic: feature-rd
+linked: true
 topicTitle: Feature R&D
 category: Business & Growth
 date: '2026-06-02'
@@ -70,7 +71,7 @@ In code, this shows up as a success message that fires *before* the server confi
 
 A drop on a Kanban board commits a real status change, then logs `success` to a developer console no user will ever see. When the server replies "actually, no" (a `200` response that still carries `ok: false`), the card stays moved on screen and nothing rolls back.
 
-**The fix is a mindset:** never celebrate until the server confirms. Read the real response body, not just the HTTP status. If the server says no, undo the optimistic change and tell the user plainly.
+**The fix is a mindset:** never celebrate until the server confirms. Read the real response body, not just [the HTTP status](/blog/system-design/03-api-design-and-communication). If the server says no, undo the optimistic change and tell the user plainly.
 
 ### Costume 2: The guard that never guards
 
@@ -82,7 +83,7 @@ This is a classic **incompleteness shown but not enforced.** The intention is in
 
 A failed analytics load shows a tidy dashboard full of zeros. There is a perfectly good error screen with a Retry button sitting right there in the code, but the failure never sets the flag that would show it.
 
-**An empty state means "there is genuinely nothing here." A failed load means "we couldn't reach your data."** Showing zeros for the second one is the most reassuring lie your product can tell, because zeros look like calm, real information.
+**[An empty state](/blog/product-sense-empathy/10-evaluating-usability-nielsen-rsquo-s-10-heuristics) means "there is genuinely nothing here." A failed load means "we couldn't reach your data."** Showing zeros for the second one is the most reassuring lie your product can tell, because zeros look like calm, real information.
 
 ### Costume 4: Destructive actions with no confirmation
 
@@ -99,7 +100,7 @@ Not always. Plenty of APIs return a `200 OK` with a body that says `ok: false` o
 Loading and empty are the easy two-thirds. The error path is the one teams consistently skip, usually by routing failures into a console log no user sees. If you can't name what your UI does when the request fails, you haven't built it.
 
 **"Optimistic UI is faster, so it's better."**
-Optimistic UI (updating the screen before the server confirms) is great for speed, but only if you also build the rollback. Optimism without a plan for being wrong is just lying quickly.
+[Optimistic UI](/blog/product-sense-empathy/06-closing-the-gulfs-action-feedback-the-seven-stages) (updating the screen before the server confirms) is great for speed, but only if you also build the rollback. Optimism without a plan for being wrong is just lying quickly.
 
 **"A success toast is enough feedback."**
 A success toast that fires on intent rather than on confirmation is worse than no toast, because it actively teaches the user to trust a failure.
@@ -118,7 +119,7 @@ You don't need 40 reviewers. You need one honest afternoon and this checklist.
 
 5. **Put rollback behind every optimistic update.** If the screen changes before the server agrees, write the code that puts it back when the server disagrees.
 
-6. **Name the consequence before destructive actions.** Not just "Are you sure?" but "This will cancel the order and email the customer." Reserve instant, no-confirm actions for things that are trivially reversible.
+6. **Name the consequence before [destructive actions](/blog/product-sense-empathy/15-common-mistakes-anti-patterns-pitfalls).** Not just "Are you sure?" but "This will cancel the order and email the customer." Reserve instant, no-confirm actions for things that are trivially reversible.
 
 7. **Make guards actually gate.** If a status says "incomplete" or "suspended," find the line that's supposed to block the action and confirm it really does. A flag nobody checks is decoration.
 

@@ -56,6 +56,7 @@ faq:
       an object, so you can restore a previous copy after an accidental delete or
       overwrite.
 author: Pritesh Yadav (priteshyadav444)
+linked: true
 transformed: true
 sources: []
 ---
@@ -84,7 +85,7 @@ Let's take them one at a time.
 
 Think of S3 as a giant valet parking lot for whole files. You hand over a complete file (an **object**), you get a ticket (a **key**), and you retrieve the whole thing later through a request over the network. You never reach in and edit the middle of a file the way you would on a hard drive.
 
-That is the core contrast the exam tests. **Object storage** (S3) keeps each file as a complete unit, bundled with its metadata and key, reached through an API or a URL. **Block storage** (EBS) hands you raw blocks you mount and format like a physical disk, so a database can write to any spot at any time.
+That is the core contrast the exam tests. **Object storage** (S3) keeps each file as a complete unit, bundled with its metadata and key, reached through an API or a URL. **Block storage** (EBS) hands you raw blocks you mount and format like a physical disk, so a [database](/blog/aws-cloud-practitioner-mcq/11-amazon-rds-managed-relational-databases) can write to any spot at any time.
 
 So when a question says "mount it," "format it," or "database needs low latency," it is pointing at block storage, not S3. When it says "share a file over a link" or "virtually unlimited capacity, no servers," it is pointing at S3.
 
@@ -93,7 +94,7 @@ So when a question says "mount it," "format it," or "database needs low latency,
 This is the quartet that trips people up. Here is the plain-language version:
 
 - **S3 (object):** Files over HTTP, effectively unlimited, no servers. Great for backups, static sites, sharing files via URL.
-- **EBS (block):** A virtual hard drive for **one** EC2 instance. Format it, run a database on it, and it survives the instance stopping.
+- **EBS (block):** A virtual hard drive for **one** [EC2 instance](/blog/aws-cloud-practitioner-mcq/06-amazon-ec2-instances-purchasing-options). Format it, run a database on it, and it survives the instance stopping.
 - **EFS (file):** A shared file system that **many** instances across Availability Zones can mount and read/write at the same time, like a shared network drive.
 - **Instance Store (temporary):** Fast local disk physically attached to the instance, but the data **vanishes** when the instance stops. Only for disposable scratch or cache data.
 
@@ -152,7 +153,7 @@ Two features handle the "over time" questions.
 S3 offers three server-side encryption options, and the exam tells them apart by **who manages the keys**:
 
 - **SSE-S3** - AWS creates, rotates, and manages the keys entirely. Zero effort for you. Pick this when the scenario wants "automatic encryption with no key management."
-- **SSE-KMS** - Keys live in AWS Key Management Service, so **you** control key policies, rotation, and get a full audit trail of every key use via CloudTrail. Pick this when the words "control" or "audit the keys" appear.
+- **SSE-KMS** - Keys live in [AWS Key Management Service](/blog/aws-cloud-practitioner-mcq/05-security-identity-compliance-services), so **you** control key policies, rotation, and get a full audit trail of every key use via [CloudTrail](/blog/aws-cloud-practitioner-mcq/14-aws-cloudtrail-auditing-api-logging). Pick this when the words "control" or "audit the keys" appear.
 - **SSE-C** - **You** supply your own key with every single request. AWS uses it to encrypt and decrypt but never stores it, so you keep full custody. Pick this when "customer provides the key each request and AWS doesn't store it" shows up.
 
 The most common mix-up is SSE-S3 versus SSE-KMS. Both use AWS-managed encryption, but SSE-S3 is hands-off and silent, while SSE-KMS exists precisely so you can govern and audit the keys.
@@ -192,4 +193,4 @@ Read every scenario for the deciding clue - "milliseconds," "single AZ," "audit 
 
 The single takeaway: **S3 questions aren't about memorizing services, they're about reading one decisive clue in the scenario and letting it choose for you.** Frequency and speed pick the storage class. Key ownership picks the encryption. The number of instances picks object, block, or file. Master those triggers and the trivia takes care of itself.
 
-Here's a thread worth pulling next: durability protects a *single* copy of your data, but what happens when an entire AWS Region goes dark, or when you need that data physically close to users on another continent? That's where Cross-Region Replication and the Region-and-Availability-Zone model come in - and they reshape how you think about "safe" all over again.
+Here's a thread worth pulling next: durability protects a *single* copy of your data, but what happens when an entire AWS Region goes dark, or when you need that data physically close to users on another continent? That's where Cross-Region Replication and the [Region-and-Availability-Zone model](/blog/aws-cloud-practitioner-mcq/07-vpc-networking-fundamentals) come in - and they reshape how you think about "safe" all over again.

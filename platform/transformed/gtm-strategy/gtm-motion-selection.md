@@ -30,6 +30,7 @@ faq:
     a: Yes, but only if you segment cleanly by customer. Use self-serve for small accounts and a human for large ones. Blending both motions on the same customer wastes money.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: gtm-strategy
 topicTitle: Go-to-Market Strategy
 category: Business & Growth
@@ -56,7 +57,7 @@ Getting this right early decides three expensive things:
 
 - **Whether you hire salespeople at all** - and when.
 - **Where your marketing budget goes** - ads, content, or pure product.
-- **Whether your unit economics ever close** - the moment a customer earns back what they cost.
+- **Whether your [unit economics](/blog/how-to-make-money/13-unit-economics-does-each-sale-make-money) ever close** - the moment a customer earns back what they cost.
 
 Pick the wrong motion and you can do everything else well and still run out of money. Pick the right one and a small team can punch far above its weight.
 
@@ -127,11 +128,11 @@ The multi-location tier is the first one that approaches the $5,000 line. It des
 
 ### The franchise HQ is the one real "big game" deal
 
-Corporate franchise procurement - buying software for hundreds of units - is the only deal here worth $15,000+ and the only one with a true buying committee (procurement, marketing, operations, IT). It is a Deer edging toward Elephant: long cycle, custom pricing, reference-dependent. It is also **deferred.** You cannot win it without reference customers and a track record, so it comes *after* self-serve has produced proof, never before.
+Corporate franchise procurement - buying software for hundreds of units - is the only deal here worth $15,000+ and the only one with a true [buying committee](/blog/sales-customer-development/08-sales-discovery-frameworks-spin-bant-meddic-and-friends) (procurement, marketing, operations, IT). It is a Deer edging toward Elephant: long cycle, custom pricing, reference-dependent. It is also **deferred.** You cannot win it without reference customers and a track record, so it comes *after* self-serve has produced proof, never before.
 
 ### Some "buyers" are actually channels
 
-Trade printers do not buy a seat - they resell capacity to other shops. That makes them a **distribution channel**, not a customer. Treating a channel partner like a self-serve user is a category error that wastes months. Naming this correctly is half the battle.
+Trade printers do not buy a seat - they resell capacity to other shops. That makes them a **[distribution channel](/blog/how-to-make-money/15-distribution-beats-product)**, not a customer. Treating a channel partner like a self-serve user is a category error that wastes months. Naming this correctly is half the battle.
 
 ## Common misconceptions
 
@@ -149,7 +150,7 @@ Walk these steps in order. Each one narrows your options until the right motion 
 1. **Write down your real annual revenue per customer**, by segment. Not your dream price - the one customers actually pay. If you do not have data yet, mark it as a placeholder and revisit once you do.
 2. **Map each segment to an animal.** Under ~$2,000 a year is firmly Rabbit territory. Around $5,000+ opens the door to a human. Six figures is Elephant country.
 3. **Apply the $5,000 floor.** Any segment below it must be won by self-serve. No exceptions, no "but our reps are really good."
-4. **For segments above the floor, start founder-led.** Let the founder sell before you hire. Hire your first rep only when repeatable volume clearly clears the economics - not when it feels exciting.
+4. **For segments above the floor, start [founder-led](/blog/sales-customer-development/15-building-the-muscle-process-pipeline-habit).** Let the founder sell before you hire. Hire your first rep only when repeatable volume clearly clears the economics - not when it feels exciting.
 5. **Define the handoff signal.** Decide the exact trigger ("multi-location," "pay-on-account requested") that promotes a self-serve user into a human-assisted deal. Make it a flag in the product, not a vibe.
 6. **Pick the no-card trial if you are unknown.** Maximize top-of-funnel volume to feed the Rabbit motion.
 7. **Make the product absorb the hard parts.** Build self-serve import and setup tools so switching and onboarding are features, not human services. Reserve human help for tiers that can pay for it.
@@ -162,7 +163,7 @@ There is one assumption that can quietly invalidate a self-serve plan: **maybe t
 
 A print storefront needs a product catalog, print options, a pricing engine, a design tool, and a live payment gateway. If a non-technical owner genuinely cannot get live in one sitting, you are forced into hand-holding for *everyone* - which breaks the cheap economics that made self-serve work in the first place.
 
-The fix is not to argue about it. It is to **test it cheaply**: put ten to twenty real, non-technical owners through unaided setup and measure how many reach the North Star without help. If they sail through, scale your self-serve spend with confidence. If they stall, you have just learned - for almost no cost - that you need to raise prices and move upmarket *before* you pour money into a motion that cannot hold. Whatever your product, find your version of this test and run it before you scale.
+The fix is not to argue about it. It is to **test it cheaply**: put ten to twenty real, non-technical owners through unaided setup and measure how many reach the North Star without help. If they sail through, scale your self-serve spend with confidence. If they stall, you have just learned - for almost no cost - that you need to [raise prices](/blog/how-to-make-money/14-pricing-value-capture) and move upmarket *before* you pour money into a motion that cannot hold. Whatever your product, find your version of this test and run it before you scale.
 
 ## Conclusion
 

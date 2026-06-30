@@ -30,6 +30,7 @@ faq:
     a: Watching about five real target users will surface roughly 85% of the usability problems in a design, according to Nielsen Norman Group. You learn far more from a handful of real sessions than from a large survey.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: product-sense-empathy
 topicTitle: Product Sense & Empathy
 category: Thinking & Decisions
@@ -85,7 +86,7 @@ It rests on a well-documented bias called the **false-consensus effect** (Ross, 
 
 That bias produces the most dangerous sentence in product development: *"Only someone careless or very different from us could fail to figure this out."* That sentence is the trap. The person who failed is usually right, and the design is wrong.
 
-NN/g's cure is blunt: test with real users, not your colleagues, and stop making assumptions. Your teammates carry the same curse of knowledge you do, so they can never stand in for a shopkeeper who has never seen the screen.
+NN/g's cure is blunt: [test with real users](/blog/product-sense-empathy/13-doing-user-research-interviews-the-mom-test-observation), not your colleagues, and stop making assumptions. Your teammates carry the same curse of knowledge you do, so they can never stand in for a shopkeeper who has never seen the screen.
 
 ## Don't blame the user - blame the design
 
@@ -93,7 +94,7 @@ Don Norman, the cognitive scientist who coined the term "user experience," wrote
 
 Two terms make this precise:
 
-- **Affordance** - a possible action an object permits. A chair affords sitting; a button affords clicking.
+- [**Affordance**](/blog/product-sense-empathy/05-the-psychology-of-obvious-affordances-signifiers-mental-models) - a possible action an object permits. A chair affords sitting; a button affords clicking.
 - **Signifier** - a perceivable signal that tells you *where and how* to act: an arrow, a flat plate that says "push here," a clearly clickable button.
 
 Norman's thesis is liberating: when people struggle, the fault is almost always the **design**, not the person. Yet users blame themselves - "I'm just bad with computers." A screen that needs a manual is a Norman door dressed up in pixels.
@@ -102,7 +103,7 @@ Think of it this way. A good interface is a door whose handle shape alone tells 
 
 ## Understand the job, not the stated preference
 
-Harvard professor Clayton Christensen popularized **Jobs to Be Done (JTBD)**: customers "hire" a product to do a job in their lives. The trick is figuring out the real job, which is often not what people tell you.
+Harvard professor Clayton Christensen popularized [**Jobs to Be Done (JTBD)**](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress): customers "hire" a product to do a job in their lives. The trick is figuring out the real job, which is often not what people tell you.
 
 His milkshake story is the classic example. A fast-food chain wanted to sell more milkshakes. They surveyed customers about flavor, thickness, and sweetness, tweaked the recipe - and nothing changed.
 
@@ -125,7 +126,7 @@ The single phrase to distrust is "I would definitely buy that." Fitzpatrick call
 - **"If it's confusing, the user just needs to read the instructions."** No. A product that needs a manual to be understood has already failed the test. The fix is better design, not better docs.
 - **"My team agrees it's intuitive, so it's intuitive."** Your team shares your curse of knowledge. Their agreement tells you nothing about a first-time user.
 - **"Users told me they want this feature, so I'll build it."** People are unreliable narrators of their own future behavior. Watch what they do; treat what they say as a clue, not a verdict.
-- **"More features means more value."** Often the opposite. Every extra option is another tap a stressed user has to decode.
+- **"More features means more value."** Often the opposite. Every extra option is [another tap a stressed user has to decode](/blog/product-sense-empathy/07-cognitive-load-why-simple-feels-effortless).
 - **"A persona is a stock photo and a fun backstory."** A persona built without research is an "elastic user" who stretches to justify whatever the team already wanted to build.
 
 ## How to use this: build empathy on purpose
@@ -153,4 +154,4 @@ That turns empathy into hard rules:
 
 The one thing to carry away: **the curse of knowledge is your default failure mode, and empathy is the discipline that corrects it.** You will always hear the song. Your job is to keep checking whether the person across the table is only hearing taps - and to redesign until they hear the music too.
 
-This is harder than it sounds, because the gap isn't only about knowledge. It's about emotion under pressure. A user who is rushed, anxious, and one bad screen away from quitting doesn't make the calm, rational choices your mental model assumes. Which raises the next question worth chasing: how do people actually decide when they're stressed, distracted, and short on patience - and how do you design for the messy, impatient brain instead of the tidy one you imagine?
+This is harder than it sounds, because the gap isn't only about knowledge. It's about emotion under pressure. A user who is rushed, anxious, and one bad screen away from quitting doesn't make the calm, rational choices your mental model assumes. Which raises the next question worth chasing: [how do people actually decide when they're stressed, distracted, and short on patience](/blog/psychology-of-decisions/03-how-the-brain-actually-decides-emotion-memory-attention) - and how do you design for the messy, impatient brain instead of the tidy one you imagine?

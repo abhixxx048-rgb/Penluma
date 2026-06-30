@@ -25,6 +25,7 @@ order: 7
 icon: "\U0001FA99"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 faq:
   - q: How do freelancers find their first clients?
     a: Start with your warm network - past employers and colleagues who already trust you convert fastest and pay better. Then become visibly useful in communities where your buyers gather. Use platforms like Upwork only to collect early proof, then move clients to direct relationships.
@@ -59,7 +60,7 @@ Naval has a phrase for this first move: **"productize yourself."** It is worth u
 
 **"Yourself"** is your uniqueness and your accountability. Your name is on the work, so people trust you - and they pay a premium for that trust.
 
-**"Productize"** means adding leverage and what Naval calls **specific knowledge**: knowledge society can't easily train you for. If a skill can be taught in a standard course, it can be hired cheaply. Specific knowledge is the stuff you learn by following genuine curiosity - it "feels like play to you, but looks like work to others."
+**"Productize"** means adding leverage and what Naval calls [**specific knowledge**](/blog/how-to-make-money/09-specific-knowledge-your-personal-moat): knowledge society can't easily train you for. If a skill can be taught in a standard course, it can be hired cheaply. Specific knowledge is the stuff you learn by following genuine curiosity - it "feels like play to you, but looks like work to others."
 
 Here is the honest part, though. Freelancing has a ceiling. You are still trading time for money, and you only have so many hours. Real wealth shows up later, when you **productize and delegate** so income keeps flowing even when you stop working. We will get there at the end.
 
@@ -67,7 +68,7 @@ Picture the ladder:
 
 1. **Sell your hours** - freelancing and consulting. You are here. You trade time for money.
 2. **Productized service** - fixed scope, fixed price, repeatable. You standardize, then delegate.
-3. **Products, media, code** - these work while you sleep. This is permissionless leverage.
+3. **Products, media, code** - these work while you sleep. This is [permissionless leverage](/blog/how-to-make-money/04-leverage-the-real-secret).
 
 Most people never realize rungs two and three exist. You now do.
 
@@ -111,7 +112,7 @@ The play: use a platform to earn your first reviews, then move clients off-platf
 
 ## Pricing: from time to output to outcome
 
-How you price decides your income ceiling more than how hard you work. Here is the eye-opener. Among freelancers earning over $150k a year, roughly **62% use value-based pricing, 28% use retainers, and only 8% bill purely by the hour.** The top earners barely touch the clock.
+How you price decides your income ceiling more than how hard you work. Here is the eye-opener. Among freelancers earning over $150k a year, roughly **62% use [value-based pricing](/blog/how-to-make-money/14-pricing-value-capture), 28% use retainers, and only 8% bill purely by the hour.** The top earners barely touch the clock.
 
 Here are the four models, plainly:
 
@@ -177,13 +178,13 @@ Four fixes break the loop:
 
 This is how you finally stop trading hours for money.
 
-A **productized service** is a service packaged like a product: **fixed scope, fixed price, a standardized repeatable workflow, defined deliverables, and no custom quotes.** Clients pick a tier and buy. It kills the slow, custom-proposal sales cycle entirely.
+A [**productized service**](/blog/how-to-make-money/10-products-vs-time-escaping-the-trap) is a service packaged like a product: **fixed scope, fixed price, a standardized repeatable workflow, defined deliverables, and no custom quotes.** Clients pick a tier and buy. It kills the slow, custom-proposal sales cycle entirely.
 
 Think of it this way. A traditional consultant is like a tailor measuring you for a bespoke suit every time - slow, and you can only serve a few people. A productized service is the rack of standard sizes: S, M, L, fixed price, ready to ship. The rack can serve thousands, and crucially, **it can be run by staff.**
 
 That last part is the whole point. The accounting firm Bean Ninjas packaged bookkeeping into three fixed tiers and reached $100k in revenue in eight months. A podcast editor offers flat plans - 2 episodes a month or 4 episodes a month - instead of quoting every job.
 
-Once the workflow is standardized and documented (in what businesses call SOPs, or standard operating procedures), you can hire someone to run it. That is the moment your income finally decouples from your own hours. It is the bridge to the higher rungs of the ladder.
+Once the workflow is standardized and documented (in what businesses call SOPs, or standard operating procedures), you can [hire someone to run it](/blog/how-to-make-money/20-systems-automation-delegation). That is the moment your income finally decouples from your own hours. It is the bridge to the higher rungs of the ladder.
 
 ## India-specific essentials
 

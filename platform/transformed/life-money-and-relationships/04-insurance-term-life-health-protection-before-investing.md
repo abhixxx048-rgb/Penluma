@@ -38,10 +38,11 @@ order: 3
 icon: "\U0001F331"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
-No emergency fund covers a 40 lakh hospital bill. That is the uncomfortable truth most people discover at the worst possible moment, holding a bill they cannot pay while a doctor waits for an answer. An emergency fund handles the small shocks: a lost client, a broken laptop, a month between paychecks. But some shocks are simply too big for cash to absorb. That is what insurance is for, and it is why this comes before any chapter about investing.
+No emergency fund covers a 40 lakh hospital bill. That is the uncomfortable truth most people discover at the worst possible moment, holding a bill they cannot pay while a doctor waits for an answer. [An emergency fund](/blog/life-money-and-relationships/03-the-emergency-fund-protecting-your-downside) handles the small shocks: a lost client, a broken laptop, a month between paychecks. But some shocks are simply too big for cash to absorb. That is what insurance is for, and it is why this comes before any chapter about investing.
 
 ## Why this matters
 
@@ -65,7 +66,7 @@ This leads to the single rule that prevents most expensive insurance mistakes:
 
 **Insurance is for protection, not investment. Never mix the two.**
 
-Buy pure protection cheaply (term life plus health), and invest your remaining money separately in mutual funds or index funds. Any product that promises to insure you *and* grow your money almost always does both jobs badly. Hold on to that rule. It is the thread that runs through everything below.
+Buy pure protection cheaply (term life plus health), and invest your remaining money separately in [mutual funds or index funds](/blog/life-money-and-relationships/09-mutual-funds-index-funds-sips-the-core-engine). Any product that promises to insure you *and* grow your money almost always does both jobs badly. Hold on to that rule. It is the thread that runs through everything below.
 
 ## Term life insurance: the cheapest important policy you'll buy
 
@@ -111,7 +112,7 @@ A quick tax note: term premiums qualify for a deduction under Section 80C in the
 
 ## Health insurance: non-negotiable, even at 25
 
-In India, most healthcare is paid out of your own pocket, and medical costs rise far faster than ordinary prices. **Medical inflation runs around 12 to 14% per year** (illustrative, verify the current rate). A single serious hospitalization can erase years of savings in a week.
+In India, most healthcare is paid out of your own pocket, and medical costs rise far faster than ordinary prices. **[Medical inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) runs around 12 to 14% per year** (illustrative, verify the current rate). A single serious hospitalization can erase years of savings in a week.
 
 Unlike term life, **everyone needs health insurance**, including a young, single, healthy founder with no dependents. Your body is not waiting for you to have a family before something goes wrong.
 
@@ -150,7 +151,7 @@ That is roughly 4x the cover for a fraction more premium, the best value in all 
 - **Don't rely only on your employer's group cover.** It ends the day the job ends and is often too small. Own a personal policy so you're never uninsured between jobs.
 - **Disclose pre-existing conditions honestly**, same rule as term life.
 
-Tax note: under the old regime, health premiums are deductible under Section 80D, up to 25,000 for self and family, plus 25,000 for parents (50,000 if they're senior citizens), so potentially 75,000 to 1 lakh total. These deductions don't apply under the new default regime, so factor that into your choice. Verify current limits.
+Tax note: under the old regime, health premiums are deductible under [Section 80D](/blog/life-money-and-relationships/12-taxes-made-simple-income-deductions-capital-gains), up to 25,000 for self and family, plus 25,000 for parents (50,000 if they're senior citizens), so potentially 75,000 to 1 lakh total. These deductions don't apply under the new default regime, so factor that into your choice. Verify current limits.
 
 ## Common misconceptions
 
@@ -190,4 +191,4 @@ If you remember one line from all of this, make it this one: **insurance is risk
 
 Get the floor in place (term life if someone depends on you, health insurance no matter what) and you've done the single most important thing in personal finance: you've made sure one bad day can't undo a decade of good ones.
 
-Now the interesting question becomes what to *do* with the money you're no longer overpaying into bloated insurance products. Where does "invest the difference" actually go? That's where index funds, mutual funds, and the quiet power of compounding take over, and it's a far better story than any endowment plan ever sold you.
+Now the interesting question becomes what to *do* with the money you're no longer overpaying into bloated insurance products. Where does "invest the difference" actually go? That's where index funds, mutual funds, and [the quiet power of compounding](/blog/life-money-and-relationships/06-compounding-the-time-value-of-money) take over, and it's a far better story than any endowment plan ever sold you.

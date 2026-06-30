@@ -30,6 +30,7 @@ faq:
     a: "Focus on four durable pillars: evaluation (measuring quality), context engineering and retrieval (feeding the model the right information), agent architecture (multi-step systems with tools), and product judgment (deciding what to build and where the model can be wrong)."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: ai-llm-engineering
 topicTitle: AI & LLM Engineering
 category: AI & LLMs
@@ -127,19 +128,19 @@ That gap is where durable value lives. And it rests on four pillars - each about
 
 ### 1. Evaluation and measurement
 
-Building tests (often called **evals**) that tell you, objectively, whether your AI feature is good - and whether a change made it better or worse. This is the discipline that closes the "can you even tell if the output is good?" gap. It comes first because *without measurement, every other improvement is just a guess.*
+[Building tests (often called **evals**)](/blog/ai-llm-engineering/02-evaluation-measurement) that tell you, objectively, whether your AI feature is good - and whether a change made it better or worse. This is the discipline that closes the "can you even tell if the output is good?" gap. It comes first because *without measurement, every other improvement is just a guess.*
 
 ### 2. Context engineering and retrieval
 
-Deciding precisely what goes into that limited context window: which instructions, which documents, which past messages. **Retrieval** (often called RAG, short for Retrieval-Augmented Generation) means fetching the few relevant facts from a large store and placing them on the model's "desk" at the right moment - instead of hoping it memorized them during training.
+Deciding precisely what goes into that limited context window: which instructions, which documents, which past messages. **Retrieval** (often called RAG, short for Retrieval-Augmented Generation) means [fetching the few relevant facts from a large store](/blog/ai-llm-engineering/03-context-engineering-retrieval) and placing them on the model's "desk" at the right moment - instead of hoping it memorized them during training.
 
 ### 3. Agent architecture and orchestration
 
-Going beyond a single question-and-answer to systems where the model can take multiple steps, use **tools** (call a calculator, search a database, hit an API), check its own work, and recover from failures. **Orchestration** is the conductor logic coordinating those steps.
+Going beyond a single question-and-answer to [systems where the model can take multiple steps](/blog/ai-llm-engineering/04-agent-architecture-orchestration), use **tools** (call a calculator, search a database, hit an API), check its own work, and recover from failures. **Orchestration** is the conductor logic coordinating those steps.
 
 ### 4. AI product judgment
 
-The human wisdom to decide *what to build, where the model is allowed to be wrong, when a person must stay in the loop,* and how to design an honest experience around a tool that sometimes confidently makes things up.
+[The human wisdom to decide](/blog/ai-llm-engineering/05-ai-product-judgment) *what to build, where the model is allowed to be wrong, when a person must stay in the loop,* and how to design an honest experience around a tool that sometimes confidently makes things up.
 
 ### How the pillars fit together
 

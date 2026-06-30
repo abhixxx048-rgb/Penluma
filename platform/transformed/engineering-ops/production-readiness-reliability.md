@@ -37,6 +37,7 @@ icon: "\U0001F6E0️"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 Imagine waking up to a message that the database is gone. Not "slow." Not "degraded." Gone. And there is no backup, no snapshot, no second copy anywhere. Every order, every customer, every payment your business ever processed has vanished, and the only honest answer to "can we get it back?" is no.
@@ -67,9 +68,9 @@ This is why backups sit at the very top of any production-readiness list. Not be
 
 You do not need an enterprise budget. You need layers:
 
-- **Tier 1 - continuous database recovery.** This is the must-have. Tools like **pgBackRest** or **WAL-G** continuously archive your database changes (a weekly full backup plus a steady stream of small change logs), so you can restore to almost any minute in time. This is called **point-in-time recovery (PITR)** - the ability to rewind your database to, say, 3:47 PM yesterday. For a small team, a **managed database with PITR built in** (the kind cloud providers offer) removes most of the work. One warning: free-tier databases often have *no* backups at all, so never trust production data to them.
+- **Tier 1 - continuous database recovery.** This is the must-have. Tools like **pgBackRest** or **WAL-G** continuously archive your database changes (a weekly full backup plus a steady stream of small change logs), so you can restore to almost any minute in time. This is called **point-in-time recovery (PITR)** - the ability to rewind your database to, say, 3:47 PM yesterday. For a small team, a [**managed database with PITR built in**](/blog/aws-cloud-practitioner-mcq/11-amazon-rds-managed-relational-databases) (the kind cloud providers offer) removes most of the work. One warning: free-tier databases often have *no* backups at all, so never trust production data to them.
 - **Tier 2 - an offsite logical copy.** Add a nightly full export to a *separate* storage bucket in a *different* region, encrypted, and locked so it cannot be deleted or overwritten. This is your survival copy if ransomware or a bad delete hits everything else.
-- **Tier 3 - protect the files, not just the database.** If you store customer files (designs, print-ready PDFs), turn on **versioning** (keep old versions when files change) and **replication** (auto-copy to a second location). Make deletes "soft" - quarantine files for a while instead of erasing them instantly.
+- **Tier 3 - protect the files, not just the database.** If you store customer files (designs, print-ready PDFs), turn on **versioning** (keep old versions when files change) and [**replication**](/blog/system-design/08-replication-and-partitioning) (auto-copy to a second location). Make deletes "soft" - quarantine files for a while instead of erasing them instantly.
 
 The classic shorthand is **3-2-1-1-0**: 3 copies, 2 types of media, 1 offsite, 1 immutable, 0 errors when you verify a restore.
 
@@ -85,8 +86,8 @@ It is like a barista taking your payment, then dropping your order ticket on the
 
 ### The fix: real queues, idempotent jobs, and alerts
 
-1. **Move off `sync`.** Use a real queue backed by a persistent store (Redis is the common choice) so jobs run in the background with **retries and a dead-letter list** for failures.
-2. **Make jobs idempotent.** This is the single most important correctness rule. Modern queues deliver "at least once," meaning a job can run twice. So a file-generating job must check first: *does this file already exist for this order?* If yes, reuse it - never regenerate, never re-charge, never re-notify.
+1. **Move off `sync`.** Use [a real queue](/blog/system-design/12-messaging-and-event-driven) backed by a persistent store (Redis is the common choice) so jobs run in the background with **retries and a dead-letter list** for failures.
+2. **Make jobs [idempotent](/blog/system-design/11-distributed-transactions-and-idempotency).** This is the single most important correctness rule. Modern queues deliver "at least once," meaning a job can run twice. So a file-generating job must check first: *does this file already exist for this order?* If yes, reuse it - never regenerate, never re-charge, never re-notify.
 3. **Only enqueue after the data is committed.** A job should never start before the order and payment rows are safely saved, or it may act on data that gets rolled back.
 4. **Bound every job.** Set sensible retry counts, **backoff with jitter** (wait a little longer between each retry, with a random nudge so retries don't stampede), and timeouts. When a job finally fails, mark the order's status and give a human and the customer a recovery path.
 5. **Alert on three signals:** how deep the backlog is, how old the oldest waiting job is, and whether failures are growing. On a revenue-critical queue, a failed job should page a real person.
@@ -107,7 +108,7 @@ You cannot fix what you cannot see. In this platform, one service (the PDF gener
 
 The main backend had local log files but no real-time error alerting. The customer-facing design editor had **zero** error monitoring. So when a paying customer hit a bug mid-design, no one found out unless they complained.
 
-The fix is to **standardize one error-monitoring tool across every app** (Sentry is a popular choice) so failures anywhere become visible. A few practical notes that trip teams up:
+The fix is to **standardize one [error-monitoring tool](/blog/system-design/17-observability-and-operations) across every app** (Sentry is a popular choice) so failures anywhere become visible. A few practical notes that trip teams up:
 
 - **Scrub personal data.** Tag errors by anonymous IDs, never by email, name, or card details.
 - **Upload source maps** so production errors point to readable code, not minified gibberish. (Forgetting this is the most common setup mistake.)

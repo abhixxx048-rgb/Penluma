@@ -46,6 +46,7 @@ faq:
       still need a human to decide.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: computer-graphics-print
 topicTitle: Computer Graphics for Print
 category: Engineering
@@ -79,7 +80,7 @@ Think of it as spell-check and grammar-check for a print file. It catches the me
 Almost every preflight check leans on these two color models, so it's worth 20 seconds to lock them down.
 
 - **CMYK** is the four printing inks a press physically lays down: Cyan, Magenta, Yellow, and blacK. Everything in your file must end up here, plus any named spot inks.
-- **RGB** is the Red, Green, Blue *screen* model. It cannot be printed directly. It has to be converted to CMYK, and that conversion shifts colors, often dulling bright blues, greens, and oranges.
+- **RGB** is the Red, Green, Blue *screen* model. It cannot be printed directly. It has to be converted to CMYK, and [that conversion shifts colors](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color), often dulling bright blues, greens, and oranges.
 
 If you remember nothing else: screens are RGB, presses are CMYK, and the gap between them is where a lot of "but it looked great on my monitor" disasters live.
 
@@ -111,7 +112,7 @@ A font is **embedded** when the file carries the actual letter shapes inside it.
 
 **Bleed** is background artwork extended *past* the trim line. The cutting blade drifts by a millimeter or two on every job, and bleed means that drift cuts into your background instead of leaving a thin white sliver along the edge.
 
-Standard bleed is **0.125 inch (3 mm)** on every side. There is also a **safe zone**: keep text and anything important at least 0.125 inch *inside* the trim, so nothing gets clipped. Preflight confirms the art actually reaches into the bleed area.
+Standard bleed is **0.125 inch (3 mm)** on every side. There is also a **safe zone**: keep text and anything important at least 0.125 inch *inside* the trim, so nothing gets clipped. Preflight confirms [the art actually reaches into the bleed area](/blog/computer-graphics-print/15-finishing-document-geometry-bleed-trim-safe-area).
 
 ### Ink limit (Total Area Coverage)
 
@@ -147,7 +148,7 @@ Three quieter checks that still scrap jobs:
 
 ### Page boxes, the geometry of "print-ready"
 
-A PDF carries several nested boxes that define its sizes. Getting them right is half the battle:
+A PDF carries [several nested boxes that define its sizes](/blog/computer-graphics-print/12-pdf-x-output-intent-page-boxes-the-print-ready-target). Getting them right is half the battle:
 
 - **MediaBox** is the full sheet size.
 - **TrimBox** is the finished page size after cutting. This is the most important box, because it defines your actual print size.
@@ -181,11 +182,11 @@ These tools run in two modes: *report-only*, which flags problems and lets a hum
 
 ## Common misconceptions
 
-**"It looked perfect on my screen, so it'll print fine."** Your screen is RGB and backlit. The press is CMYK ink on paper. Bright colors dull, white overprints vanish, and low-res images that look crisp at laptop size fall apart at print size.
+**"It looked perfect on my screen, so it'll print fine."** Your screen is RGB and backlit. The press is CMYK ink on paper. Bright colors dull, white overprints vanish, and [low-res images that look crisp at laptop size fall apart at print size](/blog/computer-graphics-print/07-raster-vs-vector-resolution-image-quality).
 
 **"My image is 300 dpi, so resolution is handled."** Only at 100 percent placement. Scale it up in the layout and the *effective* resolution drops in lockstep. A "300 dpi" photo placed at 300 percent is really 100 dpi.
 
-**"Black is just black."** There are several blacks. Plain 100 percent K for small text, a rich-black recipe for large solid areas, and 400 percent registration black that belongs only on printer's marks and nowhere near your artwork.
+**"Black is just black."** There are several blacks. Plain 100 percent K for small text, [a rich-black recipe for large solid areas](/blog/computer-graphics-print/06-ink-on-the-page-spot-colors-overprint-black-generation), and 400 percent registration black that belongs only on printer's marks and nowhere near your artwork.
 
 **"Auto-fixup will rescue anything."** It rescues a lot, but it has hard limits. You cannot invent pixels, so a 72 dpi photo can't be made sharp. And an automatic spot-color conversion can shift your brand color. Risky fixes need a human and customer sign-off.
 
@@ -212,4 +213,4 @@ One more tip if you're building software that *shows* these results to non-techn
 
 The one idea to keep: **preflight catches mechanical errors when they're free to fix instead of when they're catastrophic.** It is the boring, automated gate that stands between a clean run and 5,000 wrong sheets, and it costs you nothing but a few minutes and the discipline to run it.
 
-But notice what preflight *can't* do. It confirms your file is printable, not that your colors will look the way you imagined them. A file can pass every check and still come back with a sky that's the wrong shade of blue, because the gap between your screen and the press is its own deep subject. That's where color management and proofing come in, and it's where a lot of the real craft of print actually lives.
+But notice what preflight *can't* do. It confirms your file is printable, not that your colors will look the way you imagined them. A file can pass every check and still come back with a sky that's the wrong shade of blue, because the gap between your screen and the press is its own deep subject. That's where [color management](/blog/computer-graphics-print/03-color-management-icc-profiles-the-pipeline) and proofing come in, and it's where a lot of the real craft of print actually lives.

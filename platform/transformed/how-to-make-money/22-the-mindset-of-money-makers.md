@@ -38,6 +38,7 @@ order: 21
 icon: "\U0001FA99"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -55,7 +56,7 @@ One honest note before we start: mindset is necessary but not sufficient. Circum
 
 ## The master model: compounding
 
-**Compounding** means your gains earn gains on top of themselves - interest on interest, trust on trust, reputation on reputation. The investor and writer Naval Ravikant puts it bluntly: almost all the returns in life, whether wealth, relationships, or knowledge, come from compound interest.
+**Compounding** means your gains earn gains on top of themselves - interest on interest, trust on trust, reputation on reputation. The investor and writer Naval Ravikant puts it bluntly: almost all the returns in life, whether wealth, relationships, or knowledge, come from [compound interest](/blog/how-to-make-money/18).
 
 Compounding needs only two ingredients:
 
@@ -100,7 +101,7 @@ Leverage is a force multiplier: it lets one unit of your effort produce many uni
 - **Permission-based leverage** needs someone to grant it. That's **labour** (people you manage) and **capital** (money investors give you).
 - **Permissionless leverage** needs nobody's approval and almost no money. That's **code and media** - products with near-zero cost to copy.
 
-A blog post, a software feature, or a recorded course works while you sleep and costs nothing to serve the thousandth user. If you have no capital and no team, you still hold the most democratic leverage ever invented. Build specific knowledge first, then point permissionless leverage at it.
+A blog post, a software feature, or a recorded course works while you sleep and costs nothing to serve the thousandth user. If you have no capital and no team, you still hold the most democratic leverage ever invented. Build [specific knowledge](/blog/how-to-make-money/09) first, then point permissionless leverage at it.
 
 Picture a ladder. At the bottom is your own time - renting hours, with a hard income ceiling. Above it sits labour, which needs you to manage people. Above that, capital, which needs investors. At the very top sit code and media: free to copy, no approval required. The higher you climb, the less your earnings are chained to the hours in your day.
 
@@ -108,7 +109,7 @@ Picture a ladder. At the bottom is your own time - renting hours, with a hard in
 
 When Walmart acquired Flipkart in 2018, the share buyback reportedly created over a hundred employee crorepatis. The vehicle was the **ESOP** - an Employee Stock Ownership Plan, the right to buy company shares at a fixed "strike" price.
 
-Imagine an employee holding options at a ₹100 strike that the company later buys back at ₹1,000. On 5,000 shares, that's (₹1,000 − ₹100) × 5,000 = **₹45 lakh** of upside - money no fixed salary, however high, would have produced. Those employees chose uncertain equity over higher cash elsewhere. That's the ownership mentality, priced.
+Imagine an employee holding options at a ₹100 strike that the company later buys back at ₹1,000. On 5,000 shares, that's (₹1,000 − ₹100) × 5,000 = **₹45 lakh** of upside - money no fixed salary, however high, would have produced. Those employees chose uncertain equity over higher cash elsewhere. That's the [ownership mentality](/blog/how-to-make-money/17), priced.
 
 ## A quick India tax reality check
 
@@ -123,9 +124,9 @@ If you're going to chase ownership, treat it as a tax-aware decision, not a fant
 
 A few beliefs quietly cap people's earnings. Each one melts under a clear look.
 
-- **"Wanting money is greedy."** Money is simply stored, tradeable value - a measure of value you've created for others. Wanting to create more value isn't a character flaw.
+- **"Wanting money is greedy."** [Money is simply stored, tradeable value](/blog/how-to-make-money/01) - a measure of value you've created for others. Wanting to create more value isn't a character flaw.
 - **"Rich people just got lucky or cheated."** This ignores compounding and ownership, which are repeatable mechanisms, not lottery tickets.
-- **"I need money to make money."** Code and media are permissionless leverage that cost almost nothing. The real constraint is specific knowledge, not capital.
+- **"I need money to make money."** Code and media are [permissionless leverage](/blog/how-to-make-money/04) that cost almost nothing. The real constraint is specific knowledge, not capital.
 - **"I'm just bad with money."** Here's the science. Researchers Mullainathan and Shafir showed that scarcity imposes a measurable **"bandwidth tax"** - financial stress literally consumes mental capacity, pushing people toward short-term, riskier choices. Short-term thinking is often *caused by* money pressure, not the reverse. The fix isn't shame; it's building a buffer so your brain gets its bandwidth back.
 - **"Willpower is the secret."** The famous Stanford "marshmallow test" - wait for the second treat, succeed in life - largely **failed to replicate.** A much larger 2018 study found the link mostly vanished once family background was accounted for. Patience helps, but a financial cushion and real opportunity are what *enable* patience. Build the circumstance, and patient choices get easy.
 
@@ -145,4 +146,4 @@ You don't install a mindset by reading about it. You install it by changing what
 
 If you remember one thing, make it this: **money-makers don't optimise for the next deal - they optimise for the compounding curve, keeping the right inputs running, untouched, for as long as possible.** Almost everything else is a footnote to that.
 
-But notice what compounding quietly assumes - that you survive long enough to reach the steep part of the curve. Which raises the uncomfortable question the next chapter takes head-on: how do you protect the downside, so a single bad year doesn't wipe out the decade of progress you've been patiently building? Staying in the game, it turns out, is its own skill.
+But notice what compounding quietly assumes - that you survive long enough to reach the steep part of the curve. Which raises the uncomfortable question the next chapter takes head-on: how do you [protect the downside](/blog/how-to-make-money/21), so a single bad year doesn't wipe out the decade of progress you've been patiently building? Staying in the game, it turns out, is its own skill.

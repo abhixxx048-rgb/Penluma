@@ -36,6 +36,7 @@ order: 999
 icon: "\U0001F4CA"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -49,7 +50,7 @@ You can install an analytics tool in an afternoon. Getting useful, trustworthy a
 
 The failure isn't dramatic. There's no error message, no red alert. Instead you get **silent decay**: a teammate names an event `signupCompleted` while someone else uses `signup_completed`, and now your signup count is split across two metrics that each look half-right. A user browses anonymously, signs up, and the tool never connects those two sessions, so your "new vs returning" split is fiction.
 
-Then one day you're in a meeting trying to decide whether a new onboarding flow is working, and you realize you can't actually answer the question. The data exists. You just can't trust it.
+Then one day you're in a meeting trying to decide whether a new [onboarding flow](/blog/product-sense-empathy/09-reducing-friction-flows-steps-progressive-disclosure) is working, and you realize you can't actually answer the question. The data exists. You just can't trust it.
 
 Good news: the fixes are mostly about discipline and a few clear rules, not expensive tooling. Let's walk through them.
 
@@ -94,11 +95,11 @@ A checkout is strict: there's basically one path. But an onboarding journey, whe
 Two subtler problems invent leaks that aren't real:
 
 - **Multi-path products.** If there are several legitimate routes to value and you force everyone through one linear funnel, any step that some users *correctly skip* will look like a massive drop-off. Fix it by making optional steps optional, or by modeling separate funnels per path.
-- **Blended segments.** A single overall funnel hides the truth. Always break the *same* funnel down by acquisition channel, customer type, device, and signup cohort. The leak is rarely uniform; it's usually concentrated in one segment, and segmentation is how you find it.
+- **Blended segments.** A single overall funnel hides the truth. Always break the *same* funnel down by [acquisition channel](/blog/how-to-make-money/15-distribution-beats-product), customer type, device, and signup cohort. The leak is rarely uniform; it's usually concentrated in one segment, and segmentation is how you find it.
 
 ## Event taxonomy: naming that won't rot
 
-An **event** is the record of one action a user took. Your **event taxonomy** is the naming system for all of them. Get the system right once and it scales for years. Get it wrong and it rots into noise.
+An **event** is [the record of one action a user took](/blog/system-design/13-event-sourcing-and-cqrs). Your **event taxonomy** is the naming system for all of them. Get the system right once and it scales for years. Get it wrong and it rots into noise.
 
 The widely shared convention is **object-action**: a noun plus a verb, written in lowercase `snake_case`, past tense. So `order_received`, not `OrderReceived`, `received_order`, or `order_receive`.
 
@@ -191,7 +192,7 @@ A handy side effect: compare your server count to your client count for the same
 
 Here's a concrete sequence to set up analytics you can actually trust:
 
-1. **Name your North Star first.** Pick the *one* outcome that means your product worked, and map it to exactly one event on exactly one identity grain. Everything else exists to measure that reliably and cheaply.
+1. **Name your North Star first.** Pick the *one* [outcome that means your product worked](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress), and map it to exactly one event on exactly one identity grain. Everything else exists to measure that reliably and cheaply.
 2. **Write a tracking plan before you write tracking code.** A simple table: event name, server or client, key properties, which funnel it feeds, and a named owner. Check it into your repo.
 3. **Lock your naming rules.** `snake_case`, past tense, `object_action`, approved verb list. Put the rules in the plan so nobody has to guess.
 4. **Fire money and lifecycle events server-side.** Signups, orders, payments, subscription changes. Let autocapture handle the low-value clicks for free.
@@ -208,4 +209,4 @@ If you remember one thing, make it this: **the goal isn't more data, it's data y
 
 Start with your North Star, name your events like they'll outlive you, and put a governance gate in front of the whole thing.
 
-And once you can trust your funnel, a sharper question waits: of the users who *do* convert, which ones actually stick around a month later? Conversion gets people in the door. **Retention** is where you find out whether what you built was worth coming back to - and that's a different, even more revealing curve to read.
+And once you can trust your funnel, a sharper question waits: of the users who *do* convert, which ones actually stick around a month later? Conversion gets people in the door. **[Retention](/blog/product-sense-empathy/11-emotional-design-delight-making-products-people-love)** is where you find out whether what you built was worth coming back to - and that's a different, even more revealing curve to read.

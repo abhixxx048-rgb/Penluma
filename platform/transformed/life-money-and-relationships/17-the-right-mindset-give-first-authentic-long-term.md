@@ -53,6 +53,7 @@ faq:
       something." Generosity offered when you want nothing lands far better.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: life-money-and-relationships
 topicTitle: 'Life, Money & Relationships'
 category: Thinking & Decisions
@@ -135,7 +136,7 @@ The trap to avoid is saying yes to every *large* request out of guilt until you 
 
 Being a giver does not mean being a sucker. Successful givers stay generous with *everyone by default*. But when they notice that one specific person keeps taking and never contributing, they quietly switch to **matcher mode** with that person, helping only in proportion to what comes back.
 
-This is sometimes called "generous tit-for-tat": assume the best, but adjust once someone has proven they are a taker.
+This is sometimes called "[generous tit-for-tat](/blog/life-money-and-relationships/24-giving-value-reciprocity-without-keeping-score)": assume the best, but adjust once someone has proven they are a taker.
 
 > A persistent taker is a leaky bucket. Pour in all the water you want and it never fills, and meanwhile you go dry. Save your water for the buckets that actually hold it.
 
@@ -143,7 +144,7 @@ This is sometimes called "generous tit-for-tat": assume the best, but adjust onc
 
 **Authenticity** means your outside matches your inside. You are genuinely curious about and helpful to people, not performing curiosity to get a result. The opposite is treating people as *means to an end*: collecting contacts to mine later, faking interest, or being warm only to those who seem useful.
 
-Why does this matter so much in practice? Because of how trust actually forms. Your trustworthiness goes *up* with your competence, your reliability, and how safe people feel around you. But it gets *divided down* by how self-focused you appear.
+Why does this matter so much in practice? Because of [how trust actually forms](/blog/life-money-and-relationships/19-how-trust-rapport-actually-form). Your trustworthiness goes *up* with your competence, your reliability, and how safe people feel around you. But it gets *divided down* by how self-focused you appear.
 
 That self-focus, sometimes called **self-orientation**, is the single fastest way to destroy trust. The moment a conversation feels like you are steering everything toward your own product or your own gain, trust collapses, no matter how impressive you are.
 
@@ -159,13 +160,13 @@ A few beliefs quietly sabotage people who are otherwise doing the right things.
 
 **"Reaching out would be a bother."** Research on relationships consistently finds people are *happier* to hear from you than you expect, and that we routinely underestimate how much others enjoyed talking with us. Your instinct that "I'd be imposing" is usually just wrong.
 
-**"My big contact list is my network."** Thousands of contacts you never genuinely help is a *recognition list*, not a network. Almost no trust flows through it. A small set of real, well-tended relationships beats it every time.
+**"My big contact list is my network."** Thousands of contacts you never genuinely help is a *recognition list*, not a network. Almost no trust flows through it. A small set of [real, well-tended relationships](/blog/life-money-and-relationships/16-why-relationships-networks-truly-matter) beats it every time.
 
-Here is the abundance mindset in action. Imagine you meet another founder working in the same broad space as you. The scarcity reflex is to stay guarded. The abundance move is: "You should really talk to my old colleague who solved exactly this." That one intro costs you nothing, makes you memorable to two people at once, and is the kind of act that circles back years later in ways you will never trace, maybe a referral, maybe a hire, maybe just a warm reputation that opens a door.
+Here is the abundance mindset in action. Imagine you meet another founder working in the same broad space as you. The scarcity reflex is to stay guarded. The abundance move is: "You should really talk to my old colleague who solved exactly this." That one intro costs you nothing, makes you memorable to two people at once, and is the kind of act that [circles back years later in ways you will never trace](/blog/life-money-and-relationships/27-how-opportunities-hires-advice-really-flow), maybe a referral, maybe a hire, maybe just a warm reputation that opens a door.
 
 ## Play the long game
 
-Give-first relationships are **planting, not harvesting**. The hardest part for anyone ambitious is that the timeline is long and the early returns are invisible. You will help people who never directly repay you, and that is fine, because you are filling a **reservoir of goodwill** and a reputation that pays out from unexpected places over years.
+Give-first relationships are **planting, not harvesting**. The hardest part for anyone ambitious is that the timeline is long and the early returns are invisible. You will help people who never directly repay you, and that is fine, because you are filling a **reservoir of goodwill** and a [reputation that pays out from unexpected places over years](/blog/life-money-and-relationships/29-community-reputation-long-term-social-capital).
 
 LinkedIn co-founder Reid Hoffman put the logic plainly: the more genuinely you set out to help others, the more you reinforce your own reputation and expand your "universe of possibilities." Matchers cap their upside; they only ever get back what they specifically traded for. A giver's upside is open-ended.
 

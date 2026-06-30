@@ -36,6 +36,7 @@ order: 21
 icon: "\U0001F4C8"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -55,7 +56,7 @@ For businesses the stakes are huge. An exporter can win a contract on Monday and
 
 An exchange rate is simply the price of one currency measured in another.
 
-If 1 US dollar buys 83 Indian rupees, the rate is 83 rupees per dollar. That is the whole idea. It is a price set where supply meets demand, exactly like the price of apples or oil.
+If 1 US dollar buys 83 Indian rupees, the rate is 83 rupees per dollar. That is the whole idea. It is a price set where [supply meets demand](/blog/economics-from-first-principles/03-supply-demand-and-how-prices-are-determined), exactly like the price of apples or oil.
 
 Two words get thrown around constantly, so let's pin them down:
 
@@ -102,7 +103,7 @@ Six forces push the price up or down. Notice how each one becomes a chain of cau
 
 ### 1. Interest rates (the biggest driver)
 
-What matters is the **real interest rate** - the rate *after* subtracting inflation. When a central bank raises real rates, foreign investors chase the higher return. To invest, they must first buy the currency, so demand rises and the currency appreciates. Cut rates, and money flows out, dragging the currency down.
+What matters is the **[real interest rate](/blog/economics-from-first-principles/09-loans-credit-debt-and-interest-rates)** - the rate *after* subtracting inflation. When a central bank raises real rates, foreign investors chase the higher return. To invest, they must first buy the currency, so demand rises and the currency appreciates. Cut rates, and money flows out, dragging the currency down.
 
 ### 2. Inflation
 
@@ -110,7 +111,7 @@ Money that loses value at home loses value abroad. Persistently high inflation s
 
 ### 3. Trade balance
 
-Exporters earn foreign currency and sell it to get their home currency back - that lifts demand for the home currency. Importers do the reverse. Chronic trade deficits tend to push a currency down, *unless* investment flowing in offsets them.
+Exporters earn foreign currency and sell it to get their home currency back - that lifts demand for the home currency. Importers do the reverse. Chronic [trade deficits](/blog/economics-from-first-principles/21-international-trade-imports-exports-tariffs-and-agreements) tend to push a currency down, *unless* investment flowing in offsets them.
 
 ### 4. Capital flows
 
@@ -122,7 +123,7 @@ In a panic, money floods into the dollar, Swiss franc, and yen regardless of how
 
 ### 6. Central bank action
 
-Tightening (raising rates, shrinking the money supply) strengthens a currency. Large-scale money creation, like quantitative easing, weakens it.
+Tightening (raising rates, shrinking the money supply) strengthens a currency. Large-scale money creation, like [quantitative easing](/blog/economics-from-first-principles/08-central-banks-and-monetary-policy), weakens it.
 
 The simple mental model: anything that raises **demand** for a currency (higher real rates, strong exports, money flowing in, safe-haven panic) pushes it **up**. Anything that raises the **supply** hitting the market (high inflation, trade deficits, capital flight, rate cuts) pushes it **down**.
 
@@ -172,7 +173,7 @@ A weaker currency makes a country's exports cheaper and can restore its competit
 
 Here is a puzzle. The same burger, the same haircut, or the same rent costs wildly different amounts depending on where you are. Why doesn't the exchange rate even it out?
 
-The idea that it *should* is called **Purchasing Power Parity (PPP)** - in theory, a rate should make the same good cost the same everywhere. In reality it doesn't, because much of life isn't traded across borders. You can't import a haircut, a flat in Tokyo, or local labor. Add tariffs, transport, and taxes, and prices stay stubbornly different.
+The idea that it *should* is called **[Purchasing Power Parity (PPP)](/blog/economics-from-first-principles/11-measuring-an-economy-gdp-gnp-cpi-ppp-and-key-indicators)** - in theory, a rate should make the same good cost the same everywhere. In reality it doesn't, because much of life isn't traded across borders. You can't import a haircut, a flat in Tokyo, or local labor. Add tariffs, transport, and taxes, and prices stay stubbornly different.
 
 The Economist's playful **Big Mac Index**, running since 1986, makes this vivid by comparing the price of a Big Mac across countries. In July 2025 readings, a burger was far cheaper in Japan, suggesting the yen was about 41% undervalued against the dollar, while the Swiss franc looked overvalued. It is illustrative, not gospel - nobody ships a Big Mac internationally - but it neatly explains why your salary "goes further" in a low-cost country.
 
@@ -202,4 +203,4 @@ Strip away the jargon and an exchange rate is just a price - driven mostly by th
 
 The deepest lesson is that prices set wrong don't stay wrong. Markets are patient, then sudden. A peg can hold for decades and break in an afternoon.
 
-Which raises the obvious next question: if money is just a price built on confidence, what happens when a country prints too much of it? That is the story of inflation and hyperinflation - how trust in money can evaporate entirely, and what it takes to win it back.
+Which raises the obvious next question: if money is just a price built on confidence, what happens when a country prints too much of it? That is the story of [inflation and hyperinflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) - how trust in money can evaporate entirely, and what it takes to win it back.

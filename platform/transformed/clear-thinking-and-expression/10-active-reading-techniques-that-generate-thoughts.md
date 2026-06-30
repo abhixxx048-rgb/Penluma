@@ -58,6 +58,7 @@ order: 9
 icon: ✍️
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -69,11 +70,11 @@ That is not a memory problem. It is a reading problem. Most people read by slidi
 
 Here is the uncomfortable truth: ideas are not hidden inside the text, waiting to be found. They are **made** at the moment new information collides with what you already know.
 
-Think about how your mind works while reading. Your **working memory** is the small mental "desk" where you hold thoughts right now, and it is tiny. Psychologist George Miller famously estimated it holds only a handful of items at once. When you read passively, that desk fills and empties over and over. Nothing gets built.
+Think about how your mind works while reading. Your **[working memory](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits)** is the small mental "desk" where you hold thoughts right now, and it is tiny. Psychologist George Miller famously estimated it holds only a handful of items at once. When you read passively, that desk fills and empties over and over. Nothing gets built.
 
 But when you ask a question or restate an idea in your own words, you force the new information to connect to things you already know. Those stored connections are your **schemas**, the mental maps you carry for every topic you understand. A new idea appears exactly where new information clicks into an existing map. No click, no idea.
 
-So passive reading is not just inefficient. It is the reason you read all year and walk away with nothing to show for it. The techniques below all do one thing: they cause the click.
+So [passive reading](/blog/clear-thinking-and-expression/09-passive-vs-active-reading-why-reading-rarely-sparks-ideas) is not just inefficient. It is the reason you read all year and walk away with nothing to show for it. The techniques below all do one thing: they cause the click.
 
 ## The four-question spine
 
@@ -105,7 +106,7 @@ When you face a long chapter, you need more than questions. You need a route. **
 - **R - Recite.** Look away and say the answer in your own words. This forces retrieval, the single act that builds memory.
 - **R - Review.** Go back over your answers later, after a gap.
 
-Those last two steps lean on two of the most reliable findings in learning science. **Retrieval practice** means pulling an answer from memory instead of re-reading it. **Spaced practice** means revisiting it after a gap. Together they make learning dramatically more durable.
+Those last two steps lean on two of the most reliable findings in learning science. **[Retrieval practice](/blog/ai-learning-platform/06-retrieval-practice-why-testing-beats-re-reading)** means pulling an answer from memory instead of re-reading it. **[Spaced practice](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve)** means revisiting it after a gap. Together they make learning dramatically more durable.
 
 Re-reading, by contrast, only *feels* productive. It mostly creates a false sense of knowing, smooth and familiar right up until the moment someone asks you a question.
 
@@ -143,7 +144,7 @@ Once you understand a point, push it three rungs higher. These three prompts mov
 - **Now what?** What will I actually do because of it? (action)
 - **What if?** What if it were bigger, the opposite, or combined with another idea? (new ideas)
 
-"What if?" is pure **divergent thinking**, generating many possibilities at once. "Now what?" is **convergent thinking**, narrowing down to one useful choice. Doing both is how you spot opportunities in what you read, including the patterns and gaps nobody else noticed.
+"What if?" is pure **[divergent thinking](/blog/clear-thinking-and-expression/14-generating-ideas-on-demand-divergent-thinking-scamper-brainstorming)**, generating many possibilities at once. "Now what?" is **convergent thinking**, narrowing down to one useful choice. Doing both is how you spot opportunities in what you read, including the patterns and gaps nobody else noticed.
 
 ## Capture immediately, or it's gone
 
@@ -187,4 +188,4 @@ And keep this portable trigger-question list on a card beside whatever you read.
 
 Active reading is a loop: **question, read, restate, capture.** Run that loop and every page hands you raw material for speaking and writing. Stop reading *at* the text and start arguing *with* it.
 
-But notice what just happened. The hard part was never understanding the ideas; it was holding onto the thoughts they sparked before they evaporated. That is a clue worth chasing. The same reason your reading ideas vanish is the reason your best shower-thoughts and half-finished plans vanish too, and there is a whole craft to building a system that catches them all before they disappear.
+But notice what just happened. The hard part was never understanding the ideas; it was holding onto the thoughts they sparked before they evaporated. That is a clue worth chasing. The same reason your reading ideas vanish is the reason your best shower-thoughts and half-finished plans vanish too, and there is a whole craft to [building a system that catches them all](/blog/clear-thinking-and-expression/16-build-an-idea-inventory-a-second-brain-so-connections-happen) before they disappear.

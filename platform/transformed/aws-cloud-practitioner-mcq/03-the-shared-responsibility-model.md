@@ -33,6 +33,7 @@ icon: ☁️
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 A developer flips one S3 setting, a private bucket goes public, and customer records spill onto the open internet. Was that AWS's fault for not stopping it? The exam wants you to say yes. The right answer is no, and the reason is the single most tested idea on the AWS Cloud Practitioner exam: the **Shared Responsibility Model**.
@@ -70,17 +71,17 @@ Picture a dial that runs from "you manage almost everything" to "AWS manages alm
 
 EC2 is **Infrastructure as a Service** (raw virtual servers). AWS secures the physical host and the hypervisor (the software that carves one big machine into many virtual ones). Everything from the operating system upward is yours.
 
-So when a new flaw appears in the Linux OS running inside your EC2 instance, **you** apply the patch. AWS owning the hardware does not make the guest OS theirs; the line is drawn at the hypervisor. The same goes if you run containers on EC2 you manage yourself: you own the guest OS and the container images, AWS owns the host underneath.
+So when a new flaw appears in the Linux OS running inside your [EC2 instance](/blog/aws-cloud-practitioner-mcq/06-amazon-ec2-instances-purchasing-options), **you** apply the patch. AWS owning the hardware does not make the guest OS theirs; the line is drawn at the hypervisor. The same goes if you run containers on EC2 you manage yourself: you own the guest OS and the container images, AWS owns the host underneath.
 
 ### RDS - AWS takes over the engine and OS
 
-Move that same database from EC2 to **Amazon RDS** (a managed database) and the dial swings toward AWS. Now AWS patches the database engine and the underlying operating system for you, on maintenance windows you can schedule.
+Move that same database from EC2 to **Amazon RDS** (a [managed relational database](/blog/aws-cloud-practitioner-mcq/11-amazon-rds-managed-relational-databases)) and the dial swings toward AWS. Now AWS patches the database engine and the underlying operating system for you, on maintenance windows you can schedule.
 
 But notice what does *not* move: the data inside the database, and the database user accounts and passwords you create. If you set a weak password for a database user, AWS patching the engine does nothing to protect you. Patching the engine and securing access are two different jobs with two different owners.
 
 ### S3 and DynamoDB - fully managed, but access is still yours
 
-With **S3** (object storage) and **DynamoDB** (a managed database), AWS runs essentially all the infrastructure. Yet the most famous cloud mistakes happen right here, because "fully managed" never covers your access decisions.
+With **S3** ([object storage](/blog/aws-cloud-practitioner-mcq/10-amazon-s3-object-storage)) and **DynamoDB** (a [managed NoSQL database](/blog/aws-cloud-practitioner-mcq/12-amazon-dynamodb-managed-nosql)), AWS runs essentially all the infrastructure. Yet the most famous cloud mistakes happen right here, because "fully managed" never covers your access decisions.
 
 Bucket policies, access control settings, and Block Public Access are configured by you. Store personal data in DynamoDB and the data plus access control still belong entirely to you, not "fifty-fifty," not AWS. (Worth knowing: AWS now blocks public access by default on new S3 buckets, precisely because this trips so many people up.)
 
@@ -129,4 +130,4 @@ Memorize the anchor sentence, then practice flipping one variable at a time: sam
 
 The whole model collapses into one durable idea: **AWS secures the cloud, you secure what you put in it, and your data plus your access controls are yours on every service, every time.** Master that and the EC2-versus-RDS-versus-S3 questions stop being tricky and start being free points.
 
-Here is the thread worth pulling next: if IAM is the responsibility that follows you everywhere, then how AWS actually structures identities, roles, and policies is the skill that quietly underpins nearly every other service. Understand IAM deeply and you are not just passing an exam question, you are holding the master key to the entire platform.
+Here is the thread worth pulling next: if IAM is the responsibility that follows you everywhere, then how AWS actually [structures identities, roles, and policies](/blog/aws-cloud-practitioner-mcq/04-iam-identity-access-management) is the skill that quietly underpins nearly every other service. Understand IAM deeply and you are not just passing an exam question, you are holding the master key to the entire platform.

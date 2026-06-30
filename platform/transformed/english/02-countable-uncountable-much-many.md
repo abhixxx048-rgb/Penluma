@@ -30,6 +30,7 @@ faq:
     a: Many languages don't mark countable vs uncountable the way English does, so the habit is invisible. "Mistake" is countable, so it needs "many" plus the plural -s - "so many mistakes."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: english
 topicTitle: English for Developers
 category: Communication
@@ -41,11 +42,11 @@ sources: []
 
 You ship clean code. Your tests pass, your logic is tight, your architecture is thoughtful. And then you type "so much mistake" in a standup, and a tiny part of your credibility leaks out.
 
-It is one of the most common English slips for non-native speakers, and it is one of the most fixable. The whole thing comes down to a single question you can ask in under a second: **can I count this?**
+It is one of the [most common English slips for non-native speakers](/blog/english/00-index), and it is one of the most fixable. The whole thing comes down to a single question you can ask in under a second: **can I count this?**
 
 ## Why this matters
 
-Your writing is on display all day. Commit messages, PR descriptions, Slack standups, code review comments, bug reports. Every one of them is read by teammates who quietly form an impression of you.
+Your writing is on display all day. Commit messages, PR descriptions, Slack standups, [code review comments](/blog/english/10-professional-dev-writing), bug reports. Every one of them is read by teammates who quietly form an impression of you.
 
 Most grammar mistakes are forgivable noise. But the **much/many** mix-up is a *tell* - it instantly signals "English isn't my first language," even to readers who can't explain the rule themselves. It draws the eye away from your actual point.
 
@@ -142,7 +143,7 @@ A few concrete moves you can apply right now:
 
 1. **Run the number test before every much/many.** Can you say "three of these"? If yes → *many* + **-s**. If no → *much*, no -s.
 2. **Scan your message for six trigger words before you hit send:** *much, many, few, little, less, fewer.* For each one, ask "can I count this noun?"
-3. **Watch the -s on the verb too.** Countable plurals take plural verbs: "There **are** too many bugs," not "There **is** too many bugs."
+3. **Watch the -s on the verb too.** [Countable plurals take plural verbs](/blog/english/03-subject-verb-agreement): "There **are** too many bugs," not "There **is** too many bugs."
 4. **Default to "a lot of" when unsure.** It works with both countable and uncountable nouns ("a lot of bugs," "a lot of code"), so it's a safe bridge while the habit forms.
 5. **Fix it in templates you reuse.** If your commit or PR template has a stock phrase, correct it once and you stop re-typing the mistake forever.
 
@@ -179,4 +180,4 @@ If you take one thing away, make it this reflex: **before you write "much" or "m
 
 The deeper lesson is that fluent-sounding writing usually isn't about knowing more words - it's about one or two tiny habits that run automatically while you focus on the actual message.
 
-And here's the next thread to pull: the same instinct that makes you drop an -s also shapes when you reach for *a*, *an*, or *the* - or skip the article entirely. Articles are the *other* great non-native tell, and they're driven by the very same countable-vs-uncountable distinction you just learned. Master one, and you're already halfway through the other.
+And here's the next thread to pull: the same instinct that makes you drop an -s also shapes when you reach for *a*, *an*, or *the* - or skip the article entirely. [Articles](/blog/english/01-articles-a-an-the) are the *other* great non-native tell, and they're driven by the very same countable-vs-uncountable distinction you just learned. Master one, and you're already halfway through the other.

@@ -52,6 +52,7 @@ order: 17
 icon: "\U0001F4C8"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -63,7 +64,7 @@ Master that single pair of ideas and the rest of business finance - funding, own
 
 Most people treat business finance as a private club: cap tables, term sheets, EBITDA, things that happen to other people in glass towers.
 
-But these ideas decide whether the cafe on your street survives, whether your employer can afford to give you a raise, and where the economy's growth actually comes from. Understanding them changes how you read the news, evaluate a job offer with stock options, or think about starting something yourself.
+But these ideas decide whether the cafe on your street survives, whether your employer can afford to give you a raise, and [where the economy's growth actually comes from](/blog/economics-from-first-principles/12-economic-growth-and-productivity). Understanding them changes how you read the news, evaluate a job offer with stock options, or think about starting something yourself.
 
 The whole field rests on a handful of simple truths. Let's build them up one at a time.
 
@@ -108,7 +109,7 @@ Creating value usually costs money *before* it earns money. **Financing** is sim
 
 **Bootstrapping** funds the business from personal savings, early revenue, and friends and family. You give up no ownership, and you gain full control plus forced financial discipline. The cost is that you're starved of capital and grow slowly.
 
-**Debt financing** means borrowing - from a bank, say - and repaying with interest. The lender has a *fixed claim*: they must be paid back no matter how the business does, but they get none of the upside if you become huge. Debt fits firms with predictable cash flow and assets to pledge.
+**Debt financing** means borrowing - from a bank, say - and [repaying with interest](/blog/economics-from-first-principles/09-loans-credit-debt-and-interest-rates). The lender has a *fixed claim*: they must be paid back no matter how the business does, but they get none of the upside if you become huge. Debt fits firms with predictable cash flow and assets to pledge.
 
 **Equity financing** means selling pieces of ownership. Investors get the upside (and sometimes a say in decisions), and there's nothing to repay - if the business fails, they lose their money alongside you. This fits risky, fast-growing firms with no steady cash flow to borrow against.
 
@@ -123,7 +124,7 @@ The money arrives in *staged rounds*, each at a higher valuation as the risk fal
 - **Series A:** ~$15M at $40–120M
 - **Series B and beyond:** ~$30M, then ~$60M, then rounds into the hundreds of millions
 
-The classic VC "exit" - how investors finally turn shares into cash - is the **IPO (Initial Public Offering)**, selling shares to the public on a stock exchange. One striking modern shift: the median time from founding to IPO is now **roughly 11 years, up from about 7 in 2010.** Companies stay private far longer, raising big private rounds instead of going public early.
+The classic VC "exit" - how investors finally turn shares into cash - is the **IPO (Initial Public Offering)**, selling shares to the public on a [stock exchange](/blog/economics-from-first-principles/19-financial-markets-stocks-bonds-commodities-and-derivatives). One striking modern shift: the median time from founding to IPO is now **roughly 11 years, up from about 7 in 2010.** Companies stay private far longer, raising big private rounds instead of going public early.
 
 ## Equity and dilution: a smaller slice of a bigger pie
 
@@ -225,10 +226,10 @@ Now zoom out from one firm to the whole economy. This is the part that connects 
 1. **Firms invest in better tools and technology.** Machines, software, buildings.
 2. **Each worker now has more and better tools** - economists call this rising *capital per worker.*
 3. **More tools per worker raises labour productivity** - output produced per hour of work.
-4. **Over the long run, wages track productivity.** A worker who produces more becomes worth more, and competition for their labour bids their pay up.
+4. **Over the long run, [wages track productivity](/blog/economics-from-first-principles/13-wages-labor-markets-and-why-some-jobs-pay-more).** A worker who produces more becomes worth more, and competition for their labour bids their pay up.
 5. **Higher wages mean more spending,** which becomes more demand at other firms - which justifies more investment, and the loop repeats.
 
-The macro name for all this business investment is **Gross Fixed Capital Formation (GFCF)** - total spending on lasting productive assets. Today's frontier is directed investment in automation and AI, which lifts output per worker in genuinely new ways.
+The macro name for all this business investment is **Gross Fixed Capital Formation (GFCF)** - total spending on lasting productive assets. Today's frontier is directed investment in [automation and AI](/blog/economics-from-first-principles/27-technology-automation-ai-and-innovation), which lifts output per worker in genuinely new ways.
 
 This is why financing markets aren't just rich-person games. The capital an investor puts into a firm becomes the machine that makes a worker more productive, which becomes that worker's raise, which becomes spending at the shop down the road.
 
@@ -257,4 +258,4 @@ If you remember one thing, make it this: **a company is a machine for turning va
 
 And that loop doesn't stop at the company's walls. The same dollar that funds a warehouse robot eventually shows up as a worker's raise and a busier shop across town.
 
-Which raises the next question worth chasing: if profit is only a slice of the value created, who decides how big that slice gets to be? That's the story of pricing power, competition, and monopoly - and it's where the real fortunes are won and lost.
+Which raises the next question worth chasing: if profit is only a slice of the value created, who decides how big that slice gets to be? That's the story of [pricing power, competition, and monopoly](/blog/economics-from-first-principles/17-business-economics-costs-profit-competition-and-pricing) - and it's where the real fortunes are won and lost.

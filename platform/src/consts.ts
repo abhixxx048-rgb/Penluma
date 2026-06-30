@@ -10,9 +10,9 @@ export const SITE = {
   author: 'Pritesh Yadav (priteshyadav444)',
   // BCP-47 locale, used for og:locale and the html lang attribute.
   locale: 'en_US',
-  // Default social-share image (1200×630). Lives in /public.
+  // Default social-share image. Lives in /public.
   // Falls back to this whenever a page doesn't supply its own image.
-  ogImage: '/og/default.png',
+  ogImage: '/logo.png',
   // Google Analytics 4 measurement ID. Only loaded in production builds.
   gaId: 'G-3P5Z6TRP9Y',
   // TODO: set these to your real handles before launch.

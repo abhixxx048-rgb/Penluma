@@ -53,6 +53,7 @@ faq:
       who explains it first finds the gap others walk past.
 topic: clear-thinking-and-expression
 topicTitle: Clear Thinking & Expression
+linked: true
 category: Thinking & Decisions
 date: '2026-06-22'
 order: 18
@@ -112,11 +113,11 @@ Use deduction to **apply** what you already trust: policies, definitions, math. 
 
 Induction is how you learn from experience. You notice repeats and form a general belief: "Mornings are our busiest hours."
 
-This is most of what reading gives you, too. Authors show examples, and your mind quietly extracts the rule. Connecting information across what you read *is* induction in action.
+This is most of what reading gives you, too. Authors show examples, and your mind quietly extracts the rule. [Connecting information across what you read](/blog/clear-thinking-and-expression/10-active-reading-techniques-that-generate-thoughts) *is* induction in action.
 
 But induction is a guess, and it gets stronger or weaker with evidence. Two cases is a hunch. Two hundred is a reliable pattern.
 
-The classic trap is the **hasty generalization** - building a big rule on a tiny sample. "Two customers complained about the price, so the price is too high." Two voices out of a thousand silent buyers is not a pattern. It is an anecdote wearing a pattern's clothes.
+The classic trap is the **[hasty generalization](/blog/clear-thinking-and-expression/18-cognitive-biases-logical-fallacies-and-how-to-dodge-them)** - building a big rule on a tiny sample. "Two customers complained about the price, so the price is too high." Two voices out of a thousand silent buyers is not a pattern. It is an anecdote wearing a pattern's clothes.
 
 Before you trust an inductive rule, ask two questions: *how many cases, and how varied?*
 
@@ -140,9 +141,9 @@ Explanation 2 fits the most clues with the fewest assumptions. That is your **be
 
 Notice what just happened. Abduction turned a confusing data point into a **specific, testable lead**.
 
-This is exactly how opportunities hide in data. A weird spike, a stubborn drop-off, a question customers keep asking. Each is a "surprising fact" begging for an explanation.
+This is exactly how opportunities hide in data. [A weird spike, a stubborn drop-off](/blog/clear-thinking-and-expression/22-spotting-patterns-trends-anomalies-signals), a question customers keep asking. Each is a "surprising fact" begging for an explanation.
 
-The person who asks "what would have to be true for this to happen?" finds the gap, the unmet need, the bug, the new product. Spotting opportunities *is* abduction.
+The person who asks "what would have to be true for this to happen?" finds the gap, the unmet need, the bug, the new product. [Spotting opportunities](/blog/clear-thinking-and-expression/23-turning-observations-into-opportunities-jtbd-gap-analysis) *is* abduction.
 
 ## Steelmanning beats the strongest version
 
@@ -198,6 +199,6 @@ Strong evidence should move you a lot, weak evidence a little. But you almost ne
 
 If you remember one thing, remember this: deduction proves, induction finds patterns, and abduction explains and uncovers opportunities, while good thinkers steelman the other side and adjust their confidence by degrees rather than flipping a switch.
 
-The real magic is fluency, sliding between modes without thinking. You abduce a likely explanation for what you see, deduce what it would imply if true, induce a pattern by testing it across cases, steelman the rival explanation, and update your confidence as results come in. Guess, predict, test, fairly consider alternatives, adjust. That loop is critical thinking in a single breath.
+The real magic is fluency, sliding between modes without thinking. You abduce a likely explanation for what you see, deduce what it would imply if true, induce a pattern by testing it across cases, steelman the rival explanation, and update your confidence as results come in. Guess, predict, test, fairly consider alternatives, adjust. That loop is [critical thinking](/blog/clear-thinking-and-expression/17-critical-thinking-foundations-claims-evidence-assumptions) in a single breath.
 
 Once you start naming these moves, you will notice how often the people who sound most certain are the ones reasoning from a single shaky rule. Which raises the next question worth chasing: how do you tell a genuine expert from someone who is simply confident?

@@ -50,6 +50,7 @@ faq:
       the transparency live.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: computer-graphics-print
 topicTitle: Computer Graphics for Print
 category: Engineering
@@ -135,7 +136,7 @@ You can send RGB or Lab images and let an embedded ICC color profile convert the
 
 ### PDF/X-4 - the modern default
 
-Live transparency **plus** full ICC color management. The RIP resolves your shadows and blends natively at device resolution. The payoff is smaller files, no stitching seams, sharper text, more predictable color, and "late binding" of color (the color conversion happens as late as possible, when the press condition is known). This is the one to reach for in virtually all commercial and digital print.
+Live transparency **plus** full [ICC color management](/blog/computer-graphics-print/03-color-management-icc-profiles-the-pipeline). The RIP resolves your shadows and blends natively at device resolution. The payoff is smaller files, no stitching seams, sharper text, more predictable color, and "late binding" of color (the color conversion happens as late as possible, when the press condition is known). This is the one to reach for in virtually all commercial and digital print.
 
 A quick side-by-side of what matters most:
 
@@ -178,7 +179,7 @@ Every PDF page defines a set of nested rectangles called **page boxes**. The PDF
 - **BleedBox** - the boundary that ink is allowed to run to. It extends *past* the trim so color overruns the cut line.
 - **TrimBox** - the **finished page size after cutting** - the A4, Letter, or business-card size that lands in the customer's hand. **This is the single most important box for print.** Imposition and finishing machines read it to know exactly where to cut.
 - **ArtBox** - today often used to mark the **safe area**: keep text and logos inside it.
-- **CropBox** - just the viewer's display region. **Avoid it in prepress** - it can hide bleed and confuse imposition.
+- **CropBox** - just the viewer's display region. **Avoid it in prepress** - it can hide bleed and confuse [imposition](/blog/computer-graphics-print/14-imposition-binding-arranging-pages-on-the-sheet).
 
 They nest in a strict order:
 
@@ -208,7 +209,7 @@ MediaBox  ⊇  BleedBox  ⊇  TrimBox  ⊇  ArtBox
 
 **"Saving as PDF/X guarantees it's print-ready."** A blind "Save As PDF/X" can still embed the wrong output intent, miss bleed, or exceed ink limits. The format being correct is not the same as the *content* being correct.
 
-**"If it looks fine on screen, it'll print fine."** Screens are RGB and lit from behind; paper is CMYK and reflective. They are different physics. Only a preflight check tells you the truth.
+**"If it looks fine on screen, it'll print fine."** Screens are RGB and lit from behind; [paper is CMYK](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color) and reflective. They are different physics. Only a [preflight check](/blog/computer-graphics-print/13-preflight-validating-a-file-before-it-prints) tells you the truth.
 
 ## How to use this: a shop-ready checklist
 
@@ -226,4 +227,4 @@ That last step is the one people skip and regret. A two-minute preflight catches
 
 If you remember one thing, make it this: **PDF/X is a contract, not a file format.** It promises the printer that nothing will vary - fonts are in, color is defined, transparency is handled, and the cut line is marked. Default to **X-4**, attach the **right output intent**, and define your **boxes** with real bleed. Do that, and "it looked fine on my screen" stops being a gamble.
 
-Here is the loose thread worth pulling next. That total-ink-coverage number you keep seeing - 330%, 310%, 300% - is not arbitrary. Push past it and ink stops drying, smears onto the next sheet, and cracks at the fold. The story of *why* paper can only drink so much ink, and how presses fix it before it ever reaches you, is where print color gets genuinely strange.
+Here is the loose thread worth pulling next. That [total-ink-coverage number](/blog/computer-graphics-print/06-ink-on-the-page-spot-colors-overprint-black-generation) you keep seeing - 330%, 310%, 300% - is not arbitrary. Push past it and ink stops drying, smears onto the next sheet, and cracks at the fold. The story of *why* paper can only drink so much ink, and how presses fix it before it ever reaches you, is where print color gets genuinely strange.

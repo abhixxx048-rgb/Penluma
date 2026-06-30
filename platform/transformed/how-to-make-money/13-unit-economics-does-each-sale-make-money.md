@@ -30,6 +30,7 @@ faq:
     a: No. If you lose money on every sale, more sales mean bigger losses. Growth amplifies your unit economics, good or bad, so the math has to work on a single unit first.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: how-to-make-money
 topicTitle: How to Make Money
 category: Money & Business
@@ -49,7 +50,7 @@ Here is the question that quietly decides whether a business lives or dies: **wh
 
 It sounds obvious. It is not. Plenty of celebrated startups answered "no" without realizing it, and the faster they grew, the faster they failed. Their dashboards were green. Their revenue charts pointed up and to the right. The leak was hiding inside the average.
 
-**Unit economics** is simply the math of one unit: one sale, one order, one customer. It is the act of picking up a single bucket and checking it for a hole. You do not need fancy software or an MBA. You need arithmetic you already know and the discipline to look.
+[**Unit economics**](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale) is simply the math of one unit: one sale, one order, one customer. It is the act of picking up a single bucket and checking it for a hole. You do not need fancy software or an MBA. You need arithmetic you already know and the discipline to look.
 
 ## The vocabulary, built one rung at a time
 
@@ -135,7 +136,7 @@ The formula is `CAC ÷ monthly contribution margin per customer`. It measures ho
 
 Two businesses can both sit at 3:1, yet a 6-month payback is dramatically healthier than an 18-month one. The first recycles its cash into the next customer long before the second has even recovered half. A healthy software target is a payback under 12 months.
 
-The ratio tells you the **size** of the win. The payback tells you how long your cash is **at risk**. You need both. A beautiful ratio with a 20-month payback can still starve you of cash and kill you.
+The ratio tells you the **size** of the win. The payback tells you how long your cash is **at risk**. You need both. A beautiful ratio with a 20-month payback can still [starve you of cash](/blog/business-financial-literacy/07-cash-flow-burn-rate-runway) and kill you.
 
 ### See it in one example
 
@@ -174,9 +175,9 @@ The result was perverse. The more people used the service, the faster it died. M
 Treat each number below as a lever you can pull. Work through them in order.
 
 1. **Calculate your true contribution margin first.** Start with price, then subtract COGS, shipping, payment fees, returns, and attributed marketing. The number that remains is your honest profit per sale. If it is negative, nothing else matters yet.
-2. **Raise revenue or ARPU.** Price increases, upsells, cross-sells, tiers, and bundles. This is usually the highest-leverage move, because most founders *under*price out of fear.
+2. **Raise revenue or ARPU.** [Price increases](/blog/how-to-make-money/14-pricing-value-capture), upsells, cross-sells, tiers, and bundles. This is usually the highest-leverage move, because most founders *under*price out of fear.
 3. **Cut COGS.** Negotiate better supplier terms, chase volume discounts, move to cheaper-to-serve infrastructure, automate. This widens both gross and contribution margin at once.
-4. **Lower CAC.** Shift toward organic, referral, content, and word of mouth, and kill the channels that bleed. Analyze contribution margin *per channel*; one Google campaign can be profitable while another loses money.
+4. **Lower CAC.** Shift toward [organic, referral, content, and word of mouth](/blog/how-to-make-money/15-distribution-beats-product), and kill the channels that bleed. Analyze contribution margin *per channel*; one Google campaign can be profitable while another loses money.
 5. **Reduce churn.** Better onboarding, a stickier product, annual plans. This is your highest LTV leverage. The dream is *negative net churn*, where existing customers expand their spending faster than others leave.
 6. **Shorten payback.** Bill annually upfront and favor lower-CAC channels, so you recover cash faster and reinvest sooner.
 7. **If you are an Indian founder, bake in two costs everyone forgets.** **GST** becomes a real cost layer once your turnover crosses the registration threshold (for FY 2025 to 26, roughly 40 lakh for goods and 20 lakh for services in normal-category states, lower in special-category states), so model your unit economics both below and above that line. **Payment-gateway fees** from providers like Razorpay or PayU run around 2 percent plus GST, which is about 12 rupees on a 500-rupee sale: small per order, but it belongs in contribution margin.

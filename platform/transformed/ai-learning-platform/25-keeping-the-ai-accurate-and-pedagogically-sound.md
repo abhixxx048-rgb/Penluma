@@ -34,6 +34,7 @@ order: 24
 icon: "\U0001F393"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -86,13 +87,13 @@ Each step exists because the one before it cannot be fully trusted on its own.
 
 So far we have made the AI accurate. Now we make it a *teacher*, and this is where most of your teaching design actually lives.
 
-The **system prompt** is the hidden instruction that sets the AI's personality and rules before any conversation starts. The same model behaves like a cheat sheet or a patient teacher depending entirely on this text.
+The **system prompt** is the hidden instruction that sets the AI's personality and rules before any conversation starts. The same model behaves like a cheat sheet or a [patient teacher](/blog/ai-learning-platform/17-the-lesson-scoped-tutor-chatbot) depending entirely on this text.
 
 A good tutoring prompt enforces the **Socratic method**, which simply means teaching by asking guiding questions rather than stating answers. Practical rules to write in:
 
 - Never give the final answer outright. Reveal it only as a last resort.
 - Ask one question at a time, and ask the learner to explain their reasoning.
-- When the learner is stuck, give the **smallest next hint**, then check again. This is **scaffolding**, temporary support that fades as they get stronger, like training wheels you slowly raise off the ground.
+- When the learner is stuck, give the **smallest next hint**, then check again. This is **scaffolding**, [temporary support that fades as they get stronger](/blog/ai-learning-platform/11-zone-of-proximal-development-scaffolding-worked-examples), like training wheels you slowly raise off the ground.
 
 Consider the same model with two different scripts. Script A says, "Solve this for the student," and you get a homework-cheating machine. Script B says, "You are a patient tutor. Never give the answer directly; ask the next good question and request the student's reasoning," and you get a teacher. Real products like Khanmigo and Synthesis Tutor are built on exactly this kind of prompt.
 
@@ -103,7 +104,7 @@ Two more pedagogical jobs belong in the prompt and the system around it:
 
 ## LLM-as-judge: grading written answers, and its limits
 
-The strongest proof a student understands something is having them **explain it back** in their own words. But you cannot grade free-text answers with a simple answer key, because there are a hundred right ways to say the same thing.
+The strongest proof a student understands something is having them [**explain it back**](/blog/ai-learning-platform/16-the-teach-it-back-method-and-how-ai-evaluates-it) in their own words. But you cannot grade free-text answers with a simple answer key, because there are a hundred right ways to say the same thing.
 
 The solution is **LLM-as-judge**: you give a second AI the student's answer plus an explicit **rubric**, which is just a clear scoring guide, and ask it to score and justify.
 
@@ -136,7 +137,7 @@ One more trap. Do not let the tutor be both teacher and examiner. If the same sy
 
 If you are building or evaluating an AI tutor, work through these in order:
 
-1. **Ground every answer.** Connect the model to your real sources with RAG and require citations. No source, no claim.
+1. **Ground every answer.** Connect the model to your real sources with [RAG](/blog/ai-learning-platform/24-turning-a-pdf-into-a-course-rag-for-learning) and require citations. No source, no claim.
 2. **Add a verification layer.** Check that answers are actually supported, and route all math and counting to deterministic tools, never the model's memory.
 3. **Write a Socratic system prompt.** Ask before telling, give the smallest hint, hold difficulty steady, and keep the tone safe and encouraging.
 4. **Use LLM-as-judge carefully.** Concrete rubric, temperature 0, required justifications, and validation against human graders before you rely on it.
@@ -149,4 +150,4 @@ Think of these as layers of defense, each catching what the previous one missed.
 
 The one idea to carry away: in education, **accuracy and pedagogy are two separate jobs, and a fluent, confident AI can fail badly at both.** Treat them as distinct problems and solve each with its own layer, rather than hoping one clever model handles everything.
 
-That raises a harder question worth sitting with. Once your tutor is accurate and teaches well, how do you actually *know* it is helping students learn over weeks and months, not just satisfying them in the moment? Measuring real learning, as opposed to engagement, is the next frontier, and it is trickier than any guardrail here.
+That raises a harder question worth sitting with. Once your tutor is accurate and teaches well, how do you actually *know* it is helping students learn over weeks and months, not just satisfying them in the moment? [Measuring real learning](/blog/ai-learning-platform/26-measuring-real-learning-metrics-that-matter), as opposed to engagement, is the next frontier, and it is trickier than any guardrail here.

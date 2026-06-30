@@ -48,6 +48,7 @@ faq:
       The learner model. A competitor and even the company that owns the AI model
       cannot recreate your student's long history of what they have learned and
       forgotten. That record is personal and compounds over time.
+linked: true
 topic: ai-learning-platform
 topicTitle: AI Learning Platform
 category: AI & LLMs
@@ -99,7 +100,7 @@ Real winners did exactly this:
 
 Each is the best in the world at one job, not a worse version of a do-everything tool.
 
-Back to the coffee shop next to the free Starbucks. You do not survive by selling generic coffee cheaper. You survive by being the specialist roastery for one neighborhood's exact taste, with regulars whose orders you remember by heart. The niche is your neighborhood. The memory of each regular is your **learner model**, your tutor's running estimate of what each student knows.
+Back to the coffee shop next to the free Starbucks. You do not survive by selling generic coffee cheaper. You survive by being the specialist roastery for one neighborhood's exact taste, with regulars whose orders you remember by heart. The niche is your neighborhood. The memory of each regular is your **[learner model](/blog/ai-learning-platform/18-learner-models-teaching-the-machine-what-the-student-knows)**, your tutor's running estimate of what each student knows.
 
 ### Horizontal vs. niche, side by side
 
@@ -122,13 +123,13 @@ A learner model needs a map of the subject, showing which skills depend on which
 
 For one domain, you can build that map in real detail. For "everything," the map would be impossibly huge and shallow.
 
-Within a niche, your **knowledge tracing** (the running estimate of mastery per skill) and your review scheduling become precise instead of generic. You can say "this learner is at 0.7 mastery on balancing chemical equations," not just "user seems to be doing okay."
+Within a niche, your **knowledge tracing** (the running estimate of mastery per skill) and your [review scheduling](/blog/ai-learning-platform/21-spaced-repetition-algorithms-in-practice-sm-2-fsrs) become precise instead of generic. You can say "this learner is at 0.7 mastery on balancing chemical equations," not just "user seems to be doing okay."
 
 ### 2. Curated, trustworthy content
 
 In a niche you can align your material to the *actual* exam outline or curriculum and have a subject expert verify it.
 
-That matters because grounding answers in clean, correct source text is your strongest defense against confident wrong answers. (This technique is often called **Retrieval-Augmented Generation**, or RAG: answering from real documents instead of the model's fuzzy memory.)
+That matters because grounding answers in clean, correct source text is your strongest defense against [confident wrong answers](/blog/ai-learning-platform/25-keeping-the-ai-accurate-and-pedagogically-sound). (This technique is often called **[Retrieval-Augmented Generation](/blog/ai-learning-platform/24-turning-a-pdf-into-a-course-rag-for-learning)**, or RAG: answering from real documents instead of the model's fuzzy memory.)
 
 Curating expert-quality content for one subject is achievable. Doing it for every subject is not.
 
@@ -140,7 +141,7 @@ A niche lets you evaluate learners the way their real-world test does. That is t
 
 A general tutor tends to quiz learners on slight variations of what it just taught and call that "mastery." A focused tutor can mirror the real challenge.
 
-**A concrete example.** A tutor built only for the USMLE Step 1 medical exam knows the exam's exact question style, its topic blueprint, and its brutal pacing. It can drill clinical-vignette questions, track mastery per organ system, and even predict a score. A general chatbot can answer a medical question, but it has no idea what Step 1 looks like. The specialist beats the generalist the way a dedicated coach beats a smart friend who happens to have read a textbook.
+**A concrete example.** A tutor built only for the USMLE Step 1 medical exam knows the exam's exact question style, its topic blueprint, and its brutal pacing. It can drill clinical-vignette questions, track mastery per organ system, and even [predict a score](/blog/ai-learning-platform/26-measuring-real-learning-metrics-that-matter). A general chatbot can answer a medical question, but it has no idea what Step 1 looks like. The specialist beats the generalist the way a dedicated coach beats a smart friend who happens to have read a textbook.
 
 ## Common misconceptions
 
@@ -177,6 +178,6 @@ One powerful bridge to expansion is letting learners **upload their own material
 
 ## Conclusion
 
-The single takeaway: depth is your moat. A tutor that tries to teach everything is forced to be vague, and vagueness drops it into a price war against free chatbots it can never win. A tutor that masters one high-stakes subject becomes smarter, more trusted, and genuinely hard to copy.
+The single takeaway: depth is your [moat](/blog/ai-learning-platform/28-business-model-and-the-moat). A tutor that tries to teach everything is forced to be vague, and vagueness drops it into a price war against free chatbots it can never win. A tutor that masters one high-stakes subject becomes smarter, more trusted, and genuinely hard to copy.
 
 So the real question is not "what can my tutor teach?" It is "which one thing can my tutor teach better than anyone alive?" Answer that, win it completely, and the surprising part comes next: the very same learner history that locks in your first subject becomes the engine that lets you expand into the next one almost for free.

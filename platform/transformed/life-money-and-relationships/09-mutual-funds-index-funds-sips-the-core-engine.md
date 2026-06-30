@@ -56,6 +56,7 @@ icon: "\U0001F331"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 Here is something that sounds too simple to be true: you do not need to pick winning stocks, time the market, or pay a clever expert to build serious wealth. For about 95% of people, the whole game comes down to one boring, automatic habit - buying a cheap fund every month and never touching it.
@@ -70,7 +71,7 @@ Both of these are fully avoidable. Once you understand how funds actually work, 
 
 ## What is a mutual fund?
 
-A **mutual fund** is a pool of money. Thousands of ordinary investors put money in together, and a professional manager invests that combined pool across many shares or bonds. In return you get **units** - little slices that represent your share of the pool.
+A **mutual fund** is a pool of money. Thousands of ordinary investors put money in together, and a professional manager invests that combined pool across [many shares or bonds](/blog/life-money-and-relationships/08-asset-classes-the-building-blocks-of-investing). In return you get **units** - little slices that represent your share of the pool.
 
 You don't directly own the underlying shares. You own units of the fund that owns the shares.
 
@@ -99,7 +100,7 @@ Either way you own exactly ₹9,000 of value. Whether your money grows depends e
 
 The **expense ratio** (sometimes called TER, Total Expense Ratio) is the annual fee the fund charges, shown as a percentage of your money. The catch: it's quietly shaved off the NAV **every single day**. You never get a bill, so beginners ignore it - which is exactly why it's dangerous.
 
-A 1% expense ratio on a ₹10 lakh portfolio is ₹10,000 a year, taken silently. That feels small. But fees compound against you the same way returns compound *for* you. Over 25-30 years, the gap between a 1.5% fund and a 0.2% fund can quietly cost you several lakhs - sometimes tens of lakhs - of your final corpus.
+A 1% expense ratio on a ₹10 lakh portfolio is ₹10,000 a year, taken silently. That feels small. But [fees compound against you](/blog/life-money-and-relationships/06-compounding-the-time-value-of-money) the same way returns compound *for* you. Over 25-30 years, the gap between a 1.5% fund and a 0.2% fund can quietly cost you several lakhs - sometimes tens of lakhs - of your final corpus.
 
 > **The key idea:** Costs are the one part of investing you can fully control, and they compound against you for decades. A lower fee is a higher return, guaranteed. This single thought drives most of what follows.
 
@@ -136,7 +137,7 @@ An **ETF** (Exchange Traded Fund) trades on the stock exchange like a share. You
 
 One more term: **tracking error** is how far a fund's return drifts from the index it copies - lower is better. ETFs usually have lower fees and tracking error in theory, but in real life Indian retail investors often hit liquidity and spread problems with low-volume ETFs.
 
-> **Tip:** For most salaried Indians doing a monthly SIP, an **index fund beats an ETF** - no Demat hassle, clean automatic SIPs, no spread games. Open a Demat account only when you genuinely want ETFs or individual stocks.
+> **Tip:** For most salaried Indians doing a monthly SIP, an **index fund beats an ETF** - no Demat hassle, clean automatic SIPs, no spread games. Open a Demat account only when you genuinely want ETFs or [individual stocks](/blog/life-money-and-relationships/10-stocks-the-equity-market-direct-investing-basics).
 
 ## Direct vs Regular plans: the choice that can cost you lakhs
 
@@ -180,8 +181,8 @@ Honest data: historically, a lumpsum tends to beat a SIP more often than not - r
 
 A few categories an Indian beginner will meet:
 
-- **ELSS (Equity Linked Savings Scheme):** an equity fund with a **3-year lock-in** - the shortest among Section 80C options - that qualifies for the Section 80C deduction up to ₹1.5 lakh a year. Note: this benefit only helps under the *old* tax regime, not the new one.
-- **Equity-oriented fund:** a fund holding at least 65% in Indian equities, which earns the friendlier "equity" capital-gains tax treatment.
+- **ELSS (Equity Linked Savings Scheme):** an equity fund with a **3-year lock-in** - the shortest among Section 80C options - that qualifies for the [Section 80C deduction](/blog/life-money-and-relationships/11-retirement-tax-advantaged-accounts-in-india) up to ₹1.5 lakh a year. Note: this benefit only helps under the *old* tax regime, not the new one.
+- **Equity-oriented fund:** a fund holding at least 65% in Indian equities, which earns the friendlier "equity" [capital-gains tax treatment](/blog/life-money-and-relationships/12-taxes-made-simple-income-deductions-capital-gains).
 - **Growth vs IDCW option:** with **Growth**, profits stay invested and your NAV rises - no payouts, more tax-efficient, compounding runs uninterrupted. With **IDCW**, the fund pays out periodically, that payout is taxed at your income-slab rate, and it's partly just your own money handed back to you.
 
 > **Tip:** For wealth-building, always choose **Growth**, not IDCW. If you need regular income later, use an **SWP (Systematic Withdrawal Plan)** - selling a fixed amount of units each month - which is usually more tax-efficient than IDCW payouts.

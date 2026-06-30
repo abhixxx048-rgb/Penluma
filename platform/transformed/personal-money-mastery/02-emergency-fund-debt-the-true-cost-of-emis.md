@@ -32,6 +32,7 @@ faq:
     a: Paying only the minimum due. It is about 5% of your balance, so the debt drags on for years and total interest can exceed what you originally spent. Always pay the full statement balance.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: personal-money-mastery
 topicTitle: Personal Money Mastery
 category: Money & Business
@@ -47,7 +48,7 @@ Two things have to be in place first: a cushion for when life surprises you, and
 
 ## Why this matters
 
-Most money advice rushes you toward investing. But returns mean nothing if one bad month forces you to sell good assets at the worst possible time, or if a 42% credit card is silently eating more than your mutual fund ever earns.
+Most money advice rushes you toward investing. But returns mean nothing if one bad month forces you to sell good assets at the worst possible time, or if a 42% credit card is silently eating more than your [mutual fund](/blog/personal-money-mastery/07-index-funds-passive-investing) ever earns.
 
 Get your safety net and your debt sorted, and everything after it gets easier. Skip this step, and even great investments can't dig you out. This is the foundation the rest of your money sits on.
 
@@ -59,9 +60,9 @@ Think of it like the suspension on a car. You don't notice it on a smooth road, 
 
 ### How much do you actually need?
 
-The rule is **3 to 6 months of essential expenses**, not your salary. This is the single biggest mistake people make. They multiply their take-home pay, inflate the target, feel overwhelmed, and never start.
+The rule is **3 to 6 months of essential expenses**, not your salary. This is the single biggest mistake people make. They multiply their [take-home pay](/blog/personal-money-mastery/01-budgeting-cash-flow-control), inflate the target, feel overwhelmed, and never start.
 
-"Essential expenses" means only what you *must* pay to keep the lights on: rent, EMIs, food, utilities, insurance premiums, school fees. It excludes restaurants, trips, and shopping, because in a real emergency you cut those anyway.
+"Essential expenses" means only what you *must* pay to keep the lights on: rent, EMIs, food, utilities, [insurance premiums](/blog/personal-money-mastery/04-insurance-done-right), school fees. It excludes restaurants, trips, and shopping, because in a real emergency you cut those anyway.
 
 Here's the difference in practice. Say you take home ₹80,000 a month and your essential expenses are ₹45,000.
 
@@ -97,7 +98,7 @@ A simple, practical split: keep **one month's expenses** in savings or a sweep-i
 
 ### The tax change that quietly leveled the field
 
-Liquid and debt funds used to beat FDs on tax. Not anymore. Since the 2023 budget changes, **any debt or liquid fund bought on or after 1 April 2023 is taxed at your slab rate regardless of how long you hold it.** The long-term benefit is gone.
+Liquid and debt funds used to beat FDs on tax. Not anymore. Since the 2023 budget changes, **any debt or liquid fund bought on or after 1 April 2023 is [taxed at your slab rate](/blog/personal-money-mastery/03-tax-literacy-india-first) regardless of how long you hold it.** The long-term benefit is gone.
 
 FD interest is also taxed at your slab. So choose between FDs and liquid funds purely on **liquidity and convenience**, not on a tax edge that no longer exists.
 
@@ -200,4 +201,4 @@ Four bureaus exist (CIBIL, Experian, Equifax, CRIF High Mark), and what moves th
 
 If you remember one thing, make it this: **the cost of borrowing is mostly hidden in time, not in the sticker price.** Interest is front-loaded, grace periods vanish the moment you carry a balance, and a "cheap" monthly EMI can quietly double the cost of what you bought. See the real number, and your choices get sharper instantly.
 
-A solid emergency fund and a clear debt strategy are what let you invest without fear, because no single bad month can knock you off course. So once your safety net is in place and your high-rate debt is gone, a new question opens up: where should that first surplus rupee actually go, and how do you make it grow faster than inflation quietly eats it? That's where the real wealth-building begins.
+A solid emergency fund and a clear debt strategy are what let you invest without fear, because no single bad month can knock you off course. So once your safety net is in place and your high-rate debt is gone, a new question opens up: where should that first surplus rupee actually go, and how do you make it [grow faster than inflation](/blog/personal-money-mastery/05-compounding-the-time-value-of-money) quietly eats it? That's where the real wealth-building begins.

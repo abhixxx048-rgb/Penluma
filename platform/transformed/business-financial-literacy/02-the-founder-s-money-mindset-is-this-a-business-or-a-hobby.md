@@ -28,6 +28,7 @@ faq:
     a: "Vanity metrics are numbers that look impressive but do not tell you if the business works - like total revenue, signups, or followers. Real metrics, like profit per sale and retained customers, actually change a decision."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: business-financial-literacy
 topicTitle: Business & Financial Literacy
 category: Money & Business
@@ -74,8 +75,8 @@ Good founders do not do their own bookkeeping, but they *can read* their own sta
 
 If you can answer these three questions confidently, you are running a business with your eyes open.
 
-1. **Are we making money on each sale?** When you sell one unit, does the money you receive cover what that sale truly costs you? If you lose money on every sale, selling *more* just digs the hole deeper. This is the world of margins and unit economics - the profit left over from a single sale after the costs directly tied to it.
-2. **Will we run out of cash?** Even a profitable business dies if the bank account hits zero before the money arrives. This is cash flow and runway - how many months until you are empty.
+1. **Are we making money on each sale?** When you sell one unit, does the money you receive cover what that sale truly costs you? If you lose money on every sale, selling *more* just digs the hole deeper. This is the world of margins and [unit economics](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale) - the profit left over from a single sale after the costs directly tied to it.
+2. **Will we run out of cash?** Even a profitable business dies if the bank account hits zero before the money arrives. This is [cash flow and runway](/blog/business-financial-literacy/07-cash-flow-burn-rate-runway-don-t-run-out-of-money) - how many months until you are empty.
 3. **Is the whole thing worth more over time?** Is the machine getting stronger - more customers, who stay longer and are worth more than they cost to win? This is growth and company value.
 
 Each question hides a danger if you ignore it:
@@ -106,7 +107,7 @@ So memorize this line: **profit is opinion, cash is fact.** Profit depends on ju
 
 ## Common misconceptions
 
-**"We are profitable, so we are fine."** Profit is calculated on paper, using rules about when a sale counts. A profitable company with no cash cannot pay salaries on Friday - and a company that cannot pay salaries is over, profit or not.
+**"We are profitable, so we are fine."** Profit is calculated on paper, using rules about when a sale counts. A [profitable company with no cash](/blog/business-financial-literacy/05-the-balance-sheet-cash-flow-statement-why-profit-cash) cannot pay salaries on Friday - and a company that cannot pay salaries is over, profit or not.
 
 **"We hit $1M in sales, so we are winning."** Big revenue with a negative margin is just a fast way to lose money. A founder shouting about a million in sales can still be losing money on every single order. Always ask: "and what did we *keep*?"
 
@@ -148,7 +149,7 @@ You do not need a finance overhaul this week. You need a rhythm. Start here.
 1. **Decide honestly: business or hobby?** Without outside cash arriving, could the thing keep going for the next six months? If the honest answer is no, you have a hobby right now - that is fixable, but only if you admit it.
 2. **Pick your three numbers.** Cash in the bank, profit per sale, and customers retained. Three numbers you act on beat fifty you only admire.
 3. **Put them on a fixed schedule.** Check cash weekly. Check profit per sale and retention monthly. Same day each time, so it becomes a habit, not a panic.
-4. **Let the numbers change one decision.** Delay a hire because runway is tight. Raise a price because margin is thin. Cut an ad that costs more than it brings in. Reading numbers is passive; *living by* them means they change what you do this week.
+4. **Let the numbers change one decision.** Delay a hire because runway is tight. [Raise a price](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive) because margin is thin. Cut an ad that costs more than it brings in. Reading numbers is passive; *living by* them means they change what you do this week.
 5. **Always ask "what did we keep?"** Every time someone celebrates a revenue number, follow it with the margin number. Train yourself and your team to think in kept money, not just collected money.
 
 ## Conclusion
@@ -157,4 +158,4 @@ The founder's money mindset comes down to one sentence: **treat your business as
 
 Do this, and you are running a business. Skip it, and no accountant on earth can save you from a hobby that slowly drains your bank account.
 
-Now there is a natural next question. If profit and cash can disagree so sharply, where exactly does revenue become profit - and where do the leaks hide along the way? That is the income statement, the first machine part worth opening the hood for.
+Now there is a natural next question. If profit and cash can disagree so sharply, where exactly does revenue become profit - and where do the leaks hide along the way? That is the [income statement](/blog/business-financial-literacy/04-reading-a-p-l-income-statement-line-by-line), the first machine part worth opening the hood for.

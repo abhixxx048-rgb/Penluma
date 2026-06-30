@@ -36,6 +36,7 @@ order: 999
 icon: "\U0001F3AF"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -47,7 +48,7 @@ Market sizing has a reputation as a chore you do for the pitch deck. That's the 
 
 Before product-market fit, sizing feels like homework for investors. But the same math answers questions you urgently need answered for yourself.
 
-Done right, a sizing model tells you whether your idea is a $2M lifestyle business or a $50M company. It tells you whether to add new countries or just go deeper in one. And it tells you, concretely, how many sales conversations you must have this quarter to hit your plan.
+Done right, a sizing model tells you whether your idea is a $2M lifestyle business or a $50M company. It tells you whether to add new countries or just go deeper in one. And it tells you, concretely, how many [sales conversations](/blog/sales-customer-development/13-founder-led-outreach-getting-the-conversations) you must have this quarter to hit your plan.
 
 Done wrong, it tells you nothing, and it quietly signals to anyone experienced that you skipped the thinking. Get the math right once and you reuse the same spreadsheet forever.
 
@@ -140,7 +141,7 @@ Suppose a founder can run **15 real sales conversations per week**. Over 18 mont
 
 That's the honest 18-month obtainable revenue. As a share of SAM, 206 of 29,000 is about **0.7%**. The key thing: you arrive at "less than 1% of SAM" as an *output* of the capacity math, not as an input assumption. That ordering is the entire point.
 
-It also reveals the real pre-PMF truth. The market is plenty big. The constraint is founder throughput and close rate. You physically cannot demo your way past roughly $300K solo. So the strategic questions become: raise the close rate, add a salesperson, or lean harder on inbound. The model just handed you your to-do list.
+It also reveals the real pre-PMF truth. The market is plenty big. The constraint is founder throughput and close rate. You physically cannot demo your way past roughly $300K solo. So the strategic questions become: raise the [close rate](/blog/sales-customer-development/14-from-conversation-to-commitment-advancing-and-closing), add a salesperson, or lean harder on inbound. The model just handed you your to-do list.
 
 ## A third lens: size by value created
 
@@ -150,13 +151,13 @@ There's a powerful sanity check that pressure-tests your price from the *buyer's
 
 Estimate the real economic value your product creates for one customer. For our print shop, that might be: hours saved fixing wrong-sized artwork, faster quotes that win jobs, after-hours online orders captured. Suppose it totals about **$13,000/year of value created**.
 
-Your $1,400 ACV is then about **11% of the value you create**. SaaS commonly captures 10 to 25%, so 11% sits comfortably in the healthy range, which means your price is, if anything, conservative and has room to grow.
+Your $1,400 ACV is then about **11% of the value you create**. [SaaS commonly captures 10 to 25%](/blog/personal-money-mastery/12-pricing-value-capture), so 11% sits comfortably in the healthy range, which means your price is, if anything, conservative and has room to grow.
 
 Use this lens to corroborate your ACV, never as your headline number. It's the easiest method to inflate, since every "hour saved" is a guess. But when three methods (bottom-up units, top-down cross-check, and value created) all agree in order of magnitude, that's the strongest market-sizing claim you can make.
 
 ## Common misconceptions
 
-**"TAM/SAM/SOM tells my sales team who to call."** No. It's investment math, it tells you whether the opportunity justifies the effort and capital. *Who* to call Monday is your ideal customer profile, a different (and narrower) tool that lives inside SAM.
+**"TAM/SAM/SOM tells my sales team who to call."** No. It's investment math, it tells you whether the opportunity justifies the effort and capital. *Who* to call Monday is your [ideal customer profile](/blog/sales-customer-development/09-qualifying-choosing-who-deserves-your-time), a different (and narrower) tool that lives inside SAM.
 
 **"A bigger TAM is always better."** A defensible $40M SAM with visible math beats a confident $4B TAM with none. The single number is the least important output; the model, the sources, and the assumptions are the deliverable.
 

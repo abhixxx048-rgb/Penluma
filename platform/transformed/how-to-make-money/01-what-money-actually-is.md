@@ -56,6 +56,7 @@ order: 0
 icon: "\U0001FA99"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -67,7 +68,7 @@ So let's rebuild the concept from the ground up. By the end, you'll stop asking 
 
 Your mental model of money silently shapes every financial decision you make.
 
-If you believe money is something you "get" by working hard, you'll grind away at things nobody is willing to pay for. If you believe cash is a safe place to park your future, inflation will quietly eat it. And if you confuse looking successful with being wealthy, you'll spend years building a reputation instead of an income.
+If you believe money is something you "get" by working hard, you'll grind away at things nobody is willing to pay for. If you believe cash is a safe place to park your future, [inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) will quietly eat it. And if you confuse looking successful with being wealthy, you'll spend years building a reputation instead of an income.
 
 Fix the model, and the right moves become obvious. That's the whole point of this chapter - everything else in building wealth follows from getting this one idea straight.
 
@@ -95,7 +96,7 @@ Now the pivot that changes everything.
 
 **Money is an IOU from society.** When you hold ₹1,000, the world collectively owes you about ₹1,000 worth of *someone else's* time, goods, or skill - redeemable on demand, from almost anyone, almost anywhere.
 
-And how did you get that claim? You earned it by **giving value first**. You solved a problem, built a thing, or saved someone time, and they handed you a claim in return. Money is always downstream of value created.
+And how did you get that claim? You earned it by **giving value first**. You solved a problem, built a thing, or saved someone time, and they handed you a claim in return. Money is always downstream of [value created](/blog/how-to-make-money/02-value-creation-vs-value-capture).
 
 > **Think of it like movie tickets** in a giant theatre called "the economy." You don't get tickets by wanting them, or by working hard in the parking lot. You get them by doing something the theatre owner values - then you redeem them later for any show you like. The tickets aren't the point. The shows are. Money is just society's ticket system for trading effort.
 
@@ -142,7 +143,7 @@ This is the single most expensive misconception you can hold.
 
 **"Money is evil / inherently zero-sum."** Honest wealth comes from voluntary value creation, where both parties gain. The extractive version - fraud, monopoly abuse, rent-seeking - is the *corruption* of wealth-making, not its nature. Build the positive-sum kind.
 
-**"This means I should stop working and get rich quick."** Wrong on both counts. Wealth-building is slow, compounding work - just redirected. The shift isn't *less* effort; it's effort aimed at real problems, multiplied with leverage, then converted into assets. There's no lottery ticket here.
+**"This means I should stop working and get rich quick."** Wrong on both counts. Wealth-building is slow, compounding work - just redirected. The shift isn't *less* effort; it's effort aimed at real problems, multiplied with [leverage](/blog/how-to-make-money/04-leverage-the-real-secret), then converted into assets. There's no lottery ticket here.
 
 ## Leverage: why two people doing "the same job" earn 100x differently
 
@@ -150,7 +151,7 @@ Leverage is anything that multiplies the output of your effort. Solve a problem 
 
 > **WhatsApp, 2014.** Just 55 employees, sold to Facebook for about $19 billion - roughly $345 million of value per employee. A hard-working 5,000-person call centre earning the same revenue would have a tiny fraction of that value per head. The difference is leverage: WhatsApp's solution ran on code, which serves a billion users at almost no extra cost per user. Naval calls code "permissionless leverage" - you don't need anyone's approval to deploy it.
 
-Your personal edge is what Naval calls **specific knowledge**: skill you can't be formally trained for, found by following genuine curiosity. It feels like play to you but looks like work to others. Notice what you do effortlessly that other people find hard - that's the seed.
+Your personal edge is what Naval calls **[specific knowledge](/blog/how-to-make-money/09-specific-knowledge-your-personal-moat)**: skill you can't be formally trained for, found by following genuine curiosity. It feels like play to you but looks like work to others. Notice what you do effortlessly that other people find hard - that's the seed.
 
 ## How to use this
 
@@ -159,9 +160,9 @@ You don't need to overhaul your life this week. You need to shift the direction 
 1. **Find a real problem.** Not a clever idea - a problem someone is already frustrated by and willing to pay to remove.
 2. **Build a solution people actually want.** This is where value gets created. Everything downstream depends on it.
 3. **Add leverage.** Wrap your solution in code, media, a product, a team, or capital so it can serve many people at once, not one at a time.
-4. **Let price capture a slice of the value.** Charge for the outcome you deliver, not the hours you log. Remember the bolt.
+4. **Let price capture a slice of the value.** [Charge for the outcome you deliver](/blog/how-to-make-money/14-pricing-value-capture), not the hours you log. Remember the bolt.
 5. **Receive money** - but treat it as the by-product, never the goal.
-6. **Convert money into wealth.** Buy assets that earn while you sleep. Don't let cash sit and shrink to inflation.
+6. **Convert money into wealth.** Buy [assets that earn while you sleep](/blog/how-to-make-money/18-making-money-with-money-cash-flow-assets-compounding). Don't let cash sit and shrink to inflation.
 
 And throughout, run the status check: are you building something that earns without you, or just something that looks impressive?
 

@@ -30,6 +30,7 @@ faq:
     a: "No. Leverage multiplies your judgement, including your mistakes. A multiplier on zero skill is still zero, and a multiplier on a bad decision multiplies the loss. It amplifies whatever you point it at."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: how-to-make-money
 topicTitle: How to Make Money
 category: Money & Business
@@ -45,11 +46,11 @@ The people who break through don't work more. They stop selling their time and s
 
 ## Why this matters
 
-If there's one idea that separates people who earn a comfortable salary from people who build real wealth, this is it.
+If there's one idea that separates people who earn a comfortable salary from people who [build real wealth](/blog/how-to-make-money/16-income-vs-wealth-owning-vs-working), this is it.
 
 Two people can have the *exact same skill* and earn 100 times different amounts. Not because one works harder. Because one has leverage and the other doesn't.
 
-A brilliant cook who works one shift earns a wage. The same cook who turns her recipe into a packaged-food brand earns money while she sleeps. Same skill, completely different result. The difference is the lever.
+A brilliant cook who works one shift earns a wage. The same cook who turns her recipe into a packaged-food brand [earns money while she sleeps](/blog/how-to-make-money/20-systems-automation-delegation). Same skill, completely different result. The difference is the lever.
 
 So the question that actually changes your income isn't "how do I work more hours?" It's "how do I make each hour count more than once?"
 
@@ -72,9 +73,9 @@ Your income is not really driven by hours worked. It's driven, roughly, by this:
 - **Skill** is what you actually know and can do.
 - **Leverage** is how many times that skill gets multiplied or copied.
 
-This builds on a framework from investor and entrepreneur **Naval Ravikant**, collected in *The Almanack of Naval Ravikant*: wealth comes from specific knowledge, accountability, and leverage. Leverage is the force-multiplier sitting on top of everything else.
+This builds on a framework from investor and entrepreneur **Naval Ravikant**, collected in *The Almanack of Naval Ravikant*: wealth comes from [specific knowledge](/blog/how-to-make-money/09-specific-knowledge-your-personal-moat), accountability, and leverage. Leverage is the force-multiplier sitting on top of everything else.
 
-It's also why the formula is a *multiplication*, not an addition. Multiply great skill by big leverage and you get an enormous number. Multiply great skill by zero leverage and you're stuck trading hours for cash, no matter how good you are.
+It's also why the formula is a *multiplication*, not an addition. Multiply great skill by big leverage and you get an enormous number. Multiply great skill by zero leverage and you're stuck [trading hours for cash](/blog/how-to-make-money/10-products-vs-time-escaping-the-trap), no matter how good you are.
 
 ## The four kinds of leverage
 
@@ -159,7 +160,7 @@ Here's the order that actually works. Most people get it backwards, waiting for 
 
 3. **Add media to bring people in for free.** Blog posts, videos, or short posts that pull in customers at near-zero cost. Code is the product; media is the distribution.
 
-4. **Layer on capital only after it works.** Once the thing is proven, reinvest profits, or raise money, to grow faster. Capital amplifies something that already works. It can't rescue something that doesn't.
+4. **Layer on capital only after it works.** Once the thing is proven, [reinvest profits](/blog/how-to-make-money/19-multiple-income-streams-the-reinvestment-flywheel), or raise money, to grow faster. Capital amplifies something that already works. It can't rescue something that doesn't.
 
 5. **Add a small team last.** Bring in labour to handle what code and media can't. Keep it lean.
 

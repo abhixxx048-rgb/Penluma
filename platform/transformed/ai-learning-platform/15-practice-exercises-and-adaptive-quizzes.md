@@ -36,6 +36,7 @@ order: 14
 icon: "\U0001F393"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -53,7 +54,7 @@ A platform (or a study habit) that explains brilliantly but quizzes poorly produ
 
 ## The one idea that changes everything: retrieval beats rereading
 
-Let's define the key term plainly. **Retrieval practice** means pulling an answer out of your own memory - a quiz, a flashcard, "explain it back to me" - instead of putting information *in* again by rereading.
+Let's define the key term plainly. [**Retrieval practice**](/blog/ai-learning-platform/06-retrieval-practice-why-testing-beats-re-reading) means pulling an answer out of your own memory - a quiz, a flashcard, "explain it back to me" - instead of putting information *in* again by rereading.
 
 Here is the blunt finding from decades of research: the act of retrieving is itself what builds durable memory. Far more than rereading, even though rereading *feels* easier.
 
@@ -67,7 +68,7 @@ The practical takeaway is simple. Don't save recall for the end. Ask yourself to
 
 Not all questions are created equal. Most homemade quizzes test only the bottom rung of thinking.
 
-That ladder is called **Bloom's Taxonomy**, and it runs from simple to demanding:
+That ladder is called [**Bloom's Taxonomy**](/blog/ai-learning-platform/09-bloom-s-taxonomy-the-ladder-of-understanding), and it runs from simple to demanding:
 
 1. **Remember** - recall a fact
 2. **Understand** - explain it in your own words
@@ -103,7 +104,7 @@ A **fixed quiz** serves the same questions to everyone. An **adaptive quiz** cha
 
 The goal is to keep you in two overlapping sweet spots at once.
 
-**The Zone of Proximal Development** is the gap between what you can do alone and what you can do with a little help. Below it, you're bored. Above it, you're lost. Inside it is where learning actually happens.
+[**The Zone of Proximal Development**](/blog/ai-learning-platform/11-zone-of-proximal-development-scaffolding-worked-examples) is the gap between what you can do alone and what you can do with a little help. Below it, you're bored. Above it, you're lost. Inside it is where learning actually happens.
 
 **Desirable difficulty** describes conditions that make practice feel harder but build stronger memory. The key word is *desirable*. A difficulty only helps if you have enough background to overcome it with effort. Pile struggle on someone missing the prerequisites and it just becomes demoralizing.
 
@@ -137,9 +138,9 @@ Here is the loop in plain terms:
 
 Beyond retrieval, two research-backed habits make practice far stronger. Both feel harder in the moment - and that is exactly why they work.
 
-**Spacing** means revisiting each item at expanding gaps - a day, then a few days, then a week - instead of cramming. A successful recall *just before* you would have forgotten strengthens the memory most. Spacing beats forgetting on its own timeline.
+[**Spacing**](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve) means revisiting each item at expanding gaps - a day, then a few days, then a week - instead of cramming. A successful recall *just before* you would have forgotten strengthens the memory most. Spacing beats forgetting on its own timeline.
 
-**Interleaving** means mixing problem types (A, B, C, B, A) instead of blocking one type at a time (A, A, A, A). Mixing forces you to *choose* the right strategy for each problem - which is the skill real tests and real life demand. In one study, interleaving roughly doubled later scores.
+[**Interleaving**](/blog/ai-learning-platform/08-interleaving-dual-coding-desirable-difficulties) means mixing problem types (A, B, C, B, A) instead of blocking one type at a time (A, A, A, A). Mixing forces you to *choose* the right strategy for each problem - which is the skill real tests and real life demand. In one study, interleaving roughly doubled later scores.
 
 ## Common misconceptions
 

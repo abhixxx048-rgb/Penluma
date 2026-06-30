@@ -37,6 +37,7 @@ icon: "\U0001F393"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 You built a tutor that actually teaches. Then one Tuesday the company whose model you rent ships your exact feature, for free, to a hundred million people. Now what?
@@ -93,7 +94,7 @@ Picture one AI Spanish tutor sold three ways:
 
 Identical engine. Three completely different products wrapped around it.
 
-How do you choose? Look at the unit economics, not your gut. A useful measure is **LTV:CAC** - Lifetime Value (total money one customer brings over the whole relationship) compared to Customer Acquisition Cost (what you spent to win them). B2B education tends to run around **8 to 10×** there, while B2C is around **5 to 7×**, because long institutional contracts are worth more per signup. Many winners blend models - Coursera leaned harder on universities and employers as solo-learner numbers fell after the pandemic.
+How do you choose? Look at the [unit economics](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale), not your gut. A useful measure is **LTV:CAC** - Lifetime Value (total money one customer brings over the whole relationship) compared to Customer Acquisition Cost (what you spent to win them). B2B education tends to run around **8 to 10×** there, while B2C is around **5 to 7×**, because long institutional contracts are worth more per signup. Many winners blend models - Coursera leaned harder on universities and employers as solo-learner numbers fell after the pandemic.
 
 ## Bring your own content
 
@@ -101,7 +102,7 @@ Here is a feature that quietly does double duty as both a trust-builder and a wa
 
 Instead of only teaching *your* curriculum, you let learners or schools upload their **own** material - lecture slides, notes, a textbook - and the tutor teaches strictly from that.
 
-The technique behind it is **Retrieval-Augmented Generation (RAG)**: the AI answers from the uploaded sources rather than its fuzzy memory. That sharply cuts made-up answers and lets it show **citations** pointing to the exact page.
+The technique behind it is [**Retrieval-Augmented Generation (RAG)**](/blog/ai-learning-platform/24-turning-a-pdf-into-a-course-rag-for-learning): the AI answers from the uploaded sources rather than its fuzzy memory. That sharply cuts made-up answers and lets it show **citations** pointing to the exact page.
 
 This wins for two reasons:
 
@@ -141,7 +142,7 @@ Think of **Duolingo**. It uses a powerful general model under the hood, so the r
 
 ## Niche-first beats "teach everything"
 
-It is tempting to build a "learn anything" tutor to chase the biggest possible market. Resist it.
+It is tempting to build a ["learn anything" tutor](/blog/ai-learning-platform/27-pick-a-niche-why-teach-everything-fails) to chase the biggest possible market. Resist it.
 
 A horizontal "teach everything" tutor has no opinion about how chemistry should be taught versus how someone should prep for the bar exam. So it competes head-on with free general chatbots and wins on nothing.
 
@@ -175,7 +176,7 @@ If you're building (or rescuing) an AI learning product, work through these in o
 
 1. **Audit your moat honestly.** If a competitor could rebuild your product in a weekend with API access, you are a thin wrapper. Find the layer that gets stronger with every session.
 2. **Pick the business model from the math.** Estimate LTV:CAC for B2C, B2B, and B2B2C in your space. Let the unit economics - not your gut - pick the product surface you build first (parent view vs. teacher dashboard vs. admin console).
-3. **Start the learner model on day one.** Even crude knowledge tracing and spaced repetition begin accumulating history that a future rival can never backfill.
+3. **Start the learner model on day one.** Even crude [knowledge tracing](/blog/ai-learning-platform/18-learner-models-teaching-the-machine-what-the-student-knows) and [spaced repetition](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve) begin accumulating history that a future rival can never backfill.
 4. **Add "bring your own content" with citations.** Use retrieval so answers stay grounded and verifiable. It builds trust and becomes a wedge into institutions.
 5. **Choose one measurable, high-stakes niche.** Outcome must be countable, learners must already pay, and general chatbots must currently do it badly.
 6. **Prove the outcome and publish it.** In a high-stakes niche, your strongest marketing and your strongest retention driver are the same thing: results. Khanmigo, Khan Academy's Socratic tutor, grew from 40,000 to 700,000 users across 380+ school districts in a single year - not on a better raw model, but by embedding into school workflows and showing pilot gains of roughly 1.4 grade levels in math. Generic chatbots cannot casually claim numbers like that.

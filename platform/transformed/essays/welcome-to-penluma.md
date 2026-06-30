@@ -45,6 +45,7 @@ icon: ✦
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 You think you understand something. Then you sit down to write it out, and the holes appear everywhere. The sentence you were sure of suddenly needs a word you don't have. That gap is not a failure. It is the whole point.
@@ -67,7 +68,7 @@ The moment you write, the cloud has to take a shape. You need a first sentence, 
 
 Think of it like sketching a machine you've only seen running. In your memory it works fine. But to draw it, you have to decide where each gear sits and what turns what. Halfway through, you realize you have no idea how two of the parts connect. You only learned that because you tried to draw it.
 
-That is writing. It is thinking made visible, and therefore thinking made correctable.
+That is writing. It is [thinking made visible](/blog/clear-thinking-and-expression/03-think-on-paper-why-externalizing-beats-thinking-in-your-head), and therefore thinking made correctable.
 
 ## Understanding has three layers, not one
 
@@ -90,7 +91,7 @@ Backwards. You understand it *by* writing it down. Waiting for clarity before yo
 No. Good writers discover what they want to say *while* writing, then revise until it's clear. The first draft is for finding the idea. Later drafts are for sharpening it.
 
 **"If I can nod along, I've learned it."**
-Recognition is not understanding. You can nod at an explanation and still be unable to reproduce it. The real test is whether you can generate it yourself, on a blank page, with nobody guiding you.
+[Recognition is not understanding](/blog/ai-learning-platform/04-knowing-vs-understanding-vs-remembering-a-month-later). You can nod at an explanation and still be unable to reproduce it. The real test is whether you can generate it yourself, on a blank page, with nobody guiding you.
 
 ## How to use this
 
@@ -100,10 +101,10 @@ You don't need to be a writer to use writing as a thinking tool. Try this:
 2. **Write the intuition first.** One or two sentences, no jargon, as if to a curious twelve-year-old. If you can't, that's your first real lesson.
 3. **Then write the mechanics.** Force yourself through the actual steps. When you hit a part you can't write, you've found exactly what you didn't know. Go learn that piece.
 4. **List how it breaks.** Name three ways it could fail or surprise you. This is where shallow understanding gets exposed.
-5. **Revise once for a reader.** Read it as if a friend will read it. Cut the fog. Replace every vague word with a precise one.
-6. **Explain it to someone.** Out loud, no notes. If you stumble, the writing isn't done.
+5. **[Revise once for a reader](/blog/clear-thinking-and-expression/07-editing-turning-a-messy-draft-into-something-clear).** Read it as if a friend will read it. Cut the fog. Replace every vague word with a precise one.
+6. **[Explain it to someone](/blog/ai-learning-platform/16-the-teach-it-back-method-and-how-ai-evaluates-it).** Out loud, no notes. If you stumble, the writing isn't done.
 
-Do this with one topic and you'll feel the difference. The knowledge stops sliding off and starts sticking.
+Do this with one topic and you'll feel the difference. [The knowledge stops sliding off](/blog/ai-learning-platform/03-how-humans-learn-a-plain-tour-of-memory) and starts sticking.
 
 ## Conclusion
 

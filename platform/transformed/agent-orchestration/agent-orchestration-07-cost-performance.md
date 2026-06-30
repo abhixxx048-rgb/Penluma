@@ -30,6 +30,7 @@ faq:
     a: "Use both: a strong model as the orchestrator and final synthesizer, plus cheaper models for high-volume subtasks. Upgrading the model often beats simply doubling the token budget."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: agent-orchestration
 topicTitle: Multi-Agent LLM Systems
 category: AI & LLMs
@@ -39,7 +40,7 @@ icon: "\U0001F916"
 sources: []
 ---
 
-A single AI chat costs you one unit. Spin up a team of AI agents to tackle the same job, and you can spend fifteen times as much. That's not a bug or a sloppy setup. It's the price of admission for a multi-agent system, and most of that cost is something you signed up for on purpose.
+A single AI chat costs you one unit. Spin up a team of AI agents to tackle the same job, and you can spend fifteen times as much. That's not a bug or a sloppy setup. It's the price of admission for [a multi-agent system](/blog/agent-orchestration/agent-orchestration-00-index), and most of that cost is something you signed up for on purpose.
 
 The hard part isn't knowing that multi-agent is expensive. It's knowing *when* the expense buys you something real, and how to keep a runaway agent from quietly burning through your budget at three in the morning.
 
@@ -47,7 +48,7 @@ The hard part isn't knowing that multi-agent is expensive. It's knowing *when* t
 
 Token cost is usually the single biggest line item in any production AI system that uses agents. Get the architecture wrong and a single task can fan out into hundreds of model calls, cross a million tokens, and cost five to eight dollars to do something a single agent could have done for a fraction of that.
 
-Get it right, and you unlock work that a single agent simply can't do: research that spans more sources than one context window can hold, analysis that explores ten directions at once, jobs that finish in seconds instead of minutes.
+Get it right, and you unlock work that [a single agent](/blog/agent-orchestration/agent-orchestration-01-foundations) simply can't do: research that spans more sources than one context window can hold, analysis that explores ten directions at once, jobs that finish in seconds instead of minutes.
 
 This article gives you the mental model and the concrete levers to tell those two situations apart, and to control the bill either way.
 
@@ -109,7 +110,7 @@ Avoid multi-agent for:
 - **Real-time coordinated work**
 - Any task where subtasks **share state or depend on each other's intermediate results**
 
-When agents have to hand work back and forth, fidelity leaks at every handoff.
+When agents have to hand work back and forth, fidelity leaks at [every handoff](/blog/agent-orchestration/agent-orchestration-03-communication-protocols).
 
 ### The counter-evidence: sometimes one agent just wins
 
@@ -249,7 +250,7 @@ Here are the concrete patterns, roughly in order of impact.
 
 6. **Exit early on diminishing returns.** Stop iterating once the marginal confidence gain flattens out. Dynamic turn limits based on the probability of success can cut costs by about 24 percent while holding solve rates steady. Watch for low-yield loops - repeated retries, premium-model calls that don't actually reduce uncertainty - and cut that path's budget.
 
-7. **Pass references, not payloads.** Have subagents store their work in external memory and pass back lightweight pointers, instead of copying giant outputs through the conversation history. Retrieving from a cached plan can drop latency from 30 seconds to 300 milliseconds and cost to near zero.
+7. **Pass references, not payloads.** Have subagents store their work in [external memory](/blog/agent-orchestration/agent-orchestration-05-context-memory) and pass back lightweight pointers, instead of copying giant outputs through the conversation history. Retrieving from a cached plan can drop latency from 30 seconds to 300 milliseconds and cost to near zero.
 
 8. **Forward worker output verbatim.** Don't make the supervisor paraphrase or regenerate what a worker already produced. In the LangChain benchmark, letting output pass through directly gave about a 50 percent performance increase and cut the supervisor's "translation" token tax.
 
@@ -269,4 +270,4 @@ The one thing to carry with you: **multi-agent is not a way to do the same work 
 
 And whichever way you go, the levers that keep the bill sane are the same handful: cache the shared prefix, tier your models, batch the patient work, and cap everything.
 
-Here's the thread worth pulling next: if 80 percent of your outcome comes from how many tokens you spend, then *where* you spend them - which subtask, which model, which retry - becomes the real craft. That's the orchestration design problem, and it's where the next big gains hide.
+Here's the thread worth pulling next: if 80 percent of your outcome comes from how many tokens you spend, then *where* you spend them - which subtask, which model, which retry - becomes the real craft. That's the [orchestration design problem](/blog/agent-orchestration/agent-orchestration-02-patterns), and it's where the next big gains hide.

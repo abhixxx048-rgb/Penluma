@@ -38,6 +38,7 @@ faq:
     a: No. Use a proven library like etcd or HashiCorp Raft. Subtle bugs in election or commit logic cause silent data loss that ordinary tests rarely catch.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Consensus_(computer_science)
   - https://en.wikipedia.org/wiki/Raft_(algorithm)
@@ -71,7 +72,7 @@ Everything below is just unpacking that sentence.
 
 Picture every server in your cluster as a person copying down a list of instructions, line by line: *set X to 5, add 10 to Y, delete Z*. If every person writes down the exact same instructions in the exact same order, and they all start from the same blank page, they will all end up in identical states. Forever.
 
-That's a **replicated state machine**. The "state machine" is your database (or queue, or config store). The trick is that you never have to copy the *state* itself - you just have to make sure everyone agrees on the *log of commands* and the *order*.
+That's a **[replicated state machine](/blog/distributed-systems/03-replicated-state-machines-the-log)**. The "state machine" is your database (or queue, or config store). The trick is that you never have to copy the *state* itself - you just have to make sure everyone agrees on the *log of commands* and the *order*.
 
 So the giant problem of "keep N machines identical" shrinks to a smaller problem: **get everyone to agree on the next line of the log.** Solve that one repeatedly and you've solved the whole thing. This is why both Raft and Paxos, despite looking different, are really doing the same job.
 
@@ -129,11 +130,11 @@ Raft's whole conversation runs on two remote calls:
 
 An entry is **committed** once the current leader has replicated it to a majority. After that, it is durable - it will survive in every future leader's log, no matter who crashes. Raft guarantees this with **leader completeness**: because a new leader needs an up-to-date log to win its election, it can never be missing a committed entry.
 
-Two more pieces round it out. **Joint consensus** safely changes cluster membership by briefly requiring *both* the old and new majorities to agree, so you can't accidentally create two disjoint quorums during the swap. And **snapshots** compact a log that would otherwise grow forever, and let a brand-new node catch up by loading a snapshot instead of replaying years of history.
+Two more pieces round it out. **Joint consensus** safely changes [cluster membership](/blog/distributed-systems/05-raft-log-replication-safety-membership) by briefly requiring *both* the old and new majorities to agree, so you can't accidentally create two disjoint quorums during the swap. And **snapshots** compact a log that would otherwise grow forever, and let a brand-new node catch up by loading a snapshot instead of replaying years of history.
 
 ## Paxos: the minimal core
 
-**Paxos** solves the same problem with fewer rules and more generality. The classic version agrees on a single value in two phases:
+**[Paxos](/blog/distributed-systems/06-paxos-the-original-consensus-algorithm)** solves the same problem with fewer rules and more generality. The classic version agrees on a single value in two phases:
 
 1. **Prepare / Promise.** A proposer picks a ballot number N and asks acceptors to "promise to ignore anything numbered below N." Each acceptor promises - and importantly, reports back any value it has *already* accepted.
 2. **Accept / Accepted.** The proposer asks acceptors to accept value V at ballot N. An acceptor agrees as long as it hasn't since promised a higher number. Once a majority accepts, the value is **chosen**.
@@ -152,7 +153,7 @@ People love to frame this as a rivalry. It mostly isn't.
 
 - They solve the **same problem** on the **same majority-quorum foundation**, and both reduce to agreeing on a log.
 - **Raft** is prescriptive: one strong leader, a structured log, designed so a human can hold the whole thing in their head.
-- **Paxos** is minimal and general - leaderless in theory - but it leaves leader election and multi-value agreement as do-it-yourself work.
+- **Paxos** is minimal and general - leaderless in theory - but it leaves [leader election](/blog/distributed-systems/04-raft-leader-election) and multi-value agreement as do-it-yourself work.
 - In real deployments, **Multi-Paxos and Raft converge** on the same shape: a stable leader replicating a log.
 - The increasing number that exposes a stale leader has three names for the same idea: **term** (Raft) = **epoch** = **ballot** (Paxos).
 
@@ -175,7 +176,7 @@ You're already depending on these algorithms, probably right now:
 
 **"Consensus makes my system faster."** It does the opposite. Consensus trades latency for correctness. Every committed decision costs at least one majority round trip. It buys you safety, not speed.
 
-**"During a partition, both sides keep working."** No. Only the side with a majority makes progress. The minority side deliberately pauses - it chooses consistency over availability rather than risk a conflicting decision.
+**"During a partition, both sides keep working."** No. Only the side with a majority makes progress. The minority side deliberately pauses - it chooses [consistency over availability](/blog/distributed-systems/16-the-cap-theorem-and-pacelc) rather than risk a conflicting decision.
 
 **"An even number of nodes is safer than odd."** A 4-node cluster tolerates the same single failure as a 3-node one, with more hardware to break. Odd numbers are the sweet spot.
 

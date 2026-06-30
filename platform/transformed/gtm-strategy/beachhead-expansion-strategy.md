@@ -30,6 +30,7 @@ faq:
     a: "It's the distance between what you ship and everything a practical buyer needs to actually solve their problem, including integrations, support, and references. Pick the beachhead where that gap is smallest."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: gtm-strategy
 topicTitle: Go-to-Market Strategy
 category: Business & Growth
@@ -83,7 +84,7 @@ The power is in the concentration. The same marketing budget, the same engineeri
 A good beachhead segment passes six tests at once:
 
 1. **Reachable and self-referencing.** You can find and contact these customers, and they talk to each other. Word of mouth among them compounds. (A trade community, a profession, an industry forum.)
-2. **A compelling must-have reason to buy.** Not a "nice to have." A daily, painful, revenue-linked problem they'd pay to make go away today.
+2. **A compelling [must-have reason to buy](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress).** Not a "nice to have." A daily, painful, revenue-linked problem they'd pay to make go away today.
 3. **You can field a *whole product* for them.** Not just your core tech, but the complete solution they need to actually get the job done (more on this below).
 4. **The competition is beatable here.** Ideally the segment is underserved, with no entrenched leader already owning the references.
 5. **It fits your "crown jewels."** Your single strongest, most differentiated capability is exactly what this segment needs most.
@@ -132,7 +133,7 @@ Reality: the biggest market is usually owned by entrenched leaders who hold the 
 Reality: pragmatists want the complete solution, not a clever angle on an incomplete one. If you're missing the segment's must-have feature, no amount of positioning saves you.
 
 **"Validate endlessly before committing."**
-Reality: pick a beachhead, *commit*, then use customer conversations to tune the messaging and sub-niche, with one clear kill-or-pivot trigger. Validation is a checkpoint, not a permanent excuse to avoid a decision.
+Reality: pick a beachhead, *commit*, then use [customer conversations](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself) to tune the messaging and sub-niche, with one clear kill-or-pivot trigger. Validation is a checkpoint, not a permanent excuse to avoid a decision.
 
 **"The beachhead has to be huge to be worth it."**
 Reality: the first beach rarely clears the $100M bar alone. It earns you the *broader* market. Underwrite your growth on the expansion, not the head pin.
@@ -170,8 +171,8 @@ Here's how to apply the beachhead strategy to your own product:
 3. **Score each segment against the six tests.** Reachable and self-referencing, urgent must-have, finishable whole product, beatable competition, crown-jewel fit, right-sized. Be brutal.
 4. **Find where the whole-product gap is smallest, not where the market is biggest.** This is the decisive filter. The segment's defining feature should be one you *have*, not one you'd have to build.
 5. **Check the competition for real, not in your imagination.** Visit the incumbents' actual sites. If the segment's must-have feature is already standard among them, that's a red flag, not a market to enter.
-6. **Commit, then validate as a checkpoint.** Run roughly 10 discovery conversations to tune the sub-niche and messaging. Set one explicit kill-or-pivot trigger up front (for example: if most prospects already have a tool they love, pivot the sub-niche).
-7. **Win the beach with low-cost, high-trust channels.** Founder-led outreach and the segment's own communities, not expensive paid ads, especially when early deal sizes are small.
+6. **Commit, then validate as a checkpoint.** Run roughly 10 [discovery conversations](/blog/sales-customer-development/07-running-a-great-discovery-call-start-to-finish) to tune the sub-niche and messaging. Set one explicit kill-or-pivot trigger up front (for example: if most prospects already have a tool they love, pivot the sub-niche).
+7. **Win the beach with low-cost, high-trust channels.** [Founder-led outreach](/blog/sales-customer-development/13-founder-led-outreach-getting-the-conversations) and the segment's own communities, not expensive paid ads, especially when early deal sizes are small.
 8. **Set a gate before you expand.** Don't open pin two until you've earned a real cluster of reference customers in pin one (10 to 20 is a reasonable bar). Expanding early dilutes the very focus that's working.
 9. **Plan the bowling-pin sequence on paper.** For each future segment, write down what it shares with a pin you'll already own and what net-new work it forces. Be honest about which "easy wins" are actually real builds.
 
@@ -181,4 +182,4 @@ The one idea to keep: **you cross the chasm by going narrow on purpose.** Pick t
 
 The mistake that kills products isn't aiming too low. It's aiming everywhere at once and dominating nowhere.
 
-And here's the thread worth pulling next. A beachhead tells you *who* to win first, but it doesn't tell you how to turn a curious visitor into a paying, referenceable customer fast enough to build that cluster before you run out of runway. That's the conversion-funnel problem, and for a focused beachhead the winning metric is often startlingly simple: how many days until a new customer goes live and gets their first real result.
+And here's the thread worth pulling next. A beachhead tells you *who* to win first, but it doesn't tell you how to [turn a curious visitor into a paying, referenceable customer](/blog/sales-customer-development/14-from-conversation-to-commitment-advancing-and-closing) fast enough to build that cluster before you run out of runway. That's the conversion-funnel problem, and for a focused beachhead the winning metric is often startlingly simple: how many days until a new customer goes live and gets their first real result.

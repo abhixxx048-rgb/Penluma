@@ -23,6 +23,7 @@ order: 8
 icon: ☁️
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 faq:
   - q: What is Amazon CloudFront in simple terms?
@@ -53,7 +54,7 @@ CloudFront fixes this in two ways at once. It cuts **latency** by serving conten
 
 Think of a popular book. The publisher prints it once, but bookstores all over the world stock copies. You do not fly to the printer to buy one. You walk to a shop down the street.
 
-CloudFront works the same way. Your **origin** is the printer: an S3 bucket, an Application Load Balancer, or any custom web server holding the original content. The **edge locations** are the bookstores: a large network of sites in many cities that hold cached copies close to readers.
+CloudFront works the same way. Your **origin** is the printer: an [S3 bucket](/blog/aws-cloud-practitioner-mcq/10-amazon-s3-object-storage), an Application Load Balancer, or any custom web server holding the original content. The **edge locations** are the bookstores: a large network of sites in many cities that hold cached copies close to readers.
 
 When someone requests a file:
 
@@ -98,7 +99,7 @@ Both CloudFront and Global Accelerator "use the AWS global network for speed," w
 
 ### Elastic Load Balancing balances inside one Region
 
-An **Application Load Balancer** spreads requests across servers (like EC2 instances) within a single Region. It does nothing about geographic distance.
+An **Application Load Balancer** spreads requests across servers (like [EC2 instances](/blog/aws-cloud-practitioner-mcq/06-amazon-ec2-instances-purchasing-options)) within a single Region. It does nothing about geographic distance.
 
 CloudFront and an ALB are not interchangeable; they are teammates. Put CloudFront at the edge to cache content globally, and use the ALB as its origin to balance the backend. CloudFront does not distribute traffic across EC2 instances, and it does not replace the load balancer.
 
@@ -130,7 +131,7 @@ Do not confuse this with **Origin Access Control (OAC)**. OAC locks your S3 buck
 
 ### WAF filters malicious requests
 
-**AWS WAF** (Web Application Firewall) inspects incoming HTTP/HTTPS requests and blocks things like SQL injection and cross-site scripting using rules. Attach it to your distribution and bad requests are filtered at the edge, before they ever reach your application.
+[**AWS WAF**](/blog/aws-cloud-practitioner-mcq/05-security-identity-compliance-services) (Web Application Firewall) inspects incoming HTTP/HTTPS requests and blocks things like SQL injection and cross-site scripting using rules. Attach it to your distribution and bad requests are filtered at the edge, before they ever reach your application.
 
 ### Shield defends against DDoS
 
@@ -141,7 +142,7 @@ The classic exam swap: WAF filters request *content* (SQLi, XSS); Shield absorbs
 ## Common misconceptions
 
 - **"CloudFront only serves static files."** It caches static assets aggressively, but it also accelerates dynamic, per-user content by routing it over the AWS backbone with short or zero TTL. You set different cache behaviors for different paths.
-- **"CloudFront speeds up everything."** It accelerates content delivery to viewers. It does nothing for an internal database queried only by app servers in one Region. That is a different layer, handled by tools like ElastiCache or read replicas.
+- **"CloudFront speeds up everything."** It accelerates content delivery to viewers. It does nothing for an internal database queried only by app servers in one Region. That is a different layer, handled by tools like ElastiCache or [read replicas](/blog/aws-cloud-practitioner-mcq/11-amazon-rds-managed-relational-databases).
 - **"CloudFront just makes things faster."** A second, equally big benefit is **origin offload**. During a traffic spike, cached responses absorb repeated requests so your backend does far less work, even with the same number of visitors.
 - **"Moving my bucket to a closer Region solves global latency."** One Region helps users near it. A truly global audience needs a CDN that caches everywhere.
 - **"Route 53 can be a CloudFront origin."** No. An origin is a real content source: an S3 bucket, an ALB, or a custom HTTP server. DNS, security groups, and IAM roles serve no content.
@@ -163,4 +164,4 @@ For a static site that needs lower global latency *and* no direct bucket access,
 
 The single idea to carry away: CloudFront moves your content close to your users and shields your origin from repeat traffic. Everything else, the TTLs, the signed URLs, the WAF and Shield pairing, is detail hanging off that one purpose.
 
-The deeper habit worth building is matching the *shape* of the problem to the *shape* of the service. Caching content out is CloudFront. Routing data in is Transfer Acceleration. Static IPs for raw packets is Global Accelerator. Resolving names is Route 53. Once that mental map clicks, a whole cluster of AWS questions stops being tricky. Next, try the same lens on Route 53 routing policies, where "nearest healthy endpoint" hides a surprising amount of depth.
+The deeper habit worth building is matching the *shape* of the problem to the *shape* of the service. Caching content out is CloudFront. Routing data in is Transfer Acceleration. Static IPs for raw packets is Global Accelerator. Resolving names is Route 53. Once that mental map clicks, a whole cluster of AWS questions stops being tricky. Next, try the same lens on [Route 53 routing policies](/blog/aws-cloud-practitioner-mcq/08-amazon-route-53-dns-routing), where "nearest healthy endpoint" hides a surprising amount of depth.

@@ -55,10 +55,11 @@ order: 17
 icon: "\U0001FA99"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
-There is a hard ceiling on earning money the normal way: you have only so many hours, and when you stop working, the money stops too. That is renting out your time. The wealthy quietly escape this trap by doing something different - they take the surplus they earn and turn it into things that pay them whether or not they show up. This is how money starts making money.
+There is a hard ceiling on earning money the normal way: you have only so many hours, and when you stop working, the money stops too. That is [renting out your time](/blog/how-to-make-money/10-products-vs-time-escaping-the-trap). The wealthy quietly escape this trap by doing something different - they take the surplus they earn and turn it into things that pay them whether or not they show up. This is how money starts making money.
 
 ## Why this matters
 
@@ -166,7 +167,7 @@ You don't need exotic products. A handful of simple vehicles covers most needs:
 | REITs | Rent | ~5–7% + growth | Regular income from property |
 | Dividend stocks/funds | Dividends | Varies | Cash-flow income |
 
-A low-cost broad **index fund** - which owns a tiny slice of the entire market - is the simplest, evidence-backed way for a busy person to capture equity compounding without gambling on individual stocks. Automate a monthly SIP and let time do the heavy lifting. Boring is the whole point.
+A low-cost broad **index fund** - which owns a tiny slice of the entire market - is the simplest, evidence-backed way for a busy person to capture equity compounding without gambling on [individual stocks](/blog/economics-from-first-principles/19-financial-markets-stocks-bonds-commodities-and-derivatives). Automate a monthly SIP and let time do the heavy lifting. Boring is the whole point.
 
 ## Tax facts you must price in (India, FY 2025–26)
 
@@ -186,7 +187,7 @@ Index funds and REITs are the steady base. But the steepest part of the curve - 
 
 Naval Ravikant's $100M-plus net worth wasn't one lucky bet. It was "compounding small advantages over two decades" through early equity in Uber, Twitter, Notion, and AngelList.
 
-If you're building something of your own, your most valuable cash-flow asset may be the very business you're working on. Equity that, once it has systems running without you, becomes the highest-leverage asset you will ever hold.
+If you're building something of your own, your most valuable cash-flow asset may be the very business you're working on. Equity that, once it has [systems running without you](/blog/how-to-make-money/20-systems-automation-delegation), becomes the [highest-leverage asset](/blog/how-to-make-money/04-leverage-the-real-secret) you will ever hold.
 
 ## How to use this
 
@@ -197,12 +198,12 @@ Concrete steps, in order:
 3. **Automate a monthly index-fund SIP.** Pick a low-cost broad-market fund, set a fixed monthly amount, and make it automatic so emotion never enters the decision.
 4. **Reinvest everything.** Choose growth options, not payout options, while you're building. The snowball stops the day you start spending the returns.
 5. **Add REITs for rental income** once your core is in place and you want regular cash flow.
-6. **Think in real, post-tax returns.** A 7% FD, after roughly 5% inflation and slab tax, may deliver close to 0–1% in actual purchasing power. Always do the after-tax, after-inflation maths.
+6. **Think in real, post-tax returns.** A 7% FD, after roughly 5% [inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) and slab tax, may deliver close to 0–1% in actual purchasing power. Always do the after-tax, after-inflation maths.
 7. **Don't panic-sell.** Equities can fall 30–50% in a single year. Bad timing destroys more wealth than fees ever do. Sit still and let the decades work.
 
 ## Conclusion
 
-The single idea worth carrying out of this: **the job of earned income is to buy assets that earn while you sleep.** Money is a tool - its highest use is to purchase ownership, then to step back and let compounding run.
+The single idea worth carrying out of this: **the job of [earned income](/blog/how-to-make-money/16-income-vs-wealth-owning-vs-working) is to buy assets that earn while you sleep.** Money is a tool - its highest use is to purchase ownership, then to step back and let compounding run.
 
 Start a ₹5,000 SIP at 12% and in 40 years it becomes nearly ₹6 crore, almost all of it growth you never deposited. That is what patience plus time looks like with numbers attached.
 

@@ -50,6 +50,7 @@ faq:
       otherwise it is just hopeless frustration.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Zone_of_proximal_development
   - https://en.wikipedia.org/wiki/Worked-example_effect
@@ -97,7 +98,7 @@ Here is a finding that surprises most people. For a **beginner**, studying a ful
 
 This is the **worked-example effect**, identified by John Sweller and Graham Cooper in 1985.
 
-Why does it work? Your working memory, the mental workbench where you actively juggle information, only holds a few things at once. Throw a beginner at an unsolved problem and that scarce space gets eaten by flailing: "What do I do first? Is this right? What now?"
+Why does it work? Your [working memory](/blog/ai-learning-platform/05-cognitive-load-theory-why-too-much-at-once-fails), the mental workbench where you actively juggle information, only holds a few things at once. Throw a beginner at an unsolved problem and that scarce space gets eaten by flailing: "What do I do first? Is this right? What now?"
 
 That flailing is **wasted mental effort** that crowds out the real job: seeing how the pattern works. A worked example removes the flailing and lets you spend your limited capacity on actually understanding.
 
@@ -125,7 +126,7 @@ One powerful add-on: pair each step with a **self-explanation prompt**, simply a
 
 ## How an adaptive tutor stays in your zone
 
-This is where software can do something a textbook or a one-shot video never could: **continuously re-aim**. A textbook gives every reader the same problem at the same difficulty. An adaptive tutor watches each learner's answers and adjusts the very next step to land inside *that* person's zone.
+This is where software can do something a textbook or a one-shot video never could: **continuously re-aim**. A textbook gives every reader the same problem at the same difficulty. An adaptive tutor watches each learner's answers and adjusts [the very next step](/blog/ai-learning-platform/20-sequencing-what-comes-next-and-when-to-review) to land inside *that* person's zone.
 
 The loop, in plain terms:
 
@@ -146,7 +147,7 @@ The loop, in plain terms:
 
 ## Desirable only if it is reachable
 
-The struggle a good tutor introduces is meant to be a **desirable difficulty**: effort that feels harder now but builds stronger, longer-lasting learning. But "desirable" carries a sharp warning.
+The struggle a good tutor introduces is meant to be a **[desirable difficulty](/blog/ai-learning-platform/08-interleaving-dual-coding-desirable-difficulties)**: effort that feels harder now but builds stronger, longer-lasting learning. But "desirable" carries a sharp warning.
 
 A difficulty only helps if you have enough background to overcome it through effort. If the prerequisite knowledge is missing, the same difficulty becomes *undesirable*: hopeless struggle that teaches nothing.
 
@@ -169,4 +170,4 @@ Whether you are studying solo, teaching, or evaluating a learning app, you can a
 
 If you remember one thing, make it this: **learning lives in the reachable stretch, and good support is support that plans its own exit.** Too easy is boring, too hard is demoralizing, and the help that matters is the help you will not need tomorrow.
 
-That raises a natural next question. How does a tutor actually *know* what you have mastered and where your edge sits right now? The answer lives in how it models a learner over time, quietly estimating each skill from every answer you give, which is exactly where the next chapter goes.
+That raises a natural next question. How does a tutor actually *know* what you have mastered and where your edge sits right now? The answer lives in how it [models a learner over time](/blog/ai-learning-platform/18-learner-models-teaching-the-machine-what-the-student-knows), quietly estimating each skill from every answer you give, which is exactly where the next chapter goes.

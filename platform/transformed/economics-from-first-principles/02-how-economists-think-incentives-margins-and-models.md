@@ -59,6 +59,7 @@ order: 1
 icon: "\U0001F4C8"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Cobra_effect
   - https://en.wikipedia.org/wiki/Goodhart%27s_law
@@ -111,7 +112,7 @@ A widely told story (less well documented, so treat it as a parable) describes B
 
 There's a law underneath both stories. **Goodhart's Law:** "When a measure becomes a target, it ceases to be a good measure." The moment you reward the proxy, people game the proxy.
 
-This is not ancient history. Engineers building AI hit the same wall and call it **reward hacking**: you train a system to maximize a score, and it finds a weird shortcut that boosts the score without doing the real job. That's the Hanoi rat tail, reborn in code.
+This is not ancient history. Engineers building AI hit the same wall and call it [**reward hacking**](/blog/ai-llm-engineering/02-evaluation-measurement): you train a system to maximize a score, and it finds a weird shortcut that boosts the score without doing the real job. That's the Hanoi rat tail, reborn in code.
 
 ### A subtler cousin: risk compensation
 
@@ -154,7 +155,7 @@ Thinking at the margin quietly solves a 250-year-old puzzle. Adam Smith asked in
 
 The margin dissolves it. Price reflects the value of the *next* unit, not the value of *all* of it. Water's total value is enormous, but because it's abundant, your next glass is worth almost nothing. Diamonds give little total value, but because they're scarce, the next one is precious.
 
-This rests on the **law of diminishing marginal utility**: each extra unit gives less added satisfaction than the one before. So "how valuable is X?" is the wrong question. Ask "how valuable is one *more* X, given how much I already have?"
+This rests on the [**law of diminishing marginal utility**](/blog/economics-from-first-principles/05-consumer-behavior-and-how-people-really-decide): each extra unit gives less added satisfaction than the one before. So "how valuable is X?" is the wrong question. Ask "how valuable is one *more* X, given how much I already have?"
 
 ## Trade isn't a fight
 
@@ -168,7 +169,7 @@ The rule: **specialize in whatever you give up the least to produce, then trade 
 
 Picture a top surgeon who also happens to be the fastest typist in town. She should still hire a typist. Her hour in surgery is worth far more than her hour at the keyboard. Her *absolute* skill at typing is beside the point - what matters is what she gives up to do it.
 
-One honest caveat: comparative advantage says the *total* pie grows, but it's silent on *who gets the slices*. A country can gain overall while specific workers - say, a displaced factory town - genuinely lose. That's why trade policy gets fought over so bitterly, from the 1800s to today's tariff and "reshoring" debates. "Did total wealth rise?" and "Was it shared fairly?" are two separate questions. Don't let one hide the other.
+One honest caveat: comparative advantage says the *total* pie grows, but it's silent on *who gets the slices*. A country can gain overall while specific workers - say, a displaced factory town - genuinely lose. That's why trade policy gets fought over so bitterly, from the 1800s to today's [tariff and "reshoring" debates](/blog/economics-from-first-principles/21-international-trade-imports-exports-tariffs-and-agreements). "Did total wealth rise?" and "Was it shared fairly?" are two separate questions. Don't let one hide the other.
 
 ## Models are wrong on purpose
 
@@ -222,10 +223,10 @@ You can run any decision through five quick questions:
 4. **Look for the positive-sum move.** When a deal feels like a fight, ask whether each side could give up something they value less for something they value more. Specialize in what you sacrifice least to do, and trade for the rest.
 5. **Read prices as information.** A rising price isn't just bad news; it's the world telling you something has become scarce. Treat it as a signal to economize or substitute, not just a cost to grumble about.
 
-A final calibration. The classic model assumes a perfectly rational maximizer, but **behavioral economics** mapped the gap. Herbert Simon showed that people **satisfice** - they grab the first "good enough" option rather than optimize. Daniel Kahneman and Amos Tversky documented **loss aversion**, where losses hurt about twice as much as equal gains please. Richard Thaler showed we're "predictably irrational," and that gentle "nudges" can steer better choices. So use these tools and expect yourself and everyone else to apply them imperfectly.
+A final calibration. The classic model assumes a perfectly rational maximizer, but [**behavioral economics**](/blog/economics-from-first-principles/31-behavioral-economics-how-psychology-shapes-the-economy) mapped the gap. Herbert Simon showed that people **satisfice** - they grab the first "good enough" option rather than optimize. Daniel Kahneman and Amos Tversky documented **loss aversion**, where losses hurt about twice as much as equal gains please. Richard Thaler showed we're "predictably irrational," and that gentle "nudges" can steer better choices. So use these tools and expect yourself and everyone else to apply them imperfectly.
 
 ## Conclusion
 
 If you take one thing from all of this, take the margin. Almost every confused decision - finishing the bad movie, buying the bulk pack you'll never use, clinging to a sinking project - comes from staring at the total when you should be weighing the next unit. The single sharpest question in economics is not "is this good?" but "is one *more* worth what it costs, starting now?"
 
-That habit also hands you a quiet warning: incentives are powerful but blind. They reward the behavior you *measure*, not the behavior you *meant*. Which raises a harder question for the next chapter - what happens when millions of these margin-by-margin choices collide in a single market? That's where prices, supply, and demand start doing their strangest and most useful work.
+That habit also hands you a quiet warning: incentives are powerful but blind. They reward the behavior you *measure*, not the behavior you *meant*. Which raises a harder question for the next chapter - what happens when millions of these margin-by-margin choices collide in a single market? That's where prices, [supply, and demand](/blog/economics-from-first-principles/03-supply-demand-and-how-prices-are-determined) start doing their strangest and most useful work.

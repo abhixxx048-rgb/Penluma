@@ -32,6 +32,7 @@ order: 0
 icon: "\U0001F4C8"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -124,7 +125,7 @@ Economics is studied from two heights, and keeping them straight saves you endle
 
 **Microeconomics** studies individual decision-makers: one buyer, one seller, one market, and how prices and quantities get set.
 
-**Macroeconomics** zooms out to economy-wide totals: total output (GDP), the general rise in prices (inflation), the share of people who want work but can't find it (unemployment), and the booms and busts of the *business cycle*.
+**Macroeconomics** zooms out to economy-wide totals: [total output (GDP)](/blog/economics-from-first-principles/11-measuring-an-economy-gdp-gnp-cpi-ppp-and-key-indicators), the [general rise in prices (inflation)](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money), the [share of people who want work but can't find it (unemployment)](/blog/economics-from-first-principles/14-unemployment-productivity-and-the-labor-force), and the [booms and busts of the *business cycle*](/blog/economics-from-first-principles/15-the-business-cycle-booms-recessions-and-depressions).
 
 A useful bit of history: macroeconomics is young. It really crystallized after **John Maynard Keynes published *The General Theory* in 1936**, written in the shadow of the Great Depression, when U.S. unemployment hit roughly 25% in 1933. The old micro tools couldn't explain why an entire economy could get stuck with idle factories and idle workers at the same time. In short, *macro was born from a crisis that micro couldn't explain.*
 
@@ -188,4 +189,4 @@ If you remember one thing, make it this: **economics is the study of choice unde
 
 The deeper marvel is that all of this somehow adds up to cooperation. A modern economy is the largest team of strangers in history, coordinated not by a boss but by prices that quietly carry knowledge no one person could ever hold.
 
-Which raises the obvious next question. If no one is in charge, how exactly does a price know when to rise or fall? That's the hidden machinery of supply and demand, and it's where the story goes next.
+Which raises the obvious next question. If no one is in charge, how exactly does a price know when to rise or fall? That's the hidden machinery of [supply and demand](/blog/economics-from-first-principles/03-supply-demand-and-how-prices-are-determined), and it's where the story goes next.

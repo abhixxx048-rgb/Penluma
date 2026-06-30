@@ -37,6 +37,7 @@ icon: "\U0001F4DD"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 You ship a clean fix. The logic is solid, the tests are green, the review should be a formality. Then your PR description says "the tests passes now" and a reviewer's eyes snag on it. Nothing is broken, but suddenly your careful work reads as careless.
@@ -45,7 +46,7 @@ That tiny mismatch between subject and verb is one of the most common things tha
 
 ## Why this matters
 
-Your code is read by machines, but your *writing* is read by people who decide things about you. PR descriptions, standup updates, commit messages, bug reports, design docs. Those are the surfaces where teammates and managers form an impression of how careful you are.
+Your code is read by machines, but your *writing* is read by people who decide things about you. PR descriptions, standup updates, [commit messages](/blog/english/10-professional-dev-writing), bug reports, design docs. Those are the surfaces where teammates and managers form an impression of how careful you are.
 
 A line like "the users is logged out randomly" doesn't change what your code does. But it quietly tells the reader, "this person doesn't proofread." Fixing agreement is one of the highest-leverage polish moves you can make, because it's cheap to learn and it shows up everywhere you write.
 
@@ -129,7 +130,7 @@ Often it reads better as plural with a plural "of" phrase: "**none** of the endp
 
 ## A related slip: many vs. much
 
-Dropping a plural -s on the noun quietly breaks agreement too. The fix is the **countable test**:
+Dropping a plural -s on the noun quietly breaks agreement too. The fix is the [**countable test**](/blog/english/02-countable-uncountable-much-many):
 
 - **Can you count it?** → use plural -s + **many**: many mistakes, many bugs, many requests.
 - **Can't count it (it's a mass)?** → use **much**: much progress, much memory, much traffic.
@@ -156,7 +157,7 @@ Where it shows up in your day:
 
 ## Practice: fix the agreement
 
-Try these, then check yourself below. Watch for dropped plurals and missing articles too.
+Try these, then check yourself below. Watch for [dropped plurals](/blog/english/05-plurals-and-possessives) and [missing articles](/blog/english/01-articles-a-an-the) too.
 
 1. the list of failing tests are getting longer.
 2. each of the services run in its own container.
@@ -182,4 +183,4 @@ Try these, then check yourself below. Watch for dropped plurals and missing arti
 
 If you remember one thing, make it this: **the verb agrees with the real subject, and the real subject is almost never the noun sitting right next to the verb.** Cross out the middle, find the doer, then choose.
 
-Master this and your writing instantly reads more careful, which makes people trust the work behind it. Next, notice what happens to that same sentence when you switch from "the test passed" to "the test passes" to "the test is passing." Each tense sends a different message about *when* something happened and whether it's still true. That choice of verb tense is where your bug reports go from confusing to crystal clear, and it's worth its own close look.
+Master this and your writing instantly reads more careful, which makes people trust the work behind it. Next, notice what happens to that same sentence when you switch from "the test passed" to "the test passes" to "the test is passing." Each tense sends a different message about *when* something happened and whether it's still true. That [choice of verb tense](/blog/english/04-verb-tenses) is where your bug reports go from confusing to crystal clear, and it's worth its own close look.

@@ -57,6 +57,7 @@ icon: "\U0001F393"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 You will forget most of what you read today by tomorrow morning. Not because you're tired or distracted or "bad at learning," but because that is exactly what a healthy human brain is built to do. Here's the strange part: the same brain that drops new facts within hours can also store a lifetime of memories, perfectly intact, for decades.
@@ -108,7 +109,7 @@ Getting something into long-term memory and back out again happens in three stag
 
 Here is the quiet but powerful part. **Retrieval isn't just a way of checking what you stored. The act of pulling something out actually strengthens it.**
 
-Every time you successfully recall a fact, the path to it gets easier to find next time. That single finding flips ordinary studying on its head. It's the reason a quick self-quiz beats another slow reread, even though the reread feels far more comfortable.
+Every time you successfully recall a fact, the path to it gets easier to find next time. That single finding flips ordinary studying on its head. It's the reason [a quick self-quiz beats another slow reread](/blog/ai-learning-platform/06-retrieval-practice-why-testing-beats-re-reading), even though the reread feels far more comfortable.
 
 ## Schemas: your brain's filing system
 
@@ -147,7 +148,7 @@ Almost certainly not. You have a *normal* memory, which forgets new things on sc
 This is the big one. Rereading and highlighting feel smooth and easy, so you conclude "I know this." Surveys find that around 80 percent of college students name rereading as their top study method, despite it being one of the weakest. That smooth feeling is just recognizing the surface, not real retrievable knowledge. **Never confuse "feels easy" with "is learned."**
 
 **"Struggling means I'm doing it wrong."**
-Often the opposite. A bit of struggle, like trying to recall an answer before you're told, slows you down in the moment but builds memory that lasts. Researchers call these **desirable difficulties.** The catch is in the word *desirable*: a struggle only helps if you have enough background to push through it. Pile difficulty on someone missing the basics and you just get frustration.
+Often the opposite. A bit of struggle, like trying to recall an answer before you're told, slows you down in the moment but builds memory that lasts. Researchers call these [**desirable difficulties**](/blog/ai-learning-platform/08-interleaving-dual-coding-desirable-difficulties). The catch is in the word *desirable*: a struggle only helps if you have enough background to push through it. Pile difficulty on someone missing the basics and you just get frustration.
 
 **"Cramming works."**
 It works for tomorrow's test and almost nothing beyond it. Spreading the same study minutes across several days beats packing them into one sitting, every time.
@@ -160,11 +161,11 @@ You don't need a system. You need a few habits that work *with* your brain inste
 2. **Anchor every new idea to an old one.** Before memorizing, ask: what does this remind me of? Connecting to a schema turns many chunks into one.
 3. **Close the book and recall.** After reading, look away and try to say or write what you just learned. The stumbling is the work. That retrieval is what builds the memory.
 4. **Quiz, don't reread.** Replace a second read-through with a self-test, flashcards, or explaining the idea out loud to someone else.
-5. **Space your reviews.** Revisit material after a day, then a few days, then a week. Each review just before you'd forget flattens the curve the most.
+5. **Space your reviews.** [Revisit material after a day, then a few days, then a week.](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve) Each review just before you'd forget flattens the curve the most.
 6. **Distrust the easy feeling.** If studying feels effortless and smooth, that's a warning sign, not a victory. Choose the method that makes you stumble a little.
 
 ## Conclusion
 
 If you remember one thing from this tour, make it this: **your memory works by retrieval, not by exposure.** Seeing something again does little. Pulling it back out, again and again, just before it fades, is what carves it into permanent storage.
 
-That single idea quietly powers every serious learning technique worth knowing, from flashcard apps to the way the best tutors space their questions. The natural next question is *when* exactly should you review, and *how much* can a person handle before their mental counter overflows? That's where the real craft begins: managing cognitive load, practicing retrieval, and spacing it out, one learner at a time.
+That single idea quietly powers every serious learning technique worth knowing, from flashcard apps to the way the best tutors space their questions. The natural next question is *when* exactly should you review, and *how much* can a person handle before their mental counter overflows? That's where the real craft begins: [managing cognitive load](/blog/ai-learning-platform/05-cognitive-load-theory-why-too-much-at-once-fails), practicing retrieval, and spacing it out, one learner at a time.

@@ -38,6 +38,7 @@ order: 999
 icon: "\U0001F916"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -173,7 +174,7 @@ Because runs are non-deterministic, debugging required **full production tracing
 3. **Design tools carefully.** "Bad tool descriptions can send agents down completely wrong paths." A tool-testing agent that rewrote those descriptions produced a **40 percent drop in task completion time**.
 4. **Go broad, then narrow.** Start wide, evaluate, then focus.
 
-**When multi-agent is the right call:** breadth-first questions that fan out in independent directions, work that overflows a single context window, and high-value tasks worth heavy parallelization.
+**When multi-agent is the right call:** breadth-first questions that fan out in independent directions, work that overflows [a single context window](/blog/agent-orchestration/agent-orchestration-05-context-memory), and high-value tasks worth heavy parallelization.
 
 **When it is the wrong call:** tasks where every agent needs the **same shared context**, jobs with many dependencies between steps, real-time tight coordination, **most coding tasks** (fewer parts to parallelize), and any low-value task where paying 15 times the tokens makes no sense.
 
@@ -209,9 +210,9 @@ Picture detectives around a literal corkboard. Nobody is assigned a lane. Whoeve
 
 ## Network and handoff: a leaderless swarm
 
-**What it is.** A **decentralized** topology with **no central orchestrator**. Agents hand control directly to one another based on who is the right specialist. A "swarm" remembers which agent was last active, so the conversation simply resumes with that agent on the next turn.
+**What it is.** A **decentralized** topology with **no central orchestrator**. Agents [hand control directly to one another](/blog/agent-orchestration/agent-orchestration-03-communication-protocols) based on who is the right specialist. A "swarm" remembers which agent was last active, so the conversation simply resumes with that agent on the next turn.
 
-In practice, a triage agent reads the request and **hands off** to a specialist, who then becomes the active agent and answers you directly, no manager narrating in between. (In the OpenAI Agents SDK, released in March 2025, a handoff is literally a function that returns the next agent.)
+In practice, a triage agent reads the request and **hands off** to a specialist, who then becomes the active agent and answers you directly, no manager narrating in between. (In the [OpenAI Agents SDK](/blog/agent-orchestration/agent-orchestration-04-frameworks), released in March 2025, a handoff is literally a function that returns the next agent.)
 
 **When to use it.** When the specialist should answer the user directly and you want focused, per-agent prompts. Swarms are faster than supervisor trees: no intermediary, direct handoffs, fewer model calls.
 
@@ -278,9 +279,9 @@ Read it top to bottom and the master axis reappears: determinism falls and cost 
 
 **"More agents means better results."** Usually not. Token budget explains most of the measured gains, and at an equal compute budget a single agent sometimes beats a debate. Reach for more agents only when the work genuinely splits into parallel, independent parts.
 
-**"Multi-agent is the advanced, professional choice."** It is the expensive choice, at roughly 15 times the tokens of a chat. It is only worth it when the task's value justifies that bill. For most coding tasks, where the parts are tangled together, it is the wrong tool.
+**"Multi-agent is the advanced, professional choice."** It is the expensive choice, at roughly [15 times the tokens of a chat](/blog/agent-orchestration/agent-orchestration-07-cost-performance). It is only worth it when the task's value justifies that bill. For most coding tasks, where the parts are tangled together, it is the wrong tool.
 
-**"Once it works, I'm done."** Agents are stateful and non-deterministic. The same input can take a different path next time, so you need production tracing to debug at all. Observability is not optional polish; it is part of the design.
+**"Once it works, I'm done."** Agents are stateful and non-deterministic. The same input can take a different path next time, so you need [production tracing](/blog/agent-orchestration/agent-orchestration-06-reliability-eval-obs) to debug at all. Observability is not optional polish; it is part of the design.
 
 **"Decentralized swarms are simpler."** They have fewer moving managers, but they are harder to steer and trace. No agent holds the whole picture, so enforcing a global goal and debugging a bad handoff both get harder, not easier.
 

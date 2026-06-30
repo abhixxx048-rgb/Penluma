@@ -51,6 +51,7 @@ faq:
       almost always smaller than you fear.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Interpersonal_ties
 ---
@@ -109,7 +110,7 @@ Why? You get the best of both worlds:
 - **Residual trust.** There's leftover trust and shared history, so asking is easy and they're inclined to help. That's the strong-tie benefit.
 - **Novelty.** Because you've been apart, they've met new people and learned new things you haven't. That's the weak-tie benefit.
 
-A dormant tie is a weak tie with the **trust battery already charged**. Reconnecting is the highest-return, lowest-effort networking move most people completely ignore.
+A [dormant tie](/blog/life-money-and-relationships/18-mapping-your-network-strong-weak-dormant-ties) is a weak tie with the **trust battery already charged**. Reconnecting is the highest-return, lowest-effort networking move most people completely ignore.
 
 ## Common misconceptions
 
@@ -134,7 +135,7 @@ Here's where opportunities flow from, ranked by trust:
 
 Now turn that into action. These steps build on each other.
 
-1. **Build the network before you need it.** The worst time to start is when you're job-hunting or fundraising. Stay in touch when you want nothing. That's what earns you the right to ask later.
+1. **Build the network before you need it.** The worst time to start is when you're job-hunting or fundraising. [Stay in touch](/blog/life-money-and-relationships/23-staying-in-touch-a-system-for-nurturing-relationships) when you want nothing. That's what earns you the right to ask later.
 2. **Reactivate dormant ties deliberately.** Reach out to reconnect *before* you need a favor. Lead with catching up or giving, never with an ask.
 3. **Become referable.** Be known for one clear, specific thing so people can confidently vouch for you. "She's *the* person for X" beats a vague reputation every time. "I do marketing" is forgettable. "I help D2C founders cut customer-acquisition cost" makes people connect you to opportunities automatically.
 4. **Give referrals generously.** Being the person who connects others makes you the hub that good things flow back toward.
@@ -162,7 +163,7 @@ It's like fishing. You can't control which fish bites. But more hooks in the wat
 
 ### A word on reputation
 
-Your **personal brand** is not a logo or a clever tagline. In plain words, it's your reputation at scale: what people reliably believe about you and say about you when you're not in the room.
+Your **personal brand** is not a logo or a clever tagline. In plain words, it's your [reputation at scale](/blog/life-money-and-relationships/29-community-reputation-long-term-social-capital): what people reliably believe about you and say about you when you're not in the room.
 
 You'll see survey stats like "67 percent of people would spend more with companies whose founder's values align with theirs." Treat those as directional, not gospel. But the defensible point stands: reputation materially drives trust, sales, hiring, and fundraising.
 
@@ -172,6 +173,6 @@ Reputation is what you do *repeatedly*, witnessed. It's built by the slow accumu
 
 Here's the one thing to carry with you: opportunities don't flow to the most qualified stranger. They flow to the most known and trusted person who's top of mind when the need appears. So the real work isn't applying harder. It's becoming that person, slowly and genuinely, before anyone's even hiring.
 
-None of this is extraction. It's cultivation: give first, stay in touch, be clear about what you do, and widen the surface on which luck can land.
+None of this is extraction. It's cultivation: [give first](/blog/life-money-and-relationships/17-the-right-mindset-give-first-authentic-long-term), stay in touch, be clear about what you do, and widen the surface on which luck can land.
 
-And there's a quieter question hiding underneath all of this. Why do we trust the people we trust, and why does a single warm vouch outweigh a stack of impressive credentials? That's where the psychology of trust and influence begins, and it's worth understanding next.
+And there's a quieter question hiding underneath all of this. Why do we trust the people we trust, and why does a single warm vouch outweigh a stack of impressive credentials? That's where the [psychology of trust and influence](/blog/life-money-and-relationships/19-how-trust-rapport-actually-form) begins, and it's worth understanding next.

@@ -60,6 +60,7 @@ order: 16
 icon: "\U0001F5A8️"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -83,15 +84,15 @@ Let's follow your file.
 
 ## The RIP: the engine that turns your file into dots
 
-A **RIP (Raster Image Processor)** is the software (sometimes software plus dedicated hardware) that reads a page-description file like PDF, PostScript, or the print-safe flavor PDF/X, and turns *everything* on it, the text, the vector shapes, the photos, into one high-resolution map of dots the output device can physically print.
+A **RIP (Raster Image Processor)** is the software (sometimes software plus dedicated hardware) that reads a page-description file like PDF, PostScript, or the print-safe flavor [PDF/X](/blog/computer-graphics-print/12-pdf-x-output-intent-page-boxes-the-print-ready-target), and turns *everything* on it, the text, the vector shapes, the photos, into one high-resolution map of dots the output device can physically print.
 
 Think of the RIP as a translator and typesetter rolled into one. Your PDF is a manuscript written in a language the press cannot read. The RIP translates it into the only thing the press understands, ink dots in fixed positions, and arranges them into a clean pattern.
 
 It does four jobs, always in this order:
 
-1. **Interpretation.** It reads the page and resolves fonts, vector paths, embedded photos, transparency, overprint, and trapping.
+1. **Interpretation.** It reads the page and resolves fonts, vector paths, embedded photos, transparency, overprint, and [trapping](/blog/computer-graphics-print/09-trapping-deep-dive).
 2. **Rendering.** It flattens the page into a continuous-tone bitmap at the device's finest resolution, for example 2400 dpi on a platesetter.
-3. **Color management.** This is where color management *actually executes*. The RIP applies ICC profiles to convert your colors into what the press can really produce.
+3. **Color management.** This is where color management *actually executes*. The RIP applies [ICC profiles](/blog/computer-graphics-print/03-color-management-icc-profiles-the-pipeline) to convert your colors into what the press can really produce.
 4. **Screening.** It converts that smooth bitmap into the on/off dot pattern the press needs, because a press can only put ink down or not.
 
 Here is the key insight most people miss. Color decisions are *made* in design, when you pick your profiles. But they are *executed* in the RIP. The RIP is the single place where your source colors actually become press colors and where flat tones become printable dots.
@@ -109,11 +110,11 @@ Inside the RIP, vector and raster get treated differently:
 - **Vector** (text, logos, line art) stays mathematically perfect until the very last moment, then gets rasterized at full device resolution. That is why edges stay crisp at any size, and why you should never flatten text into a low-resolution image.
 - **Raster** (photos) is locked to its pixels. The rule of thumb: image **ppi should be about 2x the screen lpi**. For a 150-lpi job, supply around 300 ppi. For a 200-lpi job, around 400 ppi.
 
-A frequent mistake is flattening sharp vector text into a 150-ppi image so the edges go soft, or expecting 300-ppi sharpness at a 200-lpi ruling. Keep text and line art as vector, and match photo resolution to roughly twice the screen ruling.
+A frequent mistake is flattening sharp vector text into a 150-ppi image so the edges go soft, or expecting 300-ppi sharpness at a 200-lpi ruling. [Keep text and line art as vector](/blog/computer-graphics-print/07-raster-vs-vector-resolution-image-quality), and match photo resolution to roughly twice the screen ruling.
 
 ### How the RIP fakes shades of gray
 
-A press cannot print "40% ink." So tone gets *simulated* with a pattern of dots: bigger or closer dots look darker, smaller or sparser dots look lighter. This is **halftoning**, and the RIP picks the method.
+A press cannot print "40% ink." So tone gets *simulated* with a pattern of dots: bigger or closer dots look darker, smaller or sparser dots look lighter. This is [**halftoning**](/blog/computer-graphics-print/08-halftoning-screening-turning-tone-into-dots), and the RIP picks the method.
 
 | Screening type | How it works | Strength | Weakness |
 | --- | --- | --- | --- |
@@ -243,4 +244,4 @@ If you remember one thing, make it this: **right density never guarantees right 
 
 The whole pipeline, from RIP to plate to press to ΔE, exists to close that gap and make a printed sheet match a signed proof.
 
-Now here is the thread worth pulling next: every standard above assumes your colors *fit* inside what the press can physically reproduce. But your screen can show colors no CMYK press can touch. What happens at that boundary, where a glowing screen color has to become ink, is the art of **gamut mapping and rendering intents**, and it decides whether your vivid blues survive the trip to paper at all.
+Now here is the thread worth pulling next: every standard above assumes your colors *fit* inside what the press can physically reproduce. But your screen can show colors no CMYK press can touch. What happens at that boundary, where a glowing screen color has to become ink, is the art of [**gamut mapping and rendering intents**](/blog/computer-graphics-print/04-rendering-intents-gamut-mapping), and it decides whether your vivid blues survive the trip to paper at all.

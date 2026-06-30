@@ -38,6 +38,7 @@ faq:
     a: Total Area Coverage (TAC) is the maximum combined CMYK percentage allowed in your darkest shadows. Go over the limit, around 300% on coated offset, and the ink will not dry properly, causing smearing. Build rich blacks like 60/40/40/100 to stay safe.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -80,7 +81,7 @@ The clever part is the physics: **oil and water repel each other**. The image ar
 
 - **Sweet spot:** long runs, roughly **2,000 pieces and up**.
 - **Turnaround:** slow to start, often 2 to 5 days just to prep and plate.
-- **Quality:** the gold standard for color fidelity, fine type, large flat solid areas, and exact Pantone matching. It also prints far bigger sheets than digital.
+- **Quality:** the gold standard for color fidelity, fine type, large flat solid areas, and [exact Pantone matching](/blog/computer-graphics-print/06-ink-on-the-page-spot-colors-overprint-black-generation). It also prints far bigger sheets than digital.
 
 This is the press behind your books, catalogs, brochures, and packaging.
 
@@ -97,7 +98,7 @@ There are two flavors. **Dry toner** is powder and can leave a slight sheen. **L
 
 ## Production inkjet: speed at scale
 
-**How it works.** Tiny nozzles fire microscopic ink droplets straight at the substrate, building the image as a dot pattern. No plate, no drum.
+**How it works.** Tiny nozzles fire microscopic ink droplets straight at the substrate, [building the image as a dot pattern](/blog/computer-graphics-print/08-halftoning-screening-turning-tone-into-dots). No plate, no drum.
 
 **Production inkjet** is very high-speed, roll-fed printing. Its quality has caught up to coated paper, but heavy ink coverage can be slow to dry, so these machines run large drying systems.
 
@@ -186,7 +187,7 @@ Beyond the basics, there are specialty stocks too: recycled, textured (linen, la
 
 ## Inks: matching the colorant to the job
 
-- **Process color (CMYK)** uses cyan, magenta, yellow, and black as overlapping dots that blend into a full spectrum. Cheap (only four plates) and ideal for **photographs**.
+- **[Process color (CMYK)](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color)** uses cyan, magenta, yellow, and black as overlapping dots that blend into a full spectrum. Cheap (only four plates) and ideal for **photographs**.
 - **Spot color (Pantone)** is a single pre-mixed ink matched to an exact standard. Used for **brand logos and colors CMYK cannot reach**, like fluorescents and metallics. It costs extra but it is dead-on every run. A common setup is CMYK plus one spot.
 - **UV-curable** ink cures instantly under UV light, forms a tough film, and sticks to almost anything. A wide-format workhorse.
 - **Eco-solvent** ink etches into vinyl for outdoor durability with fewer emissions. A signage staple.
@@ -232,6 +233,6 @@ When a job lands on your desk, work through it in order:
 
 If you remember one thing, remember this: **the method is an economics-of-volume decision married to a material decision.** Count the copies, name the surface, set the quality bar, and the right press almost chooses itself.
 
-That is also why two honest shops can quote wildly different prices for the same flyer. They are standing on opposite sides of a break-even point you can now spot in seconds.
+That is also why two honest shops can quote wildly different prices for the same flyer. They are standing on opposite sides of a [break-even point](/blog/business-financial-literacy/10-break-even-margins-profitability) you can now spot in seconds.
 
-There is a deeper rabbit hole waiting, though. Every method above assumes your file's colors will survive the trip from screen to paper, and they often do not. The bridge that keeps a screen's glowing blue from arriving as a muddy navy is **color management and ICC profiles**, and that is where the real magic (and the real headaches) live.
+There is a deeper rabbit hole waiting, though. Every method above assumes your file's colors will survive the trip from screen to paper, and they often do not. The bridge that keeps a screen's glowing blue from arriving as a muddy navy is **[color management and ICC profiles](/blog/computer-graphics-print/03-color-management-icc-profiles-the-pipeline)**, and that is where the real magic (and the real headaches) live.

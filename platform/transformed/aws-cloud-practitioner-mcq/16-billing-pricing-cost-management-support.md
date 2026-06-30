@@ -56,6 +56,7 @@ order: 15
 icon: ☁️
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -76,7 +77,7 @@ Here is the mental model that makes everything else click. Think of the four too
 - **AWS Pricing Calculator** - *estimates costs before you build.* Nothing is running yet, so there is no usage to analyze. You describe a proposed setup (say, some EC2 instances, an RDS database, and an S3 bucket) and it gives you a forward-looking monthly estimate.
 - **AWS Cost Explorer** - *analyzes and visualizes spend that already happened.* Interactive graphs let you slice your bill by service, region, tag, and time to answer "why did last quarter go up?"
 - **AWS Budgets** - *alerts you when spend crosses a threshold.* Set a limit, and it emails you (or fires an SNS notification) when actual or forecasted spend reaches it.
-- **Cost & Usage Report (CUR)** - *the most granular, line-item billing data.* It exports hourly, resource-level detail to an S3 bucket so a data team can crunch it in Athena, QuickSight, or Redshift.
+- **Cost & Usage Report (CUR)** - *the most granular, line-item billing data.* It exports hourly, resource-level detail to an [S3 bucket](/blog/aws-cloud-practitioner-mcq/10-amazon-s3-object-storage) so a data team can crunch it in Athena, QuickSight, or Redshift.
 
 A quick way to remember it: **Calculator = before, Cost Explorer = after, Budgets = warn me, CUR = give me everything.**
 
@@ -94,7 +95,7 @@ AWS frames almost every bill around three fundamental drivers:
 2. **Storage** - what you keep (S3, EBS).
 3. **Data transfer out** - what you send out of AWS to the internet.
 
-Notice what is *not* on the list. IAM users and roles are free. Tags are free. Availability Zones do not carry a charge by themselves. And pricing models like Reserved Instances, Savings Plans, and Spot are ways to *pay* for compute, not separate cost categories.
+Notice what is *not* on the list. [IAM users and roles](/blog/aws-cloud-practitioner-mcq/04-iam-identity-access-management) are free. Tags are free. Availability Zones do not carry a charge by themselves. And pricing models like Reserved Instances, Savings Plans, and Spot are ways to *pay* for compute, not separate cost categories.
 
 ### The data transfer trap everyone falls for
 
@@ -133,7 +134,7 @@ Even the free **Basic** plan is not nothing: it includes a limited set of Truste
 
 ## Buying compute: Spot, Reserved, Savings Plans
 
-For EC2 pricing, match the workload to the purchase option:
+For [EC2 pricing](/blog/aws-cloud-practitioner-mcq/06-amazon-ec2-instances-purchasing-options), match the workload to the purchase option:
 
 - **On-Demand** - no commitment, no discount. Maximum flexibility, highest price.
 - **Spot Instances** - spare AWS capacity at up to ~90% off, but AWS can reclaim it on short notice. Perfect for a fault-tolerant batch job that can restart, wrong for anything that cannot tolerate interruption.
@@ -144,7 +145,7 @@ The one-liner that keeps RIs and Savings Plans straight: **Savings Plan = commit
 
 ## Splitting and consolidating the bill
 
-Two more features round out the topic, both tied to **AWS Organizations**:
+Two more features round out the topic, both tied to [**AWS Organizations**](/blog/aws-cloud-practitioner-mcq/15-aws-organizations-multi-account-governance):
 
 - **Consolidated billing** combines usage across all member accounts onto one bill. Because volume discounts apply to the aggregated usage, you reach tiered pricing faster, and **unused RI and Savings Plan benefits can be shared** across accounts that have matching usage (sharing is on by default).
 - **Cost allocation tags** are key-value labels (like `Department=Marketing`) you attach to resources to break the bill down by team or project in Cost Explorer and the CUR.
@@ -176,4 +177,4 @@ When you face a billing question (on the exam or at work), run through this chec
 
 If you remember one thing, make it the timeline: **Calculator before you build, Cost Explorer after, Budgets to warn you, CUR for the raw detail.** Almost every cost question collapses into "which moment on that timeline am I asking about?"
 
-That same pay-as-you-go pricing that makes these tools necessary is also what makes the cloud so flexible - but flexibility cuts both ways. Once you are comfortable watching your spend, the natural next question is how AWS keeps that spend *secure*: who is allowed to spin up those resources in the first place, and how the shared responsibility model draws the line between what AWS protects and what you do.
+That same pay-as-you-go pricing that makes these tools necessary is also what makes the cloud so flexible - but flexibility cuts both ways. Once you are comfortable watching your spend, the natural next question is how AWS keeps that spend *secure*: who is allowed to spin up those resources in the first place, and how the [shared responsibility model](/blog/aws-cloud-practitioner-mcq/03-the-shared-responsibility-model) draws the line between what AWS protects and what you do.

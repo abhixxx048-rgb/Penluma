@@ -28,6 +28,7 @@ faq:
     a: No. FAQ rich results ended for all sites in 2026 and HowTo results were retired in 2023. Keep the FAQ content for readers and AI engines, but do not expect a special search snippet from the markup.
   - q: How long before content marketing pays off?
     a: Content costs more per customer than paid ads in month one, then crosses below it as pages compound. Judge it on a 12 to 36 month curve, not on its first few weeks.
+linked: true
 topic: marketing-growth
 topicTitle: Growth & Acquisition
 category: Business & Growth
@@ -77,7 +78,7 @@ Two smarter moves:
 
 Do not publish a scattering of unrelated articles. Build **4 to 6 pillar pages**, each a broad guide to one part of your buyer's world, and surround each with **8 to 15 narrow "cluster" pages** that link up to the pillar and across to each other.
 
-For the print example, the pillars might be: starting a print business, choosing print software, pricing your print work, and preparing print files. Each pillar then links down to dozens of specific pages.
+For the print example, the pillars might be: starting a print business, choosing print software, pricing your print work, and [preparing print files](/blog/computer-graphics-print/12-pdf-x-output-intent-page-boxes-the-print-ready-target). Each pillar then links down to dozens of specific pages.
 
 Concentrating depth on a few clusters builds **topical authority**, which is simply Google's sense that your site is a genuine expert on a subject. That reputation lifts every page in the cluster. A hundred one-off posts on unrelated topics build nothing.
 
@@ -161,11 +162,11 @@ For the print platform, three flagship tools fall out almost for free:
 
 - A **pricing calculator** powered by the real pricing engine. Targets searches like *"print pricing calculator."* The call to action: "Create a free account to run this on your own products."
 - A **free template gallery** that opens the real design studio. Targets *"business card template,"* *"flyer template."* Customizing or saving a design triggers signup.
-- A **"is your file print-ready?" checker** built on existing preflight tooling. Targets the highest-intent searcher of all, someone with a file in hand asking *"is my PDF print ready."* The report ends with "Fix this automatically in our editor."
+- A **"is your file print-ready?" checker** built on existing [preflight tooling](/blog/computer-graphics-print/13-preflight-validating-a-file-before-it-prints). Targets the highest-intent searcher of all, someone with a file in hand asking *"is my PDF print ready."* The report ends with "Fix this automatically in our editor."
 
 These are product-led growth in its purest form: the SEO landing page *is* a working sliver of the product. Traffic becomes value becomes a trial, in one motion.
 
-Around the flagships, build a cluster of tiny single-purpose calculators, each about a day of work: a bleed calculator, a paper-weight converter, a size guide. They earn backlinks from designers and students and quietly establish that you know your craft.
+Around the flagships, build a cluster of tiny single-purpose calculators, each about a day of work: a [bleed calculator](/blog/computer-graphics-print/15-finishing-document-geometry-bleed-trim-safe-area), a paper-weight converter, a size guide. They earn backlinks from designers and students and quietly establish that you know your craft.
 
 ### The one rule that makes tools convert
 
@@ -215,4 +216,4 @@ One measurement habit matters above all: **judge content on the 12 to 36 month c
 
 If you remember one idea, make it this: **the cheapest, most durable growth comes from exposing a working slice of your product as a free tool, on a page that ranks.** Traffic meets real value meets a trial, all in one motion, and the asset keeps earning long after you build it.
 
-That principle has a fascinating edge most teams never explore. The free pricing calculator that pulls in searchers can also feed your sales intelligence, telling you exactly what buyers are willing to pay before they ever sign up. The next question worth chasing is how to turn that quiet stream of intent data into the way you price and package the product itself.
+That principle has a fascinating edge most teams never explore. The free pricing calculator that pulls in searchers can also feed your sales intelligence, telling you exactly [what buyers are willing to pay](/blog/business-financial-literacy/09-pricing-psychology-pricing-with-confidence) before they ever sign up. The next question worth chasing is how to turn that quiet stream of intent data into the way you [price and package the product](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive) itself.

@@ -36,6 +36,7 @@ faq:
     a: Your reputation and your network. Unlike salary or unvested equity, those are portable, they compound over time, and no resignation can take them back.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -53,7 +54,7 @@ The good news is that this is a learnable game with a handful of rules. Let's wa
 
 ## The honest truth about salaries
 
-A salary is **linear income** - money you earn by trading hours for pay. It's capped, and it stops the moment you stop working. There are only so many hours in a week, and your pay has a ceiling set by your role.
+A salary is **[linear income](/blog/how-to-make-money/01-what-money-actually-is)** - money you earn by trading hours for pay. It's capped, and it stops the moment you stop working. There are only so many hours in a week, and your pay has a ceiling set by your role.
 
 The investor Naval Ravikant put it bluntly: "You're not going to get rich renting out your time."
 
@@ -69,7 +70,7 @@ Hold onto that last one. It's the spine of everything.
 
 ## The leverage stack: which jobs are worth your years
 
-Naval describes four kinds of leverage, stacked from weakest to strongest. Understanding them tells you which jobs deserve a few years of your life.
+Naval describes [four kinds of leverage](/blog/how-to-make-money/04-leverage-the-real-secret), stacked from weakest to strongest. Understanding them tells you which jobs deserve a few years of your life.
 
 1. **Your own time.** A plain salary lives here. It's capped, and it stops when you stop.
 2. **Labor** - people working for you. The oldest form of leverage, and the hardest and most fragile to manage.
@@ -78,7 +79,7 @@ Naval describes four kinds of leverage, stacked from weakest to strongest. Under
 
 Here's the key split. Labor and capital need **permission** - someone has to hire you or fund you. Code and media are **permissionless**: nobody has to sign off for you to write software, a newsletter, or a course, and it costs nothing to copy.
 
-A salaried job is where you safely learn to manage labor and capital on someone else's risk, while quietly building the specific knowledge that later becomes your own code-and-media leverage. That's the real prize hiding inside the paycheck.
+A salaried job is where you safely learn to manage labor and capital on someone else's risk, while quietly building the [specific knowledge](/blog/how-to-make-money/09-specific-knowledge-your-personal-moat) that later becomes your own code-and-media leverage. That's the real prize hiding inside the paycheck.
 
 ## Choose the role and company like an investor
 
@@ -151,7 +152,7 @@ Two things quietly destroy that value:
 - **Liquidation preferences** - a clause that pays investors back *first* when a company is sold. Common-stock employees can walk away with far less than valuation times their ownership percentage. Sometimes ₹0.
 - **Failure rates** - most startups fail or exit below the strike price, so the option to buy is worth nothing.
 
-So treat equity as a lottery ticket layered *on top of* a livable salary, never as a substitute for one. As a rough rule of thumb, expect somewhere around 0.1% to 0.25% extra equity for each ~$10K (roughly ₹8.5 lakh) of below-market salary you accept. The expected-value math can genuinely favor a smaller, higher-growth company - but it's a bet, not a promise.
+So treat [equity as a lottery ticket](/blog/how-to-make-money/17-equity-ownership-the-windfall-path) layered *on top of* a livable salary, never as a substitute for one. As a rough rule of thumb, expect somewhere around 0.1% to 0.25% extra equity for each ~$10K (roughly ₹8.5 lakh) of below-market salary you accept. The expected-value math can genuinely favor a smaller, higher-growth company - but it's a bet, not a promise.
 
 ### A note for readers in India: how ESOPs are taxed
 
@@ -194,6 +195,6 @@ Turn all of the above into a short personal checklist:
 
 ## Conclusion
 
-The single takeaway is this: a job is not where you get rich, but it is the safest place to build the things that make you rich - rare skills, a strong reputation, a network, and the savings that buy you future choices. Only **ownership** scales past the wage ceiling, so the whole point of doing the job well is to fund and learn your way toward something you own.
+The single takeaway is this: a job is not where you get rich, but it is the safest place to build the things that make you rich - rare skills, a strong reputation, a network, and the savings that buy you future choices. Only **[ownership](/blog/how-to-make-money/16-income-vs-wealth-owning-vs-working)** scales past the wage ceiling, so the whole point of doing the job well is to fund and learn your way toward something you own.
 
 Which raises the obvious next question. Once you've stacked the skills, the network, and the runway, what exactly do you build with them - and how do you climb from level one of the leverage stack to level four, where the work keeps paying while you sleep? That's where the real game begins.

@@ -38,13 +38,14 @@ faq:
     a: It compares the last log term first; the higher term wins. If the last terms are equal, the longer log wins. A shorter log with a higher last term counts as more up-to-date.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Raft_(algorithm)
 ---
 
 Five servers. One of them just told a customer "your order is saved." A second later, that server catches fire. Did the order survive?
 
-With Raft, the answer is a confident yes, and not by luck. Raft is the consensus algorithm behind etcd, Consul, and the brains of countless Kubernetes clusters. In the last piece you saw how it elects a single leader. This piece covers the harder half: how that leader copies a stream of commands to every machine so they all end up identical, and stay identical through crashes, lag, and live membership changes.
+With Raft, the answer is a confident yes, and not by luck. Raft is the [consensus algorithm](/blog/distributed-systems/02-the-consensus-problem) behind etcd, Consul, and the brains of countless Kubernetes clusters. In the last piece you saw how it [elects a single leader](/blog/distributed-systems/04-raft-leader-election). This piece covers the harder half: how that leader copies a stream of commands to every machine so they all end up identical, and stay identical through crashes, lag, and live membership changes.
 
 ## Why this matters
 
@@ -58,7 +59,7 @@ Raft is popular precisely because it makes these guarantees easy to reason about
 
 Picture a shared notebook that a team copies by hand. Only one person, the **leader**, is allowed to write a new line. Everyone else copies the leader's notebook, line for line, in order.
 
-That notebook is the **replicated log**. A few terms you'll need, in plain words:
+That notebook is the [**replicated log**](/blog/distributed-systems/03-replicated-state-machines-the-log). A few terms you'll need, in plain words:
 
 - **Log entry** - one line in the notebook. It holds a **command** (the actual operation, like `set x = 5`), the **term** it was created in (a numbered period with at most one leader), and its position number, the **index**.
 - **State machine** - your application's data, built by applying the commands in log order. Same commands, same order, same final state on every server. That is the entire point of consensus.
@@ -229,4 +230,4 @@ If you're running or building on Raft, here are the concrete moves that matter:
 
 The whole of Raft collapses into one promise: **committed means permanent.** Once an entry lands on a majority and the leader has committed something in its own term, that entry is in every future leader, at the same index, applied identically everywhere, no matter who crashes. Every rule above, the fingerprint check, the Figure-8 restriction, the election filter, joint consensus, exists to protect that single word.
 
-Here's the thread worth pulling next. Raft buys its clarity by funneling every write through one leader, which is also its ceiling: that leader is a throughput bottleneck. So what happens when one leader isn't fast enough? That question leads straight into multi-leader and leaderless systems like Dynamo and CRDTs, where the rules you just learned get bent in fascinating, dangerous ways.
+Here's the thread worth pulling next. Raft buys its clarity by funneling every write through one leader, which is also its ceiling: that leader is a throughput bottleneck. So what happens when one leader isn't fast enough? That question leads straight into multi-leader and [leaderless systems like Dynamo and CRDTs](/blog/distributed-systems/17-consistency-models), where the rules you just learned get bent in fascinating, dangerous ways.

@@ -27,6 +27,7 @@ keywords:
   - how AI tutors teach
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 faq:
   - q: What is a layered explanation?
     a: >-
@@ -76,7 +77,7 @@ Most of us were taught to explain things the way a textbook does: state it corre
 
 That approach quietly wastes enormous effort. Students reread chapters and remember little. Trainers run through slides and watch eyes glaze. Smart people explain a concept perfectly and still get blank stares.
 
-The reason is not effort or intelligence. It is **working memory** - the tiny mental workbench where you hold whatever you are thinking about right now. It is shockingly small, holding only about four items at a time, and it empties out within seconds if your attention drifts. Every lesson that fails usually fails because it floods that small workbench.
+The reason is not effort or intelligence. It is **[working memory](/blog/ai-learning-platform/03-how-humans-learn-a-plain-tour-of-memory)** - the tiny mental workbench where you hold whatever you are thinking about right now. It is shockingly small, holding only about four items at a time, and it empties out within seconds if your attention drifts. Every lesson that fails usually fails because it floods that small workbench.
 
 Once you understand how to work *with* that limit instead of against it, you can teach almost anything more clearly. So can an AI tutor built on the same principles.
 
@@ -101,7 +102,7 @@ The fix is to treat a lesson as an ordered *system* of small parts. Each part do
 5. **Real use** - where it matters in actual life.
 6. **Practice** - the learner retrieves it or does it.
 
-Notice the shape. It starts easy to give the mind a foothold, then deepens, then makes the learner *do* something. That final practice layer is not decoration. Pulling information *out* of memory strengthens learning far more than reading it *in* again. This is the **testing effect**, and it is the single most underused tool in weak lessons.
+Notice the shape. It starts easy to give the mind a foothold, then deepens, then makes the learner *do* something. That final practice layer is not decoration. Pulling information *out* of memory strengthens learning far more than reading it *in* again. This is the **[testing effect](/blog/ai-learning-platform/06-retrieval-practice-why-testing-beats-re-reading)**, and it is the single most underused tool in weak lessons.
 
 ## The six layers, one at a time
 
@@ -141,13 +142,13 @@ It also pushes toward **transfer** - the ability to use knowledge in a new, unfa
 
 End by making the learner produce something from memory: answer a question, predict an outcome, or explain the idea back in their own words.
 
-The **Feynman technique** lives here - if you can't explain it simply, you don't understand it well enough. When the learner stumbles while explaining, that stumble is a gift. It pinpoints the exact gap to revisit. A tutor (human or AI) can ask the learner to "explain this to me like I'm new," then target review precisely where the explanation went vague. That single move bakes in both retrieval and self-explanation.
+The **[Feynman technique](/blog/ai-learning-platform/16-the-teach-it-back-method-and-how-ai-evaluates-it)** lives here - if you can't explain it simply, you don't understand it well enough. When the learner stumbles while explaining, that stumble is a gift. It pinpoints the exact gap to revisit. A tutor (human or AI) can ask the learner to "explain this to me like I'm new," then target review precisely where the explanation went vague. That single move bakes in both retrieval and self-explanation.
 
 ## How this maps onto proven teaching
 
 This structure is not invented from nowhere. It lines up with two long-established teaching blueprints.
 
-**Merrill's First Principles of Instruction** says good teaching anchors to a real problem, activates prior knowledge, demonstrates the skill, has learners apply it, and helps them integrate it. **Scaffolding then fading** means giving beginners lots of support, then gradually removing it as they grow.
+**Merrill's First Principles of Instruction** says good teaching anchors to a real problem, activates prior knowledge, demonstrates the skill, has learners apply it, and helps them integrate it. **[Scaffolding then fading](/blog/ai-learning-platform/11-zone-of-proximal-development-scaffolding-worked-examples)** means giving beginners lots of support, then gradually removing it as they grow.
 
 | Our layer | What it does | Classic principle |
 | --- | --- | --- |
@@ -164,7 +165,7 @@ This structure is not invented from nowhere. It lines up with two long-establish
 
 **"If they didn't get it, repeat it."** Re-explaining the same way, only louder or slower, rarely helps. If the first phrasing didn't land, a *different* layer - an analogy, an example, a try-it-yourself - usually does.
 
-**"More content makes a richer lesson."** Decorative pictures, extra jargon, and padding add what learning scientists call **extraneous load** - wasted effort that steals room from the tiny workbench. A glossy stock photo teaches nothing. A labeled diagram synced to the words can teach a lot. Pair words with *relevant* visuals only, and keep them close together.
+**"More content makes a richer lesson."** Decorative pictures, extra jargon, and padding add what learning scientists call **[extraneous load](/blog/ai-learning-platform/05-cognitive-load-theory-why-too-much-at-once-fails)** - wasted effort that steals room from the tiny workbench. A glossy stock photo teaches nothing. A labeled diagram synced to the words can teach a lot. Pair words with *relevant* visuals only, and keep them close together.
 
 **"More layers is always better."** Not so. This is the **expertise reversal effect**: support that helps a novice becomes clutter for an expert. Forcing the simple layer and the analogy on someone who already gets it wastes attention and feels patronizing.
 
@@ -187,4 +188,4 @@ If you're studying alone, run the same loop on yourself: read it, close the book
 
 The single takeaway: understanding is a connection, not a transmission. You cannot pour an idea into someone's head fully formed. You can only offer enough doorways that it links to something already there - and then make them reach for it, because reaching is what makes it stick.
 
-That last part hints at something bigger. Retrieval doesn't just check learning; it *builds* it, and *when* you retrieve matters as much as *whether* you do. Recall something just before you'd forget it, and the memory hardens for far longer. That timing is the engine behind spaced repetition - and it is where a great lesson stops being a one-time event and becomes a system that defeats forgetting itself.
+That last part hints at something bigger. Retrieval doesn't just check learning; it *builds* it, and *when* you retrieve matters as much as *whether* you do. Recall something just before you'd forget it, and the memory hardens for far longer. That timing is the engine behind [spaced repetition](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve) - and it is where a great lesson stops being a one-time event and becomes a system that defeats forgetting itself.

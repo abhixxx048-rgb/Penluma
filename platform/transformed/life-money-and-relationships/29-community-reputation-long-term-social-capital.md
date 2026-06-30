@@ -11,6 +11,7 @@ date: '2026-06-21'
 order: 28
 icon: "\U0001F331"
 transformed: true
+linked: true
 author: Pritesh Yadav (priteshyadav444)
 keywords:
   - social capital
@@ -67,7 +68,7 @@ sources: []
 
 There is a moment in some people's careers when their name alone starts opening doors. A stranger replies to their email within an hour. An introduction lands a job. A casual "you should meet so-and-so" turns into a partnership. It looks like luck. It is not.
 
-It is **social capital**: the trust, information, and opportunity that flow to you because of your relationships. And unlike a single connection, it compounds. Build it well and it keeps working for you for decades, even when you are not actively tending it.
+It is **social capital**: the trust, information, and opportunity that flow to you because of [your relationships](/blog/life-money-and-relationships/16-why-relationships-networks-truly-matter). And unlike a single connection, it compounds. Build it well and it keeps working for you for decades, even when you are not actively tending it.
 
 ## Why this matters
 
@@ -84,7 +85,7 @@ The sociologist Robert Putnam, in his book *Bowling Alone*, split social capital
 - **Bonding capital** is the ties among *similar* people, the same group, background, or interests. It gives you emotional support, identity, and resilience. It helps you **get by**.
 - **Bridging capital** is the ties across *different* people and groups. It brings novel information, fresh opportunities, and mobility. It helps you **get ahead**.
 
-Bridging capital is the same engine as **weak ties**, the acquaintances who travel in circles you don't, so they carry information you would never otherwise hear. Your closest friends mostly know what you already know. The person two steps removed is the one who tells you about the job, the apartment, the opening.
+Bridging capital is the same engine as **[weak ties](/blog/life-money-and-relationships/18-mapping-your-network-strong-weak-dormant-ties)**, the acquaintances who travel in circles you don't, so they carry information you would never otherwise hear. Your closest friends mostly know what you already know. The person two steps removed is the one who tells you about the job, the apartment, the opening.
 
 Think of it this way. Bonding capital is a deep well that sustains you. Bridging capital is a long bridge that takes you somewhere new. A great community digs wells and builds bridges at the same time, which is exactly why communities are such powerful machines for everyone inside them.
 
@@ -124,7 +125,7 @@ It works like fishing. You can't control which fish bites, but more hooks in the
 
 ## Generosity at scale: the give-first engine
 
-The fastest, most honest way to grow social capital inside a community is to **be the most generous person in it.** At community scale, give-first stops being a private habit and becomes a reputation.
+The fastest, most honest way to grow social capital inside a community is to **be the most generous person in it.** At community scale, [give-first](/blog/life-money-and-relationships/17-the-right-mindset-give-first-authentic-long-term) stops being a private habit and becomes a reputation.
 
 The flagship tactic is the **five-minute favor**, lived famously by the Silicon Valley connector Adam Rifkin (named Fortune's "Best Networker" in 2011) and popularized by Adam Grant in *Give and Take*. The rule: be willing to do something that takes you five minutes or less for almost anybody.
 
@@ -139,7 +140,7 @@ Here is Rifkin's genius twist. When he *does* need help, he often asks the perso
 
 As LinkedIn co-founder Reid Hoffman put it: "The more altruistic your attitude, the more benefits you gain. If you set out to help others, you rapidly reinforce your reputation and expand your universe of possibilities."
 
-Small, frequent giving is compound interest for relationships. Each five-minute favor costs you almost nothing but can change someone's day, and over years these tiny deposits grow into a fortune of trust.
+Small, frequent giving is [compound interest](/blog/life-money-and-relationships/06-compounding-the-time-value-of-money) for relationships. Each five-minute favor costs you almost nothing but can change someone's day, and over years these tiny deposits grow into a fortune of trust.
 
 ## Becoming a connector
 
@@ -168,7 +169,7 @@ And communities compound. Unlike a one-off networking event, a community you bui
 
 **"I can build a reputation overnight by going viral."** Reputation is what you do *repeatedly*, witnessed by others. It compounds through small, reliable acts, not one big moment. A viral spike with no substance behind it collapses fast.
 
-**"Generosity is naive; networking is about getting."** The give-first founder builds a reservoir of goodwill so deep that, decades on, opportunities arrive from people they barely remember helping. Non-transactional generosity is not soft idealism. It is the optimal long-term strategy.
+**"Generosity is naive; networking is about getting."** The give-first founder builds a reservoir of goodwill so deep that, decades on, opportunities arrive from people they barely remember helping. [Non-transactional generosity](/blog/life-money-and-relationships/24-giving-value-reciprocity-without-keeping-score) is not soft idealism. It is the optimal long-term strategy.
 
 **"I'll start a community to harvest leads."** People smell extraction instantly, and a community that feels like a sales funnel dies. Build it to serve the members. The business benefits arrive later, diffuse and unpredictable, as a byproduct of trust.
 

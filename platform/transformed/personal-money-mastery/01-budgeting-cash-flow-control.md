@@ -36,6 +36,7 @@ order: 0
 icon: "\U0001F4B0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -63,7 +64,7 @@ Here is the analogy that makes it stick. Cash flow is the water flowing through 
 
 A fat tap (big salary) with a leaky tank (big EMIs, no savings) still leaves you with an empty tank. A modest tap that you redirect into the tank every month, year after year, fills it up.
 
-**The whole point of a budget is to convert flow into stock on purpose.** Saved and compounded over years, this month's surplus becomes next decade's wealth. Skip the conversion and a high income just means high-speed water running straight down the drain.
+**The whole point of a budget is to convert flow into stock on purpose.** Saved and [compounded over years](/blog/personal-money-mastery/05-compounding-the-time-value-of-money), this month's surplus becomes next decade's wealth. Skip the conversion and a high income just means high-speed water running straight down the drain.
 
 ## Step one: track your money honestly
 
@@ -87,7 +88,7 @@ In India, CTC (Cost To Company) bundles employer PF, gratuity, and tax. It badly
 
 This is the number-one cause of "where did my money go?"
 
-Insurance renewals, school fees, vehicle servicing, Diwali, weddings. These feel like surprises, but they are 100% predictable. You know they are coming. Ignoring them just means borrowing or raiding savings every time one lands.
+[Insurance renewals](/blog/personal-money-mastery/04-insurance-done-right), school fees, vehicle servicing, Diwali, weddings. These feel like surprises, but they are 100% predictable. You know they are coming. Ignoring them just means borrowing or raiding savings every time one lands.
 
 ### The UPI trap
 
@@ -191,19 +192,19 @@ Credit cards in India charge roughly **2.5 to 3.75% per month** on revolved bala
 
 **Example.** Revolve a 50,000 balance at 3.5% a month and you pay 1,750 a month in interest. That's roughly **21,000 a year** to borrow 50,000. No equity SIP reliably beats that.
 
-So paying this off *is* your highest-return investment. Inside your savings-and-debt bucket, clearing high-interest debt is priority number one, ahead of new investments.
+So paying this off *is* your highest-return investment. Inside your savings-and-debt bucket, [clearing high-interest debt](/blog/personal-money-mastery/02-emergency-fund-debt-the-true-cost-of-emis) is priority number one, ahead of new investments.
 
 Never revolve a card balance. Pay the *full* statement amount, not the minimum due. The minimum-due option is designed to keep you paying around 42% a year, forever. It is a trap dressed up as a convenience.
 
 ## Common misconceptions
 
-**"A high salary means I'm doing fine."** A salary is cash flow, not wealth. Without converting it to net worth, a high earner can be one missed paycheck from trouble.
+**"A high salary means I'm doing fine."** A salary is cash flow, not wealth. Without converting it to net worth, [a high earner](/blog/personal-money-mastery/10-income-vs-wealth) can be one missed paycheck from trouble.
 
 **"I'll save whatever is left at the end of the month."** Nothing is ever left. Spending expands to fill the available money. Save first, spend second.
 
 **"Annual bills are surprises I can't plan for."** They're the opposite. Insurance, fees, and festivals arrive on a known schedule. A sinking fund turns each one from an ambush into a non-event.
 
-**"I should invest in ELSS, PPF, and NPS to cut my tax."** This is the big one for FY 2025-26. Under the **new tax regime** (now the default), a Section 87A rebate makes income up to 12 lakh effectively tax-free, and with the 75,000 standard deduction a salaried person pays zero tax up to 12.75 lakh. But the new regime drops almost all the old deductions. Sections 80C (1.5 lakh cap) and 80CCD(1B) (extra 50,000 for NPS) work *only in the old regime*. ELSS and NPS are still fine for returns, just don't budget assuming they cut your tax bill. Compare both regimes before committing.
+**"I should invest in ELSS, PPF, and NPS to cut my tax."** This is the big one for FY 2025-26. Under the **[new tax regime](/blog/personal-money-mastery/03-tax-literacy-india-first)** (now the default), a Section 87A rebate makes income up to 12 lakh effectively tax-free, and with the 75,000 standard deduction a salaried person pays zero tax up to 12.75 lakh. But the new regime drops almost all the old deductions. Sections 80C (1.5 lakh cap) and 80CCD(1B) (extra 50,000 for NPS) work *only in the old regime*. ELSS and NPS are still fine for returns, just don't budget assuming they cut your tax bill. Compare both regimes before committing.
 
 ## How to use this
 
@@ -223,4 +224,4 @@ If you remember one thing, make it this: **a budget exists to convert flow into 
 
 The quiet magic is that once Pay Yourself First and your three buckets are running, this whole system fades into the background. You stop thinking about money daily and start watching your tank fill.
 
-And that surplus you've now freed up has to go somewhere. Letting it sit in a savings account at 2.75% is its own slow leak. The next question, the one that turns a good saver into a wealthy one, is where that money should actually live so it compounds harder than inflation can erode it.
+And that surplus you've now freed up has to go somewhere. Letting it sit in a savings account at 2.75% is its own slow leak. The next question, the one that turns a good saver into a wealthy one, is [where that money should actually live](/blog/personal-money-mastery/06-asset-classes-how-they-behave) so it compounds harder than inflation can erode it.

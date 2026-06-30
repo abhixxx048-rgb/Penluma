@@ -37,9 +37,10 @@ faq:
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
-You know the feeling. You open your mouth in a meeting, say the thing, and watch faces go blank. Or you stare at an email for ten minutes, sure that what you mean is simple, yet every sentence comes out like wet cardboard.
+You know the feeling. You [open your mouth in a meeting](/blog/clear-thinking-and-expression/08-speaking-clearly-confidently-in-real-time), say the thing, and watch faces go blank. Or you stare at an email for ten minutes, sure that what you mean is simple, yet every sentence comes out like wet cardboard.
 
 Here is the surprising part: you almost never have a "big writing problem." You have a small sentence problem, repeated many times. Fix the sentence, and the paragraph, the email, and the meeting point all get easier.
 
@@ -53,7 +54,7 @@ So this is not a grammar lesson. It is leverage. Get good at the sentence and yo
 
 ## Rule 1: One idea per sentence
 
-Your **working memory** is the small mental "desk" where you hold thoughts for a few seconds. It can only juggle a few items at once. A sentence stuffed with three ideas overflows that desk for you and for your listener. So put one idea on the desk at a time.
+Your [**working memory**](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits) is the small mental "desk" where you hold thoughts for a few seconds. It can only juggle a few items at once. A sentence stuffed with three ideas overflows that desk for you and for your listener. So put one idea on the desk at a time.
 
 **Before:** "I think the project is behind because the designer was sick and also we changed the scope which nobody wrote down, so now the client is upset and we might lose them unless we do something fast."
 
@@ -163,4 +164,4 @@ One idea per sentence, active voice, concrete numbers, no filler, and a clear "s
 
 If you remember one thing, remember this: most "I can't explain it" moments are not a thinking failure. They are an unwritten sentence. Force the thought into one clean line, say who does what, swap the blur for something you could photograph, and the fog usually clears.
 
-The deeper trick is that writing a clear sentence often *reveals* you did not have a clear thought yet, and that is a gift, not a failure. The empty "because" is a map to the one fact you still need to go find. Which raises the next question worth chasing: once your sentences are clear, how do you order them so a whole argument pulls a reader along, step by step, without ever losing them?
+The deeper trick is that writing a clear sentence often *reveals* [you did not have a clear thought yet](/blog/clear-thinking-and-expression/04-clear-writing-is-clear-thinking), and that is a gift, not a failure. The empty "because" is a map to the one fact you still need to go find. Which raises the next question worth chasing: once your sentences are clear, how do you [order them so a whole argument pulls a reader along](/blog/clear-thinking-and-expression/06-structure-frameworks-pyramid-principle-scqa-prep), step by step, without ever losing them?

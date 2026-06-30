@@ -30,6 +30,7 @@ faq:
     a: "Delta E measures how different two colors are. A value near 1.0 is the smallest difference a human eye can detect. The print industry generally targets ΔE2000 under 2, which counts as an acceptable match."
   - q: "When should I use 100% K black instead of rich black?"
     a: "Use 100% K only for small body text and fine lines so the four ink plates can't misalign and create colored fringing. Reserve a controlled rich-black recipe (CMY plus K) for large solid black areas that need extra depth."
+linked: true
 topic: computer-graphics-print
 topicTitle: Computer Graphics for Print
 category: Engineering
@@ -140,11 +141,11 @@ It has three axes:
 - **a\*:** green (−) on one end, red (+) on the other.
 - **b\*:** blue (−) on one end, yellow (+) on the other.
 
-A neutral gray sits dead center, where a\* and b\* are both 0. Because Lab is tied to the "standard observer" (an average of human color-matching data), it works as a universal reference. It even mirrors how your eyes actually work, feeding a red-versus-green channel, a blue-versus-yellow channel, and a brightness channel to your brain.
+A neutral gray sits dead center, where a\* and b\* are both 0. Because Lab is tied to the "standard observer" (an average of human color-matching data), it works as a universal reference. It even mirrors [how your eyes actually work](/blog/computer-graphics-print/01-how-color-works-light-human-perception), feeding a red-versus-green channel, a blue-versus-yellow channel, and a brightness channel to your brain.
 
 Think of RGB and CMYK as two *local languages*, each tied to a specific device. **Lab is the neutral exchange currency every device converts through**, so "this exact red" means the same thing on any screen or any press in the world.
 
-In print, Lab is the quiet hub everything passes through. Color-management profiles translate RGB to Lab to CMYK. The standard color-difference measure, **Delta E**, is calculated in Lab. And Pantone spot colors are specified with Lab values so they can be reproduced anywhere.
+In print, Lab is the quiet hub everything passes through. [Color-management profiles](/blog/computer-graphics-print/03-color-management-icc-profiles-the-pipeline) translate RGB to Lab to CMYK. The standard color-difference measure, **Delta E**, is calculated in Lab. And Pantone spot colors are specified with Lab values so they can be reproduced anywhere.
 
 ## Grayscale and HSL/HSV: two more you'll meet
 
@@ -161,11 +162,11 @@ In practice, HSL shows up in CSS and UI tools like Figma, while HSV is favored i
 
 ## Why you can't print every screen color
 
-Here's where all of this becomes practical. Because CMYK's color range is **only about half the size of RGB's**, a whole zone of bright colors (neons, electric blues, vivid greens and oranges, glowing reds) has *no ink combination* that matches a backlit screen pixel. Those colors are **out of gamut**.
+Here's where all of this becomes practical. Because CMYK's color range is **only about half the size of RGB's**, a whole zone of bright colors (neons, electric blues, vivid greens and oranges, glowing reds) has *no ink combination* that matches a backlit screen pixel. Those colors are **[out of gamut](/blog/computer-graphics-print/05-gamut-out-of-gamut-handling-deep-dive)**.
 
 When you convert, out-of-gamut colors get **remapped** into the printable range, coming out duller, muted, or shifted in hue. This is the number-one cause of "it looked great on screen but printed flat."
 
-You can steer how that remapping happens with **rendering intents**:
+You can steer how that remapping happens with **[rendering intents](/blog/computer-graphics-print/04-rendering-intents-gamut-mapping)**:
 
 - **Perceptual** gently compresses the whole color range to keep relationships smooth. Best for photos.
 - **Relative Colorimetric** keeps in-gamut colors exact and clips only the out-of-gamut ones to the nearest printable color. Best for logos and most print. Pair it with **Black Point Compensation** so your blacks stay rich instead of turning dark gray.
@@ -196,7 +197,7 @@ This is the payoff of Lab being device-independent. A brand's exact corporate re
 
 **"More color range is always better, so I should deliver in ProPhoto RGB."** Wide spaces are great for *editing*, but risky for *delivery*. Send the wrong profile and colors shift badly. Export sRGB for web and the press's CMYK profile for print.
 
-**"Rich black is the best black for everything."** For small text, rich black (CMY plus K) causes colored fringing when the plates misalign. Use **100% K only** for body text and save rich black for large solids.
+**"Rich black is the best black for everything."** For small text, [rich black](/blog/computer-graphics-print/06-ink-on-the-page-spot-colors-overprint-black-generation) (CMY plus K) causes colored fringing when the plates misalign. Use **100% K only** for body text and save rich black for large solids.
 
 **"Let the printer convert my RGB file; they know best."** A press's automated converter (RIP) converts blindly and often badly. Convert and soft-proof yourself so you see the result before it's permanent.
 

@@ -32,6 +32,7 @@ faq:
     a: "Concurrent means causally unrelated, not 'at the same instant.' Two events are concurrent when no chain of local steps and messages connects them, so neither could have influenced the other. They can be seconds apart in real time."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: distributed-systems
 topicTitle: Distributed Systems
 category: Engineering
@@ -45,7 +46,7 @@ sources:
 
 A message arrives at its destination stamped with a time *earlier* than the moment it was sent. The effect appears to happen before the cause. No bug in your code did this. Your clocks did.
 
-This is not a rare glitch. The moment your software runs across more than one machine, the innocent question "what happened first?" becomes one of the hardest problems in computing. And the answer, worked out by Leslie Lamport in a single 1978 paper, is that you should mostly stop asking about *time* and start asking about *cause*.
+This is not a rare glitch. The moment your software runs across more than one machine, the innocent question "what happened first?" becomes [one of the hardest problems in computing](/blog/distributed-systems/13-why-distributed-systems-are-hard). And the answer, worked out by Leslie Lamport in a single 1978 paper, is that you should mostly stop asking about *time* and start asking about *cause*.
 
 ## Why this matters
 
@@ -65,7 +66,7 @@ Lamport's insight is the way out: for ordering events, you almost never need rea
 
 Picture three people in three different cities writing letters to each other. No phone, no shared calendar. Each person knows only two things: the order they did their own tasks, and that a letter they received must have been written before it arrived. They can never observe a global "now."
 
-That is a distributed system. The machines are the people. The messages are the letters. And like those letters, messages take an unknown, variable time to arrive - but they can never arrive before they were sent. That one rule of reality is the only thing we get to keep.
+That is [a distributed system](/blog/distributed-systems/12-what-is-a-distributed-system). The machines are the people. The messages are the letters. And like those letters, messages take an unknown, variable time to arrive - but they can never arrive before they were sent. That one rule of reality is the only thing we get to keep.
 
 So why not just read each machine's clock? Three reasons.
 
@@ -167,7 +168,7 @@ Look back at the diagram. `e1` on `P1` has timestamp 1, and `f1` on `P3` also ha
 - `a → b` ⟹ `C(a) < C(b)` ✓ guaranteed
 - `C(a) < C(b)` ⟹ `a → b` ✗ **not** guaranteed
 
-So Lamport timestamps let you **order causal events correctly**, but they **cannot detect concurrency**. From two timestamps alone you can't tell whether one truly happened-before the other or whether they're unrelated. Closing that gap is exactly why **vector clocks** were later invented.
+So Lamport timestamps let you **order causal events correctly**, but they **cannot detect concurrency**. From two timestamps alone you can't tell whether one truly happened-before the other or whether they're unrelated. Closing that gap is exactly why **[vector clocks](/blog/distributed-systems/15-vector-clocks-causality)** were later invented.
 
 ## Manufacturing a total order with process IDs
 
@@ -182,7 +183,7 @@ Lamport's trick is tiny. Sort all events by their Lamport timestamp. When two ev
    z      4    P2
 ```
 
-The result is a total order that never contradicts a real `→` arrow - it just makes a deterministic choice for concurrent pairs. Every process, fed the same events, computes the identical order. That shared agreement is precisely what coordination algorithms need.
+The result is a total order that never contradicts a real `→` arrow - it just makes a deterministic choice for concurrent pairs. Every process, fed the same events, computes the identical order. That shared agreement is precisely what [coordination algorithms](/blog/distributed-systems/02-the-consensus-problem) need.
 
 Think of timing race finishers with a stopwatch that shows only whole seconds. Several runners tie at "12 s." To still produce one ranked finishing list, you break ties by bib number. The bib number is arbitrary and says nothing about who was truly faster - but it gives one consistent, reproducible ranking everyone agrees on. The process ID is the bib number.
 
@@ -192,7 +193,7 @@ This is not museum-piece theory. Lamport's three ideas run underneath software y
 
 **Distributed mutual exclusion** - the paper's headline example. *Mutual exclusion* means only one process at a time may hold a shared resource. Using only the total order, Lamport built a fully distributed lock with no central coordinator: each process broadcasts a timestamped `REQUEST`, everyone queues requests in the same total order, and a process enters its critical section only when its own request sits at the front and it has heard a later message from every peer. Because all processes order the queue the same way, they agree on whose turn is next - with no lock manager. This was the original proof that logical time alone can coordinate a distributed system.
 
-**Databases.** Distributed stores like **Apache Cassandra** attach timestamp metadata to writes so replicas can deterministically resolve "which write wins" (last-write-wins). The descendants of Lamport's idea - **vector clocks** - power **Amazon DynamoDB** and its ancestor **Riak** to *detect* when two writes were concurrent and must be reconciled rather than silently overwritten.
+**Databases.** Distributed stores like **Apache Cassandra** attach timestamp metadata to writes so replicas can deterministically resolve "which write wins" ([last-write-wins](/blog/distributed-systems/17-consistency-models)). The descendants of Lamport's idea - **vector clocks** - power **Amazon DynamoDB** and its ancestor **Riak** to *detect* when two writes were concurrent and must be reconciled rather than silently overwritten.
 
 **Git.** Every commit records its parent commit IDs. "Parent → child" *is* a happens-before relation. A linear history is a causal chain; two branches edited independently are **concurrent** events - and `git merge` is literally reconciling two concurrent histories, with a two-parent merge commit as the join point. Git's commit graph is a partial order you can look at.
 

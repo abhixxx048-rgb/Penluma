@@ -36,6 +36,7 @@ order: 0
 icon: ❤️
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -57,9 +58,9 @@ The payoff is concrete. You ship features people understand on the first try. Yo
 
 These two terms get thrown around a lot, so let's pin them down in plain language.
 
-**Product sense** is the skill of knowing *what* to build and *why* it matters to a real person. It's the judgment that helps you choose the feature that genuinely moves someone forward, instead of the one that's just fun to engineer.
+**[Product sense](/blog/product-sense-empathy/02-what-product-sense-really-is)** is the skill of knowing *what* to build and *why* it matters to a real person. It's the judgment that helps you choose the feature that genuinely moves someone forward, instead of the one that's just fun to engineer.
 
-**User empathy** is the skill of seeing your product through that person's eyes - their goal, their confusion, their fear of breaking something. It's noticing the moment they hesitate and asking why.
+**[User empathy](/blog/product-sense-empathy/03-user-empathy-seeing-through-the-user-s-eyes)** is the skill of seeing your product through that person's eyes - their goal, their confusion, their fear of breaking something. It's noticing the moment they hesitate and asking why.
 
 Put them together and you get the real job: taking something genuinely hard - printing a thousand business cards, configuring a tax rule, picking the right paper stock - and making it feel simple, safe, and obvious.
 
@@ -86,7 +87,7 @@ That makes them the perfect stress test. If a feature is obvious to a busy shop 
 A few myths get in the way before people even start. Let's clear them.
 
 - **"Good product sense is innate - you either have it or you don't."** Reality: it's a learnable skill built from deliberate practice. The people who seem to "just get it" have usually trained their eye on hundreds of products without calling it training.
-- **"More features means a better product."** Reality: every feature you add is one more thing the user has to understand and ignore. Capability often comes from removing steps, not adding options.
+- **"More features means a better product."** Reality: every feature you add is one more thing the user has to understand and ignore. Capability often comes from [removing steps](/blog/product-sense-empathy/09-reducing-friction-flows-steps-progressive-disclosure), not adding options.
 - **"That's the designer's job, not mine."** Reality: if you decide a default value, an error message, or the order of two buttons, you're shaping the experience whether a designer is in the room or not.
 - **"Making it simple means dumbing it down."** Reality: simple is *harder* to build, not easier. It means you did the work of hiding the complexity instead of exposing it.
 
@@ -95,11 +96,11 @@ A few myths get in the way before people even start. Let's clear them.
 Reading about this craft isn't enough. You sharpen it by practicing on real products - including your own. Here's a system that works.
 
 1. **Read with a product open.** Keep an app you use daily, or your own work, on a second screen. As you learn each idea, go spot it in the wild. The principle sticks once you've seen it operating somewhere real.
-2. **Do the teardowns.** When you meet a real product as an example, go use it for two minutes. Feel the specific move being described - the smart default, the gentle confirmation, the step they removed.
+2. **Do the teardowns.** When you meet a real product as an example, go use it for two minutes. Feel the specific move being described - the [smart default](/blog/product-sense-empathy/08-the-make-it-obvious-toolkit-defaults-constraints-discoverability), the gentle confirmation, the step they removed.
 3. **Keep a friction log.** Every time software confuses or annoys you this week, write one line about why. That log is your training data. Patterns will emerge fast.
 4. **Re-read your cheat sheet before shipping.** Before you push any new screen, run through the core principles once. A two-minute check catches the scary default before a user ever meets it.
 
-If you're working through a full guide on this, read it in order the first time. The vocabulary builds on itself - ideas like "closing the gap between what a user expects and what they see" land much harder once you've already learned what a mental model is.
+If you're working through a full guide on this, read it in order the first time. The vocabulary builds on itself - ideas like "closing the gap between what a user expects and what they see" land much harder once you've already learned what a [mental model](/blog/product-sense-empathy/05-the-psychology-of-obvious-affordances-signifiers-mental-models) is.
 
 ## Conclusion
 
@@ -107,4 +108,4 @@ Here's the one thing to carry with you: **your job is to absorb complexity so th
 
 Learning this is a little like learning to taste wine. At first every screen is just "fine." Then you start noticing the specific notes - the missing feedback, the buried button, the default that could ruin someone's afternoon - and you can't un-notice them. That noticing *is* the skill, and it only grows.
 
-So here's the question that opens the next door: when someone reaches for your product, what *job* are they really trying to get done? Because most products fail not at how they look, but at understanding why anyone showed up in the first place.
+So here's the question that opens the next door: when someone reaches for your product, what [*job*](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress) are they really trying to get done? Because most products fail not at how they look, but at understanding why anyone showed up in the first place.

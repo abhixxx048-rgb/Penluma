@@ -14,7 +14,7 @@ for (const p of postsManifest as { id: string; title: string; topicTitle: string
   pages[p.id] = { title: p.title, description: p.topicTitle };
 }
 
-const route = OGImageRoute({
+const route = await OGImageRoute({
   param: 'route',
   pages,
   getImageOptions: (_path, page) => ({

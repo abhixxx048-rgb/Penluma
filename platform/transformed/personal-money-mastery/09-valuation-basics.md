@@ -23,6 +23,7 @@ order: 8
 icon: "\U0001F4B0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 faq:
   - q: "What is the difference between price and value in stocks?"
     a: "Price is what the market quotes per share right now, driven by mood and demand. Value (intrinsic value) is your honest estimate of what the business is fundamentally worth based on the cash it will generate. They drift apart constantly, and that gap is where investing opportunity lives."
@@ -166,7 +167,7 @@ Since your intrinsic-value estimate is an educated guess, you should only buy wh
 DCF stands for **Discounted Cash Flow**. It sounds intimidating, but it's just the core idea turned into three steps:
 
 1. **Estimate** the free cash the business throws off each year into the future.
-2. **Discount** each year's cash back to today, because a rupee in year 5 is worth less than a rupee now.
+2. **Discount** each year's cash back to today, because [a rupee in year 5 is worth less than a rupee now](/blog/personal-money-mastery/05-compounding-the-time-value-of-money).
 3. **Add up** all those discounted amounts. That sum is your intrinsic value.
 
 Visually, it looks like this:
@@ -191,7 +192,7 @@ If you're a founder, the logic is identical, but the fog is thicker. A young Saa
 - **Comparables.** What did similar startups recently raise or sell for?
 - **The VC method.** Project a future exit value, then work backward by applying a target return to arrive at today's valuation.
 
-One honest reminder: a flashy fundraise "valuation" is a *price set by negotiation and sentiment*, not proven intrinsic value. It's the same price-versus-value gap you watch as an investor. And the dilution math, meaning how much ownership you actually give up, matters far more to your eventual wealth than the headline number ever will.
+One honest reminder: a flashy fundraise "valuation" is a *price set by negotiation and sentiment*, not proven intrinsic value. It's the same price-versus-value gap you watch as an investor. And the [dilution math](/blog/personal-money-mastery/17-fundraising-dilution), meaning how much ownership you actually give up, matters far more to your eventual wealth than the headline number ever will.
 
 ## India tax: the part that quietly eats your gains
 
@@ -204,7 +205,7 @@ Valuation tells you what to pay. Tax decides what you keep. Budget 2024 changed 
 
 Two notes: *indexation* (adjusting your purchase cost for inflation) has been removed for all assets except real estate, and *STT* is the Securities Transaction Tax, the small levy you pay on each market trade.
 
-**See how much holding longer saves.** Say you hold a Nifty index fund for 18 months and book a 3,00,000 gain. The first 1,25,000 is tax-free, so your tax is 12.5% × (3,00,000 − 1,25,000) = 12.5% × 1,75,000 = **21,875**.
+**See how much holding longer saves.** Say you hold a [Nifty index fund](/blog/personal-money-mastery/07-index-funds-passive-investing) for 18 months and book a 3,00,000 gain. The first 1,25,000 is tax-free, so your tax is 12.5% × (3,00,000 − 1,25,000) = 12.5% × 1,75,000 = **21,875**.
 
 Sell that exact same gain after only 10 months and STCG kicks in: 20% × 3,00,000 = **60,000**. That's nearly **three times more tax** purely for selling too soon. Patience is, quietly, a tax strategy.
 
@@ -227,4 +228,4 @@ If you remember only one sentence, make it this: **value is the future cash a bu
 
 Master this and you stop reacting to green and red numbers on a screen and start buying businesses on purpose.
 
-But valuation only tells you whether a single company is worth its price. The deeper question is how much of your money should sit in *any* stock at all, versus bonds, gold, or cash, and how those choices behave together when markets panic. That's the art of building a portfolio that survives, and it's where we head next.
+But valuation only tells you whether a single company is worth its price. The deeper question is how much of your money should sit in *any* stock at all, versus [bonds, gold, or cash](/blog/personal-money-mastery/06-asset-classes-how-they-behave), and how those choices behave together when markets panic. That's the art of [building a portfolio that survives](/blog/personal-money-mastery/08-asset-allocation-rebalancing), and it's where we head next.

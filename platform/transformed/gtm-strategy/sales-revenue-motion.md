@@ -39,6 +39,7 @@ order: 999
 icon: "\U0001F3AF"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -52,7 +53,7 @@ This is the playbook for doing that.
 
 Most sales advice you'll read was written for enterprise deals: discovery decks, six-person buying committees, MEDDIC checklists, SDRs, customer-success orgs. Bolt any of that onto a $49-a-month product and two bad things happen at once. You burn cash you don't have, and you scare off a buyer who just wanted to swipe a card and get back to work.
 
-The cost of getting this wrong is brutal and quiet. You hire a rep too early and watch the runway drain. Or you build a heavyweight pipeline process that your tiny team can't sustain, so the data rots and your "forecast" becomes fiction. Meanwhile the real lever - getting trial users to their first win fast - sits untouched.
+The cost of getting this wrong is brutal and quiet. You hire a rep too early and watch [the runway](/blog/business-financial-literacy/07-cash-flow-burn-rate-runway-don-t-run-out-of-money) drain. Or you build a heavyweight pipeline process that your tiny team can't sustain, so the data rots and your "forecast" becomes fiction. Meanwhile the real lever - getting trial users to their first win fast - sits untouched.
 
 Get it right and the opposite happens. The product carries the volume. A single founder, working an inbox and a calendar, touches only the accounts that are already half-sold. The motion fits the math, fits the buyer, and scales without headcount you can't justify.
 
@@ -126,21 +127,21 @@ Two design choices make or break it:
 
 **Skip the credit card.** Requiring a card up front does raise your headline conversion rate - but largely by collecting "forgot to cancel" revenue and by quietly suppressing signups at the top. For a cautious SMB buyer who's been burned by trials that secretly charged, asking for a card before they've seen their own thing work is the biggest trust-killer in the funnel. At low prices, more trials beats a higher per-trial rate, and forced-charge revenue churns hard and generates refund tickets a tiny team can't service.
 
-**Build the free tier first.** A reverse trial is only as good as the floor it downgrades into. If there's no viable free plan, you've just built an ordinary trial with extra steps. Define a **capped-but-alive** plan before you ship anything: the user's work stays live and reachable, but capped - a few products, a "Powered by" badge, no custom domain. And cap *cost*, not just features, so a forgotten free account can't quietly run up your infrastructure bill. At low margins, free-tier infra cost is exactly the thing that breaks the unit economics nobody's watching.
+**Build the free tier first.** A reverse trial is only as good as the floor it downgrades into. If there's no viable free plan, you've just built an ordinary trial with extra steps. Define a **capped-but-alive** plan before you ship anything: the user's work stays live and reachable, but capped - a few products, a "Powered by" badge, no custom domain. And cap *cost*, not just features, so a forgotten free account can't quietly run up your infrastructure bill. At low margins, free-tier infra cost is exactly the thing that breaks the [unit economics](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale) nobody's watching.
 
 Keep the trial at 14 days. Extending to 30 doesn't lift conversion - it just breeds procrastination and kills urgency. The lever was never length. It's compressing time-to-value into those first three days.
 
 ## When you do talk to someone, steal these four things
 
-Most of your signups should never get a call. The trial is the motion. But for the few worth your time - an inbound demo request, a trial that activated then stalled, your top outbound targets - you don't need a heavyweight methodology. You need four borrowed parts and a 20-minute conversation.
+Most of your signups should never get a call. The trial is the motion. But for the few worth your time - an inbound demo request, a trial that activated then stalled, your [top outbound targets](/blog/sales-customer-development/13-founder-led-outreach-getting-the-conversations) - you don't need a heavyweight methodology. You need four borrowed parts and a 20-minute conversation.
 
-**Ask questions that make them sell themselves (from SPIN).** Neil Rackham's research on tens of thousands of sales calls found top performers spend very little time on background questions and most of their time on two things: implications and payoff. Don't pull background facts out of the buyer - read those from their signup data. Spend the call helping them quantify the cost of their problem in *their own numbers*: "If a quote takes you a day and a competitor answers in an hour, how many of those do you lose a month?" When they say the number out loud, it's theirs. That's far stronger than any pitch.
+**Ask questions that make them sell themselves (from SPIN).** [Neil Rackham's research](/blog/sales-customer-development/08-sales-discovery-frameworks-spin-bant-meddic-and-friends) on tens of thousands of sales calls found top performers spend very little time on background questions and most of their time on two things: implications and payoff. Don't pull background facts out of the buyer - read those from their signup data. Spend the call helping them quantify the cost of their problem in *their own numbers*: "If a quote takes you a day and a competitor answers in an hour, how many of those do you lose a month?" When they say the number out loud, it's theirs. That's far stronger than any pitch.
 
 **Open with an agreement (from Sandler).** Start every call by naming the agenda and the decision point: "This'll take 20 minutes. I'll learn how you work, show you exactly how this fits, and at the end you tell me yes, no, or what's missing - all three are fine answers." This one habit kills the "let me think about it" stall before it can form.
 
 **Teach, but don't push (from Challenger).** Reframing what a problem really costs is a great wedge - most owners have never added it up. But the aggressive "take control / push them out of their comfort zone" move backfires on a nervous, non-technical buyer. Soften it to calm, confident guidance. You're the expert who's set up fifty of these, not the rep leaning on them.
 
-**Explore before you answer objections (LAER: Listen, Acknowledge, Explore, Respond).** The key step is Explore - diagnose the real objection before responding. Most "it's too expensive" objections aren't about budget at all; they mask unclear value or fear of disruption. So before you ever discount, ask: "Too expensive compared to what - your budget, another tool, or the return you're expecting?"
+**Explore before you answer objections (LAER: Listen, Acknowledge, Explore, Respond).** The key step is Explore - [diagnose the real objection](/blog/sales-customer-development/11-handling-objections-with-honesty) before responding. Most "it's too expensive" objections aren't about budget at all; they mask unclear value or fear of disruption. So before you ever discount, ask: "Too expensive compared to what - your budget, another tool, or the return you're expecting?"
 
 And the most powerful objection-killer of all for a non-technical buyer isn't a rebuttal. It's an offer: **"I'll set it up *with* you, right now on this call."** Software anxiety is fear of configuration, not fear of usage. Build their thing for them while they watch, and the fear evaporates. Don't "close" - drop them into a half-built, seeded trial and let the product finish the job.
 

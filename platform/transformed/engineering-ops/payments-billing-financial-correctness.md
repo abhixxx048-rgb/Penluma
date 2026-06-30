@@ -10,6 +10,7 @@ order: 999
 icon: "\U0001F6E0️"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 keywords:
   - payment system correctness
   - PCI DSS compliance
@@ -59,13 +60,13 @@ The good news: there are only a few categories where this goes wrong, and each h
 
 ## Insight 1: Never let card data touch your servers
 
-There is a security standard called **PCI DSS** (Payment Card Industry Data Security Standard). Think of it as the rulebook every business that handles card payments has to follow. The single most important idea in it is brutally simple:
+There is a [security standard](/blog/security-privacy-engineering/02-core-security-foundations) called **PCI DSS** (Payment Card Industry Data Security Standard). Think of it as the rulebook every business that handles card payments has to follow. The single most important idea in it is brutally simple:
 
 **The safest card data is the card data you never touch.**
 
 If your customer types their card number directly into a form served by Stripe or Razorpay (a redirect to their page, or an embedded box that comes straight from them), then the raw number never reaches your servers. You get back a harmless **token**, a stand-in like `tok_1a2b3c` that you can charge later but that's useless to a thief. This lightweight path is called **SAQ-A**, and it's the cheapest, simplest way to be compliant.
 
-The moment your own code can see a real card number, even for a split second on its way to the payment provider, you fall off that cliff into **SAQ-D**: 300+ requirements, annual deep audits, and a much bigger blast radius if you're ever breached.
+The moment your own code can see a real card number, even for a split second on its way to the payment provider, you fall off that cliff into **SAQ-D**: 300+ requirements, annual deep audits, and a much bigger blast radius [if you're ever breached](/blog/security-privacy-engineering/06-network-cloud-infrastructure-security).
 
 ### The lines you must never cross
 
@@ -76,7 +77,7 @@ Two storage rules are absolute, and encryption does not save you:
 
 A real-world version of how this goes wrong: a developer adds a "save card" feature, writes the full card number into a column literally named `card_last_four`, stores the CVV as a plain integer, and then builds an admin screen with an eye-icon toggle to reveal it. Every one of those decisions feels reasonable in isolation. Together they turn the entire company into a breach waiting to happen, and a guaranteed audit failure.
 
-A quieter version of the same mistake: **storing your payment provider's secret keys in plaintext** in a config table. If someone reads a database backup, they now have live keys to charge cards and read every transaction. Encrypt secrets at rest.
+A quieter version of the same mistake: **storing your payment provider's secret keys in plaintext** in a config table. If someone reads a database backup, they now have live keys to charge cards and read every transaction. [Encrypt secrets at rest](/blog/security-privacy-engineering/03-cryptography-made-simple).
 
 ## Insight 2: The webhook is the source of truth, not the instant reply
 
@@ -87,8 +88,8 @@ Refunds, disputes, and even some captures finish **asynchronously**. A card refu
 The real answer arrives later, as a **webhook**: a message the provider sends to your server when the final state is known. Building this correctly means three things:
 
 - **Verify the signature.** Every webhook is signed. Check that signature against the raw message body before you trust a single byte. If the secret is missing, fail closed, reject it, don't wave it through.
-- **Handle duplicates (idempotency).** Providers resend webhooks. If you process the same refund event twice, you double-count it. The fix is a unique constraint on the event ID so the second copy is recognized and ignored. **Idempotency** just means "doing it twice has the same effect as doing it once."
-- **Survive out-of-order delivery.** A stale "failed" message can arrive *after* a "captured" message. Without a guard, it can drag a paid order back to unpaid. Derive status from the cumulative amounts (how much was captured, how much refunded), never from "the last event that happened to arrive."
+- **Handle duplicates (idempotency).** Providers resend webhooks. If you process the same refund event twice, you double-count it. The fix is a unique constraint on the event ID so the second copy is recognized and ignored. **Idempotency** just means ["doing it twice has the same effect as doing it once."](/blog/system-design/11-distributed-transactions-and-idempotency)
+- **Survive [out-of-order delivery](/blog/system-design/12-messaging-and-event-driven).** A stale "failed" message can arrive *after* a "captured" message. Without a guard, it can drag a paid order back to unpaid. Derive status from the cumulative amounts (how much was captured, how much refunded), never from "the last event that happened to arrive."
 
 And when a webhook permanently fails? Providers retry only a finite number of times, then give up. If you have no **dead-letter sweep**, a scheduled job that catches events stuck unprocessed, that payment is silently never reconciled. It just falls through the floor.
 

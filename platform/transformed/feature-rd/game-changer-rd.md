@@ -28,6 +28,7 @@ faq:
     a: Companies like Printful and Printify do not own a press. They never see the real sheets, spoilage, or reprints on a physical floor, so they cannot tell a shop which jobs actually lose money.
   - q: What is the difference between a quoted cost and an actual cost?
     a: The quoted cost is what you assumed a job would take when you priced it. The actual cost is what really happened on the floor. The gap between them is where most hidden margin disappears.
+linked: true
 topic: feature-rd
 topicTitle: Feature R&D
 category: Business & Growth
@@ -79,7 +80,7 @@ That is it. Two snapshots, the quote and the reality, sitting side by side. Out 
 
 Think of it like a fitness tracker for your shop floor. One reading tells you nothing. A few hundred readings tell you exactly which habit is hurting you.
 
-Over time the same data does something better: it learns. The next time you quote a similar odd job, the system can suggest a corrected price based on what those jobs *really* cost last time. A veteran's gut estimate becomes a data-backed default that new staff can trust too.
+Over time the same data does something better: it learns. The next time you quote a similar odd job, the system can suggest [a corrected price](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive) based on what those jobs *really* cost last time. A veteran's gut estimate becomes a data-backed default that new staff can trust too.
 
 **Why this is rare:** big print-management systems connect estimating to inventory, but they never feed the truth back into a smarter future quote. Print-on-demand giants have no idea what your floor actually costs, because they do not own a press. Owning both halves, the quote and the reality, is what makes this possible.
 
@@ -119,15 +120,15 @@ Now the decision is a dollar figure, not a hunch. You set a rule once, for examp
 
 It works like a rideshare pool. Waiting a few minutes for one more passenger makes the trip cheaper for everyone, but if you have a flight to catch, the car leaves now.
 
-**Why this is rare:** plenty of tools offer "smart imposition," but it is a manual, one-batch action. Almost nobody runs a **continuous economic queue** that predicts fill time from your own order pace and protects deadlines automatically. Print-on-demand players structurally cannot, because they do not own the press.
+**Why this is rare:** plenty of tools offer "[smart imposition](/blog/computer-graphics-print/14-imposition-binding-arranging-pages-on-the-sheet)," but it is a manual, one-batch action. Almost nobody runs a **continuous economic queue** that predicts fill time from your own order pace and protects deadlines automatically. Print-on-demand players structurally cannot, because they do not own the press.
 
 ## Common misconceptions
 
 **"More features will save my shop."** The opposite is usually true. Owners switching platforms most often complain about feature overload, confusing admin screens, and setup that needs an IT person. The win is not another configurator. It is turning data you already have into a decision you can make in five seconds.
 
-**"AI will just run the shop for me."** Be careful here. Letting an AI silently "reprice all banners +8%" or auto-fix files is exactly where a non-technical owner cannot catch a mistake. The safe path is to ship the **report first** and the automation later, only once the underlying data has proven itself trustworthy. Trust is earned with numbers you can verify, not magic you have to hope is right.
+**"AI will just run the shop for me."** Be careful here. Letting an AI silently "reprice all banners +8%" or auto-fix files is exactly where a non-technical owner cannot catch a mistake. The safe path is to ship the **report first** and [the automation later](/blog/ai-llm-engineering/05-ai-product-judgment), only once the underlying data has proven itself trustworthy. Trust is earned with numbers you can verify, not magic you have to hope is right.
 
-**"Reprints are just the cost of doing business."** Some are. But if you never record the *cause*, you can never tell the difference between an unavoidable press fault and a specific customer who keeps sending broken files. One you absorb. The other you charge for.
+**"Reprints are just the cost of doing business."** Some are. But if you never record the *cause*, you can never tell the difference between an unavoidable press fault and a specific customer who keeps sending [broken files](/blog/computer-graphics-print/13-preflight-validating-a-file-before-it-prints). One you absorb. The other you charge for.
 
 ## How to use this, even without new software
 
@@ -135,7 +136,7 @@ You do not need to wait for a perfect platform. Start collecting the truth this 
 
 1. **Log actuals on every job.** At job close, write down sheets used, good versus spoiled count, and whether it was a reprint. A spreadsheet is fine to start.
 2. **Always record the reprint cause.** Three buckets are enough: bad customer file, our mistake, material or press fault. This single column is the most valuable data in your shop.
-3. **Rank customers and products by real margin once a month.** Look for the quiet losers. Add a file-prep fee or a price correction where the data demands it.
+3. **Rank customers and products by [real margin](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale) once a month.** Look for the quiet losers. Add a file-prep fee or a price correction where the data demands it.
 4. **List your true repeat orders.** Anything a customer buys on a rhythm is a candidate for a standing order. Offer a locked price in exchange for committing to a schedule.
 5. **Track sheet fill before you print short runs.** Before sending any gang-friendly job, ask whether one more day of orders would fill the sheet, and whether any deadline forces your hand.
 6. **Ship the report before the automation.** Trust the numbers first. Automate only what the data has already proven.

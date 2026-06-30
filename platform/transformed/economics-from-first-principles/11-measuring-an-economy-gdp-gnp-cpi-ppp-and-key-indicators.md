@@ -50,6 +50,7 @@ topicTitle: Economics from First Principles
 category: Money & Business
 date: '2026-06-22'
 order: 10
+linked: true
 icon: "\U0001F4C8"
 sources: []
 ---
@@ -107,13 +108,13 @@ Ireland's low corporate tax lures Apple, Google, and pharma giants to book enorm
 
 ## CPI and inflation: your cost of living
 
-**Inflation** is a sustained rise in the general price level. Your money simply buys less over time.
+**Inflation** is [a sustained rise in the general price level](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money). Your money simply buys less over time.
 
 We track it with the **Consumer Price Index (CPI)**, the price of a fixed *basket* of goods and services a typical household buys. Housing carries the heaviest weight, around a third, followed by food, transport, energy, and medical care. Inflation is the year-over-year percentage change in that basket. In the US, the Bureau of Labor Statistics publishes it every month.
 
-Because food and energy prices swing wildly, economists also watch **Core CPI**, which strips those two out to reveal the underlying trend. Central banks lean on core inflation when they set interest rates.
+Because food and energy prices swing wildly, economists also watch **Core CPI**, which strips those two out to reveal the underlying trend. [Central banks](/blog/economics-from-first-principles/08-central-banks-and-monetary-policy) lean on core inflation when they set interest rates.
 
-You lived through a textbook example recently. US inflation peaked at **9.1% in June 2022**, the highest since 1981, driven by post-COVID stimulus and pent-up demand, tangled supply chains, and the energy shock from Russia's invasion of Ukraine. The Federal Reserve responded by hiking interest rates from near zero to 5.25 to 5.5% by mid-2023, and inflation cooled to **2.9% for full-year 2024**. The whole chain is visible: demand plus supply shock pushes prices up, the central bank raises rates, inflation eases.
+You lived through a textbook example recently. US inflation peaked at **9.1% in June 2022**, the highest since 1981, driven by post-COVID stimulus and pent-up demand, tangled supply chains, and the energy shock from Russia's invasion of Ukraine. The Federal Reserve responded by hiking [interest rates](/blog/economics-from-first-principles/09-loans-credit-debt-and-interest-rates) from near zero to 5.25 to 5.5% by mid-2023, and inflation cooled to **2.9% for full-year 2024**. The whole chain is visible: demand plus supply shock pushes prices up, the central bank raises rates, inflation eases.
 
 CPI is not perfect, and the flaws are worth knowing:
 
@@ -125,7 +126,7 @@ CPI is not perfect, and the flaws are worth knowing:
 
 The **unemployment rate** is the number of unemployed people divided by the **labor force**, *not* the total population. The labor force is everyone working *plus* everyone actively looking for work. That denominator hides a trap.
 
-**The myth:** a falling unemployment rate is always good news. Not necessarily. If discouraged people *stop looking* for work, they drop out of the labor force entirely and vanish from the rate, which can fall even as joblessness gets worse.
+**The myth:** a falling [unemployment rate](/blog/economics-from-first-principles/14-unemployment-productivity-and-the-labor-force) is always good news. Not necessarily. If discouraged people *stop looking* for work, they drop out of the labor force entirely and vanish from the rate, which can fall even as joblessness gets worse.
 
 The corrective lens is the **labor force participation rate**, the share of working-age adults actually in the labor force. If unemployment falls but participation also falls, people are giving up, not getting hired.
 
@@ -143,7 +144,7 @@ The playful shortcut here is **The Big Mac Index**, run by The Economist since 1
 
 ## Leading, coincident, and lagging indicators
 
-Economists sort indicators by their *timing* relative to the business cycle, and a simple analogy makes it stick:
+Economists sort indicators by their *timing* relative to [the business cycle](/blog/economics-from-first-principles/15-the-business-cycle-booms-recessions-and-depressions), and a simple analogy makes it stick:
 
 - **Leading** indicators are the weather forecast. They move *before* the economy turns. Examples: the yield curve (an inverted one has preceded most US recessions), building permits, stock prices, new factory orders, and initial jobless claims.
 - **Coincident** indicators are looking out the window right now. They move *with* the economy. Examples: payrolls, industrial production, and retail sales.

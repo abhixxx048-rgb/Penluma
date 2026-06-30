@@ -30,6 +30,7 @@ faq:
     a: "A raw share count like 5,000 shares is meaningless without the total. Your fully-diluted percentage counts every share, option, and convertible, so it tells you what slice of the company you truly own."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: how-to-make-money
 topicTitle: How to Make Money
 category: Money & Business
@@ -47,7 +48,7 @@ That gap was not luck. It was the difference between **renting your time** and *
 
 You will not get rich renting out your time. There are only so many hours in a day, and the moment you stop working, the money stops too.
 
-Wealth almost always comes from **owning assets** that earn whether or not you show up. This is the core idea behind investor Naval Ravikant's famous thesis on building wealth, and it is the backbone of this whole chapter.
+Wealth almost always comes from **[owning assets](/blog/how-to-make-money/16-income-vs-wealth-owning-vs-working)** that earn whether or not you show up. This is the core idea behind investor Naval Ravikant's famous thesis on building wealth, and it is the backbone of this whole chapter.
 
 The reason this matters now, more than ever, is that owning a piece of a business is no longer reserved for the rich or the founders. Through stock options, ordinary employees can hold real equity in fast-growing companies. But equity is also where people get quietly cheated, because the contracts are full of terms most people never bother to understand. Learn them once, and you can read any offer letter like a pro.
 
@@ -73,15 +74,15 @@ The decisive number is **outcome size × ownership percentage**, not the percent
 
 ### Leverage and the price of admission
 
-Naval describes three forms of **leverage**, meaning things that multiply the output of your effort:
+Naval describes three forms of **[leverage](/blog/how-to-make-money/04-leverage-the-real-secret)**, meaning things that multiply the output of your effort:
 
 1. **Capital** - money working for you.
 2. **People** - a team executing on your behalf.
 3. **Products with zero marginal cost** - code and media that copy for free, so one app can serve a million users.
 
-Equity is how you **capture** the value that leverage creates, instead of handing it all to an employer. The price of admission is **accountability**: taking real risk under your own name. That risk is exactly what earns you ownership rather than a paycheck.
+Equity is how you **[capture the value](/blog/how-to-make-money/02-value-creation-vs-value-capture)** that leverage creates, instead of handing it all to an employer. The price of admission is **accountability**: taking real risk under your own name. That risk is exactly what earns you ownership rather than a paycheck.
 
-Here is the full ladder of how people get paid, from safest and smallest at the bottom to riskiest and largest at the top:
+Here is the full ladder of [how people get paid](/blog/how-to-make-money/03-the-four-ways-anyone-gets-paid), from safest and smallest at the bottom to riskiest and largest at the top:
 
 - **Own equity** (founder or early employee) - uncapped upside, real risk.
 - **Profit-share or carry** - a direct share of the win.
@@ -119,7 +120,7 @@ Reality: Dilution is normal and often good. More on that next.
 
 ## Dilution: smaller slice, bigger pie
 
-The **cap table** (short for capitalisation table) is the master list of who owns what slice of a company. Every time the company raises money, it issues new shares to investors, so everyone's percentage shrinks. That shrinking is called **dilution**.
+The **cap table** (short for capitalisation table) is the master list of who owns what slice of a company. Every time the company raises money, it issues new shares to investors, so everyone's percentage shrinks. That shrinking is called **[dilution](/blog/business-financial-literacy/12-funding-dilution-the-cost-of-capital)**.
 
 It sounds bad, but a higher valuation can make your smaller slice worth far more.
 

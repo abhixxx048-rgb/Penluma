@@ -54,6 +54,7 @@ icon: "\U0001F5A8️"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 You design a crisp black panel on screen. It looks deep, rich, perfect. Then the print arrives and the black looks gray, the photo behind it ghosts through, and there are faint white hairlines around your text.
@@ -72,7 +73,7 @@ These are not abstract theory. They are the everyday decisions that separate a c
 
 There are two fundamentally different ways a printer lays color down.
 
-**Process color (CMYK)** builds full-color images from tiny **halftone dots** of Cyan, Magenta, Yellow, and Key (black). The dots overlap in little flower-shaped clusters called **rosettes**, and your eye blends them into smooth color. Look through a magnifier and you literally see the dots.
+**Process color (CMYK)** builds full-color images from tiny [**halftone dots**](/blog/computer-graphics-print/08-halftoning-screening-turning-tone-into-dots) of Cyan, Magenta, Yellow, and Key (black). The dots overlap in little flower-shaped clusters called **rosettes**, and your eye blends them into smooth color. Look through a magnifier and you literally see the dots.
 
 **Spot color** is a single **premixed ink** that prints through its own dedicated plate, laying down one solid, even film. The color you see is the real physical ink, not an optical trick of overlapping dots.
 
@@ -118,7 +119,7 @@ Picture a transparent highlighter laid over existing ink: that's overprint, the 
 
 ### The registration problem overprint solves
 
-Each ink is a separate plate, and presses can't align plates perfectly. Tiny misalignments are called **misregistration**.
+Each ink is a separate plate, and presses can't align plates perfectly. Tiny misalignments are called [**misregistration**](/blog/computer-graphics-print/09-trapping-deep-dive).
 
 With knockout, a misregistered top object exposes a sliver of **bare white paper at the edge**, an ugly white halo. If you set black text or thin lines to **overprint**, there's ink underneath at the edges, so a small shift never shows white.
 
@@ -159,7 +160,7 @@ A real example of getting it wrong: a designer fills a full-bleed background wit
 
 **Myth: if it looks right on screen, it'll print right.** Reality: your screen emits light; ink reflects it. Screens can't show ink stacking, dot gain, or paper absorption. The file is a set of instructions, not a preview.
 
-**Myth: overprint is a niche setting you can ignore.** Reality: leaving accidental overprint in a file is one of the most common preflight errors, and it can make white objects disappear entirely.
+**Myth: overprint is a niche setting you can ignore.** Reality: leaving accidental overprint in a file is one of the most common [preflight errors](/blog/computer-graphics-print/13-preflight-validating-a-file-before-it-prints), and it can make white objects disappear entirely.
 
 ## Controlling the ink: GCR, UCR, and total ink limit
 
@@ -221,7 +222,7 @@ When you're about to send a job, walk through this:
 2. **Never use registration black (400%) as a fill.** Reserve it for crop and registration marks only.
 3. **Set small black text and rules to overprint** so press shifts can't leave white halos.
 4. **Check that no white objects are set to overprint**, or they'll vanish on press.
-5. **Keep brand, metallic, fluorescent, and out-of-gamut colors as named spot separations.** Convert purely decorative spots to CMYK to save plates, but always confirm the conversion visually.
+5. **Keep brand, metallic, fluorescent, and [out-of-gamut colors](/blog/computer-graphics-print/05-gamut-out-of-gamut-handling-deep-dive) as named spot separations.** Convert purely decorative spots to CMYK to save plates, but always confirm the conversion visually.
 6. **Set the right TAC and GCR for your substrate** in the conversion profile, so total ink stays under the ceiling and dries.
 7. **Apply the press's TVI compensation curve** in prepress, rather than eyeballing and darkening or lightening the file by hand.
 8. **Run a real preflight.** Verify ink coverage, overprints, and separations in Output Preview before the file leaves your hands.
@@ -232,4 +233,4 @@ If you remember one thing, make it this: **on screen, color is light, but on pap
 
 Master these and your prints will finally match the picture in your head, no reprint required.
 
-And here's the thread worth pulling next: all of this assumed your colors were correct to begin with. But how does a screen's glowing red ever become the exact same red as reflected ink, across different monitors, printers, and papers? That's the job of color management and ICC profiles, the invisible translation layer that makes consistent color possible at all.
+And here's the thread worth pulling next: all of this assumed your colors were correct to begin with. But how does a screen's glowing red ever become the exact same red as reflected ink, across different monitors, printers, and papers? That's the job of [color management and ICC profiles](/blog/computer-graphics-print/03-color-management-icc-profiles-the-pipeline), the invisible translation layer that makes consistent color possible at all.

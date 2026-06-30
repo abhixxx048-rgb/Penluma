@@ -36,6 +36,7 @@ order: 21
 icon: "\U0001F393"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -69,13 +70,13 @@ This is the single most important call to get right. Here is how the two reveal 
 | Timing | Appears after a long gap | Appears even right after teaching |
 | The fix | A reminder, then spaced review | Re-teach the idea a different way |
 
-**Forgetting fades predictably.** Back in 1885, Hermann Ebbinghaus mapped the *forgetting curve*: memory drops fast and on a schedule. Roughly half of new material can be gone within an hour, and most of it within a day, unless you refresh it. So if a learner nailed a skill last week and stumbles today, the likely culprit is plain forgetting. The repair is a quick refresher plus a scheduled review, not a lecture.
+**Forgetting fades predictably.** Back in 1885, Hermann Ebbinghaus mapped the [*forgetting curve*](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve): memory drops fast and on a schedule. Roughly half of new material can be gone within an hour, and most of it within a day, unless you refresh it. So if a learner nailed a skill last week and stumbles today, the likely culprit is plain forgetting. The repair is a quick refresher plus a scheduled review, not a lecture.
 
 **A misconception is stubborn.** It shows up as the same wrong move, again and again, often delivered with confidence, because the underlying model is broken in a specific way. No amount of review fixes a broken model. You have to replace it.
 
 > **Example.** A student insists 0.5 is smaller than 0.45 "because 45 is bigger than 5." That is not forgetting a fact. It is a misconception: they are comparing decimals as if they were whole numbers. Reminding them of the right answer won't stick. You have to re-teach *place value* a fresh way, like money: $0.50 versus $0.45.
 
-A good AI tutor can tell these apart because it keeps a **learner model** - a running, per-skill estimate of what each person knows. A classic method here, Bayesian Knowledge Tracing, even builds in numbers for a *slip* (a wrong answer when you actually know the material, a careless flub) and a *guess* (a right answer by luck). The lesson holds for humans too: one wrong answer is weak evidence. A streak of the *same* wrong answer is the real signal.
+A good AI tutor can tell these apart because it keeps a [**learner model**](/blog/ai-learning-platform/18-learner-models-teaching-the-machine-what-the-student-knows) - a running, per-skill estimate of what each person knows. A classic method here, Bayesian Knowledge Tracing, even builds in numbers for a *slip* (a wrong answer when you actually know the material, a careless flub) and a *guess* (a right answer by luck). The lesson holds for humans too: one wrong answer is weak evidence. A streak of the *same* wrong answer is the real signal.
 
 ## Error analysis: reading mistakes for clues
 
@@ -89,7 +90,7 @@ A good AI tutor can tell these apart because it keeps a **learner model** - a ru
 
 Here is the trap: when a learner keeps failing fraction equations, it is tempting to assign more fraction-equation practice. But the real gap might be that *adding fractions* itself is weak. Drilling the visible skill does nothing if the rot is one level down.
 
-The fix is to walk backward through the **prerequisite chain** - the map of which concepts depend on which. Probe each earlier skill until you find the first weak link. That earliest broken piece is almost always the true culprit, and repairing it often clears up several downstream problems at once.
+The fix is to walk backward through the [**prerequisite chain**](/blog/ai-learning-platform/19-knowledge-graphs-and-curriculum-generation) - the map of which concepts depend on which. Probe each earlier skill until you find the first weak link. That earliest broken piece is almost always the true culprit, and repairing it often clears up several downstream problems at once.
 
 ```
    Learner fails: "solve fraction equations"
@@ -135,8 +136,8 @@ Whether you are tutoring someone, studying solo, or designing a learning system,
 3. **Trace it to the root.** Before drilling the failing skill, check its prerequisites. Find the earliest weak link and repair *that*.
 4. **Match the repair to the cause:**
    - *Forgetting* → a brief refresher, then schedule the item for spaced review so it resurfaces before it fades again.
-   - *Misconception* → re-teach a *different way*. Switch the analogy, use a concrete real-world example, or pair words with a meaningful picture (this is *dual coding* - two routes to the same idea, as long as the image carries real meaning and isn't just decoration).
-   - *A large gap* → drop down a level. Move to an easier prerequisite where success is possible, rebuild confidence, then climb back up. This keeps the work inside the *Zone of Proximal Development* - hard enough to grow, achievable with help.
+   - *Misconception* → re-teach a *different way*. Switch the analogy, use a concrete real-world example, or pair words with a meaningful picture (this is [*dual coding*](/blog/ai-learning-platform/08-interleaving-dual-coding-desirable-difficulties) - two routes to the same idea, as long as the image carries real meaning and isn't just decoration).
+   - *A large gap* → drop down a level. Move to an easier prerequisite where success is possible, rebuild confidence, then climb back up. This keeps the work inside the [*Zone of Proximal Development*](/blog/ai-learning-platform/11-zone-of-proximal-development-scaffolding-worked-examples) - hard enough to grow, achievable with help.
    - *Overload* → add temporary support, or *scaffolding*. Show a fully worked example, then a problem with only the last step blank, then a fully independent one. This "scaffold-then-fade" sequence stops a novice from drowning.
 5. **Frame errors as information, not verdicts.** Say "not yet, let's look at this part again" instead of "wrong." The language you use shapes whether a learner keeps trying.
 6. **Close the loop.** Don't declare victory on one correct answer. Bring the repaired concept back at expanding intervals - a day, a few days, a week, a month - until it holds reliably.
@@ -159,4 +160,4 @@ If you remember one thing, make it this: **forgetting and misconceptions look th
 
 The deeper move is to stop trusting single answers and start reading patterns - the streak of identical errors, the confidently-wrong choice, the prerequisite quietly rotting one level down.
 
-Which raises the next question worth chasing: how does a tutor *schedule* all that resurfacing so each weak spot returns at exactly the right moment, not too soon to be boring and not too late to be forgotten? That timing is its own quiet science, and it is where spaced repetition gets genuinely clever.
+Which raises the next question worth chasing: how does a tutor *schedule* all that resurfacing so each weak spot returns at exactly the right moment, not too soon to be boring and not too late to be forgotten? That timing is its own quiet science, and it is where [spaced repetition](/blog/ai-learning-platform/21-spaced-repetition-algorithms-in-practice-sm-2-fsrs) gets genuinely clever.

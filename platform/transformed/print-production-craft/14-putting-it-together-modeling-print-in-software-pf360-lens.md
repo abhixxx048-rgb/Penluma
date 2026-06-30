@@ -31,6 +31,7 @@ faq:
     a: Preflight is the automated validation of a customer's file before printing, checking resolution, color mode, bleed, and fonts. If a file fails, production cannot start until it is corrected, and the software should return a plain-language reason plus a re-upload path.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: print-production-craft
 topicTitle: Print Production Craft
 category: Engineering
@@ -94,7 +95,7 @@ For **wide-format** work (banners, posters, large prints), size is continuous. A
 
 ### Stock: the paper or material
 
-**Substrate** just means the material you print on. Its weight is expressed in three competing systems, and this is a classic data-model trap.
+[**Substrate**](/blog/print-production-craft/08-substrates-materials-paper-gsm-coatings-specialty-stocks) just means the material you print on. Its weight is expressed in three competing systems, and this is a classic data-model trap.
 
 | System | What it measures | Why it's tricky |
 | --- | --- | --- |
@@ -123,7 +124,7 @@ For heavier work, model two more fields: **grain direction** (folding against th
 
 Printers describe ink coverage as **front-over-back counts.** The number before the slash is the front; the number after is the back.
 
-- **CMYK** is the four process colors: Cyan, Magenta, Yellow, and Black (the "K"). So "4" almost always means full color.
+- [**CMYK**](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color) is the four process colors: Cyan, Magenta, Yellow, and Black (the "K"). So "4" almost always means full color.
 - **4/4** ("four over four") is full color both sides.
 - **4/0** is full color front, blank back.
 - **4/1** is full color front, single ink (usually black) back.
@@ -135,7 +136,7 @@ The mistake here is modeling sides as a boolean: double-sided yes or no. The num
 
 ### Finishing: priced choices with compatibility rules
 
-**Finishing** (also called bindery or post-press) is everything done after the ink hits the sheet. These are the high-margin add-ons. Each one can add cost, time, and weight, and each may be incompatible with certain stocks.
+[**Finishing**](/blog/print-production-craft/09-finishing-bindery-everything-after-the-press) (also called bindery or post-press) is everything done after the ink hits the sheet. These are the high-margin add-ons. Each one can add cost, time, and weight, and each may be incompatible with certain stocks.
 
 | Term | Plain meaning |
 | --- | --- |
@@ -169,7 +170,7 @@ One pricing strategy cannot serve all products. You need at least three, living 
 
 ### Quantity price breaks
 
-This is the default for short-run work. The per-unit price falls as quantity rises, because the **setup cost** (plates, press make-ready, prepress labor) is fixed and gets spread across the run. At low quantity, setup dominates the total. At high quantity, per-piece material cost dominates.
+This is the default for short-run work. The per-unit price falls as quantity rises, because the [**setup cost**](/blog/print-production-craft/11-print-shop-economics-costing-make-ready-margins-quoting) (plates, press make-ready, prepress labor) is fixed and gets spread across the run. At low quantity, setup dominates the total. At high quantity, per-piece material cost dominates.
 
 Model it as `price = setup_fee + (per_unit × qty)` with a tier table. Breaks sit at thresholds the shop sets, such as 100 / 250 / 500 / 1000 / 5000. The steepest savings live in the low-to-mid hundreds; after 1000 the curve flattens.
 
@@ -202,7 +203,7 @@ The canonical path runs: order received, then prepress, then proof, then the **p
 
 | Stage | What happens, in plain English |
 | --- | --- |
-| **Prepress** | File prep and color management; the **preflight** file check and **imposition** (arranging pages and copies on the big press sheet so it cuts apart correctly). Bad files bounce back here. |
+| **Prepress** | File prep and color management; the **preflight** file check and [**imposition**](/blog/computer-graphics-print/14-imposition-binding-arranging-pages-on-the-sheet) (arranging pages and copies on the big press sheet so it cuts apart correctly). Bad files bounce back here. |
 | **Proof** | The system generates a **proof**, a sample (a PDF "soft proof" or a printed "hard proof") for the customer to check |
 | **Proof approval gate** | The customer approves or requests changes. This is the single biggest bottleneck and the timing anchor. |
 | **Printing** | For offset: making plates and **make-ready** (aligning the press before the real run), then the run with quality-control checks |
@@ -223,7 +224,7 @@ Skip this and you are one dispute away from a loss. When a customer says "I neve
 
 ## File and preflight requirements
 
-The order is not real until a valid file backs it. **Preflight** is the pre-print validation of the customer's file, like a pilot's checklist before takeoff. Four core checks every print PDF must clear:
+The order is not real until a valid file backs it. [**Preflight**](/blog/computer-graphics-print/13-preflight-validating-a-file-before-it-prints) is the pre-print validation of the customer's file, like a pilot's checklist before takeoff. Four core checks every print PDF must clear:
 
 | Check | Requirement | If it fails |
 | --- | --- | --- |

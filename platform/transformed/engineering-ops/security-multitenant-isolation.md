@@ -30,6 +30,7 @@ faq:
     a: No. Authentication proves who someone is. Isolation decides what data their request is allowed to touch. A perfectly authenticated admin can still read another tenant's data if the authorization and scoping layers have a hole.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: engineering-ops
 topicTitle: Engineering & Ops
 category: Business & Growth
@@ -138,7 +139,7 @@ For reads, that is information disclosure. For **writes**, it is worse: because 
 
 ## Failure 4: Background jobs forget who they're working for
 
-Queued jobs are isolation's blind spot. When a job is picked up by a worker minutes later, the tenant context from the original request is gone. If the job runs an Eloquent query expecting the global scope to protect it-and the scope is fail-open-that query runs across **every tenant at once.**
+[Queued jobs](/blog/system-design/12-messaging-and-event-driven) are isolation's blind spot. When a job is picked up by a worker minutes later, the tenant context from the original request is gone. If the job runs an Eloquent query expecting the global scope to protect it-and the scope is fail-open-that query runs across **every tenant at once.**
 
 Imagine a "send notification" job that loads unread notifications and emails them out. Queued without restoring tenancy, it cheerfully emails Tenant A's notifications to whoever the job happens to process. The code looks correct. The scope was supposed to handle it. The scope wasn't there.
 
@@ -162,7 +163,7 @@ None of these are exotic. They are the ordinary ways auth rots, and they compoun
 ## Common misconceptions
 
 **"We have authentication, so tenants are isolated."**
-Authentication proves *who* you are. Isolation decides *what* your request may touch. A fully authenticated user can still reach another tenant's data through an IDOR hole or an unscoped query. They are different layers, and you need both.
+Authentication proves *who* you are. Isolation decides *what* your request may touch. A fully authenticated user can still reach another tenant's data through an IDOR hole or an unscoped query. They are [different layers](/blog/security-privacy-engineering/04-authentication-authorization), and you need both.
 
 **"The ORM scopes every query, so we're safe."**
 Only when the scope actually runs. Raw queries, `withoutGlobalScopes()`, background jobs, and uninitialized contexts all slip past it. The scope is load-bearing *and* easy to bypass-a dangerous combination.
@@ -187,9 +188,9 @@ Walk your own system through these steps. Each one maps to a real failure above.
 5. **Re-initialize tenancy inside every job.** Pass IDs, re-fetch models, and lint for jobs that skip it.
 6. **Kill auth shortcuts.** No hardcoded master codes, no default signing keys, no wildcard CORS with credentials. Fail closed on empty config.
 7. **Expire and scope your tokens.** Finite lifetimes, scheduled pruning of expired tokens, least-privilege abilities.
-8. **Rate-limit every auth surface.** Login, register, forgot-password, and token issuance-keyed by email and IP, backed by a shared store (like Redis) so the limit holds across servers.
+8. **[Rate-limit](/blog/system-design/16-rate-limiting-and-resiliency) every auth surface.** Login, register, forgot-password, and token issuance-keyed by email and IP, backed by a shared store (like Redis) so the limit holds across servers.
 9. **Return one generic message on failed login.** "Invalid email or password" for every case stops attackers from enumerating which accounts exist.
-10. **Write a cross-tenant penetration test.** Set up Tenant A and Tenant B, then assert that A literally cannot read or mutate B's records through any route-checking the database state, not just the HTTP status code. Make it run in CI so a future change can't quietly reopen the hole.
+10. **Write a cross-tenant [penetration test](/blog/security-privacy-engineering/08-security-testing-auditing).** Set up Tenant A and Tenant B, then assert that A literally cannot read or mutate B's records through any route-checking the database state, not just the HTTP status code. Make it run in CI so a future change can't quietly reopen the hole.
 
 That last step is the one that lasts. Documentation drifts and good intentions fade, but a failing test stops a regression cold.
 
@@ -197,4 +198,4 @@ That last step is the one that lasts. Documentation drifts and good intentions f
 
 The single takeaway: **in a shared database, isolation is a filter you must never forget, and the system should refuse to run when you do.** Every failure in this review-IDOR, spoofed headers, unscoped jobs, fail-open scopes-is a variation of the same theme: a query that ran without the tenant filter and faced no consequence for it. Build the consequence in. Make the absence of a tenant context a loud error, not a silent leak.
 
-This sits at the top of the OWASP risk list for a reason-**Broken Access Control** is the most common serious flaw on the web, and IDOR is its most common shape. Which raises a sharper question worth chasing next: if your application code is the *only* thing standing between two customers, should it be? Database-level **row-level security**-where the database itself enforces `tenant_id`, no matter what query reaches it-turns that single filter into an actual wall. That is where a fail-open design goes to die, and it's worth a look.
+This sits at the top of the OWASP risk list for a reason-**[Broken Access Control](/blog/security-privacy-engineering/05-application-web-security)** is the most common serious flaw on the web, and IDOR is its most common shape. Which raises a sharper question worth chasing next: if your application code is the *only* thing standing between two customers, should it be? Database-level **row-level security**-where the database itself enforces `tenant_id`, no matter what query reaches it-turns that single filter into an actual wall. That is where a fail-open design goes to die, and it's worth a look.

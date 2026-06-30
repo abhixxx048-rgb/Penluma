@@ -30,6 +30,7 @@ faq:
     a: State it plainly and then stop talking. Anchor it to the value the buyer gets, never apologize, and resist filling the silence with a discount nobody asked for.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: business-financial-literacy
 topicTitle: Business & Financial Literacy
 category: Money & Business
@@ -43,13 +44,13 @@ Take two identical bottles of wine. One sits on a supermarket shelf for $40 and 
 
 That gap is not about the wine. It is about the buyer's mind.
 
-You have probably spent real effort on the math of pricing: your costs, your margins, what you can afford to charge. This is the other half of the story, the half almost nobody teaches you. It is about how a buyer *feels* a price, and how a few honest choices can make the right customer say yes far more easily.
+You have probably spent real effort on [the math of pricing](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive): your costs, your margins, what you can afford to charge. This is the other half of the story, the half almost nobody teaches you. It is about how a buyer *feels* a price, and how a few honest choices can make the right customer say yes far more easily.
 
 ## Why this matters
 
-Price is the single biggest lever on your profit. Cut your costs by 10% and you save a little. Raise your price by 10% and, because that extra dollar is almost pure margin, your profit can jump dramatically.
+Price is the single biggest lever on your profit. Cut your costs by 10% and you save a little. Raise your price by 10% and, because that extra dollar is almost [pure margin](/blog/business-financial-literacy/10-break-even-margins-profitability), your profit can jump dramatically.
 
-Yet most founders and small business owners leave money on the table. They undercharge out of fear, discount the moment someone hesitates, and apologize for their own prices. Not because their offer is weak, but because nobody showed them how buyers actually decide.
+Yet most founders and small business owners leave money on the table. They undercharge out of fear, discount the moment someone hesitates, and apologize for their own prices. Not because their offer is weak, but because nobody showed them [how buyers actually decide](/blog/economics-from-first-principles/05-consumer-behavior-and-how-people-really-decide).
 
 Here is the key idea to hold onto: **price is not just a number. It is a story the buyer tells themselves about value.** Your job is to make that story easy to believe, and to never apologize for the number.
 
@@ -98,7 +99,7 @@ The mistake is using charm pricing on a premium or trust-based offer. For luxury
 
 The **decoy effect** (formally called *asymmetric dominance*) is when you add an option that is clearly worse than one of your real options, not to sell it, but to make the option beside it look obviously great.
 
-The famous proof comes from behavioral economist Dan Ariely's study of *The Economist*'s subscriptions. Readers were offered:
+The famous proof comes from [behavioral economist](/blog/economics-from-first-principles/31-behavioral-economics-how-psychology-shapes-the-economy) Dan Ariely's study of *The Economist*'s subscriptions. Readers were offered:
 
 | Option | Price | Role |
 | --- | --- | --- |

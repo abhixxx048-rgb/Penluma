@@ -49,6 +49,7 @@ faq:
       caused a deep recession. Same tool, very different results.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Monetary_policy
   - https://en.wikipedia.org/wiki/Circular_flow_of_income
@@ -75,8 +76,8 @@ Start with the simplest picture. The economy is **five groups** connected by flo
 - **Households.** You and me. We supply labor (we work) and we consume (we spend).
 - **Firms.** Businesses. They make things, invest in new capacity, and hire people.
 - **Banks and the financial system.** The plumbing that moves savings into investment and sets how cheap or expensive it is to borrow.
-- **Government.** Taxes, spends, and regulates. Its central bank (like the US Federal Reserve) sets the base interest rate.
-- **The rest of the world.** Other countries, trading goods, moving money around, and setting exchange rates - the price of one currency in another.
+- **Government.** Taxes, spends, and regulates. Its [central bank](/blog/economics-from-first-principles/08-central-banks-and-monetary-policy) (like the US Federal Reserve) sets the base interest rate.
+- **The rest of the world.** Other countries, trading goods, moving money around, and setting [exchange rates](/blog/economics-from-first-principles/22-exchange-rates-currency-markets-and-why-currencies-rise-or-fall) - the price of one currency in another.
 
 The heart of it is the **circular flow**: households work for firms, firms pay wages, households spend those wages, that spending becomes firms' revenue, which pays the next round of wages. Round and round.
 
@@ -98,16 +99,16 @@ Here is a subtle point most people miss. When the central bank "raises rates," i
 
 Pull that anchor up, and watch the dominoes fall.
 
-- **Borrowing costs rise.** Mortgages, car loans, credit cards, and business loans all climb. Credit gets scarcer and pricier.
+- **Borrowing costs rise.** Mortgages, car loans, credit cards, and [business loans](/blog/economics-from-first-principles/09-loans-credit-debt-and-interest-rates) all climb. Credit gets scarcer and pricier.
 - **Business investment falls.** A project now has to clear a higher bar to be worth doing, so marginal expansions get shelved. Less building, less hiring planned.
 - **Housing cools - fast.** This is the quickest, most visible channel. Higher mortgage rates raise the monthly payment on the same house, so sales slow and price growth stalls.
 - **Consumer spending dips.** Big financed purchases drop, saving suddenly pays more so it looks attractive, and anyone with variable-rate debt watches their payments rise.
-- **Stocks fall.** Future company earnings are now worth less today, and boring bonds suddenly pay a decent yield, so money drifts out of stocks. Long-shot growth and tech stocks, whose payoff is far away, fall hardest.
+- **Stocks fall.** Future company earnings are now worth less today, and boring bonds suddenly pay a decent yield, so money drifts out of [stocks](/blog/economics-from-first-principles/19-financial-markets-stocks-bonds-commodities-and-derivatives). Long-shot growth and tech stocks, whose payoff is far away, fall hardest.
 - **The currency strengthens.** Higher rates attract foreign money chasing yield, so demand for the currency rises. Imports get cheaper, exports get less competitive abroad.
 - **Jobs weaken - late.** Softer demand eventually makes firms slow hiring, then cut. Unemployment is a *lagging* signal; it rises last.
 - **Inflation finally slows.** This is the actual goal, and it arrives last of all.
 
-Notice the timing. Markets react in *seconds*. Housing reacts in *months*. But inflation - the very thing the central bank is trying to change - moves on a long delay.
+Notice the timing. Markets react in *seconds*. Housing reacts in *months*. But [inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) - the very thing the central bank is trying to change - moves on a long delay.
 
 ### The "long and variable lags"
 

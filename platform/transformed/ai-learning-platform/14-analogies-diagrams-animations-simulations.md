@@ -38,6 +38,7 @@ order: 13
 icon: "\U0001F393"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -49,7 +50,7 @@ Here's the rule that decides which way it goes.
 
 ## Why this matters
 
-Almost all of your active thinking happens on a tiny mental desk called **working memory**. It is shockingly small. Careful research (the psychologist Nelson Cowan, writing in 2001) puts it at about **four chunks** of new information at once, and it wipes clean in seconds the moment your attention drifts.
+Almost all of your active thinking happens on a tiny mental desk called **[working memory](/blog/ai-learning-platform/05-cognitive-load-theory-why-too-much-at-once-fails)**. It is shockingly small. Careful research (the psychologist Nelson Cowan, writing in 2001) puts it at about **four chunks** of new information at once, and it wipes clean in seconds the moment your attention drifts.
 
 That single fact governs everything in this article. Every teaching aid you'll ever meet does one of two things: it helps fit an idea onto that small desk, or it accidentally crowds the desk with junk. A gorgeous animation can be a gift or a distraction, and the only thing separating the two is whether it earns its space.
 
@@ -59,7 +60,7 @@ So this isn't really about decoration. It's about getting an idea through a very
 
 An **analogy** says "this new thing works like that familiar thing." It works because of how your long-term memory is built.
 
-Your memory stores organized patterns called **schemas** - think of them as ready-made mental folders. You already have a folder for "how a bank account works" and one for "how a bucket leaks." When someone says "this setting is like the gear ratio on a bike," they aren't asking you to build a new folder from scratch. They're letting you *borrow* one you already have and bolt the new idea onto it.
+Your memory stores organized patterns called **[schemas](/blog/ai-learning-platform/03-how-humans-learn-a-plain-tour-of-memory)** - think of them as ready-made mental folders. You already have a folder for "how a bank account works" and one for "how a bucket leaks." When someone says "this setting is like the gear ratio on a bike," they aren't asking you to build a new folder from scratch. They're letting you *borrow* one you already have and bolt the new idea onto it.
 
 That's the magic. The new material arrives as one big familiar chunk instead of five strange little ones - so it slides through that narrow four-chunk doorway.
 
@@ -81,7 +82,7 @@ Three habits keep analogies honest:
 
 ## Diagrams and dual coding: two roads to the same idea
 
-**Dual coding** (first described by Alan Paivio, later turned into practical advice by Richard Mayer) is the finding that your mind has two separate channels for taking information in: a **verbal** channel for words and a **visual** channel for pictures.
+**[Dual coding](/blog/ai-learning-platform/08-interleaving-dual-coding-desirable-difficulties)** (first described by Alan Paivio, later turned into practical advice by Richard Mayer) is the finding that your mind has two separate channels for taking information in: a **verbal** channel for words and a **visual** channel for pictures.
 
 Because they're separate, a well-matched word-plus-picture pair gives your brain two routes to store and later find the same idea. It also spreads the mental work across two desks instead of overloading one. People reliably learn more from *relevant words plus relevant pictures* than from words alone.
 
@@ -128,7 +129,7 @@ Reach for motion or interaction when:
 2. **Cause and effect needs to be *felt*.** A simulation where you drag a "desired retention" slider and watch review intervals shrink teaches the trade-off in your bones, in a way a paragraph never could.
 3. **The space is too large to describe.** "What happens at every interest rate?" is better roamed than read.
 
-To teach spaced repetition, a static graph of the forgetting curve is fine. But a tiny simulation where you click "review now" and watch the curve reset and flatten - try it too early and see a small gain, try it right before forgetting and see a big one - turns an abstract rule into something you discovered yourself.
+To teach [spaced repetition](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve), a static graph of the forgetting curve is fine. But a tiny simulation where you click "review now" and watch the curve reset and flatten - try it too early and see a small gain, try it right before forgetting and see a big one - turns an abstract rule into something you discovered yourself.
 
 > **Watch out for animated decoration.** A spinning 3-D logo or a lesson that flies in from the side adds motion your eye must track - pure clutter on the four-chunk desk. If the movement doesn't carry meaning, a still image teaches better. Motion is a cost. Only pay it when change is the lesson.
 
@@ -153,4 +154,4 @@ If you remember one thing, make it this: **every teaching aid is fighting for sp
 
 So the next time an explanation doesn't land, don't add more - ask what's cluttering the desk and clear it.
 
-And there's a deeper question lurking underneath all of this: once an idea *is* on the desk, what makes it move into long-term memory and stay there for years instead of fading by Tuesday? That's where spacing, retrieval, and the forgetting curve come in - and it turns out the timing of a single review can matter more than the explanation itself.
+And there's a deeper question lurking underneath all of this: once an idea *is* on the desk, what makes it move into long-term memory and stay there for years instead of fading by Tuesday? That's where spacing, [retrieval](/blog/ai-learning-platform/06-retrieval-practice-why-testing-beats-re-reading), and the forgetting curve come in - and it turns out the timing of a single review can matter more than the explanation itself.

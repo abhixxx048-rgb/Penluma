@@ -35,6 +35,7 @@ icon: "\U0001F331"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 A client cancels. Your laptop and your phone die in the same week. A medical bill lands with no warning. If you have a pile of cash set aside, this is an annoying month. If you don't, it's the month your whole financial plan quietly falls apart.
@@ -52,7 +53,7 @@ Picture this. You have a few lakh invested and no spare cash. Then something bre
 1. **Sell your investments** - often at a loss, because emergencies have a cruel habit of arriving during downturns. A recession can hit your income *and* the market at the same time.
 2. **Borrow on a credit card** - frequently at 36 to 42 percent a year, which is its own kind of trap.
 
-An emergency fund deletes both bad options. It lets your investments keep compounding, and it keeps you far away from high-interest debt. It is not glamorous. It is the thing that makes everything else possible.
+An emergency fund deletes both bad options. It lets your investments keep [compounding](/blog/life-money-and-relationships/06-compounding-the-time-value-of-money), and it keeps you far away from [high-interest debt](/blog/life-money-and-relationships/05-debt-good-debt-bad-debt-and-getting-free). It is not glamorous. It is the thing that makes everything else possible.
 
 ## What an emergency fund actually is
 
@@ -61,7 +62,7 @@ An emergency fund is cash you set aside that is **safe** and **liquid**, kept fo
 Two plain-language definitions, because they do a lot of work:
 
 - **Liquid** means you can turn it into spendable cash quickly, without losing value. Money in your savings account is very liquid. A flat you own is not - selling it takes months.
-- **Safe** means the rupee value does not drop. ₹5,00,000 stays ₹5,00,000. (It can slowly lose buying power to inflation over years, but for this fund, certainty matters more than growth.)
+- **Safe** means the rupee value does not drop. ₹5,00,000 stays ₹5,00,000. (It can slowly lose buying power to [inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) over years, but for this fund, certainty matters more than growth.)
 
 **The key idea: the job of an emergency fund is certainty, not returns.** You are buying peace of mind and the freedom to never be forced into a bad decision during a crisis. Do not judge it by its interest rate.
 
@@ -96,7 +97,7 @@ Same expenses, different target - because the risk of the income stopping is dif
 
 You don't dump the whole fund in one place. You split it so that some is reachable instantly and some earns a little more. A simple, sensible split looks like this:
 
-- **~30% in a savings account** - instant access, in under a day. Returns are low (often 3 to 4 percent), but this is the money you might need *today*. Keep roughly one month of expenses here.
+- **~30% in a [savings account](/blog/life-money-and-relationships/07-where-to-keep-cash-banks-safe-saving-instruments)** - instant access, in under a day. Returns are low (often 3 to 4 percent), but this is the money you might need *today*. Keep roughly one month of expenses here.
 - **~30% in a sweep-in or laddered fixed deposit** - safe, breakable, and earns more than a savings account.
 - **~40% in a liquid mutual fund** - usually redeemable in about one working day, with slightly better returns.
 
@@ -154,4 +155,4 @@ If you remember one thing, make it this: **build the emergency fund before you i
 
 Get this right and you've earned something valuable - the right to take smart risks everywhere else, calmly, because your downside is already covered.
 
-But cash has a limit. It can absorb a lost client or a broken laptop. It cannot absorb a hospital stay that runs into lakhs, or the loss of an income earner a family depends on. For those rare, large catastrophes, you need a different tool entirely - and that's exactly where insurance comes in.
+But cash has a limit. It can absorb a lost client or a broken laptop. It cannot absorb a hospital stay that runs into lakhs, or the loss of an income earner a family depends on. For those rare, large catastrophes, you need a different tool entirely - and that's exactly where [insurance](/blog/life-money-and-relationships/04-insurance-term-life-health-protection-before-investing) comes in.

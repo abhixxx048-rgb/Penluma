@@ -45,6 +45,7 @@ faq:
       you out of the blue than you expect.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: life-money-and-relationships
 topicTitle: 'Life, Money & Relationships'
 category: Thinking & Decisions
@@ -62,7 +63,7 @@ There is a calmer way. Instead of frantic bursts, you build a light routine you 
 
 A great network is not built by trying harder. It is built by a small set of habits that happen on a schedule, so you stop relying on willpower or memory.
 
-The payoff compounds quietly. The friend you check in with today becomes the person who thinks of you for an opportunity three years from now. The colleague you helped without keeping score becomes the one who vouches for you when it counts. None of it feels urgent on any single day, which is exactly why a **system** beats motivation. Motivation fades by Wednesday. A routine on your calendar does not.
+The payoff compounds quietly. The friend you check in with today becomes the person who [thinks of you for an opportunity](/blog/life-money-and-relationships/27-how-opportunities-hires-advice-really-flow) three years from now. The colleague you helped without keeping score becomes the one who vouches for you when it counts. None of it feels urgent on any single day, which is exactly why a **system** beats motivation. Motivation fades by Wednesday. A routine on your calendar does not.
 
 Here is the core idea, and everything else hangs off it: **consistency beats intensity, every single time.**
 
@@ -107,7 +108,7 @@ The big mistake here is trying to keep up with everyone at the same intensity. T
 
 That second goal works because recurring contact creates familiarity, and familiarity creates liking. Showing up to the same place repeatedly does more for you than attending ten different events once each.
 
-One more list is worth keeping: a short **"dormant ties to revive"** list of people you've genuinely lost touch with. Reconnecting with them is the single highest-return, lowest-effort move most people ignore. The trust is already there, and they carry fresh information from circles you've drifted away from.
+One more list is worth keeping: a short **"dormant ties to revive"** list of [people you've genuinely lost touch with](/blog/life-money-and-relationships/18-mapping-your-network-strong-weak-dormant-ties). Reconnecting with them is the single highest-return, lowest-effort move most people ignore. The trust is already there, and they carry fresh information from circles you've drifted away from.
 
 ## The personal CRM that makes it sustainable
 
@@ -169,7 +170,7 @@ Most "networking metrics" are vanity numbers: follower counts, connection counts
 
 ## Fold money and relationships into one life review
 
-If you also run a money review each week (income, spending, saving, goals), you can combine both into a single **life operating system**: one recurring review that keeps the two things that compound most in your life on track.
+If you also run a [money review each week](/blog/life-money-and-relationships/02-budgeting-cash-flow-knowing-where-money-goes) (income, spending, saving, goals), you can combine both into a single **life operating system**: one recurring review that keeps the two things that compound most in your life on track.
 
 The parallel is real. Both reward small, regular deposits. Both decay silently if neglected. Both pay off most when you started long before you needed them.
 
@@ -187,7 +188,7 @@ You can stand up the whole system in an afternoon.
 
 Keep these five principles above your desk, because if you forget everything else, these carry you:
 
-- **Give first, always.** Be the *otherish* giver, generous *and* protective of your own time. Give without keeping score and let returns be diffuse and delayed.
+- **Give first, always.** Be the *otherish* giver, generous *and* protective of your own time. [Give without keeping score](/blog/life-money-and-relationships/24-giving-value-reciprocity-without-keeping-score) and let returns be diffuse and delayed.
 - **Build before you need it.** Plant early, long before the job hunt or the launch.
 - **Widen your luck surface area.** Entrepreneur Jason Roberts' model is *Luck = Doing × Telling*. Do real work *and* let people know about it. Because they multiply, if either is zero, your luck is zero.
 - **Match effort to capacity.** Use the Dunbar layers. You physically cannot give everyone the same intensity.
@@ -195,7 +196,7 @@ Keep these five principles above your desk, because if you forget everything els
 
 ## Conclusion
 
-If you take one thing from all of this, take this: **you don't build relationships by trying harder; you build them with a light routine you keep for years.** Five-minute favors are compound interest for human connection, tiny regular deposits that grow into a fortune of trust.
+If you take one thing from all of this, take this: **you don't build relationships by trying harder; you build them with a light routine you keep for years.** Five-minute favors are [compound interest](/blog/life-money-and-relationships/06-compounding-the-time-value-of-money) for human connection, tiny regular deposits that grow into a fortune of trust.
 
 The deepest reason this works is the same reason it's so easy to neglect: relationships, like money and health, move on a slow clock. The deposit you make today is almost invisible. The withdrawal you'll someday need is enormous. The people who thrive are simply the ones who started watering the garden before the dry season arrived.
 

@@ -28,6 +28,7 @@ faq:
     a: "No. Image layers are inspectable, so anyone with the image can read secrets baked into them. Inject secrets at runtime through Docker secrets or an env-file kept out of the image, and rotate anything that ever leaked."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: engineering-ops
 topicTitle: Engineering & Ops
 category: Business & Growth
@@ -98,10 +99,10 @@ A nice bonus: on modern browsers, `*.localhost` automatically resolves to your m
 
 You do not need a separate database server per app. A cleaner default for most platforms:
 
-- **One Postgres.** A single shared database with a `tenant_id` column to separate customers is far simpler than spinning up a database per tenant. Reserve per-tenant databases for when you have a hard isolation or compliance reason.
+- **One Postgres.** [A single shared database](/blog/system-design/05-data-modeling-sql-nosql) with a `tenant_id` column to separate customers is far simpler than spinning up a database per tenant. Reserve per-tenant databases for when you have a hard isolation or compliance reason.
 - **One Redis, split by logical database.** Redis offers numbered logical databases (0, 1, 2…). Your app cache, queue, and sessions can live in some; a background job system can live in others.
 
-The one nuance worth knowing: a job queue often wants an eviction policy like "drop least-recently-used keys when memory is full," while your application cache wants "never silently drop my data." Those two policies conflict. For small deployments, one Redis with separate key prefixes is fine. Split into two Redis instances only when that eviction conflict actually bites you.
+The one nuance worth knowing: a job queue often wants an eviction policy like "drop least-recently-used keys when memory is full," while [your application cache](/blog/system-design/06-caching-deep) wants "never silently drop my data." Those two policies conflict. For small deployments, one Redis with separate key prefixes is fine. Split into two Redis instances only when that eviction conflict actually bites you.
 
 For **file storage**, use object storage (S3-style) with each tenant's files under its own prefix in a *single* bucket. Locally, run a MinIO container that speaks the same S3 API, so your code path is identical to production. In production, point it at real S3.
 
@@ -122,7 +123,7 @@ A few details that quietly break multi-stage builds:
 
 ## Add a real health check route
 
-Orchestrators and load balancers decide whether a service is alive by hitting a health endpoint - often something like `GET /api/health`. If that route doesn't exist, every probe returns a 404, and the system either marks your healthy service as dead or never lets traffic through.
+Orchestrators and load balancers decide whether a service is alive by hitting [a health endpoint](/blog/system-design/17-observability-and-operations) - often something like `GET /api/health`. If that route doesn't exist, every probe returns a 404, and the system either marks your healthy service as dead or never lets traffic through.
 
 Add a genuine health route *before* you wire up health checks. Start simple with a flat `200 OK`. Later you can decide whether it should also check that the database and cache are reachable - a deeper probe that catches more, at the cost of failing the whole service when a dependency hiccups.
 
@@ -132,7 +133,7 @@ Add a genuine health route *before* you wire up health checks. Start simple with
 
 **"One database per service is the professional way."** It's one valid pattern, not the default. For most platforms, a shared, well-structured database is simpler, cheaper, and easier to back up. Reach for separation when you have a concrete reason.
 
-**"I'll bake the secrets in so deploys are simple."** Image layers can be unpacked and read. Anything baked in - API keys, database passwords, SMTP credentials - is effectively published to anyone who pulls the image. Inject secrets at runtime, and rotate anything that ever sat in a committed file.
+**"I'll bake the secrets in so deploys are simple."** Image layers can be unpacked and read. Anything baked in - API keys, database passwords, SMTP credentials - is effectively published to anyone who pulls the image. [Inject secrets at runtime](/blog/security-privacy-engineering/09-secure-sdlc-devsecops), and rotate anything that ever sat in a committed file.
 
 **"localhost works inside the container."** Inside a container, `localhost` is the container itself, not your host machine and not its neighbors. Reach other services by their network names.
 
@@ -155,4 +156,4 @@ If you take one thing away, make it this: **containerization is less about Docke
 
 Get the address right, keep your secrets out of the image, and let your stateless tiers multiply.
 
-Once your stack comes up with one command, a tempting next question appears: if running three copies of a service is now trivial, who decides *when* to run three versus thirty - and can that decision make itself? That's where container orchestration and autoscaling pick up the story.
+Once your stack comes up with one command, a tempting next question appears: if running three copies of a service is now trivial, who decides *when* to run three versus thirty - and can that decision make itself? That's where [container orchestration and autoscaling](/blog/system-design/07-load-balancing-and-scaling) pick up the story.

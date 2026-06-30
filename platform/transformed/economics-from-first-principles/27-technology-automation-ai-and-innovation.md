@@ -23,6 +23,7 @@ keywords:
   - how technology drives economic growth
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 faq:
   - q: "Will AI take my job?"
     a: "Probably not your whole job, but likely parts of it. History shows automation usually moves and reshapes work rather than deleting it outright. The real risk is a painful transition for workers in directly exposed roles, not mass permanent unemployment."
@@ -59,7 +60,7 @@ In the 1950s, economist Robert Solow set out to measure what makes economies gro
 
 A huge chunk was left over, unexplained by either.
 
-That leftover has a name: **total factor productivity** (TFP). It's the growth that comes not from having more inputs, but from combining them more cleverly through better technology, know-how, and organization. Solow's discovery was that this "residual" drives most long-run growth.
+That leftover has a name: **total factor productivity** (TFP). It's the growth that comes not from having more inputs, but from combining them more cleverly through better technology, know-how, and organization. Solow's discovery was that this "residual" drives [most long-run growth](/blog/economics-from-first-principles/12-economic-growth-and-productivity).
 
 The chain is short and powerful:
 
@@ -153,7 +154,7 @@ The result is **job polarization**: growth at the top, growth at the bottom, and
 | Non-routine analytic | Engineer, analyst | Boosted, grows, higher pay |
 | Non-routine manual | Caregiver, server | Hard to automate, grows, low pay |
 
-This is a leading explanation for why middle-class wages stagnated and inequality rose in the US after about 1980.
+This is a leading explanation for why [middle-class wages](/blog/economics-from-first-principles/13-wages-labor-markets-and-why-some-jobs-pay-more) stagnated and [inequality rose](/blog/economics-from-first-principles/25-inequality-wealth-distribution-and-poverty) in the US after about 1980.
 
 ## What about AI?
 
@@ -173,7 +174,7 @@ This is the deepest question, and the one most people skip.
 
 Technology almost certainly grows the *total* pie. But who gets the new slices? The gains split three ways: **consumers** (lower prices), **workers** (wages, very unevenly across skill levels), and **capital owners** (profits).
 
-Recent decades tilted hard toward capital and the top. The **labor share of income**, the fraction of national income going to wages rather than profits, fell in the US from roughly 64% to 58% between the 1980s and 2010s. Gains also concentrated in a few **"superstar firms"**, the most productive companies grabbing an outsized share.
+Recent decades tilted hard toward capital and the top. The **labor share of income**, the fraction of [national income](/blog/economics-from-first-principles/11-measuring-an-economy-gdp-gnp-cpi-ppp-and-key-indicators) going to wages rather than profits, fell in the US from roughly 64% to 58% between the 1980s and 2010s. Gains also concentrated in a few **"superstar firms"**, the most productive companies grabbing an outsized share.
 
 The core lesson, argued forcefully by Acemoglu and Johnson in *Power and Progress*: throughout history, broad prosperity from new technology arrived *only* when institutions, including unions, laws, and public policy, forced the gains to be shared.
 
@@ -192,6 +193,6 @@ You can't control the macro forces, but you can position yourself wisely.
 
 ## Conclusion
 
-If you remember one thing, make it this: **automation almost never causes long-run mass unemployment. It reallocates and reinvents work. But who keeps the gains, and who absorbs the pain, is decided by choice, not by the machine.** Technology reliably grows total wealth. Shared prosperity is built, not guaranteed.
+If you remember one thing, make it this: **automation almost never causes long-run [mass unemployment](/blog/economics-from-first-principles/14-unemployment-productivity-and-the-labor-force). It reallocates and reinvents work. But who keeps the gains, and who absorbs the pain, is decided by choice, not by the machine.** Technology reliably grows total wealth. Shared prosperity is built, not guaranteed.
 
 Which raises a question worth sitting with. If a new technology can make a whole economy richer while leaving specific workers worse off, what exactly *should* a society do about the people caught in the gap? That's where economics stops being about machines and starts being about power, policy, and who gets a seat at the table, the thread we'll pull on next.

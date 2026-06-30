@@ -49,6 +49,7 @@ faq:
       state you want, with no solution hidden inside it. If your sentence already
       names a fix, you've described a solution, not the problem.
 author: Pritesh Yadav (priteshyadav444)
+linked: true
 transformed: true
 sources: []
 ---
@@ -75,7 +76,7 @@ The biggest trap is treating the first symptom you notice as "the problem." "We 
 Before anything else, write the problem as one clear sentence. Then stress-test it.
 
 - **Restate it in plain words.** Ask out loud: "What problem are we actually solving?"
-- **Ask "why" a few times.** Each "why" digs one layer deeper. This is the **5 Whys** technique from Toyota. "Sales dropped." Why? "Fewer orders." Why? "Repeat customers stopped buying." That last sentence is a far better problem than where you started.
+- **Ask "why" a few times.** Each "why" digs one layer deeper. This is the [**5 Whys**](/blog/clear-thinking-and-expression/12-analysis-frameworks-first-principles-mece-5-whys-second-order-thinking) technique from Toyota. "Sales dropped." Why? "Fewer orders." Why? "Repeat customers stopped buying." That last sentence is a far better problem than where you started.
 - **Name the gap.** A problem is the gap between *what is* and *what you want*. State both: "Repeat orders fell from 100 to 60 per month; I want them back at 100."
 - **Check it's a problem, not a solution.** If your sentence contains an answer ("build an app"), strip it out.
 
@@ -83,7 +84,7 @@ Before anything else, write the problem as one clear sentence. Then stress-test 
 
 ## Step 2 - Decompose into parts
 
-A big problem is overwhelming because your working memory - the small mental "desk" where you hold ideas - can only juggle a handful of things at once. Decomposing means breaking one big problem into smaller, separate pieces you can handle one at a time.
+A big problem is overwhelming because your [working memory](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits) - the small mental "desk" where you hold ideas - can only juggle a handful of things at once. Decomposing means breaking one big problem into smaller, separate pieces you can handle one at a time.
 
 Consultants draw an **issue tree**: the problem sits at the top, branching into its parts.
 
@@ -107,7 +108,7 @@ Repeat orders fell (100 -> 60)
 
 ## Step 3 - Generate hypotheses
 
-A **hypothesis** is a smart guess you can check - a possible answer stated as a sentence, not a vague feeling. Instead of investigating everything, you guess the likely cause and test that first. Consultants call this being "hypothesis-driven": start with a best guess, then look for evidence to confirm or kill it.
+A [**hypothesis**](/blog/clear-thinking-and-expression/19-reasoning-well-deduction-induction-abduction-steelmanning) is a smart guess you can check - a possible answer stated as a sentence, not a vague feeling. Instead of investigating everything, you guess the likely cause and test that first. Consultants call this being "hypothesis-driven": start with a best guess, then look for evidence to confirm or kill it.
 
 - **Write hypotheses as full sentences.** "Repeat orders fell because we stopped sending the monthly reminder email."
 - **Aim for 3 to 5,** one per promising branch of your tree.
@@ -143,7 +144,7 @@ Define -> Decompose -> Hypothesize -> Prioritize
 
 - **"The problem is whatever I noticed first."** Usually that's a symptom or a solution in disguise. The real problem sits a few "whys" deeper.
 - **"A good plan means picking the right answer up front."** No. A good plan means picking the right *guess* to test first, then letting evidence decide.
-- **"Once I have a hypothesis, my job is to prove it."** This is **confirmation bias** - only hunting for evidence that agrees with you. Force yourself to ask, "What would I see if this were *false*?"
+- **"Once I have a hypothesis, my job is to prove it."** This is [**confirmation bias**](/blog/clear-thinking-and-expression/18-cognitive-biases-logical-fallacies-and-how-to-dodge-them) - only hunting for evidence that agrees with you. Force yourself to ask, "What would I see if this were *false*?"
 - **"More analysis is always better."** Past a point, more analysis just delays the cheap test that would actually settle the question. Bias toward testing.
 
 ## A worked example you can copy
@@ -175,7 +176,7 @@ Twenty minutes, one page. A few drills to sharpen the muscle:
 - **5 Whys.** Take one complaint and ask "why?" five times, writing each answer. The deepest one is your real problem.
 - **Cheapest test.** For your top hypothesis, list three ways to test it and pick the fastest one that could prove you wrong.
 
-This process also makes you a clearer writer. An issue tree is a ready-made outline - your branches become your paragraphs, so your writing stops rambling. And stating hypotheses as full sentences forces the fuzzy idea in your head into words, which is exactly the "I know it but can't express it" gap.
+This process also [makes you a clearer writer](/blog/clear-thinking-and-expression/04-clear-writing-is-clear-thinking). An issue tree is a ready-made outline - your branches become your paragraphs, so your writing stops rambling. And stating hypotheses as full sentences forces the fuzzy idea in your head into words, which is exactly the "I know it but can't express it" gap.
 
 ## Conclusion
 

@@ -36,6 +36,7 @@ order: 12
 icon: "\U0001F4BC"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -90,7 +91,7 @@ Runway (months) = Cash in bank / Net burn per month
 
 So $120,000 in cash with a $25,000 net burn gives you **4.8 months of runway**. In under five months you must raise money, cut costs, or grow revenue. No drama - just math.
 
-One catch founders miss: they calculate runway once and forget it. Burn changes every month - you hire someone, you sign a big deal. **Recalculate runway every month.** And a well-worn rule of thumb: start raising money when you have about six months left, because fundraising itself takes months.
+One catch founders miss: they calculate runway once and forget it. Burn changes every month - you hire someone, you sign a big deal. **Recalculate runway every month.** And a well-worn rule of thumb: start [raising money](/blog/business-financial-literacy/12-funding-dilution-the-cost-of-capital) when you have about six months left, because fundraising itself takes months.
 
 ### 4. Revenue (MRR) and its growth rate
 
@@ -192,7 +193,7 @@ Knowing your numbers is a rhythm, not a one-time event. Two simple cadences keep
    - **Cash and runway first.** How much cash, how many months does it buy, and did runway grow or shrink versus last month - and why?
    - **Revenue and growth.** Did MRR grow? Was it from new customers or existing ones paying more?
    - **Churn.** How many left, and why each one left? Churn is the truth-teller about your product.
-   - **Unit economics.** Is CAC creeping up? Is LTV:CAC still at least 3:1? Is payback still under a year?
+   - **[Unit economics](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale).** Is CAC creeping up? Is LTV:CAC still at least 3:1? Is payback still under a year?
    - **Margins and burn.** Is each sale still profitable? Is net burn heading the right way?
    - **One decision.** End every review by writing down a single action: something to do, stop, or change before next month.
 
@@ -216,7 +217,7 @@ Numbers only matter if they drive action. Here is how the dashboard answers the 
 
 **"I'll know my numbers once we're bigger."** Backwards. The earlier you start, the cheaper your mistakes are and the stronger your instinct becomes by the time the stakes are high.
 
-**"Revenue is what matters most."** Revenue feels good, but cash and runway keep you alive. Plenty of fast-growing companies have run out of money. Profit on paper does not pay salaries - cash in the bank does.
+**"Revenue is what matters most."** Revenue feels good, but [cash and runway](/blog/business-financial-literacy/07-cash-flow-burn-rate-runway-don-t-run-out-of-money) keep you alive. Plenty of fast-growing companies have run out of money. Profit on paper does not pay salaries - cash in the bank does.
 
 **"An operational decision is separate from finance."** There is no purely operational decision. Hire an engineer at $8,000 a month and the ripple touches everything at once:
 
@@ -233,7 +234,7 @@ Cash flow:        $8k cash leaves every month
 Balance sheet:    cash balance shrinks -> runway shorter
 ```
 
-Every hire, tool, and discount moves profit, cash, and runway together. The dashboard is how you see those ripples before they become waves.
+Every hire, tool, and discount moves [profit, cash, and runway together](/blog/business-financial-literacy/03-the-three-financial-statements-the-whole-picture). The dashboard is how you see those ripples before they become waves.
 
 **"Bad numbers just need a good explanation."** The most dangerous habit is talking yourself out of a warning ("next month will be different"). The numbers are not insulting you - they are warning you. Listen the first time.
 
@@ -249,4 +250,4 @@ Every hire, tool, and discount moves profit, cash, and runway together. The dash
 
 The calmest founders are not the ones who got lucky. They are the ones who know exactly where they stand - cash, burn, runway, growth, margin, CAC, LTV:CAC, payback, churn - and check those gauges on a rhythm. Run your business on one page and one honest hour a month, and you will decide with facts while everyone else decides with feelings.
 
-Here is the thread worth pulling next: notice how many of these gauges hinge on one number that is easy to fudge and easy to fool yourself about - **LTV**. Get the lifetime value of a customer wrong, and your CAC, your payback, and your whole growth budget quietly tilt off course. Learning to estimate it honestly might be the most valuable hour of math you ever do.
+Here is the thread worth pulling next: notice how many of these gauges hinge on one number that is easy to fudge and easy to fool yourself about - **LTV**. Get the lifetime value of a customer wrong, and your CAC, your payback, and your [whole growth budget](/blog/business-financial-literacy/11-budgeting-forecasting-building-a-simple-financial-model) quietly tilt off course. Learning to estimate it honestly might be the most valuable hour of math you ever do.

@@ -36,6 +36,7 @@ faq:
     a: "'Than' is for comparisons: 'faster than before'. 'Then' is about time or sequence: 'fix it, then deploy'. If you're comparing two things, it's always 'than'."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -43,13 +44,13 @@ You write code that compiles, passes tests, and ships. Then you type "we are mak
 
 It isn't that your teammates judge you for it. It's that fuzzy writing makes your great work harder to read, harder to search, and harder to trust. The good news: the handful of grammar slips developers make are predictable, and once you can spot them, you can fix them on autopilot.
 
-This is the capstone of the Developer English course. One workout that mixes every rule into real commits, pull requests, and standup messages, so the rules finally stick instead of fading after each separate lesson.
+This is the capstone of the [Developer English course](/blog/english/00-index). One workout that mixes every rule into real commits, pull requests, and standup messages, so the rules finally stick instead of fading after each separate lesson.
 
 ## Why this matters
 
 Your commits live forever. Six months from now, someone bisecting a bug will read your message at 2 a.m. and either thank you or curse you.
 
-Writing isn't decoration on top of engineering. It is engineering. A pull request description, a commit subject, a standup update, these are all interfaces other humans depend on.
+Writing isn't decoration on top of engineering. It is engineering. A [pull request description](/blog/english/10-professional-dev-writing), a commit subject, a standup update, these are all interfaces other humans depend on.
 
 The mistakes below are tiny in isolation. But they pile up, and they're the difference between "this person communicates clearly" and "I have to decode everything they send." You already do the hard part. This is the cheap part.
 
@@ -60,12 +61,12 @@ Most grammar guides drown you in rules. You only need a short list, because the 
 | The slip | The one thing to remember |
 |---|---|
 | Dropping articles | "Open **a** pull request," not "open pull request." |
-| Much vs many | **many** + countable ("many bugs"); **much** + uncountable ("much progress"). |
-| Subject-verb agreement | "The test **passes**," "the tests **pass**." |
+| [Much vs many](/blog/english/02-countable-uncountable-much-many) | **many** + countable ("many bugs"); **much** + uncountable ("much progress"). |
+| [Subject-verb agreement](/blog/english/03-subject-verb-agreement) | "The test **passes**," "the tests **pass**." |
 | Tenses | "I **fixed** it" (done), "I **have fixed** it" (done, still relevant), "I'**m fixing** it" (now). |
-| its vs it's | **its** = belonging to it; **it's** = it is. |
+| [its vs it's](/blog/english/05-plurals-and-possessives) | **its** = belonging to it; **it's** = it is. |
 | Prepositions | "merge **into** main," "depends **on** the API," "blocked **by** the migration." |
-| Run-on sentences | Two complete thoughts need a full stop, a semicolon, or a comma + and/but. |
+| [Run-on sentences](/blog/english/08-sentence-structure-run-ons) | Two complete thoughts need a full stop, a semicolon, or a comma + and/but. |
 | Confused words | their/there/they're, then/than, affect/effect, lose/loose. |
 | Spelling | grammar, research, separate, receive, occurred, definitely. |
 | Texting leak | No "u," "ur," "thx" in professional writing. Write it out. |

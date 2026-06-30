@@ -36,6 +36,7 @@ order: 19
 icon: "\U0001F393"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -70,13 +71,13 @@ Whenever the tutor picks a next step, it is really choosing among just three mov
 
 You only introduce something new when the learner is genuinely *ready*. And "ready" has a precise meaning: every **prerequisite** - the earlier skill the new one is built on - is already mastered.
 
-Subjects are not flat lists. They are dependency maps. You cannot teach someone to solve fraction equations if they cannot yet add fractions. The skills whose prerequisites are *all* satisfied form the set of things a learner can actually learn today. New concepts come from there, never from a skill floating above an unfilled gap.
+Subjects are not flat lists. They are [dependency maps](/blog/ai-learning-platform/19-knowledge-graphs-and-curriculum-generation). You cannot teach someone to solve fraction equations if they cannot yet add fractions. The skills whose prerequisites are *all* satisfied form the set of things a learner can actually learn today. New concepts come from there, never from a skill floating above an unfilled gap.
 
 ### 2. A spaced review - refresh something fading
 
 Memory leaks. In 1885, Hermann Ebbinghaus showed we forget roughly half of new material within an hour and 70 to 80 percent within a day, unless we revisit it.
 
-So a good tutor resurfaces old items *just before* they are about to be forgotten - the exact moment when a successful recall strengthens memory the most. Each item gets its own widening schedule: review after 1 day, then 3, then a week, then a month.
+So a good tutor resurfaces old items *just before* they are about to be forgotten - the exact moment when a successful recall strengthens memory the most. Each item gets [its own widening schedule](/blog/ai-learning-platform/21-spaced-repetition-algorithms-in-practice-sm-2-fsrs): review after 1 day, then 3, then a week, then a month.
 
 > **An analogy.** Picture each piece of knowledge as a path worn through tall grass. Walk it once and the grass springs back by morning. Walk it again just before it fully recovers, and the path holds longer. A review schedule is simply deciding which paths are about to vanish - and sending the learner down them again.
 
@@ -84,11 +85,11 @@ So a good tutor resurfaces old items *just before* they are about to be forgotte
 
 When a learner fails, the tempting move is to drill the failing skill harder. Often that is exactly wrong.
 
-If someone keeps missing equation problems *because* their fractions are shaky, more equation practice will not help. You have to trace the failure back to its root and teach *that*. Remediation means diagnosing the real cause, not repeating the surface symptom.
+If someone keeps missing equation problems *because* their fractions are shaky, more equation practice will not help. You have to trace the failure back to its root and teach *that*. Remediation means [diagnosing the real cause](/blog/ai-learning-platform/22-finding-and-repairing-weak-areas), not repeating the surface symptom.
 
 ## Keeping the learner in the "just-right" zone
 
-One idea governs how *hard* the next item should be: the **Zone of Proximal Development** (ZPD), from psychologist Lev Vygotsky. In plain words, it is the sweet spot between what a learner can do alone and what they cannot do even with help.
+One idea governs how *hard* the next item should be: the [**Zone of Proximal Development**](/blog/ai-learning-platform/11-zone-of-proximal-development-scaffolding-worked-examples) (ZPD), from psychologist Lev Vygotsky. In plain words, it is the sweet spot between what a learner can do alone and what they cannot do even with help.
 
 - Below the zone, tasks are boringly easy.
 - Above it, they are hopelessly hard.
@@ -123,7 +124,7 @@ The honest target is **not** same-day quiz scores. Those reward cramming. The re
 
 The loop needs an exit rule too: when is a skill "learned" so the tutor can move on?
 
-A common convention from knowledge tracing is to treat a skill as **mastered once the estimated chance the learner knows it crosses about 95%.** Set that bar too low and learners advance on shaky foundations that collapse under later, dependent skills. Set it too high and they are trapped in pointless over-practice and quit.
+A common convention from [knowledge tracing](/blog/ai-learning-platform/18-learner-models-teaching-the-machine-what-the-student-knows) is to treat a skill as **mastered once the estimated chance the learner knows it crosses about 95%.** Set that bar too low and learners advance on shaky foundations that collapse under later, dependent skills. Set it too high and they are trapped in pointless over-practice and quit.
 
 One subtlety worth holding onto: a "60% mastered" reading can mean two very different things.
 
@@ -134,7 +135,7 @@ The right next move differs, so never let a single number blur the two.
 
 ## A bonus from mixing: interleaving
 
-Once the basics are in place, deliberately **interleave** - mix different problem types together rather than drilling one to exhaustion before the next.
+Once the basics are in place, deliberately **interleave** - [mix different problem types together](/blog/ai-learning-platform/08-interleaving-dual-coding-desirable-difficulties) rather than drilling one to exhaustion before the next.
 
 Blocked practice (all of type A, then all of B) *feels* smoother. But researchers Taylor and Rohrer found interleaving roughly *doubled* later test scores. The reason: real tests force you to *choose* the right approach, not just execute a known one. As a bonus, mixing automatically spaces each type out - so your sequencing gets two wins from one decision.
 

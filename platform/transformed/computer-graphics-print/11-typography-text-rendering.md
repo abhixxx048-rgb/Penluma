@@ -38,6 +38,7 @@ faq:
     a: That box is called tofu, or .notdef. It appears when your font has no glyph for the character you typed, such as a rare currency symbol or emoji. The text exists, but the font has no shape to draw for it.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Glyph
   - https://en.wikipedia.org/wiki/OpenType
@@ -187,12 +188,12 @@ Screens are forgiving. Presses are not. Here is a concrete checklist for text th
 1. **Size the body text at 9 to 12 points.** Around 10 to 11 pt is the sweet spot. Roughly 8 pt is the floor where reading speed starts to drop; keep legal fine print to about 5 to 6 pt minimum.
 2. **Keep lines 50 to 75 characters long.** About 66 is ideal. Lines that run too long make the eye lose its place on the return trip.
 3. **Set leading to 120 to 150% of the size.** Size, line length, and leading are coupled. Change one and you usually need to retune the others.
-4. **Set small black text to 100% K only.** That means a single channel of black ink, not a rich black built from all four process colors. When the four plates drift slightly out of register, rich black smears small text. Save rich black for large headlines.
+4. **Set small black text to 100% K only.** That means a single channel of black ink, not a [rich black built from all four process colors](/blog/computer-graphics-print/06-ink-on-the-page-spot-colors-overprint-black-generation). When the four plates drift slightly out of register, rich black smears small text. Save rich black for large headlines.
 5. **Avoid thin serifs and hairlines in reverse.** White text on a dark fill clogs up as ink spreads and fills the thin gaps inside letters.
-6. **Embed or outline every font in the print PDF.** Use a print-ready standard like PDF/X so the press's processor never substitutes the wrong font. Check that your ligatures and kerning survive the export.
+6. **Embed or outline every font in the [print PDF](/blog/computer-graphics-print/10-inside-a-pdf-structure-graphics-fonts).** Use a print-ready standard like [PDF/X](/blog/computer-graphics-print/12-pdf-x-output-intent-page-boxes-the-print-ready-target) so the press's processor never substitutes the wrong font. Check that your ligatures and kerning survive the export.
 7. **Use letter spacing sparingly.** Tighten headlines, loosen caps, leave body text alone.
 
-A real example of what happens when you skip step 4: a customer types a phone number at 7 pt in a default rich-black fill. On the proof it looks crisp, because the screen is RGB and perfectly aligned. At the press, the cyan, magenta, yellow, and black plates land a hair out of register, and the number prints fuzzy and ghosted. The fix is boring and total: 100% K only, bumped up to 9 pt. If your workflow has no automatic color conversion or preflight step, nothing catches this for you. It has to be caught by design guidance and a careful human review.
+A real example of what happens when you skip step 4: a customer types a phone number at 7 pt in a default rich-black fill. On the proof it looks crisp, because the screen is RGB and perfectly aligned. At the press, the cyan, magenta, yellow, and black plates land a hair out of register, and the number prints fuzzy and ghosted. The fix is boring and total: 100% K only, bumped up to 9 pt. If your workflow has no automatic color conversion or [preflight step](/blog/computer-graphics-print/13-preflight-validating-a-file-before-it-prints), nothing catches this for you. It has to be caught by design guidance and a careful human review.
 
 ## A note on labeling your own controls
 
@@ -206,4 +207,4 @@ The whole field of typography rests on one quiet distinction: **a character is m
 
 The single takeaway to carry into your next project: text has a job, and small print is where that job is won or lost. Set it at 9 points or more, in 100% black, with fonts embedded, and review it before it ships.
 
-There is a deeper rabbit hole waiting next door, though. We talked about ink drifting out of register and rich versus single-channel black as if "black" were a setting. It is actually a doorway into color science, the strange gap between the glowing RGB on your screen and the four inks on a press. Once you see how those two color worlds fail to line up, you will never trust a screen proof the same way again.
+There is a deeper rabbit hole waiting next door, though. We talked about ink drifting out of register and rich versus single-channel black as if "black" were a setting. It is actually a doorway into [color science](/blog/computer-graphics-print/01-how-color-works-light-human-perception), the strange gap between the glowing RGB on your screen and the four inks on a press. Once you see how those two color worlds fail to line up, you will never trust a screen proof the same way again.

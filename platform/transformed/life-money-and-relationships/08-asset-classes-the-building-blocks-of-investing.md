@@ -40,6 +40,7 @@ order: 7
 icon: "\U0001F331"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -49,9 +50,9 @@ You don't. Underneath all that jargon there are only a handful of basic ingredie
 
 ## Why this matters
 
-You've done the hard preparation. You control your spending, you have an emergency fund, you're insured, you've cleared expensive debt, and you understand that compounding rewards people who start early.
+You've done the hard preparation. You control your spending, you have an [emergency fund](/blog/life-money-and-relationships/03-the-emergency-fund-protecting-your-downside), you're insured, you've cleared expensive debt, and you understand that [compounding](/blog/life-money-and-relationships/06-compounding-the-time-value-of-money) rewards people who start early.
 
-Now comes the part where your surplus money goes to work, growing faster than inflation can shrink it.
+Now comes the part where your surplus money goes to work, growing faster than [inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) can shrink it.
 
 But here's the trap most beginners fall into: they keep almost everything in fixed deposits and gold because that feels "safe," and they wonder why their money never seems to grow. Understanding asset classes is what turns saving into actual investing. It's the difference between money that quietly loses buying power and money that builds a future.
 
@@ -106,7 +107,7 @@ That "extra" return equity gives you over a safe government bond has a name: the
 
 ### Equity - the growth engine
 
-When you buy equity, you own a slice of real businesses. Over decades, those businesses grow their profits, and your slice grows with them.
+When you [buy equity](/blog/life-money-and-relationships/10-stocks-the-equity-market-direct-investing-basics), you own a slice of real businesses. Over decades, those businesses grow their profits, and your slice grows with them.
 
 Equity is the only asset class that has reliably **beaten Indian inflation over the long run**. The price of admission is volatility: a 30–50% drop in a single bad year is normal, not a malfunction. Equity is for money you won't touch for **7+ years**.
 
@@ -138,7 +139,7 @@ Here's where it gets interesting. The magic isn't in picking one perfect asset c
 
 Picture this. You sell both umbrellas and sunscreen. On a rainy day, umbrellas fly off the shelf. On a sunny day, sunscreen does. Sell only one product and your income swings wildly with the weather. Sell both and you earn steadily whatever the sky does.
 
-That's **diversification**. Nobel laureate Harry Markowitz famously called it "the only free lunch in finance," because it lowers your risk without an equal drop in your return.
+That's **[diversification](/blog/life-money-and-relationships/13-asset-allocation-diversification-building-a-portfolio)**. Nobel laureate Harry Markowitz famously called it "the only free lunch in finance," because it lowers your risk without an equal drop in your return.
 
 A quick illustration of why it matters. In a year where equity falls 25%, a portfolio that's 60% equity, 25% debt, and 15% gold might fall only around 10%, because debt held steady and gold rose. You'd be far less tempted to panic-sell, which is the whole point. **The mix protects you from your own worst instincts.**
 
@@ -179,4 +180,4 @@ You can do all of this in about twenty minutes:
 
 Here's the single idea to keep: **safe and risk-free are not the same thing.** Money parked only in cash and FDs feels secure while it slowly loses the race against inflation. Real safety comes from owning a thoughtful mix of assets that don't all stumble at once.
 
-You now know the building blocks. But knowing the ingredients isn't the same as knowing the recipe. *How much* of each should you actually hold, and how do you put money in without trying to time the market? That's where rupee-cost averaging and a simple step-by-step plan come in, and it's a lot easier than the headlines make it sound.
+You now know the building blocks. But knowing the ingredients isn't the same as knowing the recipe. *How much* of each should you actually hold, and how do you put money in without trying to time the market? That's where [rupee-cost averaging and a simple step-by-step plan](/blog/life-money-and-relationships/09-mutual-funds-index-funds-sips-the-core-engine) come in, and it's a lot easier than the headlines make it sound.

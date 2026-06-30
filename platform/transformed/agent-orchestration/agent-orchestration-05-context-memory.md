@@ -38,13 +38,14 @@ order: 999
 icon: "\U0001F916"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - "https://arxiv.org/abs/2307.03172"
 ---
 
 Pour more water into a glass and eventually it spills. An AI agent's context window works the same way, except the spill is invisible: the model keeps answering, just less accurately.
 
-Here is the counterintuitive part. Stuffing an agent with more information often makes it dumber, slower, and more expensive all at once. The skill that separates a flaky demo from a reliable agent isn't writing a clever prompt. It's deciding, at every single step, what *not* to include.
+Here is the counterintuitive part. Stuffing an agent with more information often makes it dumber, slower, and more expensive all at once. The skill that separates a flaky demo from a reliable agent isn't writing a clever prompt. It's deciding, at every single step, what *not* to include. Before you tune context, it helps to be clear on [what an AI agent actually is](/blog/agent-orchestration/agent-orchestration-01-foundations) and when you genuinely need one.
 
 That skill is called context engineering, and it rests on one idea: find the smallest set of high-signal tokens that gets you the outcome you want.
 
@@ -52,7 +53,7 @@ That skill is called context engineering, and it rests on one idea: find the sma
 
 Every token you feed a model has a price tag. It costs money, it adds delay, and beyond a certain point it actively hurts the quality of the answer.
 
-The numbers are stark. Agents burn through roughly four times more tokens than a normal chat, and multi-agent systems use around fifteen times more. In one of Anthropic's evaluations, token usage alone explained 80 percent of the difference in performance between runs. Not the model choice. Not the tools. Just how many tokens were in play.
+The numbers are stark. Agents burn through roughly four times more tokens than a normal chat, and [multi-agent systems use around fifteen times more](/blog/agent-orchestration/agent-orchestration-07-cost-performance). In one of Anthropic's evaluations, token usage alone explained 80 percent of the difference in performance between runs. Not the model choice. Not the tools. Just how many tokens were in play.
 
 So if you are building anything that uses an LLM to take actions over many steps, context is your single biggest lever on both cost and quality. Get it right and you ship something fast and cheap that works. Get it wrong and you pay more for worse results.
 
@@ -106,7 +107,7 @@ A vivid example: Claude playing Pokemon keeps running notes across thousands of 
 
 ### 3. Retrieve just-in-time: load data only when needed
 
-Traditional retrieval (classic RAG) fetches chunks of data up front and pastes them in before the model even starts. Fast, but it fills the window whether or not the model needs all of it.
+Traditional retrieval ([classic RAG](/blog/ai-llm-engineering/03-context-engineering-retrieval)) fetches chunks of data up front and pastes them in before the model even starts. Fast, but it fills the window whether or not the model needs all of it.
 
 The agentic approach keeps only **lightweight identifiers** in context, like file paths, saved queries, or links, and loads the actual data at runtime when the reasoning calls for it. This is how a coding agent works: instead of loading an entire codebase, it runs targeted `grep`, `head`, and `tail` commands over the files it actually cares about.
 
@@ -159,7 +160,7 @@ The clean mental model: the store is large and persistent; the window is small a
 
 **"More example shots make the agent more reliable."** Up to a point. But models are excellent mimics, and uniform, repeated context can trap an agent in a brittle rhythm. A little structured variation in your examples actually helps.
 
-**"Hiding errors keeps the agent on track."** The opposite. Leaving a failed action and its stack trace in context lets the model update its own beliefs and avoid repeating the mistake. Recovering from visible errors is one of the clearest signs of real agentic behavior.
+**"Hiding errors keeps the agent on track."** The opposite. Leaving a failed action and its stack trace in context lets the model update its own beliefs and avoid repeating the mistake. Recovering from visible errors is one of the clearest signs of [real agentic behavior](/blog/agent-orchestration/agent-orchestration-06-reliability-eval-obs).
 
 ## How to use this
 
@@ -179,4 +180,4 @@ If you remember one thing, make it this: context is an attention budget, not a s
 
 The reflex to add more is almost always wrong. The discipline is in the cut.
 
-And here's the thread worth pulling next. Once you accept that no single window can hold everything, the real architecture question becomes how several agents should divide the work without losing the plot, which is exactly where the debate between isolated sub-agents and a single continuous writer gets interesting.
+And here's the thread worth pulling next. Once you accept that no single window can hold everything, the real architecture question becomes how several agents should divide the work without losing the plot, which is exactly where the debate between [isolated sub-agents and a single continuous writer](/blog/agent-orchestration/agent-orchestration-02-patterns) gets interesting.

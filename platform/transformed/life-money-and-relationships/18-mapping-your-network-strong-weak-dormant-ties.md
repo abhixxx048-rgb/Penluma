@@ -52,6 +52,7 @@ faq:
       rough guide, not an exact law.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Interpersonal_ties
   - https://en.wikipedia.org/wiki/Dunbar%27s_number
@@ -59,7 +60,7 @@ sources:
 
 Most people carry a fuzzy picture of their network in their head. "I know some people," you think, and leave it there. That fuzziness is exactly why good relationships quietly fade and good opportunities slip right past you.
 
-Here's a fact that should change how you see your contacts list: most people find their jobs not through close friends, but through acquaintances they barely speak to. The people on the edges of your life often hold the keys to your next chapter. This article gives you a clear map of who's actually in your network and what each kind of relationship is for.
+Here's a fact that should change how you see your contacts list: most people [find their jobs not through close friends, but through acquaintances](/blog/life-money-and-relationships/27-how-opportunities-hires-advice-really-flow) they barely speak to. The people on the edges of your life often hold the keys to your next chapter. This article gives you a clear map of who's actually in your network and what each kind of relationship is for.
 
 ## Why this matters
 
@@ -67,7 +68,7 @@ You only have so much time and emotional energy. You physically cannot treat eve
 
 Get this wrong and you'll pour all your effort into the same handful of close friends, hearing the same ideas on repeat. Get it right and you'll know exactly where your next opportunity is most likely to come from, often from a direction you'd never expect.
 
-Before you can grow a network, you need to see the one you already have.
+Before you can [grow a network](/blog/life-money-and-relationships/16-why-relationships-networks-truly-matter), you need to see the one you already have.
 
 ## The three types of ties
 
@@ -103,7 +104,7 @@ A few popular ideas about networking are flat wrong, and they cost people real o
 Reality: This oversimplifies the truth. In 2022, researchers from MIT, Stanford, Harvard, and LinkedIn ran a huge experiment, roughly **20 million** people over five years. They confirmed weak ties really do *cause* job moves. But the sweet spot was **moderately weak ties**, people you share around **ten** mutual connections with, not total strangers and not your closest friends. They also found weak ties helped most in digital and higher-skill fields, while in less-digital industries, *stronger* ties often worked better. The lesson: don't neglect the middle layer.
 
 **Myth: "A relationship expires after enough years of silence."**
-Reality: Trust doesn't evaporate. People badly overestimate how awkward it is to reconnect, and reconnections are usually received warmly. The residue of an old relationship lasts a long time.
+Reality: Trust doesn't evaporate. People badly overestimate how awkward it is to [reconnect](/blog/life-money-and-relationships/28-maintaining-repairing-ending-relationships-well), and reconnections are usually received warmly. The residue of an old relationship lasts a long time.
 
 **Myth: "Networking means collecting as many connections as possible."**
 Reality: Chasing 10,000 contacts you never speak to builds a list, not a network. A single well-placed weak tie in an unfamiliar world is worth more than ten more contacts in your own.
@@ -114,7 +115,7 @@ A simple way to organize all of this is to picture three circles around yourself
 
 - **Inner circle (~5 people):** The ones you turn to in a crisis. You contact them very often, and they get the lion's share of your emotional energy. Research suggests people spend roughly **40%** of their social effort here.
 - **Working circle (~15 to 50 people):** People you collaborate with, learn from, and see regularly: partners, key peers, active mentors. Contact runs from weekly to monthly.
-- **Wider network (~150 people):** Meaningful relationships you keep alive with light, occasional contact. A few times a year is enough.
+- **Wider network (~150 people):** Meaningful relationships you [keep alive with light, occasional contact](/blog/life-money-and-relationships/23-staying-in-touch-a-system-for-nurturing-relationships). A few times a year is enough.
 
 Beyond these layers sit acquaintances (around 500) and faces you simply recognize (around 1,500). That's a contact list, not a network.
 
@@ -167,4 +168,4 @@ If you remember one thing, make it this: **the people at the edges of your life,
 
 So the most valuable name in your network right now might be someone you haven't thought about in years. The bridge is still standing. It just needs one walk across.
 
-Mapping your network is only step one, though. Once you can see the gaps, the next question becomes far more interesting: where do you go to *meet* the diverse, well-placed people who can open doors you don't even know exist yet?
+Mapping your network is only step one, though. Once you can see the gaps, the next question becomes far more interesting: where do you go to *meet* [the diverse, well-placed people](/blog/life-money-and-relationships/20-meeting-people-where-how-to-find-your-people) who can open doors you don't even know exist yet?

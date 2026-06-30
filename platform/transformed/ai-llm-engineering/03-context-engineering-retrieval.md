@@ -23,6 +23,7 @@ keywords:
   - contextual retrieval
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 faq:
   - q: What is context engineering?
     a: "Context engineering is the practice of curating everything an AI model sees in a single request, the system prompt, instructions, examples, retrieved documents, tools, memory, and chat history, so the model has the smallest set of high-signal information it needs. It is the broader discipline that contains prompt engineering."
@@ -111,7 +112,7 @@ For the system prompt itself, aim for the **right altitude**. Too low and brittl
 
 ## RAG: giving the model an open book
 
-**Retrieval-Augmented Generation**, or RAG, gives a model access to an external, searchable knowledge source at the moment of the question. Instead of relying only on facts baked into its trained weights, the model retrieves relevant passages from an outside index and grounds its answer on them.
+**Retrieval-Augmented Generation**, or RAG, gives a model access to an external, searchable knowledge source at the moment of the question. Instead of relying only on facts baked into its [trained weights](/blog/ai-llm-engineering/01-foundations-how-llms-work-why-these-skills-endure), the model retrieves relevant passages from an outside index and grounds its answer on them.
 
 Picture an open-book exam. The model's trained weights are what it memorized. The retrieved passages are the textbook pages it is allowed to flip to. It still has to reason and write the answer, but now it can look facts up instead of guessing.
 
@@ -190,7 +191,7 @@ An agent that runs for hundreds of steps will overflow any window if you let its
 
 **Compaction** is summarize-and-restart. When the conversation nears the window limit, you summarize it, preserving decisions, open bugs, and key details while throwing away redundant tool output, then continue in a fresh window seeded with that summary. Tune the summary for *recall* first, lose nothing important, then worry about trimming.
 
-**Agentic memory** gives the agent durable storage *outside* the window: a scratchpad file, a database, a memory store. It writes notes and reads them back later. Anthropic's Claude playing Pokémon keeps maps, tallies, and strategy notes across thousands of steps, then resumes coherently after a context reset just by re-reading its own notes.
+**[Agentic memory](/blog/agent-orchestration/agent-orchestration-05-context-memory)** gives the agent durable storage *outside* the window: a scratchpad file, a database, a memory store. It writes notes and reads them back later. Anthropic's Claude playing Pokémon keeps maps, tallies, and strategy notes across thousands of steps, then resumes coherently after a context reset just by re-reading its own notes.
 
 This pairs with **just-in-time retrieval**. Instead of pre-loading an entire repository, the agent keeps lightweight pointers, file paths, links, IDs, and uses tools to pull only what it needs, when it needs it. It is a librarian, not a moving truck: you keep the catalog and fetch the one book you need rather than dumping the whole library into the room.
 
@@ -225,6 +226,6 @@ A concrete checklist you can apply today:
 
 Here is the one idea to keep: a language model only knows what is in front of it right now, so the real work is not making the model smarter but deciding, with care, what to put in front of it.
 
-The most dangerous failures are the silent ones. Garbage retrieval looks identical to good retrieval from the outside, the model sounds just as confident either way. That is why measurement, not vibes, is what separates a demo from a system you can trust.
+The most dangerous failures are the silent ones. Garbage retrieval looks identical to good retrieval from the outside, the model sounds just as confident either way. That is why [measurement, not vibes](/blog/ai-llm-engineering/02-evaluation-measurement), is what separates a demo from a system you can trust.
 
-And there is a deeper thread worth pulling next. Once an AI can retrieve, reflect, and decide *what* to fetch on its own, it stops being a text predictor and starts behaving like an agent that plans and acts. That shift, from answering questions to taking actions in a loop, is where context engineering meets agent design, and it is where things get genuinely interesting.
+And there is a deeper thread worth pulling next. Once an AI can retrieve, reflect, and decide *what* to fetch on its own, it stops being a text predictor and starts behaving like [an agent that plans and acts](/blog/ai-llm-engineering/04-agent-architecture-orchestration). That shift, from answering questions to taking actions in a loop, is where context engineering meets agent design, and it is where things get genuinely interesting.

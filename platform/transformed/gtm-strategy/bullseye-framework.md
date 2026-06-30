@@ -36,6 +36,7 @@ faq:
     a: Re-run it when your winning channel plateaus or saturates its audience. Most teams stall because they get one channel working and never run the loop again.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://medium.com/@yegg/the-bullseye-framework-for-getting-traction-ef49d05bfd7e
   - https://brianbalfour.com/essays/traction-the-bullseye-framework
@@ -94,7 +95,7 @@ This is where most teams quietly fail. Practitioners notice that teams tend to *
 
 Abstract frameworks are easy to nod along to and hard to use. So here is a concrete case: a small software company building an online-ordering platform for print shops, with a tiny team and a long list of options.
 
-They used the Bullseye logic not just for channels but for their hardest strategic question - **who to sell to first.**
+They used the Bullseye logic not just for channels but for their hardest strategic question - **[who to sell to first](/blog/sales-customer-development/03-customer-development-get-out-of-the-building).**
 
 - **Outer ring:** they listed every plausible customer segment - apparel and screen-print shops, sign makers, promotional-product sellers, large commercial printers, copy shops, photo and packaging specialists.
 - **Middle ring:** they scored each on cost, volume, and fit. Big commercial printers had high volume but demanded deep features the product did not have yet (poor fit, high cost to win). Apparel and sign shops gathered in active online communities, felt the pain sharply, and could see the product's value in a 60-second demo.
@@ -116,7 +117,7 @@ Multiply the three, then rank. It will not be perfect, but it turns a vague gut 
 
 ## Common misconceptions
 
-**"You must run exactly one channel forever."** Not quite. *Traction* echoes Peter Thiel's claim that one channel usually dominates at each stage, and that is directionally true. But modern teams soften it: test about three in parallel, then often run **one or two complementary channels** - for example, SEO plus the community where that content naturally gets shared. The deeper rule survives intact: **concentration beats diffusion.**
+**"You must run exactly one channel forever."** Not quite. *Traction* echoes Peter Thiel's claim that one channel usually dominates at each stage, and that is directionally true. But modern teams soften it: test about three in parallel, then often run **one or two complementary channels** - for example, SEO plus the community where that content naturally gets shared. The deeper rule survives intact: **[concentration beats diffusion](/blog/ten-disciplines/13-what-strategy-really-is-advantage-moats-and-positioning).**
 
 **"Finishing the dartboard means I did the work."** No. Bullseye is channel *discovery*, not channel *execution.* Completing the diagram tells you where to dig. You still have to dig.
 
@@ -130,9 +131,9 @@ Here is the framework applied to a question that has nothing to do with channels
 
 The print software company had four options on the outer ring: self-serve sign-up (product-led growth), founder doing sales by hand, a hired outbound sales team, or selling through resellers.
 
-The deciding test was **CAC payback** - how long it takes to earn back the cost of acquiring a customer. Andreessen Horowitz's go-to-market benchmarks put healthy CAC payback for products sold to small businesses at roughly **6 to 12 months**, versus 18 to 24 months for enterprise. That window is the gate: if a sales motion cannot pay itself back inside it, you cannot afford that motion.
+The deciding test was **[CAC payback](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale)** - how long it takes to earn back the cost of acquiring a customer. Andreessen Horowitz's go-to-market benchmarks put healthy CAC payback for products sold to small businesses at roughly **6 to 12 months**, versus 18 to 24 months for enterprise. That window is the gate: if a sales motion cannot pay itself back inside it, you cannot afford that motion.
 
-At a price of under a thousand dollars per customer per year, the loaded cost of a salesperson simply cannot pay back in time. The math forces a self-serve engine. Founder-led outreach still has a role - but as a **cold-start primer** to land the first reference customers and learn the objections, not as a scalable sales org.
+At a price of under a thousand dollars per customer per year, the loaded cost of a salesperson simply cannot pay back in time. The math forces a self-serve engine. [Founder-led outreach](/blog/sales-customer-development/13-founder-led-outreach-getting-the-conversations) still has a role - but as a **cold-start primer** to land the first reference customers and learn the objections, not as a scalable sales org.
 
 The lesson generalizes: when a decision has a tempting "hire people and push harder" option, run it through the rings. Often the honest cost-and-fit test rules it out before you waste a year on it.
 

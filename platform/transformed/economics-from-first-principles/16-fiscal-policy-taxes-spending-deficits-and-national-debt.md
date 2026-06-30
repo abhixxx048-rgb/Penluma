@@ -38,6 +38,7 @@ faq:
     a: It depends on the economy. At full employment it can crowd out private investment by competing for savings. In a recession with idle resources, it fills a vacuum and revives demand instead.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Fiscal_policy
   - https://en.wikipedia.org/wiki/Government_debt
@@ -54,7 +55,7 @@ Once you understand a few simple ideas, that scary headline turns into something
 
 Fiscal policy is just the government using two levers: **how much it taxes** and **how much it spends**. ("Fiscal" simply means "relating to government money.") These two levers fund the roads, courts, and defense around you, and they quietly steer the entire economy.
 
-You're affected either way. Tax brackets decide your take-home pay. Deficits and debt drive political fights that shape interest rates, your mortgage, and the value of your savings. And nearly every viral claim about the debt, "we're going bankrupt," "a tax cut pays for itself," "we must balance the budget like a family," is either misleading or flatly wrong.
+You're affected either way. Tax brackets decide your take-home pay. Deficits and debt drive political fights that shape [interest rates](/blog/economics-from-first-principles/09-loans-credit-debt-and-interest-rates), your mortgage, and the value of your savings. And nearly every viral claim about the debt, "we're going bankrupt," "a tax cut pays for itself," "we must balance the budget like a family," is either misleading or flatly wrong.
 
 Keep one idea in your pocket the whole way through: **in the economy, the government is not a separate planet.** Its spending is someone's income. Its taxes are someone's lost spending. Everything connects.
 
@@ -124,7 +125,7 @@ In rough 2025 numbers, the US ran a deficit of about **$1.8 trillion** in a sing
 
 ### How governments actually borrow
 
-When spending tops revenue, the government borrows the gap by selling **bonds**, which are IOUs sold at auction. A bond promises to repay a sum on a future date plus regular interest. The US Treasury sells **bills** (under a year), **notes** (2–10 years), and **bonds** (30 years). The buyers are pension funds, banks, US households, the Federal Reserve, and foreign governments (Japan and China are the biggest foreign holders).
+When spending tops revenue, the government borrows the gap by selling [**bonds**](/blog/economics-from-first-principles/19-financial-markets-stocks-bonds-commodities-and-derivatives), which are IOUs sold at auction. A bond promises to repay a sum on a future date plus regular interest. The US Treasury sells **bills** (under a year), **notes** (2–10 years), and **bonds** (30 years). The buyers are pension funds, banks, US households, the Federal Reserve, and foreign governments (Japan and China are the biggest foreign holders).
 
 The interest rate a bond pays is its **yield**, and it reflects how risky lenders think it is. US Treasuries are treated as the world's "risk-free" benchmark for two reasons: the US borrows in its *own* currency, which it can always print to repay, and it has never defaulted.
 
@@ -136,11 +137,11 @@ This single bad analogy drives a lot of bad policy. Here's exactly where it brea
 - **A country borrowing in its own currency can't be forced to default.** It can print the money. This is the whole reason Greece had a crisis and Japan, with far higher debt, did not. Greece used the euro, a currency it didn't control. Japan controls the yen.
 - **Government spending is also citizens' income.** Roughly 75% of US debt is held domestically, so "we owe much of it to ourselves." A lot of that interest flows back to American pension funds and savers.
 
-But don't flip to the opposite fantasy that "deficits never matter." They do. Interest has to be paid with real money. Foreign-held debt is a genuine claim on the nation. And printing without limit causes **inflation**. That's the real point: for a money-printing sovereign, the binding constraint is **inflation, not bankruptcy.**
+But don't flip to the opposite fantasy that "deficits never matter." They do. Interest has to be paid with real money. Foreign-held debt is a genuine claim on the nation. And printing without limit causes [**inflation**](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money). That's the real point: for a money-printing sovereign, the binding constraint is **inflation, not bankruptcy.**
 
 ## Reading the debt the right way: share of GDP
 
-A raw dollar figure ($37 trillion!) is meaningless on its own, like quoting someone's mortgage without knowing their income. The honest yardstick is **debt-to-GDP**, which scales the debt against the size of the economy that has to service it.
+A raw dollar figure ($37 trillion!) is meaningless on its own, like quoting someone's mortgage without knowing their income. The honest yardstick is [**debt-to-GDP**](/blog/economics-from-first-principles/11-measuring-an-economy-gdp-gnp-cpi-ppp-and-key-indicators), which scales the debt against the size of the economy that has to service it.
 
 Rough 2025 figures: **Japan around 206%, Greece around 146%, the US around 124%.** Japan is the great counterexample to debt panic, an enormous ratio paired with rock-bottom interest rates for decades, because its debt is held at home in its own currency.
 
@@ -156,7 +157,7 @@ Here's the idea that ties the whole topic together, because the *same* policy ca
 
 When the government borrows heavily, it competes with private businesses for the same pool of savings, which can push interest rates up and squeeze out private investment. This is **crowding out**. The Congressional Budget Office estimates that, over time, every $1 of deficit reduces private investment by about 33 cents.
 
-But that only bites hard when the economy is at **full employment**, with resources already in use. In a **recession**, with idle factories, unemployed workers, and savers too scared to invest, government borrowing fills a vacuum instead of fighting over scarce resources.
+But that only bites hard when the economy is at **full employment**, with resources already in use. In a [**recession**](/blog/economics-from-first-principles/15-the-business-cycle-booms-recessions-and-depressions), with idle factories, unemployed workers, and savers too scared to invest, government borrowing fills a vacuum instead of fighting over scarce resources.
 
 ```
 WHEN DOES GOVERNMENT BORROWING HURT OR HELP?
@@ -199,4 +200,4 @@ Next time the debt makes headlines, run through this checklist:
 
 If you remember one thing, make it the bathtub: **the deficit is this year's inflow, the debt is all the water in the tub.** Confusing the two is the root of most bad fiscal arguments you'll ever hear.
 
-And the second thing is quieter but deeper. For a country that prints its own currency, the real ceiling on borrowing was never bankruptcy. It was **inflation** all along. Which raises the obvious next question: if the government can create money to cover its spending, who actually controls that money supply, and how do they decide when to pull it back? That's the world of central banks and monetary policy, the other great lever on the economy, and it's where this story goes next.
+And the second thing is quieter but deeper. For a country that prints its own currency, the real ceiling on borrowing was never bankruptcy. It was **inflation** all along. Which raises the obvious next question: if the government can create money to cover its spending, who actually controls that money supply, and how do they decide when to pull it back? That's the world of [central banks and monetary policy](/blog/economics-from-first-principles/08-central-banks-and-monetary-policy), the other great lever on the economy, and it's where this story goes next.

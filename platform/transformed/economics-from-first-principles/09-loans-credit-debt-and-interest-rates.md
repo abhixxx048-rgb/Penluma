@@ -48,6 +48,7 @@ order: 8
 icon: "\U0001F4C8"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -57,7 +58,7 @@ That "natural increase" is probably where the idea of interest was born. By the 
 
 ## Why this matters
 
-Interest rates are the quiet price tag attached to almost every big financial decision you'll make. The rate on your mortgage, the balance creeping up on your credit card, whether your savings actually grow or just look like they do, why a recession might be coming, even why an entire country can or can't pay its bills.
+Interest rates are the quiet price tag attached to almost every big financial decision you'll make. The rate on your mortgage, the balance creeping up on your credit card, whether your savings actually grow or just look like they do, why [a recession](/blog/economics-from-first-principles/15-the-business-cycle-booms-recessions-and-depressions) might be coming, even why an entire country can or can't pay its bills.
 
 Most people treat the interest rate as a single mysterious number handed down from on high. It isn't. It's built from a few understandable parts, and once you can see those parts, you stop getting fooled, you negotiate better, and you make money work for you instead of against you.
 
@@ -89,7 +90,7 @@ The **nominal interest rate** is the number printed on your statement, the stick
 
 > real ≈ nominal − inflation
 
-Here's why it matters. Say your savings account pays 2%. The balance ticks up, so you feel a little richer. But inflation is running at 4%. Your *real* return is roughly 2% − 4% = **−2%**. The number on the statement rose, yet your money buys less each year. You're quietly getting poorer while watching the balance grow.
+Here's why it matters. Say your savings account pays 2%. The balance ticks up, so you feel a little richer. But [inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) is running at 4%. Your *real* return is roughly 2% − 4% = **−2%**. The number on the statement rose, yet your money buys less each year. You're quietly getting poorer while watching the balance grow.
 
 Fisher called this trap **money illusion**: people feel richer when their wages or rates rise, even if prices rose faster and they're actually worse off. Real rates drive real life. Nominal rates fool the eye.
 
@@ -97,7 +98,7 @@ Fisher called this trap **money illusion**: people feel richer when their wages 
 
 Rates are set in two layers. **The central bank sets the floor; markets set everything above it.**
 
-In the United States, the Federal Reserve targets the rate banks charge each other for overnight loans. Its main modern lever is the interest it pays banks for cash they park at the Fed. No bank will lend to another for *less* than it can earn risk-free at the Fed, so that payment sets a floor under every other rate in the country.
+In the United States, [the Federal Reserve](/blog/economics-from-first-principles/08-central-banks-and-monetary-policy) targets the rate banks charge each other for overnight loans. Its main modern lever is the interest it pays banks for cash they park at the Fed. No bank will lend to another for *less* than it can earn risk-free at the Fed, so that payment sets a floor under every other rate in the country.
 
 From there, a chain reaction spreads the rate outward. When the Fed raises rates, banks' funding costs rise, so mortgages, car loans, and business credit all get pricier. Households and firms borrow and spend less. Demand cools, inflation eases, but hiring slows too.
 
@@ -135,7 +136,7 @@ Picture buying a $100,000 house with $20,000 of your own cash and $80,000 borrow
 
 ### Case study: how leverage sank the world in 2008
 
-The clearest answer to "how did a small corner of subprime mortgages sink the global economy" is one word: **leverage**.
+The clearest answer to "how did a small corner of [subprime mortgages](/blog/economics-from-first-principles/20-real-estate-and-housing-economics) sink the global economy" is one word: **leverage**.
 
 Households took adjustable-rate mortgages they couldn't truly afford, betting prices only go up. Investment banks were levered roughly 30:1, controlling $30 of assets for every $1 of their own money. Complex securities stacked leverage on top of leverage. When home prices finally *fell*, mortgage payments reset higher, foreclosures cascaded, and that 30:1 leverage turned a modest price dip into mass insolvency and panic fire-sales.
 
@@ -171,7 +172,7 @@ Just don't treat it as an iron law. The 2022–2023 inversion was the deepest si
 - **"A low interest rate always means cheap money."** Not in real terms. A 3% loan when inflation is 8% is nearly free money, because you repay in cheaper dollars. A 6% loan when inflation is 1% is genuinely expensive. Always ask: low compared to inflation, or just low compared to last year?
 - **"Good debt and bad debt are fixed labels."** They aren't. The same loan can be smart or ruinous depending on what it funds and whether you can afford it. Cost versus return is the only honest test.
 - **"My savings are safe because the balance keeps rising."** A rising nominal balance can still be a shrinking real one. If inflation outruns your rate, you're losing ground while feeling like you're gaining.
-- **"The national debt is like a household maxing out a credit card."** Not quite. A government that issues its own currency rarely runs out of dollars the way a family runs out of cash. Its real limits are a rising interest burden that crowds out other spending, and the inflation that comes from printing too much. Different machine, different failure mode.
+- **"The [national debt](/blog/economics-from-first-principles/16-fiscal-policy-taxes-spending-deficits-and-national-debt) is like a household maxing out a credit card."** Not quite. A government that issues its own currency rarely runs out of dollars the way a family runs out of cash. Its real limits are a rising interest burden that crowds out other spending, and the inflation that comes from printing too much. Different machine, different failure mode.
 
 ## How to use this
 

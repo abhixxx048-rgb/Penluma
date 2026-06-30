@@ -52,6 +52,7 @@ faq:
       concurrency challenges when several agents touch the same state at once.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: agent-orchestration
 topicTitle: Multi-Agent LLM Systems
 category: AI & LLMs
@@ -73,7 +74,7 @@ This is a guide to that plumbing: how agents share information, pass control, sp
 
 ## Why this matters
 
-An "agent" here just means a software helper, powered by a large language model, that can take actions on its own - searching the web, querying a database, calling another agent. One agent is a chatbot with hands. Several agents working together is a small organization, and organizations live or die by communication.
+An "agent" here just means [a software helper, powered by a large language model](/blog/agent-orchestration/agent-orchestration-01-foundations), that can take actions on its own - searching the web, querying a database, calling another agent. One agent is a chatbot with hands. Several agents working together is a small organization, and organizations live or die by communication.
 
 If you are building anything beyond a single prompt - a research assistant, a customer-support flow, a coding helper that delegates - you will hit these exact questions:
 
@@ -179,7 +180,7 @@ Here's the shape:
                 [Citation pass]   (separate step to attribute claims to sources)
 ```
 
-A **lead agent** analyzes the query, makes a plan, and spawns several **subagents** to explore different angles in parallel. Each subagent works in its own context window - its own clean workspace - which lets them reason independently and scale past what a single agent could hold.
+A **lead agent** analyzes the query, makes a plan, and spawns several **subagents** to explore different angles in parallel. Each subagent works in [its own context window](/blog/agent-orchestration/agent-orchestration-05-context-memory) - its own clean workspace - which lets them reason independently and scale past what a single agent could hold.
 
 ### The decomposition lesson: be explicit, or pay for it
 
@@ -276,7 +277,7 @@ Both A2A's structured Parts and MCP's JSON payloads lean on this. Typed, validat
 No. They live on different layers. MCP wires an agent *down* to its tools and data; A2A wires agents *across* to each other. A typical production system uses MCP under each agent and A2A between them. Most serious deployments use both.
 
 **"More agents always means better results."**
-Not even close. Multi-agent systems shine on broad, parallelizable work like research. For tasks with heavy interdependencies or shared context - including most coding tasks, which have fewer truly parallel parts than research - a single agent is often better.
+Not even close. [Multi-agent systems](/blog/agent-orchestration/agent-orchestration-00-index) shine on broad, parallelizable work like research. For tasks with heavy interdependencies or shared context - including most coding tasks, which have fewer truly parallel parts than research - a single agent is often better.
 
 **"A blackboard is simpler than message passing because there's less chatter."**
 Less traffic, yes - but you trade it for concurrency and consistency problems. Simpler on the surface, trickier underneath.
@@ -292,10 +293,10 @@ At an 8–15% failure rate for unenforced JSON, they're load-bearing infrastruct
 If you're designing or debugging a multi-agent system, here's a concrete checklist.
 
 1. **Choose a coordination model on purpose.** Use a shared-state/blackboard approach (like a LangGraph state object) for transparency and low traffic; use message passing when you need agents fully decoupled. Most production systems land on the hybrid.
-2. **Make every handoff an explicit primitive.** Never let agents call each other directly. This is the one rule both major frameworks agree on.
+2. **Make every handoff an explicit primitive.** Never let agents call each other directly. This is the one rule [both major frameworks](/blog/agent-orchestration/agent-orchestration-04-frameworks) agree on.
 3. **Decide per handoff what context to pass.** The receiving agent should get *exactly* what its sub-task needs - no more (which causes context pollution and spreads errors) and no less (which causes duplicated work and hallucinated gaps).
 4. **Write explicit contracts for subagents.** Spell out objective, output format, tools, and boundaries. Vague delegation is how you end up with 50 subagents on a trivial query.
-5. **Budget tokens like money.** Multi-agent work can cost roughly 15× a normal chat. Reserve it for high-value, breadth-first, parallelizable tasks.
+5. **Budget tokens like money.** Multi-agent work can [cost roughly 15× a normal chat](/blog/agent-orchestration/agent-orchestration-07-cost-performance). Reserve it for high-value, breadth-first, parallelizable tasks.
 6. **Enforce a schema on every inter-agent message.** Turn on structured outputs. Don't ship raw JSON mode and hope.
 7. **Isolate context per agent.** Give each its own workspace to cap the blast radius of any one error, and persist the orchestration plan before spawning workers.
 8. **Wire MCP under each agent, A2A between agents.** Apply least-privilege auth at each layer.

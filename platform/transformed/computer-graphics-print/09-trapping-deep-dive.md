@@ -36,6 +36,7 @@ faq:
     a: Very small - roughly 0.24 to 0.48 points (0.08 to 0.16 mm) at 150 lpi. Black and dark traps run 1.5 to 2 times wider because dark ink hides the overlap.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -96,7 +97,7 @@ Why? Because the **darker color defines the edge your eye sees**. Your eye reads
 
 ## How wide is a trap?
 
-Tiny - measured in fractions of a point. At 150 lpi (lines per inch, a common print resolution), a typical trap looks like this:
+Tiny - measured in fractions of a point. At [150 lpi (lines per inch, a common print resolution)](/blog/computer-graphics-print/08-halftoning-screening-turning-tone-into-dots), a typical trap looks like this:
 
 | Measure | Typical trap width |
 | --- | --- |
@@ -153,12 +154,12 @@ OVERPRINT black (no gap possible):
 
 - **"Overprinting is safe, so overprint everything."** No. Overprinting *light* colors causes color shifts - the background bleeds through and changes them. Overprint is safe for black, risky for everything light.
 - **"Overprinting white is fine."** It is the opposite of fine. **Overprinting white makes the white disappear entirely** - white "ink" set to overprint means nothing prints there. A classic, expensive disaster.
-- **"Rich black follows the overprint shortcut."** It does not. "Rich black" (black plus a CMY underlay for a deeper black) follows normal black *trapping* rules, not the simple overprint trick.
+- **"Rich black follows the overprint shortcut."** It does not. "[Rich black](/blog/computer-graphics-print/06-ink-on-the-page-spot-colors-overprint-black-generation)" (black plus a CMY underlay for a deeper black) follows normal black *trapping* rules, not the simple overprint trick.
 - **"Acrobat's Trap Presets actually trap my PDF."** They don't. In Acrobat Pro, that feature only stores instructions a compatible RIP applies later. If your printer's RIP ignores them, nothing is trapped.
 
 ## How modern shops actually do it
 
-Nobody traps by hand on real jobs anymore. Trapping is computed automatically by software, usually at the **RIP** (Raster Image Processor) - the engine that converts your page into the dot pattern the press prints. "In-RIP trapping" means the traps are calculated at that final raster stage.
+Nobody traps by hand on real jobs anymore. Trapping is computed automatically by software, usually at the **RIP** ([Raster Image Processor](/blog/computer-graphics-print/17-the-rip-press-operation-color-measurement)) - the engine that converts your page into the dot pattern the press prints. "In-RIP trapping" means the traps are calculated at that final raster stage.
 
 The Adobe In-RIP Trapping engine detects contrasting color edges, reads the neutral density of the two colors, and automatically expands the lighter into the darker - even handling one object against several different backgrounds at once. To use it you need a PostScript Level 2+ device whose RIP supports it; in the print dialog you set Color to "In-RIP Separations" and Trapping to "Adobe In-RIP."
 
@@ -176,7 +177,7 @@ The big gotcha: if the designer manually traps *and* the RIP traps, you get a **
 
 ## A note for RGB-only platforms
 
-If you build or work on a design tool that outputs **RGB only** - like a browser-based design studio backed by an RGB PDF service - trapping is genuinely out of scope, but worth understanding as a known gap. RGB artwork has no concept of spot colors, overprint, knockout, or trap zones; two flat shapes are just RGB fills with no trapping intent attached. And with no RGB-to-CMYK conversion or preflight step, nothing in the platform would separate colors into plates or flag "these two adjacent spot colors will gap."
+If you build or work on a design tool that outputs **RGB only** - like a browser-based design studio backed by an RGB PDF service - trapping is genuinely out of scope, but worth understanding as a known gap. RGB artwork has no concept of spot colors, overprint, knockout, or trap zones; two flat shapes are just RGB fills with no trapping intent attached. And with no [RGB-to-CMYK conversion](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color) or [preflight step](/blog/computer-graphics-print/13-preflight-validating-a-file-before-it-prints), nothing in the platform would separate colors into plates or flag "these two adjacent spot colors will gap."
 
 The honest position: artwork leaves the platform as RGB, and **trapping is the print provider's RIP responsibility** downstream. If you later build a production handoff, add trap-preset metadata at the PDF export layer so the RIP knows what to do - never bake traps into the RGB canvas, where they'd be wrong for any other output device.
 

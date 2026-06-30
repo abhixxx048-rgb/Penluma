@@ -23,6 +23,7 @@ order: 7
 icon: "\U0001F4D0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 faq:
   - q: "What is GSM in paper?"
     a: "GSM means grams per square meter - the weight of a one-meter-by-one-meter sheet. It's an absolute number, so 300 GSM is 300 GSM no matter the paper type or country, which is why it's the global standard."
@@ -50,7 +51,7 @@ A **substrate** is just the thing you print on - paper, cardstock, plastic film,
 Here's why the details pay off:
 
 - **You stop overpaying and under-delivering.** Order the wrong weight and your cards feel cheap, or your flyers cost more than they needed to.
-- **You avoid defects that can't be fixed.** A fold against the grain cracks the coating. A book bound the wrong way warps. These are permanent.
+- **You avoid defects that can't be fixed.** A fold against the grain cracks the coating. [A book bound the wrong way](/blog/print-production-craft/09-finishing-bindery-everything-after-the-press) warps. These are permanent.
 - **You earn trust.** Walk into a coffee shop and ask for "a hot brown drink" and you get served, but the barista clocks you as a beginner. Say "double-shot flat white, oat milk" and you're treated as someone who knows the craft. In print, "thick shiny paper" is the hot brown drink. "16pt C2S silk, grain long" is the flat white. Same product, completely different conversation.
 
 There's one twist that trips up almost everyone, so we'll tackle it first: **two different measuring systems collide in this industry.** Most of the world uses metric (GSM, microns). The United States uses an older pound system that confuses even seasoned pros. You need to understand both.
@@ -147,7 +148,7 @@ Whether paper is **coated** or **uncoated** changes everything about how it look
 
 ### Coated paper
 
-A thin layer of clay or polymer seals the surface, so ink sits *on top* of the sheet instead of soaking in. The result: sharper images, denser and more vibrant color (printers call this good **ink holdout**), and tighter control of **dot gain** (the tendency of ink dots to spread on contact).
+A thin layer of clay or polymer seals the surface, so ink sits *on top* of the sheet instead of soaking in. The result: sharper images, denser and more vibrant color (printers call this good **ink holdout**), and tighter control of **[dot gain](/blog/computer-graphics-print/08-halftoning-screening-turning-tone-into-dots)** (the tendency of ink dots to spread on contact).
 
 Coated stock is also durable - it resists smudges, fingerprints, and moisture, which is why menus and cards are usually coated. The downside: it's hard to write on with a pen, because ink and graphite won't grip a sealed surface (unless it's a matte coat).
 
@@ -191,7 +192,7 @@ Think of paper fibers like the grain in a piece of wood - it bends and breaks di
 
 - **Folding and scoring:** Always fold parallel to the grain. A parallel fold bends fewer fibers for a clean crease. Folding *against* the grain snaps fibers and **cracks the coating**, leaving a visible white line - especially ugly on heavy coated stock, where it looks like a defect. The fix is to **score** first (press a crease line before folding).
 - **Binding books:** Grain must run *parallel to the spine*. Then the book lies flat and pages turn easily. Wrong grain gives stiff pages and a warped, wavy spine - a defect called **gusseting** that's nearly impossible to fix.
-- **Press feeding:** Grain perpendicular to the feed path keeps the sheet stiff through the rollers, reducing jams and improving registration (color alignment).
+- **Press feeding:** Grain perpendicular to the feed path keeps the sheet stiff through the rollers, reducing jams and improving [registration (color alignment)](/blog/computer-graphics-print/09-trapping-deep-dive).
 - **Dimensional stability:** Paper expands and contracts *across* the grain far more than along it as humidity changes. Wrong grain causes curl and misalignment on multi-pass jobs.
 
 ### Four quick ways to detect grain
@@ -233,7 +234,7 @@ Watch out for **show-through**: print double-sided on thin, low-opacity stock an
 | **Kraft** | Brown, unbleached pulp. Strong, rustic look - bags, tags, eco packaging. |
 | **Synthetic "paper"** | Plastic-film stock (polypropylene, Teslin, Yupo, vinyl). Waterproof, tear-proof. Measured in mil. |
 
-One trap with synthetics: don't send a plastic stock through with ordinary ink. Plastic doesn't absorb conventional ink, so it won't dry or adhere - you'll get smearing. Synthetics need UV-cured or latex ink, or special handling.
+One trap with synthetics: don't send a plastic stock through with ordinary ink. Plastic doesn't absorb conventional ink, so it won't dry or adhere - you'll get smearing. Synthetics need [UV-cured or latex ink](/blog/print-production-craft/06-wide-format-flexography-signage-banners-packaging-labels), or special handling.
 
 ### Packaging board - a separate world
 
@@ -286,4 +287,4 @@ If you remember one thing, make it this: **anchor everything to GSM, keep weight
 
 Master this vocabulary and a strange thing happens - print shops stop treating you like a beginner and start treating you like a peer. The conversation shifts from "what do you mean by thick?" to "great, let's run it."
 
-And here's the next rabbit hole: once you've chosen the perfect stock, how does the ink actually land on it? The answer lives in color - CMYK, spot inks, and why the blue on your screen never quite matches the blue on the page. That's where the real magic (and the next round of gotchas) begins.
+And here's the next rabbit hole: once you've chosen the perfect stock, how does the ink actually land on it? The answer lives in color - CMYK, spot inks, and [why the blue on your screen never quite matches the blue on the page](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color). That's where the real magic (and the next round of gotchas) begins.

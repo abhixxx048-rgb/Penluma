@@ -38,6 +38,7 @@ order: 11
 icon: ✍️
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -49,7 +50,7 @@ This article hands you five of those tools.
 
 ## Why this matters
 
-Your working memory is tiny. Think of it as a small desk in your mind that can only hold three or four things at once. Drop a big, tangled topic on that desk and it overflows - so you give up and just repeat whatever you heard first.
+Your [working memory](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits) is tiny. Think of it as a small desk in your mind that can only hold three or four things at once. Drop a big, tangled topic on that desk and it overflows - so you give up and just repeat whatever you heard first.
 
 A framework fixes this. It moves the structure off your crowded desk and onto the page, which frees your brain to actually think.
 
@@ -57,7 +58,7 @@ That's the whole trick. **A framework is a checklist for your thinking.** Master
 
 ## First-principles thinking: strip it to the bone, then rebuild
 
-Most of our thinking is borrowed. We copy what other people do because they do it. That's called reasoning "by analogy," and it's fast but lazy.
+Most of our thinking is borrowed. We copy what other people do because they do it. That's called [reasoning "by analogy"](/blog/clear-thinking-and-expression/15-analogical-lateral-thinking-connecting-different-domains), and it's fast but lazy.
 
 **First-principles thinking** does the opposite. You break a thing down into basic facts - things that are true on their own, not because someone said so - and then build your own answer up from those facts.
 
@@ -154,7 +155,7 @@ Here's how depth appears when you point all five at a single problem.
 - **Second-order:** "I'll slap on a big discount banner." And then what? Shoppers learn to wait for discounts and stop paying full price. The ripple hurts you.
 - **Inversion:** "How would I guarantee nobody buys?" Hide the price, make checkout slow, show no trust signals. Your fix list writes itself.
 
-See what happened? One vague complaint became a structured diagnosis with a real root cause and a smarter plan. *That* is what "getting ideas from what you read" actually looks like - the frameworks generate the ideas for you.
+See what happened? One vague complaint became a [structured diagnosis](/blog/clear-thinking-and-expression/20-problem-solving-frameworks-define-decompose-hypothesize-test) with a real root cause and a smarter plan. *That* is what ["getting ideas from what you read"](/blog/clear-thinking-and-expression/10-active-reading-techniques-that-generate-thoughts) actually looks like - the frameworks generate the ideas for you.
 
 ## How to use this: a four-step practice
 
@@ -183,4 +184,4 @@ These five frameworks are like kitchen knives. A skilled cook doesn't use one bl
 
 If you remember one thing, remember this: **a framework's real job is to empty your crowded mental desk so you have room to actually think.** That's why a structured thinker can take the same article you read and pull a sharp idea out of it while you're still nodding along.
 
-Here's the thread worth pulling next: once a framework hands you a clear idea, how do you say it so other people *feel* its weight? Structured thinking is half the game - turning that structure into words that land is the other half.
+Here's the thread worth pulling next: once a framework hands you a clear idea, how do you say it so other people *feel* its weight? Structured thinking is half the game - [turning that structure into words that land](/blog/clear-thinking-and-expression/06-structure-frameworks-pyramid-principle-scqa-prep) is the other half.

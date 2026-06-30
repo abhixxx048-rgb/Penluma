@@ -31,6 +31,7 @@ faq:
   - q: "Is a life insurance nominee treated differently?"
     a: "Yes. Since a 2015 amendment, if your life insurance nominee is a spouse, parent, or child, they are a beneficial nominee and keep the payout as owner, not merely as a custodian. This is the one major exception to the nominee rule."
 topic: personal-money-mastery
+linked: true
 topicTitle: Personal Money Mastery
 category: Money & Business
 date: '2026-06-22'
@@ -49,7 +50,7 @@ Building wealth was the hard part, and you have done that. Keeping it, and makin
 
 ## Why this matters
 
-If you have a business, equity, ESOPs, or property, your wealth is probably lumpy and scattered. A big exit here, a flat there, a few demat accounts your spouse has never logged into.
+If you have a business, equity, [ESOPs](/blog/personal-money-mastery/11-equity-ownership-esops-vesting-dilution), or property, your wealth is probably lumpy and scattered. A big exit here, a flat there, a few demat accounts your spouse has never logged into.
 
 Your family rarely knows where everything is, and the law does not care about your good intentions. It follows paperwork.
 
@@ -76,7 +77,7 @@ Insurance plays by different rules, and this is worth remembering.
 
 After a 2015 amendment to the Insurance Act, if your life insurance nominee is an **immediate family member** (spouse, parent, or child), they are a **beneficial nominee** and keep the proceeds **as owner**, not as a custodian.
 
-So a term insurance payout to your spouse is genuinely hers. This is the single place where "nominee equals owner" holds true. Everywhere else (banks, mutual funds, demat accounts, shares) the nominee is only a collection agent.
+So a [term insurance payout](/blog/personal-money-mastery/04-insurance-done-right) to your spouse is genuinely hers. This is the single place where "nominee equals owner" holds true. Everywhere else (banks, mutual funds, demat accounts, shares) the nominee is only a collection agent.
 
 ## Wills: the cheapest powerful tool you are not using
 
@@ -143,7 +144,7 @@ Tax only shows up later, when the asset earns income or is sold. And there is on
 
 When you inherit, you also inherit the original owner's purchase cost and purchase date. So your capital gain is measured from *their* purchase, not from the day you inherited.
 
-For listed equity and equity mutual funds, post-Budget 2024 rates are **long-term capital gains of 12.5 percent** on gains above ₹1.25 lakh per year, and **short-term gains of 20 percent**. The "long-term" holding period is 12 months for listed securities and 24 months for property and unlisted shares. Add 4 percent cess on top.
+For listed equity and equity mutual funds, post-Budget 2024 rates are **[long-term capital gains](/blog/personal-money-mastery/03-tax-literacy-india-first) of 12.5 percent** on gains above ₹1.25 lakh per year, and **short-term gains of 20 percent**. The "long-term" holding period is 12 months for listed securities and 24 months for property and unlisted shares. Add 4 percent cess on top.
 
 **Example.** You inherit shares your father bought in 2015 for ₹3 lakh and sell them in 2026 for ₹13 lakh. Your cost basis is *his* ₹3 lakh, carried over. The gain is ₹10 lakh. As long-term listed equity, the tax is 12.5 percent of (₹10,00,000 minus ₹1,25,000), which is 12.5 percent of ₹8,75,000, or **₹1,09,375**, plus 4 percent cess, around ₹1,13,750.
 
@@ -178,7 +179,7 @@ Think of the asset register as the map to your buried treasure. Without it, your
 3. **Audit every nomination.** Bank accounts, mutual funds, demat, insurance. Update anyone outdated, especially an ex-spouse or a name that no longer reflects your wishes.
 4. **Use the new SEBI rule.** Register up to 10 nominees with percentages on your demat and mutual fund folios.
 5. **Build an asset register.** List every account and login, store it securely, and tell one trusted person how to find it.
-6. **Mind the savings, not just the estate.** Beat lifestyle inflation by paying yourself first and automating your SIP. And never carry revolving credit-card debt, which runs roughly 30 to 48 percent a year. No investment outruns that, so clear card balances in full before you invest a rupee.
+6. **Mind the savings, not just the estate.** Beat [lifestyle inflation](/blog/personal-money-mastery/10-income-vs-wealth) by paying yourself first and automating your SIP. And never carry [revolving credit-card debt](/blog/personal-money-mastery/02-emergency-fund-debt-the-true-cost-of-emis), which runs roughly 30 to 48 percent a year. No investment outruns that, so clear card balances in full before you invest a rupee.
 
 ## Conclusion
 

@@ -29,6 +29,7 @@ faq:
   - q: Why can't I just order events by timestamp across servers?
     a: Because every machine's clock differs and drifts. Two timestamps from two clocks can disagree by more than the time gap you are measuring, so "last write wins" by wall-clock time can silently discard the newer write.
 topic: distributed-systems
+linked: true
 topicTitle: Distributed Systems
 category: Engineering
 date: '2026-06-21'
@@ -43,7 +44,7 @@ You text a friend "Still on for dinner?" and hear nothing back. Did the message 
 
 Now imagine your entire business runs on guessing correctly. That is distributed computing in one sentence.
 
-A distributed system is a group of separate computers that work together over a network but appear, to the user, as one system. Building one is hard for a reason most tutorials skip: the rules you have trusted your whole career quietly stop being true the moment a network gets involved.
+[A distributed system is a group of separate computers that work together over a network](/blog/distributed-systems/12-what-is-a-distributed-system) but appear, to the user, as one system. Building one is hard for a reason most tutorials skip: the rules you have trusted your whole career quietly stop being true the moment a network gets involved.
 
 ## Why this matters
 
@@ -109,13 +110,13 @@ Every machine has its own clock, and **no two clocks agree exactly.** There is n
 
 The reason is physical. A clock is a tiny vibrating crystal, and no two crystals vibrate at the same rate. Temperature and age change them. Systems fight this with **NTP** (Network Time Protocol, software that periodically asks a time server for the time and nudges the local clock toward it), but NTP runs over the same unreliable, variable-delay network. It gets clocks *close*, never identical. Off by milliseconds normally, off by seconds when something goes wrong.
 
-This quietly breaks a huge amount of ordinary logic. "Which write happened last?" "Did this token expire?" "Sort these events by timestamp." On one machine those are trivial. Across machines, comparing two timestamps from two clocks is **meaningless**, because the clocks may disagree by more than the gap you are trying to measure. An event that truly happened *later* can carry a *lower* timestamp.
+This quietly breaks a huge amount of ordinary logic. "Which write happened last?" "Did this token expire?" "Sort these events by timestamp." On one machine those are trivial. Across machines, [comparing two timestamps from two clocks](/blog/distributed-systems/14-time-clocks-the-ordering-of-events) is **meaningless**, because the clocks may disagree by more than the gap you are trying to measure. An event that truly happened *later* can carry a *lower* timestamp.
 
 ### A real data-loss footgun
 
 Apache **Cassandra** historically used a "last write wins" rule based on wall-clock timestamps. If two servers had slightly skewed clocks, an *older* write with a *higher* timestamp could silently overwrite a *newer* write with a lower one, quietly losing a customer's most recent update. The root cause is exactly "there is no global now."
 
-Systems that need true ordering use **logical clocks** (Lamport clocks, vector clocks) or special hardware. **Google Spanner** installs GPS receivers and atomic clocks in its data centres, and its "TrueTime" API deliberately returns a time *interval* ("now is somewhere between T1 and T2") rather than a single instant, then waits out the uncertainty to stay correct. An honest admission that exact time is unknowable.
+Systems that need true ordering use **logical clocks** (Lamport clocks, [vector clocks](/blog/distributed-systems/15-vector-clocks-causality)) or special hardware. **Google Spanner** installs GPS receivers and atomic clocks in its data centres, and its "TrueTime" API deliberately returns a time *interval* ("now is somewhere between T1 and T2") rather than a single instant, then waits out the uncertainty to stay correct. An honest admission that exact time is unknowable.
 
 **The takeaway:** use wall-clock time for rough human display ("posted about 5 minutes ago"), never for deciding ordering or who wins.
 
@@ -236,4 +237,4 @@ When you design or review any system where two machines talk, run through this c
 
 If you remember one thing, remember this: **in a distributed system, silence is ambiguous.** A node that crashed and a node that is merely slow look identical from the outside, and almost every hard problem in the field flows from that single fact. You cannot reach certainty, so you design for doubt: timeouts to stop waiting on the dead, retries to recover from loss, and idempotency to make the duplicates harmless.
 
-Notice what we have *not* solved yet. We have learned to survive uncertainty on each call, but we have not made a group of nodes actually *agree* on a single value, like who holds a lock or which write is the real one. That is the consensus problem, and the algorithms that crack it (Paxos, Raft) are some of the most elegant ideas in computing. They are where this story goes next.
+Notice what we have *not* solved yet. We have learned to survive uncertainty on each call, but we have not made a group of nodes actually *agree* on a single value, like who holds a lock or which write is the real one. That is [the consensus problem](/blog/distributed-systems/02-the-consensus-problem), and the algorithms that crack it (Paxos, Raft) are some of the most elegant ideas in computing. They are where this story goes next.

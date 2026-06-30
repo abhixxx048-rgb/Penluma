@@ -52,6 +52,7 @@ faq:
       that's the idea behind the Rule of 40.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -63,13 +64,13 @@ This guide builds that answer up one brick at a time. Don't skip ahead. Each ide
 
 ## Why this matters
 
-Most businesses don't fail because the idea was bad. They fail because the founder didn't know how many sales it took to survive, ran out of cash, and got caught by surprise.
+Most businesses don't fail because the idea was bad. They fail because the founder didn't know how many sales it took to survive, [ran out of cash](/blog/business-financial-literacy/07-cash-flow-burn-rate-runway-don-t-run-out-of-money), and got caught by surprise.
 
 Knowing your break-even point changes how you make every decision:
 
 - You can set a real sales target instead of a vague "let's grow."
 - You can tell, before launch, whether an idea can ever be profitable.
-- You can price products with confidence instead of crossing your fingers.
+- You can [price products with confidence](/blog/business-financial-literacy/09-pricing-psychology-pricing-with-confidence) instead of crossing your fingers.
 - You stop confusing "we made a big sale" with "we made money."
 
 This is the math that separates a hopeful guess from a business plan.
@@ -121,7 +122,7 @@ Say you sell a custom mug for **$25**. The variable costs are the blank mug ($6)
 
 So your contribution margin is $25 − $10 = **$15 per mug**. Every mug you sell hands you $15 to help cover your fixed costs.
 
-Notice that fixed costs don't appear anywhere in this formula. That's on purpose. Contribution margin is purely about per-sale economics, and it isolates one crucial question: is each sale even worth making?
+Notice that fixed costs don't appear anywhere in this formula. That's on purpose. Contribution margin is purely about [per-sale economics](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale), and it isolates one crucial question: is each sale even worth making?
 
 ## The break-even formula, in units
 
@@ -169,7 +170,7 @@ So 667 mugs keeps the lights on, and 1,000 mugs puts $5,000 in your pocket. The 
 
 ## The three margins, and what each one tells you
 
-Founders throw the word "margin" around loosely, and it causes endless confusion. There are actually three distinct margins, and they answer three different questions. Each is a percentage of revenue, and you read them top to bottom on a profit statement.
+Founders throw the word "margin" around loosely, and it causes endless confusion. There are actually three distinct margins, and they answer three different questions. Each is a percentage of revenue, and you read them top to bottom on a [profit statement](/blog/business-financial-literacy/04-reading-a-p-l-income-statement-line-by-line).
 
 Here's how $100 of sales flows down:
 
@@ -270,4 +271,4 @@ If you remember nothing else, remember the three numbers that quietly run every 
 
 Know all three, benchmark your margins against the right industry, and lean into operating leverage. That's the entire game of profitability.
 
-But break-even tells you *whether* you make money, not *when the cash actually lands in your bank account*. A profitable business can still go broke if customers pay late and suppliers want paying now. That gap between profit on paper and cash in hand is where the next story begins, and it's the one that catches the most founders off guard.
+But break-even tells you *whether* you make money, not *when the cash actually lands in your bank account*. A [profitable business can still go broke](/blog/business-financial-literacy/05-the-balance-sheet-cash-flow-statement-why-profit-cash) if customers pay late and suppliers want paying now. That gap between profit on paper and cash in hand is where the next story begins, and it's the one that catches the most founders off guard.

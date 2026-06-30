@@ -11,9 +11,54 @@ const data = await Promise.all(
     ),
   }))
 );
+
+const allPosts = data.flatMap((g) => g.topics.flatMap((t) => t.posts));
+const postCount = allPosts.length;
+const topicCount = data.reduce((n, g) => n + g.topics.length, 0);
+
+const description = `Browse the complete archive of ${postCount} research-backed posts across ${topicCount} topics — strategy, decision-making, and mental models, organized by category for easy exploration.`;
+
+const keywords = [
+  'research blog archive',
+  'all posts',
+  'strategy articles',
+  'decision-making',
+  'mental models',
+  'business research',
+];
+
+const blogUrl = new URL('/blog/', Astro.site).toString();
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'All Posts',
+    description,
+    url: blogUrl,
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: postCount,
+      itemListElement: allPosts.map((post, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        url: new URL(`/blog/${post.id}/`, Astro.site).toString(),
+        name: post.data.title,
+      })),
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).toString() },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: blogUrl },
+    ],
+  },
+];
 ---
 
-<BaseLayout title="All Posts" description="The full archive of research posts.">
+<BaseLayout title="All Posts" description={description} jsonLd={jsonLd} keywords={keywords}>
   <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
     <h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">All posts</h1>
     <p class="mt-3 text-slate-600 dark:text-slate-400">The complete archive, organized by topic. Use <a href="/search" class="text-brand-600 hover:underline dark:text-brand-400">search</a> to find something specific.</p>

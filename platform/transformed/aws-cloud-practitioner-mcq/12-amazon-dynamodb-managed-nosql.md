@@ -32,6 +32,7 @@ author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: aws-cloud-practitioner-mcq
 topicTitle: AWS Cloud Practitioner
+linked: true
 category: Certifications
 date: '2026-06-28'
 order: 11
@@ -70,7 +71,7 @@ Most wrong answers on the exam come from a service that sounds similar. Here is 
 
 ### DynamoDB vs RDS (and Aurora)
 
-This is the big one. **RDS and Aurora are relational SQL databases.** They are built for structured data with relationships, foreign keys, and complex queries that join many tables together.
+This is the big one. **RDS and Aurora are [relational SQL databases](/blog/aws-cloud-practitioner-mcq/11-amazon-rds-managed-relational-databases).** They are built for structured data with relationships, foreign keys, and complex queries that join many tables together.
 
 The deciding factor is the **shape of your data and queries**, not scale or "managed."
 
@@ -94,13 +95,13 @@ The shortcut: if the question says "microseconds, no app changes, for DynamoDB,"
 A few more services get tossed into questions as decoys:
 
 - **Redshift** is a data warehouse for analytics over big historical datasets, not fast single-record lookups.
-- **S3** is object storage for files, not a high-frequency key-value store for live sessions.
+- **S3** is [object storage for files](/blog/aws-cloud-practitioner-mcq/10-amazon-s3-object-storage), not a high-frequency key-value store for live sessions.
 - **EFS** is a shared file system, not a key-value database.
-- **CloudFront** is a CDN that caches web content at the edge, not database reads.
+- **CloudFront** is a [CDN that caches web content at the edge](/blog/aws-cloud-practitioner-mcq/09-amazon-cloudfront-cdn-edge-delivery), not database reads.
 
 ## On-demand vs provisioned capacity
 
-DynamoDB has exactly **two real capacity modes**, and exam questions love to test whether you know them or whether you will guess at borrowed EC2 terms like "Spot," "Reserved," "Burst," or "Elastic." Those are not DynamoDB billing modes.
+DynamoDB has exactly **two real capacity modes**, and exam questions love to test whether you know them or whether you will guess at borrowed [EC2 purchasing terms](/blog/aws-cloud-practitioner-mcq/06-amazon-ec2-instances-purchasing-options) like "Spot," "Reserved," "Burst," or "Elastic." Those are not DynamoDB billing modes.
 
 **On-demand capacity** charges per request and scales instantly to whatever traffic arrives. You do no capacity planning. It shines when traffic is **unpredictable or spiky**, like a brand-new app or a flash sale that jumps from a few hundred to tens of thousands of requests in minutes and then drops.
 

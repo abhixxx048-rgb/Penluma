@@ -33,6 +33,7 @@ faq:
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: metrics-analytics
+linked: true
 topicTitle: Metrics & Analytics
 category: Business & Growth
 date: '2026-06-16'
@@ -63,7 +64,7 @@ A blended retention figure averages over groups that behave very differently. Th
 
 ### Lie 1: The mix shift (Simpson's paradox)
 
-**Simpson's paradox** is a statistical quirk where a trend that holds for every subgroup reverses when you combine them.
+**[Simpson's paradox](/blog/ten-disciplines/12-inference-correlation-vs-causation-and-how-statistics-mislead-advanced)** is a statistical quirk where a trend that holds for every subgroup reverses when you combine them.
 
 Here's the retention version. Imagine you sell to two kinds of customers: casual users who churn fast, and serious users who stick around. This year your marketing happened to attract more serious users. Your blended retention number goes *up*, and everyone cheers.
 
@@ -141,7 +142,7 @@ There are two things you can count, and they tell different stories.
 
 Here's why you read both. A business can lose a lot of small customers yet keep its revenue flat, because the customers who stayed expanded. Logos down, dollars steady. If you only watched dollars, you'd miss a logo bleed that eventually catches up with you.
 
-For low-price, self-serve businesses with little upsell, GRR and logo retention tend to move together, and NRR rarely beats 100%. Which brings us to a trap.
+For [low-price, self-serve businesses](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive) with little upsell, GRR and logo retention tend to move together, and NRR rarely beats 100%. Which brings us to a trap.
 
 ## Common misconceptions
 
@@ -151,7 +152,7 @@ A lot of "SaaS metrics wisdom" is folklore. Here are the ones worth unlearning.
 - **"Net Revenue Retention above 100% is the goal for everyone."** This comes from enterprise software with big upsell motions. For low-price self-serve products, it's unrealistic. In ChartMogul's retention data, only about **2.7%** of products under $10/month ARPA exceed 100% NRR. Top-quartile NRR for that segment is closer to **65%**. Your growth lever there is *more customers*, not seat upsells.
 - **"Good churn is 5 to 7 percent annually."** Also imported from enterprise. For low-price SMB, monthly logo churn of **2.5 to 5 percent** is normal-to-good, and under **1.5 percent** is great. Don't borrow benchmarks from a business that looks nothing like yours.
 - **"A 5% increase in retention boosts profits 25 to 95%."** A real finding (Bain / Fred Reichheld), but it's a wide 1990s cross-industry *range*, not a SaaS law. The famous 85% figure came from one bank's branch system. Never quote "95%" as the expected number.
-- **"Acquiring a customer costs 5x (or 7x, or 25x) more than retaining one."** Folklore with no solid primary source. The multiplier is essentially made up and varies wildly. Treat it as a directional reminder, never a benchmark.
+- **"[Acquiring a customer](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale) costs 5x (or 7x, or 25x) more than retaining one."** Folklore with no solid primary source. The multiplier is essentially made up and varies wildly. Treat it as a directional reminder, never a benchmark.
 - **"Quick Ratio of 4 means a good company."** The **SaaS Quick Ratio** (revenue gained per dollar lost) is a useful heuristic from Mamoon Hamid at Social Capital. But a high ratio fueled by lots of new signups can completely mask a leaky bucket. It's a sanity check, not a pass/fail line.
 - **"Just multiply monthly churn by 12 to get annual churn."** A common arithmetic error. Churn *compounds*. Annual retention is `(1 − monthly churn)^12`, not `monthly churn × 12`.
 
@@ -159,7 +160,7 @@ A lot of "SaaS metrics wisdom" is folklore. Here are the ones worth unlearning.
 
 Here's a concrete path, ordered so you get value fast without overbuilding.
 
-1. **Build one cohort retention triangle before you buy any tool.** If you have a database (Postgres, anything), you can write this in plain SQL. Don't reach for ChartMogul, Amplitude, or Mixpanel until your data volume makes the SQL view the actual bottleneck.
+1. **Build one cohort retention triangle before you buy any tool.** If you have a database (Postgres, anything), you can write this in [plain SQL](/blog/systems-fundamentals/04-databases-i-relational-databases-sql-acid). Don't reach for ChartMogul, Amplitude, or Mixpanel until your data volume makes the SQL view the actual bottleneck.
 
 2. **Cohort by signup month, not week.** If your customer base is small, weekly cohorts are too noisy to read. Monthly buckets give you signal.
 
@@ -177,7 +178,7 @@ Here's a concrete path, ordered so you get value fast without overbuilding.
 
 ## Conclusion
 
-The one thing to remember: **a single blended churn or retention percentage is a vanity metric that can stay calm while the building burns.** Cohorts and retention curves are how you see the fire while it's still small enough to put out.
+The one thing to remember: **a single blended churn or retention percentage is a [vanity metric](/blog/ai-learning-platform/26-measuring-real-learning-metrics-that-matter) that can stay calm while the building burns.** Cohorts and retention curves are how you see the fire while it's still small enough to put out.
 
 Build the triangle, define "active" on your product's real rhythm, and insist the retention curve flattens above zero before you scale spending. That one discipline will catch problems months before any dashboard average would.
 

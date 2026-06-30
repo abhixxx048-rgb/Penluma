@@ -34,6 +34,7 @@ order: 3
 icon: "\U0001F393"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -75,7 +76,7 @@ It's not a rare mistake. Surveys find about 80% of college students name re-read
 
 > **Analogy:** Watching a cooking show until every recipe feels familiar is not the same as being able to cook the dish. You only find out the truth when you stand in the kitchen with no script. The cozy "I know this" feeling is fluency. The empty plate at dinner is reality.
 
-Here's the cruel part. The methods that *actually* build durable memory, like being quizzed, spacing your reviews out, and mixing different problems together, all **feel harder and make you stumble**. So learners wrongly conclude those methods are working *less* well, and drift back to comfortable, useless re-reading.
+Here's the cruel part. The methods that *actually* build durable memory, like [being quizzed](/blog/ai-learning-platform/06-retrieval-practice-why-testing-beats-re-reading), [spacing your reviews out](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve), and mixing different problems together, all **feel harder and make you stumble**. So learners wrongly conclude those methods are working *less* well, and drift back to comfortable, useless re-reading.
 
 Comfort is not the goal. Knowledge you can retrieve a month later is.
 
@@ -126,10 +127,10 @@ A study habit built on spaced review and mixed problems will often look slightly
 Three beliefs quietly sabotage most people's studying.
 
 - **"If it feels easy, I've learned it."** Ease measures familiarity, not retention. The smooth feeling on your third re-read is the illusion of fluency, not evidence of mastery.
-- **"A high quiz score right after the lesson proves I know it."** It proves you have a temporary bump. The forgetting curve hasn't kicked in yet. Real proof comes from a surprise test later.
+- **"A high quiz score right after the lesson proves I know it."** It proves you have a temporary bump. The [forgetting curve](/blog/ai-learning-platform/03-how-humans-learn-a-plain-tour-of-memory) hasn't kicked in yet. Real proof comes from a surprise test later.
 - **"Finishing the course means I learned the course."** You can complete every lesson by clicking "next." Completion counts activity, not learning.
 
-That last one deserves a name. **"Lessons completed" is a vanity metric**: a number that looks impressive, is easy to grow, and tells you almost nothing about whether real learning happened. Streaks count showing up. Time-in-app counts a forgotten browser tab.
+That last one deserves a name. **"Lessons completed" is a [vanity metric](/blog/ai-learning-platform/26-measuring-real-learning-metrics-that-matter)**: a number that looks impressive, is easy to grow, and tells you almost nothing about whether real learning happened. Streaks count showing up. Time-in-app counts a forgotten browser tab.
 
 > **Analogy:** Judging a gym by how many people swipe through the turnstile each month. The count can hit record highs while nobody lifts a weight or gets any stronger. A simple gut check: if your headline number can go up while learning goes down, it's a vanity metric.
 
@@ -140,7 +141,7 @@ You don't need willpower. You need to swap comfortable methods for effective one
 1. **Don't trust comfort.** The "I get it" feeling is the fluency illusion, not evidence. Verify with retrieval instead of soothing yourself with another read.
 2. **Lead with recall.** When you're unsure, resist the urge to re-read. First try to produce the answer from memory or explain your reasoning out loud. The struggle is where the learning happens.
 3. **Space it out.** Review material across days and weeks, not all in one sitting. Each effortful recall after a gap resets your forgetting curve and makes the memory stick longer.
-4. **Mix your practice.** Don't drill one type of problem in a block. Shuffle different problem types together so you learn to recognize *which* idea applies, not just how to repeat one.
+4. **Mix your practice.** Don't drill one type of problem in a block. [Shuffle different problem types together](/blog/ai-learning-platform/08-interleaving-dual-coding-desirable-difficulties) so you learn to recognize *which* idea applies, not just how to repeat one.
 5. **Test for transfer.** Try genuinely new problems you were never shown, not close variants. If you can only solve the exact thing you practiced, you've learned the phrasing, not the idea.
 6. **Measure on a delay.** Judge yourself by a surprise test weeks later, never by lessons finished or stars earned.
 

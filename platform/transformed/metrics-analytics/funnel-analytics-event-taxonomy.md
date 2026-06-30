@@ -25,6 +25,7 @@ order: 999
 icon: "\U0001F4CA"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 faq:
   - q: How many events should a tracking plan have?
     a: For a small team or SMB product, aim for around 12 to 15 hand-instrumented events that trace your real customer lifecycle. Amplitude's functional guidance tops out near 200, but more events almost always means more noise, not more insight.
@@ -41,7 +42,7 @@ faq:
 sources: []
 ---
 
-A team sits down to "set up analytics." Three weeks later they have a 200-event tracking plan, a spreadsheet nobody updates, and dashboards that somehow never answer the one question that matters: are people actually getting value from the product?
+A team sits down to "set up analytics." Three weeks later they have a 200-event tracking plan, a spreadsheet nobody updates, and dashboards that somehow never answer the one question that matters: are people actually [getting value from the product](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress)?
 
 This is the most common analytics mistake there is. And the fix is counterintuitive. You track *less*, on purpose, with discipline.
 
@@ -95,7 +96,7 @@ Two fixes. Make optional steps actually optional in the funnel definition, or mo
 
 A blended funnel hides the leak. The aggregate looks fine while one channel quietly bleeds out.
 
-Break the same funnel down by acquisition channel, by persona, by device, and by signup cohort. Segmentation is where funnels stop being a vanity chart and start telling you *where* and *for whom* things break.
+Break the same funnel down by acquisition channel, by [persona](/blog/product-sense-empathy/03-user-empathy-seeing-through-the-user-s-eyes), by device, and by signup cohort. Segmentation is where funnels stop being a vanity chart and start telling you *where* and *for whom* things break.
 
 ## Naming events so they don't rot
 
@@ -190,11 +191,11 @@ Here's how the main options actually differ for a small, cost-conscious team:
 
 For most small teams, **PostHog** maximizes signal per dollar and per engineering hour. Autocapture removes most manual instrumentation, the free tier covers typical SMB volume, and bundled session replay turns a "where did they drop off" into a "*why* did they drop off."
 
-A lightweight Postgres events table is fine as a server-side source of truth that *feeds* your analytics tool. It is not a substitute for the analytics product itself.
+A lightweight [Postgres events table](/blog/systems-fundamentals/04-databases-i-relational-databases-sql-acid) is fine as a server-side source of truth that *feeds* your analytics tool. It is not a substitute for the analytics product itself.
 
 ## Common misconceptions
 
-**"More events means more insight."** The opposite. Past a point, more events means more noise, more maintenance, and less trust. Track outcomes tied to business goals, not every interaction.
+**"More events means more insight."** The opposite. Past a point, more events means more noise, more maintenance, and less trust. Track outcomes tied to [business goals](/blog/business-financial-literacy/13-living-by-the-numbers-the-founder-s-financial-dashboard), not every interaction.
 
 **"Ad-blockers wipe out a precise, known percentage of my data."** Adoption is measured; the data-loss percentage is a directional estimate. Use it as a reason to go server-side, not as a number to optimize against.
 

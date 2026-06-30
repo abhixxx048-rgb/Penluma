@@ -28,6 +28,7 @@ faq:
     a: Default alive means that at your current growth and spending you will become profitable before the cash runs out, without raising more money. Default dead means you will not, unless something changes. Project burn and revenue forward to find out which you are.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: business-financial-literacy
 topicTitle: Business & Financial Literacy
 category: Money & Business
@@ -59,7 +60,7 @@ Think of it like this: **you should understand your numbers well enough that an 
 
 ## Why is my profitable business out of cash?
 
-Because **profit and cash are not the same thing**, and this single confusion has killed more healthy-looking companies than any competitor ever has.
+Because **[profit and cash are not the same thing](/blog/business-financial-literacy/05-the-balance-sheet-cash-flow-statement-why-profit-cash)**, and this single confusion has killed more healthy-looking companies than any competitor ever has.
 
 Profit, on your profit-and-loss statement (the "P&L"), counts a sale the moment you earn it. But the customer might not actually pay for 60 days, while your suppliers and staff want paying right now. Money also leaves your account for things that aren't "expenses" at all: loan repayments, buying equipment, stocking inventory you haven't sold yet.
 
@@ -82,7 +83,7 @@ A "low" margin business can thrive on volume. A "high" margin one can still fail
 
 ## How much runway should I keep?
 
-Runway is how many months of cash you have left at your current burn rate. The common rule of thumb:
+Runway is how many months of cash you have left at your current [burn rate](/blog/business-financial-literacy/07-cash-flow-burn-rate-runway-don-t-run-out-of-money). The common rule of thumb:
 
 - **Never let runway drop below 6 months.**
 - **Start raising or cutting at around 12 months.**
@@ -102,7 +103,7 @@ There's one real exception: when scale or cost-leadership genuinely *is* your st
 
 ## How do I know what to charge?
 
-Start from the **value the customer gets**, not from your costs.
+Start from the **[value the customer gets](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive)**, not from your costs.
 
 Your cost tells you the floor. Never sell below it. But the customer's *perceived value* sets the ceiling, and it's almost always higher than you think.
 
@@ -110,7 +111,7 @@ Test it directly: raise prices on new customers and watch whether they still buy
 
 ## Should I raise money?
 
-Only if you have a use for it that earns more than it costs. And remember that **equity is the most expensive money there is**, because you sell a piece of every future dollar forever.
+Only if you have a use for it that earns more than it costs. And remember that **[equity is the most expensive money there is](/blog/business-financial-literacy/12-funding-dilution-the-cost-of-capital)**, because you sell a piece of every future dollar forever.
 
 Raise when capital will accelerate something *already working*: you've found product-market fit, and more fuel means faster, profitable growth.
 
@@ -135,7 +136,7 @@ Because revenue growth alone doesn't prove a healthy business.
 
 They're quietly checking four things:
 
-1. Do you make money on each customer? (**unit economics**)
+1. Do you make money on each customer? (**[unit economics](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale)**)
 2. Do customers stay? (**churn**, the rate at which they cancel)
 3. How much cash do you burn to grow each dollar? (**burn multiple**)
 4. Does growth plus profit clear the bar? (more on the Rule of 40 below)
@@ -198,7 +199,7 @@ Turn the reading into a habit. Here's a simple rhythm to actually run your numbe
 2. **Review your core dashboard monthly:** revenue, margin, churn, CAC, runway. Properly, not a glance.
 3. **Read all three statements monthly** once you're past the earliest stage.
 4. **Memorize the cold-call metrics.** Know these like your own phone number: monthly revenue and growth rate, gross margin, monthly burn, runway in months, CAC, LTV (or LTV:CAC), churn, and cash in the bank. Fumbling these in a meeting reads as "not in control of the business."
-5. **Build one simple model.** Not a Wall Street monster, just a few rows: how many customers, at what price, with what costs, month by month, ending in a cash balance. That's enough to ask "what if I double prices?" or "what if churn doubles?" *before* betting real money.
+5. **[Build one simple model](/blog/business-financial-literacy/11-budgeting-forecasting-building-a-simple-financial-model).** Not a Wall Street monster, just a few rows: how many customers, at what price, with what costs, month by month, ending in a cash balance. That's enough to ask "what if I double prices?" or "what if churn doubles?" *before* betting real money.
 
 Founders who check quarterly find out about problems a quarter too late. The whole point is to see the curve before it becomes a cliff.
 

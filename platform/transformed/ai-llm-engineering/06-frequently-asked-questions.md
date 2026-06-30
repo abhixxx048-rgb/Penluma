@@ -30,6 +30,7 @@ faq:
     a: Look at your data. Read real model outputs, especially the failures, before theorizing about fixes. The actual failure modes are almost never the ones you would guess.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: ai-llm-engineering
 topicTitle: AI & LLM Engineering
 category: AI & LLMs
@@ -47,7 +48,7 @@ These are the questions that separate people who ship reliable AI from people wh
 
 Most costly mistakes in LLM engineering are not bugs. They are wrong decisions made early, with confidence, because nobody paused to ask the right question.
 
-Reaching for a fully autonomous agent when a simple workflow would have been more reliable. Trusting a prompt that worked once. Skipping evaluations because the outputs "looked fine." Each of these feels reasonable in the moment and expensive three months later.
+Reaching for a fully autonomous agent when a simple workflow would have been more reliable. Trusting a prompt that worked once. Skipping [evaluations](/blog/ai-llm-engineering/02-evaluation-measurement) because the outputs "looked fine." Each of these feels reasonable in the moment and expensive three months later.
 
 Getting these fundamentals right is the difference between a feature users trust and one they learn to route around.
 
@@ -69,7 +70,7 @@ Climb the ladder only as far as the problem forces you.
 2. **Move to a workflow** when the task needs multiple reliable steps you can predefine. Chain prompts and code together.
 3. **Reach for an agent** only when the steps genuinely cannot be planned ahead, because they depend on what gets discovered during the run.
 
-Each rung up adds power but also adds cost, latency, and unpredictability. The most common and expensive mistake in the field is building an autonomous agent for a job a simple workflow would have done more reliably.
+Each rung up adds power but also adds cost, latency, and unpredictability. The most common and expensive mistake in the field is building [an autonomous agent](/blog/ai-llm-engineering/04-agent-architecture-orchestration) for a job a simple workflow would have done more reliably.
 
 ### How do tools and function calling fit into agents?
 
@@ -106,7 +107,7 @@ Start with the simplest retrieval that meets your accuracy bar. Add a vector sto
 
 **Context engineering** is the broader discipline of deciding what information enters the model's window at all: which retrieved documents, prior messages, tool results, and system instructions, in what order and amount.
 
-Prompt engineering is one piece of context engineering. As systems grow, the question shifts from "what should I say?" to "what should the model see, and what should I leave out?"
+Prompt engineering is one piece of [context engineering](/blog/ai-llm-engineering/03-context-engineering-retrieval). As systems grow, the question shifts from "what should I say?" to "what should the model see, and what should I leave out?"
 
 ### What does "context window" mean, and is a bigger one always better?
 
@@ -157,7 +158,7 @@ To trust it, calibrate the judge against a sample of human-labeled cases, give i
 
 A **hallucination** is when the model produces confident, fluent text that is factually wrong or unsupported by its sources.
 
-It happens because language models predict plausible next words, not verified truth. When they lack the right information, they fill the gap with something that merely sounds right. They do not "know what they don't know" by default.
+It happens because [language models predict plausible next words](/blog/ai-llm-engineering/01-foundations-how-llms-work-why-these-skills-endure), not verified truth. When they lack the right information, they fill the gap with something that merely sounds right. They do not "know what they don't know" by default.
 
 You reduce hallucination by grounding answers in retrieved sources, asking the model to cite or say "I don't know," and verifying claims against the provided context.
 
@@ -186,7 +187,7 @@ Long prompts, big retrieved documents, and verbose answers all cost money and ad
 
 ### When should I not use AI or an LLM at all?
 
-Avoid LLMs when a deterministic rule, a database query, or simple code would do the job more reliably and cheaply, such as math, exact lookups, or strict business logic.
+Avoid LLMs when a deterministic rule, a database query, or [simple code would do the job more reliably](/blog/ai-llm-engineering/05-ai-product-judgment) and cheaply, such as math, exact lookups, or strict business logic.
 
 Be cautious in high-stakes domains like medical, legal, and financial work without a human in the loop and strong guardrails. Skip them when you cannot tolerate the variability and occasional errors inherent to generative models.
 

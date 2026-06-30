@@ -38,12 +38,13 @@ order: 999
 icon: "\U0001F4E3"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
 Ahrefs, a company that sells expensive SEO software, quietly admits that its free tools pull more traffic than most of its blog. Canva ranks for millions of searches not because of clever ads, but because it gave away a directory of free templates. Both discovered the same thing: the fastest way to grow is to hand a stranger something useful before asking for anything in return.
 
-This is called **engineering-as-marketing**, and it is one of the most underrated growth moves a software company can make. The surprising part? You probably already own most of what you need to do it.
+This is called **engineering-as-marketing**, and it is one of the most underrated [growth moves](/blog/how-to-make-money/15-distribution-beats-product) a software company can make. The surprising part? You probably already own most of what you need to do it.
 
 ## Why this matters
 
@@ -54,7 +55,7 @@ A free tool does something different: it lets a stranger *experience* your value
 That single shift does three jobs at once:
 
 - It ranks for searches people already type every day ("free business card maker", "free invoice generator").
-- It turns your core differentiator into a live demo instead of a screenshot.
+- It turns your core differentiator into a [live demo](/blog/sales-customer-development/10-the-demo-show-value-without-overselling) instead of a screenshot.
 - It quietly feeds people into your funnel once they are already impressed.
 
 And here is the kicker: if you already have a product, the free tool is mostly **packaging**, not new invention. You are exposing a slice of what you have already built.
@@ -85,7 +86,7 @@ Think of it like a bakery putting a tray of free samples by the door. The sample
 
 Here is where most companies ruin a good free tool. They slap an email wall on the front door. "Enter your email to start designing." Conversion dies on the spot, and so do the search rankings, because a page that demands a signup before delivering value is a page nobody links to.
 
-The fix is simple to say and easy to get wrong: **gate at the moment of value capture, not before.**
+The fix is simple to say and easy to get wrong: **gate at the moment of [value capture](/blog/how-to-make-money/02-value-creation-vs-value-capture), not before.**
 
 Walk through it with the design tool example:
 
@@ -104,7 +105,7 @@ Not if you build it right. It should be a thin marketing skin over something you
 No. A magnet is not a charity. You still cap file sizes, rate-limit anonymous exports, and hold back your most advanced features. The free tool is intentionally a *subset*. The full experience is the reward for signing up.
 
 **"More features make the free tool more attractive."**
-Usually the opposite. A focused tool that does one thing instantly beats a sprawling one that overwhelms. Hide the pro-only controls. Pick the simplest, highest-demand use case and nail it.
+Usually the opposite. A focused tool that does one thing instantly beats a [sprawling one that overwhelms](/blog/product-sense-empathy/07-cognitive-load-why-simple-feels-effortless). Hide the pro-only controls. Pick the simplest, highest-demand use case and nail it.
 
 **"Free tools are just for big companies like Canva."**
 The playbook scales down. A free invoice generator, a free contract template, a free margin calculator: any small slice of real value can become a magnet. The mechanics are the same at any size.
@@ -133,4 +134,4 @@ A useful "done" test: a stranger lands from Google, uses the tool with no login,
 
 The one thing to remember: **give value before you ask for anything, and ask only when the value is already in their hands.** A free tool that lets people win first, then gently opens a door to your product, beats a hundred ads that shout at strangers.
 
-Now here is the thread worth pulling next. Once your free tool starts pulling traffic, the question shifts from *how do I get visitors* to *how do I turn a casual designer into a paying customer without scaring them off*. That is the art of the soft, well-timed upgrade prompt, and the difference between a tool that leaks users and one that compounds is almost entirely about timing. Worth a closer look.
+Now here is the thread worth pulling next. Once your free tool starts pulling traffic, the question shifts from *how do I get visitors* to *how do I [turn a casual designer into a paying customer](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy) without scaring them off*. That is the art of the soft, well-timed upgrade prompt, and the difference between a tool that leaks users and one that compounds is almost entirely about timing. Worth a closer look.

@@ -51,6 +51,7 @@ order: 0
 icon: "\U0001F5A8️"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -80,7 +81,7 @@ This has a hard consequence for anyone who works with color: **there is no "true
 2. A **substrate** (the paper, screen, or material)
 3. An **observer** (a human eye and brain)
 
-Change any one of them and the perceived color can change. That single fact is the entire reason color management exists.
+Change any one of them and the perceived color can change. That single fact is the entire reason [color management](/blog/computer-graphics-print/03-color-management-icc-profiles-the-pipeline) exists.
 
 ## Light and the visible spectrum
 
@@ -152,7 +153,7 @@ Strip the brightness out and you can plot every color humans can see on a famous
 - The **curved outer edge** holds the purest, most vivid single-wavelength colors.
 - The **straight bottom edge** holds the purples, mixes of red and violet that no single wavelength can make.
 - The **center** is white. Saturation grows as you move outward.
-- A device's reachable colors, its **gamut**, plot as a triangle or polygon *inside* the horseshoe. At a glance you can see which real colors a given printer or screen simply cannot reproduce.
+- A device's reachable colors, its **[gamut](/blog/computer-graphics-print/05-gamut-out-of-gamut-handling-deep-dive)**, plot as a triangle or polygon *inside* the horseshoe. At a glance you can see which real colors a given printer or screen simply cannot reproduce.
 
 You do not need to do the math to benefit from the idea: there is a fixed, shared map of human color, and every device covers only part of it.
 
@@ -206,8 +207,8 @@ You do not need a lab to apply these ideas. Start here:
 
 ## Conclusion
 
-The one idea to carry with you: **color is not out there in the world; it is assembled in here, by you.** Light brings raw wavelengths, your three cones boil them down to a trio of signals, and your brain composes the rest. Every viewing booth, color profile, and spectrophotometer exists to keep that *invented experience* steady across machines that work in wildly different ways.
+The one idea to carry with you: **color is not out there in the world; it is assembled in here, by you.** Light brings raw wavelengths, your three cones boil them down to a trio of signals, and your brain composes the rest. Every viewing booth, color profile, and [spectrophotometer](/blog/computer-graphics-print/17-the-rip-press-operation-color-measurement) exists to keep that *invented experience* steady across machines that work in wildly different ways.
 
 So the next time a color "looks wrong," resist blaming the printer first. Ask instead: what changed, the light, the surface, or the eyes?
 
-And here is the thread to pull next. If a screen can fool you with just three glowing primaries while a printer must build color from inks that *absorb* light, those two devices are playing almost opposite games. Understanding why **additive RGB** and **subtractive CMYK** behave so differently is where color work goes from theory to the daily reality of getting a print to match a screen.
+And here is the thread to pull next. If a screen can fool you with just three glowing primaries while a printer must build color from inks that *absorb* light, those two devices are playing almost opposite games. Understanding why **[additive RGB](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color)** and **subtractive CMYK** behave so differently is where color work goes from theory to the daily reality of getting a print to match a screen.

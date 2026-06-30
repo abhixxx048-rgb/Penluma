@@ -26,6 +26,7 @@ faq:
     a: In a quick chat with a friend, sure. In commit messages, PRs, and team channels, spell out "you", "your", and "please" - full words read as careful and professional.
   - q: When do I double the last letter before adding -ing or -ed?
     a: "Double it when a short word is stressed on its last syllable: run becomes running, commit becomes committed. Do not double when the stress is elsewhere: open becomes opening, offer becomes offered."
+linked: true
 topic: english
 topicTitle: English for Developers
 category: Communication
@@ -108,7 +109,7 @@ Spell-check won't catch these, because each one is a real word. You have to know
 
 ## The texting habits that leak into work
 
-Your phone trained you to type "u", "ur", "plz", and "thx". Those shortcuts are fast and friendly. They also quietly make professional writing look careless.
+Your phone trained you to type "u", "ur", "plz", and "thx". Those shortcuts are fast and friendly. They also quietly make [professional writing](/blog/english/10-professional-dev-writing) look careless.
 
 | What slips out | What to write |
 |---|---|
@@ -155,4 +156,4 @@ Fix the issue in each. Answers below.
 
 The single takeaway: your spelling slips are habits, not flaws, and habits respond to a pinned list plus a two-second re-read. Fix the same nine words and turn on spell-check, and most of the problem disappears this week.
 
-And once the spelling is clean, the next thing reviewers notice is the *shape* of your sentences - whether a commit message and a PR description actually read clearly. That's where punctuation and tense start doing real work, and it's worth a closer look next.
+And once the spelling is clean, the next thing reviewers notice is the *shape* of [your sentences](/blog/english/08-sentence-structure-run-ons) - whether a commit message and a PR description actually read clearly. That's where [punctuation](/blog/english/07-punctuation-and-capitalization) and [tense](/blog/english/04-verb-tenses) start doing real work, and it's worth a closer look next.

@@ -3,6 +3,7 @@ title: How to Read a P&L Statement Line by Line (Plain English)
 metaTitle: How to Read a P&L Statement Line by Line
 description: Learn how to read a P&L (income statement) line by line in plain English, from revenue down to net income, with a worked example and the margins that matter.
 topic: business-financial-literacy
+linked: true
 topicTitle: Business & Financial Literacy
 category: Money & Business
 date: '2026-06-21'
@@ -78,13 +79,13 @@ Now let's walk down it, one line at a time.
 
 Here's the subtle part that trips up almost everyone: revenue is money you *earned*, not cash you *collected*. If you delivered a product in June, it counts as June revenue even if the customer pays you in July.
 
-That timing gap between earning and collecting is exactly why a separate cash-flow statement exists. On the P&L, we only count what was earned.
+That timing gap between earning and collecting is exactly why a separate [cash-flow statement](/blog/business-financial-literacy/03-the-three-financial-statements-the-whole-picture) exists. On the P&L, we only count what was earned.
 
 > **Common mistake: treating money in the bank as revenue.** Remember our opener? A customer pre-pays $12,000 for a year of service. You only *earned* $1,000 of revenue this month. The other $11,000 is owed-but-not-yet-earned. Counting it all at once makes your P&L look far healthier than reality, and sets you up for a nasty surprise later.
 
 ## Line 2: COGS, the cost of delivering the thing
 
-**COGS** stands for Cost of Goods Sold. It's the *direct* cost of making or delivering what you sold. The key word is **direct**: only costs that rise when you sell one more unit, and that are needed to actually produce or deliver the product, belong here.
+**COGS** stands for Cost of Goods Sold. It's the *direct* cost of making or delivering what you sold. The key word is **direct**: only costs that rise [when you sell one more unit](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale), and that are needed to actually produce or deliver the product, belong here.
 
 What counts as direct depends on your business:
 
@@ -230,7 +231,7 @@ Pictured as a waterfall, money pours in at the top and a little drips out at eve
 
 **"Cash in the bank is my profit."** Cash and profit are different things. You can be profitable on paper while broke in the bank (customers haven't paid yet), or flush with cash while losing money (you collected pre-payments you haven't earned).
 
-**"A 30% margin is great."** Maybe, maybe not. A 30% EBITDA margin is excellent for software but unheard of for a grocery store, which runs perfectly healthy at 5 to 7 percent. A number means nothing without its industry context.
+**"A 30% margin is great."** Maybe, maybe not. A 30% EBITDA margin is excellent for software but unheard of for [a grocery store, which runs perfectly healthy at 5 to 7 percent](/blog/economics-from-first-principles/17-business-economics-costs-profit-competition-and-pricing). A number means nothing without its industry context.
 
 ## How to use this
 
@@ -253,4 +254,4 @@ It's a rough rule, not gospel, but it captures a real truth: you can win with fa
 
 If you remember one thing, make it this: **a P&L is a one-way subtraction problem, from all your sales at the top to the profit you keep at the bottom, and the order never changes.** Master that order and no financial statement can intimidate you again.
 
-But the P&L has a famous blind spot. It tells you whether you *earned* a profit, not whether you have *cash* to pay rent on Friday. A wildly profitable company can still run out of money, and a money-losing one can sit on a fat bank balance. Untangling that paradox is the job of the cash-flow statement, and it's the natural next step once you've got the P&L in hand.
+But the P&L has a famous blind spot. It tells you whether you *earned* a profit, not whether you have *cash* to pay rent on Friday. A wildly profitable company can still run out of money, and a money-losing one can sit on a fat bank balance. Untangling that paradox is the job of the [cash-flow statement](/blog/business-financial-literacy/05-the-balance-sheet-cash-flow-statement-why-profit-cash), and it's the natural next step once you've got the P&L in hand.

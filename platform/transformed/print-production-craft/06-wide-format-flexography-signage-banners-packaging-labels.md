@@ -58,6 +58,7 @@ order: 5
 icon: "\U0001F4D0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -98,7 +99,7 @@ The single biggest decision in wide-format is **which ink**, because the ink dec
 
 **Eco-solvent** carries pigment in a mild, low-odor solvent, a liquid that slightly "bites" into the surface. That bite keys the ink into uncoated vinyl and makes it waterproof and scratch-resistant with no primer. It is the workhorse of the sign trade: cheaper machines and ink, around 3 years outdoors unlaminated and 5-plus laminated. The catch is **dwell time**, the drying and off-gassing wait before you can laminate, which slows finishing.
 
-**Latex** is roughly 60 to 70 percent water plus tiny plastic particles and pigment. Onboard heaters drive off the water and melt the latex into a film, so prints come out **fully dry and odorless**, ready to finish immediately. It is the greenest common option, often certified safe for hospitals and schools with no special ventilation, and it prints on everything from plain paper to wallpaper to textiles. Downsides: the heat can wrinkle thin heat-sensitive films, and the hardware costs more.
+**Latex** is roughly 60 to 70 percent water plus tiny plastic particles and pigment. Onboard heaters drive off the water and melt the latex into a film, so prints come out **fully dry and odorless**, ready to finish immediately. It is the [greenest common option](/blog/print-production-craft/13-sustainability-eco-printing), often certified safe for hospitals and schools with no special ventilation, and it prints on everything from plain paper to wallpaper to textiles. Downsides: the heat can wrinkle thin heat-sensitive films, and the hardware costs more.
 
 **UV-cure** is a liquid ink hardened into solid plastic the instant UV lamps hit it. Because it sits **on top** of the surface instead of soaking in, it prints on almost anything: glass, metal, wood, acrylic, foamboard, even leather, rigid or flexible, often with no primer. It dries instantly and can lay down white ink, gloss varnish, and raised textures. The catch: cured UV ink is rigid, so on a deep stretched curve, like a vehicle-wrap recess, it can **crack**. Modern UV-LED lamps removed most of the old heat and ozone trouble.
 
@@ -204,7 +205,7 @@ Cardboard is a special case, because its rough, fluted surface limits how fine t
 | **Preprint flexo** | Print the liner roll before gluing to fluting | Better quality, very high volume |
 | **Litho-lamination** | Offset-print a paper label, laminate onto corrugated | Highest (photographic), but high minimums |
 
-So a plain kraft shipping box gets a one or two color post-print logo. A glossy retail display box on the store shelf is litho-laminated for photo quality. Seasonal or on-demand boxes go digital.
+So a plain kraft shipping box gets a one or two color post-print logo. A glossy retail display box on the store shelf is [litho-laminated](/blog/print-production-craft/03-offset-lithography-the-workhorse-of-commercial-print) for photo quality. Seasonal or on-demand boxes go digital.
 
 ### The run-length economics
 
@@ -220,7 +221,7 @@ This is the decision a quote engine must get right. Flexo has high setup cost bu
 
 The practical break-even is roughly **2,000 to 5,000 labels per design**, shifting with color count, plate cost, and changeover time.
 
-For example, a snack-bag **shrink sleeve** runs on an 8-station UV flexo press on BOPP film, with CMYK plus two spot colors plus a white backer plus matte varnish, reverse-printed and laminated, for hundreds of thousands of units at a tiny cost each. A craft startup ordering 800 labels across six flavors should go digital instead.
+For example, a snack-bag **shrink sleeve** runs on an 8-station UV flexo press on BOPP film, with CMYK plus two spot colors plus a white backer plus matte varnish, reverse-printed and laminated, for hundreds of thousands of units at a tiny cost each. A craft startup ordering 800 labels across six flavors should [go digital](/blog/print-production-craft/04-digital-printing-toner-inkjet-variable-data) instead.
 
 ## Common misconceptions
 
@@ -230,7 +231,7 @@ For example, a snack-bag **shrink sleeve** runs on an 8-station UV flexo press o
 
 **"Flexo is just old-fashioned printing."** It is the most cost-effective high-volume packaging process on earth. Below a few thousand units it loses to digital, but above that, nothing touches its per-unit cost.
 
-**"Digital can do everything flexo does, cheaper."** Only on short runs. Once you cross the break-even quantity, flexo's amortized plate cost makes it dramatically cheaper per unit, and far faster.
+**"Digital can do everything flexo does, cheaper."** Only on short runs. Once you cross the [break-even quantity](/blog/business-financial-literacy/10-break-even-margins-profitability), flexo's amortized plate cost makes it dramatically cheaper per unit, and far faster.
 
 **"Bigger prints just need bigger files."** A far-viewed billboard tolerates much lower resolution than a close-up checkout display. Resolution is about viewing distance, not raw size.
 
@@ -244,7 +245,7 @@ If you are speccing, quoting, or building software for these jobs, work through 
 4. **Treat ink, substrate, and laminate as one rated system.** Never pair a premium print with a budget laminate.
 5. **For labels and packaging, run the break-even math.** Below roughly 2,000 to 5,000 units per design, or for any variable data, quote digital. Above it, quote flexo.
 6. **Price by the right shape.** Wide-format is area-based: price per square foot times material times ink mode times finishing. Flexo is setup plus run length: a plate charge per color, a per-thousand price, and a minimum order.
-7. **Preflight in plain words.** Tell customers "add 0.25 inch of bleed," not "trim box mismatch." Auto-check resolution, color space, fonts, bleed, and spot-color count.
+7. **Preflight in plain words.** Tell customers "[add 0.25 inch of bleed](/blog/print-production-craft/07-color-files-prepress-cmyk-pantone-bleed-proofs-preflight)," not "trim box mismatch." Auto-check resolution, color space, fonts, bleed, and spot-color count.
 8. **Bake the recommendation into the tool.** Let the software steer the customer to digital below break-even and flexo above it, so the store owner never needs to know any of this craft.
 
 ## Conclusion

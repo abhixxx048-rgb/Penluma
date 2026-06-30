@@ -36,6 +36,7 @@ order: 7
 icon: "\U0001F4DD"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -45,7 +46,7 @@ The difference is a handful of tiny marks: a capital letter at the start, a full
 
 ## Why this matters
 
-You type the way you text. Lowercase `i`, no full stops, one long line where four sentences run together. In your terminal that's fine. In a pull request, a standup, or a message to a teammate, it quietly costs you.
+You type the way you text. Lowercase `i`, no full stops, one long line where four sentences run together. In your terminal that's fine. In a [pull request](/blog/english/10-professional-dev-writing), a standup, or a message to a teammate, it quietly costs you.
 
 Here's the thing: people judge your thinking by the clarity of your writing. When a reader has to slow down and figure out where one idea ends and the next begins, you look rushed even when your work is excellent. Clean punctuation does the opposite. It signals that you slowed down enough to be understood, which is exactly what makes writing read as senior.
 
@@ -105,7 +106,7 @@ The trickiest one is the third. Here's a foolproof test: **if both sides could s
 
 Try it. *"It built"* - could that be its own sentence? Yes. *"the tests failed"* - its own sentence? Yes. So you get a comma: *"It built, but the tests failed."* This test never fails you.
 
-A run-on like *"i deployed to prod but it failed i rolled back"* becomes clean and readable as *"I deployed to prod, but it failed, so I rolled back."* Same words, suddenly professional.
+A [run-on](/blog/english/08-sentence-structure-run-ons) like *"i deployed to prod but it failed i rolled back"* becomes clean and readable as *"I deployed to prod, but it failed, so I rolled back."* Same words, suddenly professional.
 
 ## Colon vs semicolon: less scary than it looks
 
@@ -123,7 +124,7 @@ This one is specific to writing as a developer, and it's a quiet superpower.
 - **Wrap code in backticks** - commands, file names, branches, values. Write *"the `main` branch"* and *"set `status` to `paid`."* Without backticks, `prod` looks like a typo for "product" and `main` reads as the English word.
 - **Use "quotes" for spoken phrases or UI labels.** *Click "Save changes".*
 
-The example *"to open pull request run gh pr create"* has two problems: a missing article and code that blends into prose. Fixed: *"To open a pull request, run `gh pr create`."* Now the command is unmistakably a command.
+The example *"to open pull request run gh pr create"* has two problems: a [missing article](/blog/english/01-articles-a-an-the) and code that blends into prose. Fixed: *"To open a pull request, run `gh pr create`."* Now the command is unmistakably a command.
 
 ## Common misconceptions
 
@@ -176,7 +177,7 @@ Try these before peeking. Fix each one:
 1. *I pushed the branch. Can you check it?* - Capital `I`, two sentences, `u` becomes `you`, and the second part is a question.
 2. *We use PostgreSQL in dev and SQLite in test.* - Product names get their real capitals; add the full stop.
 3. *The deploy failed. I checked the logs - it was a config issue.* - Three thoughts, so don't chain them.
-4. *I think we have so many bugs in this release.* - `bug` is countable, so `many bugs`, not `much bug`.
+4. *I think we have so many bugs in this release.* - `bug` is [countable](/blog/english/02-countable-uncountable-much-many), so `many bugs`, not `much bug`.
 5. *Can you open a pull request for this?* - Add the article `a`, end with a `?`.
 
 ## Conclusion

@@ -54,13 +54,14 @@ faq:
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 Imagine hiring a private tutor who forgets everything the moment the lesson ends. Next week they show up with no idea what your child already understands, what they keep getting wrong, or what they're ready to learn next.
 
 No matter how clever that tutor is in the moment, they can never truly *guide* anyone. They can only answer the question in front of them.
 
-That forgetful tutor is exactly what a plain chatbot is. The thing that turns a smart question-answering machine into a real tutor is a single, quiet piece of memory called a **learner model**.
+That forgetful tutor is exactly what [a plain chatbot](/blog/ai-learning-platform/17-the-lesson-scoped-tutor-chatbot) is. The thing that turns a smart question-answering machine into a real tutor is a single, quiet piece of memory called a **learner model**.
 
 ## Why this matters
 
@@ -150,7 +151,7 @@ But careful designers separate two things a single number blurs: *how much* the 
 
 Same number, opposite response.
 
-Once mastery is tracked, the tutor's "what next" decision becomes principled. Lay the subject out as a **prerequisite map** (you must understand adding fractions before solving fraction equations). The set of skills whose prerequisites are all satisfied, but which aren't mastered yet, is the learner's "ready to learn" zone. The system picks from that zone, sized to be a reachable stretch, neither boringly easy nor impossibly hard.
+Once mastery is tracked, the tutor's "what next" decision becomes principled. Lay the subject out as a **prerequisite map** (you must understand adding fractions before solving fraction equations). The set of skills whose prerequisites are all satisfied, but which aren't mastered yet, is the learner's "ready to learn" zone. The system picks from that zone, sized to be [a reachable stretch, neither boringly easy nor impossibly hard](/blog/ai-learning-platform/11-zone-of-proximal-development-scaffolding-worked-examples).
 
 ## Common misconceptions
 
@@ -168,12 +169,12 @@ If you're building, choosing, or evaluating a learning tool, here's what actuall
 2. **Pick your method by your constraints.** Limited data and a need to explain decisions? Start with **BKT** or **PFA**. Mountains of interaction data and accuracy is king? Consider **DKT**, but plan for the explainability gap.
 3. **Set the mastery threshold deliberately.** Treat the ~95% convention as a starting point you tune, not a law. Watch what happens to learners just above and just below it.
 4. **Separate "unsure" from "half-known."** When mastery looks low, ask why. Low because you've barely tested them means gather more data. Low because they reliably half-know it means teach more.
-5. **Trace failures to their roots.** When a learner keeps failing equations, don't drill more equations. Follow the prerequisite map down. The real gap is often a weaker skill underneath, like fractions, and fixing the root cause clears the symptom.
+5. **Trace failures to their roots.** When a learner keeps failing equations, don't drill more equations. Follow the [prerequisite map](/blog/ai-learning-platform/19-knowledge-graphs-and-curriculum-generation) down. The real gap is often [a weaker skill underneath](/blog/ai-learning-platform/22-finding-and-repairing-weak-areas), like fractions, and fixing the root cause clears the symptom.
 
 ## Conclusion
 
 The one thing to remember: a learner model is the memory that turns a clever machine into a real teacher. Everything personalized, the next problem, the right hint, the perfectly timed review, flows out of it. Without it, "personalized learning" is just a slogan.
 
-And here's the quiet kicker for anyone building in this space. The underlying language models are becoming a commodity, available to everyone. But a returning learner's history, everything they've mastered, forgotten, and stumbled over across months, **cannot be reproduced by a rival starting from scratch**. The longer someone uses your tutor, the more it knows them, and the harder it is to leave.
+And here's the quiet kicker for anyone building in this space. The underlying language models are becoming a commodity, available to everyone. But a returning learner's history, everything they've mastered, forgotten, and stumbled over across months, **cannot be reproduced by a rival starting from scratch**. The longer someone uses your tutor, the more it knows them, and [the harder it is to leave](/blog/ai-learning-platform/28-business-model-and-the-moat).
 
 Which raises the next question worth chasing: if the model knows so much about a learner, who gets to see it, and what happens when that intimate record of a child's struggles becomes the product itself?

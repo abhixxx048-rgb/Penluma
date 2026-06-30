@@ -36,6 +36,7 @@ faq:
     a: A door that needs a "PUSH" or "PULL" sign because its handle gives the wrong cue. The sign is proof the design failed. Good design makes the right action obvious without a label.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things
 ---
@@ -70,7 +71,7 @@ Product sense is built from two skills that only work when they work together.
 
 ### 1. Empathy (the discovery half)
 
-This is understanding people's real needs, their situation, their constraints, and, crucially, their **feelings**.
+This is [understanding people's real needs](/blog/product-sense-empathy/03-user-empathy-seeing-through-the-user-s-eyes), their situation, their constraints, and, crucially, their **feelings**.
 
 What is the user actually trying to get done? Are they in a rush or relaxed? Anxious, bored, frustrated, or delighted? Empathy is how you discover the *true* problem, which is often hidden behind what people say they want.
 
@@ -120,7 +121,7 @@ Marty Cagan of Silicon Valley Product Group argues that strong product sense is 
 
 **Myth: More features means a better product.**
 
-Two well-known design principles say otherwise. **Hick's Law** holds that decision time grows with the number of choices, so subtracting options is itself a product-sense move. **Jakob's Law** notes that users spend most of their time on *other* apps and sites, so they expect yours to behave the same way. Familiarity makes hard things feel easy, so do not reinvent conventions without a reason.
+Two well-known design principles say otherwise. **Hick's Law** holds that decision time grows with the number of choices, so [subtracting options is itself a product-sense move](/blog/product-sense-empathy/07-cognitive-load-why-simple-feels-effortless). **Jakob's Law** notes that users spend most of their time on *other* apps and sites, so they expect yours to behave the same way. Familiarity makes hard things feel easy, so do not reinvent conventions without a reason.
 
 **Myth: Good design is the decoration you add at the end.**
 
@@ -132,7 +133,7 @@ Here is the visible *result* of product sense and empathy working together: some
 
 Don Norman, in *The Design of Everyday Things*, gives us the vocabulary. An **affordance** is an action an object makes possible, like a door that can be pushed or pulled. A **signifier** is a visible cue telling you *which* action to take, like a flat plate that says push or a rounded handle that says pull. When signifiers are good, you act correctly without thinking.
 
-The villain of his book is the **"Norman door"**: a door with a pull-handle on a side you must push, so someone tapes a "PUSH" sign on it. That label is the tell-tale sign of *failed* design. Good design removes the need for the label by making the right action obvious.
+The villain of his book is the **"Norman door"**: a door with a pull-handle on a side you must push, so someone tapes a "PUSH" sign on it. That label is the tell-tale sign of *failed* design. Good design removes the need for the label by [making the right action obvious](/blog/product-sense-empathy/05-the-psychology-of-obvious-affordances-signifiers-mental-models).
 
 > **A real example:** In a print shop tool used by non-technical owners, a checkout that needs a tooltip explaining each field is a Norman door. The fix is not a better tooltip. It is a layout, order, and wording so plain that the next step is obvious without one.
 
@@ -140,7 +141,7 @@ The villain of his book is the **"Norman door"**: a door with a pull-handle on a
 
 The deepest empathy idea here comes from Harvard's Clayton Christensen, who popularized **Jobs to Be Done**. The thesis: people don't simply buy products, they "hire" them to do a *job* in their life. What you should study is the progress the customer is trying to make, not their age or demographics.
 
-The famous milkshake story shows why this matters so much.
+The [famous milkshake story](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress) shows why this matters so much.
 
 A fast-food chain wanted to sell more milkshakes. It surveyed customers, "improved" the shake to match the feedback, and sales did not move. Then a researcher stood in a restaurant for about 18 hours, logging every shake sold: the time, dine-in or to-go, what else was bought, alone or with company.
 
@@ -154,7 +155,7 @@ The shake's real competitors were bananas, bagels, donuts, and *boredom*, not ot
 
 ## How to grow your product sense on purpose
 
-Product sense comes from a simple loop: **exposure** (deeply using products and watching real users) feeding **feedback** (critiques, shipping, and seeing real outcomes). Repeat, and your instinct sharpens. Here is how to run that loop deliberately.
+Product sense comes from a simple loop: **exposure** (deeply using products and [watching real users](/blog/product-sense-empathy/14-sharpening-product-sense-deliberately-a-practice-system)) feeding **feedback** (critiques, shipping, and seeing real outcomes). Repeat, and your instinct sharpens. Here is how to run that loop deliberately.
 
 1. **Watch real users a few times a month.** Sit beside someone using your product. Note the exact moment they hesitate, frown, or smile. Say nothing. Just observe.
 2. **Deconstruct products you love and hate.** Use them slowly and mark the precise instant of friction or delight. Ask why it happened.

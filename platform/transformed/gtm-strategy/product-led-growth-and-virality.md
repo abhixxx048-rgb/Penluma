@@ -38,6 +38,7 @@ order: 999
 icon: "\U0001F3AF"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -56,7 +57,7 @@ Get someone there quickly and they stick, they upgrade, and some of them pull fr
 So the payoff is concrete:
 
 - **Lower cost to acquire customers**, because the product and existing users do part of the selling.
-- **Higher conversion**, because people buy after feeling the value, not before.
+- **Higher conversion**, because [people buy after feeling the value](/blog/psychology-of-decisions/12-understanding-customers), not before.
 - **Compounding growth**, because each new customer can seed the next one.
 
 The catch is that every piece of this has a wrong way to do it that looks reasonable on a whiteboard. Let us walk through the right way.
@@ -102,7 +103,7 @@ Most products engineer stage one beautifully and forget the other two. The fix i
 
 ### Cut friction before you add motivation
 
-There is a useful behavior model that says any action requires three things at once: **motivation, ability, and a prompt.** When someone is highly motivated but struggling with the steps, the answer is almost never a more persuasive popup. It is **removing steps.**
+There is a useful behavior model that says any action requires three things at once: **motivation, ability, and a prompt.** When someone is highly motivated but struggling with the steps, the answer is almost never a more persuasive popup. It is **[removing steps](/blog/product-sense-empathy/09-reducing-friction).**
 
 Picture a small print-shop owner who desperately wants an online store but is not technical. She has all the motivation in the world. What stops her is fiddly configuration. So the winning move is to pre-load sensible defaults, a sample catalog, a working offline payment option, so the store can take an order on day one with zero setup, and then simply *tell her that*: "You can already take orders."
 
@@ -148,7 +149,7 @@ If you run any surface that your users' own audiences see, a storefront, an invo
 
 Let us be unromantic about it, because overselling virality is how growth plans lose credibility. Suppose each active customer's badge earns about 500 views a month. Say 1% click through to your site (5 people), and of those, maybe 1 to 2% are realistic prospects who eventually sign up. That is roughly 0.05 to 0.1 signups per customer per month. Stretched over a six-month decision window, you get something like **0.15 to 0.4 referred signups per customer**.
 
-That is **k well below 1**. It is *sub-viral amplification*, not a self-sustaining engine. And that is fine. It quietly lowers your blended cost of acquisition and compounds your other channels. Just do not pitch it as a perpetual motion machine, because it is not.
+That is **k well below 1**. It is *sub-viral amplification*, not a self-sustaining engine. And that is fine. It quietly lowers your [blended cost of acquisition](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale) and compounds your other channels. Just do not pitch it as a perpetual motion machine, because it is not.
 
 ## Common misconceptions
 
@@ -194,7 +195,7 @@ Replace hard blocks with a **value-then-fence** pattern:
 2. **Offer a clear path** (an Upgrade button right there at the point of friction).
 3. **Soft-warn before the wall**, not at it. As someone approaches a limit, gently let them know.
 
-The same applies to trials. A quiet, non-nagging strip that says *"5 days left on your trial. Here is what you keep and what you lose"* respects the user and frames the decision honestly. Loss framing, what they would *lose*, tends to land harder than a list of features they would *gain*.
+The same applies to trials. A quiet, non-nagging strip that says *"5 days left on your trial. Here is what you keep and what you lose"* respects the user and frames the decision honestly. [Loss framing](/blog/psychology-of-decisions/08-prospect-theory-behavioral-economics-how-we-weigh-gains-losses-risk), what they would *lose*, tends to land harder than a list of features they would *gain*.
 
 ## How to use this
 
@@ -208,7 +209,7 @@ If you take nothing else away, here is a concrete order of operations. Notice th
 6. **Prefer a reverse trial over open freemium** for low-priced, self-serve products. If you need a free fallback, make it a dormant tier, not a free live product.
 7. **Replace hard blocks with value-then-fence paywalls** shown at the exact point of friction.
 8. **Run a 30-minute weekly growth meeting** off a simple backlog. Score ideas by Impact, Confidence, and Ease (the ICE method), and favor cheap "fake door" tests over slow A/B tests when traffic is low.
-9. **Time your upgrade ask to the aha moment.** Asking for a card right after the user feels real value converts far better than asking on an arbitrary calendar day, because willingness to pay peaks exactly then.
+9. **Time your upgrade ask to the aha moment.** Asking for a card right after the user feels real value converts far better than asking on an arbitrary calendar day, because [willingness to pay](/blog/how-to-make-money/14-pricing-value-capture) peaks exactly then.
 
 A note on that last point: only trigger an upsell on a value moment you can actually deliver and actually charge for. Promising magic at a moment your product cannot yet fulfill just trains people to distrust you.
 

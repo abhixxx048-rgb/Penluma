@@ -32,6 +32,7 @@ faq:
     a: "Runway is how long your money lasts: cash in the bank divided by your monthly burn. It comes from the cash-flow statement, not the P&L, and it tells you how many months you can survive at the current pace."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: personal-money-mastery
 topicTitle: Personal Money Mastery
 category: Money & Business
@@ -202,7 +203,7 @@ Now we follow the actual cash:
 
 The company earned 11.25 lakh in profit and its bank balance still *fell* by 5.75 lakh.
 
-Read that again. Profitable on the P&L, bleeding cash in reality. The fix is not "sell more." It is collect faster, hold less stock, or raise more capital. Profit alone does not pay salaries.
+Read that again. Profitable on the P&L, bleeding cash in reality. The fix is not "sell more." It is collect faster, hold less stock, or [raise more capital](/blog/personal-money-mastery/17-fundraising-dilution). Profit alone does not pay salaries.
 
 ## The cash conversion cycle: where cash gets trapped
 
@@ -219,7 +220,7 @@ The **Cash Conversion Cycle** turns that into days:
 
 In plain terms, it counts how many days your cash is stuck inside the business between paying for something and getting paid back. Lower is better. Negative is excellent, because it means customers pay you before you have to pay your suppliers, so growth actually *funds* itself.
 
-The danger combination is fast growth plus a long cycle. Every new sale ties up more cash than it brings in, so the faster you grow, the faster you run dry. That is the classic startup killer wearing a profit mask.
+The danger combination is fast growth plus a long cycle. Every new sale ties up more cash than it brings in, so [the faster you grow, the faster you run dry](/blog/personal-money-mastery/14-unit-economics). That is the classic startup killer wearing a profit mask.
 
 ## Common misconceptions
 
@@ -236,10 +237,10 @@ The danger combination is fast growth plus a long cycle. Every new sale ties up 
 You do not need to produce these statements by hand. You need to read them in the right order and watch the right number.
 
 1. **Read all three, never one alone.** The P&L tells you if the model works. The balance sheet tells you how strong you are. The cash-flow statement tells you if you survive next month.
-2. **Track one number every week: your runway.** Runway is cash in the bank divided by your monthly burn. It comes from the cash-flow statement, not the P&L. A founder who watches runway sleeps better than one who only celebrates profit.
+2. **Track one number every week: your runway.** Runway is cash in the bank divided by your monthly burn. It comes from the cash-flow statement, not the P&L. A founder who watches [runway](/blog/personal-money-mastery/16-burn-runway) sleeps better than one who only celebrates profit.
 3. **Shorten your cash conversion cycle.** Collect from customers faster, hold less inventory, and negotiate longer terms with suppliers. Every day you cut frees up cash you already earned.
 4. **Separate GST and tax from your real money.** Park what you owe the government so you are never tempted to spend a liability you mistook for income.
-5. **Never fund a cash gap with a credit card.** Indian card rates run roughly 30 to 49% a year, and cash withdrawals accrue interest from day one. A profit-versus-cash problem solved with 45% money is no longer a profitable business.
+5. **Never fund a cash gap with a credit card.** [Indian card rates run roughly 30 to 49% a year](/blog/personal-money-mastery/02-emergency-fund-debt-the-true-cost-of-emis), and cash withdrawals accrue interest from day one. A profit-versus-cash problem solved with 45% money is no longer a profitable business.
 6. **Match the statement to the question.** Investor asks how profitable you are, open the P&L. Bank asks if you can repay, open the balance sheet and cash flow. Founder asks if payroll clears, open the cash-flow statement.
 
 ## A quick word on the India numbers
@@ -248,7 +249,7 @@ If you run an Indian company, a few figures are worth keeping handy for FY 2025-
 
 A domestic company with turnover up to 400 crore pays **25%** corporate tax; above that, 30%. Two optional concessional regimes exist: **22% under section 115BAA** for any company, and **15% under section 115BAB** for new manufacturers, both with a surcharge and cess on top.
 
-If you draw a salary, the new personal tax regime (now the default) gives a rebate so that income up to 12 lakh effectively pays zero tax, plus a 75,000 standard deduction for salaried people. The old regime still allows the familiar 80C deduction and the extra NPS deduction, but those do not exist in the new regime.
+If you draw a salary, [the new personal tax regime](/blog/personal-money-mastery/03-tax-literacy-india-first) (now the default) gives a rebate so that income up to 12 lakh effectively pays zero tax, plus a 75,000 standard deduction for salaried people. The old regime still allows the familiar 80C deduction and the extra NPS deduction, but those do not exist in the new regime.
 
 One subtle gotcha you may hear from your auditor: **deferred tax**. The Companies Act charges depreciation by an asset's useful life, while the Income Tax Act uses fixed block rates. Because the two differ, the tax you *show* and the tax you *pay* diverge, and the gap parks on the balance sheet as a deferred tax asset or liability. You do not compute it yourself, but now you know why it exists.
 

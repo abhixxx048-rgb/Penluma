@@ -38,6 +38,7 @@ faq:
     a: Yes, that was its explicit design goal. Raft splits consensus into leader election, log replication, and safety, making each piece easier to reason about than the monolithic Paxos algorithm.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Raft_(algorithm)
 ---
@@ -50,17 +51,17 @@ That self-organizing trick is the heart of **Raft**, the consensus algorithm tha
 
 If you run anything across more than one machine - a database replica set, a key-value store, a service registry - you eventually hit the same brutal question: **when machines crash and networks misbehave, how do the survivors agree on what's true?**
 
-Agreement is hard because there's no shared clock and no trustworthy referee. Messages arrive late, get dropped, or show up out of order. A server that looks dead might just be slow.
+Agreement is hard because there's [no shared clock](/blog/distributed-systems/14-time-clocks-the-ordering-of-events) and no trustworthy referee. Messages arrive late, get dropped, or show up out of order. A server that looks dead might just be slow.
 
 Raft's answer is to elect a single **leader** that owns all the decisions, and to make electing (and re-electing) that leader fast and unambiguous. Understand leader election and you understand the foundation that keeps modern distributed systems consistent. Get it wrong, and you get the nightmare scenario: two leaders, each confidently rewriting history in different directions.
 
 ## The problem Raft is solving
 
-Raft keeps a **replicated log** in agreement across a cluster of servers. A replicated log is just an ordered list of commands - "set x = 3", then "set y = 9" - that every server must store in the same order so they all end up in the same state.
+Raft keeps a [**replicated log**](/blog/distributed-systems/03-replicated-state-machines-the-log) in agreement across a cluster of servers. A replicated log is just an ordered list of commands - "set x = 3", then "set y = 9" - that every server must store in the same order so they all end up in the same state.
 
-The hard part is agreeing on that order when machines crash, restart, and the network drops or delays messages. That agreement problem is called **consensus**.
+The hard part is agreeing on that order when machines crash, restart, and the network drops or delays messages. That agreement problem is called [**consensus**](/blog/distributed-systems/02-the-consensus-problem).
 
-Raft was created by Diego Ongaro and John Ousterhout at Stanford in 2014 with one unusual goal: **understandability**. The older standard, Paxos, is famously hard to reason about. So Raft deliberately breaks consensus into three smaller, mostly independent pieces:
+Raft was created by Diego Ongaro and John Ousterhout at Stanford in 2014 with one unusual goal: **understandability**. The older standard, [Paxos](/blog/distributed-systems/06-paxos-the-original-consensus-algorithm), is famously hard to reason about. So Raft deliberately breaks consensus into three smaller, mostly independent pieces:
 
 1. **Leader election** - pick exactly one server to be in charge. (This article.)
 2. **Log replication** - the leader copies its log to everyone.
@@ -209,4 +210,4 @@ If you're implementing Raft or configuring a system that runs it, here are the c
 
 The single idea worth carrying away: **Raft elects a leader not with a central authority, but with two interlocking rules - one vote per server per term, and a majority to win.** Quorum overlap turns those humble rules into an ironclad guarantee that two leaders can never coexist, while randomized timeouts keep elections fast and self-healing.
 
-But electing a leader is only the opening act. Once a leader is in charge, it has to copy its log to every follower, survive followers that fall behind or feed it conflicting history, and *never* erase a command the cluster already agreed on. How Raft pulls that off - the log replication and safety machinery that the up-to-date-log check quietly set up here - is where the real magic lives. That's the next thread to pull.
+But electing a leader is only the opening act. Once a leader is in charge, it has to copy its log to every follower, survive followers that fall behind or feed it conflicting history, and *never* erase a command the cluster already agreed on. How Raft pulls that off - the [log replication and safety machinery](/blog/distributed-systems/05-raft-log-replication-safety-membership) that the up-to-date-log check quietly set up here - is where the real magic lives. That's the next thread to pull.

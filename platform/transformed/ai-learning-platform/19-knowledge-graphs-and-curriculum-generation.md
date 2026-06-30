@@ -34,6 +34,7 @@ faq:
     a: Because the real cause of a wrong answer is often a missing foundation, not the topic being drilled. Following prerequisite arrows backward finds the actual gap to fix.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -88,7 +89,7 @@ Suppose a learner keeps getting fraction *equations* wrong. A naive tutor drills
 
 You fix the foundation, and the upper floor stops collapsing.
 
-This is also how a good tutor stays in the **Zone of Proximal Development** - the sweet spot just beyond what you can already do alone. Hard enough to grow, reachable with a little help. The graph tells you which steps are even *reachable* (all their prerequisites are met). The learner model tells you which ones are still *needed*. ALEKS calls this reachable-and-needed set the **outer fringe**: the concepts you're ready to learn right now.
+This is also how a good tutor stays in the [**Zone of Proximal Development**](/blog/ai-learning-platform/11-zone-of-proximal-development-scaffolding-worked-examples) - the sweet spot just beyond what you can already do alone. Hard enough to grow, reachable with a little help. The graph tells you which steps are even *reachable* (all their prerequisites are met). The learner model tells you which ones are still *needed*. ALEKS calls this reachable-and-needed set the **outer fringe**: the concepts you're ready to learn right now.
 
 ## Turning a goal into a personal path
 
@@ -111,7 +112,7 @@ If your path ever places a concept before something it depends on, every lesson 
 The topological sort guarantees a *valid* order. But there's usually more than one valid order, and that's where judgment comes in. Once the foundations are solid, you can:
 
 - **Interleave** related skills - mix problem types instead of drilling one to death, so the learner practices *choosing* the right approach.
-- **Space out reviews** of shaky earlier concepts so they don't quietly fade.
+- [**Space out reviews**](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve) of shaky earlier concepts so they don't quietly fade.
 
 The graph defines the legal orders. Good teaching picks the best one.
 
@@ -119,7 +120,7 @@ The graph defines the legal orders. Good teaching picks the best one.
 
 **"More concepts always means a better tutor."** Not quite. A 10,000-node map diagnoses finely but is brutal to author and verify. A graph nobody has checked is worse than a smaller one that's correct.
 
-**"The AI can just figure out the order itself."** Large language models are weak at the precise, structural reasoning a dependency graph demands. They'll happily place an advanced topic before its foundation.
+**"The AI can just figure out the order itself."** [Large language models are weak at the precise, structural reasoning](/blog/ai-learning-platform/23-where-llms-fit-and-where-they-fail) a dependency graph demands. They'll happily place an advanced topic before its foundation.
 
 **"A diagnostic quiz wastes the learner's time."** The opposite. Skipping the diagnostic is what wastes time, because you end up re-teaching things the learner already knows.
 
@@ -142,7 +143,7 @@ So the workflow is a partnership, not a handoff:
 | Generate path | Sequences a curriculum for the goal | Confirms order is sound and well-paced |
 | Write lessons | Drafts explanations, examples, quizzes | Checks facts, fixes quiz answers |
 
-One practical safeguard: don't let the model improvise from memory. Use **retrieval-augmented generation (RAG)** - feed it the actual source material (a textbook, a syllabus) and tell it to build the graph and lessons *only* from that text, with citations back to the page. That sharply cuts invented prerequisites and gives a human a fast way to spot-check each claim.
+One practical safeguard: don't let the model improvise from memory. Use [**retrieval-augmented generation (RAG)**](/blog/ai-learning-platform/24-turning-a-pdf-into-a-course-rag-for-learning) - feed it the actual source material (a textbook, a syllabus) and tell it to build the graph and lessons *only* from that text, with citations back to the page. That sharply cuts invented prerequisites and gives a human a fast way to spot-check each claim.
 
 ## How to use this
 
@@ -161,4 +162,4 @@ A knowledge graph turns the most important question in learning - *what next?* -
 
 The graph is the stable, reusable map of a whole subject. The curriculum is the personal, throwaway route across it for one learner with one goal. Let the AI draft both, fast. Let a human guard the foundations.
 
-Here's the thread worth pulling next: that "running estimate of what each learner knows" is doing quiet, heavy lifting in everything above. How does a tutor actually *measure* what's in your head from a handful of answers - and how does it stay honest when you guess right by luck? That's the learner model, and it's where this all gets personal.
+Here's the thread worth pulling next: that "running estimate of what each learner knows" is doing quiet, heavy lifting in everything above. How does a tutor actually *measure* what's in your head from a handful of answers - and how does it stay honest when you guess right by luck? That's the [learner model](/blog/ai-learning-platform/18-learner-models-teaching-the-machine-what-the-student-knows), and it's where this all gets personal.

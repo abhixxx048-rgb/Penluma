@@ -36,6 +36,7 @@ faq:
     a: "Mostly because of gang runs, where many different jobs share one big press sheet. They split the setup and material cost, so each customer pays a fraction of a full press run."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -61,7 +62,7 @@ You don't need to memorize all of this. Skim it once, then come back when a quot
 
 ## Getting your file ready (prepress)
 
-Everything before the press touches paper is called **prepress**. This is where most avoidable errors get caught.
+Everything before the press touches paper is called [**prepress**](/blog/print-production-craft/07-color-files-prepress-cmyk-pantone-bleed-proofs-preflight). This is where most avoidable errors get caught.
 
 **Bleed** is extra artwork pushed past the final trim line, usually 1/8 inch or 3mm. Cutting blades drift by a hair, so bleed guarantees color reaches the very edge with no white gaps. Think of it as painting slightly past the wall so the corner never shows bare.
 
@@ -96,8 +97,8 @@ And the shorthand that confuses everyone: **4/0** ("four over zero") means full 
 
 There's no single "printing." The method shapes your cost, quality, and minimum order.
 
-- **Offset lithography** - the workhorse of commercial print. Ink goes from a **plate**, to a rubber blanket, to the paper. Pricey to set up, then very cheap per piece. Best for big runs.
-- **Digital printing** - straight from the file with **toner** or inkjet, no plates. Near-zero setup, higher cost per page. Best for short runs and personalization.
+- [**Offset lithography**](/blog/print-production-craft/03-offset-lithography-the-workhorse-of-commercial-print) - the workhorse of commercial print. Ink goes from a **plate**, to a rubber blanket, to the paper. Pricey to set up, then very cheap per piece. Best for big runs.
+- [**Digital printing**](/blog/print-production-craft/04-digital-printing-toner-inkjet-variable-data) - straight from the file with **toner** or inkjet, no plates. Near-zero setup, higher cost per page. Best for short runs and personalization.
 - **Flexography (flexo)** - fast printing from flexible rubber plates on rolls, used for packaging, labels, and boxes.
 - **Screen printing** - ink pushed through a fine mesh stencil, one color per screen. Bold and durable; great for apparel and large runs.
 - **Pad printing** - a soft silicone pad lifts a small image and stamps it onto curved or odd objects: pens, mugs, golf balls.
@@ -114,7 +115,7 @@ Two more press distinctions worth knowing: **web vs sheet-fed** (a web press pri
 
 Paper is graded by weight, coating, and grain - and the words sound interchangeable but aren't.
 
-**GSM** (grams per square meter) is the clean international measure of weight and thickness. Copy paper is ~80 gsm; a business card is 300+ gsm. **Text weight vs cover weight** is the old US shorthand for the same idea - "text" is lighter inside-page paper, "cover" is heavier card for covers and postcards.
+[**GSM**](/blog/print-production-craft/08-substrates-materials-paper-gsm-coatings-specialty-stocks) (grams per square meter) is the clean international measure of weight and thickness. Copy paper is ~80 gsm; a business card is 300+ gsm. **Text weight vs cover weight** is the old US shorthand for the same idea - "text" is lighter inside-page paper, "cover" is heavier card for covers and postcards.
 
 **Coating** is any clear layer that makes paper smoother and images sharper. **C1S / C2S** means "coated one side" or "coated two sides." **Substrate** is the umbrella word for whatever you're printing on - paper, card, vinyl, fabric, metal. If a printer says "what substrate?", they mean "what material?"
 
@@ -122,7 +123,7 @@ Paper is graded by weight, coating, and grain - and the words sound interchangea
 
 ## Finishing: where it gets fancy (bindery)
 
-Once the ink is dry, the job moves to the **bindery** for folding, cutting, binding, and the premium touches. This is where a flat sheet becomes a real object.
+Once the ink is dry, the job moves to the [**bindery**](/blog/print-production-craft/09-finishing-bindery-everything-after-the-press) for folding, cutting, binding, and the premium touches. This is where a flat sheet becomes a real object.
 
 **Binding** - how pages hold together:
 
@@ -179,4 +180,4 @@ Next time you send a print job, run this checklist:
 
 If you remember one thing, make it this: **print is a physical process with physical tolerances, and almost every term in this glossary exists to manage one of them.** Bleed covers a wandering blade. Trapping covers a shifting ink layer. Grain covers a cracking fold. Learn the vocabulary and you stop guessing - you start directing.
 
-Here's the thread worth pulling next. Notice how many "cheap online print" deals lean on one quiet trick: the **gang run**, where your job rides a giant sheet alongside strangers' jobs. It's the reason 500 business cards can cost less than your lunch - and understanding how shops squeeze cost out of a single press sheet is where the real craft of print production begins.
+Here's the thread worth pulling next. Notice how many "cheap online print" deals lean on one quiet trick: the [**gang run**](/blog/print-production-craft/11-print-shop-economics-costing-make-ready-margins-quoting), where your job rides a giant sheet alongside strangers' jobs. It's the reason 500 business cards can cost less than your lunch - and understanding how shops squeeze cost out of a single press sheet is where the real craft of print production begins.

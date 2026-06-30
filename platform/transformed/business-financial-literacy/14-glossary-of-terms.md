@@ -37,6 +37,7 @@ date: '2026-06-21'
 order: 13
 icon: "\U0001F4BC"
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -70,11 +71,11 @@ Start here, because this is where most confusion lives. **Profit is an opinion; 
 
 Here is the trap in one sentence: **Accrual Accounting** records revenue when you earn it and costs when you incur them, not when cash actually moves. The opposite is cash accounting, which only counts money when it changes hands.
 
-Why does that matter? Imagine you sell $50,000 of work in March but the client pays in June. On paper, March looks like a great, profitable month. Your bank account, meanwhile, is empty and payroll is due. That gap between earned and collected is exactly why a "profitable" business can go broke.
+Why does that matter? Imagine you sell $50,000 of work in March but the client pays in June. On paper, March looks like a great, profitable month. Your bank account, meanwhile, is empty and payroll is due. That gap between earned and collected is exactly why a ["profitable" business can go broke](/blog/business-financial-literacy/05-the-balance-sheet-cash-flow-statement-why-profit-cash).
 
 ## The three statements that tell your whole story
 
-Every business, from a lemonade stand to a public company, is described by three reports.
+Every business, from a lemonade stand to a public company, is described by [three reports](/blog/business-financial-literacy/03-the-three-financial-statements-the-whole-picture).
 
 ### Income Statement (P&L)
 The **Income Statement**, or Profit & Loss, shows revenue, costs, and profit over a period. It answers one question: *did we make money?* The bottom line is **Net Income** (also called net profit or the bottom line), which is what's left after every single cost, including operating expenses, interest, and taxes.
@@ -136,7 +137,7 @@ Pricing is the fastest way to change profit, and it's mostly psychology and stru
 - **Price Anchoring** shows a higher reference price first so your real price looks reasonable by comparison.
 - **The Decoy Effect** adds a deliberately worse-value option to make another option look like a bargain.
 
-You have felt all of these. The $12 popcorn that exists mainly to make the $10 popcorn feel sensible? That's a decoy and an anchor working together.
+You have felt all of these. The $12 popcorn that exists mainly to make the $10 popcorn feel sensible? That's [a decoy and an anchor](/blog/business-financial-literacy/09-pricing-psychology-pricing-with-confidence) working together.
 
 ## The startup and subscription vocabulary
 
@@ -182,10 +183,10 @@ If you run a recurring-revenue business, this is the dialect investors expect yo
 A few myths trip up nearly everyone:
 
 - **"We're profitable, so we're safe."** Profit is not cash. You can be profitable and still miss payroll if customers pay late.
-- **"Higher revenue means a healthier business."** Not if each sale loses money. Bad unit economics get worse, not better, at scale.
+- **"Higher revenue means a healthier business."** Not if each sale loses money. Bad [unit economics](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale) get worse, not better, at scale.
 - **"Margin and markup are the same."** They are not, and confusing them leads to underpricing.
 - **"Cutting price is the easy way to win customers."** Price is your most powerful profit lever. A small discount can erase your entire margin.
-- **"Raising money is a win."** Money has a cost, and every round dilutes you. Funding buys runway, not success.
+- **"Raising money is a win."** Money has a cost, and [every round dilutes you](/blog/business-financial-literacy/12-funding-dilution-the-cost-of-capital). Funding buys runway, not success.
 
 ## How to use this glossary
 
@@ -193,7 +194,7 @@ You don't have to memorize all sixty terms. Do this instead:
 
 1. **Read it once, start to finish.** You'll absorb more than you expect just from seeing how the terms connect.
 2. **Find the five that touch your business today.** A subscription founder lives in MRR, churn, CAC, LTV, and runway. A retailer lives in COGS, margin, markup, and working capital.
-3. **Apply one term to your real numbers this week.** Calculate your actual gross margin or break-even point. The term sticks the moment it describes your own money.
+3. **Apply one term to your real numbers this week.** Calculate your actual gross margin or [break-even point](/blog/business-financial-literacy/10-break-even-margins-profitability). The term sticks the moment it describes your own money.
 4. **Bookmark this page.** When a word trips you up in a meeting or a spreadsheet, come straight back.
 5. **Use the words out loud.** Say "what's our net burn?" in a real conversation. Fluency comes from use, not from study.
 

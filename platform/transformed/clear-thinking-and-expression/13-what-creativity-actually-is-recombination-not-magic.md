@@ -17,6 +17,7 @@ keywords:
   - creativity is a skill not a talent
   - schemas and creativity
   - improve creative thinking
+linked: true
 topic: clear-thinking-and-expression
 topicTitle: Clear Thinking & Expression
 category: Thinking & Decisions
@@ -132,13 +133,13 @@ Stock the pantry, and dishes start suggesting themselves.
 
 ## How memory makes ideas easy: schemas
 
-Cognitive scientists have a word for the connected pieces in your head: **schemas**.
+Cognitive scientists have a word for the connected pieces in your head: [**schemas**](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits).
 
 A **schema** is a web of linked knowledge in your memory, everything you know about a topic, tied together. The denser the web, the easier it is to pull a fact in and connect it to something new.
 
 This explains a frustrating experience. When you read something and "nothing comes to mind," it's usually because the new fact has nowhere to attach. You have no schema near it, so it lands in empty space and bounces off.
 
-But when you read widely and *relate* each new thing to what you already know, you build dense schemas. Then reading sparks ideas, because every new fact lands next to twenty old ones it can combine with.
+But when you [read widely and *relate* each new thing](/blog/clear-thinking-and-expression/10-active-reading-techniques-that-generate-thoughts) to what you already know, you build dense schemas. Then reading sparks ideas, because every new fact lands next to twenty old ones it can combine with.
 
 Put plainly: **curiosity across many fields isn't a personality trait, it's idea fuel.**
 
@@ -164,7 +165,7 @@ You don't need to be a genius. You need a habit of gathering raw material and a 
 
 Here's the minimum version you can run for real:
 
-1. **Collect.** Keep a single notes file. Drop in any interesting fact, line, or example you meet, no matter the topic. Don't filter for usefulness yet.
+1. **Collect.** [Keep a single notes file](/blog/clear-thinking-and-expression/16-build-an-idea-inventory-a-second-brain-so-connections-happen). Drop in any interesting fact, line, or example you meet, no matter the topic. Don't filter for usefulness yet.
 2. **Relate.** Each time you add a note, ask "what does this remind me of?" and write that link down too. You're wiring the new piece into your existing web.
 3. **Combine.** Once a week, pick two unrelated notes and force a connection between them. Most attempts will be useless. That's the point, you're fishing.
 
@@ -189,4 +190,4 @@ Here's the one thing to carry away: creativity is recombination. Fill your head 
 
 That reframe moves creativity out of the genetic lottery and into the same place as any skill you've ever built. "I'm not creative" simply becomes "I haven't collected enough yet."
 
-But knowing the engine is recombination raises a sharper question: once you accept that ideas are combinations, how do you deliberately produce *more* of them, and how do you connect ideas that sit far apart on purpose? Those are two trainable moves, generating and connecting, and they're where the real fun begins.
+But knowing the engine is recombination raises a sharper question: once you accept that ideas are combinations, how do you [deliberately produce *more* of them](/blog/clear-thinking-and-expression/14-generating-ideas-on-demand-divergent-thinking-scamper-brainstorming), and how do you [connect ideas that sit far apart](/blog/clear-thinking-and-expression/15-analogical-lateral-thinking-connecting-different-domains) on purpose? Those are two trainable moves, generating and connecting, and they're where the real fun begins.

@@ -23,6 +23,7 @@ keywords:
   - best software listicle outreach
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 faq:
   - q: Is it free to list my software on Capterra and G2?
     a: Yes. Creating and claiming a vendor profile, responding to reviews, and earning basic badges are free on both. You only pay if you want paid placement (Capterra's pay-per-click ads) or the right to publicly display G2's premium badges.
@@ -47,7 +48,7 @@ That ninety seconds is where you win or lose. And most of it happens on pages yo
 
 ## Why this matters
 
-Your buyer is often non-technical. They don't read your developer docs, and they instinctively distrust a vendor's own marketing. So they outsource trust to third parties: software review sites, industry directories, and "best of" roundup posts.
+Your buyer is often non-technical. They don't read your developer docs, and they instinctively distrust a vendor's own marketing. So they [outsource trust to third parties](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy): software review sites, industry directories, and "best of" roundup posts.
 
 If you're absent from those pages, you're not just lower on the list. You're invisible at the exact moment of consideration. The buyer eliminates you before the demo, and you never even know you were in the running.
 
@@ -135,7 +136,7 @@ Don't try to be everywhere at once. Work in tiers.
 
 ### Tier 1 - this month (free, high intent)
 
-1. **Claim your Capterra cluster profile.** One claim covers Capterra, GetApp, and Software Advice. Pick the most *specific* category that fits you, not a generic catch-all where you'll drown next to giants. Spend a full day making it great: real screenshots, a product demo, a plain-language feature list, and clear pricing.
+1. **Claim your Capterra cluster profile.** One claim covers Capterra, GetApp, and Software Advice. Pick the most *specific* category that fits you, not a generic catch-all where you'll drown next to giants. Spend a full day making it great: real screenshots, a product demo, a plain-language feature list, and [clear pricing](/blog/personal-money-mastery/12-pricing-value-capture).
 2. **Claim your free G2 profile.** Complete it fully and aim for the free "Users Love Us" badge at 10 reviews. Skip the paid badge plan for now.
 3. **Add free listings on GoodFirms and SourceForge.** Both have real category pages that rank in Google. Roughly two hours each.
 
@@ -166,6 +167,6 @@ A handful of numbers worth watching: total reviews per site, how many landed in 
 
 The single idea to hold onto: **your buyers form their shortlist on pages you don't own, before they ever meet you.** Directories aren't vanity. They're the buyer's shortlist, and being absent means being eliminated in silence.
 
-So the winning move isn't to spend big. It's to show up where buyers look, earn honest reviews on a clean and steady cadence, and let your reputation compound. Reviews are the one asset competitors can't buy out from under you.
+So the winning move isn't to spend big. It's to show up where buyers look, earn honest reviews on a clean and steady cadence, and [let your reputation compound](/blog/life-money-and-relationships/29-community-reputation-long-term-social-capital). Reviews are the one asset competitors can't buy out from under you.
 
-Once that engine is humming, a sharper question surfaces: what makes a buyer who's comparing five near-identical tools pick *you* in particular? That's the work of positioning, the two-line hook that makes a stranger think "that's the one for me" in a single glance. Get the listings right first, then go win that line.
+Once that engine is humming, a sharper question surfaces: what makes a buyer who's comparing five near-identical tools pick *you* in particular? That's the work of [positioning](/blog/psychology-of-decisions/18-writing-marketing-copy-that-persuades-without-lying), the two-line hook that makes a stranger think "that's the one for me" in a single glance. Get the listings right first, then go win that line.

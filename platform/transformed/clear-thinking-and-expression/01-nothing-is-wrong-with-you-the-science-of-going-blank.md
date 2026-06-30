@@ -51,12 +51,13 @@ faq:
       weakest skill today is your most improvable one.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
 You read a whole page. You understood every word. Then someone turns to you and asks, "So, what do you think?" - and your mind is suddenly, completely empty.
 
-You want to speak. Nothing comes out clean. In that silent moment it is easy to conclude that you are slow, or not smart enough, or just "bad at thinking on your feet."
+You want to speak. Nothing comes out clean. In that silent moment it is easy to conclude that you are slow, or not smart enough, or just "bad at [thinking on your feet](/blog/clear-thinking-and-expression/08-speaking-clearly-confidently-in-real-time)."
 
 You are none of those things. Going blank is not a defect in you. It is the predictable result of a skill nobody ever taught you - and skills can be built.
 
@@ -76,7 +77,7 @@ Here are two mental jobs that people constantly confuse. They feel similar from 
 
 **Production (having a thought and saying it).** Your brain pulls an idea up from memory - with no page in front of you - shapes it into your own words, and delivers it. This is much harder, because there is no prompt to lean on. You have to *generate*.
 
-Reading feels like thinking, but often it is only recognition. "I understood it" means *the author's* idea fit neatly into your head. "I had a thought about it" means *you* produced something new - a question, a disagreement, a connection, an example.
+[Reading feels like thinking](/blog/clear-thinking-and-expression/09-passive-vs-active-reading-why-reading-rarely-sparks-ideas), but often it is only recognition. "I understood it" means *the author's* idea fit neatly into your head. "I had a thought about it" means *you* produced something new - a question, a disagreement, a connection, an example.
 
 The gap between those two is exactly where the blank lives.
 
@@ -105,7 +106,7 @@ Same sentence. One person had a hook; the other didn't. The fix is to deliberate
 
 ## Why pressure makes everything worse
 
-There is a second culprit, and it explains the worst blanks of all: your **working memory**.
+There is a second culprit, and it explains the worst blanks of all: your [**working memory**](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits).
 
 Working memory is the small mental "desk" where you hold and juggle thoughts right now. It is tiny. Psychologist George Miller famously estimated it could hold about seven items at once; later research suggests the real number is closer to four.
 
@@ -142,7 +143,7 @@ You don't need talent. You need a few repeatable moves. Start with these.
 
 3. **Name a missing hook.** Pick one thing you read but couldn't remember. Write: "I forgot this because I had no experience to connect it to - namely ____." Naming the missing hook trains you to build one next time.
 
-4. **Pressure-test before it counts.** Before any moment you fear going blank - a question, a call, a meeting - write your one main point on paper first. Notice how having it pre-formed clears space on your mental desk so the rest can flow.
+4. **Pressure-test before it counts.** Before any moment you fear going blank - a question, a call, a meeting - [write your one main point on paper](/blog/clear-thinking-and-expression/03-think-on-paper-why-externalizing-beats-thinking-in-your-head) first. Notice how having it pre-formed clears space on your mental desk so the rest can flow.
 
 Do these for a week and the blank starts shrinking. Not because you got smarter, but because you finally practised the move nobody taught you.
 
@@ -152,4 +153,4 @@ The single thing to carry with you: **going blank means "understanding without a
 
 You are not waiting to discover whether you "have it." You are constructing it, one small drill at a time. Your weakest skill today is, by definition, your most improvable one.
 
-But producing a thought is only half the battle. The next challenge is shaping that raw thought into words clearly enough that other people actually get it - and that, it turns out, has its own surprising mechanics worth understanding.
+But producing a thought is only half the battle. The next challenge is [shaping that raw thought into words clearly](/blog/clear-thinking-and-expression/04-clear-writing-is-clear-thinking) enough that other people actually get it - and that, it turns out, has its own surprising mechanics worth understanding.

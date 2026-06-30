@@ -50,6 +50,7 @@ faq:
       rather than sitting in a folder for your own satisfaction.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: how-to-make-money
 topicTitle: How to Make Money
 category: Money & Business
@@ -83,7 +84,7 @@ Not every skill earns well. A skill is valuable only when it passes all three of
 - **In demand.** Someone is hiring or paying for it *right now*. A rare skill nobody wants is just a hobby.
 - **Tied to revenue.** The skill either *makes* money or *saves* money for whoever pays you. This is the big one.
 
-That third test explains why pay varies so wildly. Skills fall into two buckets.
+That third test explains [why pay varies so wildly](/blog/how-to-make-money/05-why-some-work-pays-10-more). Skills fall into two buckets.
 
 A **revenue-center skill** is work the payer can directly link to money coming in: sales, software, marketing and growth, design, copywriting, data and analytics. They can practically point at the rupees you generated.
 
@@ -95,7 +96,7 @@ Go back to that copywriter. The page earned the client roughly ₹8.5 crore, so 
 
 ## Specific knowledge: the deepest version of this idea
 
-The investor Naval Ravikant sharpens all of this with one phrase: *specific knowledge*. He defines it as knowledge you **cannot be trained for** in a classroom. His warning is blunt: if society can train you en masse, it can train your replacement and bid your wage down.
+The investor Naval Ravikant sharpens all of this with one phrase: [*specific knowledge*](/blog/how-to-make-money/09-specific-knowledge-your-personal-moat). He defines it as knowledge you **cannot be trained for** in a classroom. His warning is blunt: if society can train you en masse, it can train your replacement and bid your wage down.
 
 So where do you find it? By following **genuine curiosity**. Naval's test is that it "feels like play to you, but looks like work to others." It usually sits at the *edge* of a field and is hard to fit into a syllabus. Because you actually enjoy it, you will out-practice the people who are only chasing the paycheck.
 
@@ -120,7 +121,7 @@ That second path is the **talent stack**, and it is realistic for normal people.
 
 Think of it this way. Being top 1% at one skill is like trying to be the tallest person in India: nearly impossible. The talent stack is like being the tallest *left-handed person who also speaks Tamil and writes code*. Suddenly the pool is tiny, and you can win.
 
-So pick one core money skill (sales, code, design, copywriting, or data) and bolt on one or two near-universal multipliers. Adams recommends **persuasion, public speaking, writing, and business or accounting basics**, because they amplify everything else. A backend developer who can also *write clearly* and *read a profit-and-loss statement* is worth far more than a slightly better coder who can do neither.
+So pick one core money skill (sales, code, design, copywriting, or data) and bolt on one or two near-universal multipliers. Adams recommends **persuasion, public speaking, writing, and business or accounting basics**, because they amplify everything else. A backend developer who can also *write clearly* and *[read a profit-and-loss statement](/blog/business-financial-literacy/04-reading-a-p-l-income-statement-line-by-line)* is worth far more than a slightly better coder who can do neither.
 
 ## How you actually get good: deliberate practice
 
@@ -189,11 +190,11 @@ Once your skill starts earning, two tax rules matter a lot. Getting them wrong c
 - Turnover pools everything. For example, ₹12L freelance income plus ₹9L rent equals ₹21L, so you must register.
 - **Exporting services** (paid in convertible foreign currency) is **zero-rated**. File under a *LUT (Form RFD-11)*, a Letter of Undertaking that lets you export without paying GST upfront, and claim input-tax-credit refunds. This matters hugely if your clients are overseas.
 
-Say you freelance for US clients and bill $4,000 a month, roughly ₹3.4L. Annually that is about ₹41L, well over the ₹20L line. You register for GST, file a LUT, and because it counts as an export of services, you charge your US client **0% GST** rather than adding 18% they would refuse to pay. Knowing this rule keeps you competitive globally and compliant at home.
+Say you [freelance for US clients](/blog/how-to-make-money/08-freelancing-consulting) and bill $4,000 a month, roughly ₹3.4L. Annually that is about ₹41L, well over the ₹20L line. You register for GST, file a LUT, and because it counts as an export of services, you charge your US client **0% GST** rather than adding 18% they would refuse to pay. Knowing this rule keeps you competitive globally and compliant at home.
 
 ### ESOP tax, if your skill gets you into a startup
 
-An **ESOP** (Employee Stock Ownership Plan) is shares a company gives you as part of your pay. **Perquisite tax** is the tax due when you "exercise" (buy) those shares, calculated on the gain between the price you pay and the value.
+An **ESOP** (Employee Stock Ownership Plan) is [shares a company gives you as part of your pay](/blog/how-to-make-money/17-equity-ownership-the-windfall-path). **Perquisite tax** is the tax due when you "exercise" (buy) those shares, calculated on the gain between the price you pay and the value.
 
 For employees of **DPIIT-recognised startups holding a Section 80-IAC certificate**, this perquisite tax can be **deferred** to the earliest of 48 months from exercise, leaving the company, or selling the shares (rising to 60 months for shares allotted on or after 1 April 2026 under the new Income-tax Act, 2025).
 
@@ -218,4 +219,4 @@ If you remember one thing, make it this: **value lives in proximity to revenue, 
 
 Build a skill that passes the three tests, sharpen it with curiosity and deliberate practice, and prove it in public. That is durable earning power that follows you anywhere.
 
-But a skill, on its own, still has a ceiling. There are only so many hours in your week, and you can only sell each one once. The real jump in income comes from the next idea Naval slipped into his sequence: leverage, the art of getting paid while you sleep. That is where the math stops being about you, and starts being about what you can build.
+But a skill, on its own, still has a ceiling. There are only so many hours in your week, and you can only sell each one once. The real jump in income comes from the next idea Naval slipped into his sequence: [leverage, the art of getting paid while you sleep](/blog/how-to-make-money/04-leverage-the-real-secret). That is where the math stops being about you, and starts being about what you can build.

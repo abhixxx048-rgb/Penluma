@@ -47,6 +47,7 @@ faq:
       explain - rather than simply reading them.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: clear-thinking-and-expression
 topicTitle: Clear Thinking & Expression
 category: Thinking & Decisions
@@ -58,7 +59,7 @@ sources: []
 
 You just read an entire article. You followed every sentence. Then you closed the tab and… nothing. No new thought, no opinion, nothing to say about it.
 
-That blank feeling isn't a sign you're slow or distracted. It's a sign of *how* you read. And once you see the difference between two kinds of reading, you can fix it today - without reading any faster or any more.
+[That blank feeling](/blog/clear-thinking-and-expression/01-nothing-is-wrong-with-you-the-science-of-going-blank) isn't a sign you're slow or distracted. It's a sign of *how* you read. And once you see the difference between two kinds of reading, you can fix it today - without reading any faster or any more.
 
 ## Why this matters
 
@@ -87,11 +88,11 @@ This isn't a personal flaw. It's how memory actually works. Two simple ideas fro
 
 When you read a clear sentence, your brain goes "yes, that makes sense." That smooth, easy feeling is called **fluency** - and it tricks you into believing you've learned the thing.
 
-But recognizing a thought is far weaker than producing one. Psychologists call the stronger version the **generation effect**: we understand and remember much better when we produce something ourselves - answer a question, finish a sentence, explain an idea - instead of just reading it. Reading hands you the answer. Generating makes you build it.
+But recognizing a thought is far weaker than producing one. Psychologists call the stronger version the [**generation effect**](/blog/ai-learning-platform/06-retrieval-practice-why-testing-beats-re-reading): we understand and remember much better when we produce something ourselves - answer a question, finish a sentence, explain an idea - instead of just reading it. Reading hands you the answer. Generating makes you build it.
 
 ### Working memory is tiny and leaks fast
 
-Working memory is the small mental "desk" where you hold thoughts right now. It only holds a few items, and they fade in seconds unless you do something with them.
+[Working memory](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits) is the small mental "desk" where you hold thoughts right now. It only holds a few items, and they fade in seconds unless you do something with them.
 
 Passive reading pours information onto that desk and immediately lets it slide off the edge. You finish the article and the desk is empty - so there's nothing left to build an idea from.
 
@@ -162,4 +163,4 @@ Two habits turn passive reading into active reading. Start here.
 
 The single thing to remember: **a page with no marks on it was read passively, no matter how carefully your eyes moved.** If reading leaves no trace, it leaves no idea. Ideas come from *acting on* what you read - questioning, relating, doubting, applying - never from absorbing it.
 
-But knowing *that* you should talk back to the page is different from knowing *how* to do it fast, without turning every article into an hour-long project. There's a small toolkit of marking and note-taking moves that make active reading nearly automatic - and that's where the real speed comes from. That's what comes next.
+But knowing *that* you should talk back to the page is different from knowing *how* to do it fast, without turning every article into an hour-long project. There's a small toolkit of marking and [note-taking moves](/blog/clear-thinking-and-expression/11-note-taking-that-creates-insight-zettelkasten-cornell-progressive-summarization) that make active reading nearly automatic - and that's where the real speed comes from. That's what comes next.

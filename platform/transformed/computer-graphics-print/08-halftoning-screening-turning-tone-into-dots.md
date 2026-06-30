@@ -62,6 +62,7 @@ faq:
       intended pattern called a rosette.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Halftone
 ---
@@ -111,7 +112,7 @@ This is the traditional, conventional screen, and it is still the default for mo
 
 In **FM (frequency-modulated)** screening - also called **stochastic** screening - the dots are all the **same tiny size**, and only the **number and spacing** changes. Highlights get a few scattered microdots; shadows get a dense crowd of them, placed in a pseudo-random pattern.
 
-The microdots are roughly 10 to 30 microns across - smaller than the width of a human hair. Because the pattern is random, there is **no grid, no line frequency, and no screen angle**. And with no grid, **moire essentially disappears**. That makes FM excellent for tricky subjects like fabric weaves, fine detail, and sharp diagonal lines, and for printing with six or seven inks for a wider color range.
+The microdots are roughly 10 to 30 microns across - smaller than the width of a human hair. Because the pattern is random, there is **no grid, no line frequency, and no screen angle**. And with no grid, **moire essentially disappears**. That makes FM excellent for tricky subjects like fabric weaves, fine detail, and sharp diagonal lines, and for printing with six or seven inks for [a wider color range](/blog/computer-graphics-print/05-gamut-out-of-gamut-handling-deep-dive).
 
 The cost: those tiny dots are fragile. They are harder to hold on press, more prone to fattening up, and they can look slightly grainy.
 
@@ -227,10 +228,10 @@ So remember the difference: **moire is bad** (large, wavy, distracting) and a **
 If you are preparing a file for a real press, here is the short, practical checklist:
 
 1. **Match LPI to the paper.** Ask your printer what line screen they will run. Rough or uncoated stock means a lower LPI; coated stock allows a higher one.
-2. **Set image resolution to about 2x the LPI.** For a typical 150 LPI job, supply 300 PPI images at final size. More than that is wasted; much less prints soft and pixelated.
+2. **Set image resolution to about 2x the LPI.** For a typical 150 LPI job, supply 300 PPI images at final size. More than that is wasted; much less [prints soft and pixelated](/blog/computer-graphics-print/07-raster-vs-vector-resolution-image-quality).
 3. **Send continuous-tone CMYK.** Don't pre-screen, don't place an already-halftoned scan, and don't apply your own dot patterns. Let the press screen it once.
-4. **Leave screening, angles, and trapping to the press.** The standard angle set (cyan 15, magenta 75, yellow 0, black 45) and the trapping that hides misalignment are handled automatically. Your job is clean art plus the correct color profile.
-5. **Soft-proof with the right profile.** Use your printer's ICC profile so your monitor shows you the truth about how midtones and shadows will actually print, instead of an optimistic glowing version.
+4. **Leave screening, angles, and [trapping](/blog/computer-graphics-print/09-trapping-deep-dive) to the press.** The standard angle set (cyan 15, magenta 75, yellow 0, black 45) and the trapping that hides misalignment are handled automatically. Your job is clean art plus the correct color profile.
+5. **Soft-proof with the right profile.** Use your printer's [ICC profile](/blog/computer-graphics-print/03-color-management-icc-profiles-the-pipeline) so your monitor shows you the truth about how midtones and shadows will actually print, instead of an optimistic glowing version.
 6. **Print to a standard and verify.** For repeatable results, the job should be printed to a recognized standard (ISO 12647, G7, or GRACoL) and checked with a control strip, so the same file looks the same from one run to the next.
 
 ## A quick word on dot gain, the glue that holds it all together
@@ -247,4 +248,4 @@ The fix is **compensation**: the press applies a curve that deliberately shrinks
 
 The one thing to carry away: **a printing press cannot print a single shade of gray.** Every soft tone you have ever seen on paper is an illusion built from pure black-or-white dots, sized and spaced so cleverly that your own eye finishes the job. Halftoning is not a workaround bolted onto printing - it *is* printing.
 
-And here is the thread worth pulling next. Everything in this article assumed you already had clean **CMYK** to screen. But why those four inks, and not the red-green-blue your monitor uses? The answer is a different kind of color trick entirely - one based on what light your eye *subtracts* rather than adds - and it is where the next part of the story begins.
+And here is the thread worth pulling next. Everything in this article assumed you already had clean **CMYK** to screen. But why those four inks, and not [the red-green-blue your monitor uses](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color)? The answer is a different kind of color trick entirely - one based on what light your eye *subtracts* rather than adds - and it is where the next part of the story begins.

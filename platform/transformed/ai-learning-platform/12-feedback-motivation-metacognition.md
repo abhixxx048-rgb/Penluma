@@ -38,12 +38,13 @@ faq:
     a: When a mechanic exploits psychology for engagement numbers instead of learning, like guilt-trip streak notifications or leaderboards that demote learners who met their daily goal.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
 A tutor can pick the perfect next problem and still fail. Why? Because a learner who feels bored, judged, or hopeless just closes the app.
 
-There's a whole human layer sitting on top of all the clever scheduling and adaptive difficulty. It decides whether the smartest learning engine ever built actually gets used, or quietly gathers dust on someone's phone.
+There's a whole human layer sitting on top of all the clever [scheduling](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve) and adaptive difficulty. It decides whether the smartest learning engine ever built actually gets used, or quietly gathers dust on someone's phone.
 
 This is the layer that makes people *want* to come back.
 
@@ -136,7 +137,7 @@ Three cheap, high-impact techniques fit right in here:
 
 - **The confidence check.** Before a quiz, ask "How sure are you?" Then show the gap between what they predicted and what they scored. This single move installs a reality check and sharpens calibration over time.
 - **Self-explanation.** Asking "why is this step true?" has a large, well-documented benefit. Explaining forces understanding that recognizing an answer never does.
-- **Teach-it-back.** Have the learner explain a concept in plain words, then check their explanation for gaps. It turns a passive recipient into an active explainer - which is exactly where deep learning happens.
+- **Teach-it-back.** Have the learner [explain a concept in plain words](/blog/ai-learning-platform/16-the-teach-it-back-method-and-how-ai-evaluates-it), then check their explanation for gaps. It turns a passive recipient into an active explainer - which is exactly where deep learning happens.
 
 ## Flow: matching challenge to skill
 
@@ -144,7 +145,7 @@ Mihaly Csikszentmihalyi described **flow** as complete absorption in a task. You
 
 Its conditions map almost perfectly onto good tutoring. Clear goals. Immediate feedback. And above all, a balance between challenge and skill.
 
-Too hard breeds anxiety. Too easy breeds boredom. The sweet spot is a narrow channel between them, and an adaptive tutor's real superpower is nudging difficulty to keep the learner inside it - ramping up as skill grows, easing off at the first signs of frustration.
+Too hard breeds anxiety. Too easy breeds boredom. The sweet spot is a narrow channel between them, and an adaptive tutor's real superpower is [nudging difficulty to keep the learner inside it](/blog/ai-learning-platform/11-zone-of-proximal-development-scaffolding-worked-examples) - ramping up as skill grows, easing off at the first signs of frustration.
 
 ## Common misconceptions
 
@@ -188,4 +189,4 @@ If you're building, teaching, or even just learning on your own, here's the prac
 
 If you remember one thing, make it this: **the smartest learning engine in the world is worthless if the human on the other end stops showing up.** Feedback, motivation, and metacognition are not decoration on top of the real product. They *are* the product, as far as the learner is concerned.
 
-And notice how each of these levers depends on knowing the learner - their current confidence, their frustration, the exact step they stumbled on. Which raises the harder question lurking underneath all of this: how does a tutor actually *know* what a learner understands at any given moment? That's where the science of measuring knowledge comes in, and it's a stranger, more fascinating problem than it first appears.
+And notice how each of these levers depends on knowing the learner - their current confidence, their frustration, the exact step they stumbled on. Which raises the harder question lurking underneath all of this: how does a tutor actually *know* [what a learner understands](/blog/ai-learning-platform/18-learner-models-teaching-the-machine-what-the-student-knows) at any given moment? That's where the [science of measuring knowledge](/blog/ai-learning-platform/26-measuring-real-learning-metrics-that-matter) comes in, and it's a stranger, more fascinating problem than it first appears.

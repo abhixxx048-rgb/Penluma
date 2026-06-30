@@ -36,6 +36,7 @@ order: 15
 icon: "\U0001F4BC"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -51,7 +52,7 @@ Most founders are brilliant at the product and shaky on the finances. That gap i
 
 You don't need an MBA. You need maybe two dozen formulas and a handful of benchmarks - and the ability to recall them without flinching. When you can answer a sharp financial question in one breath, you signal something investors care about deeply: **this person knows where the money is.**
 
-Think of everything below as the dashboard of your business. You don't stare at it constantly, but you'd never drive without it.
+Think of everything below as [the dashboard of your business](/blog/business-financial-literacy/13-living-by-the-numbers-the-founder-s-financial-dashboard). You don't stare at it constantly, but you'd never drive without it.
 
 ## The three numbers that tell the whole story
 
@@ -92,7 +93,7 @@ Break-even is the moment sales finally cover your costs. To find it, you first n
 - **Break-even (units)** = Fixed Costs ÷ Contribution Margin. With $30k in fixed costs: $30k ÷ $60 = **500 units**.
 - **Break-even (revenue)** = Fixed Costs ÷ Gross Margin %. So $30k ÷ 0.60 = **$50k** in sales.
 
-Once you cross that line, every additional sale drops mostly to profit. Knowing your break-even point turns "are we doing okay?" into a specific, answerable target.
+Once you cross that line, every additional sale drops mostly to profit. Knowing your [break-even point](/blog/business-financial-literacy/10-break-even-margins-profitability) turns "are we doing okay?" into a specific, answerable target.
 
 ## The balance sheet, in one line
 
@@ -104,7 +105,7 @@ One number to watch here is **Working Capital** = Current Assets − Current Lia
 
 ## Customer economics: are your customers worth it?
 
-This is where "growth" gets a reality check. Winning customers costs money; you need to know if they pay you back.
+This is where "growth" gets a reality check. Winning customers costs money; you need to know if [the economics of each sale](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale) pay you back.
 
 - **CAC** (Customer Acquisition Cost) = total sales and marketing spend ÷ new customers won. $10k ÷ 100 = **$100** per customer.
 - **LTV** (Lifetime Value, simple version) = (ARPU × Gross Margin %) ÷ Churn rate. If a customer pays $50/month at 80% margin and 5% monthly churn: ($50 × 0.8) ÷ 0.05 = **$800**.
@@ -125,7 +126,7 @@ Churn is the leak in the bucket. You can pour customers in the top, but if 5% dr
 
 ## Cash and survival
 
-Profit is an opinion shaped by accounting; cash is a fact in the bank. These tell you how long you live.
+Profit is an opinion shaped by accounting; [cash is a fact in the bank](/blog/business-financial-literacy/05-the-balance-sheet-cash-flow-statement-why-profit-cash). These tell you how long you live.
 
 - **Net Burn** = cash spent − cash received per month. $80k out − $30k in = **$50k** burned.
 - **Runway** = cash in bank ÷ net monthly burn. $600k ÷ $50k = **12 months**.
@@ -135,7 +136,7 @@ Profit is an opinion shaped by accounting; cash is a fact in the bank. These tel
 
 ## Investor math: what a raise really does
 
-When you raise money, ownership shifts. Know exactly how before you sign.
+When you raise money, [ownership shifts](/blog/business-financial-literacy/12-funding-dilution-the-cost-of-capital). Know exactly how before you sign.
 
 - **Post-money Valuation** = Pre-money Valuation + New Investment. $8M + $2M = **$10M**.
 - **Investor Ownership %** = Investment ÷ Post-money Valuation. $2M ÷ $10M = **20%**.
@@ -180,7 +181,7 @@ Don't memorize the whole sheet cold. Do this instead:
 1. **Pull your own eight numbers today.** Cash in bank, net monthly burn, runway, MRR and growth rate, gross margin, CAC and LTV, churn, and default alive/dead. Write them on one index card.
 2. **Update them weekly.** Numbers you touch often become numbers you remember. Sunday-night five-minute refresh is enough.
 3. **Rehearse the answers out loud.** Before any investor call or board meeting, say each number as a full sentence. "We have 12 months of runway at a $50k net burn."
-4. **Stress-test one assumption.** Ask "what breaks first if growth stalls?" The answer is usually runway - and now you'll see it coming.
+4. **Stress-test one assumption.** Ask "what breaks first if growth stalls?" The answer is usually [runway](/blog/business-financial-literacy/07-cash-flow-burn-rate-runway-don-t-run-out-of-money) - and now you'll see it coming.
 5. **Keep this page open during meetings.** There's no prize for doing the math from memory. There's a big prize for getting it right.
 
 ## Conclusion

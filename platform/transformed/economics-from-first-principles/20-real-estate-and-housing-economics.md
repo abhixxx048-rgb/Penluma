@@ -28,6 +28,7 @@ faq:
     a: It is a home's price divided by a year of rent for a similar place. Below about 15 generally favors buying and above about 20 favors renting, all else being equal.
   - q: What is a Land Value Tax?
     a: It taxes only the value of the land, not the buildings on it. Because land supply cannot shrink and its value comes from the surrounding community, economists across the spectrum consider it one of the least harmful taxes.
+linked: true
 topic: economics-from-first-principles
 topicTitle: Economics from First Principles
 category: Money & Business
@@ -47,7 +48,7 @@ That stubborn fact captures everything strange about housing. It is the biggest 
 
 Housing is where your rent, your savings, and often your single largest investment all collide. The same forces that decide whether you can afford a home also decide whether your retirement nest egg grows or gets wiped out.
 
-These forces also drive entire economies. The 2008 financial crisis, the worst since the Great Depression, started in the housing market. If you ever plan to rent, buy, sell, or vote on housing policy, the ideas below will save you from expensive mistakes and tired slogans.
+These forces also drive entire economies. The [2008 financial crisis](/blog/economics-from-first-principles/24-financial-crises-why-they-happen-spread-and-how-economies-recover), the worst since the Great Depression, started in the housing market. If you ever plan to rent, buy, sell, or vote on housing policy, the ideas below will save you from expensive mistakes and tired slogans.
 
 ## The one thing that makes housing weird
 
@@ -81,7 +82,7 @@ And because every house sits in a fixed spot, **location is literal economics**.
 
 ## What actually moves house prices
 
-Prices come from a tug-of-war between demand and supply. The main forces on each side:
+Prices come from a tug-of-war between [demand and supply](/blog/economics-from-first-principles/03-supply-demand-and-how-prices-are-determined). The main forces on each side:
 
 | Side | Driver | How it pushes prices |
 |------|--------|----------------------|
@@ -109,7 +110,7 @@ A rough rule of thumb: a **1 percentage-point** change in the mortgage rate shif
 
 But the recent past shows it is not that simple.
 
-> **Case study, 2022 to 2024.** To fight inflation, the US Federal Reserve raised rates fast. The average 30-year mortgage climbed from around 3 percent in 2021 to a peak of 7.79 percent in October 2023, and a typical new payment jumped about 78 percent. Forecasters expected national prices to fall around 10 percent. They mostly did not. The reason was the **lock-in effect**: roughly 60 percent of active US mortgages carried rates below 4 percent. Owners refused to sell and give up their cheap loans, so homes for sale dried up. Choked supply offset the crushed demand, and prices stayed high.
+> **Case study, 2022 to 2024.** To fight [inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money), the [US Federal Reserve](/blog/economics-from-first-principles/08-central-banks-and-monetary-policy) raised rates fast. The average 30-year mortgage climbed from around 3 percent in 2021 to a peak of 7.79 percent in October 2023, and a typical new payment jumped about 78 percent. Forecasters expected national prices to fall around 10 percent. They mostly did not. The reason was the **lock-in effect**: roughly 60 percent of active US mortgages carried rates below 4 percent. Owners refused to sell and give up their cheap loans, so homes for sale dried up. Choked supply offset the crushed demand, and prices stayed high.
 
 The lesson cuts against common sense. Lower rates let *everyone* bid more, so prices climb to absorb the savings. Cheaper borrowing frequently buys you a pricier house, not a better deal.
 
@@ -120,7 +121,7 @@ The folk wisdom that "renting is throwing money away" is wrong. Renting buys you
 - **Price-to-rent ratio:** the home price divided by one year of rent for a similar place. Below about 15 generally favors buying; above about 20 favors renting.
 - **Transaction costs:** the one-way fees of buying and later selling. Closing costs of 2 to 5 percent to buy, plus agent commission to sell. Round-trip, these can eat **8 to 13 percent** of the home's value.
 - **Breakeven horizon:** how many years of appreciation you need just to recover those costs. Historically 5 to 7 years; at today's higher rates, often 7 to 14.
-- **Opportunity cost:** the return your down payment *could* have earned elsewhere. $70,000 locked in a house is $70,000 not earning, say, 7 percent in the stock market. This is the most overlooked factor.
+- **Opportunity cost:** the return your down payment *could* have earned elsewhere. $70,000 locked in a house is $70,000 not earning, say, 7 percent in the [stock market](/blog/economics-from-first-principles/19-financial-markets-stocks-bonds-commodities-and-derivatives). This is the most overlooked factor.
 
 The decision rule is simple. **Buy if you will stay past the breakeven year** and you value stability. **Rent if you are mobile** or the market looks overvalued.
 

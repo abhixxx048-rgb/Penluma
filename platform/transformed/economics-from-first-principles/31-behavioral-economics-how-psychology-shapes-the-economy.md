@@ -54,6 +54,7 @@ faq:
       aversion then flips it into panic selling on the way down.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: economics-from-first-principles
 topicTitle: Economics from First Principles
 category: Money & Business
@@ -63,7 +64,7 @@ icon: "\U0001F4C8"
 sources: []
 ---
 
-You have probably bought a lottery ticket and paid an insurance premium in the same month. One bets that something incredibly unlikely will happen. The other bets that it won't. By the cold logic of old-school economics, you should never do both - yet almost everyone does.
+You have probably bought a lottery ticket and paid an insurance premium in the same month. One bets that something incredibly unlikely will happen. The other bets that it won't. By the cold logic of [old-school economics](/blog/economics-from-first-principles/01-what-economics-is-and-why-it-exists), you should never do both - yet almost everyone does.
 
 That contradiction isn't a personal flaw. It's a feature of the human mind, and an entire field of economics exists to explain it. Once you see the pattern, you start spotting it everywhere: in your shopping cart, your savings account, and the headlines about the next market crash.
 
@@ -102,7 +103,7 @@ One caution: System 1 and System 2 aren't real, separate parts of the brain you 
 
 ## The biases that move your money
 
-A **cognitive bias** is a predictable error in judgment - a place where System 1's shortcut reliably misfires. Here are the ones that quietly run the economy.
+A **[cognitive bias](/blog/clear-thinking-and-expression/18-cognitive-biases-logical-fallacies-and-how-to-dodge-them)** is a predictable error in judgment - a place where System 1's shortcut reliably misfires. Here are the ones that quietly run the economy.
 
 ### Loss aversion
 
@@ -112,7 +113,7 @@ A clean demonstration: in a 1990 experiment, researchers handed half a room a co
 
 ### Anchoring
 
-The first number you see drags your later judgment toward it, even when it's irrelevant. Tversky and Kahneman once spun a rigged wheel of fortune, then asked people to estimate unrelated facts - and the random wheel number swayed their answers. This is why "Was $100, now $60" works so well. The crossed-out price is the anchor.
+The first number you see drags your later judgment toward it, even when it's irrelevant. Tversky and Kahneman once spun a rigged wheel of fortune, then asked people to estimate unrelated facts - and the random wheel number swayed their answers. This is why ["Was $100, now $60"](/blog/business-financial-literacy/09-pricing-psychology-pricing-with-confidence) works so well. The crossed-out price is the anchor.
 
 ### Framing
 
@@ -171,7 +172,7 @@ The mechanism is a **feedback loop**:
 
 Overconfidence and herding feed each other until the price floats free of reality. Then comes a stumble. The same loss aversion that made people cling to coffee mugs makes crowds dump assets in a panic, driving prices *below* fair value on the way down.
 
-The pattern repeats across centuries: Dutch **Tulip Mania** (peaking in 1637), the **1929 crash**, the **dot-com bubble** (peak 2000), and the **US housing bubble** behind the 2007–08 financial crisis. The phrase "irrational exuberance" came from Fed Chair Alan Greenspan in December 1996; Shiller borrowed it for his book title - published almost exactly at the dot-com peak.
+The pattern repeats across centuries: Dutch **Tulip Mania** (peaking in 1637), the **1929 crash**, the **dot-com bubble** (peak 2000), and the **[US housing bubble](/blog/economics-from-first-principles/20-real-estate-and-housing-economics)** behind the [2007–08 financial crisis](/blog/economics-from-first-principles/24-financial-crises-why-they-happen-spread-and-how-economies-recover). The phrase "irrational exuberance" came from Fed Chair Alan Greenspan in December 1996; Shiller borrowed it for his book title - published almost exactly at the dot-com peak.
 
 ## Nudges: designing for the human you actually are
 

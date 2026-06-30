@@ -32,6 +32,7 @@ faq:
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: clear-thinking-and-expression
+linked: true
 topicTitle: Clear Thinking & Expression
 category: Thinking & Decisions
 date: '2026-06-22'
@@ -54,7 +55,7 @@ This plan closes that gap on purpose. It's built around one quiet truth: you don
 
 ## The core idea: stack one habit per phase
 
-Trying to overhaul how you think all at once overloads your **working memory** - the small "desk space" in your mind that only holds a few things at a time. Pile on six new habits and you drop all of them.
+Trying to overhaul how you think all at once overloads your **[working memory](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits)** - the small "desk space" in your mind that only holds a few things at a time. Pile on six new habits and you drop all of them.
 
 So the plan moves in three phases, one focus each:
 
@@ -74,7 +75,7 @@ Three short daily reps:
 
 - **Daily capture (5 min).** Keep one notebook or one note app. Every time a thought, question, or interesting fact shows up, write it down in a single line. No editing.
 - **Freewriting (10 min).** Pick any topic and write without stopping, mistakes and all. The one rule: the pen never lifts. This trains your thoughts to flow onto the page instead of jamming up.
-- **Active reading (15 min).** Read something real. After each section, close it and write one sentence in your own words: "This said that…" If you can't, reread it.
+- **[Active reading](/blog/clear-thinking-and-expression/10-active-reading-techniques-that-generate-thoughts) (15 min).** Read something real. After each section, close it and write one sentence in your own words: "This said that…" If you can't, reread it.
 
 That last move is the whole game. Priya reads a news article about rising coffee prices. Instead of nodding and scrolling on, she writes: *"Bad weather in Brazil cut supply, so prices rose."* That one sentence proves she understood it - and hands her something she can connect to another idea later.
 
@@ -84,13 +85,13 @@ Now you have a habit of capturing and understanding. This month you make your ou
 
 Two terms worth knowing in plain language:
 
-- A **structure framework** is just a reliable shape for your thoughts so a reader follows easily. The handiest one is **PREP**: Point → Reason → Example → Point again.
+- A **[structure framework](/blog/clear-thinking-and-expression/06-structure-frameworks-pyramid-principle-scqa-prep)** is just a reliable shape for your thoughts so a reader follows easily. The handiest one is **PREP**: Point → Reason → Example → Point again.
 - An **idea quota** is a target number of ideas you must hit each day, even bad ones. Quantity first; quality comes later.
 
 Your reps:
 
 - **Daily summary (10 min).** Take one thing you read or did and explain it in three sentences using PREP. This is the core skill of "explain something complicated, simply."
-- **Idea quota (5 min).** Each morning, write 5 ideas about anything - problems to solve, things to improve. They're allowed to be silly. You're training **divergent thinking** (generating many options), which is a different mental gear from **convergent thinking** (picking the best one). Both matter; this drill grows the first.
+- **Idea quota (5 min).** Each morning, write 5 ideas about anything - problems to solve, things to improve. They're allowed to be silly. You're training **[divergent thinking](/blog/clear-thinking-and-expression/14-generating-ideas-on-demand-divergent-thinking-scamper-brainstorming)** (generating many options), which is a different mental gear from **convergent thinking** (picking the best one). Both matter; this drill grows the first.
 - **Connect (5 min).** Once a week, open your captures and draw a line between two unrelated notes. Ask: "What do these have in common?"
 
 Want a one-minute test? Right now, explain *"why my phone battery dies faster in winter"* in exactly three sentences using Point, Reason, Example. If you can, you already have the structure skill. You just need more reps.
@@ -99,8 +100,8 @@ Want a one-minute test? Right now, explain *"why my phone battery dies faster in
 
 You can capture, understand, and explain clearly. The final month turns you from someone who consumes information into someone who **finds openings and ships things.**
 
-- **Question the data (10 min).** When you see a number or chart, ask three questions: "Compared to what? Why this number? What's missing?" This is the seed of critical thinking and spotting what others overlook.
-- **Forced connections (10 min).** Combine two captured ideas into one new idea every day. This is how most "original" ideas are actually born - by joining old things in a new way.
+- **Question the data (10 min).** When you see a number or chart, ask three questions: "Compared to what? Why this number? What's missing?" This is the seed of [critical thinking](/blog/clear-thinking-and-expression/17-critical-thinking-foundations-claims-evidence-assumptions) and spotting what others overlook.
+- **Forced connections (10 min).** Combine two captured ideas into one new idea every day. This is how most ["original" ideas are actually born](/blog/clear-thinking-and-expression/13-what-creativity-actually-is-recombination-not-magic) - by joining old things in a new way.
 - **Ship something (weekly).** Write one short post, one summary, one suggestion at work, or one clear explanation for a friend. Done beats perfect.
 
 Picture it as building: the first month you gather **bricks** (notes). The second you learn to **lay them straight** (structure). The third you **build something a person can walk into** (a shipped idea). A pile of bricks alone is just a pile.

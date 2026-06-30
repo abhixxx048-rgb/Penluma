@@ -48,6 +48,7 @@ faq:
       reach C. For many interconnected VPCs, use a Transit Gateway hub instead.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: aws-cloud-practitioner-mcq
 topicTitle: AWS Cloud Practitioner
 category: Certifications
@@ -84,7 +85,7 @@ Think of it like a hotel.
 
 So when a private subnet of app servers must download patches but must *never* be reachable from the internet, the answer is a **NAT Gateway**, not an Internet Gateway. The Internet Gateway would make the subnet fully public and break the "never reachable" rule.
 
-One more detail the exam likes: a NAT Gateway is a **fully managed** AWS service. AWS scales it and keeps it available, so there are no servers to patch. Its older cousin, the **NAT instance**, is just an EC2 instance you run and maintain yourself. When a question says "highly available, no servers to patch," that is the NAT Gateway talking.
+One more detail the exam likes: a NAT Gateway is a **fully managed** AWS service. AWS scales it and keeps it available, so there are no servers to patch. Its older cousin, the **NAT instance**, is just an [EC2 instance](/blog/aws-cloud-practitioner-mcq/06-amazon-ec2-instances-purchasing-options) you run and maintain yourself. When a question says "highly available, no servers to patch," that is the NAT Gateway talking.
 
 ## The two firewalls: security groups vs network ACLs
 
@@ -151,7 +152,7 @@ A **VPC endpoint** lets resources in your VPC reach AWS services privately, with
 
 **Gateway VPC endpoint**
 
-- Works for **only two services: S3 and DynamoDB**.
+- Works for **only two services: S3 and [DynamoDB](/blog/aws-cloud-practitioner-mcq/12-amazon-dynamodb-managed-nosql)**.
 - Works by adding an entry to your **route table**.
 - Is **free** - no hourly or data charges.
 
@@ -166,7 +167,7 @@ So the decision tree is short:
 1. Is the service **S3 or DynamoDB**? Use a **Gateway endpoint** (free, route table).
 2. Anything else? Use an **Interface endpoint** (PrivateLink).
 
-For private S3 access from a private subnet, the Gateway endpoint is the most cost-effective answer because it is free, while an Interface endpoint would add charges.
+For private [S3 access](/blog/aws-cloud-practitioner-mcq/10-amazon-s3-object-storage) from a private subnet, the Gateway endpoint is the most cost-effective answer because it is free, while an Interface endpoint would add charges.
 
 PrivateLink has one more standout use: you can publish *your own* application as a private **endpoint service** that a partner's VPC connects to, without peering and without internet exposure. When a question says "expose my app as a private service to another VPC," that is PrivateLink, not peering.
 
@@ -212,4 +213,4 @@ Memorize the two short lists - the **Gateway endpoint list (S3, DynamoDB)** and 
 
 If you take one thing away, take this: **every VPC component has exactly one job, and the exam tests whether you can name it under pressure.** The Internet Gateway is the front door, the NAT Gateway is the staff exit, the security group hugs the instance, the network ACL guards the subnet, and the route table decides where everyone goes.
 
-Once these clicks, a natural next question appears: how do you watch all this traffic and prove your network is actually behaving the way you designed it? That is where VPC Flow Logs, CloudWatch, and the AWS shared responsibility model come in - and they are the perfect next stop on your CLF-C02 journey.
+Once these clicks, a natural next question appears: how do you watch all this traffic and prove your network is actually behaving the way you designed it? That is where VPC Flow Logs, [CloudWatch](/blog/aws-cloud-practitioner-mcq/13-amazon-cloudwatch-monitoring-observability), and the [AWS shared responsibility model](/blog/aws-cloud-practitioner-mcq/03-the-shared-responsibility-model) come in - and they are the perfect next stop on your CLF-C02 journey.

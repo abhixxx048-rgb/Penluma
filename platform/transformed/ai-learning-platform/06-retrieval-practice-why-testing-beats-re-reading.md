@@ -57,6 +57,7 @@ faq:
       and instantly reveals exactly where your understanding is thin.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -72,7 +73,7 @@ If you have ever closed a textbook thinking "got it," then drawn a complete blan
 
 Re-reading feels productive. Highlighting feels productive. But feeling and learning are not the same thing. Once you understand the difference, you can cut your study time and remember more, the trade everyone wants but few people actually make.
 
-This matters even more for anyone building an AI tutor. A tutor that simply re-explains everything feels pleasant and teaches little. A tutor built on the right principle feels harder in the moment and produces durable understanding.
+This matters even more for anyone [building an AI tutor](/blog/ai-learning-platform/17-the-lesson-scoped-tutor-chatbot). A tutor that simply re-explains everything feels pleasant and teaches little. A tutor built on the right principle feels harder in the moment and produces durable understanding.
 
 ## The two directions information can travel
 
@@ -114,7 +115,7 @@ Re-reading lets you coast along a path someone else already laid down. Your brai
 ## Common misconceptions
 
 **Myth: If it feels familiar, I know it.**
-Reality: Familiarity is the trap. When text is smooth and easy to read, your brain reads that smoothness as "I know this." Researchers call it the **illusion of fluency**. Recognizing a sentence on the page ("oh yes, this") is not the same as producing it from a blank page. Surveys find about 80% of college students name re-reading as their main study method, even though it is one of the least effective.
+Reality: Familiarity is the trap. When text is smooth and easy to read, your brain reads that smoothness as "I know this." Researchers call it the **[illusion of fluency](/blog/ai-learning-platform/04-knowing-vs-understanding-vs-remembering-a-month-later)**. Recognizing a sentence on the page ("oh yes, this") is not the same as producing it from a blank page. Surveys find about 80% of college students name re-reading as their main study method, even though it is one of the least effective.
 
 **Myth: A test measures learning but doesn't cause it.**
 Reality: Retrieval is not only a measurement; it is the teaching itself. A test is one of the most powerful ways to *build* a memory, not just check one.
@@ -138,10 +139,10 @@ A good tutor, then, has to do two jobs at once: use retrieval, and explain *why*
 Whether you are studying yourself or designing a tutor, the moves are the same.
 
 1. **Read once, then close the book.** Write down or say aloud everything you can remember. Only then check what you missed. That gap is your real study list.
-2. **Quiz before you re-read.** When you feel unsure, force a best guess first, then check. Producing an answer, even a wrong one, beats jumping straight to the explanation.
+2. **[Quiz before you re-read](/blog/ai-learning-platform/15-practice-exercises-and-adaptive-quizzes).** When you feel unsure, force a best guess first, then check. Producing an answer, even a wrong one, beats jumping straight to the explanation.
 3. **Keep it low-stakes and frequent.** Run small, no-penalty checks throughout a session instead of one high-pressure test at the end. Relaxed brains retrieve better.
 4. **Warm up with a recall.** Start each session by pulling back the last one from memory before adding anything new.
-5. **Teach it back.** Explain the idea simply, as if to a younger student, entirely from memory. This is retrieval at its most demanding, and you will stumble exactly where your understanding is thin, which tells you precisely what to work on next.
+5. **[Teach it back](/blog/ai-learning-platform/16-the-teach-it-back-method-and-how-ai-evaluates-it).** Explain the idea simply, as if to a younger student, entirely from memory. This is retrieval at its most demanding, and you will stumble exactly where your understanding is thin, which tells you precisely what to work on next.
 6. **Rate your confidence, then check the score.** Before a quiz, ask "How sure am I?" Then reveal how you actually did. Seeing the gap between feeling and fact teaches you to distrust the comfortable feeling, which is the habit that makes you a better learner for life.
 
 ### What a retrieval-first tutor does differently
@@ -153,7 +154,7 @@ Whether you are studying yourself or designing a tutor, the moves are the same.
 | Starting a new session | Jumps into new material | Warms up with a quick recall of last time |
 | After a mistake | "Wrong." Moves on | "Not yet, here's why, now try a similar one." |
 
-Notice that even a correct answer is never the end. It is "let's bring this back later." Retrieval is most powerful right as a memory begins to fade, which is where spacing your practice comes in.
+Notice that even a correct answer is never the end. It is "let's bring this back later." Retrieval is most powerful right as a memory begins to fade, which is where [spacing your practice](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve) comes in.
 
 ## Conclusion
 

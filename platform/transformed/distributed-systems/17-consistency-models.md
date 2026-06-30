@@ -38,6 +38,7 @@ order: 16
 icon: "\U0001F310"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - "https://en.wikipedia.org/wiki/Consistency_model"
   - "https://en.wikipedia.org/wiki/Linearizability"
@@ -95,7 +96,7 @@ This is the strongest model people actually use, and the promise is wonderfully 
 
 The problem it kills is this: without it, two people reading "the same" value at the same moment can get different answers, and a read that happens *after* a write finishes might still hand back the old value. That makes bank balances and locks nearly impossible to program. Linearizability removes the confusion. Once a write finishes, every later read sees it. Full stop.
 
-The clever part is the **real-time rule**: if operation A finishes before operation B starts on the wall clock, then everyone must agree A came before B. You cannot reorder things that did not overlap in time. That is what makes a fleet of machines feel like one fresh copy.
+The clever part is the **real-time rule**: if operation A finishes before operation B starts on the [wall clock](/blog/distributed-systems/14-time-clocks-the-ordering-of-events), then everyone must agree A came before B. You cannot reorder things that did not overlap in time. That is what makes a fleet of machines feel like one fresh copy.
 
 > **Analogy:** Linearizability is a single shared whiteboard in one room. Whoever walks up writes on it, and the instant they step back, the next person to look sees exactly what was written. There is only one board, so stale information is impossible. The company secretly keeps synced copies of the board in other cities, but it keeps them perfectly in step, so it *looks* like one board.
 
@@ -117,7 +118,7 @@ Here is a concrete case. Alice posts "A" then "B"; Bob posts "X" then "Y". Under
 
 Causal consistency is weaker than sequential, but it nails the ordering humans actually notice: **cause before effect**. The rule is simple. If one operation *causally precedes* another, every node must show them in that order. Operations that are **concurrent** - neither caused the other - may appear in different orders on different nodes, and that is allowed.
 
-What counts as "causally precedes"? Operation A causally precedes B if they came from the same client with A first, or if B read the value A wrote, or if a chain of such links connects them. (This is the same "happens-before" relationship that vector clocks track, if you have met those before.)
+What counts as "causally precedes"? Operation A causally precedes B if they came from the same client with A first, or if B read the value A wrote, or if a chain of such links connects them. (This is the same "happens-before" relationship that [vector clocks](/blog/distributed-systems/15-vector-clocks-causality) track, if you have met those before.)
 
 > **Analogy:** A group chat. A question and its answer must always appear in that order - an answer before its question is nonsense, because the answer was *caused* by reading the question. But two unrelated people each saying "good morning" at the same moment? It does not matter who shows first. Different phones briefly disagreeing on the order confuses no one.
 
@@ -135,7 +136,7 @@ Under the hood, replicas accept writes locally and gossip the changes to each ot
 
 > **Analogy:** Postal mail. If you and a friend each mail a letter, neither sees the other's instantly. They arrive after a delay, maybe out of order. But once you both stop sending, eventually you each receive every letter and agree on the full picture. The mail system is always available - you can always drop a letter in the box - but never "live."
 
-**Where it shows up.** **Amazon DynamoDB** defaults to eventually consistent reads because most reads tolerate slightly stale data and a strongly consistent read costs twice as much. **Apache Cassandra** is eventually consistent but *tunable*: you choose how many replicas must acknowledge each read (R) and write (W). Pick R and W so they overlap a majority (for example, quorum reads and writes with three replicas), and you regain strong consistency for that operation - at the cost of more coordination.
+**Where it shows up.** [**Amazon DynamoDB**](/blog/aws-cloud-practitioner-mcq/12-amazon-dynamodb-managed-nosql) defaults to eventually consistent reads because most reads tolerate slightly stale data and a strongly consistent read costs twice as much. **Apache Cassandra** is eventually consistent but *tunable*: you choose how many replicas must acknowledge each read (R) and write (W). Pick R and W so they overlap a majority (for example, quorum reads and writes with three replicas), and you regain strong consistency for that operation - at the cost of more coordination.
 
 ## Client-centric guarantees: don't gaslight one user
 
@@ -154,7 +155,7 @@ These are cheap, often implemented by "sticking" a client to one replica or havi
 
 ## How it ties back to CAP and PACELC
 
-This ladder is really the famous CAP trade-off seen from the read side. **CAP** says that when the network partitions, you must choose Consistency or Availability. **PACELC** extends it with a sharp addition: *if Partitioned, choose Availability or Consistency; Else (normal operation), choose Latency or Consistency.*
+This ladder is really the famous [CAP trade-off](/blog/distributed-systems/16-the-cap-theorem-and-pacelc) seen from the read side. **CAP** says that when the network partitions, you must choose Consistency or Availability. **PACELC** extends it with a sharp addition: *if Partitioned, choose Availability or Consistency; Else (normal operation), choose Latency or Consistency.*
 
 In plain terms, the consistency-versus-latency tax is paid **even when nothing is broken**:
 
@@ -198,4 +199,4 @@ A quick reference for the common cases:
 
 If you take away one thing, make it this: **consistency is not a feature you turn on, it is a deliberate choice you make per piece of data.** Climbing up the ladder buys simpler reasoning and fresher reads, paid for in coordination, latency, and lost availability. Climbing down buys speed and uptime, paid for with staleness your code must handle. There is no free lunch - only an honest trade-off you should make on purpose.
 
-The deepest version of that trade-off lives one layer down, in how a fleet of machines reaches agreement at all. That is the job of **consensus algorithms** like Raft and Paxos - the machinery that actually makes linearizability possible. Once you see how a handful of servers vote on a single source of truth, the cost of strong consistency stops being abstract and starts being something you can feel.
+The deepest version of that trade-off lives one layer down, in how a fleet of machines reaches agreement at all. That is the job of **consensus algorithms** like [Raft and Paxos](/blog/distributed-systems/07-multi-paxos-raft-vs-paxos-the-real-world) - the machinery that actually makes linearizability possible. Once you see how a handful of servers vote on a single source of truth, the cost of strong consistency stops being abstract and starts being something you can feel.

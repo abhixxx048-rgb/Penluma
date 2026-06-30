@@ -36,16 +36,17 @@ order: 999
 icon: "\U0001F4CA"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
 Most of the SaaS metrics advice you'll find online is quietly lying to you. Not on purpose - but the benchmarks, the dashboards, the "healthy" numbers were almost all written for a different company than yours. They were calibrated for big sales teams, expensive contracts, and tens of millions in revenue.
 
-If you run a small, self-serve product that sells affordable plans to ordinary business owners, copying those targets will send you chasing the wrong things and burning cash you don't have. This article shows you the small set of numbers that actually matter at your stage - and the famous ones you can safely ignore.
+If you run a small, self-serve product that sells [affordable plans](/blog/personal-money-mastery/12-pricing-value-capture) to ordinary business owners, copying those targets will send you chasing the wrong things and burning cash you don't have. This article shows you the small set of numbers that actually matter at your stage - and the famous ones you can safely ignore.
 
 ## Why this matters
 
-When you're a small team with limited runway, every hour spent building a dashboard is an hour not spent talking to customers or fixing your product. Vanity metrics feel productive. They are not.
+When you're a small team with [limited runway](/blog/business-financial-literacy/07-cash-flow-burn-rate-runway-don-t-run-out-of-money), every hour spent building a dashboard is an hour not spent talking to customers or fixing your product. [Vanity metrics](/blog/ai-learning-platform/26-measuring-real-learning-metrics-that-matter) feel productive. They are not.
 
 The danger isn't just wasted time. It's that the wrong target quietly reshapes your decisions. Aim for an enterprise retention number and you'll over-invest in features your small-business customers never asked for. Trust a fabricated benchmark and you'll celebrate or panic for no reason.
 
@@ -70,7 +71,7 @@ One honest event keeps your whole system pointed in the same direction.
 
 Forget the famous composite scores for now. The one economic number worth watching is **CAC payback period** - how many months it takes to earn back what you spent to acquire a customer.
 
-Think of it like a vending machine. You put a coin in (your acquisition cost). The question that matters when money is tight isn't "how much will this machine eventually return over years" - it's "how fast do I get my coin back so I can feed the next machine?" A short payback means growth funds itself. A long one means you need outside cash to keep going.
+Think of it like a vending machine. You put a coin in ([your acquisition cost](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale)). The question that matters when money is tight isn't "how much will this machine eventually return over years" - it's "how fast do I get my coin back so I can feed the next machine?" A short payback means growth funds itself. A long one means you need outside cash to keep going.
 
 Two details make this honest:
 
@@ -154,7 +155,7 @@ The cheapest tooling path carries you remarkably far: your existing database, on
 
 ## Conclusion
 
-If you remember one thing, make it this: **the best metric isn't the most sophisticated one - it's the one that fits the company you actually are.** A small, self-serve, low-price product needs a tiny, honest dashboard pointed at a single activation event, not a borrowed enterprise cockpit.
+If you remember one thing, make it this: **the best metric isn't the most sophisticated one - it's the one that fits the company you actually are.** A small, self-serve, low-price product needs [a tiny, honest dashboard](/blog/business-financial-literacy/13-living-by-the-numbers-the-founder-s-financial-dashboard) pointed at a single activation event, not a borrowed enterprise cockpit.
 
 Start with the funnel and one clean question. Let restraint be your strategy.
 

@@ -31,6 +31,7 @@ faq:
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: distributed-systems
+linked: true
 topicTitle: Distributed Systems
 category: Engineering
 date: '2026-06-21'
@@ -53,7 +54,7 @@ Get the mental models right and you make better calls everywhere: choosing a dat
 
 A single server running everything is **not** distributed, even if it powers a huge website.
 
-It becomes distributed the moment two or more separate machines, called **nodes**, cooperate to provide one service. The defining feature is that those nodes can only learn about each other by **sending messages over a network**. And that network can be slow, drop messages, or split in two.
+It becomes [distributed](/blog/distributed-systems/12-what-is-a-distributed-system) the moment two or more separate machines, called **nodes**, cooperate to provide one service. The defining feature is that those nodes can only learn about each other by **sending messages over a network**. And that network can be slow, drop messages, or split in two.
 
 That one fact is where all the difficulty comes from. Once machines can only talk by passing notes that might get lost, simple things like "what time is it?" and "what's the latest value?" become genuinely hard.
 
@@ -63,7 +64,7 @@ That one fact is where all the difficulty comes from. Once machines can only tal
 
 Because every machine's clock is slightly wrong, and they are all wrong by **different amounts**. This gap is called **clock skew**.
 
-Two events a millisecond apart on two machines can easily get timestamps in the wrong order. So sorting by wall-clock time can tell you event B came "before" event A, even when A actually *caused* B. That is why **logical clocks** exist: to order events correctly without trusting the wall clock.
+Two events a millisecond apart on two machines can easily get timestamps in the wrong order. So sorting by wall-clock time can tell you event B came "before" event A, even when A actually *caused* B. That is why [logical clocks](/blog/distributed-systems/14-time-clocks-the-ordering-of-events) exist: to order events correctly without trusting the wall clock.
 
 ### Doesn't NTP fix this?
 
@@ -76,7 +77,7 @@ After syncing, machines are still typically a few milliseconds apart, and networ
 Both are logical clocks, but they answer different questions.
 
 - Use a **Lamport clock** when you only need to put events into one agreed order and you do not care *why* they are ordered that way. It is just one number.
-- Use a **vector clock** when you need to know whether two events were truly **causally related** or just happened independently (**concurrent**). For example, to detect and resolve conflicting writes.
+- Use a [vector clock](/blog/distributed-systems/15-vector-clocks-causality) when you need to know whether two events were truly **causally related** or just happened independently (**concurrent**). For example, to detect and resolve conflicting writes.
 
 The one-sentence difference: a Lamport clock guarantees "if A caused B, then A's number is smaller" but a smaller number does not *prove* causation. A vector clock can actually tell you "A caused B," "B caused A," or "they're concurrent" with certainty.
 
@@ -90,7 +91,7 @@ Still relevant, but usually quoted too simply.
 
 CAP only describes what happens **during a network partition** (a moment when nodes can't reach each other). And even then it is not a clean "pick 2 of 3," because on a real network, partition tolerance is mandatory. You don't get to opt out of the network breaking.
 
-So the real choice is just **consistency versus availability while the network is split**. **PACELC** is the more honest, modern framing because it adds the part CAP ignores: even when nothing is broken (which is most of the time), you still trade **latency versus consistency**.
+So the real choice is just **consistency versus availability while the network is split**. [PACELC](/blog/distributed-systems/16-the-cap-theorem-and-pacelc) is the more honest, modern framing because it adds the part CAP ignores: even when nothing is broken (which is most of the time), you still trade **latency versus consistency**.
 
 ### If I "choose availability," does my data get corrupted?
 
@@ -104,7 +105,7 @@ The data is not corrupt. It is just temporarily out of agreement. Choosing **con
 
 Not wrong, just possibly **not the latest yet**.
 
-Eventual consistency promises that if writes stop, every copy will converge to the same correct value. In the meantime, a read might be **stale**: an old-but-valid value. For a "likes" count, that is completely fine. For a bank balance, you would want something stronger. The data is never garbage. It is just behind.
+[Eventual consistency](/blog/distributed-systems/17-consistency-models) promises that if writes stop, every copy will converge to the same correct value. In the meantime, a read might be **stale**: an old-but-valid value. For a "likes" count, that is completely fine. For a bank balance, you would want something stronger. The data is never garbage. It is just behind.
 
 ### How stale can an eventually consistent read get?
 
@@ -174,4 +175,4 @@ When you are designing or debugging a distributed system, walk this checklist:
 
 If you remember one thing, make it this: **almost every hard problem in distributed systems traces back to a single assumption being false, that the network is reliable.** Drop that assumption, and clocks, consistency, quorums, and retries stop feeling like trivia and start feeling like common sense.
 
-The natural next question is the one this FAQ only gestures at: when nodes *must* agree despite an unreliable network, how do they actually reach that agreement? That is the world of **consensus algorithms** like Paxos and Raft, where machines that don't trust the clock, the network, or each other still manage to decide as one. That is where these ideas come together, and it is well worth your next afternoon.
+The natural next question is the one this FAQ only gestures at: when nodes *must* agree despite an unreliable network, how do they actually reach that agreement? That is the world of [consensus algorithms](/blog/distributed-systems/02-the-consensus-problem) like Paxos and Raft, where machines that don't trust the clock, the network, or each other still manage to decide as one. That is where these ideas come together, and it is well worth your next afternoon.

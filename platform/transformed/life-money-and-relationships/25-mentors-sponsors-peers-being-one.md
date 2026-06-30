@@ -25,6 +25,7 @@ order: 24
 icon: "\U0001F331"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 faq:
   - q: What is the difference between a mentor and a sponsor?
     a: >-
@@ -69,7 +70,7 @@ This is a guide to the three relationships that quietly shape a career: mentors,
 
 ## Why this matters
 
-You can be excellent at your work and still get passed over. Skill gets you in the door; relationships move you through the building.
+You can be excellent at your work and still get passed over. Skill gets you in the door; [relationships move you through the building](/blog/life-money-and-relationships/16-why-relationships-networks-truly-matter).
 
 Here's the catch most beginners miss: these three relationships are not interchangeable, and you "ask" for each one completely differently. Use a mentor approach on a sponsor and you'll come off as needy. Wait for a mentor to magically appear and you'll wait forever.
 
@@ -155,7 +156,7 @@ Think of a mastermind as a "board of directors" for your life that you don't hav
 
 ## Asking for an introduction the right way
 
-Often the highest-value thing a mentor or peer can do is *introduce* you to someone. There's a right way and a clumsy way to ask.
+Often the highest-value thing a mentor or peer can do is [*introduce* you to someone](/blog/life-money-and-relationships/27-how-opportunities-hires-advice-really-flow). There's a right way and a clumsy way to ask.
 
 The gold standard is the **double opt-in intro**. The person connecting you privately checks with the *other* person first, so both sides have agreed before any email goes out. Like dating, everyone consents and can quietly opt out.
 
@@ -185,12 +186,12 @@ A few beliefs quietly hold people back:
 3. **Make your work visible.** Sponsorship follows results people can see. Share what you ship; let the right rooms notice it.
 4. **Start or join a small peer group.** Four to eight people, a monthly hot seat, light accountability. That's all it takes.
 5. **Send one follow-up report this week.** Tell a past advisor what their input led to. Two minutes, big returns.
-6. **Do one five-minute favor with no ask attached.** Recommend a peer publicly, put someone's name forward, or vouch for a junior person's work.
+6. **Do one [five-minute favor with no ask attached](/blog/life-money-and-relationships/24-giving-value-reciprocity-without-keeping-score).** Recommend a peer publicly, put someone's name forward, or vouch for a junior person's work.
 
 That last one matters more than it looks. Giving is contagious. When one person in a group consistently helps others, it sets a norm and others follow. The founder who mentors generously and connects people freely slowly becomes the *hub* of a community, and hubs are exactly where sponsors and opportunities gravitate.
 
 ## Conclusion
 
-If you remember one thing, make it this: **mentors advise, sponsors act, peers walk beside you, and you build all three by giving before you're asked.** The fastest way to attract great mentors is to be a great mentee. The surest way to earn a sponsor is to do visible, excellent work. And the way to become the kind of person both gather around is to start paying it forward today, while you still feel too junior to matter.
+If you remember one thing, make it this: **mentors advise, sponsors act, peers walk beside you, and you build all three by giving before you're asked.** The fastest way to attract great mentors is to be a great mentee. The surest way to earn a sponsor is to do visible, excellent work. And the way to become the kind of person both gather around is to start [paying it forward](/blog/life-money-and-relationships/17-the-right-mindset-give-first-authentic-long-term) today, while you still feel too junior to matter.
 
-Here's the thread worth pulling next: the single small act that starts your reputation as a giver is often a tiny, low-cost favor. There's a whole quiet science to those "five-minute favors" and why the most connected people in any field are almost always the most generous ones. That generosity, it turns out, is less about kindness and more about compounding.
+Here's the thread worth pulling next: the single small act that starts your reputation as a giver is often a tiny, low-cost favor. There's a whole quiet science to those "five-minute favors" and why [the most connected people in any field](/blog/life-money-and-relationships/29-community-reputation-long-term-social-capital) are almost always the most generous ones. That generosity, it turns out, is less about kindness and more about compounding.

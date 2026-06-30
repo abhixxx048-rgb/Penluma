@@ -38,6 +38,7 @@ order: 11
 icon: "\U0001F4C8"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Solow%E2%80%93Swan_model
   - https://en.wikipedia.org/wiki/Why_Nations_Fail
@@ -86,7 +87,7 @@ To find roughly how many years it takes for something to **double**, divide 70 b
 
 (The 70 comes from the math of natural logarithms; some people use 72 instead because it divides evenly by more numbers. Either works for a quick estimate.)
 
-Now watch what that does to history. The United States grew real GDP per person at roughly 1.8 to 2% a year for over a century. At 2%, living standards double about every 35 years, so each generation lived roughly twice as well as their parents. That steady, almost dull 2% is the whole distance between the world of 1900 and today.
+Now watch what that does to history. The United States grew [real GDP per person](/blog/economics-from-first-principles/11-measuring-an-economy-gdp-gnp-cpi-ppp-and-key-indicators) at roughly 1.8 to 2% a year for over a century. At 2%, living standards double about every 35 years, so each generation lived roughly twice as well as their parents. That steady, almost dull 2% is the whole distance between the world of 1900 and today.
 
 Then compare China. After it began market reforms in 1978, China grew per-capita GDP at roughly 8 to 10% a year for about three decades, doubling living standards every 7 to 9 years. The result was the fastest escape from poverty in human history. By the World Bank's reckoning, roughly **800 million people were lifted out of extreme poverty**. That is what a few extra percentage points, compounded across a generation, can do.
 
@@ -104,7 +105,7 @@ Trace the chain of cause and effect, because this is where the ripple spreads:
 
 1. Output per hour rises.
 2. Each worker produces more value.
-3. Firms can pay higher real wages and still make a profit.
+3. Firms can pay [higher real wages](/blog/economics-from-first-principles/13-wages-labor-markets-and-why-some-jobs-pay-more) and still make a profit.
 4. Households earn and spend more.
 5. Living standards rise across the whole economy.
 
@@ -157,7 +158,7 @@ The success stories are real. The East Asian "Tigers" - South Korea, Taiwan, Sin
 - **"A growing economy means everyone is getting richer."** Not necessarily. If population outpaces output, the average person loses ground. Per-capita is what counts.
 - **"Hard-working countries are rich because they work more hours."** Rich countries usually work *fewer* hours per person. They get rich by producing more per hour, not by grinding longer.
 - **"Pour in enough capital and any country will take off."** Capital alone hits a steady state and stalls. Without new ideas and good institutions, the money's payoff fades.
-- **"Poor countries are poor because of bad geography or culture."** These are the lazy explanations. The cleaner predictor is institutions - the rules that decide whether ordinary people can invest and keep the rewards.
+- **"Poor countries are poor because of bad geography or culture."** These are the lazy explanations. The cleaner predictor is [institutions](/blog/economics-from-first-principles/26-development-economics-why-some-countries-are-rich-and-others-poor) - the rules that decide whether ordinary people can invest and keep the rewards.
 
 ## The deepest answer: institutions
 
@@ -180,7 +181,7 @@ Growth is powerful, but GDP is an imperfect ruler. It counts production while ig
 
 Recent data is intriguing and uncertain. US labor productivity rose strongly in 2024 - the best in over a decade outside the pandemic whiplash - after a weak patch in 2022. But early 2025 softened again.
 
-The big open debate: is this the start of an **AI-driven productivity boom**, or just a blip? History urges caution. Big general-purpose technologies usually take years to show up in the statistics. The famous "Solow paradox" of the 1980s and 90s was that "we see computers everywhere except in the productivity figures." The rich world has suffered a productivity *slowdown* since around 2005, and AI optimists hope to reverse it. Whether they will is, honestly, not yet known.
+The big open debate: is this the start of an **AI-driven productivity boom**, or just a blip? History urges caution. Big [general-purpose technologies](/blog/economics-from-first-principles/27-technology-automation-ai-and-innovation) usually take years to show up in the statistics. The famous "Solow paradox" of the 1980s and 90s was that "we see computers everywhere except in the productivity figures." The rich world has suffered a productivity *slowdown* since around 2005, and AI optimists hope to reverse it. Whether they will is, honestly, not yet known.
 
 ## How to use this
 
@@ -196,4 +197,4 @@ Whether you're reading the news, choosing where to invest, or just trying to thi
 
 If you remember one thing, remember this: **lasting prosperity comes from producing more per hour, and that ultimately depends on ideas and the rules that let people pursue them.** Capital alone runs out of road. Long hours don't make a nation rich. New ideas, protected by good institutions, do.
 
-Which raises a question worth sitting with. If the secret is mostly rules and incentives rather than geography or luck, then poverty is not a life sentence - it is, at least in principle, a choice societies make and can unmake. So why is it so hard to change them? That is where the study of power, politics, and the short-run booms and busts of the business cycle picks up, and it is every bit as gripping as the growth story you just read.
+Which raises a question worth sitting with. If the secret is mostly rules and incentives rather than geography or luck, then poverty is not a life sentence - it is, at least in principle, a choice societies make and can unmake. So why is it so hard to change them? That is where the study of power, politics, and the short-run booms and busts of [the business cycle](/blog/economics-from-first-principles/15-the-business-cycle-booms-recessions-and-depressions) picks up, and it is every bit as gripping as the growth story you just read.

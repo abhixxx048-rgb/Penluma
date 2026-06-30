@@ -35,6 +35,7 @@ icon: "\U0001F393"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 You read the chapter twice. The notes look familiar, the words feel smooth, and you'd swear you understand it. Then a friend asks you to explain it, and somewhere around the second sentence you hear yourself say "um." That single "um" just taught you more about what you don't know than an hour of re-reading ever could.
@@ -50,7 +51,7 @@ Teaching it back pops that illusion instantly. When you have to explain somethin
 That's why this method is worth your time:
 
 - It shows you precisely what to study next, instead of vaguely re-reading everything.
-- It moves knowledge into durable long-term memory, not just short-term recognition.
+- It moves knowledge into [durable long-term memory](/blog/ai-learning-platform/03-how-humans-learn-a-plain-tour-of-memory), not just short-term recognition.
 - It works for anything: a math concept, a coding pattern, a chapter of history, a work process you're learning.
 
 ## Teaching is learning: the protege effect
@@ -88,7 +89,7 @@ Whether you're prompting yourself, a study partner, or an AI tutor, *how* you as
 - **Name an audience.** "Explain it so a younger sibling would get it" forces genuine simplification instead of parroting the textbook.
 - **Ask for one thing at a time.** A single concept per prompt keeps the request inside your limited working memory.
 - **Invite an analogy or example.** "Give me a real-world example" is one of the hardest tests of true understanding. You can't fake an apt analogy.
-- **Answer before you check.** Produce your explanation *first*, then look at the correct version. The effort of generating the answer is what builds memory. Researchers call this a "desirable difficulty."
+- **Answer before you check.** Produce your explanation *first*, then look at the correct version. The effort of generating the answer is what builds memory. Researchers call this a ["desirable difficulty"](/blog/ai-learning-platform/08-interleaving-dual-coding-desirable-difficulties).
 
 The whole thing forms a loop:
 
@@ -104,7 +105,7 @@ Repeat until the explanation flows with no "ums."
 
 Here's the hard part. Grading a multiple-choice answer is trivial: match it to the key. But an explanation is free text. It's messy, worded a hundred different ways, partly right and partly wrong. How can an AI judge it fairly?
 
-The standard technique is called **LLM-as-judge**. You use a large language model (the same kind of AI that powers chatbots) as the grader, but you give it strict instructions instead of letting it grade by gut feeling.
+The standard technique is called [**LLM-as-judge**](/blog/ai-llm-engineering/02-evaluation-measurement). You use a large language model (the same kind of AI that powers chatbots) as the grader, but you give it strict instructions instead of letting it grade by gut feeling.
 
 The reliable recipe has a few non-negotiable parts:
 
@@ -117,7 +118,7 @@ Done this way, an AI judge typically agrees with human graders within one point 
 
 ### The real prize isn't the score, it's the gap
 
-The most valuable thing an AI judge produces isn't a number. It's **gap detection**. By checking your explanation against each rubric item, it can pinpoint exactly what's missing or wrong:
+The most valuable thing an AI judge produces isn't a number. It's [**gap detection**](/blog/ai-learning-platform/22-finding-and-repairing-weak-areas). By checking your explanation against each rubric item, it can pinpoint exactly what's missing or wrong:
 
 > "Good, you correctly said plants use sunlight and water. But you didn't mention where the carbon comes from, and you said plants 'breathe in oxygen.' Actually they *release* oxygen. Let's revisit that one piece."
 
@@ -125,7 +126,7 @@ Targeted feedback aimed at the single weak spot, rather than re-teaching everyth
 
 ## Common misconceptions
 
-**"Re-reading my notes means I know the material."** No. Smooth recognition is the illusion of fluency. Until you can produce the idea from a blank page, you haven't tested anything.
+**"Re-reading my notes means I know the material."** No. Smooth recognition is the illusion of fluency. Until you can [produce the idea from a blank page](/blog/ai-learning-platform/06-retrieval-practice-why-testing-beats-re-reading), you haven't tested anything.
 
 **"A longer, more polished answer is a better answer."** Not to a fair grader, and not in reality. AI judges suffer from **verbosity bias** (longer looks better) and **style-over-substance bias** (confident phrasing scores well even when it's wrong). A good rubric rewards correct content, not word count.
 
@@ -153,4 +154,4 @@ If you're using an AI tutor, level it up:
 
 The one idea to keep: **understanding isn't what you can recognize, it's what you can produce.** Teaching forces production, and the exact spot where your explanation breaks is the exact spot worth studying next. Everything else, the Feynman steps, the rubrics, the AI feedback, is just a way to make that breaking point visible and easy to fix.
 
-Which raises a sharper question for the next chapter: if an AI can detect the gap in *what* you know, can it also figure out *how* you best learn, and quietly reshape the lesson around it? That's where adaptive tutoring stops grading and starts personalizing, and it's where this gets really interesting.
+Which raises a sharper question for the next chapter: if an AI can detect the gap in *what* you know, can it also figure out *how* you best learn, and quietly reshape the lesson around it? That's where [adaptive tutoring](/blog/ai-learning-platform/18-learner-models-teaching-the-machine-what-the-student-knows) stops grading and starts personalizing, and it's where this gets really interesting.

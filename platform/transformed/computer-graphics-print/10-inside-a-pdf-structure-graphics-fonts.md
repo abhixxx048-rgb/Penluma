@@ -38,13 +38,14 @@ faq:
     a: PDF/X is a print-focused subset of the PDF standard. It enforces rules like embedding every font and declaring a print color condition, turning common mistakes into hard errors instead of silent surprises.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/PDF
 ---
 
 You send PDFs to the print shop every day. But have you ever wondered what is actually inside one?
 
-Open the hood and you will find something surprising. A PDF is not a picture of a page, and it is not a stream of text like a web page. It is closer to a tiny database with a built-in map. Once you understand that map, the three most common print disasters - wrong fonts, muddy color, and pixelated images - stop being mysteries and start being things you can prevent.
+Open the hood and you will find something surprising. A PDF is not a picture of a page, and it is not a stream of text like a web page. It is closer to a tiny database with a built-in map. Once you understand that map, the three most common print disasters - wrong fonts, [muddy color](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color), and [pixelated images](/blog/computer-graphics-print/07-raster-vs-vector-resolution-image-quality) - stop being mysteries and start being things you can prevent.
 
 This is a plain-English tour. No programming required.
 
@@ -165,7 +166,7 @@ The safe one is **ICCBased** color, which attaches a profile that pins down an e
 Two real-world failures show why this matters:
 
 - **RGB black turns muddy.** A logo built in pure RGB black gets converted at the press into a mix of all four inks. Instead of crisp, single-ink black text, you get a fuzzy version that is sensitive to tiny press misalignments.
-- **Pantone prints as process.** Packaging specifies a spot color like "PANTONE 286 C," expecting a dedicated ink plate. The job gets set up as four-color only, so the press approximates the brand blue with process inks - and the result looks dull and off-brand.
+- **Pantone prints as process.** Packaging specifies [a spot color](/blog/computer-graphics-print/06-ink-on-the-page-spot-colors-overprint-black-generation) like "PANTONE 286 C," expecting a dedicated ink plate. The job gets set up as four-color only, so the press approximates the brand blue with process inks - and the result looks dull and off-brand.
 
 For print, keep named **spot colors** only when you genuinely want an extra ink plate, and otherwise convert to a known press condition on purpose, never by accident.
 
@@ -185,7 +186,7 @@ For print, keep named **spot colors** only when you genuinely want an extra ink 
 
 Here is a concrete checklist you can actually follow:
 
-1. **Export to PDF/X-4** (or X-1a for older CMYK-flat workflows). PDF/X formats *require* every font to be embedded - a missing font becomes a hard error, not a silent surprise.
+1. **Export to PDF/X-4** (or X-1a for older CMYK-flat workflows). [PDF/X formats](/blog/computer-graphics-print/12-pdf-x-output-intent-page-boxes-the-print-ready-target) *require* every font to be embedded - a missing font becomes a hard error, not a silent surprise.
 2. **Confirm fonts are embedded and subset.** Open the document's font properties and look for the six-letter `ABCDEF+Name` prefix on each one.
 3. **Check image resolution at final size.** Make sure placed images stay at or above 300 dpi *after* any scaling, not before.
 4. **Set up bleed and trim correctly.** Define the **TrimBox** (final cut size) and **BleedBox** (trim plus bleed) so nothing important sits in the cut zone.
@@ -201,4 +202,4 @@ The single idea to carry with you: **a PDF is a set of instructions, not a photo
 
 You cannot fix what you cannot see. Now you can see inside.
 
-And here is the thread worth pulling next: that "muddy black" problem is really a story about color management - how a screen's glowing red, green, and blue gets translated into four wet inks soaking into paper. That translation is where a surprising amount of print quality is won or lost, and it deserves a tour of its own.
+And here is the thread worth pulling next: that "muddy black" problem is really a story about [color management](/blog/computer-graphics-print/03-color-management-icc-profiles-the-pipeline) - how a screen's glowing red, green, and blue gets translated into four wet inks soaking into paper. That translation is where a surprising amount of print quality is won or lost, and it deserves a tour of its own.

@@ -59,6 +59,7 @@ faq:
       profitable.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Rule_of_40
   - https://www.ycombinator.com/library/4A-a-guide-to-seed-fundraising
@@ -80,7 +81,7 @@ This is not abstract finance. It is the cheapest insurance you can buy against s
 
 **Bootstrapping** means funding the business yourself, from your savings and from what customers pay you. No outsiders.
 
-**Raising money** means bringing in investors or lenders who hand you cash now in exchange for something later.
+**Raising money** means [bringing in investors or lenders](/blog/economics-from-first-principles/18-how-companies-grow-raise-capital-and-create-value) who hand you cash now in exchange for something later.
 
 People treat this like a personality test. It is not. It is a trade between four things:
 
@@ -101,7 +102,7 @@ There are exactly two ways to get outside money, and they could not be more diff
 
 **Equity** means selling a slice of ownership. The investor gives you cash and owns a percentage of the business forever, or until it sells. You never repay equity. The investor only makes money if the company becomes valuable later.
 
-**Debt** means borrowing money you must pay back, usually with **interest** (an extra fee for borrowing). A bank loan is debt. You keep 100% ownership, but you owe fixed payments whether business is good or terrible.
+**Debt** means borrowing money you must pay back, usually with [interest](/blog/economics-from-first-principles/09-loans-credit-debt-and-interest-rates) (an extra fee for borrowing). A bank loan is debt. You keep 100% ownership, but you owe fixed payments whether business is good or terrible.
 
 | | Equity | Debt |
 |---|---|---|
@@ -201,7 +202,7 @@ A company growing 15% at −10% margin scores 5. That fails, and investors will 
 
 ### Burn multiple
 
-**Net burn** is how much cash you lose per period (money out minus money in). The **burn multiple**, popularized by investor **David Sacks**, asks a sharp question: how many dollars do you burn to add one dollar of new recurring revenue?
+**Net burn** is [how much cash you lose per period](/blog/business-financial-literacy/07-cash-flow-burn-rate-runway-don-t-run-out-of-money) (money out minus money in). The **burn multiple**, popularized by investor **David Sacks**, asks a sharp question: how many dollars do you burn to add one dollar of new recurring revenue?
 
 ```
 Burn Multiple  =      Net Burn
@@ -253,7 +254,7 @@ Equity is the most expensive money you will ever take, because you pay for it ou
 
 **Raising is usually right when:**
 
-1. You have proof the business works (real customers, healthy gross margin) and money is the only thing stopping fast growth.
+1. You have proof the business works (real customers, [healthy gross margin](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale)) and money is the only thing stopping fast growth.
 2. Your market is winner-takes-most, so being first and biggest genuinely matters.
 3. You need to build something expensive *before* revenue can exist, like hardware or deep tech.
 
@@ -267,7 +268,7 @@ Equity is the most expensive money you will ever take, because you pay for it ou
 
 1. **Do the post-money math yourself.** Take any offer and compute Investment ÷ Post-money to see the real percentage you are giving up.
 2. **Ask "pre or post?" out loud.** Never let a valuation number sit unclarified. Get the answer in writing.
-3. **Check your own scorecards first.** Run your Rule of 40, burn multiple, and magic number before the meeting so you know whether their "low" offer is fair.
+3. **Check your own [scorecards](/blog/business-financial-literacy/13-living-by-the-numbers-the-founder-s-financial-dashboard) first.** Run your Rule of 40, burn multiple, and magic number before the meeting so you know whether their "low" offer is fair.
 4. **Keep your cap table clean from day one.** Track every owner and percentage in one accurate document.
 5. **Treat each percent of dilution as permanent.** Push back on giving away more than the round is truly worth, round after round.
 6. **Match the money to the moment.** Steady cash flow and a profitable model? Lean toward debt or bootstrapping. Risky, fast, winner-take-most? Equity earns its cost.

@@ -32,6 +32,7 @@ faq:
     a: "Only for proofing, when you need one device to simulate another - for example, an inkjet proofer mimicking a newspaper press. It preserves the source paper's white, which casts an unwanted tint in normal printing."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: computer-graphics-print
 topicTitle: Computer Graphics for Print
 category: Engineering
@@ -59,9 +60,9 @@ The trouble is that these vocabularies are different sizes. Roughly, from larges
 
 **human vision → ProPhoto RGB → Adobe RGB → sRGB → CMYK press**
 
-CMYK - the cyan, magenta, yellow, and black of printing - sits at the small end. It is the bottleneck. It especially struggles with saturated cyans, vivid greens, oranges, deep blues and purples, and bright reds.
+CMYK - [the cyan, magenta, yellow, and black of printing](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color) - sits at the small end. It is the bottleneck. It especially struggles with saturated cyans, vivid greens, oranges, deep blues and purples, and bright reds.
 
-This comes down to physics. **A screen emits light; paper reflects it.** Glowing neon colors are made of pure emitted light, and reflected ink has no equivalent. So those colors will always shift on press. That is not a defect - it is the nature of the medium.
+This comes down to physics. **[A screen emits light; paper reflects it.](/blog/computer-graphics-print/01-how-color-works-light-human-perception)** Glowing neon colors are made of pure emitted light, and reflected ink has no equivalent. So those colors will always shift on press. That is not a defect - it is the nature of the medium.
 
 A color the source contains but the destination cannot print is called **out-of-gamut** (OOG). It *must* be changed to something printable.
 
@@ -161,7 +162,7 @@ A quick chooser by content type:
 
 And the steps to actually do it:
 
-1. **Soft-proof with the real destination profile** - not a generic guess. The profile is the press plus the actual paper.
+1. **Soft-proof with the real [destination profile](/blog/computer-graphics-print/03-color-management-icc-profiles-the-pipeline)** - not a generic guess. The profile is the press plus the actual paper.
 2. **Turn on Proof Colors and the Gamut Warning** to see where colors will move.
 3. **Toggle between Perceptual and Relative Colorimetric on the real image.** Whichever looks better on *that* picture wins. Do not decide by habit.
 4. **Keep black point compensation on** for the colorimetric intents.
@@ -170,7 +171,7 @@ And the steps to actually do it:
 Two quick case studies make the trade-off concrete:
 
 - **A vivid sunset → CMYK.** The oranges and magentas are far out of gamut. Relative colorimetric clips them and the sky bands into flat patches. Perceptual desaturates the whole image a touch, but the sky keeps its smooth gradient. **Perceptual wins.**
-- **A "Pantone-blue" corporate logo.** The electric blue is out of gamut. Perceptual would dull the *entire* logo and any in-gamut text along with it. Relative colorimetric keeps everything else pixel-accurate and only nudges the blue to the nearest printable blue. **Relative colorimetric wins.**
+- **A "Pantone-blue" corporate logo.** The electric blue is [out of gamut](/blog/computer-graphics-print/05-gamut-out-of-gamut-handling-deep-dive). Perceptual would dull the *entire* logo and any in-gamut text along with it. Relative colorimetric keeps everything else pixel-accurate and only nudges the blue to the nearest printable blue. **Relative colorimetric wins.**
 
 ## Conclusion
 

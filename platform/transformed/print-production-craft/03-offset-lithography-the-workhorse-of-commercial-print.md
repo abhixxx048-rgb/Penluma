@@ -25,6 +25,7 @@ order: 2
 icon: "\U0001F4D0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 faq:
   - q: "What is offset lithography in simple terms?"
     a: "It is a printing method that uses the fact that oil and water repel. A flat metal plate holds ink only where you want an image, then hands that image to a rubber blanket that presses it onto paper. It prints most magazines, catalogs, books, and packaging."
@@ -107,13 +108,13 @@ How does a press reproduce a full-color photo with only a handful of inks? Throu
 - **Y** = Yellow
 - **K** = Key, meaning black (called "K" so nobody confuses it with Blue)
 
-The press never mixes these in a bucket. Each color is broken into a pattern of tiny dots called a **halftone**. Overlap dots of cyan, magenta, yellow, and black, and from reading distance your eye blends them into millions of apparent colors. Four plates, four units, full-color result.
+The press never mixes these in a bucket. Each color is broken into a pattern of tiny dots called a [**halftone**](/blog/computer-graphics-print/08-halftoning-screening-turning-tone-into-dots). Overlap dots of cyan, magenta, yellow, and black, and from reading distance your eye blends them into millions of apparent colors. Four plates, four units, full-color result.
 
 ### When CMYK isn't enough: spot colors
 
 Sometimes a color has to be *exactly* right every time - Coca-Cola red, Tiffany blue, a precise corporate orange. Building those from four overlapping dot patterns can drift slightly from press to press.
 
-The fix is a **spot color**: an ink pre-mixed to one exact hue, like paint mixed to a recipe, printed from its own dedicated plate and unit. The most common system is **Pantone** (PMS, the Pantone Matching System). Each color gets a number - "PMS 165" is a specific orange - so any shop in the world mixes the same ink.
+The fix is a **spot color**: an ink pre-mixed to one exact hue, like paint mixed to a recipe, printed from its own dedicated plate and unit. The most common system is [**Pantone**](/blog/print-production-craft/07-color-files-prepress-cmyk-pantone-bleed-proofs-preflight) (PMS, the Pantone Matching System). Each color gets a number - "PMS 165" is a specific orange - so any shop in the world mixes the same ink.
 
 Spot colors also unlock things CMYK simply can't reproduce: **metallics** (gold, silver), **fluorescents**, and certain bright pastels.
 
@@ -160,7 +161,7 @@ Plot both as cost-per-copy against quantity and the two lines **cross**. That in
 
 > **Example.** Offset setup $700, digital $0.22/copy, offset $0.11/copy. Break-even = 700 ÷ (0.22 − 0.11) = **~6,364 copies**. Below that, print digital; above it, print offset.
 
-There's one more thing only digital can do: **Variable Data Printing (VDP)** - changing the content on every copy (names, addresses, QR codes, languages). **Offset cannot do this at all.** The plate is fixed, so every copy in the run is identical.
+There's one more thing only digital can do: [**Variable Data Printing (VDP)**](/blog/print-production-craft/04-digital-printing-toner-inkjet-variable-data) - changing the content on every copy (names, addresses, QR codes, languages). **Offset cannot do this at all.** The plate is fixed, so every copy in the run is identical.
 
 ## Common misconceptions
 
@@ -178,8 +179,8 @@ If you're specifying a print job - or designing the software that prices one - w
 
 1. **Estimate your quantity first.** It decides everything. Roughly compute the offset setup-amortized price versus the flat digital price and pick the cheaper. Big run, static content → offset. Small run or per-copy differences → digital.
 2. **Only add spot colors you truly need.** Each one adds a plate, a unit, and cost. Brand color that must match exactly? Worth it. Otherwise, CMYK.
-3. **Build your file as a print-ready PDF/X** (e.g. PDF/X-1a). One export preset prevents most disasters: CMYK only, fonts embedded, correct color profile, **0.125 in (3 mm) bleed** on every side, and **300 ppi** images at final size.
-4. **Convert RGB to CMYK before output.** Screens show colors offset ink can't reproduce. Sending RGB causes surprise color shifts.
+3. **Build your file as a [print-ready PDF/X](/blog/computer-graphics-print/12-pdf-x-output-intent-page-boxes-the-print-ready-target)** (e.g. PDF/X-1a). One export preset prevents most disasters: CMYK only, fonts embedded, correct color profile, **0.125 in (3 mm) bleed** on every side, and **300 ppi** images at final size.
+4. **[Convert RGB to CMYK](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color) before output.** Screens show colors offset ink can't reproduce. Sending RGB causes surprise color shifts.
 5. **Add bleed if color runs to the edge.** Artwork must extend past the trim line, or cutting leaves white slivers.
 6. **Approve a contract proof before plates are made.** Fixing color on a running press costs far more than fixing the file. Once plates are burned, changes mean new plates.
 7. **Expect a minimum order and an over/under tolerance.** Make-ready spoilage makes exact counts impractical, so offset jobs often ship slightly over or under the ordered count.
@@ -192,4 +193,4 @@ Strip away the machinery and offset is one elegant idea: a flat plate where oil 
 
 Remember that one thing and you'll never be surprised by a print quote again: small runs love digital, big runs love offset, and the line between them is a number you can actually compute.
 
-But pressing ink onto paper is only half the story. A flat printed sheet still has to become a folded brochure, a bound book, or a die-cut box - and that world of **finishing and bindery** is where a good print job either comes alive or falls apart. That's where we head next.
+But pressing ink onto paper is only half the story. A flat printed sheet still has to become a folded brochure, a bound book, or a die-cut box - and that world of [**finishing and bindery**](/blog/print-production-craft/09-finishing-bindery-everything-after-the-press) is where a good print job either comes alive or falls apart. That's where we head next.

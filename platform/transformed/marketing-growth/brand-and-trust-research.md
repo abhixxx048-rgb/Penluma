@@ -36,6 +36,7 @@ order: 999
 icon: "\U0001F680"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -89,12 +90,12 @@ You don't need thousands of reviews. You need believable ones, placed where they
 
 Here's the one most stores underestimate. The way your site *looks* is itself a trust signal, often before a single word is read.
 
-When colors, fonts, spacing, and button styles are consistent from the homepage to the checkout, the shopper's brain registers, "A real, careful business made this." When pages clash, or the checkout suddenly looks like it belongs to a different website, something feels off, even if the visitor can't name what.
+When colors, fonts, spacing, and button styles are consistent from the homepage to the checkout, the shopper's brain registers, "A real, careful business made this." When pages clash, or the checkout suddenly looks like it belongs to a different website, [something feels off](/blog/product-sense-empathy/05-the-psychology-of-obvious-affordances-signifiers-mental-models), even if the visitor can't name what.
 
 Consistency does quiet, constant work:
 
 - It makes the store feel legitimate and well run.
-- It keeps attention on the product instead of on visual friction.
+- It keeps attention on the product instead of on [visual friction](/blog/product-sense-empathy/07-cognitive-load-why-simple-feels-effortless).
 - It signals that if you sweat the small design details, you'll probably handle their order with the same care.
 
 Think of it like a physical shop. Clean shelves, clear signage, and a tidy counter make you comfortable spending money. A flickering sign and a mismatched register make you wonder if the credit card machine is even safe.
@@ -111,7 +112,7 @@ Think of it like a physical shop. Clean shelves, clear signage, and a tidy count
 
 ## How to use this
 
-Walk through your own store as a first-time, slightly skeptical shopper. Then work through this checklist:
+Walk through your own store as a [first-time, slightly skeptical shopper](/blog/product-sense-empathy/03-user-empathy-seeing-through-the-user-s-eyes). Then work through this checklist:
 
 1. **Audit your checkout.** Add visible payment icons, a security cue, and a plainly stated guarantee or return policy. Make sure the checkout page looks like the same brand as the rest of the site.
 2. **Surface your reviews.** Move real reviews and customer photos onto your product pages, near the buy button. If you have few, ask recent buyers for honest feedback.
@@ -126,4 +127,4 @@ Start with the cheap, high-impact fixes: broken links and fake claims cost almos
 
 Trust isn't a feeling you manufacture. It's the sum of small, concrete signals, and the absence of small, concrete doubts. The stores that win aren't always the cheapest or the prettiest. They're the ones that quietly answer "Can I trust you?" before the shopper even finishes asking.
 
-So the real question is no longer whether trust matters. It's *where* your store is leaking it right now, and that leads somewhere useful: the psychology of why people abandon carts in the first place. Once you understand the exact moment hesitation creeps in, you can place your strongest reassurance precisely where it changes minds.
+So the real question is no longer whether trust matters. It's *where* your store is leaking it right now, and that leads somewhere useful: the psychology of [why people abandon carts](/blog/product-sense-empathy/09-reducing-friction-flows-steps-progressive-disclosure) in the first place. Once you understand the exact moment hesitation creeps in, you can place your strongest reassurance precisely where it changes minds.

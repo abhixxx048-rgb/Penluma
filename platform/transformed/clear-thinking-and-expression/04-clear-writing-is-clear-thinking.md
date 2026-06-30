@@ -43,6 +43,7 @@ faq:
       and fix the gaps.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: clear-thinking-and-expression
 topicTitle: Clear Thinking & Expression
 category: Thinking & Decisions
@@ -74,7 +75,7 @@ The moment you try to write a thought down in a real sentence, every missing pie
 
 ### It's how your memory works
 
-Psychologists describe **working memory** as the small mental "desk" where you hold the thoughts you're actively using. It's tiny - you can juggle only a handful of items at once.
+Psychologists describe **[working memory](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits)** as the small mental "desk" where you hold the thoughts you're actively using. It's tiny - you can juggle only a handful of items at once.
 
 In your head, a big idea feels whole because you flick between its parts fast, like spinning plates. Writing forces all the parts to sit still, in order, at the same time. That's when you notice they don't actually connect.
 
@@ -116,7 +117,7 @@ Here's the engine of the whole idea. You don't think first and then write the fi
 
 Then round again. Each lap, the idea gets sharper.
 
-This is also why writing helps you pull more from what you read. When you force yourself to write down what a paragraph actually *claims*, you notice where it connects to something else you know - links your eyes glided right over while just reading.
+This is also why writing helps you [pull more from what you read](/blog/clear-thinking-and-expression/10-active-reading-techniques-that-generate-thoughts). When you force yourself to write down what a paragraph actually *claims*, you notice where it connects to something else you know - links your eyes glided right over while just reading.
 
 ## Common misconceptions
 
@@ -136,7 +137,7 @@ That's the curse of knowledge talking. Understanding it yourself is the reason y
 
 Pick one and do it today. Each takes about ten minutes.
 
-1. **State your point in one sentence.** Before you elaborate on anything, write a single sentence in this shape: **"I think ___ because ___."** If you can't finish the "because," you don't have a point yet - you have a topic. You just found the exact gap. Fill it, then rewrite.
+1. **State your point in one sentence.** Before you elaborate on anything, [write a single sentence](/blog/clear-thinking-and-expression/05-from-fuzzy-idea-to-clear-sentence-the-smallest-unit) in this shape: **"I think ___ because ___."** If you can't finish the "because," you don't have a point yet - you have a topic. You just found the exact gap. Fill it, then rewrite.
 2. **Hunt for "big trees."** Reread something you wrote recently. Circle every spot where a reader could ask *"which one?"*, *"how much?"*, or *"why?"* Each circle is a vague "big tree" - rewrite it to be specific.
 3. **Read and state.** After reading one page of anything, close it and write one sentence: *"The main thing this said was ___."* This builds the habit of pulling ideas out of what you read.
 4. **Separate point from details.** Notice the difference below, and choose your point before you pour out support.
@@ -153,4 +154,4 @@ The pattern: beginners pour out details and hope the point appears. It doesn't. 
 
 The one thing to keep: **don't write to show your finished thinking - write to do your thinking.** The page is a mirror that shows you exactly where you're still unclear, so you can fix it. That stuck moment isn't failure; it's the tool working.
 
-Once you trust this, two harder skills open up - **structure** (how to order your points) and **editing** (how to cut and sharpen). Neither works without today's mindset, because you can't structure a point you haven't stated, and you can't edit toward clarity if you don't believe clarity is your job. Get the loop running first, and the rest is mostly technique. Next question worth chasing: once your thinking is clear, what's the smallest set of words that carries it?
+Once you trust this, two harder skills open up - **structure** ([how to order your points](/blog/clear-thinking-and-expression/06-structure-frameworks-pyramid-principle-scqa-prep)) and **editing** ([how to cut and sharpen](/blog/clear-thinking-and-expression/07-editing-turning-a-messy-draft-into-something-clear)). Neither works without today's mindset, because you can't structure a point you haven't stated, and you can't edit toward clarity if you don't believe clarity is your job. Get the loop running first, and the rest is mostly technique. Next question worth chasing: once your thinking is clear, what's the smallest set of words that carries it?

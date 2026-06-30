@@ -23,6 +23,7 @@ order: 2
 icon: "\U0001F4BC"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 faq:
   - q: What are the three financial statements?
@@ -59,7 +60,7 @@ Here's the key idea before we start: these aren't three separate things. They're
 
 ## The income statement: "Did we make a profit?"
 
-The income statement covers a **period of time**, like a month, a quarter, or a year. It starts with the money you earned and subtracts every cost, ending with what's left over.
+The [income statement](/blog/business-financial-literacy/04-reading-a-p-l-income-statement-line-by-line) covers a **period of time**, like a month, a quarter, or a year. It starts with the money you earned and subtracts every cost, ending with what's left over.
 
 Two terms, in plain English:
 
@@ -92,7 +93,7 @@ Think about your own life and this clicks instantly. Your house and car are asse
 
 ## The cash flow statement: "Where did the cash actually go?"
 
-The cash flow statement tracks real cash moving in and out over a period of time. It exists to answer the one question profit can't: *"We supposedly made a profit, so why is the bank account empty?"*
+The [cash flow statement](/blog/business-financial-literacy/05-the-balance-sheet-cash-flow-statement-why-profit-cash) tracks real cash moving in and out over a period of time. It exists to answer the one question profit can't: *"We supposedly made a profit, so why is the bank account empty?"*
 
 It splits every cash movement into three buckets:
 
@@ -148,15 +149,15 @@ Think of it like a restaurant marking a meal "served" the moment the food hits t
 ## How to read any company in five steps
 
 1. **Start with the income statement.** Find revenue at the top and net income at the bottom. Did they make money over the period?
-2. **Move to the cash flow statement.** Look at operating cash flow. Does the business itself actually generate cash, or does profit only exist on paper?
+2. **Move to the cash flow statement.** Look at [operating cash flow](/blog/business-financial-literacy/07-cash-flow-burn-rate-runway-don-t-run-out-of-money). Does the business itself actually generate cash, or does profit only exist on paper?
 3. **Open the balance sheet.** Check assets versus liabilities. Is there more owned than owed? How much is just cash?
 4. **Watch receivables and deferred revenue.** Large unpaid invoices or big deferred revenue tell you why profit and cash don't match.
 5. **Trace the connections.** Confirm net income lands in retained earnings and that ending cash matches the balance sheet's cash line. When the loop closes, you understand the whole picture.
 
-A practical tip for your own venture: if you ever plan to raise money, **use accrual accounting from day one.** Investors expect it, and it's the standard for subscription revenue. Founders who start on a cash basis face a painful, weeks-long conversion later, often right when they're trying to close a funding round.
+A practical tip for your own venture: if you ever plan to [raise money](/blog/business-financial-literacy/12-funding-dilution-the-cost-of-capital), **use accrual accounting from day one.** Investors expect it, and it's the standard for subscription revenue. Founders who start on a cash basis face a painful, weeks-long conversion later, often right when they're trying to close a funding round.
 
 ## Conclusion
 
 If you remember one thing, make it this: **profit is an opinion, but cash is a fact, and the three statements are how you see both at once.** The income statement tells you whether the work paid off, the balance sheet tells you where you stand, and the cash flow statement tells you the unvarnished truth about your bank account.
 
-Master the connections between them and no company's finances can hide from you. Which raises the natural next question: once you can read these numbers, how do you spot a *great* business from a merely profitable one? That's where a handful of ratios, like margins and return on equity, turn three reports into a verdict.
+Master the connections between them and no company's finances can hide from you. Which raises the natural next question: once you can read these numbers, how do you spot a *great* business from a merely profitable one? That's where a handful of ratios, like [margins and profitability](/blog/business-financial-literacy/10-break-even-margins-profitability), turn three reports into a verdict.

@@ -30,6 +30,7 @@ faq:
     a: Dark social is word-of-mouth that happens in private channels, group chats, DMs, and community threads that analytics can't track. It's often the real engine behind demand generation, which is why self-reported attribution matters.
 topic: marketing
 topicTitle: Marketing
+linked: true
 category: Business & Growth
 date: '2026-06-16'
 order: 999
@@ -123,7 +124,7 @@ Here's what it looks like in practice:
 - **Attend the events and associations they care about.** Trade shows, regional meetups, industry groups. A single sponsored local gathering often beats a pile of broad ads, because you're in the room with the exact people you want.
 - **Publish a clear point of view.** A named, human face, often the founder, posting short, opinionated, plain-language content. Things like "How a two-person shop took its first online order in a weekend" or "You don't need a developer to sell online." Teach the realization; don't sell the feature.
 - **Show, don't tell.** Sixty-to-ninety-second screen recordings that prove it works: "Watch me build this in four minutes." Non-technical buyers believe what they can see working.
-- **Do founder-led outreach.** Early on, the founder personally calling, visiting, and *listening* is itself demand generation. Every conversation plants the idea and produces raw material for content.
+- **Do [founder-led outreach](/blog/sales-customer-development/13-founder-led-outreach-getting-the-conversations).** Early on, the founder personally calling, visiting, and *listening* is itself demand generation. Every conversation plants the idea and produces raw material for content.
 
 The message that creates demand is never your category jargon. It's the customer's own words, reframing something they'd accepted as normal into a problem worth solving now.
 
@@ -135,7 +136,7 @@ The stage-appropriate guidance is different. Early on, weight heavily toward cap
 
 A practical split for an early-stage company over the next year or so:
 
-- **Capture: about 60-70%.** Fast proof, lowest cost per customer, and it validates your messaging and ideal customer. Build the comparison pages, bottom-of-funnel pages, and directory presence first.
+- **Capture: about 60-70%.** Fast proof, lowest [cost per customer](/blog/how-to-make-money/13-unit-economics-does-each-sale-make-money), and it validates your messaging and ideal customer. Build the comparison pages, bottom-of-funnel pages, and directory presence first.
 - **Generation: about 25-30%.** Crucially, this is mostly *founder time, not cash.* Community participation, point-of-view content, demos. It compounds slowly, so start now precisely because it's slow to mature.
 - **Tooling and experiments: about 5-10%.** Analytics, a simple CRM, a "How did you hear about us?" field, and small test budgets.
 
@@ -145,7 +146,7 @@ As you saturate the thin 5% pool, gradually shift the mix toward generation. The
 
 **"If it's not in the dashboard, it isn't working."** Wrong, and expensive. Analytics credit the last click, so they're heavily biased toward capture. They're blind to the community comment or founder post that actually created the demand. Never kill a generation program because the dashboard shows zero conversions. By design, it won't show them.
 
-**"Brand benchmarks like 60/40 apply to everyone."** They were built for big companies that already have proven economics. At the early stage, leaning that hard into awareness burns your runway before you've earned the right to spend it.
+**"Brand benchmarks like 60/40 apply to everyone."** They were built for big companies that already have proven economics. At the early stage, leaning that hard into awareness burns your [runway](/blog/business-financial-literacy/07-cash-flow-burn-rate-runway-don-t-run-out-of-money) before you've earned the right to spend it.
 
 **"Generation should pay off this quarter."** It compounds over quarters and years. Tesla's took the better part of a decade. The whole point of starting now is that it's slow.
 
@@ -165,7 +166,7 @@ Here's a concrete order of operations. None of it requires a big budget.
 6. **Publish one point-of-view post per week** in plain language. Consistency matters more than virality. Generation is a drumbeat, not a one-off campaign.
 7. **Set up Google Search Console** and log your branded search volume weekly. When people start Googling your name directly, generation is working. This is your north-star leading indicator.
 8. **Run one tiny paid-search test** on only your highest-intent keywords, and measure cost per demo. Keep it small and ruthless.
-9. **Pick one industry event** to attend, not exhibit, and talk to twenty potential customers. You'll walk away with relationships, research, and a month of content ideas.
+9. **Pick one industry event** to attend, not exhibit, and [talk to twenty potential customers](/blog/sales-customer-development/03-customer-development-get-out-of-the-building). You'll walk away with relationships, research, and a month of content ideas.
 
 ## Conclusion
 

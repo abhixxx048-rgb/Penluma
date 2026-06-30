@@ -39,6 +39,7 @@ icon: "\U0001F4BC"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 Most startups don't die because their idea was bad. They die because they run out of cash. You can have delighted customers, a product people love, and a brilliant team, and still go to zero the Friday payroll lands and the bank account can't cover it.
@@ -47,7 +48,7 @@ This is a guide to the small handful of numbers that tell you exactly how many d
 
 ## Why this matters
 
-Here's the uncomfortable truth: **profit is an opinion; cash is a fact.**
+Here's the uncomfortable truth: **[profit is an opinion; cash is a fact](/blog/business-financial-literacy/05-the-balance-sheet-cash-flow-statement-why-profit-cash).**
 
 You can survive for years without turning a profit. Plenty of famous companies did. But you die the very day you can't pay your bills, no matter how good things look on paper. The bank balance is the only number that keeps the lights on.
 
@@ -102,7 +103,7 @@ One warning. Don't calculate runway off a single lucky month's burn. One quiet m
 
 Your **cash position** is just one number: how much real, spendable cash sits in your accounts today. Don't count money you're owed but haven't received. That's not cash yet.
 
-A **forecast** is your best guess of where that balance is heading. The tool experienced founders swear by is the **13-week cash flow forecast**: a week-by-week view of the next quarter (13 weeks is roughly 3 months).
+A **forecast** is your best guess of where that balance is heading. The tool experienced founders swear by is the **[13-week cash flow forecast](/blog/business-financial-literacy/11-budgeting-forecasting-building-a-simple-financial-model)**: a week-by-week view of the next quarter (13 weeks is roughly 3 months).
 
 Why weekly instead of monthly? Because startups don't run out of money on a tidy monthly schedule. They run out in the specific week payroll lands and the account comes up short. Weekly granularity catches exactly that.
 
@@ -182,7 +183,7 @@ Together these form your **cash conversion cycle**: the number of days from spen
 
 ## Act at six months, not two
 
-Raising money and cutting costs both take longer than founders expect. A funding round commonly takes **3 to 6 months** from "start talking to investors" to "money in the bank." So if you wait until you have two months of runway to begin, you're already too late. You'll be negotiating from desperation, on bad terms, or not at all.
+Raising money and cutting costs both take longer than founders expect. A [funding round](/blog/business-financial-literacy/12-funding-dilution-the-cost-of-capital) commonly takes **3 to 6 months** from "start talking to investors" to "money in the bank." So if you wait until you have two months of runway to begin, you're already too late. You'll be negotiating from desperation, on bad terms, or not at all.
 
 ```
 RUNWAY DEPLETION - act early, not at the cliff
@@ -213,10 +214,10 @@ A simple weekly rhythm keeps you out of trouble. Do these:
 5. **Run a worst-case scenario** - what if revenue comes in 30% lower and a big payment slips? If that breaks you, fix the plan before it happens.
 6. **Start raising or cutting at about 6 months of runway**, while you still have leverage and time.
 
-Put a recurring 30-minute "cash review" on your calendar every week. Founders who survive aren't the ones who never hit trouble. They're the ones who saw it coming early enough to do something about it.
+Put a recurring 30-minute ["cash review"](/blog/business-financial-literacy/13-living-by-the-numbers-the-founder-s-financial-dashboard) on your calendar every week. Founders who survive aren't the ones who never hit trouble. They're the ones who saw it coming early enough to do something about it.
 
 ## Conclusion
 
 If you remember one thing, make it this: **profit is an opinion, but cash is a fact, and the date your cash hits zero is the most important date in your business.** Know it, watch it, and act while you still have room to move.
 
-Once you can see that date clearly, a new question opens up. The fastest lever on this whole list was raising prices, more cash in with no extra cost. So how do you actually charge more without scaring customers away? That's where pricing strategy comes in, and it's one of the most underused superpowers a founder has.
+Once you can see that date clearly, a new question opens up. The fastest lever on this whole list was raising prices, more cash in with no extra cost. So how do you actually charge more without scaring customers away? That's where [pricing strategy](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive) comes in, and it's one of the most underused superpowers a founder has.

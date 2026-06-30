@@ -17,6 +17,7 @@ keywords:
   - Khanmigo
 topic: ai-learning-platform
 topicTitle: AI Learning Platform
+linked: true
 category: AI & LLMs
 date: '2026-06-28'
 order: 16
@@ -73,7 +74,7 @@ The single biggest gift of a conversational tutor, compared to a static video or
 
 A confused learner reading a textbook has nowhere to put the question. It just festers. A chat box invites the question the instant it forms.
 
-Why does this matter so much? Confusion is mental noise. The longer it sits unanswered, the more it clogs working memory, and the rest of the lesson stops landing. Letting the learner ask the moment confusion strikes clears the clog and keeps the lesson flowing.
+Why does this matter so much? Confusion is mental noise. The longer it sits unanswered, the more it clogs [working memory](/blog/ai-learning-platform/05-cognitive-load-theory-why-too-much-at-once-fails), and the rest of the lesson stops landing. Letting the learner ask the moment confusion strikes clears the clog and keeps the lesson flowing.
 
 Because the tutor already knows the lesson and the learner's progress, an interruption isn't a jarring context switch. The answer arrives grounded in exactly what's on screen.
 
@@ -111,7 +112,7 @@ The learner does the thinking. The tutor only nudges. Full answers come out only
 
 ### One important caution
 
-Match the amount of telling to the learner's level. Beginners with no foothold need more direct demonstration first, a worked example to copy. Pure "figure it out yourself" with no background isn't productive struggle; it's just frustration. As skill grows, shift toward more asking and less telling.
+Match the amount of telling to the learner's level. Beginners with no foothold need more direct demonstration first, a [worked example](/blog/ai-learning-platform/11-zone-of-proximal-development-scaffolding-worked-examples) to copy. Pure "figure it out yourself" with no background isn't productive struggle; it's just frustration. As skill grows, shift toward more asking and less telling.
 
 ## Keep the conversation coherent across turns
 
@@ -123,7 +124,7 @@ Without context, the tutor re-asks questions, repeats hints, or contradicts itse
 
 ## Ground every answer in the lesson
 
-Now the trust problem. A language model can sound completely confident and still be wrong. This is called a **hallucination**: a fluent, made-up statement delivered with total conviction.
+Now the trust problem. A language model can [sound completely confident and still be wrong](/blog/ai-learning-platform/25-keeping-the-ai-accurate-and-pedagogically-sound). This is called a **hallucination**: a fluent, made-up statement delivered with total conviction.
 
 In learning, a confident wrong answer is *worse* than no answer. The learner trusts the tutor and memorizes the mistake.
 
@@ -149,7 +150,7 @@ This respects the learner while protecting their limited attention and the lesso
 
 **"A smarter model will tutor better on its own."** Not really. A raw, instruction-free chatbot becomes a homework-answer machine no matter how capable it is. The teaching lives in the system prompt and the scope, not the model size.
 
-**"Giving the answer quickly helps the learner."** It feels helpful and is mostly the opposite. The struggle of retrieving and producing the answer is what builds memory. Hand it over and you skip the part that teaches.
+**"Giving the answer quickly helps the learner."** It feels helpful and is mostly the opposite. The struggle of [retrieving and producing the answer](/blog/ai-learning-platform/06-retrieval-practice-why-testing-beats-re-reading) is what builds memory. Hand it over and you skip the part that teaches.
 
 **"A wrong answer means the learner failed."** Frame it as "not yet," not "wrong." A wrong answer is information about where the gap is. Treating it as a verdict just adds fear.
 
@@ -172,4 +173,4 @@ The big shift is this: a tutor's value doesn't come from how much it *knows*. It
 
 Get the scope and the system prompt right, and an ordinary model becomes a patient, focused guide.
 
-One piece we kept calling the "safety rail" deserves its own deep dive: how does the tutor actually *find* the right lesson passage out of thousands of words, in a fraction of a second? That's the machinery of RAG, and it's where the magic of grounding really happens. That's the next thread to pull.
+One piece we kept calling the "safety rail" deserves its own deep dive: how does the tutor actually *find* the right lesson passage out of thousands of words, in a fraction of a second? That's the [machinery of RAG](/blog/ai-learning-platform/24-turning-a-pdf-into-a-course-rag-for-learning), and it's where the magic of grounding really happens. That's the next thread to pull.

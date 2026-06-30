@@ -31,6 +31,7 @@ faq:
     a: A term is a monotonically increasing integer that labels each leadership period. Higher terms always win and lower terms are rejected, which makes a stale, returning leader harmless instead of catastrophic.
 topic: distributed-systems
 topicTitle: Distributed Systems
+linked: true
 category: Engineering
 date: '2026-06-21'
 order: 2
@@ -79,7 +80,7 @@ Sit with that for a second, because it quietly rewrites the entire problem. No r
 
 We started with a hard, vague goal: "keep five copies of a database in sync across an unreliable network." We just reduced it to a precise one: **"make all five servers agree on one single, ordered list of commands."** If they agree on the list, identical data falls out for free.
 
-That ordered list of commands has a name: **the log**. And "make everyone agree on the ordered log" is *exactly* what a consensus algorithm does.
+That ordered list of commands has a name: **the log**. And "make everyone agree on the ordered log" is *exactly* what a [consensus algorithm](/blog/distributed-systems/02-the-consensus-problem) does.
 
 ### An analogy: five accountants, one instruction list
 
@@ -132,7 +133,7 @@ Why does the gap matter? Because a follower can *know* entry 4 is committed (it 
 
 ## Term numbers: a logical clock for leadership
 
-There is no global clock in a distributed system, so we cannot order events by wall-clock time. We need a *logical* way to say "this happened in a later leadership period than that." That is what the **term** number is.
+There is no global clock in a distributed system, so we cannot [order events by wall-clock time](/blog/distributed-systems/14-time-clocks-the-ordering-of-events). We need a *logical* way to say "this happened in a later leadership period than that." That is what the **term** number is.
 
 A **term** (Raft), also called an **epoch** (ZAB) or **ballot** (Paxos), is a **monotonically increasing integer** that labels each period of leadership. Monotonically increasing just means it only ever goes up, never down: 1, 2, 3, 4. Every time the cluster holds a new election, it bumps the number. **A new election equals a new term.**
 
@@ -163,9 +164,9 @@ If a deposed king wanders back into the throne room issuing orders, the guards j
 
 There are two broad ways to agree on the log.
 
-**Leader-based.** The cluster elects one server as **leader**. The leader alone decides the order of entries and pushes them to **followers**. All writes funnel through the leader. This is simple to reason about, because one server sequences everything, so the order is obvious. The downside is that the leader is a bottleneck, and if it dies you pause for an election. Used by Raft, Multi-Paxos, ZooKeeper/ZAB, etcd, Consul, and Chubby.
+**Leader-based.** The cluster elects one server as **leader**. The leader alone decides the order of entries and pushes them to **followers**. All writes funnel through the leader. This is simple to reason about, because one server sequences everything, so the order is obvious. The downside is that the leader is a bottleneck, and if it dies you pause for [an election](/blog/distributed-systems/04-raft-leader-election). Used by Raft, Multi-Paxos, ZooKeeper/ZAB, etcd, Consul, and Chubby.
 
-**Leaderless.** No fixed leader. Any server can propose, and servers run a voting round per log slot to agree on what goes there. There is no single bottleneck and no election pause, but you risk *dueling proposers*: two servers proposing for the same slot keep interrupting each other, causing stalls. Used by basic single-decree Paxos and EPaxos.
+**Leaderless.** No fixed leader. Any server can propose, and servers run a voting round per log slot to agree on what goes there. There is no single bottleneck and no election pause, but you risk *dueling proposers*: two servers proposing for the same slot keep interrupting each other, causing stalls. Used by basic [single-decree Paxos](/blog/distributed-systems/06-paxos-the-original-consensus-algorithm) and EPaxos.
 
 Why do almost all production systems pick a leader? Because once you have one, the order of the log is trivially decided. It is just "whatever order the leader received the requests in." There is no argument about sequencing, because one server is doing all the sequencing. That makes the system far easier to understand and debug, and it makes the common case fast.
 
@@ -266,8 +267,8 @@ If you operate or build on top of a consensus system, here is the practical chec
 
 ## Conclusion
 
-Strip away the names and the jargon, and every leader-based consensus protocol is doing just **two jobs**: agree on a leader, then replicate the log safely. The term number and majority voting make "at most one leader per term" true. The consistency check, commit index, and backward repair make committed entries permanent and identical everywhere. That is the entire ballgame.
+Strip away the names and the jargon, and every leader-based consensus protocol is doing just **two jobs**: agree on a leader, then [replicate the log safely](/blog/distributed-systems/05-raft-log-replication-safety-membership). The term number and majority voting make "at most one leader per term" true. The consistency check, commit index, and backward repair make committed entries permanent and identical everywhere. That is the entire ballgame.
 
-The single takeaway worth carrying around: **replicas don't share data, they share an ordered list of commands, and identical data is the free reward for agreeing on that list.** Once that clicks, Raft and Paxos stop being two scary algorithms and become two dialects of the same sentence.
+The single takeaway worth carrying around: **replicas don't share data, they share an ordered list of commands, and identical data is the free reward for agreeing on that list.** Once that clicks, [Raft and Paxos](/blog/distributed-systems/07-multi-paxos-raft-vs-paxos) stop being two scary algorithms and become two dialects of the same sentence.
 
 Which raises the natural next question: if a majority just needs to *overlap* to keep a decision safe, how few servers can you actually lose before the whole cluster goes silent and refuses to accept writes? That is the story of quorums and the trade-off at the heart of every distributed system, and it is where we head next.

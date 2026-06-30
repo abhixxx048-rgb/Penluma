@@ -48,6 +48,7 @@ faq:
       Account Factory provisioning, and a compliance dashboard.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: aws-cloud-practitioner-mcq
 topicTitle: AWS Cloud Practitioner
 category: Certifications
@@ -75,7 +76,7 @@ This is the single most important idea, so let's make it stick.
 
 A **Service Control Policy (SCP)** sets the *maximum* permissions an account is allowed to use. Think of it as a ceiling in a room. The ceiling defines how high you *can* reach - but it does not hand you anything. You still need a ladder.
 
-In AWS, **IAM is the ladder**. IAM policies grant the actual permissions to users and roles inside an account. The SCP just decides whether IAM is even allowed to grant a given action.
+In AWS, **IAM is the ladder**. [IAM policies](/blog/aws-cloud-practitioner-mcq/04-iam-identity-access-management) grant the actual permissions to users and roles inside an account. The SCP just decides whether IAM is even allowed to grant a given action.
 
 So an SCP that "allows full S3 access" grants nobody anything. It only means "S3 is not blocked at the ceiling." If the developer has no IAM policy permitting S3, they still can't touch a bucket. That is the puzzle from the opening, solved.
 
@@ -98,7 +99,7 @@ Run 12 accounts and you might dread getting 12 invoices. You won't. **Consolidat
 But the convenience is only half the story. The savings come from pooling.
 
 - **Volume discounts stack.** AWS prices many services in tiers - the more you use, the cheaper the per-unit rate. Consolidated billing adds up usage across *all* accounts, so your combined volume crosses those discount thresholds faster than any single account could alone.
-- **Reserved Instances and Savings Plans are shared by default.** If one account buys a Reserved Instance and only uses part of it, the leftover benefit automatically applies to matching usage in another account. Nothing is wasted, and no special setup is required.
+- **Reserved Instances and Savings Plans are shared by default.** If one account buys a [Reserved Instance](/blog/aws-cloud-practitioner-mcq/06-amazon-ec2-instances-purchasing-options) and only uses part of it, the leftover benefit automatically applies to matching usage in another account. Nothing is wasted, and no special setup is required.
 
 That sharing point is a favorite exam trap. People assume a Reserved Instance is locked to the account that bought it. By default, it is shared organization-wide. Savings Plans work the same way, riding along on consolidated billing automatically.
 
@@ -118,7 +119,7 @@ When finance wants reliable cost reports, messy tags are the enemy. One team wri
 
 **Tag policies** in Organizations define standardized tag keys and value formats across accounts and flag resources that don't comply. They keep tagging consistent so cost allocation and reporting stay trustworthy.
 
-Don't confuse tag policies with **cost allocation tags**. Tag policies standardize the *format* of tags org-wide; cost allocation tags mark a tag as usable in billing reports. They work together, but they are different jobs.
+Don't confuse tag policies with **cost allocation tags**. Tag policies standardize the *format* of tags org-wide; [cost allocation tags](/blog/aws-cloud-practitioner-mcq/16-billing-pricing-cost-management-support) mark a tag as usable in billing reports. They work together, but they are different jobs.
 
 ## Control Tower: the automation layer on top
 
@@ -145,7 +146,7 @@ Organizations manages accounts and billing. IAM Identity Center manages who your
 - **"Control Tower gives the volume discount."** No. The pooled-usage discount comes from consolidated billing, which exists in Organizations even without Control Tower.
 - **"Reserved Instances are locked to the buying account."** No. By default they are shared org-wide through consolidated billing.
 - **"SCPs can lock down the management account."** No. SCPs never restrict the management account - a key reason to keep production workloads out of it.
-- **"More accounts means automatic high availability."** No. Splitting accounts gives isolation, governance, and billing clarity. Resilience comes from architecture (Multi-AZ and Multi-Region design), not from account count.
+- **"More accounts means automatic high availability."** No. Splitting accounts gives isolation, governance, and billing clarity. Resilience comes from architecture ([Multi-AZ and Multi-Region design](/blog/aws-cloud-practitioner-mcq/11-amazon-rds-managed-relational-databases)), not from account count.
 - **"Organizations handles user logins."** No. That's IAM Identity Center's job.
 
 ## How to use this
@@ -167,4 +168,4 @@ For exam questions, run a quick triage: a permissions *ceiling* across accounts 
 
 If you remember one thing, make it this: in AWS Organizations, **an SCP is a ceiling and IAM is the key** - access happens only where both agree. That single idea quietly answers most of the hard questions in this topic.
 
-Once that clicks, the natural next question is how the management account itself stays safe. If SCPs can't restrict it and it pays for everything, what stops a single compromised credential there from becoming an organization-wide problem? That is where account-level security best practices - root user protection, dedicated security accounts, and least privilege - pick up the story.
+Once that clicks, the natural next question is how the management account itself stays safe. If SCPs can't restrict it and it pays for everything, what stops a single compromised credential there from becoming an organization-wide problem? That is where account-level [security best practices](/blog/aws-cloud-practitioner-mcq/05-security-identity-compliance-services) - root user protection, dedicated security accounts, and least privilege - pick up the story.

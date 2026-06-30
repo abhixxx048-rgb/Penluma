@@ -57,10 +57,11 @@ faq:
       filter, aggregate, and group those logs.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
-A security auditor walks over to your desk and asks, "Which user deleted that S3 bucket last Tuesday, and from what IP address?" You open Amazon CloudWatch, scroll through graphs of CPU and memory, and find... nothing useful. You picked the wrong service.
+A security auditor walks over to your desk and asks, "Which user deleted that [S3 bucket](/blog/aws-cloud-practitioner-mcq/10-amazon-s3-object-storage) last Tuesday, and from what IP address?" You open Amazon CloudWatch, scroll through graphs of CPU and memory, and find... nothing useful. You picked the wrong service.
 
 This single mix-up - CloudWatch versus CloudTrail - is the most-tested confusion on the AWS Cloud Practitioner exam, and it trips up smart people every time. The good news: once you understand what CloudWatch is actually *for*, the answers become obvious.
 
@@ -102,7 +103,7 @@ So if an alarm "fires" but no email arrives and no scaling happens, the cause is
 
 ### Dashboards: the single screen
 
-A **dashboard** is a customizable page that shows many metrics from many services together - EC2 CPU, RDS connections, and Lambda errors on one auto-refreshing screen. This is your "single pane of glass" for the on-call engineer.
+A **dashboard** is a customizable page that shows many metrics from many services together - EC2 CPU, [RDS connections](/blog/aws-cloud-practitioner-mcq/11-amazon-rds-managed-relational-databases), and Lambda errors on one auto-refreshing screen. This is your "single pane of glass" for the on-call engineer.
 
 Don't confuse it with alarms. *"Notify me when X crosses a line"* is an alarm. *"Show me everything at once"* is a dashboard.
 
@@ -131,7 +132,7 @@ This deserves its own section because the exam leans on it hard.
 | Show me CPU trends over the last hour | **CloudWatch** |
 | Prove which API calls happened in the last 90 days | **CloudTrail** |
 
-A real scenario: a compliance officer needs to prove which API calls were made over the last 90 days, *and* the operations team needs to know if servers are overloaded. These are two needs, two services - **CloudTrail** for the audit history, **CloudWatch** for live load. Don't try to force one tool to do both jobs. They're complementary, not interchangeable.
+A real scenario: a compliance officer needs to prove which API calls were made over the last 90 days, *and* the operations team needs to know if servers are overloaded. These are two needs, two services - [**CloudTrail**](/blog/aws-cloud-practitioner-mcq/14-aws-cloudtrail-auditing-api-logging) for the audit history, **CloudWatch** for live load. Don't try to force one tool to do both jobs. They're complementary, not interchangeable.
 
 The trap is simple to spot once you know it: any *"who / when / which API / from where"* question is **CloudTrail**, never CloudWatch.
 
@@ -139,7 +140,7 @@ The trap is simple to spot once you know it: any *"who / when / which API / from
 
 This is the second most common exam trap, so it's worth slowing down.
 
-AWS watches your EC2 instances **from the outside** - at the hypervisor level. From out there it can see:
+AWS watches your [EC2 instances](/blog/aws-cloud-practitioner-mcq/06-amazon-ec2-instances-purchasing-options) **from the outside** - at the hypervisor level. From out there it can see:
 
 - **CPU utilization**
 - **Network** traffic in/out
@@ -172,7 +173,7 @@ The takeaway: not every number in CloudWatch is "default." Standard infrastructu
 - **"Detailed monitoring unlocks memory metrics."** It only changes how *often* the same metrics are sampled (5 min to 1 min).
 - **"CloudWatch is only for metrics."** It's a full observability suite: Metrics, Logs, Alarms, Dashboards, and Events. Your app's text logs belong in CloudWatch Logs.
 - **"CloudTrail can trigger automation when something happens."** CloudTrail *records* the event for audit. EventBridge is the one that *reacts* and triggers action.
-- **"AWS can cap my spending if I ask."** It can't hard-cap spending. The supported path is alerting - a CloudWatch billing alarm or AWS Budgets.
+- **"AWS can cap my spending if I ask."** It can't hard-cap spending. The supported path is alerting - a CloudWatch billing alarm or [AWS Budgets](/blog/aws-cloud-practitioner-mcq/16-billing-pricing-cost-management-support).
 
 ## How to use this on the exam (and at work)
 

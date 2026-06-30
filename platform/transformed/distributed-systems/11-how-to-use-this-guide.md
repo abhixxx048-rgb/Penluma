@@ -27,6 +27,7 @@ faq:
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 topic: distributed-systems
+linked: true
 topicTitle: Distributed Systems
 category: Engineering
 date: '2026-06-21'
@@ -59,7 +60,7 @@ Think of it as learning the names of the people in the rooms before you watch th
 
 ### 2. Why distributed systems are hard
 
-Here you meet the famous wrong assumptions, often called the **fallacies of distributed computing**. These are the comforting lies every beginner believes: the network is reliable, latency is zero, bandwidth is infinite, the network never changes.
+Here you meet the famous wrong assumptions, often called the [**fallacies of distributed computing**](/blog/distributed-systems/13-why-distributed-systems-are-hard). These are the comforting lies every beginner believes: the network is reliable, latency is zero, bandwidth is infinite, the network never changes.
 
 Each one is false, and each false belief has caused real outages. This section also draws the line between a **fault** (something went wrong somewhere) and a **failure** (the whole system stopped doing its job). A good distributed system is full of faults that never become failures.
 
@@ -77,7 +78,7 @@ This is the difference between "you replied to my message" and "we both happened
 
 ### 5. The CAP theorem (and PACELC)
 
-The single most quoted and most misunderstood rule in the field. The **CAP theorem** says that when the network breaks, a system must choose between staying *available* (still answering) and staying *consistent* (everyone sees the same data).
+The single most quoted and most misunderstood rule in the field. The [**CAP theorem**](/blog/distributed-systems/16-the-cap-theorem-and-pacelc) says that when the network breaks, a system must choose between staying *available* (still answering) and staying *consistent* (everyone sees the same data).
 
 Its extension, **PACELC**, adds the part people forget: even when the network is healthy, you still trade between latency and consistency. We will untangle both, because most arguments about CAP come from misreading it.
 
@@ -91,9 +92,9 @@ Most real systems live somewhere in between, and choosing the right rung of this
 
 If you remember one structural thing, remember this. Sections 3 and 4, clocks and causality, are the technical heart of the whole subject.
 
-CAP and consistency models look intimidating until you understand *ordering* and *causality*. Once you do, the trade-offs stop feeling like abstract theory and start feeling obvious. The reason a system can or cannot promise you fresh data almost always comes back to whether it can agree on the order of events.
+CAP and [consistency models](/blog/distributed-systems/17-consistency-models) look intimidating until you understand *ordering* and *causality*. Once you do, the trade-offs stop feeling like abstract theory and start feeling obvious. The reason a system can or cannot promise you fresh data almost always comes back to whether it can agree on the order of events.
 
-So if you only have energy for deep focus on two ideas, spend it on logical clocks and vector clocks. Everything downstream gets easier.
+So if you only have energy for deep focus on two ideas, spend it on [logical clocks](/blog/distributed-systems/14-time-clocks-the-ordering-of-events) and [vector clocks](/blog/distributed-systems/15-vector-clocks-causality). Everything downstream gets easier.
 
 ## Common misconceptions
 
@@ -116,4 +117,4 @@ Here is the one thing to carry away: a distributed system is many computers coop
 
 Get comfortable with that question and the rest of the field unfolds naturally, from the fallacies engineers learn the hard way to the consistency promises your favorite apps quietly make and break.
 
-And here is the thread worth pulling next: if no two machines can agree on the time, how does a system of thousands ever agree on *anything* at all? That problem has a name, **consensus**, and the clever, almost stubborn answers to it are where distributed systems get truly beautiful.
+And here is the thread worth pulling next: if no two machines can agree on the time, how does a system of thousands ever agree on *anything* at all? That problem has a name, [**consensus**](/blog/distributed-systems/02-the-consensus-problem), and the clever, almost stubborn answers to it are where distributed systems get truly beautiful.

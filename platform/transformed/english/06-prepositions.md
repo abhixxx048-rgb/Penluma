@@ -35,17 +35,18 @@ icon: "\U0001F4DD"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 You write code that handles null tenants, race conditions, and distributed locks without breaking a sweat. Then you type "this fix depend to the cache layer" in a pull request and a tiny two-letter word betrays you.
 
-Prepositions - those small connecting words like **in**, **on**, **at**, **to**, and **for** - cause more professional-English mistakes than almost anything else. Not because they are hard to understand, but because there is rarely a logical rule. You don't reason your way to the right one. You either know the pairing or you guess.
+Prepositions - those small connecting words like **in**, **on**, **at**, **to**, and **for** - cause more [professional-English mistakes](/blog/english/00-index) than almost anything else. Not because they are hard to understand, but because there is rarely a logical rule. You don't reason your way to the right one. You either know the pairing or you guess.
 
 This article hands you the pairings, so you stop guessing.
 
 ## Why this matters
 
-Your commit messages, PR titles, and standup updates are read by people who decide whether you write clearly. A wrong preposition rarely blocks understanding, but it quietly signals "still learning the language" on every line.
+Your [commit messages, PR titles](/blog/english/10-professional-dev-writing), and standup updates are read by people who decide whether you write clearly. A wrong preposition rarely blocks understanding, but it quietly signals "still learning the language" on every line.
 
 The good news: prepositions follow a small set of patterns plus a short list of fixed pairs. Learn maybe fifteen of them and you cover the vast majority of what you write at work all day. This is one of the highest-return things you can fix in your English, because the same handful of phrases show up in nearly every message you send.
 
@@ -139,7 +140,7 @@ A few patterns in the wild:
 
 ## Practice: fix the preposition
 
-Correct the preposition (and any spelling or capitalization slips you spot). Answers follow.
+Correct the preposition (and any [spelling](/blog/english/11-spelling-typos) or [capitalization](/blog/english/07-punctuation-and-capitalization) slips you spot). Answers follow.
 
 1. the build depend to a env variable that is not set
 2. i am interested on picking up the payment ticket
@@ -165,4 +166,4 @@ Correct the preposition (and any spelling or capitalization slips you spot). Ans
 
 The single takeaway: **prepositions are pairs you memorize, not rules you solve.** Lock in fifteen collocations and the zoom rule for time and place, and you've fixed the mistake that trips up developers more than any other.
 
-Here's the thing those pairings hint at, though. "Depend on," "based on," "responsible for" - once you start treating English as chunks rather than individual words, a lot more than prepositions clicks into place. Articles (a, an, the) work the same way, and they're the next small word quietly shaping how your writing reads. Worth a look next.
+Here's the thing those pairings hint at, though. "Depend on," "based on," "responsible for" - once you start treating English as chunks rather than individual words, a lot more than prepositions clicks into place. [Articles (a, an, the)](/blog/english/01-articles-a-an-the) work the same way, and they're the next small word quietly shaping how your writing reads. Worth a look next.

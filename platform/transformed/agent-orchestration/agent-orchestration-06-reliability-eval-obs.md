@@ -55,6 +55,7 @@ faq:
       replay.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://www.anthropic.com/engineering/built-multi-agent-research-system
   - https://arxiv.org/abs/2503.13657
@@ -104,7 +105,7 @@ Two design instincts follow from this, and everything below builds on them:
 
 ## Why agents fail: a field guide
 
-A landmark study, *Why Do Multi-Agent LLM Systems Fail?*, built the first real catalog of agent failures from over 1,600 annotated execution traces across seven popular frameworks. Expert annotators agreed strongly on the labels, so this is not hand-waving.
+A landmark study, *Why Do Multi-Agent LLM Systems Fail?*, built the first real catalog of agent failures from over 1,600 annotated execution traces across seven popular [agent frameworks](/blog/agent-orchestration/agent-orchestration-04-frameworks). Expert annotators agreed strongly on the labels, so this is not hand-waving.
 
 Its central, slightly deflating finding: **most failures come from design, not model weakness.** Roughly 42% trace back to specification and system-design problems, and another 37% to agents miscommunicating with one another. You cannot buy your way out of these with a smarter model.
 
@@ -128,7 +129,7 @@ When agents collaborate, new failure modes appear that no single agent has.
 - One **withholds information** a teammate needed, or **ignores a teammate's input** entirely.
 - An agent's **reasoning and its actual action diverge** - it explains one plan and executes another.
 
-Here is the dangerous part. A misaligned agent produces an output, the next agent accepts it as authoritative, and the verification step that should have caught the problem never fires. Multi-agent systems **amplify** errors across agents rather than averaging them out. Treat every handoff between agents as an untrusted boundary: check the shape and origin of what you received, and never assume the upstream agent actually did what it claimed.
+Here is the dangerous part. A misaligned agent produces an output, the next agent accepts it as authoritative, and the verification step that should have caught the problem never fires. Multi-agent systems **amplify** errors across agents rather than averaging them out. Treat every [handoff between agents](/blog/agent-orchestration/agent-orchestration-03-communication-protocols) as an untrusted boundary: check the shape and origin of what you received, and never assume the upstream agent actually did what it claimed.
 
 ### Nobody checks the work
 
@@ -247,7 +248,7 @@ Remember the compounding-error math. If a long run fails at step 38, restarting 
 The production playbook looks like this:
 
 - **Don't restart on failure - resume from where the error happened.** Pair retry logic with regular checkpoints so the agent recovers gracefully when a tool fails.
-- **Manage the context window for very long runs.** Have agents summarize finished phases, push essential details to external memory, and spawn fresh agents with clean context before hitting limits.
+- **[Manage the context window](/blog/agent-orchestration/agent-orchestration-05-context-memory) for very long runs.** Have agents summarize finished phases, push essential details to external memory, and spawn fresh agents with clean context before hitting limits.
 - **Deploy without disrupting in-flight runs.** Because these systems run almost continuously, shift traffic from old to new gradually while both versions run, so agents mid-task aren't cut off.
 
 **Durable execution** is the deeper version of this idea: state is saved after every logical step, so a crash resumes from the **last checkpoint, not the start.** A few frameworks do it differently:
@@ -281,6 +282,6 @@ One caveat to keep you honest: **plain checkpointing is not full durable executi
 
 If you remember one thing, make it this: **with agents, reliability is a horizon problem, not an intelligence problem.** The math of compounding errors means small per-step gains and early detection beat any amount of raw model power on long tasks.
 
-There's a reason this discipline is worth the effort. Multi-agent setups can deliver large quality gains on broad, parallelizable work - but at roughly **15× the token cost** of a single chat. When you're spending that much, you had better be able to tell whether it actually worked.
+There's a reason this discipline is worth the effort. [Multi-agent setups](/blog/agent-orchestration/agent-orchestration-00-index) can deliver large quality gains on broad, parallelizable work - but at roughly **[15× the token cost](/blog/agent-orchestration/agent-orchestration-07-cost-performance)** of a single chat. When you're spending that much, you had better be able to tell whether it actually worked.
 
 Which raises the next question worth chasing: if a slow subagent can stall an entire synchronous pipeline, when is it worth the added hazards of running agents in parallel - and how do you coordinate them without trading one failure mode for three new ones?

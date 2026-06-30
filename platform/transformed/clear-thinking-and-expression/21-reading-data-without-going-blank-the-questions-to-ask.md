@@ -55,6 +55,7 @@ order: 20
 icon: ✍️
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -70,7 +71,7 @@ The skill is not raw intelligence. It is having a method. And a method is someth
 
 ## Why your mind goes blank (and why it's not your fault)
 
-Your **working memory** is the small mental space that holds whatever you are thinking about right now. It is tiny. The psychologist George Miller famously estimated it at around seven items; later research suggests it is closer to four.
+Your [**working memory**](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits) is the small mental space that holds whatever you are thinking about right now. It is tiny. The psychologist George Miller famously estimated it at around seven items; later research suggests it is closer to four.
 
 A chart throws far more than four things at you at once: numbers, labels, colours, two axes, a legend, a title. Your working memory overloads, and overload *feels* like blankness.
 
@@ -86,7 +87,7 @@ Ask these in order, out loud or on paper, whenever you face a chart, table, or r
 2. **What's the big picture?** The overall level. Is the number big or small, healthy or worrying?
 3. **What's changing?** The trend. Is it going up, down, or staying flat over time?
 4. **Compared to what?** The baseline or benchmark. Up versus last month? Better or worse than the target?
-5. **What's surprising?** The one thing that breaks the pattern: a spike, a dip, an odd row.
+5. **What's surprising?** The one thing that breaks the pattern: [a spike, a dip, an odd row](/blog/clear-thinking-and-expression/22-spotting-patterns-trends-anomalies-signals).
 6. **What's missing?** What the data does *not* show, but you would want to know.
 
 A few of those words deserve plain definitions before we lean on them:
@@ -151,7 +152,7 @@ Now narrate the six questions, one sentence each:
 
 Look what happened. From a wall of numbers you now have a clear story, "steady week, big Friday, worth finding out why," plus a real next question. That is the exact opposite of going blank.
 
-Notice the layers in action too: steps 1 to 3 were **descriptive**, step 4 was **comparative**, and the "why" you deliberately held back as a **causal** question to investigate. That restraint is what separates careful thinking from jumping to conclusions.
+Notice the layers in action too: steps 1 to 3 were **descriptive**, step 4 was **comparative**, and the "why" you deliberately held back as a **causal** question to investigate. That restraint is what separates careful thinking from [jumping to conclusions](/blog/clear-thinking-and-expression/18-cognitive-biases-logical-fallacies-and-how-to-dodge-them).
 
 ## Common misconceptions
 
@@ -177,12 +178,12 @@ Try this in the next ten minutes, then keep it as a habit.
 
 Then keep your reps going:
 
-- **Three days, three charts.** One chart a day for three days. Spreading practice across days (called **spaced practice**) beats one long cramming session, and it makes the routine fast and automatic.
+- **Three days, three charts.** One chart a day for three days. Spreading practice across days (called [**spaced practice**](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve)) beats one long cramming session, and it makes the routine fast and automatic.
 - **Label a sentence.** Take any data claim you hear and tag it Descriptive, Comparative, or Causal. If it's Causal, rewrite it as a guess.
 - **Catch a base rate.** Find one scary news number ("X complaints!", "Y% rise!") and ask: out of how many? Compared to when?
 - **Write the "so what."** For one table this week, write a single action sentence beginning "So we should…". Turning a fact into a next step is the move that makes data actually valuable.
 
-That last habit matters most. The whole point of reading data is to find something you can **act on**. The two richest questions for spotting opportunities are already in your checklist: *what's surprising?* (where the easy win usually hides) and *what's missing?* (what to measure next).
+That last habit matters most. The whole point of reading data is to find something you can **act on**. The two richest questions for [spotting opportunities](/blog/clear-thinking-and-expression/23-turning-observations-into-opportunities-jtbd-gap-analysis) are already in your checklist: *what's surprising?* (where the easy win usually hides) and *what's missing?* (what to measure next).
 
 ## Conclusion
 

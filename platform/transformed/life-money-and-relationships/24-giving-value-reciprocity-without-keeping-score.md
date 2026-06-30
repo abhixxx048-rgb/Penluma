@@ -23,6 +23,7 @@ order: 23
 icon: "\U0001F331"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 faq:
   - q: "What does it mean to give value in networking?"
     a: "It means doing small, useful things for people without first calculating what you'll get back, like making an introduction, sharing a relevant link, or giving honest feedback. It's the opposite of treating every conversation as a pitch."
@@ -45,7 +46,7 @@ That gap is the entire game. The people who build deep, durable networks aren't 
 
 ## Why this matters
 
-You can know exactly where to meet people, how to make a great first impression, and how to stay in touch with a tidy system. None of it works if your underlying posture is "what can I get?"
+You can know exactly [where to meet people](/blog/life-money-and-relationships/20-meeting-people-where-how-to-find-your-people), how to make a great first impression, and how to [stay in touch with a tidy system](/blog/life-money-and-relationships/23-staying-in-touch-a-system-for-nurturing-relationships). None of it works if your underlying posture is "what can I get?"
 
 People can smell that instantly. Every message that's secretly a request chips away at trust, even when you're polite about it.
 
@@ -87,7 +88,7 @@ Here are favors you could do **today**:
 
 ### The compound interest of goodwill
 
-Five-minute favors are **compound interest for relationships**. Compound interest is when small amounts keep earning on top of each other until the total grows far beyond what you put in.
+Five-minute favors are **compound interest for relationships**. [Compound interest](/blog/life-money-and-relationships/06-compounding-the-time-value-of-money) is when small amounts keep earning on top of each other until the total grows far beyond what you put in.
 
 Tiny, regular deposits of help work the same way. You barely notice each one, but over years the balance of trust and goodwill becomes enormous, and it pays out exactly when you need it most.
 
@@ -106,7 +107,7 @@ Rifkin had a clever twist. When he *did* need help, he often asked the person to
 
 LinkedIn co-founder Reid Hoffman put it plainly: *"It seems counterintuitive, but the more altruistic your attitude, the more benefits you will gain from the relationship... If you set out to help others, you will rapidly reinforce your own reputation and expand your universe of possibilities."*
 
-Think of it this way. Transactional networking is fishing with one line. Give-first networking is **stocking the whole pond**. You can't predict which fish you'll catch, but the water is full.
+Think of it this way. Transactional networking is fishing with one line. [Give-first networking](/blog/life-money-and-relationships/17-the-right-mindset-give-first-authentic-long-term) is **stocking the whole pond**. You can't predict which fish you'll catch, but the water is full.
 
 ## Givers, takers, and matchers
 
@@ -126,7 +127,7 @@ So what separates the two groups of givers? Not whether they give. *How* they gi
 
 ## Common misconceptions
 
-**"Givers finish last."** The doormats finish last. The smart givers finish first. The difference is entirely in *how* you give.
+**"Givers finish last."** The doormats finish last. The smart givers finish first. The difference is entirely in *how* you give. This connects directly to [how trust and rapport actually form](/blog/life-money-and-relationships/19-how-trust-rapport-actually-form).
 
 **"Keeping score keeps things fair."** Matchers feel fair but stay stuck. The mental ledger breeds quiet resentment and caps your network at the people who can repay you directly. Generalized reciprocity reaches much further.
 
@@ -199,6 +200,6 @@ Then keep a simple rhythm going:
 
 ## Conclusion
 
-The one thing to carry with you: **give like a giver, but guard your energy like a taker.** That blend, generous and boundaried, is what separates the people who burn out from the people who quietly become the most trusted person in every room.
+The one thing to carry with you: **give like a giver, but guard your energy like a taker.** That blend, generous and boundaried, is what separates the people who burn out from the people who quietly become [the most trusted person in every room](/blog/life-money-and-relationships/29-community-reputation-long-term-social-capital).
 
 Here's the thread worth pulling next. Generosity opens the door, but it only works if the right people walk through it. So how do you spot a persistent taker *early*, before you've poured a bucket of water into them? That pattern-recognition is its own skill, and it's where the smartest givers protect everything they've built.

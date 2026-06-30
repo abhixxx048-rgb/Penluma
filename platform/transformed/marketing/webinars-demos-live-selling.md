@@ -48,6 +48,7 @@ faq:
       session, not a generic product tour.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -63,11 +64,11 @@ Your buyers often aren't technical. They're busy owners who want proof, not prom
 
 Here's the strategic part. Most competitors sell the old enterprise way: a demo form, a gated call, weeks of back-and-forth. If you own the experience of "see it working in five minutes, no sales pressure," you don't just get a marketing channel. You prove your entire positioning, that you are the simplest way to do the job.
 
-For products under roughly $10K a year, this self-serve, product-led approach is the cheapest and most founder-friendly way to grow. It also tends to convert qualified leads faster, with payback measured in months rather than the year-plus a traditional sales team needs.
+For products under roughly $10K a year, this self-serve, product-led approach is the cheapest and most founder-friendly way to grow. It also tends to convert [qualified leads](/blog/sales-customer-development/09-qualifying-choosing-who-deserves-your-time) faster, with payback measured in months rather than the year-plus a traditional sales team needs.
 
 ## The core idea: show, don't tell
 
-Your product is visual. There's a storefront builder, live pricing, a drag-and-drop design studio. The buyer's loudest unspoken question is "Will I be able to use this myself?"
+Your product is visual. There's a storefront builder, live pricing, a drag-and-drop design studio. The [buyer's loudest unspoken question](/blog/product-sense-empathy/03-user-empathy-seeing-through-the-user-s-eyes) is "Will I be able to use this myself?"
 
 No amount of copywriting answers that. Only **watching it happen** does.
 
@@ -145,9 +146,9 @@ Put a "**See it in action, no signup**" button on your homepage hero and your pr
 
 Group demos are your default. They scale your time, and prospects learn from each other's questions.
 
-**Save live 1:1 demos for hand-raisers**, people who attended a workshop, played with the self-serve demo, and clicked "talk to us." For them, don't run a generic product tour. The demo already did that. Run a **"let's set up your shop" call**: "Bring your top five products and I'll show you exactly how they'd look and price."
+**Save live 1:1 demos for hand-raisers**, people who attended a workshop, played with the self-serve demo, and clicked "talk to us." For them, don't run a [generic product tour](/blog/sales-customer-development/10-the-demo-show-value-without-overselling). The demo already did that. Run a **"let's set up your shop" call**: "Bring your top five products and I'll show you exactly how they'd look and price."
 
-That reframe is sneaky-good. It turns a sales call into migration help, which directly disarms the number one objection for a non-technical buyer: "moving over is too hard." For people who won't book a time, send a personalized screen-recording walkthrough of what their store would look like.
+That reframe is sneaky-good. It turns a sales call into migration help, which directly disarms [the number one objection](/blog/sales-customer-development/11-handling-objections-with-honesty) for a non-technical buyer: "moving over is too hard." For people who won't book a time, send a personalized screen-recording walkthrough of what their store would look like.
 
 The rule of thumb: below roughly $10K a year in contract value, **never gate the first look behind a 1:1 demo**. That's what self-serve is for. Spend your scarce founder hours only on people the funnel has already warmed up.
 

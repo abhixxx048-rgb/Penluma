@@ -36,6 +36,7 @@ order: 22
 icon: "\U0001F4C8"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -45,7 +46,7 @@ This is the story of how dozens of separate national economies got stitched into
 
 ## Why this matters
 
-You feel globalization every day, even when you never think about it. It sets the price of your coffee, the cost of your car, whether your town has a factory, and how fast inflation climbs when a war breaks out half a world away.
+You feel globalization every day, even when you never think about it. It sets the price of your coffee, the cost of your car, whether your town has a factory, and how fast [inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) climbs when a war breaks out half a world away.
 
 Understanding it gives you a quiet superpower: you can read a scary trade headline and actually know whether it means anything. You can tell the difference between "globalization is collapsing" (almost never true) and "a chokepoint just got blocked" (sometimes a very big deal).
 
@@ -68,7 +69,7 @@ A first wave, roughly 1870 to 1914, rode the steamship, the telegraph, and a sha
 
 After 1945 the world slowly rebuilt trade. Then came the big one: the **hyperglobalization era of roughly 1990 to 2008**, when world trade grew far faster than the world economy itself.
 
-One number captures it. **Trade as a share of world GDP** (total exports plus imports divided by total output) rose from about 30% in 1970 to a **peak near 61% in 2008**. GDP, gross domestic product, is just the total value of everything an economy produces in a year.
+One number captures it. **Trade as a share of world GDP** (total exports plus imports divided by total output) rose from about 30% in 1970 to a **peak near 61% in 2008**. GDP, [gross domestic product](/blog/economics-from-first-principles/11-measuring-an-economy-gdp-gnp-cpi-ppp-and-key-indicators), is just the total value of everything an economy produces in a year.
 
 Since 2008 that ratio has roughly flatlined. It did not collapse. Economists nicknamed this stall **"slowbalization."** Hold onto that: globalization did not end, it stopped accelerating.
 
@@ -95,7 +96,7 @@ A firm can offshore without outsourcing, and outsource without offshoring. They 
 
 ## The single biggest globalization event: the China story
 
-On **December 11, 2001**, China joined the **World Trade Organization**, the club that sets the rules for global trade. As part of the deal, China's average tariff (the tax on imports) fell from about **32% in 1992 to under 8% by 2002**. The result reshaped the world.
+On **December 11, 2001**, China joined the **World Trade Organization**, the club that sets the rules for global trade. As part of the deal, China's [average tariff](/blog/economics-from-first-principles/21-international-trade-imports-exports-tariffs-and-agreements) (the tax on imports) fell from about **32% in 1992 to under 8% by 2002**. The result reshaped the world.
 
 | Measure | Around 2001 | After WTO entry |
 |---|---|---|
@@ -130,7 +131,7 @@ So the people who shouted loudest about trade were not imagining things. They re
 Because economies are wired together, a problem in one place travels fast. Here are the main channels it travels through, each a real case:
 
 - **Oil embargo (1973).** Arab producers cut supply over the Yom Kippur War. Crude jumped from about $3 to $12 a barrel in months. Because energy is an input in almost everything, this triggered global **stagflation**: high inflation and high unemployment at the same time.
-- **Financial crisis (2008).** A US mortgage collapse froze global credit through the banking system. World trade fell about 12% in 2009, the "Great Trade Collapse," far more than GDP dropped, because the loans that grease trade dried up.
+- **[Financial crisis (2008)](/blog/economics-from-first-principles/24-financial-crises-why-they-happen-spread-and-how-economies-recover).** A US mortgage collapse froze global credit through the banking system. World trade fell about 12% in 2009, the "Great Trade Collapse," far more than GDP dropped, because the loans that grease trade dried up.
 - **COVID-19 (2020 to 2022).** Factories closed while spending shifted from services to goods. Orders whipsawed, ports clogged, and shipping rates rose roughly tenfold.
 - **Chip shortage (2021).** Carmakers cancelled chip orders early in COVID, then could not get back in line. A factory fire in Japan and a Texas grid failure piled on. The result: about 9.5 million vehicles never built and roughly $210 billion in lost auto revenue.
 - **Suez blockage (2021).** The container ship *Ever Given* wedged across the canal for six days, queuing 422 ships and holding up an estimated $9.6 billion of trade *per day*. About 12% of world trade passes through Suez.
@@ -144,7 +145,7 @@ A modern supply chain is like a relay race with no spare runners.
 
 The **bullwhip effect** is why a tiny flick of the wrist at one end becomes a giant crack at the tip. A small change in shopper demand turns into wild over- and under-ordering as it travels upstream to factories.
 
-Put them together and you get the chip shortage chain reaction: COVID factory shutdowns, then carmakers cancelling orders in a panic, then no chips when demand roared back, then higher new-car prices, then higher used-car prices, then more inflation, then central banks raising rates, then pricier mortgages for ordinary people worldwide. One shutdown in Asia eventually showed up in your monthly payment.
+Put them together and you get the chip shortage chain reaction: COVID factory shutdowns, then carmakers cancelling orders in a panic, then no chips when demand roared back, then higher new-car prices, then higher used-car prices, then more inflation, then [central banks raising rates](/blog/economics-from-first-principles/08-central-banks-and-monetary-policy), then pricier mortgages for ordinary people worldwide. One shutdown in Asia eventually showed up in your monthly payment.
 
 ## Common misconceptions
 

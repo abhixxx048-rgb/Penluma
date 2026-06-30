@@ -48,6 +48,7 @@ faq:
       direction, so this buffer keeps important elements from being cut.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: computer-graphics-print
 topicTitle: Computer Graphics for Print
 category: Engineering
@@ -81,7 +82,7 @@ Think of painting a wall before you trim the wallpaper. You slap paint a few cen
 
 ### Trim: the real final size
 
-**Trim** is the **finished size** of your piece, the exact spot where the blade is set to cut. This is your document size: an A4 page is 210 by 297 mm at the trim. Crop marks on a print file point at this line.
+**Trim** is the **finished size** of your piece, the exact spot where the blade is set to cut. This is your document size: an A4 page is 210 by 297 mm at the trim. [Crop marks](/blog/computer-graphics-print/12-pdf-x-output-intent-page-boxes-the-print-ready-target) on a print file point at this line.
 
 ### Safe area: keep the important stuff back
 
@@ -144,7 +145,7 @@ The common operations:
 - **Folding** (half-fold, tri-fold, Z-fold, gate fold) needs panels laid out at the right widths with content kept off the fold lines. On a tri-fold, the inside-folding panel should be about 2 mm narrower so it tucks in cleanly.
 - **Scoring or creasing** presses a channel into the paper so it folds without cracking. This is mandatory above roughly 250-300 gsm and on any laminated or toner-printed stock, or the coating cracks along the fold.
 - **Laminating** bonds a thin plastic film to the surface. Gloss makes colors pop, matte is subdued and premium, and soft-touch feels velvety and rich. Laminated stock cracks at folds, so always crease before folding.
-- **Foil stamping** presses heated metallic foil (gold, silver, copper) onto the sheet. It needs a separate layer, a 100% solid spot color, vector only, text converted to outlines. No gradients, since foil is on or off. Keep it 1.5-3 mm from edges and folds.
+- **Foil stamping** presses heated metallic foil (gold, silver, copper) onto the sheet. It needs a separate layer, a 100% solid [spot color](/blog/computer-graphics-print/06-ink-on-the-page-spot-colors-overprint-black-generation), [vector](/blog/computer-graphics-print/07-raster-vs-vector-resolution-image-quality) only, text converted to outlines. No gradients, since foil is on or off. Keep it 1.5-3 mm from edges and folds.
 - **Die-cutting** uses a custom steel die to cut non-rectangular shapes, windows, or tabs. It requires a **dieline**: a vector path on its own layer in a named spot color, never flattened, never printed.
 - **Embossing and debossing** raise or press in an area with no ink at all. They need thick stock and avoid fine detail.
 - **Perforation** adds a line of tiny cuts so a piece tears off cleanly, like a ticket or coupon.
@@ -164,7 +165,7 @@ The common operations:
 
 **"My printer is high quality, so the cut will be exact."** No machine cuts perfectly. Even the best guillotines drift about 0.3 mm, and real jobs shift more. Bleed and safe area are not about quality, they are about physics.
 
-**"I'll just make the dieline or foil shape a colored line in my artwork."** If you build a cut line, foil, or spot UV as ordinary CMYK instead of a named spot color, the finishing machine cannot read it. Worse, that line prints as regular ink right on your final piece.
+**"I'll just make the dieline or foil shape a colored line in my artwork."** If you build a cut line, foil, or spot UV as ordinary [CMYK](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color) instead of a named spot color, the finishing machine cannot read it. Worse, that line prints as regular ink right on your final piece.
 
 **"Thicker paper folds fine on its own."** Above roughly 250-300 gsm, and on anything laminated, paper cracks at the fold unless you crease it first.
 
@@ -188,4 +189,4 @@ The common operations:
 
 The whole system comes down to one habit: design as if the blade is slightly drunk. Run your backgrounds past the cut, and keep your important content well back from it. Those two buffers absorb every wobble the machine throws at your work, invisibly.
 
-Master that, and there is a deeper rabbit hole waiting. In thick stapled booklets, the inner pages quietly creep outward along the spine, so the cut shaves their outer margins narrower than the cover's. Pros counter it with something called creep compensation, nudging inner-page content toward the spine before printing. Once you start noticing how paper physically behaves under a machine, you start designing for the real world instead of the screen.
+Master that, and there is a deeper rabbit hole waiting. In thick stapled booklets, the inner pages quietly creep outward along the spine, so the cut shaves their outer margins narrower than the cover's. Pros counter it with something called [creep compensation](/blog/computer-graphics-print/14-imposition-binding-arranging-pages-on-the-sheet), nudging inner-page content toward the spine before printing. Once you start noticing how paper physically behaves under a machine, you start designing for the real world instead of the screen.

@@ -33,6 +33,7 @@ icon: "\U0001F4DD"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 You ship clean code, but your commit message says "fixed so much bug." A teammate opens your pull request and reads "can u review this i think its done." Nothing is broken, exactly. It just looks careless. And the people reading it are the same people who decide whether you get the next project, the promotion, or the benefit of the doubt.
@@ -122,9 +123,9 @@ Quick test: can you put a number in front of it? "Three mistakes" works, so it's
 
 Don't cram. Spread the work over four weeks - about 20 to 30 minutes a day, a few days a week. Here's a plan built around the twelve lessons in this course.
 
-1. **Week 1 - the fundamentals.** Articles (a, an, the), the much/many fix, and subject–verb agreement (he *runs*, they *run*).
-2. **Week 2 - verbs and words.** Verb tenses and keeping them consistent, plurals and possessives (its vs it's), and prepositions (in, on, at, to, for).
-3. **Week 3 - structure and clarity.** Punctuation and capitalization, run-ons and comma splices, and commonly confused words (their/there/they're, your/you're).
+1. **Week 1 - the fundamentals.** Articles (a, an, the), the much/many fix, and [subject–verb agreement](/blog/english/03-subject-verb-agreement) (he *runs*, they *run*).
+2. **Week 2 - verbs and words.** [Verb tenses](/blog/english/04-verb-tenses) and keeping them consistent, [plurals and possessives](/blog/english/05-plurals-and-possessives) (its vs it's), and [prepositions](/blog/english/06-prepositions) (in, on, at, to, for).
+3. **Week 3 - structure and clarity.** Punctuation and capitalization, run-ons and comma splices, and [commonly confused words](/blog/english/09-commonly-confused-words) (their/there/they're, your/you're).
 4. **Week 4 - make it professional, then review.** Writing clean commits, PRs, and Slack messages; the spelling words engineers get wrong; and one big mixed-review drill covering everything.
 
 **Use the drills the right way.** Each lesson ends with practice. Do the *whole* drill first - write your answers down or say them out loud - and only *then* check the answer key. Don't peek early. A wrong answer you correct yourself sticks far better than one you just read.
@@ -145,6 +146,6 @@ Small habits beat big study sessions. Adopt these and your writing improves on a
 
 Here's the one thing to take away: you don't have a grammar problem, you have a handful of habits. Fix the same six or seven slips - capital I, end punctuation, no `u`, much vs many - and your commits, PRs, and messages instantly read like they came from someone who pays attention.
 
-And that perception compounds. The same care that makes your writing clear is the care reviewers start to assume is in your code. So once these habits feel automatic, look at the next layer: how a well-structured commit message or a crisp pull request description can get your work reviewed faster and merged with fewer questions. That's where clear writing stops being about avoiding mistakes - and starts being a quiet advantage.
+And that perception compounds. The same care that makes your writing clear is the care reviewers start to assume is in your code. So once these habits feel automatic, look at the next layer: how a [well-structured commit message or a crisp pull request description](/blog/english/10-professional-dev-writing) can get your work reviewed faster and merged with fewer questions. That's where clear writing stops being about avoiding mistakes - and starts being a quiet advantage.
 
 You already know more than you think. One lesson at a time. You've got this.

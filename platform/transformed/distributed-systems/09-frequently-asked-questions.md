@@ -38,6 +38,7 @@ faq:
     a: "FLP only rules out a deterministic guarantee of termination in a fully asynchronous network. Real systems add timeouts and randomness, assuming the network is usually timely. They never break safety; they only risk a brief stall in rare conditions."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Raft_(algorithm)
   - https://en.wikipedia.org/wiki/Paxos_(computer_science)
@@ -46,7 +47,7 @@ sources:
 
 A handful of machines, scattered across data centers, somehow agree on the exact same list of facts in the exact same order, even while some of them crash, freeze, or fall off the network. That quiet miracle is what keeps your bank balance correct and your database from inventing two versions of the truth.
 
-The machinery behind it has a reputation for being impenetrable. It isn't. Most of distributed consensus comes down to one idea repeated in different costumes: get a majority to agree on an ordered log. This article answers the questions engineers actually type into a search bar, in plain words, no proofs required.
+The machinery behind it has a reputation for being impenetrable. It isn't. Most of [distributed consensus](/blog/distributed-systems/02-the-consensus-problem) comes down to one idea repeated in different costumes: get a majority to agree on an ordered log. This article answers the questions engineers actually type into a search bar, in plain words, no proofs required.
 
 ## Why this matters
 
@@ -60,7 +61,7 @@ Here are the answers, grouped by the questions people ask most.
 
 **Reach for a proven Raft library.** etcd's implementation and HashiCorp's are both battle-tested, and Raft was explicitly designed to be understandable and operable. The surrounding ecosystem of tools, docs, and war stories is large.
 
-Plain Paxos is famously hard to implement correctly. The version people actually deploy is **Multi-Paxos**, which ends up structurally close to Raft anyway, a stable leader feeding a replicated log.
+[Plain Paxos](/blog/distributed-systems/06-paxos-the-original-consensus-algorithm) is famously hard to implement correctly. The version people actually deploy is **Multi-Paxos**, which ends up structurally close to Raft anyway, a stable leader feeding a replicated log.
 
 Choose Paxos only when you're adopting a system already built on it (Google's Spanner, for instance) or you need a specific variant like EPaxos. Either way, the real rule is simpler: **don't roll your own.** Use a battle-tested implementation. Consensus is one of those areas where "I'll just write a quick version" has ended careers.
 
@@ -68,13 +69,13 @@ Choose Paxos only when you're adopting a system already built on it (Google's Sp
 
 Roughly, yes, and that's not an insult. They solve the same problem on the same majority-quorum foundation, and Multi-Paxos and Raft converge on the same "stable leader plus replicated log" shape.
 
-The difference is framing. Raft prescribes a single strong leader, a structured log with a strict matching rule, and explicit membership changes, all chosen for clarity. Classic Paxos is more minimal and general but leaves leader election and the multi-decision machinery as an exercise for the reader. That's exactly why real Paxos deployments end up reinventing most of what Raft already spells out.
+The difference is framing. Raft prescribes a single strong leader, a structured log with a strict matching rule, and explicit membership changes, all chosen for clarity. Classic Paxos is more minimal and general but leaves [leader election](/blog/distributed-systems/04-raft-leader-election) and the multi-decision machinery as an exercise for the reader. That's exactly why real Paxos deployments end up reinventing most of what Raft already spells out.
 
 ## The replicated log: the one idea under everything
 
 Every explanation keeps circling back to "the log" for a reason. It's the core trick.
 
-A **replicated state machine** works like this: if every node runs the same deterministic program and applies the exact same commands in the exact same order, every node ends up in an identical state. Think of it as several people following the same recipe, step by step, in the same sequence. They all bake the same cake.
+A [**replicated state machine**](/blog/distributed-systems/03-replicated-state-machines-the-log) works like this: if every node runs the same deterministic program and applies the exact same commands in the exact same order, every node ends up in an identical state. Think of it as several people following the same recipe, step by step, in the same sequence. They all bake the same cake.
 
 So the only thing the cluster ever has to agree on is the **order of commands**, which is just the contents of an append-only log. Both Raft and Paxos are, at heart, machines for agreeing on a log. Everything else is plumbing around that.
 
@@ -113,7 +114,7 @@ It's still safe, thanks to ever-increasing **terms** (also called epochs). The n
 
 **Safety always survives.** You will never get split-brain with two conflicting commits.
 
-**Availability does not always survive.** Only the side of the partition that still holds a majority can make progress. The minority side pauses writes until the partition heals. This is the **CAP trade-off** in the flesh: when forced to choose between consistency and availability, these systems choose consistency every time.
+**Availability does not always survive.** Only the side of the partition that still holds a majority can make progress. The minority side pauses writes until the partition heals. This is the [**CAP trade-off**](/blog/distributed-systems/16-the-cap-theorem-and-pacelc) in the flesh: when forced to choose between consistency and availability, these systems choose consistency every time.
 
 ### How does the cluster change membership without breaking?
 

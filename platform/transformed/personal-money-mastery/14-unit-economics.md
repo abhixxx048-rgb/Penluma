@@ -36,6 +36,7 @@ faq:
     a: A lot. Cutting monthly churn from 5% to 2% extends average customer lifetime from 20 to 50 months, multiplying LTV by 2.5x with no change to price or margin. Retention is the cheapest growth lever you have.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -45,7 +46,7 @@ The difference between them isn't revenue. It's whether each individual customer
 
 ## Why this matters
 
-Total revenue is a comforting number. It almost always goes up when you try harder, spend more, or sign more customers. But it can rise while your business quietly bleeds out, because it tells you nothing about whether a single customer is worth more than they cost.
+[Total revenue](/blog/personal-money-mastery/15-the-three-financial-statements) is a comforting number. It almost always goes up when you try harder, spend more, or sign more customers. But it can rise while your business quietly bleeds out, because it tells you nothing about whether a single customer is worth more than they cost.
 
 Here's the trap. If each customer costs more to win and serve than they ever pay you back, then **every new customer makes the hole deeper**. Growth doesn't save you. Growth sets the fire faster.
 
@@ -76,7 +77,7 @@ CAC = (Ad spend + Sales/marketing salaries + Tools
        + Content + Agency fees + Onboarding time) / New customers
 ```
 
-Here's how founders fool themselves. Say you spend ₹40,000 on Google Ads and win 20 customers. You proudly announce a CAC of ₹2,000.
+Here's how [founders fool themselves](/blog/personal-money-mastery/18-behavioral-finance). Say you spend ₹40,000 on Google Ads and win 20 customers. You proudly announce a CAC of ₹2,000.
 
 But you also paid a part-time marketer ₹30,000 that month, ₹5,000 in software tools, and you personally spent hours hand-holding non-technical shop owners through setup. Fully loaded, that's ₹75,000 ÷ 20 = **₹3,750 per customer**, nearly double what you claimed.
 
@@ -137,7 +138,7 @@ For context, the median B2B SaaS company runs an LTV:CAC of roughly **3.2:1**, w
 
 ## CAC payback: the cash-flow truth the ratio hides
 
-The LTV:CAC ratio tells you whether a customer is profitable *eventually*. But "eventually" doesn't pay your rent. **CAC payback** tells you how fast the cash actually comes back, which is what keeps you alive.
+The LTV:CAC ratio tells you whether a customer is profitable *eventually*. But "eventually" doesn't pay your rent. **CAC payback** tells you how fast the cash actually comes back, which is [what keeps you alive](/blog/personal-money-mastery/16-burn-runway).
 
 ```
                         CAC
@@ -151,7 +152,7 @@ Here's the kicker. If that shop churns after 8 months, you *never* recovered the
 
 Industry context makes this even more urgent: median SaaS CAC payback stretched to roughly **18 months in 2025**, up from about 14 months in 2023, a nearly 30% jump in a single year. Under **12 months is the gold standard**. Bottom-quartile firms drag past 40 months.
 
-There's a financing trap hiding here too. Indian credit cards charge **36 to 45% per year**, roughly 3 to 3.75% a month. If you borrow at 40% to acquire customers who take 21 months to pay back, the interest alone can erase your margin. **Slow payback plus costly capital equals bankruptcy in slow motion.**
+There's a financing trap hiding here too. [Indian credit cards](/blog/personal-money-mastery/02-emergency-fund-debt-the-true-cost-of-emis) charge **36 to 45% per year**, roughly 3 to 3.75% a month. If you borrow at 40% to acquire customers who take 21 months to pay back, the interest alone can erase your margin. **Slow payback plus costly capital equals bankruptcy in slow motion.**
 
 The lesson: a 2.5:1 LTV:CAC with a 9-month payback can easily *beat* a 4:1 ratio with a 36-month payback. The ratio alone lies. Payback and retention complete the truth. For a cash-strapped, thin-margin business, **payback period is the binding constraint.**
 
@@ -198,7 +199,7 @@ When NRR exceeds 100% (upgrades and add-ons outweigh churn), the simple `1 ÷ ch
 4. **Check the LTV:CAC ratio.** Aim for roughly 3:1. Below 1:1, stop scaling and fix the model. Far above 5:1, consider spending more to grow faster.
 5. **Calculate CAC payback in months** and treat it as your binding constraint if cash is tight. Push hard to get it under 12 months.
 6. **Track cohort retention curves** every month and watch whether they flatten. Attack churn before you spend more on acquisition.
-7. **Stress-test against your cost of capital.** If you're funding growth with 40% credit, a 21-month payback may be a quiet loss. Make sure customers pay back faster than your money costs.
+7. **Stress-test against your [cost of capital](/blog/personal-money-mastery/17-fundraising-dilution).** If you're funding growth with 40% credit, a 21-month payback may be a quiet loss. Make sure customers pay back faster than your money costs.
 
 ## Conclusion
 

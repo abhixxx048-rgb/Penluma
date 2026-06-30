@@ -23,6 +23,7 @@ order: 0
 icon: "\U0001F310"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 faq:
   - q: What is consensus in distributed systems?
@@ -77,7 +78,7 @@ Requiring a majority (rather than everyone) is also what lets the system keep go
 
 ## The hard limit nobody can beat
 
-There's a famous result called **FLP impossibility** (named after Fischer, Lynch, and Paterson) that's worth knowing because it humbles every consensus design.
+There's a famous result called [**FLP impossibility**](/blog/distributed-systems/02-the-consensus-problem) (named after Fischer, Lynch, and Paterson) that's worth knowing because it humbles every consensus design.
 
 It proves that in a fully asynchronous network - one with no guarantees about timing - where even a single node can fail, **no algorithm can guarantee it will always reach consensus.** There is always some unlucky sequence of delays that stalls it forever.
 
@@ -87,7 +88,7 @@ This sounds like a dead end. It isn't. Real systems sidestep it by assuming the 
 
 Agreeing on a single value is hard enough. Real systems need to agree on a never-ending stream of decisions. How do you scale from one agreement to millions?
 
-The answer is one of the most elegant ideas in computer science: the **replicated state machine**.
+The answer is one of the most elegant ideas in computer science: the [**replicated state machine**](/blog/distributed-systems/03-replicated-state-machines-the-log).
 
 The insight is this. If every node starts in the same state and applies **the same commands in the same order**, they will end up identical. Always. So you don't need to replicate the *data* - you replicate the *list of commands*, in order. That ordered list is called the **log**.
 
@@ -99,9 +100,9 @@ Suddenly the whole problem collapses into something cleaner: **consensus is just
 
 Two names dominate this space, and they make a fascinating contrast.
 
-**Raft** was designed with an unusual goal: be *understandable*. It organizes everything around electing a single leader for a period of time (a "term"), so there's always one clear source of truth for the log. The leader copies entries to followers, commits them once a majority has them, and a new election kicks in the moment the leader goes quiet. Most of the time, when you reach for consensus today, you reach for something Raft-shaped.
+**Raft** was designed with an unusual goal: be *understandable*. It organizes everything around [electing a single leader for a period of time](/blog/distributed-systems/04-raft-leader-election) (a "term"), so there's always one clear source of truth for the log. The leader copies entries to followers, commits them once a majority has them, and a new election kicks in the moment the leader goes quiet. Most of the time, when you reach for consensus today, you reach for something Raft-shaped.
 
-**Paxos** is the original - older, deeply influential, and famously hard to wrap your head around. It works through proposers and acceptors performing a careful two-phase "prepare, then accept" dance. Raft was, in many ways, a reaction to how painful Paxos is to teach and implement correctly.
+**Paxos** is the original - older, deeply influential, and famously hard to wrap your head around. It works through [proposers and acceptors performing a careful two-phase "prepare, then accept" dance](/blog/distributed-systems/06-paxos-the-original-consensus-algorithm). Raft was, in many ways, a reaction to how painful Paxos is to teach and implement correctly.
 
 And this isn't academic. These algorithms run underneath tools you may already use:
 
@@ -114,7 +115,7 @@ And this isn't academic. These algorithms run underneath tools you may already u
 A few myths trip up almost everyone the first time:
 
 - **"More servers means more reliability, automatically."** Not without consensus. More servers without coordination just means more ways to disagree. Reliability comes from *agreeing*, not from quantity.
-- **"If a node stops responding, it has crashed."** You can never be sure. It might be slow, or the reply might be in flight. Treating "silent" as "dead" is how split-brain bugs are born.
+- **"If a node stops responding, it has crashed."** You can never be sure. It might be slow, or the reply might be in flight. Treating "silent" as "dead" is how [split-brain bugs](/blog/distributed-systems/16-the-cap-theorem-and-pacelc) are born.
 - **"You need every node to agree."** You need a majority. Demanding unanimity means a single dead node freezes the entire system.
 - **"Consensus makes everything slow, so avoid it."** It does add coordination cost, so you use it for the decisions that must be consistent - leadership, commits, config - not for every read. Used well, it's a scalpel, not a sledgehammer.
 

@@ -36,6 +36,7 @@ order: 24
 icon: "\U0001F4C8"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -57,7 +58,7 @@ Before anything else, separate two ideas that people constantly mix up.
 
 **Income** is a *flow* of money over time, what you earn in a year. Wages, business profit, interest, dividends (a share of company profits paid to owners), rent you receive, and government payments like pensions.
 
-**Wealth** (or net worth) is a *stock* of value at a single moment, everything you own minus everything you owe. Your home equity, savings, stocks, and the value of your business, minus your mortgage, loans, and credit card debt.
+**Wealth** (or net worth) is a *stock* of value at a single moment, everything you own minus everything you owe. Your home equity, savings, [stocks](/blog/economics-from-first-principles/19-financial-markets-stocks-bonds-commodities-and-derivatives), and the value of your business, minus your mortgage, loans, and credit card debt.
 
 Picture a bathtub. **Income is the water flowing in from the tap**, measured in litres per minute. **Wealth is the water already sitting in the tub**, measured in total litres. A strong tap usually fills the tub over time, but the two are not the same, and you can have one without the other.
 
@@ -100,21 +101,21 @@ These usually work together, not alone.
 
 ### 1. Technology rewards the highly skilled
 
-Computers and automation are brilliant at replacing *routine* middle-skill work, filing, assembly-line tasks, basic bookkeeping, but they make highly educated workers *more* productive. Economists call this **skill-biased technological change**.
+Computers and [automation](/blog/economics-from-first-principles/27-technology-automation-ai-and-innovation) are brilliant at replacing *routine* middle-skill work, filing, assembly-line tasks, basic bookkeeping, but they make highly educated workers *more* productive. Economists call this **skill-biased technological change**.
 
 The result is **job polarization**: growth at the top (engineers, managers) and at the bottom (care work, hospitality), with a **hollowed-out middle**. The extra pay a skilled worker commands, the **skill premium**, keeps widening. The college wage premium rose sharply after about 1980, and most economists treat this as the leading cause of the modern surge.
 
 ### 2. Globalization puts workers in direct competition
 
-When firms can offshore production or import cheaper goods, less-skilled workers in rich countries face head-on competition. The clearest case is the **"China shock"** after China joined the World Trade Organization in 2001. Research by Autor, Dorn, and Hanson showed that US manufacturing regions exposed to Chinese imports suffered deeper, longer-lasting job and wage losses than older trade theory had predicted.
+When firms can [offshore production](/blog/economics-from-first-principles/23-globalization-and-how-national-economies-are-connected) or import cheaper goods, less-skilled workers in rich countries face head-on competition. The clearest case is the **"China shock"** after China joined the World Trade Organization in 2001. Research by Autor, Dorn, and Hanson showed that US manufacturing regions exposed to Chinese imports suffered deeper, longer-lasting job and wage losses than older trade theory had predicted.
 
 ### 3. Capital can outrun the whole economy (Piketty's "r > g")
 
-In *Capital in the Twenty-First Century*, economist Thomas Piketty argued that when the **rate of return on capital (r)**, profits, dividends, interest, rent, is **higher than the economy's overall growth rate (g)**, existing and inherited wealth grows faster than wages and output. Over generations, wealth concentrates almost automatically.
+In *Capital in the Twenty-First Century*, economist Thomas Piketty argued that when the **rate of return on capital (r)**, profits, dividends, interest, rent, is **higher than the [economy's overall growth rate](/blog/economics-from-first-principles/12-economic-growth-and-productivity) (g)**, existing and inherited wealth grows faster than wages and output. Over generations, wealth concentrates almost automatically.
 
 Imagine the economy as a relay race. **g is how fast the whole pack moves forward. r is how fast the runners who already own the track pull ahead.** If the owners run faster than the pack, the gap widens every lap, even if no one is lazy and nothing is "unfair."
 
-Be precise about what is contested here. Piketty's *data* on long-run inequality is widely respected. His *theory*, the iron law of r > g, is debated. Critic Matt Rognlie showed that much of the rising "capital share" is really **housing and real estate**, not factories and machines.
+Be precise about what is contested here. Piketty's *data* on long-run inequality is widely respected. His *theory*, the iron law of r > g, is debated. Critic Matt Rognlie showed that much of the rising "capital share" is really **[housing and real estate](/blog/economics-from-first-principles/20-real-estate-and-housing-economics)**, not factories and machines.
 
 ### 4. Inheritance creates a hereditary elite
 
@@ -161,7 +162,7 @@ This is where reasonable people disagree, so here are both sides fairly.
 
 **The case against** is Arthur Okun's **"leaky bucket"** (1975). Carrying money from rich to poor spills some on the way: administrative costs *plus* incentive effects. High taxes can blunt the urge to work and invest, and poorly designed transfers can reduce recipients' effort. Take $1,000 from the top and perhaps only $500 reaches the bottom.
 
-**The case for** is that equality and growth can be partners. IMF economists found that **more-equal societies tend to sustain longer growth spells**, and that moderate redistribution generally does *not* harm growth, only extreme redistribution does. Severe inequality can depress consumer demand, waste talent by under-investing in poor children (the mobility link again), and breed instability.
+**The case for** is that equality and growth can be partners. IMF economists found that **more-equal societies tend to sustain longer growth spells**, and that moderate redistribution generally does *not* harm growth, only extreme redistribution does. Severe inequality can depress [consumer demand](/blog/economics-from-first-principles/05-consumer-behavior-and-how-people-really-decide), waste talent by under-investing in poor children (the mobility link again), and breed instability.
 
 The honest verdict: the equality-versus-efficiency tradeoff is real but *quantitative*, not absolute. The bucket leaks, but modern evidence says it leaks less than 1970s economists feared, and a too-empty bucket has its own costs.
 

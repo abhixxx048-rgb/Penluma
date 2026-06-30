@@ -30,6 +30,7 @@ faq:
     a: Use "many" for things you can count (many bugs, many tests) and "much" for things you cannot (much code, much progress). If you can put a number in front of it, use "many" and add the -s.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: english
 topicTitle: English for Developers
 category: Communication
@@ -120,7 +121,7 @@ Standup messages are tiny status reports, so write them like reports - not like 
 - ❌ `done with cart, starting checkout now, blocked on payment gateway`
 - ✅ `Yesterday I finished the cart. Today I'm starting checkout. I'm blocked on the payment gateway.`
 
-Three full sentences: yesterday, today, blockers. Capital letters, full stops, no `u` or `ur`. It takes ten extra seconds and reads twice as clearly.
+Three full sentences: yesterday, today, blockers. [Capital letters, full stops](/blog/english/07-punctuation-and-capitalization), no `u` or `ur`. It takes ten extra seconds and reads twice as clearly.
 
 ## Code comments: present tense, please
 
@@ -131,7 +132,7 @@ A comment describes what code *does*, right now, every time it runs. So use the 
 - ❌ `// this is checking if the user is logged in`
 - ✅ `// Checks whether the user is logged in.`
 
-Notice the second fix also drops the wordy *"this is checking."* Present-tense verbs are shorter and clearer: *Validates the upload and returns the relative path.*
+Notice the second fix also drops the wordy *"this is checking."* [Present-tense verbs](/blog/english/04-verb-tenses) are shorter and clearer: *Validates the upload and returns the relative path.*
 
 ## Common misconceptions
 
@@ -147,7 +148,7 @@ Notice the second fix also drops the wordy *"this is checking."* Present-tense v
 
 These are the leaks that make otherwise-clean writing look hurried.
 
-**Much vs. many.** Use **many** for things you can count, **much** for things you can't.
+**Much vs. many.** Use **many** for [things you can count](/blog/english/02-countable-uncountable-much-many), **much** for things you can't.
 
 | Uncountable → `much` | Countable → `many` |
 |---|---|
@@ -156,14 +157,14 @@ These are the leaks that make otherwise-clean writing look hurried.
 
 The quick test: if you can put a number in front of it (*3 bugs*), it's countable - use **many** and add the `-s`. So *"so much mistake"* becomes *"so many mistakes."*
 
-**Articles (a / an / the).** A singular countable noun almost always needs one in front of it.
+**Articles (a / an / the).** [A singular countable noun](/blog/english/01-articles-a-an-the) almost always needs one in front of it.
 
 - Use **a/an** for one unspecified thing: *open **a** pull request.*
 - Use **the** for a specific, known thing: *merge **the** PR you opened.*
 
 So *"i opened pull request"* becomes *"I opened **a** pull request."*
 
-**Spelling watchlist.** A handful of words show up misspelled constantly: *grammar* (not *grammer*), *research* (not *reaseach*), *separate*, *definitely*, *occurred*, *received*, *environment*, *length*.
+**Spelling watchlist.** [A handful of words show up misspelled constantly](/blog/english/11-spelling-typos): *grammar* (not *grammer*), *research* (not *reaseach*), *separate*, *definitely*, *occurred*, *received*, *environment*, *length*.
 
 ## How to use this
 

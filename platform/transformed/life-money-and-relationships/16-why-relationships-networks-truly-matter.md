@@ -34,6 +34,7 @@ faq:
     a: "Bonding capital is your close, tight-knit ties that give trust and support. Bridging capital is your looser ties that connect you to other circles and bring new information and opportunities. A healthy network needs both."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Interpersonal_ties
   - https://en.wikipedia.org/wiki/Dunbar%27s_number
@@ -71,7 +72,7 @@ Researchers split social capital into two flavors, and learning to tell them apa
 
 A simple picture: **bonding is a deep well** you can draw on in a crisis. **Bridging is a long bridge** to places you cannot see from where you stand. A healthy network needs both.
 
-Most people over-invest in bonding because it is comfortable to text your three best friends. They starve their bridging ties because it feels awkward to keep in touch with acquaintances. But bridging ties are where most of your future opportunities will come from.
+Most people over-invest in bonding because it is comfortable to text your three best friends. They starve their bridging ties because it feels awkward to keep in touch with acquaintances. But bridging ties are where most of your [future opportunities](/blog/life-money-and-relationships/27-how-opportunities-hires-advice-really-flow) will come from.
 
 ## Opportunities flow through people, not job boards
 
@@ -99,7 +100,7 @@ Now for the finding that quietly rewires how you think about all of this. Two qu
 
 In 1973, sociologist **Mark Granovetter** studied how people actually found their jobs. The counterintuitive result: most found work not through their close friends, but through **acquaintances, their weak ties**.
 
-Why? Your close friends travel in the same circles you do, so they tend to know the same things you already know (researchers call this **redundant** information). Your acquaintances travel in *different* circles, so they carry **novel** information, the opening, the lead, the introduction you would never have heard about otherwise.
+Why? Your close friends travel in the same circles you do, so they tend to know the same things you already know (researchers call this **redundant** information). [Your acquaintances](/blog/life-money-and-relationships/18-mapping-your-network-strong-weak-dormant-ties) travel in *different* circles, so they carry **novel** information, the opening, the lead, the introduction you would never have heard about otherwise.
 
 **Strong ties give you support. Weak ties give you reach.** Your next opportunity usually lives inside someone else's everyday knowledge.
 
@@ -132,7 +133,7 @@ The real lesson: your relationship time is a **fixed budget**, not an infinite o
 
 Here is the long-game truth that makes the effort worth it. **Networks compound.**
 
-Just as money in an account earns interest, and that interest earns more interest, relationships grow on themselves. One genuine connection introduces you to two more. A favor you did years ago returns from a direction you never predicted. Your reputation walks into rooms before you do.
+Just as [money in an account earns interest](/blog/life-money-and-relationships/06-compounding-the-time-value-of-money), and that interest earns more interest, relationships grow on themselves. One genuine connection introduces you to two more. A favor you did years ago returns from a direction you never predicted. [Your reputation walks into rooms before you do](/blog/life-money-and-relationships/29-community-reputation-long-term-social-capital).
 
 This is why long-term beats transactional. A transactional networker fishes with a single line: one ask, one person, one outcome. A relationship-builder is stocking an entire pond. The returns are delayed, diffuse, and arrive from unexpected places, which is exactly what makes them so large over a lifetime.
 
@@ -148,10 +149,10 @@ You don't need a grand plan. You need three small moves you can make today.
 2. **List 5 weak ties** you like but rarely speak to. These are your hidden opportunity engine. Send one of them a genuine, no-agenda message this week.
 3. **Reframe the word.** Cross out "networking" in your head and replace it with "building genuine relationships." That single shift changes everything that follows.
 4. **Give before you need.** Make an introduction, share a resource, or answer a question with no expectation of return. You are making deposits for a withdrawal you can't yet see.
-5. **Tend, don't collect.** Stop chasing follower counts. Pick a handful of people and stay lightly, consistently in touch.
+5. **Tend, don't collect.** Stop chasing follower counts. Pick a handful of people and [stay lightly, consistently in touch](/blog/life-money-and-relationships/23-staying-in-touch-a-system-for-nurturing-relationships).
 
 ## Conclusion
 
-If you remember one thing, make it this: **the most valuable asset you'll ever build cannot be bought, only grown, and it grows fastest when you help people before you need anything.** Plant, don't just harvest.
+If you remember one thing, make it this: **the most valuable asset you'll ever build cannot be bought, only grown, and it grows fastest when you [help people before you need anything](/blog/life-money-and-relationships/17-the-right-mindset-give-first-authentic-long-term).** Plant, don't just harvest.
 
 The quiet question underneath all of this is the one that actually decides your results: not "how do I meet more people?" but "how do I become the kind of person others want to vouch for?" That is a question about trust, reputation, and how you show up when nothing is on the line, and it is exactly where the real work begins.

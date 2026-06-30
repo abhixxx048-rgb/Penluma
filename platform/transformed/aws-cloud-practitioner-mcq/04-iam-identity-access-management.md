@@ -57,6 +57,7 @@ order: 3
 icon: ☁️
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -102,12 +103,12 @@ Here is the single most important pattern in IAM, and it shows up in exam questi
 
 When **AWS compute needs to talk to another AWS service**, use a role, not stored keys.
 
-- An EC2 instance needs to read an S3 bucket? Attach a **role** to the instance.
+- An [EC2 instance](/blog/aws-cloud-practitioner-mcq/06-amazon-ec2-instances-purchasing-options) needs to read an [S3 bucket](/blog/aws-cloud-practitioner-mcq/10-amazon-s3-object-storage)? Attach a **role** to the instance.
 - A Lambda function needs to write logs and read S3? Give it an **execution role**.
 
 The role supplies temporary credentials that AWS rotates automatically. The application never stores a password or access key, so there is nothing on disk for an attacker to steal. This is why the answer "create an IAM user and save the access keys on the server" is almost always wrong.
 
-Roles also power **cross-account access**. If an app in Account A needs a DynamoDB table in Account B, Account B creates a role with a *trust policy* naming Account A. Account A assumes the role and gets temporary credentials. No keys are emailed around. Whenever a question says "cross-account access without sharing long-term credentials," the answer is a role.
+Roles also power **cross-account access**. If an app in Account A needs a [DynamoDB table](/blog/aws-cloud-practitioner-mcq/12-amazon-dynamodb-managed-nosql) in Account B, Account B creates a role with a *trust policy* naming Account A. Account A assumes the role and gets temporary credentials. No keys are emailed around. Whenever a question says "cross-account access without sharing long-term credentials," the answer is a role.
 
 ### Policies: identity-based vs resource-based
 
@@ -155,7 +156,7 @@ You cannot, and should not try to, "delete the root user." You protect it with M
 ## Common misconceptions
 
 **"IAM is Regional, so I need separate users per Region."**
-False. IAM is **global**. A user, group, role, or policy you create exists for the whole account and works in every Region. Many AWS services are Regional, so people assume IAM is too, but it sits alongside global services like Route 53, CloudFront, and WAF.
+False. IAM is **global**. A user, group, role, or policy you create exists for the whole account and works in every Region. Many AWS services are Regional, so people assume IAM is too, but it sits alongside global services like [Route 53](/blog/aws-cloud-practitioner-mcq/08-amazon-route-53-dns-routing), [CloudFront](/blog/aws-cloud-practitioner-mcq/09-amazon-cloudfront-cdn-edge-delivery), and WAF.
 
 **"Adding MFA changes what a user can do."**
 No. MFA is about **authentication** (proving who you are), not **authorization** (what you can do). It means a stolen password alone is not enough to log in. It does not grant permissions, encrypt data, or exempt anyone from a deny.
@@ -164,7 +165,7 @@ No. MFA is about **authentication** (proving who you are), not **authorization**
 No. A user is a **permanent** identity with a password or long-term keys. A role is **temporary** and assumed, with short-lived credentials and no stored secrets. If a scenario describes a permanent human who logs in daily, that is a user. If it describes temporary or service access, that is a role.
 
 **"Cognito and IAM Identity Center are the same thing."**
-They solve opposite problems. **Amazon Cognito** handles sign-in for *your app's customers* (think millions of mobile-game players logging in with Google or Facebook). **IAM Identity Center** (the successor to AWS SSO) handles *your employees* signing in once to multiple AWS accounts using the corporate directory.
+They solve opposite problems. **Amazon Cognito** handles [sign-in for *your app's customers*](/blog/aws-cloud-practitioner-mcq/05-security-identity-compliance-services) (think millions of mobile-game players logging in with Google or Facebook). **IAM Identity Center** (the successor to AWS SSO) handles *your employees* signing in once to multiple AWS accounts using the corporate directory.
 
 **"IAM costs money per user."**
 No. Core IAM is **free**. You only pay for the resources identities use. (Note: some related services like AWS Directory Service can cost money, but IAM itself does not.)

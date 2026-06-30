@@ -56,6 +56,7 @@ faq:
       for displaced workers.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Unemployment
   - https://en.wikipedia.org/wiki/Natural_rate_of_unemployment
@@ -140,13 +141,13 @@ Think of friction inside a well-oiled machine. Even a beautifully engineered eng
 
 This comes from a **mismatch** of skills or location with the jobs that exist. A coal miner or a bank teller whose role has gone obsolete.
 
-It is longer-lasting and more painful, driven by technology, automation, trade, or people being unable to move. Time alone will not fix it. The cure is retraining or relocation.
+It is longer-lasting and more painful, driven by technology, [automation](/blog/economics-from-first-principles/27-technology-automation-ai-and-innovation), trade, or people being unable to move. Time alone will not fix it. The cure is retraining or relocation.
 
 ### Cyclical: the kind policymakers fight
 
-This rises and falls with the **business cycle**. When sales collapse in a recession, workers get laid off.
+This rises and falls with the **[business cycle](/blog/economics-from-first-principles/15-the-business-cycle-booms-recessions-and-depressions)**. When sales collapse in a recession, workers get laid off.
 
-This is the "bad" unemployment that stimulus, whether from central banks or government spending, is designed to attack by lifting demand. It climbs in slumps and falls toward zero at a boom's peak.
+This is the "bad" unemployment that stimulus, whether from [central banks](/blog/economics-from-first-principles/08-central-banks-and-monetary-policy) or government spending, is designed to attack by lifting demand. It climbs in slumps and falls toward zero at a boom's peak.
 
 (There is a fourth kind, **seasonal** - think retail jobs vanishing after Christmas. Because it is predictable, the BLS "seasonally adjusts" the data to strip it out.)
 
@@ -166,7 +167,7 @@ So lower unemployment is not always better. Below the natural rate can signal ov
 
 ## Okun's Law: connecting jobs to output
 
-How much output does an economy lose when unemployment climbs? In 1962, economist **Arthur Okun** spotted a rough rule: for every **1 percentage point that unemployment rises above the natural rate, real GDP falls about 2% below its potential.**
+How much output does an economy lose when unemployment climbs? In 1962, economist **Arthur Okun** spotted a rough rule: for every **1 percentage point that unemployment rises above the natural rate, [real GDP](/blog/economics-from-first-principles/11-measuring-an-economy-gdp-gnp-cpi-ppp-and-key-indicators) falls about 2% below its potential.**
 
 Flip it around and the economy must grow roughly 2% above trend to push the unemployment rate down by a single point.
 
@@ -237,4 +238,4 @@ Next time the headline number drops, run through this:
 
 If you remember one thing, make it this: the unemployment rate is **unemployed divided by the labor force, not the population** - and that single design choice is why the number can fall while real distress rises. Read it next to the participation rate, glance at U-6, and you will see what the headline hides.
 
-But notice what we have quietly assumed throughout: that wages, prices, and inflation are riding along in the background, bending the labor market in ways no one fully controls. Pull on that thread and you arrive at the next great question in economics: where does inflation actually come from, and why can't central bankers simply switch it off? That is where the story goes next.
+But notice what we have quietly assumed throughout: that wages, prices, and inflation are riding along in the background, bending the labor market in ways no one fully controls. Pull on that thread and you arrive at the next great question in economics: where does [inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) actually come from, and why can't central bankers simply switch it off? That is where the story goes next.

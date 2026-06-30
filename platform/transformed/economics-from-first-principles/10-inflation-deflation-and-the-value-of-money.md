@@ -52,6 +52,7 @@ order: 9
 icon: "\U0001F4C8"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -67,7 +68,7 @@ Understanding it changes real decisions:
 
 - Whether to lock in a fixed-rate mortgage or stay variable.
 - Whether holding cash is "safe" or slowly bleeding value.
-- Why a central bank raising rates might protect your purchasing power even as it makes your loan more expensive.
+- Why a [central bank raising rates](/blog/economics-from-first-principles/08-central-banks-and-monetary-policy) might protect your purchasing power even as it makes your loan more expensive.
 - How to read an economic headline and know whether to worry.
 
 You don't need a finance degree for any of this. You need a clear picture of a handful of ideas. Here they are.
@@ -76,7 +77,7 @@ You don't need a finance degree for any of this. You need a clear picture of a h
 
 Let's nail the definitions first, because almost everyone uses these words loosely.
 
-- **Inflation** is a sustained, broad rise in the general price level. The flip side of the same coin: the **purchasing power** of money falls, so each unit buys less. It's reported as an annual percentage.
+- **Inflation** is a sustained, broad rise in the general price level. The flip side of the same coin: the **[purchasing power](/blog/economics-from-first-principles/06-what-money-is-and-why-it-has-value)** of money falls, so each unit buys less. It's reported as an annual percentage.
 - **Deflation** is the opposite: a sustained, broad *fall* in prices. Money buys *more* over time.
 - **Disinflation** is inflation that is *slowing down but still positive* (say, dropping from 9% to 3%). Prices are still rising, just less quickly. This is **not** deflation, and the mix-up is everywhere.
 
@@ -121,7 +122,7 @@ Here's the most famous equation in monetary economics, and it's gentler than it 
 
 The left side is total spending. The right side is the total value of everything bought. They're equal *by definition*, because every dollar spent is a dollar received. This is an **accounting identity**, always true, like saying "what I paid equals what the seller got."
 
-The interesting part is the *theory* built on top. If velocity is fairly stable, and real output is capped by real-world limits (workers, factories, technology), then pumping up the money supply has nowhere to go but into prices. More money, same pile of goods, so each unit buys less.
+The interesting part is the *theory* built on top. If velocity is fairly stable, and real output is capped by real-world limits (workers, factories, technology), then pumping up the [money supply](/blog/economics-from-first-principles/07-how-banks-work-and-how-they-create-money) has nowhere to go but into prices. More money, same pile of goods, so each unit buys less.
 
 That's the root of Milton Friedman's famous line: **"Inflation is always and everywhere a monetary phenomenon."**
 
@@ -129,7 +130,7 @@ That's the root of Milton Friedman's famous line: **"Inflation is always and eve
 
 ## How we actually measure inflation
 
-You can't manage what you can't measure. The headline gauge is the **Consumer Price Index (CPI)**: the average price change of a representative *basket* of goods and services a typical household buys.
+You can't manage what you can't measure. The headline gauge is the **[Consumer Price Index (CPI)](/blog/economics-from-first-principles/11-measuring-an-economy-gdp-gnp-cpi-ppp-and-key-indicators)**: the average price change of a representative *basket* of goods and services a typical household buys.
 
 In the United States, the Bureau of Labor Statistics prices around **94,000 items every month** and surveys roughly 36,000 consumers a year to learn what people actually spend on. The basket spans more than 200 categories grouped into eight families, from housing and food to transportation and medical care.
 
@@ -214,7 +215,7 @@ If everyone believes prices will jump 8% next year, workers demand 8% raises now
 
 Economists call this chain a **wage-price spiral**: prices rise, workers demand higher wages, firms raise prices to cover the higher wages, repeat.
 
-Breaking such a spiral takes more than mechanics. It takes **credibility**. In the early 1980s, Fed Chairman Paul Volcker hiked interest rates to around 21%, deliberately triggering a painful recession to convince everyone he would crush inflation no matter the cost. It worked. Expectations re-anchored, and inflation fell hard.
+Breaking such a spiral takes more than mechanics. It takes **credibility**. In the early 1980s, Fed Chairman Paul Volcker hiked [interest rates](/blog/economics-from-first-principles/09-loans-credit-debt-and-interest-rates) to around 21%, deliberately triggering a painful recession to convince everyone he would crush inflation no matter the cost. It worked. Expectations re-anchored, and inflation fell hard.
 
 The lesson economists drew: a central bank's most powerful tool is its *believability*.
 

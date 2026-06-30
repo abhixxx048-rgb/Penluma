@@ -36,6 +36,7 @@ order: 999
 icon: "\U0001F680"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -80,7 +81,7 @@ A single brilliant article is an island. A cluster is a continent.
 
 ## Match the content to where the buyer is
 
-Not all content does the same job. The trick is to map each piece to the buyer's mindset. Marketers split this into three stages, usually called the **funnel**.
+Not all content does the same job. The trick is to map each piece to [the buyer's mindset](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy). Marketers split this into three stages, usually called the **funnel**.
 
 ### TOFU - Top of funnel (just curious)
 
@@ -110,7 +111,7 @@ BOFU content has the highest commercial intent, which is why it usually delivers
 
 Topical authority is nice. But authority doesn't pay the bills - **purchases** do.
 
-The single highest-ROI lever is building a direct path from your articles to your product pages. The cleanest way to do it is a contextual call-to-action block - call it **"Shop this guide."**
+The single highest-ROI lever is building a direct path from your articles to your product pages. The cleanest way to do it is a [contextual call-to-action block](/blog/psychology-of-decisions/18-writing-marketing-copy-that-persuades-without-lying) - call it **"Shop this guide."**
 
 Imagine a reader finishing your "Matte vs. Gloss Business Cards" article. They've decided: gloss. At that exact moment, a tidy block appears:
 
@@ -118,7 +119,7 @@ Imagine a reader finishing your "Matte vs. Gloss Business Cards" article. They'v
 > → Order glossy business cards
 > → Order matte business cards
 
-You've met them at the peak of their intent. No searching, no friction. The leap from "interested" to "ordered" is one click.
+You've met them at the peak of their intent. No searching, no [friction](/blog/product-sense-empathy/09-reducing-friction-flows-steps-progressive-disclosure). The leap from "interested" to "ordered" is one click.
 
 Most blogs never build this bridge. Their informational traffic and their product pages live in separate worlds. Connecting them is often the difference between content that "drives awareness" and content that drives revenue.
 
@@ -177,4 +178,4 @@ The one thing to remember: **structure turns content into a sales engine.** A pi
 
 Build one complete cluster, wire it together, and add the "Shop this guide" bridge. You'll likely see existing traffic start converting before any new ranking shows up.
 
-And once your storefront content is humming, there's a second wheel worth building: a content engine aimed not at buyers, but at the people who run the businesses - the long game of becoming the name they think of first. That's a flywheel for another day, and it's where the compounding really begins.
+And once your storefront content is humming, there's a second wheel worth building: a content engine aimed not at buyers, but at the people who run the businesses - the long game of [becoming the name they think of first](/blog/how-to-make-money/15-distribution-beats-product). That's a flywheel for another day, and it's where the compounding really begins.

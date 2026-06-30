@@ -33,6 +33,7 @@ faq:
     a: Most people aim for 3–6 months of expenses, but the self-employed should hold 6–12 months of combined personal and business costs, because income is lumpy and unpredictable.
   - q: Does avoiding ruin mean playing it safe and small?
     a: No - it's the opposite. A cash buffer and capped downside are exactly what let you take many aggressive shots others can't afford. The goal is to be hard to kill, not timid.
+linked: true
 topic: how-to-make-money
 topicTitle: How to Make Money
 category: Money & Business
@@ -46,7 +47,7 @@ sources: []
 
 Imagine a founder who grows revenue 40% a year for ten straight years - a genuinely brilliant run. Then, in a single reckless moment, she bets the whole company on one move. It fails. Everything she built is gone, and the decade of compounding doesn't "average out." It just stops.
 
-That's the uncomfortable truth this article is about. Every clever strategy for making money - creating value, charging well, building leverage, scaling - only pays off if you're still standing to collect. **You only get to compound if you survive.**
+That's the uncomfortable truth this article is about. Every clever strategy for making money - creating value, charging well, [building leverage](/blog/how-to-make-money/04-leverage-the-real-secret), scaling - only pays off if you're still standing to collect. **You only get to compound if you survive.**
 
 ## Why this matters
 
@@ -153,11 +154,11 @@ For most founders and freelancers, the most common single point of failure is on
 
 **A quick case study.** A two-person software business makes about ₹1 crore a year, and one enterprise client pays ₹35 lakh of it. That client isn't really a customer - it's *an employer with no notice period and no severance.* A sane goal: get them from 35% down to under 20% within six months by landing new accounts.
 
-The same logic applies beyond customers. Don't get 100% of your leads from one ad platform. Don't be a one-trick earner with a single skill. **Concentrate to win; diversify to not die.**
+The same logic applies beyond customers. Don't get 100% of your leads from one ad platform. Don't be a one-trick earner with a single skill. **Concentrate to win; [diversify](/blog/life-money-and-relationships/13-asset-allocation-diversification-building-a-portfolio) to not die.**
 
 ## Stay-in-the-game money
 
-The standard advice is 3–6 months of expenses in cash. For the **self-employed and founders, aim higher - 6 to 12 months** of combined personal *and* business costs, because your income is lumpy and unpredictable.
+The standard advice is [3–6 months of expenses in cash](/blog/life-money-and-relationships/03-the-emergency-fund-protecting-your-downside). For the **self-employed and founders, aim higher - 6 to 12 months** of combined personal *and* business costs, because your income is lumpy and unpredictable.
 
 This buffer is quietly powerful. It's what lets you say no to a bad client, ride out a slow quarter, and keep taking asymmetric shots instead of grabbing whatever pays this week.
 
@@ -190,7 +191,7 @@ Crossing your turnover threshold *forces* GST registration - so plan your cash f
 
 ### The ESOP liquidity trap
 
-An **ESOP** (Employee Stock Ownership Plan) gives founders and early employees shares - which are often illiquid, meaning you can't sell them yet. In India they're taxed in **two stages**, and the first one is the trap:
+An **ESOP** (Employee Stock Ownership Plan) gives founders and early employees [shares](/blog/how-to-make-money/17-equity-ownership-the-windfall-path) - which are often illiquid, meaning you can't sell them yet. In India they're taxed in **two stages**, and the first one is the trap:
 
 1. **At exercise:** the gain (fair market value minus exercise price) is taxed as a salary perquisite at your slab rate - even though you've received **no cash** and may not be able to sell the shares. You can owe real tax on paper gains.
 2. **At sale:** capital gains tax on the difference between sale price and value at exercise.
@@ -219,4 +220,4 @@ Read this article as "be timid" and you've missed the point. These rules don't m
 
 If you remember one thing, remember this: **compounding only works if you stay in the game.** A single catastrophic loss erases everything that came before it, and there is no rematch. So the wealthy aren't the ones who took the biggest swings - they're the ones who took plenty of swings *while staying impossible to wipe out.*
 
-Which raises a natural next question. Once you've made yourself hard to kill and your small bets start landing, how do you *deliberately* point yourself at the rare, oversized wins - the ones that don't just grow your income but change your category entirely? That's where the math of leverage and compounding gets genuinely exciting.
+Which raises a natural next question. Once you've made yourself hard to kill and your small bets start landing, how do you *deliberately* point yourself at the rare, oversized wins - the ones that don't just grow your income but change your category entirely? That's where the math of leverage and [compounding](/blog/how-to-make-money/18-making-money-with-money-cash-flow-assets-compounding) gets genuinely exciting.

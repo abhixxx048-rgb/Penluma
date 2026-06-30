@@ -30,6 +30,7 @@ faq:
     a: "A value metric is the unit you charge by, like per seat, per gigabyte, or per order. A good one is simple, fair, and grows as the customer's success grows, so your revenue rises naturally with their value."
 topic: business-financial-literacy
 topicTitle: Business & Financial Literacy
+linked: true
 category: Money & Business
 date: '2026-06-21'
 order: 7
@@ -99,7 +100,7 @@ A 60% markup gives a margin of 0.60 ÷ 1.60 = **37.5%**.
 
 Want a 40% margin? Set a markup of 0.40 ÷ 0.60 = **66.7%**. (Check: cost $60 × 1.667 = $100; profit $40 ÷ $100 = 40% margin. ✓)
 
-Set your targets in **margin**, not markup, because margin tells you the share of every sale you actually keep. Software founders typically aim for a **70-80% gross margin**, the healthy benchmark band for SaaS, and many self-serve products clear 80% or more.
+Set your targets in **margin**, not markup, because margin tells you the share of every sale you actually keep. Software founders typically aim for a [**70-80% gross margin**](/blog/business-financial-literacy/10-break-even-margins-profitability), the healthy benchmark band for SaaS, and many self-serve products clear 80% or more.
 
 ## Method 2: Competitor-based pricing
 
@@ -151,7 +152,7 @@ The method tells you *how to find the number*. The model is the *structure* you 
 | Tiered (good-better-best) | 2-4 packages at rising prices | Mixed customers, big and small |
 | Freemium | Free base, pay to unlock more | Wide top-of-funnel, viral growth |
 
-Subscriptions create **recurring revenue** - money that arrives again every period without a fresh sale, which makes a business far steadier and more valuable. Usage pricing feels fair but can spook customers who fear a surprise bill. Many companies blend the two: a base subscription with usage stacked on top.
+Subscriptions create [**recurring revenue**](/blog/business-financial-literacy/07-cash-flow-burn-rate-runway-don-t-run-out-of-money) - money that arrives again every period without a fresh sale, which makes a business far steadier and more valuable. Usage pricing feels fair but can spook customers who fear a surprise bill. Many companies blend the two: a base subscription with usage stacked on top.
 
 ## Good-better-best: why three tiers works
 
@@ -171,7 +172,7 @@ Most buyers dislike a single take-it-or-leave-it price. Three tiers let small an
 
 The high tier **anchors** the decision. Once a shopper sees $99, the $49 plan suddenly feels reasonable. The low tier catches the price-sensitive without dragging your average down. The middle is where most people land, exactly as designed. A well-built third tier can lift premium-plan sales meaningfully, with studies citing boosts of up to around 30% from this "decoy" effect.
 
-One small touch for the entry tier: **charm pricing**, ending in 9 ($19 or $99 instead of $20 or $100), can nudge conversions, because the brain reads the left digit first and quietly rounds down.
+One small touch for the entry tier: [**charm pricing**](/blog/business-financial-literacy/09-pricing-psychology-pricing-with-confidence), ending in 9 ($19 or $99 instead of $20 or $100), can nudge conversions, because the brain reads the left digit first and quietly rounds down.
 
 ## Common misconceptions
 
@@ -204,4 +205,4 @@ Here's how to price on purpose instead:
 
 Here's the one thing to carry out of all this: **price is a decision you make, not a fact you discover.** Know your cost (the floor) and your competitors (the range), but price to value whenever you can prove an outcome, and revisit that price on a schedule instead of leaving it frozen at the number you guessed on day one.
 
-Once you've set a price you believe in, a sharper question shows up: how much can you afford to *spend* winning each customer, and how long do they have to stay before that spend pays off? That's the world of customer acquisition cost and lifetime value, and it's where pricing turns into a real engine for growth.
+Once you've set a price you believe in, a sharper question shows up: how much can you afford to *spend* winning each customer, and how long do they have to stay before that spend pays off? That's the world of [customer acquisition cost and lifetime value](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale), and it's where pricing turns into a real engine for growth.

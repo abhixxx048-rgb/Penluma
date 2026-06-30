@@ -32,6 +32,7 @@ faq:
     a: A service provider must register once aggregate turnover crosses ₹20 lakh (₹10 lakh in special-category states). Any inter-state supply requires registration regardless of turnover, so track combined turnover across all streams.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: how-to-make-money
 topicTitle: How to Make Money
 category: Money & Business
@@ -51,7 +52,7 @@ Most people who chase extra income end up busier and barely richer. They juggle 
 
 The fix is not more hustle. It is understanding the right sequence, so that one income you are genuinely good at quietly funds the next, and the next, until your money and your assets are doing the earning instead of your hours.
 
-Get this right and small, ordinary income can compound into real wealth. Get it wrong and you stay on a treadmill that never speeds up.
+Get this right and small, ordinary income can compound into [real wealth](/blog/how-to-make-money/16-income-vs-wealth-owning-vs-working). Get it wrong and you stay on a treadmill that never speeds up.
 
 ## First, three kinds of income most people blur together
 
@@ -83,7 +84,7 @@ The reason is plain. Until you are genuinely good at and known for one thing, a 
 
 ## The leverage stack: why some streams compound and others just add up
 
-Naval Ravikant's framework from "How to Get Rich" is the sharpest lens here. He argues that wealth comes from **specific knowledge** (things you learned through curiosity and real experience that cannot be easily copied or taught) multiplied by accountability and **leverage**.
+Naval Ravikant's framework from "How to Get Rich" is the sharpest lens here. He argues that wealth comes from [**specific knowledge**](/blog/how-to-make-money/09-specific-knowledge-your-personal-moat) (things you learned through curiosity and real experience that cannot be easily copied or taught) multiplied by accountability and [**leverage**](/blog/how-to-make-money/04-leverage-the-real-secret).
 
 Leverage is just a way to multiply your output beyond your own two hands. There are four kinds, and they split into two camps:
 
@@ -114,7 +115,7 @@ Your personal version is the same loop, scaled down. Surplus from your active en
 ### The right sequence, step by step
 
 1. **Master one active engine** - freelancing, a small software product, consulting.
-2. **Systematize it.** Write SOPs (standard operating procedures: written, repeatable instructions) and delegate the labour so it runs without all of your hours.
+2. **Systematize it.** Write SOPs (standard operating procedures: written, repeatable instructions) and [delegate the labour](/blog/how-to-make-money/20-systems-automation-delegation) so it runs without all of your hours.
 3. **Reinvest the freed time and money** into a more leveraged layer - a code or media asset with near-zero cost per extra sale.
 4. **Route that asset's income into a portfolio**, like an index SIP. Over time the portfolio income covers your fixed costs, freeing you to build the next asset.
 
@@ -126,7 +127,7 @@ She spends those freed hours building a Notion-template pack and a small course.
 
 She routes that ₹40k into a Nifty index SIP. At around 11% nominal returns, ₹40k a month for about five years compounds to a corpus near **₹32–33 lakh** - which itself begins throwing off portfolio income.
 
-Notice what happened. Her active engine never exploded. The **reinvestment** did the compounding.
+Notice what happened. Her active engine never exploded. The **reinvestment** did the [compounding](/blog/how-to-make-money/18-making-money-with-money-cash-flow-assets-compounding).
 
 > **The single most useful habit:** Pick a fixed *reinvestment rate* - a set percentage of every month's surplus that must go to buying more leverage (hires, tools, content, index units) before any lifestyle spending. Treat it like a non-negotiable bill to your future self. It is what separates a business that compounds from one that just pays your rent.
 
@@ -166,7 +167,7 @@ There is startup relief: employees of DPIIT-recognised, Section 80-IAC-eligible 
 1. **Pick your one engine.** Choose the single active income you are best placed to master, and resist starting a second thing until this one runs reliably.
 2. **Systematize before you scale.** Write down your repeatable steps and delegate the parts that do not need you, so the engine survives without all your hours.
 3. **Set a reinvestment rate.** Decide a fixed percentage of surplus that automatically buys leverage every month, before any lifestyle upgrade.
-4. **Climb the leverage stack.** Spend freed hours building a code or media asset with near-zero cost per copy, not just trading more hours.
+4. **Climb the leverage stack.** Spend freed hours building a code or media asset with near-zero cost per copy, [not just trading more hours](/blog/how-to-make-money/10-products-vs-time-escaping-the-trap).
 5. **Route income to a portfolio.** Funnel the new stream's earnings into a low-cost index SIP and let compounding run.
 6. **Watch the legal lines.** Track combined turnover for GST and understand the two-stage tax before banking on any equity grant.
 

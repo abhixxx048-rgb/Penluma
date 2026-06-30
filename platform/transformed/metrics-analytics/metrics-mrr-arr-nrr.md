@@ -59,6 +59,7 @@ order: 999
 icon: "\U0001F4CA"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -195,7 +196,7 @@ Subscription revenue  = customers x plan price              → this is your MRR
 Transaction revenue   = buyers x transactions x value x take-rate
 ```
 
-**Folding transaction revenue into MRR is the classic distortion.** It makes MRR look huge and wildly volatile, breaks every retention metric, and quietly tanks your valuation - because transactional revenue earns a much lower multiple than recurring revenue. Investors who spot the blend either discount it heavily or treat it as a red flag.
+**Folding transaction revenue into MRR is the classic distortion.** It makes MRR look huge and wildly volatile, breaks every retention metric, and quietly tanks [your valuation](/blog/business-financial-literacy/12-funding-dilution-the-cost-of-capital) - because transactional revenue earns a much lower multiple than recurring revenue. Investors who spot the blend either discount it heavily or treat it as a red flag.
 
 The fix is simple: **report them on separate lines.** Track total transaction volume (often called GMV, the dollar value of everything flowing through the platform) as a health and engagement signal - a customer doing lots of volume rarely churns - but never sum it into recurring revenue. You can show both in one table for the board. You must never collapse them into a single "ARR" number.
 
@@ -203,7 +204,7 @@ The fix is simple: **report them on separate lines.** Track total transaction vo
 
 When a customer prepays a year up front, the cash is wonderful. But you cannot call it all revenue on day one.
 
-The unearned portion sits on your books as **deferred revenue** - a liability, technically, because you still owe a year of service. You recognize it gradually, about one-twelfth each month, as you actually deliver.
+The unearned portion sits on your books as **[deferred revenue](/blog/business-financial-literacy/05-the-balance-sheet-cash-flow-statement-why-profit-cash)** - a liability, technically, because you still owe a year of service. You recognize it gradually, about one-twelfth each month, as you actually deliver.
 
 ```
 On the sale:  Cash +annual amount,  Deferred Revenue +annual amount
@@ -236,7 +237,7 @@ If you're setting up subscription metrics from scratch, here's a concrete order 
 3. **Emit clean subscription events.** Capture `subscription_started`, `plan_upgraded`, `plan_downgraded`, `subscription_canceled` and `subscription_reactivated`, each with the before-and-after amount. A movement you don't capture is a diagnosis you can't make.
 4. **Build the MRR waterfall as your core weekly view.** New / Expansion / Reactivation / Contraction / Churn. Let it tell you which lever is actually moving.
 5. **Watch contraction weekly as a churn early-warning.** Wire up a save motion - an in-app nudge or a personal message - the moment an account downgrades.
-6. **Engineer one realistic expansion path.** For SMB, the durable lever is usage-based graduation: as a customer grows, nudge them up a tier. That's how their success becomes your expansion MRR.
+6. **Engineer one realistic expansion path.** For SMB, the durable lever is [usage-based graduation](/blog/personal-money-mastery/12-pricing-value-capture): as a customer grows, nudge them up a tier. That's how their success becomes your expansion MRR.
 7. **Set targets against your own segment, not someone else's.** If you're SMB, plan around ~97% NRR and grow mostly through new logos plus modest expansion.
 8. **Account for annual plans correctly.** Book as deferred revenue, recognize one-twelfth monthly, and keep the MRR contribution flat across the term.
 
@@ -248,4 +249,4 @@ If you remember one thing, make it this: **the most dangerous SaaS metric mistak
 
 Get that right and your metrics start working *for* you instead of flattering you.
 
-The natural next question is what to actually *do* with a leaky bucket. Retention and expansion don't improve by watching the dashboard - they improve upstream, in how quickly a new customer reaches their first real win. That's the activation problem, and it's where the most durable retention gains are quietly made.
+The natural next question is what to actually *do* with a leaky bucket. Retention and expansion don't improve by watching the dashboard - they improve upstream, in how quickly a new customer [reaches their first real win](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress). That's the activation problem, and it's where the most durable retention gains are quietly made.

@@ -36,6 +36,7 @@ order: 4
 icon: "\U0001F4BC"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -47,7 +48,7 @@ Most founders watch one number: profit. It feels like the scoreboard. But profit
 
 Here's the uncomfortable truth: **the founder who runs out of cash loses the company, even if the business was profitable.** The bank doesn't care about your profit margin when rent is due. Your staff can't be paid in receivables.
 
-To stay alive, you need to read three financial statements together, not one. The profit and loss statement (the P&L) tells you if you made money. This article covers the other two, the ones that actually keep the lights on: the **balance sheet** and the **cash flow statement**.
+To stay alive, you need to read [three financial statements together](/blog/business-financial-literacy/03-the-three-financial-statements-the-whole-picture), not one. The [profit and loss statement](/blog/business-financial-literacy/04-reading-a-p-l-income-statement-line-by-line) (the P&L) tells you if you made money. This article covers the other two, the ones that actually keep the lights on: the **balance sheet** and the **cash flow statement**.
 
 ## The balance sheet: a photo of what you own and owe
 
@@ -150,7 +151,7 @@ You don't need an accounting degree to protect your business. You need a few hab
 1. **Read all three statements together, every month.** The P&L tells you if you're profitable, the balance sheet tells you what you own and owe, and the cash flow statement tells you if you'll survive. None of them is enough alone.
 2. **Watch operating cash flow above everything.** If it's negative for more than a month or two, dig in fast. Financing can paper over the gap, but never forever.
 3. **Shrink your cash conversion cycle from both ends.** Get customers to pay sooner with deposits up front, shorter terms, or card payments. Negotiate to pay suppliers later, like net-30 instead of net-7. Every day you shave off is free cash back in your hands.
-4. **Forecast cash 13 weeks ahead.** Map out the dates money comes in and goes out. The goal is to spot a cash crunch weeks before it hits, while you still have options.
+4. **[Forecast cash 13 weeks ahead](/blog/business-financial-literacy/07-cash-flow-burn-rate-runway-don-t-run-out-of-money).** Map out the dates money comes in and goes out. The goal is to spot a cash crunch weeks before it hits, while you still have options.
 5. **Be most careful when you're winning.** Rapid growth is the exact moment cash gets dangerous. Make sure each new order is funded before you celebrate it.
 
 ## Conclusion
@@ -159,4 +160,4 @@ If you remember one line, make it this: **profit is an opinion, but cash is a fa
 
 So watch your cash the way a pilot watches fuel. The instruments can all look healthy while the tank runs empty.
 
-And once you can read these three statements fluently, a bigger question opens up: how do investors and lenders use the exact same numbers to decide whether your business is worth backing? That's where ratios like the current ratio, debt-to-equity, and return on equity come in, turning your statements into a scorecard the outside world reads. That's the next thing worth understanding.
+And once you can read these three statements fluently, a bigger question opens up: how do investors and lenders use the exact same numbers to decide whether your business is worth backing? That's where [ratios like the current ratio, debt-to-equity, and return on equity](/blog/business-financial-literacy/13-living-by-the-numbers-the-founder-s-financial-dashboard) come in, turning your statements into a scorecard the outside world reads. That's the next thing worth understanding.

@@ -1,0 +1,109 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../consts';
+import postsManifest from '../../posts.generated.json';
+
+// Derive a URL slug from an author name:
+// lowercase, drop any parenthetical "(handle)", spaces -> hyphens.
+function authorSlug(name: string): string {
+  return name
+    .replace(/\([^)]*\)/g, '') // strip "(handle)"
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+const cleanName = (name: string) => name.replace(/\([^)]*\)/g, '').trim();
+
+// Generate a page for EVERY distinct author that appears (SITE.author + each
+// post's author), so byline links always resolve even if names differ.
+export function getStaticPaths() {
+  const names = new Set<string>([SITE.author]);
+  for (const p of postsManifest as { author?: string }[]) {
+    if (p.author) names.add(p.author);
+  }
+  const bySlug = new Map<string, string>();
+  for (const n of names) {
+    const s = n.replace(/\([^)]*\)/g, '').trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    if (s && !bySlug.has(s)) bySlug.set(s, n);
+  }
+  return [...bySlug.entries()].map(([slug, name]) => ({ params: { author: slug }, props: { name } }));
+}
+
+const { name: rawName } = Astro.props as { name: string };
+const authorName = cleanName(rawName);
+const slug = authorSlug(rawName);
+
+const bio = `${authorName} is a writer and researcher behind Penluma, where deep, worked-through notes span staff-level system design, distributed systems, AI and multi-agent LLM systems, economics, and clear thinking. Each piece is built from first principles - moving from plain-language intuition to precise mechanics to the failure modes that surface in real systems. The goal is durable understanding you can actually reason with, not surface-level summaries.`;
+
+const pageUrl = new URL(`/author/${slug}/`, Astro.site).toString();
+
+// Build social profile URLs only for non-empty handles.
+const social = SITE.social;
+const links: { label: string; url: string }[] = [];
+if (social.twitter) links.push({ label: 'X', url: `https://x.com/${social.twitter}` });
+if (social.github) links.push({ label: 'GitHub', url: `https://github.com/${social.github}` });
+if (social.linkedin)
+  links.push({ label: 'LinkedIn', url: `https://linkedin.com/in/${social.linkedin}` });
+
+const sameAs = links.map((l) => l.url);
+
+const personSchema = {
+  '@type': 'Person',
+  name: authorName,
+  url: pageUrl,
+  description: bio,
+  jobTitle: 'Writer & Researcher',
+  ...(sameAs.length ? { sameAs } : {}),
+  knowsAbout: [
+    'System Design',
+    'Distributed Systems',
+    'AI',
+    'Economics',
+    'Decision-Making',
+  ],
+};
+---
+
+<BaseLayout
+  title={authorName}
+  description={`About ${authorName}, writer and researcher at ${SITE.name}.`}
+  type="website"
+  jsonLd={[personSchema]}
+>
+  <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+    <h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
+      {authorName}
+    </h1>
+    <p class="mt-3 text-sm font-medium tracking-wide text-brand-600 uppercase dark:text-brand-400">
+      Writer &amp; Researcher
+    </p>
+    <div class="prose-research mt-8">
+      <p>{bio}</p>
+    </div>
+
+    {
+      links.length > 0 && (
+        <div class="mt-8">
+          <h2 class="text-sm font-semibold tracking-wide text-slate-500 uppercase dark:text-slate-400">
+            Elsewhere
+          </h2>
+          <ul class="mt-3 flex flex-wrap gap-3">
+            {links.map((l) => (
+              <li>
+                <a
+                  href={l.url}
+                  rel="me noopener"
+                  target="_blank"
+                  class="inline-flex items-center rounded-full border border-slate-200 px-4 py-1.5 text-sm font-medium text-slate-700 transition hover:border-brand-400 hover:text-brand-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-brand-500 dark:hover:text-brand-400"
+                >
+                  {l.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )
+    }
+  </section>
+</BaseLayout>

@@ -36,6 +36,7 @@ order: 13
 icon: "\U0001F5A8️"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -49,7 +50,7 @@ If you ever send a file to a commercial printer, or design anything that gets fo
 
 A surprising number of expensive print mistakes come from misunderstanding it: a 14-page booklet that can't be bound, text buried in the spine, page numbers sliced off the center spread, or a file pre-arranged in a way that fights the printer's own software.
 
-Understanding the basics lets you prep files the printer can actually use, plan page counts that don't waste money, and speak the same language as your bindery. You don't need to run the press. You just need to know what it expects.
+Understanding the basics lets you [prep files the printer can actually use](/blog/computer-graphics-print/13-preflight-validating-a-file-before-it-prints), plan page counts that don't waste money, and speak the same language as your bindery. You don't need to run the press. You just need to know what it expects.
 
 ## What imposition actually is
 
@@ -136,13 +137,13 @@ Each signature is its own self-contained booklet gathered in sequence. They are 
 ## Common misconceptions
 
 **"I can lay out my own pages in print order to save the printer time."**
-Don't. Sending a PDF already arranged as printer's spreads collides with the printer's own imposition and creep software, producing scrambled or double-imposed output. Send single pages or reader spreads and let their tools do the work.
+Don't. Sending a [PDF](/blog/computer-graphics-print/12-pdf-x-output-intent-page-boxes-the-print-ready-target) already arranged as printer's spreads collides with the printer's own imposition and creep software, producing scrambled or double-imposed output. Send single pages or reader spreads and let their tools do the work.
 
 **"A 14-page booklet is fine, it's close enough."**
 For a folded booklet it isn't. Any page count that's not a multiple of 4 forces the bindery to pad it with blank pages or reject the file outright.
 
 **"Bleed is optional if my design has white edges."**
-Even white-edged designs need bleed if any color or image is meant to reach the edge. Trimming always varies slightly, and without bleed you get thin white slivers where the cut missed.
+Even white-edged designs need [bleed](/blog/computer-graphics-print/15-finishing-document-geometry-bleed-trim-safe-area) if any color or image is meant to reach the edge. Trimming always varies slightly, and without bleed you get thin white slivers where the cut missed.
 
 **"Margins only matter for looks."**
 Inner margins also protect against the binding gutter and creep eating your content. Skimp on them and page numbers or text vanish into the spine or off the trim edge.
@@ -199,4 +200,4 @@ If you're preparing a job for print, here's a practical checklist:
 
 The one thing to remember: a press sheet looks scrambled because it *should*. Imposition is the invisible choreography that turns a chaotic-looking flat into a perfectly ordered book, and your job as a designer is to feed it clean files and let it work.
 
-Master this and you stop fighting your printer and start collaborating with one. And here's the next thread to pull: every fold and trim depends on the press hitting color in exactly the right spot, which opens the door to **registration and color management**, the art of making four separate ink plates line up into a single crisp image. That's where a beautiful layout either sings or smears.
+Master this and you stop fighting your printer and start collaborating with one. And here's the next thread to pull: every fold and trim depends on the press hitting color in exactly the right spot, which opens the door to **[registration and color management](/blog/computer-graphics-print/17-the-rip-press-operation-color-measurement)**, the art of making four separate ink plates line up into a single crisp image. That's where a beautiful layout either sings or smears.

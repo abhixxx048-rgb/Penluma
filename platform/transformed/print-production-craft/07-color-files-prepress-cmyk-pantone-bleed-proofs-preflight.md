@@ -40,6 +40,7 @@ faq:
     a: Rich black is black ink plus some cyan, magenta, and yellow (commonly C60 M40 Y40 K100) for a deeper, denser black on large areas. Use plain 100% black for small text and thin lines to keep edges crisp and avoid registration problems.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -57,7 +58,7 @@ If you build software - an online design editor, an upload validator, a PDF gene
 
 ## Light versus ink: the root of every color surprise
 
-Color works two completely different ways depending on whether you are looking at light or at ink.
+Color works two completely different ways depending on whether you are [looking at light or at ink](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color).
 
 - **RGB** (Red, Green, Blue) mixes *light*. It is **additive** - it starts at black (no light) and adds light to build color. All three at full strength make white. Anything that glows uses RGB: monitors, phones, cameras.
 - **CMYK** (Cyan, Magenta, Yellow, and Key, which means black) mixes *ink*. It is **subtractive** - it starts with white paper, and each ink absorbs some of the light bouncing off the page. This is how all physical printing works.
@@ -70,7 +71,7 @@ Here is the fact that explains every color complaint: **the RGB range is much la
 
 A **gamut** is the full range of colors a system can produce. When a color exists in RGB but cannot be made in CMYK, it is **out of gamut**. During conversion, that color gets pushed to the nearest printable one - and you *see* the difference.
 
-That brilliant blue turning purple is out of gamut. So is neon green going flat, and vivid orange dulling down. Smooth screen gradients can even show visible "banding" (stripes) once converted, because CMYK has fewer steps to work with.
+That [brilliant blue turning purple](/blog/computer-graphics-print/05-gamut-out-of-gamut-handling-deep-dive) is out of gamut. So is neon green going flat, and vivid orange dulling down. Smooth screen gradients can even show visible "banding" (stripes) once converted, because CMYK has fewer steps to work with.
 
 The fix is simple: **convert to CMYK during design, not at the last second.** That way the designer sees realistic, slightly duller colors on screen from the start and nobody is shocked by the printed result. A monitor emits light, so it will always look more vivid than ink. Set that expectation with customers up front.
 
@@ -118,7 +119,7 @@ Resolution and physical size are tied together. Take a 300 PPI image, stretch it
 
 Here is the biggest myth in print: changing the "DPI" field in software from 72 to 300 does *not* add real detail. The software just invents new pixels by guessing (called upsampling). A "72-turned-300" image is still a low-resolution image wearing a costume - soft and blurry. You can safely shrink an image, but you can never truly turn a small low-res image into sharp print.
 
-For software builders: when a customer drags a 600×400 logo into your editor and stretches it across an 8-inch banner, the stored label might say 300 DPI, but the effective resolution is only about 75 PPI. Your preflight should compute resolution at the placed size and warn, "This may print blurry - please upload a larger version." Never silently upscale it for them.
+For software builders: when a customer drags a 600×400 logo into your editor and stretches it across an 8-inch banner, the stored label might say 300 DPI, but the effective resolution is only about 75 PPI. Your [preflight](/blog/computer-graphics-print/13-preflight-validating-a-file-before-it-prints) should compute resolution at the placed size and warn, "This may print blurry - please upload a larger version." Never silently upscale it for them.
 
 ## Bleed, trim, and safe zone: surviving an imperfect cut
 
@@ -153,7 +154,7 @@ When two colors sit on top of each other, the press decides whether the bottom c
 
 One reliable rule: **overprint small 100% black text.** Black is opaque and printed last, so overprinting it over a color is invisible, and it removes the risk of an ugly white halo around your letters if registration drifts.
 
-There is also more than one way to make black:
+There is also [more than one way to make black](/blog/computer-graphics-print/06-ink-on-the-page-spot-colors-overprint-black-generation):
 
 | Type of black | Recipe (C/M/Y/K) | Total ink | Use for |
 |---|---|---|---|
@@ -175,7 +176,7 @@ That total-ink number matters too. **Total Area Coverage (TAC)** is the sum of t
 
 ## How to use this: a clean-file checklist
 
-1. **Design and convert in CMYK** using the printer's output profile, and soft-proof with it on a calibrated screen. (An **ICC profile** is just a color "translation map" for one press-and-paper combo, like GRACoL/CRPC6 in the US or FOGRA51/39 in Europe - ask your printer which to use.)
+1. **Design and convert in CMYK** using the printer's output profile, and soft-proof with it on a calibrated screen. (An [**ICC profile**](/blog/computer-graphics-print/03-color-management-icc-profiles-the-pipeline) is just a color "translation map" for one press-and-paper combo, like GRACoL/CRPC6 in the US or FOGRA51/39 in Europe - ask your printer which to use.)
 2. **Ask the printer four things up front:** output profile, TAC/ink limit, bleed size, and required PDF standard.
 3. **Build at trim plus 0.125"/3mm bleed** on all sides. Run backgrounds into the bleed; keep all important content inside the safe margin.
 4. **Keep images at 300 PPI (400 for text-in-image) at final placed size.** Shrinking is fine; never upscale.
@@ -191,4 +192,4 @@ If you are building web-to-print software, turn this list into per-product confi
 
 The single thing to remember: **a print file is not a screen image - it is a set of physical instructions for ink, paper, and a blade.** Once you start thinking in ink (CMYK, bleed, total coverage) instead of light (RGB, pixels), most "mystery" print problems stop being mysteries.
 
-There is one more layer beyond getting a single sheet right: how dozens of pages get arranged on one giant press sheet so they fold and bind into the correct reading order. That puzzle is called **imposition** - where page 16 ends up printed right next to page 1, and somehow comes out perfect after folding. It is the next rabbit hole worth falling into.
+There is one more layer beyond getting a single sheet right: how dozens of pages get arranged on one giant press sheet so they fold and bind into the correct reading order. That puzzle is called [**imposition**](/blog/computer-graphics-print/14-imposition-binding-arranging-pages-on-the-sheet) - where page 16 ends up printed right next to page 1, and somehow comes out perfect after folding. It is the next rabbit hole worth falling into.

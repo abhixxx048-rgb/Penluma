@@ -39,6 +39,7 @@ icon: "\U0001FA99"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 You built something useful. Now comes the quiet question that decides whether your business thrives, limps, or dies: what do you charge for it?
@@ -49,7 +50,7 @@ Most founders treat this as an afterthought. They pick a number that "feels safe
 
 Two ideas hide inside that one question, and confusing them is expensive.
 
-**Value creation** is how much benefit your product produces for the customer: money they save, money they make, time they get back, pain they avoid.
+**[Value creation](/blog/how-to-make-money/02-value-creation-vs-value-capture)** is how much benefit your product produces for the customer: money they save, money they make, time they get back, pain they avoid.
 
 **Value capture** is how much of that benefit you keep as revenue. That is your price.
 
@@ -91,11 +92,11 @@ Harder, because you have to actually quantify the benefit. But it is the only du
 
 This single shift separates founders who get rich from freelancers who stay tired.
 
-If you bill by the hour, you are punished for getting faster, and your income is capped at hours-in-a-day. Think about how differently time gets priced: a taxi driver earns a modest hourly rate, a surgeon far more, a large-company CEO more still. Same sixty minutes, wildly different price - because of specific knowledge, accountability, and leverage, not effort.
+If you bill by the hour, you are punished for getting faster, and your income is capped at hours-in-a-day. Think about how differently time gets priced: a taxi driver earns a modest hourly rate, a surgeon far more, a large-company CEO more still. Same sixty minutes, wildly different price - because of [specific knowledge](/blog/how-to-make-money/09-specific-knowledge-your-personal-moat), accountability, and [leverage](/blog/how-to-make-money/04-leverage-the-real-secret), not effort.
 
 > **The consultant's weekend.** A consultant fixes a factory's billing bug over a weekend, saving them 10 lakh a year. Billing 16 hours at 2,000 each comes to 32,000. Pricing on *value* - say 2 lakh, one-fifth of the first year's savings - is cheap for the client, who still nets 8 lakh, and rich for the consultant. The weekend did not get more valuable. The framing did.
 
-The move that makes this repeatable is to **productize**. Turn "my time" into an outcome or an asset: a fixed-scope package, a subscription, a software seat. The moment price decouples from your hours, your income can grow while your effort stays flat.
+The move that makes this repeatable is to **[productize](/blog/how-to-make-money/10-products-vs-time-escaping-the-trap)**. Turn "my time" into an outcome or an asset: a fixed-scope package, a subscription, a software seat. The moment price decouples from your hours, your income can grow while your effort stays flat.
 
 ## Measure willingness to pay - don't guess it
 
@@ -137,7 +138,7 @@ In a famous example from Dan Ariely's *Predictably Irrational*, *The Economist* 
 
 ### Charm versus round numbers
 
-A price like 999 (charm pricing) signals "deal" for consumer goods. Round numbers - 1,000, 50,000 - signal premium, quality, and trust in business and luxury sales. Match the number's feel to the buyer.
+A price like 999 ([charm pricing](/blog/business-financial-literacy/09-pricing-psychology-pricing-with-confidence)) signals "deal" for consumer goods. Round numbers - 1,000, 50,000 - signal premium, quality, and trust in business and luxury sales. Match the number's feel to the buyer.
 
 ## Charge by the right unit: your value metric
 

@@ -58,6 +58,7 @@ order: 20
 icon: "\U0001F4C8"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -86,7 +87,7 @@ The reasons break down into a few simple buckets:
 - **Natural resources differ.** Saudi Arabia sits on oil. Brazil has the climate for coffee. Iceland has cheap geothermal energy. You can't grow coffee in a Saudi desert no matter how hard you try.
 - **Technology and skill differ.** Germany has decades of precision-engineering know-how. Taiwan runs the world's most advanced semiconductor factories.
 - **Labor costs differ.** Some tasks are simply cheaper to do where wages are lower.
-- **Bigger factories are cheaper.** A factory serving the whole world makes each unit far more cheaply than one serving a single small country. (Economists call this **economies of scale**: cost per unit falls as you make more.)
+- **Bigger factories are cheaper.** A factory serving the whole world makes each unit far more cheaply than one serving a single small country. (Economists call this [**economies of scale**](/blog/economics-from-first-principles/17-business-economics-costs-profit-competition-and-pricing): cost per unit falls as you make more.)
 
 Quick vocabulary, since we'll use it throughout. An **import** is something your country buys from abroad. An **export** is something your country sells abroad.
 
@@ -142,7 +143,7 @@ The **gains from trade** come from three places: specialization (each country do
 
 But here's the honest part textbooks used to skip. The theory says the *total* pie grows. It says *nothing* about how the pie gets sliced.
 
-Trade creates **winners**: consumers who pay less, exporters, and efficient industries. It also creates **losers**: workers in industries that suddenly compete with cheaper imports.
+Trade creates **winners**: [consumers who pay less](/blog/economics-from-first-principles/05-consumer-behavior-and-how-people-really-decide), exporters, and efficient industries. It also creates **losers**: workers in industries that suddenly compete with cheaper imports.
 
 These two facts sit right next to each other. Aggregate gains are real *and* concentrated pain is real.
 
@@ -165,7 +166,7 @@ This is the misconception that fuels endless bad headlines. A trade deficit does
 
 Here's the accounting reality. A deficit on the current account is automatically financed by a surplus on the **financial account**, which is foreigners buying your assets: government bonds, stocks, real estate. The two sides sum to roughly zero.
 
-The USA runs deficits partly *because* the dollar is the world's reserve currency, so foreign money pours in wanting US assets. Money flowing in to buy your bonds is the mirror image of goods flowing in.
+The USA runs deficits partly *because* the dollar is [the world's reserve currency](/blog/economics-from-first-principles/22-exchange-rates-currency-markets-and-why-currencies-rise-or-fall), so foreign money pours in wanting US assets. Money flowing in to buy your bonds is the mirror image of goods flowing in.
 
 ```
    THE TWO HALVES ALWAYS BALANCE
@@ -231,7 +232,7 @@ And the counterarguments:
 - **Retaliation:** the other country taxes your exports back, and a trade war ignites.
 - Protected industries grow lazy and inefficient because they never face real competition.
 
-The classic cautionary tale is the **Smoot-Hawley Tariff Act of 1930**. The USA sharply raised import duties at the start of the Great Depression. Other countries retaliated, world trade collapsed by roughly two-thirds between 1929 and 1934, and the downturn deepened. It remains the textbook warning about trade wars, and a live reference point today.
+The classic cautionary tale is the **Smoot-Hawley Tariff Act of 1930**. The USA sharply raised import duties at the start of [the Great Depression](/blog/economics-from-first-principles/15-the-business-cycle-booms-recessions-and-depressions). Other countries retaliated, world trade collapsed by roughly two-thirds between 1929 and 1934, and the downturn deepened. It remains the textbook warning about trade wars, and a live reference point today.
 
 That history rhymes with the present. In 2025, a wave of US tariffs pushed the average effective US tariff from around 2.5% in late 2024 to roughly 17% by late 2025, the highest in about 90 years. Tariffs on China briefly spiked to 145% before partial de-escalation. (Treat exact rates as fast-moving; the direction is the point.)
 
@@ -261,7 +262,7 @@ Since then, companies have been hedging their bets:
 - **Nearshoring:** moving it closer, like to Mexico.
 - **Friend-shoring:** shifting to politically friendly countries.
 
-The deeper lesson: the global economy is one giant interconnected workshop. It delivers cheap, abundant goods in normal times, and it propagates shocks instantly when one link breaks. Efficiency and resilience are a permanent tradeoff.
+The deeper lesson: [the global economy is one giant interconnected workshop](/blog/economics-from-first-principles/23-globalization-and-how-national-economies-are-connected). It delivers cheap, abundant goods in normal times, and it propagates shocks instantly when one link breaks. Efficiency and resilience are a permanent tradeoff.
 
 ## How to use this
 

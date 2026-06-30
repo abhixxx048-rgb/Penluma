@@ -53,6 +53,7 @@ faq:
       surprised you. That is a real idea your head was hiding.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -75,9 +76,9 @@ First, two plain-English terms you will need.
 
 ## Your mental desk is smaller than you think
 
-Psychologist George Miller famously pointed out how little we can hold in mind at once, only a handful of items. Picture your working memory as a small desk.
+Psychologist George Miller famously pointed out how little we can hold in mind at once, only a handful of items. Picture your [working memory](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits) as a small desk.
 
-When you try to think, remember, judge, and plan all at the same time, the desk overflows. Thoughts slide off the edge. That is the blank-mind feeling, the sense that you *had* something but it slipped away.
+When you try to think, remember, judge, and plan all at the same time, the desk overflows. Thoughts slide off the edge. That is the [blank-mind feeling](/blog/clear-thinking-and-expression/01-nothing-is-wrong-with-you-the-science-of-going-blank), the sense that you *had* something but it slipped away.
 
 The lesson is not "try harder to hold on." It is "stop trying to hold on at all." **Paper stores; your mind connects.** Use each tool for the one thing it does well.
 
@@ -162,9 +163,9 @@ Once a thought leaves your head and lands on the page, it gains three abilities 
 
 - **Visible.** You can re-read it, so you no longer have to remember it. Your desk stays clear.
 - **Editable.** You can cross out, reorder, and sharpen a clumsy line into a clear one. You cannot edit a thought you cannot see.
-- **Combinable.** Two ideas sitting side by side on the page can be joined into a third, better idea. This is where new ideas come from, and it is impossible when each idea keeps sliding off the desk.
+- **Combinable.** Two ideas sitting side by side on the page can be joined into a third, better idea. This is [where new ideas come from](/blog/clear-thinking-and-expression/13-what-creativity-actually-is-recombination-not-magic), and it is impossible when each idea keeps sliding off the desk.
 
-This is not abstract. Speaking and writing clearly get easier because you have already found the words on paper. You get more from what you read because you write your reactions next to the text instead of nodding and forgetting. You spot opportunities and connections because two ideas are finally laid out where your eyes can see both at once.
+This is not abstract. Speaking and [writing clearly](/blog/clear-thinking-and-expression/04-clear-writing-is-clear-thinking) get easier because you have already found the words on paper. You get more from what you read because you write your reactions next to the text instead of nodding and forgetting. You spot opportunities and connections because two ideas are finally laid out where your eyes can see both at once.
 
 ## Common misconceptions
 
@@ -180,7 +181,7 @@ This is not abstract. Speaking and writing clearly get easier because you have a
 
 ### Set up one capture place today
 
-You only need *one* trusted place to dump thoughts. Pick one and commit:
+You only need *one* trusted place to [dump thoughts](/blog/clear-thinking-and-expression/16-build-an-idea-inventory-a-second-brain-so-connections-happen). Pick one and commit:
 
 1. **A pocket notebook.** Cheap, always works, no battery.
 2. **One notes app** on your phone. The default one is fine. It is searchable and always with you.

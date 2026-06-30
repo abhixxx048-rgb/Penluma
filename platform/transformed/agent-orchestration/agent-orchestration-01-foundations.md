@@ -36,6 +36,7 @@ order: 999
 icon: "\U0001F916"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - "Building Effective Agents - Anthropic - https://www.anthropic.com/engineering/building-effective-agents"
   - "How we built our multi-agent research system - Anthropic - https://www.anthropic.com/engineering/multi-agent-research-system"
@@ -150,7 +151,7 @@ So you've decided you genuinely need an agent. The next question, and the one pe
 There are real wins here, and they're worth knowing:
 
 - **Breadth.** Anthropic's multi-agent research system, where a lead researcher spawns three to five subagents to explore in parallel, scored a **90% improvement** over a single agent on their internal research benchmark. It shines on questions that fan out in many independent directions at once.
-- **More room to think.** Each subagent has its own context window, so the system can chew through information that would never fit in a single one.
+- **More room to think.** Each subagent has [its own context window](/blog/agent-orchestration/agent-orchestration-05-context-memory), so the system can chew through information that would never fit in a single one.
 - **Speed.** Running tools in parallel cut research time by up to **90%** on complex queries.
 - **Cleaner separation.** Distinct agents can map neatly onto distinct concerns.
 
@@ -174,7 +175,7 @@ The clearest example may surprise you: **most coding tasks.** Code has tightly w
 
 It's not just the vendors warning you. A Berkeley study, *Why Do Multi-Agent LLM Systems Fail?* (the MAST project), combed through more than 1,600 annotated traces across seven popular frameworks and found that "performance gains on popular benchmarks are often minimal."
 
-They catalogued **14 distinct failure modes** in three families: flawed system design (agents repeating steps, ignoring when to stop, disobeying the spec), agents talking past each other (which accounted for roughly **a third** of failures), and weak verification of the final output.
+They catalogued **14 distinct failure modes** in three families: flawed system design (agents repeating steps, ignoring when to stop, disobeying the spec), agents talking past each other (which accounted for roughly **a third** of failures), and [weak verification of the final output](/blog/agent-orchestration/agent-orchestration-06-reliability-eval-obs).
 
 > The lesson is blunt: every agent you add brings a fresh set of ways to fail, stacked **on top of** all the single-agent ones. More agents is not free quality.
 
@@ -199,16 +200,16 @@ Here's the whole framework as a checklist. Walk down it in order, and stop the m
 
 A quick gut check from OpenAI on whether a problem even deserves an agent: reach for one when the task involves **nuanced judgment** (like approving refunds), **rules too tangled to maintain**, or **messy unstructured data** like free-form documents and conversation. If a problem hits none of these, a plain rules-based program probably beats any agent.
 
-And once you do split, there are two clean shapes to choose from:
+And once you do split, there are [two clean shapes to choose from](/blog/agent-orchestration/agent-orchestration-02-patterns):
 
 - **Manager pattern.** One central agent stays in charge, calls the others like tools, and owns the conversation. Best when you want a single controller synthesizing everything.
-- **Handoff pattern.** Agents pass control to one another, each able to take over the user interaction. Best when no single agent needs to hold the reins.
+- **Handoff pattern.** [Agents pass control to one another](/blog/agent-orchestration/agent-orchestration-03-communication-protocols), each able to take over the user interaction. Best when no single agent needs to hold the reins.
 
 One more practical tip that punches above its weight: **invest in your tools as much as your prompts.** Anthropic found teams pour effort into wording prompts while neglecting tool design. Write clear tool descriptions with examples and edge cases, design tools so they're hard to misuse, and test them hard. In their system, a single agent dedicated to rewriting confusing tool descriptions cut later task-completion time by **40%.**
 
 ## Conclusion
 
-If you carry one idea out of this, make it the ladder: **plain call, then workflow, then single agent, then multi-agent, and never climb a rung you can't justify.** The property that moves you up is dynamic control flow. The force that should hold you back is the roughly 15x token cost and the pile of new failure modes that arrive with every extra agent.
+If you carry one idea out of this, make it the ladder: **plain call, then workflow, then single agent, then multi-agent, and never climb a rung you can't justify.** The property that moves you up is dynamic control flow. The force that should hold you back is the [roughly 15x token cost](/blog/agent-orchestration/agent-orchestration-07-cost-performance) and the pile of new failure modes that arrive with every extra agent.
 
 The teams who get this right aren't the ones with the most agents. They're the ones who reach for the simplest tool that does the job, and resist the pull toward clever.
 

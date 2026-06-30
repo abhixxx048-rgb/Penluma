@@ -36,6 +36,7 @@ order: 999
 icon: "\U0001F4CA"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -49,7 +50,7 @@ Where do you spend your next dollar and your next hour? That's the only question
 
 The marketing-tools industry has a tempting answer: **multi-touch attribution** (MTA), software that tracks every click in a customer's journey and splits the credit between them. It sounds rigorous. It sounds like grown-up marketing.
 
-But MTA was designed for a very specific shape of business - big-ticket deals, long sales cycles, lots of stakeholders, and huge conversion volume. If you sell a low-cost product to small businesses who sign up on their own in a few days, MTA is solving a problem you don't have. Worse, it can actively mislead you by hiding your best channel.
+But MTA was designed for a very specific shape of business - big-ticket deals, long sales cycles, lots of stakeholders, and huge conversion volume. If you sell a [low-cost product](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive) to small businesses who sign up on their own in a few days, MTA is solving a problem you don't have. Worse, it can actively mislead you by hiding your best channel.
 
 This article shows you the lightweight stack that beats it: a single survey question, clean link tagging, and an occasional experiment. That's it.
 
@@ -104,7 +105,7 @@ Four structural reasons, and they all point the same way.
 
 2. **Not enough volume.** Data-driven models need hundreds of conversions per conversion type to be statistically reliable. Below that, the "model" is just fitting noise and handing you confident-looking garbage.
 
-3. **The cookie collapse.** Third-party cookies and mobile IDs are largely gone. Consent and match rates run roughly 40 to 60 percent, and cookie-based tracking now misses an estimated 30 to 50 percent of conversions. An attribution platform gives you a precise-looking picture of half the data.
+3. **The cookie collapse.** Third-party cookies and mobile IDs are largely gone. [Consent and match rates](/blog/security-privacy-engineering/11-privacy-laws-compliance) run roughly 40 to 60 percent, and cookie-based tracking now misses an estimated 30 to 50 percent of conversions. An attribution platform gives you a precise-looking picture of half the data.
 
 4. **The maintenance tax.** A two-person team spends more time explaining and cleaning an attribution model than acting on it. If you can't maintain it, it won't help you decide.
 
@@ -181,12 +182,12 @@ If your survey response quality is weak, A/B test the field itself: dropdown ord
 Tracked attribution and self-reported answers will disagree constantly. Don't pick one and trust it blindly. Triangulate.
 
 - **When the first-touch UTM and the survey agree,** you have high confidence. Bank it.
-- **When they diverge** - tracking says "direct" but the buyer says "a friend told me" or "your free tool" - the self-reported answer usually reveals the *real* demand driver, and the tracked one is just the last clickable step.
+- **When they diverge** - tracking says "direct" but the buyer says "a friend told me" or "your free tool" - the self-reported answer usually reveals [the *real* demand driver](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy), and the tracked one is just the last clickable step.
 
-This is the whole ballgame for a small business. Last-touch "direct" will routinely hide that referrals and your free tool are the actual engine. The hybrid view is what stops you from defunding your best channel because a dashboard couldn't see it.
+This is the whole ballgame for a small business. Last-touch "direct" will routinely hide that [referrals](/blog/how-to-make-money/15-distribution-beats-product) and your free tool are the actual engine. The hybrid view is what stops you from defunding your best channel because a dashboard couldn't see it.
 
 ## Conclusion
 
 The single takeaway: **for a low-priced, self-serve, small-business product, the best attribution system is a survey question, a UTM tag, and an occasional experiment - not a platform.** Simplicity here isn't cutting corners; it's the more accurate choice, because it sees the word-of-mouth that tracking is structurally blind to.
 
-Once you can see which channels truly bring customers, a sharper question appears: are those customers any good? A channel that delivers cheap signups who never activate is worse than an expensive one that delivers loyal users. That's where activation rate and the North Star metric come in - and where attribution stops being about *where* customers come from and starts being about *which* ones are worth chasing.
+Once you can see which channels truly bring customers, a sharper question appears: are those customers any good? A channel that delivers [cheap signups who never activate](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale) is worse than an expensive one that delivers loyal users. That's where activation rate and the North Star metric come in - and where attribution stops being about *where* customers come from and starts being about *which* ones are worth chasing.

@@ -52,6 +52,7 @@ faq:
       ambiguous effects on jobs, partly because employers often have wage-setting
       power. Very large increases can reduce employment.
 author: Pritesh Yadav (priteshyadav444)
+linked: true
 transformed: true
 sources: []
 ---
@@ -60,7 +61,7 @@ A heart surgeon earns roughly ten times what a daycare worker earns, even though
 
 Most people explain this with a moral instinct: harder or more important work should pay more. That instinct feels right, and it is almost always wrong.
 
-Your wage is not a reward for effort or virtue. It is a **price** - the price of your labor - and like every price, it is set by supply and demand. Once you see the handful of forces behind it, nearly every pay gap you will ever encounter suddenly makes sense.
+Your wage is not a reward for effort or virtue. It is a **price** - the price of your labor - and like every price, it is set by [supply and demand](/blog/economics-from-first-principles/03-supply-demand-and-how-prices-are-determined). Once you see the handful of forces behind it, nearly every pay gap you will ever encounter suddenly makes sense.
 
 ## Why this matters
 
@@ -92,7 +93,7 @@ The rule is simple: **hire until VMP equals the wage.**
 - Keep hiring - but output per extra worker eventually falls. The tenth cook in a small kitchen adds less than the second.
 - Once the next worker's VMP drops to $20, stop.
 
-So in this model your wage equals the value of what the last worker like you adds. Raise your productivity, and the ceiling on your pay rises with it.
+So in this model your wage equals the value of what the last worker like you adds. [Raise your productivity](/blog/economics-from-first-principles/12-economic-growth-and-productivity), and the ceiling on your pay rises with it.
 
 You can trace the whole chain in one breath. Product demand rises, so the price of output rises, so the value of each worker's output rises, so the firm is willing to pay more, so the wage climbs - which then pulls more workers into that job.
 
@@ -155,7 +156,7 @@ Two forces drive it.
 
 Picture the world before recording. The best singer in town could fill one concert hall a night, and that was the hard ceiling on their reach. Spotify lets that same singer sell to the entire planet at once. Technology removed the ceiling, and the market became a *tournament* where the winner takes almost everything.
 
-In 1995, Robert Frank and Philip Cook extended this in *The Winner-Take-All Society*. As technology and globalization widen markets, the winners across law, finance, sports, and tech capture a disproportionate share of the rewards. This is a major reason so much income now concentrates at the very top, from CEOs to athletes to influencers.
+In 1995, Robert Frank and Philip Cook extended this in *The Winner-Take-All Society*. As technology and globalization widen markets, the winners across law, finance, sports, and tech capture a disproportionate share of the rewards. This is a major reason so much [income now concentrates at the very top](/blog/economics-from-first-principles/25-inequality-wealth-distribution-and-poverty), from CEOs to athletes to influencers.
 
 The common mistake is thinking superstars are paid for being slightly better. They are paid for being slightly better *multiplied by enormous scale*. As Rosen put it, top performers earn vastly more even though most of us could barely detect the difference in quality.
 
@@ -165,7 +166,7 @@ A **minimum wage** is a legal price floor on labor - employers may not pay below
 
 The US federal minimum was created by the Fair Labor Standards Act of 1938, starting at $0.25 an hour and also bringing the 40-hour week and overtime. It was last raised on July 24, 2009, to **$7.25**, the longest freeze in its history. Inflation has eroded its real buying power to roughly $5 in today's money. By 2026, 30 states plus DC set higher minimums, many automatically indexed to inflation.
 
-The **standard model** predicts harm. Set the price of labor above the market-clearing level, and firms want less of it: fewer low-skill jobs and more unemployment. For decades that was the textbook consensus.
+The **standard model** predicts harm. Set the price of labor above the market-clearing level, and firms want less of it: fewer low-skill jobs and [more unemployment](/blog/economics-from-first-principles/14-unemployment-productivity-and-the-labor-force). For decades that was the textbook consensus.
 
 Then came a famous test. When New Jersey raised its minimum wage in 1992, economists David Card and Alan Krueger compared fast-food employment there against neighboring Pennsylvania, which had not changed its wage. They found **no job loss - if anything, a slight rise.** Card shared the 2021 Nobel Prize partly for pioneering this "natural experiment" method.
 
@@ -184,7 +185,7 @@ At the other end sits **gig work** - app-based, on-demand jobs like driving for 
 - An **independent contractor** is flexible but gets no minimum wage, overtime, or benefits.
 - An **employee** is protected but less flexible.
 
-California's AB5 law (effective 2020) imposed a strict test pushing toward employee status, but Prop 22 (2020) carved out app drivers as contractors. Gig pay is a live test of compensating differentials: is flexibility a genuine perk workers value, or a way for firms to shift cost and risk onto workers? With algorithms now setting pay in real time, the old monopsony worry returns in a new digital form.
+California's AB5 law (effective 2020) imposed a strict test pushing toward employee status, but Prop 22 (2020) carved out app drivers as contractors. Gig pay is a live test of compensating differentials: is flexibility a genuine perk workers value, or a way for firms to shift cost and risk onto workers? With [algorithms now setting pay in real time](/blog/economics-from-first-principles/27-technology-automation-ai-and-innovation), the old monopsony worry returns in a new digital form.
 
 ## Common misconceptions
 

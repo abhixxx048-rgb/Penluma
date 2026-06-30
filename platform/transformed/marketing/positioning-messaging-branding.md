@@ -32,6 +32,7 @@ faq:
     a: Rarely, and only deliberately. Positioning is cheap to decide but expensive to execute because everything downstream depends on it. Validate it with real customers, then hold it stable until the position itself genuinely changes.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: marketing
 topicTitle: Marketing
 category: Business & Growth
@@ -77,7 +78,7 @@ The cheap, common mistake: founders skip positioning, jump straight to "let's wr
 
 ## A worked example: positioning a real product
 
-Abstract advice is forgettable, so let's run the whole cascade on one example. Imagine **a web-to-print software company** (call it Print-Flow-360) selling to small, independent print and sign shops. We'll use the five-part positioning exercise from April Dunford's book *Obviously Awesome*. The order matters: you start from what the customer would do instead of you, because that is how customers actually decide.
+Abstract advice is forgettable, so let's run the whole cascade on one example. Imagine **a web-to-print software company** (call it Print-Flow-360) selling to small, independent print and sign shops. We'll use the five-part positioning exercise from April Dunford's book *Obviously Awesome*. The order matters: you start from what the customer would do instead of you, because that is [how customers actually decide](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy).
 
 ### 1. Competitive alternatives: what would they do if you didn't exist?
 
@@ -108,7 +109,7 @@ State these as plain facts, not benefits yet:
 
 ### 4. Best-fit customers: who cares the most, fastest?
 
-Small, independent local print and sign shops with no developer, who are losing business to the big online players. Just as important, **name the anti-persona out loud**: large trade printers that need deep enterprise integrations. Chasing them makes you complicated, and complicated kills the whole story.
+Small, independent local print and sign shops with no developer, who are losing business to the big online players. Just as important, **name the [anti-persona](/blog/sales-customer-development/09-qualifying-choosing-who-deserves-your-time) out loud**: large trade printers that need deep enterprise integrations. Chasing them makes you complicated, and complicated kills the whole story.
 
 ### 5. Market category: the context you want to be judged in
 
@@ -130,7 +131,7 @@ Once the position is set, translating it into words is structured, not agonizing
 2. **Three pillars:** the beliefs you want a buyer to hold. Three, because that is about all anyone remembers.
 3. **The foundation:** proof points that back up each pillar.
 
-The single most important rule here: **pillars are outcomes, never features.** "In-browser design studio" is a feature. "Your customers design it themselves" is an outcome.
+The single most important rule here: **pillars are [outcomes, never features](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress).** "In-browser design studio" is a feature. "Your customers design it themselves" is an outcome.
 
 **Roof (core value prop).** A reliable format is: *We help [audience] [achieve outcome] by [different approach].*
 
@@ -154,7 +155,7 @@ One pro tip that pays off forever: mine the exact phrases customers use on sales
 
 Brand is the *feel* that carries the message. For a nervous, non-technical buyer, the right move is counterintuitive.
 
-Most teams reach for "premium" and "sophisticated." But for this audience, **simplifying the voice from polished to honest and helpful raises trust and conversion**, because plain language reduces the fear of buying something you might not be able to use. The classic model is Mailchimp's voice: plainspoken, genuine, a little dry-humored. It made software feel safe for small-business owners.
+Most teams reach for "premium" and "sophisticated." But for this audience, **simplifying the voice from polished to honest and helpful raises trust and conversion**, because [plain language](/blog/clear-thinking-and-expression/04-clear-writing-is-clear-thinking) reduces the fear of buying something you might not be able to use. The classic model is Mailchimp's voice: plainspoken, genuine, a little dry-humored. It made software feel safe for small-business owners.
 
 Pick four or five **brand attributes** and make them real tradeoffs, not vague virtues:
 
@@ -188,7 +189,7 @@ The payoff is consistency. A shop owner reads a homepage that sounds like a help
 Here is a concrete, one-month plan you can actually run.
 
 1. **This week, write the internal positioning statement.** Use the five-part exercise above. Make it one page. Print it and pin it up. Every page of marketing must trace back to it.
-2. **This week, interview five customers.** Three current or trial users, two who said no. Confirm what they'd do without you and what they fear. Write down their exact phrases.
+2. **This week, [interview five customers](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself).** Three current or trial users, two who said no. Confirm what they'd do without you and what they fear. Write down their exact phrases.
 3. **Week two, build the messaging house.** Roof, three outcome-based pillars, at least two proof points each. One page.
 4. **Week two, write a one-page voice guide.** Five attributes, a short do/don't word list, and three before-and-after rewrites.
 5. **Week three, rewrite your homepage against the house.** Hero equals the roof, three sections equal the pillars, proof under each. Delete every feature paragraph that isn't a pillar.

@@ -36,6 +36,7 @@ order: 999
 icon: "\U0001F680"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -107,9 +108,9 @@ A few principles keep it effective:
 
 1. Speak in your customer's language, never in software jargon. "Let your customers order and approve their own print jobs online, 24/7, without the back-and-forth" beats anything with the word "platform" in it.
 2. Offer a zero-risk first step: "I'll set up your store for free this week - you only pay if you keep it."
-3. Treat every conversation as research. Log the objections.
+3. Treat [every conversation as research](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself). Log the objections.
 
-**The one rule that matters most: keep it manual.** It is tempting to scale this into automated cold email, but the math breaks. For software companies, cold email is one of the worst-replying categories, and the path from email to a closed deal is brutally thin - on the order of one customer per few hundred emails. A low-priced subscription cannot absorb that, and automated outreach adds real legal exposure under spam and privacy laws. Founder-led outreach wins the first customers. It is not a scale engine, and that is fine.
+**The one rule that matters most: keep it manual.** It is tempting to scale this into automated cold email, but the math breaks. For software companies, cold email is one of the worst-replying categories, and the path from email to a closed deal is brutally thin - on the order of one customer per few hundred emails. A low-priced subscription cannot absorb that, and automated outreach adds real legal exposure under spam and privacy laws. [Founder-led outreach](/blog/sales-customer-development/13-founder-led-outreach-getting-the-conversations) wins the first customers. It is not a scale engine, and that is fine.
 
 ## Bet 2: A narrow, compounding SEO and free-tool asset
 
@@ -131,13 +132,13 @@ The beautiful part: Bet 1 feeds Bet 2. The objections and phrases you capture in
 
 **"More channels means more growth."** The opposite is usually true early on. More channels means thinner effort everywhere and mastery nowhere.
 
-**"Paid ads are the fast way to get customers."** For a niche, low-priced product, paid search is often the slowest path to nowhere. Thin search volume gets exhausted quickly, click costs run high, and the cost to acquire one customer can exceed what they pay you in a year. Ads have a place later - a small layer on your own brand name and a few competitor terms, after you know your numbers - but not as an opening bet.
+**"Paid ads are the fast way to get customers."** For a niche, low-priced product, paid search is often the slowest path to nowhere. Thin search volume gets exhausted quickly, click costs run high, and the [cost to acquire one customer](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale) can exceed what they pay you in a year. Ads have a place later - a small layer on your own brand name and a few competitor terms, after you know your numbers - but not as an opening bet.
 
 **"Big partnerships will launch us."** Reseller and equipment-vendor deals can have the highest ceiling of any channel, but they are a 6-to-18-month effort that requires reference customers and a track record you do not have yet. Established vendors partner with proven players. Earn ten to twenty happy customers first, then approach one regional partner.
 
 **"Affiliates are a cheap growth hack."** A pure affiliate program takes 18 to 24 months to produce meaningful business revenue, and it needs content and references you lack early on. A simple referral program using your own happy customers works far sooner.
 
-**"Followers and traffic equal traction."** They feel like progress, but the only metric that counts is demos and trials from actual buyers. Tag every channel with tracking links from day one so you are not fooled by vanity numbers.
+**"Followers and traffic equal traction."** They feel like progress, but the only metric that counts is [demos](/blog/sales-customer-development/10-the-demo-show-value-without-overselling) and trials from actual buyers. Tag every channel with tracking links from day one so you are not fooled by vanity numbers.
 
 ## How to use this: a 6-to-12-week plan
 
@@ -145,7 +146,7 @@ Here is how to run the two bets as parallel tests.
 
 1. **Week 0 - Set kill-criteria.** Decide in advance what success looks like. For outreach: a positive-reply rate above roughly 8 to 10 percent and demos that close. For SEO: pages indexed and first long-tail rankings within 90 days. Set up a tracking link per channel so you can tell what is working.
 2. **Week 1 - Build the list and join the rooms.** Pull 100 to 200 ideal prospects from Google Maps, Yelp, and trade directories, filtered to those with weak or no online ordering. Join the one or two communities where your buyers actually gather, and start by being genuinely helpful - answer questions, share knowledge, mention your product only when it is honestly the best answer.
-3. **Weeks 1 to 4 - Run outreach by hand.** One prospect at a time: a tailored demo video, plain-language framing, a zero-risk offer. Log every objection.
+3. **Weeks 1 to 4 - Run outreach by hand.** One prospect at a time: a tailored demo video, plain-language framing, a zero-risk offer. Log [every objection](/blog/sales-customer-development/11-handling-objections-with-honesty).
 4. **Weeks 2 to 6 - Build the SEO assets.** Five to ten comparison pages, each with a simple dedicated landing page and a live demo. Stand up your free tool. Write a few guides using the exact objection language outreach surfaced.
 5. **Weeks 4 to 6 - First read.** Compare cost, volume, and fit. Expect outreach to produce your first paying customers and your richest learning. Judge SEO on leading indicators like rankings, not revenue yet.
 6. **Weeks 6 to 12 - Double down and look ahead.** Pour effort into whatever is converting. Keep the SEO asset compounding. Before your current channel plateaus, start testing the next one - for a business like this, that is usually a small reseller or partnership play, now that you have demo-ready reference customers.

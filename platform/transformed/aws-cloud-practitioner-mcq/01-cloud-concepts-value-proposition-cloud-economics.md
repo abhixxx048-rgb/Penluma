@@ -61,6 +61,7 @@ icon: ☁️
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 You studied. You know the material. Then the CLF-C02 hands you four answers that all sound right, and the clock is ticking. That gap, between knowing a concept and picking the one word that fits exactly, is where most "nearly ready" candidates lose points.
@@ -78,7 +79,7 @@ Here is the good news: there are only a handful of confusable pairs. Once you ca
 Think of the difference like housing. Buying a house is a big, one-time purchase that you own outright. Renting an apartment is an ongoing monthly cost based on the time you actually live there.
 
 - **CapEx (capital expenditure)** is the house: a large upfront buy. Racking your own servers every three years is CapEx.
-- **OpEx (operating expenditure)** is the rent: pay-as-you-go for what you use. Paying AWS only for the compute hours you consumed this month is OpEx.
+- **OpEx (operating expenditure)** is the rent: pay-as-you-go for what you use. Paying AWS only for the [compute hours you consumed](/blog/aws-cloud-practitioner-mcq/06-amazon-ec2-instances-purchasing-options) this month is OpEx.
 
 Moving from a private data center to the cloud is the classic **CapEx-to-OpEx shift**. You stop owning hardware and start renting capacity.
 
@@ -125,7 +126,7 @@ So the order is **Region (geographic area) > Availability Zone (isolated data ce
 
 Edge Locations and Local Zones both mean "closer to users," but they do different jobs.
 
-- **Edge Locations** cache and *deliver content* near viewers worldwide. They power Amazon CloudFront, AWS's content delivery network (CDN). A media company caching video close to global viewers to cut latency is using Edge Locations.
+- **Edge Locations** cache and *deliver content* near viewers worldwide. They power [Amazon CloudFront](/blog/aws-cloud-practitioner-mcq/09-amazon-cloudfront-cdn-edge-delivery), AWS's content delivery network (CDN). A media company caching video close to global viewers to cut latency is using Edge Locations.
 - **Local Zones** run actual *compute and storage* in or near a specific large metro area. A gaming studio needing single-digit-millisecond compute close to players in a city far from the nearest Region uses Local Zones.
 
 The clean split: **Edge Locations cache and deliver content. Local Zones run compute near users.** Deliver versus run is the question to ask.
@@ -183,7 +184,7 @@ If a front end drops work into a queue and back-end workers pull from it, a slow
 
 - **"Scalability and elasticity are the same."** No. Scalability is the ability to grow; elasticity is automatic, on-demand flexing up and down.
 - **"High availability means zero downtime."** No. HA recovers fast but may allow a brief interruption. Zero-interruption is fault tolerance.
-- **"A Multi-AZ standby also serves read traffic."** No. Multi-AZ is for failover and high availability. Read scaling comes from read replicas.
+- **"A Multi-AZ standby also serves read traffic."** No. Multi-AZ is for failover and high availability. Read scaling comes from [read replicas](/blog/aws-cloud-practitioner-mcq/11-amazon-rds-managed-relational-databases).
 - **"The cloud never fails and is always free."** No. Hardware in the cloud still fails; AWS designs around failure. The Free Tier covers limited usage only.
 - **"Edge Locations and Local Zones do the same thing."** No. Edge Locations cache and deliver content; Local Zones run compute near users.
 
@@ -199,4 +200,4 @@ If a front end drops work into a queue and back-end workers pull from it, a slow
 
 If you remember one thing, make it this: the CLF-C02 rewards precision, not recall. The candidates who pass are the ones who can match a scenario to the *exact* term while everyone else picks the one that merely sounds close.
 
-Lock in the confusable pairs and a big slice of the exam stops being intimidating. Next, carry the same habit into security and the shared responsibility model, where the trickiest question of all is deceptively simple: in the cloud, which parts are AWS's job to secure, and which are yours?
+Lock in the confusable pairs and a big slice of the exam stops being intimidating. Next, carry the same habit into security and the [shared responsibility model](/blog/aws-cloud-practitioner-mcq/03-the-shared-responsibility-model), where the trickiest question of all is deceptively simple: in the cloud, which parts are AWS's job to secure, and which are yours?

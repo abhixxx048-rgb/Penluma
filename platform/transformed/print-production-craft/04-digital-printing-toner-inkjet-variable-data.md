@@ -25,6 +25,7 @@ order: 3
 icon: "\U0001F4D0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 faq:
   - q: What is the difference between digital and offset printing?
@@ -43,7 +44,7 @@ faq:
 
 A customer orders a single business card at midnight, or fifty postcards that each print a different person's name. An hour later, a press has produced them. No metal plates, no minimum order, no operator dialing in ink for half a morning.
 
-That is digital printing, and it is the quiet engine behind every modern online print shop. In the last chapter you met offset, the workhorse that needs plates, a long setup, and a big run to earn its keep. Now meet its opposite.
+That is digital printing, and it is the quiet engine behind every modern online print shop. In the last chapter you met [offset, the workhorse that needs plates](/blog/print-production-craft/03-offset-lithography-the-workhorse-of-commercial-print), a long setup, and a big run to earn its keep. Now meet its opposite.
 
 ## Why this matters
 
@@ -129,7 +130,7 @@ Both are digital, but they suit different work:
 - **Color and spot matching.** Liquid toner (Indigo) excels at Pantone and spot colors. High-end inkjet now matches or beats many color ranges but is weaker on exact spots.
 - **What each is best at.** Toner for versatility and standard short runs. Inkjet for very high volume: books, statements, mass mail.
 
-Two terms there. A **substrate** is just printer-speak for "the thing you print on." A **gamut** is the full range of colors a process can reproduce, where wider means more vivid and accurate. **Pantone** or **spot color** means a specific pre-mixed ink, like a brand's exact red, rather than building the color from CMYK dots.
+Two terms there. A **substrate** is just printer-speak for "the thing you print on." A **gamut** is the full range of colors a process can reproduce, where wider means more vivid and accurate. [**Pantone** or **spot color**](/blog/computer-graphics-print/06-ink-on-the-page-spot-colors-overprint-black-generation) means a specific pre-mixed ink, like a brand's exact red, rather than building the color from CMYK dots.
 
 **The key takeaway:** pick toner for versatility and premium short-run looks (Indigo for Pantone-heavy work), and pick production inkjet when volume is very high.
 
@@ -139,7 +140,7 @@ Two terms there. A **substrate** is just printer-speak for "the thing you print 
 
 Here is why, and it comes down to how your eyes work. At arm's length, a flyer or poster needs only 150 to 300 dpi to look sharp. Fine type might want 300 to 600. Production inkjet already delivers 1,200 dpi, and chemical toner up to 2,400. Both digital families *exceed* what the eye can resolve at normal viewing distance, so the raw-dpi debate is mostly settled. For most marketing collateral, business cards, flyers, and short-run books, a customer simply cannot tell digital from offset.
 
-**Myth: more dpi means better quality.** Addressable dots are not the same as perceived quality. What actually matters is drop control, **dot gain** (how much each dot spreads on the paper), and the **screening algorithm** (how the press arranges dots to fake continuous tones). A 600-dpi press with great screening can look better than a 1,200-dpi press with poor screening. Never judge a press by its dpi sticker alone.
+**Myth: more dpi means better quality.** Addressable dots are not the same as perceived quality. What actually matters is drop control, **dot gain** (how much each dot spreads on the paper), and the [**screening algorithm**](/blog/computer-graphics-print/08-halftoning-screening-turning-tone-into-dots) (how the press arranges dots to fake continuous tones). A 600-dpi press with great screening can look better than a 1,200-dpi press with poor screening. Never judge a press by its dpi sticker alone.
 
 **What offset still wins:** very long-run color consistency, certain spot, metallic, and fluorescent inks, and the absolute finest detail with fresh plates. **What digital wins:** per-piece variability, proofing that matches the final exactly, no setup waste, and instant reprints. Quality is no longer the deciding factor. **Volume, economics, and turnaround are.**
 
@@ -151,7 +152,7 @@ Offset has a **high setup cost** (plates plus makeready) but a **low per-unit co
 
 A quick glossary. **Makeready** is all the setup before a real run: mounting plates, getting ink and registration right, and wasting some sheets dialing it in. A **click charge** is the per-impression fee many digital presses cost out at.
 
-Because the two cost lines cross, there is a **break-even quantity**: the run length where offset's lower per-unit cost finally repays its big setup. The formula:
+Because the two cost lines cross, there is a [**break-even quantity**](/blog/business-financial-literacy/10-break-even-margins-profitability): the run length where offset's lower per-unit cost finally repays its big setup. The formula:
 
 > Break-even quantity = Offset setup cost ÷ (offset cost per unit − digital cost per unit)
 
@@ -207,7 +208,7 @@ A **web-to-print** storefront takes many small, on-demand, often personalized or
 1. **Model digital's cost curve.** Near-zero setup plus a flat per-unit cost is the opposite shape from offset. Your calculator should pick the cheaper method at a given quantity using the break-even logic, or at least price short runs *without* a makeready penalty.
 2. **Allow true single-piece orders.** Digital makes quantity-of-one economic. Do not inherit offset-era minimum-quantity rules; they kill the whole advantage.
 3. **Treat variable data as a first-class product.** Let the buyer upload a CSV or fill fields, then generate one personalized output per row. You will need a data-mapping screen, a per-record proof, and you must snapshot the dataset onto the order so history survives even if the source file later changes.
-4. **Make preflight mandatory.** Preflight means automatically checking a file is print-ready. Verify resolution (300 dpi or better at final size), color space (CMYK versus RGB), **bleed** (3 to 5 mm of artwork past the trim so no white slivers appear), embedded fonts, and safe margins. Flag problems and explain them in plain language to non-technical owners.
+4. **Make preflight mandatory.** [Preflight](/blog/computer-graphics-print/13-preflight-validating-a-file-before-it-prints) means automatically checking a file is print-ready. Verify resolution (300 dpi or better at final size), color space (CMYK versus RGB), [**bleed**](/blog/computer-graphics-print/15-finishing-document-geometry-bleed-trim-safe-area) (3 to 5 mm of artwork past the trim so no white slivers appear), embedded fonts, and safe margins. Flag problems and explain them in plain language to non-technical owners.
 5. **Handle color space honestly.** Screen previews are RGB but print is CMYK. Warn that vivid neon colors and unverified Pantones will shift or dull in print, and ideally offer a soft proof.
 6. **Surface shipping early.** For POD and dropship, show the true per-unit plus shipping cost before checkout. Thin margins cannot absorb a surprise.
 7. **Sell turnaround as a promise.** Digital's speed lets you show realistic, plain-language delivery dates per method.

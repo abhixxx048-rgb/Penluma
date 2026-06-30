@@ -30,6 +30,7 @@ faq:
     a: Not at first. Anthropic's own advice is to start without a framework. Reach for one only when you hit real coordination, state, or observability needs that plain code makes painful.
 topic: agent-orchestration
 topicTitle: Multi-Agent LLM Systems
+linked: true
 category: AI & LLMs
 date: '2026-06-16'
 order: 999
@@ -53,14 +54,14 @@ This is your map to that climb: what these systems are, when they earn their cos
 
 ## Why this matters
 
-Almost every "AI feature" you'll build can be one of four things, in rising order of cost and fragility: a single model call, a fixed workflow, a single agent, or a multi-agent system.
+Almost every "AI feature" you'll build can be one of four things, in rising order of cost and fragility: a single model call, a fixed workflow, [a single agent](/blog/agent-orchestration/agent-orchestration-01-foundations), or a multi-agent system.
 
 Pick the wrong rung and you pay twice. Go too simple and the feature can't handle the task. Go too complex and you've signed up for a system that's slower, far more expensive, and dramatically harder to debug, with more places to silently fail.
 
 The stakes are concrete:
 
 - **Cost.** Token spend is the dominant driver of how these systems perform. A runaway agent loop isn't a bug report; it's an invoice.
-- **Reliability.** Long, multi-step runs compound small per-step errors into big final failures.
+- **Reliability.** [Long, multi-step runs](/blog/agent-orchestration/agent-orchestration-06-reliability-eval-obs) compound small per-step errors into big final failures.
 - **Time.** A workflow you can read top-to-bottom is something you can fix. An emergent swarm is something you get to investigate.
 
 Get the level-of-complexity decision right and everything downstream gets easier. That decision is the whole game.
@@ -105,7 +106,7 @@ The promise is parallelism and specialization. The price is coordination - and c
 
 ## The 15x rule: the trade you're actually making
 
-When you go multi-agent, here's the bill. Anthropic measured roughly **4x the tokens** of a single chat turn for one agent, and about **15x** for their multi-agent research system.
+When you go multi-agent, here's the bill. Anthropic measured roughly **4x the tokens** of a single chat turn for one agent, and about **15x** for [their multi-agent research system](/blog/agent-orchestration/agent-orchestration-07-cost-performance).
 
 You only earn that back when the work is both:
 
@@ -134,7 +135,7 @@ You don't choose between "agent" and "no agent." You choose a shape along a spec
 - **Prompt chaining** - fixed steps in a row (outline → draft → polish). Cheap, predictable.
 - **Routing** - classify the input, then send it to a specialized handler. Cheap.
 - **Parallelization** - run independent subtasks at once, or take several votes for reliability. Medium cost.
-- **Orchestrator-worker** - a planner dynamically fans work out to workers. High cost (~15x). This is the breadth-first research workhorse.
+- **Orchestrator-worker** - [a planner dynamically fans work out to workers](/blog/agent-orchestration/agent-orchestration-02-patterns). High cost (~15x). This is the breadth-first research workhorse.
 - **Evaluator-optimizer** - generate, grade against clear criteria, revise, repeat until it clears the bar. Medium cost.
 - **Reflection loop** - a single agent self-corrects until it's done. Medium cost.
 - **Debate / ensemble** - several agents reason independently, then a vote or judge picks the winner. High cost, for high-stakes calls where diversity beats one opinion.
@@ -150,7 +151,7 @@ Usually the opposite. More agents means more coordination, more places to drop c
 No. Models suffer from **"lost in the middle"** - information buried in the center of a long context gets used poorly, even when it's right there. Stuffing the window degrades quality. Curate context; don't hoard it.
 
 **"You need a big framework to build agents."**
-Anthropic's own guidance is to **start without one.** Plain code is easier to read and debug. Reach for a framework only when real coordination, state, or observability needs make hand-rolling painful - not on day one.
+Anthropic's own guidance is to **start without one.** Plain code is easier to read and debug. [Reach for a framework](/blog/agent-orchestration/agent-orchestration-04-frameworks) only when real coordination, state, or observability needs make hand-rolling painful - not on day one.
 
 **"A multi-agent system is deterministic; I can unit-test it like normal code."**
 It isn't, and you can't. The same input can take different paths. Test for outcomes and invariants ("did it produce a valid result that satisfies these rules?"), not for an exact reproducible trace.
@@ -177,7 +178,7 @@ Work down this list and **stop at the first rung that fits.**
 1. **Start at the simplest rung** that could plausibly work. Add complexity only after watching the simpler version fail for a structural reason.
 2. **Keep control flow as deterministic as the task allows.** A workflow you can read beats an agent you have to debug.
 3. **Tier your models.** A strong orchestrator paired with cheaper workers captures most of the quality at a fraction of the cost.
-4. **Engineer the context, not just the prompt.** Reduce, offload, retrieve, and isolate so the window stays full of signal, not noise.
+4. **Engineer the context, not just the prompt.** [Reduce, offload, retrieve, and isolate](/blog/agent-orchestration/agent-orchestration-05-context-memory) so the window stays full of signal, not noise.
 5. **Give subagents disjoint ownership** and clear output contracts, so their results merge cleanly instead of colliding.
 6. **Instrument from day one.** Add tracing and a small, high-signal evaluation set so you can see what the system actually did.
 7. **Design for resume, not restart.** Checkpoint state so a long run can recover from a single failed step instead of starting over.

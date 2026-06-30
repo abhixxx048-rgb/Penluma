@@ -35,9 +35,10 @@ icon: "\U0001F393"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
-Here is one of the strangest truths in all of learning science: the study methods that feel the best are usually the ones that work the worst. The methods that feel slow, clumsy, and a little frustrating are often the ones that build memory that lasts.
+Here is one of the strangest truths in all of learning science: the study methods that feel the best are usually the ones that work the worst. The methods that feel slow, clumsy, and a little frustrating are often the ones that [build memory that lasts](/blog/ai-learning-platform/03-how-humans-learn-a-plain-tour-of-memory).
 
 Worse still, your own sense of "I've got this" is one of the least trustworthy signals you have. This article is about three "feels-bad-but-works" ideas and how to use them without being fooled.
 
@@ -77,7 +78,7 @@ One caution: interleaving is for *after* the basics are in place. First you lear
 
 Psychologist Alan Paivio proposed that the mind handles information through **two separate but connected channels**: a verbal channel (words you read or hear) and a visual channel (images and diagrams). **Dual coding** simply means using both at once.
 
-Because the two channels are separate, presenting an idea as *both* clear words *and* a matching picture gives your brain two routes to store the memory and two routes to find it again. It also spreads the mental effort across two channels instead of jamming everything into one.
+Because the two channels are separate, presenting an idea as *both* clear words *and* a matching picture gives your brain two routes to store the memory and two routes to find it again. It also [spreads the mental effort across two channels](/blog/ai-learning-platform/05-cognitive-load-theory-why-too-much-at-once-fails) instead of jamming everything into one.
 
 Richard Mayer built this into the Cognitive Theory of Multimedia Learning, and the headline finding is steady: people learn better from **words plus relevant pictures** than from words alone.
 
@@ -93,8 +94,8 @@ Robert Bjork coined the term **desirable difficulties** in 1994 for learning con
 
 It's the idea that ties everything together, because the most powerful study techniques are *all* desirable difficulties:
 
-- **Retrieval practice** - pulling an answer out of your head instead of rereading it.
-- **Spacing** - spreading practice over time instead of cramming.
+- **[Retrieval practice](/blog/ai-learning-platform/06-retrieval-practice-why-testing-beats-re-reading)** - pulling an answer out of your head instead of rereading it.
+- **[Spacing](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve)** - spreading practice over time instead of cramming.
 - **Interleaving** - mixing problem types instead of blocking them.
 - **Generation** - trying to produce an answer *before* you're told it.
 - **Variation** - practising in changing conditions rather than identical ones.
@@ -142,7 +143,7 @@ So we get a cruel mismatch. The effective methods feel *worse* while you're doin
 1. **Mix your practice on purpose.** Once you know the basics of each type, shuffle them. Do one of each kind of problem in rotation instead of grouping them. Expect it to feel worse, and don't let that fool you.
 2. **Test yourself instead of rereading.** Close the book and try to write down or say what you remember. The struggle to retrieve is the part that builds memory.
 3. **Space your reviews.** Spread study across days and weeks rather than one long session. Returning to material after you've half-forgotten it is where the gains live.
-4. **Pair every key idea with one picture that earns its place.** Use a labelled diagram next to the words it explains. Skip decorative photos and never split a picture from its explanation.
+4. **Pair every key idea with one picture that earns its place.** Use a [labelled diagram](/blog/ai-learning-platform/14-analogies-diagrams-animations-simulations) next to the words it explains. Skip decorative photos and never split a picture from its explanation.
 5. **Keep the difficulty in the achievable zone.** Aim for challenges that are hard but doable. If you're completely lost, you're missing a prerequisite. Back up and build it first.
 6. **Judge your learning on a delay, not in the moment.** Don't trust how a lesson felt. Check what you can recall a day or two later. The method that looked weakest during practice is usually the one that wins the test.
 

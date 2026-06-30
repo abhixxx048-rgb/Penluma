@@ -36,6 +36,7 @@ faq:
     a: No. They never sacrifice safety, so they never decide two conflicting values. They only give up the impossible guarantee of always terminating, and in practice they terminate essentially every time.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Consensus_(computer_science)
 ---
@@ -44,7 +45,7 @@ A database survives a server catching fire. Kubernetes loses a node and keeps hu
 
 Here is the brutal question underneath it. You have many machines. The network can lose, delay, duplicate, or reorder messages. Any machine can die mid-sentence without warning. Given all that chaos, how do you get the group to settle on one value and never take it back?
 
-That question is the **consensus problem**, and it is the hardest and most important thing in distributed systems. Famous algorithms like Raft and Paxos exist for exactly one reason: to solve it. Before you can understand them, you need to understand the problem itself.
+That question is the **consensus problem**, and it is the hardest and most important thing in distributed systems. Famous algorithms like Raft and [Paxos](/blog/distributed-systems/06-paxos-the-original-consensus-algorithm) exist for exactly one reason: to solve it. Before you can understand them, you need to understand the problem itself.
 
 ## Why this matters
 
@@ -76,7 +77,7 @@ If that sounds easy, remember the constraints: there is no global clock, you can
 Consensus is not an academic toy. It beats at the core of almost every reliable distributed system. Here are the jobs it does:
 
 - **Electing one leader.** Many systems want exactly *one* node in charge at a time, so orders never conflict. If two nodes each believe they are the sole leader - a **split brain** - you get data corruption. Consensus picks one.
-- **Ordering operations.** If five database replicas apply writes in different orders, they end up with different data. Consensus agrees on *one* ordered log, so every replica applies the same operations in the same order and stays identical. This is the heart of **replicated state machines**.
+- **Ordering operations.** If five database replicas apply writes in different orders, they end up with different data. Consensus agrees on *one* ordered log, so every replica applies the same operations in the same order and stays identical. This is the heart of **[replicated state machines](/blog/distributed-systems/03-replicated-state-machines-the-log)**.
 - **Committing a transaction.** Did we all agree to commit, or all agree to abort? Every participant must reach the *same* verdict - you cannot have one commit while another aborts.
 - **Granting a lock.** A distributed lock is just consensus on "which client owns this lock right now?" If two clients think they hold it, they corrupt the resource together.
 - **Tracking membership.** Which nodes are in the cluster right now? When you add or remove a server, every node must agree on the new membership at the same logical moment, or messages get sent to ghosts and vote counts go wrong.
@@ -207,7 +208,7 @@ The same overlap lets a *new leader* safely learn what the old one committed. A 
 ### Two traps to avoid
 
 - **Even-sized clusters.** A 4-node cluster needs a majority of 3 and tolerates only 1 failure - the same as a 3-node cluster, but with more machines to fail and slower writes. Even sizes also make ties likelier. Use **odd** sizes (3, 5, 7).
-- **"Both sides keep working" during a partition.** With majority quorums, *at most one side of any partition can hold a majority.* Split a 5-node cluster into 3 and 2, and only the group of 3 can make decisions; the group of 2 must stop accepting writes. That is the algorithm choosing safety over availability on the minority side - and it is exactly what prevents split brain.
+- **"Both sides keep working" during a partition.** With majority quorums, *at most one side of any partition can hold a majority.* Split a 5-node cluster into 3 and 2, and only the group of 3 can make decisions; the group of 2 must stop accepting writes. That is the algorithm choosing safety over [availability](/blog/distributed-systems/16-the-cap-theorem-and-pacelc) on the minority side - and it is exactly what prevents split brain.
 
 ## How to use this
 
@@ -225,4 +226,4 @@ If you remember one thing, remember the overlap. Consensus turns the vague goal 
 
 Everything else - the FLP impossibility, the safety-over-liveness trade, the timeouts and randomized elections - is the field carefully working around the one thing it cannot fix: you can never truly tell a crashed node from a slow one.
 
-So here is the question that opens the next door. Knowing *what* correct consensus requires, how does a real algorithm actually elect a leader, replicate a log, and recover from a dead leader without ever breaking Agreement? That is the story of Raft - and now you have exactly the lens you need to see why every one of its rules exists.
+So here is the question that opens the next door. Knowing *what* correct consensus requires, how does a real algorithm actually [elect a leader](/blog/distributed-systems/04-raft-leader-election), [replicate a log](/blog/distributed-systems/05-raft-log-replication-safety-membership), and recover from a dead leader without ever breaking Agreement? That is the story of Raft - and now you have exactly the lens you need to see why every one of its rules exists.

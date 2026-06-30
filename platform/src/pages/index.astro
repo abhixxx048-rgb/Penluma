@@ -10,9 +10,47 @@ const featuredTopics = topics.filter((t) => t.featured);
 const grouped = topicsByCategory();
 const totalPosts = posts.length;
 const totalTopics = topics.length;
+
+const homeUrl = new URL('/', Astro.site).toString();
+const pageDescription =
+  `Penluma is a growing library of deep, worked-through writing on staff-level system design, multi-agent AI, money, and thinking clearly - intuition to mechanics to failure modes.`;
+const keywords = [
+  'deep-dive research',
+  'system design',
+  'multi-agent LLM systems',
+  'AI engineering',
+  'economics',
+  'clear thinking',
+  'staff engineer',
+  'Penluma',
+];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: SITE.name,
+    description: pageDescription,
+    url: homeUrl,
+    isPartOf: { '@type': 'WebSite', name: SITE.name, url: homeUrl },
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: recent.map((post, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        url: new URL(`/blog/${post.id}/`, Astro.site).toString(),
+        name: post.data.title,
+      })),
+    },
+  },
+];
 ---
 
-<BaseLayout>
+<BaseLayout
+  description={pageDescription}
+  keywords={keywords}
+  jsonLd={jsonLd}
+>
   <!-- Hero / branding -->
   <section class="relative overflow-hidden border-b border-slate-200 dark:border-slate-800">
     <div class="mx-auto max-w-5xl px-4 pt-16 pb-14 sm:px-6 sm:pt-24">

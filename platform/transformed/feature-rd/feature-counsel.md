@@ -28,6 +28,7 @@ faq:
     a: "Build one shared map from internal codes to plain words and reuse it everywhere. 'ecommerce' becomes 'Physical Product,' 'void' becomes 'Cancelled,' 'Critical' becomes 'Urgent.' Consistency across every screen is what makes it feel finished."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: feature-rd
 topicTitle: Feature R&D
 category: Business & Growth
@@ -37,7 +38,7 @@ icon: "\U0001F9EA"
 sources: []
 ---
 
-A print-shop owner sets up a bulk discount: 250 flyers for twenty dollars. To double-check, she types the numbers into the built-in price calculator and hits "Calculate."
+A print-shop owner sets up a [bulk discount](/blog/print-production-craft/11-print-shop-economics-costing-make-ready-margins-quoting): 250 flyers for twenty dollars. To double-check, she types the numbers into the built-in price calculator and hits "Calculate."
 
 It thinks for half a second, then shows a tidy green panel: base price confirmed. She nods and goes live.
 
@@ -53,9 +54,9 @@ When a recent deep audit looked at 18 already-built features of a commerce platf
 
 Here's the throughline, and it applies to almost any product with everyday users: **they cannot tell what is broken, what is fake, what is safe to click, or where to finish a task.**
 
-That uncertainty is expensive. A user who can't trust your numbers ships a wrong price. One who can't tell a failed screen from an empty one misses an overdue invoice. One who hits a dead end on day one doesn't become a customer at all-they just quietly leave.
+That uncertainty is expensive. A user who can't trust your numbers ships a wrong price. One who can't tell a failed screen from an empty one misses an overdue invoice. One who hits a dead end on day one [doesn't become a customer at all](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy)-they just quietly leave.
 
-The good news: the highest-leverage fixes here are rarely new features. They're making the powerful things you already built clear, honest, and safe. Below are the patterns to hunt for in your own product.
+The good news: the highest-leverage fixes here are rarely new features. They're making the powerful things you already built clear, honest, and safe. Below are the [patterns to hunt for in your own product](/blog/product-sense-empathy/15-common-mistakes-anti-patterns-pitfalls).
 
 ## Silent lie #1: Controls that pretend to work
 
@@ -124,7 +125,7 @@ The audit found the platform repeatedly shipping the exact opposite:
 
 Each of these turns a confusing first session into the user's problem to solve. Flip them, and the first session becomes "add my logo and a product" on a store that already works.
 
-The principle isn't "remove choice." Power users can still change anything. It's: **don't make everyone configure their way to a working product.** Rare, advanced options belong behind an "Advanced" link-not in the default path.
+The principle isn't "remove choice." Power users can still change anything. It's: **don't make everyone configure their way to a working product.** Rare, advanced options belong behind an "Advanced" link-not in [the default path](/blog/product-sense-empathy/08-the-make-it-obvious-toolkit-defaults-constraints-discoverability).
 
 ## Dead ends: stranding people at the worst possible moment
 
@@ -154,7 +155,7 @@ When a confirmation names what's lost (or what's captured), even a non-accountan
 
 **"It works, so the UX is fine."** Working and *legible* are different things. The calculator "worked"-it returned a number. The number was just silently wrong. Functionality without honesty is worse than a missing feature, because it actively misleads.
 
-**"Power users want all the options up front."** Most of your users aren't power users, and even power users don't want a minefield. Correct defaults plus an "Advanced" escape hatch serve everyone. A confusing default that doubles a price (because a pricing tier defaulted to "add to" instead of "replace") helps no one.
+**"Power users want all the options up front."** Most of your users aren't power users, and even power users don't want a minefield. Correct defaults plus an "Advanced" escape hatch serve everyone. A confusing default that doubles a price (because a [pricing tier](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive) defaulted to "add to" instead of "replace") helps no one.
 
 **"Placeholder data is harmless until launch."** Fake `$555-123-4567` numbers, fake "Recent Quotes," and seeded "10,000+ Orders Delivered / 4.9 rating" stats have a way of going live verbatim. To a real visitor, a phone number that isn't the shop's makes the whole business look fraudulent.
 

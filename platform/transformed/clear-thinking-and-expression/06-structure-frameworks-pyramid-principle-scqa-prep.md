@@ -27,6 +27,7 @@ order: 5
 icon: ✍️
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 faq:
   - q: What is the Pyramid Principle?
     a: >-
@@ -68,7 +69,7 @@ The fix isn't talking faster or sounding smarter. It's putting your ideas in the
 
 ## Why this matters
 
-Your listener has a small mental desk - what scientists call **working memory**, the place they hold what you're saying right now. It fills up fast. Research going back to George Miller and later Alan Baddeley showed people can only juggle a handful of items at once.
+Your listener has a small mental desk - what scientists call **[working memory](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits)**, the place they hold what you're saying right now. It fills up fast. Research going back to George Miller and later Alan Baddeley showed people can only juggle a handful of items at once.
 
 Here's the problem. If you talk for two minutes before revealing your point, your listener is using all that desk space just trying to *guess* where you're heading. They have nothing left over to actually judge whether your idea is any good.
 
@@ -89,7 +90,7 @@ Busy people do not want a story that builds to a surprise ending. They want the 
 
 ## The Pyramid Principle: structure for the whole thing
 
-Barbara Minto built this at McKinsey in the 1960s, and it's still the backbone of clear business writing. Picture a pyramid: **one main point sits at the top**, supported underneath by a few grouped reasons, and each reason supported by facts below it.
+Barbara Minto built this at McKinsey in the 1960s, and it's still the backbone of [clear business writing](/blog/clear-thinking-and-expression/04-clear-writing-is-clear-thinking). Picture a pyramid: **one main point sits at the top**, supported underneath by a few grouped reasons, and each reason supported by facts below it.
 
 ```
             [ MAIN POINT ]
@@ -103,7 +104,7 @@ You *read* it top-down - point first. But you usually *build* it bottom-up: you 
 
 ### Group your reasons so they don't overlap
 
-The grouping rule has an ugly name but a simple idea: **MECE** (say "mee-see"), short for **Mutually Exclusive, Collectively Exhaustive**.
+The grouping rule has an ugly name but a simple idea: **[MECE](/blog/clear-thinking-and-expression/12-analysis-frameworks-first-principles-mece-5-whys-second-order-thinking)** (say "mee-see"), short for **Mutually Exclusive, Collectively Exhaustive**.
 
 - **Mutually exclusive** = your groups don't overlap. No fact belongs in two buckets at once.
 - **Collectively exhaustive** = together, the groups cover the whole topic, with no big gap left out.
@@ -127,7 +128,7 @@ SCQA works for emails, reports, pitches, and even hard conversations, because it
 
 ## PREP: a structure you can run in your head live
 
-SCQA and the Pyramid shine when you've had time to prepare. But when someone puts you on the spot - in a meeting, an interview, a hallway - you need something you can run in two seconds. That's **PREP**.
+SCQA and the Pyramid shine when you've had time to prepare. But when someone [puts you on the spot](/blog/clear-thinking-and-expression/08-speaking-clearly-confidently-in-real-time) - in a meeting, an interview, a hallway - you need something you can run in two seconds. That's **PREP**.
 
 1. **P - Point:** State your answer in one sentence.
 2. **R - Reason:** Why you believe it.
@@ -186,4 +187,4 @@ If you remember one thing, make it this: **conclusion first, support after.** Th
 
 The three frameworks are just that rule at different sizes: PREP for a live answer, SCQA to open, the Pyramid for the whole thing. Learn them once and you stop inventing structure under pressure.
 
-And here's the thread worth pulling next. Structure decides whether people *follow* you, but it doesn't decide whether they *believe* you. That comes down to how you handle evidence and the quiet logical gaps that sneak into even well-ordered arguments - which is exactly where clear thinking goes from sounding sharp to actually being right.
+And here's the thread worth pulling next. Structure decides whether people *follow* you, but it doesn't decide whether they *believe* you. That comes down to [how you handle evidence](/blog/clear-thinking-and-expression/17-critical-thinking-foundations-claims-evidence-assumptions) and the quiet logical gaps that sneak into even well-ordered arguments - which is exactly where clear thinking goes from sounding sharp to actually being right.

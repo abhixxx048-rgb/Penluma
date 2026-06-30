@@ -38,6 +38,7 @@ order: 4
 icon: "\U0001F5A8️"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -86,7 +87,7 @@ For the curious: people often quote RGB as roughly 16 million addressable shades
 
 ## What happens to an out-of-gamut color
 
-When a color can't be printed, the software has to decide where to *put* it instead. That decision is the **rendering intent** - the rule for relocating impossible colors into the printable range.
+When a color can't be printed, the software has to decide where to *put* it instead. That decision is the **[rendering intent](/blog/computer-graphics-print/04-rendering-intents-gamut-mapping)** - the rule for relocating impossible colors into the printable range.
 
 There are two big strategies, and the difference matters a lot.
 
@@ -123,7 +124,7 @@ You don't have to guess. Two tools show you the future.
 
 The distinction is useful: the soft proof shows you the *simulated final look* (better for judging the real outcome), while the gamut warning just flags which pixels are *risky*. The Color Picker also shows a small triangle alarm with a swatch of the nearest printable substitute you can click to accept.
 
-An **ICC profile** is the file that makes all of this possible - a standardized description of a specific device's gamut, used to translate color accurately between devices.
+An **[ICC profile](/blog/computer-graphics-print/03-color-management-icc-profiles-the-pipeline)** is the file that makes all of this possible - a standardized description of a specific device's gamut, used to translate color accurately between devices.
 
 ## Common misconceptions
 
@@ -134,7 +135,7 @@ An **ICC profile** is the file that makes all of this possible - a standardized 
 
 ## How to use this
 
-1. **Work in the right RGB space.** For print-bound art, Adobe RGB carries more of the cyan-greens that survive CMYK conversion than sRGB does.
+1. **Work in the right RGB space.** For print-bound art, Adobe RGB carries more of the cyan-greens that survive [CMYK conversion](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color) than sRGB does.
 2. **Soft proof early, on a calibrated monitor, with the real printer profile.** Don't judge color on an uncalibrated screen.
 3. **Turn on the gamut warning and inspect - don't panic.** A flagged color that looks fine in the soft proof is fine.
 4. **Pick your rendering intent by content.** Use **Relative Colorimetric + Black Point Compensation on** for most graphics and logos. Use **Perceptual** for photos packed with vivid color.
@@ -174,4 +175,4 @@ The one thing to remember: **a color is only "wrong" relative to a target.** Out
 
 The real win isn't avoiding bright colors. It's catching the impossible ones early, choosing your nearest printable match on purpose, and never letting a screen make a promise the press can't keep.
 
-And gamut is only the first place screens and presses disagree. Wait until you meet the gap between the crisp 4K image on your monitor and what actually survives at 300 DPI on paper - resolution and bleed are the next quiet traps between "looks great" and "prints great."
+And gamut is only the first place screens and presses disagree. Wait until you meet the gap between the crisp 4K image on your monitor and what actually survives at 300 DPI on paper - [resolution](/blog/computer-graphics-print/07-raster-vs-vector-resolution-image-quality) and [bleed](/blog/computer-graphics-print/15-finishing-document-geometry-bleed-trim-safe-area) are the next quiet traps between "looks great" and "prints great."

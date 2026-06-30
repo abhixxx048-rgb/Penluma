@@ -30,6 +30,7 @@ faq:
     a: Usually no. Writing one row per request and patching outcomes onto it keeps cost and quality tracking clean. Logging a new row per sub-step fragments your per-customer reporting.
 topic: agent-orchestration
 topicTitle: Multi-Agent LLM Systems
+linked: true
 category: AI & LLMs
 date: '2026-06-16'
 order: 999
@@ -89,7 +90,7 @@ Notice what is *missing*: there is no support-ticket AI, no chatbot, and no blog
 
 ## The most "agent-like" feature is the one that trusts the model least
 
-Of all seven features, the design director comes closest to acting like a real agent. And the reason it works is counterintuitive: it gives the model the *least* freedom.
+Of all seven features, the design director comes closest to acting like a [real agent](/blog/agent-orchestration/agent-orchestration-01-foundations). And the reason it works is counterintuitive: it gives the model the *least* freedom.
 
 The AI is boxed into an **allowlist**. It may only pick from approved templates and approved content slots. Its color and font choices are validated. And it is **never trusted to do layout geometry** - that math is owned by the host code, not the model.
 
@@ -99,7 +100,7 @@ This is the pattern worth tattooing on your wall:
 
 It is the difference between letting a contractor pick paint colors from a pre-approved swatch book versus handing them your credit card and your house keys. The model brings creativity; the system keeps the guardrails. Any team adding more AI autonomy should copy this split *before* loosening the leash.
 
-By contrast, the product builder is sometimes described as an "orchestrator," but it is really just a **sequential pipeline**: parse the request, create the product, patch the log. That is useful, but do not let an ambitious class name fool you into thinking genuine multi-agent orchestration is already happening. It is not.
+By contrast, the product builder is sometimes described as an "orchestrator," but it is really just a **sequential pipeline**: parse the request, create the product, patch the log. That is useful, but do not let an ambitious class name fool you into thinking [genuine multi-agent orchestration](/blog/agent-orchestration/agent-orchestration-00-index) is already happening. It is not.
 
 ## The four constraints that quietly decide everything
 
@@ -107,7 +108,7 @@ Here is the part most roadmap conversations skip. Whether you *can* add multi-ag
 
 1. **No native tool-use.** The model cannot call internal functions (like "search the catalog" or "calculate price") directly. Every structured result is prompt-and-parse JSON. So any orchestration step that needs to invoke a real function has no clean mechanism today.
 
-2. **No prompt caching.** Big static instructions - like roughly 146 lines of print-domain knowledge - get re-sent in full on every single call. A chained or looped flow pays that cost again at every step.
+2. **No prompt caching.** [Big static instructions](/blog/agent-orchestration/agent-orchestration-05-context-memory) - like roughly 146 lines of print-domain knowledge - get re-sent in full on every single call. A chained or looped flow pays that cost again at every step.
 
 3. **No live catalog feeding.** The product builder *invents* a new product from scratch; it does not look up and match an existing one. The "matcher" described in the docs simply does not exist in the code yet.
 
@@ -121,7 +122,7 @@ The lesson generalizes: **your AI ambitions are capped by your plumbing.** Tool-
 Reality: here it is a straight-line pipeline. Names describe intent, not behavior. Read the code, not the label.
 
 **"More agents means better AI."**
-Reality: more agents means more calls, more latency, more cost, and more ways to fail. A single well-shaped prompt beats a fragile multi-agent flow for most jobs.
+Reality: [more agents means more calls, more latency, more cost](/blog/agent-orchestration/agent-orchestration-07-cost-performance), and more ways to fail. A single well-shaped prompt beats a fragile multi-agent flow for most jobs.
 
 **"The product builder matches products from a catalog."**
 Reality: the documentation says matcher; the shipped code says *creator*. When docs and code disagree, the code is ground truth and the docs are wishful intent.
@@ -155,4 +156,4 @@ The single takeaway: **good AI architecture is mostly good plumbing.** The flash
 
 The deepest insight from this codebase is quieter still: the feature that behaves most like an intelligent agent is the one that trusts the model the *least*. Constraint, not freedom, is what made it reliable.
 
-So here is the question worth chewing on next: if tight guardrails are what make a single AI step trustworthy, what does it take to keep a *whole team* of AI agents honest when they start handing work to each other? That is exactly where orchestrator-worker and evaluator-optimizer patterns earn their place - and where the real design challenge begins.
+So here is the question worth chewing on next: if tight guardrails are what make a single AI step trustworthy, what does it take to keep a *whole team* of AI agents honest when they start handing work to each other? That is exactly where [orchestrator-worker and evaluator-optimizer patterns](/blog/agent-orchestration/agent-orchestration-02-patterns) earn their place - and where the real design challenge begins.

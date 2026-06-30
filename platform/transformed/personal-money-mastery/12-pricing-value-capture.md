@@ -4,6 +4,7 @@ metaTitle: "SaaS Pricing Strategy That Actually Works"
 description: "Learn value-based SaaS pricing strategy: how to set tiers, pick a value metric, raise prices yearly, and capture more without scaring buyers away."
 topic: personal-money-mastery
 topicTitle: Personal Money Mastery
+linked: true
 category: Money & Business
 date: '2026-06-22'
 order: 11
@@ -49,7 +50,7 @@ Price is not "the number you decide to charge." Price is how you and your custom
 
 Think of that for a second. Every sale produces something valuable, and price is just the line you draw deciding how much of that value goes to them and how much stays with you. Draw the line in the wrong place and one of two bad things happens: the buyer walks away feeling overcharged, or you undersell yourself for years without noticing.
 
-The good news is that pricing is learnable. There are clear principles, predictable buyer psychology, and real benchmarks you can copy. This article walks through all three so you can set a price with confidence instead of a shrug.
+The good news is that pricing is learnable. There are clear principles, predictable [buyer psychology](/blog/business-financial-literacy/09-pricing-psychology-pricing-with-confidence), and real benchmarks you can copy. This article walks through all three so you can set a price with confidence instead of a shrug.
 
 ## The three ways people set prices (only one is good)
 
@@ -146,7 +147,7 @@ Here are the four common models and their trade-offs:
 
 A 2025 study of more than 100 SaaS companies (Monetizely) found:
 
-- **78%** now use value-based pricing, up from 62% in 2023.
+- **78%** now use [value-based pricing](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive), up from 62% in 2023.
 - **61%** use hybrid pricing, up from 49% in 2024.
 - Usage-based adoption is around **43%**, and the median entry plan is about **$29 per user per month**.
 - Usage-based pricing reportedly delivers 18 to 23 percent higher revenue retention and meaningfully faster expansion.
@@ -184,11 +185,11 @@ The takeaway for a small product: charge by **orders or stores**, not by seats. 
 
 ## A note for founders: your price becomes your taxable income
 
-Here is the part most pricing advice skips. The surplus you capture is *your* income, and in India the FY 2025-26 rules shape how much you keep.
+Here is the part most pricing advice skips. The surplus you capture is *your* income, and in India the [FY 2025-26 tax rules](/blog/personal-money-mastery/03-tax-literacy-india-first) shape how much you keep.
 
 Under the default new regime, the basic exemption is 4 lakh, and the Section 87A rebate now means **zero tax up to 12 lakh** of taxable income (12.75 lakh for salaried people, after the 75,000 standard deduction). But the new regime drops the deductions founders often lean on, like 80C and the extra NPS deduction. If you rely on those, the old regime may still come out ahead.
 
-And if you eventually sell equity, long-term gains on listed equity are taxed at 12.5 percent above 1.25 lakh a year, short-term at 20 percent. The rebate does not shield these special-rate gains. Plan the tax with the same deliberate care you put into the price.
+And if you eventually [sell equity](/blog/personal-money-mastery/11-equity-ownership-esops-vesting-dilution), long-term gains on listed equity are taxed at 12.5 percent above 1.25 lakh a year, short-term at 20 percent. The rebate does not shield these special-rate gains. Plan the tax with the same deliberate care you put into the price.
 
 ## Conclusion
 
@@ -196,4 +197,4 @@ If you remember one thing, remember this: **price by value, not by cost.** Your 
 
 Most founders never touch that line after launch. The ones who revisit it every year, who charge by a metric that grows with their customers, who raise prices without flinching, build companies that compound quietly while their competitors fight over scraps.
 
-Here is the thread worth pulling next: once your pricing is working and the surplus is flowing in, the real question becomes what that money does when you are not watching. That is where pricing strategy hands off to wealth building, and the math gets even more interesting.
+Here is the thread worth pulling next: once your pricing is working and the surplus is flowing in, the real question becomes what that money does when you are not watching. That is where pricing strategy hands off to [wealth building](/blog/personal-money-mastery/10-income-vs-wealth), and the math gets even more interesting.

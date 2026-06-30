@@ -58,6 +58,7 @@ faq:
       hold SGBs, keep them; they still pay interest and mature normally.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -79,14 +80,14 @@ A widely cited piece of research (the **Brinson study**) found that asset alloca
 
 ## What asset allocation actually means
 
-**Asset allocation** is just the split of your money across the major asset classes:
+**Asset allocation** is just the split of your money across the [major asset classes](/blog/life-money-and-relationships/08-asset-classes-the-building-blocks-of-investing):
 
 - **Equity** - owning a slice of companies (shares, stocks, equity funds). Grows wealth, but jumps around.
 - **Debt** - lending your money for a fixed return (FDs, bonds, debt funds, PPF). Steady and calm.
 - **Gold** - a hedge that often holds up when stocks fall.
 - **Cash** - instantly available, but slowly eaten by inflation.
 
-If you have ₹10 lakh and put ₹7 lakh in equity index funds, ₹2 lakh in PPF and debt, and ₹1 lakh in gold, your asset allocation is **70% equity / 20% debt / 10% gold**. That's it. No jargon hiding underneath.
+If you have ₹10 lakh and put ₹7 lakh in [equity index funds](/blog/life-money-and-relationships/09-mutual-funds-index-funds-sips-the-core-engine), ₹2 lakh in PPF and debt, and ₹1 lakh in gold, your asset allocation is **70% equity / 20% debt / 10% gold**. That's it. No jargon hiding underneath.
 
 **Diversification** is the close cousin: spreading money so no single thing can sink you. It works on two layers - *across* asset classes (equity vs debt vs gold), and *within* one class (a Nifty 50 index fund holds 50 companies, not 1).
 
@@ -158,7 +159,7 @@ With Bucket 1 fully funded, a market crash becomes just numbers on a screen, not
 
 ## A simple model portfolio (illustrative, not advice)
 
-Here's a clean, low-cost shape a 30–35-year-old with a long horizon and a solid emergency fund might use. The exact percentages are illustrative - tune them to your own buckets and tolerance.
+Here's a clean, low-cost shape a 30–35-year-old with a long horizon and a solid [emergency fund](/blog/life-money-and-relationships/03-the-emergency-fund-protecting-your-downside) might use. The exact percentages are illustrative - tune them to your own buckets and tolerance.
 
 | Slice | Target % | What goes here | Job it does |
 |---|---|---|---|
@@ -207,9 +208,9 @@ Once a year is the sweet spot. Rebalancing every month just racks up taxes and c
 
 ### Rebalance tax-smart (India)
 
-Selling equity to rebalance can trigger capital-gains tax. As of 2025–26, listed-equity gains are taxed at **12.5% LTCG** on profits above **₹1.25 lakh** a year (held over a year) and **20% STCG** (held under a year). Verify the current numbers - they change in most budgets.
+Selling equity to rebalance can trigger [capital-gains tax](/blog/life-money-and-relationships/12-taxes-made-simple-income-deductions-capital-gains). As of 2025–26, listed-equity gains are taxed at **12.5% LTCG** on profits above **₹1.25 lakh** a year (held over a year) and **20% STCG** (held under a year). Verify the current numbers - they change in most budgets.
 
-The clean workaround: **rebalance with fresh money first.** Direct your new SIP into whichever slice is under-weight instead of selling the over-weight one. And keep your debt slice inside tax-protected wrappers like EPF/PPF/NPS, where you can adjust internally without a tax hit.
+The clean workaround: **rebalance with fresh money first.** Direct your new SIP into whichever slice is under-weight instead of selling the over-weight one. And keep your debt slice inside [tax-protected wrappers like EPF/PPF/NPS](/blog/life-money-and-relationships/11-retirement-tax-advantaged-accounts-in-india), where you can adjust internally without a tax hit.
 
 ## How to use this - your action plan
 
@@ -227,4 +228,4 @@ This framework travels. An American holds the same shape - a broad index fund (V
 
 If you remember one thing, remember this: **the mix matters more than the pick.** Get your equity-debt-gold split right, build it as goal buckets, and rebalance once a year - and you've done more for your future wealth than any amount of fund-hunting ever could.
 
-But a perfect portfolio is only worth anything if you can hold it through a storm. The real test isn't a spreadsheet - it's the morning your investments are down 35% and every instinct screams *sell.* What separates the people who get rich from the people who panic isn't their allocation. It's their nerves. That's where we head next: the psychology of staying invested when it's hardest.
+But a perfect portfolio is only worth anything if you can hold it through a storm. The real test isn't a spreadsheet - it's the morning your investments are down 35% and every instinct screams *sell.* What separates the people who get rich from the people who panic isn't their allocation. It's their nerves. That's where we head next: the [psychology of staying invested](/blog/life-money-and-relationships/14-behaviour-risk-the-psychology-of-money) when it's hardest.

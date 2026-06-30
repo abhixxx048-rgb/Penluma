@@ -42,6 +42,7 @@ faq:
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 You can design a gorgeous product, take a flawless order, and capture a perfect file - and still ship late or lose money. The reason hides between "order placed" and "box on the truck," where a real factory lives: machines that cost a fortune to switch between jobs, files that need fixing, customers who must sign off, and a clock that never stops.
@@ -87,7 +88,7 @@ Printers describe color with a "front/back" notation - the number is how many in
 - **4/1** - full color front, single ink (usually black) back
 - **1/0** - one ink front, blank back
 
-**CMYK** is the four process inks - cyan, magenta, yellow, and black - mixed to make most colors. A **spot color** (often called a **PMS** or Pantone color) is one specific pre-mixed ink, used when a brand needs an exact, repeatable shade - think of a soda can's signature red.
+**CMYK** is the four [process inks](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color) - cyan, magenta, yellow, and black - mixed to make most colors. A **spot color** (often called a [**PMS** or Pantone color](/blog/computer-graphics-print/06-ink-on-the-page-spot-colors-overprint-black-generation)) is one specific pre-mixed ink, used when a brand needs an exact, repeatable shade - think of a soda can's signature red.
 
 That shorthand matters more than it looks. The number of inks on each side decides how many plates get made, how the press is set up, and what the job costs.
 
@@ -95,12 +96,12 @@ That shorthand matters more than it looks. The number of inks on each side decid
 
 **Prepress** is everything that happens to a file before ink touches paper: fixing it, converting colors, handling fonts, checking resolution, laying it out on the sheet, and making the proof.
 
-The first step is **preflight** - an automated inspection of the customer's file, exactly like a pilot's pre-flight checklist. The system scans the file against a set of rules. Files that pass flow forward automatically; files that fail get flagged for a human to fix or bounce back. That flagged pile is where shops stall, which is why it's worth real attention.
+The first step is **[preflight](/blog/computer-graphics-print/13-preflight-validating-a-file-before-it-prints)** - an automated inspection of the customer's file, exactly like a pilot's pre-flight checklist. The system scans the file against a set of rules. Files that pass flow forward automatically; files that fail get flagged for a human to fix or bounce back. That flagged pile is where shops stall, which is why it's worth real attention.
 
 The usual checks:
 
 - **Image resolution** around 300 DPI at final size. A photo that looks crisp on a screen at 72 DPI turns into a blocky mess when printed - screens are forgiving, paper is not.
-- **Bleed** of about 0.125 inch past the trim, so cutting wobble never reveals a white edge.
+- **Bleed** of about [0.125 inch past the trim](/blog/computer-graphics-print/15-finishing-document-geometry-bleed-trim-safe-area), so cutting wobble never reveals a white edge.
 - **Color space in CMYK, not RGB.** This is the number-one prepress failure.
 - **Fonts embedded or outlined**, so the press doesn't substitute a different typeface and reflow the text.
 - **Trim marks and correct dimensions**, which the cutter and imposition both need.
@@ -111,7 +112,7 @@ The best move is to run preflight at the **front door** - inside the upload step
 
 ## Imposition: arranging work on the big sheet
 
-Presses don't print one business card at a time on a tiny scrap of paper. They print on a large sheet, and you cut it apart later. **Imposition** is the craft of arranging copies or pages on that big sheet so that after printing, folding, and trimming, everything lands the right size and in the right order.
+Presses don't print one business card at a time on a tiny scrap of paper. They print on a large sheet, and you cut it apart later. **[Imposition](/blog/computer-graphics-print/14-imposition-binding-arranging-pages-on-the-sheet)** is the craft of arranging copies or pages on that big sheet so that after printing, folding, and trimming, everything lands the right size and in the right order.
 
 A few terms you'll hear:
 
@@ -152,7 +153,7 @@ The enemy the scheduler fights is the **changeover**: the time and waste of swit
 2. **Group by similar ink**, so you avoid a full cleanup between runs.
 3. **Sequence ink light to dark** when sharing an ink unit, so cleaning between jobs is minimal.
 
-There's also a fork in the road between two press types. **Offset** has high setup cost but is very cheap per piece at high volume - ideal for long runs and gang runs. **Digital** (toner or inkjet) has little or no setup, a flat per-piece cost, and fast turnaround - ideal for short runs, personalized work, and rush jobs. Routing each job to the right one changes both cost and speed.
+There's also a fork in the road between [two press types](/blog/computer-graphics-print/16-print-methods-substrates-how-ink-meets-paper). **Offset** has high setup cost but is very cheap per piece at high volume - ideal for long runs and gang runs. **Digital** (toner or inkjet) has little or no setup, a flat per-piece cost, and fast turnaround - ideal for short runs, personalized work, and rush jobs. Routing each job to the right one changes both cost and speed.
 
 ## Turnaround time: the promise that breaks the most
 

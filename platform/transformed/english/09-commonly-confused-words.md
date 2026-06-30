@@ -23,6 +23,7 @@ order: 9
 icon: "\U0001F4DD"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 faq:
   - q: "Is it 'its' or 'it's'?"
@@ -49,7 +50,7 @@ These tiny word mix-ups are the cheapest possible upgrade to how senior you soun
 
 Your code gets reviewed by a compiler. Your writing gets reviewed by humans - and humans judge fast.
 
-A commit message, a PR title, a Slack standup, a doc comment: these are tiny, high-frequency windows into how you think. Get the small words right and people unconsciously trust the big decisions more.
+[A commit message, a PR title](/blog/english/10-professional-dev-writing), a Slack standup, a doc comment: these are tiny, high-frequency windows into how you think. Get the small words right and people unconsciously trust the big decisions more.
 
 The good news is that none of this requires "knowing grammar." It requires knowing about ten specific pairs and one or two tricks for each. That's it. You already move fast and write all day - you just need a quick self-check that runs in the background.
 
@@ -84,7 +85,7 @@ The apostrophe in English usually marks a **missing letter** - a squished-togeth
 
 The trap is *its* and *your* and *their*. These feel like they should take an apostrophe because they show ownership, and ownership usually does (*the API's status, Sarah's branch*).
 
-But possessive pronouns are the exception. We don't write *hi's* or *her's* - and *its* follows the same family. **Its** is to **it** what **his** is to **he**.
+But [possessive pronouns](/blog/english/05-plurals-and-possessives) are the exception. We don't write *hi's* or *her's* - and *its* follows the same family. **Its** is to **it** what **his** is to **he**.
 
 So: "the API returns it**s** status code" (ownership, no apostrophe). "it**'s** returning a 500" (it *is* returning).
 
@@ -146,7 +147,7 @@ You don't need to slow down. You need a five-second scan before you hit send.
 2. **Spot any login/setup/backup.** Ask: *is it a thing or an action?* Thing = one word. Action = two words.
 3. **In commit messages, scan the big four:** its/it's, lose/loose, then/than, login/log in. Example: `fix: prevent session from being lost on log in`.
 4. **In PR titles, watch comparisons:** "smaller bundle **than** before," never "then."
-5. **In Slack standups, kill the texting leak:** write "your PR is ready," not "ur PR is ready"; "they're reviewing," not "there reviewing." Capitalize **I** and the first word.
+5. **In Slack standups, kill the texting leak:** write "your PR is ready," not "ur PR is ready"; "they're reviewing," not "there reviewing." [Capitalize **I** and the first word](/blog/english/07-punctuation-and-capitalization).
 6. **In comments and docs, use e.g. for examples and i.e. to restate** - with a comma after each.
 
 Do this for two weeks and it stops being a checklist. It becomes the way you write.
@@ -174,4 +175,4 @@ Here's the one thing to keep: **an apostrophe almost always means two words got 
 
 The deeper lesson is that clarity compounds. The same instinct that makes you write *log in* instead of *login* is the instinct that makes your variable names readable and your error messages helpful. Small precision, everywhere, is what "senior" actually feels like up close.
 
-Now that the words are clean, the next leak to plug is structure: why does *"This breaks when you click."* land so much harder than a 40-word run-on? That's where short sentences and the rhythm of good technical writing come in - and it's an even bigger upgrade than the apostrophe.
+Now that the words are clean, the next leak to plug is structure: why does *"This breaks when you click."* land so much harder than a 40-word run-on? That's where [short sentences and the rhythm of good technical writing](/blog/english/08-sentence-structure-run-ons) come in - and it's an even bigger upgrade than the apostrophe.

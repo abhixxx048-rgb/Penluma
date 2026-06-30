@@ -39,6 +39,7 @@ order: 999
 icon: "\U0001F916"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -60,7 +61,7 @@ The catch is that this space is genuinely confusing right now. Frameworks rename
 
 Before you compare a single tool, ask: **can a simpler setup do this job?**
 
-For a large share of real applications, one optimized model call, plus retrieval and a few in-context examples, is enough. The base building block underneath everything fancier is what Anthropic calls the **augmented LLM**: a model given retrieval, tools, and memory, deciding for itself what to look up and what to remember.
+For a large share of real applications, one optimized model call, plus retrieval and a few in-context examples, is enough. The base building block underneath everything fancier is what Anthropic calls the [**augmented LLM**](/blog/agent-orchestration/agent-orchestration-01-foundations): a model given retrieval, tools, and memory, deciding for itself what to look up and what to remember.
 
 Frameworks carry real costs:
 
@@ -97,7 +98,7 @@ The frameworks differ most along a **control spectrum**: how much of the flow yo
 
 On the **explicit, deterministic** end you draw the graph yourself: LangGraph, CrewAI Flows, Semantic Kernel, Google ADK. On the **emergent, autonomous** end the models decide the control flow: CrewAI Crews, AutoGen and AG2, the Claude Agent SDK's coding loop. The OpenAI Agents SDK sits comfortably in the middle with its handoff model.
 
-A second thing to track is whether a tool is **tied to one vendor** or **works across many**, and whether it uses a closed control loop or an open protocol. Two open standards cut across all of them, and we will get to those at the end.
+A second thing to track is whether a tool is **tied to one vendor** or **works across many**, and whether it uses a closed control loop or an open protocol. [Two open standards](/blog/agent-orchestration/agent-orchestration-03-communication-protocols) cut across all of them, and we will get to those at the end.
 
 > A naming warning for 2026: this field renamed itself relentlessly. OpenAI's Swarm became the OpenAI Agents SDK. The `claude-code-sdk` became the Claude Agent SDK. AutoGen split into a community fork (AG2) and a Microsoft rewrite, and both are now consolidating with Semantic Kernel into the Microsoft Agent Framework, announced in October 2025. When you read older tutorials, check the date.
 
@@ -163,7 +164,7 @@ Its stated philosophy: enough features to be worth using, few enough primitives 
 
 ## Claude Agent SDK: the harness behind Claude Code
 
-**What it is:** Anthropic's official SDK, exposing the **same agent loop, tools, and context-management infrastructure that power Claude Code**. It ships in Python and TypeScript and reached a stable 1.0 on September 29, 2025 (renamed from the old `claude-code-sdk`).
+**What it is:** Anthropic's official SDK, exposing the **same agent loop, tools, and [context-management infrastructure](/blog/agent-orchestration/agent-orchestration-05-context-memory) that power Claude Code**. It ships in Python and TypeScript and reached a stable 1.0 on September 29, 2025 (renamed from the old `claude-code-sdk`).
 
 **Why it stands out:** you inherit a battle-tested coding-agent harness rather than assembling one. Its standout primitives:
 
@@ -212,9 +213,9 @@ Its deepest strength is its heritage: LlamaIndex grew up in retrieval and RAG, s
 
 ## Common misconceptions
 
-**"I need a multi-agent framework to build anything serious."** Usually not. Many production systems are a single augmented model call or one workflow pattern. Frameworks earn their keep at scale, not at the start.
+**"I need a multi-agent framework to build anything serious."** Usually not. Many production systems are a single augmented model call or [one workflow pattern](/blog/agent-orchestration/agent-orchestration-02-patterns). Frameworks earn their keep at scale, not at the start.
 
-**"More agents means a smarter system."** More agents means more coordination, more places to fail, and more cost. Autonomy is harder to constrain than an explicit graph, not easier.
+**"More agents means a smarter system."** More agents means more coordination, more places to fail, and [more cost](/blog/agent-orchestration/agent-orchestration-07-cost-performance). Autonomy is harder to constrain than an explicit graph, not easier.
 
 **"MCP and A2A compete."** They solve different problems and are designed to work together (more below).
 

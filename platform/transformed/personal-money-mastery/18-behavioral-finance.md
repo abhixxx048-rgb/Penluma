@@ -36,6 +36,7 @@ faq:
     a: Yes. The more often you look, the more red days you see and the more loss-aversion pain you feel, which makes panic-selling likelier. This is called myopic loss aversion, and checking quarterly genuinely protects your returns.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Behavioral_economics
   - https://en.wikipedia.org/wiki/Prospect_theory
@@ -44,7 +45,7 @@ sources:
 
 It is 9:30 on a Monday morning. The market just opened down 6%. Your phone is buzzing, your portfolio is bleeding red, and your thumb is hovering over the "sell" button.
 
-In that moment, none of your spreadsheets matter. Not your index funds, not your tax planning, not your carefully chosen asset mix. The single factor that decides whether all that good planning actually works is **you** - or more precisely, your nervous system under stress.
+In that moment, none of your spreadsheets matter. Not your [index funds](/blog/personal-money-mastery/07-index-funds-passive-investing), not your tax planning, not your [carefully chosen asset mix](/blog/personal-money-mastery/08-asset-allocation-rebalancing). The single factor that decides whether all that good planning actually works is **you** - or more precisely, your nervous system under stress.
 
 This is the part of money that no one teaches you, and it is the part that matters most.
 
@@ -56,7 +57,7 @@ The market's return is a published fact, the same number for everyone. But the r
 
 As Benjamin Graham, the mentor of Warren Buffett, put it: *"The investor's chief problem, and even his worst enemy, is likely to be himself."*
 
-**Behavioral finance** is simply the study of this. It looks at how real humans, not the perfectly rational robots of old economics textbooks, actually make money decisions, and the predictable, repeatable mistakes our brains make under uncertainty.
+**Behavioral finance** is simply the study of this. It looks at how real humans, not the perfectly rational robots of old economics textbooks, actually make money decisions, and the [predictable, repeatable mistakes our brains make under uncertainty](/blog/economics-from-first-principles/31-behavioral-economics).
 
 ## The behavior gap: the price of being human
 
@@ -133,7 +134,7 @@ Riya carries a **200,000** credit-card balance at about 3.5% per month, which wo
 
 Mental accounting keeps these in two separate boxes in her head. The math refuses to play along. The 42% debt is destroying about 84,000 of value a year, while the 12% investment earns far less.
 
-**Paying off that card first is a guaranteed, tax-free 42% "return"** - better than almost any investment on earth. Clear the high-interest debt, then invest. Always.
+**Paying off that card first is a guaranteed, tax-free 42% "return"** - better than almost any investment on earth. Clear the [high-interest debt](/blog/personal-money-mastery/02-emergency-fund-debt-the-true-cost-of-emis), then invest. Always.
 
 ## Common misconceptions
 
@@ -169,4 +170,4 @@ The thread tying all five together: design beats willpower. Build the machine on
 
 If you remember one thing, remember this: **the good decision is made once, in calm, and then made automatic** so your future panicked self cannot undo it. Markets will test you. Crashes will come, rallies will tempt you, and your brain will reliably suggest exactly the wrong move at exactly the wrong time. The escape is never to feel braver. It is to build a system that does not need you to be brave.
 
-Here is the question worth sitting with next: if behavior is the largest *controllable* driver of returns, what is the largest *uncontrollable* one? The answer is time. And once you understand how patience and compounding quietly do the heavy lifting that no clever trade ever could, the urge to tinker starts to fade on its own.
+Here is the question worth sitting with next: if behavior is the largest *controllable* driver of returns, what is the largest *uncontrollable* one? The answer is time. And once you understand how patience and [compounding](/blog/personal-money-mastery/05-compounding-the-time-value-of-money) quietly do the heavy lifting that no clever trade ever could, the urge to tinker starts to fade on its own.

@@ -63,6 +63,7 @@ order: 10
 icon: "\U0001F4B0"
 transformed: true
 sources: []
+linked: true
 ---
 
 Almost nobody gets rich from a salary. A salary keeps the lights on. Ownership is what builds real wealth, because owning a slice of a company lets that slice grow in value and one day turn into a large pile of cash.
@@ -122,7 +123,7 @@ You will also hear about **RSUs (Restricted Stock Units)**. An RSU is shares gra
 
 ## Dilution: your slice shrinks, but the pie can grow faster
 
-Every time a startup raises money, it issues *new* shares to investors. That shrinks everyone's percentage. This is **dilution**, and it sounds scary until you see the full picture.
+Every time a [startup raises money](/blog/personal-money-mastery/17-fundraising-dilution), it issues *new* shares to investors. That shrinks everyone's percentage. This is **dilution**, and it sounds scary until you see the full picture.
 
 The **ESOP pool** - typically 10 to 15% of the company, reserved for employees - is usually carved out of the founders' shares before a round, which is why founders feel dilution most sharply.
 
@@ -130,7 +131,7 @@ Here is the key insight: a smaller slice of a much bigger pie is still a bigger 
 
 > **Example.** You hold **1%** of a company valued at **₹50 crore**, so your stake is worth ₹50 lakh. Two funding rounds later, you have been diluted down to **0.5%**. But the company is now worth **₹500 crore**, so your stake is worth **₹2.5 crore**.
 
-Your percentage fell by half. Your wealth went up fivefold. Dilution is perfectly fine as long as valuation rises faster than your percentage falls. The problem is never dilution by itself - it is dilution without growth.
+Your percentage fell by half. Your wealth went up fivefold. Dilution is perfectly fine as long as [valuation rises](/blog/personal-money-mastery/09-valuation-basics) faster than your percentage falls. The problem is never dilution by itself - it is dilution without growth.
 
 ## The hidden killer: liquidation preference
 
@@ -170,7 +171,7 @@ The moment you exercise, the government treats the discount you got as a perk:
 
 **Perquisite = (FMV on exercise date − strike price) × shares exercised**
 
-This is added to your salary and taxed at your slab rate, with the employer deducting TDS. The painful part: you pay this *even though you have not sold anything*. It is tax on paper gains, due in real cash.
+This is added to your salary and taxed at [your slab rate](/blog/personal-money-mastery/03-tax-literacy-india-first), with the employer deducting TDS. The painful part: you pay this *even though you have not sold anything*. It is tax on paper gains, due in real cash.
 
 ### Stage 2 - at sale (capital gains)
 
@@ -242,4 +243,4 @@ The single most important shift is this: stop seeing equity as a lottery ticket 
 
 Most option grants do end at zero. That is not a reason to fear equity - it is a reason to evaluate it clearly, ask the hard questions, and join companies where the upside is real and the terms are fair.
 
-And here is the thread worth pulling next. Once you understand that ownership beats salary, the natural question becomes: how do the founders and early investors decide who gets what slice in the first place? That is the story of the cap table - and learning to read one tells you, at a glance, whether there is any room left for you to win.
+And here is the thread worth pulling next. Once you understand that [ownership beats salary](/blog/personal-money-mastery/10-income-vs-wealth), the natural question becomes: how do the founders and early investors decide who gets what slice in the first place? That is the story of [the cap table](/blog/business-financial-literacy/12-funding-dilution-the-cost-of-capital) - and learning to read one tells you, at a glance, whether there is any room left for you to win.

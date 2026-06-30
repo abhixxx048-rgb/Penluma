@@ -58,6 +58,7 @@ order: 2
 icon: "\U0001F5A8️"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -69,7 +70,7 @@ This article walks you through that whole machine, in plain language, so you can
 
 ## Why this matters
 
-A screen and a printing press do not speak the same color language. A glowing screen mixes light (RGB). A press lays down ink (CMYK). And each device can only reach a limited **gamut** - its own range of reproducible colors.
+A screen and a printing press do not speak the same color language. [A glowing screen mixes light (RGB)](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color). A press lays down ink (CMYK). And each device can only reach a limited **gamut** - its own range of reproducible colors.
 
 If you ignore this, you find out too late: 5,000 business cards with a dull logo, a photo book that came back too dark, a client asking why the brand blue looks purple. Every one of those is a color-management failure, not a design mistake.
 
@@ -102,7 +103,7 @@ Color management dodges this with a shared middle language called the **Profile 
 
 The PCS is always one of two standard color spaces defined by the CIE (the international body for color science):
 
-- **CIELAB (Lab)** - a perceptual space modeled on human vision, where distances roughly match how different colors *look* to us. Its even spacing makes the math inside color lookup tables more accurate.
+- **CIELAB (Lab)** - a perceptual space [modeled on human vision](/blog/computer-graphics-print/01-how-color-works-light-human-perception), where distances roughly match how different colors *look* to us. Its even spacing makes the math inside color lookup tables more accurate.
 - **CIEXYZ (XYZ)** - a space tied directly to how the eye's three cone types respond. Convenient for displays, whose RGB-to-XYZ relationship is close to simple linear math.
 
 The two convert to each other by a fixed formula, so they are interchangeable. One detail to file away: the ICC hub is anchored to a fixed reference white called **D50** (a standard daylight white near 5000 K) - *not* the D65 used for general screen work.
@@ -142,7 +143,7 @@ Profiles come in types that match the role a device plays:
 - **Display profiles** - characterize monitors and projectors so your screen shows correct color. Built by calibrating and profiling the display.
 - **Output profiles** - characterize printers, proofers, and presses. These are the CMYK profiles like SWOP, GRACoL, and Fogra that print shops talk about most.
 - **Working-space profiles** - abstract editing containers (sRGB, Adobe RGB, ProPhoto) that are *not* tied to any physical device. More on these next.
-- **DeviceLink profiles** - bake a specific source-plus-destination pair (and one rendering intent) into a single direct transform. Used in production because they preserve channel structure - for example keeping pure-black text as **K-only** instead of letting it become muddy four-color black.
+- **DeviceLink profiles** - bake a specific source-plus-destination pair (and one rendering intent) into a single direct transform. Used in production because they preserve channel structure - for example keeping pure-black text as **K-only** instead of letting it become [muddy four-color black](/blog/computer-graphics-print/06-ink-on-the-page-spot-colors-overprint-black-generation).
 - **Abstract profiles** - apply a creative edit purely inside the PCS. Rare in everyday work.
 
 ## Working spaces: choosing your editing container
@@ -228,7 +229,7 @@ Remember: a soft proof is a *prediction*, not a guarantee. For critical jobs, a 
 1. **Calibrate your monitor first**, then profile it. Target D65, gamma 2.2, and roughly 120 cd/m² (dimmer for print matching). Recalibrate every 2-4 weeks.
 2. **Edit at 16-bit** in a working space at least as wide as your output - Adobe RGB for print-bound photography, ProPhoto only if you stay 16-bit.
 3. **Ask the print shop which CMYK profile they want.** Do not guess. GRACoL for US sheet-fed, SWOP for US web, Fogra51 for Europe.
-4. **Soft-proof against that exact profile** with Simulate Paper/Black turned on and the right rendering intent (Relative Colorimetric with Black Point Compensation for most work, Perceptual for very saturated photos).
+4. **Soft-proof against that exact profile** with Simulate Paper/Black turned on and the [right rendering intent](/blog/computer-graphics-print/04-rendering-intents-gamut-mapping) (Relative Colorimetric with Black Point Compensation for most work, Perceptual for very saturated photos).
 5. **Convert, do not Assign**, down to the output profile - and only at delivery, always on a copy, never your master. (Convert recalculates the numbers to keep the color; Assign just relabels and changes the color.)
 6. **Always embed the profile on save.** Check "Embed Color Profile." A stripped profile leaves the recipient's app guessing, and a wrong guess corrupts your color before anyone opens the file.
 7. **For critical jobs, order a contract hard proof** and treat it as the binding color reference.
@@ -239,4 +240,4 @@ The one thing to carry away: a color number means nothing until a profile tells 
 
 Get the dictionary right, keep it embedded, and "the print doesn't match my screen" stops being your problem.
 
-But there is a deeper question lurking underneath all of this. *Why* can ink reach some colors that light cannot, and light reach colors ink never will? That is the story of gamut itself - the strange, lopsided shape of every color a device can and cannot reproduce - and it is where this trail leads next.
+But there is a deeper question lurking underneath all of this. *Why* can ink reach some colors that light cannot, and light reach colors ink never will? That is [the story of gamut itself](/blog/computer-graphics-print/05-gamut-out-of-gamut-handling-deep-dive) - the strange, lopsided shape of every color a device can and cannot reproduce - and it is where this trail leads next.

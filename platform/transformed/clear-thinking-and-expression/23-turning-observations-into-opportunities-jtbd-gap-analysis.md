@@ -35,6 +35,7 @@ icon: ✍️
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 You already notice things. A coworker keeps customer phone numbers on a sticky note. A bakery scribbles cake orders on paper and loses one now and then. A neighbor re-types the same lesson reminders every single evening.
@@ -58,7 +59,7 @@ An opportunity is not a random idea. It's a **specific job someone is struggling
 
 ## People "hire" things to do a job
 
-Jobs-To-Be-Done (JTBD) is a way of thinking made popular by Harvard professor Clayton Christensen. The core idea is simple: people don't really want a product. They "hire" it to make progress on a **job** in their life.
+[Jobs-To-Be-Done (JTBD)](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress) is a way of thinking made popular by Harvard professor Clayton Christensen. The core idea is simple: people don't really want a product. They "hire" it to make progress on a **job** in their life.
 
 The famous example is his milkshake study. A fast-food chain wanted to sell more milkshakes. Surveys about flavor and thickness went nowhere. But when researchers watched *when* people actually bought them, they found something odd: many were sold early in the morning, to commuters.
 
@@ -78,7 +79,7 @@ You don't find jobs by asking people "what do you want?" People are surprisingly
 
 - **Workarounds** (sticky notes, spreadsheets, duct tape) - the official tool isn't doing the job, so people patch it themselves. This is the single strongest signal there is.
 - **Complaints** ("I hate that I have to...") - a job is being done badly, and the pain is named for you.
-- **Repeated effort** (doing the same fiddly thing every week) - a job done often means high value if you remove the friction.
+- **Repeated effort** (doing the same fiddly thing every week) - a job done often means high value if you [remove the friction](/blog/product-sense-empathy/09-reducing-friction-flows-steps-progressive-disclosure).
 - **"Good enough" sighs** (people quietly settling) - an underserved job, tolerated but not solved.
 - **Money and time spent** (hiring help, buying gadgets) - proof the job matters enough to pay for.
 
@@ -116,7 +117,7 @@ Write down where things stand today. Then write where the person *wishes* they s
 
 **"Just ask people what they want."** Reality: people describe the solution they already imagine, not the job underneath. Watch what they *do* (the workarounds, the sighs) rather than trusting what they *say*.
 
-**"They need an app!"** Reality: jumping straight to a solution before naming the job and the gap is the most common mistake there is. If you lead with the solution, you'll build something nobody hired. Always go job → gap → *then* brainstorm fixes.
+**"They need an app!"** Reality: jumping straight to a solution before naming the job and the gap is the most common mistake there is. If you lead with the solution, you'll build something nobody hired. Always go job → gap → *then* [brainstorm fixes](/blog/clear-thinking-and-expression/14-generating-ideas-on-demand-divergent-thinking-scamper-brainstorming).
 
 **"If the problem were real, someone would've solved it already."** Reality: most good gaps have existed for years. What changes is the *timing* - a new tool, a falling cost, a shift in behavior that suddenly makes the gap solvable.
 
@@ -133,7 +134,7 @@ That last one, **"why now,"** is the question beginners skip and experts obsess 
 
 ## From trend to thesis: turning "what's happening" into "what becomes valuable"
 
-A **trend** is a direction the world is moving in. A **thesis** is a clear bet you make because of it. A thesis is a short, testable claim that links a cause (the trend) to an effect (new value).
+A **[trend](/blog/clear-thinking-and-expression/22-spotting-patterns-trends-anomalies-signals)** is a direction the world is moving in. A **thesis** is a clear bet you make because of it. A thesis is a short, testable claim that links a cause (the trend) to an effect (new value).
 
 Use this exact sentence shape:
 
@@ -145,7 +146,7 @@ Use this exact sentence shape:
 
 **An example.** "Because more small shops now sell online (trend), *looking professional cheaply* becomes more valuable (effect), so a tool that turns a phone photo into a clean product listing is worth pursuing (opportunity)." Notice the chain: a real-world change → a specific need → a concrete idea. That chain is what makes the idea persuasive when you say it out loud.
 
-This is also how you sound sharp in conversation. Instead of "AI is big these days," you offer a thesis: "Because AI now writes decent first drafts, the bottleneck shifts to *editing judgment* - so people who can quickly tell good from bad become more valuable." Same fact, but you've connected it and made a point. That's critical thinking made visible.
+This is also how you sound sharp in conversation. Instead of "AI is big these days," you offer a thesis: "Because AI now writes decent first drafts, the bottleneck shifts to *editing judgment* - so people who can quickly tell good from bad become more valuable." Same fact, but you've connected it and made a point. That's [critical thinking made visible](/blog/clear-thinking-and-expression/17-critical-thinking-foundations-claims-evidence-assumptions).
 
 ## How to use this: one observation, end to end
 
@@ -173,4 +174,4 @@ The pipeline never changes: **Observation → Job → Friction → Gap → Filte
 
 Here's the quiet truth underneath all of it: opportunities aren't rare. They're everywhere, hiding inside every sticky note and workaround and tired sigh. What's rare is a person carrying the right container to catch them.
 
-And once you can name a real opportunity, a new question shows up: how do you test whether it's actually worth building before you sink a month into it? That's where the smallest possible experiment, the kind that gives you an answer in a day, becomes your next best tool.
+And once you can name a real opportunity, a new question shows up: how do you test whether it's actually worth building before you sink a month into it? That's where the [smallest possible experiment](/blog/how-to-make-money/11-finding-a-real-problem-validating-demand), the kind that gives you an answer in a day, becomes your next best tool.

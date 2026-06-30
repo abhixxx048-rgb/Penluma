@@ -25,6 +25,7 @@ order: 1
 icon: "\U0001F393"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 faq:
   - q: What is instructional design in simple terms?
@@ -73,7 +74,7 @@ A week later, only one of those approaches has stuck. The difference between the
 
 Most of us have sat through "teaching" that was really just talking. A dense lecture. A 60-slide deck. A brilliant video that felt clear in the moment and evaporated by the next morning.
 
-That gap between *information delivered* and *learning that lasts* is not bad luck. It is the predictable result of skipping a craft most people have never heard of. And it matters more than ever now, because the tools we build, from online courses to AI tutors, are exactly the things that fall into this trap.
+That gap between *information delivered* and *learning that lasts* is not bad luck. It is the predictable result of skipping a craft most people have never heard of. And it matters more than ever now, because the tools we build, from online courses to [AI tutors](/blog/ai-learning-platform/01-the-real-challenge-why-ai-tutors-are-not-teachers-yet), are exactly the things that fall into this trap.
 
 If you build, teach, or even just learn, understanding this one distinction changes how you judge every lesson you ever encounter again.
 
@@ -100,9 +101,9 @@ This is the single idea that separates a teacher from a textbook, and it is dang
 
 A person can know a subject completely and still be a terrible teacher. Why? Because teaching is not about the information living in the expert's head. It is about getting that information to survive the trip into the *learner's* head. And the learner's head has a very narrow doorway.
 
-Your **working memory** is the small mental "workbench" where you actively think about whatever is in front of you right now. It can hold only about four new things at once, and it empties out in seconds the moment your attention drifts.
+Your **working memory** is the small mental "workbench" where you actively think about whatever is in front of you right now. It can hold only [about four new things at once](/blog/ai-learning-platform/05-cognitive-load-theory-why-too-much-at-once-fails), and it empties out in seconds the moment your attention drifts.
 
-Real, lasting knowledge lives somewhere else: in **long-term memory**, the vast, durable "warehouse." Learning is the act of moving something from the cramped workbench into the warehouse.
+Real, lasting knowledge lives somewhere else: in [**long-term memory**](/blog/ai-learning-platform/03-how-humans-learn-a-plain-tour-of-memory), the vast, durable "warehouse." Learning is the act of moving something from the cramped workbench into the warehouse.
 
 An expert who simply "tells you everything she knows" floods that tiny doorway. The learner tries hard, feels busy, and stores almost nothing. The expert *delivered* information. She did not *teach*. Teaching means pacing, sequencing, chunking, giving practice, and checking understanding, all the work of getting ideas through the doorway one manageable load at a time.
 
@@ -152,13 +153,13 @@ Don't memorize them as rival "methods." Read them as one toolbox at three sizes:
 
 Here is the sentence to tape above your desk: **content is not a course.**
 
-A pile of correct, well-written information, whether a textbook, a stack of slides, or a brilliant video, is raw material. A *course* is what happens when that material is sequenced, chunked to fit the narrow doorway of working memory, paired with practice that forces the learner to retrieve and apply it, checked for understanding, and revised based on what actually sticks.
+A pile of correct, well-written information, whether a textbook, a stack of slides, or a brilliant video, is raw material. A *course* is what happens when that material is sequenced, chunked to fit the narrow doorway of working memory, paired with practice that forces the learner to [retrieve and apply it](/blog/ai-learning-platform/06-retrieval-practice-why-testing-beats-re-reading), checked for understanding, and revised based on what actually sticks.
 
 The information can be identical in both cases. The *learning outcome* is wildly different.
 
 > **A two-learner example:** Two learners get the exact same worked math example. The first just reads it and moves on. The second pauses at each line and asks, "Why did they do that?" before continuing. Same content. But the second learner remembers far more, because the explaining, not the reading, is what builds understanding. Instructional design is the discipline of engineering that second experience on purpose, for everyone, at scale.
 
-This is also why a serious learning platform is not "a chatbot plus a PDF." Uploading a book gives a model the content. Turning that content into a sequence of objectives, chunked lessons, retrieval practice, spaced reviews, and honest assessment is the *course*, and that is the real work.
+This is also why a serious learning platform is not "a chatbot plus a PDF." Uploading a book gives a model the content. Turning that content into a sequence of objectives, chunked lessons, retrieval practice, [spaced reviews](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve), and honest assessment is the *course*, and that is the real work.
 
 ## How to use this
 

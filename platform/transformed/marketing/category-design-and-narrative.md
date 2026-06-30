@@ -32,6 +32,7 @@ faq:
     a: "Category design comes from the book Play Bigger. The niche-ownership counterview comes from April Dunford (Obviously Awesome), Louis Grenier, and Aaron Ross and Jason Lemkin (From Impossible to Inevitable). The narrative tools draw on Andy Raskin's work on strategic storytelling."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: marketing
 topicTitle: Marketing
 category: Business & Growth
@@ -49,7 +50,7 @@ The truth is that inventing a category is roughly a $100 million, 6-to-10-year p
 
 ## Why this matters
 
-Positioning decides who shows up to buy before they ever compare your features. Get it wrong and you spend years explaining what you even are. Get it right and the right customers feel like you were built for them, because you were.
+Positioning decides [who shows up to buy](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy) before they ever compare your features. Get it wrong and you spend years explaining what you even are. Get it right and the right customers feel like you were built for them, because you were.
 
 The single biggest positioning mistake is choosing the wrong *game*. If you try to create a new category when you should be owning a niche, you'll burn cash teaching the market a new word it didn't ask for - and a better-funded competitor will quietly capture the demand you spent money creating.
 
@@ -107,7 +108,7 @@ Imagine a company - call it Print-Flow-360 - selling software that lets print sh
 
 Should Print-Flow-360 invent a new category, or own a segment? Run the tests.
 
-- **Does demand already exist?** Yes - shop owners already know they need to "sell online." So don't pay to create demand; capture it.
+- **Does demand already exist?** Yes - shop owners already know they need to "sell online." So don't pay to [create demand](/blog/how-to-make-money/11-finding-a-real-problem-validating-demand); capture it.
 - **Does the buyer already know the category word?** Yes - they search for "web-to-print" by name. Inventing a new word would *hurt* discoverability, not help it.
 - **Do we have $100M and a decade?** No. Category creation is off the table financially.
 - **Is there an ignored, painful sub-segment?** Yes. The big incumbents all target enterprise printers, trade printers, brokers, and IT departments - people who can configure and integrate software. The non-technical solo shop owner is underserved and frankly intimidated by those tools.
@@ -128,7 +129,7 @@ The stronger enemy is the **belief the buyer already carries**. For the shop own
 
 ### Contrast the old way with the new way
 
-A simple two-column story is one of the most persuasive tools in marketing, because it lets the buyer feel the upgrade.
+A simple two-column story is one of the most [persuasive tools in marketing](/blog/psychology-of-decisions/18-writing-marketing-copy-that-persuades-without-lying), because it lets the buyer feel the upgrade.
 
 | The old way (the enemy) | The new way (you) |
 |---|---|
@@ -139,7 +140,7 @@ A simple two-column story is one of the most persuasive tools in marketing, beca
 
 ### Paint the promised land
 
-End on the future the buyer wants, not on your feature list. For the shop owner: *your own branded online store where customers design and order their own jobs, and you wake up to print-ready work - no code, no agency, no IT hire, competing with the giants on your turf: local trust.*
+End on [the future the buyer wants](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress), not on your feature list. For the shop owner: *your own branded online store where customers design and order their own jobs, and you wake up to print-ready work - no code, no agency, no IT hire, competing with the giants on your turf: local trust.*
 
 Only after the promised land do you introduce the product as the bridge that gets them there.
 
@@ -149,7 +150,7 @@ Only after the promised land do you introduce the product as the bridge that get
 
 **"Owning a niche means staying small forever."** The opposite. Nailing one niche is how you *earn the right* to expand. Amazon didn't stay in books. The niche is a beachhead, not a ceiling.
 
-**"A category is the same as a tagline."** A clever tagline on your homepage is not positioning. The POV has to live in your pricing, your onboarding, your sales script, and your product. If the story and the experience disagree, customers believe the experience.
+**"A category is the same as a tagline."** A clever tagline on your homepage is not positioning. The POV has to live in [your pricing](/blog/how-to-make-money/14-pricing-value-capture), your onboarding, your sales script, and your product. If the story and the experience disagree, customers believe the experience.
 
 **"More marketing spend equals a Lightning Strike."** With a limited budget, your "strike" is a sharp argument repeated everywhere, not a paid saturation blitz. Concentrate your *message*, not your *spend*.
 

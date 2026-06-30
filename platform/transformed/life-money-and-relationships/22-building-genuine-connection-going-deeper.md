@@ -30,6 +30,7 @@ faq:
     a: A way to picture goodwill in a relationship. Kind, reliable acts are deposits; broken promises and thoughtless moments are withdrawals. A full account lets a relationship survive the inevitable conflicts.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: life-money-and-relationships
 topicTitle: 'Life, Money & Relationships'
 category: Thinking & Decisions
@@ -47,7 +48,7 @@ This happens to almost everyone, and it is not because you lack charisma. It is 
 
 Most adults are starving for deeper friendships and have no idea how to build them. As kids we made friends automatically, just by sitting next to the same people every day. That machinery disappears in adult life, and almost nobody replaces it with anything deliberate.
 
-The result is a strange kind of loneliness: plenty of pleasant acquaintances, very few people who actually have your back. The skills below close that gap. None of them require you to be the most magnetic person in the room. They just require you to be intentional.
+The result is a strange kind of loneliness: plenty of [pleasant acquaintances](/blog/life-money-and-relationships/18-mapping-your-network-strong-weak-dormant-ties), very few people who actually have your back. The skills below close that gap. None of them require you to be the most magnetic person in the room. They just require you to be intentional.
 
 **The core idea:** connection deepens through gradual, two-way sharing plus repeated contact over time, with someone willing to take the first step.
 
@@ -107,7 +108,7 @@ A safe way to start climbing is to share a small genuine *feeling* rather than a
 
 The keyword is *real*. Faked similarity ("Oh wow, I love that too!" when you don't) is easy to sense and destroys trust faster than having nothing in common.
 
-- **Listen for it rather than forcing it.** Good follow-up questions surface shared ground on their own.
+- **Listen for it rather than forcing it.** [Good follow-up questions](/blog/life-money-and-relationships/21-conversation-deep-listening) surface shared ground on their own.
 - **Shared challenges bond fastest.** Two founders comparing notes on a brutal week connect far more deeply than two people who happen to like the same show. The struggle is personal and a little vulnerable, which is exactly the ingredient that builds closeness.
 - **Go past the obvious.** "We're both founders" is a starting point. "We both feel guilty taking weekends off" is real common ground.
 
@@ -166,7 +167,7 @@ Researcher Jeffrey Hall studied this and found rough thresholds. Treat them as a
 | 90 hours | Real ("proper") friend |
 | 200+ hours | Close friend |
 
-This is exactly why **recurring contact beats one big event**. A weekly run club or a monthly dinner quietly racks up those hours. Plain familiarity, our tendency to like people more simply because we keep seeing them (the "mere exposure" effect), does powerful work all on its own.
+This is exactly why **[recurring contact beats one big event](/blog/life-money-and-relationships/23-staying-in-touch-a-system-for-nurturing-relationships)**. A weekly run club or a monthly dinner quietly racks up those hours. Plain familiarity, our tendency to like people more simply because we keep seeing them (the "mere exposure" effect), does powerful work all on its own.
 
 So if a promising connection still feels merely casual after a few hangs, that is normal. Keep showing up. Depth is built, not declared.
 
@@ -176,7 +177,7 @@ Here is a simple way to picture every relationship: imagine each one has a **ban
 
 Every kind, reliable, thoughtful act is a **deposit**: remembering a birthday, celebrating a win, keeping a small promise, sending a "thinking of you" note. Every disappointment, broken promise, or thoughtless moment is a **withdrawal**.
 
-The balance matters enormously. When the account is full, the relationship can absorb the inevitable mistakes and conflicts without breaking, because there is a cushion of trust. When it is empty, even a small slip-up can sink the whole thing.
+The balance matters enormously. When the account is full, the relationship can absorb the inevitable mistakes and conflicts without breaking, because there is [a cushion of trust](/blog/life-money-and-relationships/19-how-trust-rapport-actually-form). When it is empty, even a small slip-up can sink the whole thing.
 
 > A relationship with a healthy emotional bank account is like a boat with plenty of buoyancy. A conflict adds some water, but the boat floats easily. An empty account is a boat already at the waterline, where one wave can sink it.
 
@@ -199,7 +200,7 @@ You do not need to become an expert. The useful part is just this: if your frien
 Pick a few of these and actually do them this week:
 
 1. **Send one specific follow-up.** Think of someone you had a good conversation with recently and send a short message referencing something *they* said. No ask attached.
-2. **Make one deposit.** Congratulate someone on a win, or share a resource that fits exactly what they are working on.
+2. **Make one deposit.** Congratulate someone on a win, or [share a resource that fits exactly what they are working on](/blog/life-money-and-relationships/24-giving-value-reciprocity-without-keeping-score).
 3. **Suggest one shared experience.** Invite an acquaintance to do something simple together: coffee, a walk, a coworking morning.
 4. **Tell one person you value them.** A sincere "I really enjoy knowing you" costs nothing and lands deeply.
 

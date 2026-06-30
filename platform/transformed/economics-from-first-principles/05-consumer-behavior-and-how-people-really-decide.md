@@ -36,6 +36,7 @@ faq:
     a: Price discrimination is selling the same product to different buyers at different prices for reasons unrelated to cost. Student discounts, bulk pricing, and matinee tickets are all examples.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -51,7 +52,7 @@ Every economy runs on billions of tiny choices. Cheaper rice or splurge on meat.
 
 Understanding how those choices actually get made is useful for two reasons.
 
-First, it makes you a sharper buyer. Once you can see the tricks built into pricing and product menus, they stop working on you quite so well.
+First, it makes you a sharper buyer. Once you can see [the tricks built into pricing and product menus](/blog/business-financial-literacy/09-pricing-psychology-pricing-with-confidence), they stop working on you quite so well.
 
 Second, it explains the world around you: why your gym membership auto-renews, why "buy now, pay later" is everywhere, and why an airline charges the person in the next seat a totally different fare than you paid.
 
@@ -99,7 +100,7 @@ Price doesn't track *total* value. It tracks *marginal* value, the worth of the 
 - Water is so abundant that one more glass is nearly worthless to you, even though water as a whole is literally priceless.
 - Diamonds are scarce, so each additional diamond is highly valued.
 
-Price follows the margin, always. Scarce things command high prices not because they matter more, but because the *next one* is hard to come by.
+[Price follows the margin](/blog/economics-from-first-principles/02-how-economists-think-incentives-margins-and-models), always. Scarce things command high prices not because they matter more, but because the *next one* is hard to come by.
 
 ## Wanting is free, buying is not
 
@@ -107,7 +108,7 @@ You want plenty. You can afford less. The thing standing between desire and real
 
 Imagine you have a fixed amount to spend on coffee and books. Every extra coffee means slightly fewer books. The rate of that trade-off, how many books you give up per coffee, comes straight from the prices.
 
-That's the real cost of anything: not just the money, but what you give up to get it.
+That's [the real cost of anything](/blog/economics-from-first-principles/01-what-economics-is-and-why-it-exists): not just the money, but what you give up to get it.
 
 ## How a smart shopper spreads their money
 
@@ -119,7 +120,7 @@ If a dollar spent on coffee gives you more joy than a dollar spent on tea, buy m
 
 > **Picture it like water tanks.** Imagine several tanks connected by pipes at the bottom. Pour water in and it self-levels across all of them. Your spending self-levels the same way, flowing toward high-satisfaction goods until the last dollar buys roughly equal satisfaction everywhere.
 
-This isn't just classroom theory. It's exactly why **demand slopes downward**, why people buy less of something when it gets pricier. When a good's price rises, the satisfaction-per-dollar it offers drops, so you naturally shift your money elsewhere. Higher price, less bought. Built right into how humans weigh value.
+This isn't just classroom theory. It's exactly why **[demand slopes downward](/blog/economics-from-first-principles/03-supply-demand-and-how-prices-are-determined)**, why people buy less of something when it gets pricier. When a good's price rises, the satisfaction-per-dollar it offers drops, so you naturally shift your money elsewhere. Higher price, less bought. Built right into how humans weigh value.
 
 ## Substitutes, complements, and what moves demand
 
@@ -167,7 +168,7 @@ Both slope upward, but for opposite reasons. Giffen goods are cheap and bought o
 
 Everything so far assumed a perfectly rational shopper, sometimes nicknamed *homo economicus*, who has stable preferences, full information, and flawless math.
 
-That model is powerful and often right. But starting in the 1970s, psychologists showed that real people stray from it in **systematic, predictable** ways. This field is called **behavioral economics**, and it's where a lot of money gets made.
+That model is powerful and often right. But starting in the 1970s, psychologists showed that real people stray from it in **systematic, predictable** ways. This field is called **[behavioral economics](/blog/economics-from-first-principles/31-behavioral-economics-how-psychology-shapes-the-economy)**, and it's where a lot of money gets made.
 
 The crucial word is *predictable*. Behavioral economics doesn't say people are stupid. It says our errors follow patterns, and patterns can be both modeled by economists and engineered by sellers.
 

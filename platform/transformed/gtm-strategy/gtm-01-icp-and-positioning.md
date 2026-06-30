@@ -39,6 +39,7 @@ icon: "\U0001F3AF"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 A founder once told me his product was "for any business that wants to grow." Smart product, real problem, and almost nobody bought it. The issue was not the software. It was that he had never decided who he was actually for, so every visitor read his homepage and thought, "Maybe this is for someone else."
@@ -134,7 +135,7 @@ That "uncomfortably narrow" line is not a typo. Narrowness is the signal you've 
 Most advice assumes you already have a pile of happy customers to study. Early on you don't, so here is the version that works when you're starting close to zero.
 
 1. **Start with a guess of just three attributes.** Linear, Retool, and Figma all began with a rough sketch, not a perfect profile. Pick the three traits you most believe in.
-2. **Run problem-first interviews.** Talk to people about their *current* behavior and workarounds. Never pitch. Never ask "would you buy this?" The book *The Mom Test* by Rob Fitzpatrick is the playbook here: ask about what they actually do today, not what they think they'd do tomorrow.
+2. **Run [problem-first interviews](/blog/sales-customer-development/03-customer-development-get-out-of-the-building).** Talk to people about their *current* behavior and workarounds. Never pitch. Never ask "would you buy this?" The book [*The Mom Test*](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself) by Rob Fitzpatrick is the playbook here: ask about what they actually do today, not what they think they'd do tomorrow.
 3. **Use cold outreach to test honest interest.** Warm intros are polite and flattering, which makes them lie to you. A stranger's genuine reply is worth more.
 4. **Hunt for real enthusiasm and screen out fakes.** Heavy use, "I'd pay to fix this," strong agreement on the pain - those are real. "Interesting" and "cool" are false positives. So is being handed off to a junior employee.
 5. **Add specificity until it feels too narrow,** then aim for five or more similar paying customers before you "lock" the profile. Expect it to keep evolving for anywhere from three months to a year.
@@ -212,7 +213,7 @@ You don't need a budget for any of this. Run the steps in order and stop scaling
 
 1. **Write a v1 ICP in three attributes.** For example: non-technical owner, small print or sign shop, currently on email and spreadsheets. Fill in the worksheet above.
 2. **Draft your anti-ICP list.** Write down who you will say no to and why, then share it with anyone doing sales so they disqualify fast.
-3. **Book 8 to 10 problem-first interviews.** Find them in industry groups and your existing users. Ask about their current workflow and willingness to pay. Do not pitch.
+3. **Book 8 to 10 problem-first interviews.** Find them in industry groups and your existing users. Ask about their current workflow and [willingness to pay](/blog/business-financial-literacy/09-pricing-psychology-pricing-with-confidence). Do not pitch.
 4. **Lock your category in writing.** One sentence: "We are X, not Y." Tell the whole team and stop describing yourself the old way.
 5. **Fill the positioning worksheet** as a one-page document. This becomes your single source of truth that feeds the pitch and the website.
 6. **Write three headline variants and run a 5-second test.** Show a target customer your hero for five seconds, hide it, then ask what it was, what it did, and who it's for. Iterate until about 80 percent give back roughly your intended answer.
@@ -221,10 +222,10 @@ You don't need a budget for any of this. Run the steps in order and stop scaling
 9. **Pick the ONE channel** producing real conversations and go deep, not wide.
 10. **Do not** start paid ads, a redesign, or a content program until the above lands.
 
-A quick note on validation: testing that never changes your positioning, talk track, or roadmap is just theatre. Feed every finding back in.
+A quick note on [validation](/blog/how-to-make-money/11-finding-a-real-problem-validating-demand): testing that never changes your positioning, talk track, or roadmap is just theatre. Feed every finding back in.
 
 ## Conclusion
 
 If you remember one thing, make it this: **you win by choosing the beach where your gaps are invisible and your strengths are the whole story.** Narrowing isn't giving up reach. It's earning the right to expand from a position of strength, with customers who'll vouch for you.
 
-The harder, more interesting question waiting on the other side of this work is pricing. Once you know exactly who you're for and the category you're claiming, what is that value actually worth to them, and how do you capture it without leaving money on the table or scaring off the very buyers you just fought to win? That's where this goes next.
+The harder, more interesting question waiting on the other side of this work is [pricing](/blog/how-to-make-money/14-pricing-value-capture). Once you know exactly who you're for and the category you're claiming, what is that value actually worth to them, and how do you capture it without leaving money on the table or scaring off the very buyers you just fought to win? That's where this goes next.

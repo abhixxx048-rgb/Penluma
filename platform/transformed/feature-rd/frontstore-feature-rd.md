@@ -30,6 +30,7 @@ faq:
     a: "Most shoppers are on phones. If your hero text overflows, search is crushed, or 'Place Order' shows before the payment form, the store feels broken before they even try to buy."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: feature-rd
 topicTitle: Feature R&D
 category: Business & Growth
@@ -47,7 +48,7 @@ That single moment is the most expensive bug in most online stores. Not a crash,
 
 ## Why this matters
 
-You can have fast pages, clean design, and zero console errors, and still bleed sales. Trust is the real conversion engine, and it breaks in ways your analytics rarely show you.
+You can have fast pages, clean design, and zero console errors, and still bleed sales. [Trust is the real conversion engine](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy), and it breaks in ways your analytics rarely show you.
 
 Here is the pattern that quietly drains revenue: **the store confidently says something is real and finished when it isn't - and when something genuinely breaks, it goes silent.** A non-technical shopper, mostly on a phone, can't tell the working parts from the fake parts. So the moment one thing feels off, she assumes everything is.
 
@@ -86,11 +87,11 @@ The mirror image of the fake success is the silent failure. The store can't load
 
 In each case the data was probably fine. The store just had no honest way to say "I'm having trouble - hang on." So it guessed, and guessed wrong, in a way that costs you the sale.
 
-**Real-world analogy:** imagine calling a shop, and instead of "Sorry, bad line - can you repeat that?" the clerk confidently answers a question you didn't ask. You'd hang up. Missing **loading, empty, and error states** are exactly that clerk.
+**Real-world analogy:** imagine calling a shop, and instead of "Sorry, bad line - can you repeat that?" the clerk confidently answers a question you didn't ask. You'd hang up. Missing **[loading, empty, and error states](/blog/product-sense-empathy/06-closing-the-gulfs-action-feedback-the-seven-stages)** are exactly that clerk.
 
 ## Dead controls with no explanation
 
-Picture a "Place Order" button that's greyed out, with no hint why. Is the store broken? Did the shopper miss a field? They have no idea, so they leave.
+Picture a "Place Order" button that's [greyed out, with no hint why](/blog/product-sense-empathy/15-common-mistakes-anti-patterns-pitfalls). Is the store broken? Did the shopper miss a field? They have no idea, so they leave.
 
 The rule here is short: **never ship a disabled button without a visible reason.** If the design studio's "Add to Cart" is blocked, show *what* needs fixing. If "Sign In" greys out while a security check loads, say "Just a sec, verifying you're human." A blocked control with a clear reason is helpful. A blocked control in silence feels broken.
 
@@ -103,7 +104,7 @@ Shoppers should never see your plumbing. Yet stores routinely leak raw technical
 - Internal statuses like `new`, `void`, or `open` instead of "Order received" or "Cancelled."
 - Admin-only instructions like "create the Our Store form in admin settings" - shown to a buyer who can't do anything about it.
 
-Every leak says "this was half-built." Translate every status into a plain, friendly stage, and keep technical messages behind a developer-only flag.
+Every leak says "this was half-built." [Translate every status into a plain, friendly stage](/blog/product-sense-empathy/10-evaluating-usability-nielsen-rsquo-s-10-heuristics), and keep technical messages behind a developer-only flag.
 
 ## Common misconceptions
 
@@ -111,7 +112,7 @@ Every leak says "this was half-built." Translate every status into a plain, frie
 Looks buy you the first click. Trust buys the purchase. A beautiful store with one dead buy button can convert worse than an ugly store where everything works.
 
 **"Fake promos and big numbers build excitement."**
-A "Diwali offer" banner the owner never created, or "2,847 orders this week" on a brand-new store, reads as fake the moment a shopper looks closely. Real numbers, even small ones, beat impressive lies. Default these flags to **off** until the owner sets them up.
+A "Diwali offer" banner the owner never created, or "2,847 orders this week" on a brand-new store, reads as fake the moment a shopper looks closely. Real numbers, even small ones, beat [impressive lies](/blog/psychology-of-decisions/18-writing-marketing-copy-that-persuades-without-lying). Default these flags to **off** until the owner sets them up.
 
 **"Errors are rare, so error states aren't worth the effort."**
 Errors aren't rare on real networks and real phones. The error state isn't an edge case - it's a feature your highest-frustration shoppers will absolutely meet.

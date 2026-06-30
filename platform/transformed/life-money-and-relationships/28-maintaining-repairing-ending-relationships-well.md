@@ -46,6 +46,7 @@ faq:
       that are actively harmful.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -73,7 +74,7 @@ A **dormant tie** is a relationship that was once active and has gone quiet: an 
 
 This is one of the most expensive false beliefs in all of relationship-building.
 
-When researchers had busy executives reconnect with people they'd lost touch with and ask them for real work advice, the result was striking. The advice from dormant ties was rated **as useful as, and often more original than**, advice from people the executives still talked to every day, and it took far less effort to get. Why?
+When researchers had busy executives reconnect with people they'd lost touch with and ask them for real work advice, the result was striking. The advice from [dormant ties](/blog/life-money-and-relationships/18-mapping-your-network-strong-weak-dormant-ties) was rated **as useful as, and often more original than**, advice from people the executives still talked to every day, and it took far less effort to get. Why?
 
 - **The trust is still charged.** Unlike a brand-new acquaintance, you already share history. It's faster to ask, and easier to believe what they tell you.
 - **They bring fresh information.** Because you've been apart, they've met new people and learned things you haven't. You get the trust of an old friend *plus* the novelty of a stranger.
@@ -89,7 +90,7 @@ And here's the comforting part: people **systematically overestimate how awkward
 3. **Name a specific shared memory.** "Still remember that brutal investor panel we sat through" instantly rebuilds the connection.
 4. **Offer an easy out.** "No need to reply, just wanted to send a good thought your way." Removing the pressure ironically makes people *more* likely to write back.
 
-Keep a short "dormant ties to revive" list and reconnect with one or two people a month, with no ask attached. If you're building something, these old ties are an ideal first audience for feedback, intros, and early customers, precisely because the trust already exists.
+Keep a short "dormant ties to revive" list and [reconnect with one or two people a month](/blog/life-money-and-relationships/23-staying-in-touch-a-system-for-nurturing-relationships), with no ask attached. If you're building something, these old ties are an ideal first audience for feedback, intros, and early customers, precisely because the trust already exists.
 
 ## Repairing relationships: conflict isn't the enemy
 
@@ -103,7 +104,7 @@ That's a couples-specific finding, but the underlying lesson travels everywhere:
 
 Picture every relationship as a boat that springs small leaks. The happy ones aren't leak-proof. The people in them just grab the bucket and bail before the water rises. **Healthy relationships don't avoid conflict; they bail water faster than it leaks in.**
 
-One crucial detail: repair attempts only land when there's **banked goodwill**, a store of small kindnesses built up over time. People who regularly trade small thanks and appreciation are much better at noticing and accepting each other's repair attempts. Those tiny no-ask gestures aren't fluff. They're the deposits that let repair work later.
+One crucial detail: repair attempts only land when there's **banked goodwill**, a store of small kindnesses built up over time. People who regularly [trade small thanks and appreciation](/blog/life-money-and-relationships/24-giving-value-reciprocity-without-keeping-score) are much better at noticing and accepting each other's repair attempts. Those tiny no-ask gestures aren't fluff. They're the deposits that let repair work later.
 
 ### The sincere apology
 
@@ -155,7 +156,7 @@ Here's how to tell the difference:
 | Your boundaries | Respected when stated | Pushed, guilt-tripped, or ignored |
 | Contact pattern | Two-way, sometimes no-ask | Only appears when they need something |
 
-High-empathy people get exploited the most, because they keep offering "one more chance" forever. One distinction cuts through it: give freely to people who *use* your help to grow, and ration it from people who just keep absorbing it with no change.
+High-empathy people get exploited the most, because they keep offering "one more chance" forever. One distinction cuts through it: [give freely](/blog/life-money-and-relationships/17-the-right-mindset-give-first-authentic-long-term) to people who *use* your help to grow, and ration it from people who just keep absorbing it with no change.
 
 ## Ending relationships well
 
@@ -194,6 +195,6 @@ Pick the moment you're in right now and act on it this week:
 
 ## Conclusion
 
-If you remember one thing, make it this: **the rupture is never the real danger; the failure to repair is.** Relationships don't break because they hit conflict, drift, or change shape. They break because we assume those moments are the end and stop tending them. The people with the richest networks aren't the ones who avoid friction. They're the ones who bail water, set limits, and leave doors open.
+If you remember one thing, make it this: **the rupture is never the real danger; the failure to repair is.** Relationships don't break because they hit conflict, drift, or change shape. They break because we assume those moments are the end and stop tending them. The people with [the richest networks](/blog/life-money-and-relationships/16-why-relationships-networks-truly-matter) aren't the ones who avoid friction. They're the ones who bail water, set limits, and leave doors open.
 
 Which raises a quieter question worth sitting with: of all the relationships you've already let go cold, how many were never broken at all, just waiting for one good message?

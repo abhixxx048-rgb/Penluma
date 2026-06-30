@@ -36,6 +36,7 @@ order: 19
 icon: "\U0001F4B0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -85,11 +86,11 @@ Your money is safe in rupee terms, but it barely outran prices. Across many year
 
 The deeper trap is the savings account. At about 3% interest with inflation near 4%, it has a **negative real return**. You're slowly getting poorer in a vault that feels secure.
 
-This is the whole macro case for owning equity. Over long stretches, broad Indian equity has comfortably beaten inflation, while cash and savings accounts reliably lose to it. That's not a stock tip. It's an inflation fact.
+This is the whole macro case for owning equity. Over long stretches, [broad Indian equity](/blog/personal-money-mastery/07-index-funds-passive-investing) has comfortably beaten inflation, while cash and savings accounts reliably lose to it. That's not a stock tip. It's an inflation fact.
 
 ## The repo rate: how the RBI reaches your EMI
 
-The **repo rate** is the interest the RBI charges banks for short-term loans. It's the economy's master dial. The RBI's rate-setting committee adjusts it roughly six times a year.
+The **repo rate** is the interest the RBI charges banks for short-term loans. It's the economy's master dial. [The RBI's rate-setting committee](/blog/economics-from-first-principles/08-central-banks-and-monetary-policy) adjusts it roughly six times a year.
 
 When the RBI **cuts** the repo (easing), bank funding gets cheaper, floating home and auto EMIs fall, people borrow and spend more, and growth and equity get support. When it **hikes** (tightening), the chain runs in reverse: costlier loans, cooler demand, slower growth, and eventually tamer inflation. That's the brake.
 
@@ -118,11 +119,11 @@ Here's the quiet logic. If India's inflation runs around 4% and the US runs 2 to
 Two real consequences for you:
 
 - **Foreign costs rise.** A US degree, an overseas trip, or dollar-priced software costs more rupees every year. For big foreign goals, plan and save in the target currency.
-- **US-equity funds get a tailwind.** If you hold an S&P 500 or Nasdaq index fund, rupee depreciation adds to your rupee returns on top of the dollar gain. A modest, deliberate slice of international equity is a natural rupee hedge.
+- **US-equity funds get a tailwind.** If you hold an S&P 500 or Nasdaq index fund, [rupee depreciation](/blog/economics-from-first-principles/22-exchange-rates-currency-markets-and-why-currencies-rise-or-fall) adds to your rupee returns on top of the dollar gain. A modest, deliberate slice of international equity is a natural rupee hedge.
 
 ## The growth cycle moves every asset
 
-Economies breathe in cycles: expansion, then slowdown, then expansion again. These cycles drive RBI rate decisions, and rate decisions drive asset prices. Keep this cheat table in your head.
+[Economies breathe in cycles](/blog/economics-from-first-principles/15-the-business-cycle-booms-recessions-and-depressions): expansion, then slowdown, then expansion again. These cycles drive RBI rate decisions, and rate decisions drive asset prices. Keep this cheat table in your head.
 
 | When rates are... | Equity | Long-duration debt | Real estate | Gold |
 |---|---|---|---|---|
@@ -157,7 +158,7 @@ The temptation, now that you understand rates and bonds and cycles, is to act on
 
 Here's what to actually do:
 
-1. **Set your asset allocation** around your goal and time horizon, not around the latest forecast.
+1. **Set your [asset allocation](/blog/personal-money-mastery/08-asset-allocation-rebalancing)** around your goal and time horizon, not around the latest forecast.
 2. **Rebalance on bands, not on news.** Only act when your weights drift past pre-set limits.
 3. **Keep your SIPs running through the whole cycle.** Falling markets are buying you cheaper units.
 4. **Use macro for exactly two things:** choosing debt duration (short when rates rise, long when they fall), and staying calm in volatility.
@@ -167,4 +168,4 @@ Here's what to actually do:
 
 The single thing to remember: judge every investment on its **after-tax real return**, then read macro to stay calm rather than to stay busy. The investor who understands the weather and still fishes on schedule almost always beats the one who chases every forecast.
 
-That calm is harder than it sounds, because the real opponent isn't the economy at all. It's the version of you that wants to do something when markets get loud. That's the next frontier worth exploring: the behavioural traps that quietly cost careful savers more than any rate hike ever will.
+That calm is harder than it sounds, because the real opponent isn't the economy at all. It's the version of you that wants to do something when markets get loud. That's the next frontier worth exploring: the [behavioural traps that quietly cost careful savers](/blog/personal-money-mastery/18-behavioral-finance) more than any rate hike ever will.

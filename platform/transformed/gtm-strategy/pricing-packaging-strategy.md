@@ -36,6 +36,7 @@ date: '2026-06-16'
 order: 999
 icon: "\U0001F3AF"
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Decoy_effect
 ---
@@ -66,7 +67,7 @@ This is not a fringe tactic. In OpenView's study of 104 SaaS companies, **72 of 
 
 It is tempting to add more tiers to "cover every customer." Resist it. Past three or four options, buyers freeze. Faced with too many choices, many people make no choice at all - and a hesitant buyer is a lost buyer.
 
-Three tiers also unlock a quiet bit of psychology called the **decoy effect** (sometimes called the compromise effect). When a middle option sits between a cheaper-but-thinner plan and a pricier anchor, it starts to look like the rational, grown-up choice. People dislike feeling cheap, and they dislike overspending, so they reach for the comfortable middle.
+Three tiers also unlock a quiet bit of psychology called the [**decoy effect**](/blog/economics-from-first-principles/31-behavioral-economics) (sometimes called the compromise effect). When a middle option sits between a cheaper-but-thinner plan and a pricier anchor, it starts to look like the rational, grown-up choice. People dislike feeling cheap, and they dislike overspending, so they reach for the comfortable middle.
 
 The classic illustration comes from behavioral economist Dan Ariely's retelling of a magazine subscription offer. People were given three choices:
 
@@ -84,7 +85,7 @@ A practitioner rule of thumb is to aim for **roughly 60 to 70% of paying custome
 
 Before you set any prices, decide the unit you charge on. This is your **value metric**, and it matters more than the dollar amounts.
 
-A good value metric does three things:
+A good [value metric](/blog/personal-money-mastery/12-pricing-value-capture) does three things:
 
 1. **It is easy to understand.** The buyer can explain it to their boss in one sentence.
 2. **It tracks the value they receive.** As they get more out of the product, they pay a little more.
@@ -104,7 +105,7 @@ So the structure to reach for is: a clear monthly price per tier, plus a soft al
 
 ## Don't underprice a stronger product
 
-Here is the trap that catches nearly half the market. You build something more capable than a competitor, then you price it *below* their comparable plan, telling yourself you are being "competitive" and avoiding overcharging.
+Here is the trap that catches nearly half the market. You build something more capable than a competitor, then you [price it *below* their comparable plan](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive), telling yourself you are being "competitive" and avoiding overcharging.
 
 This logic is self-defeating. You cannot claim "we do more than them" and "we cost less than them" as evidence of *correct* pricing. Lower price signals lower value. A more capable product priced under a weaker rival's hero tier is exactly how you join the 43% who underprice.
 
@@ -134,7 +135,7 @@ This is what turns expansion into a natural byproduct of the customer's *own suc
 
 A quick reality check that saves a lot of pain. **Net revenue retention (NRR)** measures how much an existing group of customers grows or shrinks in spending over time, after upgrades, downgrades, and cancellations. Above 100% means your existing base expands on its own.
 
-Ambitious SaaS decks love to promise 120% NRR. For a low-priced, small-business customer base, that is usually fantasy. The harsh data: only a tiny fraction of companies with very low revenue per account ever exceed 100% NRR, and the median for small-business SaaS sits around 97%, per ChartMogul's research.
+Ambitious SaaS decks love to promise 120% NRR. For a low-priced, small-business customer base, that is usually fantasy. The harsh data: only a tiny fraction of companies with very low [revenue per account](/blog/personal-money-mastery/14-unit-economics) ever exceed 100% NRR, and the median for small-business SaaS sits around 97%, per ChartMogul's research.
 
 If your average price is modest, a realistic, honest target is **roughly 100 to 105% NRR** - reached through the soft-allowance upgrade path and genuine add-ons, not by pretending aggressive expansion will rescue a low-price base. Set the achievable number. Your roadmap and your investors will both thank you.
 
@@ -169,6 +170,6 @@ A note on running a free trial alongside three tiers: let the trial show off you
 
 If you remember one thing, remember this: **pricing is not a number, it is a structure.** Three tiers, a hero in the middle, a value metric your customer actually understands, and a soft allowance that grows with their success - that is the machine. The dollar amounts are just dials you tune on top of it.
 
-The deeper lesson is that good pricing respects how people actually decide. They avoid extremes, they fear surprise bills, and they read a low price as a low-quality signal. Build for those instincts and your pricing page starts working *for* you.
+The deeper lesson is that good pricing respects [how people actually decide](/blog/business-financial-literacy/09-pricing-psychology-pricing-with-confidence). They avoid extremes, they fear surprise bills, and they read a low price as a low-quality signal. Build for those instincts and your pricing page starts working *for* you.
 
 So here is the thread worth pulling next: if the structure decides *how much* people pay, what decides *whether they ever start paying at all*? That is the story of trials, onboarding, and the first "aha" moment - the conversion funnel that feeds every tier you just built.

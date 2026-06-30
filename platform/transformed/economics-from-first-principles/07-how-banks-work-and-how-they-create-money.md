@@ -18,6 +18,7 @@ keywords:
   - loans create deposits
   - what is a bank deposit
   - Diamond Dybvig bank run
+linked: true
 topic: economics-from-first-principles
 topicTitle: Economics from First Principles
 category: Money & Business
@@ -58,9 +59,9 @@ You probably trust your bank with your salary, your rent buffer, your savings. Y
 
 This isn't trivia. Understanding how banks really work changes how you think about three things that touch your life directly:
 
-- **Why money exists at all.** The number in your account is a promise, not a pile of cash in a vault. Knowing whose promise it is matters.
+- **[Why money exists at all.](/blog/economics-from-first-principles/06-what-money-is-and-why-it-has-value)** The number in your account is a promise, not a pile of cash in a vault. Knowing whose promise it is matters.
 - **Why banks sometimes collapse overnight** - even healthy ones - and what actually protects your money when they do.
-- **Why interest rates move the whole economy.** Central banks steer growth and inflation largely through the banking system you're about to understand.
+- **Why interest rates move the whole economy.** [Central banks steer growth and inflation](/blog/economics-from-first-principles/08-central-banks-and-monetary-policy) largely through the banking system you're about to understand.
 
 Get this right and you've made the single biggest leap in understanding modern finance. Most people never make it.
 
@@ -149,7 +150,7 @@ So what really limits a bank's lending? Three things:
 
 1. **Capital requirements** - regulators force banks to hold a buffer of their own money against losses.
 2. **Loan demand and profitability** - banks lend when, and only when, it's worth their while.
-3. **The central bank's interest rate** - cheaper rates encourage more borrowing.
+3. **The central bank's interest rate** - [cheaper rates encourage more borrowing](/blog/economics-from-first-principles/09-loans-credit-debt-and-interest-rates).
 
 Modern central banks steer the economy by setting the **price** of money, not by rationing a fixed **quantity** of reserves.
 
@@ -199,11 +200,11 @@ The bad outcome is a **self-fulfilling prophecy.** A perfectly sound bank can be
 
 ### Case study: the Great Depression
 
-Between 1930 and 1933, waves of runs swept the United States. Roughly **9,000 banks failed,** wiping out around **9 million savings accounts.** This was the founding trauma that produced deposit insurance.
+Between 1930 and 1933, [waves of runs swept the United States](/blog/economics-from-first-principles/24-financial-crises-why-they-happen-spread-and-how-economies-recover). Roughly **9,000 banks failed,** wiping out around **9 million savings accounts.** This was the founding trauma that produced deposit insurance.
 
 ### Case study: Silicon Valley Bank, March 2023
 
-SVB poured a huge share of its assets into long-dated US Treasuries and mortgage bonds. When the Fed raised interest rates sharply through 2022 to fight inflation, the market value of those bonds fell, creating large *unrealized losses.*
+SVB poured a huge share of its assets into long-dated US Treasuries and mortgage bonds. When the Fed raised interest rates sharply through 2022 to [fight inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money), the market value of those bonds fell, creating large *unrealized losses.*
 
 Note carefully: these were **safe** government bonds. The failure was interest-rate and maturity-mismatch risk - *not* bad loans.
 

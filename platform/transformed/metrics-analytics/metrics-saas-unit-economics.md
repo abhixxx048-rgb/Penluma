@@ -38,12 +38,13 @@ order: 999
 icon: "\U0001F4CA"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
 A startup can show investors a beautiful "3:1 LTV to CAC" slide and still be quietly going broke. The ratio looks healthy. The bank account disagrees.
 
-That gap - between a metric that looks good and a business that actually works - is what SaaS unit economics is all about. And most of the famous numbers people quote are either misunderstood, misattributed, or flat-out wrong for the stage they are being applied to.
+That gap - between a metric that looks good and a business that actually works - is what [SaaS unit economics](/blog/personal-money-mastery/14-unit-economics) is all about. And most of the famous numbers people quote are either misunderstood, misattributed, or flat-out wrong for the stage they are being applied to.
 
 This guide cuts through it. You will learn what each core metric really measures, which one deserves to be your north star, and which "rules" to politely ignore until you are much bigger.
 
@@ -53,7 +54,7 @@ Unit economics is just one honest question: **do you make money on each customer
 
 Get this wrong and everything downstream breaks. You raise money on a fantasy lifetime value. You pour cash into a channel that never pays back. You celebrate a growth chart that is actually a slow-motion cash fire.
 
-Get it right and you gain something rare: the ability to know, with a small spreadsheet and real numbers, whether spending one more dollar to win a customer is smart or suicidal. For an early business with limited cash, that clarity is the difference between surviving long enough to win and running out of runway with a great-looking pitch deck.
+Get it right and you gain something rare: the ability to know, with a small spreadsheet and real numbers, whether spending one more dollar to win a customer is smart or suicidal. For an early business with limited cash, that clarity is the difference between surviving long enough to win and [running out of runway](/blog/personal-money-mastery/16-burn-runway) with a great-looking pitch deck.
 
 The catch is that the popular metrics were mostly designed for big, stable companies. Used at the wrong stage, they lie. So let's go through them honestly.
 
@@ -143,7 +144,7 @@ The **Rule of 40** says a healthy software company's growth rate plus its profit
 
 > Rule of 40 = growth rate % + profit margin % ≥ 40%
 
-It is a genuinely useful balance check - for **scaled companies past roughly 5 million dollars in revenue.** Early on it falls apart: growth off a tiny base is a huge percentage, and your margins are deeply negative *by design* because you are buying market share. Even Bessemer, who track it closely, note it "does not compute for early-stage startups."
+It is a genuinely useful balance check - for **scaled companies past roughly 5 million dollars in revenue.** Early on it falls apart: growth off a tiny base is a huge percentage, and your [margins](/blog/business-financial-literacy/10-break-even-margins-profitability) are deeply negative *by design* because you are buying market share. Even Bessemer, who track it closely, note it "does not compute for early-stage startups."
 
 ### Rule of X
 
@@ -170,14 +171,14 @@ Reality: at seed stage it is volatile noise. It earns its place once you are sca
 
 If you take away one habit, make it this: **put margin-adjusted CAC payback at the center, and read it next to churn.** Here is a concrete order of operations.
 
-1. **Track CAC payback period first.** Put it on your dashboard as the headline economic number. It needs no fragile churn projection and answers the question that actually keeps you solvent.
+1. **Track CAC payback period first.** Put it on your [dashboard](/blog/business-financial-literacy/13-living-by-the-numbers-the-founder-s-financial-dashboard) as the headline economic number. It needs no fragile churn projection and answers the question that actually keeps you solvent.
 2. **Compute fully-loaded CAC, including your own time.** Add salaries, your hours at a real hourly rate, tools, content, and overhead. Never use the raw ad-platform number. If your CAC looks suspiciously tiny, you forgot to count your time.
 3. **Measure gross margin per customer.** Take revenue minus payment fees minus your cost to serve (infrastructure, support, processing). Every payback and LTV figure must be built on this margin, not revenue. This is the hinge for everything else.
 4. **Use cohort retention curves instead of a single LTV.** Plot actual dollars kept from each month's group of signups. If you must quote LTV, quote it as a range, never one hero number.
 5. **Split payback by how fast customers activate.** Customers who reach value quickly pay back sooner. Reporting payback for fast-activating versus slow customers proves whether your onboarding investment actually pays off.
 6. **Keep the build cheap.** A single weekly spreadsheet or simple scheduled rollup is enough at the start: new customers, fully-loaded CAC, margin per customer, median payback by signup cohort, and percent of customers activated quickly. Skip the data warehouse until you genuinely need it.
 
-And a hard rule for targets: **don't borrow benchmarks.** Aim for payback well under 12 months if you are self-serve, treat over 12 as a signal to fix activation or pricing, and over 18 as a structural problem. But set the target against your own segment and your own cohorts, not a number from a vendor's blog.
+And a hard rule for targets: **don't borrow benchmarks.** Aim for payback well under 12 months if you are self-serve, treat over 12 as a signal to fix activation or [pricing](/blog/personal-money-mastery/12-pricing-value-capture), and over 18 as a structural problem. But set the target against your own segment and your own cohorts, not a number from a vendor's blog.
 
 ## Conclusion
 

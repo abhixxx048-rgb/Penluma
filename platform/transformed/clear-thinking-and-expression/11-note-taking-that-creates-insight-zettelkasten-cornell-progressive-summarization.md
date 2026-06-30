@@ -36,6 +36,7 @@ faq:
     a: Most notes fail because they store facts instead of producing connections. Highlights and copied text skip the thinking. Notes become useful when you reword ideas yourself and link them to other notes.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Zettelkasten
   - https://en.wikipedia.org/wiki/Cornell_Notes
@@ -49,9 +50,9 @@ Here is the secret nobody tells you. You do not connect ideas in your head. You 
 
 Think about the last time you said "I just can't connect ideas." You were probably trying to hold everything in your mind at once and waiting for a spark.
 
-That spark almost never comes, and the reason is simple. Your **working memory** - the small mental desk where you hold whatever you are thinking about right now - can only juggle a handful of things before it overflows. You cannot fit a year of reading on that desk.
+That spark almost never comes, and the reason is simple. Your **[working memory](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits)** - the small mental desk where you hold whatever you are thinking about right now - can only juggle a handful of things before it overflows. You cannot fit a year of reading on that desk.
 
-Notes fix this. They let you offload ideas onto the desk of paper, where they sit next to each other and spark something new. Get this right and your notes stop being a graveyard. They become a thinking partner that hands you ideas you forgot you had.
+Notes fix this. They let you [offload ideas onto the desk of paper](/blog/clear-thinking-and-expression/03-think-on-paper-why-externalizing-beats-thinking-in-your-head), where they sit next to each other and spark something new. Get this right and your notes stop being a graveyard. They become a [thinking partner that hands you ideas you forgot you had](/blog/clear-thinking-and-expression/16-build-an-idea-inventory-a-second-brain-so-connections-happen).
 
 The shift is this: **a filing cabinet is for things you want to find again. A thinking tool is for things you want to combine.** Most note systems are filing cabinets. The good ones are thinking tools.
 
@@ -115,7 +116,7 @@ When you are learning a fixed body of material - a course, a manual, a video lec
 - **Cue column (the narrow left side):** *afterward*, write questions or keywords that those notes answer. This quietly turns your notes into a self-quiz.
 - **Summary (the strip along the bottom):** two or three sentences in your own words. If you can't write them, you haven't understood it yet.
 
-The cue column is the clever part. Cover the right side and try to answer the cues from memory. That is **retrieval practice** - recalling instead of rereading - and it reliably beats passive review for actually remembering things. You are testing yourself every time you review, without building anything extra.
+The cue column is the clever part. Cover the right side and try to answer the cues from memory. That is **[retrieval practice](/blog/ai-learning-platform/06-retrieval-practice-why-testing-beats-re-reading)** - recalling instead of rereading - and it reliably beats passive review for actually remembering things. You are testing yourself every time you review, without building anything extra.
 
 ## Common misconceptions
 
@@ -149,4 +150,4 @@ Want to push further? Take a paragraph of old notes and rewrite it as three sepa
 
 The single thing to remember: **insight is not stored, it is assembled.** You assemble it by writing small ideas in your own words and placing them next to each other until the connections appear on their own. The links, not your memory, are where new ideas come from.
 
-Which raises a tempting question. If linking small notes can manufacture insight on a desk, what does that say about how original thinking actually works - is "creativity" mostly just a well-connected collection? That is the rabbit hole worth falling into next.
+Which raises a tempting question. If linking small notes can manufacture insight on a desk, what does that say about how original thinking actually works - is ["creativity" mostly just a well-connected collection](/blog/clear-thinking-and-expression/13-what-creativity-actually-is-recombination-not-magic)? That is the rabbit hole worth falling into next.

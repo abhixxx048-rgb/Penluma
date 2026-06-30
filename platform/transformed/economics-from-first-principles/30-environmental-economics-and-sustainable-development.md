@@ -34,6 +34,7 @@ order: 29
 icon: "\U0001F4C8"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -75,7 +76,7 @@ Each person who orders the lobster pays only one-tenth of its cost but enjoys al
 
 Pollution works exactly the same way. You get the full benefit of burning fuel, but the cost, climate damage, gets split across eight billion people. Rational individual choices add up to a collective disaster.
 
-That is the deep point: **pollution is not the moral failing of evil companies. It is a pricing failure.** The market overproduces dirty things because their prices leave out the cost that everyone else is forced to pay.
+That is the deep point: **pollution is not the moral failing of evil companies. It is a pricing failure.** [The market overproduces dirty things](/blog/economics-from-first-principles/04-markets-competition-and-when-markets-fail) because their prices leave out the cost that everyone else is forced to pay.
 
 ## Two ways to fix it: Pigou vs. Coase
 
@@ -102,7 +103,7 @@ People love to cite Coase to argue "government should stay out and let people ba
 
 His real point was that the cost of negotiating is **almost never** zero. When the victims are "everyone who breathes CO2," you cannot get billions of strangers into a room to hammer out a deal.
 
-Coase's actual conclusion was the opposite of the libertarian reading: *because* private bargaining usually fails, real institutions like courts, taxes, and permit markets are exactly what we need.
+Coase's actual conclusion was the opposite of the libertarian reading: *because* private bargaining usually fails, [real institutions like courts, taxes, and permit markets](/blog/economics-from-first-principles/29-public-economics-welfare-social-security-and-the-role-of-government) are exactly what we need.
 
 ## The tragedy of the commons
 
@@ -168,7 +169,7 @@ Now for the puzzle that keeps economists up at night.
 
 Suppose climate damage a century from now will cost the equivalent of one dollar. How much is preventing that worth to us *today*?
 
-We answer with a **discount rate**, the exchange rate between future dollars and present dollars. A high rate says the distant future barely counts. A low rate says it counts almost as much as today.
+We answer with a **discount rate**, [the exchange rate between future dollars and present dollars](/blog/economics-from-first-principles/09-loans-credit-debt-and-interest-rates). A high rate says the distant future barely counts. A low rate says it counts almost as much as today.
 
 Here is what makes this explosive. Take two famous climate analyses:
 
@@ -195,11 +196,11 @@ The phrase **sustainable development** comes from the 1987 UN Brundtland Report:
 
 Its heart is **intergenerational equity**, plain fairness across time. That lineage runs through the 1992 Rio Earth Summit to the UN's 17 Sustainable Development Goals.
 
-So does protecting the planet require giving up growth? One hopeful idea is the **Environmental Kuznets Curve**: pollution rises during early industrialization, then falls once a country gets rich enough to afford cleanup. An upside-down U.
+So does protecting the planet require giving up growth? One hopeful idea is the **Environmental Kuznets Curve**: pollution rises during [early industrialization](/blog/economics-from-first-principles/26-development-economics-why-some-countries-are-rich-and-others-poor), then falls once a country gets rich enough to afford cleanup. An upside-down U.
 
 It's tempting to treat that as a law. It isn't. It holds reasonably well for *local* pollutants like soot and SO2, but **not** for CO2 or total resource use, which keep climbing with income. You cannot automatically grow your way out of carbon.
 
-That fuels the live **green growth vs. degrowth** debate. Green-growth bodies bet on *decoupling*, cutting emissions while GDP keeps rising through clean tech. Critics counter that fast-enough global decoupling hasn't actually been demonstrated. A fair nuance: the UK and EU have cut emissions while growing, but partly by offshoring dirty factories abroad, so their "consumption-based" footprint looks worse than the headline numbers suggest.
+That fuels the live **green growth vs. degrowth** debate. Green-growth bodies bet on *decoupling*, cutting emissions while [GDP keeps rising through clean tech](/blog/economics-from-first-principles/12-economic-growth-and-productivity). Critics counter that fast-enough global decoupling hasn't actually been demonstrated. A fair nuance: the UK and EU have cut emissions while growing, but partly by offshoring dirty factories abroad, so their "consumption-based" footprint looks worse than the headline numbers suggest.
 
 ## Common misconceptions
 

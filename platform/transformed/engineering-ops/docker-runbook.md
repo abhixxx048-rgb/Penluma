@@ -23,6 +23,7 @@ order: 999
 icon: "\U0001F6E0️"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 faq:
   - q: "Why does my app connect to the wrong database in Docker?"
     a: "Almost always because a stale environment variable from a starter template (like Laravel Sail) is still pointing at the wrong host or port - for example MySQL on 3306 when you actually run PostgreSQL on 5432. Compose env values silently override your app's own defaults, so audit them first."
@@ -43,7 +44,7 @@ A single wrong line in a config file can keep a database client knocking on a do
 
 That is the kind of bug that hides inside a half-finished Docker setup. Containerizing one service is easy. Containerizing a whole stack - a PHP API, two frontend apps, background workers, a PDF engine, a database, a cache, and object storage - is where the quiet traps live.
 
-This is a field guide to those traps, drawn from a real migration of a multi-service platform from bare-metal servers to Docker. You do not need to know that specific app. The patterns repeat in almost every system that grew past one container.
+This is a field guide to those traps, drawn from a real migration of a [multi-service platform](/blog/system-design/18-architecture-patterns-microservices) from bare-metal servers to Docker. You do not need to know that specific app. The patterns repeat in almost every system that grew past one container.
 
 ## Why this matters
 
@@ -54,7 +55,7 @@ The cost is rarely a dramatic crash. It is **silent wrongness** - jobs that neve
 Getting the containerization right buys you three things that matter:
 
 - **Reproducibility** - the stack runs the same on every laptop and every server.
-- **Safe scaling** - you can run two copies of a service without them fighting over cache or jobs.
+- **Safe scaling** - you can [run two copies of a service](/blog/system-design/07-load-balancing-and-scaling) without them fighting over cache or jobs.
 - **Honest failure** - health checks and clear boundaries mean a broken service announces itself instead of hiding.
 
 If you are about to put a real multi-service app in containers, the rest of this article is the checklist you wish you had read first.
@@ -77,7 +78,7 @@ There was a second, sneakier version of the same bug. A secondary "admin" databa
 
 The deploy tooling probed `GET /api/health` to decide whether a container was ready. That route did not exist, so every probe returned a 404 and the orchestrator treated a perfectly healthy service as broken.
 
-A health check is not optional plumbing - it is how the rest of your system learns that a container is alive. Add a real endpoint that returns 200 **before** you wire up any `healthcheck` block.
+A [health check](/blog/system-design/17-observability-and-operations) is not optional plumbing - it is how the rest of your system learns that a container is alive. Add a real endpoint that returns 200 **before** you wire up any `healthcheck` block.
 
 ## Build-time versus runtime: the trap nobody warns you about
 
@@ -113,7 +114,7 @@ Get only one right and you get "works after load, blank on load" - a bug that wa
 
 ## When you containerize, queues stop being free
 
-On a single server, many apps run background jobs **inline** - the "sync" queue. The job just runs as part of the web request. Convenient, and invisible.
+On a single server, many apps run [background jobs](/blog/system-design/12-messaging-and-event-driven) **inline** - the "sync" queue. The job just runs as part of the web request. Convenient, and invisible.
 
 Move to containers and you almost always switch to a **Redis-backed queue** so work can spread across machines. The moment you flip that switch, a hard truth appears:
 
@@ -154,7 +155,7 @@ And never bake secrets into image layers. Image layers are cached, shared, and s
 
 Two more traps show up the moment you run more than one copy of a service.
 
-**Shared cache, or no cache.** One frontend cached rendered pages in memory by default. Run two replicas and they each keep a private cache - so users get inconsistent results depending on which replica they hit, and every restart starts cold. The fix is pointing the cache at a **shared Redis** so all replicas read and write the same store. If your app caches anything, ask where that cache lives when there are two of you.
+**Shared cache, or no cache.** One frontend [cached rendered pages](/blog/system-design/06-caching-deep) in memory by default. Run two replicas and they each keep a private cache - so users get inconsistent results depending on which replica they hit, and every restart starts cold. The fix is pointing the cache at a **shared Redis** so all replicas read and write the same store. If your app caches anything, ask where that cache lives when there are two of you.
 
 **Preserve the real Host header.** This was a multi-tenant app: it figured out *which customer's store* a request belonged to by reading the incoming hostname. A reverse proxy that rewrites the `Host` header to `localhost` quietly destroys that - every request looks like the same tenant, or none. The rule for any host-based routing:
 

@@ -49,6 +49,7 @@ faq:
       polyester instead.
 topic: print-production-craft
 topicTitle: Print Production Craft
+linked: true
 category: Engineering
 date: '2026-06-21'
 order: 4
@@ -95,7 +96,7 @@ Let's name the players before going deep. Each gets its own section below.
 
 ### The one-screen-per-color rule
 
-This single fact drives all of screen-printing economics: **each ink color needs its own screen, its own setup, and its own pass across the shirt.** A four-color design means four screens, four setups, and four layers of ink. More colors means more cost and more time.
+This single fact drives all of [screen-printing economics](/blog/print-production-craft/11-print-shop-economics-costing-make-ready-margins-quoting): **each ink color needs its own screen, its own setup, and its own pass across the shirt.** A four-color design means four screens, four setups, and four layers of ink. More colors means more cost and more time.
 
 A one-color white logo on a navy shirt needs one screen. A four-color band logo needs four. If each screen costs roughly $20 to $75 to make and align, that four-color job starts with $80 to $300 of setup **before a single shirt is printed.** That is why screen printing is brutal for tiny orders and unbeatable for big ones.
 
@@ -129,7 +130,7 @@ The make-or-break step is the **cure**. Under-cured ink cracks and washes out af
 
 ## DTG: a printer for shirts
 
-**DTG** is, in plain words, a printer for shirts. It is an inkjet that sprays water-based ink directly onto the garment in full color, unlimited colors, in a single pass, with no screens at all. If you can print it on paper, you can print it on a shirt.
+**DTG** is, in plain words, a printer for shirts. It is an [inkjet](/blog/print-production-craft/04-digital-printing-toner-inkjet-variable-data) that sprays water-based ink directly onto the garment in full color, unlimited colors, in a single pass, with no screens at all. If you can print it on paper, you can print it on a shirt.
 
 The process runs in five stages: prep the artwork, **pretreat** the garment with a clear bonding spray, lay a white underbase on dark shirts, jet the color on top, then heat-cure it.
 
@@ -223,7 +224,7 @@ Decide in this order: **order size, then color count, then fabric, then placemen
 4. **Printing on a curved or hard object?** Use pad printing. Pens, mugs, golf balls.
 5. **Premium small logo you will reorder?** Use embroidery. Digitize once, reorder forever.
 6. **Light polyester sportswear with all-over art?** Use dye sublimation.
-7. **Supply the right artwork.** Vector or spot-color files for screen and pad printing; high-resolution full-color PNG or RGB for DTG and DTF.
+7. **Supply the right artwork.** [Vector or spot-color files](/blog/computer-graphics-print/07-raster-vs-vector-resolution-image-quality) for screen and pad printing; high-resolution full-color PNG or [RGB](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color) for DTG and DTF.
 
 A few worked examples make it concrete:
 

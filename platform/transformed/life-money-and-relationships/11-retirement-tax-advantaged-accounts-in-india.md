@@ -36,6 +36,7 @@ order: 10
 icon: "\U0001F331"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -75,11 +76,11 @@ The **Employees' Provident Fund (EPF)** is a forced-savings retirement account f
 
 Each month, **12% of your Basic salary + DA** is deducted, and your employer adds a matching 12%. (DA, or Dearness Allowance, is a cost-of-living top-up on the basic salary.) It is automatic. You barely notice it leave.
 
-- **Interest:** around **8.25% a year** for FY 2025-26, set yearly by the government. That is a high, near-risk-free, tax-free return, better than any fixed deposit. *Always verify the current rate.*
+- **Interest:** around **8.25% a year** for FY 2025-26, set yearly by the government. That is a high, near-risk-free, tax-free return, better than any [fixed deposit](/blog/life-money-and-relationships/07-where-to-keep-cash-banks-safe-saving-instruments). *Always verify the current rate.*
 - **Tax:** your contribution counts under **Section 80C** (old regime). Interest and maturity are tax-free *if* you complete 5 years of continuous service.
 - **The high-earner catch:** interest on *your own* contributions above **2.5 lakh a year** becomes taxable. Most people never reach this; high earners should watch for it.
 
-**The most common EPF mistake:** withdrawing your balance every time you change jobs. This breaks the compounding chain and can trigger tax. Instead, **transfer** the balance to your new employer's account online through the UAN portal (UAN is your single, permanent EPF member ID). Treat EPF as untouchable until retirement.
+**The most common EPF mistake:** withdrawing your balance every time you change jobs. This breaks the [compounding chain](/blog/life-money-and-relationships/06-compounding-the-time-value-of-money) and can trigger tax. Instead, **transfer** the balance to your new employer's account online through the UAN portal (UAN is your single, permanent EPF member ID). Treat EPF as untouchable until retirement.
 
 ## VPF: the quiet best-buy for high savers
 
@@ -121,10 +122,10 @@ The **National Pension System (NPS)** is a low-cost, market-linked retirement ac
 
 ## ELSS: the only equity option inside 80C
 
-**ELSS (Equity Linked Savings Scheme)** is simply a diversified equity mutual fund that also qualifies for **Section 80C**, with the **shortest lock-in of all 80C options: just 3 years**. (Each SIP installment locks for 3 years from its own date.)
+**ELSS (Equity Linked Savings Scheme)** is simply a [diversified equity mutual fund](/blog/life-money-and-relationships/09-mutual-funds-index-funds-sips-the-core-engine) that also qualifies for **Section 80C**, with the **shortest lock-in of all 80C options: just 3 years**. (Each SIP installment locks for 3 years from its own date.)
 
 - **Returns:** equity-market-linked, historically around 10 to 14% over the long run. *Illustrative, never guaranteed.*
-- **Tax on exit:** long-term capital gains are tax-free up to **1.25 lakh a year**, then taxed at 12.5%.
+- **Tax on exit:** [long-term capital gains](/blog/life-money-and-relationships/12-taxes-made-simple-income-deductions-capital-gains) are tax-free up to **1.25 lakh a year**, then taxed at 12.5%.
 - **The lock-in is a feature, not a bug:** it forces you to hold equities for the minimum period they actually need to work, which is exactly when most people would otherwise panic-sell.
 
 ## The 80C umbrella: one shared 1.5 lakh bucket
@@ -149,7 +150,7 @@ A simple way to picture how the deductions stack:
 1. **Check your salary slip.** Confirm EPF is being deducted, and find your UAN.
 2. **If you are self-employed, open a PPF account this week** online through your bank. It is your safe anchor.
 3. **Decide your tax regime.** It changes which deductions are even worth chasing. The new regime drops most of 80C but keeps the employer NPS break.
-4. **Start a small ELSS SIP** if you want equity exposure inside 80C, with a long horizon in mind.
+4. **Start a small ELSS SIP** if you want [equity exposure](/blog/life-money-and-relationships/10-stocks-the-equity-market-direct-investing-basics) inside 80C, with a long horizon in mind.
 5. **If you run payroll, set up an employer NPS contribution to yourself** to capture the new-regime tax break.
 6. **Verify all rates and limits each year.** They reset with the Budget and government notifications.
 

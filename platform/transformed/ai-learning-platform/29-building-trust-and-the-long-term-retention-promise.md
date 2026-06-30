@@ -36,6 +36,7 @@ order: 28
 icon: "\U0001F393"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -60,7 +61,7 @@ Get those right and you have a product. Skip them and you have a worse chatbot w
 
 A textbook and a one-shot video teach once and walk away. They cannot follow a learner home.
 
-Memory, meanwhile, follows a **forgetting curve**, first measured by Hermann Ebbinghaus in 1885. We lose roughly half of new material within an hour and most of it within a day, unless we review. That is the default fate of everything you teach.
+Memory, meanwhile, follows a [forgetting curve](/blog/ai-learning-platform/03-how-humans-learn-a-plain-tour-of-memory), first measured by Hermann Ebbinghaus in 1885. We lose roughly half of new material within an hour and most of it within a day, unless we review. That is the default fate of everything you teach.
 
 Your tutor's superpower is that it can fight this. It can track each fact for each learner and resurface it at exactly the right moment, just before it fades. No static content can do that. So make it the heart of your product, and then actually deliver it.
 
@@ -90,7 +91,7 @@ Hand exact tasks to tools that cannot improvise: a calculator or code execution 
 
 ### The hallucination trap
 
-A model "hallucinates" when it states something fluent and false with total confidence. In a chat assistant that is annoying. In a tutor it is dangerous, because the learner trusts it and files it away as true.
+A model ["hallucinates"](/blog/ai-learning-platform/25-keeping-the-ai-accurate-and-pedagogically-sound) when it states something fluent and false with total confidence. In a chat assistant that is annoying. In a tutor it is dangerous, because the learner trusts it and files it away as true.
 
 The remedy is grounding, citations, and offloading exact work to tools. It is never a sterner prompt. You cannot scold a model into being reliable about facts it does not actually have.
 
@@ -120,10 +121,10 @@ You cannot build everything at once. Build the spine before the trimmings. Each 
 
 1. **Start with the goal.** Write a precise, observable objective: "the learner can solve a two-step equation," not "understands algebra." If you cannot test it, the tutor cannot know when the learner has arrived.
 2. **Build the curriculum as a map, not a list.** Order skills so prerequisites come first. This lets the tutor trace a failure to its root. If equations break because fractions are shaky, it teaches fractions, not more equations.
-3. **Layer the lessons.** Present one idea at a time to respect working memory, the tiny mental workspace that holds only about four chunks. For beginners, show a fully worked example, then a half-finished one, then let them go solo. The support fades as skill grows.
-4. **Check continuously.** Make the learner *retrieve* - recall, explain, produce. The effort of pulling information out is what builds memory, far more than reading it again. Quiz constantly and gently, and adapt on the spot.
-5. **Review weak concepts on a schedule.** This is the retention engine. Track each item per learner and resurface it at expanding intervals, ideally just before it would be forgotten. This is what makes long-term memory affordable.
-6. **Make it conversational last.** Wrap the whole thing in a Socratic style: ask before telling, give the smallest next hint, and have the learner teach the idea back so the tutor can spot gaps. The friendly chat is the wrapper, not the substance.
+3. **Layer the lessons.** Present one idea at a time to respect [working memory](/blog/ai-learning-platform/05-cognitive-load-theory-why-too-much-at-once-fails), the tiny mental workspace that holds only about four chunks. For beginners, show a fully worked example, then a half-finished one, then let them go solo. The support fades as skill grows.
+4. **Check continuously.** Make the learner *retrieve* - recall, explain, produce. The [effort of pulling information out](/blog/ai-learning-platform/06-retrieval-practice-why-testing-beats-re-reading) is what builds memory, far more than reading it again. Quiz constantly and gently, and adapt on the spot.
+5. **Review weak concepts on a schedule.** This is the retention engine. Track each item per learner and [resurface it at expanding intervals](/blog/ai-learning-platform/21-spaced-repetition-algorithms-in-practice-sm-2-fsrs), ideally just before it would be forgotten. This is what makes long-term memory affordable.
+6. **Make it conversational last.** Wrap the whole thing in a [Socratic style](/blog/ai-learning-platform/17-the-lesson-scoped-tutor-chatbot): ask before telling, give the smallest next hint, and have the learner teach the idea back so the tutor can spot gaps. The friendly chat is the wrapper, not the substance.
 
 ### A worked example: teaching budgeting
 

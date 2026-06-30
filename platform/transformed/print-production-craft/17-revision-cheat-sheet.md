@@ -23,6 +23,7 @@ order: 16
 icon: "\U0001F4D0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 faq:
   - q: "What's the difference between offset and digital printing?"
@@ -85,11 +86,11 @@ The crossover point lands around **500 to 1,500 copies**, depending on size, sto
 Two terms explain the whole curve:
 
 - **Make-ready** is the fixed setup cost of an offset job: mounting plates, getting ink and registration dialed in before a single good sheet comes off. It's the reason short offset runs feel weirdly expensive.
-- A **gang run** packs many different jobs onto one big sheet so they share a single make-ready. Split that fixed cost ten ways and short-run offset suddenly becomes cheap. This is exactly how online printers sell those impossibly low card prices.
+- A **gang run** packs many different jobs onto one big sheet so they share a single make-ready. Split that fixed cost ten ways and short-run offset suddenly becomes cheap. This is exactly how [online printers sell those impossibly low card prices](/blog/print-production-craft/11).
 
 ## Paper: weight tells you everything
 
-Paper weight is the fastest signal of quality and the easiest spec to get wrong.
+[Paper weight](/blog/print-production-craft/08) is the fastest signal of quality and the easiest spec to get wrong.
 
 | Use | GSM | Rough US equivalent |
 |---|---|---|
@@ -135,7 +136,7 @@ A 4/1 brochure (full color outside, black text inside) is a classic way to cut c
 
 ## Finishing and binding: where cheap becomes premium
 
-The print is only half the job. Finishing is what makes a piece feel expensive, and it's where the upsells live.
+The print is only half the job. [Finishing is what makes a piece feel expensive](/blog/print-production-craft/09), and it's where the upsells live.
 
 - **Coatings:** gloss, matte, or soft-touch lamination; spot UV for shiny accents; aqueous for a light protective layer.
 - **Folds:** half, tri-fold (the letter fold), Z-fold, gate, roll fold.
@@ -161,7 +162,7 @@ You don't need a finance degree to sanity-check a quote. A few formulas cover mo
 
 The markup-versus-margin confusion costs people real money. A 50% markup is not a 50% margin. If you mark up a 100 cost by 50% you charge 150, and your margin on that is only 33%.
 
-For shipping, the trap is **dimensional weight**. Carriers bill you on the *greater* of actual weight or the size the box takes up.
+For shipping, the trap is [**dimensional weight**](/blog/print-production-craft/12). Carriers bill you on the *greater* of actual weight or the size the box takes up.
 
 - **Dim weight (metric)** = (Length x Width x Height in cm) / 5000 = kg. The exact divisor varies by carrier.
 - A big box of light foam can cost more to ship than a small box of heavy paper.
@@ -183,7 +184,7 @@ Two shipping modes cover almost everything:
 
 **"Eco-friendly is a marketing label."** The biggest sustainability lever isn't the ink, it's **not overprinting**. Overproduction is the number one source of print waste. Right-sizing the run, then choosing FSC-certified or recycled stock and print-on-demand, does far more than a green logo. Back any eco claim with a real certification, not a slogan.
 
-**"The printer will fix my file."** Some catch errors at preflight; many print exactly what you sent. Assume your file is the final word.
+**"The printer will fix my file."** Some [catch errors at preflight](/blog/print-production-craft/07); many print exactly what you sent. Assume your file is the final word.
 
 ## How to use this
 
@@ -201,7 +202,7 @@ Run this sequence on your next job:
 
 If you remember one thing, make it the setup-cost rule: **whoever can spread a high fixed setup over the most copies wins on price.** That single idea explains gang runs, the offset-versus-digital crossover, why short runs feel pricey, and why 1,000 cards can undercut 250.
 
-The deeper rabbit hole is color itself. A "red" on your screen, in CMYK ink, and in a Pantone swatch are three different reds, and the gap between what a monitor can glow and what ink can mix is called the color gamut. Understanding why some colors simply cannot be printed is the next thing that separates the pros from everyone fighting their proofs.
+The deeper rabbit hole is color itself. A "red" on your screen, in CMYK ink, and in a Pantone swatch are three different reds, and the gap between what a monitor can glow and what ink can mix is called the [color gamut](/blog/computer-graphics-print/05). Understanding why some colors simply cannot be printed is the next thing that separates the pros from everyone fighting their proofs.
 
 ### Talk like a printer
 

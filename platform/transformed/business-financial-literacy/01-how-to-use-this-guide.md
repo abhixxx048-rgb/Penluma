@@ -51,6 +51,7 @@ faq:
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 You can build a product people love, grow your sales every month, and still wake up one morning to find your bank account empty. It happens to good founders constantly. The reason almost always comes down to one thing: they were watching the wrong number.
@@ -61,9 +62,9 @@ Most founders learn finance the expensive way - by getting blindsided. This guid
 
 Money is the scoreboard of your business, and right now you might be reading it wrong.
 
-By the time you finish learning this material, you'll be able to read your own financial statements, tell whether each sale actually makes money, price your product with confidence, know exactly how many months of cash you have left, and walk into an investor meeting able to explain your numbers without flinching.
+By the time you finish learning this material, you'll be able to [read your own financial statements](/blog/business-financial-literacy/03-the-three-financial-statements-the-whole-picture), tell whether each sale actually makes money, [price your product with confidence](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive), [know exactly how many months of cash you have left](/blog/business-financial-literacy/07-cash-flow-burn-rate-runway-don-t-run-out-of-money), and walk into an investor meeting able to explain your numbers without flinching.
 
-That last part matters more than it sounds. The founders who raise money and survive aren't the ones with the fanciest decks. They're the ones who understand their own numbers well enough to defend them.
+That last part matters more than it sounds. The [founders who raise money](/blog/business-financial-literacy/12-funding-dilution-the-cost-of-capital) and survive aren't the ones with the fanciest decks. They're the ones who understand their own numbers well enough to defend them.
 
 ## Money has three faces - learn to see all three
 
@@ -91,7 +92,7 @@ This is the one that kills companies. Cash answers the most urgent question of a
 
 Here's the trap. Imagine you land a huge $50,000 order - fantastic for revenue, fantastic for profit. But the customer pays in 90 days, and meanwhile you have to buy materials *now* and pay your team *now*. On paper you're thriving. In the bank, you're sinking. This gap between "profitable on paper" and "money in the account" is where most founders get ambushed.
 
-A business can have all three healthy. Or it can be growing revenue while losing profit. Or be profitable on paper yet weeks away from running out of cash. They are not the same thing, and confusing them is the most common way founders get blindsided.
+A business can have all three healthy. Or it can be growing revenue while losing profit. Or be [profitable on paper yet weeks away from running out of cash](/blog/business-financial-literacy/05-the-balance-sheet-cash-flow-statement-why-profit-cash). They are not the same thing, and confusing them is the most common way founders get blindsided.
 
 ## Common misconceptions
 
@@ -115,7 +116,7 @@ You don't. You need fluency, not mastery - enough to make decisions, spot a numb
 
 3. **Use your own numbers.** After each section, open your real figures - your bank balance, your invoices, last month's sales - and find the thing the section just described. Finance only becomes real when it's *your* money on the page.
 
-4. **Let the surprises teach you.** Reading about gross margin is forgettable. Calculating *your* gross margin and being shocked by it is not. The discomfort is the lesson.
+4. **Let the surprises teach you.** Reading about [gross margin](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale) is forgettable. Calculating *your* gross margin and being shocked by it is not. The discomfort is the lesson.
 
 5. **Aim for fluency, not perfection.** Your goal is to know when a number looks wrong, when to push back on advice, and when to genuinely celebrate.
 

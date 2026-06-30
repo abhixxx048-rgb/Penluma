@@ -48,6 +48,7 @@ faq:
       reuse a mental model they already own.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: product-sense-empathy
 topicTitle: Product Sense & Empathy
 category: Thinking & Decisions
@@ -185,10 +186,10 @@ You can turn all of this into a short checklist for anything you build.
 
 1. **Make interactive things look interactive.** A button needs fill, padding, shadow, and contrasting color - those are the signifiers of the "click" affordance. A link needs an underline or distinct color. Strip those, and you've hidden the very thing you want people to use.
 2. **Place each control near what it changes.** Use natural mapping. Group a toggle beside its effect, order steps the way the task actually flows, and you'll need far fewer labels.
-3. **Confirm every action, immediately and in plain words.** "Saved." "Added to cart." Never silence, never a raw error code. Feedback is how you close the gulf of evaluation.
+3. **Confirm every action, immediately and in plain words.** "Saved." "Added to cart." Never silence, never a raw error code. Feedback is how you [close the gulf of evaluation](/blog/product-sense-empathy/06-closing-the-gulfs-action-feedback-the-seven-stages).
 4. **Match the user's model of the goal.** A checkout should follow the obvious story: cart → review → address → pay → confirmation. Surprises - hidden costs revealed late, steps out of order, no "it worked" screen - break the model and spike anxiety.
 5. **Reuse conventions on purpose.** Remember **Jakob's Law** (from usability expert Jakob Nielsen): people spend most of their time on *other* apps, so they expect yours to behave the same. Logo upper-left, search up top, cart upper-right. Borrowing conventions means borrowing a mental model the user already owns - so they spend their effort on the task, not on decoding your screen.
-6. **Watch a real person use it.** The fastest way to find a missing signifier is to sit beside someone and stay silent. Every hesitation is a gulf you can now see.
+6. **[Watch a real person use it.](/blog/product-sense-empathy/13-doing-user-research-interviews-the-mom-test-observation)** The fastest way to find a missing signifier is to sit beside someone and stay silent. Every hesitation is a gulf you can now see.
 
 ## Conclusion
 
@@ -196,4 +197,4 @@ If you remember one thing, make it this: **"obvious" is something you design, no
 
 And there's a deeper layer worth chasing next. The most important model of all isn't the user's model of your buttons - it's their model of *their own goal*. Clayton Christensen's famous milkshake study found that a surprising share of milkshakes were bought early in the morning by solo commuters, "hired" to make a dull drive interesting and hold off hunger until mid-morning. The fix that worked wasn't a new flavor - it was making the shake thicker so it lasted the whole commute. (Treat the figures as an oft-told anecdote, but the lesson is solid.)
 
-Which raises a question worth sitting with: do you actually know what job your users are hiring your product to do? That's where great product sense begins.
+Which raises a question worth sitting with: do you actually know [what job your users are hiring your product to do](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress)? That's where [great product sense](/blog/product-sense-empathy/02-what-product-sense-really-is) begins.

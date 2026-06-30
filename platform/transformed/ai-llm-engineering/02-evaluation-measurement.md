@@ -33,6 +33,7 @@ faq:
     a: "pass@k means the agent succeeds at least once in k tries. pass^k means it succeeds on all k tries. For customer-facing reliability you want pass^k, since users need it to work every time, not just sometimes."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: ai-llm-engineering
 topicTitle: AI & LLM Engineering
 category: AI & LLMs
@@ -44,7 +45,7 @@ sources: []
 
 You change one sentence in your chatbot's instructions. Did it get better, or worse?
 
-With normal software, you run your tests and get a clear answer. With AI, the same input can produce a different output every time, and there's rarely one "correct" response. So how do you actually *know*? That single question is the reason **evals** exist, and it quietly separates the teams that ship great AI products from the ones stuck fixing the same bugs forever.
+With normal software, you run your tests and get a clear answer. With AI, [the same input can produce a different output every time](/blog/ai-llm-engineering/01-foundations-how-llms-work-why-these-skills-endure), and there's rarely one "correct" response. So how do you actually *know*? That single question is the reason **evals** exist, and it quietly separates the teams that ship great AI products from the ones stuck fixing the same bugs forever.
 
 ## Why this matters
 
@@ -155,7 +156,7 @@ The standard fix for position bias in pairwise comparison is to run both orderin
 
 ### Evaluating RAG systems
 
-A **RAG** system (Retrieval-Augmented Generation) fetches relevant documents, then writes an answer from them. Failure can hide in *retrieval* (it grabbed the wrong documents) or in *generation* (good documents, bad answer), so you must evaluate them separately. The widely-used RAGAS framework names the core metrics:
+A **[RAG](/blog/ai-llm-engineering/03-context-engineering-retrieval)** system (Retrieval-Augmented Generation) fetches relevant documents, then writes an answer from them. Failure can hide in *retrieval* (it grabbed the wrong documents) or in *generation* (good documents, bad answer), so you must evaluate them separately. The widely-used RAGAS framework names the core metrics:
 
 - **Faithfulness:** what fraction of the answer's claims are actually supported by the retrieved text.
 - **Answer relevancy:** does the answer actually address the question asked?
@@ -168,7 +169,7 @@ The central trap: **faithfulness is not truth.** If the retriever returns a wron
 
 ### Evaluating agents
 
-An **agent** plans, calls tools, and acts over several steps. Evaluate at three levels:
+An **[agent](/blog/ai-llm-engineering/04-agent-architecture-orchestration)** plans, calls tools, and acts over several steps. Evaluate at three levels:
 
 1. **End-to-end outcome:** did the task succeed?
 2. **Trajectory:** was the path of tool calls sound and efficient?
@@ -184,7 +185,7 @@ The key advice from Anthropic: **grade the end-state, not the exact path.** "Age
 - **"A 1-to-5 rating scale is more informative than pass/fail."** Usually the opposite. Fuzzy scales hide disagreement and are hard to act on.
 - **"An LLM judge is objective."** Only after you validate it against a human. Until then it's an untested model output wearing a number.
 - **"Green CI means production is healthy."** A frozen test set never sees silent model updates, shifting inputs, or new user behavior. You also need online monitoring.
-- **"My agent works."** Check which metric you mean. An agent that solves a task 6 times out of 10 has a pass@10 of about 99.99% but a pass^10 of about 0.6%. For "works every time," only the second number counts.
+- **"My agent works."** Check which metric you mean. [An agent that solves a task 6 times out of 10](/blog/agent-orchestration/agent-orchestration-06-reliability-eval-obs) has a pass@10 of about 99.99% but a pass^10 of about 0.6%. For "works every time," only the second number counts.
 
 ## How to use this
 

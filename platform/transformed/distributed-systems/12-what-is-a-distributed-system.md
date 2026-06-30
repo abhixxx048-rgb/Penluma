@@ -28,6 +28,7 @@ faq:
     a: Uncertainty. When you send a request and get no reply, you cannot tell whether the work was done, is just slow, or failed. Managing that not-knowing is the core challenge.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: distributed-systems
 topicTitle: Distributed Systems
 category: Engineering
@@ -43,7 +44,7 @@ That is a distributed system, and once you see it you will notice them everywher
 
 ## Why this matters
 
-Almost everything you build at scale eventually becomes a distributed system, whether you planned it or not. The moment you add a second server, a read replica, a cache, or a CDN, you have stepped into this world.
+Almost everything you build at scale eventually becomes a distributed system, whether you planned it or not. The moment you add a second server, a [read replica](/blog/aws-cloud-practitioner-mcq/11-amazon-rds-managed-relational-databases), a cache, or a CDN, you have stepped into this world.
 
 The catch is that distributed systems break in ways single-machine code never does. A request can vanish. A machine you have never heard of can take your app down. If you carry your single-computer instincts into this world, you will ship bugs that only appear in production, at 3am, under load.
 
@@ -67,7 +68,7 @@ And there is a famous, only-half-joking line from computer scientist **Leslie La
 
 ## What actually changes when you go from one machine to many
 
-You have spent your career mostly thinking about **a single computer**. That world is comfortable and predictable. Move to many machines and a few cozy assumptions quietly disappear. This shift *is* the reason distributed systems are hard.
+You have spent your career mostly thinking about **a single computer**. That world is comfortable and predictable. Move to many machines and a few cozy assumptions quietly disappear. This shift *is* the reason [distributed systems are hard](/blog/distributed-systems/13-why-distributed-systems-are-hard).
 
 | Topic | Single computer | Distributed system |
 |---|---|---|
@@ -179,7 +180,7 @@ Here is the killer: from the client's side, case 3 looks *identical* to case 2. 
 
 **"Fault and failure mean the same thing."** A fault is a broken part; a failure is the whole system letting the user down. Saying "we had a fault" is very different from "we had a failure." Good design keeps the first from becoming the second.
 
-**"Partition always means the same thing."** In storage it means a *shard*, a slice of data. In networking (you will meet this in the CAP theorem) it means a *network partition*, when the network splits so some nodes cannot reach others. Same word, completely different idea. Check the context.
+**"Partition always means the same thing."** In storage it means a *shard*, a slice of data. In networking (you will meet this in the [CAP theorem](/blog/distributed-systems/16-the-cap-theorem-and-pacelc)) it means a *network partition*, when the network splits so some nodes cannot reach others. Same word, completely different idea. Check the context.
 
 **"The network is fast and reliable, like a function call."** It is not. Messages get lost, delayed, duplicated, and reordered, and you often cannot tell a dead node from a slow one. Treating remote calls like local ones is the single most common beginner error, and the source of countless real outages.
 
@@ -193,10 +194,10 @@ When you next design or debug a system, run through these steps.
 2. **Design assuming the network and other nodes will fail.** For every remote call, ask two questions: "What if I never get a reply?" and "What if it runs twice?" Plan for both from day one.
 3. **Name the goal you are optimizing.** Scalability, availability, low latency, or strict correctness. They trade off against each other, so decide which one matters most before you pick a design.
 4. **Use precise vocabulary.** Say node, replica, shard, latency, throughput, fault, and failure deliberately. Sloppy words lead to sloppy designs; shared, exact language is half the battle.
-5. **Learn from battle-tested systems.** The patterns in Cassandra, DynamoDB, etcd, Kafka, and DNS already solve problems you will hit. When in doubt, study how a proven system handled it before rolling your own.
+5. **Learn from battle-tested systems.** The patterns in Cassandra, [DynamoDB](/blog/aws-cloud-practitioner-mcq/12-amazon-dynamodb-managed-nosql), etcd, Kafka, and DNS already solve problems you will hit. When in doubt, study how a proven system handled it before rolling your own.
 
 ## Conclusion
 
 If you remember one thing, remember this: a distributed system is many machines cooperating over an *unreliable* network to look like one, and the price you pay for that illusion is uncertainty. You often cannot tell whether a remote action actually happened.
 
-Every technique you will learn next is, at heart, a way of living with that uncertainty. Sit with a sharper question: if two machines have their own clocks and neither agrees on what "now" is, how do they ever agree on the *order* that things happened? That puzzle of time and ordering is where the field gets genuinely beautiful, and it is exactly where we go from here.
+Every technique you will learn next is, at heart, a way of living with that uncertainty. Sit with a sharper question: if two machines have their own clocks and neither agrees on what "now" is, how do they ever agree on the *order* that things happened? That puzzle of [time and ordering](/blog/distributed-systems/14-time-clocks-the-ordering-of-events) is where the field gets genuinely beautiful, and it is exactly where we go from here.

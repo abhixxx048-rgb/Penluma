@@ -28,6 +28,7 @@ faq:
     a: "If a consonant comes before the y, change y to -ies: query becomes queries, dependency becomes dependencies. If a vowel comes before the y, just add -s: key becomes keys."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: english
 topicTitle: English for Developers
 category: Communication
@@ -43,7 +44,7 @@ Tiny apostrophe slips like "API's are down" or "its failing in prod" are the mos
 
 ## Why this matters
 
-Your writing is part of your work. Commit messages, PR descriptions, and standup notes are read by teammates, reviewers, and sometimes hiring managers scrolling your public repos.
+Your writing is part of your work. [Commit messages, PR descriptions, and standup notes](/blog/english/10-professional-dev-writing) are read by teammates, reviewers, and sometimes hiring managers scrolling your public repos.
 
 A stray apostrophe doesn't break the build, but it quietly signals "rushed" or "careless" to careful readers. And unlike a typo in a chat message, a wrong **it's** in a code comment lives in the codebase for years.
 
@@ -65,7 +66,7 @@ And the famous one:
 
 You write fast. Commits, PRs, and Slack messages get typed on autopilot, so apostrophes get sprinkled where they feel natural. "API's are down" *feels* right because your brain hears the **s** sound and reaches for the apostrophe key.
 
-If English isn't your first language, two extra things make it harder. You may drop the plural `-s` entirely ("so much mistake" instead of "so many mistakes"), which hides the difference between one and many. And `its` versus `it's` sounds **identical** out loud, so you have no audio clue to lean on. It really is a coin flip until you learn the test.
+If English isn't your first language, two extra things make it harder. You may drop the plural `-s` entirely ("so much mistake" instead of "so many mistakes"), which hides [the difference between one and many](/blog/english/02-countable-uncountable-much-many). And `its` versus `it's` sounds **identical** out loud, so you have no audio clue to lean on. It really is a coin flip until you learn the test.
 
 ## Rule 1: Plain plurals just add -s
 
@@ -135,7 +136,7 @@ Try it:
 - "Its README is outdated" → "**It is** README is outdated"? ❌ → use `its`
 - "The service lost it's connection" → "The service lost **it is** connection"? ❌ → use `its`
 
-The same unzip test works for two other classic mix-ups:
+The same unzip test works for [two other classic mix-ups](/blog/english/09-commonly-confused-words):
 
 - `you're` = "you are"; `your` = belongs to you
 - `they're` = "they are"; `their` = belongs to them
@@ -202,4 +203,4 @@ If you remember one thing, make it the unzip test: **`it's` only exists when you
 
 Get these reflexes in place and your writing reads a notch more deliberate, which is exactly the impression you want attached to your name in a repo.
 
-Next stop on the same path: the comma. It's the punctuation mark that decides whether "Let's eat, team" sounds like lunch or a horror movie, and developers misplace it even more often than apostrophes.
+Next stop on the same path: [the comma](/blog/english/07-punctuation-and-capitalization). It's the punctuation mark that decides whether "Let's eat, team" sounds like lunch or a horror movie, and developers misplace it even more often than apostrophes.

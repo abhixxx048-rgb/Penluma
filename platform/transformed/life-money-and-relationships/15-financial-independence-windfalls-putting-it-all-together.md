@@ -59,6 +59,7 @@ faq:
       A two to three year cash buffer protects against it.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -107,7 +108,7 @@ You'll hear these terms, so here's the quick vocabulary:
 
 - **Lean FIRE** - a frugal, bare-bones life on a smaller corpus (your "corpus" is just your total invested pot).
 - **Fat FIRE** - a generous lifestyle that needs a much larger corpus.
-- **Coast FIRE** - you've invested *enough early* that compounding alone will reach your retirement number. You only need to earn enough to cover today's bills. A natural fit for a founder.
+- **Coast FIRE** - you've invested *enough early* that [compounding](/blog/life-money-and-relationships/06-compounding-the-time-value-of-money) alone will reach your retirement number. You only need to earn enough to cover today's bills. A natural fit for a founder.
 - **Barista FIRE** - part-time or passion income covers some of your spending, so your portfolio only has to cover the rest.
 
 The master lever behind all of them is your **savings rate** (the share of income you invest rather than spend), not your income. A high savings rate grows the corpus faster *and* lowers the corpus you need, because you live on less. A doctor who spends every rupee stays trapped; a modest earner who saves half can walk free.
@@ -121,7 +122,7 @@ Two defenses:
 1. Keep a **2 to 3 year cash or debt-fund buffer** so you never have to sell stocks low.
 2. Use **flexible withdrawals** - spend a little less in bad years.
 
-And because India has no strong social-security net and healthcare is largely self-funded, a solid **health insurance policy** is a permanent part of any FIRE plan, never an afterthought.
+And because India has no strong social-security net and healthcare is largely self-funded, a solid [**health insurance policy**](/blog/life-money-and-relationships/04-insurance-term-life-health-protection-before-investing) is a permanent part of any FIRE plan, never an afterthought.
 
 ## The windfall checklist: when the big money lands
 
@@ -133,7 +134,7 @@ This is the moment most people sabotage years of discipline. Euphoria sets in, "
 
 2. **Set aside the tax first.** A liquidity event is taxable. The gross number on your screen is not yours. Calculate the tax, ring-fence it, and only treat what's left as spendable.
 
-3. **Clear high-interest debt.** Wipe out credit cards (often 36 to 48% a year in India) and any pricey personal loans. Paying off 42% debt is a guaranteed 42% "return," and nothing in the market beats guaranteed.
+3. **Clear high-interest debt.** Wipe out credit cards (often 36 to 48% a year in India) and any [pricey personal loans](/blog/life-money-and-relationships/05-debt-good-debt-bad-debt-and-getting-free). Paying off 42% debt is a guaranteed 42% "return," and nothing in the market beats guaranteed.
 
 4. **Top up the emergency fund.** With lumpy founder income, refill to **9 to 12 months** of essential expenses.
 
@@ -141,7 +142,7 @@ This is the moment most people sabotage years of discipline. Euphoria sets in, "
 
 6. **Invest the rest gradually.** Don't dump a crore into equity in one click. Use an **STP (Systematic Transfer Plan)**, an automatic instruction that shifts a fixed amount from your liquid fund into your target funds at set intervals, to move the money over 6 to 12 months. This smooths out the risk of bad timing.
 
-7. **Diversify out of the one asset.** Your wealth was concentrated in a single risky bet, your own company. The whole point now is to spread it across asset classes so your future no longer rides on one ticker.
+7. **Diversify out of the one asset.** Your wealth was concentrated in a single risky bet, your own company. The whole point now is to spread it across [asset classes](/blog/life-money-and-relationships/08-asset-classes-the-building-blocks-of-investing) so your future no longer rides on one ticker.
 
 Think of a windfall like a sudden monsoon after a drought. Pour it all onto one field and you wash away the soil. Channel it slowly through proper canals and it nourishes everything for years.
 
@@ -200,7 +201,7 @@ Print this. Stick it on the wall. It is the whole guide at a glance.
 3. **Protect first:** term life (if dependents) and health insurance. Never mix insurance with investing.
 4. **No bad debt.** Pay credit cards in full; kill anything above roughly 12%.
 5. **Max the tax-saving accounts:** EPF/VPF, PPF, NPS, ELSS. Compute old regime versus new regime rather than guessing, since most of these deductions apply only under the old regime.
-6. **Invest by horizon,** mostly in low-cost index funds via SIP. Pick Direct plans.
+6. **Invest by horizon,** mostly in [low-cost index funds via SIP](/blog/life-money-and-relationships/09-mutual-funds-index-funds-sips-the-core-engine). Pick Direct plans.
 7. **Rebalance once a year** (use your birthday as a reminder), ideally with fresh contributions to keep it tax-light.
 8. **Behave.** Don't time the market, don't check daily, don't chase last year's winner.
 9. **Aim for 25 to 30x expenses** as your independence number. Treat windfalls with the park-pause-diversify checklist.
@@ -212,4 +213,4 @@ Here's the one line worth keeping: **financial independence isn't about earning 
 
 Everything else is plumbing. The waterfall tells you where each rupee goes, the windfall checklist protects you when luck strikes, and the will plus nominees protects the people you'd hate to leave in a mess.
 
-The hardest part of all this isn't the math. It's the behavior, the quiet discipline of not checking your portfolio every morning, not chasing the hot tip, not letting a good year go to your head. That's a different kind of skill, and it's worth understanding why our own brains so often work against our money. Master that, and the numbers take care of themselves.
+The hardest part of all this isn't the math. It's the behavior, the quiet discipline of not checking your portfolio every morning, not chasing the hot tip, not letting a good year go to your head. That's a different kind of skill, and it's worth understanding [why our own brains so often work against our money](/blog/life-money-and-relationships/14-behaviour-risk-the-psychology-of-money). Master that, and the numbers take care of themselves.

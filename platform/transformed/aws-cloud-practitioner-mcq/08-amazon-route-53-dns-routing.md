@@ -32,6 +32,7 @@ faq:
     a: No. Route 53 routes domain names to endpoints at the DNS level. Spreading individual requests across the servers behind that endpoint is the load balancer's job. The two complement each other.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: aws-cloud-practitioner-mcq
 topicTitle: AWS Cloud Practitioner
 category: Certifications
@@ -63,8 +64,8 @@ Route 53 is AWS's **managed DNS service**. Its core job is translating a human-f
 
 Here's the line to memorize: **Route 53 directs names to addresses. It does not cache content, and it does not balance requests across servers.**
 
-- Caching images, video, and files at edge locations near users? That's **CloudFront**, a content delivery network.
-- Spreading individual requests across EC2 instances? That's **Elastic Load Balancing (ELB)**.
+- Caching images, video, and files at edge locations near users? That's **CloudFront**, a [content delivery network](/blog/aws-cloud-practitioner-mcq/09-amazon-cloudfront-cdn-edge-delivery).
+- Spreading individual requests across [EC2 instances](/blog/aws-cloud-practitioner-mcq/06-amazon-ec2-instances-purchasing-options)? That's **Elastic Load Balancing (ELB)**.
 
 Think of Route 53 as a receptionist who tells you which floor and which office to go to. It does not carry your packages (CloudFront) and it does not divide work among the people inside the office (ELB). It just sends you to the right door - fast, and reliably.
 
@@ -83,7 +84,7 @@ This pair shows up constantly, so it's worth slowing down.
 Both an **alias record** and a **CNAME** map one name to another. The difference is where they can live and what they cost:
 
 - A **CNAME** cannot legally sit at the **zone apex** - the bare root domain, like `example.com` with nothing in front of it. DNS rules forbid it. CNAMEs also count as standard, billable DNS queries.
-- An **alias record** is a Route 53 invention that *can* sit at the apex and point straight at AWS resources - an Application Load Balancer, a CloudFront distribution, or an S3 website endpoint. And Route 53 charges **nothing** for alias lookups to AWS resources.
+- An **alias record** is a Route 53 invention that *can* sit at the apex and point straight at AWS resources - an Application Load Balancer, a CloudFront distribution, or an [S3 website endpoint](/blog/aws-cloud-practitioner-mcq/10-amazon-s3-object-storage). And Route 53 charges **nothing** for alias lookups to AWS resources.
 
 So when a question says "point the root domain `example.com` directly at a load balancer, but we can't use a CNAME at the top of the zone," the answer is almost always **alias record**. The apex limitation is the giveaway. People reach for CNAME out of habit - "it maps one name to another, right?" - and walk straight into the trap.
 
@@ -146,7 +147,7 @@ A Route 53 **health check** periodically tests whether an endpoint is responding
 
 What a health check is *not*:
 
-- It does **not** block malicious traffic - that's AWS WAF, security groups, or Shield.
+- It does **not** block malicious traffic - that's [AWS WAF, security groups, or Shield](/blog/aws-cloud-practitioner-mcq/05-security-identity-compliance-services).
 - It does **not** encrypt DNS.
 - It does **not** scale servers up or down - that's EC2 Auto Scaling.
 

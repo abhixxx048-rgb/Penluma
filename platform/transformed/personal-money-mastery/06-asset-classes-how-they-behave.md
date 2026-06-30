@@ -39,9 +39,10 @@ order: 5
 icon: "\U0001F4B0"
 transformed: true
 sources: []
+linked: true
 ---
 
-Your money is sitting in a savings account, "safe," earning a quiet 3-4%. Meanwhile inflation is eating 5-6% of its buying power every year. That money isn't resting. It's slowly shrinking.
+Your money is sitting in a savings account, "safe," earning a quiet 3-4%. Meanwhile [inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) is eating 5-6% of its buying power every year. That money isn't resting. It's slowly shrinking.
 
 Here's the part most people never learn: money is not one thing. You can hold it as cash, lend it out for interest, own a slice of a business, or own a physical thing like gold or property. Each of these is an **asset class**, and each behaves wildly differently when the economy booms, crashes, or inflates.
 
@@ -101,7 +102,7 @@ The catch: it reliably *loses* real value to inflation. Hold cash for safety and
 
 Debt means **you are the lender.** You give money to a government, bank, or company and they pay you interest. Fixed deposits, PPF, government bonds, and debt mutual funds all live here.
 
-Steady income, lower return, and one crucial quirk: **bond prices move opposite to interest rates.** When the central bank cuts rates, existing bonds paying the old higher rate become more valuable, so their prices rise. When rates climb, existing bonds lose value.
+Steady income, lower return, and one crucial quirk: **bond prices move opposite to [interest rates](/blog/economics-from-first-principles/09-loans-credit-debt-and-interest-rates).** When the central bank cuts rates, existing bonds paying the old higher rate become more valuable, so their prices rise. When rates climb, existing bonds lose value.
 
 ### 3. Gold
 
@@ -119,7 +120,7 @@ If you don't have a few crores to lock up, **REITs** (Real Estate Investment Tru
 
 Owning equity means owning a slice of a real business. It is the **long-run real-return leader**, historically around 10-12% nominal in India over long periods, but it crashes hard in recessions.
 
-Most people access it through index funds (tracking the Nifty 50) or equity mutual funds via SIPs (Systematic Investment Plans, a fixed amount invested every month).
+Most people access it through [index funds](/blog/personal-money-mastery/07-index-funds-passive-investing) (tracking the Nifty 50) or equity mutual funds via SIPs (Systematic Investment Plans, a fixed amount invested every month).
 
 > **Think of asset classes as vehicles.** Cash is walking: safe, slow, you'll never get far. Bonds are a city bus: reliable, modest pace. Equity is a motorbike: fast, but you can fall. Gold is the umbrella you carry for the storm. Real estate is a truck: powerful, but a pain to turn around. A good journey uses several.
 
@@ -214,13 +215,13 @@ You don't need a finance degree. You need a deliberate mix and a yearly habit.
 1. **Judge everything on real, after-tax return.** Before buying anything, run nominal − inflation − tax. If the answer is negative, you are paying to lose money.
 2. **Spread across asset classes, not just across tickers.** Aim to own several of the five: some equity for growth, some debt for stability, a little gold for storms, and enough cash for emergencies.
 3. **Match each asset to its time horizon.** Emergency fund in liquid or savings; goals that are years away in equity and PPF.
-4. **Pick your tax regime first, then your strategy.** Only old-regime taxpayers benefit from 80C and NPS. Decide the regime, then choose tax-saving vehicles to fit.
+4. **Pick your [tax regime](/blog/personal-money-mastery/03-tax-literacy-india-first) first, then your strategy.** Only old-regime taxpayers benefit from 80C and NPS. Decide the regime, then choose tax-saving vehicles to fit.
 5. **Mind the wrapper, not just the gain.** Hold equity for over a year to unlock the 12.5% rate and the ₹1.25 lakh exemption. Don't assume debt funds save tax anymore.
 6. **Rebalance once a year.** Sell whatever has grown past its target weight and buy whatever lagged, restoring your original mix. This mechanically forces you to sell high and buy low without predicting anything.
-7. **Kill high-interest debt before investing anything.** A revolving credit-card balance at 36-45% compounds *against* you faster than any investment compounds for you. Clearing it is a guaranteed, tax-free 40% return. Always pay the card in full.
+7. **Kill [high-interest debt](/blog/personal-money-mastery/02-emergency-fund-debt-the-true-cost-of-emis) before investing anything.** A revolving credit-card balance at 36-45% compounds *against* you faster than any investment compounds for you. Clearing it is a guaranteed, tax-free 40% return. Always pay the card in full.
 
 ## Conclusion
 
 If you remember one thing, make it this: **no single asset class wins in every season, which is exactly why you hold several.** The investor who survives a crash, an inflation spike, and a tax change isn't the one who picked the perfect asset. It's the one who owned a mix that never all fell at once.
 
-But owning the right mix raises the next question, the one that quietly makes or breaks a portfolio: *how much* of each should you actually hold, and when do you shift the dial as life changes? That's the art of asset allocation, and it's where the real game begins.
+But owning the right mix raises the next question, the one that quietly makes or breaks a portfolio: *how much* of each should you actually hold, and when do you shift the dial as life changes? That's the art of [asset allocation](/blog/personal-money-mastery/08-asset-allocation-rebalancing), and it's where the real game begins.

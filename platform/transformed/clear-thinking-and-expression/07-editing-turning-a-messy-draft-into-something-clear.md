@@ -36,6 +36,7 @@ faq:
     a: You imagine someone who knows nothing about your topic and ask whether they would understand your writing on the first read, without asking a question. If not, you add the missing piece.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/The_Elements_of_Style
 ---
@@ -59,7 +60,7 @@ There are really only two stages to good writing, and they should never happen a
 - **Drafting** is getting your raw thoughts onto the page as fast as you can. You are allowed to be messy, repetitive, and ugly. The only goal is to exist.
 - **Editing** is reshaping what already exists so a reader can follow it. No new thinking about *what* to say. Only fixing *how* it is said.
 
-Why keep them apart? Your **working memory** is the small mental "desk" where you hold whatever you are thinking about right now. It can only juggle a few things at once. When you try to invent an idea, word it perfectly, and check the grammar all in one go, the desk overflows and you stall.
+Why keep them apart? Your **[working memory](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits)** is the small mental "desk" where you hold whatever you are thinking about right now. It can only juggle a few things at once. When you try to invent an idea, word it perfectly, and check the grammar all in one go, the desk overflows and you stall.
 
 Think of a potter. Drafting is dumping all the clay onto the wheel. Editing is shaping the pot. You cannot shape clay you haven't put down yet, and you can't shape it while still hauling in more buckets. Two motions, two moments.
 
@@ -108,7 +109,7 @@ Run these passes **one at a time**. Do not try to catch everything in a single r
 3. **Replace abstract with concrete.** Swap vague nouns for things a reader can picture. "We saw improvements in performance" becomes "Pages loaded in 2 seconds instead of 6."
 4. **Fix flabby openings.** Hunt for "There is," "There are," and "It is" at the start of sentences and rewrite around the real subject.
 5. **Strong verbs, active voice.** Prefer "We shipped it" over "It was shipped by us." The doer comes first.
-6. **Read it aloud.** Your ear catches what your eye skips: run-ons, missing words, awkward rhythm. If you run out of breath, the sentence is too long.
+6. **Read it aloud.** Your ear catches what your eye skips: [run-ons](/blog/english/08-sentence-structure-run-ons), missing words, awkward rhythm. If you run out of breath, the sentence is too long.
 7. **The stranger test.** Imagine someone who knows nothing about your topic. Would they get it on the first read, without asking a question? If not, name the missing piece and add it.
 
 ## Watch it happen: a full before and after
@@ -150,4 +151,4 @@ You don't need a writing course. You need four small reps:
 
 If you remember one thing, remember this: editing is a series of single-purpose passes, not one heroic read-through. Draft messy, then cut words, split ideas, make it concrete, read aloud, and ask whether a stranger would get it.
 
-But notice what just happened in that checkout example. Forcing the sentence to be clear *revealed* an idea you didn't know you had. That is the quiet secret of editing: the fog on the page is usually fog in the mind. So the next time a sentence refuses to come out clean, ask yourself a sharper question. Is the writing unclear, or is the *thought* not finished yet? Learn to tell those two apart, and you stop being someone who edits words and become someone who thinks on paper.
+But notice what just happened in that checkout example. Forcing the sentence to be clear *revealed* an idea you didn't know you had. That is the quiet secret of editing: [the fog on the page is usually fog in the mind](/blog/clear-thinking-and-expression/04-clear-writing-is-clear-thinking). So the next time a sentence refuses to come out clean, ask yourself a sharper question. Is the writing unclear, or is the *thought* not finished yet? Learn to tell those two apart, and you stop being someone who edits words and become someone who [thinks on paper](/blog/clear-thinking-and-expression/03-think-on-paper-why-externalizing-beats-thinking-in-your-head).

@@ -37,6 +37,7 @@ order: 8
 icon: "\U0001F4D0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -88,7 +89,7 @@ That tiny wobble is the entire reason three design rules exist:
 | **Trim line** | The exact final size, where the blade is meant to cut. | the finished size |
 | **Safe zone** | Keep all important text and logos *inside* this line so the cut never clips them. | 3-5 mm inside trim |
 
-Picture a 3.5 x 2 inch business card. You actually build it on a canvas of about **3.625 x 2.125 inches**. That extra sixteenth of an inch all around is the bleed. The cut brings it down to 3.5 x 2, and your logo should sit at least 3 mm in from that edge.
+Picture a 3.5 x 2 inch business card. You actually build it on a canvas of about **3.625 x 2.125 inches**. That extra sixteenth of an inch all around is the [bleed](/blog/computer-graphics-print/15-finishing-document-geometry-bleed-trim-safe-area). The cut brings it down to 3.5 x 2, and your logo should sit at least 3 mm in from that edge.
 
 Get this wrong in one of two classic ways. Design artwork that stops exactly at the trim line with no bleed, and you get thin white slivers along the edges. Or put a phone number 1 mm from the edge, well inside the 1.5 mm tolerance, and half the batch comes back with the number clipped.
 
@@ -99,7 +100,7 @@ Get this wrong in one of two classic ways. Design artwork that stops exactly at 
 You cannot just fold thick or coated paper. Bend it cold and the coating and ink crack along the fold, leaving an ugly white line. The fix is to prepare a controlled hinge first.
 
 - **Scoring** presses a thin line partway into the paper. A raised rule forces the sheet into a channel, weakening it so it folds straight.
-- **Creasing** does not cut fibers. It compresses and displaces them, pushing the paper into a rounded "bead" that becomes the hinge. Creasing is gentler and almost always better for heavy or coated stock.
+- **Creasing** does not cut fibers. It compresses and displaces them, pushing the paper into a rounded "bead" that becomes the hinge. Creasing is gentler and almost always better for [heavy or coated stock](/blog/print-production-craft/08-substrates-materials-paper-gsm-coatings-specialty-stocks).
 
 Think of scoring as the perforated weak-line on a cardboard box flap. Creasing is more like wetting and rolling a stiff leather belt so it bends cleanly in one place instead of cracking.
 
@@ -115,7 +116,7 @@ Think of scoring as the perforated weak-line on a cardboard box flap. Creasing i
 
 (**gsm** means grams per square meter, a metric paper weight. Higher gsm means thicker, stiffer stock.)
 
-Toner deserves special caution. **Digital and toner prints crack far more easily** than offset ink, because toner sits in a brittle layer on top of the surface instead of soaking in. So for any toner job, crease no matter the weight.
+Toner deserves special caution. **Digital and toner prints crack far more easily** than [offset ink](/blog/print-production-craft/03-offset-lithography-the-workhorse-of-commercial-print), because toner sits in a brittle layer on top of the surface instead of soaking in. So for any toner job, crease no matter the weight.
 
 ### Grain direction, the silent fold-killer
 
@@ -243,7 +244,7 @@ Pages are punched with holes and a metal or plastic element threads through. The
 
 ### Case binding (hardcover)
 
-Signatures are sewn or glued into a **book block**, trimmed, then attached with endpapers to a rigid **case** (board covered in cloth, paper, or leatherette), usually foil-stamped. The most durable and premium option, with the widest cover-decoration choices. For hardcover books, photo books, and archival editions.
+[Signatures](/blog/computer-graphics-print/14-imposition-binding-arranging-pages-on-the-sheet) are sewn or glued into a **book block**, trimmed, then attached with endpapers to a rigid **case** (board covered in cloth, paper, or leatherette), usually foil-stamped. The most durable and premium option, with the widest cover-decoration choices. For hardcover books, photo books, and archival editions.
 
 ### The comparison at a glance
 
@@ -287,4 +288,4 @@ If you are setting up a file or specifying a job, run this checklist:
 
 Here is the one thing to carry away: in print, the press is not where jobs are won or lost. Finishing is. The cut tolerance, the crease, the panel widths, the page count, and the glue decide whether a beautiful file becomes a beautiful object or an expensive reprint.
 
-The deeper you go, the more finishing stops looking like craft and starts looking like a set of rules a machine could enforce: bleed and safe zones, named-layer masks, crease-versus-weight thresholds, binding-versus-page-count limits. Which raises a natural next question. If these rules are this precise, how much of prepress and imposition could a print platform validate automatically before a single sheet is ever cut? That is exactly where the craft meets the code.
+The deeper you go, the more finishing stops looking like craft and starts looking like a set of rules a machine could enforce: bleed and safe zones, named-layer masks, crease-versus-weight thresholds, binding-versus-page-count limits. Which raises a natural next question. If these rules are this precise, how much of [prepress](/blog/print-production-craft/07-color-files-prepress-cmyk-pantone-bleed-proofs-preflight) and imposition could a print platform validate automatically before a single sheet is ever cut? That is exactly where the craft meets the code.

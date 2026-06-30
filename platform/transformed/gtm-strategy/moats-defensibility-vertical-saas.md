@@ -23,6 +23,7 @@ order: 999
 icon: "\U0001F3AF"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 faq:
   - q: What is a moat in SaaS?
     a: A moat is a durable reason competitors can't easily steal your customers. It needs both a benefit (it makes you money) and a barrier (something rivals can't quickly copy). Most product features are benefits, not barriers.
@@ -44,19 +45,19 @@ A competitor just launched a product that looks exactly like yours. Same feature
 
 If the honest answer scares you, you don't have a moat. You have a head start. And head starts evaporate.
 
-Here's the uncomfortable truth most founders learn too late: almost everything you're proud of building can be copied. The pricing engine, the dashboard, the onboarding flow. The rare thing that actually protects a business is not a better feature. It's a reason leaving hurts.
+Here's the uncomfortable truth most founders learn too late: almost everything you're proud of building [can be copied](/blog/ten-disciplines/14-industry-forces-competition-business-models-and-value-creation). The pricing engine, the dashboard, the onboarding flow. The rare thing that actually protects a business is not a better feature. It's a reason leaving hurts.
 
 ## Why this matters
 
 In a fragmented, slow-growth software niche, you don't win by growing faster than everyone else. There are too many vendors and the land grab is already over. You win by **keeping the customers you get** while your rivals quietly leak theirs.
 
-That's especially brutal in low-price SMB software, where self-serve accounts churn at 3 to 5 percent *per month*. Do that math and a customer you fought hard to win is gone within two years. The only thing that rescues the lifetime-value equation is stickiness that compounds.
+That's especially brutal in low-price SMB software, where self-serve accounts churn at 3 to 5 percent *per month*. Do that math and a customer you fought hard to win is gone within two years. The only thing that rescues the [lifetime-value equation](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale) is stickiness that compounds.
 
 So a moat here isn't a nice-to-have you build "later, once we're big." It's the thing that decides whether the business is worth building at all.
 
 ## The one test every moat has to pass
 
-The cleanest way to think about defensibility comes from Hamilton Helmer's book *7 Powers*. It's the lens most investors and operators use, and its core idea fits on a sticky note.
+The cleanest way to think about [defensibility](/blog/ten-disciplines/13-what-strategy-really-is-advantage-moats-and-positioning) comes from Hamilton Helmer's book *7 Powers*. It's the lens most investors and operators use, and its core idea fits on a sticky note.
 
 A real moat needs **two** things at once:
 
@@ -65,7 +66,7 @@ A real moat needs **two** things at once:
 
 Helmer's slogan says it all: *a benefit is common; a barrier is rare.*
 
-A great pricing engine is a benefit. A rival can clone it in a quarter. But a pricing engine your customer spent 40 hours configuring with their own contract logic, their own discount tiers, their own product rules? That configuration is a **barrier**. Ripping it out and rebuilding it somewhere else is a nightmare they'll avoid for years.
+A great [pricing engine](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive) is a benefit. A rival can clone it in a quarter. But a pricing engine your customer spent 40 hours configuring with their own contract logic, their own discount tiers, their own product rules? That configuration is a **barrier**. Ripping it out and rebuilding it somewhere else is a nightmare they'll avoid for years.
 
 Same software. One is a feature. The other is a moat. The difference is entirely about who would have to redo the work.
 

@@ -36,6 +36,7 @@ faq:
     a: Build a one-page site with a real price and an "Early Access" button, drive traffic from WhatsApp and Telegram communities, and collect small deposits via a Razorpay Payment Link or UPI. You can earn under 20 lakh in services with no GST registration friction.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -68,7 +69,7 @@ Here's the contrast, side by side:
 
 **The right way (demand-first):** A problem people hate → design a fix for it → test demand cheaply → build only what's wanted.
 
-The investor Naval Ravikant puts it sharply: *"You get rich by giving society what it wants but does not yet know how to get."* Money is simply the market's signal that you solved something it genuinely valued. Wealth comes from solving a real problem at scale, not from how clever your code is.
+The investor Naval Ravikant puts it sharply: *"You get rich by giving society what it wants but does not yet know how to get."* Money is simply the market's signal that you solved something it genuinely valued. Wealth comes from [solving a real problem at scale](/blog/how-to-make-money/02-value-creation-vs-value-capture), not from how clever your code is.
 
 ### The PFE filter: Painful, Frequent, Expensive
 
@@ -98,7 +99,7 @@ Vitamins *can* become huge - entertainment and social media are vitamins - but t
 
 Here's the trap. When you ask people about your idea, they lie. Not maliciously, but out of politeness. They want you to feel good.
 
-Rob Fitzpatrick's book *The Mom Test* is named for exactly this problem: design your questions so that *even your own mother*, who loves you and wants you to succeed, couldn't accidentally mislead you. Three rules make it work.
+Rob Fitzpatrick's book [*The Mom Test*](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself) is named for exactly this problem: design your questions so that *even your own mother*, who loves you and wants you to succeed, couldn't accidentally mislead you. Three rules make it work.
 
 1. **Talk about their life, not your idea.** The moment you pitch, you contaminate the answer with politeness. Ask how they handle the problem *today*.
 2. **Ask about specific events in the past, not hypotheticals about the future.** "Walk me through the last time this happened" beats "Would you use X?" People are terrible at predicting their own behavior but reliable at reporting what they actually did.
@@ -115,7 +116,7 @@ Here's how to rewrite the questions you're tempted to ask:
 | "How much would you pay for this?" | "How much is this costing you today, and how often?" |
 | "Would you use it if it were free?" | "What have you already tried to fix it?" |
 
-The most common mistake here is pitching in the first 30 seconds of a "customer interview." The instant you say "so I'm building...", the other person switches into supportive-friend mode, and every word after that is worthless. Stay curious about their world. Mention your idea last, or not at all.
+The most common mistake here is pitching in the first 30 seconds of a "[customer interview](/blog/sales-customer-development/03-customer-development-get-out-of-the-building)." The instant you say "so I'm building...", the other person switches into supportive-friend mode, and every word after that is worthless. Stay curious about their world. Mention your idea last, or not at all.
 
 ## Real demand vs. polite interest
 
@@ -133,7 +134,7 @@ The progression looks like this, from weakest to strongest:
 
 Each step costs the person more, which is exactly why each step means more.
 
-There's a second test too: **advancement**. A genuinely good meeting moves you down the funnel - chat to demo to trial to deposit. Watch out for **zombie leads**: people who keep meeting you, keep saying nice things, and never advance. No concrete next step, like a calendar invite or a card on file, means no real demand.
+There's a second test too: **advancement**. A genuinely good meeting [moves you down the funnel](/blog/sales-customer-development/14-from-conversation-to-commitment-advancing-and-closing) - chat to demo to trial to deposit. Watch out for **zombie leads**: people who keep meeting you, keep saying nice things, and never advance. No concrete next step, like a calendar invite or a card on file, means no real demand.
 
 So treat "this is very interesting!" with suspicion. If it isn't followed by a question, a next meeting, or a wallet, it's noise. Customer money validates a painkiller. "That's cool" validates nothing.
 
@@ -193,4 +194,4 @@ Here's a concrete sequence you can run this month, with no product built:
 
 If you remember one thing, make it this: **your idea is a hypothesis, and demand is the test.** Don't fall in love with the solution. Fall in love with a painful, frequent, expensive problem, then let real commitment - time, reputation, and especially money - tell you whether to build.
 
-Validating demand is the cheapest insurance in business. But proving people want something is only half the journey. The other half is convincing them to choose *you* over every alternative, including the alternative of doing nothing. That's the art of positioning and pricing - and it's where a validated idea quietly turns into a real income.
+Validating demand is the cheapest insurance in business. But proving people want something is only half the journey. The other half is convincing them to choose *you* over every alternative, including the alternative of doing nothing. That's the art of positioning and [pricing](/blog/how-to-make-money/14-pricing-value-capture) - and it's where a validated idea quietly turns into a real income.

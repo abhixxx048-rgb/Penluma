@@ -30,6 +30,7 @@ faq:
     a: "If your total tax for the year will exceed ₹10,000, you must pay advance tax in installments through the year. Presumptive-scheme filers get a break and can pay it all by 15 March."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: personal-money-mastery
 topicTitle: Personal Money Mastery
 category: Money & Business
@@ -45,7 +46,7 @@ Here's the reassuring part: you don't need to become a chartered accountant to s
 
 ## Why this matters
 
-Most people treat tax as a mystery that happens to them in March. They invest in random "tax-saving" products on a colleague's tip, tick the wrong regime, and either overpay by lakhs or panic when a notice arrives.
+Most people treat tax as a mystery that happens to them in March. They [invest in random "tax-saving" products on a colleague's tip](/blog/personal-money-mastery/18-behavioral-finance), tick the wrong regime, and either overpay by lakhs or panic when a notice arrives.
 
 A little literacy changes everything. The difference between picking the right regime and the wrong one can easily be **over ₹1 lakh a year** on a ₹15 lakh salary. The difference between knowing the advance-tax dates and missing them is interest penalties you never needed to pay.
 
@@ -113,7 +114,7 @@ Earn ₹12 lakh and pay nothing. Earn ₹12.1 lakh and... suddenly owe roughly �
 
 If you choose the old regime, these deductions are your levers. They're **old-regime only** - the new regime disallows almost all of them. Each one reduces your *taxable income*.
 
-- **Section 80C - ₹1,50,000 cap** (shared across many options): EPF, **PPF** (15-year lock, around 7.1%, fully tax-free), **ELSS** mutual funds (the only *equity* option here, shortest lock at 3 years), 5-year tax-saver FD, NSC, Sukanya Samriddhi, life-insurance premiums, home-loan *principal*, and children's tuition fees.
+- **Section 80C - ₹1,50,000 cap** (shared across many options): EPF, **PPF** (15-year lock, around 7.1%, fully tax-free), [**ELSS** mutual funds](/blog/personal-money-mastery/07-index-funds-passive-investing) (the only *equity* option here, shortest lock at 3 years), 5-year tax-saver FD, NSC, Sukanya Samriddhi, life-insurance premiums, home-loan *principal*, and children's tuition fees.
 - **Section 80CCD(1B) - an extra ₹50,000 for NPS**, *over and above* the ₹1.5L. So your self-funded deductions max out around ₹2L.
 - **Section 80D - health insurance:** ₹25,000 for self/family; ₹50,000 if the insured is a senior citizen (60+). Insuring senior parents on top can push this to ₹75,000. Includes ₹5,000 for preventive check-ups.
 - **Home-loan interest (Section 24b):** up to ₹2L on a self-occupied home - separate from the ₹1.5L principal.
@@ -161,7 +162,7 @@ First, one term: **TDS (Tax Deducted at Source)**. The payer withholds a slice o
 - **Salary:** your employer deducts TDS monthly; it's mostly settled by year-end.
 - **Professionals & freelancers (Section 44ADA - presumptive):** if gross receipts are ≤ **₹50L** (₹75L if cash receipts are under 5%), you can declare **50% of receipts as profit**, taxed at slab - no books, no audit. You can't then claim further expenses, but 80C/80D-type deductions still apply. File **ITR-4**.
 - **Small business (Section 44AD):** turnover up to ₹2cr (₹3cr if cash is under 5%); deemed profit 8% (6% on digital receipts).
-- **Founders:** salary from your own company is normal TDS. Dividends are taxed at your slab (10% TDS over ₹5,000). ESOPs are taxed first as a perquisite, then as capital gains when you sell.
+- **Founders:** salary from your own company is normal TDS. Dividends are taxed at your slab (10% TDS over ₹5,000). [ESOPs](/blog/personal-money-mastery/11-equity-ownership-esops-vesting-dilution) are taxed first as a perquisite, then as capital gains when you sell.
 
 ### Pay advance tax on time
 
@@ -171,7 +172,7 @@ Presumptive filers (44ADA/44AD) get a break - pay it all in one shot by 15 March
 
 ## Capital gains: what Budget 2024 changed
 
-A **capital gain** is the profit when you sell an asset - shares, mutual funds, gold, property - for more than you paid. The rules shifted sharply from **23 July 2024**.
+A **capital gain** is the profit when you sell an asset - [shares, mutual funds, gold, property](/blog/personal-money-mastery/06-asset-classes-how-they-behave) - for more than you paid. The rules shifted sharply from **23 July 2024**.
 
 | Asset | Short-term (STCG) | Long-term (LTCG) |
 |---|---|---|
@@ -216,4 +217,4 @@ If you remember one thing, make it this: **tax is charged on your taxable income
 
 Get the regime choice right, claim what you're genuinely entitled to, and pay your advance tax on time. That alone puts you ahead of most earners.
 
-And here's the thread worth pulling next: saving tax is only half the game. The other half is what those rupees *do* once you keep them - because an ELSS fund, a PPF account, and a fixed deposit can save you the same tax today and leave you with wildly different wealth in fifteen years. That gap is where real money is made.
+And here's the thread worth pulling next: saving tax is only half the game. The other half is what those rupees *do* once you keep them - because an ELSS fund, a PPF account, and a fixed deposit can save you the same tax today and leave you with [wildly different wealth in fifteen years](/blog/personal-money-mastery/05-compounding-the-time-value-of-money). That gap is where real money is made.

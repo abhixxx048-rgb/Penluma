@@ -36,6 +36,7 @@ order: 1
 icon: "\U0001FA99"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -79,7 +80,7 @@ The engineer created *far* more value and captured *far* less. That feels unfair
 
 **Capture flows to whoever sits closest to the measurable revenue event and is hardest to replace.**
 
-That single sentence explains more pay gaps than any debate about talent ever will.
+That single sentence explains more [pay gaps](/blog/how-to-make-money/05-why-some-work-pays-10-more) than any debate about talent ever will.
 
 ## Why brilliant people stay poor
 
@@ -110,11 +111,11 @@ You can grow the sweetest fruit in the state and still earn little if someone el
 
 So how do you turn created value into captured value? You stack three things.
 
-1. **Specific knowledge** - skill that can't be taught in a classroom, built from your own obsessions and experience. Because it can't be trained, it can't be cheaply replaced. So *you* get paid, not a substitute.
+1. **[Specific knowledge](/blog/how-to-make-money/09-specific-knowledge-your-personal-moat)** - skill that can't be taught in a classroom, built from your own obsessions and experience. Because it can't be trained, it can't be cheaply replaced. So *you* get paid, not a substitute.
 2. **Accountability** - putting your name on the outcome. Taking real risk in public earns the credibility that lets you negotiate a bigger slice.
-3. **Leverage** - a force-multiplier on your effort. The old kinds are capital (money) and labour (people). The modern, permissionless kind is **zero-marginal-cost products**: code and media that work while you sleep.
+3. **[Leverage](/blog/how-to-make-money/04-leverage-the-real-secret)** - a force-multiplier on your effort. The old kinds are capital (money) and labour (people). The modern, permissionless kind is **zero-marginal-cost products**: code and media that work while you sleep.
 
-Naval's punchline ties it together: *"You're not going to get rich renting out your time… you must own equity-a piece of a business."* Selling hours is capped and replaceable. Owning a productized asset is uncapped capture on value you already created.
+Naval's punchline ties it together: *"You're not going to get rich renting out your time… you must [own equity](/blog/how-to-make-money/17-equity-ownership-the-windfall-path)-a piece of a business."* Selling hours is capped and replaceable. Owning a productized asset is uncapped capture on value you already created.
 
 ### The four ways to get paid
 
@@ -142,10 +143,10 @@ Capture without real creation is a trap. Middlemen with no genuine moat get cut 
 
 Here's how to actually close the gap between what you create and what you keep.
 
-1. **Own an asset, not just hours.** Turn your work into a thing that earns repeatedly-a SaaS product, a course, an audience, a stake in the company. Ask: what would still pay me next month if I stopped working today?
+1. **[Own an asset, not just hours](/blog/how-to-make-money/10-products-vs-time-escaping-the-trap).** Turn your work into a thing that earns repeatedly-a SaaS product, a course, an audience, a stake in the company. Ask: what would still pay me next month if I stopped working today?
 2. **Move toward the revenue event.** Position yourself where your contribution is *attributable*. The technical founder who also sells, or the writer who owns the audience, captures far more than the same person abstracted away from the money.
 3. **Build a moat for your share, not a cage for the customer.** A *moat* is a durable reason competitors can't easily steal your business. The honest ones-real brand, network effects, switching costs from genuine delivered value, a true cost advantage, hard-won specific knowledge-all make the customer *better off* while protecting your pricing power.
-4. **Price to value, then share the surplus.** Capture a fair slice and leave the customer clearly ahead. That relationship repeats for years. Grab 100% of the surplus and you burn it. Win-win capture compounds; zero-sum capture doesn't.
+4. **[Price to value](/blog/how-to-make-money/14-pricing-value-capture), then share the surplus.** Capture a fair slice and leave the customer clearly ahead. That relationship repeats for years. Grab 100% of the surplus and you burn it. Win-win capture compounds; zero-sum capture doesn't.
 5. **Run the honesty test.** Ask: "If my customer fully understood what I charge and why, would they still feel they won?" If yes, your capture is durable. Pricing power from being *better or scarcer* is fair. Pricing power from *deception or lock-in* is extraction-and extraction is brittle.
 
 ## The part nobody warns you about: structure

@@ -50,6 +50,7 @@ order: 4
 icon: "\U0001F331"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -65,7 +66,7 @@ Most people don't get into trouble because they borrowed. They get into trouble 
 
 The difference is enormous. The same person paying 8 percent on a home loan and 42 percent on a credit-card balance is doing two completely opposite things with money. One slowly builds wealth. The other hands it to the bank, month after month, with nothing to show for it.
 
-Get this right and debt becomes a tool you control. Get it wrong and it becomes a leak that drains every rupee or dollar you try to save. Most of personal finance comes down to which side of that line you stand on.
+Get this right and debt becomes a tool you control. Get it wrong and it becomes a leak that drains every rupee or dollar you try to save. Most of [personal finance](/blog/life-money-and-relationships/01-money-mindset-the-goal-of-personal-finance) comes down to which side of that line you stand on.
 
 ## How interest actually works
 
@@ -141,7 +142,7 @@ You are not managing it. You're paying mostly interest while the actual balance 
 
 **A mini case study.** Say you carry ₹1,00,000 on a card at 3.5% a month (about 42% a year) and faithfully pay the 5% minimum every month. Because almost every payment is interest, the balance shrinks at an agonizing crawl. It can take *years* to clear, and you can end up paying more in interest than the original thing cost. The minimum payment isn't designed to get you out of debt. It's designed to keep you in it.
 
-**An analogy.** Carrying a card balance is like filling a bucket that has a hole in the bottom. No business and no stock market reliably returns 42% a year, so a card balance is a *guaranteed-loss investment*. People with uneven income are especially exposed, because "I'll pay it next month" quietly hardens into a permanent 42% balance.
+**An analogy.** Carrying a card balance is like filling a bucket that has a hole in the bottom. No business and no [stock market](/blog/life-money-and-relationships/10-stocks-the-equity-market-direct-investing-basics) reliably returns 42% a year, so a card balance is a *guaranteed-loss investment*. People with uneven income are especially exposed, because "I'll pay it next month" quietly hardens into a permanent 42% balance.
 
 ### How to use a credit card the right way
 
@@ -193,7 +194,7 @@ Both methods start the same way: **pay the minimum on every debt**, then throw *
  Best math                       Best for sticking with it
 ```
 
-Here's the honest tension. The math says **avalanche**: kill the highest rate first and you pay the least interest overall. But human behavior says **snowball**: research has found that people who clear a small debt first feel a jolt of progress, and they're more likely to actually finish and become debt-free.
+Here's the honest tension. The math says **avalanche**: kill the highest rate first and you pay the least interest overall. But [human behavior](/blog/life-money-and-relationships/14-behaviour-risk-the-psychology-of-money) says **snowball**: research has found that people who clear a small debt first feel a jolt of progress, and they're more likely to actually finish and become debt-free.
 
 **The best method is the one you'll complete.** A debt plan you abandon saves you nothing.
 
@@ -230,6 +231,6 @@ A few moves that help today: put every bill on autopay. To lower your utilizatio
 
 If you remember one thing, make it this: **interest is compounding in reverse.** When you save, it quietly builds wealth for you. When you carry bad debt, it just as quietly builds wealth for the lender, out of your pocket, every single month.
 
-So kill the expensive debt first. A guaranteed 42% you stop paying beats almost any investment you could chase. Clear the bad debt, protect the good debt, guard your score, and the math starts working for you instead of against you.
+So kill the expensive debt first. A guaranteed 42% you stop paying beats almost [any investment](/blog/life-money-and-relationships/08-asset-classes-the-building-blocks-of-investing) you could chase. Clear the bad debt, protect the good debt, guard your score, and the math starts working for you instead of against you.
 
-Which raises the obvious next question: once you're free and the leak is sealed, where should that freed-up money actually go? That's where compounding stops being the villain and becomes the most powerful force you'll ever put to work.
+Which raises the obvious next question: once you're free and the leak is sealed, where should that freed-up money actually go? That's where [compounding](/blog/life-money-and-relationships/06-compounding-the-time-value-of-money) stops being the villain and becomes the most powerful force you'll ever put to work.

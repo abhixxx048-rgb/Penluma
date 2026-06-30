@@ -36,6 +36,7 @@ order: 999
 icon: "\U0001F9EA"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -51,7 +52,7 @@ A crash is honest. It stops you, you see red, you try again. You know where you 
 
 A **silent failure** is something else entirely. The screen says success, you believe it, and you walk away. The gap between what happened and what you were told doesn't close, it grows, until a customer calls weeks later asking why their order never shipped or why they were charged twice.
 
-For a non-technical owner, this is the worst possible bug. They can't read the code. They can't open the console. All they have is the screen, and the screen lied. So they file a support ticket they can't even describe correctly, because from where they sat, everything worked.
+For a [non-technical owner](/blog/product-sense-empathy/03-user-empathy-seeing-through-the-user-s-eyes), this is the worst possible bug. They can't read the code. They can't open the console. All they have is the screen, and the screen lied. So they file a support ticket they can't even describe correctly, because from where they sat, everything worked.
 
 When the same software handles **money, inventory, and orders**, a lying screen isn't a glitch. It's a slow leak in the one thing software is supposed to provide: trust that what you see is what happened.
 
@@ -79,7 +80,7 @@ Imagine a grocery store where the shelf price and the register price are compute
 
 Notification settings flipped instantly in the UI, then sent a save request with **no error handling**. If the save failed, the toggle stayed flipped on screen anyway. The user thinks email alerts are on. They are off. They find out when they miss something important.
 
-This is **optimistic UI** gone wrong, showing success before confirming it, with no plan for failure. Optimism is fine. Optimism with no rollback is a lie waiting to happen.
+This is **[optimistic UI](/blog/product-sense-empathy/06-closing-the-gulfs-action-feedback-the-seven-stages)** gone wrong, showing success before confirming it, with no plan for failure. Optimism is fine. Optimism with no rollback is a lie waiting to happen.
 
 ## The seven patterns behind it
 
@@ -99,17 +100,17 @@ The fix was about six lines. The cheapest high-impact win in the whole codebase.
 
 Stock quantity lived in two places. The number the owner edited was not the number checkout actually honored. So an owner restocks to 50 units, the storefront still reads the old number, and the discrepancy is invisible until orders go wrong.
 
-The rule: **one fact, one home.** Pick the single source, point every reader at it, remove the duplicate editor, and add a test that asserts the two screens agree.
+The rule: **[one fact, one home](/blog/system-design/05-data-modeling-sql-nosql).** Pick the single source, point every reader at it, remove the duplicate editor, and add a test that asserts the two screens agree.
 
 ### 4. Missing loading, empty, and error states
 
 This one quietly powers many of the others. When inventory history failed to load, the screen said **"No changes recorded yet"**, which reads like your log was wiped. When the notification bell errored, it cheerfully showed **"all caught up."**
 
-An error rendered as "all clear" is a lie by omission. Every data screen needs **three distinct branches**: a loading skeleton, a genuinely empty state, and a plain-language error with a Retry button. A failure must never look like emptiness.
+An error rendered as "all clear" is a lie by omission. Every data screen needs **three distinct branches**: a loading skeleton, a [genuinely empty state](/blog/product-sense-empathy/10-evaluating-usability-nielsen-rsquo-s-10-heuristics), and a plain-language error with a Retry button. A failure must never look like emptiness.
 
 ### 5. Raw technical output and unlabeled danger
 
-Owners were shown a raw database ID as a press-sheet label, unitless numbers like `2.04` with no currency symbol, and a "Void Order" permission rendered as a plain toggle sitting beside harmless ones, no warning that one of these can erase revenue.
+Owners were shown a raw database ID as a press-sheet label, unitless numbers like `2.04` with no currency symbol, and a "Void Order" [permission](/blog/security-privacy-engineering/04-authentication-authorization) rendered as a plain toggle sitting beside harmless ones, no warning that one of these can erase revenue.
 
 The fix is translation: map every code to a plain label, format money with the store's actual currency, add inline help to jargon, and flag dangerous controls with a sentence describing the consequence.
 

@@ -39,19 +39,20 @@ order: 8
 icon: "\U0001F4DD"
 transformed: true
 sources: []
+linked: true
 ---
 
 You write code in small, focused functions. One job each. Then you open Slack and type this: "can u do reaseach on grammer for me and teach me i already know but as of now i am making so much mistake."
 
-That is three or four sentences crammed into one breathless line, with no full stops, no capitals, and a couple of errors hitching a ride. Your reviewer has to read it twice. The fix is the same instinct you already use in code: one idea, then stop.
+That is three or four sentences crammed into one breathless line, with no full stops, [no capitals](/blog/english/07-punctuation-and-capitalization), and a couple of errors hitching a ride. Your reviewer has to read it twice. The fix is the same instinct you already use in code: one idea, then stop.
 
 ## Why this matters
 
-Your writing is read more than your code is. Commit messages, PR descriptions, standups, bug reports, code comments - these are the interface other people use to understand your work.
+Your writing is read more than your code is. Commit messages, [PR descriptions](/blog/english/10-professional-dev-writing), standups, bug reports, code comments - these are the interface other people use to understand your work.
 
 And here is the uncomfortable part: **nobody reads carefully.** Reviewers scan. A wall of run-on text gets skimmed, and skimmed text loses details. When the detail that got missed was "this only happens in production," that is a bug shipped because of punctuation.
 
-Clear sentences are not about sounding smart. They are about being understood on the first pass, so you stop re-explaining yourself in the thread below.
+[Clear sentences](/blog/clear-thinking-and-expression/04-clear-writing-is-clear-thinking) are not about sounding smart. They are about being understood on the first pass, so you stop re-explaining yourself in the thread below.
 
 ## The whole rule in 30 seconds
 
@@ -165,4 +166,4 @@ Fix these before reading the answers.
 
 If you remember one thing: **when you can split a line into two sentences that each stand alone, you must put a full stop, a semicolon, or a "comma + and/but/so" between them.** That single habit clears up most of what makes writing hard to read.
 
-Punctuation is where structure lives. But the other half of being understood is *word choice* - the small countable-versus-uncountable slips like "so much mistake" instead of "so many mistakes" that quietly mark writing as non-native. That is the next thing worth getting right, and it is easier than it looks.
+Punctuation is where structure lives. But the other half of being understood is *word choice* - the small [countable-versus-uncountable slips](/blog/english/02-countable-uncountable-much-many) like "so much mistake" instead of "so many mistakes" that quietly mark writing as non-native. That is the next thing worth getting right, and it is easier than it looks.

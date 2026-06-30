@@ -28,6 +28,7 @@ faq:
     a: AWS handles OS and database-engine patching, automated backups, and the underlying hardware. You still own schema design, query tuning, user access, and protecting your data.
   - q: Can you restore an RDS database to a specific point in time?
     a: Yes. Automated backups support point-in-time recovery, letting you roll the database back to any minute within the retention window, which is perfect for recovering from accidental corruption.
+linked: true
 topic: aws-cloud-practitioner-mcq
 topicTitle: AWS Cloud Practitioner
 category: Certifications
@@ -67,7 +68,7 @@ You still handle:
 - **Tuning slow queries**
 - **Database users, access permissions, and protecting your data and credentials**
 
-That last bullet is the **shared responsibility model** in action: AWS secures the cloud (hardware, facilities, the engine), and you secure what's *in* the cloud (your data and who can touch it). Even with a fully managed service, access control never becomes AWS's job.
+That last bullet is the **[shared responsibility model](/blog/aws-cloud-practitioner-mcq/03-the-shared-responsibility-model)** in action: AWS secures the cloud (hardware, facilities, the engine), and you secure what's *in* the cloud (your data and who can touch it). Even with a fully managed service, access control never becomes AWS's job.
 
 ## Multi-AZ: the feature that keeps you online
 
@@ -111,7 +112,7 @@ And note: failing over with Multi-AZ or promoting a Read Replica won't save you 
 
 ## Encryption at rest, in one breath
 
-RDS supports **encryption at rest** using **AWS KMS** keys. When a database is encrypted, that protection automatically extends to its underlying storage, automated backups, snapshots, and Read Replicas.
+RDS supports **encryption at rest** using **[AWS KMS](/blog/aws-cloud-practitioner-mcq/05-security-identity-compliance-services)** keys. When a database is encrypted, that protection automatically extends to its underlying storage, automated backups, snapshots, and Read Replicas.
 
 Don't confuse it with **encryption in transit**, which protects data while it travels over the network. A compliance rule about data "stored on disk" or "at rest" is asking about the KMS-backed feature above - no need to hand-roll per-row encryption in your app.
 
@@ -121,7 +122,7 @@ Don't confuse it with **encryption in transit**, which protects data while it tr
 
 **Aurora Serverless** takes this further: it automatically scales capacity up and down to match demand and shrinks when traffic is low, so you pay for what you use. That makes it ideal for **spiky, unpredictable workloads** - busy for a few hours, then nearly idle.
 
-**Amazon DynamoDB** is a different animal entirely: a managed **NoSQL** key-value and document database with a flexible schema and single-digit-millisecond performance at scale. Reach for it when you have a schema-less, massive key-value workload - not when you have relational tables.
+**[Amazon DynamoDB](/blog/aws-cloud-practitioner-mcq/12-amazon-dynamodb-managed-nosql)** is a different animal entirely: a managed **NoSQL** key-value and document database with a flexible schema and single-digit-millisecond performance at scale. Reach for it when you have a schema-less, massive key-value workload - not when you have relational tables.
 
 The trap to avoid: assuming "serverless" or "auto-scaling" always means DynamoDB. For a *relational* workload that must auto-scale, the answer is **Aurora Serverless**.
 
@@ -148,7 +149,7 @@ When a question describes a problem, match the *goal* to the right feature:
 7. **"Encrypt data on disk for compliance"** → **encryption at rest** with KMS.
 8. **"Relational workload with unpredictable, spiky traffic"** → **Aurora Serverless**.
 9. **"Flexible schema, massive key-value, NoSQL"** → **DynamoDB**, not RDS.
-10. **"Want full OS control and custom engine tweaks"** → self-manage a database on **EC2**, not RDS.
+10. **"Want full OS control and custom engine tweaks"** → self-manage a database on **[EC2](/blog/aws-cloud-practitioner-mcq/06-amazon-ec2-instances-purchasing-options)**, not RDS.
 
 If you can run a scenario through this list and land on the right feature, you've mastered the part of the exam this topic covers.
 

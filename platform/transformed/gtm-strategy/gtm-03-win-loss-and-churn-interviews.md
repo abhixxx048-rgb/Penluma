@@ -38,6 +38,7 @@ order: 999
 icon: "\U0001F3AF"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -137,11 +138,11 @@ A few laddering prompts worth memorizing:
 
 ## Common misconceptions
 
-**"Price is our biggest churn driver."** Usually false. In the 723-customer study, about a third of churners blamed price, but only about one in three of *those* turned out to have a genuine price problem once probed. Most "price" complaints are value problems wearing a price mask. If you discount in response, you destroy your margins and fix nothing.
+**"Price is our biggest churn driver."** Usually false. In the 723-customer study, about a third of churners blamed price, but only about one in three of *those* turned out to have a genuine price problem once probed. Most "price" complaints are [value problems wearing a price mask](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive). If you discount in response, you destroy your margins and fix nothing.
 
-**"We lose deals to competitors."** Often false. You more likely lose to *nothing at all*, to the customer's own inertia. That's a different and more winnable problem.
+**"We lose deals to competitors."** Often false. You more likely lose to *nothing at all*, to [the customer's own inertia](/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence). That's a different and more winnable problem.
 
-**"A cancellation survey tells us why people leave."** No. A survey catches everyone, which is useful, but a churning customer is mentally checked out and clicking the fastest plausible option. The survey is a *recruiting tool* for real interviews, not the answer itself.
+**"A cancellation survey tells us why people leave."** No. A survey catches everyone, which is useful, but a churning customer is mentally checked out and clicking the fastest plausible option. The survey is a *recruiting tool* for [real interviews](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself), not the answer itself.
 
 **"The loudest feature request is the most important one."** Dangerous. The customer who wants a specific feature will describe it in vivid detail, so it *feels* urgent. But that loud minority can be far smaller than the silent majority who quietly never activated. Count before you build.
 
@@ -171,7 +172,7 @@ A practical anchor: put a recurring 30-minute block on your calendar every Monda
 
 ### One number worth watching above all
 
-Track your **activation rate**: the share of signups that actually reached first value (got set up, went live, did the core thing). If that number is 25%, then 75% of every dollar you spend on acquisition is leaking out *before* anyone sees value. No feature you ship will fix a leaky bucket. The never-activated interview is your highest-leverage research, precisely because nobody else is doing it.
+Track your **activation rate**: the share of signups that actually [reached first value](/blog/product-sense-empathy/09-reducing-friction-flows-steps-progressive-disclosure) (got set up, went live, did the core thing). If that number is 25%, then 75% of every dollar you spend on acquisition is leaking out *before* anyone sees value. No feature you ship will fix a leaky bucket. The never-activated interview is your highest-leverage research, precisely because nobody else is doing it.
 
 ## Conclusion
 
@@ -179,4 +180,4 @@ The one thing to remember: **the reason a customer gives you is a label, not the
 
 Do this while you're small enough to call everyone. That window closes fast.
 
-And here's the thread to pull next. Once you've separated *real* price objections from fake ones, you'll have something most founders only guess at: honest evidence of what customers will actually pay. That's the raw material for pricing research that doesn't rely on asking people the one question they're worst at answering: "how much would you pay?"
+And here's the thread to pull next. Once you've separated *real* price objections from fake ones, you'll have something most founders only guess at: honest evidence of what customers will actually pay. That's the raw material for [pricing research](/blog/how-to-make-money/14-pricing-value-capture) that doesn't rely on asking people the one question they're worst at answering: "how much would you pay?"

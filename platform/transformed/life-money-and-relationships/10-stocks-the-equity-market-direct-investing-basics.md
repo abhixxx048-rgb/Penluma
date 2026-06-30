@@ -32,6 +32,7 @@ faq:
     a: "No. Plain index funds need no Demat account. You only need a Demat and trading account if you want to buy individual stocks or ETFs directly on the exchange."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: life-money-and-relationships
 topicTitle: 'Life, Money & Relationships'
 category: Thinking & Decisions
@@ -43,7 +44,7 @@ sources: []
 
 Here is a number that should change how you invest: over any ten-year stretch, roughly seven to eight out of ten professional, well-paid fund managers fail to beat a simple index. These are people with research teams, terminals, and all day to study the market. So when a stranger in a WhatsApp group tells you about a "sure thing" stock, ask yourself who you're really betting against.
 
-This article pulls back the curtain on what mutual funds and index funds actually hold underneath: **individual stocks**. Even if you never buy a single share directly, understanding how the equity market works will make you a calmer, smarter investor.
+This article pulls back the curtain on what [mutual funds and index funds](/blog/life-money-and-relationships/09-mutual-funds-index-funds-sips-the-core-engine) actually hold underneath: **individual stocks**. Even if you never buy a single share directly, understanding how the equity market works will make you a calmer, smarter investor.
 
 ## Why this matters
 
@@ -101,7 +102,7 @@ A **dividend** is a slice of profit paid per share, say 10 rupees per share. The
 
 Not every company pays dividends. Young, fast-growing companies usually *reinvest* every rupee of profit back into growth, so you benefit through a rising price instead. Mature, steady companies like large utilities and some public-sector firms tend to pay generously.
 
-One tax note for India: since 2020, dividends are taxed in *your* hands at your income-tax slab rate. The company also withholds **TDS** (Tax Deducted at Source) of 10% if your dividends from that company cross 10,000 rupees in a financial year. Tax thresholds change, so verify the current limit each year.
+One tax note for India: since 2020, dividends are taxed in *your* hands at your [income-tax slab rate](/blog/life-money-and-relationships/12-taxes-made-simple-income-deductions-capital-gains). The company also withholds **TDS** (Tax Deducted at Source) of 10% if your dividends from that company cross 10,000 rupees in a financial year. Tax thresholds change, so verify the current limit each year.
 
 ## Is a stock cheap or expensive? The P/E ratio
 
@@ -132,11 +133,11 @@ This is the single most important behavioural distinction in the whole topic.
 
 A long-term investor is a *farmer*: plant good seeds, water them, harvest over many seasons. A trader is a *gambler in a casino* where the house (brokerage plus taxes plus your own panic) takes a cut on every single hand. Over time, the house wins.
 
-Why does long-term ownership win? Compounding needs *time*. Fewer trades mean lower costs and lower tax. And holding steadily sidesteps the buy-high-in-greed, sell-low-in-fear trap that wrecks most people. As the saying goes, **time in the market beats timing the market.**
+Why does long-term ownership win? [Compounding](/blog/life-money-and-relationships/06-compounding-the-time-value-of-money) needs *time*. Fewer trades mean lower costs and lower tax. And holding steadily sidesteps the buy-high-in-greed, sell-low-in-fear trap that wrecks most people. As the saying goes, **time in the market beats timing the market.**
 
 ## Diversification: don't bet the farm on one slice
 
-**Diversification** means spreading your money across many investments so that no single failure can sink you. Own one stock and a collapse can wipe you out. Own fifty companies and one collapse barely leaves a scratch.
+**[Diversification](/blog/life-money-and-relationships/13-asset-allocation-diversification-building-a-portfolio)** means spreading your money across many investments so that no single failure can sink you. Own one stock and a collapse can wipe you out. Own fifty companies and one collapse barely leaves a scratch.
 
 ```
   ALL IN ONE STOCK          DIVERSIFIED (index fund)
@@ -157,7 +158,7 @@ Diversification is often called "the only free lunch in finance" because it lowe
 
 **"A high dividend yield is free money."** A 12% yield is usually not generosity. It often means the *share price has crashed* because the business is in trouble, which mechanically inflates the yield. A sky-high yield is frequently a warning light, not a gift.
 
-**"I can get rich quick by day-trading or F&O."** F&O means Futures and Options, advanced contracts that bet on price moves. SEBI's own studies repeatedly find that the *large majority* of retail intraday and F&O traders **lose money**. This isn't a small disadvantage. It's structural: costs, taxes, and your own emotions grind you down.
+**"I can get rich quick by day-trading or F&O."** F&O means Futures and Options, advanced contracts that bet on price moves. SEBI's own studies repeatedly find that the *large majority* of retail intraday and F&O traders **lose money**. This isn't a small disadvantage. It's structural: costs, taxes, and [your own emotions](/blog/life-money-and-relationships/14-behaviour-risk-the-psychology-of-money) grind you down.
 
 **"I'm smart and successful, so I'll be good at picking stocks."** Being brilliant at building software, or running a business, does *not* transfer into stock-picking skill. Different game, different opponents. Many sharp people lose money precisely because they assume their edge carries over. It usually doesn't.
 
@@ -175,7 +176,7 @@ This idea isn't Indian or American. It travels everywhere. It came from Jack Bog
 
 If you do nothing else, do this. But if you want to dabble in individual stocks, protect yourself with these steps.
 
-1. **Build your core first.** Get your emergency fund, insurance, and index-fund SIPs in place *before* any stock-picking.
+1. **Build your core first.** Get your [emergency fund](/blog/life-money-and-relationships/03-the-emergency-fund-protecting-your-downside), insurance, and index-fund SIPs in place *before* any stock-picking.
 2. **Use a "play money" budget.** Cap direct stocks at a small slice, say 5 to 10% of your investments. Money you could lose without derailing your life.
 3. **Open the right accounts.** A **Demat account** ("dematerialised") holds your shares electronically, and a **trading account** places the buy and sell orders. Discount brokers like Zerodha, Groww, Upstox, and Angel One make this cheap. Remember: plain index funds need *no* Demat. Only stocks and ETFs do.
 4. **Research the business, not the ticker.** Understand what the company sells, whether it's profitable, how much debt it carries, and whether you'd happily own it for five-plus years.

@@ -38,12 +38,13 @@ order: 999
 icon: "\U0001F6E0️"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
 A single t-shirt can cost you a seven-figure judgment.
 
-Not because the design was ugly, but because someone uploaded a copyrighted image, your platform printed it onto a physical product, and a court decided you were the manufacturer, not a passive website. The legal shield that protects ordinary websites quietly stops working the moment ink hits fabric.
+Not because the design was ugly, but because someone uploaded a copyrighted image, your platform [printed it onto a physical product](/blog/print-production-craft/02-how-printing-really-works-the-big-picture), and a court decided you were the manufacturer, not a passive website. The legal shield that protects ordinary websites quietly stops working the moment ink hits fabric.
 
 If you are building a print-on-demand business or any multi-tenant SaaS that touches customer data, this is the article I wish more founders read before their first real customer signed up. It is not legal advice. It is a field map of where the landmines are buried, written in plain language, so you know which ones to defuse first.
 
@@ -134,7 +135,7 @@ Because each merchant is the controller and you are the processor, **GDPR Articl
 
 Without one, every EU or UK merchant you onboard is non-compliant, and so are you. Enterprise buyers will block the deal in procurement until you produce it.
 
-A DPA binds you, the processor, to a specific checklist: process only on documented instructions, keep staff under confidentiality, implement real security (encryption in transit and at rest, tenant isolation, access control), respect sub-processor rules, **help the merchant answer privacy requests**, assist with breach notice, and delete or return all data when the relationship ends.
+A DPA binds you, the processor, to a specific checklist: process only on documented instructions, keep staff under confidentiality, implement real security ([encryption in transit and at rest](/blog/security-privacy-engineering/03-cryptography-made-simple), tenant isolation, [access control](/blog/security-privacy-engineering/04-authentication-authorization)), respect sub-processor rules, **help the merchant answer privacy requests**, assist with breach notice, and delete or return all data when the relationship ends.
 
 You cannot write this yourself; it is binding contract text. But engineering has to *support* every promise in it.
 
@@ -148,7 +149,7 @@ Every outside service that touches merchant customer data (payment gateways, ema
 
 ## Honoring a "delete my data" request without breaking your books
 
-GDPR gives people the right to access, export, correct, and erase their data, with a one-month response window. CCPA in California gives similar rights on a 45-day clock. If you cannot action a single "delete me" email, that is a reportable failure.
+GDPR gives people the right to access, export, correct, and erase their data, with a one-month response window. [CCPA in California](/blog/security-privacy-engineering/11-privacy-laws-compliance) gives similar rights on a 45-day clock. If you cannot action a single "delete me" email, that is a reportable failure.
 
 Here is where teams get it wrong: they assume erasure means `DELETE FROM customers`. It does not.
 
@@ -200,7 +201,7 @@ You cannot fix everything at once. Sequence it by who gets sued and how badly.
 4. **Build data-subject tooling:** per-customer export, and erasure-by-anonymization that respects invoice snapshots. (Launch-blocker.)
 5. **Add geography-aware cookie consent** with script gating and GPC support. (Soon after launch.)
 6. **Gate any marketing data flow** on a recorded, withdrawable consent. (Soon after launch.)
-7. **Publish your sub-processor list,** add breach-detection logging, and set retention timers using statutory periods your lawyer supplies. (Ongoing hardening.)
+7. **Publish your sub-processor list,** add [breach-detection logging](/blog/security-privacy-engineering/13-detection-monitoring-incident-response), and set retention timers using statutory periods your lawyer supplies. (Ongoing hardening.)
 
 Notice the pattern: engineering builds the *machinery*, but a qualified privacy and IP lawyer sets the *values and the wording*. The contract text, the retention periods, the lawful-basis determinations, and the proactive-screening posture are all legal calls. Do not author binding language from an engineering chair.
 

@@ -54,6 +54,7 @@ faq:
       fully legal. Tax evasion means hiding income or faking claims, which is
       fraud and can lead to penalties and prosecution.
 author: Pritesh Yadav (priteshyadav444)
+linked: true
 transformed: true
 sources: []
 ---
@@ -75,7 +76,7 @@ The point is never to pay zero tax at any cost. The point is to keep more of you
 Four words unlock the whole system. Learn these and the jargon stops being scary.
 
 - **Gross income** is everything you earn in a financial year: salary, business profit, interest, rent, capital gains. A **financial year (FY)** in India runs 1 April to 31 March. FY 2025-26 means April 2025 to March 2026.
-- **Deductions** are specific amounts the law lets you subtract from gross income, like money put into retirement schemes or health insurance premiums.
+- **Deductions** are specific amounts the law lets you subtract from gross income, like money put into [retirement schemes](/blog/life-money-and-relationships/11-retirement-tax-advantaged-accounts-in-india) or [health insurance premiums](/blog/life-money-and-relationships/04-insurance-term-life-health-protection-before-investing).
 - **Taxable income** is what is left after deductions. This, not your full salary, is what tax is charged on.
 - **Tax slab** means income is split into bands, and each band is taxed at a rising rate. This is a **progressive** system: your first rupees are taxed lightly, your higher rupees more heavily.
 
@@ -123,7 +124,7 @@ Deductions are the entire reason the old regime exists. Two of them carry most o
 
 ### Section 80C: the ₹1.5 lakh bucket
 
-Section 80C is a single shared bucket of ₹1.5 lakh per year. Many things compete for the same space: your EPF or VPF contribution, PPF, ELSS mutual funds, life insurance premiums, home loan principal repayment, children's tuition fees, the 5-year tax-saver FD, and Sukanya Samriddhi.
+Section 80C is a single shared bucket of ₹1.5 lakh per year. Many things compete for the same space: your EPF or VPF contribution, PPF, [ELSS mutual funds](/blog/life-money-and-relationships/09-mutual-funds-index-funds-sips-the-core-engine), life insurance premiums, home loan principal repayment, children's tuition fees, the 5-year tax-saver FD, and Sukanya Samriddhi.
 
 You can fill it with any mix you like, but the total deduction is capped at ₹1.5 lakh. On top of that, **Section 80CCD(1B)** gives an extra ₹50,000 for NPS contributions.
 
@@ -162,7 +163,7 @@ For listed shares and equity mutual funds, the dividing line is **12 months**. F
 
 *Property bought before 23 July 2024 has a grandfathering option: 12.5% without indexation, or 20% with indexation, and you pick whichever is lower.
 
-A few things are worth burning into memory. For equity, the first ₹1.25 lakh of long-term gains each year is tax-free, then 12.5% applies. Holding shares for more than a year nearly halves your tax versus selling early, because short-term gains are taxed at 20%. And debt mutual funds bought after April 2023 lost their old tax edge: gains are now taxed at your slab rate no matter how long you hold, which matters a lot when you weigh an FD against a debt fund.
+A few things are worth burning into memory. For equity, the first ₹1.25 lakh of long-term gains each year is tax-free, then 12.5% applies. Holding shares for more than a year nearly halves your tax versus selling early, because short-term gains are taxed at 20%. And debt mutual funds bought after April 2023 lost their old tax edge: gains are now taxed at your slab rate no matter how long you hold, which matters a lot when you weigh [an FD](/blog/life-money-and-relationships/07-where-to-keep-cash-banks-safe-saving-instruments) against a debt fund.
 
 ### Tax-loss harvesting: a smart, legal trick
 
@@ -206,4 +207,4 @@ If you live or invest abroad, the principles transfer cleanly. Use tax-advantage
 
 If you remember one thing, make it this: tax is not a wall you crash into at year-end, it is a system with switches you control all year. The biggest savings come not from clever tricks but from two boring decisions made on purpose, picking the right regime and holding good investments long enough.
 
-Which raises the question that trips up even careful planners. You now know how much tax your investments cost you, but do you know whether your money is actually growing faster than the quiet tax of inflation eating it from the inside? That is where the next chapter begins.
+Which raises the question that trips up even careful planners. You now know how much tax your investments cost you, but do you know whether your money is actually growing faster than the [quiet tax of inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) eating it from the inside? That is where the next chapter begins.

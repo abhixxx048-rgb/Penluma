@@ -26,6 +26,7 @@ faq:
     a: Offset uses plates and has high setup cost but cheap per-unit cost at volume, so it needs large runs to break even. Digital has little setup and is economical for small runs. Picking the wrong one for a job loses money.
   - q: How should I model a print order in software?
     a: Capture craft-driven fields like substrate, bleed, finishing steps, and print method, and track production statuses, not just a generic "shipped" flag. The craft tells you which fields and validation rules actually matter.
+linked: true
 topic: print-production-craft
 topicTitle: Print Production Craft
 category: Engineering
@@ -55,7 +56,7 @@ Abstract advice is easy to nod at and forget. So here are three concrete craft c
 
 ### Bleed: the white slivers nobody ordered
 
-**Bleed** is the extra strip of image printed beyond the final cut line so that when the paper is trimmed, color runs cleanly to the edge.
+**Bleed** is [the extra strip of image printed beyond the final cut line](/blog/print-production-craft/07-color-files-prepress-cmyk-pantone-bleed-proofs-preflight) so that when the paper is trimmed, color runs cleanly to the edge.
 
 Think of wrapping a gift. You cut the wrapping paper bigger than the box, fold it over, and trim. If you cut it exactly box-sized, you get gaps. Print is the same: the design must extend past the trim, because no cutting machine is perfectly precise.
 
@@ -67,13 +68,13 @@ If your file-upload step does not know what bleed is, it will cheerfully accept 
 
 The key word is *fixed*. Make-ready costs roughly the same whether you print 100 sheets or 10,000. Spread across 10,000 pieces, it is pennies each. Spread across 100, it dominates the price.
 
-If your pricing engine treats cost as purely per-unit, it will under-quote every small run and hand the shop a loss on each one. This single misunderstanding is behind more broken print-quoting engines than any other.
+If your pricing engine treats cost as purely per-unit, it will under-quote every small run and hand the shop a loss on each one. This single misunderstanding is behind more [broken print-quoting engines](/blog/print-production-craft/11-print-shop-economics-costing-make-ready-margins-quoting) than any other.
 
 ### Offset vs digital: the right machine for the run
 
 **Offset** printing uses plates and rollers. High setup cost, very cheap per piece once it is running-ideal for large runs. **Digital** printing is more like a sophisticated office printer: almost no setup, economical for small runs, pricier per piece at high volume.
 
-The five-business-cards story at the top of this article is exactly this. Routing a tiny order to an offset press, or a 50,000-piece job to a digital one, burns money either way. Your software has to know which method fits which run-or let a human decide before the order is locked.
+The five-business-cards story at the top of this article is exactly this. Routing a tiny order to [an offset press](/blog/print-production-craft/03-offset-lithography-the-workhorse-of-commercial-print), or a 50,000-piece job to [a digital one](/blog/print-production-craft/04-digital-printing-toner-inkjet-variable-data), burns money either way. Your software has to know which method fits which run-or let a human decide before the order is locked.
 
 ## A common misconception
 
@@ -81,7 +82,7 @@ The five-business-cards story at the top of this article is exactly this. Routin
 
 **The reality:** A print order is a manufacturing spec, not a product off a shelf. Two orders for "500 flyers" can be wildly different jobs depending on paper, coating, folding, and method-with different costs, timelines, and failure modes.
 
-When you model print like generic e-commerce, you capture a quantity and a price and call it done. You miss the substrate, the finishing steps, the production statuses-everything that determines whether the job is even possible. The craft is not decoration on top of the order. It *is* the order.
+When you model print like generic e-commerce, you capture a quantity and a price and call it done. You miss [the substrate](/blog/print-production-craft/08-substrates-materials-paper-gsm-coatings-specialty-stocks), the finishing steps, the production statuses-everything that determines whether the job is even possible. The craft is not decoration on top of the order. It *is* the order.
 
 ## How to use this knowledge as you build
 
@@ -90,7 +91,7 @@ You do not have to learn everything at once. Work through it the way the craft i
 1. **Start with the printing methods.** Get the big picture first, then offset, digital, apparel and specialty, and wide-format. This is the "how ink gets onto stuff" foundation everything else rests on.
 2. **Learn the make-or-break middle.** Color and files (prepress), the materials you print on (substrates), and everything that happens after the press (finishing and bindery). Most real-world job failures live here.
 3. **Zoom out to the shop.** Operations and workflow, economics and quoting, supply chain and fulfillment, sustainability. This is where pricing and scheduling logic comes from.
-4. **Bring it back to code.** Map each concept to a software decision: which fields to capture, which statuses to track, where naive data models go wrong.
+4. **Bring it back to code.** Map each concept to a software decision: [which fields to capture](/blog/print-production-craft/14-putting-it-together-modeling-print-in-software-pf360-lens), which statuses to track, where naive data models go wrong.
 
 A practical habit that pays off fast: **keep a running list of every print term that maps to a database field, a validation rule, or an order status.** Bleed becomes an upload check. Make-ready becomes a pricing input. Print method becomes an order field with rules attached. Do this as you learn, and you will end up with a draft data model-and a much shorter list of nasty surprises waiting in production.
 

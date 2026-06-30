@@ -36,6 +36,7 @@ order: 10
 icon: "\U0001F4D0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -53,7 +54,7 @@ This article walks through the one idea that explains print pricing, the full st
 
 ## The one idea behind everything: high fixed cost, low variable cost
 
-Printing, especially traditional offset printing, is a **high fixed cost, low variable cost** business. You spend a lot of money *before* the first good copy comes off the press, and then each extra copy costs almost nothing.
+Printing, especially [traditional offset printing](/blog/print-production-craft/03-offset-lithography-the-workhorse-of-commercial-print), is a **high fixed cost, low variable cost** business. You spend a lot of money *before* the first good copy comes off the press, and then each extra copy costs almost nothing.
 
 Two plain definitions to anchor the rest of this:
 
@@ -166,7 +167,7 @@ The takeaway: quantity discounts are not generosity. They are the math of amorti
 
 **Materials are usually the biggest single cost.** Paper, substrate, or blank garments are typically **40 to 50% of total job cost**, the largest line on most jobs. Substrate prices move with the market, so a quote built on last year's paper cost can be wrong by the time it is accepted.
 
-**Digital "click charges" are flat per copy.** A **click charge** is how digital presses bill: a flat cost for every impression printed (a "click"), covering toner or ink plus the maintenance contract. The key feature is that it is *flat per piece* and does **not** drop with quantity. Click charges run roughly **$0.11 to $0.22+** per impression.
+**Digital "click charges" are flat per copy.** A **click charge** is how [digital presses](/blog/print-production-craft/04-digital-printing-toner-inkjet-variable-data) bill: a flat cost for every impression printed (a "click"), covering toner or ink plus the maintenance contract. The key feature is that it is *flat per piece* and does **not** drop with quantity. Click charges run roughly **$0.11 to $0.22+** per impression.
 
 | | Offset | Digital |
 | --- | --- | --- |
@@ -176,7 +177,7 @@ The takeaway: quantity discounts are not generosity. They are the math of amorti
 
 Offset is like a bulk membership: a steep entry fee, then near-free per item. Digital is pay-as-you-go: no entry fee, but the same price per item forever. For a few items, pay-as-you-go wins. For a warehouse-load, the membership wins.
 
-**Labor spans the whole chain**, not just the press operator: file prep, plate or screen making, make-ready, the run, finishing and bindery (cutting, folding, binding), cleanup, and packing. Always cost **loaded labor**, meaning wages plus benefits plus the operator's share of overhead, which is exactly what the BHR already captures.
+**Labor spans the whole chain**, not just the press operator: file prep, plate or screen making, make-ready, the run, [finishing and bindery](/blog/print-production-craft/09-finishing-bindery-everything-after-the-press) (cutting, folding, binding), cleanup, and packing. Always cost **loaded labor**, meaning wages plus benefits plus the operator's share of overhead, which is exactly what the BHR already captures.
 
 ## Waste, spoilage, and overs
 
@@ -194,7 +195,7 @@ If a customer orders 5,000 flyers and you buy exactly 5,000 sheets, the ~400 mak
 
 ## How a quote is built: the cost stack
 
-A professional quote is a stack of cost elements, summed, with overhead recovered and markup added. The dominant approach is **cost-plus pricing**: add up your true cost, then add a markup to reach your target profit.
+A professional quote is a stack of cost elements, summed, with overhead recovered and markup added. The dominant approach is [**cost-plus pricing**](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive): add up your true cost, then add a markup to reach your target profit.
 
 ```
 THE QUOTE STACK (bottom = cost, top = price)
@@ -243,9 +244,9 @@ Because cost is smaller than price, the markup percentage is always a *bigger* n
 
 **"Quantity discounts are just marketing."** No. They are the unavoidable result of spreading a fixed setup cost over more pieces. A shop that does not amortize setup either loses money on small runs or loses the bid on large ones.
 
-**"Process choice is a matter of preference."** Offset versus digital is a break-even calculation (next section), not a habit.
+**"Process choice is a matter of preference."** Offset versus digital is a [break-even calculation](/blog/business-financial-literacy/10-break-even-margins-profitability) (next section), not a habit.
 
-For sane defaults, industry norms run roughly **200 to 400% markup (50 to 70% gross margin)** on general print jobs, and **30 to 50% markup** on screen printing and apparel, where a common rule of thumb is to mark up at least 50% over cost.
+For sane defaults, industry norms run roughly **200 to 400% markup (50 to 70% gross margin)** on general print jobs, and **30 to 50% markup** on [screen printing and apparel](/blog/print-production-craft/05-screen-dtg-dtf-pad-apparel-promo-specialty), where a common rule of thumb is to mark up at least 50% over cost.
 
 The reliable approach: decide your target as a **margin**, then convert to the markup you need with `markup = margin / (1 − margin)`.
 

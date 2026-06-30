@@ -36,6 +36,7 @@ faq:
     a: "A buyer pays for cash flow that survives you leaving. An owner-dependent business sells at a 25 to 35% discount, while a system-run one can fetch one to two extra turns of profit, often adding millions for the same earnings."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - "https://en.wikipedia.org/wiki/The_E-Myth_Revisited"
 ---
@@ -48,7 +49,7 @@ If it stops, you don't own a business. You *are* the business, and that's a frag
 
 Most people who set out to build a business accidentally build themselves a job instead. A demanding, all-hours job with extra paperwork and no boss to blame.
 
-The trap is subtle because it feels like success. You're busy. Revenue comes in. But every rupee or dollar is chained to an hour of your personal time. The moment you step away, the income dries up.
+The trap is subtle because it feels like success. You're busy. Revenue comes in. But every rupee or dollar is [chained to an hour of your personal time](/blog/how-to-make-money/10-products-vs-time-escaping-the-trap). The moment you step away, the income dries up.
 
 Systems, automation, and delegation are how you cut that chain. They turn your effort into something that keeps working when you're asleep, on holiday, or simply done. And when you eventually want to sell or step back, they're the difference between a business worth selling and one nobody will buy.
 
@@ -61,7 +62,7 @@ Michael Gerber, in his classic book *The E-Myth Revisited*, named the single mos
 You don't. They are completely different jobs.
 
 - **Working IN the business** is doing the technical work yourself: writing the code, closing the sale, fixing the bug, answering the support ticket. It pays today's bills but builds no asset.
-- **Working ON the business** is building the systems, documents, and people that do that work, so it happens with or without you. This is what builds the asset.
+- **Working ON the business** is building the systems, documents, and people that do that work, so it happens with or without you. This is what [builds the asset](/blog/how-to-make-money/16-income-vs-wealth-owning-vs-working).
 
 Think of a brilliant chef who opens a restaurant and spends every night at the stove. He hasn't built a restaurant. He's built himself an exhausting job with a lease attached. The day he can hand a written recipe to a line cook and the food tastes identical, *now* he owns a restaurant.
 
@@ -88,7 +89,7 @@ Notice the split. Labour and capital are **permissioned**: someone has to say ye
 
 Naval calls code and media "an army of robots, freely available." This is how WhatsApp served 450 million users in 2014 with only 55 employees. If you run a software or content business, you're already sitting on the highest-leverage tools that exist. Use them.
 
-As Naval puts it: *"You're not going to get rich renting out your time."* Wealth comes from leverage that separates your output from your hours.
+As Naval puts it: *"You're not going to get rich renting out your time."* Wealth comes from [leverage](/blog/how-to-make-money/04-leverage-the-real-secret) that separates your output from your hours.
 
 ## The cheapest-leverage ladder
 
@@ -153,7 +154,7 @@ Here's the cheap way to build one. The next time you do the task, record your sc
 
 This is the part founders miss until it's too late. When someone buys a business, they aren't paying for *you*. They're paying for **future cash flow that survives you leaving.**
 
-An owner-dependent business sells at a steep discount, often 25 to 35% less, because the buyer sees risk: the moment you walk, the revenue might walk with you. A system-run business looks like safe, transferable cash flow, and commands a meaningfully higher multiple.
+An owner-dependent business sells at a steep discount, often 25 to 35% less, because the buyer sees risk: the moment you walk, the revenue might walk with you. A system-run business looks like safe, transferable cash flow, and [commands a meaningfully higher multiple](/blog/how-to-make-money/17-equity-ownership-the-windfall-path).
 
 Consider a service firm doing strong annual profit. If most of its revenue is tied to the founder's personal relationships, a buyer applies a low multiple and offers a modest price. The *same firm* with documented SOPs, a capable second-in-command, and low owner-dependence can earn a multiple one to two turns higher, adding millions for the exact same profit.
 
@@ -163,4 +164,4 @@ The documentation you build today isn't just operational hygiene. It's money in 
 
 The single shift that changes everything is this: stop trying to be the best worker in your business, and start being the architect of a business that runs without you. Every SOP you write, every task you automate, every hour you buy back is a brick in an asset that can outlast your energy, your motivation, and even your involvement.
 
-But building the machine is only half the story. Once your business prints cash without consuming your every hour, a new question arrives, and it's one most people are wildly unprepared for: what do you do with the money and the freedom you just bought back? That's where the real wealth-building begins.
+But building the machine is only half the story. Once your business prints cash without consuming your every hour, a new question arrives, and it's one most people are wildly unprepared for: what do you do with the money and the freedom you just bought back? That's where the [real wealth-building](/blog/how-to-make-money/18-making-money-with-money-cash-flow-assets-compounding) begins.

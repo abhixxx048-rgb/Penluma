@@ -57,6 +57,7 @@ faq:
       bracket, an 8% FD nets only about 5.6% after tax. Banks also deduct TDS once
       your FD interest from that bank crosses the annual threshold.
 author: Pritesh Yadav (priteshyadav444)
+linked: true
 transformed: true
 sources: []
 ---
@@ -65,11 +66,11 @@ You've got a chunk of money sitting in your bank account and a quiet, nagging qu
 
 Here's the uncomfortable truth. Cash that feels safe can quietly shrink. The good news is that fixing it takes about an afternoon, and the rules are simpler than the banks make them sound.
 
-This is about the boring, beautiful layer of your money: your spending cash, your emergency fund, and money you'll need soon for a known reason. Not your long-term investing money - that's a different game with different rules.
+This is about the boring, beautiful layer of your money: your spending cash, your [emergency fund](/blog/life-money-and-relationships/03-the-emergency-fund-protecting-your-downside), and money you'll need soon for a known reason. Not your long-term investing money - that's a different game with different rules.
 
 ## Why this matters
 
-Imagine ₹3 lakh sitting in a savings account paying 3% while inflation runs at 6%. After a year you have more rupees but less buying power. The account did its job - it kept the number safe - and you still lost.
+Imagine ₹3 lakh sitting in a savings account paying 3% while [inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) runs at 6%. After a year you have more rupees but less buying power. The account did its job - it kept the number safe - and you still lost.
 
 Now flip it. The same money in the right mix of safe instruments could earn 6–7% with almost no extra risk and barely any loss of access. Over a few years, that gap quietly becomes a vacation, a laptop, or a real cushion.
 
@@ -83,7 +84,7 @@ Every choice about where to keep cash is a trade-off between three things. Learn
 - **Liquidity** - how fast you can turn it into spendable cash without a penalty. "Highly liquid" means minutes to a day.
 - **Return** - how much extra it earns you per year.
 
-The catch: **you almost never get all three at once.** A high return usually means lower safety or lower liquidity. So in this layer you deliberately chase safety and liquidity, and accept a modest return. You make your real returns later, in growth assets - not here.
+The catch: **you almost never get all three at once.** A high return usually means lower safety or lower liquidity. So in this layer you deliberately chase safety and liquidity, and accept a modest return. You make your real returns later, in [growth assets](/blog/life-money-and-relationships/08-asset-classes-the-building-blocks-of-investing) - not here.
 
 > **A simple way to picture it.** Think of your money like water in your home. Your savings account is the tap: instant, always on, but you don't store much there. A fixed deposit or liquid fund is the water tank: bigger, slightly slower to draw from, holds more. Your investments are the well outside - deep and powerful, but you don't run to it for a quick glass of water.
 
@@ -170,7 +171,7 @@ This matters most with small-finance banks dangling tempting high rates. A high 
 
 ## The tax sting beginners forget
 
-FD and savings interest is taxed at your **income slab rate**. For someone in the 30% bracket, an 8% FD nets only about 5.6% after tax - which can land *below* inflation, meaning a quiet real loss.
+FD and savings interest is taxed at your **[income slab rate](/blog/life-money-and-relationships/12-taxes-made-simple-income-deductions-capital-gains)**. For someone in the 30% bracket, an 8% FD nets only about 5.6% after tax - which can land *below* inflation, meaning a quiet real loss.
 
 Banks also deduct **TDS** (tax deducted at source - tax the bank takes out before paying you, which you later adjust against your final bill) once your FD interest from that bank crosses a yearly threshold (₹50,000, or ₹1,00,000 for senior citizens, after the Budget 2025 update). TDS isn't an extra tax. If your total income is below the taxable limit, you can file Form 15G/15H to stop it, or claim it back when you file your return.
 
@@ -200,4 +201,4 @@ Two cautions if your income comes from a business: hold the high end of the emer
 
 The whole secret to where to keep cash fits in one sentence: **match the instrument to when you'll need the money, and chase safety and liquidity - not return - for everything short-term.** Get that right and you'll never be caught short, and you'll stop quietly losing value to inflation.
 
-But notice what we kept saying: *you make your real returns later, not here.* That raises the obvious next question - once your safe layer is sorted and your emergency fund is solid, where does the rest of your money go to actually grow? That's where the conversation turns from protecting cash to building wealth, and the rules change completely.
+But notice what we kept saying: *you make your real returns later, not here.* That raises the obvious next question - once your safe layer is sorted and your emergency fund is solid, where does the rest of your money go to actually grow? That's where the conversation turns from protecting cash to [building wealth](/blog/life-money-and-relationships/09-mutual-funds-index-funds-sips-the-core-engine), and the rules change completely.

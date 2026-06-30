@@ -30,6 +30,7 @@ faq:
     a: It means forming a clear view so you have something to test, while staying willing to drop it the moment the facts turn against it. You commit to a position and to changing your mind, both at once.
   - q: How can I practice critical thinking every day?
     a: "Pick any article, ad, or post and answer four questions about it: What is claimed? What is the evidence? What is assumed? What could make this wrong? Five minutes a day builds the habit fast."
+linked: true
 topic: clear-thinking-and-expression
 topicTitle: Clear Thinking & Expression
 category: Thinking & Decisions
@@ -105,7 +106,7 @@ That last question is the one beginners skip, and it's the most important. Your 
 
 ## Facts, opinions, and inferences are not the same thing
 
-People blend these three together constantly, often inside a single sentence, and it muddies clear thinking. Pull them apart.
+People blend these three together constantly, often inside a single sentence, and it muddies [clear thinking](/blog/clear-thinking-and-expression/04-clear-writing-is-clear-thinking). Pull them apart.
 
 | Type | Plain meaning | Test it by asking | Example |
 |------|---------------|-------------------|---------|
@@ -117,13 +118,13 @@ The **inference** is the sneaky one. It sounds like a fact, but it's a guess bui
 
 "Sales dropped, so customers hate the new design." The drop is a fact. "Customers hate the design" is an inference. Maybe a competitor ran a sale. Maybe it was a slow season. Maybe the checkout page broke.
 
-Labeling an inference as an inference keeps you honest, and it opens your mind to other explanations. That's also how you generate fresh ideas from data instead of jumping to the first story that pops into your head.
+Labeling an inference as an inference keeps you honest, and it opens your mind to other explanations. That's also how you [generate fresh ideas from data](/blog/clear-thinking-and-expression/21-reading-data-without-going-blank-the-questions-to-ask) instead of jumping to the first story that pops into your head.
 
 ## Common misconceptions
 
 A few myths that quietly sabotage clear thinking:
 
-- **"Critical thinking means being skeptical of everything."** Reality: it means judging fairly, including being fair to ideas you like. Blanket cynicism is just confirmation bias in a trench coat.
+- **"Critical thinking means being skeptical of everything."** Reality: it means judging fairly, including being fair to ideas you like. Blanket cynicism is just [confirmation bias](/blog/clear-thinking-and-expression/18-cognitive-biases-logical-fallacies-and-how-to-dodge-them) in a trench coat.
 - **"If someone confident says it, it's probably true."** Reality: tone is not evidence. A loud "obviously" is often a flag that an assumption is being smuggled past you.
 - **"Changing your mind means you were weak or foolish."** Reality: updating on better evidence is the whole point. The goal is to be right at the end, not to have been right from the start.
 - **"More data always settles the question."** Reality: a survey of 8 friends isn't "most people." How the evidence was gathered matters as much as how much there is.
@@ -166,6 +167,6 @@ Do this for a few pieces and the habit starts running on its own. You'll catch y
 
 If you remember one thing, make it this: **find the claim, demand the evidence, expose the assumption, and ask what would prove it wrong.** Hold your own view strongly, but loosely.
 
-Here's the part most people miss. When you spot a hidden assumption in someone's argument, you're not just judging them, you're often standing on the seed of your own original idea. "If they assumed X, what happens when X is false? That's an opportunity nobody's looking at."
+Here's the part most people miss. When you spot a hidden assumption in someone's argument, you're not just judging them, you're often standing on the seed of [your own original idea](/blog/clear-thinking-and-expression/13-what-creativity-actually-is-recombination-not-magic). "If they assumed X, what happens when X is false? That's an opportunity nobody's looking at."
 
-Which raises the next question worth chasing: once you can take an argument apart, how do you build one so clear and well-supported that it survives this same scrutiny? That's where critical thinking turns into persuasive thinking, and it's where things get interesting.
+Which raises the next question worth chasing: once you can take an argument apart, how do you [build one so clear and well-supported](/blog/clear-thinking-and-expression/06-structure-frameworks-pyramid-principle-scqa-prep) that it survives this same scrutiny? That's where critical thinking turns into persuasive thinking, and it's where things get interesting.

@@ -30,6 +30,7 @@ faq:
     a: "Cap each inbox at roughly 20 to 40 per day even when fully warmed. To send more, rotate across several low-volume inboxes rather than blasting from one."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: marketing
 topicTitle: Marketing
 category: Business & Growth
@@ -47,7 +48,7 @@ The good news: those machines follow rules you can learn. Get them right and you
 
 ## Why this matters
 
-Some buyers will never find you through Google. A local print shop owner doesn't search "web-to-print software." A busy contractor doesn't read SaaS blogs. But they all have a business email they check every single day - and that makes cold email the most direct, founder-controllable way to reach them and book your first real conversations.
+Some buyers will never find you through Google. A local print shop owner doesn't search "web-to-print software." A busy contractor doesn't read SaaS blogs. But they all have a business email they check every single day - and that makes cold email [the most direct, founder-controllable way to reach them](/blog/how-to-make-money/15-distribution-beats-product) and [book your first real conversations](/blog/sales-customer-development/07-running-a-great-discovery-call-start-to-finish).
 
 Here's the catch. In 2024, Gmail and Yahoo tightened their rules for senders and now actually enforce them. One sloppy campaign can do lasting damage - not just to your outreach, but to your *main* domain, the one that sends password resets, receipts, and onboarding emails. If those start landing in spam, you've created a much bigger problem than a slow week of outreach.
 
@@ -130,7 +131,7 @@ Once the plumbing works, the words finally matter - but maybe not the way you th
 
 Send on Tuesday through Thursday mornings in the prospect's own timezone.
 
-**Speak their language, not yours.** Drop the insider jargon. A shop owner doesn't care about "multi-tenant architecture" - they care that customers keep emailing them PDFs and asking "can I just order this online?" Lead with their day, their headache, their words.
+**Speak their language, not yours.** Drop the insider jargon. A shop owner doesn't care about "multi-tenant architecture" - they care that customers keep emailing them PDFs and asking "can I just order this online?" Lead with [their day, their headache, their words](/blog/product-sense-empathy/03-user-empathy-seeing-through-the-user-s-eyes).
 
 **Personalize for real.** A genuine, specific detail about *their* business beats a generic merge tag like `[First Name]` by a wide margin. One real sentence - "nice work on the new storefront banners" - signals a human did this, not a robot.
 
@@ -156,7 +157,7 @@ Open rate is a softer signal these days, but a sudden drop below 20 percent ofte
 
 ## Common misconceptions
 
-**"Great copy gets you into the inbox."** Reality: copy decides whether someone *replies*. Authentication, warm-up, and list quality decide whether your email is *delivered at all*. You need both, in that order.
+**"Great copy gets you into the inbox."** Reality: copy decides whether someone *replies*. [Authentication](/blog/security-privacy-engineering/04-authentication-authorization), warm-up, and list quality decide whether your email is *delivered at all*. You need both, in that order.
 
 **"Open rates prove my email landed."** Reality: open tracking is increasingly unreliable, and a high open rate on a tiny sample tells you little. Treat it as a soft hint, not proof.
 
@@ -196,4 +197,4 @@ If you remember one thing, make it this: **cold email deliverability is an engin
 
 The founders who win at outreach aren't the ones with the cleverest subject lines. They're the ones boring enough to do the plumbing before the pitch.
 
-And once your emails reliably reach the inbox, a new question opens up - the one that separates a trickle of replies from a steady flow of booked calls: what actually makes a stranger stop, read, and *want* to answer? That's where the real craft of cold outreach begins.
+And once your emails reliably reach the inbox, a new question opens up - the one that separates a trickle of replies from a steady flow of booked calls: what actually makes a stranger stop, read, and *want* to answer? That's where [the real craft of cold outreach](/blog/sales-customer-development/13-founder-led-outreach-getting-the-conversations) begins.

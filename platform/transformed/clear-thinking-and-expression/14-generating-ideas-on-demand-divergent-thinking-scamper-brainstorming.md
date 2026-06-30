@@ -38,6 +38,7 @@ order: 13
 icon: ✍️
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Divergent_thinking
   - https://en.wikipedia.org/wiki/Green_Eggs_and_Ham
@@ -81,7 +82,7 @@ Here's the counter-intuitive truth from creativity research: if you want *good* 
 
 Studies of brainstorming find that the more ideas a person produces, the more likely their best one is excellent. Quality rides on the back of quantity. Your first three ideas are usually the obvious ones everybody thinks of. The interesting stuff shows up at idea number eight or twelve, after you've cleared out the clichés.
 
-The writer James Altucher calls this the **"idea muscle."** Like any muscle, it weakens without use and strengthens with daily reps. His practice is simple: write **10 ideas every day**, on any topic. Ten ways to improve your morning. Ten business ideas. Ten names for a cat.
+The writer James Altucher calls this the **"idea muscle."** Like any muscle, it weakens without use and strengthens with [daily reps](/blog/clear-thinking-and-expression/24-your-daily-weekly-thinking-practice-drills-reps). His practice is simple: write **10 ideas every day**, on any topic. Ten ways to improve your morning. Ten business ideas. Ten names for a cat.
 
 The topic barely matters. The point is the rep. You don't have to believe any exact numbers about how fast the muscle grows or fades; the principle is easy to test on yourself in a week.
 
@@ -115,7 +116,7 @@ Take a plain coffee mug and run it through SCAMPER:
 
 Seven questions, seven ideas, in two minutes, from a boring mug. None of them required talent. They required the checklist.
 
-SCAMPER works because it gives your working memory a *handle* to grab. Your working memory, the small mental workspace that holds only a few things at once, can't search "everything." But it can answer one narrow question at a time. Each letter is a doorway your mind wouldn't have opened on its own.
+SCAMPER works because it gives your working memory a *handle* to grab. Your [working memory](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits), the small mental workspace that holds only a few things at once, can't search "everything." But it can answer one narrow question at a time. Each letter is a doorway your mind wouldn't have opened on its own.
 
 ## "How might we..." - ask the question that opens doors
 
@@ -156,11 +157,11 @@ The constraint does the hard work of narrowing the field so your mind has somewh
 
 New ideas are usually old ideas *combined*. You can manufacture this on purpose.
 
-Take your problem, then grab a random word. Open a book and point, or glance around the room. Now force a link between the two.
+Take your problem, then grab a random word. Open a book and point, or glance around the room. Now [force a link between the two](/blog/clear-thinking-and-expression/15-analogical-lateral-thinking-connecting-different-domains).
 
 Say your problem is "get more people to read my newsletter," and your random word is "ladder." Force it together: a newsletter with visible "levels" that readers climb, unlocking deeper content as they go.
 
-The random word jolts you out of the obvious groove. Most creativity is recombination, and this trick simply feeds your brain two ingredients it would never have paired on its own.
+The random word jolts you out of the obvious groove. Most [creativity is recombination](/blog/clear-thinking-and-expression/13-what-creativity-actually-is-recombination-not-magic), and this trick simply feeds your brain two ingredients it would never have paired on its own.
 
 ## How to use this: the 15-minute idea session
 
@@ -187,4 +188,4 @@ If you want this to stick, try these four drills:
 
 If you remember one thing, remember this: separate making from judging. Almost every idea problem is really a judging problem sneaking in too early. Silence the critic, chase quantity, and the good ideas show up on their own.
 
-But generating ideas is only half the work. The harder, quieter skill is choosing well among them, and knowing when to kill a clever idea that simply won't survive contact with reality. That's where convergent thinking earns its keep, and it's a craft worth learning next.
+But generating ideas is only half the work. The harder, quieter skill is [choosing well among them](/blog/clear-thinking-and-expression/20-problem-solving-frameworks-define-decompose-hypothesize-test), and knowing when to kill a clever idea that simply won't survive contact with reality. That's where convergent thinking earns its keep, and it's a craft worth learning next.

@@ -38,6 +38,7 @@ order: 5
 icon: "\U0001F4BC"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -47,7 +48,7 @@ That question is the whole of **unit economics**. And here is the part most foun
 
 ## Why this matters
 
-A lot of businesses look healthy from the outside. Sales are climbing, the team is growing, the dashboard is green. Then they run out of cash and nobody understands why.
+A lot of businesses look healthy from the outside. Sales are climbing, the team is growing, the dashboard is green. Then they [run out of cash](/blog/business-financial-literacy/07-cash-flow-burn-rate-runway-don-t-run-out-of-money) and nobody understands why.
 
 The usual reason is broken unit economics. Every sale was quietly losing money, and growth simply multiplied the loss.
 
@@ -74,11 +75,11 @@ The formula is refreshingly simple:
 
 Say you sell a mug for **$25**. The variable costs are the mug and printing at $8, shipping at $4, and a payment fee of $1. That is $13 of variable cost.
 
-So your contribution margin is $25 − $13 = **$12**. Every mug you sell hands you $12 to put toward rent, salaries, and profit. If that number had come out *negative*, you would lose money on every single mug, and the only fix is to raise the price or cut the cost.
+So your contribution margin is $25 − $13 = **$12**. Every mug you sell hands you $12 to put toward rent, salaries, and profit. If that number had come out *negative*, you would lose money on every single mug, and the only fix is to [raise the price](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive) or cut the cost.
 
 You will also hear the term **gross margin**. It is the same idea shown as a percentage: contribution divided by price. Here that is $12 / $25 = **48%**. Keep that number in your pocket, because we need it again very soon.
 
-A quick reality check on what is normal: software businesses aim for high gross margins, often 70 to 80 percent and up, because copying software is nearly free. Physical-product and print businesses run lower, often 30 to 60 percent, because every unit eats real materials. Knowing your industry's normal range is how you tell "healthy" from "quietly in trouble."
+A quick reality check on what is normal: software businesses aim for high [gross margins](/blog/business-financial-literacy/04-reading-a-p-l-income-statement-line-by-line), often 70 to 80 percent and up, because copying software is nearly free. Physical-product and print businesses run lower, often 30 to 60 percent, because every unit eats real materials. Knowing your industry's normal range is how you tell "healthy" from "quietly in trouble."
 
 ## CAC: how much it costs to win a customer
 
@@ -147,7 +148,7 @@ Now the payoff. Put what a customer is worth (LTV) right next to what they cost 
 Picture it as a see-saw. On one side sits LTV, on the other sits CAC.
 
 - **LTV heavier** means healthy economics, so grow it.
-- **Balanced** means you break even with no margin to spare.
+- **Balanced** means you [break even](/blog/business-financial-literacy/10-break-even-margins-profitability) with no margin to spare.
 - **CAC heavier** means you lose money on every customer, so stop and fix it before doing anything else.
 
 The widely cited target is about **3:1**, meaning three dollars of lifetime value for every dollar of acquisition cost. Below 3:1 you are often too thin to survive once fixed costs pile on. Top performers run 4:1 to 6:1.
@@ -168,7 +169,7 @@ The ratio tells you *whether* a customer pays back. The **payback period** tells
 
 > **CAC Payback (months) = CAC ÷ (ARPU × Gross Margin %)**
 
-This one is about cash, not just profit. You spend the CAC *today*, but the customer trickles it back over months. The commonly cited healthy benchmark is **under about 12 months**, and elite companies recover CAC in well under 6. The longer the payback, the more cash you must float while you wait, which can sink a business that looks profitable on paper.
+This one is about cash, not just profit. You spend the CAC *today*, but the customer trickles it back over months. The commonly cited healthy benchmark is **under about 12 months**, and elite companies recover CAC in well under 6. The longer the payback, the more cash you must float while you wait, which can sink [a business that looks profitable on paper](/blog/business-financial-literacy/05-the-balance-sheet-cash-flow-statement-why-profit-cash).
 
 ## How to use this: run the full check on one company
 

@@ -38,12 +38,13 @@ category: Money & Business
 date: '2026-06-22'
 order: 28
 icon: "\U0001F4C8"
+linked: true
 sources: []
 ---
 
 Picture a firework display over your city. You can enjoy it without paying, and your enjoying it takes nothing away from anyone else. So who pays for it? That small puzzle is the whole reason government exists, at least in the eyes of an economist.
 
-Markets are extraordinary at moving resources to where they are valued most. But they have blind spots, and a few of those blind spots are big enough to sink a society. This is the story of where markets fail, what government can actually do about it, and where well-meaning government does more harm than good.
+Markets are extraordinary at moving resources to where they are valued most. But they have blind spots, and a few of those blind spots are big enough to sink a society. This is the story of [where markets fail](/blog/economics-from-first-principles/04-markets-competition-and-when-markets-fail), what government can actually do about it, and where well-meaning government does more harm than good.
 
 ## Why this matters
 
@@ -89,7 +90,7 @@ That top-right "common-pool" box hides the famous **tragedy of the commons**: wh
 
 An **externality** is a cost or benefit that lands on someone *not* part of the deal.
 
-A factory that dumps smoke imposes a **negative externality** - the neighbors breathe it, but the factory never pays for it. Because the factory's private cost is lower than the true cost to society, it *overproduces*. In the 1920s the economist Arthur Pigou proposed the fix: a **Pigouvian tax** equal to the spillover damage, so the polluter finally feels the full cost and cuts back. A carbon tax is just a modern Pigouvian tax.
+A factory that dumps smoke imposes a **negative externality** - the neighbors breathe it, but the factory never pays for it. Because the factory's private cost is lower than the true cost to society, it *overproduces*. In the 1920s the economist Arthur Pigou proposed the fix: a **Pigouvian tax** equal to the spillover damage, so the polluter finally feels the full cost and cuts back. A [carbon tax](/blog/economics-from-first-principles/30-environmental-economics-and-sustainable-development) is just a modern Pigouvian tax.
 
 Now flip it. Getting vaccinated also protects everyone you might have infected - a **positive externality**. Because you only count the benefit to yourself, society gets *too little* of it. The fix is a **subsidy**, a payment that lowers your cost and nudges more of the good thing.
 
@@ -99,13 +100,13 @@ Now flip it. Getting vaccinated also protects everyone you might have infected -
 
 Markets pay you for what you produce, not for what you need. A hardworking but unlucky family can end up destitute. Most societies decide that's unacceptable, so government redistributes through **progressive taxes** (higher earners pay a higher *rate*) and **transfers** (cash and benefits flowing to those with less).
 
-We measure inequality with the **Gini coefficient**, a number from 0 to 1. Zero means perfect equality; one means a single person holds everything.
+We measure [inequality](/blog/economics-from-first-principles/25-inequality-wealth-distribution-and-poverty) with the **Gini coefficient**, a number from 0 to 1. Zero means perfect equality; one means a single person holds everything.
 
 Here's the striking part: taxes and transfers move the needle hard. Many European countries start with a "market" Gini around 0.45–0.50 and, after taxes and transfers, land near 0.25–0.30. The United States redistributes less and ends nearer 0.39. Redistribution isn't a rounding error - it's one of the biggest forces shaping how a society actually feels to live in.
 
 ## Stability: the economy's shock absorbers
 
-The fourth job is smoothing the business cycle, and the cleverest tools here run by themselves.
+The fourth job is smoothing the [business cycle](/blog/economics-from-first-principles/15-the-business-cycle-booms-recessions-and-depressions), and the cleverest tools here run by themselves.
 
 **Automatic stabilizers** are tax-and-transfer features that cushion a downturn *without any new law*. In a recession, incomes fall, so tax bills fall automatically (leaving more cash in pockets), while unemployment benefits and food assistance rise automatically (putting cash into pockets). Both prop up spending exactly when it's collapsing.
 
@@ -209,4 +210,4 @@ If you remember one thing, make it this: **government isn't justified by ideolog
 
 But there's a crack running underneath the whole structure. A pay-as-you-go system depends on enough workers paying in, and the math is turning. The worker-to-beneficiary ratio in the US has fallen from 3.9 in 1966 to about 2.6 today, heading toward 2.2 - and the main Social Security trust fund is projected to run dry in the early 2030s, after which payroll taxes would cover only about three-quarters of promised benefits.
 
-So the real question for the next decade isn't *whether* government should act. It's who pays when the demographics finally come due - and that's where economics stops being abstract and starts showing up in your paycheck.
+So the real question for the next decade isn't *whether* government should act. It's who pays when [the demographics finally come due](/blog/economics-from-first-principles/28-population-demographics-and-the-economy) - and that's where economics stops being abstract and starts showing up in your paycheck.

@@ -30,6 +30,7 @@ faq:
     a: "Start with a correctness and trust gate, validate that customers can actually onboard themselves, build the core workflow, earn references in your beachhead, then layer pricing tiers, switching-cost features, and new segments in order."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: gtm-strategy
 topicTitle: Go-to-Market Strategy
 category: Business & Growth
@@ -101,7 +102,7 @@ One more honest move worth copying: they sized the market truthfully at roughly 
 
 "GTM motion" just means *how the sale actually happens*. Self-serve, where the customer signs up and onboards alone? Or human-assisted, where a salesperson guides them?
 
-The deciding factor is brutally simple: **the size of the deal.** A useful rule of thumb from a16z and others is that you can't afford a human in the loop until each customer is worth enough each year to pay for that human's time, a line that sits well above small monthly subscriptions.
+The deciding factor is brutally simple: **the size of the deal.** A useful rule of thumb from a16z and others is that you can't afford a human in the loop until [each customer is worth enough each year to pay for that human's time](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale), a line that sits well above small monthly subscriptions.
 
 So the case study split cleanly into two motions:
 
@@ -120,13 +121,13 @@ The fix is not faith. It is a test. **Before scaling self-serve spending, put 10
 
 ## Price above the floor, on purpose
 
-Most early SaaS companies charge too little. They anchor to fear instead of value, and then can't fund their own growth.
+Most early SaaS companies [charge too little](/blog/personal-money-mastery/12-pricing-value-capture). They anchor to fear instead of value, and then can't fund their own growth.
 
 The pricing move here uses the familiar **Good-Better-Best** ladder, three tiers, with a deliberate twist: price *above* the underpricing floor, not at it.
 
 - **Solo** at $39, the visible entry anchor.
 - **Growing** at $99, the hero plan most people should pick.
-- **Multi-Location** at $249, the high anchor that makes $99 feel reasonable.
+- **Multi-Location** at $249, [the high anchor](/blog/business-financial-literacy/09-pricing-psychology-pricing-with-confidence) that makes $99 feel reasonable.
 
 A few principles make this work:
 
@@ -164,7 +165,7 @@ The order is the lesson: **earn trust with the workflow, then deepen the lock-in
 
 **"Lower prices reduce risk."** Underpricing is its own risk. It starves the very growth engine you need and signals low value to buyers.
 
-**"A clever, contrarian position is a moat."** Counter-positioning is a great *entry wedge*, a reason to switch today. It rarely lasts. Durable defense comes from switching costs and the workflows customers build their day around.
+**"A clever, contrarian position is a moat."** Counter-positioning is a great *entry wedge*, a reason to switch today. It rarely lasts. Durable defense comes from [switching costs](/blog/ten-disciplines/13-what-strategy-really-is-advantage-moats-and-positioning) and the workflows customers build their day around.
 
 ## How to use this
 

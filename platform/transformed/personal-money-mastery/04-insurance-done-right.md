@@ -38,6 +38,7 @@ order: 3
 icon: "\U0001F4B0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -81,7 +82,7 @@ And here is the line that saves the most money in this entire article: **insuran
 ### How much cover do you need?
 
 - **Quick rule:** 10 to 15 times your annual income. Many advisors now suggest 15 to 20 times for young earners with long careers ahead.
-- **Sharper method (Human Life Value):** the income your dependents need until you would have retired, **plus** outstanding loans like a home loan, **minus** liquid savings already earmarked for them.
+- **Sharper method (Human Life Value):** the income your dependents need until you would have retired, **plus** outstanding loans like a [home loan](/blog/personal-money-mastery/02-emergency-fund-debt-the-true-cost-of-emis), **minus** liquid savings already earmarked for them.
 
 > **Meet Riya, 32.** She earns 15 lakh a year, has a 40 lakh home loan and 10 lakh in savings. The quick method (12x income) gives roughly 1.8 crore. The Human Life Value check lines up: about 1.5 crore to replace her income, plus 40 lakh for the loan, minus 10 lakh savings, equals **1.8 crore**. She buys a 2 crore term plan to age 60. A healthy non-smoker like her pays roughly 20,000 to 30,000 rupees a year for that cover. For the price of one weekend trip, her family is protected against losing her income for life.
 
@@ -164,7 +165,7 @@ Insurers love to wave around impressive numbers. Know which one actually matters
 ## Common misconceptions
 
 - **"Insurance is a smart investment."** No. It is protection. Bundling the two usually gives you weak cover and weak returns. Keep them separate.
-- **"I should buy insurance to save tax."** Buy it for protection and treat any tax break as a bonus. Crucially, the **new tax regime gives no 80C or 80D deduction at all**, so if you are on it, the tax argument is zero.
+- **"I should buy insurance to save tax."** Buy it for protection and treat any tax break as a bonus. Crucially, the **[new tax regime](/blog/personal-money-mastery/03-tax-literacy-india-first) gives no 80C or 80D deduction at all**, so if you are on it, the tax argument is zero.
 - **"My company health plan has me covered."** It ends with your job and rarely carries enough cover or your waiting-period credit. Keep your own policy.
 - **"A higher premium means better cover."** Not necessarily. A pricey endowment plan can hide a tiny life cover, while a cheap term plan delivers a huge one.
 
@@ -179,6 +180,6 @@ A few facts worth knowing, especially if you are on the old tax regime:
 
 ## Conclusion
 
-If you remember one thing, make it this: **insurance is a shield, not a savings account.** Buy a big, cheap term plan online, layer health cover with a super top-up and no room-rent limit, add personal accident and critical illness cover, and invest the money you save in low-cost index funds. That single shift, separating protection from investing, beats almost every bundled product an agent will ever pitch you.
+If you remember one thing, make it this: **insurance is a shield, not a savings account.** Buy a big, cheap term plan online, layer health cover with a super top-up and no room-rent limit, add personal accident and critical illness cover, and invest the money you save in [low-cost index funds](/blog/personal-money-mastery/07-index-funds-passive-investing). That single shift, separating protection from investing, beats almost every bundled product an agent will ever pitch you.
 
-With your downside finally capped, the next question gets interesting: where should that freed-up money actually go? Once the seatbelt is on, you get to drive, and that is where index funds, compounding, and the long game of real wealth begin.
+With your downside finally capped, the next question gets interesting: where should that freed-up money actually go? Once the seatbelt is on, you get to drive, and that is where index funds, [compounding](/blog/personal-money-mastery/05-compounding-the-time-value-of-money), and the long game of [real wealth](/blog/personal-money-mastery/10-income-vs-wealth) begin.

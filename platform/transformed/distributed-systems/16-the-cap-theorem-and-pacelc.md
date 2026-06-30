@@ -9,6 +9,7 @@ date: '2026-06-21'
 order: 15
 icon: "\U0001F310"
 transformed: true
+linked: true
 author: Pritesh Yadav (priteshyadav444)
 keywords:
   - CAP theorem
@@ -43,7 +44,7 @@ sources:
 
 The moment your data lives on more than one machine, you inherit a rule you cannot negotiate your way out of. When the network between those machines breaks, you have to choose: keep answering requests, or keep your data correct. You do not get both.
 
-That rule is the **CAP theorem**, and it is the most quoted idea in distributed systems. It is also the most misquoted. Almost everyone learns the catchy "pick two of three" slogan, and almost everyone learns it wrong.
+That rule is the **CAP theorem**, and it is the most quoted idea in [distributed systems](/blog/distributed-systems/12-what-is-a-distributed-system). It is also the most misquoted. Almost everyone learns the catchy "pick two of three" slogan, and almost everyone learns it wrong.
 
 This article fixes that. You will learn what CAP really claims, why the popular version is misleading, and why a newer model called **PACELC** describes the trade-off you actually pay every single day.
 
@@ -69,7 +70,7 @@ CAP stands for three properties a distributed store might try to guarantee. Each
 
 Every read sees the **most recent** write. If I save `balance = 100` and you read the balance one nanosecond later from *any* replica, you must see `100`, never the old value.
 
-The formal name for this is **linearizability**. It means the whole cluster behaves *as if* there were only one copy of the data, and every operation happened instantly, in one clear order. As Eric Brewer (who first proposed CAP) put it, consistency here is "equivalent to having a single up-to-date copy of the data."
+The formal name for this is **linearizability**, the strongest of the [consistency models](/blog/distributed-systems/17-consistency-models). It means the whole cluster behaves *as if* there were only one copy of the data, and every operation happened instantly, in one clear order. As Eric Brewer (who first proposed CAP) put it, consistency here is "equivalent to having a single up-to-date copy of the data."
 
 ### A is for Availability
 
@@ -123,7 +124,7 @@ We label systems by what they choose *when a partition strikes*.
 
 **etcd** (the key-value store that holds Kubernetes' cluster state) and **ZooKeeper** (a coordination service) exist to be the single source of truth everyone agrees on.
 
-They use a consensus algorithm (Raft for etcd, Zab for ZooKeeper) that needs a **majority**, or **quorum**, of nodes to agree before any write is accepted. If a partition leaves a group of nodes *without* a majority, that minority stops accepting writes. It would rather be unavailable than risk telling two clients different things.
+They use a [consensus algorithm](/blog/distributed-systems/02-the-consensus-problem) (Raft for etcd, Zab for ZooKeeper) that needs a **majority**, or **quorum**, of nodes to agree before any write is accepted. If a partition leaves a group of nodes *without* a majority, that minority stops accepting writes. It would rather be unavailable than risk telling two clients different things.
 
 Imagine if etcd let two halves of a split cluster each elect their own leader. Kubernetes would run two conflicting versions of your cluster. Unthinkable, so it picks C.
 
@@ -131,7 +132,7 @@ Imagine if etcd let two halves of a split cluster each elect their own leader. K
 
 **Cassandra** and **DynamoDB** both descend from Amazon's famous "Dynamo" design, built for an online store that must *never* reject a customer. Their guiding rule: an "add to cart" click must always succeed.
 
-So during a partition, every reachable node keeps accepting reads and writes. The copies drift apart, and the system reconciles them afterward using techniques like **last-write-wins** or **vector clocks** (a way to track which version came after which). They also offer **tunable consistency**, so you can request stronger guarantees per operation, but their default temperament is to stay available.
+So during a partition, every reachable node keeps accepting reads and writes. The copies drift apart, and the system reconciles them afterward using techniques like **last-write-wins** or [**vector clocks**](/blog/distributed-systems/15-vector-clocks-causality) (a way to track which version came after which). They also offer **tunable consistency**, so you can request stronger guarantees per operation, but their default temperament is to stay available.
 
 > **Analogy.** A CP system is a careful pharmacist: if she cannot verify your prescription against the central record, she refuses to hand over the pills. Better to send you away than risk a dangerous mistake. An AP system is a busy coffee shop during a card-network outage: it keeps serving customers and writes the orders on paper, sorting out payments once the system comes back. One refuses to be wrong. The other refuses to stop serving.
 
@@ -181,7 +182,7 @@ You do not have to memorize labels. You have to make a few decisions deliberatel
 1. **Decide C-vs-A per data type, not per company.** Money, inventory counts, locks, and config want CP. Carts, feeds, view counts, and sessions are happy with AP. One application can and should use both.
 2. **Ask both PACELC questions before choosing a database.** "What does it do on a partition?" *and* "What latency does it cost me for consistency on a normal day?" The second question hits you constantly; do not skip it.
 3. **Plan the partition-recovery path up front.** Follow Brewer's recipe: detect the partition, enter a limited mode that blocks the riskiest operations, then recover by merging diverged data when the network heals. Pick your merge strategy (last-write-wins, vector clocks, CRDTs) *before* the incident, not during it.
-4. **Do not roll your own consensus.** For coordination needs like service discovery, leader election, and config, reach for proven CP systems like etcd or ZooKeeper. Consensus is famously easy to get subtly wrong.
+4. **Do not roll your own consensus.** For coordination needs like service discovery, [leader election](/blog/distributed-systems/04-raft-leader-election), and config, reach for proven CP systems like etcd or ZooKeeper. Consensus is famously easy to get subtly wrong.
 5. **Treat consistency as a dial, not a switch.** Many AP databases offer tunable, per-request consistency (such as Cassandra's quorum levels). Turn it up for the few operations that need it, and leave it low for everything else.
 
 ## Conclusion

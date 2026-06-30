@@ -52,6 +52,7 @@ faq:
       flashcard app, that puts that finding to work with a review schedule.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: ai-learning-platform
 topicTitle: AI Learning Platform
 category: AI & LLMs
@@ -67,7 +68,7 @@ That last part is the good news. Once you know *when* a memory is about to slip 
 
 ## Why this matters
 
-Think about how much effort you pour into learning something new, a language, a certification, a hard concept at work, and how little of it survives a few weeks later. That gap is not a personal failing. It is the cost of fighting human memory with the wrong method.
+Think about how much effort you pour into learning something new, a language, a certification, a hard concept at work, and how little of it survives a few weeks later. That gap is not a personal failing. It is the cost of fighting [human memory](/blog/ai-learning-platform/03-how-humans-learn-a-plain-tour-of-memory) with the wrong method.
 
 Spaced repetition closes that gap. With the same total study time, you can remember far more, for far longer, simply by changing *when* you review instead of *how much*. For anyone who learns things they actually need to keep, this is the difference between knowledge that fades and knowledge that lasts.
 
@@ -104,7 +105,7 @@ Cramming is like filling a leaky bucket by dumping in all your water at once. Mo
 
 ## Review at the edge of forgetting
 
-The deepest learning happens when you recall something *right at the edge of forgetting*: late enough that retrieving it takes real effort, but early enough that you can still succeed. Psychologists call this a **desirable difficulty**, a struggle that feels hard now but builds a stronger memory.
+The deepest learning happens when you recall something *right at the edge of forgetting*: late enough that retrieving it takes real effort, but early enough that you can still succeed. Psychologists call this a [desirable difficulty](/blog/ai-learning-platform/08-interleaving-dual-coding-desirable-difficulties), a struggle that feels hard now but builds a stronger memory.
 
 Review too soon and it is easy and wasteful. Review too late and the memory is already gone. The sweet spot is "just before you would have forgotten." That is why good systems use **expanding intervals**, stretching the gap a little longer each time you get an item right.
 
@@ -122,7 +123,7 @@ How does a system know where the edge of forgetting is for each item? That is th
 
 **The Leitner box system** (Sebastian Leitner, 1970s) is pure paper. You keep a row of flashcard boxes, each reviewed less often than the last. A card you get *right* moves up to a slower box. A card you get *wrong* drops back to the daily box. No math, no computer, the boxes *are* the schedule.
 
-**The SM-2 algorithm** (Piotr Woźniak, 1980s) is the brains behind apps like Anki. Each card carries an "ease" number that captures how easy that card is *for you*. After each review, the next gap is the previous gap stretched by that ease number. Get it wrong and the gap collapses back to one day.
+**The [SM-2 algorithm](/blog/ai-learning-platform/21-spaced-repetition-algorithms-in-practice-sm-2-fsrs)** (Piotr Woźniak, 1980s) is the brains behind apps like Anki. Each card carries an "ease" number that captures how easy that card is *for you*. After each review, the next gap is the previous gap stretched by that ease number. Get it wrong and the gap collapses back to one day.
 
 The Leitner boxes are a paper map with a few fixed routes. SM-2 is a basic satellite-navigation system that recalculates one number per card. Both answer the same question, "when should I see this again?", just with different levels of precision.
 
@@ -136,7 +137,7 @@ A learning tool can. Because it watches every answer, it can:
 - **Predict when each item is about to fade**, using the forgetting curve.
 - **Resurface that item at the optimal moment**, automatically, without you having to plan anything.
 
-This pairs with the other great memory booster, **retrieval practice**, the act of pulling an answer *out* of your head rather than reading it back in. Spacing decides *when* to ask. Retrieval makes the asking itself strengthen the memory. Together they are the engine of efficient, durable learning.
+This pairs with the other great memory booster, [retrieval practice](/blog/ai-learning-platform/06-retrieval-practice-why-testing-beats-re-reading), the act of pulling an answer *out* of your head rather than reading it back in. Spacing decides *when* to ask. Retrieval makes the asking itself strengthen the memory. Together they are the engine of efficient, durable learning.
 
 ## How to use this
 

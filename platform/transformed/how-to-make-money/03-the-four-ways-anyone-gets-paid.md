@@ -23,6 +23,7 @@ order: 2
 icon: "\U0001FA99"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 faq:
   - q: What are the four ways anyone gets paid?
     a: "Selling your time (a job), selling a skill (freelancing), selling a product (build once, sell many), and owning assets (equity, rent, dividends, royalties). They're ordered by scalability - how much more you can earn without adding more hours."
@@ -127,13 +128,13 @@ Paul Graham draws a line worth tattooing on your brain: **money just moves wealt
 
 Ways 1 and 2 mostly *transfer* existing wealth - you do a task, money changes hands. Ways 3 and 4 *create* it. You make a new thing the world didn't have before.
 
-So what lets you charge 5 to 10 times the going rate, or invent a product people happily pay for? Naval calls it **specific knowledge**: knowledge you can't be formally trained for, found through genuine curiosity. It feels like play to you but looks like work to everyone else. It's your unfair edge, and it's where every higher rung is seeded.
+So what lets you charge 5 to 10 times the going rate, or invent a product people happily pay for? Naval calls it **[specific knowledge](/blog/how-to-make-money/09-specific-knowledge-your-personal-moat)**: knowledge you can't be formally trained for, found through genuine curiosity. It feels like play to you but looks like work to everyone else. It's your unfair edge, and it's where every higher rung is seeded.
 
 ## Common misconceptions
 
 **"Passive income is effortless."** It isn't. Way 3 and Way 4 income is *front-loaded*, not free. A course takes months to build. A portfolio takes years of saved labor income to fund. Naval's phrase is *"get rich slow,"* not get rich lucky.
 
-**"More hours always means more money."** That's only true on Ways 1 and 2 - and it's exactly their ceiling. On high-leverage work, an hour can have a huge effect, or 1,000 hours can have no effect at all. Output stops tracking input in both directions.
+**"More hours always means more money."** That's only true on Ways 1 and 2 - and it's exactly their ceiling. On [high-leverage work](/blog/how-to-make-money/04-leverage-the-real-secret), an hour can have a huge effect, or 1,000 hours can have no effect at all. Output stops tracking input in both directions.
 
 **"You need to be rich to own assets."** Owning things doesn't require a fortune up front. Index funds, ESOPs, and small dividend positions let you start with modest savings. Ownership is a *habit*, not a one-time jackpot.
 
@@ -147,15 +148,15 @@ Most people stall between freelance and product. The leap that changes your life
 
 1. **Name your current rung.** Be honest. Salary is Way 1. Billing clients is Way 2. Most people who "feel stuck" are stalled at 2, mistaking a higher rate for real progress.
 2. **Find the thing you keep repeating.** The service you deliver again and again for different clients is the raw material for a product. That repetition is a signal, not a chore.
-3. **Productize it on the side.** Turn the repeated service into a build-once, sell-many offer - a course, a template, a tool, a book. Don't quit to "chase freedom." Use Way 1 to fund and de-risk the climb.
+3. **Productize it on the side.** Turn the repeated service into a [build-once, sell-many offer](/blog/how-to-make-money/10-products-vs-time-escaping-the-trap) - a course, a template, a tool, a book. Don't quit to "chase freedom." Use Way 1 to fund and de-risk the climb.
 4. **Build until the income overlaps.** Grow the product on evenings and weekends until its income meets your salary. *Then* jump. The job is the launchpad, not the prison.
-5. **Convert earnings into ownership.** Don't let product income just sit. Route it into equity, index funds, dividend stocks, or property until money starts working without you.
+5. **Convert earnings into ownership.** Don't let product income just sit. Route it into [equity](/blog/how-to-make-money/17-equity-ownership-the-windfall-path), index funds, dividend stocks, or property until money starts working without you.
 6. **Treat tax thresholds as planning signals.** The point where your freelance income gets big enough to need formal registration is also the natural moment to ask: should I be productizing this instead of billing more hours? Rules differ by country, so check your local thresholds for service income, equity grants, dividends, and rent - and use a qualified advisor for anything large.
 
 ## Conclusion
 
-If you remember one thing, make it this: **wealth comes from decoupling your income from your hours.** Everything below that line is renting out a slice of your one finite life; everything above it is building something that keeps paying after you've stepped away from the desk.
+If you remember one thing, make it this: **[wealth comes from decoupling your income from your hours](/blog/how-to-make-money/16-income-vs-wealth-owning-vs-working).** Everything below that line is renting out a slice of your one finite life; everything above it is building something that keeps paying after you've stepped away from the desk.
 
 You don't have to leap all four rungs this year. You just have to know which rung you're on and refuse to mistake a comfortable ceiling for the open sky.
 
-Which raises the obvious next question - once you've decided to climb, *how* do you actually price the thing you sell so people say yes without you leaving money on the table? That's where the real craft of getting paid begins.
+Which raises the obvious next question - once you've decided to climb, *how* do you actually [price the thing you sell](/blog/how-to-make-money/14-pricing-value-capture) so people say yes without you leaving money on the table? That's where the real craft of getting paid begins.

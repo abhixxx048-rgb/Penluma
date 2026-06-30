@@ -24,6 +24,7 @@ order: 6
 icon: "\U0001F9E0"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 faq:
   - q: What is the difference between model eval and product eval?
     a: A model eval asks "is the model good?" using generic benchmarks. A product eval asks "does my feature do its job for my users?" The product eval is the one that decides whether you ship.
@@ -55,7 +56,7 @@ This cheat sheet keeps the four pillars - **evals**, **retrieval**, **agents**, 
 
 ## Evals in one minute
 
-An **eval** is just a test for non-deterministic software. Without one, "the AI got better" is a vibe, not a fact.
+An **eval** is just [a test for non-deterministic software](/blog/ai-llm-engineering/02-evaluation-measurement). Without one, "the AI got better" is a vibe, not a fact.
 
 - **Model eval vs product eval** - a model eval asks "is the model good?" on generic benchmarks. A product eval asks "does *my* feature do *its* job for *my* users?" The second is the one that matters.
 - **Golden dataset** - a curated, labelled set of representative inputs plus the behaviour you expect. It's your ground truth. Build it from real usage and edge cases, not invented examples.
@@ -70,9 +71,9 @@ An **eval** is just a test for non-deterministic software. Without one, "the AI 
 
 ## Retrieval in one minute
 
-**Retrieval** is how you give a model knowledge it wasn't trained on - your docs, your data, today's facts - without retraining anything.
+**Retrieval** is how you [give a model knowledge it wasn't trained on](/blog/ai-llm-engineering/03-context-engineering-retrieval) - your docs, your data, today's facts - without retraining anything.
 
-- **Tokens and the context window** - models read and write in tokens (sub-word chunks). The context window is the finite token budget for prompt plus output. Everything you retrieve competes for that space.
+- **Tokens and the context window** - models read and write in [tokens (sub-word chunks)](/blog/ai-llm-engineering/01-foundations-how-llms-work-why-these-skills-endure). The context window is the finite token budget for prompt plus output. Everything you retrieve competes for that space.
 - **Chunking** - splitting documents into retrievable pieces. Too big is noisy and wasteful; too small loses meaning. Chunk on semantic boundaries and keep some overlap.
 - **Embeddings** - text mapped to vectors, so similar meaning becomes geometric closeness. This is the basis of meaning-based search.
 - **Vector DB and similarity search** - stores embeddings and finds the nearest neighbours to your query vector. Fast, approximate, semantic lookup.
@@ -95,14 +96,14 @@ Default to RAG for facts.
 
 ## Agents in one minute
 
-An **agent** is a model that decides its own next step in a loop. That flexibility is powerful and dangerous in equal measure.
+An **agent** is [a model that decides its own next step in a loop](/blog/ai-llm-engineering/04-agent-architecture-orchestration). That flexibility is powerful and dangerous in equal measure.
 
 - **Agent vs workflow** - a workflow is a fixed, predefined path of model calls. An agent dynamically chooses its own steps and tools. Workflows are predictable; agents are flexible but harder to control. If the path is known, use a workflow.
 - **The agent loop** - observe, think, act (call a tool), observe the result, repeat until done. That's the engine under every agent.
 - **Tools and function calling** - the model emits a structured request to call a function; your code runs it and feeds the result back. This is how agents touch the real world.
 - **ReAct** - interleave *reasoning* and *acting* in "thought → action → observation" cycles, so the model plans, acts, and adjusts on feedback.
 - **Workflow patterns** - **prompt chaining** (sequential steps), **routing** (classify then dispatch), **parallelization** (fan out, then aggregate), **orchestrator-worker** (a lead delegates subtasks), **evaluator-optimizer** (generate, critique, revise), and **reflection** (the model reviews its own output before finalizing).
-- **Single vs multi-agent** - multiple agents add coordination cost and a new surface for failure. Use one agent until a task genuinely needs separate roles or contexts. Most don't.
+- **Single vs multi-agent** - [multiple agents add coordination cost](/blog/agent-orchestration/agent-orchestration-00-index) and a new surface for failure. Use one agent until a task genuinely needs separate roles or contexts. Most don't.
 - **MCP (Model Context Protocol)** - an open standard for connecting models to tools and data sources, so integrations are reusable instead of rebuilt per app.
 - **Failure modes** - **loops** (the agent repeats the same action forever) and **compounding errors** (a small early mistake propagates and amplifies). Long autonomous chains multiply per-step error rates.
 
@@ -128,7 +129,7 @@ A few beliefs quietly sink real projects.
 - **"More context means better answers."** Past a point, extra context dilutes attention and buries the important parts in the middle. Curate, don't dump.
 - **"The model sounded sure, so it's probably right."** Confidence is not correctness. A model will state a wrong answer with the exact same fluency as a right one.
 - **"Our retrieval is fine - the answer was faithful to the source."** A faithful answer drawn from the *wrong* document is still wrong. Check whether you retrieved the right context before blaming the prompt.
-- **"We should use AI for this."** For tasks with one exact right answer - math, lookups, rules - an LLM is the wrong tool. Use code.
+- **"We should use AI for this."** For tasks with one exact right answer - math, lookups, rules - [an LLM is the wrong tool](/blog/ai-llm-engineering/05-ai-product-judgment). Use code.
 
 ## How to use this
 

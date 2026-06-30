@@ -32,6 +32,7 @@ faq:
     a: They do not have bigger memories. They recognize patterns they have stored as schemas, so they pack more into each chunk. Remove the pattern and their advantage disappears.
   - q: Can I expand my working memory with practice?
     a: You cannot grow the raw capacity, but you can beat the limit by offloading onto paper and by building schemas so each chunk carries more meaning.
+linked: true
 topic: clear-thinking-and-expression
 topicTitle: Clear Thinking & Expression
 category: Thinking & Decisions
@@ -53,7 +54,7 @@ It is not. You just hit a physical limit that every human brain shares, no excep
 
 ## Why this matters
 
-Almost everything you want to do well runs straight through this limit. Speaking without losing your thread. Reading and actually keeping it. Spotting the pattern in a spreadsheet that everyone else missed.
+Almost everything you want to do well runs straight through this limit. Speaking without losing your thread. Reading and actually keeping it. [Spotting the pattern](/blog/clear-thinking-and-expression/22-spotting-patterns-trends-anomalies-signals) in a spreadsheet that everyone else missed.
 
 When you understand how little your mind can juggle at once, you stop blaming yourself and start using the right tools. The frustrating part is that the usual advice, "focus harder, concentrate," makes things worse. It piles more onto an already overloaded system.
 
@@ -77,11 +78,11 @@ Later research tightened it. Nelson Cowan and others found that for raw, unrehea
 
 When you try to hold more, the start of a sentence while you choose its ending, three facts you want to connect, a question plus your answer plus the listener's expression, the desk overflows. That overflow is what "going blank" actually feels like.
 
-Picture a small kitchen counter. With a few ingredients out, you chop comfortably. Pile on ten ingredients, three bowls, and an open cookbook, and you cannot move; things start sliding onto the floor. Going blank is just ingredients hitting the floor.
+Picture a small kitchen counter. With a few ingredients out, you chop comfortably. Pile on ten ingredients, three bowls, and an open cookbook, and you cannot move; things start sliding onto the floor. [Going blank](/blog/clear-thinking-and-expression/01-nothing-is-wrong-with-you-the-science-of-going-blank) is just ingredients hitting the floor.
 
 ## Cognitive load: why a crowded head muddles your speech
 
-**Cognitive load** is simply how full the desk is right now. Educational psychologist John Sweller showed that learning and thinking break down once load gets too high. Two kinds are worth naming.
+**[Cognitive load](/blog/ai-learning-platform/05-cognitive-load-theory-why-too-much-at-once-fails)** is simply how full the desk is right now. Educational psychologist John Sweller showed that learning and thinking break down once load gets too high. Two kinds are worth naming.
 
 - **Useful load** is the actual idea you are trying to think about or say.
 - **Wasted load** is everything else stealing desk space: "Am I saying this right? Are they bored? Wait, what was my point? Don't say um."
@@ -153,8 +154,8 @@ Pick something you read recently. First, without looking, write down everything 
 
 ## Conclusion
 
-Your thinking desk holds about four things. You will never make it bigger, but you can make it work like it is huge: offload onto paper to free space, and build schemas so each chunk carries more and patterns become visible.
+Your thinking desk holds about four things. You will never make it bigger, but you can make it work like it is huge: [offload onto paper](/blog/clear-thinking-and-expression/03-think-on-paper-why-externalizing-beats-thinking-in-your-head) to free space, and build schemas so each chunk carries more and patterns become visible.
 
 The deepest payoff is that last part. Once you start collecting patterns on purpose, you change *what you are even able to notice*. The opportunity in the data, the flaw in the argument, the connection nobody else made, none of it is luck. It is a schema firing.
 
-So here is the question worth sitting with: if insight is just recognition, what would happen to your thinking if you spent the next month deliberately collecting patterns in one field you care about? That habit, turning fleeting information into permanent structure, is exactly what the best note-taking systems are built to do.
+So here is the question worth sitting with: if insight is just recognition, what would happen to your thinking if you spent the next month deliberately collecting patterns in one field you care about? That habit, turning fleeting information into permanent structure, is exactly what the best [note-taking systems](/blog/clear-thinking-and-expression/11-note-taking-that-creates-insight-zettelkasten-cornell-progressive-summarization) are built to do.

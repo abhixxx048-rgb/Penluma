@@ -35,6 +35,7 @@ faq:
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
 sources: []
+linked: true
 ---
 
 You have probably heard that "the rich have seven streams of income." It gets repeated so often that people quit a steady job to chase five side hustles at once, then end up mediocre at all of them.
@@ -49,7 +50,7 @@ People spread themselves thin across half-built projects, none of which ever com
 
 When you understand how income really works, three things change:
 
-- You stop scattering your effort and start compounding it.
+- You stop scattering your effort and start [compounding it](/blog/personal-money-mastery/05-compounding-the-time-value-of-money).
 - You keep more of what you earn, because you finally know how each rupee is taxed.
 - You build streams in an order that funds itself, instead of draining your savings on five experiments at once.
 
@@ -65,7 +66,7 @@ Active income gets a bad reputation in finance circles, but early on it is your 
 
 ### 2. Portfolio income: your money earns instead of you
 
-This is earnings on money you already own: capital gains on shares or mutual funds, interest, and dividends. The catch is in the name. You need a **portfolio** first, which means you need capital before this bucket does anything for you.
+This is earnings on money you already own: [capital gains on shares or mutual funds](/blog/personal-money-mastery/06-asset-classes-how-they-behave), interest, and dividends. The catch is in the name. You need a **portfolio** first, which means you need capital before this bucket does anything for you.
 
 ### 3. Passive income: an asset or system pays you
 
@@ -101,7 +102,7 @@ So the right question is not "How do I get seven income streams?" It is **"What 
 
 ## How each stream is taxed (FY 2025-26)
 
-This is where multi-stream earners win or lose. India's **new tax regime** is now the default, and Budget 2025 reshaped the maths. Here are the new-regime slab rates.
+This is where multi-stream earners win or lose. India's **[new tax regime](/blog/personal-money-mastery/03-tax-literacy-india-first)** is now the default, and Budget 2025 reshaped the maths. Here are the new-regime slab rates.
 
 | Taxable income (FY 2025-26) | Rate |
 | --- | --- |
@@ -166,7 +167,7 @@ The lesson: passive income usually has a tiny yield relative to the capital or e
 
 1. **Name your one engine.** Identify the single active income source you can make genuinely excellent over the next two to three years. Protect your attention for it.
 2. **Push it to high, stable earnings** before adding anything new. A second stream that distracts from your best one is a net loss.
-3. **Route the surplus into a portfolio.** Once your active income covers your life with room to spare, automate investing the excess. This is how portfolio income gets born.
+3. **Route the surplus into a portfolio.** Once your active income covers your life with room to spare, [automate investing the excess](/blog/personal-money-mastery/08-asset-allocation-rebalancing). This is how portfolio income gets born.
 4. **Add passive streams last,** and only when you have both spare capital and spare attention. Treat the build phase as real work, because it is.
 5. **If you freelance, learn presumptive taxation.** Sections 44ADA and 44AD can save you both tax and hours of bookkeeping.
 6. **Run both tax regimes once a year.** The default is not automatically best for you, especially with a home loan and a stack of deductions.
@@ -176,4 +177,4 @@ The lesson: passive income usually has a tiny yield relative to the capital or e
 
 The single takeaway: build income streams in the right **order**, not the right **count**. One excellent active engine funds your portfolio, and your portfolio funds true passive income. The streams follow focus.
 
-Master that, and a natural next question appears. Once your active engine is humming and surplus is piling up, where exactly should that money go first, your emergency fund, your loans, or the market? That sequencing decision deserves its own playbook, and it is where the real compounding begins.
+Master that, and a natural next question appears. Once your active engine is humming and surplus is piling up, where exactly should that money go first, your [emergency fund, your loans](/blog/personal-money-mastery/02-emergency-fund-debt-the-true-cost-of-emis), or the market? That sequencing decision deserves its own playbook, and it is where the real compounding begins.

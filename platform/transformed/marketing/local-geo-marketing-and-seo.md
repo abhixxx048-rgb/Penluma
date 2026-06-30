@@ -54,6 +54,7 @@ faq:
       few months, and they need ongoing upkeep rather than a one-time setup.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 topic: marketing
 topicTitle: Marketing
 category: Business & Growth
@@ -71,7 +72,7 @@ That little box of three results is the whole game for a local business. This gu
 
 Local search is where buying decisions happen. Around 88% of people who run a "near me" search on their phone call or visit a business within 24 hours. That is not browsing. That is someone with a wallet, ready now.
 
-For any location-bound business, a print shop, a salon, a sign maker, a repair garage, this is the single highest-intent moment you will ever get. The person already wants what you sell. They are just deciding *who* gets the order.
+For any location-bound business, a print shop, a salon, a sign maker, a repair garage, this is the single [highest-intent moment](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy) you will ever get. The person already wants what you sell. They are just deciding *who* gets the order.
 
 The good news: most of your local competitors have done almost nothing here. Their Google listing is half-finished, their phone number is wrong on three directories, and they have not asked a customer for a review in years. The bar is low, which means a little focused effort goes a long way.
 
@@ -104,7 +105,7 @@ If you do only one thing after reading this, do this. Your Google Business Profi
 
 The detail that matters most is your **primary category**. Picking the most accurate one, "Print shop," "Sign shop," "Commercial printer," is the strongest single factor you control. Getting it right can lift your visibility by roughly 17% compared to a vague or wrong choice. Add accurate secondary categories too, but get the main one exactly right.
 
-From there, fill in everything. Hours, services, photos, a real description. Keep your hours accurate, because Google now uses whether you are open as a ranking filter, an always-wrong "closed" tag quietly buries you.
+From there, fill in everything. Hours, services, photos, [a real description](/blog/psychology-of-decisions/18-writing-marketing-copy-that-persuades-without-lying). Keep your hours accurate, because Google now uses whether you are open as a ranking filter, an always-wrong "closed" tag quietly buries you.
 
 > A quick gut check: search your own business name on your phone. If the listing looks thin, has old photos, or the wrong hours, you have just found your fastest win.
 
@@ -122,7 +123,7 @@ NAP consistency is getting *more* important, not less. AI search tools and Googl
 
 Reviews pull double duty. They lift your ranking, and they pull clicks once you are visible. A 4.5-star business gets around 28% more clicks than a 4.0-star one. That half-star is worth real money.
 
-The trick is **velocity**, a steady trickle beats a flood. A few genuine reviews every week signals an active, living business. Fifty reviews in one weekend and then silence for a year looks suspicious and helps less.
+The trick is **velocity**, a steady trickle beats a flood. A few [genuine reviews](/blog/psychology-of-decisions/10-the-six-levers-of-influence-how-people-get-persuaded) every week signals an active, living business. Fifty reviews in one weekend and then silence for a year looks suspicious and helps less.
 
 Build a simple habit:
 
@@ -142,7 +143,7 @@ While you are at it, claim the core directories too, Yelp, Bing Places, Facebook
 
 ## Common misconceptions
 
-**"I have a website, so I'll show up."** A website helps, but the Map Pack is driven mostly by your Google Business Profile, not your site. You can have a beautiful website and be invisible on Maps.
+**"I have a website, so I'll show up."** A website helps, but the Map Pack is driven mostly by your Google Business Profile, not your site. You can have a beautiful website and be [invisible on Maps](/blog/how-to-make-money/15-distribution-beats-product).
 
 **"More reviews, faster, is always better."** A sudden burst looks unnatural and can trip Google's spam filters. Steady and genuine wins.
 

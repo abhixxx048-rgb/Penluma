@@ -58,6 +58,7 @@ faq:
       and a net fiscal contribution - especially valuable for aging countries.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - 'https://en.wikipedia.org/wiki/Thomas_Robert_Malthus'
   - 'https://en.wikipedia.org/wiki/Demographic_transition'
@@ -122,7 +123,7 @@ Here is the single most important idea in this whole topic, so slow down for it.
 
 **GDP per capita** is output divided by people. It is the rough measure of living standards, and it depends on something different: how much **capital** (machines, tools, buildings) and **productivity** each worker has.
 
-These two can pull in opposite directions. If population grows fast, the same stock of machines and roads gets spread thinner - capital per worker falls. So faster population growth can *raise* total GDP while *lowering* output per worker.
+These two can pull in opposite directions. If population grows fast, the same stock of machines and roads gets spread thinner - capital per worker falls. So faster population growth can *raise* total GDP while *lowering* [output per worker](/blog/economics-from-first-principles/12-economic-growth-and-productivity).
 
 > A bigger population usually makes an economy larger, but not automatically richer per person. Living standards depend on capital and productivity per worker - which is exactly why the *age structure* of a population matters more than its raw size.
 
@@ -175,7 +176,7 @@ That means PAYG depends entirely on the worker-to-retiree ratio.
 
 Think of it like a **relay race**. Each runner can only get paid if the next group of runners is at least as large. Sub-replacement fertility breaks the chain - there simply aren't enough new runners to hand the baton to.
 
-The strain is already visible. In US Social Security, the ratio of taxpayers to beneficiaries fell from about **42 to 1 in 1945** to roughly **2.7 to 1 today**. Trustees project the trust fund will deplete around 2035, after which payroll taxes would cover only about 75–80% of promised benefits.
+The strain is already visible. In [US Social Security](/blog/economics-from-first-principles/29-public-economics-welfare-social-security-and-the-role-of-government), the ratio of taxpayers to beneficiaries fell from about **42 to 1 in 1945** to roughly **2.7 to 1 today**. Trustees project the trust fund will deplete around 2035, after which payroll taxes would cover only about 75–80% of promised benefits.
 
 The arithmetic leaves only four real levers, and every country picks some mix:
 
@@ -188,7 +189,7 @@ The arithmetic leaves only four real levers, and every country picks some mix:
 
 Immigration is where demographics and politics collide hardest, so it's worth stating the research consensus plainly. Reviews such as the US National Academies of Sciences find that immigration is, on balance, a **net positive for the host economy**.
 
-- **Wages:** the long-run effect on native wages overall is very small. Any downward pressure concentrates narrowly - mostly on prior immigrants and native high-school dropouts - and is often just a few percent or zero.
+- **Wages:** the long-run effect on [native wages](/blog/economics-from-first-principles/13-wages-labor-markets-and-why-some-jobs-pay-more) overall is very small. Any downward pressure concentrates narrowly - mostly on prior immigrants and native high-school dropouts - and is often just a few percent or zero.
 - **GDP:** more workers mean more output. The US Congressional Budget Office projected the recent immigration surge would add roughly **$8.9 trillion to nominal GDP over 2024–2034**.
 - **Fiscal:** immigrants on average pay more in lifetime taxes than they consume in services, and because they tend to arrive *young*, they directly counteract aging - raising the working-age share and helping fund PAYG pensions. This is a big reason the US, Canada, and Australia age more slowly than Japan and Korea.
 
@@ -207,7 +208,7 @@ The local picture can differ - schooling and health costs can fall on specific r
 You don't run a country, but this lens is genuinely useful. Here's how to apply it:
 
 1. **Check the age structure before the headcount.** When you read about a country's economy, ask whether its working-age share is rising or falling. That tells you more about its next two decades than its total population does.
-2. **Separate "bigger" from "richer" in your head.** When a country's total GDP grows, ask whether GDP *per person* is growing too. Only the second one means rising living standards.
+2. **Separate "bigger" from "richer" in your head.** When a country's [total GDP](/blog/economics-from-first-principles/11-measuring-an-economy-gdp-gnp-cpi-ppp-and-key-indicators) grows, ask whether GDP *per person* is growing too. Only the second one means rising living standards.
 3. **Watch where the "pig in the python" is.** A nation's median age and fertility rate roughly predict whether it's heading into a dividend or a headwind. India and much of Africa are early; East Asia and Europe are late.
 4. **Read pension and retirement-age fights as math, not just politics.** When a country debates raising the retirement age, it's usually responding to a falling worker-to-retiree ratio. The four levers are always the same.
 5. **Take the long view in your own plans.** If you're investing or building for the long term, favor markets where the workforce is still growing - and assume aging societies will lean harder on automation and immigration.
@@ -218,4 +219,4 @@ If you remember one thing, make it this: **demographics don't just influence an 
 
 What makes this force unusual is that you can see it coming. Births are locked in twenty years ahead, so the labor force of 2046 already exists as children today. That's exactly why ignoring it is so costly.
 
-Which raises a sharper question worth sitting with: if a shrinking workforce caps what an economy can produce, can machines fill the gap? The next great economic argument may be whether automation and artificial intelligence can finally break the link between the number of workers and the size of an economy - or whether people remain, in the end, the thing that everything else runs on.
+Which raises a sharper question worth sitting with: if a shrinking workforce caps what an economy can produce, can machines fill the gap? The next great economic argument may be whether [automation and artificial intelligence](/blog/economics-from-first-principles/27-technology-automation-ai-and-innovation) can finally break the link between the number of workers and the size of an economy - or whether people remain, in the end, the thing that everything else runs on.

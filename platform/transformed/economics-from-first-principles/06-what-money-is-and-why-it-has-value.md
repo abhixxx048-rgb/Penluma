@@ -36,6 +36,7 @@ faq:
     a: "Not quite yet. Bitcoin is scarce and widely held, but it is too volatile to reliably serve as a unit of account or everyday store of value. For now it behaves more like a speculative asset than like money."
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -103,7 +104,7 @@ Curiously, money can do this job without even circulating. Medieval Europe used 
 
 ### 3. A store of value
 
-It holds its purchasing power over time, so you can sell your labour today and buy bread next month. This is the function inflation slowly erodes, and hyperinflation destroys outright.
+It holds its purchasing power over time, so you can sell your labour today and buy bread next month. This is the function [inflation slowly erodes](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money), and hyperinflation destroys outright.
 
 To do these jobs well, money needs good physical traits. It should be **durable** (doesn't rot), **portable** (easy to carry), **divisible** (makes change), **uniform** (one unit equals any other), **scarce** (limited enough to stay valuable), and **acceptable** (others take it). Gold scores high on every one, which is why so many separate societies landed on it without ever talking to each other.
 
@@ -121,7 +122,7 @@ Gold and silver are the classics, but history is full of others: salt (the word 
 
 Every major currency on Earth, the dollar, euro, rupee, and yen, has been pure fiat since 1971.
 
-And here is a fact that surprises most people: physical cash is only a tiny sliver of all the money that exists. The vast majority of money is simply digital entries in bank computers. The "money" in your account isn't sitting in a drawer somewhere. It's a number.
+And here is a fact that surprises most people: physical cash is only a tiny sliver of all the money that exists. The vast majority of money is simply [digital entries in bank computers](/blog/economics-from-first-principles/07-how-banks-work-and-how-they-create-money). The "money" in your account isn't sitting in a drawer somewhere. It's a number.
 
 ## Common misconceptions
 
@@ -156,7 +157,7 @@ To supply the whole world with dollars for trade, the US had to keep sending dol
 
 The end came on **15 August 1971**: the **Nixon Shock**. In a televised address, President Nixon "closed the gold window," suspending dollar-to-gold convertibility. A patch-up deal that December failed, and by March 1973 the major currencies floated freely against each other.
 
-That single decision ended commodity backing for the *entire world's* money and launched the modern era of pure fiat with floating exchange rates. Notice that Nixon never "abolished gold" by law. He *temporarily* suspended convertibility, and the temporary quietly became permanent. Gold, around $35 in 1971, now trades in the thousands per ounce, a vivid measure of how much purchasing power the dollar has shed since the anchor was cut.
+That single decision ended commodity backing for the *entire world's* money and launched the modern era of pure fiat with [floating exchange rates](/blog/economics-from-first-principles/22-exchange-rates-currency-markets-and-why-currencies-rise-or-fall). Notice that Nixon never "abolished gold" by law. He *temporarily* suspended convertibility, and the temporary quietly became permanent. Gold, around $35 in 1971, now trades in the thousands per ounce, a vivid measure of how much purchasing power the dollar has shed since the anchor was cut.
 
 ## So why does fiat money have value at all?
 
@@ -168,7 +169,7 @@ This is the deepest question of all, and there is no single answer. Value rests 
 
 3. **Legal tender laws.** The government decrees the currency "legal tender for all debts." But be careful, this is weaker than people think. It compels acceptance for settling *debts*, not necessarily every shop purchase. Don't overrate it.
 
-4. **Limited, managed supply.** A credible central bank controls how much money exists, keeping it scarce enough to hold its value.
+4. **Limited, managed supply.** A credible [central bank](/blog/economics-from-first-principles/08-central-banks-and-monetary-policy) controls how much money exists, keeping it scarce enough to hold its value.
 
 The key takeaway: fiat money has value because of a self-reinforcing loop. People trust it, the state forces a permanent demand for it through taxes, and its supply is kept scarce. Cut any of these, especially trust, and the whole structure can unravel fast.
 
@@ -193,7 +194,7 @@ Everything above sets up a live experiment running in the world today.
 
 **Bitcoin** (launched in 2009 by the pseudonymous Satoshi Nakamoto) is money with *no* central issuer, *no* government, and *no* tax demand behind it. Only computer code and collective belief. Its supply is capped at 21 million coins, which is why fans call it "digital gold."
 
-Its weakness is volatility. It swung to an all-time high near $126,000 in October 2025, then dropped sharply. Something that can lose a third of its value in weeks struggles to be a reliable unit of account or everyday store of value. For now it behaves more like a speculative asset than like money.
+Its weakness is volatility. It swung to an all-time high near $126,000 in October 2025, then dropped sharply. Something that can lose a third of its value in weeks struggles to be a reliable unit of account or everyday store of value. For now it behaves more like a [speculative asset](/blog/economics-from-first-principles/19-financial-markets-stocks-bonds-commodities-and-derivatives) than like money.
 
 **Stablecoins** (such as USDT and USDC) are crypto tokens pegged 1:1 to a fiat currency, usually the dollar, and backed by reserves. Notice the irony: they work by *borrowing fiat's trust*. Their combined value grew from roughly $205 billion in early 2025 to over $300 billion by late 2025, and the US GENIUS Act gave them their first federal rulebook.
 

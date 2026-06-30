@@ -57,6 +57,7 @@ order: 4
 icon: "\U0001F393"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Cognitive_load
   - https://en.wikipedia.org/wiki/Working_memory
@@ -99,7 +100,7 @@ Take the phone number 4155550172. As ten separate digits it is impossible to hol
 
 In the late 1980s, psychologist John Sweller noticed something important. Because working memory is so limited, everything you ask a learner to think about competes for the same scarce space. He split that mental effort into three types, and understanding the difference is the single most useful design tool here.
 
-- **Intrinsic load** is the built-in difficulty of the material itself. Algebra is just harder than addition. It also depends on what the learner already knows. You *manage* this by sequencing and chunking.
+- **Intrinsic load** is the built-in difficulty of the material itself. Algebra is just harder than addition. It also depends on what the learner already knows. You *manage* this by sequencing and [chunking](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits).
 - **Extraneous load** is wasted effort from bad presentation: clutter, jargon, confusing layout, hunting for the answer. It adds difficulty without adding any learning. You *cut* this to near zero.
 - **Germane load** is the good effort, the real mental work of building and organizing knowledge into lasting patterns. You *protect and spend* your freed-up capacity here.
 
@@ -137,13 +138,13 @@ Here is the practical checklist, whether you are teaching a class, writing a tut
 4. **Never make them hunt.** "Find the answer buried in this wall of text" is pure wasted effort. Put the relevant information right where it is needed.
 5. **Keep words and pictures together.** If a diagram explains a sentence, place them side by side, shown at the same time. A picture on one page that explains words on another forces the learner to hold both in mind at once.
 6. **Break content into small, meaningful units** and teach them in order, so the learner never holds more than a few chunks at a time.
-7. **Lean on what the learner already knows.** Experts pull whole patterns from long-term memory as a single chunk. A beginner sees "the quadratic formula" as a dozen scattered symbols; an expert sees one familiar unit. Activating prior knowledge before a new topic makes the material arrive as fewer, bigger chunks.
+7. **Lean on what the learner already knows.** Experts pull whole patterns from long-term memory as a single chunk. A beginner sees "the quadratic formula" as a dozen scattered symbols; an expert sees one familiar unit. [Activating prior knowledge](/blog/ai-learning-platform/03-how-humans-learn-a-plain-tour-of-memory) before a new topic makes the material arrive as fewer, bigger chunks.
 
 When something feels too hard, run this test first. Have I chunked it small enough, in the right order, tied to something familiar? Fix that before you ever conclude the learner cannot handle it.
 
 ### A special note for AI tutors
 
-If you are building an AI tutor, cognitive load theory is your design rulebook, and the biggest danger is that the AI is *too helpful*. It can generate a brilliant, complete, ten-point explanation in one breath, and that is often exactly the wrong thing, because it floods the learner's four-chunk doorway.
+If you are [building an AI tutor](/blog/ai-learning-platform/01-the-real-challenge-why-ai-tutors-are-not-teachers-yet), cognitive load theory is your design rulebook, and the biggest danger is that the AI is *too helpful*. It can generate a brilliant, complete, ten-point explanation in one breath, and that is often exactly the wrong thing, because it floods the learner's four-chunk doorway.
 
 - **Pace and chunk every response.** Reveal one idea, confirm it landed, then continue. A long, dense answer is a working-memory flood.
 - **Sequence against prerequisites.** Introduce ideas in an order where each new chunk attaches to something already learned, so material arrives pre-chunked.
@@ -155,4 +156,4 @@ If you are building an AI tutor, cognitive load theory is your design rulebook, 
 
 The single thing to remember: learning only happens when information makes the trip from your tiny working-memory workbench into your vast long-term warehouse, and that doorway is only about four chunks wide. Honor the doorway and difficult material lands. Ignore it and even your best explanation spills onto the floor.
 
-So cognitive load is the gatekeeper. It decides whether anything else you do as a teacher or learner even gets a chance. But getting an idea *onto* the workbench is only step one. The harder question is how to make it stay in the warehouse for good, and it turns out that re-reading and highlighting, the two things almost everyone defaults to, are among the weakest ways to do it. The science of what actually locks knowledge in is where this gets surprising.
+So cognitive load is the gatekeeper. It decides whether anything else you do as a teacher or learner even gets a chance. But getting an idea *onto* the workbench is only step one. The harder question is how to make it stay in the warehouse for good, and it turns out that [re-reading and highlighting](/blog/ai-learning-platform/06-retrieval-practice-why-testing-beats-re-reading), the two things almost everyone defaults to, are among the weakest ways to do it. The science of what actually locks knowledge in is where this gets surprising.

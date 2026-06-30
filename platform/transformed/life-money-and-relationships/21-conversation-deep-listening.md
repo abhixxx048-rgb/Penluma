@@ -36,6 +36,7 @@ order: 20
 icon: "\U0001F331"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -47,7 +48,7 @@ The core of good conversation comes down to one mindset: **be more interested th
 
 Most advice treats good conversation like a talent you're either born with or you're not. It isn't. It's a learnable skill, like cooking or driving.
 
-That matters because the moment of actually talking to another human is where every relationship begins. The awkward first hello, the pause after, the worry that you have nothing to say. If you can get comfortable here, everything downstream gets easier: making friends, building a network, closing a deal, deepening the relationships you already have.
+That matters because the moment of actually talking to another human is where every relationship begins. The awkward first hello, the pause after, the worry that you have nothing to say. If you can get comfortable here, everything downstream gets easier: [making friends](/blog/life-money-and-relationships/20-meeting-people-where-how-to-find-your-people), [building a network](/blog/life-money-and-relationships/16-why-relationships-networks-truly-matter), closing a deal, deepening the relationships you already have.
 
 And the bar is lower than you fear. The best conversationalists are not the cleverest people in the room. They are the most **curious**, the ones who ask a real question, listen closely, and then ask one more. No charisma required.
 
@@ -135,7 +136,7 @@ Few things make a person feel more valued than when you remember something they 
 
 - **In the moment:** repeat their name once early ("Nice to meet you, Priya"). It helps it stick.
 - **Right after:** jot two or three specifics in your phone. Not business facts, the *human* ones (their dog's surgery, the marathon they're training for).
-- **Later:** those notes become fuel for a thoughtful check-in down the road.
+- **Later:** those notes become fuel for [a thoughtful check-in](/blog/life-money-and-relationships/23-staying-in-touch-a-system-for-nurturing-relationships) down the road.
 
 Picture this. Three months after meeting someone once, you message: "Hope the half-marathon went well last weekend!" You spent ten seconds. To them, you're now the person who *actually paid attention*. A tiny act, outsized trust.
 
@@ -169,7 +170,7 @@ Beginners fear this most. They get "stuck," then avoid talking to anyone just to
 2. **Give a light reason:** "I want to say hi to a couple more people before it wraps up."
 3. **Open a door to the future:** "Can we stay in touch? I'd love to send you that article I mentioned."
 
-Notice the last line leads with *giving*, not asking. The "I'll send you X" exit is the best one there is. It gives you a genuine, non-needy reason to follow up tomorrow, turning a one-off chat into the start of a relationship.
+Notice the last line leads with *giving*, not asking. The "I'll send you X" exit is the best one there is. It gives you a genuine, non-needy reason to follow up tomorrow, turning a one-off chat into [the start of a relationship](/blog/life-money-and-relationships/22-building-genuine-connection-going-deeper).
 
 ## How to use this today
 
@@ -187,4 +188,4 @@ None of these require you to become a different person. They just point your nat
 
 Here's the one idea to carry out the door: **you don't have to be impressive, you have to be interested.** Walk in assuming you're welcome, ask the follow-up question, and stay on their answer one beat longer than feels comfortable. That's most of the skill, right there.
 
-And here's the quiet thread underneath all of it. Every technique above, the follow-up, the saved detail, the "I'll send you that," is really about one thing: making the other person feel like the trust is safe with you. Which raises the next question worth sitting with. Once a good conversation ends, what actually turns a pleasant stranger into someone who trusts you, and how is that trust built, kept, or broken over time?
+And here's the quiet thread underneath all of it. Every technique above, the follow-up, the saved detail, the "I'll send you that," is really about one thing: making the other person feel like the trust is safe with you. Which raises the next question worth sitting with. Once a good conversation ends, what actually turns a pleasant stranger into someone who trusts you, and how is [that trust built, kept, or broken](/blog/life-money-and-relationships/19-how-trust-rapport-actually-form) over time?

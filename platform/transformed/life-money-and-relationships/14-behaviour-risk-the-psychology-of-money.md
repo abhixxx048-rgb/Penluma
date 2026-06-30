@@ -52,6 +52,7 @@ faq:
       you are calm.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -104,7 +105,7 @@ Over the long run, India's benchmark index, the **Nifty 50**, has historically d
 
 But it did not get there in a straight line. It climbed through brutal swings, including crashes of 30% to 50% along the way. The investors who actually earned that return are the ones who *did nothing* during those crashes. The ones who sold locked in real, permanent losses.
 
-One caveat: money you genuinely cannot afford to see fall 40% should never be in equity in the first place. That is what an emergency fund and your short-term goal savings are for. A solid cash buffer is your "permission to be brave" with everything else.
+One caveat: money you genuinely cannot afford to see fall 40% should never be in equity in the first place. That is what an [emergency fund](/blog/life-money-and-relationships/03-the-emergency-fund-protecting-your-downside) and your short-term goal savings are for. A solid cash buffer is your "permission to be brave" with everything else.
 
 ## The biases that wreck portfolios
 
@@ -122,7 +123,7 @@ A 100 loss hurts about twice as much as a 100 gain feels good. It pushes you to 
 
 Fear of missing out, plus the urge to follow the crowd. It makes you pile into whatever is hot (crypto, a meme stock, a sizzling sector) right at the peak.
 
-**Counter-move:** Stick to your fixed allocation. If your cab driver and your barber are giving you the same tip, you're already late.
+**Counter-move:** Stick to your [fixed allocation](/blog/life-money-and-relationships/13-asset-allocation-diversification-building-a-portfolio). If your cab driver and your barber are giving you the same tip, you're already late.
 
 ### Recency bias
 
@@ -134,7 +135,7 @@ Assuming the recent trend will continue forever. It makes you buy at tops (becau
 
 Believing you can time the market or pick the winners. It leads to over-trading, under-diversifying, and big concentrated bets.
 
-**Counter-move:** Default to low-cost index funds. Being brilliant in one field does not transfer to stock-picking.
+**Counter-move:** Default to [low-cost index funds](/blog/life-money-and-relationships/09-mutual-funds-index-funds-sips-the-core-engine). Being brilliant in one field does not transfer to stock-picking.
 
 ### Anchoring
 
@@ -162,7 +163,7 @@ Treating "bonus" or "windfall" money as play money. It makes you gamble a festiv
 
 Why? Because you have to be right *twice*: when to exit *and* when to re-enter. And the market's best days tend to come bunched right next to its worst days, during the scariest moments. Miss a handful of those best days because you were sitting in cash "waiting for clarity," and your long-run return collapses.
 
-The reliable edge is not predicting the next move. It is staying invested for decades and letting compounding do its slow, boring magic. **Time in the market beats timing the market.**
+The reliable edge is not predicting the next move. It is staying invested for decades and letting [compounding](/blog/life-money-and-relationships/06-compounding-the-time-value-of-money) do its slow, boring magic. **Time in the market beats timing the market.**
 
 > **Think of it this way:** A real investor is a *farmer*. Plant, water, wait through the seasons, harvest. A market-timer is a gambler at a casino where the house (brokerage fees, taxes, and your own panic) quietly takes a cut on every single hand.
 
@@ -191,7 +192,7 @@ A fund might return 12% a year, but the typical investor earns noticeably less, 
 
 **"Smart people are better investors."** Often the opposite. Intelligence breeds overconfidence, and overconfidence breeds over-trading. Humility and patience beat raw IQ here.
 
-**"Watching my portfolio closely keeps me in control."** Daily watching feeds loss aversion and tempts you to fiddle. Less looking literally improves returns.
+**"Watching my portfolio closely keeps me in control."** Daily watching feeds [loss aversion](/blog/psychology-of-decisions/08-prospect-theory-behavioral-economics-how-we-weigh-gains-losses-risk) and tempts you to fiddle. Less looking literally improves returns.
 
 **"This is an Indian problem."** It's a human one. American investors fight the exact same loss aversion and FOMO in their 401(k)s and S&P 500 funds. The "behaviour gap" was popularised in the US by writers like Carl Richards and Morningstar's "Mind the Gap" studies.
 
@@ -201,7 +202,7 @@ You cannot delete your biases. They're hardwired. But you can design a system so
 
 1. **Automate everything.** Auto-invest on payday, auto-rebalance, auto-increase your contributions when income grows. Automation removes the moment of human weakness entirely. It is the single most powerful behavioural tool you have.
 2. **Write a one-page Investment Policy Statement (IPS).** In plain language, write down your goals, your target split between equity and debt, and your rules ("I will not sell during a crash," "I rebalance every birthday"). Read it during a panic. It's your calm past self instructing your scared present self.
-3. **Use index funds.** They sidestep stock-picking overconfidence by design. There's no individual stock to fall in love with or panic over.
+3. **Use index funds.** They sidestep [stock-picking](/blog/life-money-and-relationships/10-stocks-the-equity-market-direct-investing-basics) overconfidence by design. There's no individual stock to fall in love with or panic over.
 4. **Check your portfolio less.** Once a quarter is plenty. Daily watching only tempts you to tinker.
 5. **Pre-decide your crash plan.** Decide *today* what you'll do in the next 30% drop. For a long-term investor, the honest answer is: keep the SIP running, maybe invest extra. Decide it now, while you're calm.
 

@@ -23,6 +23,7 @@ order: 999
 icon: "\U0001F3A8"
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources: []
 faq:
   - q: "Why does my online store look basic even though everything works?"
@@ -47,9 +48,9 @@ That gap, between "everything works" and "this feels premium," is one of the mos
 
 ## Why this matters
 
-Your store's look is the first promise you make. Before a customer reads a product description or trusts you with a card number, they've already decided how much they trust you based on how the page feels.
+Your store's look is the first promise you make. Before a customer reads a product description or trusts you with a card number, they've already decided how much they trust you based on [how the page feels](/blog/product-sense-empathy/05-the-psychology-of-obvious-affordances-signifiers-mental-models).
 
-A flat, inconsistent storefront quietly costs you. People bounce faster, hesitate at checkout, and assume the products are as cut-rate as the design. The frustrating part is that you can build every feature perfectly and still lose on this first impression.
+A flat, inconsistent storefront quietly costs you. People bounce faster, [hesitate at checkout](/blog/product-sense-empathy/09-reducing-friction-flows-steps-progressive-disclosure), and assume the products are as cut-rate as the design. The frustrating part is that you can build every feature perfectly and still lose on this first impression.
 
 The good news, and the whole point of this article: looking "basic" is usually a handful of systemic gaps, not a mountain of bad pages. Fix the system and every page improves at once.
 
@@ -91,7 +92,7 @@ The effect is exactly what you'd expect. The site felt like twenty different des
 
 Section padding bounced around with no logic, generous on one section, cramped on the next. There was no consistent rhythm to the vertical spacing.
 
-Spacing is the silent half of design. Consistent breathing room makes a page feel calm and intentional. Random spacing makes it feel improvised, even when every element on the page is fine on its own.
+Spacing is the silent half of design. Consistent breathing room makes a page [feel calm and intentional](/blog/product-sense-empathy/07-cognitive-load-why-simple-feels-effortless). Random spacing makes it feel improvised, even when every element on the page is fine on its own.
 
 ## The mindset shift: fix the system, not the pages
 
@@ -137,7 +138,7 @@ If your own store feels basic, work in this order. The early steps give the bigg
 
 8. **Then go deeper, once.** When the basics hold, layer in the premium touches: a richer hero, status badges driven by one shared utility, a more celebrated order-success page, and skeletons that match their final layout so nothing jumps on load.
 
-A quick bonus, because it shares the same theme of *finishing the small interactions*: if clicking your logo or navigating feels dead for a beat, you may be blocking navigation while data loads. Make that fetch non-blocking, show a skeleton, and add a global top-bar loading indicator so every click gives instant feedback.
+A quick bonus, because it shares the same theme of *finishing the small interactions*: if clicking your logo or navigating feels dead for a beat, you may be blocking navigation while data loads. Make that fetch non-blocking, show a skeleton, and add a global top-bar loading indicator so every click [gives instant feedback](/blog/product-sense-empathy/06-closing-the-gulfs-action-feedback-the-seven-stages).
 
 ## Conclusion
 
@@ -145,4 +146,4 @@ If your store works but feels basic, resist the urge to rebuild it page by page.
 
 The one takeaway to keep: **premium isn't more, it's finished.**
 
-And once depth and consistency are in place, the next frontier gets interesting, the micro-interactions. The way a button gives a tiny push when pressed, the way a checkmark scales in on a completed order, the way a loading bar makes waiting feel intentional. That's where a store stops looking professional and starts feeling crafted. But that's a story for another day.
+And once depth and consistency are in place, the next frontier gets interesting, the [micro-interactions](/blog/product-sense-empathy/11-emotional-design-delight-making-products-people-love). The way a button gives a tiny push when pressed, the way a checkmark scales in on a completed order, the way a loading bar makes waiting feel intentional. That's where a store stops looking professional and starts feeling crafted. But that's a story for another day.

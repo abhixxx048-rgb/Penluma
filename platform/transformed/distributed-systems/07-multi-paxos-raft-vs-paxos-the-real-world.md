@@ -59,6 +59,7 @@ faq:
       crash but don't lie, so cheaper crash-fault consensus (Raft/Paxos) is correct.
 author: Pritesh Yadav (priteshyadav444)
 transformed: true
+linked: true
 sources:
   - 'https://en.wikipedia.org/wiki/Paxos_(computer_science)'
   - 'https://en.wikipedia.org/wiki/Raft_(algorithm)'
@@ -70,9 +71,9 @@ That is what this article is really about: how a beautiful piece of theory becom
 
 ## Why this matters
 
-Consensus is the machinery that lets a handful of computers behave like one reliable computer, even when some of them crash or the network hiccups. It is the quiet engine under Kubernetes, under globally distributed databases, under service discovery, under the locks that stop two servers from running the same billing job twice.
+[Consensus](/blog/distributed-systems/02-the-consensus-problem) is the machinery that lets a handful of computers behave like one reliable computer, even when some of them crash or the network hiccups. It is the quiet engine under Kubernetes, under globally distributed databases, under service discovery, under the locks that stop two servers from running the same billing job twice.
 
-If you have ever picked etcd over ZooKeeper, wondered why your cluster needs three nodes and not two, or felt a vague guilt about "rolling your own" leader election, this is the topic that turns that fog into clear decisions. Getting it wrong does not crash loudly. It corrupts state silently and shows up as a 3 a.m. data inconsistency you cannot explain.
+If you have ever picked etcd over ZooKeeper, wondered why your cluster needs three nodes and not two, or felt a vague guilt about "rolling your own" [leader election](/blog/distributed-systems/04-raft-leader-election), this is the topic that turns that fog into clear decisions. Getting it wrong does not crash loudly. It corrupts state silently and shows up as a 3 a.m. data inconsistency you cannot explain.
 
 ## The one idea everything is built on: the replicated log
 
@@ -82,11 +83,11 @@ A **replicated log** is an ordered list of commands, numbered 1, 2, 3, 4, and so
 
 A **state machine** is just your application. It starts in some state and changes only by applying commands one at a time.
 
-Put those together and you get the whole trick, called **state machine replication**: if every replica starts in the same state and applies the same commands in the same order, they all end up in the same state. Consensus is simply the referee that decides "what is the command in slot 1? slot 2? slot 3?" Agree on the log, and the whole cluster behaves like one dependable machine.
+Put those together and you get the whole trick, called **[state machine replication](/blog/distributed-systems/03-replicated-state-machines-the-log)**: if every replica starts in the same state and applies the same commands in the same order, they all end up in the same state. Consensus is simply the referee that decides "what is the command in slot 1? slot 2? slot 3?" Agree on the log, and the whole cluster behaves like one dependable machine.
 
 > **Think of a room of accountants**, each keeping their own copy of the same ledger. If they all write down the same transactions in the same order, every ledger matches at the end, even if they never compare totals. Consensus is the rule that decides "what is transaction #1, #2, #3" so nobody writes a different line on the same row. The state machine is the running balance; the log is the list of transactions.
 
-Basic Paxos agrees on *one* value. But a database never wants to agree on one thing. It wants to agree on a never-ending stream: "set x=5," then "delete y," then "append to z," in a strict order every replica replays identically. So the first real-world problem is: how do you get from "agree on one value" to "agree on an endless ordered log"?
+[Basic Paxos](/blog/distributed-systems/06-paxos-the-original-consensus-algorithm) agrees on *one* value. But a database never wants to agree on one thing. It wants to agree on a never-ending stream: "set x=5," then "delete y," then "append to z," in a strict order every replica replays identically. So the first real-world problem is: how do you get from "agree on one value" to "agree on an endless ordered log"?
 
 ## Multi-Paxos: run Paxos for every slot, but cheat with a leader
 
@@ -212,4 +213,4 @@ And budget for the price. Every committed decision needs a round trip to a *majo
 
 Here is the one thing to remember: Multi-Paxos and Raft are two roads to the same destination, an agreed-upon replicated log committed in a single majority round trip when a stable leader is in charge. Raft trades flexibility for a complete, readable spec; Paxos is more general but easier to get subtly wrong. And the punchline is that you should almost never implement either. Reach for etcd, ZooKeeper, or Consul for coordination, or a consensus-backed database for data, and spend your consensus budget only on the few decisions where everyone truly must agree.
 
-The deeper question lurking under all of this is the one CAP keeps whispering: when a network partition splits your cluster in two, and a majority cannot be formed, the system chooses to *stop accepting writes* rather than lie. Why is "correctly refusing to answer" sometimes the most reliable thing a database can do? That is the consistency-versus-availability tradeoff, and it is where this story goes next.
+The deeper question lurking under all of this is the one CAP keeps whispering: when a network partition splits your cluster in two, and a majority cannot be formed, the system chooses to *stop accepting writes* rather than lie. Why is "correctly refusing to answer" sometimes the most reliable thing a database can do? That is the [consistency-versus-availability tradeoff](/blog/distributed-systems/16-the-cap-theorem-and-pacelc), and it is where this story goes next.

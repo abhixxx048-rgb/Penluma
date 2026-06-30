@@ -15,6 +15,7 @@ keywords:
   - AI in education
   - chatbot tutor
   - can AI replace teachers
+linked: true
 topic: ai-learning-platform
 topicTitle: AI Learning Platform
 category: AI & LLMs
@@ -53,7 +54,7 @@ Knowing the difference helps you spot the gap, whether you're choosing a study t
 
 ## A chatbot runs on "ask, answer, end"
 
-Let's define the core term plainly. A **large language model** (the "AI" behind chatbots, which we'll call an **LLM**) is a system trained to predict good text in response to whatever you type.
+Let's define the core term plainly. A **large language model** (the "AI" behind chatbots, which we'll call an **LLM**) is a system trained to predict good text in response to whatever you type. Understanding [where LLMs fit and where they quietly fail](/blog/ai-learning-platform/23-where-llms-fit-and-where-they-fail) is the key to building anything real on top of one.
 
 You ask, it answers, and then it waits. That's the whole loop.
 
@@ -75,11 +76,11 @@ Not "answer this," but "given everything I know about you, what is the single be
 
 ### 2. Decide when to review
 
-Human memory forgets on a predictable schedule. We lose roughly half of new material within an hour, and most of it within a day, unless we revisit it. A good tutor resurfaces things *just before* you'd forget them, automatically. This idea has a name: **spaced repetition**.
+[Human memory forgets on a predictable schedule](/blog/ai-learning-platform/03-how-humans-learn-a-plain-tour-of-memory). We lose roughly half of new material within an hour, and most of it within a day, unless we revisit it. A good tutor resurfaces things *just before* you'd forget them, automatically. This idea has a name: [**spaced repetition**](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve).
 
 ### 3. Find the weak areas
 
-When you fail at solving equations, the real cause may be shaky fractions underneath. A tutor traces the failure to its root and fixes *that*, instead of drilling the surface symptom.
+When you fail at solving equations, the real cause may be shaky fractions underneath. A tutor [traces the failure to its root](/blog/ai-learning-platform/22-finding-and-repairing-weak-areas) and fixes *that*, instead of drilling the surface symptom.
 
 ### 4. Pick the explanation style
 
@@ -134,6 +135,6 @@ Whether you're picking a study tool or building one, here's how to separate a re
 
 Here's the single takeaway: the value of a tutor lives in the decisions it makes *between* your questions, not in the answers themselves. Memory, scheduling, diagnosis, pacing, and encouragement are the layer that turns a smart conversation into lasting learning.
 
-That layer also happens to be the part nobody can copy over a weekend. A competitor can clone your screens and your wording, but not a returning learner's two-year history of every mistake, recovery, and "about to forget" moment. That accumulated **learner model** is what makes the next decision smarter than anyone starting from scratch.
+That layer also happens to be the part nobody can copy over a weekend. A competitor can clone your screens and your wording, but not a returning learner's two-year history of every mistake, recovery, and "about to forget" moment. That accumulated [**learner model**](/blog/ai-learning-platform/18-learner-models-teaching-the-machine-what-the-student-knows) is what makes the next decision smarter than anyone starting from scratch.
 
 Which raises the next question worth chasing: if that history is the real prize, how do you actually *build* a memory that knows what a person knows, what they've forgotten, and what they should see next? That's where the real engineering begins.
