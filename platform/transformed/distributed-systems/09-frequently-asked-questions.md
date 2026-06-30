@@ -21,7 +21,7 @@ topic: distributed-systems
 topicTitle: Distributed Systems
 category: Engineering
 date: '2026-06-21'
-order: 8
+order: 18
 icon: "\U0001F310"
 faq:
   - q: "Should I use Raft or Paxos for a new system?"

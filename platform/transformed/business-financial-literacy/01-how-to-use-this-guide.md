@@ -58,6 +58,8 @@ You can build a product people love, grow your sales every month, and still wake
 
 Most founders learn finance the expensive way - by getting blindsided. This guide is the cheaper way. No accounting degree, no MBA, no spreadsheet wizardry. If you can read a restaurant bill and tell whether you got the right change, you already have enough to start.
 
+**In short:** A startup founder needs fluency in a handful of things, not a finance degree: the difference between revenue, profit, and cash; how to read the three core financial statements; whether each sale actually makes money (unit economics); how long your cash will last (runway and burn rate); and how pricing and fundraising change both. The goal isn't to pass a CPA exam - it's to make decisions, spot a number that looks wrong, and ask sharp questions.
+
 ## Why this matters
 
 Money is the scoreboard of your business, and right now you might be reading it wrong.
@@ -119,6 +121,25 @@ You don't. You need fluency, not mastery - enough to make decisions, spot a numb
 4. **Let the surprises teach you.** Reading about [gross margin](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale) is forgettable. Calculating *your* gross margin and being shocked by it is not. The discomfort is the lesson.
 
 5. **Aim for fluency, not perfection.** Your goal is to know when a number looks wrong, when to push back on advice, and when to genuinely celebrate.
+
+## The curriculum, in order
+
+Work through these in sequence - each lesson builds on the one before it.
+
+1. [The founder's money mindset: is this a business or a hobby?](/blog/business-financial-literacy/02-the-founder-s-money-mindset-is-this-a-business-or-a-hobby) - the shift in how you have to think before any number makes sense.
+2. [The three financial statements: the whole picture](/blog/business-financial-literacy/03-the-three-financial-statements-the-whole-picture) - the three reports that, together, show the full health of your business.
+3. [Reading a P&L (income statement) line by line](/blog/business-financial-literacy/04-reading-a-p-l-income-statement-line-by-line) - how revenue becomes profit, one row at a time.
+4. [The balance sheet & cash flow statement: why profit ≠ cash](/blog/business-financial-literacy/05-the-balance-sheet-cash-flow-statement-why-profit-cash) - what you own, what you owe, and where the money actually went.
+5. [Unit economics: do you make money on each sale?](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale) - the per-sale math that decides whether growth helps or hurts.
+6. [Cash flow, burn rate & runway: don't run out of money](/blog/business-financial-literacy/07-cash-flow-burn-rate-runway-don-t-run-out-of-money) - how to know, to the month, how long you can survive.
+7. [Pricing fundamentals: cost-plus vs value vs competitive](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive) - the three ways to set a price and when to use each.
+8. [Pricing psychology: pricing with confidence](/blog/business-financial-literacy/09-pricing-psychology-pricing-with-confidence) - the human side of what customers will actually pay.
+9. [Break-even, margins & profitability](/blog/business-financial-literacy/10-break-even-margins-profitability) - the sales level where you stop losing money and start keeping it.
+10. [Budgeting & forecasting: building a simple financial model](/blog/business-financial-literacy/11-budgeting-forecasting-building-a-simple-financial-model) - turning today's numbers into a plan for tomorrow.
+11. [Funding & dilution: the cost of capital](/blog/business-financial-literacy/12-funding-dilution-the-cost-of-capital) - what raising money really costs and when it's worth it.
+12. [Living by the numbers: the founder's financial dashboard](/blog/business-financial-literacy/13-living-by-the-numbers-the-founder-s-financial-dashboard) - the few metrics to watch every week, so you're never blindsided again.
+
+**References:** keep these handy as you go - a [glossary of terms](/blog/business-financial-literacy/14-glossary-of-terms), the [frequently asked questions](/blog/business-financial-literacy/15-frequently-asked-questions), and a [revision cheat sheet](/blog/business-financial-literacy/16-revision-cheat-sheet) for quick review.
 
 ## Conclusion
 

@@ -52,6 +52,8 @@ The industry loves the image of a swarm of autonomous agents working together. T
 
 This is your map to that climb: what these systems are, when they earn their cost, and when a humble single prompt quietly beats them.
 
+**In short:** a multi-agent LLM system is several AI agents - each running its own perceive-plan-act-observe loop over tools - coordinated to finish one task that a single model call can't reliably handle alone. Use one only when the work is *both* high-value enough to justify roughly 15x the token cost *and* genuinely parallelizable into independent subtasks. If either is false, a single prompt or one agent wins on cost and quality.
+
 ## Why this matters
 
 Almost every "AI feature" you'll build can be one of four things, in rising order of cost and fragility: a single model call, a fixed workflow, [a single agent](/blog/agent-orchestration/agent-orchestration-01-foundations), or a multi-agent system.
@@ -197,3 +199,16 @@ Work down this list and **stop at the first rung that fits.**
 The single takeaway: **complexity is a cost you pay up front and a tax you pay forever - so buy only as much as the task demands.** A plain prompt that quietly does the job is a better engineering decision than a swarm that impresses in a demo and bankrupts you in production. Climb the ladder one rung at a time, and only when the task pushes you up.
 
 The deeper you go, the more the real challenge shifts from "which pattern?" to something subtler: **how do you keep an AI's limited attention focused over a long, winding task?** Models forget the middle, drown in their own context, and degrade as runs stretch on. Mastering that - the craft of context engineering and memory - is where good agent systems quietly separate themselves from the ones that fall apart on step forty. That's the thread worth pulling next.
+
+## The curriculum, in order
+
+This is a pillar guide. Each piece below goes deep on one rung of the climb - read them in sequence, or jump to the one you need:
+
+1. **[Foundations](/blog/agent-orchestration/agent-orchestration-01-foundations)** - what an agent actually is, the perceive-plan-act-observe loop, and the four-rung complexity ladder.
+2. **[Patterns](/blog/agent-orchestration/agent-orchestration-02-patterns)** - the full catalog: prompt chaining, routing, parallelization, orchestrator-worker, evaluator-optimizer, and more.
+3. **[Communication protocols](/blog/agent-orchestration/agent-orchestration-03-communication-protocols)** - how agents talk to tools and to each other, including MCP and agent-to-agent (A2A) messaging.
+4. **[Frameworks](/blog/agent-orchestration/agent-orchestration-04-frameworks)** - LangGraph, CrewAI, and the rest, plus when (and when not) to adopt one.
+5. **[Context & memory](/blog/agent-orchestration/agent-orchestration-05-context-memory)** - context engineering, the "lost in the middle" problem, and giving agents durable memory.
+6. **[Reliability, eval & observability](/blog/agent-orchestration/agent-orchestration-06-reliability-eval-obs)** - why multi-agent systems fail, plus tracing, evaluation, and guardrails.
+7. **[Cost & performance](/blog/agent-orchestration/agent-orchestration-07-cost-performance)** - the token math behind the 15x rule, model tiering, caching, and batching.
+8. **[Applied case study](/blog/agent-orchestration/agent-orchestration-08-applied-case-study)** - putting it all together end to end on a real task.

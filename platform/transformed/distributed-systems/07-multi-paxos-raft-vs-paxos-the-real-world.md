@@ -8,7 +8,7 @@ topic: distributed-systems
 topicTitle: Distributed Systems
 category: Engineering
 date: '2026-06-21'
-order: 6
+order: 16
 icon: "\U0001F310"
 keywords:
   - raft vs paxos

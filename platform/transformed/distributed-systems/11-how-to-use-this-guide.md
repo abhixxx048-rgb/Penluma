@@ -31,7 +31,7 @@ linked: true
 topicTitle: Distributed Systems
 category: Engineering
 date: '2026-06-21'
-order: 10
+order: 0
 icon: "\U0001F310"
 sources: []
 ---
@@ -110,6 +110,34 @@ So if you only have energy for deep focus on two ideas, spend it on [logical clo
 3. **Keep a glossary handy.** Every bolded term has a plain-language meaning. When a word feels fuzzy, look it up immediately rather than pushing past it.
 4. **Treat faults as normal.** As you read, get comfortable with the idea that things are *always* failing somewhere. The goal is never zero faults; it is faults that never become failures.
 5. **Map ideas back to apps you use.** When you learn eventual consistency, think of the moment a deleted post lingers for a second. Real examples cement the theory faster than any definition.
+
+## The complete path
+
+This topic is two series. Read **Part 1** first - it gives you the vocabulary and the mental models. **Part 2** then uses them to solve the field's hardest problem: getting unreliable machines to agree.
+
+**Part 1 - Foundations (start here)**
+
+1. [What is a distributed system?](/blog/distributed-systems/12-what-is-a-distributed-system) - the vocabulary and the big picture.
+2. [Why distributed systems are hard](/blog/distributed-systems/13-why-distributed-systems-are-hard) - the fallacies of distributed computing, and fault vs failure.
+3. [Time, clocks, and the ordering of events](/blog/distributed-systems/14-time-clocks-the-ordering-of-events) - why you can't trust the wall clock, and logical clocks.
+4. [Vector clocks and causality](/blog/distributed-systems/15-vector-clocks-causality) - telling true cause-and-effect from coincidence.
+5. [The CAP theorem and PACELC](/blog/distributed-systems/16-the-cap-theorem-and-pacelc) - the real trade-off, stated correctly.
+6. [Consistency models](/blog/distributed-systems/17-consistency-models) - the menu of promises from strong to eventual.
+
+*References: [Glossary](/blog/distributed-systems/18-glossary-of-terms) · [FAQ](/blog/distributed-systems/19-frequently-asked-questions) · [Cheat sheet](/blog/distributed-systems/20-revision-cheat-sheet)*
+
+**Part 2 - Consensus (the crown jewel)**
+
+Start with the [Part 2 overview](/blog/distributed-systems/01-how-to-use-this-guide), then:
+
+7. [The consensus problem](/blog/distributed-systems/02-the-consensus-problem) - what agreement requires, and why a majority is magic.
+8. [Replicated state machines: the log](/blog/distributed-systems/03-replicated-state-machines-the-log) - the universal trick behind Raft and Paxos.
+9. [Raft - leader election](/blog/distributed-systems/04-raft-leader-election) - one leader per term, one source of truth.
+10. [Raft - log replication, safety, and membership](/blog/distributed-systems/05-raft-log-replication-safety-membership) - copying entries and committing by majority.
+11. [Paxos - the original consensus algorithm](/blog/distributed-systems/06-paxos-the-original-consensus-algorithm) - the two-phase prepare/accept dance.
+12. [Multi-Paxos, Raft vs Paxos, and the real world](/blog/distributed-systems/07-multi-paxos-raft-vs-paxos-the-real-world) - an honest comparison and what ships in production.
+
+*References: [Consensus glossary](/blog/distributed-systems/08-glossary-of-terms) · [Consensus FAQ](/blog/distributed-systems/09-frequently-asked-questions) · [Consensus cheat sheet](/blog/distributed-systems/10-revision-cheat-sheet)*
 
 ## Conclusion
 

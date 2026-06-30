@@ -21,7 +21,7 @@ topic: distributed-systems
 topicTitle: Distributed Systems
 category: Engineering
 date: '2026-06-21'
-order: 9
+order: 19
 icon: "\U0001F310"
 faq:
   - q: What is consensus in distributed systems?

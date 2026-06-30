@@ -37,7 +37,7 @@ topic: distributed-systems
 topicTitle: Distributed Systems
 category: Engineering
 date: '2026-06-21'
-order: 13
+order: 3
 icon: "\U0001F310"
 sources:
   - https://en.wikipedia.org/wiki/Lamport_timestamp

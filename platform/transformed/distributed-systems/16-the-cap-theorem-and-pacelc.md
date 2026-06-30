@@ -6,7 +6,7 @@ topic: distributed-systems
 topicTitle: Distributed Systems
 category: Engineering
 date: '2026-06-21'
-order: 15
+order: 5
 icon: "\U0001F310"
 transformed: true
 linked: true

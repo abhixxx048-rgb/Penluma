@@ -62,6 +62,8 @@ Replace every player on a football team and you still have a recognizable team. 
 
 That invisible "something" is the heart of what a system is. Once you learn to see it, you start [noticing it everywhere](/blog/systems-thinking/03-why-systems-thinking-matters-patterns-everywhere): in your body, your workplace, your city, your relationships. This is the single most useful thinking skill you can pick up, and it starts with one deceptively simple question.
 
+**In short:** Systems thinking is a way of understanding the world by looking at how parts connect and influence each other over time, rather than studying each part in isolation. Instead of asking "who or what is broken?", it asks how the structure - the relationships, rules, and feedback loops between the parts - produces the behavior you see. Learn it and you stop chasing symptoms and start changing the patterns that cause them.
+
 ## Why this matters
 
 You are surrounded by systems every moment of your life. Your body is one. The traffic on your street is one. Your family, your team at work, the economy, the forest near your town, even the thermostat on your wall - all systems.
@@ -181,6 +183,33 @@ So next time something keeps going wrong, try this sequence:
 3. **Then check the purpose.** Watch the money and the decisions, not the slogans. Is the system's real purpose the one everyone claims? If not, no amount of effort on the parts will fix it.
 
 This is exactly why Peter Senge, in *The Fifth Discipline* (1990), called systems thinking "the fifth discipline" - the one that ties all the others together. His core lesson: most organizational problems - missed deadlines, poor quality, low morale - are *symptoms of structure*, not failures of individual people. Blaming the person is the weakest lever. Seeing the structure is where real change begins.
+
+## The full systems-thinking path
+
+This post is the front door. From here, the rest of the series builds the whole skill, one idea at a time - foundations first, then the moving parts of systems, then the tools to map them, and finally how to put it all to work. Follow it in order, or jump to whatever you need.
+
+1. **What is a system? Parts, connections, and purpose** - you are here: the three building blocks every system shares.
+2. [Systems thinking vs. linear thinking](/blog/systems-thinking/02-systems-thinking-vs-linear-thinking) - why straight-line cause-and-effect keeps failing you, and what to do instead.
+3. [Why systems thinking matters: patterns everywhere](/blog/systems-thinking/03-why-systems-thinking-matters-patterns-everywhere) - the payoff, and the recurring patterns you'll start spotting once you look.
+4. [Stocks and flows: what builds up and what moves](/blog/systems-thinking/04-stocks-and-flows-what-builds-up-and-what-moves) - the things that accumulate versus the rates that change them.
+5. [Feedback loops: how systems talk to themselves](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves) - balancing loops that steady a system and reinforcing loops that spiral it.
+6. [Delays: why cause and effect are not close in time](/blog/systems-thinking/06-delays-why-cause-and-effect-are-not-close-in-time) - how lags between action and result wreck our intuition.
+7. [Nonlinearity, thresholds, and tipping points](/blog/systems-thinking/07-nonlinearity-thresholds-and-tipping-points) - why small pushes sometimes do nothing and sometimes change everything.
+8. [Emergence and self-organization](/blog/systems-thinking/08-emergence-and-self-organization) - how wholes grow abilities none of their parts possess.
+9. [Bottlenecks and constraints: the theory of constraints](/blog/systems-thinking/09-bottlenecks-and-constraints-the-theory-of-constraints) - why one limiting part governs the speed of the whole.
+10. [Trade-offs, optimization, and the local vs. global trap](/blog/systems-thinking/10-trade-offs-optimization-and-the-local-vs-global-trap) - why improving one part can quietly damage the whole.
+11. [Second- and third-order consequences](/blog/systems-thinking/11-second-and-third-order-consequences) - thinking past the immediate result to the ripples that follow.
+12. [System archetypes: stories that repeat](/blog/systems-thinking/12-system-archetypes-stories-that-repeat) - the recurring structures behind problems you've seen again and again.
+13. [Leverage points: where to push to change a system](/blog/systems-thinking/13-leverage-points-where-to-push-to-change-a-system) - the places where a small change produces a big shift.
+14. [Mental models and paradigms: the deepest leverage](/blog/systems-thinking/14-mental-models-and-paradigms-the-deepest-leverage) - the beliefs underneath a system, and why they're the strongest lever of all.
+15. [Causal loop diagrams: drawing how things connect](/blog/systems-thinking/15-causal-loop-diagrams-drawing-how-things-connect) - a simple way to sketch the relationships and loops in a system.
+16. [Stock-and-flow diagrams: adding quantity and time](/blog/systems-thinking/16-stock-and-flow-diagrams-adding-quantity-and-time) - putting numbers and dynamics on top of your maps.
+17. [A practical method: mapping a real system step by step](/blog/systems-thinking/17-a-practical-method-mapping-a-real-system-step-by-step) - a repeatable process for turning a messy situation into a clear map.
+18. [Systems thinking in business and economics](/blog/systems-thinking/18-systems-thinking-in-business-and-economics) - applying it to organizations, markets, and incentives.
+19. [Systems thinking in software, technology, and AI](/blog/systems-thinking/19-systems-thinking-in-software-technology-and-ai) - feedback, scale, and unintended effects in technical systems.
+20. [Systems thinking in everyday life and decisions](/blog/systems-thinking/20-systems-thinking-in-everyday-life-and-decisions) - using it for health, habits, relationships, and personal choices.
+21. [Common mistakes, biases, and pitfalls](/blog/systems-thinking/21-common-mistakes-biases-and-pitfalls) - the traps that trip up even experienced systems thinkers.
+22. [Building the habit: how to practice systems thinking](/blog/systems-thinking/22-building-the-habit-how-to-practice-systems-thinking) - turning all of this into an everyday way of seeing.
 
 ## Conclusion
 

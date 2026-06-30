@@ -19,7 +19,7 @@ topic: distributed-systems
 topicTitle: Distributed Systems
 category: Engineering
 date: '2026-06-21'
-order: 1
+order: 11
 icon: "\U0001F310"
 faq:
   - q: What is the consensus problem in distributed systems?

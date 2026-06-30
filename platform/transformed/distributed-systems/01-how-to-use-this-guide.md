@@ -19,7 +19,7 @@ topic: distributed-systems
 topicTitle: Distributed Systems
 category: Engineering
 date: '2026-06-21'
-order: 0
+order: 10
 icon: "\U0001F310"
 author: Brexis Wazik
 transformed: true
@@ -121,7 +121,7 @@ A few myths trip up almost everyone the first time:
 
 ## How to use this guide
 
-This is **Series 2: Consensus**. It assumes you've met the basics from Series 1 (Foundations): nodes, messages, latency, replication, failure models, and why "just use one server" eventually breaks. We build on that rather than re-teaching it.
+This is **Series 2: Consensus**. It assumes you've met the basics from [Series 1: Foundations](/blog/distributed-systems/11-how-to-use-this-guide): nodes, messages, latency, replication, failure models, and why "just use one server" eventually breaks. New to distributed systems? **Start there** - we build on it rather than re-teaching it.
 
 The six sections are ordered so each one earns the next:
 

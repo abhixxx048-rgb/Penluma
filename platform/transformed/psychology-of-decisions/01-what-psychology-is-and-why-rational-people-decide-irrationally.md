@@ -71,6 +71,8 @@ You would never tip in a restaurant in a faraway city you will never visit again
 
 That small moment hides a big truth: the "rational" human who always picks the best option for themselves does not exist. Real people tip strangers, stay loyal to brands for decades, and reject free money out of pure spite. And they do it in patterns so reliable you can learn to see them coming.
 
+**The short answer:** Smart people make irrational decisions because the brain has hard limits on information, time, and processing power, so it leans on fast, emotional, automatic shortcuts to cope. Those shortcuts usually serve us well, but they bend our choices in the same predictable directions every time. Intelligence does not switch them off, which is why even experts fall for them.
+
 ## Why this matters
 
 Most of us walk around assuming people are basically logical, including ourselves. We expect customers to buy the cheapest good option, employees to respond to cold incentives, and our own choices to follow our reasons.
@@ -169,3 +171,41 @@ You cannot turn the iceberg off, but you can work with it. Start here:
 If you remember one thing, make it this: you are not a flawless calculator, and neither is anyone you are trying to understand. You are **boundedly rational**, steered mostly by the fast, emotional, habitual part of the mind. The good news is that this irrationality is systematic, which means it can be learned, anticipated, and used wisely.
 
 The natural next question is *which* shortcuts run the show. Why does "90% fat-free" beat "10% fat"? Why does a $2 offer feel like an insult? Those [repeatable mental shortcuts](/blog/psychology-of-decisions/05-mental-shortcuts-how-heuristics-help-and-trick-us) have names, like anchoring, framing, and loss aversion, and once you can spot them, you start seeing them everywhere.
+
+## The full path
+
+This guide is the front door to a full course on how people really decide. Work through it in order, or jump to whatever you need most. The path moves from how the mind works, to the biases it produces, to using all of it in the real world.
+
+**The foundations: how the mind works**
+
+1. **What psychology is and why rational people decide irrationally** - you are here.
+2. [Two minds in one head: fast thinking vs. slow thinking](/blog/psychology-of-decisions/02-two-minds-in-one-head-fast-thinking-vs-slow-thinking) - the fast intuitive system and the slow effortful one, and why the fast one usually wins.
+3. [How the brain actually decides: emotion, memory, attention](/blog/psychology-of-decisions/03-how-the-brain-actually-decides-emotion-memory-attention) - the machinery under the hood that turns inputs into choices.
+4. [What people really want: needs, motivation, and reward](/blog/psychology-of-decisions/04-what-people-really-want-needs-motivation-reward) - the drives that pull every decision forward.
+
+**The shortcuts and biases**
+
+5. [Mental shortcuts: how heuristics help and trick us](/blog/psychology-of-decisions/05-mental-shortcuts-how-heuristics-help-and-trick-us) - why the mind takes shortcuts, and when they backfire.
+6. [The big biases I: anchoring, framing, availability, defaults](/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults) - the first set of predictable errors and how they bend choices.
+7. [The big biases II: loss aversion, sunk cost, confirmation, overconfidence](/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence) - the heavyweight biases that quietly run your money and your beliefs.
+8. [Prospect theory and behavioral economics: how we weigh gains, losses, and risk](/blog/psychology-of-decisions/08-prospect-theory-behavioral-economics-how-we-weigh-gains-losses-risk) - the math of why a loss hurts more than an equal gain.
+9. [Feelings first: how emotions steer every choice](/blog/psychology-of-decisions/09-feelings-first-how-emotions-steer-every-choice) - why emotion is the engine of decisions, not the enemy of them.
+10. [The six levers of influence: how people get persuaded](/blog/psychology-of-decisions/10-the-six-levers-of-influence-how-people-get-persuaded) - the reliable triggers that move people to say yes.
+11. [Memory, attention, perception: why what we notice becomes what we decide](/blog/psychology-of-decisions/11-memory-attention-perception-why-what-we-notice-becomes-what-we-decide) - how the inputs you take in quietly shape the choices you make.
+
+**Understanding people**
+
+12. [Understanding customers: why people really buy](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy) - the hidden reasons behind every purchase.
+13. [Understanding employees and teams: what truly motivates people at work](/blog/psychology-of-decisions/13-understanding-employees-teams-what-truly-motivates-people-at-work) - why progress and meaning beat cold incentives.
+14. [Understanding managers, leaders, and investors](/blog/psychology-of-decisions/14-understanding-managers-leaders-investors) - how the people making high-stakes calls actually think.
+15. [Understanding politicians, voters, and crowds](/blog/psychology-of-decisions/15-understanding-politicians-voters-crowds) - the psychology of groups, identity, and mass persuasion.
+16. [Understanding yourself: seeing your own blind spots](/blog/psychology-of-decisions/16-understanding-yourself-seeing-your-own-blind-spots) - turning the lens inward to catch your own predictable errors.
+
+**Putting it to work**
+
+17. [Building products people actually want](/blog/psychology-of-decisions/17-building-products-people-actually-want) - designing for how minds really work, not how they should.
+18. [Writing marketing copy that persuades without lying](/blog/psychology-of-decisions/18-writing-marketing-copy-that-persuades-without-lying) - honest persuasion that respects the reader.
+19. [Negotiating effectively: psychology at the table](/blog/psychology-of-decisions/19-negotiating-effectively-psychology-at-the-table) - anchoring, framing, and emotion where the stakes are real.
+20. [Hiring and leading teams with less bias](/blog/psychology-of-decisions/20-hiring-leading-teams-with-less-bias) - building systems that catch bias before it costs you.
+21. [Making better personal decisions: a debiasing toolkit](/blog/psychology-of-decisions/21-making-better-personal-decisions-a-debiasing-toolkit) - the checklists and defaults that trap your own mistakes.
+22. [Persuasion vs. manipulation: the ethics of influence](/blog/psychology-of-decisions/22-persuasion-vs-manipulation-the-ethics-of-influence) - where the line sits, and how to stay on the right side of it.

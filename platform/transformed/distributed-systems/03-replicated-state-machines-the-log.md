@@ -34,7 +34,7 @@ topicTitle: Distributed Systems
 linked: true
 category: Engineering
 date: '2026-06-21'
-order: 2
+order: 12
 icon: "\U0001F310"
 author: Brexis Wazik
 transformed: true
