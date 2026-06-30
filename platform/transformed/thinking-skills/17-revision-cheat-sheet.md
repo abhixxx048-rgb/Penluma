@@ -34,8 +34,9 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 16
 icon: "\U0001F4A1"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -63,7 +64,7 @@ You do not need all of it every time. But knowing it is here means you never hav
 
 Most thinking starts with a copy. We see a situation, match it to something familiar, and reuse the old answer. That is **reasoning by analogy**, and for routine, low-stakes calls it is fast and fine.
 
-**First-principles thinking** is the opposite move. You strip the problem down to the facts you can actually verify, throw out everything you were merely assuming, and rebuild from bedrock. It is slower, and you save it for the moments that deserve it: high stakes, or a familiar template that keeps failing.
+[**First-principles thinking**](/blog/thinking-skills/03-first-principles-thinking-reasoning-from-the-ground-up) is the opposite move. You strip the problem down to the facts you can actually verify, throw out everything you were merely assuming, and rebuild from bedrock. It is slower, and you save it for the moments that deserve it: high stakes, or a familiar template that keeps failing.
 
 | Mode | Method | Best for |
 | --- | --- | --- |
@@ -96,7 +97,7 @@ When you have a real problem and ten quiet minutes, this is the sequence:
 
 ### See the system, not just the snapshot
 
-First principles tell you what is true. **Systems thinking** tells you where to push. A system is just a set of parts that loop back on each other over time, and a few plain words unlock most of it:
+First principles tell you what is true. [**Systems thinking**](/blog/thinking-skills/05-systems-thinking-seeing-the-whole-not-the-parts) tells you where to push. A system is just a set of parts that loop back on each other over time, and a few plain words unlock most of it:
 
 | Term | Plain meaning | Everyday example |
 | --- | --- | --- |
@@ -107,7 +108,7 @@ First principles tell you what is true. **Systems thinking** tells you where to 
 | Delay | The gap between action and effect | Hiring takes three months; capacity shows up later |
 | Leverage point | A small change with a large, lasting effect | Changing the goal the system serves |
 
-The payoff is the **leverage point**. In her famous work on systems, Donella Meadows ranked the places you can intervene from weakest to strongest:
+The payoff is the [**leverage point**](/blog/thinking-skills/06-section-5-leverage-points-mental-models-for-better-decisions). In her famous work on systems, Donella Meadows ranked the places you can intervene from weakest to strongest:
 
 **Weakest** → tweaking numbers → feedback delays → feedback structure → rules → information flows → **system goals** → **the paradigm** (the shared beliefs that built the system) → **Strongest**.
 
@@ -140,7 +141,7 @@ If first principles tell you what is true and systems thinking tells you where t
 
 A good decision that no one acts on is just a nice note. This pillar is about the gap between deciding and doing, and how to engineer it closed.
 
-Every habit runs on a loop. Charles Duhigg framed it in three parts; James Clear expanded it to four, and gave each stage a design lever you can actually pull:
+[Every habit runs on a loop](/blog/thinking-skills/07-the-science-of-habits-how-behavior-becomes-automatic). Charles Duhigg framed it in three parts; James Clear expanded it to four, and gave each stage a design lever you can actually pull:
 
 | Stage | Duhigg | Clear | Your lever |
 | --- | --- | --- | --- |
@@ -203,7 +204,7 @@ The common trap is designing for engagement instead of value. Streaks, variable 
 
 You cannot pick a great option out of a thin list. This pillar is about widening the field before you narrow it.
 
-Creativity is less magic than process. Graham Wallas described it in four stages, and they only work in order:
+[Creativity](/blog/thinking-skills/11-what-creativity-really-is-demystified) is less magic than process. Graham Wallas described it in four stages, and they only work in order:
 
 1. **Preparation** - load the problem deeply. Read, gather, immerse.
 2. **Incubation** - step away. Walk, sleep, do something else entirely. Your mind keeps working in the background.

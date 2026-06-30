@@ -55,9 +55,10 @@ faq:
       The paradigm - the deep, usually unspoken assumption a whole system runs
       on. It chooses the goals, which set the rules, which shape the structure.
       Above even that sits the ability to hold any paradigm lightly.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Twelve_leverage_points
   - https://en.wikipedia.org/wiki/System_archetype
@@ -80,9 +81,9 @@ Two skills unlock this. First, recognizing the *shape* of the trouble, because a
 
 ## Bad outcomes rarely come from bad people
 
-Before naming the traps, lock in five ideas. Each is a small extension of basic systems thinking, and each explains why smart, well-meaning people produce messes.
+Before naming the traps, lock in five ideas. Each is a small extension of [basic systems thinking](/blog/ten-disciplines/01-seeing-the-whole-what-a-system-is-and-why-it-behaves-the-way-it-does), and each explains why smart, well-meaning people produce messes.
 
-- **Bounded rationality.** People decide using only the limited, local information in front of them. Individually reasonable choices can add up to a collectively terrible result. The fix is to change what people can *see*, not who they are.
+- **[Bounded rationality](/blog/ten-disciplines/08-biases-heuristics-and-why-smart-people-make-predictable-errors).** People decide using only the limited, local information in front of them. Individually reasonable choices can add up to a collectively terrible result. The fix is to change what people can *see*, not who they are.
 - **Externality.** A cost (or benefit) that lands on someone *outside* the decision. A factory dumps waste in a river and pockets the savings; the town downstream pays. Because the decider never feels the cost, they keep deciding the same way.
 - **Suboptimization.** Making one part brilliant while the whole gets worse. As Russell Ackoff put it, a system built from the best parts is not the best system. The best engine, gearbox, and wheels - each from a different car - do not make a car at all.
 - **Policy resistance.** The system's tendency to push back against your fix and snap back to where it was, because several actors are all pulling the same thing in different directions. Your push just makes them pull harder.
@@ -114,7 +115,7 @@ A simple test: *if I stop my fix, does the problem come straight back - or come 
 
 ### Trap 3 - Tragedy of the Commons
 
-Many independent actors draw from one shared, limited resource. Each actor's extra use is individually rational and rewarding, but the *cost* of depleting the shared stock is an externality smeared across everyone. With a delay before the damage shows, every rational actor keeps taking until the commons collapses for all.
+Many independent actors draw from one shared, limited resource. Each actor's extra use is individually rational and rewarding, but the *cost* of depleting the shared stock is [an externality](/blog/ten-disciplines/05-markets-incentives-trade-and-when-markets-fail) smeared across everyone. With a delay before the damage shows, every rational actor keeps taking until the commons collapses for all.
 
 Overfishing is the classic: each boat that catches more earns more; the shrinking fish stock is everyone's problem and no one's. Same structure shows up in traffic congestion, antibiotic resistance, and a shared team chat where every "quick @here" is reasonable but the channel becomes unreadable noise.
 
@@ -122,7 +123,7 @@ The lever is structural: either **make the commons feelable** (show users the to
 
 ### Trap 4 - Limits to Growth
 
-A reinforcing loop drives growth - more sales bring more revenue bring more sales. But every reinforcing loop eventually meets a **balancing loop**: a limit. As growth nears the limit, pushing harder on the growth engine stops working and can even hurt.
+A [reinforcing loop](/blog/ten-disciplines/02-the-machinery-of-systems-stocks-flows-feedback-loops-and-delays) drives growth - more sales bring more revenue bring more sales. But every reinforcing loop eventually meets a **balancing loop**: a limit. As growth nears the limit, pushing harder on the growth engine stops working and can even hurt.
 
 A startup pours money into sales and signs customers fast - but support capacity is fixed. New customers wait on hold, churn, and trash the brand, which kills future sales. Doubling the sales budget makes it worse.
 
@@ -202,7 +203,7 @@ So the practical move is not always to charge at the most powerful lever. It is 
 
 ## The deepest leverage: mental models and paradigms
 
-A **mental model** is the picture in your head of how something works - the assumptions you reason from without noticing. A **paradigm** is a mental model so widely shared that an entire organization or society runs on it, usually without ever stating it.
+A **[mental model](/blog/systems-thinking/14-mental-models-and-paradigms-the-deepest-leverage)** is the picture in your head of how something works - the assumptions you reason from without noticing. A **paradigm** is a mental model so widely shared that an entire organization or society runs on it, usually without ever stating it.
 
 Paradigms are leverage points 2 and 1 because they sit *upstream of everything*: they choose the goals, which set the rules, which shape the structure, which produces the behavior.
 

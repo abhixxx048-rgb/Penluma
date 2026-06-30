@@ -23,8 +23,9 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 16
 icon: "\U0001F3AF"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 faq:
   - q: What is behavioral design?
     a: Behavioral design is arranging a product's steps, words, defaults, and rewards so a target action becomes easier and more rewarding. It changes the situation around a behavior rather than trying to add willpower to the user.
@@ -74,7 +75,7 @@ Author Nir Eyal studied how products like Instagram and email become things we r
 
 **Trigger → Action → Variable Reward → Investment.**
 
-Run someone through it enough times and the behavior becomes a habit - done with almost no conscious thought.
+Run someone through it enough times and the behavior [becomes a habit](/blog/thinking-skills/07-the-science-of-habits-how-behavior-becomes-automatic) - done with almost no conscious thought.
 
 1. **Trigger** - the cue to act. An *external* trigger is a notification or an app icon. An *internal* trigger is a feeling - boredom, loneliness - that gets linked to the product. The goal is to move people from needing a notification to opening the app on their own when they feel a certain way.
 2. **Action** - the simplest thing done in hope of a reward: open, scroll, search, tap.
@@ -126,7 +127,7 @@ Why are defaults so strong? Three forces stack up:
 
 - **Inertia** - changing takes effort.
 - **Implied recommendation** - "they set it this way for a reason."
-- **Loss aversion** - changing feels like giving something up.
+- **[Loss aversion](/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence)** - changing feels like giving something up.
 
 The crucial point for an honest designer: **there is always a default.** You can't avoid having one. So the only real question is whether you set it to serve the user or to serve yourself.
 
@@ -136,7 +137,7 @@ Setting a default that genuinely fits what 90% of users want is great design. Se
 
 An engaging product is not automatically a good product. Infinite scroll is wildly engaging and often leaves people feeling worse. So how do you tell the difference?
 
-The clearest lens is **Jobs To Be Done**: people don't buy products, they "hire" them to do a job. A classic study found people bought thick milkshakes not because they loved the taste, but to make a boring commute more interesting and to stay full until lunch. Build around the *real job*, and engagement becomes the honest byproduct of being useful.
+The clearest lens is **[Jobs To Be Done](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress)**: people don't buy products, they "hire" them to do a job. A classic study found people bought thick milkshakes not because they loved the taste, but to make a boring commute more interesting and to stay full until lunch. Build around the *real job*, and engagement becomes the honest byproduct of being useful.
 
 As Theodore Levitt put it: "People don't want a quarter-inch drill, they want a quarter-inch hole." And really, they want the picture hung and the feeling of a finished home. Design for the hole and the feeling - not the drill, and certainly not for "minutes spent holding the drill."
 
@@ -162,7 +163,7 @@ Nir Eyal offers a clean test he calls the **Manipulation Matrix**, built from tw
 
 There's also a simpler gut check, the **transparency test**: *Would this still work if the user knew exactly what you were doing?*
 
-Honest persuasion survives disclosure. "Only 3 left, here's why" still works when it's true. Manipulation collapses the moment it's exposed - a fake countdown timer is worthless once the user notices it resets on every visit. That one question is the entire ethics of the field.
+[Honest persuasion](/blog/psychology-of-decisions/22-persuasion-vs-manipulation-the-ethics-of-influence) survives disclosure. "Only 3 left, here's why" still works when it's true. Manipulation collapses the moment it's exposed - a fake countdown timer is worthless once the user notices it resets on every visit. That one question is the entire ethics of the field.
 
 ## Dark patterns: what not to do
 
@@ -182,7 +183,7 @@ These aren't just rude - they're increasingly illegal. Regulators treat them as 
 A practical checklist you can run on any product or feature:
 
 1. **Start from the job.** Name the real need before designing a single screen. If you can't, you're building a toy, not a tool.
-2. **Diagnose before you fix.** When a feature goes unused, ask: motivation problem or ability problem? Usually it's ability - so reduce friction first.
+2. **Diagnose before you fix.** When a feature goes unused, ask: motivation problem or ability problem? Usually it's ability - so [reduce friction](/blog/product-sense-empathy/09-reducing-friction-flows-steps-progressive-disclosure) first.
 3. **Find the scarcest resource** in the moment (time? effort? confusion?) and remove friction there specifically.
 4. **Set defaults that serve the user.** Pick the option 90% would choose, and make opting out as easy as opting in.
 5. **Keep protective friction** on destructive or expensive actions.
@@ -198,4 +199,4 @@ If there's one line to keep, it's this: build products people actually want by m
 
 The honest test is simple. If the people using your product would *thank* you after learning exactly how it works, you're a facilitator. If they'd feel tricked, you're building a debt that trust will eventually collect.
 
-Which raises a deeper question worth sitting with: why does a small, uncertain reward pull at us harder than a big, guaranteed one? The answer lives in how your brain handles anticipation and risk - and once you see it, you'll notice it shaping nearly every choice you make.
+Which raises a deeper question worth sitting with: why does a small, uncertain reward pull at us harder than a big, guaranteed one? The answer lives in [how your brain handles anticipation and risk](/blog/psychology-of-decisions/08-prospect-theory-behavioral-economics-how-we-weigh-gains-losses-risk) - and once you see it, you'll notice it shaping nearly every choice you make.

@@ -32,7 +32,7 @@ category: AI & LLMs
 date: '2026-06-28'
 order: 7
 icon: "\U0001F393"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 sources: []
 linked: true

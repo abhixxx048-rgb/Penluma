@@ -12,7 +12,7 @@ order: 28
 icon: "\U0001F331"
 transformed: true
 linked: true
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 keywords:
   - social capital
   - how to build a reputation

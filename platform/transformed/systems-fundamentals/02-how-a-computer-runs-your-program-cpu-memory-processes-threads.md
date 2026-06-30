@@ -49,9 +49,10 @@ category: Engineering
 date: '2026-06-21'
 order: 1
 icon: ⚙️
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -63,11 +64,11 @@ This is the layer most developers never look at. It is also the layer that separ
 
 ## Why this matters
 
-You can write working software for years without understanding any of this. Plenty of people do. But the moment your code needs to be fast, handle real load, or stop crashing under concurrency, the abstractions leak.
+You can [write working software for years](/blog/systems-fundamentals/01-the-big-picture-why-systems-fundamentals-are-durable) without understanding any of this. Plenty of people do. But the moment your code needs to be fast, handle real load, or stop crashing under concurrency, the abstractions leak.
 
 Two programs can do the exact same amount of work and one runs ten times slower. A function that worked perfectly in testing corrupts data in production the instant two users hit it at once. A loop that looks innocent brings a server to its knees.
 
-None of that is magic. It all comes from how the machine underneath actually behaves. Once you can see that machine, performance stops being superstition and becomes something you can reason about.
+None of that is magic. It all comes from how the machine underneath actually behaves. Once you can see that machine, performance stops being superstition and becomes [something you can reason about](/blog/systems-fundamentals/11-putting-it-together-designing-a-real-system-trade-offs).
 
 ## From your code to machine code
 
@@ -126,7 +127,7 @@ Hard disk    ~10 ms      terabytes
 
 The exact numbers vary by machine - **the ratios are what matter.** RAM is roughly 100 times slower than L1 cache. An SSD is about 1,000 times slower than RAM. A spinning hard-disk seek is about 100,000 times slower than RAM.
 
-These numbers are too small to feel, so scale every one up by a billion until it lands in human terms. One CPU cycle becomes 1 second. Reaching L1 cache: a few seconds. Reaching RAM: about 6 minutes. Reading from an SSD: about 2 days. A hard-disk seek: about a year. Suddenly "just read it from disk" sounds as reckless as it really is to the CPU.
+These numbers are too small to feel, so [scale every one up by a billion](/blog/system-design/01-foundations-and-estimation) until it lands in human terms. One CPU cycle becomes 1 second. Reaching L1 cache: a few seconds. Reaching RAM: about 6 minutes. Reading from an SSD: about 2 days. A hard-disk seek: about a year. Suddenly "just read it from disk" sounds as reckless as it really is to the CPU.
 
 **Caches** (L1, L2, L3) hold copies of data the CPU recently used or will likely need soon. When the CPU needs something it checks L1, then L2, then L3, then RAM. Finding it early is a **cache hit**; not finding it is a **cache miss**, which stalls the CPU while it waits for a slower layer. Caches move data in fixed chunks called **cache lines** - usually 64 bytes - so touching one byte pulls in its whole neighborhood.
 
@@ -233,4 +234,4 @@ If you remember one thing, make it this: **everything your program does is the C
 
 The single biggest lever is data layout. Code that keeps its working set close and packed runs circles around code that scatters it, even when the two are algorithmically identical.
 
-And here is the thread worth pulling next. We saw that threads share memory and the scheduler interleaves them *unpredictably*. Combine those two facts and you get the **race condition** - the bug that vanishes the moment you look for it and reappears the moment you ship. That single problem is the doorway into the entire world of concurrency, locks, and lock-free programming. It is where systems thinking gets genuinely hard, and genuinely fun.
+And here is the thread worth pulling next. We saw that threads share memory and the scheduler interleaves them *unpredictably*. Combine those two facts and you get the **race condition** - the bug that vanishes the moment you look for it and reappears the moment you ship. That single problem is the doorway into the entire world of [concurrency, locks, and lock-free programming](/blog/systems-fundamentals/03-concurrency-parallelism-doing-many-things-at-once). It is where systems thinking gets genuinely hard, and genuinely fun.

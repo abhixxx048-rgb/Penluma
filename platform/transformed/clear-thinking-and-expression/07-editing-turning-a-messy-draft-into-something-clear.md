@@ -34,7 +34,7 @@ faq:
     a: A good target is at least 30 percent. Many bloated paragraphs shrink by half or more once you remove hedges, repeats, and flabby phrases.
   - q: What is the "stranger test"?
     a: You imagine someone who knows nothing about your topic and ask whether they would understand your writing on the first read, without asking a question. If not, you add the missing piece.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources:

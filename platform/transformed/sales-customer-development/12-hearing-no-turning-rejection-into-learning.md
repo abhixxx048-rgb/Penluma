@@ -55,9 +55,10 @@ category: Money & Business
 date: '2026-06-21'
 order: 11
 icon: "\U0001F91D"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -85,7 +86,7 @@ One warning: never make a big decision off a single rejection. One person's "no"
 
 ## The four kinds of "no" and what each one teaches
 
-"No" is not one thing. Experienced sellers separate true **objections** (the person could buy but decided not to, for a specific reason) from **stalls** (a vague "let me think about it," which really means "I'm not sold yet"). For a founder, it helps to drop every no into one of four buckets. Each points at a different fix.
+"No" is not one thing. Experienced sellers separate true **[objections](/blog/sales-customer-development/11-handling-objections-with-honesty)** (the person could buy but decided not to, for a specific reason) from **stalls** (a vague "let me think about it," which really means "I'm not sold yet"). For a founder, it helps to drop every no into one of four buckets. Each points at a different fix.
 
 ### "Not now"
 
@@ -103,7 +104,7 @@ This points to a **trust, credibility, or feature gap.** Ask yourself the honest
 
 *"This isn't really for companies like us."*
 
-This means you are talking to the **wrong target customer.** In sales shorthand, you have the wrong **ICP**, your *Ideal Customer Profile*, the short description of the exact kind of customer you serve best. These no's are gold, because they save you from chasing people who were never going to buy. The fix is to change *who* you call, not the pitch.
+This means you are talking to the **[wrong target customer](/blog/sales-customer-development/09-qualifying-choosing-who-deserves-your-time).** In sales shorthand, you have the wrong **ICP**, your *Ideal Customer Profile*, the short description of the exact kind of customer you serve best. These no's are gold, because they save you from chasing people who were never going to buy. The fix is to change *who* you call, not the pitch.
 
 ### "Not convinced"
 
@@ -119,17 +120,17 @@ Try something like this:
 
 > "Totally understand, and I really appreciate you taking the time. I promise I'm not going to try to change your mind. But it would honestly help me to understand: what made this a *no* for you? Anything you share helps me build something better."
 
-Notice what that does. It gives them permission to be blunt. By default, people protect your feelings and soften the truth, this is the core lesson of Rob Fitzpatrick's book *The Mom Test*: everyone shades the truth to be nice. Remove the pressure, and the polite "it's just not the right time" often becomes the real reason: "Honestly? Your setup looked like a week of work, and I don't have that week."
+Notice what that does. It gives them permission to be blunt. By default, people protect your feelings and soften the truth, this is the core lesson of Rob Fitzpatrick's book [*The Mom Test*](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself): everyone shades the truth to be nice. Remove the pressure, and the polite "it's just not the right time" often becomes the real reason: "Honestly? Your setup looked like a week of work, and I don't have that week."
 
 ### Ask "why" one more time
 
-If the first answer is vague, gently ask "why" again. This technique has a few names, **laddering** or the **Five Whys**, and each "why" climbs one rung closer to the real driver.
+If the first answer is vague, gently ask "why" again. This technique has a few names, **laddering** or the **[Five Whys](/blog/clear-thinking-and-expression/12-analysis-frameworks-first-principles-mece-5-whys-second-order-thinking)**, and each "why" climbs one rung closer to the real driver.
 
 > **Them:** "It's a bit pricey."
 > **You:** "Fair enough. Just so I learn, pricey compared to what? Another tool, or compared to what you expected it'd be worth?"
 > **Them:** "Compared to what I expected. I wasn't sure it'd actually save me time."
 
-Now you know the truth. That was never a price problem. It is a value-proof problem, and the fix is a clearer before-and-after, not a discount.
+Now you know the truth. That was never a [price problem](/blog/business-financial-literacy/09-pricing-psychology-pricing-with-confidence). It is a value-proof problem, and the fix is a clearer before-and-after, not a discount.
 
 The common mistake is hearing the first reason and stopping. The first reason is the polite one. The real reason is usually a why or two deeper. Keep your tone curious, never defensive.
 

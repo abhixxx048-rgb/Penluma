@@ -32,7 +32,7 @@ category: Communication
 date: '2026-06-15'
 order: 6
 icon: "\U0001F4DD"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 sources: []
 linked: true

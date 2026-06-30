@@ -30,7 +30,7 @@ faq:
     a: A fragment is an incomplete sentence missing a subject, a verb, or a finished thought, like "Because the token expired." Read it aloud alone; if it leaves you waiting for more, attach it to a full sentence.
   - q: Why does sentence structure matter in code reviews?
     a: Reviewers scan rather than read. A wall of run-on text gets skimmed, so details and bugs get missed. Short, complete sentences make your intent clear on the first pass.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 topic: english
 topicTitle: English for Developers
 category: Communication

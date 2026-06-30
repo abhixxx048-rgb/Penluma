@@ -28,9 +28,10 @@ faq:
     a: The Mom Test is Rob Fitzpatrick's set of rules for honest customer conversations. Talk about their life not your idea, ask about the past not the future, and listen more than you talk.
   - q: What is the difference between value and features in selling?
     a: A feature is what your product has, like "exports to CSV." Value is what it does for the customer, like "you stop spending Friday afternoons copying data by hand." Buyers pay for value.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 topic: sales-customer-development
 topicTitle: Sales & Customer Development
 category: Money & Business
@@ -79,7 +80,7 @@ This is where most deals are quietly won or lost, in how you talk and, more impo
 - **Closed question** - A question answerable in one word, usually yes or no ("Do you like this?"). Useful for confirming facts, weak for learning.
 - **Leading question** - A question that pushes the answer you want, like "You'd pay for this, right?" People say yes to be nice, and you learn nothing true.
 
-Here's why the last one bites. Ask "You'd pay for this, right?" and almost everyone nods. You walk away convinced you have a business. The leading question fed you the answer and you mistook it for a fact.
+Here's why the last one bites. Ask "You'd pay for this, right?" and almost everyone nods. You walk away convinced you have a business. The [leading question](/blog/sales-customer-development/05-asking-questions-without-leading) fed you the answer and you mistook it for a fact.
 
 ### The shape of the call
 
@@ -94,7 +95,7 @@ Here's why the last one bites. Ask "You'd pay for this, right?" and almost every
 - **Objection** - A reason the buyer gives for not moving forward: price, timing, trust, fit. A real objection is useful information, not an attack.
 - **Brush-off** - A polite, vague reason to end a conversation without committing, like "send me some info" or "let me check with the team." It usually hides a real objection you haven't surfaced yet.
 
-The skill is telling these apart. An objection is a door you can open with a good question. A brush-off is a door being quietly closed, and the only way through is to ask what's really going on.
+The skill is telling these apart. An [objection](/blog/sales-customer-development/11-handling-objections-with-honesty) is a door you can open with a good question. A brush-off is a door being quietly closed, and the only way through is to ask what's really going on.
 
 ### Selling value, not features
 
@@ -120,9 +121,9 @@ You'll hear these named like everyone already knows them. Here's what each one a
 - **SPIN** - Neil Rackham's question sequence, drawn from analyzing thousands of sales calls: **S**ituation, **P**roblem, **I**mplication, **N**eed-payoff. You move from facts, to pains, to the cost of those pains, to the value of fixing them.
 - **GAP selling** - From Keenan's book of the same name. You find the gap between where the customer is now (current state) and where they want to be (future state). The size of that gap is the value of solving it.
 - **The Mom Test** - Rob Fitzpatrick's rules for customer conversations so honest that even your mom couldn't lie to you: talk about their life not your idea, ask about the past not the future, and talk less while you listen more.
-- **Customer development** - Steve Blank's method of systematically talking to customers to test your assumptions, in four stages: discovery, validation, creation, and company-building. Summed up in one line: "get out of the building."
+- **Customer development** - Steve Blank's method of systematically talking to customers to test your assumptions, in four stages: discovery, validation, creation, and company-building. Summed up in one line: "[get out of the building](/blog/sales-customer-development/03-customer-development-get-out-of-the-building)."
 
-Think of these as lenses, not laws. BANT is a quick gut check. MEDDIC is a full medical exam for a big, complex deal. The Mom Test keeps your early research honest. You don't need all of them on every call.
+Think of these as lenses, not laws. BANT is a quick gut check. [MEDDIC](/blog/sales-customer-development/08-sales-discovery-frameworks-spin-bant-meddic-and-friends) is a full medical exam for a big, complex deal. The Mom Test keeps your early research honest. You don't need all of them on every call.
 
 ## The stages a deal (and a product) moves through
 
@@ -143,7 +144,7 @@ A few of these terms get used wrong constantly, and the mistakes cost real money
 - **"A friendly meeting means the deal is moving."** Not unless it ended with an **advance**. Warmth without a concrete next step is a **stall** wearing a smile.
 - **"More features will win the deal."** Buyers don't pay for features; they pay for **value**, the outcome in their own life. A long feature list can even scare people off.
 - **"A 'yes' from a customer is proof."** If you asked a **leading question**, the yes proves nothing. The whole point of the **Mom Test** is to stop fishing for the answer you want.
-- **"Closing is a clever line at the end."** Real **closing** is the natural result of a good conversation. If you need a trick, you skipped the **discovery**.
+- **"Closing is a clever line at the end."** Real **closing** is the natural result of a good conversation. If you need a trick, you skipped the [**discovery**](/blog/sales-customer-development/07-running-a-great-discovery-call-start-to-finish).
 - **"Qualification means convincing everyone."** It actually means disqualifying fast. Saying no to a bad fit frees you for a good one.
 
 ## How to use this
@@ -161,4 +162,4 @@ You don't memorize a glossary. You put it to work. Try this:
 
 If you remember one thing, make it this: the words on this page are really one question asked over and over: **is this real?** Is this a real opportunity or just a lead? A real advance or a stall? A real objection or a brush-off? Real value, or just a feature? The vocabulary exists so you stop fooling yourself.
 
-The single most honest test of all is the **Mom Test**, and it's worth a closer look. Once you learn to ask questions even your mother couldn't answer dishonestly, you'll never trust a polite "I love it" the same way again, and your early customer conversations will start telling you the truth.
+The single most honest test of all is the [**Mom Test**](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself), and it's worth a closer look. Once you learn to ask questions even your mother couldn't answer dishonestly, you'll never trust a polite "I love it" the same way again, and your early customer conversations will start telling you the truth.

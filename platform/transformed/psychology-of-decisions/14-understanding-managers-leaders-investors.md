@@ -23,8 +23,9 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 13
 icon: "\U0001F3AF"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 faq:
   - q: Does having power make people more rational decision-makers?
@@ -65,7 +66,7 @@ This article shows you exactly how power and money warp decisions, so you can sp
 
 Most advice about good decisions is aimed at ordinary, everyday choices. But the decisions that affect the most people - who gets hired, which company gets bought, where billions of dollars flow - are made by leaders and investors. And those are exactly the people whose biases get *amplified*, not calmed, by their position.
 
-Here's the uncomfortable part: knowing about these biases barely protects you from them. Confidence feels like competence. A rising market feels like skill. The pull to defend a failing project feels like loyalty. You can't think your way out in the moment.
+Here's the uncomfortable part: knowing about [these biases](/blog/psychology-of-decisions/16-understanding-yourself-seeing-your-own-blind-spots) barely protects you from them. Confidence feels like competence. A rising market feels like skill. The pull to defend a failing project feels like loyalty. You can't think your way out in the moment.
 
 So the goal isn't to become immune. It's to recognize the pattern early and build guardrails *before* you need them.
 
@@ -103,7 +104,7 @@ The market often sees through it. When an overconfident CEO announces an acquisi
 
 ### Escalation of commitment: throwing good money after bad
 
-**Escalation of commitment** means pouring *more* resources into a failing decision just to justify the resources you already spent. It's the leader's version of the sunk-cost fallacy. Walking away would mean admitting the original call was wrong - and that stings, especially in public.
+**Escalation of commitment** means pouring *more* resources into a failing decision just to justify the resources you already spent. It's the leader's version of the [sunk-cost fallacy](/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence). Walking away would mean admitting the original call was wrong - and that stings, especially in public.
 
 The classic example is the Concorde, the supersonic jet. Britain and France kept funding it for years after it was clearly going to lose money, simply because they'd already invested so much. The trap is sometimes nicknamed the **"Concorde fallacy."**
 
@@ -128,13 +129,13 @@ You can't out-willpower this. You have to build dissent into the structure so yo
 
 ## Part 2: How money bends an investor's judgment
 
-Now to the markets. **Behavioral finance** is simply the study of how real investors actually behave - emotionally and irrationally - rather than how textbook theory says a perfectly logical investor *should* behave.
+Now to the markets. **[Behavioral finance](/blog/economics-from-first-principles/31-behavioral-economics-how-psychology-shapes-the-economy)** is simply the study of how real investors actually behave - emotionally and irrationally - rather than how textbook theory says a perfectly logical investor *should* behave.
 
-Markets run on two ancient emotions: fear and greed. And almost every investing mistake traces back to one master idea.
+Markets run on [two ancient emotions: fear and greed](/blog/psychology-of-decisions/09-feelings-first-how-emotions-steer-every-choice). And almost every investing mistake traces back to one master idea.
 
 ### The master key: loss aversion
 
-**Loss aversion** means that losing $100 hurts about *twice* as much as gaining $100 feels good. Researchers Daniel Kahneman and Amos Tversky measured the ratio at roughly two-to-one.
+**[Loss aversion](/blog/psychology-of-decisions/08-prospect-theory-behavioral-economics-how-we-weigh-gains-losses-risk)** means that losing $100 hurts about *twice* as much as gaining $100 feels good. Researchers Daniel Kahneman and Amos Tversky measured the ratio at roughly two-to-one.
 
 That single fact explains most of the errors below.
 

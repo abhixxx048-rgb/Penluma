@@ -56,15 +56,16 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 10
 icon: "\U0001F9ED"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
 A test that is "95% accurate" comes back positive. Most people, including most doctors, conclude they almost certainly have the disease. The real answer is often around 2%.
 
-That gap between what feels true and what is true is the whole story of probability. The world rarely hands you certainty. A forecast says "70% chance of rain." A friend swears their cousin got rich on a stock, so it must be a good bet. To decide well in a fuzzy world, you need a language for uncertainty, and one move inside that language matters more than any other: knowing how to change your mind when new evidence shows up.
+That gap between what feels true and what is true is the whole story of probability. The world rarely hands you certainty. A forecast says "70% chance of rain." A friend swears their cousin got rich on a stock, so it must be a good bet. To [decide well in a fuzzy world](/blog/ten-disciplines/28-how-to-make-good-decisions-under-uncertainty), you need a language for uncertainty, and one move inside that language matters more than any other: knowing how to change your mind when new evidence shows up.
 
 ## Why this matters
 
@@ -102,7 +103,7 @@ Say a standardized test averages 500 with an SD of 100. Then about 68% of people
 
 Here is the picture to remember. Bill Gates walks into a small bar. The instant he steps in, the *average* net worth of everyone inside rockets into the billions, but the *median*, the middle person, barely moves. That one billionaire is the long right tail.
 
-This is why honest reporting on income or wealth uses the **median**, not the mean. The mean gets dragged around by extremes; the median does not.
+This is why honest reporting on income or wealth uses [the **median**, not the mean](/blog/ten-disciplines/10-reading-the-world-in-numbers-data-types-averages-spread-and-charts). The mean gets dragged around by extremes; the median does not.
 
 | Shape | What it looks like | Real-world example |
 |---|---|---|
@@ -127,7 +128,7 @@ Three rules cover most everyday cases:
 
 Two events are **independent** if one happening does not change the odds of the other. A coin has no memory. Flip five heads in a row, and the next flip is still exactly 50/50. The coin does not know it "owes" you a tails.
 
-Forgetting this is the **gambler's fallacy**: believing you are "due" for a win after a streak. After five reds at the roulette wheel, black is *not* more likely on the next spin. Casinos earn a great deal of money from people who feel otherwise.
+Forgetting this is the [**gambler's fallacy**](/blog/ten-disciplines/08-biases-heuristics-and-why-smart-people-make-predictable-errors): believing you are "due" for a win after a streak. After five reds at the roulette wheel, black is *not* more likely on the next spin. Casinos earn a great deal of money from people who feel otherwise.
 
 ### When knowing one thing changes the odds
 
@@ -239,4 +240,4 @@ You do not need formulas to think better under uncertainty. You need a few habit
 
 If you remember one move from all of this, make it Bayesian updating: your new belief is your old belief, adjusted by how strong the evidence is. That single sentence quietly dissolves false alarms, gambler's fallacies, and overreactions to one dramatic result. Uncertainty is not a flaw to be ashamed of. It is a quantity to measure and reason with.
 
-There is a tempting next step that trips up even sharp thinkers. Once you can read distributions and weigh evidence, you start spotting patterns between things: ice cream sales and drownings, coffee and lifespan, screen time and grades. But a pattern between two variables is not proof that one causes the other, and the gap between **correlation and causation** is where some of the most expensive mistakes in business, medicine, and policy are made. That is exactly where the trail leads next.
+There is a tempting next step that trips up even sharp thinkers. Once you can read distributions and weigh evidence, you start spotting patterns between things: ice cream sales and drownings, coffee and lifespan, screen time and grades. But a pattern between two variables is not proof that one causes the other, and the gap between [**correlation and causation**](/blog/ten-disciplines/12-inference-correlation-vs-causation-and-how-statistics-mislead-advanced) is where some of the most expensive mistakes in business, medicine, and policy are made. That is exactly where the trail leads next.

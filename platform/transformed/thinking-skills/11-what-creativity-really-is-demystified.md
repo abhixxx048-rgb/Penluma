@@ -28,8 +28,9 @@ faq:
     a: Producing many attempts teaches you what works through fast feedback, so your best ideas emerge from a large pile of ordinary ones. Aiming only for "the perfect one" skips the learning that makes it possible.
   - q: How can I become more creative starting today?
     a: Widen your inputs, practice generating ideas without judging them, protect time to step away and incubate, increase your output volume, and keep idea generation separate from evaluation.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 topic: thinking-skills
 topicTitle: Thinking Skills
 category: Thinking & Decisions
@@ -97,7 +98,7 @@ Steve Jobs put it bluntly in a 1996 interview with *WIRED*:
 
 Your brain doesn't conjure ideas from nothing. It **recombines** patterns, memories, and concepts you already carry. The more raw material you have, and the more varied it is, the more connections become possible.
 
-Look at almost any breakthrough and you'll find a remix:
+Look at almost any breakthrough and you'll find [a remix](/blog/clear-thinking-and-expression/13-what-creativity-actually-is-recombination-not-magic):
 
 - The **airplane** combined a combustion engine with the shape of a bird's wing.
 - **Netflix** combined mail-order DVD rental with subscription pricing.
@@ -109,7 +110,7 @@ That's the practical takeaway: **to get more creative, widen your inputs.** Read
 
 In 1950, psychologist J.P. Guilford pointed out that standard intelligence tests measured only one kind of thinking and missed the kind that matters most for creativity. He named two modes.
 
-- **Divergent thinking** branches outward to generate many possible ideas. The goal is quantity and variety. The question is: *How many different ways could we solve this?*
+- **Divergent thinking** branches outward to [generate many possible ideas](/blog/thinking-skills/12-idea-generation-techniques-producing-options-on-demand). The goal is quantity and variety. The question is: *How many different ways could we solve this?*
 - **Convergent thinking** narrows down to evaluate and pick the best option. The goal is one strong answer. The question is: *Which of these is actually the best?*
 
 You need both, in the right order: **diverge first, then converge.** Diverge without converging and you get a messy pile of ideas and no action. Converge without diverging and you grab the first half-decent idea, because you never made alternatives to compare it against.
@@ -158,8 +159,8 @@ So set quantity goals, not perfection goals. Instead of "I'll write one great po
 
 Five concrete levers, all trainable:
 
-1. **Widen your inputs.** Read outside your field, visit new places, talk to people who think differently. More dots means more possible connections.
-2. **Practice diverging.** Set a 10-minute timer and generate as many ideas as you can without judging a single one. Do it regularly. Like a muscle, it strengthens.
+1. **Widen your inputs.** [Read outside your field](/blog/clear-thinking-and-expression/15-analogical-lateral-thinking-connecting-different-domains), visit new places, talk to people who think differently. More dots means more possible connections.
+2. **Practice diverging.** Set a 10-minute timer and [generate as many ideas as you can](/blog/clear-thinking-and-expression/14-generating-ideas-on-demand-divergent-thinking-scamper-brainstorming) without judging a single one. Do it regularly. Like a muscle, it strengthens.
 3. **Protect incubation.** Build stepping-away into your process. Take the walk. Sleep on the hard problem. That's stage two, not slacking.
 4. **Raise your output volume.** More attempts means more learning means better work over time. The ceramics result is repeatable in your own life.
 5. **Separate generation from evaluation.** Keep the critic offline while you brainstorm. Invite it back only when you converge.
@@ -168,4 +169,4 @@ Five concrete levers, all trainable:
 
 If you take one thing from this, take this: **creativity is a skill, not a gift,** and the mechanics are no longer a mystery. Combine more things, diverge before you converge, respect the four stages, and chase volume over perfection. Do those deliberately and you will become measurably more creative. Nothing in your DNA gets a vote.
 
-Which raises an interesting follow-up. If creativity is trainable, what's actually happening in your brain during that quiet incubation stage, while your mind solves problems you've stopped consciously thinking about? That hidden machinery is where the next part of the story begins.
+Which raises an interesting follow-up. If creativity is trainable, what's actually happening in your brain during that [quiet incubation stage](/blog/thinking-skills/13-section-12-the-creative-mind-flow-incubation-beating-blocks), while your mind solves problems you've stopped consciously thinking about? That hidden machinery is where the next part of the story begins.

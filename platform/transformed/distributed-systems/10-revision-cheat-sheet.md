@@ -36,7 +36,7 @@ faq:
     a: Standard Raft and Paxos are crash-fault tolerant only. They assume nodes may stop but never lie. For untrusted or malicious nodes you need Byzantine fault tolerance, such as PBFT or blockchain consensus.
   - q: Should I write my own consensus algorithm?
     a: No. Use a proven library like etcd or HashiCorp Raft. Subtle bugs in election or commit logic cause silent data loss that ordinary tests rarely catch.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources:

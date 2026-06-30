@@ -26,7 +26,7 @@ faq:
     a: "It's 2020s. The plural of a decade or number takes no apostrophe, just like APIs and 500s."
   - q: "How do I make plurals of words ending in y?"
     a: "If a consonant comes before the y, change y to -ies: query becomes queries, dependency becomes dependencies. If a vowel comes before the y, just add -s: key becomes keys."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: english

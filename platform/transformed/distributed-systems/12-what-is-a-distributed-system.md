@@ -26,7 +26,7 @@ faq:
     a: A fault is a broken part, like one dead disk or one dropped message. A failure is when the whole system can no longer do its job for the user. Good design stops faults from becoming failures.
   - q: What is the hardest part of distributed systems?
     a: Uncertainty. When you send a request and get no reply, you cannot tell whether the work was done, is just slow, or failed. Managing that not-knowing is the core challenge.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: distributed-systems

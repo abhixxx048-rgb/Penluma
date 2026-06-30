@@ -57,8 +57,9 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 2
 icon: "\U0001F4A1"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources:
   - 'https://en.wikipedia.org/wiki/First_principle'
 ---
@@ -93,7 +94,7 @@ Think of it like the foundation of a building. Before you add floors, you dig do
 
 ## The contrast: reasoning by analogy
 
-The opposite of first-principles thinking is **reasoning by analogy** - doing something because it resembles how something else was done. You look at an existing solution, or the way your industry has always operated, and you work from there.
+The opposite of first-principles thinking is **[reasoning by analogy](/blog/clear-thinking-and-expression/15-analogical-lateral-thinking-connecting-different-domains)** - doing something because it resembles how something else was done. You look at an existing solution, or the way your industry has always operated, and you work from there.
 
 This is not stupid. Analogy is fast, and it is how humans get through ordinary life. You don't rederive the laws of nutrition every morning before breakfast - you just eat roughly what worked yesterday. Analogy lets you borrow from all of human experience without starting over each time.
 
@@ -135,7 +136,7 @@ The second example hits even harder, because the "impossible" claim was backed b
 
 In the early 2010s, the accepted wisdom was that battery packs would always cost around **$600 per kilowatt-hour** (a kilowatt-hour is just a unit of stored energy - roughly what your laptop uses over about 50 hours). At that price, electric cars would always be too expensive for the mass market. The analogy was airtight: batteries are expensive, so electric cars are expensive, so mass adoption is far away.
 
-Musk ran the same drill. He asked: **what are batteries made of?** The answer: cobalt, nickel, aluminum, carbon, some polymers, and a steel casing. He looked up what those raw materials cost on open commodity exchanges. The finding: bought directly, the constituent materials for a battery pack came to roughly **$80 per kilowatt-hour**.
+Musk ran the same drill. He asked: **what are batteries made of?** The answer: cobalt, nickel, aluminum, carbon, some polymers, and a steel casing. He looked up what those raw materials cost on [open commodity exchanges](/blog/economics-from-first-principles/03-supply-demand-and-how-prices-are-determined). The finding: bought directly, the constituent materials for a battery pack came to roughly **$80 per kilowatt-hour**.
 
 That is a gap of more than 7x between the raw material cost and the market price. Where did the gap come from? From layers of convention, inefficient supply chains, and unquestioned assumptions stacked up over decades.
 
@@ -171,7 +172,7 @@ The same drill works on your own life.
 
 Suppose you believe you can't afford to save each month. The analogy is "I've always spent everything I earn; that's just how my budget works." The first-principles version: what do you *genuinely* have to spend on - rent, food, transport to work, utilities? What does each truly cost? Done honestly, most people find that "I can't save" isn't a physical law. It's a habit or unexamined spending, not a fundamental constraint.
 
-Or take a career. Many people stay in a role because they've invested years in it: "I've done this for a decade, so I have to keep doing it." The first-principles questions cut through the sunk-cost story: What skills do I actually have? Which transfer? What does the market pay for? What do I actually want from work? Drill to those facts and entirely different paths come into view.
+Or take a career. Many people stay in a role because they've invested years in it: "I've done this for a decade, so I have to keep doing it." The first-principles questions cut through the [sunk-cost story](/blog/clear-thinking-and-expression/18-cognitive-biases-logical-fallacies-and-how-to-dodge-them): What skills do I actually have? Which transfer? What does the market pay for? What do I actually want from work? Drill to those facts and entirely different paths come into view.
 
 ## Common misconceptions
 
@@ -187,7 +188,7 @@ A few myths get in the way of using this well.
 
 ## How to use this: the three-step drill
 
-The method isn't mysterious. It's a pattern you can learn and repeat.
+The method isn't mysterious. It's [a pattern you can learn and repeat](/blog/thinking-skills/04-the-toolkit-how-to-actually-do-first-principles-thinking).
 
 1. **Name your assumptions.** Write down what you "know" about the problem. Be suspicious of anything that starts with "everyone knows" or "that's just how it works." Those phrases are flags, not facts.
 
@@ -209,4 +210,4 @@ Here's the one idea worth keeping: **the gap between what something is made of a
 
 You don't have to use it often. You just have to recognize the rare moments when the whole crowd is reasoning by analogy off a template that might be wrong - and be willing to dig down to bedrock while everyone else builds on sand.
 
-There's a catch, though. Knowing the method isn't the same as knowing *when* a constraint is real versus invented. That judgment - telling a genuine physical limit from a convention dressed up as one - is its own skill. It's where mental models like inversion and second-order thinking come in, and it's where the most interesting thinking really begins.
+There's a catch, though. Knowing the method isn't the same as knowing *when* a constraint is real versus invented. That judgment - telling a genuine physical limit from a convention dressed up as one - is its own skill. It's where [mental models](/blog/thinking-skills/06-section-5-leverage-points-mental-models-for-better-decisions) like inversion and second-order thinking come in, and it's where the most interesting thinking really begins.

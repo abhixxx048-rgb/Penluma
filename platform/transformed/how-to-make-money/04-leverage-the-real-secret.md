@@ -28,7 +28,7 @@ faq:
     a: "Code needs no capital, no audience, and no boss, just skill and a laptop. Once written, it runs forever at near-zero cost to serve each new user, which is why a small team can out-earn a large company."
   - q: "Does leverage guarantee I'll get rich?"
     a: "No. Leverage multiplies your judgement, including your mistakes. A multiplier on zero skill is still zero, and a multiplier on a bad decision multiplies the loss. It amplifies whatever you point it at."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: how-to-make-money

@@ -32,7 +32,7 @@ faq:
     a: A prerequisite is a concept you need to understand before another one makes sense, like learning what a variable is before learning loops.
   - q: Why do AI tutors trace failures backward?
     a: Because the real cause of a wrong answer is often a missing foundation, not the topic being drilled. Following prerequisite arrows backward finds the actual gap to fix.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources: []

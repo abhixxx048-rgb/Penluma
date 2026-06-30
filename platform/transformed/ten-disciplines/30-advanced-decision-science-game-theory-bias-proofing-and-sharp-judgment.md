@@ -38,21 +38,22 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 29
 icon: "\U0001F9ED"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
 Picture two rival coffee shops on the same street. Both would earn more by keeping prices normal, yet both slash prices anyway and end up worse off. Neither owner is stupid. They are trapped by logic. This is the part of decision-making where your smartest move depends on what someone else does, where your own brain quietly sabotages you, and where the only way to win is to build a process that is smarter than you are.
 
-You may already know that a good decision is not the same as a good outcome. Here we pick up there and push into the deep end: deciding well when other people are deciding too, when your mind works against you, and when you have to judge your own judgment over a lifetime.
+You may already know that [a good decision is not the same as a good outcome](/blog/ten-disciplines/28-how-to-make-good-decisions-under-uncertainty). Here we pick up there and push into the deep end: deciding well when other people are deciding too, when your mind works against you, and when you have to judge your own judgment over a lifetime.
 
 ## Why this matters
 
 Most expensive life mistakes are not knowledge failures. They are **process failures**.
 
-You did not lose money because you lacked a fact. You lost it because you chased a sunk cost, anchored on the wrong number, trusted your gut in the one situation that punished gut feeling, or judged a decision by how it happened to turn out.
+You did not lose money because you lacked a fact. You lost it because you [chased a sunk cost](/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence), anchored on the wrong number, trusted your gut in the one situation that punished gut feeling, or judged a decision by how it happened to turn out.
 
 The good news hidden in that sentence: process is fixable, and it transfers. The same loop that helps you negotiate a salary helps you choose a treatment, launch a product, or decide whether to quit. Master it once and you own something rarer than intelligence: durable, improvable judgment.
 
@@ -122,14 +123,14 @@ A small business with a long-term supplier is Tit-for-Tat in a suit and tie. Pay
 
 - **Is this one-shot or repeated?** Your generosity should scale with how often you will meet this person again.
 - **Find your dominant move first.** If a choice is best regardless of their response, you have saved yourself a lot of mind-reading.
-- **Decide your walk-away number before the talk.** The first number named drags the final price toward it, so set your anchor in advance and their opening offer cannot reset your reference point.
+- **Decide your walk-away number before the talk.** The first number named drags the final price toward it, so [set your anchor in advance](/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults) and their opening offer cannot reset your reference point.
 - **Change the payoffs, not just your play.** Contracts, escrow, warranties, and public commitments all turn "defect" from tempting into costly. That is how you upgrade a bad equilibrium.
 
 ## How you really choose: prospect theory
 
 There is a textbook ideal of rational choice called **Expected Utility Theory**. It says that if your preferences are internally consistent, you behave *as if* you maximize expected utility and nobody can trick you into a money-losing loop of trades. It is a beautiful description of how we *should* decide.
 
-It is also a poor description of how we *do* decide. Real humans break it in predictable ways. Two classic puzzles, the Allais paradox and the Ellsberg paradox, showed that people reliably prefer certainty and known odds in ways no single consistent utility function allows. We dislike *not knowing the probabilities themselves*, not just disliking risk.
+It is also a poor description of how we *do* decide. [Real humans break it in predictable ways](/blog/ten-disciplines/08-biases-heuristics-and-why-smart-people-make-predictable-errors). Two classic puzzles, the Allais paradox and the Ellsberg paradox, showed that people reliably prefer certainty and known odds in ways no single consistent utility function allows. We dislike *not knowing the probabilities themselves*, not just disliking risk.
 
 So Daniel Kahneman and Amos Tversky built a model of how we actually choose, called **prospect theory**. It rests on three pillars.
 
@@ -225,7 +226,7 @@ Philip Tetlock's Good Judgment Project ran the landmark experiment, having thous
 
 What did they actually do?
 
-1. **Start from the base rate, then adjust.** Before predicting "will *this* startup succeed?" they note that most startups fail, and only then move toward the specifics. Base rate first, evidence second.
+1. **Start from the base rate, then adjust.** Before predicting "will *this* startup succeed?" they note that most startups fail, and only then move toward the specifics. [Base rate first, evidence second](/blog/ten-disciplines/11-probability-uncertainty-distributions-and-bayesian-thinking).
 2. **Update in small steps.** Many small revisions as new information arrives beat both stubbornness and flip-flopping on every headline.
 3. **Think in fine probabilities** ("23%," not "probably not"). Precision forces clear thinking and makes scoring possible.
 4. **Break big questions into smaller ones** they can actually estimate, then recombine.

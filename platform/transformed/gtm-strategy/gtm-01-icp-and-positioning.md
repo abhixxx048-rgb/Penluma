@@ -36,7 +36,7 @@ category: Business & Growth
 date: '2026-06-15'
 order: 999
 icon: "\U0001F3AF"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 sources: []
 linked: true

@@ -23,8 +23,9 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 7
 icon: "\U0001F4A1"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 faq:
   - q: "Why don't people act even when they want to?"
     a: "Desire is rarely the problem. Action needs motivation, ability, and a prompt to line up at the same moment. If any one is missing - even a strong wish - the behavior won't happen."
@@ -172,7 +173,7 @@ A **nudge** is a small change to that context that predictably steers behavior i
 
 ### Defaults: the most powerful nudge there is
 
-A default is what happens if you do nothing - and most people never change it. Three forces make defaults so strong: **status quo bias** (the current state feels safe), **implied endorsement** ("whoever set this up must know best"), and **loss aversion** (changing feels like giving something up).
+A default is what happens if you do nothing - and most people never change it. Three forces make defaults so strong: **[status quo bias](/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults)** (the current state feels safe), **implied endorsement** ("whoever set this up must know best"), and **[loss aversion](/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence)** (changing feels like giving something up).
 
 > **Example - organ donation:** Austria uses opt-out (you're a donor unless you decline): consent runs at 99.98%. Germany uses opt-in (you must sign up): consent sits around 12%. Same era, similar culture, neighboring countries. The only real difference is the default - and it moves consent by nearly 88 percentage points.
 
@@ -191,7 +192,7 @@ The exact same information, worded two ways, produces different choices.
 
 > **Example:** A procedure with a "90% survival rate" gets accepted more often than the same procedure described as having a "10% mortality rate." Identical numbers, different frame.
 
-Pricing works the same way. "$12/month" feels lighter than "$144/year," even though the yearly total is identical.
+[Pricing works the same way](/blog/business-financial-literacy/09-pricing-psychology-pricing-with-confidence). "$12/month" feels lighter than "$144/year," even though the yearly total is identical.
 
 ### Salience: make the better option stand out
 
@@ -214,7 +215,7 @@ People notice what is vivid and prominent. Put fruit at eye level in a cafeteria
 When a behavior you want - in yourself or in your users - isn't happening, run it through all four models in order. One of them will hold the answer.
 
 1. **Check the prompt first (Fogg).** Is there a cue at the moment of action, and is it *hot* (can they act right now) or *cold* (arriving when they can't)? Move the trigger into the path of a motivated person.
-2. **Make it tiny (Fogg).** Shrink the action until it takes seconds. Anchor it to something that already happens ("after I brush my teeth, I do two push-ups"). Remove every bit of friction - leave the shoes by the door.
+2. **Make it tiny (Fogg).** Shrink the action until it takes seconds. [Anchor it to something that already happens](/blog/thinking-skills/09-designing-your-own-habits-that-actually-stick) ("after I brush my teeth, I do two push-ups"). Remove every bit of friction - leave the shoes by the door.
 3. **Diagnose the gap (COM-B).** Walk the six-point checklist: physical and psychological capability, physical and social opportunity, reflective and automatic motivation. Fix every gap you find, not just the obvious one.
 4. **Audit the reward loop (Hooked).** Is the payoff too thin or too predictable? Add genuine variability - surprise bonuses, social uncertainty, unknown outcomes - and make sure each cycle ends with a small investment that loads the next trigger.
 5. **Reset your defaults and friction (Nudge).** Change what happens when you do nothing. Auto-transfer to savings. Phone charger in another room, book on the pillow. Healthy food at eye level. You are your own choice architect - act like it.
@@ -227,4 +228,4 @@ If you take one thing from all four models, take this: **behavior is not a measu
 
 That reframe is freeing. The person who can't stick to a habit isn't broken, and the user who won't convert isn't indifferent. Something in the system is missing - and now you have four ways to find it.
 
-Here's the thread worth pulling next: the same mechanics that help you build a habit you *want* are exactly what apps use to build habits you *didn't choose*. Once you can see the loop, you can start dismantling the ones that were designed to capture you - and that's where behavior design stops being a tool you use on others and becomes a way to take back your own attention.
+Here's the thread worth pulling next: the same mechanics that help you build a habit you *want* are exactly what apps use to build habits you *didn't choose*. Once you can see the loop, you can start dismantling the ones that were [designed to capture you](/blog/thinking-skills/10-designing-behavior-for-others-ethically) - and that's where behavior design stops being a tool you use on others and becomes a way to take back your own attention.

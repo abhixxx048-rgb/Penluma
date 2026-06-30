@@ -36,9 +36,10 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 7
 icon: "\U0001F504"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Emergence
   - https://en.wikipedia.org/wiki/Self-organization
@@ -47,7 +48,7 @@ sources:
 
 A single ant cannot plan anything. It has no map, no blueprint, and no idea what the colony is doing. Yet ant colonies build climate-controlled cities, farm fungus, and solve shortest-path problems that would stump a first-year computer science student.
 
-The same trick is everywhere. A single water molecule is not wet. A single neuron is not aware of anything. A single trader does not know the true value of tin. Somehow the group does what no member can. This is the most surprising idea in all of systems thinking, and once you see it, you cannot unsee it.
+The same trick is everywhere. A single water molecule is not wet. A single neuron is not aware of anything. A single trader does not know the true value of tin. Somehow the group does what no member can. This is the most surprising idea in all of [systems thinking](/blog/systems-thinking/01-what-is-a-system-parts-connections-and-purpose), and once you see it, you cannot unsee it.
 
 ## Why this matters
 
@@ -117,7 +118,7 @@ Real systems are mixtures. A company has a designed org chart (top-down) inside 
 
 In a famous 2008 experiment, 22 drivers circled a 230-meter track and were told simply to hold a steady speed and even spacing. No obstacles. No merges. Within minutes a jam wave appeared on its own and traveled *backward* around the track.
 
-Below 22 cars, small wobbles faded out. At 22 and above, they amplified into a stable wave. That sudden switch is called a **phase transition**. MIT researchers nicknamed these self-sustaining waves "jamitons" and found their math resembles the equations for explosion waves. The jam belongs to no single driver. It is a property of the collective density.
+Below 22 cars, small wobbles faded out. At 22 and above, they amplified into a stable wave. That sudden switch is called a **[phase transition](/blog/systems-thinking/07-nonlinearity-thresholds-and-tipping-points)**. MIT researchers nicknamed these self-sustaining waves "jamitons" and found their math resembles the equations for explosion waves. The jam belongs to no single driver. It is a property of the collective density.
 
 ```
  traffic flow  -->  -->  -->  -->
@@ -157,7 +158,7 @@ This is not just for ants and birds. Some of the most important things in your l
 
 Netflix is the textbook story. Its famous culture deck was written to *describe* the behavior that had already emerged from its hiring and incentives, not to prescribe it. When Netflix later tried to transplant that culture into new offices by mandate, it had to relearn that culture re-emerges from local interaction and cannot be copied by decree.
 
-Peter Senge, in *The Fifth Discipline*, draws the systems lesson: behavior like morale and innovation is an emergent property of structure, meaning the feedback loops, incentives, and shared mental models. Change the people but not the structure, and the same behavior comes right back.
+Peter Senge, in *The Fifth Discipline*, draws the systems lesson: behavior like morale and innovation is an emergent property of structure, meaning the [feedback loops](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves), incentives, and shared [mental models](/blog/systems-thinking/14-mental-models-and-paradigms-the-deepest-leverage). Change the people but not the structure, and the same behavior comes right back.
 
 The hardest case of all is **consciousness**. A single neuron fires or it doesn't, with no awareness and no experience. Yet you are reading this. Whether the mind is a tame, in-principle-predictable kind of emergence (call it *weak*) or a genuinely new-from-nothing kind (*strong*) is fiercely debated. But the teaching point holds either way: you will not find consciousness by examining one neuron.
 
@@ -203,4 +204,4 @@ The single idea worth keeping is this: **the most important things around you ar
 
 Once you accept that, your job changes from operator to gardener. You stop yanking on flames and start tending the fire.
 
-And here is the thread worth pulling next. If emergent behavior comes from structure, then some places in that structure move the whole system far more than others, a single rule or feedback loop that quietly governs everything downstream. Those are what systems thinkers call **leverage points**, and learning where to find them is where this all starts to feel less like philosophy and more like a superpower.
+And here is the thread worth pulling next. If emergent behavior comes from structure, then some places in that structure move the whole system far more than others, a single rule or feedback loop that quietly governs everything downstream. Those are what systems thinkers call **[leverage points](/blog/systems-thinking/13-leverage-points-where-to-push-to-change-a-system)**, and learning where to find them is where this all starts to feel less like philosophy and more like a superpower.

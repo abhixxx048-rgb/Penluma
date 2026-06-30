@@ -58,9 +58,10 @@ faq:
       It means looking past what a document intends to say to what it
       accidentally reveals. Hammurabi's Code lists penalties, but read against
       the grain it exposes Babylon's whole social hierarchy.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -131,7 +132,7 @@ Then, strikingly, several great powers *fell* within a few centuries of one anot
 
 Schoolbooks love a single villain: "Rome fell because of the barbarians." But ask a historian and you get a stack of interacting causes: overextended borders, political corruption, economic strain, disease, climate shifts, *and* outside pressure. The barbarian invasions were the last straw, not the whole load.
 
-Beware the **single-cause fallacy**: reducing a huge, slow, tangled event to one tidy reason. When someone hands you a one-word explanation for a civilization's fall, be suspicious.
+Beware the [**single-cause fallacy**](/blog/clear-thinking-and-expression/18-cognitive-biases-logical-fallacies-and-how-to-dodge-them): reducing a huge, slow, tangled event to one tidy reason. When someone hands you a one-word explanation for a civilization's fall, be suspicious.
 
 ## The Middle Ages: killing the "Dark Ages" myth
 
@@ -151,7 +152,7 @@ Then came the great teacher of this era: the **Black Death** (around 1347 to 135
 4. Scarce workers can demand higher wages.
 5. Lords lose their grip, and serfdom erodes.
 
-**Demography and disease are often the silent giant of history.** A microbe loosened a centuries-old social order more thoroughly than any king's decree. Always ask whether a population shift, plague, famine, migration, or baby boom, is quietly driving the story.
+**[Demography and disease](/blog/economics-from-first-principles/28-population-demographics-and-the-economy) are often the silent giant of history.** A microbe loosened a centuries-old social order more thoroughly than any king's decree. Always ask whether a population shift, plague, famine, migration, or baby boom, is quietly driving the story.
 
 ## The Renaissance: labels are arguments, not facts
 
@@ -195,7 +196,7 @@ It feels natural to narrate the past this way. But it manufactures false cause-a
 
 ## The Industrial Revolution: the second great hinge
 
-Starting in Britain around 1760, machines powered by coal and steam replaced human and animal muscle. Factories, mass production, exploding cities, and, for the first time in history, **sustained growth in income per person**. After 10,000 years of most people living near subsistence, living standards began a long climb.
+Starting in Britain around 1760, machines powered by coal and steam replaced human and animal muscle. Factories, mass production, exploding cities, and, for the first time in history, [**sustained growth in income per person**](/blog/economics-from-first-principles/12-economic-growth-and-productivity). After 10,000 years of most people living near subsistence, living standards began a long climb.
 
 This era hosts one of the cleanest debates in all of history, perfect for learning how rival causal frameworks work. The question: why did sustained growth start in Britain and Europe, and not in China or India, which had been just as advanced?
 
@@ -228,7 +229,7 @@ Beware *post hoc ergo propter hoc*, Latin for "after this, therefore because of 
 
 ## Between the wars: was the next war inevitable?
 
-The years 1918 to 1939 brought the Great Depression and the rise of totalitarian regimes: Nazism, Stalinism, and Italian fascism. The League of Nations, built to keep the peace, failed.
+The years 1918 to 1939 brought the [Great Depression](/blog/economics-from-first-principles/24-financial-crises-why-they-happen-spread-and-how-economies-recover) and the rise of totalitarian regimes: Nazism, Stalinism, and Italian fascism. The League of Nations, built to keep the peace, failed.
 
 This era teaches **contingency versus inevitability**. Was World War II baked in the moment the harsh Treaty of Versailles was signed in 1919? Or could a less punishing treaty, a firmer League, or a stronger economy have prevented it?
 
@@ -253,7 +254,7 @@ Now the crucial lesson. Ask: who started the Cold War? Historians fall into thre
 
 Same events. Same broad evidence. Three opposite verdicts. The interpretation shifted as the historians' own era, nation, and politics shifted. The study of how history itself gets written and re-written is called **historiography**, the history of histories.
 
-Note that **bias is not the same as lying**. Two honest fans describe the same match differently. Both are true, both are partial. A history is an argument supported by evidence, which is exactly why competent, honest historians disagree.
+Note that **bias is not the same as lying**. Two honest fans describe the same match differently. Both are true, both are partial. A history is [an argument supported by evidence](/blog/clear-thinking-and-expression/17-critical-thinking-foundations-claims-evidence-assumptions), which is exactly why competent, honest historians disagree.
 
 ## Common misconceptions
 

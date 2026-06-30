@@ -36,8 +36,9 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 6
 icon: "\U0001F4A1"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -51,9 +52,9 @@ So the real question is not whether you live by habits. You already do. The ques
 
 Every result you get, the body you have, the skills you build, the work you ship, is the sum of behaviors you repeat. And most of those behaviors are not decisions. They are habits firing automatically in response to your environment.
 
-That cuts both ways. The same machinery that lets you drive a car without thinking also keeps you reaching for your phone the second you feel bored.
+That cuts both ways. The same machinery that lets you drive a car without thinking also keeps you [reaching for your phone](/blog/thinking-skills/10-designing-behavior-for-others-ethically) the second you feel bored.
 
-Once you see how habits actually form, you stop relying on willpower and motivation, which run out. Instead, you can design your behavior at the level where it is actually controlled. That is the difference between fighting yourself every day and building a life that mostly runs itself.
+Once you see how habits actually form, you stop relying on willpower and motivation, which run out. Instead, you can [design your behavior](/blog/thinking-skills/09-designing-your-own-habits-that-actually-stick) at the level where it is actually controlled. That is the difference between fighting yourself every day and building a life that mostly runs itself.
 
 ## What a habit actually is
 
@@ -77,7 +78,7 @@ When you first learned to drive, every step was conscious: check mirrors, releas
 
 It is a bit like zipping a folder. The individual files still exist, but your brain stores and runs a compressed version that loads instantly.
 
-This is the hidden gift of habits. By offloading routine behavior, the brain frees your thinking mind for genuinely new problems: strategy, creativity, hard decisions. **Habits are how you buy back mental bandwidth.**
+This is the hidden gift of habits. By offloading routine behavior, the brain frees your thinking mind for genuinely new problems: strategy, [creativity](/blog/thinking-skills/11-what-creativity-really-is-demystified), hard decisions. **Habits are how you buy back mental bandwidth.**
 
 ### Why bad habits are so sticky
 
@@ -107,7 +108,7 @@ In *Atomic Habits*, James Clear added a fourth step that Duhigg's model implied 
 
 The craving is the wanting, the internal itch that makes you actually execute the behavior. Without it, the cue is just noise. With it, the cue becomes magnetic.
 
-Clear then turned this loop into four practical design rules, which he calls the **Four Laws of Behavior Change**:
+Clear then turned this loop into [four practical design rules](/blog/thinking-skills/08-section-7-behavior-design-models-why-people-do-and-don-t-act), which he calls the **Four Laws of Behavior Change**:
 
 | Step | To build a good habit | To break a bad habit |
 | --- | --- | --- |
@@ -144,4 +145,4 @@ Here is a concrete sequence for changing one habit, starting today.
 
 If you remember one thing, make it this: **you do not change a habit by attacking the routine. You change it by keeping the cue and reward and rerouting the behavior in between.** That single shift turns habit change from a willpower battle into a design problem you can actually win.
 
-And here is the thread worth pulling next. If nearly half your day is already automatic, then the smartest move is not just fixing individual habits, but designing the *systems and environments* that decide which habits fire in the first place. Because in the end, you do not rise to the level of your goals. You fall to the level of your systems, and that is exactly where the real leverage lives.
+And here is the thread worth pulling next. If nearly half your day is already automatic, then the smartest move is not just fixing individual habits, but designing the *systems and environments* that decide which habits fire in the first place. Because in the end, you do not rise to the level of your goals. You fall to [the level of your systems](/blog/thinking-skills/05-systems-thinking-seeing-the-whole-not-the-parts), and that is exactly where the real leverage lives.

@@ -29,7 +29,7 @@ faq:
     a: Shrink the task. If 30 minutes feels heavy, do 5. A tiny rep keeps the habit alive, and unbroken momentum matters far more than a big session you skip.
   - q: What is an idea quota and why does it help?
     a: An idea quota is a target number of ideas you produce daily, even bad ones. Quantity first loosens the mind and trains divergent thinking - generating many options before you judge any of them.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 topic: clear-thinking-and-expression
 linked: true

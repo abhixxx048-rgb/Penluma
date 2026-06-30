@@ -28,13 +28,14 @@ faq:
     a: It is the inability to imagine not knowing what you already know. Once you understand your product deeply, you write in insider jargon and skip obvious steps, leaving cold readers confused.
   - q: How do I make a marketing claim more believable?
     a: Be specific. Swap vague adjectives for concrete numbers and scenes. "Cut print costs by $1,247 last year" is believed far more than "save money on printing."
+linked: true
 topic: psychology-of-decisions
 topicTitle: Psychology of Decisions
 category: Thinking & Decisions
 date: '2026-06-22'
 order: 17
 icon: "\U0001F3AF"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 sources: []
 ---
@@ -43,7 +44,7 @@ A Stanford researcher once asked people to tap out "Happy Birthday" on a table w
 
 That gap is the entire challenge of marketing copy. You can hear the whole song in your head. Your customer hears only knocks on a table.
 
-Good copy closes that gap. It is not magic, and it is not trickery. It is clear thinking written in plain language so a real person can understand your offer and decide for themselves. This article shows you the handful of principles that make copy persuasive, and how to use them honestly, so the people who say yes are glad they did.
+Good copy closes that gap. It is not magic, and it is not trickery. It is [clear thinking written in plain language](/blog/clear-thinking-and-expression/04-clear-writing-is-clear-thinking) so a real person can understand your offer and decide for themselves. This article shows you the handful of principles that make copy persuasive, and how to use them honestly, so the people who say yes are glad they did.
 
 ## Why this matters
 
@@ -54,7 +55,7 @@ There is a real line here, and it is worth naming before we go further.
 - **Persuasion** helps someone decide by giving them true reasons and clear information they can examine and could refuse. It respects their freedom to say no.
 - **Manipulation** pushes someone toward a decision by hiding facts, faking pressure, or exploiting a weakness, so they choose something they would reject if they understood it. It removes real freedom.
 
-Everything below is persuasion. We will flag exactly where each tool slips into manipulation, so you can stay on the right side of the line, and convert better while you do it.
+Everything below is persuasion. We will flag exactly where each tool slips into manipulation, so you can [stay on the right side of the line](/blog/psychology-of-decisions/22-persuasion-vs-manipulation-the-ethics-of-influence), and convert better while you do it.
 
 ## Clarity beats cleverness, every single time
 
@@ -88,7 +89,7 @@ The best fix of all is to read your draft aloud to someone outside your field. W
 
 ## Sell the benefit, not the feature
 
-A **feature** is what your product is or has. A **benefit** is what the customer gets: the outcome, the feeling, the better version of their life. People buy benefits and only tolerate features as proof.
+A **feature** is what your product is or has. A **benefit** is what the customer gets: the outcome, the feeling, the better version of their life. [People buy benefits](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy) and only tolerate features as proof.
 
 The classic line goes: "People don't want a quarter-inch drill, they want a quarter-inch hole." And honestly, they don't even want the hole. They want the picture hung on the wall and the feeling of a finished, lovely home. Sell the picture on the wall.
 
@@ -151,7 +152,7 @@ The rule is simple. Only use scarcity that is **true**. If you really have 3 sea
 
 ## The line between persuasion and lying
 
-The influence expert Robert Cialdini draws a sharp ethical line he calls the **Smuggler versus the Detective**.
+The [influence expert Robert Cialdini](/blog/psychology-of-decisions/10-the-six-levers-of-influence-how-people-get-persuaded) draws a sharp ethical line he calls the **Smuggler versus the Detective**.
 
 - **The Smuggler** knows the principles (scarcity, social proof, authority) and counterfeits them. Fakes the reviews, invents the deadline, claims expertise they don't have. Wins once, then gets found out and loses the customer forever.
 - **The Detective** knows the same principles and hunts for the ones that genuinely exist, then puts them honestly in front of the reader. If you really have 4,000 happy customers, real awards, and a true deadline, show them clearly.
@@ -187,4 +188,4 @@ Persuasive copy is not about being slick. It is about being clear, specific, and
 
 Here is the part that surprises people. Clarity and honesty don't just feel good, they convert better and build the kind of trust that brings customers back.
 
-So why does the fake countdown timer ever work in the first place? Because it hijacks loss aversion, the same wiring that makes us fear losing $20 more than we enjoy finding it. Understand that one quirk of the mind and you will start spotting the levers behind nearly every decision you make, including the ones marketers are pulling on you.
+So why does the fake countdown timer ever work in the first place? Because it hijacks [loss aversion](/blog/psychology-of-decisions/08-prospect-theory-behavioral-economics-how-we-weigh-gains-losses-risk), the same wiring that makes us fear losing $20 more than we enjoy finding it. Understand that one quirk of the mind and you will start spotting the levers behind nearly every decision you make, including the ones marketers are pulling on you.

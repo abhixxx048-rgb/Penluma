@@ -50,7 +50,8 @@ faq:
       Loading, empty, and error. A view that only handles the happy path will show
       a blank or frozen screen the moment something is slow or missing, and users
       read blank as broken.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
+linked: true
 transformed: true
 sources: []
 ---
@@ -85,7 +86,7 @@ Don Norman, the cognitive scientist behind *The Design of Everyday Things*, gave
 
 **The analogy:** A flat metal plate says *push*. A graspable handle says *pull*. When a door has a handle but you must push it, no amount of intelligence saves you - the object lied. Your settings screen does the same thing when a button looks like a label, or a label looks clickable.
 
-Two precise terms are worth keeping. An **affordance** is what an object lets you *do* (a button affords pushing). A **signifier** is the visible *cue* telling you where and how to act (the word "Push," the underline on a link). Most UX failures are missing *signifiers*, not missing affordances. The thing was clickable - nothing told the user so.
+Two precise terms are worth keeping. An **affordance** is what an object lets you *do* (a button affords pushing). A **signifier** is the visible *cue* telling you where and how to act (the word "Push," the underline on a link). Most UX failures are missing *signifiers*, not missing [affordances](/blog/product-sense-empathy/05-the-psychology-of-obvious-affordances-signifiers-mental-models). The thing was clickable - nothing told the user so.
 
 **The fix:** Watch a real, non-team person use your screen in silence. Their "stupid" questions are gold. Each one marks a spot where your private knowledge filled a gap the design should have filled.
 
@@ -119,7 +120,7 @@ This trap feels like progress, which is exactly why it's dangerous. Teams start 
 
 The waste is staggering. Pendo's research across hundreds of software products found that **about 80% of features are rarely or never used**, while a small slice drives most of the daily activity. This isn't new. Older industry studies told the same story decades ago. It's the norm.
 
-**The common mistake:** "A customer asked for an export-to-XML button." So you add it. Now *every* user scans past it forever, your maintenance bill grows, and one person uses it twice a year. Every feature you add taxes everyone's ability to find the features that matter.
+**The common mistake:** "A customer asked for an export-to-XML button." So you add it. Now *every* user scans past it forever, your maintenance bill grows, and one person uses it twice a year. Every feature you add taxes everyone's [ability to find the features that matter](/blog/product-sense-empathy/07-cognitive-load-why-simple-feels-effortless).
 
 **The fix:** Set goals as *outcomes* (did the shop owner get their first order out faster?), not as a count of shipped buttons. Treat *removal* as a feature. Ask your team: "When did we last delete something?"
 
@@ -179,11 +180,11 @@ Every data-driven view needs all three states, or it isn't shippable:
 
 ### Trusting opinions over behaviour
 
-Rob Fitzpatrick's book *The Mom Test* is named for a simple truth: even your mom will lie to be nice if you ask whether your idea is good. The goal of customer conversations is to *learn*, not to be flattered.
+Rob Fitzpatrick's book *The Mom Test* is named for a simple truth: even your mom will lie to be nice if you ask whether your idea is good. The goal of [customer conversations](/blog/product-sense-empathy/13-doing-user-research-interviews-the-mom-test-observation) is to *learn*, not to be flattered.
 
 Its three rules: talk about *their life*, not your idea; ask about *specifics in the past*, not hopes about the future; talk less, listen more. As Fitzpatrick puts it, "Compliments are the fool's gold of customer learning."
 
-**The milkshake story:** McDonald's wanted to sell more milkshakes. Focus groups asked for better flavour - sales didn't budge. Clayton Christensen's team instead *watched*, and found that a huge share of shakes sold before 8:30 a.m., bought by lone commuters. The shake's real "job" was to be a one-handed, long-lasting companion for a boring drive. Its rivals were bananas and bagels, not other shakes. Stated opinion missed it; observed behaviour found it.
+**The milkshake story:** McDonald's wanted to sell more milkshakes. Focus groups asked for better flavour - sales didn't budge. Clayton Christensen's team instead *watched*, and found that a huge share of shakes sold before 8:30 a.m., bought by lone commuters. The shake's [real "job"](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress) was to be a one-handed, long-lasting companion for a boring drive. Its rivals were bananas and bagels, not other shakes. Stated opinion missed it; observed behaviour found it.
 
 **The fix:** Separate the *problem* (real and durable) from the *solution* (a guess), and watch what users *do*, not just what they *say*.
 
@@ -213,11 +214,11 @@ Run this checklist against your own work:
 4. **Write a test for every input that asserts it persisted.** If "Saved" can lie, it eventually will.
 5. **Make declining and cancelling as easy as accepting.** No confirmshaming, no roach motels.
 6. **Confirm only irreversible actions; offer Undo for the rest.** And restate the action on the confirm button.
-7. **Ask "when did we last delete something?"** Default to removing friction, not adding capability.
+7. **Ask "when did we last delete something?"** Default to [removing friction](/blog/product-sense-empathy/09-reducing-friction-flows-steps-progressive-disclosure), not adding capability.
 8. **Measure outcomes, not output.** Did the user finish faster - or did you just ship more buttons?
 
 ## Conclusion
 
 If you remember one thing, make it this: **a tricked, confused, or quietly-failed user doesn't argue - they just leave.** Most of these traps are invisible to the person who built them, because the builder already knows the answer the screen forgot to give.
 
-So the real skill isn't memorizing fifteen pitfalls. It's learning to see your own product through a stranger's eyes - to feel the friction you've gone numb to. That muscle has a name: product empathy. And the people who build the most-loved software aren't the ones who avoid every mistake. They're the ones who notice the small failure before the customer does - and treat the design, never the user, as the thing that has to change.
+So the real skill isn't memorizing fifteen pitfalls. It's learning to see your own product through a stranger's eyes - to feel the friction you've gone numb to. That muscle has a name: [product empathy](/blog/product-sense-empathy/03-user-empathy-seeing-through-the-user-s-eyes). And the people who build the most-loved software aren't the ones who avoid every mistake. They're the ones who notice the small failure before the customer does - and treat the design, never the user, as the thing that has to change.

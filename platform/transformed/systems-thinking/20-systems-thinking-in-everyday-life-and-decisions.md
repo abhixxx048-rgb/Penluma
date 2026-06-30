@@ -30,11 +30,12 @@ faq:
     a: Change the structure, not your effort. Make good behaviors easy and bad ones hard, automate good defaults so no willpower is needed, and find the single bottleneck holding you back rather than improving everything at once.
 topic: systems-thinking
 topicTitle: Systems Thinking
+linked: true
 category: Thinking & Decisions
 date: '2026-06-22'
 order: 19
 icon: "\U0001F504"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
 sources: []
@@ -70,7 +71,7 @@ That inertia is why you cannot lose 20 pounds in a week, build trust overnight, 
 
 A habit is a tiny circuit: **trigger leads to behavior leads to reward**. The reward teaches your brain to repeat the behavior next time the trigger shows up.
 
-In systems language, that is a **reinforcing loop**: a loop where more leads to more. The stronger the habit, the more often it fires. The more it fires, the stronger it gets. Output becomes input, exactly like compound interest.
+In systems language, that is a [**reinforcing loop**](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves): a loop where more leads to more. The stronger the habit, the more often it fires. The more it fires, the stronger it gets. Output becomes input, exactly like compound interest.
 
 James Clear made the math vivid in *Atomic Habits*. Get just 1% better every day for a year and you end up nearly **38 times** better. Get 1% worse each day and you shrink to almost nothing. The daily change is invisible. The yearly result is transformational.
 
@@ -80,7 +81,7 @@ Bad habits run the identical loop in reverse. Anxiety leads to avoidance, avoida
 
 ## Body weight: the stock most people read wrong
 
-Your body's energy is a stock-and-flow system. Stored energy is the **stock**. Food is the **inflow**. The energy you burn through metabolism and movement is the **outflow**.
+Your body's energy is a [stock-and-flow system](/blog/systems-thinking/04-stocks-and-flows-what-builds-up-and-what-moves). Stored energy is the **stock**. Food is the **inflow**. The energy you burn through metabolism and movement is the **outflow**.
 
 Your weight rises whenever intake beats expenditure. And here is the part that fools almost everyone: it keeps rising even if you start eating *less*, as long as you are still eating more than you burn.
 
@@ -108,7 +109,7 @@ Trust fills slowly, through small, repeated, reliable acts. But its outflow can 
 
 > **The rusty pipe.** Building trust is pumping water in slowly. Breaking it is punching a hole. Repair is not just patching the hole; you also have to re-pump all the water that drained out. That is why "just apologize" never restores trust on the spot. The inflow is still slow.
 
-There is a hidden danger here too: a **delay**. The gap between trust-damaging behavior and a relationship actually falling apart can stretch for months, which hides the cause from view. By the time the damage shows, the original act is long forgotten.
+There is a hidden danger here too: a [**delay**](/blog/systems-thinking/06-delays-why-cause-and-effect-are-not-close-in-time). The gap between trust-damaging behavior and a relationship actually falling apart can stretch for months, which hides the cause from view. By the time the damage shows, the original act is long forgotten.
 
 ## Procrastination and burnout: loops, not character flaws
 
@@ -150,9 +151,9 @@ Here are concrete moves you can make today.
 
 1. **Name the stock and the net flow.** Before reacting, ask: what is accumulating here, and is the inflow bigger or smaller than the outflow? This alone stops most "I tried hard today, why no result" frustration.
 
-2. **Look under the waterline.** Most people only see **events** (what happened today). Beneath events are **patterns** (trends over time), then **structures** (the rules and loops), then **mental models** (the beliefs underneath). Event fixes rarely last. Someone who burns out, takes a vacation, and burns out again has never touched the structure generating the overwork, or the belief that their worth depends on output.
+2. **Look under the waterline.** Most people only see **events** (what happened today). Beneath events are **patterns** (trends over time), then **structures** (the rules and loops), then [**mental models**](/blog/systems-thinking/14-mental-models-and-paradigms-the-deepest-leverage) (the beliefs underneath). Event fixes rarely last. Someone who burns out, takes a vacation, and burns out again has never touched the structure generating the overwork, or the belief that their worth depends on output.
 
-3. **Find your one constraint.** A system has one true bottleneck at a time, and improving anything else gives roughly zero gain. If your real limit is energy, a fancier planner is useless. Fix sleep first. A chain is only as strong as its weakest link.
+3. **Find your one constraint.** A system has [one true bottleneck](/blog/systems-thinking/09-bottlenecks-and-constraints-the-theory-of-constraints) at a time, and improving anything else gives roughly zero gain. If your real limit is energy, a fancier planner is useless. Fix sleep first. A chain is only as strong as its weakest link.
 
 4. **Change structure, not willpower.** Make good habits easy and bad ones hard. Automate your savings so no decision is required. Remove procrastination triggers from your environment instead of resisting them all day.
 
@@ -166,4 +167,4 @@ Your life is made of stocks that change slowly, loops that compound quietly, and
 
 So the next time you reach for "I'll just try harder," pause and ask whether you are turning a dial or rebuilding the machine. The machine is where the leverage lives.
 
-And here is the thread worth pulling next. If tiny daily structures can compound into a 38-times difference over a year, what is the smallest possible change you could make today that quietly reshapes everything downstream? That question, the search for the highest-leverage point in a system, is where systems thinking gets genuinely powerful.
+And here is the thread worth pulling next. If tiny daily structures can compound into a 38-times difference over a year, what is the smallest possible change you could make today that quietly reshapes everything downstream? That question, the search for the [highest-leverage point in a system](/blog/systems-thinking/13-leverage-points-where-to-push-to-change-a-system), is where systems thinking gets genuinely powerful.

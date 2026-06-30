@@ -54,9 +54,10 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 20
 icon: "\U0001F504"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -68,7 +69,7 @@ That gap, between blaming the driver and fixing the road, is where most systems 
 
 Systems thinking is not really a set of tools. It is a set of **habits**, and most of those habits run against your instincts.
 
-Your brain evolved to spot threats, blame troublemakers, and react fast. It did not evolve to trace invisible feedback loops or wait patiently for a delayed signal to show up. So when you face a real system, your gut quietly steers you toward the wrong move.
+Your brain evolved to spot threats, blame troublemakers, and react fast. It did not evolve to trace invisible [feedback loops](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves) or wait patiently for a delayed signal to show up. So when you face a real system, your gut quietly steers you toward the wrong move.
 
 The good news: these mistakes are predictable. They repeat. Once you can name them, you can catch yourself in the act and ask one better question before you act. That single pause is most of what it takes to think in systems.
 
@@ -105,7 +106,7 @@ Picture watching a ship. The bow tells you nothing about where the ship is going
 
 ### Mistake 3: Ignoring delays and time lags
 
-A **delay** is just the gap between an action and its visible effect. Peter Senge, in *The Fifth Discipline*, calls unrecognized delays a root cause of **overshoot**: you go further than you needed because the feedback arrived late.
+A [**delay**](/blog/systems-thinking/06-delays-why-cause-and-effect-are-not-close-in-time) is just the gap between an action and its visible effect. Peter Senge, in *The Fifth Discipline*, calls unrecognized delays a root cause of **overshoot**: you go further than you needed because the feedback arrived late.
 
 You walk into a cold room and crank the thermostat to maximum. But the heater warms at a fixed rate no matter where you set the dial. You forget you turned it way up, and the room overshoots into uncomfortably hot. The harder you push against a delay, the worse the overshoot.
 
@@ -117,9 +118,9 @@ The classic demonstration is the **Beer Distribution Game**, built at MIT. Four 
 
 ### Mistake 4: Drawing straight lines in a curved world
 
-**Linear thinking** assumes twice the input gives twice the output. Real systems rarely cooperate.
+[**Linear thinking**](/blog/systems-thinking/02-systems-thinking-vs-linear-thinking) assumes twice the input gives twice the output. Real systems rarely cooperate.
 
-Meadows' example: add 10 lbs of fertilizer to a field and the harvest might rise by 2 bushels, but 20 lbs will not give you 4. Past a point, the excess nutrients damage the soil. Systems are full of diminishing returns, thresholds, tipping points, and exponential growth that a straight line completely misses.
+Meadows' example: add 10 lbs of fertilizer to a field and the harvest might rise by 2 bushels, but 20 lbs will not give you 4. Past a point, the excess nutrients damage the soil. Systems are full of diminishing returns, [thresholds, tipping points](/blog/systems-thinking/07-nonlinearity-thresholds-and-tipping-points), and exponential growth that a straight line completely misses.
 
 Early in the COVID-19 pandemic, many decision-makers read rising case counts as if they would grow in a straight line, badly underestimating exponential spread. The numbers did not march, they exploded.
 
@@ -149,7 +150,7 @@ A few examples that catch experts again and again:
 - **Wildfire suppression:** The U.S. Forest Service's policy of stopping every small fire removed the blazes that used to clear underbrush. Fuel piled up, and later fires became catastrophic.
 - **Work pressure:** Push a team harder and short-term output rises, but rework, burnout, and turnover climb too, eroding the very capacity you leaned on.
 
-Senge calls the trap of quick symptomatic fixes **shifting the burden**: the fix suppresses the symptom while the root cause keeps growing, and the system becomes addicted to the fix.
+Senge calls the trap of quick symptomatic fixes [**shifting the burden**](/blog/systems-thinking/12-system-archetypes-stories-that-repeat): the fix suppresses the symptom while the root cause keeps growing, and the system becomes addicted to the fix.
 
 **Ask before you intervene:** What will change in response that partly cancels my intended effect?
 
@@ -204,7 +205,7 @@ A menu describes dishes, but it is not the food. A map shows roads, but it is no
 
 ### Mistake 12: "I found THE leverage point"
 
-Meadows famously ranked 12 leverage points, from the weakest (tweaking parameters) to the strongest (transcending paradigms). She warned that "obvious leverage points tend never to be real leverage points," and that high-leverage points "are prone to be altered in the wrong direction by people acting intuitively." The more powerful the point, the harder the system resists you.
+Meadows famously ranked [12 leverage points](/blog/systems-thinking/13-leverage-points-where-to-push-to-change-a-system), from the weakest (tweaking parameters) to the strongest (transcending paradigms). She warned that "obvious leverage points tend never to be real leverage points," and that high-leverage points "are prone to be altered in the wrong direction by people acting intuitively." The more powerful the point, the harder the system resists you.
 
 It is the old story of the drunk searching for his keys under the lamppost, not because he dropped them there, but because the light is better. Real leverage usually sits in the dark: hard to see, hard to measure.
 

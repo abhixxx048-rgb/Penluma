@@ -30,8 +30,9 @@ faq:
     a: "A consistent cue triggers a routine that delivers a reward, and the reward strengthens the loop over time. The basal ganglia stores the sequence so it runs automatically, which is why habits feel effortless once built."
   - q: "What is second-order thinking?"
     a: "Second-order thinking means asking 'and then what?' beyond the first result of a decision. It traces the chain of later consequences, which is the antidote to choices that feel good now but cause damage later."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 topic: thinking-skills
 topicTitle: Thinking Skills
 category: Thinking & Decisions
@@ -65,13 +66,13 @@ The terms below cluster into five families that mirror how good thinking actuall
 
 Before you solve anything, you have to see it clearly. These tools strip away inherited assumptions and get to what's actually true.
 
-**First-Principles Thinking** is the anchor here. You break a problem down to its most fundamental, verifiable truths-facts that can't be reduced further-and build conclusions up from those alone. The word traces back to Aristotle's *archai*, meaning the irreducible starting points of knowledge. Its opposite is **Reasoning by Analogy**: solving a problem by copying what already exists. Analogy is efficient and gives you incremental improvements, but it can never escape the assumptions baked into the template it copies.
+**[First-Principles Thinking](/blog/thinking-skills/03-first-principles-thinking-reasoning-from-the-ground-up)** is the anchor here. You break a problem down to its most fundamental, verifiable truths-facts that can't be reduced further-and build conclusions up from those alone. The word traces back to Aristotle's *archai*, meaning the irreducible starting points of knowledge. Its opposite is **Reasoning by Analogy**: solving a problem by copying what already exists. Analogy is efficient and gives you incremental improvements, but it can never escape the assumptions baked into the template it copies.
 
 The thing first-principles thinking hunts for is the **Template Assumption**-a belief about how something "must" be done that hardened into convention only because each generation copied the last. Not because physics requires it. Surfacing assumptions and testing them with evidence is the whole discipline.
 
 Practical tools in this family:
 
-- **5 Whys** - A root-cause technique from Toyota (developed by Taiichi Ohno): ask "Why?" five times in a row, each time targeting the previous answer, to move from a surface symptom to the **Root Cause**-the deepest reason a problem exists, the lever that stops it from recurring.
+- **[5 Whys](/blog/thinking-skills/04-the-toolkit-how-to-actually-do-first-principles-thinking)** - A root-cause technique from Toyota (developed by Taiichi Ohno): ask "Why?" five times in a row, each time targeting the previous answer, to move from a surface symptom to the **Root Cause**-the deepest reason a problem exists, the lever that stops it from recurring.
 - **Decomposition** - Breaking a big, tangled problem into distinct smaller pieces so each can be examined and solved on its own.
 - **Socratic Questioning** - A layered set of questions about clarity, evidence, assumptions, perspectives, and implications that exposes hidden beliefs. Named for Socrates.
 - **Feynman Technique** - A four-step learning loop from physicist Richard Feynman: pick a concept, explain it in plain language as if to a child, find where your explanation breaks down, then simplify and repeat. The gaps reveal exactly what you don't yet understand.
@@ -80,7 +81,7 @@ A quick example of first principles in action: instead of accepting "batteries a
 
 ## Family 2: Seeing the whole system
 
-Most problems don't sit still while you solve them. They push back, ripple outward, and surprise you weeks later. Systems thinking gives those behaviors names.
+Most problems don't sit still while you solve them. They push back, ripple outward, and surprise you weeks later. [Systems thinking](/blog/thinking-skills/05-systems-thinking-seeing-the-whole-not-the-parts) gives those behaviors names.
 
 The building blocks:
 
@@ -93,13 +94,13 @@ Then the loops:
 - **Balancing Loop** - A loop that resists change and pushes the system back toward a target, like a thermostat clicking the heat on and off.
 - **Causal Loop Diagram** - A simple map of how variables affect each other through these loops, used to find where to actually intervene.
 
-The payoff term is the **Leverage Point**-a place where a small change produces a large, lasting effect. Donella Meadows ranked these from weakest (tweaking numbers) to strongest, with the **Paradigm**-the shared beliefs and goals a system was built on-at the very top. Change the paradigm and everything downstream changes too.
+The payoff term is the **[Leverage Point](/blog/thinking-skills/06-section-5-leverage-points-mental-models-for-better-decisions)**-a place where a small change produces a large, lasting effect. Donella Meadows ranked these from weakest (tweaking numbers) to strongest, with the **Paradigm**-the shared beliefs and goals a system was built on-at the very top. Change the paradigm and everything downstream changes too.
 
 Systems also fight back. **Policy Resistance** is the tendency of a system to neutralize your fix-add highway lanes to cut traffic and you often induce more driving, recreating the jam. That's a cousin of the **Unintended Consequence**, the side effect nobody anticipated because they ignored an active feedback loop, like introducing a predator to control a pest and wrecking the wider ecosystem.
 
 ## Family 3: Generating ideas
 
-Once you understand the problem, you need options. **Creativity**-producing things that are both *novel* and *useful*-is not an innate gift here. It's a learnable, process-driven skill.
+Once you understand the problem, you need options. **[Creativity](/blog/thinking-skills/11-what-creativity-really-is-demystified)**-producing things that are both *novel* and *useful*-is not an innate gift here. It's a learnable, process-driven skill.
 
 It runs on two alternating modes. **Divergent Thinking** generates many varied ideas without judging them; quantity and variety are the goal. **Convergent Thinking** then narrows and selects the best one. Do convergent too early and you kill creativity; too late and you get analysis paralysis. The brain has matching states: **Diffuse Mode** (relaxed, wandering, the source of "shower ideas") versus focused mode. The **Default Mode Network** is the set of brain regions that lights up during rest and produces those background insights.
 
@@ -145,7 +146,7 @@ When heuristics misfire, you get biases:
 
 A great decision that never becomes behavior is worthless. This last family is about making the right action automatic.
 
-A **Habit** is an automatic behavior triggered by a consistent cue, stored in the **Basal Ganglia** so it runs without conscious effort. **Chunking** is how the brain compresses a sequence of separate actions into one automatic unit-the same process that lets an experienced driver hold a conversation.
+A **[Habit](/blog/thinking-skills/07-the-science-of-habits-how-behavior-becomes-automatic)** is an automatic behavior triggered by a consistent cue, stored in the **Basal Ganglia** so it runs without conscious effort. **Chunking** is how the brain compresses a sequence of separate actions into one automatic unit-the same process that lets an experienced driver hold a conversation.
 
 The loop has several named versions:
 

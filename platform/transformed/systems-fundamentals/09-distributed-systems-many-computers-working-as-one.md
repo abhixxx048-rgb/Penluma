@@ -24,9 +24,10 @@ category: Engineering
 date: '2026-06-21'
 order: 8
 icon: ⚙️
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 faq:
   - q: What is a distributed system in simple terms?
     a: It's a group of separate computers connected over a network that work together so they look and behave like a single system to the user. When you open Netflix or search Google, you're really talking to thousands of machines pretending to be one.
@@ -122,7 +123,7 @@ The practical lesson: a remote call is nothing like a local function call. "Chat
 
 ### "You can pick CA from the CAP theorem"
 
-The **CAP theorem** (proposed by Eric Brewer in 2000, proved by Gilbert and Lynch in 2002) names three properties:
+The [**CAP theorem**](/blog/distributed-systems/16-the-cap-theorem-and-pacelc) (proposed by Eric Brewer in 2000, proved by Gilbert and Lynch in 2002) names three properties:
 
 - **Consistency** - every read sees the most recent write, as if there were a single copy of the data.
 - **Availability** - every request to a working node gets a real, non-error answer, even if that answer might be slightly out of date.
@@ -137,7 +138,7 @@ A bank ATM picks **CP**: during a partition, "try again later" beats showing a w
 
 ### "Eventual consistency means a few milliseconds"
 
-**Eventual consistency** only promises that *if writes stop*, all copies will *eventually* settle on the same value. It says nothing about how long that takes. Reads can be arbitrarily stale in the meantime. Where users will notice, such as seeing their own freshly posted comment, you add stronger guarantees on purpose (more on that below).
+[**Eventual consistency**](/blog/distributed-systems/17-consistency-models) only promises that *if writes stop*, all copies will *eventually* settle on the same value. It says nothing about how long that takes. Reads can be arbitrarily stale in the meantime. Where users will notice, such as seeing their own freshly posted comment, you add stronger guarantees on purpose (more on that below).
 
 ### "Order events by their timestamps"
 
@@ -165,7 +166,7 @@ The insight that surprises people: even on a perfectly healthy network, keeping 
 
 ## Keeping copies in agreement: quorums and consensus
 
-**Replication** means keeping copies of data on several nodes, for durability, availability, and faster reads. The hard part is keeping the copies *agreeing* while nodes and networks misbehave.
+[**Replication**](/blog/systems-fundamentals/06-databases-iii-scaling-up-replication-partitioning-nosql) means keeping copies of data on several nodes, for durability, availability, and faster reads. The hard part is keeping the copies *agreeing* while nodes and networks misbehave.
 
 A **quorum** is a voting trick. With **N** copies, require **W** nodes to confirm a write and **R** nodes to serve a read. If **R + W > N**, the read set and write set must overlap by at least one node, so a read is guaranteed to see the latest write.
 
@@ -237,7 +238,7 @@ The trade-off is real. Sagas are far more scalable and available than 2PC, but y
 
 ## How to use this
 
-You don't need to implement Raft to apply these ideas. Here's a practical checklist for the next time you design or debug something distributed.
+You don't need to implement [Raft](/blog/distributed-systems/04-raft-leader-election) to apply these ideas. Here's a practical checklist for the next time you design or debug something distributed.
 
 1. **Assume partial failure everywhere.** Treat "no response" as ambiguous, never as "dead." Design for the case where you simply don't know.
 2. **Tune timeouts with backoff and jitter.** Pair every timeout with retries that wait longer each attempt, add small random delays so clients don't all retry in lockstep, and add circuit breakers that stop calling a failing service for a while.
@@ -245,7 +246,7 @@ You don't need to implement Raft to apply these ideas. Here's a practical checkl
 4. **Make handlers idempotent before adding retries.** Use idempotency keys, deduplication, or upserts so a duplicated request can't double-charge or double-send.
 5. **Add session guarantees where users watch.** Read-your-writes and monotonic reads keep eventual consistency from feeling broken on the screens people stare at.
 6. **Use odd node counts for anything that votes.** Three, five, or seven. A 4-node cluster buys you nothing extra and invites tie votes.
-7. **Never order events by server clocks.** Reach for logical or vector clocks when causality matters; treat "last write wins" by timestamp as a known data-loss bug.
+7. **Never order events by server clocks.** Reach for logical or [vector clocks](/blog/distributed-systems/15-vector-clocks-causality) when causality matters; treat "last write wins" by timestamp as a known data-loss bug.
 8. **Prefer Sagas over 2PC across services**, and write a real compensating action for every step.
 
 ## Conclusion

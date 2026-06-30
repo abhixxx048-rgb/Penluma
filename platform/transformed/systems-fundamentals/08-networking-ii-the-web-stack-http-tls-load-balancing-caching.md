@@ -36,9 +36,10 @@ faq:
     a: Latency is how long one trip takes (delay). Bandwidth is the maximum capacity of the connection. Buying more bandwidth never shortens a single trip, just like adding highway lanes never makes your own drive faster.
   - q: What does a load balancer do?
     a: A load balancer spreads incoming traffic across many backend servers. This adds capacity (more servers handle more requests) and high availability (it routes around servers that have failed).
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -46,7 +47,7 @@ You type an address, hit Enter, and a page appears in a fraction of a second. Be
 
 Most of it is invisible, and most of the time you never need to think about it. But the day a page loads slowly, a login mysteriously breaks, or your app charges a customer twice, the only people who can fix it are the ones who understand how this layer actually works.
 
-This is that layer: the **application layer** of the web. The roads underneath (IP addresses, TCP, DNS) move the packets. Up here is the part you touch every day.
+This is that layer: the **application layer** of the web. The roads underneath ([IP addresses, TCP, DNS](/blog/systems-fundamentals/07-networking-i-how-data-travels-ip-tcp-udp-dns)) move the packets. Up here is the part you touch every day.
 
 ## Why this matters
 
@@ -111,7 +112,7 @@ Two pairs trip people up constantly, so memorize them:
 
 HTTP is **stateless**. The server keeps no memory of your previous requests. Each request must carry everything needed to handle it.
 
-That sounds like a handicap, but it is the secret to **horizontal scaling**, running many identical servers side by side. Because no single server "remembers" you, *any* server can handle *any* request. Need more capacity? Add more servers. No coordination required.
+That sounds like a handicap, but it is the secret to [**horizontal scaling**](/blog/system-design/07-load-balancing-and-scaling), running many identical servers side by side. Because no single server "remembers" you, *any* server can handle *any* request. Need more capacity? Add more servers. No coordination required.
 
 But real apps do need to remember "I'm logged in." The trick is to make the **client** carry an identifier on every request. The most common way is a **cookie**: the server sends `Set-Cookie: session=abc123`, the browser stores it, and it automatically attaches `Cookie: session=abc123` to every later request to that site.
 
@@ -220,7 +221,7 @@ Latency has a hard physical floor. Light travels about 1ms per 100km over fiber,
 | Same-datacenter round trip | ~0.5 ms |
 | Cross-continent round trip | ~150 ms |
 
-Sit with that for a second: **a remote network call is roughly a million times slower than reading from memory.** So the winning strategy is always the same: minimize round trips, batch requests together, cache aggressively, and move data physically closer to users.
+Sit with that for a second: **a remote network call is roughly a million times slower than reading from memory.** So the winning strategy is always the same: minimize round trips, batch requests together, [cache aggressively](/blog/system-design/06-caching-deep), and move data physically closer to users.
 
 The classic mistake is trying to fix a slow, round-trip-heavy app by buying more bandwidth. A fatter pipe doesn't shorten the trip.
 
@@ -292,7 +293,7 @@ The payoff is lower latency (content is physically near users), far less load on
 
 ## Rate limiting, timeouts, retries, and backoff
 
-**Rate limiting** caps how many requests a client may make in a time window. It protects you from abuse, buggy clients, and overload. Over-limit requests should return `429 Too Many Requests` with a `Retry-After` header telling the client exactly when to come back.
+[**Rate limiting**](/blog/system-design/16-rate-limiting-and-resiliency) caps how many requests a client may make in a time window. It protects you from abuse, buggy clients, and overload. Over-limit requests should return `429 Too Many Requests` with a `Retry-After` header telling the client exactly when to come back.
 
 ```
 TOKEN BUCKET (allows bursts):
@@ -345,4 +346,4 @@ That jitter is not optional polish. Retrying at a fixed interval makes thousands
 
 If you remember one thing, remember this: **statelessness is the quiet hero of the whole web stack.** Because servers refuse to remember you, you can run a thousand identical ones, route around the dead ones, and serve millions of people at once. Almost every other technique here, from tokens to load balancing to caching at the edge, exists to make statelessness practical.
 
-Which raises the next question. If servers forget everything, where does all the state actually live, and how do you keep a database consistent when a hundred servers are hammering it at once? That is the world of databases, replication, and consistency models, and it is where the web stack you just learned meets some genuinely hard trade-offs. That's the next floor down.
+Which raises the next question. If servers forget everything, where does all the state actually live, and how do you keep a database consistent when a hundred servers are hammering it at once? That is the world of databases, replication, and [consistency models](/blog/distributed-systems/17-consistency-models), and it is where the web stack you just learned meets some genuinely hard trade-offs. That's the next floor down.

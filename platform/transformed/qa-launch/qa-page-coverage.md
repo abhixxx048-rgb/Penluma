@@ -49,9 +49,10 @@ category: Business & Growth
 date: '2026-06-06'
 order: 999
 icon: ✅
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 sources: []
+linked: true
 ---
 
 A storefront once showed a customer a total of $150 at checkout. The order that landed in the admin panel said $50. The page looked perfect. The math did not. The shipping charge had quietly vanished somewhere between the cart and the saved order, and the shop was eating $100 on every sale that path.
@@ -105,7 +106,7 @@ You only catch this by placing a real order and then comparing what the customer
 
 One app threw an EMERGENCY-level error on the backend every time someone saved an email campaign, a newsletter signup, or a customer segment. The cause was a missing logging channel in the config. The pages looked completely fine.
 
-If you were only watching the browser, you would have shipped it. Because the logs were open, the error was obvious and the fix took minutes. This is the entire argument for tailing server logs during QA: the screen lies, the logs don't.
+If you were only watching the browser, you would have shipped it. Because the logs were open, the error was obvious and the fix took minutes. This is the entire argument for [tailing server logs](/blog/system-design/17-observability-and-operations) during QA: the screen lies, the logs don't.
 
 A good gut-check at the end of a session: grep your log file for `ERROR` and `EMERGENCY`. If the count is not zero, you are not done.
 
@@ -132,9 +133,9 @@ A flow is a complete job a user actually does, start to finish, with real data:
 - Change an order's status and confirm the change persists and shows up in the activity log.
 - Place a real guest order through checkout and confirm it appears in the admin with the right customer, line items, options, and totals.
 
-Each step proves a join between two parts of the system. The customer-to-quote link. The product-to-price calculation. The storefront-to-admin handoff. These joins are where one team's assumptions quietly disagree with another's, and a flow is the only thing that walks across the seam.
+Each step proves [a join between two parts of the system](/blog/system-design/18-architecture-patterns-microservices). The customer-to-quote link. The product-to-price calculation. The storefront-to-admin handoff. These joins are where one team's assumptions quietly disagree with another's, and a flow is the only thing that walks across the seam.
 
-Test the unhappy paths too. One storefront let a $0, "price unavailable" item sit in the cart and flow straight into a checkout the user could complete, even though the product page correctly blocked adding it. The product page guarded the front door; nobody guarded the cart. Adding the same guard at checkout closed it.
+Test [the unhappy paths](/blog/security-privacy-engineering/08-security-testing-auditing) too. One storefront let a $0, "price unavailable" item sit in the cart and flow straight into a checkout the user could complete, even though the product page correctly blocked adding it. The product page guarded the front door; nobody guarded the cart. Adding the same guard at checkout closed it.
 
 ## Common misconceptions
 
@@ -159,7 +160,7 @@ A practical full-page QA pass, step by step:
 3. **Navigate like a user.** Reach pages by clicking the real navigation. Broken links and orphaned routes surface on their own this way.
 4. **Enter and submit real data.** On every page that takes input, actually create something. Watch both consoles when you hit save.
 5. **Run at least three full flows end to end.** Pick your highest-value journeys (sign up, create the core record, complete a purchase) and walk each from start to finish.
-6. **Compare what the user sees to what the system stored.** Especially for money. The checkout total and the saved order total must match to the cent.
+6. **Compare what the user sees to what the system stored.** Especially for money. [The checkout total and the saved order total](/blog/system-design/11-distributed-transactions-and-idempotency) must match to the cent.
 7. **Triage as you go.** Fix the cheap and safe issues immediately. For anything high-impact, write down the root cause and leave it for a focused, tested change. Resist the blind patch.
 8. **Close with a clean log.** Grep for `ERROR` and `EMERGENCY`. Zero, or you keep going.
 

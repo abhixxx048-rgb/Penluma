@@ -36,9 +36,10 @@ faq:
     a: Trust is a stock. Kept promises and honest communication are inflows that build it slowly. Broken promises and scandals are outflows that can drain it fast. That asymmetry is why reputation must be managed defensively.
   - q: What are the two ways to fill a bathtub?
     a: You can increase the inflow or decrease the outflow. To grow your savings you can earn more or spend less. Stopping a leak works just as well as turning up the supply, and is often cheaper and faster.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - 'https://en.wikipedia.org/wiki/Stock_and_flow'
   - 'https://en.wikipedia.org/wiki/Thinking_In_Systems:_A_Primer'
@@ -47,7 +48,7 @@ sources:
 
 Picture a bathtub. The water sitting in it builds up. The water pouring from the tap moves. Those are two completely different kinds of things, and almost every confusing argument you have ever heard about money, climate, or hiring comes down to mixing them up.
 
-Once you can tell "builds up" from "moves" automatically, a surprising amount of the world stops being confusing. This is the simplest idea in systems thinking, and also the most useful.
+Once you can tell "builds up" from "moves" automatically, a surprising amount of the world stops being confusing. This is the simplest idea in [systems thinking](/blog/systems-thinking/03-why-systems-thinking-matters-patterns-everywhere), and also the most useful.
 
 ## Why this matters
 
@@ -80,7 +81,7 @@ If a quantity still exists when time stops, it is a stock. If it disappears beca
 
 The population of a country exists at midnight on January 1. But "births per year" does not exist at a single instant. It needs a whole year to add up. So population is a stock, and the birth rate is a flow.
 
-One mapping makes this stick in money terms: a **balance sheet lists stocks** (what you own and owe right now). An **income statement lists flows** (what came in and went out over a period). Remember that and you will rarely confuse the two.
+One mapping makes this stick in money terms: a **[balance sheet](/blog/business-financial-literacy/05-the-balance-sheet-cash-flow-statement-why-profit-cash) lists stocks** (what you own and owe right now). An **[income statement](/blog/business-financial-literacy/04-reading-a-p-l-income-statement-line-by-line) lists flows** (what came in and went out over a period). Remember that and you will rarely confuse the two.
 
 ## The bathtub: the one picture to remember
 
@@ -127,7 +128,7 @@ The single most common error in all of systems thinking is mixing up a stock wit
 
 ### "Cutting the deficit shrinks the debt"
 
-Government **debt** is a stock: the total owed at a moment in time. The US federal debt passed $33 trillion in 2023. The **deficit** is a flow: how much the debt grows in one year, roughly $1.7 trillion in fiscal 2023.
+Government **debt** is a stock: the total owed at a moment in time. The [US federal debt](/blog/economics-from-first-principles/16-fiscal-policy-taxes-spending-deficits-and-national-debt) passed $33 trillion in 2023. The **deficit** is a flow: how much the debt grows in one year, roughly $1.7 trillion in fiscal 2023.
 
 Each year's deficit adds to the stock of debt. So "cutting the deficit" while the deficit is still positive means the debt is *still growing*, just more slowly. To actually shrink the debt you need a surplus, where the outflow is bigger than the inflow. The economist Ann Pettifor compares it to confusing a £200,000 mortgage (stock) with the monthly repayment (flow).
 
@@ -186,4 +187,4 @@ Make the stock-and-flow lens a habit with these steps:
 
 A stock is what builds up. A flow is what moves. Flows are the *only* way to change a stock, stocks always change slowly, and confusing the two (debt with deficit, income with wealth, headcount with knowledge) is the most expensive mistake in systems thinking.
 
-But here is the loose thread. We keep saying stocks change "slowly" and that pushing harder backfires. Why exactly do delays turn a sensible decision into wild swings, and why do well-meaning fixes so often restore the very problem they attacked? That is the work of feedback loops, where stocks and flows wire back into each other, and it is where systems start to feel almost alive.
+But here is the loose thread. We keep saying stocks change "slowly" and that pushing harder backfires. Why exactly do delays turn a sensible decision into wild swings, and why do well-meaning fixes so often restore the very problem they attacked? That is the work of [feedback loops](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves), where stocks and flows wire back into each other, and it is where systems start to feel almost alive.

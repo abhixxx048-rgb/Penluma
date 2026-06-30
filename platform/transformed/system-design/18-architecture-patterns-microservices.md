@@ -10,9 +10,10 @@ category: Engineering
 date: '2026-06-15'
 order: 18
 icon: "\U0001F3D7️"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 keywords:
   - monolith vs microservices
   - when to use microservices
@@ -162,7 +163,7 @@ Keep the gateway dumb (cross-cutting concerns only) and push data-shaping into B
 
 ### Service mesh
 
-A **service mesh** moves networking concerns *out of your application code* into a **sidecar proxy** (usually Envoy) running next to each instance. Your code makes a plain local call; the sidecar handles retries, timeouts, encryption between services (mTLS), load balancing, and circuit breaking.
+A **service mesh** moves networking concerns *out of your application code* into a **sidecar proxy** (usually Envoy) running next to each instance. Your code makes a plain local call; the sidecar handles retries, timeouts, encryption between services (mTLS), load balancing, and [circuit breaking](/blog/system-design/16-rate-limiting-and-resiliency).
 
 What it buys you: encryption everywhere, traffic shaping (roll a release out to 5%, then 50%, then 100%), and uniform resilience - all without recompiling your apps. Istio and Linkerd are the well-known options.
 
@@ -187,7 +188,7 @@ This rule creates two real problems. Here is how the field solves them.
 You cannot `JOIN` across a network. Two solutions:
 
 - **API composition.** Fetch from each service and join in memory. Simple, but it means several calls and no database-level filtering.
-- **CQRS.** Maintain a read-optimized view that is fed by events. Fast reads, at the cost of eventual consistency and more moving parts.
+- **CQRS.** Maintain a [read-optimized view that is fed by events](/blog/system-design/13-event-sourcing-and-cqrs). Fast reads, at the cost of eventual consistency and more moving parts.
 
 ### No distributed transactions - use a saga
 
@@ -200,7 +201,7 @@ There are two styles:
 - **Choreography** - services react to each other's events. No central coordinator, but the logic gets smeared across services and is hard to follow.
 - **Orchestration** - one coordinator drives the steps. Explicit and debuggable, but it is a new component to run. Tools like Temporal, AWS Step Functions, and Camunda do this.
 
-Sagas trade **atomicity for availability**, and they expose *intermediate* states to the world - an order can sit in "payment pending." You must design for that. Critically, **every step must be idempotent**, because at-least-once delivery means each step will eventually run more than once. A non-idempotent "charge card" step will double-charge someone. Give every step an idempotency key.
+Sagas trade **atomicity for availability**, and they expose *intermediate* states to the world - an order can sit in "payment pending." You must design for that. Critically, **every step must be idempotent**, because at-least-once delivery means each step will eventually run more than once. A non-idempotent "charge card" step will double-charge someone. Give every step an [idempotency key](/blog/system-design/11-distributed-transactions-and-idempotency).
 
 ## Common misconceptions
 
@@ -265,7 +266,7 @@ Active-active needs one of three approaches:
 - **Conflict-tolerant replication** (CRDTs or last-writer-wins) - eventual consistency, as in DynamoDB Global Tables.
 - **A globally consistent store** like Google Spanner or CockroachDB - strong consistency, but cross-region commits pay the speed of light (tens to over a hundred milliseconds per round trip).
 
-You cannot have low-latency global writes *and* strong consistency *and* partition tolerance. Physics and the CAP theorem both say no.
+You cannot have low-latency global writes *and* strong consistency *and* partition tolerance. Physics and the [CAP theorem](/blog/system-design/09-cap-pacelc-consistency-models) both say no.
 
 ## How to use this
 
@@ -286,4 +287,4 @@ If you remember one thing, remember this: **independent deployability is the who
 
 Amazon proved both halves of this story. Jeff Bezos's famous service mandate forced every team to talk only through APIs and own its own data, which unlocked a deploy cadence measured in *seconds*. Then AWS pushed further into cells and shuffle sharding, turning what would have been platform-wide outages into incidents that touched a sliver of customers.
 
-Notice that the moment you split a system, you inherit a new and unavoidable problem: keeping data consistent when it crosses a service boundary. That is where the real depth lives - the CAP theorem, eventual consistency, and the messaging patterns that make async seams trustworthy. Those are the next doors to open, and they are the ones that separate engineers who *use* distributed systems from the ones who can actually keep them up.
+Notice that the moment you split a system, you inherit a new and unavoidable problem: keeping data consistent when it crosses a service boundary. That is where the real depth lives - the CAP theorem, eventual consistency, and the [messaging patterns](/blog/system-design/12-messaging-and-event-driven) that make async seams trustworthy. Those are the next doors to open, and they are the ones that separate engineers who *use* distributed systems from the ones who can actually keep them up.

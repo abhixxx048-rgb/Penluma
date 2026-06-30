@@ -57,7 +57,7 @@ faq:
       Only when participants might lie or act maliciously, such as a public
       blockchain shared by distrusting parties. Inside your own data center, nodes
       crash but don't lie, so cheaper crash-fault consensus (Raft/Paxos) is correct.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources:

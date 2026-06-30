@@ -56,7 +56,8 @@ faq:
       The partition key decides which partition a message lands on, and Kafka
       only guarantees order within a partition. Keying by entity (like order_id)
       keeps that entity's events in order but risks a hot partition.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
+linked: true
 transformed: true
 polished: true
 sources:
@@ -154,7 +155,7 @@ Kafka guarantees order *only within a partition*. Across partitions, anything go
 - **Order matters per entity?** Key by that entity. All events for `order_123` go to one partition and apply in sequence, so a "shipped" status never overtakes "paid." The cost: a very active entity can hot-spot one partition.
 - **Order does not matter and you want max parallelism?** Key by something high-cardinality and evenly spread, or use no key at all.
 
-The classic landmine is the **hot partition**. In a multi-tenant app, keying by `tenant_id` sounds reasonable, until your single biggest customer saturates one partition while five others sit idle. The fix is a composite key like `tenant_id:order_id` when per-order ordering is enough, or salting the key to spread the load.
+The classic landmine is the **[hot partition](/blog/system-design/08-replication-and-partitioning)**. In a multi-tenant app, keying by `tenant_id` sounds reasonable, until your single biggest customer saturates one partition while five others sit idle. The fix is a composite key like `tenant_id:order_id` when per-order ordering is enough, or salting the key to spread the load.
 
 There is also a subtle producer gotcha: even *single-partition* order can break on retry. If a failed batch is retried after a later batch already succeeded, records get reordered, unless you enable the idempotent producer (`enable.idempotence=true`), which lets Kafka preserve order using sequence numbers.
 
@@ -166,7 +167,7 @@ There are three delivery semantics:
 - **At-least-once:** no loss, but duplicates are possible. The sensible default.
 - **Exactly-once:** no loss, no duplicates. What everyone wants for money and other costly side effects.
 
-Here is the part senior engineers will tell you and junior ones resist: **true exactly-once delivery over a network is impossible.** This is the Two Generals problem. A sender can never *know* its message arrived without an acknowledgment, and the acknowledgment itself can get lost, so the sender must retry, so duplicates are inevitable on the wire.
+Here is the part senior engineers will tell you and junior ones resist: **true exactly-once delivery over a network is impossible.** This is the [Two Generals problem](/blog/system-design/10-consensus-and-coordination). A sender can never *know* its message arrived without an acknowledgment, and the acknowledgment itself can get lost, so the sender must retry, so duplicates are inevitable on the wire.
 
 What you build instead is **effectively-once processing**: accept that you will get duplicates, and make your consumer *idempotent* so handling the same message twice has the same effect as handling it once.
 
@@ -181,7 +182,7 @@ This is the real-world workhorse. Two approaches:
 
 Kafka does offer genuine exactly-once, but only *within Kafka*. Its idempotent producer drops duplicate retried batches, and its transactions can atomically write to multiple partitions and commit offsets together, which makes the consume-process-produce loop safe.
 
-The crucial caveat: **the moment your consumer touches something outside Kafka**, a Postgres write, a Stripe charge, an email, Kafka transactions stop covering it. For that boundary you still need an idempotency key or the transactional outbox pattern. Do not let "Kafka has exactly-once" lull you into double-charging a customer.
+The crucial caveat: **the moment your consumer touches something outside Kafka**, a Postgres write, a Stripe charge, an email, Kafka transactions stop covering it. For that boundary you still need an idempotency key or the [transactional outbox pattern](/blog/system-design/11-distributed-transactions-and-idempotency). Do not let "Kafka has exactly-once" lull you into double-charging a customer.
 
 ## Backpressure, retries, and dead-letter queues
 
@@ -189,11 +190,11 @@ The crucial caveat: **the moment your consumer touches something outside Kafka**
 
 What happens when messages arrive faster than they can be processed?
 
-In a **log like Kafka**, the backlog just sits on cheap disk. The warning sign is **consumer lag**, how far behind the head a consumer is. Watch the *trend*: rising lag means your consumers are losing the race.
+In a **log like Kafka**, the backlog just sits on cheap disk. The warning sign is **[consumer lag](/blog/system-design/17-observability-and-operations)**, how far behind the head a consumer is. Watch the *trend*: rising lag means your consumers are losing the race.
 
 In a **queue like RabbitMQ**, an unbounded queue swells in memory until the broker hits a limit and starts blocking publishers. Use bounded queues with an overflow policy, and set consumer **prefetch** so one greedy consumer does not hoard thousands of unacknowledged messages.
 
-The deeper lesson: an unbounded queue in front of a slow database hides the problem until storage fills, and then *everything* upstream blocks at once, a sudden collapse. As the saying goes, **an unbounded queue is a memory leak with extra steps.** Bounded buffers that shed load fail gracefully instead.
+The deeper lesson: an unbounded queue in front of a slow database hides the problem until storage fills, and then *everything* upstream blocks at once, a sudden collapse. As the saying goes, **an unbounded queue is a memory leak with extra steps.** Bounded buffers that [shed load](/blog/system-design/16-rate-limiting-and-resiliency) fail gracefully instead.
 
 ### Retry with backoff and jitter
 

@@ -28,10 +28,11 @@ faq:
     a: A win-back email targets customers who have gone quiet, who have not opened, logged in, or purchased in a while. It tries to re-engage them before they drift away for good, and it stops automatically if they come back.
   - q: Should transactional emails be subject to frequency caps?
     a: No. Order confirmations, shipping notices, and payment-failed alerts are expected and important. They should always be exempt from marketing frequency caps so a customer never misses one.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
 topic: retention-lifecycle
+linked: true
 topicTitle: Retention & Lifecycle
 category: Business & Growth
 date: '2026-06-16'
@@ -50,7 +51,7 @@ Most email you send is a **broadcast**: one message, blasted to a big list, on a
 
 Behavioral email is the opposite. It listens. It watches what a single customer does, or pointedly does not do, and responds at the precise moment that response is welcome.
 
-The difference shows up in the numbers. Emails triggered by behavior tend to earn three to five times the click-through of calendar-based blasts, because they arrive when the customer is already thinking about the thing. You are not interrupting them. You are answering a question they just asked with their actions.
+The difference shows up in the numbers. Emails triggered by behavior tend to earn three to five times the click-through of calendar-based blasts, because they arrive when [the customer is already thinking about the thing](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy). You are not interrupting them. You are answering a question they just asked with their actions.
 
 For any business with repeat purchases or recurring revenue, this is where the quiet money lives:
 
@@ -77,7 +78,7 @@ If you build only one behavioral journey, build this one. Abandoned-cart emails 
 The cadence that works:
 
 1. **Email one, within 30 to 60 minutes.** A simple reminder. "You left something behind." No pressure, no discount. Many people just got distracted and will finish the order.
-2. **Email two, about a day later.** Change the angle. Lead with a benefit, a reassurance, social proof, or an answer to a likely objection.
+2. **Email two, about a day later.** Change the angle. Lead with a benefit, a reassurance, social proof, or [an answer to a likely objection](/blog/sales-customer-development/11-handling-objections-with-honesty).
 3. **Email three, a couple of days later (optional).** Now you can add a gentle incentive, like free shipping or a small discount.
 
 A three-email series like this lifts conversion by around **34%** over sending nothing. And the whole thing must **exit the moment the customer buys**, so nobody who already paid keeps getting "you forgot something" emails. That exit condition is not a nicety. It is the difference between helpful and annoying.
@@ -102,7 +103,7 @@ The key is that it watches for re-engagement and stops itself the moment they re
 
 ### Onboarding and trial conversion: for subscription products
 
-If you run a trial or a subscription, the same thinking applies to your own signups. A trial-conversion sequence reinforces the product's value, adds social proof, and gently escalates urgency as the trial deadline approaches, branching based on whether the user is actively engaged or has gone cold.
+If you run a trial or a subscription, the same thinking applies to your own signups. A trial-conversion sequence reinforces the product's value, adds [social proof](/blog/psychology-of-decisions/10-the-six-levers-of-influence), and gently escalates urgency as the trial deadline approaches, branching based on whether the user is actively engaged or has gone cold.
 
 One important wrinkle: emails you send to *your own users* (a platform talking to its subscribers) usually need completely separate plumbing from emails your customers send to *their* shoppers. They live in different systems, under different rules. Do not try to force them through the same engine.
 
@@ -120,7 +121,7 @@ One important wrinkle: emails you send to *your own users* (a platform talking t
 
 You do not need an enterprise platform to start. You need a clear sequence and the discipline to track state. Here is a practical order of operations:
 
-1. **Fix your queue first.** Time-delayed steps ("wait 24 hours, then send") only work if your system can reliably schedule future jobs. If your email tool sends everything immediately or not at all, delays are impossible. Sort this out before anything else.
+1. **Fix your queue first.** Time-delayed steps ("wait 24 hours, then send") only work if your system can [reliably schedule future jobs](/blog/system-design/12-messaging-and-event-driven). If your email tool sends everything immediately or not at all, delays are impossible. Sort this out before anything else.
 2. **Ship abandoned-cart recovery as journey number one.** Three steps, exit on purchase, default it to *off* so nobody is surprised by sends until they opt in.
 3. **Add a frequency cap across every sender.** Pick a sane monthly limit per person (opt-in lists tolerate roughly four to eight marketing emails a month). Crucially, the cap must span *all* your systems, so campaigns, automations, and journeys cannot collectively spam one buyer. Keep **transactional emails exempt**, never throttle an order confirmation or a payment-failed alert.
 4. **Add a suppression and sunset list.** Quietly stop emailing people who have shown no engagement for 60 to 90 days. Clean the list each quarter. A smaller engaged list beats a big dead one.

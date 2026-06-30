@@ -34,9 +34,10 @@ category: Engineering
 date: '2026-06-21'
 order: 4
 icon: ⚙️
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -54,7 +55,7 @@ Learn this, and you can:
 
 - Diagnose a slow query instead of guessing.
 - Add the *right* index instead of scattering them everywhere.
-- Pick the right database for a write-heavy versus read-heavy job.
+- [Pick the right database for a write-heavy versus read-heavy job](/blog/systems-fundamentals/11-putting-it-together-designing-a-real-system-trade-offs).
 
 Let's open the hood.
 
@@ -200,7 +201,7 @@ Two background mechanisms quietly make everything above safe and fast.
 
 ### The Write-Ahead Log (durability)
 
-The **Write-Ahead Log (WAL)** follows one rule: *log the change before you change the data.* Before a transaction commits, its changes are forced safely to disk (an operation called fsync) into the sequential WAL. *Only then* is the commit confirmed to the client. The actual data pages get written to disk lazily later, during a **checkpoint**.
+The **Write-Ahead Log (WAL)** follows one rule: *log the change before you change the data.* Before [a transaction commits](/blog/systems-fundamentals/04-databases-i-relational-databases-sql-acid), its changes are forced safely to disk (an operation called fsync) into the sequential WAL. *Only then* is the commit confirmed to the client. The actual data pages get written to disk lazily later, during a **checkpoint**.
 
 Why this matters: if power dies mid-transaction, on restart the engine **replays the WAL**. It redoes committed changes that hadn't reached the data files yet and discards uncommitted ones. No lost committed data, no half-written "torn" pages. And because the WAL is append-only sequential I/O, it's fast.
 
@@ -257,4 +258,4 @@ If you remember one thing, make it this: **a database is fast not because it rea
 
 Everything else, B-trees, LSM-trees, the WAL, the buffer pool, is just different machinery built around that one goal: touch as little data as possible, as sequentially as possible, as cached as possible.
 
-So next time a page loads instantly, you'll know there's a shallow tree underneath doing three reads instead of three hundred thousand. And here's the thread worth pulling next: once a single database can't keep its hot data in RAM anymore, you have to split it across many machines. That's where **sharding and replication** come in, and a fresh set of trade-offs begins.
+So next time a page loads instantly, you'll know there's a shallow tree underneath doing three reads instead of three hundred thousand. And here's the thread worth pulling next: once a single database can't keep its hot data in RAM anymore, you have to [split it across many machines](/blog/systems-fundamentals/09-distributed-systems-many-computers-working-as-one). That's where [**sharding and replication**](/blog/systems-fundamentals/06-databases-iii-scaling-up-replication-partitioning-nosql) come in, and a fresh set of trade-offs begins.

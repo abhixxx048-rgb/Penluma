@@ -30,9 +30,10 @@ faq:
     a: "It is when small changes in customer demand create wild swings further up a supply chain. Each player over-orders slightly to feel safe, and the ripples grow at every step, even though no single person is at fault."
   - q: "When should I use systems thinking instead of a quick fix?"
     a: "Use it when the parts are genuinely interdependent, when feedback and delays matter, and when a problem keeps returning after you fix it. If a simple rule of thumb gives the right answer fast, stick with linear thinking."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 topic: systems-thinking
 topicTitle: Systems Thinking
 category: Thinking & Decisions
@@ -66,7 +67,7 @@ So linear thinking isn't the villain. It's a special case that works when intera
 
 ## Systems thinking: seeing loops instead of arrows
 
-A **system** is a set of things, whether people, cells, or machines, connected so tightly that they produce their own pattern of behavior over time. That definition comes from Donella Meadows in her classic book *Thinking in Systems*. Every system has three parts: **elements** (the things), **interconnections** (how they influence each other), and a **purpose** (what the whole is for).
+A [**system**](/blog/systems-thinking/01-what-is-a-system-parts-connections-and-purpose) is a set of things, whether people, cells, or machines, connected so tightly that they produce their own pattern of behavior over time. That definition comes from Donella Meadows in her classic book *Thinking in Systems*. Every system has three parts: **elements** (the things), **interconnections** (how they influence each other), and a **purpose** (what the whole is for).
 
 **Systems thinking** is the discipline of seeing wholes, relationships, and patterns over time instead of isolated parts and single events. The shift is small to say and hard to do: where linear thinking asks "what is the cause?" and follows a one-way arrow, systems thinking asks "what is the structure?" and traces loops.
 
@@ -76,10 +77,10 @@ Here's the mental picture. A row of dominoes is linear: knock the first, the las
 
 **Circular causality** means A affects B, and B turns around to affect A. Cause and effect form a loop, not a straight line. There are two basic kinds, and almost every real situation mixes both.
 
-- **Reinforcing loops** amplify. Each cycle feeds the last: growth feeds growth, decline feeds decline. Think compound interest, viral spread, or addiction.
+- [**Reinforcing loops**](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves) amplify. Each cycle feeds the last: growth feeds growth, decline feeds decline. Think compound interest, viral spread, or addiction.
 - **Balancing loops** stabilize. The system resists change and pushes back toward a goal. Think a thermostat, hunger and eating, or predator and prey.
 
-Because these loops interact, often with **delays** built in, the behavior of a real system is hard to predict from a simple straight-line map. That difficulty is exactly why we need a better tool for looking beneath the surface.
+Because these loops interact, often with [**delays**](/blog/systems-thinking/06-delays-why-cause-and-effect-are-not-close-in-time) built in, the behavior of a real system is hard to predict from a simple straight-line map. That difficulty is exactly why we need a better tool for looking beneath the surface.
 
 ## The Iceberg Model: digging below the event
 
@@ -106,11 +107,11 @@ The clearest demonstration is the **Beer Game**, a classroom exercise built at M
 
 ## Why optimizing every part backfires
 
-Eliyahu Goldratt's business novel *The Goal* is many people's first taste of systems thinking. Its core idea, the **Theory of Constraints**, says every system has one binding **constraint**, a bottleneck that caps the output of the whole. Improving any part other than the constraint produces no gain in total output, and can make things worse by piling up unfinished work in front of the bottleneck.
+Eliyahu Goldratt's business novel *The Goal* is many people's first taste of systems thinking. Its core idea, the [**Theory of Constraints**](/blog/systems-thinking/09-bottlenecks-and-constraints-the-theory-of-constraints), says every system has one binding **constraint**, a bottleneck that caps the output of the whole. Improving any part other than the constraint produces no gain in total output, and can make things worse by piling up unfinished work in front of the bottleneck.
 
 In the novel, a failing factory's managers chase efficiency at every workstation, pure local optimization. The hero realizes the entire plant's output is limited by one machine. Once everything is organized around that machine, the overdue orders clear.
 
-The structural lesson is blunt: a system's output is a property of the whole, not the sum of its parts. Cut a cow in half and you don't get two small cows, you get two heaps of meat. The living animal is an **emergent** property that disappears when you study the parts in isolation. A factory is not the sum of its workstations, and a company culture is not the sum of its policies.
+The structural lesson is blunt: a system's output is a property of the whole, not the sum of its parts. Cut a cow in half and you don't get two small cows, you get two heaps of meat. The living animal is an [**emergent** property](/blog/systems-thinking/08-emergence-and-self-organization) that disappears when you study the parts in isolation. A factory is not the sum of its workstations, and a company culture is not the sum of its policies.
 
 ## When linear thinking quietly fails
 
@@ -142,4 +143,4 @@ When a problem lands on your desk, run it through these steps before you reach f
 
 The single shift worth carrying away is this: stop asking "who is to blame?" and start asking "what structure made this almost inevitable?" That move, from arrows to circles and from events to structures, is the practical definition of systems literacy.
 
-Once you start seeing loops, the natural next question is which loop to push on. Not every part of a system is equally powerful, and some of the highest-leverage points are also the least obvious. That is where Meadows' famous list of leverage points comes in, and where systems thinking stops being a way of seeing and becomes a way of acting.
+Once you start seeing loops, the natural next question is which loop to push on. Not every part of a system is equally powerful, and some of the highest-leverage points are also the least obvious. That is where Meadows' famous list of [leverage points](/blog/systems-thinking/13-leverage-points-where-to-push-to-change-a-system) comes in, and where systems thinking stops being a way of seeing and becomes a way of acting.

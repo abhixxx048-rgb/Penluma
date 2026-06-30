@@ -34,9 +34,10 @@ faq:
     a: "It's the habit of blaming someone's personality for their behavior while ignoring their situation, then doing the reverse for yourself. When you snap, it was a bad day; when they snap, they're rude."
   - q: "What are Cialdini's principles of persuasion?"
     a: "Reciprocity, commitment and consistency, social proof, authority, liking, scarcity, and unity. They're reliable levers of influence, useful both for persuading ethically and for spotting when they're being used on you."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -77,7 +78,7 @@ So the rule "more rewards equals more motivation" is wrong for things people alr
 
 You've seen Maslow's pyramid: needs stacked from food and safety at the bottom up to "self-actualization" at the top. It's a nice intuition, but it was never a validated, climb-one-rung-at-a-time ladder. People chase belonging and meaning even when "lower" needs go unmet. Think of struggling artists, or communities that bond most tightly in hardship.
 
-The model that actually holds up after decades of testing is **Self-Determination Theory** (Deci and Ryan). It says intrinsic motivation thrives when three basic needs are met:
+The model that actually holds up after decades of testing is **Self-Determination Theory** (Deci and Ryan). It says intrinsic motivation thrives when [three basic needs](/blog/psychology-of-decisions/04-what-people-really-want-needs-motivation-reward) are met:
 
 1. **Autonomy** - the feeling that *I chose this* and it fits my values. Not "do whatever you want," but acting from your own will instead of being controlled.
 2. **Competence** - the feeling that *I'm getting good at this*, meeting challenges that stretch you without crushing you.
@@ -93,7 +94,7 @@ One more tool with strong evidence: **specific, challenging goals beat vague one
 
 An **emotion** is a short, intense response to something significant. It bundles several things at once: a feeling, a body reaction (racing heart, tight stomach), an expression, and an urge to act (run, approach, lash out).
 
-Think of it as a built-in alarm-and-reward system. It flags "pay attention, this is important" faster than slow, deliberate thinking ever could.
+Think of it as a built-in alarm-and-reward system. It flags "pay attention, this is important" faster than [slow, deliberate thinking](/blog/ten-disciplines/07-how-the-mind-works-perception-attention-memory-and-two-systems-of-thinking) ever could.
 
 Don't confuse emotion with mood. An emotion is brief (seconds to minutes) with a clear cause, like anger at being cut off in traffic. A mood lingers for hours or days and is hard to pin down, like a grey, irritable kind of day.
 
@@ -164,7 +165,7 @@ A few popular beliefs that the evidence doesn't support:
 
 **Social psychology** studies how the real, or even *imagined*, presence of others shapes what you think, feel, and do. The headline is the one we started with, now with a name.
 
-The **fundamental attribution error** is our habit of over-blaming someone's *personality* and under-weighting their *situation* when we judge them, while doing the reverse for ourselves. A coworker snaps at you, so "he's rude." The reality might be "he just got terrible news." When *you* snap, you instantly know it was the bad day, not your character.
+The [**fundamental attribution error**](/blog/ten-disciplines/08-biases-heuristics-and-why-smart-people-make-predictable-errors) is our habit of over-blaming someone's *personality* and under-weighting their *situation* when we judge them, while doing the reverse for ourselves. A coworker snaps at you, so "he's rude." The reality might be "he just got terrible news." When *you* snap, you instantly know it was the bad day, not your character.
 
 Closing that gap, extending to others the situational benefit you give yourself, is one of the most powerful empathy and conflict-reduction moves there is.
 
@@ -186,7 +187,7 @@ Concrete moves you can apply this week:
 5. **Use the Big Five, not MBTI, when you care about accuracy** in hiring, team-building, or self-understanding.
 6. **Give others the situational benefit of the doubt.** Before deciding someone is rude or lazy, ask what their situation might be.
 7. **Defend against groupthink.** In any important group decision, deliberately invite disagreement. Assign someone to argue the opposite, collect written views before discussion, and make it safe to be the lone "no." The harmony of a meeting is a terrible measure of the quality of its decision.
-8. **Name the persuasion lever being pulled on you.** Robert Cialdini distilled influence into seven reliable principles: **reciprocity** (a free sample makes you buy), **commitment and consistency** (a small yes leads to a bigger one), **social proof** ("best-seller"), **authority** ("9 of 10 dentists"), **liking** (a warm, similar salesperson), **scarcity** ("only 2 left"), and **unity** (shared identity, "as a fellow parent..."). When you feel a sudden urge to buy, agree, or hurry, pause and ask which lever is being pulled. Naming it breaks the spell.
+8. **Name the persuasion lever being pulled on you.** Robert Cialdini distilled influence into [seven reliable principles](/blog/psychology-of-decisions/10-the-six-levers-of-influence-how-people-get-persuaded): **reciprocity** (a free sample makes you buy), **commitment and consistency** (a small yes leads to a bigger one), **social proof** ("best-seller"), **authority** ("9 of 10 dentists"), **liking** (a warm, similar salesperson), **scarcity** ("only 2 left"), and **unity** (shared identity, "as a fellow parent..."). When you feel a sudden urge to buy, agree, or hurry, pause and ask which lever is being pulled. Naming it breaks the spell.
 
 ## Conclusion
 

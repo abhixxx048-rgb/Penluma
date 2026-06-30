@@ -48,19 +48,20 @@ faq:
     a: At founder scale, send personal one-to-one emails from your normal work
       account, keep them short and specific, and don't blast hundreds at once.
       Turn on SPF, DKIM, and DMARC on your domain once.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
-In the early days, nobody sells your product better than you. Not because you're a smooth talker. You probably aren't, and that's completely fine. You sell best because you care the most and you understand the product completely.
+In the early days, [nobody sells your product better than you](/blog/sales-customer-development/02-why-founders-must-learn-to-sell-and-why-it-is-learnable). Not because you're a smooth talker. You probably aren't, and that's completely fine. You sell best because you care the most and you understand the product completely.
 
 This is about the very first step of selling, the one most founders skip: getting another human to actually talk with you. Not to buy. Just to talk.
 
 ## Why this matters
 
-Your job right now is not to close deals. It's to start conversations. If you fill your calendar with real conversations, sales follow naturally. An empty calendar is the only thing you should fear.
+Your job right now is not to [close deals](/blog/sales-customer-development/14-from-conversation-to-commitment-advancing-and-closing). It's to start conversations. If you fill your calendar with real conversations, sales follow naturally. An empty calendar is the only thing you should fear.
 
 Here's the trap most first-time founders fall into. They build, polish, and wait for someone to notice. Nobody does. The world doesn't owe your product attention, and no clever feature will earn it on its own. The companies that survive their first year are the ones whose founders went out and rounded up customers by hand, one awkward message at a time.
 
@@ -111,7 +112,7 @@ That last point is the heart of all of this.
 
 ## Ask for advice, not a sale
 
-This idea comes from Rob Fitzpatrick's short, brilliant book *The Mom Test*. The title comes from a simple truth: even your mom will lie to you to protect your feelings if you ask "Do you like my idea?"
+This idea comes from Rob Fitzpatrick's short, brilliant book [*The Mom Test*](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself). The title comes from a simple truth: even your mom will lie to you to protect your feelings if you ask "Do you like my idea?"
 
 People are nice. They tell you what you want to hear. That false praise feels wonderful and teaches you nothing.
 
@@ -125,7 +126,7 @@ The difference shows up in the exact words you choose:
 | "Do you think this is a good idea?" | "Why do you bother doing it this way at all?" |
 | "How much would you pay?" | "How are you solving it today, and what does that cost you?" |
 
-The weak questions ask people to predict the future or judge your feelings. The strong questions ask them to describe their past, which is the one thing they actually know. Lead your outreach with a genuine request to learn, and "I'd love to learn how you handle X" will earn far more yeses than "Can I show you my product?"
+The weak questions ask people to predict the future or judge your feelings. The [strong questions](/blog/sales-customer-development/05-asking-questions-without-leading) ask them to describe their past, which is the one thing they actually know. Lead your outreach with a genuine request to learn, and "I'd love to learn how you handle X" will earn far more yeses than "Can I show you my product?"
 
 It also makes you a better founder, because you find out whether your idea is even right.
 
@@ -223,4 +224,4 @@ Here's the one thing to hold onto: early-stage selling isn't about persuasion, i
 
 The founders who win the first year are the ones willing to do the slow, unscalable, human work everyone else is too proud to do.
 
-But getting the conversation is only the opening move. Once Priya says yes and you're sitting across from her, what do you actually ask, and how do you keep yourself from pitching the moment she pauses? That's where customer discovery really begins, and it's a craft worth getting right.
+But getting the conversation is only the opening move. Once Priya says yes and you're sitting across from her, what do you actually ask, and how do you keep yourself from pitching the moment she pauses? That's where [customer discovery](/blog/sales-customer-development/03-customer-development-get-out-of-the-building) really begins, and it's a craft worth getting right.

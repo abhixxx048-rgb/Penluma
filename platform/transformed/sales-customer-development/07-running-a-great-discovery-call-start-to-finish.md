@@ -36,15 +36,16 @@ category: Money & Business
 date: '2026-06-21'
 order: 6
 icon: "\U0001F91D"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
 You finally get the call booked. Then you panic and spend twenty minutes describing your product to a person who has gone quiet on the other end of the line. The call ends with a polite "this is great, let me think about it," and you never hear from them again.
 
-Here is the freeing part: a discovery call is not a pitch. You are not on stage selling. You are a curious doctor asking where it hurts. If you hate "selling," that is genuinely good news, because the whole job is asking good questions and listening, and you already know how to do both.
+Here is the freeing part: a discovery call is not a pitch. You are not on stage selling. You are a curious doctor asking where it hurts. If you hate "selling," that is genuinely good news, because the whole job is [asking good questions](/blog/sales-customer-development/05-asking-questions-without-leading) and listening, and you already know how to do both.
 
 ## Why this matters
 
@@ -52,7 +53,7 @@ A **discovery call** is your first real conversation with a potential customer. 
 
 Get this call right and everything downstream gets easier. You learn the real problem in the prospect's own words, you find out whether it costs them enough to bother fixing, and you earn the right to suggest a next step. Get it wrong, and you walk away with a friendly "no" disguised as a "maybe."
 
-The core skill is restraint. **Listen about 70% of the time and talk about 30%.** The person asking the questions is the one steering the conversation.
+The core skill is restraint. **Listen about 70% of the time and talk about 30%.** [The person asking the questions is the one steering the conversation.](/blog/sales-customer-development/06-active-listening-and-reading-the-conversation)
 
 Think of a good doctor. They do not walk in and say, "Here, take this pill, it is amazing." They ask: What brings you in? When did it start? How bad is it? What have you tried? Only after they understand do they suggest treatment. A bad salesperson hands you the pill before the questions. A good one earns the right to suggest it.
 
@@ -96,7 +97,7 @@ The most common mistake here is diving straight into your product because you ar
 
 ## The middle: discovery questions in the right order
 
-This is the heart of the call. The cleanest framework is **SPIN Selling**, created by Neil Rackham after studying 35,000 sales calls. SPIN is four kinds of questions, asked in order, moving from the calm outside of a problem toward its painful center.
+This is the heart of the call. The cleanest framework is [**SPIN Selling**](/blog/sales-customer-development/08-sales-discovery-frameworks-spin-bant-meddic-and-friends), created by Neil Rackham after studying 35,000 sales calls. SPIN is four kinds of questions, asked in order, moving from the calm outside of a problem toward its painful center.
 
 ### S - Situation: where are you now?
 
@@ -124,7 +125,7 @@ Let *them* say the value out loud.
 
 ### The Mom Test: ask about the past, not the future
 
-There is one more set of questions that is pure gold for early-stage founders, from **Rob Fitzpatrick's book "The Mom Test."** The book's lesson is blunt: people lie to be nice. Even your mom would call your idea "great." So do not ask about the future or about opinions. Ask about the *past* and about real behavior. Facts, not flattery.
+There is one more set of questions that is pure gold for early-stage founders, from **Rob Fitzpatrick's book "[The Mom Test](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself)."** The book's lesson is blunt: people lie to be nice. Even your mom would call your idea "great." So do not ask about the future or about opinions. Ask about the *past* and about real behavior. Facts, not flattery.
 
 Instead of "Would you use this?" ask what they actually did:
 
@@ -217,4 +218,4 @@ A good recap email is short and specific:
 
 If you take one thing from all of this, take this: the best discovery calls feel less like selling and more like a good diagnosis. You ask, you listen, you find the cost behind the pain, and the prospect ends up telling *you* why they need a fix. Your job is mostly to get out of the way.
 
-There is a deeper question hiding underneath every great discovery call, though, and it is the one that separates founders who grow from founders who stall: how do you know which prospects are worth your time at all? That is the art of **qualifying**, and it is where discovery quietly turns into a real sales pipeline.
+There is a deeper question hiding underneath every great discovery call, though, and it is the one that separates founders who grow from founders who stall: how do you know which prospects are worth your time at all? That is the art of [**qualifying**](/blog/sales-customer-development/09-qualifying-choosing-who-deserves-your-time), and it is where discovery quietly turns into a real sales pipeline.

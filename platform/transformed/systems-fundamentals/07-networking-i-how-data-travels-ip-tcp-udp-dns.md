@@ -57,9 +57,10 @@ faq:
       No. UDP trades reliability for speed on purpose. Skipping handshakes and
       retransmission means lower latency, which is exactly what live voice,
       video, and gaming need, where a delayed packet is worse than a missing one.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Internet_protocol_suite
   - https://en.wikipedia.org/wiki/Transmission_Control_Protocol
@@ -68,13 +69,13 @@ sources:
 
 A request hangs for thirty seconds and then dies. Another fails instantly with "connection refused." A change you made to a domain works on your laptop but not your phone. These are not random gremlins. They are the network behaving exactly as designed, and once you understand the four pieces underneath every app, the weird stuff stops being weird.
 
-Every distributed app is just programs on different machines talking over a network. When your code calls a database, hits an API, reads a cache, or asks one microservice to talk to another, that is bytes leaving one machine and, hopefully, arriving at another.
+Every distributed app is just programs on different machines talking over a network. When your code [calls a database](/blog/systems-fundamentals/04-databases-i-relational-databases-sql-acid), hits an API, reads a cache, or asks one microservice to talk to another, that is bytes leaving one machine and, hopefully, arriving at another.
 
 ## Why this matters
 
 Here is the uncomfortable truth that shapes this entire field: the network is the one part you can never make perfectly reliable. Messages get lost, duplicated, reordered, or delayed in ways nobody can predict.
 
-Almost every hard problem in distributed systems traces back to this. Timeouts, retries, consistency, latency budgets, that one intermittent bug nobody can reproduce, all of it grows out of how the network actually behaves.
+Almost every [hard problem in distributed systems](/blog/distributed-systems/13-why-distributed-systems-are-hard) traces back to this. Timeouts, retries, consistency, latency budgets, that one intermittent bug nobody can reproduce, all of it grows out of how the network actually behaves.
 
 So if you understand **IP**, **TCP**, **UDP**, and **DNS**, you can reason about *why* a service is slow, *why* a request hangs forever, and what a cryptic error really means. That is the difference between guessing at outages and actually fixing them.
 
@@ -166,7 +167,7 @@ Both **TCP** and **UDP** add port numbers so the operating system knows which pr
      |        (data flows)         |
 ```
 
-SYN means "synchronize," ACK means "acknowledge." After these three messages both sides are connected. Notice this costs one full **round-trip** (a message there and back) *before* any real data moves. Add **TLS**, the encryption behind HTTPS, and you pay another round-trip or two on top. This setup cost is why connection reuse matters so much for speed.
+SYN means "synchronize," ACK means "acknowledge." After these three messages both sides are connected. Notice this costs one full **round-trip** (a message there and back) *before* any real data moves. Add **TLS**, [the encryption behind HTTPS](/blog/systems-fundamentals/08-networking-ii-the-web-stack-http-tls-load-balancing-caching), and you pay another round-trip or two on top. This setup cost is why connection reuse matters so much for speed.
 
 Once connected, TCP keeps its promises through three mechanisms working together:
 
@@ -251,4 +252,4 @@ This is the secret behind the dreaded "my DNS change won't propagate." If you ed
 
 The single idea worth carrying away: the network is a shared, unreliable medium, and every layer above IP exists to paper over that one fact. Loss, delay, and reordering are not failures of the system; they are the system, and TCP, UDP, DNS, and QUIC are just different bargains struck against them.
 
-Once you see a "page load" as it really is, dozens of round-trips each exposed to loss and latency, a natural question follows: how do large systems stay fast and correct when any one of those round-trips can fail at any moment? That is where retries, timeouts, idempotency, and consistency come in, and it is exactly the territory the next layer up, distributed systems design, is built to handle.
+Once you see a "page load" as it really is, dozens of round-trips each exposed to loss and latency, a natural question follows: how do large systems stay fast and correct when any one of those round-trips can fail at any moment? That is where retries, timeouts, idempotency, and [consistency](/blog/distributed-systems/17-consistency-models) come in, and it is exactly the territory the next layer up, [distributed systems design](/blog/systems-fundamentals/09-distributed-systems-many-computers-working-as-one), is built to handle.

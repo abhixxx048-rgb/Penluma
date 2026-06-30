@@ -26,9 +26,10 @@ faq:
     a: "Don't ask what they 'would' pay, which is a fantasy. Ask what they already spend on the problem today in tools, time, or workarounds. Spending is fact; willingness is fiction."
   - q: "Why does silence work in a sales conversation?"
     a: "After a real question, a few seconds of silence feels painful to you but is just thinking time to them. Most people will fill the pause with the deeper, truer answer they were holding back."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 topic: sales-customer-development
 topicTitle: Sales & Customer Development
 category: Money & Business
@@ -76,7 +77,7 @@ The beginner mistake is asking mostly closed questions. That turns a conversatio
 
 A **leading question** quietly tells the other person, "Here is what I'm hoping you'll say." Most people are kind. They'll give you the answer you fished for just to be agreeable. You leave thrilled and completely misinformed.
 
-This is the heart of Rob Fitzpatrick's book *The Mom Test*. The title comes from a simple truth: if you ask your mom whether your business idea is good, she'll say yes, because she loves you. The fix is to ask questions so neutral that even your mom couldn't lie to you.
+This is [the heart of Rob Fitzpatrick's book](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself) *The Mom Test*. The title comes from a simple truth: if you ask your mom whether your business idea is good, she'll say yes, because she loves you. The fix is to ask questions so neutral that even your mom couldn't lie to you.
 
 Fitzpatrick's three rules:
 
@@ -101,7 +102,7 @@ Read these out loud. Notice how each "after" stops fishing and starts learning.
 
 See the pattern? The clean versions ask about **the actual past**: "the last time," "today," "now." The past is fact. The future is a daydream, and people are wildly optimistic about what they'll do and pay "someday."
 
-Think of it like questioning a witness. A leading question is "You saw the blue car run the light, didn't you?" Any decent lawyer objects, because you planted the answer. A good discovery call is a fair interview: "What did you see?" Let them tell you. Their unprompted answer is the only evidence that counts.
+Think of it like questioning a witness. A leading question is "You saw the blue car run the light, didn't you?" Any decent lawyer objects, because you planted the answer. [A good discovery call](/blog/sales-customer-development/07-running-a-great-discovery-call-start-to-finish) is a fair interview: "What did you see?" Let them tell you. Their unprompted answer is the only evidence that counts.
 
 ## The funnel: move from wide to narrow
 
@@ -111,7 +112,7 @@ Don't fire questions at random. Move like a funnel. Start **wide** to find where
 - **Narrower:** "You mentioned proofs are a pain. Tell me more." *(Zoom into the one juicy problem.)*
 - **Narrow:** "Walk me through the last proof that got rejected." *(Get the specific, recent, real story.)*
 
-Once you've found a real problem, SPIN gives you four question types to layer in:
+Once you've found a real problem, [SPIN gives you four question types](/blog/sales-customer-development/08-sales-discovery-frameworks-spin-bant-meddic-and-friends) to layer in:
 
 1. **Situation** - context. "How many orders do you handle a week?" Ask only a few of these; don't interrogate.
 2. **Problem** - difficulties. "Where does that process break down?"
@@ -152,7 +153,7 @@ Listen hard for **the last time they tried to fix it themselves**: a clumsy spre
 
 ## The 5 Whys: reaching the root cause
 
-When you hit a problem, ask "why" up to five times, each "why" aimed at the previous answer. This technique comes from Sakichi Toyoda at Toyota, used to find the *root* cause instead of the symptom. Watch it work in a sales conversation:
+When you hit a problem, [ask "why" up to five times](/blog/clear-thinking-and-expression/12-analysis-frameworks-first-principles-mece-5-whys-second-order-thinking), each "why" aimed at the previous answer. This technique comes from Sakichi Toyoda at Toyota, used to find the *root* cause instead of the symptom. Watch it work in a sales conversation:
 
 > "We lose customers after the first order." → **Why?**
 > "They say reordering is annoying." → **Why?**
@@ -173,7 +174,7 @@ Use this gently. Five blunt "whys" in a row feels like an interrogation. Soften 
 
 **"Asking about money is rude or premature."** Asking what someone *would* pay is a fantasy question. Asking what they *already* spend on the problem is just understanding their world. Spending is fact; willingness is fiction.
 
-**"Good questioners are naturally smooth talkers."** The opposite. The best questioners talk least. They're curious, patient, and comfortable with silence.
+**"Good questioners are naturally smooth talkers."** The opposite. [The best questioners talk least](/blog/sales-customer-development/06-active-listening-and-reading-the-conversation). They're curious, patient, and comfortable with silence.
 
 ## Two question shapes to avoid
 
@@ -225,4 +226,4 @@ If you remember one thing, make it this: **the past tells the truth, the future 
 
 That's the difference between building what people clap for and building what people pay for.
 
-Here's the thread to pull next: once you've heard the truth, how do you turn a great conversation into an actual commitment, a follow-up, or a sale, without sliding back into pushy pitch mode? Curiosity gets you the truth. Knowing what to do with it is where the deal lives.
+Here's the thread to pull next: once you've heard the truth, how do you [turn a great conversation into an actual commitment](/blog/sales-customer-development/14-from-conversation-to-commitment-advancing-and-closing), a follow-up, or a sale, without sliding back into pushy pitch mode? Curiosity gets you the truth. Knowing what to do with it is where the deal lives.

@@ -34,7 +34,7 @@ faq:
     a: Split brain is when two machines both believe they are in charge and issue conflicting orders, corrupting data. Majority quorums prevent it because at most one side of a network partition can hold more than half the nodes.
   - q: Do Raft and Paxos break the FLP impossibility result?
     a: No. They never sacrifice safety, so they never decide two conflicting values. They only give up the impossible guarantee of always terminating, and in practice they terminate essentially every time.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources:

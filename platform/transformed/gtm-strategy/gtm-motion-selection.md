@@ -28,7 +28,7 @@ faq:
     a: Usually no. Unknown brands building awareness convert better overall by skipping the card, because it brings in three to four times more signups to feed a self-serve funnel.
   - q: Can I run both self-serve and sales-led at the same time?
     a: Yes, but only if you segment cleanly by customer. Use self-serve for small accounts and a human for large ones. Blending both motions on the same customer wastes money.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: gtm-strategy

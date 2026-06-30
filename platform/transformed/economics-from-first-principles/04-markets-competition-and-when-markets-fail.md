@@ -60,7 +60,7 @@ faq:
       lighting - everyone is tempted to enjoy it without paying. Private firms
       then cannot make money providing it, so it gets undersupplied. This is why
       governments fund public goods.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources: []

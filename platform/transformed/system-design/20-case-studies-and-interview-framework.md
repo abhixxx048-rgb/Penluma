@@ -30,8 +30,9 @@ faq:
     a: An idempotency key is a unique token a client attaches to a request so the server can recognize retries. The server stores the result against that key and returns the same answer on replay, which prevents network retries from charging a customer twice.
   - q: Do I need to memorize latency numbers for system design interviews?
     a: A small handful helps a lot - memory is about 100 nanoseconds, an SSD read is tens of microseconds, a same-datacenter round trip is about half a millisecond, and a cross-continent trip is 80 to 150 milliseconds. These let you justify caching, sharding, and replication with real math.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 topic: system-design
 topicTitle: System Design
 category: Engineering
@@ -171,7 +172,7 @@ Now the case studies. Each one is compressed to its requirements, the two or thr
 | Token bucket | tiny memory, allows controlled bursts - the API default |
 | Leaky bucket | smooths traffic to a constant rate |
 
-Default to **token bucket** (a refill rate plus a capacity). It's what Stripe and AWS API Gateway use.
+Default to **[token bucket](/blog/system-design/16-rate-limiting-and-resiliency)** (a refill rate plus a capacity). It's what Stripe and AWS API Gateway use.
 
 **Where does the counter live?** Per-node counters are fast but each node only sees a slice of traffic, so the global limit ends up N times too loose. Centralize the count in **Redis** with an atomic operation - an `INCR` with expiry, or a small Lua script for token bucket so the whole check is one atomic step. The trade-off: Redis is now in your hot path and is a single point of failure. Soften it with local approximate counters that sync periodically.
 
@@ -266,7 +267,7 @@ A nearby query becomes "find all drivers whose cell is my cell or one of its nei
 
 **The decisions that matter:**
 
-**A queue-decoupled pipeline.** Producers publish events to a **message queue** (Kafka or SQS), and channel-specific workers call the providers - APNs/FCM for push, SES/SendGrid for email, Twilio for SMS. Decoupling absorbs bursts and keeps one slow provider from dragging down the rest.
+**A queue-decoupled pipeline.** Producers publish events to a **[message queue](/blog/system-design/12-messaging-and-event-driven)** (Kafka or SQS), and channel-specific workers call the providers - APNs/FCM for push, SES/SendGrid for email, Twilio for SMS. Decoupling absorbs bursts and keeps one slow provider from dragging down the rest.
 
 **Idempotency and dedup.** At-least-once queues retry, and retries make duplicates. Attach a notification key and check a dedup store (Redis with a TTL) before sending. A duplicate "your code is 123" text or a double charge is a real incident, not a cosmetic bug.
 
@@ -300,7 +301,7 @@ A nearby query becomes "find all drivers whose cell is my cell or one of its nei
 
 **Consistency over availability, plus reliable async.** This is a **CP** system: refuse a payment rather than risk a wrong one. The dangerous moment is the **dual write** - your database commits but the external gateway call times out, and now you don't know if the customer was charged. Solve it with the **transactional outbox** pattern: write the intent and an outbox row in one database transaction, and let a relay publish to the gateway afterward. Then run **reconciliation** jobs that compare your ledger against the gateway's daily report to catch any drift.
 
-**What they'll probe:** the dual-write problem, why you chose CP over AP, and money representation (use integer minor units like cents, never floating point).
+**What they'll probe:** the dual-write problem, why you chose [CP over AP](/blog/system-design/09-cap-pacelc-consistency-models), and money representation (use integer minor units like cents, never floating point).
 
 ## Common misconceptions
 
@@ -316,7 +317,7 @@ A few beliefs quietly sink otherwise strong candidates.
 
 1. **Memorize the 7-step loop**, not ten architectures. The loop is what keeps you calm; the architectures fall out of it.
 2. **Open every answer by clarifying requirements** - functional, non-functional, and the four numbers (read:write, scale, latency, consistency). Write them in a corner of the board.
-3. **Do the back-of-the-envelope math out loud.** Let the numbers force the decision to shard, cache, or replicate. Show your work.
+3. **Do the [back-of-the-envelope math](/blog/system-design/01-foundations-and-estimation) out loud.** Let the numbers force the decision to shard, cache, or replicate. Show your work.
 4. **Draw the happy-path request first**, end to end, before you optimize anything.
 5. **Pick two or three deep dives** and name the trade-off in each, in one sentence: "X buys me Y at the cost of Z."
 6. **Raise the failure case before the interviewer does.** For every box you draw, say what happens when it crashes. Decide fail-open versus fail-closed on purpose.
@@ -326,6 +327,6 @@ A few beliefs quietly sink otherwise strong candidates.
 
 If you remember one thing, remember this: **the interview rewards structure over knowledge.** The candidate who calmly runs the same loop - requirements, estimation, design, deep dive, what-breaks - beats the one who knows more facts but free-associates. You're being hired to bring order to ambiguity, and the loop is you doing exactly that, live.
 
-Notice how the same primitives kept resurfacing across ten very different systems: a queue to absorb bursts, a cache to survive read skew, consistent hashing to survive resizing, an idempotency key to survive retries. That's not a coincidence - it's the small alphabet that distributed systems are written in.
+Notice how the same primitives kept resurfacing across ten very different systems: a queue to absorb bursts, a [cache to survive read skew](/blog/system-design/06-caching-deep), consistent hashing to survive resizing, an idempotency key to survive retries. That's not a coincidence - it's the small alphabet that distributed systems are written in.
 
-Want to go deeper on the single idea that quietly powered half these designs? Look at the **transactional outbox** and the dual-write problem next. Once you see how systems lie to themselves when a write half-succeeds, you'll never draw "update the DB, then call the service" the same way again.
+Want to go deeper on the single idea that quietly powered half these designs? Look at the **[transactional outbox](/blog/system-design/11-distributed-transactions-and-idempotency)** and the dual-write problem next. Once you see how systems lie to themselves when a write half-succeeds, you'll never draw "update the DB, then call the service" the same way again.

@@ -9,7 +9,8 @@ date: '2026-06-07'
 order: 999
 icon: ✅
 transformed: true
-author: Pritesh Yadav (priteshyadav444)
+linked: true
+author: Brexis Wazik
 keywords:
   - print platform gap assessment
   - web-to-print software
@@ -57,7 +58,7 @@ Think of it like a relay race. The baton has to pass cleanly from runner to runn
 
 ### Break 1: No preflight or print-ready check
 
-**Preflight** is the print world's pre-flight checklist. Before a file goes to a press, you confirm the resolution is high enough, the bleed (the bit of art that runs past the trim line so there are no white edges) is there, the fonts are embedded, and the color is in **CMYK** (the four-ink format presses actually use, not the RGB that screens use).
+[**Preflight**](/blog/computer-graphics-print/13-preflight-validating-a-file-before-it-prints) is the print world's pre-flight checklist. Before a file goes to a press, you confirm the resolution is high enough, the [bleed](/blog/computer-graphics-print/15-finishing-document-geometry-bleed-trim-safe-area) (the bit of art that runs past the trim line so there are no white edges) is there, the fonts are embedded, and the color is in [**CMYK**](/blog/computer-graphics-print/02-color-spaces-additive-vs-subtractive-color) (the four-ink format presses actually use, not the RGB that screens use).
 
 On this platform, files reached production with none of those checks. The output stayed RGB. The result is predictable: jobs print wrong, and the reprints come straight out of profit. This is *the* print-specific gap, the one a general e-commerce tool would never think about.
 
@@ -88,7 +89,7 @@ That reframes the work entirely. The spine repair was largely **wiring, not buil
 
 A good assessment is not just a list of holes. Some parts of this platform were above market standard, and the right move is to polish them, not refactor them while hunting for gaps.
 
-- **The pricing engine.** Seven working pricing strategies (fixed, percentage, area-based, quantity-tier, formula, conditional, and combination-matrix), plus B2B contract overrides and frozen price snapshots so a quoted price never silently changes. More capable than most competitors.
+- **The pricing engine.** Seven working [pricing strategies](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive) (fixed, percentage, area-based, quantity-tier, formula, conditional, and combination-matrix), plus B2B contract overrides and frozen price snapshots so a quoted price never silently changes. More capable than most competitors.
 - **Payments.** Multiple gateways through a clean driver pattern, with idempotent webhooks (so a payment is never double-counted), signature verification, and an audit log. Production-grade.
 - **Security.** A 22-fix audit covering cookie auth, sanitized user content, open-redirect protection, and a content security policy.
 - **The design studio.** A canvas editor with templates, locked regions, personalization, and crash recovery.

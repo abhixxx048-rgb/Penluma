@@ -34,7 +34,7 @@ faq:
     a: You cannot out-discipline panic in the moment, so you decide once in calm and automate it. Set up an auto-debit SIP, write down your rules, rebalance mechanically, and check your portfolio quarterly instead of daily.
   - q: Does checking my portfolio less often really help?
     a: Yes. The more often you look, the more red days you see and the more loss-aversion pain you feel, which makes panic-selling likelier. This is called myopic loss aversion, and checking quarterly genuinely protects your returns.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources:

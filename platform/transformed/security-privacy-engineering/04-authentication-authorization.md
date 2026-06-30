@@ -59,9 +59,10 @@ category: Engineering
 date: '2026-06-21'
 order: 3
 icon: "\U0001F512"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -144,7 +145,7 @@ A real-world example: the group known as *Scattered Spider* chained SIM swaps, p
 
 ## Passkeys: login that cannot be phished
 
-The clearest direction the whole industry is heading is **passwordless login built on public-key cryptography**. The technology is called **FIDO2**, built from a browser standard (**WebAuthn**) and a device protocol (**CTAP**). You will mostly hear it called by its friendly name: **passkeys**.
+The clearest direction the whole industry is heading is **passwordless login built on [public-key cryptography](/blog/security-privacy-engineering/03-cryptography-made-simple)**. The technology is called **FIDO2**, built from a browser standard (**WebAuthn**) and a device protocol (**CTAP**). You will mostly hear it called by its friendly name: **passkeys**.
 
 Here is how it works in plain terms. When you register, your device creates a pair of cryptographic keys. The **private key never leaves your device** - it is sealed in secure hardware. The server only ever stores the matching **public key**, which is useless to a thief on its own. To log in, your device signs a one-time challenge from the server, unlocked by your fingerprint, face, or PIN.
 
@@ -164,7 +165,7 @@ A common, sensible hybrid is a short-lived **access token** (5 to 15 minutes) pl
 
 Whichever you choose, **cookie flags are the seatbelts**:
 
-- **HttpOnly** stops JavaScript from reading the cookie, which blunts theft through cross-site scripting (XSS).
+- **HttpOnly** stops JavaScript from reading the cookie, which blunts theft through [cross-site scripting (XSS)](/blog/security-privacy-engineering/05-application-web-security).
 - **Secure** sends it only over encrypted HTTPS connections.
 - **SameSite** controls whether the cookie is sent on cross-site requests, and is your main defense against **CSRF** (cross-site request forgery, where another site tricks your browser into making a request as you).
 
@@ -204,9 +205,9 @@ A landmark example is Google's **Zanzibar** system, which models authorization a
 
 Two principles tie the authorization story together.
 
-The **principle of least privilege** means giving each person and service the minimum access they need, for the shortest time they need it. If an account is compromised, this shrinks the "blast radius." It pairs naturally with regular access reviews - forgotten, orphaned accounts are a top way attackers get in.
+The **[principle of least privilege](/blog/security-privacy-engineering/02-core-security-foundations)** means giving each person and service the minimum access they need, for the shortest time they need it. If an account is compromised, this shrinks the "blast radius." It pairs naturally with regular access reviews - forgotten, orphaned accounts are a top way attackers get in.
 
-**Zero trust** means "never trust, always verify." It throws out the old idea that being "inside the network" makes you trustworthy. Every request gets authenticated, authorized, and encrypted on its own merits, no matter where it comes from. The old castle-and-moat model - hard shell, soft inside - does not survive a single stolen laptop. Zero trust assumes the attacker is already inside and checks everything anyway.
+**[Zero trust](/blog/security-privacy-engineering/06-network-cloud-infrastructure-security)** means "never trust, always verify." It throws out the old idea that being "inside the network" makes you trustworthy. Every request gets authenticated, authorized, and encrypted on its own merits, no matter where it comes from. The old castle-and-moat model - hard shell, soft inside - does not survive a single stolen laptop. Zero trust assumes the attacker is already inside and checks everything anyway.
 
 ## Common misconceptions
 

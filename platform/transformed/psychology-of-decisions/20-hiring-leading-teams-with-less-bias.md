@@ -36,8 +36,9 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 19
 icon: "\U0001F3AF"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -76,7 +77,7 @@ We like people who remind us of ourselves, and we mistake that liking for talent
 
 ### Confirmation bias
 
-Once you form a snap "hire" or "no-hire" verdict, you spend the rest of the interview hunting for evidence that proves you right and ignoring everything that says you are wrong.
+Once you form a snap "hire" or "no-hire" verdict, you spend the rest of the interview [hunting for evidence that proves you right](/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence) and ignoring everything that says you are wrong.
 
 Here is the punchline that should change how you hire: **first impressions barely predict job performance.** Unstructured gut-feel hiring performs only slightly better than a coin flip.
 
@@ -132,7 +133,7 @@ A simple recipe you can start using this week:
 
 ## Getting the best out of people once they're hired
 
-Hiring well is half the job. The other half is bringing out people's best, and the most useful map here is **Self-Determination Theory**, developed by psychologists Edward Deci and Richard Ryan. It says people have three built-in needs that fuel *intrinsic motivation* (wanting to do something for its own sake, not for a reward):
+Hiring well is half the job. The other half is bringing out people's best, and the most useful map here is **Self-Determination Theory**, developed by psychologists Edward Deci and Richard Ryan. It says people have three built-in needs that fuel *[intrinsic motivation](/blog/psychology-of-decisions/04-what-people-really-want-needs-motivation-reward)* (wanting to do something for its own sake, not for a reward):
 
 - **Autonomy:** a sense of ownership and choice over *how* you do your work. Not "do whatever you want," but acting from your own judgment instead of being micromanaged.
 - **Competence:** feeling effective and growing, getting better at things that matter.
@@ -150,7 +151,7 @@ In a classic study, preschoolers who enjoyed drawing were promised a "Good Playe
 
 The reward shifts the *reason* from inside ("I do this because I enjoy it") to outside ("I do this for the money"). The good news: **unexpected** rewards and genuine, specific **praise** do not cause this damage and can actually help. The harm comes from *expected, controlling, "if-you-do-X-you-get-Y"* rewards on work people already find meaningful.
 
-The practical rule, popularized by Dan Pink: pay people *enough that money is off the table*, then motivate with autonomy, mastery, and purpose, not carrots.
+The practical rule, popularized by Dan Pink: pay people *enough that money is off the table*, then [motivate with autonomy, mastery, and purpose](/blog/psychology-of-decisions/13-understanding-employees-teams-what-truly-motivates-people-at-work), not carrots.
 
 ## The feedback most leaders get wrong
 
@@ -183,7 +184,7 @@ You build it with small, repeated actions:
 
 Trust compounds slowly and breaks fast, so consistency matters more than grand gestures.
 
-Notice the overlap between hiring and leading. Scoring independently before discussion, asking "what would have to be true for me to be wrong about this person?", and welcoming dissent are the *same* debiasing moves that make a team safe. Structure protects people from your blind spots in both rooms.
+Notice the overlap between hiring and leading. Scoring independently before discussion, asking "what would have to be true for me to be wrong about this person?", and welcoming dissent are the *same* debiasing moves that make a team safe. Structure protects people from your [blind spots](/blog/psychology-of-decisions/16-understanding-yourself-seeing-your-own-blind-spots) in both rooms.
 
 ## Conclusion
 
@@ -191,4 +192,4 @@ Your gut is not a hiring tool. It is a bias amplifier wrapped in confidence.
 
 The leaders who hire and manage best are not better judges of people. They are people who built **structure**: the same questions, written scorecards, task-focused feedback, and a team safe enough to tell them the truth. That structure is what lets talent, not charm or similarity or fear, decide who gets in and who gets the best out of themselves.
 
-Here is the thread worth pulling next. If something as basic as a job interview can fool us this completely, what does that say about every other "I just have a feeling" decision we make, about money, risk, and the people we trust? The same shortcuts that betray you in the interview room are quietly running the rest of your judgment too.
+Here is the thread worth pulling next. If something as basic as a job interview can fool us this completely, what does that say about [every other "I just have a feeling" decision](/blog/psychology-of-decisions/21-making-better-personal-decisions-a-debiasing-toolkit) we make, about money, risk, and the people we trust? The same shortcuts that betray you in the interview room are quietly running the rest of your judgment too.

@@ -31,9 +31,10 @@ faq:
     a: Responsibility is shared. The provider secures the cloud itself (hardware, datacenters, managed-service internals) while you secure what you put in it (your data, access configuration, and app code). Gartner estimated about 99% of cloud security failures are the customer's fault, usually misconfiguration.
   - q: What is the security mindset?
     a: The security mindset, named by Bruce Schneier, is the habit of asking "how can this be abused or made to fail?" instead of "how do I make this work?" You think like an attacker, hunt for unintended paths, and distrust assumptions. It is a learnable skill, not an innate talent.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 topic: security-privacy-engineering
 topicTitle: Security & Privacy Engineering
 category: Engineering
@@ -61,8 +62,8 @@ Learn the foundations, and you stop guessing. You start seeing the same handful 
 
 The **CIA triad** (no relation to the spy agency) names the three properties security exists to preserve. Treat it as a checklist. When you read about any attack, ask: *which leg does this hit?*
 
-- **Confidentiality** - only authorized people can read the data. It is protected by encryption, access control, MFA, and data classification. A violation is a **data breach**: information seen by people who should not see it.
-- **Integrity** - data is accurate, complete, and changed only by authorized actions. It is protected by hashing (a fingerprint that changes if even one byte changes), digital signatures, version control, and input validation. A violation is tampering, fraud, or corruption.
+- **Confidentiality** - only authorized people can read the data. It is protected by [encryption](/blog/security-privacy-engineering/03-cryptography-made-simple), access control, MFA, and data classification. A violation is a **data breach**: information seen by people who should not see it.
+- **Integrity** - data is accurate, complete, and changed only by authorized actions. It is protected by hashing (a fingerprint that changes if even one byte changes), digital signatures, version control, and [input validation](/blog/security-privacy-engineering/05-application-web-security). A violation is tampering, fraud, or corruption.
 - **Availability** - authorized users can reach the system when they need it. It is protected by redundancy, backups, failover, and DDoS protection. A violation is an outage, a ransomware lockout, or a denial-of-service.
 
 **Think of a library.** Confidentiality means only members can read the restricted archive. Integrity means nobody secretly rewrites the books. Availability means the doors are open when you arrive.
@@ -85,7 +86,7 @@ AAA is a three-step framework for controlling access. The order matters.
 
 The single most common conceptual mistake in all of security is confusing the first two. **Authentication is identity** ("you are Alice"). **Authorization is permission** ("Alice may view order #42 but not #43").
 
-The web's number one risk, Broken Access Control, is an authorization failure. The classic case is an **IDOR** (Insecure Direct Object Reference): you change `/order?id=42` to `id=43` and see a stranger's order, because the server checked *who you are* but never *whether this record is yours*.
+The web's number one risk, [Broken Access Control](/blog/security-privacy-engineering/04-authentication-authorization), is an authorization failure. The classic case is an **IDOR** (Insecure Direct Object Reference): you change `/order?id=42` to `id=43` and see a stranger's order, because the server checked *who you are* but never *whether this record is yours*.
 
 ## How to build safely: core design principles
 
@@ -148,12 +149,12 @@ In the cloud, security is *split* between provider and customer. The mantra: the
 - **PaaS** (managed platform): the provider also secures the OS and runtime; you secure app code, data, and access config.
 - **SaaS** (finished app): the provider secures almost everything; you still own data classification, identity governance, and access control.
 
-The dangerous assumption is that the provider secures *your* data. Gartner projected that through 2025 about **99% of cloud security failures would be the customer's fault**, almost always misconfiguration. That is why "Security Misconfiguration" climbed to second place in OWASP's 2025 Top 10. The cloud does not make you secure. It redraws the trust boundaries *you* own.
+The dangerous assumption is that the provider secures *your* data. Gartner projected that through 2025 about **99% of [cloud security failures](/blog/security-privacy-engineering/06-network-cloud-infrastructure-security) would be the customer's fault**, almost always misconfiguration. That is why "Security Misconfiguration" climbed to second place in OWASP's 2025 Top 10. The cloud does not make you secure. It redraws the trust boundaries *you* own.
 
 ## Common misconceptions
 
 - **"Encryption alone means secure."** Encryption protects confidentiality. It does nothing for integrity or availability. Ransomware encrypts your data *against* you.
-- **"Threat and risk are the same thing."** A threat is a possibility. Risk is that possibility weighed by likelihood and impact. You manage risk; you cannot manage away every threat.
+- **"Threat and risk are the same thing."** A threat is a possibility. Risk is that possibility weighed by likelihood and impact. You [manage risk](/blog/security-privacy-engineering/07-threat-modeling-risk-management); you cannot manage away every threat.
 - **"Hidden code is safe code."** Obscurity can be a thin extra layer, never the actual control. Assume your design is public.
 - **"The cloud provider protects my data."** They protect their infrastructure. Your configuration is yours.
 - **"We will add security at the end."** You cannot bolt on what should have been designed in. Architectural flaws survive every patch.

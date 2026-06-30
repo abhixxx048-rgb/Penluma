@@ -34,7 +34,7 @@ faq:
     a: Revenue ignores the cost of serving the customer. For a low-margin business, that cost is most of the bill, so a revenue-based LTV can make a barely-breakeven customer look extremely profitable.
   - q: How much does reducing churn improve lifetime value?
     a: A lot. Cutting monthly churn from 5% to 2% extends average customer lifetime from 20 to 50 months, multiplying LTV by 2.5x with no change to price or margin. Retention is the cheapest growth lever you have.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources: []

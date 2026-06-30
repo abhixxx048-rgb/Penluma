@@ -34,9 +34,10 @@ faq:
     a: Pre-dunning means warning customers about 30 days before their saved card expires and asking them to update it. It has a higher action rate than any after-the-fact email because it prevents the failure entirely.
   - q: Should I cancel or pause a subscription when payment fails?
     a: Pause, don't cancel. A grace period of 7-14 days with read-only access and a clear banner keeps the relationship alive while you retry the card. Hard cancellation should be the last step, not the first.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -50,11 +51,11 @@ This is **involuntary churn**, and it is one of the quietest, most preventable w
 
 Failed payments cause **20-40% of all SaaS churn**. That's not customers who shopped around and chose a competitor. That's revenue walking out the door over an expired card.
 
-The encouraging part: recovering it is almost pure margin. You already won these customers. They already want to stay. There's no ad spend, no sales call, no discount needed. You just have to notice the payment failed and give them an easy way to fix it.
+The encouraging part: recovering it is [almost pure margin](/blog/business-financial-literacy/10-break-even-margins-profitability). You already won these customers. They already want to stay. There's no ad spend, no sales call, no discount needed. You just have to notice the payment failed and give them an easy way to fix it.
 
 Good recovery systems claw back **50-65% of failed payments**, and the return on building one is typically **10-15x**, because you're recapturing money that already exists rather than chasing new money. Few growth levers are this cheap.
 
-And there's a human cost to ignoring it. Imagine a busy, non-technical customer whose account suddenly stops working with no explanation. They don't think "my card expired." They think **"this software is broken."** A silent block doesn't just lose the payment. It poisons the relationship.
+And there's a human cost to ignoring it. Imagine a busy, non-technical customer whose account suddenly stops working with no explanation. They don't think "my card expired." They think **"[this software is broken](/blog/product-sense-empathy/06-closing-the-gulfs-action-feedback-the-seven-stages)."** A silent block doesn't just lose the payment. It poisons the relationship.
 
 ## The trap: failed payments are usually not the customer's fault
 
@@ -154,8 +155,8 @@ If you remember only one thing: **make paying you again take a single click.** E
 
 ## Conclusion
 
-Involuntary churn is the rare growth problem where the customers already want to stay. They're not unhappy. Their card just expired. A thoughtful dunning system, a warning before the lapse, a few well-timed retries, a short and kind email sequence, and a one-click way to fix it, quietly recovers more than half of that money for a fraction of what new acquisition costs.
+Involuntary churn is the rare growth problem where the customers already want to stay. They're not unhappy. Their card just expired. A thoughtful dunning system, a warning before the lapse, a few well-timed retries, a short and kind email sequence, and a one-click way to fix it, quietly recovers more than half of that money for a fraction of what [new acquisition costs](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale).
 
 The deeper lesson is that *silence is the enemy*. The worst outcome isn't a declined card; it's a declined card nobody acts on while a loyal customer slowly assumes your product broke.
 
-Once you've plugged this leak, the natural next question is the harder one: how do you keep the customers whose payments never fail but whose *interest* is quietly fading? That's voluntary churn, and it's where retention gets genuinely interesting.
+Once you've plugged this leak, the natural next question is the harder one: how do you keep the customers whose payments never fail but whose *interest* is quietly fading? That's voluntary churn, and it's [where retention gets genuinely interesting](/blog/ai-learning-platform/12-feedback-motivation-metacognition).

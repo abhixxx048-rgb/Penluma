@@ -57,8 +57,9 @@ faq:
       Charlie Munger estimated that 80 to 90 core models handle most wise decisions.
       You don't need them all at once. Learn a few deeply, use them on real choices,
       and add more over time.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Twelve_leverage_points
   - https://en.wikipedia.org/wiki/Mental_model
@@ -78,7 +79,7 @@ The skill you are about to learn does two things. First, it shows you where in a
 
 ## Leverage points: where to push
 
-In 1997, the systems thinker **Donella Meadows** wrote an essay called *Leverage Points: Places to Intervene in a System*. She had been at a conference on a huge trade agreement and noticed something strange. The people designing an enormous economic system were arguing only about small numbers - tariff rates, quotas - while ignoring far more powerful levers sitting right in front of them.
+In 1997, the [systems thinker](/blog/thinking-skills/05-systems-thinking-seeing-the-whole-not-the-parts) **Donella Meadows** wrote an essay called *Leverage Points: Places to Intervene in a System*. She had been at a conference on a huge trade agreement and noticed something strange. The people designing an enormous economic system were arguing only about small numbers - tariff rates, quotas - while ignoring far more powerful levers sitting right in front of them.
 
 Her insight: **where you intervene matters more than how hard you push.**
 
@@ -179,7 +180,7 @@ When someone's action hurts you, run the sequence before reacting: could this be
 
 ### Base rates: what usually happens
 
-A base rate is the historical average outcome for a class of events - what usually happens before you factor in anything special about your case. **Daniel Kahneman** and Amos Tversky showed that people chronically ignore base rates, a habit they named *base rate neglect*, fixating instead on the vivid story in front of them.
+A base rate is the historical average outcome for a class of events - what usually happens before you factor in anything special about your case. **Daniel Kahneman** and Amos Tversky showed that [people chronically ignore base rates](/blog/clear-thinking-and-expression/18-cognitive-biases-logical-fallacies-and-how-to-dodge-them), a habit they named *base rate neglect*, fixating instead on the vivid story in front of them.
 
 Kahneman's fix was the **outside view**: look at what happened to a hundred similar projects before forecasting your own.
 
@@ -204,7 +205,7 @@ You build a latticework the way Munger did - not by collecting models, but by wi
 
 1. **Learn one model at a time, deeply.** Go to the original source: Meadows on leverage points, Kahneman on base rates. A shallow grasp of ten models is weaker than a deep grasp of three.
 2. **Apply it to a real decision within a week.** Force yourself to use a new model once on something that actually matters before moving on. Otherwise it never sinks in.
-3. **Notice where models conflict.** Occam's razor says prefer the simple explanation; second-order thinking says dig deeper into consequences. That tension is not a flaw - navigating it is exactly where judgment lives.
+3. **Notice where models conflict.** Occam's razor says prefer the simple explanation; [second-order thinking](/blog/clear-thinking-and-expression/12-analysis-frameworks-first-principles-mece-5-whys-second-order-thinking) says dig deeper into consequences. That tension is not a flaw - navigating it is exactly where judgment lives.
 4. **Keep a decision journal.** Write down which model you used, what you predicted, and what actually happened. Review it every few months. You will quickly see which models you overuse, which you forget, and where your blind spots sit.
 5. **Steal from every discipline.** Munger borrowed from economics, biology, psychology, physics, and history. Models from outside your own field are often the most powerful - because none of your competitors are using them.
 6. **Run three lenses before any big call.** Try: What is the base rate? How could this fail (inversion)? What is the opportunity cost of saying yes? Three models, one decision. You will catch things a single-lens view misses every time.
@@ -213,4 +214,4 @@ You build a latticework the way Munger did - not by collecting models, but by wi
 
 If you remember one thing, make it this: **find the right place to push, then push there gently.** Meadows showed that pushing at the right point beats pushing harder at the wrong one. Munger showed that seeing the right point takes many lenses, not one. Put them together and small, well-aimed effort compounds into outsized, lasting results.
 
-Here is the thread worth pulling next. Every model in this article quietly assumes *you* are the clear-eyed one in the room. But your own mind runs on shortcuts and biases that bend how you read every situation - the very base rate neglect Kahneman wrote about is just one of dozens. The next leap in your decision-making comes not from adding models, but from learning to catch the moments your own thinking is fooling you.
+Here is the thread worth pulling next. Every model in this article quietly assumes *you* are the clear-eyed one in the room. But [your own mind runs on shortcuts and biases](/blog/thinking-skills/02-how-your-mind-already-thinks-and-why-it-misleads-you) that bend how you read every situation - the very base rate neglect Kahneman wrote about is just one of dozens. The next leap in your decision-making comes not from adding models, but from learning to catch the moments your own thinking is fooling you.

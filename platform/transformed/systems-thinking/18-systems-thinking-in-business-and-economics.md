@@ -28,7 +28,7 @@ faq:
     a: It is the idea that at any moment a system has exactly one bottleneck, and total output only improves when you fix that bottleneck. Improving anything else just raises local efficiency while the whole system stays stuck.
   - q: Why do economic policies like interest rate hikes take so long to work?
     a: Economic systems are full of delays. Spending plans, contracts, and prices set months ago keep flowing, so a rate hike can take roughly two years to fully show up in inflation, which causes policymakers to over- or under-correct.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 topic: systems-thinking
 topicTitle: Systems Thinking
 category: Thinking & Decisions
@@ -37,12 +37,13 @@ order: 17
 icon: "\U0001F504"
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
 A factory where every machine is busy can still lose money. A clever price cut can destroy profit. A company with 40% of its market can vanish in six years. None of these make sense if you stare at the pieces one at a time.
 
-They make perfect sense the moment you see what is underneath: stocks, flows, and feedback loops. The systems thinker Donella Meadows put it best. "Everyone or everything in a system can act dutifully and rationally," she wrote, "yet all these well-meaning actions too often add up to a perfectly terrible result."
+They make perfect sense the moment you see what is underneath: stocks, flows, and [feedback loops](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves). The systems thinker Donella Meadows put it best. "Everyone or everything in a system can act dutifully and rationally," she wrote, "yet all these well-meaning actions too often add up to a perfectly terrible result."
 
 That single sentence explains financial bubbles, supply-chain meltdowns, and corporate scandals all at once. This article shows you how.
 
@@ -76,7 +77,7 @@ Almost every story below is a contest between two loop types.
 
 **Reinforcing loops** amplify change in the same direction. They produce growth or collapse - virtuous and vicious cycles, viral hits, asset bubbles, the Amazon flywheel.
 
-**Balancing loops** resist change and seek a goal. They produce stability, like a thermostat. Classic supply and demand is one: if price rises too high, demand falls and supply rises, pushing price back toward equilibrium.
+**Balancing loops** resist change and seek a goal. They produce stability, like a thermostat. Classic [supply and demand](/blog/economics-from-first-principles/03-supply-demand-and-how-prices-are-determined) is one: if price rises too high, demand falls and supply rises, pushing price back toward equilibrium.
 
 But here is the catch with balancing loops. A thermostat never holds a room at one exact temperature - it hunts above and below the target. Balancing loops give you stability, not perfection, and once delays enter the picture they can swing wildly. Hold that thought.
 
@@ -94,15 +95,15 @@ The economist Hyman Minsky explained *why* long stretches of calm are dangerous.
 
 During calm years, everyone grows complacent and leverage creeps up, so the whole system drifts from Stage 1 toward Stage 3. The moment it finally snaps into reverse is now called a **Minsky Moment**.
 
-**The 2008 housing crisis is the textbook case.** For years, rising house prices validated risky lending - a reinforcing loop - pushing mortgages from hedge to speculative to subprime Ponzi. When defaults began, the loop ran in reverse: prices fell, collateral shrank, banks tightened, prices fell further. The quiet years of 2002 to 2006 were not health. They were hidden fragility, quietly accumulating.
+**The [2008 housing crisis](/blog/economics-from-first-principles/24-financial-crises-why-they-happen-spread-and-how-economies-recover) is the textbook case.** For years, rising house prices validated risky lending - a reinforcing loop - pushing mortgages from hedge to speculative to subprime Ponzi. When defaults began, the loop ran in reverse: prices fell, collateral shrank, banks tightened, prices fell further. The quiet years of 2002 to 2006 were not health. They were hidden fragility, quietly accumulating.
 
 ## The delay problem: steering by the rearview mirror
 
-A **delay** is the gap between a cause and its visible effect. Delays are the single biggest source of trouble in economic systems, because people end up reacting to information that no longer describes the present.
+A **delay** is the gap between a cause and its visible effect. [Delays](/blog/systems-thinking/06-delays-why-cause-and-effect-are-not-close-in-time) are the single biggest source of trouble in economic systems, because people end up reacting to information that no longer describes the present.
 
 **The shower analogy.** You turn the knob toward hot - nothing. You turn it further - still cold. Then scalding water arrives all at once, so you yank it back to freezing. The temperature oscillates wildly, and you caused every swing.
 
-Fighting inflation with interest rates works exactly like this. The economy does not cool right away; mortgages, contracts, and spending plans signed months ago keep flowing. Milton Friedman called this monetary policy working with "long and variable lags." One review of 67 studies across 30 countries found the average lag from a rate change to its full effect on inflation was about **29 months** - well over two years.
+Fighting inflation with interest rates works exactly like this. The economy does not cool right away; mortgages, contracts, and spending plans signed months ago keep flowing. Milton Friedman called this [monetary policy](/blog/economics-from-first-principles/08-central-banks-and-monetary-policy) working with "long and variable lags." One review of 67 studies across 30 countries found the average lag from a rate change to its full effect on inflation was about **29 months** - well over two years.
 
 So policymakers are always at risk of over-tightening (causing a recession) or under-tightening (letting inflation linger). They are steering a car whose steering wheel responds two years late.
 
@@ -167,7 +168,7 @@ But, as Nokia learned, reinforcing loops never grow forever. Regulation, seller 
 
 ## Theory of Constraints: why busy silos lose money
 
-Eliyahu Goldratt's **Theory of Constraints**, from his 1984 novel *The Goal*, makes a sharp claim: a chain is only as strong as its weakest link, and at any moment a system has exactly *one* binding constraint. Improving anything except that constraint raises local efficiency but does nothing for total output - and often makes things worse by piling up inventory in front of the bottleneck.
+Eliyahu Goldratt's [**Theory of Constraints**](/blog/systems-thinking/09-bottlenecks-and-constraints-the-theory-of-constraints), from his 1984 novel *The Goal*, makes a sharp claim: a chain is only as strong as its weakest link, and at any moment a system has exactly *one* binding constraint. Improving anything except that constraint raises local efficiency but does nothing for total output - and often makes things worse by piling up inventory in front of the bottleneck.
 
 **A chain of ten links** - nine rated 1,000 kg and one rated 100 kg - holds only 100 kg. Strengthening the strong links does nothing at all. Optimizing every department is like gold-plating links that were already strong.
 

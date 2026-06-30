@@ -30,7 +30,7 @@ faq:
     a: "Lamport clocks give one number per event and order causal events, but cannot tell whether two events are concurrent. Vector clocks track a counter per process and can detect concurrency, which is why they power systems like DynamoDB and Riak."
   - q: "What does concurrent mean in distributed systems?"
     a: "Concurrent means causally unrelated, not 'at the same instant.' Two events are concurrent when no chain of local steps and messages connects them, so neither could have influenced the other. They can be seconds apart in real time."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: distributed-systems

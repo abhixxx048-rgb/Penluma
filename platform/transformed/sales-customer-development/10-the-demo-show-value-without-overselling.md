@@ -30,7 +30,7 @@ faq:
     a: Stay calm, name the glitch plainly, skip it, and follow up later with a recording. Your composure under pressure sells more than the broken feature would have.
   - q: How long should a product demo be?
     a: Keep it short and make it a dialogue, not a monologue. Check in roughly every 90 seconds with a quick question to confirm you are still on target.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 topic: sales-customer-development
 topicTitle: Sales & Customer Development
 category: Money & Business
@@ -39,6 +39,7 @@ order: 9
 icon: "\U0001F91D"
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -50,7 +51,7 @@ That instinct is the trap. The most common bad demo is a tour of everything you 
 
 A demo is the moment a curious person decides whether you are worth their money. Get it right and they lean in and start asking "can it also do X?" Get it wrong and you hear the politest sentence in business: "Looks comprehensive. We'll think about it."
 
-For a solo or technical founder, the stakes are higher than they look. You don't have a polished sales team to smooth things over. You *are* the sales team. And the demo is where a lot of founders accidentally undo their own work - either by drowning the buyer in features or by promising things the product can't actually do.
+For a solo or technical founder, the stakes are higher than they look. You don't have a polished sales team to smooth things over. [You *are* the sales team](/blog/sales-customer-development/02-why-founders-must-learn-to-sell-and-why-it-is-learnable). And the demo is where a lot of founders accidentally undo their own work - either by drowning the buyer in features or by promising things the product can't actually do.
 
 Here is the single idea to hold onto:
 
@@ -58,7 +59,7 @@ Here is the single idea to hold onto:
 
 ## Never demo blind: diagnose before you prescribe
 
-**Discovery** is the set of questions you ask to learn someone's real problem *before* you show anything. **Demoing blind** is the opposite - showing the product before you understand what they care about, so you show everything and hope something sticks.
+**[Discovery](/blog/sales-customer-development/07-running-a-great-discovery-call-start-to-finish)** is the set of questions you ask to learn someone's real problem *before* you show anything. **Demoing blind** is the opposite - showing the product before you understand what they care about, so you show everything and hope something sticks.
 
 Sales coaches are blunt about this. Peter Cohan, who wrote the classic book *Great Demo!*, and the wider presales community repeat the same line: **never demo blind.** If a prospect says "just show me the product," that is not an order to obey. It is a moment to gently redirect.
 
@@ -127,7 +128,7 @@ Here is the cheapest quality check in all of selling. After every sentence in yo
 
 A demo should feel like a conversation, not a TED talk. If you talk for ten minutes straight, you have lost the room.
 
-Build in **check-ins** - small questions that keep them talking and tell you whether you're on target. Aim to stop and check in roughly every 90 seconds. A few you can copy:
+Build in **check-ins** - small questions that [keep them talking](/blog/sales-customer-development/06-active-listening-and-reading-the-conversation) and tell you whether you're on target. Aim to stop and check in roughly every 90 seconds. A few you can copy:
 
 - "Is that how you'd want it to work?"
 - "Does this look like the problem you described?"
@@ -152,7 +153,7 @@ Prospects will ask about features you don't have. The instinct is to fudge it: "
 
 1. **Yes.** "Yes, let me show you." Then actually show it. Never claim it without proof.
 2. **Not yet.** "No, not today. It's on our roadmap for next quarter. Is that a must-have for you, or a nice-to-have?" Their answer is gold - it tells you whether this is a dealbreaker. Then turn it into discovery: "Out of curiosity, what would you use that for?" You may learn it isn't really needed, or find your next feature.
-3. **Never / not us.** "No, that's not what we're built for. Tools like that one do it better. We're focused on this." Saying no to the wrong fit builds enormous trust.
+3. **Never / not us.** "No, that's not what we're built for. Tools like that one do it better. We're focused on this." [Saying no to the wrong fit](/blog/sales-customer-development/09-qualifying-choosing-who-deserves-your-time) builds enormous trust.
 
 ## How to use this: your demo checklist
 
@@ -205,4 +206,4 @@ Same product. Same features. The only thing that changed was that the second dem
 
 If you remember one thing, remember this: **a demo is proof that one specific pain will go away - not a tour of your software.** Diagnose first, show the destination, answer honestly, and the buyer starts selling themselves.
 
-But notice what happened in that last example. The strong demo didn't end with a signature - it ended with a *new question*. "Can it also handle bulk orders?" That's the buyer raising an objection, which is actually a buying signal in disguise. Knowing how to hear those signals, and what to say next, is where the real deal gets made.
+But notice what happened in that last example. The strong demo didn't end with a signature - it ended with a *new question*. "Can it also handle bulk orders?" That's the buyer [raising an objection](/blog/sales-customer-development/11-handling-objections-with-honesty), which is actually a buying signal in disguise. Knowing how to hear those signals, and what to say next, is where the real deal gets made.

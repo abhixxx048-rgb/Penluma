@@ -53,7 +53,7 @@ faq:
       Tax planning uses the deductions and exemptions the law offers you and is
       fully legal. Tax evasion means hiding income or faking claims, which is
       fraud and can lead to penalties and prosecution.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 linked: true
 transformed: true
 sources: []

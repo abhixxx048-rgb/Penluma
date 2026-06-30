@@ -26,8 +26,9 @@ faq:
     a: Mostly no. Knowing the name of a bias does not switch it off, because there is nothing for willpower to grab. The reliable fix is building processes outside your own head, like a decision journal or a pre-mortem.
   - q: What is the easiest way to start reducing my bias?
     a: Keep a decision journal. When you make an important call, write down what you expect to happen and why, with the date. It is cheap, takes two minutes, and the paper remembers what you actually thought.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 topic: psychology-of-decisions
 topicTitle: Psychology of Decisions
 category: Thinking & Decisions
@@ -45,15 +46,15 @@ You have lived inside your own head every second of your life. So you would thin
 
 Every important choice you make runs through one unreliable narrator: you.
 
-You decide who to hire, what to launch, when to quit, who to trust, and how much you really know. If your view of yourself is quietly distorted, every one of those decisions inherits the distortion - and you will never notice, because the distortion is invisible from the inside.
+You decide [who to hire](/blog/psychology-of-decisions/20-hiring-leading-teams-with-less-bias), what to launch, when to quit, who to trust, and how much you really know. If your view of yourself is quietly distorted, every one of those decisions inherits the distortion - and you will never notice, because the distortion is invisible from the inside.
 
-The good news: there is a reliable way out. Not willpower, not "trying harder to be objective," but a handful of simple habits that catch your blind spots for you. This article shows you the three blind spots that fool almost everyone, why being clever makes them worse, and the structure that actually fixes them.
+The good news: there is a reliable way out. Not willpower, not "trying harder to be objective," but a handful of [simple habits that catch your blind spots](/blog/psychology-of-decisions/21-making-better-personal-decisions-a-debiasing-toolkit) for you. This article shows you the three blind spots that fool almost everyone, why being clever makes them worse, and the structure that actually fixes them.
 
 ## The core skill: thinking about your own thinking
 
 The master skill behind everything here has a name: **metacognition**. It simply means thinking about your own thinking - stepping back to notice *how* your mind reached a conclusion, not just *what* the conclusion is. The psychologist John Flavell named it in 1979.
 
-To use it, it helps to know your mind runs in two modes, described by psychologist Daniel Kahneman:
+To use it, it helps to know your mind runs in [two modes](/blog/psychology-of-decisions/02-two-minds-in-one-head-fast-thinking-vs-slow-thinking), described by psychologist Daniel Kahneman:
 
 - **System 1** is fast, automatic, and emotional. The snap judgment, the gut feeling, the answer that just "pops up."
 - **System 2** is slow, effortful, and deliberate. The careful reasoning you do when you actually concentrate.
@@ -64,7 +65,7 @@ Almost every mental bias lives in System 1. Catching one means waking up System 
 
 ## Blind spot #1: you think bias is other people's problem
 
-In 2002, psychologists Emily Pronin, Daniel Lin, and Lee Ross found something almost funny. They asked people how much various mental biases affected them compared to the "average person." Nearly everyone gave the same answer: *other people are biased; I'm pretty objective.*
+In 2002, psychologists Emily Pronin, Daniel Lin, and Lee Ross found something almost funny. They asked people how much [various mental biases](/blog/clear-thinking-and-expression/18-cognitive-biases-logical-fallacies-and-how-to-dodge-them) affected them compared to the "average person." Nearly everyone gave the same answer: *other people are biased; I'm pretty objective.*
 
 That is the **bias blind spot** - seeing bias clearly in others while feeling personally exempt.
 
@@ -139,4 +140,4 @@ If you only do one thing, keep the decision journal. It's cheap, takes two minut
 
 The hardest person to read is you, because bias hides behind your own clean-feeling intentions - and intelligence makes you a better defender of your blind spots, not a freer one. You can't will yourself objective. So change your default assumption to: *"I'm probably missing something here. Where is it?"* - and let structure, not willpower, do the catching.
 
-There's a deeper question lurking underneath all of this, though. If your gut is so easy to fool, when *should* you trust it? It turns out snap judgments are sometimes more accurate than slow analysis - and learning to tell those moments apart is its own quiet skill.
+There's a deeper question lurking underneath all of this, though. If your gut is so easy to fool, when *should* you trust it? It turns out [snap judgments](/blog/psychology-of-decisions/05-mental-shortcuts-how-heuristics-help-and-trick-us) are sometimes more accurate than slow analysis - and learning to tell those moments apart is its own quiet skill.

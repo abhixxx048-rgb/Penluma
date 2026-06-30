@@ -10,7 +10,7 @@ order: 15
 icon: "\U0001F310"
 transformed: true
 linked: true
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 keywords:
   - CAP theorem
   - PACELC

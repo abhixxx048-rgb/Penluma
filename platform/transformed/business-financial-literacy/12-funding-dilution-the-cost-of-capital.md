@@ -57,7 +57,7 @@ faq:
       Raising trades ownership and control for speed and scale. The right choice
       depends on whether your market rewards getting big fast or being steady and
       profitable.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources:

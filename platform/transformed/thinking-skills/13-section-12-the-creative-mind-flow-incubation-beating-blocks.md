@@ -38,8 +38,9 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 12
 icon: "\U0001F4A1"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -95,7 +96,7 @@ Incubation is not procrastination. It is an active phase of creative work. Build
 
 An idea that arrives and is not written down within minutes is almost certainly gone. Free-floating creative insights are not stored like deliberate memories. They fade in seconds to minutes unless you anchor them.
 
-A **capture system** is a trusted, always-available place where every idea, observation, quote, or question goes the moment it appears. The idea is central to Tiago Forte's book *Building a Second Brain*, which lays out a four-step process: **Capture, Organize, Distill, Express**. Capture comes first because nothing else can happen if the raw material is lost.
+A **[capture system](/blog/clear-thinking-and-expression/16-build-an-idea-inventory-a-second-brain-so-connections-happen)** is a trusted, always-available place where every idea, observation, quote, or question goes the moment it appears. The idea is central to Tiago Forte's book *Building a Second Brain*, which lays out a four-step process: **Capture, Organize, Distill, Express**. Capture comes first because nothing else can happen if the raw material is lost.
 
 A related tool is a **swipe file**: a growing collection of examples, phrases, images, and techniques you return to when you need creative fuel. The term comes from copywriting, where writers kept a folder of ads and headlines that worked, but the principle applies anywhere.
 
@@ -114,7 +115,7 @@ A capture system converts the fleeting output of your Default Mode Network into 
 
 Output quality is bounded by input quality. You cannot connect ideas you have never encountered. Prolific creators are almost always **wide, voracious readers** who deliberately cross between fields.
 
-The mechanism is simple: creativity is largely **combining existing ideas in new ways**. The more diverse your mental library, the more combinations exist. A designer who only reads design books has a smaller combinatorial space than one who also reads biology, architecture, and history.
+The mechanism is simple: creativity is largely **[combining existing ideas in new ways](/blog/thinking-skills/11-what-creativity-really-is-demystified)**. The more diverse your mental library, the more combinations exist. A designer who only reads design books has a smaller combinatorial space than one who also reads biology, architecture, and history.
 
 ### Habits that widen your input
 
@@ -174,7 +175,7 @@ The same is true in solo work. When you write, design, or code while judging eve
 
 The two phases need to stay separate:
 
-- **Divergent thinking** is unstructured exploration: generate many varied possibilities, no filtering, quantity over quality, wild ideas welcome. Inner critic **off**.
+- **[Divergent thinking](/blog/thinking-skills/12-idea-generation-techniques-producing-options-on-demand)** is unstructured exploration: generate many varied possibilities, no filtering, quantity over quality, wild ideas welcome. Inner critic **off**.
 - **Convergent thinking** is evaluation: select, refine, and kill weak ideas. Inner critic **on**.
 
 Creative work needs both. It just cannot have them at the same moment.
@@ -207,7 +208,7 @@ These tools are not separate tips. They form one system. Run it in this order.
 
 1. **Widen your input.** Read across fields and feed your swipe file so your combinatorial library keeps growing.
 2. **Capture everything.** Make sure nothing the Default Mode Network produces gets lost.
-3. **Schedule focused sessions.** Stack a creative block onto an existing habit. "After my morning coffee, I write for 30 minutes" beats "I'll write when I feel ready," which never reliably happens.
+3. **Schedule focused sessions.** Stack a creative block onto [an existing habit](/blog/thinking-skills/09-designing-your-own-habits-that-actually-stick). "After my morning coffee, I write for 30 minutes" beats "I'll write when I feel ready," which never reliably happens.
 4. **Alternate deliberately.** Work hard, then rest properly, then capture what incubation gives you.
 5. **Separate generation from evaluation.** Silence the inner critic during creation; invite it back only for revision.
 6. **Trigger flow.** Match challenge to skill, kill distraction, and start with one small, clear intention.
@@ -221,4 +222,4 @@ Here is the one thing to carry out of all this: **creativity is not a trait you 
 
 So stop waiting. Load a problem, take a walk, keep a notebook within reach, and show up at the same time tomorrow whether you feel like it or not.
 
-And notice that almost every step here, the fixed time, the fixed place, the starting anyway, is really about **habit**. That is the deeper lever underneath all creative work: if you can design the right habit loop, you can make almost any behavior run on autopilot, including the hard, valuable kind. That is exactly where to look next.
+And notice that almost every step here, the fixed time, the fixed place, the starting anyway, is really about **habit**. That is the deeper lever underneath all creative work: if you can design the right [habit loop](/blog/thinking-skills/07-the-science-of-habits-how-behavior-becomes-automatic), you can make almost any behavior run on autopilot, including the hard, valuable kind. That is exactly where to look next.

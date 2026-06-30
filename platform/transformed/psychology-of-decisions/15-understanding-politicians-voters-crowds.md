@@ -34,8 +34,9 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 14
 icon: "\U0001F3AF"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -128,7 +129,7 @@ The 1964 "Daisy" ad is the textbook case. It showed a little girl counting flowe
 
 Zoom out from individuals to crowds and the same forces compound.
 
-People copy what others are doing. This is **social proof**, and it gets stronger under uncertainty. On the way up, fear of missing out drives a buying frenzy. On the way down, fear and loss aversion drive a panic. Rising prices seem to "prove" the crowd was right, which pulls in more people, a self-reinforcing loop.
+People copy what others are doing. This is [social proof](/blog/psychology-of-decisions/10-the-six-levers-of-influence-how-people-get-persuaded), and it gets stronger under uncertainty. On the way up, fear of missing out drives a buying frenzy. On the way down, fear and [loss aversion](/blog/psychology-of-decisions/08-prospect-theory-behavioral-economics-how-we-weigh-gains-losses-risk) drive a panic. Rising prices seem to "prove" the crowd was right, which pulls in more people, a self-reinforcing loop.
 
 That's how bubbles form, from tulip mania in 1637 to dot-com stocks to crypto cycles. The crowd isn't stupid. Each person makes a locally reasonable bet that everyone else can't be wrong. Collectively, they are.
 
@@ -147,15 +148,15 @@ That's how bubbles form, from tulip mania in 1637 to dot-com stocks to crypto cy
 Here is the hardest truth and the most freeing one. Knowing a bias by name does not protect you from it. "I'll just be objective" almost always fails. The real defenses are *structural* habits, not good intentions.
 
 1. **Watch the trigger, not just the message.** When something makes you feel instantly righteous, angry, or part of a team, slow down. Strong emotion is the signal that your elephant is moving and your rider is about to invent reasons. Ask: "Am I evaluating this, or defending my side?"
-2. **Steelman the other side.** Before rejecting an argument, restate it in its *strongest* form, strong enough that an opponent would say "yes, that's exactly what I mean." If you can't, you don't understand it well enough to dismiss it.
+2. **[Steelman the other side](/blog/clear-thinking-and-expression/19-reasoning-well-deduction-induction-abduction-steelmanning).** Before rejecting an argument, restate it in its *strongest* form, strong enough that an opponent would say "yes, that's exactly what I mean." If you can't, you don't understand it well enough to dismiss it.
 3. **Check whether your facts line up suspiciously with your team.** If every one of your factual beliefs happens to match your political side perfectly, that's a red flag. Reality is messy. Real evidence rarely sorts so neatly into one jersey.
 4. **Distrust messages built to bypass thinking.** A short, scary, repeatable line aimed at your gut is designed to skip your reasoning. That's not a reason to disbelieve it automatically. It's a reason to pause and check it before you share it.
 5. **Seek truth from trusted insiders.** People accept facts more easily from someone they see as "one of us." When you want to update your own view, deliberately look for thoughtful people *inside* your group who disagree. You'll actually be able to hear them.
-6. **Separate the person from the position.** Polarization tricks you into thinking anyone who disagrees is a bad human. Practice the assumption that "smart, decent people land here for reasons I haven't fully understood." That alone is a debiasing tool.
+6. **Separate the person from the position.** Polarization tricks you into thinking anyone who disagrees is a bad human. Practice the assumption that "smart, decent people land here for reasons I haven't fully understood." That alone is a [debiasing tool](/blog/psychology-of-decisions/21-making-better-personal-decisions-a-debiasing-toolkit).
 
 To persuade across the divide, add one more move: **moral reframing**. Translate your argument into the other side's moral language. Researchers found conservatives respond far better to environmental protection when it's framed around purity and cleanliness ("keep our air and forests clean and pure") than around harm to the planet. You don't change your goal. You change the flavor.
 
-Think of manipulation like a magician's trick. Once you learn to watch the *other* hand, the emotional, identity-flag hand, the trick loses its power. You stop staring at the shiny coin and start watching which team you're being recruited onto.
+Think of [manipulation like a magician's trick](/blog/psychology-of-decisions/22-persuasion-vs-manipulation-the-ethics-of-influence). Once you learn to watch the *other* hand, the emotional, identity-flag hand, the trick loses its power. You stop staring at the shiny coin and start watching which team you're being recruited onto.
 
 ## Conclusion
 

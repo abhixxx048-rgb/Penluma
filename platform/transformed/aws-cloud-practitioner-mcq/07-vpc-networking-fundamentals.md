@@ -46,7 +46,7 @@ faq:
     a: >-
       No. If VPC-A peers with VPC-B, and VPC-B peers with VPC-C, that does not let A
       reach C. For many interconnected VPCs, use a Transit Gateway hub instead.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: aws-cloud-practitioner-mcq

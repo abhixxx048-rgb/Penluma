@@ -23,9 +23,10 @@ category: Engineering
 date: '2026-06-21'
 order: 11
 icon: "\U0001F512"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 faq:
   - q: What is prompt injection?
     a: Prompt injection is when untrusted text tricks a large language model into ignoring its real instructions and following the attacker's instead. It happens because the model reads commands and data in the same stream and cannot reliably tell them apart.
@@ -69,7 +70,7 @@ Before we go further, four words you will see everywhere:
 - **LLM** - an AI model that predicts and generates text. It treats its whole context window as one blob of words.
 - **Prompt** - everything fed to the model: the developer's hidden system rules, your message, and any document it pulls in.
 - **Agent** - an LLM wired to tools (send email, run code, query a database) so it can *act*, not just talk.
-- **RAG** (retrieval-augmented generation) - a pattern where the app fetches relevant documents and pastes them into the prompt so the model can answer using fresh, private knowledge.
+- **RAG** ([retrieval-augmented generation](/blog/ai-learning-platform/24-turning-a-pdf-into-a-course-rag-for-learning)) - a pattern where the app fetches relevant documents and pastes them into the prompt so the model can answer using fresh, private knowledge.
 
 ## The core problem: instructions and data share one channel
 
@@ -134,7 +135,7 @@ If you remember one practical thing, remember this: **treat LLM output as untrus
 
 The model is not your trusted code. It is a stranger handing you a string. So:
 
-- Pipe raw output into a **browser** and you get cross-site scripting (XSS).
+- Pipe raw output into a **browser** and you get [cross-site scripting (XSS)](/blog/security-privacy-engineering/05-application-web-security).
 - Pipe it into a **shell** and you get remote code execution (RCE).
 - Pipe it into a **database** and you get SQL injection.
 - Pass it to **eval()** and you get arbitrary code.
@@ -143,7 +144,7 @@ The model can be tricked into emitting `<script>` tags or `rm -rf`, and your app
 
 ## The lethal trifecta: the model for agent risk
 
-Simon Willison's 2025 framing is the clearest way to reason about agents. An agent becomes genuinely dangerous only when it holds all three of these at once:
+Simon Willison's 2025 framing is the clearest way to reason about [agents](/blog/agent-orchestration/agent-orchestration-01-foundations). An agent becomes genuinely dangerous only when it holds all three of these at once:
 
 1. **Access to private data** - your repos, inbox, customer records.
 2. **Exposure to untrusted content** - web pages, emails, public issues.
@@ -184,7 +185,7 @@ Your retrieval layer must enforce per-user and per-tenant access controls *at re
 
 ### Privacy is a separate problem from security
 
-- **Memorization and regurgitation** - models memorize personal data and can emit it. This collides head-on with the "right to erasure," because you cannot easily delete one person from trained weights.
+- **Memorization and regurgitation** - models memorize personal data and can emit it. This collides head-on with the ["right to erasure,"](/blog/security-privacy-engineering/11-privacy-laws-compliance) because you cannot easily delete one person from trained weights.
 - **Membership inference** - an attacker determines whether a specific record was in the training set ("was this patient in the medical data?"). That is a breach even without extracting the content itself.
 - **PII in prompts *and* logs** - the under-appreciated one. Prompts, retrieved context, and tool outputs get written into observability traces, vendor telemetry, and fine-tuning pipelines. Treat your prompt logs as a sensitive data store, because they are one.
 
@@ -213,7 +214,7 @@ Concrete steps, in rough priority order:
 7. **Keep secrets out of system prompts.** They can be extracted (LLM07). Rate-limit and budget-cap to blunt cost attacks (LLM10).
 8. **Enforce per-tenant access controls at RAG retrieval time,** and treat prompt logs as a sensitive store.
 9. **Offer sanctioned AI tools plus data-loss prevention** so employees do not reach for shadow AI.
-10. **Red-team continuously,** mapping tests to the OWASP LLM Top 10 and the NIST AI Risk Management Framework. Tools like PyRIT and Garak help.
+10. **[Red-team continuously](/blog/security-privacy-engineering/08-security-testing-auditing),** mapping tests to the OWASP LLM Top 10 and the NIST AI Risk Management Framework. Tools like PyRIT and Garak help.
 
 ### Why this is also a governance question
 
@@ -227,4 +228,4 @@ Here is the one idea to carry with you: an LLM merges instructions and data into
 
 Least privilege, human approval for the dangerous actions, and breaking the lethal trifecta will protect you even when a clever prompt slips past every guardrail.
 
-And once you start thinking this way - "what is the worst this component can do if it is fully compromised?" - you have stumbled onto the deeper discipline underneath all of this. It is called the principle of least privilege, and it has quietly governed good security design since long before anyone typed "ignore previous instructions." That is a worthy next thread to pull.
+And once you start thinking this way - "what is the worst this component can do if it is fully compromised?" - you have stumbled onto the deeper discipline underneath all of this. It is called the [principle of least privilege](/blog/security-privacy-engineering/02-core-security-foundations), and it has quietly governed good security design since long before anyone typed "ignore previous instructions." That is a worthy next thread to pull.

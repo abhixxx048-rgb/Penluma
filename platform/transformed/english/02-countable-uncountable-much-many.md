@@ -28,7 +28,7 @@ faq:
     a: "\"Few\" means almost none and sounds like a complaint (\"few tests cover this\"). \"A few\" means some, a positive amount (\"a few tests cover this\"). The same gap exists between \"little\" and \"a little.\""
   - q: Why do I keep writing "so much mistake"?
     a: Many languages don't mark countable vs uncountable the way English does, so the habit is invisible. "Mistake" is countable, so it needs "many" plus the plural -s - "so many mistakes."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: english

@@ -21,9 +21,10 @@ category: Money & Business
 date: '2026-06-21'
 order: 16
 icon: "\U0001F91D"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 faq:
   - q: Can introverts be good at sales?
     a: Yes, often better than extroverts. Great selling is mostly listening and careful questioning, which plays directly to an introvert's strengths. You are a detective, not a smooth talker.
@@ -65,7 +66,7 @@ Paul Graham, co-founder of Y Combinator, openly admitted he lacked "the smoothne
 
 Manipulation is getting someone to do something against their own interest. Good selling is the exact opposite.
 
-You dig hard to find out whether you can genuinely help. If you cannot, you say so. Every solid sales framework, from **the Mom Test** to **SPIN selling**, is built on understanding the customer, not tricking them.
+You dig hard to find out whether you can genuinely help. If you cannot, you say so. Every solid sales framework, from **the Mom Test** to **[SPIN selling](/blog/sales-customer-development/08-sales-discovery-frameworks-spin-bant-meddic-and-friends)**, is built on understanding the customer, not tricking them.
 
 Stay honest and you are not manipulating anyone. You are helping a person make a good decision.
 
@@ -79,7 +80,7 @@ When the fifth person describes the same painful workflow in almost the same wor
 
 ## "I have no network. Where do I find people to talk to?"
 
-Start where your customers already gather: subreddits, LinkedIn groups, industry Slack channels, local meetups.
+Start [where your customers already gather](/blog/sales-customer-development/13-founder-led-outreach-getting-the-conversations): subreddits, LinkedIn groups, industry Slack channels, local meetups.
 
 Reach out with a specific, genuine message that asks to learn, not to sell. Something like: *"I'm researching how small print shops handle late orders. Could I ask you a few questions for 15 minutes?"*
 
@@ -103,7 +104,7 @@ Never invent a fake "yes, it does that." A short, honest *"not yet, tell me more
 
 ## "People say it's great but never buy. What's going on?"
 
-Compliments are the most dangerous feedback there is, because they feel wonderful and mean almost nothing. This is the exact trap **the Mom Test** was written to fix.
+Compliments are the most dangerous feedback there is, because they feel wonderful and mean almost nothing. This is the exact trap **[the Mom Test](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself)** was written to fix.
 
 Stop asking whether they like your idea. Instead ask:
 
@@ -122,7 +123,7 @@ Gently dig instead of retreating:
 - *"Happy to. So I send the right thing, what's the main question on your mind?"*
 - *"Totally fair. What would you want to feel sure about before deciding?"*
 
-You are not pushing. You are surfacing the real objection so you can address it honestly, or walk away cleanly.
+You are not pushing. You are [surfacing the real objection](/blog/sales-customer-development/11-handling-objections-with-honesty) so you can address it honestly, or walk away cleanly.
 
 ## "When should I hire a salesperson?"
 
@@ -167,4 +168,4 @@ Pick one of these for your next conversation. You do not need all six at once.
 
 Here is the single idea worth keeping: selling, done honestly, is just structured curiosity. You are finding out whether you can help, and telling the truth about the answer. Almost nothing to be afraid of in that.
 
-The deeper skill underneath all of this is learning to tell a real signal from a flattering one, the difference between "this is great" and "here's my card." Master that one distinction and customer development stops feeling like sales at all. It starts feeling like detective work, and the clues are everywhere once you know how to ask.
+The deeper skill underneath all of this is learning to tell a real signal from a flattering one, the difference between "this is great" and "here's my card." Master that one distinction and [customer development](/blog/sales-customer-development/03-customer-development-get-out-of-the-building) stops feeling like sales at all. It starts feeling like detective work, and the clues are everywhere once you know how to ask.

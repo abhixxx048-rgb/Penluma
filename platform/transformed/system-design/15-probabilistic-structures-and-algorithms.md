@@ -30,9 +30,10 @@ faq:
     a: Many can. HyperLogLog sketches merge by taking the element-wise maximum, and Count-Min sketches add. This mergeability is what lets you compute a global answer by combining per-server summaries.
   - q: Are probabilistic data structures used in real databases?
     a: Yes, widely. RocksDB, Cassandra, and HBase use Bloom filters, Redis ships HyperLogLog and Count-Min commands, and BigQuery's APPROX_COUNT_DISTINCT runs on HyperLogLog.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 topic: system-design
 topicTitle: System Design
 category: Engineering
@@ -94,7 +95,7 @@ A few things to know:
 
 ### Where you have already used one
 
-Bloom filters guard reads in storage engines like **RocksDB, Cassandra, HBase, and LevelDB**. When you look up a key, the filter instantly skips files that cannot contain it, turning a multi-file disk scan into a single in-memory check. Google's Bigtable popularized the trick. Chrome's Safe Browsing historically used a Bloom-style filter so checking a URL against the malware list was a local memory hit instead of a network call. Medium used one to skip posts you had already read.
+Bloom filters guard reads in [storage engines](/blog/system-design/04-databases-internals) like **RocksDB, Cassandra, HBase, and LevelDB**. When you look up a key, the filter instantly skips files that cannot contain it, turning a multi-file disk scan into a single in-memory check. Google's Bigtable popularized the trick. Chrome's Safe Browsing historically used a Bloom-style filter so checking a URL against the malware list was a local memory hit instead of a network call. Medium used one to skip posts you had already read.
 
 ## Cardinality: counting coin-flip streaks
 
@@ -126,7 +127,7 @@ Its error is **one-sided: it never under-counts.** This makes it perfect for "is
 
 A Count-Min Sketch tells you how often a *given* item appeared, but not *which* items are popular. Pair it with a small heap that keeps the current top K, and you get approximate **top-K** tracking in bounded memory. **Redis** ships both as `CMS.*` and `TOPK.*` commands.
 
-This pattern is everywhere: "trending now" lists, rate-limiting the noisiest API keys, network traffic monitoring, and smart caches that only admit items the sketch says are popular (the **TinyLFU** admission policy used in the Caffeine cache works this way).
+This pattern is everywhere: "trending now" lists, rate-limiting the noisiest API keys, network traffic monitoring, and [smart caches](/blog/system-design/06-caching-deep) that only admit items the sketch says are popular (the **TinyLFU** admission policy used in the Caffeine cache works this way).
 
 ## Percentiles: why you cannot average a p99
 
@@ -147,7 +148,7 @@ Two people each hold a 10,000-page book and want to find which pages differ, wit
 
 That is a **Merkle tree**: a tree where each leaf is a hash of a data block and each parent is a hash of its children. The single root hash fingerprints the entire dataset. To compare two copies, exchange roots. If they match, the data is identical, done in one round trip. If they differ, recurse only into the mismatched branches.
 
-This is how **DynamoDB and Cassandra** repair drift between replicas after a network hiccup (Cassandra's `nodetool repair`). The same idea underpins **Git**, **IPFS and blockchains**, **ZFS** integrity scrubbing, and **rsync**-style file sync. It is the practical answer to the question "two copies drifted apart, what changed?" without shipping everything across the wire.
+This is how **DynamoDB and Cassandra** [repair drift between replicas](/blog/system-design/08-replication-and-partitioning) after a network hiccup (Cassandra's `nodetool repair`). The same idea underpins **Git**, **IPFS and blockchains**, **ZFS** integrity scrubbing, and **rsync**-style file sync. It is the practical answer to the question "two copies drifted apart, what changed?" without shipping everything across the wire.
 
 ## Spreading data across machines: consistent hashing
 
@@ -157,14 +158,14 @@ Suppose you spread a million cache keys across ten servers using `hash(key) mod 
 
 There is one wrinkle. If each server sits at a single point on the ring, the slices come out lumpy and some servers get overloaded. The fix is **virtual nodes**: place each physical server at many points around the ring (say 100 to 256). The load evens out, a more powerful machine can simply take more points, and when a server dies its load spreads across many survivors instead of dumping onto one unlucky neighbor.
 
-This is the partitioning scheme behind **Amazon Dynamo, Cassandra, Riak, and ScyllaDB**, and it drives sticky load balancing in **memcached clients** and **Envoy**.
+This is the partitioning scheme behind **Amazon Dynamo, Cassandra, Riak, and ScyllaDB**, and it drives [sticky load balancing](/blog/system-design/07-load-balancing-and-scaling) in **memcached clients** and **Envoy**.
 
 ## Mapping the world: geohash, quadtrees, and S2
 
 "Find restaurants within 2 km of me" sounds easy until you have millions of points. A normal index sorts on one dimension, but locations are two-dimensional. The trick is to flatten the map into a single sorted line while keeping nearby places near each other in that line.
 
 - **Geohash** interleaves the bits of latitude and longitude into a short string, so places that share a prefix are physically close. A prefix range becomes a map box. It is simple and works in any database. **Redis GEO** commands use it. The catch is the **edge problem**: two spots on opposite sides of a cell boundary can be neighbors in real life but share no prefix, so you must also check the surrounding cells.
-- **Quadtrees** recursively split space into four quadrants until each cell is sparse enough. Dense cities subdivide deeply, empty oceans stay coarse. Great for changing point sets and nearest-neighbor queries.
+- **Quadtrees** recursively split space into four quadrants until each cell is sparse enough. Dense cities subdivide deeply, empty oceans stay coarse. Great for changing point sets and [nearest-neighbor queries](/blog/system-design/19-specialized-systems-search-geo-timeseries).
 - **S2**, from Google, wraps the map onto a cube and threads a space-filling curve through it for excellent locality and correct handling of the poles and the date line. Uber's **H3** is the hexagonal cousin used for surge pricing. These power Google Maps, MongoDB's geo features, and many ride-hailing systems.
 
 ## Fast ordered lookups: skip lists

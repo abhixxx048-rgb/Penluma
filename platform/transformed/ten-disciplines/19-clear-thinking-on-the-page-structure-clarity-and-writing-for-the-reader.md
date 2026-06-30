@@ -39,9 +39,10 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 18
 icon: "\U0001F9ED"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -49,7 +50,7 @@ Most people think writing is about putting words on a page. It isn't. Writing is
 
 The words are just the delivery vehicle. If your reader closes the email more confused than before they opened it, your writing failed - no matter how elegant the sentences looked.
 
-Here's the good news: clear writing is not a talent you're born with. It's a short stack of habits anyone can learn, and you can apply the first one to your very next message.
+Here's the good news: [clear writing is not a talent you're born with](/blog/clear-thinking-and-expression/04-clear-writing-is-clear-thinking). It's a short stack of habits anyone can learn, and you can apply the first one to your very next message.
 
 ## Why this matters
 
@@ -95,13 +96,13 @@ Every message should have one job. Before writing a word, finish this sentence:
 
 *"After reading this, my reader will ___ (think / feel / do) ___."*
 
-If you can't finish it, you're not ready to write. You're still thinking - and you should do that thinking first.
+If you can't finish it, you're not ready to write. You're still thinking - and you should [do that thinking first](/blog/clear-thinking-and-expression/03-think-on-paper-why-externalizing-beats-thinking-in-your-head).
 
 > A taxi won't move until you name the destination. An email without a purpose is a taxi driving in circles, burning the reader's time. Name the destination first.
 
 ## Clear sentences: one idea at a time
 
-With the mindset in place, we get to the smallest unit of clear writing: the sentence. The goal is for your sentence to be like a clean window - the reader notices the *view* (your meaning), not the *glass* (your prose).
+With the mindset in place, we get to [the smallest unit of clear writing](/blog/clear-thinking-and-expression/05-from-fuzzy-idea-to-clear-sentence-the-smallest-unit): the sentence. The goal is for your sentence to be like a clean window - the reader notices the *view* (your meaning), not the *glass* (your prose).
 
 Three habits produce clear sentences, and you can learn all three today.
 
@@ -194,7 +195,7 @@ Two related structures formalize "answer first."
 
 The **inverted pyramid** comes from journalism: most important information at the top, supporting details below, least important at the bottom. The reader can stop at any point and still have the essentials. Perfect for news, status updates, and announcements.
 
-The **Pyramid Principle**, made famous by Barbara Minto at the consulting firm McKinsey, takes it further. Start with your single main answer at the top. Support it with a few grouped key arguments. Back each argument with evidence underneath. Every level supports the one above it.
+The [**Pyramid Principle**](/blog/clear-thinking-and-expression/06-structure-frameworks-pyramid-principle-scqa-prep), made famous by Barbara Minto at the consulting firm McKinsey, takes it further. Start with your single main answer at the top. Support it with a few grouped key arguments. Back each argument with evidence underneath. Every level supports the one above it.
 
 ```
 THE MINTO PYRAMID (answer-first hierarchy)
@@ -227,7 +228,7 @@ They cost almost nothing and dramatically lower the reader's effort. "However" w
 
 ## Editing: the first draft is for you, the second is for the reader
 
-Here's a secret that frees a lot of beginners: **nobody writes a clear first draft.** Good writing is rewriting. The first draft exists only to get your messy thoughts out of your head and onto the page. Clarity comes in the editing.
+Here's a secret that frees a lot of beginners: **nobody writes a clear first draft.** [Good writing is rewriting](/blog/clear-thinking-and-expression/07-editing-turning-a-messy-draft-into-something-clear). The first draft exists only to get your messy thoughts out of your head and onto the page. Clarity comes in the editing.
 
 > Editing is sculpting. A sculptor doesn't *add* a statue onto a block of marble - they reveal it by *removing* the stone that isn't the statue. You don't polish a draft by piling on words; you reveal the meaning by cutting away everything that isn't it.
 

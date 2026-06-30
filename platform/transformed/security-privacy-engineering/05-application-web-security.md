@@ -30,9 +30,10 @@ faq:
     a: Security headers are HTTP response headers like Content-Security-Policy and Strict-Transport-Security that add cheap, high-leverage defense. They reduce the damage from XSS, clickjacking, and protocol downgrade attacks.
   - q: What was the Capital One breach and how did it happen?
     a: In 2019 an SSRF flaw tricked a misconfigured firewall into requesting the AWS metadata endpoint, which returned temporary credentials. Combined with an over-privileged role, the attacker accessed data on 106 million customers.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 topic: security-privacy-engineering
 topicTitle: Security & Privacy Engineering
 category: Engineering
@@ -44,7 +45,7 @@ sources: []
 
 Picture a restaurant kitchen with an open window onto a busy public street. Anyone walking by can slip a note through the window, and the cooks act on whatever the note says. Most notes read "one burger, please." But one note says "set the stove on fire" - and if the kitchen trusts every note's good intentions, it burns down.
 
-That open window is your web application. The notes are user input. And here is the uncomfortable truth: almost no breaches happen because someone cracked your encryption with a supercomputer. They happen because ordinary application code trusted data it should never have trusted.
+That open window is your web application. The notes are user input. And here is the uncomfortable truth: almost no breaches happen because someone cracked your [encryption](/blog/security-privacy-engineering/03-cryptography-made-simple) with a supercomputer. They happen because ordinary application code trusted data it should never have trusted.
 
 ## Why this matters
 
@@ -85,7 +86,7 @@ The rest of this article walks through the bugs you'll actually meet.
 
 This is the most common serious vulnerability on the web, and it comes from confusing two words that sound similar.
 
-- **Authentication** proves *who* you are. (You logged in.)
+- **[Authentication](/blog/security-privacy-engineering/04-authentication-authorization)** proves *who* you are. (You logged in.)
 - **Authorization** checks whether you are allowed to touch *this specific record*.
 
 The bug is authenticating you correctly, then forgetting to authorize. The classic form is **IDOR** (Insecure Direct Object Reference). The URL reads `/orders/1043`. You change it to `/orders/1044`. You see someone else's order - because the server fetched the row by ID and never checked who owned it.
@@ -166,7 +167,7 @@ SameSite alone is defense in depth, not a complete fix - mutating requests and s
 
 ## SSRF: making the server fetch the wrong URL
 
-**Server-Side Request Forgery (SSRF)** happens when your app fetches a URL the user supplies - think image-from-URL, webhooks, or a PDF renderer - and the attacker points it at internal infrastructure that the *server* can reach but they cannot.
+**Server-Side Request Forgery (SSRF)** happens when your app fetches a URL the user supplies - think image-from-URL, webhooks, or a PDF renderer - and the attacker points it at [internal infrastructure](/blog/security-privacy-engineering/06-network-cloud-infrastructure-security) that the *server* can reach but they cannot.
 
 ```
 Attacker --> "fetch http://169.254.169.254/..." --> YOUR SERVER
@@ -177,7 +178,7 @@ Attacker --> "fetch http://169.254.169.254/..." --> YOUR SERVER
 
 The textbook case is **Capital One, 2019**. A misconfigured firewall was tricked into requesting the AWS metadata endpoint at `169.254.169.254`, which handed back temporary cloud credentials. The attacker used them to read storage buckets and steal data on **106 million customers**.
 
-Notice there were *two* root causes: the SSRF flaw *and* an over-privileged role. With least privilege, the blast radius would have been tiny - which is exactly why the principle matters.
+Notice there were *two* root causes: the SSRF flaw *and* an over-privileged role. With [least privilege](/blog/security-privacy-engineering/02-core-security-foundations), the blast radius would have been tiny - which is exactly why the principle matters.
 
 To defend against SSRF: allow-list the destinations your app is permitted to fetch; block private and link-local IP ranges (`169.254.x`, `10.x`, `127.x`, and the metadata IP); don't blindly follow redirects; and on AWS, require token-based metadata (IMDSv2).
 
@@ -187,7 +188,7 @@ Three risks round out the picture, and all three are about trusting things you s
 
 **Security Misconfiguration** (now #2) means default passwords, debug mode left on in production, verbose stack traces, open storage buckets, and missing security headers. It climbed the list because continuous deployment now ships faster than continuous scanning can keep up.
 
-**Software Supply Chain Failures** mean you inherit every bug in your dependencies. The icon here is **Log4Shell** (2021): a feature in the popular Log4j logging library let attackers run arbitrary code simply by getting a malicious string logged. Around 7,000 packages depended on it, so the vulnerability stayed exploitable deep in the dependency tree long after a patch existed. Defend with dependency scanners (Dependabot, Snyk, `npm audit`), pinned and verified dependencies, and fast patching.
+**Software Supply Chain Failures** mean you inherit every bug in your dependencies. The icon here is **Log4Shell** (2021): a feature in the popular Log4j logging library let attackers run arbitrary code simply by getting a malicious string logged. Around 7,000 packages depended on it, so the vulnerability stayed exploitable deep in the dependency tree long after a patch existed. Defend with [dependency scanners](/blog/security-privacy-engineering/09-secure-sdlc-devsecops) (Dependabot, Snyk, `npm audit`), pinned and verified dependencies, and fast patching.
 
 **Hardcoded secrets** are the quiet epidemic. API keys, database passwords, and tokens committed into source code leak through Git history, public repos, and client bundles. GitGuardian's 2026 report counted **28.65 million new hardcoded secrets** pushed to public GitHub in a single year - and AI-assisted commits leaked them at roughly double the human rate.
 

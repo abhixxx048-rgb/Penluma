@@ -51,9 +51,10 @@ faq:
       Richard Rumelt says a real strategy has three parts: a clear diagnosis of
       the problem, a guiding policy for the approach, and coherent action. If you
       cannot state the diagnosis in one sentence, you have a wish, not a strategy.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -65,7 +66,7 @@ This is the part of strategy nobody puts on the whiteboard. And it is where the 
 
 ## Why this matters
 
-You can learn to read an industry, spot a moat, and choose a brilliant position. None of it pays off if the strategy dies the moment it meets real people, real incentives, and real money.
+You can learn to [read an industry](/blog/ten-disciplines/14-industry-forces-competition-business-models-and-value-creation), [spot a moat](/blog/ten-disciplines/13-what-strategy-really-is-advantage-moats-and-positioning), and choose a brilliant position. None of it pays off if the strategy dies the moment it meets real people, real incentives, and real money.
 
 Here is the uncomfortable truth: **a brilliant strategy badly executed loses to a decent strategy executed with discipline.** The choice gets the headlines. Execution, growth discipline, and capital decisions decide who actually wins, quietly, over years.
 
@@ -194,7 +195,7 @@ Here is the idea that separates investors from empire-builders: **growth only cr
 Two terms make this precise:
 
 - **ROIC (Return on Invested Capital)** - the profit a business earns as a percentage of the money tied up in it.
-- **Cost of capital** - the minimum return investors require for the risk they take. The "hurdle rate" growth must clear.
+- **Cost of capital** - [the minimum return investors require for the risk they take](/blog/ten-disciplines/17-time-value-of-money-risk-return-and-how-investing-works). The "hurdle rate" growth must clear.
 
 A quick analogy makes it vivid. Suppose you borrow money at 10% interest and invest it in projects that return 7%. The more you "grow" by borrowing and investing, the faster you go broke. Every new dollar loses three cents. Now flip it: borrow at 10%, invest at 25%, and every dollar of growth mints value.
 
@@ -243,11 +244,11 @@ The stakes are larger than they look. Compounded over a 20-year career, the diff
 
 ## Deciding under reaction and uncertainty
 
-One last layer makes all of this advanced rather than mechanical. In the real world you are not deciding in a vacuum. Rivals react, customers shift, and the future is genuinely uncertain. Two habits keep your decisions honest.
+One last layer makes all of this advanced rather than mechanical. In the real world you are not deciding in a vacuum. Rivals react, customers shift, and [the future is genuinely uncertain](/blog/ten-disciplines/28-how-to-make-good-decisions-under-uncertainty). Two habits keep your decisions honest.
 
 ### Always ask, "And then what?"
 
-Strategy is a multi-round game, not a single move. Every major move (a price cut, a market entry, a big acquisition) invites a counter-move.
+Strategy is a [multi-round game](/blog/ten-disciplines/30-advanced-decision-science-game-theory-bias-proofing-and-sharp-judgment), not a single move. Every major move (a price cut, a market entry, a big acquisition) invites a counter-move.
 
 Say your plan is, "We'll cut prices 20% to win share." *And then what?* The incumbent, with deeper pockets, matches you. Now everyone earns less and your share is unchanged. You started a price war you cannot win. The move that *looked* decisive on the spreadsheet was a blunder once you played the second round. Simulate the reaction before you commit the capital.
 
@@ -278,4 +279,4 @@ If you remember one thing, remember this: the choice gets the headlines, but exe
 
 The frameworks in this article will come and go; many are just repackaged best practices. The enduring questions never change: *Where will we play? How will we win? Why will we keep winning? And where, exactly, should the next dollar go?*
 
-That last question, where the next dollar goes, is the one most leaders answer worst. Empire-builders chase the glamorous acquisition while quiet allocators buy back cheap stock and compound their lead for 20 years. Which raises a deeper puzzle worth sitting with: if disciplined capital allocation is so powerful and so well documented, why do so few leaders do it? The answer lives in the psychology of decision-making, ego, status, and the very biases we just named, and it is where strategy meets the harder study of human nature.
+That last question, where the next dollar goes, is the one most leaders answer worst. Empire-builders chase the glamorous acquisition while quiet allocators buy back cheap stock and compound their lead for 20 years. Which raises a deeper puzzle worth sitting with: if disciplined capital allocation is so powerful and so well documented, why do so few leaders do it? The answer lives in [the psychology of decision-making](/blog/ten-disciplines/08-biases-heuristics-and-why-smart-people-make-predictable-errors), ego, status, and the very biases we just named, and it is where strategy meets the harder study of human nature.

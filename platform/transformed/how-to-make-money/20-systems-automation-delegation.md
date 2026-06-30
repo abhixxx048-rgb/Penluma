@@ -34,7 +34,7 @@ faq:
     a: "No. 'Set and forget' is a myth. Systems take real upfront effort to build and ongoing effort to maintain. You trade current effort for less future effort, never zero effort."
   - q: "How do systems affect what my business is worth?"
     a: "A buyer pays for cash flow that survives you leaving. An owner-dependent business sells at a 25 to 35% discount, while a system-run one can fetch one to two extra turns of profit, often adding millions for the same earnings."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources:

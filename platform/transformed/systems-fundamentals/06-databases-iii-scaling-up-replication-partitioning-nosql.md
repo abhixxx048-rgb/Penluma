@@ -57,9 +57,10 @@ faq:
       PostgreSQL forks a separate OS process per connection, costing megabytes
       each, and caps total connections. A pool reuses a few open connections for
       many requests so the database never gets overwhelmed.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -179,7 +180,7 @@ This is the deep idea that ties everything together.
 
 **Writes must be serialized** - placed in a definite order - to keep data consistent. That ordering needs a single decision point (the leader), and a single decision point is, by definition, a chokepoint. Sharding scales writes only by giving up easy cross-shard joins and transactions.
 
-This is a **CAP-theorem**-flavored trade-off. The more you spread data across machines, the more you drift toward **eventual consistency** - copies that agree *eventually*, not instantly - unless you pay extra latency to stay strongly consistent. Spread, speed, and strict consistency: you can have two, and the third costs you.
+This is a **[CAP-theorem](/blog/distributed-systems/16-the-cap-theorem-and-pacelc)**-flavored trade-off. The more you spread data across machines, the more you drift toward **[eventual consistency](/blog/distributed-systems/17-consistency-models)** - copies that agree *eventually*, not instantly - unless you pay extra latency to stay strongly consistent. Spread, speed, and strict consistency: you can have two, and the third costs you.
 
 ## NoSQL: what it actually trades away
 
@@ -196,7 +197,7 @@ In practice, picking the tool looks like this: a shopping-cart session goes to R
 
 ## SQL vs NoSQL: a balanced view
 
-**SQL databases** like PostgreSQL and MySQL give you a strict schema, strong **ACID transactions** (reliable all-or-nothing changes), powerful joins, and decades of maturity. They are the right default whenever relationships and correctness matter - money, orders, inventory.
+**SQL databases** like PostgreSQL and MySQL give you a strict schema, strong **[ACID transactions](/blog/systems-fundamentals/04-databases-i-relational-databases-sql-acid)** (reliable all-or-nothing changes), powerful joins, and decades of maturity. They are the right default whenever relationships and correctness matter - money, orders, inventory.
 
 **NoSQL** gives you flexible schemas, built-in horizontal scale, and high throughput, but weaker (often eventual) consistency and limited joins, so you model the data around your exact queries.
 
@@ -221,7 +222,7 @@ When one server starts straining, work down this list in order:
 1. **Scale up first.** Move to a bigger machine. It is the cheapest fix in engineering time and solves more cases than you would expect.
 2. **Add read replicas** if reads are your bottleneck. Split traffic so writes hit the leader and reads hit replicas.
 3. **Patch the read-your-own-writes bug** when you add replicas: pin a user's reads to the leader for a few seconds after they write.
-4. **Add caching** for hot, repeated reads before you ever consider sharding.
+4. **[Add caching](/blog/system-design/06-caching-deep)** for hot, repeated reads before you ever consider sharding.
 5. **Put a connection pool in front of PostgreSQL** from day one, and size it to the database, not your traffic.
 6. **Shard only as a last resort**, and choose a high-variety, evenly spread shard key - never country or status. Use consistent hashing with virtual nodes, never `hash(key) % N`.
 7. **Pick your database by access pattern.** Default to relational; reach for a specific NoSQL family when its strengths match your exact queries.
@@ -230,4 +231,4 @@ When one server starts straining, work down this list in order:
 
 If you remember one thing, make it this: **reads are easy to scale and writes are hard**, because writes must pass through a single ordering point to stay consistent. Every technique in this article is really a different answer to that one tension - replicas fan out the easy part, shards split the hard part, and NoSQL trades strict consistency for scale.
 
-So the next question is the one that quietly decides whether your system stays correct under load: when two machines disagree about the latest value, who wins, and how do they agree again? That is the world of **consensus** - Raft, Paxos, and the algorithms that let a cluster make a single decision even when servers fail. Master that, and distributed systems stop feeling like magic and start feeling like engineering.
+So the next question is the one that quietly decides whether your system stays correct under load: when two machines disagree about the latest value, who wins, and how do they agree again? That is the world of **[consensus](/blog/distributed-systems/02-the-consensus-problem)** - Raft, Paxos, and the algorithms that let a cluster make a single decision even when servers fail. Master that, and distributed systems stop feeling like magic and start feeling like engineering.

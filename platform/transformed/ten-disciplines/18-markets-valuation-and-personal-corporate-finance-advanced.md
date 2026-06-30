@@ -49,15 +49,16 @@ faq:
       Nominal return is the headline number, like 4%. Real return is what is left
       after inflation, roughly nominal minus inflation. If you earn 4% while
       inflation runs 5%, your real return is negative 1%.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
 Imagine a lottery hands you a choice: one million dollars right now, or one hundred twenty thousand dollars a year for ten years. The second pile adds up to one point two million. It looks like the obvious winner. It isn't. Once you account for the years of waiting, that bigger pile is actually worth less.
 
-That one twist is the whole secret of advanced finance. Master it, and stocks, bonds, business projects, and your own savings plan all stop being separate mysteries. They become the same question, wearing different costumes.
+That one twist is the whole secret of advanced finance. Master it, and [stocks, bonds](/blog/economics-from-first-principles/19-financial-markets-stocks-bonds-commodities-and-derivatives), business projects, and your own savings plan all stop being separate mysteries. They become the same question, wearing different costumes.
 
 ## Why this matters
 
@@ -87,7 +88,7 @@ Take the $120,000-a-year option and discount each payment at 6%.
 
 The first payment, arriving in a year, is worth $120,000 ÷ 1.06, or about $113,200 today. The tenth payment, a full decade out, is worth only about $67,000 today. Add all ten shrunken values and you land near $880,000, which is less than the $1,000,000 lump sum.
 
-The "bigger" pile lost because most of it arrives late. That is the time value of money making a real decision for you.
+The "bigger" pile lost because most of it arrives late. That is [the time value of money](/blog/ten-disciplines/17-time-value-of-money-risk-return-and-how-investing-works) making a real decision for you.
 
 ### Stacking it up: net present value
 
@@ -151,7 +152,7 @@ CAPM doesn't reveal the "true" return. It tells you the **hurdle** a risky asset
 
 An **interest rate** is the price of money: the cost to borrow and the reward to lend. It sits at the center of finance because it *is* the discount rate in disguise. When rates rise, every future dollar gets a heavier haircut, so the present value of nearly everything falls.
 
-Think of interest rates as gravity for prices. Low gravity lets prices float high. Raise the gravity and everything gets pulled down. That's why markets lurch the day a central bank moves rates.
+Think of interest rates as gravity for prices. Low gravity lets prices float high. Raise the gravity and everything gets pulled down. That's why markets lurch the day [a central bank moves rates](/blog/ten-disciplines/06-the-big-picture-money-growth-inflation-and-the-macro-economy-advanced).
 
 ### Bonds and the part that fools everyone
 
@@ -207,13 +208,13 @@ A few beliefs feel like common sense and quietly cost people money:
 - **"Bonds go up when rates go up."** They go down. Existing bond prices move opposite to rates.
 - **"Low P/E means it's a bargain."** Sometimes it means the business is dying. Context is everything.
 - **"The market price must be correct."** Markets are usually reasonable but periodically manic or depressed. Confusing price with value is how people buy at the top and sell at the bottom.
-- **"I'll sell when it gets back to what I paid."** The market doesn't know or care what you paid. Anchoring to your purchase price is the sunk-cost fallacy. Decide based on what the asset is worth *now*, not your personal break-even.
+- **"I'll sell when it gets back to what I paid."** The market doesn't know or care what you paid. Anchoring to your purchase price is [the sunk-cost fallacy](/blog/ten-disciplines/08-biases-heuristics-and-why-smart-people-make-predictable-errors). Decide based on what the asset is worth *now*, not your personal break-even.
 
 ## How to run your own money like a pro
 
 You already know the order of operations: budget, build an emergency fund, kill bad debt, capture the employer match, then invest. Here's how to sharpen the parts people get wrong even after they "know" the rules.
 
-1. **Think in real returns, not nominal.** Nominal is the headline ("I earned 4%"). Real return is what's left after inflation, roughly nominal minus inflation. Earn 4% while inflation runs 5% and your real return is *negative 1%*. A savings account that trails inflation is a slow leak, not safety.
+1. **Think in real returns, not nominal.** Nominal is the headline ("I earned 4%"). Real return is what's left after [inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money), roughly nominal minus inflation. Earn 4% while inflation runs 5% and your real return is *negative 1%*. A savings account that trails inflation is a slow leak, not safety.
 
 2. **Attack high-interest debt first.** Paying off a 20% credit card is a *guaranteed* 20% return, risk-free and tax-free, better than almost any investment you could pick. Use the **avalanche** method (highest interest rate first) for the lowest total cost. If motivation is your weak point, the **snowball** method (smallest balance first) gives quick wins that keep you going, and a plan you stick to beats a perfect plan you abandon.
 

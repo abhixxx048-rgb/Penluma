@@ -34,12 +34,13 @@ faq:
     a: No. A stack trace like "SQLSTATE General error" means nothing to a shop owner. Map errors to plain language such as "Database connection issue" and tuck the technical detail behind a collapsed Debug section.
   - q: What feedback work can wait until after launch?
     a: Helpdesk ticketing, risk scoring, session-replay heatmaps, and review sentiment tagging are real gaps but not blockers. Several are better validated against real traffic than built on guesses.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
-A customer opens your order, sees color banding across the print, and writes you a message: "my order looks wrong." They also leave a one-star review. And you, the store owner, never hear a word about either one.
+A customer opens your order, sees [color banding across the print](/blog/print-production-craft/07-color-files-prepress-cmyk-pantone-bleed-proofs-preflight), and writes you a message: "my order looks wrong." They also leave a one-star review. And you, the store owner, never hear a word about either one.
 
 That is not a hypothetical. It is what happens when a platform can **transact** but cannot **listen**. It takes orders, charges cards, and sends shipping emails flawlessly, then goes completely silent the moment a customer tries to tell you something.
 
@@ -49,7 +50,7 @@ Here is the uncomfortable truth: a store that can sell but cannot hear feedback 
 
 When you launch to your first real customers, you are not trying to prove you can take money. You already know you can. You are trying to learn one thing: **does this actually work for the people on the other end?**
 
-The only way to learn that is to listen. And listening is not automatic. It is a set of deliberate loops you have to build: a way to ask "how did we do?", a signal when checkout breaks, a nudge for the cart someone left behind, and a notification when a customer reaches out.
+The only way to learn that is to listen. And listening is not automatic. It is [a set of deliberate loops](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves) you have to build: a way to ask "how did we do?", a signal when checkout breaks, a nudge for the cart someone left behind, and a notification when a customer reaches out.
 
 Skip those loops and problems do not go away. They go quiet. A failed payment, an ignored complaint, a rotting review, an error that fires fifty times a week, all accumulate invisibly until they reappear in the worst possible form: **churn and chargebacks**. By then the customer is gone and the signal is too late to use.
 
@@ -57,7 +58,7 @@ This matters most when your store owners are non-technical. They will not dig th
 
 ## The core gap: transacting is not listening
 
-Think of two very different skills. One is **doing**: take the order, charge the card, print the goods, ship the box. The other is **sensing**: noticing when something went wrong and learning whether the customer was happy.
+Think of two very different skills. One is **doing**: take the order, charge the card, print the goods, ship the box. The other is **sensing**: [noticing when something went wrong](/blog/product-sense-empathy/06-closing-the-gulfs-action-feedback-the-seven-stages) and learning whether the customer was happy.
 
 Most early platforms nail the doing and forget the sensing. The order lifecycle runs all the way to "shipped," the shipping email even fires, and then the conversation just ends. No one ever asks how it went.
 
@@ -139,7 +140,7 @@ No complaints usually means **no channel for complaints**. Silence is the defaul
 Some things genuinely should wait. But the post-delivery survey and owner notifications are how you *understand* that traffic in the first place. Launch without them and your first cohort's lessons land in a void you can never recover.
 
 **"More analytics widgets means more insight."**
-A dashboard full of charts that don't surface friction is decoration. One "checkout error rate" number beats ten revenue graphs when something is broken.
+A dashboard full of charts that don't surface [friction](/blog/product-sense-empathy/09-reducing-friction-flows-steps-progressive-disclosure) is decoration. One "checkout error rate" number beats ten revenue graphs when something is broken.
 
 ## How to use this
 
@@ -159,4 +160,4 @@ One discipline ties it together: **every captured field must validate, save, rea
 
 The single takeaway is this: **a store proves it can sell long before it proves it can listen, and launch readiness is about the listening.** Build the loops that turn a customer's quiet frustration into a signal you can see today, instead of a chargeback you discover next month.
 
-And once you can finally hear your customers, a new question opens up. Not every signal deserves the same response. Which complaints predict a refund, which predict a loyal repeat buyer, and how do you tell them apart before the order even ships? That is where at-risk order scoring begins, and it is a far more interesting problem once you are actually listening.
+And once you can finally [hear your customers](/blog/sales-customer-development/03-customer-development-get-out-of-the-building), a new question opens up. Not every signal deserves the same response. Which complaints predict a refund, which predict a loyal repeat buyer, and how do you tell them apart before the order even ships? That is where at-risk order scoring begins, and it is a far more interesting problem once you are actually listening.

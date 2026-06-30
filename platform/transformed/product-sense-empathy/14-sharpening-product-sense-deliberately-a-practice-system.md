@@ -56,8 +56,9 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 13
 icon: ❤️
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -67,7 +68,7 @@ The good news is that you can build the same muscle. The even better news is tha
 
 ## Why this matters
 
-Understanding ideas about good design is not the same as having skill. You can read every book on product sense and still freeze when it's your turn to decide where a button goes.
+Understanding ideas about good design is not the same as having skill. You can read every book on [product sense](/blog/product-sense-empathy/02-what-product-sense-really-is) and still freeze when it's your turn to decide where a button goes.
 
 Skill comes from practice, not reading. And product sense has a wonderful property: it **compounds**. Every example you study becomes a pattern stored in your head. The more patterns you collect, the faster you recognize new ones, almost without thinking.
 
@@ -127,7 +128,7 @@ Yes, it slows the start. But it saves time and money by surfacing problems befor
 
 The phrase is "strong opinions, weakly held." You have to commit to a hypothesis to design anything at all. But then you go looking for evidence that you're **wrong**, not evidence that you're right.
 
-This fights **confirmation bias**, the very human habit of noticing only what agrees with us. It pairs perfectly with talking to users the right way, which we'll get to below.
+This fights [**confirmation bias**](/blog/clear-thinking-and-expression/18-cognitive-biases-logical-fallacies-and-how-to-dodge-them), the very human habit of noticing only what agrees with us. It pairs perfectly with talking to users the right way, which we'll get to below.
 
 ### Run the shop-owner test
 
@@ -145,7 +146,7 @@ This single habit catches most of your worst mistakes before they ship.
 
 ## The vocabulary that makes your teardowns real
 
-Good teardowns name causes, not vibes. "This feels off" is useless. "The signifier contradicts the affordance" is a finding you can act on. Borrow this language from a few pillars of the field.
+Good teardowns name causes, not vibes. "This feels off" is useless. "The signifier contradicts the affordance" is a [finding you can act on](/blog/product-sense-empathy/05-the-psychology-of-obvious-affordances-signifiers-mental-models). Borrow this language from a few pillars of the field.
 
 ### Don Norman's five concepts
 
@@ -186,7 +187,7 @@ From Jon Yablonski's *Laws of UX*:
 
 ## Find the user's real job (JTBD)
 
-Harvard professor Clayton Christensen popularized **Jobs To Be Done**: customers don't buy products, they **hire** them to make progress in a specific situation.
+Harvard professor Clayton Christensen popularized [**Jobs To Be Done**](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress): customers don't buy products, they **hire** them to make progress in a specific situation.
 
 The famous example is milkshakes. A restaurant chain wanted to sell more of them. Improving the flavor based on focus groups did nothing. So researchers stopped asking and started *watching*, and found that nearly half of shakes sold before 8:30am, to solo drivers who bought only the shake and left.
 
@@ -196,7 +197,7 @@ The lesson: **watch, don't just ask, and define the job, not the product categor
 
 ## Talk to users without being lied to (The Mom Test)
 
-Rob Fitzpatrick's *The Mom Test* makes an uncomfortable point: people lie to you politely about your idea, even your own mom. So you ask questions that even your mom couldn't lie about. Three rules:
+Rob Fitzpatrick's [*The Mom Test*](/blog/product-sense-empathy/13-doing-user-research-interviews-the-mom-test-observation) makes an uncomfortable point: people lie to you politely about your idea, even your own mom. So you ask questions that even your mom couldn't lie about. Three rules:
 
 1. Talk about **their life**, not your idea.
 2. Ask about **specifics in the past**, not opinions about the future.
@@ -243,4 +244,4 @@ If you remember one thing, remember this: product sense isn't a gift you're wait
 
 So start today with the easiest habit on the list, the five-minute swipe file, and let it compound.
 
-And here's the thread worth pulling next: every habit above assumes you can step outside your own head and see your product through a stranger's eyes. That skill, empathy on demand, is harder than it sounds, because your own expertise is constantly working against you. Learning to deliberately un-know what you know might be the most valuable trick of all.
+And here's the thread worth pulling next: every habit above assumes you can step outside your own head and see your product through a stranger's eyes. That skill, [empathy on demand](/blog/product-sense-empathy/03-user-empathy-seeing-through-the-user-s-eyes), is harder than it sounds, because your own expertise is constantly working against you. Learning to deliberately un-know what you know might be the most valuable trick of all.

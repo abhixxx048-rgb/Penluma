@@ -17,7 +17,7 @@ keywords:
   - do things that don't scale
   - GST registration threshold India
   - ESOP taxation India
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: how-to-make-money

@@ -30,9 +30,10 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 16
 icon: ❤️
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 sources: []
+linked: true
 ---
 
 Some people seem to have a sixth sense for what makes a product feel good. They look at a screen for three seconds and say, "the save button looks disabled, that's why people quit here" - and they're right.
@@ -45,7 +46,7 @@ Here are honest answers to the questions almost everyone asks before they start.
 
 If you believe product sense is a gift you either have or don't, you'll never bother building it. That belief quietly sorts people into "the creative ones" and "the rest of us" - and it's false.
 
-The truth is more useful: good taste in products is learnable, and the gap between you and the people who seem to have it is mostly **practice and attention**, not talent. Once you know that, the door is open.
+The truth is more useful: [good taste in products is learnable](/blog/product-sense-empathy/02-what-product-sense-really-is), and the gap between you and the people who seem to have it is mostly **practice and attention**, not talent. Once you know that, the door is open.
 
 ## Is product sense born or learned?
 
@@ -53,7 +54,7 @@ It's learned. Full stop.
 
 Some people get a head start because they naturally pay close attention to how things make people feel. But "good taste" is just thousands of tiny observations stacked up over years - *this layout felt confusing, that wording calmed me down, this delay made me give up.*
 
-Every principle in a good product guide is a shortcut to observations you'd otherwise spend years collecting the slow way. With deliberate practice, anyone can build the instinct.
+Every principle in a good product guide is a shortcut to observations you'd otherwise spend years collecting the slow way. With [deliberate practice](/blog/product-sense-empathy/14-sharpening-product-sense-deliberately-a-practice-system), anyone can build the instinct.
 
 **Analogy:** Nobody is born able to taste the difference between a good wine and a great one. Sommeliers train their palate one glass at a time. Product sense works the same way - you're training a palate for how software feels.
 
@@ -62,7 +63,7 @@ Every principle in a good product guide is a shortcut to observations you'd othe
 This distinction quietly decides whether you fix anything.
 
 - **Sympathy** is feeling sorry for someone: "That's a shame the user got confused."
-- **Empathy** is stepping into their shoes: "I see *exactly* why they got confused - the save button looked disabled."
+- **Empathy** is [stepping into their shoes](/blog/product-sense-empathy/03-user-empathy-seeing-through-the-user-s-eyes): "I see *exactly* why they got confused - the save button looked disabled."
 
 Sympathy keeps the problem at arm's length. Empathy makes it yours to solve. You want empathy every time.
 
@@ -91,10 +92,10 @@ The most damaging usability bugs often start deep in the code, far from any desi
 A designer makes things better and faster, and you should partner with one when you can. But you can't outsource product sense. The engineer who truly understands the user's job will catch problems the prettiest mockup hides.
 
 **"Simple and powerful are opposites - I have to choose."**
-You don't choose one. You *stage* them. This is **progressive disclosure**: show the simple path by default, reveal advanced controls on demand. Set smart defaults for the 90%, let the 10% dig deeper. The goal is "simple by default, powerful when needed" - never "complex for everyone."
+You don't choose one. You *stage* them. This is [**progressive disclosure**](/blog/product-sense-empathy/09-reducing-friction-flows-steps-progressive-disclosure): show the simple path by default, reveal advanced controls on demand. Set smart defaults for the 90%, let the 10% dig deeper. The goal is "simple by default, powerful when needed" - never "complex for everyone."
 
 **"Asking users what they want just gives bad answers."**
-People are genuinely poor at predicting their own behavior, so this is half true. The fix isn't to stop talking to them - it's to ask better questions. This is the idea behind **The Mom Test**: ask about real past actions, not your idea. *"What did you do the last time an order went wrong?"* beats *"Would you use this feature?"* every time.
+People are genuinely poor at predicting their own behavior, so this is half true. The fix isn't to stop talking to them - it's to ask better questions. This is the idea behind [**The Mom Test**](/blog/product-sense-empathy/13-doing-user-research-interviews-the-mom-test-observation): ask about real past actions, not your idea. *"What did you do the last time an order went wrong?"* beats *"Would you use this feature?"* every time.
 
 **"Thinking about all this is slower than just building."**
 It's faster overall. Confusing software generates support tickets, refunds, churn, and rework - all far more expensive than thinking clearly up front. Ten extra minutes making a checkout obvious can save a shop owner an abandoned order and save you a week of "why isn't this working?" emails. Empathy isn't a tax on shipping. It's what makes shipping count.
@@ -105,7 +106,7 @@ You don't need an audience to sharpen your judgment. Start here:
 
 1. **Dogfood your own product.** Use it as if you were the actual customer - the shop owner, the patient, the student - doing real tasks, not demos. Friction you'd normally explain away becomes obvious.
 2. **Keep a friction log.** Every time a product annoys you, write down what happened and *why* it annoyed you. The "why" is where the learning lives.
-3. **Do teardowns.** Pick apart great products to see what they got right, and bad ones to name what went wrong. You can build razor-sharp judgment from other people's products long before you have your own.
+3. **Do [teardowns](/blog/product-sense-empathy/12-how-great-products-make-hard-things-obvious-teardowns).** Pick apart great products to see what they got right, and bad ones to name what went wrong. You can build razor-sharp judgment from other people's products long before you have your own.
 
 ## How to know a design is good before you ship
 

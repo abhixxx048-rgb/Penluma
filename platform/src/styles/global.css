@@ -141,6 +141,14 @@ a.filament {
 .prose-research dt { @apply font-semibold text-slate-900 dark:text-[#f2f2f2]; }
 .prose-research dd { @apply mb-3 ml-0 pl-4 text-slate-600 dark:text-slate-400; }
 
+/* Wide tables scroll within the article instead of overflowing the page on mobile */
+.prose-research :where(table) {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 /* Shiki: show the right theme per color-mode */
 html.dark .astro-code,
 html.dark .astro-code span {

@@ -34,7 +34,8 @@ faq:
     a: A smart default is the value already filled in that matches what about 90% of users actually want, so the common case needs zero configuration. It should always be reversible and chosen to serve the user, not you.
   - q: How fast does feedback need to be in an interface?
     a: Aim for under about 400 milliseconds, the Doherty Threshold, where a response feels instant. When you can't be that fast, show a skeleton or spinner so the screen never looks blank, since a blank screen reads as broken.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
+linked: true
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things
@@ -76,13 +77,13 @@ How powerful is a default? The clearest evidence comes from organ donation. Coun
 
 For a print-shop product, this means a new item should arrive pre-set to what 90% of owners want: status **Active**, a sensible tax class, a common print size, a reasonable starting quantity. The owner can publish without opening a single setting.
 
-This is also **Hick's Law** at work: the more choices you show, the longer the decision takes. Fewer visible options plus a good default equals a faster, more obvious decision.
+This is also **Hick's Law** at work: [the more choices you show, the longer the decision takes](/blog/product-sense-empathy/07-cognitive-load-why-simple-feels-effortless). Fewer visible options plus a good default equals a faster, more obvious decision.
 
 A word of care: a default is a recommendation, never a trap. Always make it reversible - offer "Restore defaults" or an undo. And because so few people ever change it, choose it ethically. The default has to serve the user's interest, not yours.
 
 ## Tool 2 - Constraints: make bad actions impossible
 
-The best design stops problems before they happen instead of explaining them afterward. That's Nielsen's heuristic on **error prevention**.
+The best design stops problems before they happen instead of explaining them afterward. That's [Nielsen's heuristic](/blog/product-sense-empathy/10-evaluating-usability-nielsen-rsquo-s-10-heuristics) on **error prevention**.
 
 It helps to know the two kinds of errors you're guarding against:
 
@@ -133,7 +134,7 @@ Here's the difference in practice:
 
 ## Tool 6 - Immediate feedback
 
-People need to know the system heard them. That's Nielsen's first heuristic, **visibility of system status**, and you can pair it with the **Doherty Threshold**: productivity soars when a system responds in under about 400 milliseconds. Below that, it feels instant.
+[People need to know the system heard them](/blog/product-sense-empathy/06-closing-the-gulfs-action-feedback-the-seven-stages). That's Nielsen's first heuristic, **visibility of system status**, and you can pair it with the **Doherty Threshold**: productivity soars when a system responds in under about 400 milliseconds. Below that, it feels instant.
 
 When you can't be that fast, show a skeleton or an optimistic UI so the screen never looks blank. A blank screen reads as "broken."
 
@@ -164,9 +165,9 @@ When something fails, state the problem in human language, suggest a fix, and **
 
 None of this is guesswork. You learn the right default, the right place, and the right word by studying what people actually do.
 
-Clayton Christensen's milkshake study is the classic example. A fast-food chain found that about 40% of its milkshakes were bought early in the morning, by solo commuters, to go, as their only purchase. The shake was "hired" to make a dull commute bearable and keep one hand busy. The same chain's afternoon buyers were parents treating their kids, who wanted something thinner and smaller. Same product, two completely different jobs - and two different right designs. You find the obvious default by studying the real *job*, not the demographics.
+Clayton Christensen's milkshake study is the classic example. A fast-food chain found that about 40% of its milkshakes were bought early in the morning, by solo commuters, to go, as their only purchase. The shake was "hired" to make a dull commute bearable and keep one hand busy. The same chain's afternoon buyers were parents treating their kids, who wanted something thinner and smaller. Same product, two completely different jobs - and two different right designs. You find the obvious default by [studying the real *job*](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress), not the demographics.
 
-To gather that evidence honestly, use Rob Fitzpatrick's *The Mom Test*. Don't ask "do you like my idea?" - people lie to be kind. Ask about specific past behavior instead: "Walk me through the last time you set up a product." "How do you do this today?" That's how a vague hunch turns into a real answer.
+To gather that evidence honestly, use Rob Fitzpatrick's [*The Mom Test*](/blog/product-sense-empathy/13-doing-user-research-interviews-the-mom-test-observation). Don't ask "do you like my idea?" - people lie to be kind. Ask about specific past behavior instead: "Walk me through the last time you set up a product." "How do you do this today?" That's how a vague hunch turns into a real answer.
 
 Then run every screen and control through this checklist:
 

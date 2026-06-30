@@ -23,9 +23,10 @@ category: Engineering
 date: '2026-06-15'
 order: 19
 icon: "\U0001F3D7️"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 faq:
   - q: "When should I stop using Postgres and reach for a specialized database?"
     a: "When the query shape doesn't fit a B-tree lookup: ranked text search, nearest-by-distance, metrics over time, or aggregating billions of rows across a few columns. For fetching and updating a few rows by key, stay on Postgres."
@@ -50,7 +51,7 @@ This is a guide to the four most common "my Postgres can't do this efficiently" 
 
 ## Why this matters
 
-A regular database like PostgreSQL or MySQL is brilliant at exactly one job: **find or change a few rows by their key.** Its internal index (a B-tree) is a sorted list, perfect for "give me the row where `id = 42`" or "orders between March and April."
+A regular database like PostgreSQL or MySQL is brilliant at exactly one job: **find or change a few rows by their key.** Its [internal index (a B-tree)](/blog/system-design/04-databases-internals) is a sorted list, perfect for "give me the row where `id = 42`" or "orders between March and April."
 
 But a lot of real questions don't fit that shape:
 
@@ -150,7 +151,7 @@ PostGIS turns Postgres into a serious spatial database. You get a real distance-
 Two practical tips that save real pain:
 
 - Use the **`geography`** type for real-world distances in meters. Using the planar **`geometry`** type and asking for kilometers gives you nonsense, because it's measuring distance in degrees.
-- A single PostGIS node comfortably handles tens of millions of points and returns the 50 nearest in single-digit milliseconds. Beyond that you shard by region, which quietly reintroduces the edge problem at the shard boundaries.
+- A single PostGIS node comfortably handles tens of millions of points and returns the 50 nearest in single-digit milliseconds. Beyond that you [shard by region](/blog/system-design/08-replication-and-partitioning), which quietly reintroduces the edge problem at the shard boundaries.
 
 For "where are my drivers right now" leaderboards, **Redis GEO** is blazing fast and in-memory, but points-only and not your durable source of truth.
 
@@ -248,7 +249,7 @@ When a query feels slow, name its shape first, then pick the tool:
 4. **Aggregate billions of rows over a few columns?** Reach for a columnar analytics store (ClickHouse, BigQuery, Snowflake).
 5. **Fetch or update a few rows by key, with transactions?** Stay right where you are, on Postgres or MySQL.
 
-And the senior move that ties it together: **polyglot persistence.** Keep your transactional database as the single source of truth, then stream changes out (using change-data-capture tools like Debezium and Kafka) into specialized stores: Elasticsearch for search, ClickHouse for analytics. Your writes stay safe and consistent; your reads get the perfect index for each question. The price is that the derived stores lag slightly behind the source, which is almost always a fine trade.
+And the senior move that ties it together: **polyglot persistence.** Keep your transactional database as the single source of truth, then stream changes out (using change-data-capture tools like Debezium and [Kafka](/blog/system-design/12-messaging-and-event-driven)) into specialized stores: Elasticsearch for search, ClickHouse for analytics. Your writes stay safe and consistent; your reads get the perfect index for each question. The price is that the derived stores lag slightly behind the source, which is almost always a fine trade.
 
 ## A real example: how Uber finds your driver
 
@@ -264,4 +265,4 @@ The trade-off they accepted is elegant: you *cannot* perfectly tile a sphere wit
 
 The one idea to carry out of here: **an index is the frozen shape of a question, so when your question changes shape, change your index, not your hardware.** Reaching for a specialized store isn't exotic or premature optimization; it's recognizing that you're asking a 2-D question of a 1-D tool, and answering it honestly.
 
-The natural next question is the awkward one polyglot persistence creates: if your order lives in Postgres but your search index lives in Elasticsearch, how do you keep them in sync without losing data, and what happens during the seconds they disagree? That's the world of change-data-capture and eventual consistency, and it's where the really interesting trade-offs begin.
+The natural next question is the awkward one polyglot persistence creates: if your order lives in Postgres but your search index lives in Elasticsearch, how do you keep them in sync without losing data, and what happens during the seconds they disagree? That's the world of [change-data-capture](/blog/system-design/14-stream-processing-realtime) and [eventual consistency](/blog/system-design/09-cap-pacelc-consistency-models), and it's where the really interesting trade-offs begin.

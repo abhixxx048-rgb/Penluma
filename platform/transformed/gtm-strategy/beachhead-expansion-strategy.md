@@ -28,7 +28,7 @@ faq:
     a: "Big markets are crowded with entrenched leaders that own the references pragmatists trust. Entering as a follower means losing every reference fight. A focused beachhead lets you become the clear number one somewhere first."
   - q: "What is the 'whole product' gap?"
     a: "It's the distance between what you ship and everything a practical buyer needs to actually solve their problem, including integrations, support, and references. Pick the beachhead where that gap is smallest."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: gtm-strategy

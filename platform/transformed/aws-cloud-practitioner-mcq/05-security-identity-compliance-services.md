@@ -55,7 +55,7 @@ faq:
       Artifact is where you download AWS's own pre-made compliance reports (SOC, ISO,
       PCI) for free. Audit Manager continuously collects evidence about your own
       environment and maps it to frameworks to prepare for an audit.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 linked: true
 transformed: true
 sources: []

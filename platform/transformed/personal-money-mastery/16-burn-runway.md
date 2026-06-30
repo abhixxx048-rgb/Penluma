@@ -32,7 +32,7 @@ category: Money & Business
 date: '2026-06-22'
 order: 15
 icon: "\U0001F4B0"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 sources: []
 linked: true

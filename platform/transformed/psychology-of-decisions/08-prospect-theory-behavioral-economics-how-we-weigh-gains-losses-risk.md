@@ -56,8 +56,9 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 7
 icon: "\U0001F3AF"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Prospect_theory
   - https://en.wikipedia.org/wiki/Loss_aversion
@@ -72,7 +73,7 @@ For most of the 20th century, economists assumed people were rational money-mach
 
 The "rational money-machine" model had a name: **Expected Utility Theory**, a fancy way of saying people choose the option with the best math. It is tidy. It is also wrong, in deep and predictable ways.
 
-In 1979, Daniel Kahneman and Amos Tversky published a paper called *Prospect Theory* that rewrote how we understand decisions about money and risk. (Kahneman won the Nobel Prize in Economics for it in 2002.) It launched an entire field, **behavioral economics**, the study of how real humans actually handle money, not how a textbook says they should.
+In 1979, Daniel Kahneman and Amos Tversky published a paper called *Prospect Theory* that rewrote how we understand decisions about money and risk. (Kahneman won the Nobel Prize in Economics for it in 2002.) It launched an entire field, **[behavioral economics](/blog/economics-from-first-principles/31-behavioral-economics-how-psychology-shapes-the-economy)**, the study of how real humans actually handle money, not how a textbook says they should.
 
 Why should you care? Because these patterns are running in the background of your life right now. They decide whether you take the job offer, hold the losing stock, fall for the "buy now, pay later" button, or finally start saving. Once you can see them, you can stop being quietly steered by them, and start steering on purpose.
 
@@ -88,7 +89,7 @@ This is why a raise that once felt like a windfall becomes your new normal withi
 
 ## Losses loom larger than gains
 
-The second idea is **loss aversion**: the pain of losing something is roughly twice as strong as the pleasure of gaining the same thing.
+The second idea is **[loss aversion](/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence)**: the pain of losing something is roughly twice as strong as the pleasure of gaining the same thing.
 
 Researchers even put a number on it. In the classic studies, losses felt about **2.25 times** heavier than equivalent gains. (Modern estimates land closer to 1.8 to 2.0, and the field still debates how universal it is, but the basic asymmetry is rock solid.)
 
@@ -131,7 +132,7 @@ The lesson: how an option is *described*, as a gain to grab or a loss to avoid, 
 
 Economists say money is *fungible*: a dollar is a dollar, no matter where it came from. Humans don't believe that for a second.
 
-**Mental accounting**, a concept from Richard Thaler (who won his own Nobel in 2017), is our habit of sorting money into separate mental jars based on its source or its purpose.
+**[Mental accounting](/blog/personal-money-mastery/18-behavioral-finance)**, a concept from Richard Thaler (who won his own Nobel in 2017), is our habit of sorting money into separate mental jars based on its source or its purpose.
 
 A $300 tax refund or some casino winnings feels like "found money," so we blow it on something fun. We would never spend $300 of our regular paycheck that freely. Stranger still, many people keep cash in a low-interest savings account while carrying high-interest credit-card debt. Logically you should pay the debt first, but the savings sit in a protected jar marked "don't touch."
 
@@ -175,7 +176,7 @@ Just don't treat this as an iron law. A large 2010 review found the *average* ch
 
 ## How to use this
 
-1. **Reframe every big decision both ways.** Describe the option as a gain *and* as a loss. If your preference flips, you've caught a framing effect, and you can now decide on the facts instead of the wording.
+1. **Reframe every big decision both ways.** Describe the option as a gain *and* as a loss. If your preference flips, you've caught a [framing effect](/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults), and you can now decide on the facts instead of the wording.
 2. **Build commitment devices.** Automate your savings, schedule the gym with a friend, delete the shopping app. Let your far-sighted self bind your present self before temptation arrives.
 3. **Design good defaults.** If you run a team or build products, make the option that helps people most the one that happens automatically when they do nothing.
 4. **Audit your own mental jars.** Ask, "Would I treat this money differently if it came from a different source?" If yes, that's the bias talking, not your judgment.
@@ -184,7 +185,7 @@ Just don't treat this as an iron law. A large 2010 review found the *average* ch
 
 ## Conclusion
 
-Here is the one thing to keep: you are not a calculator. You are a feeling creature who measures everything against a starting line, fears losses about twice as much as you crave gains, mis-reads the odds, and bends to whoever sets the default. None of that makes you irrational in a broken sense. It makes you human, in a predictable one.
+Here is the one thing to keep: you are not a calculator. You are a feeling creature who measures everything against a starting line, fears losses about twice as much as you crave gains, mis-reads the odds, and bends to whoever sets the default. None of that makes you [irrational](/blog/psychology-of-decisions/01-what-psychology-is-and-why-rational-people-decide-irrationally) in a broken sense. It makes you human, in a predictable one.
 
 And predictable is powerful. The same patterns that quietly steer you can be turned around to steer yourself toward saving more, deciding clearer, and designing better choices for the people who trust you.
 

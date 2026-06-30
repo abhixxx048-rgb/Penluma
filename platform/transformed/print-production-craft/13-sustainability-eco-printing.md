@@ -26,7 +26,7 @@ faq:
     a: "Not always. Paper's footprint is fixed at the moment it is printed, while screen reading keeps emitting carbon with every view. For documents that are reused often, print can actually win. The real problem is overproduction, not paper itself."
   - q: "What is greenwashing in printing?"
     a: "Greenwashing is making a print product look greener than it is, using vague words like 'eco-friendly,' misused certification logos, or cherry-picked facts. Honest claims are specific, quantified, and backed by verifiable data like a license number or offset ID."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: print-production-craft

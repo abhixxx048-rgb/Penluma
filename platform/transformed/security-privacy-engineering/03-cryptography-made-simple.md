@@ -30,9 +30,10 @@ faq:
     a: "TLS verifies the server's identity with a certificate, agrees on a shared secret key using ECDHE key exchange, then encrypts all traffic with fast symmetric crypto like AES-GCM. TLS 1.3 does this in a single round trip."
   - q: "Is quantum computing a real threat to encryption today?"
     a: "Yes, indirectly. Attackers are recording encrypted data now to decrypt later once quantum computers mature, a tactic called Harvest Now, Decrypt Later. Long-lived secrets are already at risk, so start planning for post-quantum algorithms."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 topic: security-privacy-engineering
 topicTitle: Security & Privacy Engineering
 category: Engineering
@@ -48,9 +49,9 @@ That is the secret most people miss about cryptography. As a working engineer, y
 
 ## Why this matters
 
-Cryptography is not an academic luxury. It is the quiet machinery behind every login, payment, and private message you build. And it fails in painfully ordinary ways.
+Cryptography is not an academic luxury. It is the quiet machinery behind [every login](/blog/security-privacy-engineering/04-authentication-authorization), payment, and private message you build. And it fails in painfully ordinary ways.
 
-The OWASP Top 10 still lists "Cryptographic Failures" among the leading causes of breaches. The average data breach in 2025 cost about $4.44 million. Almost none of those failures came from someone cracking a strong algorithm. They came from a developer using the wrong primitive, storing a key next to the data it protected, or trusting Base64 to "hide" a secret.
+The [OWASP Top 10](/blog/security-privacy-engineering/05-application-web-security) still lists "Cryptographic Failures" among the leading causes of breaches. The average data breach in 2025 cost about $4.44 million. Almost none of those failures came from someone cracking a strong algorithm. They came from a developer using the wrong primitive, storing a key next to the data it protected, or trusting Base64 to "hide" a secret.
 
 The good news: you don't need a math degree. You need a mental model. Every piece of cryptography exists to serve one of three goals.
 
@@ -182,7 +183,7 @@ The golden rules:
 - Rotate keys periodically.
 - Restrict who and what can access them.
 
-Two tools do the heavy lifting. An **HSM (Hardware Security Module)** is a tamper-resistant physical device that generates and stores keys so they *never leave the hardware in plaintext*. A **KMS (Key Management Service)** like AWS KMS, Azure Key Vault, or GCP KMS is a managed cloud version that handles keys through an API and can rotate them automatically.
+Two tools do the heavy lifting. An **HSM (Hardware Security Module)** is a tamper-resistant physical device that generates and stores keys so they *never leave the hardware in plaintext*. A **KMS (Key Management Service)** like AWS KMS, Azure Key Vault, or GCP KMS is a [managed cloud version](/blog/security-privacy-engineering/06-network-cloud-infrastructure-security) that handles keys through an API and can rotate them automatically.
 
 The pattern that ties them together is **envelope encryption**: a *data key* encrypts your data, a *master key* inside the KMS encrypts that data key, and you store the encrypted data key beside the data. Only the KMS can unwrap it, so a database leak alone exposes nothing usable.
 
@@ -231,4 +232,4 @@ A practical checklist you can apply on your next project:
 
 If you remember one thing, remember this: cryptography is "pick the right tool for the goal, then guard the keys." Encode for transport, hash for integrity and passwords, encrypt for confidentiality, and sign for authenticity. Almost every famous breach was a tool-selection mistake, not a broken algorithm.
 
-The deeper you go, the more you notice that the algorithms are the easy part. The keys, the certificates, and the human decisions around them are where security actually lives or dies. So here's the thread worth pulling next: if a leaked key can undo perfect math, how do real teams detect that a key has been compromised, and how fast can they rotate it before the damage spreads? That question is where cryptography quietly becomes incident response.
+The deeper you go, the more you notice that the algorithms are the easy part. The keys, the certificates, and the human decisions around them are where security actually lives or dies. So here's the thread worth pulling next: if a leaked key can undo perfect math, how do real teams detect that a key has been compromised, and how fast can they rotate it before the damage spreads? That question is where cryptography quietly becomes [incident response](/blog/security-privacy-engineering/13-detection-monitoring-incident-response).

@@ -51,7 +51,7 @@ faq:
       The honest answer is "it depends on size." Modest increases show small or
       ambiguous effects on jobs, partly because employers often have wage-setting
       power. Very large increases can reduce employment.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 linked: true
 transformed: true
 sources: []

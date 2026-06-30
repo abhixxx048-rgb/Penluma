@@ -24,7 +24,7 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 12
 icon: ✍️
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 faq:
   - q: Is creativity a natural talent or a skill you can learn?

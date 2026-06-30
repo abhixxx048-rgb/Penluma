@@ -34,8 +34,9 @@ category: Business & Growth
 date: '2026-06-15'
 order: 999
 icon: ✅
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -57,11 +58,11 @@ Think of it like a building inspection. The walls can look perfect while the wir
 
 ## The two ends of the loop both have to work
 
-A healthy support loop has two sides, and most products quietly break one or both.
+A healthy [support loop](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves) has two sides, and most products quietly break one or both.
 
 **The customer side:** Can a person who hits a problem report it and get acknowledged? That means a real confirmation, a reference they can quote later, and a way to check on it.
 
-**The operator side:** Can the people running the product see what's going wrong and respond? That means visible error logs, a queue of incoming messages, and a way to escalate when they're stuck.
+**The operator side:** Can the people running the product see what's going wrong and respond? That means [visible error logs](/blog/system-design/17-observability-and-operations), a queue of incoming messages, and a way to escalate when they're stuck.
 
 When both ends are open, like the contact form above paired with operators who can't see the error, the customer reports into a void and the team has nothing to act on. You can have a polished product and still have a completely broken support loop.
 
@@ -151,4 +152,4 @@ If you remember one thing, remember this: **a support system isn't ready until a
 
 Most launches fail this test not because the work is hard, but because support feels invisible until real users arrive. The teams that win simply run the loop themselves, as a stranger, before anyone else has to.
 
-And once the loop works, a new question opens up: how fast should you promise to respond, and what happens to trust when you set a deadline you can actually keep? That's where support stops being a safety net and starts becoming a feature people choose you for.
+And once the loop works, a new question opens up: how fast should you promise to respond, and what happens to [trust](/blog/life-money-and-relationships/19-how-trust-rapport-actually-form) when you set a deadline you can actually keep? That's where support stops being a safety net and starts becoming a feature people choose you for.

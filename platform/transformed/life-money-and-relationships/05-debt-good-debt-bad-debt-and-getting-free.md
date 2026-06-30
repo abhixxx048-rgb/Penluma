@@ -48,7 +48,7 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 4
 icon: "\U0001F331"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources: []

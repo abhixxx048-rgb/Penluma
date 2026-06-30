@@ -28,7 +28,7 @@ faq:
     a: Name the specific problem and suggest a fix, ideally as a question. "This will fail for empty arrays - can we default to []?" feels collaborative, while "wrong" feels like an attack.
   - q: When do I use "much" versus "many"?
     a: Use "many" for things you can count (many bugs, many tests) and "much" for things you cannot (much code, much progress). If you can put a number in front of it, use "many" and add the -s.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: english

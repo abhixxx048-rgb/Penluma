@@ -42,7 +42,7 @@ faq:
     a: >-
       Say "data" with no article when speaking generally. Use "the data" only when
       you mean a specific set, like "the data we migrated last night".
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: english

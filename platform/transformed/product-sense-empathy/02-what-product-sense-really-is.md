@@ -34,7 +34,7 @@ faq:
     a: A study found people "hired" milkshakes for boring morning commutes, not as a dessert. Its real competitors were bananas and bagels, which revealed the true job only after someone observed the context.
   - q: What is a "Norman door"?
     a: A door that needs a "PUSH" or "PULL" sign because its handle gives the wrong cue. The sign is proof the design failed. Good design makes the right action obvious without a label.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources:

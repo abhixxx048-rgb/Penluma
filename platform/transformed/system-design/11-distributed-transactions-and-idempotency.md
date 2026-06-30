@@ -55,9 +55,10 @@ faq:
       You write your business row and an event row in the same local database
       transaction, then a separate relay ships the event to your message broker.
       This avoids the dual-write problem and guarantees at-least-once delivery.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -168,7 +169,7 @@ And two properties keep the orchestrator safe:
 
 ## The correct fix for dual-write: the outbox
 
-Remember the dual-write problem - you cannot atomically write your database *and* publish to your broker. So stop trying. **Write only the database**, and include the event as a row in the *same local transaction*:
+Remember the dual-write problem - you cannot atomically write your database *and* [publish to your broker](/blog/system-design/12-messaging-and-event-driven). So stop trying. **Write only the database**, and include the event as a row in the *same local transaction*:
 
 ```sql
 BEGIN;
@@ -241,6 +242,6 @@ When you next design a flow that crosses services, walk this checklist:
 
 The single idea to carry away: **stop trying to make distributed writes atomic, and start making them recoverable.** You give up the all-or-nothing guarantee on purpose, and you buy back correctness with three tools - the outbox so you never dual-write, sagas so failures undo cleanly, and idempotency so retries never double-apply.
 
-That trade - eventually consistent and recoverable, instead of atomic and blocking - is the central bargain of nearly every large system you use. DoorDash routes billions of orders a year on exactly this combination: outbox plus change data capture feeding idempotent consumers, with a durable orchestrator running compensations when a Dasher cannot be found or a restaurant closes.
+That trade - [eventually consistent](/blog/system-design/09-cap-pacelc-consistency-models) and recoverable, instead of atomic and blocking - is the central bargain of nearly every large system you use. DoorDash routes billions of orders a year on exactly this combination: outbox plus change data capture feeding idempotent consumers, with a durable orchestrator running compensations when a Dasher cannot be found or a restaurant closes.
 
-There is a deeper rabbit hole waiting underneath all of this. Every one of these patterns quietly depends on services *agreeing* on what happened - which is the problem of consensus, and why algorithms like Raft and Paxos exist. That is where the real magic, and the real cost, lives. Worth a look next.
+There is a deeper rabbit hole waiting underneath all of this. Every one of these patterns quietly depends on services *agreeing* on what happened - which is the problem of [consensus](/blog/system-design/10-consensus-and-coordination), and why algorithms like [Raft and Paxos](/blog/distributed-systems/07-multi-paxos-raft-vs-paxos-the-real-world) exist. That is where the real magic, and the real cost, lives. Worth a look next.

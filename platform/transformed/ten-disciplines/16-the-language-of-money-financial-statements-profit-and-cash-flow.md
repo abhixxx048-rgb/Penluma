@@ -54,9 +54,10 @@ faq:
       Gross margin is gross profit divided by revenue, measuring how much you keep
       after the direct cost of your product. Net margin is net income divided by
       revenue, measuring how much you keep after every cost.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -96,7 +97,7 @@ Because the two sides must always match, the report built on this equation is ca
 
 ## The three reports, at a glance
 
-Every company keeps score with three reports. Each answers a different question, and you need all three to see the whole picture.
+Every company keeps score with [three reports](/blog/business-financial-literacy/03-the-three-financial-statements-the-whole-picture). Each answers a different question, and you need all three to see the whole picture.
 
 | Statement | Answers | Time frame |
 |---|---|---|
@@ -131,7 +132,7 @@ Two terms you will meet here:
 
 ### The income statement: the movie of profit
 
-The income statement, also called the **P&L** (profit and loss), covers a stretch of time. If the balance sheet is a photo, this is a recording of one quarter of the game. It shows the action, not the final standings.
+The [income statement](/blog/business-financial-literacy/04-reading-a-p-l-income-statement-line-by-line), also called the **P&L** (profit and loss), covers a stretch of time. If the balance sheet is a photo, this is a recording of one quarter of the game. It shows the action, not the final standings.
 
 You read it top to bottom, peeling away costs in layers. Learn this sequence once and you will recognize it in nearly every company on earth:
 
@@ -157,7 +158,7 @@ Revenue is the whole pie. Profit is the slice you keep after everyone else takes
 | Operating margin | $25,000 ÷ $100,000 | 25% |
 | Net margin | $17,000 ÷ $100,000 | 17% |
 
-Margins let you compare businesses of wildly different sizes. A corner shop and a global retailer might both run a 3% net margin, meaning each keeps just three cents of every sales dollar, even though one sells thousands of times more.
+[Margins](/blog/business-financial-literacy/10-break-even-margins-profitability) let you compare businesses of wildly different sizes. A corner shop and a global retailer might both run a 3% net margin, meaning each keeps just three cents of every sales dollar, even though one sells thousands of times more.
 
 ### The cash flow statement: only real money counts
 
@@ -185,7 +186,7 @@ Picture this. On Monday you finish a $10,000 design project and send the invoice
 
 You are profitable on paper and broke in reality. If you cannot make rent, the business can fail, even while the books insist you made money.
 
-This is why founders repeat the saying: *"Revenue is vanity, profit is sanity, but cash is reality."* Plenty of profitable-looking companies have gone bankrupt simply because the cash ran out before the customers paid.
+This is why founders repeat the saying: *"Revenue is vanity, profit is sanity, but cash is reality."* Plenty of [profitable-looking companies have gone bankrupt](/blog/business-financial-literacy/05-the-balance-sheet-cash-flow-statement-why-profit-cash) simply because the cash ran out before the customers paid.
 
 ## How the three statements lock together
 
@@ -233,7 +234,7 @@ You do not need a finance degree to put this to work. Try these steps the next t
 2. **Go straight to operating cash flow.** Cash is much harder to fake than accrual profit, because the bank balance is a hard fact. If a company brags about record revenue while operating cash bleeds, that is your warning sign.
 3. **Ask about margins, not just revenue.** Find out how many cents of each sales dollar the business actually keeps. That number tells you more than the size of the top line.
 4. **Check the cash buckets for the story.** Positive operating cash plus negative investing cash usually means a healthy company spending to grow. Negative operating cash means the business is not yet paying for itself.
-5. **Before joining a startup, ask one question:** does it generate its own operating cash, or is it living on investor money? The answer tells you how long the paycheck is safe.
+5. **Before joining a startup, ask one question:** does it generate its own operating cash, or is it [living on investor money](/blog/business-financial-literacy/12-funding-dilution-the-cost-of-capital)? The answer tells you how long the paycheck is safe.
 
 ## Conclusion
 

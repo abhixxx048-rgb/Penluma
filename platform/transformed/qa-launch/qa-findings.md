@@ -32,8 +32,9 @@ category: Business & Growth
 date: '2026-06-01'
 order: 999
 icon: ✅
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -74,7 +75,7 @@ The lesson: **decide what each number means, label it honestly, and never let th
 
 ## The three states every screen must have
 
-The second big theme was screens that did not know how to fail gracefully. This is the most common, most fixable category of QA bug, and it comes down to one rule.
+The second big theme was screens that did not know how to [fail gracefully](/blog/product-sense-empathy/10-evaluating-usability-nielsen-rsquo-s-10-heuristics). This is the most common, most fixable category of QA bug, and it comes down to one rule.
 
 Every screen that loads data can be in one of these states. It must handle all three:
 
@@ -96,9 +97,9 @@ That last one is especially nasty. A store owner opening their Invoices and seei
 
 Some bugs are not in the screen at all. They live in the plumbing.
 
-This app's dashboard loads about a dozen widgets at once, each making its own request. A flat rate limit of 60 requests per minute meant that opening two or three tabs caused a single user to **trip the rate limiter and get a "429 Too Many Requests" error** during normal use. The app was attacking itself.
+This app's dashboard loads about a dozen widgets at once, each making its own request. A flat rate limit of 60 requests per minute meant that opening two or three tabs caused a single user to **trip the [rate limiter](/blog/system-design/16-rate-limiting-and-resiliency) and get a "429 Too Many Requests" error** during normal use. The app was attacking itself.
 
-The fix split the limit: authenticated users got a generous ceiling sized for the app's own parallel boot, while anonymous traffic kept the tighter limit that guards against abuse. Once that landed, a separate mystery solved itself too - a dashboard that took ten seconds to load behind a long blank "Setting things up…" splash. It had been slow because its own parallel requests were tripping the limiter and retrying.
+The fix split the limit: authenticated users got a generous ceiling sized for the app's own parallel boot, while anonymous traffic kept the tighter limit that guards against abuse. Once that landed, a separate mystery solved itself too - a dashboard that [took ten seconds to load](/blog/system-design/17-observability-and-operations) behind a long blank "Setting things up…" splash. It had been slow because its own parallel requests were tripping the limiter and retrying.
 
 **The lesson:** measure your limits against how your app actually behaves, not against an imagined attacker. A real dashboard fires many requests at once. If your own product can trip your own defenses, real traffic will too.
 
@@ -124,7 +125,7 @@ The audit found the admin panel was passing a tenant ID as a query parameter - a
 2. **A global database scope** silently adds "where this tenant" to every query automatically.
 3. Because of that scope, a forged tenant ID can only ever **narrow** results to nothing, never widen them to someone else's data.
 
-No leak. But the report still flagged the client-supplied tenant ID as a "latent risk" - harmless today only because the global scope is doing the real work. If a future change ever bypassed that scope, the forged value would become the only guard.
+No leak. But the report still flagged the [client-supplied tenant ID](/blog/security-privacy-engineering/05-application-web-security) as a "latent risk" - harmless today only because the global scope is doing the real work. If a future change ever bypassed that scope, the forged value would become the only guard.
 
 **The lesson, and it is the heart of good QA:** "it works" and "it is safe" are different questions. Verify *why* something is safe, not just *that* it appears to be. Note the latent risks even when nothing is broken yet, because today's harmless shortcut is tomorrow's foot-gun.
 
@@ -148,7 +149,7 @@ You do not need a QA department. You need an hour, a fresh perspective, and a wi
 3. **Break the connection on purpose.** Throttle or kill your network mid-load. Does each screen show a real error with a Retry button, or does it spin forever and lie about being empty?
 4. **Visit every screen as a brand-new account.** Empty states are a first impression. "0 records" should never be the welcome mat.
 5. **Delete something, then look for it.** Remove a customer, then open their old orders. Does the saved information survive, or does it vanish?
-6. **Ask "is it safe" separately from "does it work."** For anything touching other users' data, trace *why* it cannot leak, and write down any shortcut that is only safe by luck.
+6. **Ask "is it safe" separately from "does it work."** For anything touching other users' data, [trace *why* it cannot leak](/blog/security-privacy-engineering/08-security-testing-auditing), and write down any shortcut that is only safe by luck.
 7. **Read every label out loud.** Stray placeholder text, raw internal IDs ("Option 55: 178"), and debug leftovers hide in plain sight until you actually read the words on screen.
 8. **Fix the things that block testing first.** If your test suite or a core page is broken, repair that before anything else, so every later fix can actually be verified.
 

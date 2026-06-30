@@ -37,7 +37,7 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 16
 icon: ✍️
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 sources: []
 ---

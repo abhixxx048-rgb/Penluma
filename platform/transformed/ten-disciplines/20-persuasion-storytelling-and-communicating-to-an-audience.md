@@ -42,7 +42,7 @@ faq:
       Honesty. Persuasion surfaces reasons to say yes that are real. Manipulation
       invents fake scarcity, fake reviews, or borrowed authority. The trick may
       win one sale, but trust collapses the moment the lie is found.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 topic: ten-disciplines
 topicTitle: Ten Disciplines
 category: Thinking & Decisions
@@ -51,10 +51,11 @@ order: 19
 icon: "\U0001F9ED"
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
-You can write the clearest sentence in the world and still watch it bounce off someone's face. The idea was understood. It just wasn't believed, remembered, or acted on. That gap between *understood* and *accepted* is where most good ideas quietly die.
+You can write [the clearest sentence in the world](/blog/ten-disciplines/19-clear-thinking-on-the-page-structure-clarity-and-writing-for-the-reader) and still watch it bounce off someone's face. The idea was understood. It just wasn't believed, remembered, or acted on. That gap between *understood* and *accepted* is where most good ideas quietly die.
 
 Closing it is a learnable craft. It rests on three connected skills: persuading people to agree, telling stories that stick, and shaping the same idea for different listeners. This article hands you the toolkit.
 
@@ -121,7 +122,7 @@ The honest way to use this list is as a checklist for surfacing what is **alread
 
 ## Common misconceptions
 
-**"Facts speak for themselves."** They don't. Most beginners stack up data, lead with all logos, and wonder why the room stayed still. People decide emotionally and justify logically. Skip pathos and ethos and your perfect facts never get heard.
+**"Facts speak for themselves."** They don't. Most beginners stack up data, lead with all logos, and wonder why the room stayed still. [People decide emotionally and justify logically](/blog/ten-disciplines/07-how-the-mind-works-perception-attention-memory-and-two-systems-of-thinking). Skip pathos and ethos and your perfect facts never get heard.
 
 **"Persuasion is just manipulation in a nice suit."** No. The line between them is honesty. Cialdini's principles only work *honestly* when they're true. Fake scarcity ("only 3 left" with thousands in the warehouse), invented reviews, or authority you don't have might win one sale. The moment people find the lie, trust collapses and never comes back.
 
@@ -133,7 +134,7 @@ The honest way to use this list is as a checklist for surfacing what is **alread
 - **Slippery slope** - claiming one small step inevitably ends in disaster, with no real chain of cause.
 - **Correlation is not causation** - assuming that because two things happen together, one caused the other.
 
-If your case needs a fallacy to stand up, you don't have a case yet.
+If your case needs [a fallacy](/blog/ten-disciplines/08-biases-heuristics-and-why-smart-people-make-predictable-errors) to stand up, you don't have a case yet.
 
 ## Storytelling: the USB cable for ideas
 
@@ -190,7 +191,7 @@ A good chart is a road sign, not a billboard. A road sign delivers one message y
 
 The single highest-leverage move: **title your chart with the takeaway, not the topic.** Instead of "Q3 Sales," write "Sales fell 12% in Q3." The first makes the reader do the analysis. The second hands them the conclusion.
 
-Watch for charts that mislead. A truncated y-axis that doesn't start at zero can make a tiny change look enormous, and a pie chart with twelve slices is unreadable. If you wouldn't accept it in a sentence, don't accept it in a chart. As Cole Nussbaumer Knaflic puts it in *Storytelling with Data*: decide the one message, strip everything that doesn't serve it, and use color or an arrow to point the eye exactly where you want it.
+Watch for [charts that mislead](/blog/ten-disciplines/10-reading-the-world-in-numbers-data-types-averages-spread-and-charts). A truncated y-axis that doesn't start at zero can make a tiny change look enormous, and a pie chart with twelve slices is unreadable. If you wouldn't accept it in a sentence, don't accept it in a chart. As Cole Nussbaumer Knaflic puts it in *Storytelling with Data*: decide the one message, strip everything that doesn't serve it, and use color or an arrow to point the eye exactly where you want it.
 
 ## How to use this: before any important message
 
@@ -217,4 +218,4 @@ Same facts. But the second names the destination first, gives a reason to care, 
 
 Persuasion, storytelling, and audience adaptation are not three separate gimmicks. They are one craft with a single through-line: **you model the receiver, give them a reason to care from someone they trust, backed by what's true, wrapped in a story so it sticks, and you make the ask plain.**
 
-The master skill that orchestrates all of it has a name: **rhetoric**, the deliberate choice of the right appeal, structure, story, and word for *this* audience at *this* moment. Picture a negotiator reading the room and changing tack mid-sentence, leaning on logic when listeners are analytical, switching to a story when their eyes glaze, dropping a number when they doubt. That live, conscious selection is the skill worth a lifetime of practice. Once you can do it, the next frontier is the room itself: how the same words shift power when you're outnumbered, outranked, or negotiating across the table.
+The master skill that orchestrates all of it has a name: **rhetoric**, the deliberate choice of the right appeal, structure, story, and word for *this* audience at *this* moment. Picture a negotiator reading the room and changing tack mid-sentence, leaning on logic when listeners are analytical, switching to a story when their eyes glaze, dropping a number when they doubt. That live, conscious selection is the skill worth a lifetime of practice. Once you can do it, the next frontier is the room itself: how the same words shift power when you're outnumbered, outranked, or [negotiating across the table](/blog/ten-disciplines/21-advanced-communication-influence-difficult-conversations-and-mastery).

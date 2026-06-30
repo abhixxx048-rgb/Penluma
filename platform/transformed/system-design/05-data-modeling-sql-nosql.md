@@ -54,9 +54,10 @@ faq:
       No. Denormalization deliberately duplicates data to make reads faster by
       avoiding joins. It is a trade-off, not a mistake, as long as you accept the
       write complexity and consistency risk it introduces.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 topic: system-design
 topicTitle: System Design
 category: Engineering
@@ -98,7 +99,7 @@ The relational starting point is **normalization**: organizing data so each fact
 
 In practice it means breaking data into clean, separate tables. Orders go in one table, customers in another, line items in a third, products in a fourth. An order doesn't store the customer's name; it stores a small reference (an ID) pointing to the customer row.
 
-Why bother? Because when a customer changes their email, you update **one row**, and the whole system is instantly correct. No stale copies, no contradictions, minimal storage. For most applications, a well-indexed relational database like Postgres is genuinely the right default and stays that way for years.
+Why bother? Because when a customer changes their email, you update **one row**, and the whole system is instantly correct. No stale copies, no contradictions, minimal storage. For most applications, a [well-indexed relational database](/blog/system-design/04-databases-internals) like Postgres is genuinely the right default and stays that way for years.
 
 The opposite move is **denormalization**: deliberately copying data back in to avoid a join. You might copy the customer's name directly onto each order so reading an order needs no second lookup. Reads get faster. But now that name lives in many places, and keeping all the copies in sync becomes your problem.
 
@@ -116,7 +117,7 @@ Here's the trade-off at a glance:
 
 On a single machine, a join is cheap. The database has all the rows in local memory and matches them in milliseconds.
 
-The problem appears when your data outgrows one machine and gets **sharded**, split across many servers. Now your orders might live on server A and your customers on server B. To join them, the database has to ship rows across the network from one server to another and match them up. Engineers call this a **shuffle**, and it's brutally slow compared to local work.
+The problem appears when your data outgrows one machine and gets **sharded**, [split across many servers](/blog/system-design/08-replication-and-partitioning). Now your orders might live on server A and your customers on server B. To join them, the database has to ship rows across the network from one server to another and match them up. Engineers call this a **shuffle**, and it's brutally slow compared to local work.
 
 A quick sense of scale: joining two large tables sitting together in memory takes milliseconds. The *same* join spread across a 20-server cluster might have to move a gigabyte of data over the network on each side. That's seconds of pure data movement, before any matching happens, and you're always stuck waiting for the slowest server in the group.
 
@@ -235,7 +236,7 @@ This is the principle that ties everything together. Making reads cheaper makes 
 
 The classic example is **Twitter's home timeline**. Fan-out-on-write means pushing each new tweet straight into every follower's pre-built timeline, so reading your feed is instant. Beautiful, until a celebrity with 100 million followers tweets and a single post triggers 100 million writes. So Twitter uses a **hybrid**: fan-out-on-write for normal accounts, and fan-out-on-read (merge the celebrities in at the moment you load your feed) for the megastars.
 
-**Materialized views** are this idea packaged up: a pre-computed query result the database keeps fresh for you, turning a four-table join into a single keyed read. **CQRS** (Command Query Responsibility Segregation) is the same idea taken further: write to one clean model, then project that stream of changes into many read-optimized views, each shaped for one question.
+**Materialized views** are this idea packaged up: a pre-computed query result the database keeps fresh for you, turning a four-table join into a single keyed read. [**CQRS**](/blog/system-design/13-event-sourcing-and-cqrs) (Command Query Responsibility Segregation) is the same idea taken further: write to one clean model, then project that stream of changes into many read-optimized views, each shaped for one question.
 
 ## Polyglot persistence: the right tool per job
 
@@ -260,7 +261,7 @@ Stop demanding that one database be excellent at everything. **Polyglot persiste
 
 There's a cost nobody budgets for, though. Every extra store is another copy that can drift, another thing to back up and secure, and a chance for data to fall out of sync. The trap is the **dual write**: your app saves to Postgres, then saves to Elasticsearch, in the same request. If it crashes between those two steps, the two systems disagree *forever*.
 
-The fix is to make **one** atomic database write the single source of truth, then let downstream stores follow from it. Two reliable patterns do this: **Change Data Capture** (a tool like Debezium watches the database's change log and replays changes downstream) and the **transactional outbox** (you write the data and an "event to publish" in the same transaction, and a separate process ships the events). Either way, you never let two systems depend on two separate writes succeeding.
+The fix is to make **one** atomic database write the single source of truth, then let downstream stores follow from it. Two reliable patterns do this: **Change Data Capture** (a tool like Debezium watches the database's change log and replays changes downstream) and the [**transactional outbox**](/blog/system-design/11-distributed-transactions-and-idempotency) (you write the data and an "event to publish" in the same transaction, and a separate process ships the events). Either way, you never let two systems depend on two separate writes succeeding.
 
 ## Common misconceptions
 
@@ -293,4 +294,4 @@ If you remember one thing, make it this: **let your queries pick the database, n
 
 So before you draw a single table, ask what your application will actually request, how often, and how fast. The answer usually tells you the database.
 
-And here's the thread worth pulling next. Every choice in this article quietly traded one thing for another: speed for flexibility, fresh reads for availability, simple writes for simple reads. Those trade-offs have names and rules, captured in two ideas called **CAP and PACELC**. Once you understand them, you'll stop arguing about whether a database is "consistent" and start asking the sharper question: consistent *when*, and at what cost?
+And here's the thread worth pulling next. Every choice in this article quietly traded one thing for another: speed for flexibility, fresh reads for availability, simple writes for simple reads. Those trade-offs have names and rules, captured in two ideas called [**CAP and PACELC**](/blog/system-design/09-cap-pacelc-consistency-models). Once you understand them, you'll stop arguing about whether a database is "consistent" and start asking the sharper question: consistent *when*, and at what cost?

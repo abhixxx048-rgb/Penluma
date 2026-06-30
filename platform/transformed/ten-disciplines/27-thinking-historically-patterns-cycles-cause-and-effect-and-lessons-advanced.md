@@ -34,9 +34,10 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 26
 icon: "\U0001F9ED"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -81,7 +82,7 @@ The assassination was one bullet. The war it unleashed killed over 17 million pe
 
 **The single-cause fallacy.** "The Roman Empire fell because of the barbarians." In reality, Western Rome's collapse in 476 CE involved economic strain, political instability, military overstretch, plague, and migration pressure, all at once. If your explanation fits on a bumper sticker, you have left out most of the story.
 
-**Post hoc reasoning** - short for *post hoc ergo propter hoc*, Latin for "after this, therefore because of this." It is the assumption that because B followed A, A must have caused B. A rooster crows before sunrise; it does not cause the sun to rise. Sequence is not proof of cause.
+**Post hoc reasoning** - short for *post hoc ergo propter hoc*, Latin for "after this, therefore because of this." It is the assumption that because B followed A, A must have caused B. A rooster crows before sunrise; it does not cause the sun to rise. [Sequence is not proof of cause](/blog/ten-disciplines/12-inference-correlation-vs-causation-and-how-statistics-mislead-advanced).
 
 ## Test a cause with a careful "what if"
 
@@ -135,7 +136,7 @@ What pushes history forward? Historians name several **drivers**. The beginner p
 
 ### Geography versus institutions: a famous fight
 
-The cleanest way to see competing frameworks is the argument between two books, both asking "why are some nations rich and others poor?"
+The cleanest way to see competing frameworks is the argument between two books, both asking ["why are some nations rich and others poor?"](/blog/economics-from-first-principles/26-development-economics-why-some-countries-are-rich-and-others-poor)
 
 **Jared Diamond, *Guns, Germs, and Steel*:** the answer is largely *geographic luck*. Eurasia had the best wild plants and animals to domesticate and an east-west axis along which farming spread easily, giving it a head start of thousands of years. *The critique:* this leans toward geographic determinism, making geography destiny and downplaying human choices.
 
@@ -147,7 +148,7 @@ Picture two corner shops on the same street. Same geography, yet one thrives and
 
 ## Common misconceptions
 
-**"It was inevitable."** This is the *inevitability fallacy*, and it is seductive because you already know how the story ends. The cure is **hindsight bias** awareness: once you know the outcome, it *feels* like it had to happen, which quietly erases the real uncertainty people faced.
+**"It was inevitable."** This is the *inevitability fallacy*, and it is seductive because you already know how the story ends. The cure is [**hindsight bias** awareness](/blog/ten-disciplines/08-biases-heuristics-and-why-smart-people-make-predictable-errors): once you know the outcome, it *feels* like it had to happen, which quietly erases the real uncertainty people faced.
 
 **"History was a march of progress toward today."** This is **Whig history**, named and criticized by Herbert Butterfield in 1931. Looking backward, you can draw a clean line connecting only the "winners" while deleting everything that pointed elsewhere. It manufactures a straight road out of what was really a tangle of forks and dead ends. Living through the 1930s, fascism looked to many like *the future*, not a doomed detour. WWII was not simply "baked in."
 
@@ -167,7 +168,7 @@ When you meet any historical claim, news story, or "the lesson of history" argum
 4. **Check the pattern.** Does it rhyme with the past? Use the rhyme to ask a question, never to predict a result.
 5. **Switch lenses.** Which drivers explain it - geography, economics, institutions, ideas, disease, agency, chance? Combine them; don't crown one.
 6. **Recover the fog.** Ask what the people involved actually knew *at the time*. Strip out your hindsight before grading their decisions.
-7. **Find the missing voice.** Who wrote this account, from what era and school? Whose voice is absent from the record?
+7. **Find the missing voice.** [Who wrote this account, from what era and school?](/blog/ten-disciplines/25-why-history-matters-reading-the-past-and-judging-sources) Whose voice is absent from the record?
 8. **Lesson or weapon?** When someone says "history teaches us we must do X," run three checks: Is the analogy real, or apples and oranges? Are they cherry-picking, hiding counter-examples? Who benefits from this version of the past?
 
 One more guardrail worth memorizing: if a story makes your nation, your group, or your side look uniquely virtuous and everyone else purely villainous, that is exactly when to scrutinize it *hardest*. Comfortable history is usually propaganda. Honest history is usually uncomfortable.

@@ -28,7 +28,7 @@ faq:
     a: "Most early SaaS companies charge too little and leave money on the table. Pricing deliberately above that floor, with a clear good-better-best ladder, signals value and funds the growth the low-price math cannot."
   - q: "How do you sequence a 12-month go-to-market plan?"
     a: "Start with a correctness and trust gate, validate that customers can actually onboard themselves, build the core workflow, earn references in your beachhead, then layer pricing tiers, switching-cost features, and new segments in order."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: gtm-strategy

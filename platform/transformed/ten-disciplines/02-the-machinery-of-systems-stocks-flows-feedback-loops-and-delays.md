@@ -38,9 +38,10 @@ faq:
     a: A tipping point is a threshold beyond which a system suddenly flips into a new and often irreversible state, like water boiling at 100 degrees or a clear lake turning green and lifeless. Little seems to change until everything changes at once.
   - q: Can a reinforcing loop grow forever?
     a: No. A reinforcing loop always runs into a limit, which is a balancing loop. Money compounding meets the size of the economy, a growing population meets the food supply, and a spreading rumor runs out of new people to tell.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Stock_and_flow
   - https://en.wikipedia.org/wiki/The_Limits_to_Growth
@@ -152,7 +153,7 @@ A **reinforcing loop** is self-amplifying. More leads to more, or less leads to 
 
 Again, "positive" does not mean "good." It means the loop reinforces the change in the same direction.
 
-The cleanest example is compound interest. Money earns interest, which is added to the money, which then earns even more interest. More money makes more money makes more money. The pile snowballs. The same shape drives a rumor spreading, a panic bank run, and the saying "the rich get richer."
+The cleanest example is [compound interest](/blog/ten-disciplines/17-time-value-of-money-risk-return-and-how-investing-works). Money earns interest, which is added to the money, which then earns even more interest. More money makes more money makes more money. The pile snowballs. The same shape drives a rumor spreading, a panic bank run, and the saying "the rich get richer."
 
 Habits run on reinforcing loops too. You go for a run, feel good, run again, get a bit fitter, which makes running more pleasant, so you run more. A virtuous cycle. Debt runs the same loop in reverse: you borrow, interest grows the debt, payments get harder, so you borrow more. A vicious cycle. Same machinery, opposite feeling.
 
@@ -207,7 +208,7 @@ Heat a pot of water. At 97 degrees it is still water. At 98, still water. At 99,
 
 A lake does the same thing. It slowly takes in fertilizer runoff for years with no visible problem, the water staying clear. Then one season it tips. Algae explode, oxygen vanishes, fish die, and the lake turns green and lifeless seemingly overnight. The slow build-up was invisible. The flip was sudden. And getting the lake back to clear is far harder than it was to push it over the edge.
 
-This is why both slow progress and sudden disasters surprise people who think in straight lines.
+This is why both slow progress and sudden disasters surprise [people who think in straight lines](/blog/ten-disciplines/08-biases-heuristics-and-why-smart-people-make-predictable-errors).
 
 ## Common misconceptions
 
@@ -228,7 +229,7 @@ When a situation feels tangled, slow down and ask these in order. They turn a co
 
 Try it on **technical debt** in a software team, though the same shape fits a messy house or a neglected garden. The stock is messy, fragile code. The inflow is every rushed shortcut. The outflow is time spent cleaning it up. The reinforcing loop: the messier the code, the slower and buggier new work becomes, so the team rushes more, which adds more mess. The delay: the pain of today's shortcut does not show up for weeks, so it feels free at the time. The tipping point: eventually the codebase gets so tangled that one small feature triggers a cascade of bugs, and the project flips from "manageable" to "everything is on fire."
 
-Notice that nobody on the team is lazy or stupid. Each shortcut was reasonable under pressure. The trouble lives in the structure, not the people. That is the deep lesson: structure drives behavior.
+Notice that nobody on the team is lazy or stupid. Each shortcut was reasonable under pressure. The trouble lives in the structure, not the people. That is the deep lesson: [structure drives behavior](/blog/ten-disciplines/01-seeing-the-whole-what-a-system-is-and-why-it-behaves-the-way-it-does).
 
 ## A first taste of diagramming
 
@@ -245,4 +246,4 @@ One elegant trick: to tell whether a whole loop is reinforcing or balancing, cou
 
 Here is the one thing to carry with you: **stocks pile up, flows change them, feedback loops let stocks steer their own flows, and delays make that steering go wild.** Master those four, and runaway growth, stubborn stability, oscillation, and sudden collapse stop being mysteries. They become predictable machinery you can read.
 
-But reading a system is only half the prize. The same four pieces tend to fall into a small set of recurring traps, the patterns that snare smart people again and again, like "fixes that backfire" and "the tragedy of the commons." Learn to recognize those patterns, and you can spot the high-leverage point where a small, well-placed push changes everything. That is where we go next.
+But reading a system is only half the prize. The same four pieces tend to fall into a small set of recurring traps, the patterns that snare smart people again and again, like "fixes that backfire" and "the tragedy of the commons." Learn to recognize those patterns, and you can spot the [high-leverage point](/blog/ten-disciplines/03-leverage-points-system-traps-and-thinking-in-systems-advanced-real-world) where a small, well-placed push changes everything. That is where we go next.

@@ -55,9 +55,10 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 24
 icon: "\U0001F9ED"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -71,7 +72,7 @@ Ask most people what history is and they will say a list of dates, dead kings, a
 
 You are surrounded by people telling you what the past "proves." Politicians, ads, your uncle at dinner, a confident thread online. Most of them are doing it badly, and some are doing it on purpose.
 
-Learning to read history is not about winning trivia night. It is the single most transferable thinking skill you can own: how to weigh evidence, distrust simple stories, see many causes behind one event, and judge who is telling you something and why.
+Learning to read history is not about winning trivia night. It is the single most transferable thinking skill you can own: how to [weigh evidence](/blog/clear-thinking-and-expression/17-critical-thinking-foundations-claims-evidence-assumptions), distrust simple stories, see many causes behind one event, and judge who is telling you something and why.
 
 Master it and you become much harder to fool. Not just about the past, but about the news, the sales pitch, and the rumor.
 
@@ -141,7 +142,7 @@ Take the First World War. The long-term causes are remembered by the word **MAIN
 
 Saying "WWI was caused by one assassination" is like saying a forest fire was caused by one match while ignoring the months of drought that made the whole forest ready to burn. The spark is not the conditions. That is the **single-cause fallacy**.
 
-Watch for two related errors. **Post hoc ergo propter hoc** ("after this, therefore because of this") mistakes sequence for cause; the rooster crows before sunrise but does not cause it. A **counterfactual** is a disciplined "what if?" used to test how important a cause really was. Used carefully it sharpens your thinking. Used wildly it becomes fantasy.
+Watch for two related errors. **Post hoc ergo propter hoc** ("after this, therefore because of this") [mistakes sequence for cause](/blog/ten-disciplines/12-inference-correlation-vs-causation-and-how-statistics-mislead-advanced); the rooster crows before sunrise but does not cause it. A **counterfactual** is a disciplined "what if?" used to test how important a cause really was. Used carefully it sharpens your thinking. Used wildly it becomes fantasy.
 
 ## Every view is from somewhere: bias
 
@@ -184,10 +185,10 @@ Notice how the verdict shifted as the historians' own nation and era changed. Th
 ## Common misconceptions
 
 - **"History is memorizing dates."** Dates are timeline pegs. The discipline is interpretation and argument.
-- **"The medieval period was the Dark Ages."** A discredited, Europe-centered label. While one corner of Europe was less centralized, the Islamic world advanced science and math and China invented gunpowder, printing, and paper money. "Dark" tells you about the label-maker's prejudice, not the era.
+- **"The medieval period was the Dark Ages."** A discredited, Europe-centered label. While one corner of Europe was less centralized, [the Islamic world advanced science and math and China invented gunpowder, printing, and paper money](/blog/ten-disciplines/26-forces-that-shaped-the-modern-world-a-guided-tour-through-the-eras). "Dark" tells you about the label-maker's prejudice, not the era.
 - **"Period labels are facts."** They are arguments. No medieval person thought "I live in the Middle Ages." Always ask who coined a label, when, and what it quietly implies.
 - **"A biased source is worthless."** It is still evidence; just read it knowing the slant.
-- **"History repeats itself."** The honest version is gentler: history *rhymes*. Patterns recur but never identically and never on a schedule you can bet on.
+- **"History repeats itself."** The honest version is gentler: history *rhymes*. [Patterns recur but never identically and never on a schedule you can bet on](/blog/ten-disciplines/27-thinking-historically-patterns-cycles-cause-and-effect-and-lessons-advanced).
 
 ### The thinking traps to name and avoid
 
@@ -197,7 +198,7 @@ Learn the big fallacies by name so you can spot them in others and in yourself:
 - **Anachronism:** projecting a modern idea onto people who could not have had it.
 - **Whig history:** telling the past as a triumphant march toward today's values, cherry-picking the "winners."
 - **The historian's fallacy:** assuming people in the past had the hindsight we have. They couldn't see the future.
-- **Hindsight bias:** once you know how it ended, it feels like it had to end that way, erasing the real uncertainty people lived through.
+- **Hindsight bias:** [once you know how it ended, it feels like it had to end that way](/blog/ten-disciplines/08-biases-heuristics-and-why-smart-people-make-predictable-errors), erasing the real uncertainty people lived through.
 - **Nationalist myth:** treating your own nation's story as uniquely virtuous. If a narrative makes your side look spotless, scrutinize it hardest.
 
 One more distinction worth guarding. **Revisionism** is the normal, healthy re-interpretation of history using new evidence; it is a respectable word. It is *not* the same as **denial** (such as denying the Holocaust), which rejects overwhelming evidence. Never confuse the two.

@@ -60,9 +60,10 @@ category: Engineering
 date: '2026-06-15'
 order: 7
 icon: "\U0001F3D7️"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -103,7 +104,7 @@ Scaling out is the opposite. It survives failures and grows almost without limit
 
 A **load balancer** sits in front of your fleet and decides which server handles each incoming request. The big distinction is *how much it looks at*.
 
-- An **L4 load balancer** works at the transport layer. It only sees the IP address and port - like a mail sorter routing envelopes by postcode without opening them. It is blisteringly fast and handles millions of connections, but it cannot make smart decisions about *what* the request is.
+- An **L4 load balancer** works at the [transport layer](/blog/system-design/02-networking-and-protocols). It only sees the IP address and port - like a mail sorter routing envelopes by postcode without opening them. It is blisteringly fast and handles millions of connections, but it cannot make smart decisions about *what* the request is.
 - An **L7 load balancer** works at the application layer. It reads the actual HTTP request - the URL path, the headers, the cookies. It is the receptionist who reads each letter and routes it to the right department. Slower and more CPU-hungry, but far smarter.
 
 Why does that smartness matter? An L7 balancer can send `/admin` to a hardened pool of servers, send `/render` requests to expensive GPU machines, and quietly route 5 percent of traffic to a new version to test it (a **canary release**). An L4 balancer sees none of that - it only knows "packets headed for port 443."
@@ -116,7 +117,7 @@ Once a request arrives, the load balancer has to choose a backend. The choices r
 
 - **Round-robin:** just cycle through servers 1, 2, 3, 1, 2, 3. Dead simple. The flaw: it ignores how *expensive* each request is, so a slow, struggling server still gets its full share.
 - **Least-connections:** send the next request to whichever server has the fewest requests in flight. It adapts to slow servers, but it can stampede a freshly added empty server - which has zero connections, so it suddenly gets *all* the new traffic before its caches warm up.
-- **Consistent hashing:** route the same user or key to the same server every time, so that server's cache stays warm. The bonus: when you add or remove a server, only a small fraction of traffic gets reshuffled instead of everything.
+- **Consistent hashing:** route the same user or key to the same server every time, so that server's [cache stays warm](/blog/system-design/06-caching-deep). The bonus: when you add or remove a server, only a small fraction of traffic gets reshuffled instead of everything.
 
 ### The surprising winner: pick two at random
 
@@ -200,7 +201,7 @@ The right sequence is: first tell the load balancer to **stop sending new reques
 
 The bug almost everyone hits: the app shuts down the *instant* it is told to stop, before the load balancer has noticed. The balancer sends one more request to a now-dead server, and the user gets a 502 error. The fix is to drain first and exit second, with a grace period in between. (Kubernetes does this with a `preStop` delay and a termination grace period; AWS calls it a deregistration delay.)
 
-This is also why important operations should be **idempotent** - safe to retry. Pair draining with idempotency keys and a severed checkout request will not turn into a double charge.
+This is also why important operations should be **idempotent** - safe to retry. Pair draining with [idempotency keys](/blog/system-design/11-distributed-transactions-and-idempotency) and a severed checkout request will not turn into a double charge.
 
 ## Scaling the database is a different beast
 
@@ -264,8 +265,8 @@ A practical checklist, roughly in the order you would build it:
 4. **Split your health checks:** a shallow liveness check that stays up during dependency blips, plus a bounded readiness check.
 5. **Autoscale on a leading indicator** like request count or queue depth, keep real headroom, and add a cooldown to avoid flapping.
 6. **Drain connections on shutdown** and make critical operations idempotent so retries and double-charges are harmless.
-7. **Scale the database deliberately:** bigger box first, then read replicas for read-heavy load (and route post-write reads to the primary), and shard only when writes truly outgrow one machine.
-8. **Build in load shedding from the start.** Decide what to drop first, reject excess fast, and add circuit breakers plus retries with backoff and jitter so a slow dependency cannot trigger a retry storm.
+7. **Scale the database deliberately:** bigger box first, then [read replicas](/blog/system-design/08-replication-and-partitioning) for read-heavy load (and route post-write reads to the primary), and shard only when writes truly outgrow one machine.
+8. **Build in load shedding from the start.** Decide what to drop first, reject excess fast, and add [circuit breakers](/blog/system-design/16-rate-limiting-and-resiliency) plus retries with backoff and jitter so a slow dependency cannot trigger a retry storm.
 
 ## Conclusion
 

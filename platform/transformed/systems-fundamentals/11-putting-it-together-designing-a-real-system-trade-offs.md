@@ -30,9 +30,10 @@ faq:
     a: An SLI is the measured number (e.g. percent of requests under 200 ms). An SLO is your internal target for it. An SLA is a contractual promise to customers with penalties if you miss it, usually set looser than the SLO.
   - q: Should I look at average or p99 latency?
     a: Watch percentiles like p99, never the average. The average hides the slow tail; p99 = 800 ms means the slowest 1 percent of requests are worse than 800 ms, and those are real users having a bad time.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 topic: systems-fundamentals
 topicTitle: Systems Fundamentals
 category: Engineering
@@ -96,7 +97,7 @@ A URL shortener takes a long web address and hands back a short code, like the o
 - **Storage:** ~500 bytes per record × 100M/day × 365 days × 5 years ≈ **~90 TB over five years.**
 - **Short code length:** 7 characters in Base62 (the 62 URL-safe characters: a–z, A–Z, 0–9) gives 62⁷ ≈ **3.5 trillion** codes - decades of headroom. We use Base62, not Base64, because Base64 includes `+` and `/`, which have special meaning inside URLs.
 
-**The design insight:** with 100 reads for every write, **the cache *is* the system.** Generate a unique ID (from a global counter or a Snowflake-style 64-bit ID), Base62-encode it into the short code, and store `code → long_url`. The redirect is just a primary-key lookup, so cache it hard - a CDN (edge servers near users) plus Redis in front of the database.
+**The design insight:** with 100 reads for every write, **the cache *is* the system.** Generate a unique ID (from a global counter or a Snowflake-style 64-bit ID), Base62-encode it into the short code, and store `code → long_url`. The redirect is just a primary-key lookup, so [cache it hard](/blog/system-design/06-caching-deep) - a CDN (edge servers near users) plus Redis in front of the database.
 
 **A real trade-off to surface, not hide:** a `301` redirect ("moved permanently") lets the browser cache the destination, so repeat clicks never touch your servers - wonderful for load, but you lose click analytics. A `302` ("found / temporary") keeps every click hitting you so you can count it - but you carry all the load. Analytics versus load. There is no free answer; there is only the choice you can defend.
 
@@ -104,10 +105,10 @@ A URL shortener takes a long web address and hands back a short code, like the o
 
 Browsing a catalog is read-heavy - cache it and move on. **Checkout is the hard part,** because real money, inventory, and outside services are all involved. Every earlier topic shows up here with teeth.
 
-- **Concurrency - the "last item in stock" race:** two buyers hit "Buy" for the final unit at the same moment. Without protection, both succeed and you oversell. The fix is a database transaction with row locking (`SELECT ... FOR UPDATE`, which reserves the row so the second buyer waits) or an atomic decrement - a single uninterruptible "subtract one." This is the classic *lost update* problem made concrete.
-- **Consistency, per piece:** inventory and payment need **strong consistency** - never oversell, never double-charge. But the product's review count can be **eventually consistent** - a few seconds stale is fine. Different parts of *one* system sit at different points on the spectrum. That is the key insight.
+- **Concurrency - the "last item in stock" race:** two buyers hit "Buy" for the final unit at the same moment. Without protection, both succeed and you oversell. The fix is a [database transaction with row locking](/blog/systems-fundamentals/03-concurrency-parallelism-doing-many-things-at-once) (`SELECT ... FOR UPDATE`, which reserves the row so the second buyer waits) or an atomic decrement - a single uninterruptible "subtract one." This is the classic *lost update* problem made concrete.
+- **Consistency, per piece:** inventory and payment need **strong consistency** - never oversell, never double-charge. But the product's review count can be [**eventually consistent**](/blog/distributed-systems/17-consistency-models) - a few seconds stale is fine. Different parts of *one* system sit at different points on the spectrum. That is the key insight.
 - **External calls and retries:** the payment gateway might time out *after* it already charged the card. The client retries and - without protection - charges twice. This is exactly why idempotency keys exist (more below).
-- **Async work:** the confirmation email, invoice PDF, and warehouse notification go on a **queue** (a waiting line of jobs handled by background workers), not on the request path. Checkout stays fast and survives a downstream outage.
+- **Async work:** the confirmation email, invoice PDF, and warehouse notification go on a [**queue**](/blog/system-design/12-messaging-and-event-driven) (a waiting line of jobs handled by background workers), not on the request path. Checkout stays fast and survives a downstream outage.
 
 A rough shape of the whole thing:
 
@@ -154,7 +155,7 @@ This is the heart of it. Almost every design decision is one of these tugs-of-wa
 
 ## Common misconceptions
 
-**"CAP means I pick CP or AP for the whole system."** Reality: real systems tune consistency *per operation*. Payment is strong; review count is eventual - in the same app. And PACELC reminds you that you trade latency against consistency even when nothing is broken.
+**"CAP means I pick CP or AP for the whole system."** Reality: real systems tune consistency *per operation*. Payment is strong; review count is eventual - in the same app. And [PACELC](/blog/distributed-systems/16-the-cap-theorem-and-pacelc) reminds you that you trade latency against consistency even when nothing is broken.
 
 **"Average latency is a good health metric."** Reality: the average hides the tail. **Watch percentiles instead.** "p99 = 800 ms" means 99% of requests are faster than 800 ms and the slowest 1% are worse - and that slow 1% is real users having a bad time.
 

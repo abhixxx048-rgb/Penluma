@@ -26,7 +26,7 @@ faq:
     a: "A reverse proxy routes wildcard subdomains (one per tenant) to the right service while preserving the original Host header, which is how the app figures out which tenant is being served. Without it, every tenant looks like 'localhost'."
   - q: "Is it safe to bake secrets into a Docker image?"
     a: "No. Image layers are inspectable, so anyone with the image can read secrets baked into them. Inject secrets at runtime through Docker secrets or an env-file kept out of the image, and rotate anything that ever leaked."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: engineering-ops

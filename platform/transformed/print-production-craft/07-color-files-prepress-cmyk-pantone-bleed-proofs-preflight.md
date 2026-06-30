@@ -38,7 +38,7 @@ faq:
     a: Preflight is an automated check of a print file against a set of rules before it reaches the press. It catches stray RGB colors, low-resolution images, missing fonts, missing bleed, and too much ink, then reports or auto-fixes them.
   - q: What is rich black and when should I use it?
     a: Rich black is black ink plus some cyan, magenta, and yellow (commonly C60 M40 Y40 K100) for a deeper, denser black on large areas. Use plain 100% black for small text and thin lines to keep edges crisp and avoid registration problems.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources: []

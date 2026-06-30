@@ -28,9 +28,10 @@ faq:
     a: Say so plainly. Admitting "we don't do that yet" builds trust and makes every strength you claim more believable. Overpromising to win the deal is just a slow no.
   - q: Should I argue with a customer who objects?
     a: No. Even if you win the argument, you lose the sale, because nobody buys from someone who made them feel wrong. Stay curious instead of defensive - the unsolved problem is the enemy, not the person.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 topic: sales-customer-development
 topicTitle: Sales & Customer Development
 category: Money & Business
@@ -125,9 +126,9 @@ A **true objection** is a real, specific concern from someone who sees value: *"
 
 A **brush-off** is a polite escape hatch: *"Send me some info," "let me think about it," "circle back next quarter."* Often it is just a gentler way of saying "not now" without the awkwardness.
 
-In *The Mom Test* - a must-read book by Rob Fitzpatrick for any technical founder learning to talk to customers - he warns that founders get fooled by exactly this. A compliment followed by a stall, like *"Looks great, send me the details!"* It feels positive. It usually means nothing.
+In [*The Mom Test*](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself) - a must-read book by Rob Fitzpatrick for any technical founder learning to talk to customers - he warns that founders get fooled by exactly this. A compliment followed by a stall, like *"Looks great, send me the details!"* It feels positive. It usually means nothing.
 
-Fitzpatrick's fix: chase **commitment**, not kindness. Real interest costs the customer something - time, a clear next step, an intro, or money.
+Fitzpatrick's fix: chase **[commitment](/blog/sales-customer-development/14-from-conversation-to-commitment-advancing-and-closing)**, not kindness. Real interest costs the customer something - time, a clear next step, an intro, or money.
 
 So test it. Here is how that sounds:
 
@@ -200,7 +201,7 @@ Never trash a competitor your customer chose. Insulting their decision insults t
 
 Sandler, a respected sales methodology, puts it plainly: selling should never be a game of manipulation - its purpose is to serve the buyer's needs. That is your compass.
 
-The five-step method works because it uncovers a real problem and matches it to a real solution. The instant you twist it into "make them say yes no matter what," you have crossed into manipulation. For a founder whose reputation *is* the business, that is a terrible trade.
+The five-step method works because it uncovers a real problem and matches it to a real solution. The instant you twist it into "make them say yes no matter what," you have crossed into [manipulation](/blog/psychology-of-decisions/22-persuasion-vs-manipulation-the-ethics-of-influence). For a founder whose reputation *is* the business, that is a terrible trade.
 
 So draw a hard line around these:
 
@@ -220,7 +221,7 @@ Next time pushback hits, run this in your head:
 4. **Respond** honestly and briefly to the *real* concern, not the surface words.
 5. **Confirm** it landed: "Does that address it?"
 6. **Test brush-offs** like "send me info" by asking for a small commitment - a short meeting beats a brochure into the void.
-7. **For price**, reframe cost as value and name the cost of doing nothing - and be willing to say "then don't buy."
+7. **For price**, [reframe cost as value](/blog/business-financial-literacy/08-pricing-fundamentals-cost-plus-vs-value-vs-competitive) and name the cost of doing nothing - and be willing to say "then don't buy."
 8. **Never argue, never trash a competitor, never fabricate.** Stay curious instead of defensive.
 
 Print these eight steps. Keep them next to your phone for your next ten sales calls. After that, they're yours.
@@ -229,4 +230,4 @@ Print these eight steps. Keep them next to your phone for your next ten sales ca
 
 If you remember one thing, make it this: **the customer is not the enemy - the unsolved problem is.** Every objection is them handing you the map to that problem. Your only job is to follow it honestly.
 
-The deeper you get into this, you'll notice something strange. The questions that uncover an objection are the same ones that uncover whether a customer wanted your product in the first place. Which raises a sharper question worth chasing next: how do you tell genuine interest from polite enthusiasm *before* you've built the thing at all? That is where learning to ask the right questions - not pitch the right answers - starts to change everything.
+The deeper you get into this, you'll notice something strange. The questions that uncover an objection are the same ones that uncover whether a customer wanted your product in the first place. Which raises a sharper question worth chasing next: how do you tell genuine interest from polite enthusiasm *before* you've built the thing at all? That is where learning to [ask the right questions](/blog/sales-customer-development/05-asking-questions-without-leading) - not pitch the right answers - starts to change everything.

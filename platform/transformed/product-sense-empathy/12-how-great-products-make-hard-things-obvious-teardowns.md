@@ -36,8 +36,9 @@ faq:
     a: Give users a clear mental model, choose strong defaults so almost nobody configures anything, give instant plain-language feedback after every action, and remove every step and choice you can.
   - q: What is direct manipulation?
     a: Direct manipulation means you see the object you care about, act on it with gestures or labelled buttons rather than typed commands, and watch the effect change instantly and reversibly. Pinch-to-zoom on a phone is a classic example.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -59,7 +60,7 @@ Across every teardown below, the same four-step move keeps appearing. Learn it o
 
 1. **Hide complexity behind a clear mental model.** A mental model is the simple picture you hand the user: a blank box means "ask anything," a sheet of paper means a document, LEGO bricks mean blocks. They picture the model and never the machinery underneath.
 2. **Choose strong defaults.** A default is the choice the product makes *for* you. Decide what 90% of people want, so almost nobody has to configure anything.
-3. **Give constant feedback.** Every action produces an instant, visible, plain-language response. The user always knows the system heard them.
+3. **Give constant feedback.** [Every action produces an instant, visible, plain-language response](/blog/product-sense-empathy/06-closing-the-gulfs-action-feedback-the-seven-stages). The user always knows the system heard them.
 4. **Remove steps and choices.** Fewer options means faster decisions. Fewer screens means less to learn.
 
 ### A few named laws worth knowing
@@ -83,11 +84,11 @@ Charmingly, the bare page was partly an accident. Marissa Mayer once asked co-fo
 
 ### 2. The iPhone: touch the thing itself
 
-**The hard problem:** a pocket computer that is also a phone, an iPod, and the internet, usable with no manual. **The obvious solution:** touch what you want. Pinch to zoom, swipe to scroll, tap to select. The iPhone shipped with essentially no instruction booklet. **The principle:** direct manipulation plus strong affordances. A button *looks* pressable; a list *looks* scrollable. Steve Jobs called the finger "the most accurate pointing device in the world." Killing the stylus and the physical keyboard was the bet that let the whole screen become something you touch directly.
+**The hard problem:** a pocket computer that is also a phone, an iPod, and the internet, usable with no manual. **The obvious solution:** touch what you want. Pinch to zoom, swipe to scroll, tap to select. The iPhone shipped with essentially no instruction booklet. **The principle:** direct manipulation plus [strong affordances](/blog/product-sense-empathy/05-the-psychology-of-obvious-affordances-signifiers-mental-models). A button *looks* pressable; a list *looks* scrollable. Steve Jobs called the finger "the most accurate pointing device in the world." Killing the stylus and the physical keyboard was the bet that let the whole screen become something you touch directly.
 
 ### 3. Stripe: "it just works"
 
-**The hard problem:** accepting online payments once took weeks of merchant accounts, gateways, and confusing kits. **The obvious solution:** Stripe's promise of "payments in seven lines of code." Copy, paste, done. **The principle:** developer empathy, expressed as great docs, sane defaults, and fewer steps. Stripe's documentation is an industry benchmark, with its famous three-column layout: navigation, explanation, and live runnable code side by side. Weeks of setup compressed into a weekend, with clear test-mode feedback the whole way.
+**The hard problem:** accepting online payments once took weeks of merchant accounts, gateways, and confusing kits. **The obvious solution:** Stripe's promise of "payments in seven lines of code." Copy, paste, done. **The principle:** developer empathy, expressed as great docs, sane defaults, and [fewer steps](/blog/product-sense-empathy/09-reducing-friction-flows-steps-progressive-disclosure). Stripe's documentation is an industry benchmark, with its famous three-column layout: navigation, explanation, and live runnable code side by side. Weeks of setup compressed into a weekend, with clear test-mode feedback the whole way.
 
 The lesson travels beyond code. Stripe treats its **documentation as part of the product**, not an afterthought. The equivalent for any tool is the in-app guidance a non-technical user reads while setting up. If the help text feels bolted on, the product is harder than it needs to be.
 
@@ -99,7 +100,7 @@ Founder Rahul Vohra enforces a "100-millisecond rule": every interaction must re
 
 ### 5. Linear: opinionated and keyboard-first
 
-**The hard problem:** issue trackers bloat into slow, infinitely configurable tools, the classic "Jira problem." **The obvious solution:** an opinionated tool with one good way to work and a keyboard shortcut for nearly everything. **The principle:** strong defaults plus removing choices, which is Hick's Law applied to a whole product. Linear deliberately constrains you with built-in structures like Cycles, Triage, and Backlog instead of letting every team invent fifty custom statuses. Speed is treated as a core feature, not a nice-to-have.
+**The hard problem:** issue trackers bloat into slow, infinitely configurable tools, the classic "Jira problem." **The obvious solution:** an opinionated tool with one good way to work and a keyboard shortcut for nearly everything. **The principle:** [strong defaults](/blog/product-sense-empathy/08-the-make-it-obvious-toolkit-defaults-constraints-discoverability) plus removing choices, which is Hick's Law applied to a whole product. Linear deliberately constrains you with built-in structures like Cycles, Triage, and Backlog instead of letting every team invent fifty custom statuses. Speed is treated as a core feature, not a nice-to-have.
 
 ### 6. Notion: everything is a block
 
@@ -137,7 +138,7 @@ You can feel the difference when it breaks:
 
 Run the same recipe the giants run, in this order:
 
-1. **Name the real job.** Before any feature, ask what users are actually "hiring" your product to do. Solve that, not the feature wish-list.
+1. **Name the real job.** Before any feature, ask [what users are actually "hiring" your product to do](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress). Solve that, not the feature wish-list.
 2. **Give one clear mental model.** Pick a single picture ("this is your store," "everything is a block") and make every screen reinforce it.
 3. **Set strong defaults.** Decide what most people want and pre-fill it. A new user should reach a useful result without opening ten settings.
 4. **Respond instantly, in plain words.** After every action, show a clear "Saved" or a visible change. Aim for fast feedback; under ~100ms feels instant.

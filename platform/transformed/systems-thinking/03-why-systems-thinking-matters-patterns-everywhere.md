@@ -47,9 +47,10 @@ faq:
       Finding the delay in the feedback loop. Most management and policy errors happen
       because people react to a stock as it was, not as it is, which causes overshoot
       and oscillation.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 topic: systems-thinking
 topicTitle: Systems Thinking
 category: Thinking & Decisions
@@ -81,7 +82,7 @@ In plain words: smart, well-meaning people inside a badly built system will prod
 
 Before we go further, two everyday terms worth knowing:
 
-- A **stock** is anything that piles up-water in a tub, money in an account, fish in the sea.
+- A [**stock**](/blog/systems-thinking/04-stocks-and-flows-what-builds-up-and-what-moves) is anything that piles up-water in a tub, money in an account, fish in the sea.
 - A **flow** is the rate that fills or drains it-the faucet and the drain.
 
 A stock only changes when the inflow and outflow differ, and you can never change it instantly. You can only change the rates, over time. Hold onto that. It explains a surprising amount.
@@ -90,7 +91,7 @@ A stock only changes when the inflow and outflow differ, and you can never chang
 
 Think about a thermostat. The **stock** is room temperature. The **goal** is 70°F. The **sensor** is the thermometer. The **corrective action** is the heater switching on or off.
 
-This is a **balancing loop**-a self-correcting loop that pushes the system back toward a target. So far, so boring.
+This is a [**balancing loop**](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves)-a self-correcting loop that pushes the system back toward a target. So far, so boring.
 
 Now add a **delay**. Imagine the thermostat reads the temperature from ten minutes ago. The heater stays on too long, the room overshoots, then it over-corrects the other way-and the temperature swings up and down forever.
 
@@ -98,7 +99,7 @@ That delay-in-the-loop is not a quirk. It's the hidden engine behind almost ever
 
 ## Patterns that repeat everywhere
 
-Because structure drives behavior, a small number of structures keep producing the same stories in totally unrelated fields. **Peter Senge** and his colleagues, in *The Fifth Discipline*, named eight of these recurring patterns and called them **systems archetypes**.
+Because structure drives behavior, a small number of structures keep producing the same stories in totally unrelated fields. **Peter Senge** and his colleagues, in *The Fifth Discipline*, named eight of these recurring patterns and called them [**systems archetypes**](/blog/systems-thinking/12-system-archetypes-stories-that-repeat).
 
 An archetype is just a familiar combination of stocks, flows, loops, and delays that produces a predictable kind of trouble.
 
@@ -158,7 +159,7 @@ The identical structure drives aquifer depletion, atmospheric CO₂, and antibio
 
 Then a constraint appears-say, support capacity. Tickets pile up, satisfaction drops, churn rises, and growth stalls. The instinctive response is to push *harder* on sales. That is exactly wrong.
 
-**Eliyahu Goldratt** made this precise in *The Goal* with his **Theory of Constraints**: the slowest step sets the throughput of the *whole* system. Optimizing any other step is wasted effort.
+**Eliyahu Goldratt** made this precise in *The Goal* with his [**Theory of Constraints**](/blog/systems-thinking/09-bottlenecks-and-constraints-the-theory-of-constraints): the slowest step sets the throughput of the *whole* system. Optimizing any other step is wasted effort.
 
 > **Tip:** When growth stalls, resist the urge to floor the accelerator. Ask instead: *"What is the one constraint now setting the pace of the whole system?"* Fix that-and the constraint will move somewhere new, which you then address next.
 
@@ -166,7 +167,7 @@ Then a constraint appears-say, support capacity. Tickets pile up, satisfaction d
 
 If you take one practical skill from this entire topic, make it this: **find the delay in the feedback loop.**
 
-Delays cause overshoot and oscillation. Most management and policy errors happen because decision-makers react to the stock *as it was*, not as it is.
+[Delays](/blog/systems-thinking/06-delays-why-cause-and-effect-are-not-close-in-time) cause overshoot and oscillation. Most management and policy errors happen because decision-makers react to the stock *as it was*, not as it is.
 
 Picture the bathtub again. The water level changes only when the faucet and drain differ, and you can never change the level instantly-only the rates, over time. That's why inflation can't be fixed in a month, a company can't hire 50 trained engineers in a week, and an overfished sea can't refill in a year. Stocks have inertia, like a supertanker that needs ten miles to stop while a speedboat stops in seconds.
 
@@ -213,4 +214,4 @@ If you remember one thing, remember this: **structure produces behavior.** Good 
 
 That single idea quietly rearranges how you read the news, run a team, and judge a policy. The cobra breeders weren't villains. The cod fishers weren't villains. The structure was doing exactly what its structure does.
 
-But naming a loop is only half the craft. The other half is knowing *where* to push-because not every part of a system is equally responsive. Some places barely move the needle, and a rare few can transform the whole thing with a nudge. Donella Meadows ranked these **leverage points** from weakest to most powerful, and her surprising finding was that the levers everyone reaches for first are almost always the feeblest ones. That's where we go next.
+But naming a loop is only half the craft. The other half is knowing *where* to push-because not every part of a system is equally responsive. Some places barely move the needle, and a rare few can transform the whole thing with a nudge. Donella Meadows ranked these [**leverage points**](/blog/systems-thinking/13-leverage-points-where-to-push-to-change-a-system) from weakest to most powerful, and her surprising finding was that the levers everyone reaches for first are almost always the feeblest ones. That's where we go next.

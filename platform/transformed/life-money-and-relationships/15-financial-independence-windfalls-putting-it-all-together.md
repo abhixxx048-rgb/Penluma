@@ -57,7 +57,7 @@ faq:
       It is the danger of a market crash hitting in your first few retirement years.
       Selling investments while prices are down can permanently shrink your portfolio.
       A two to three year cash buffer protects against it.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources: []

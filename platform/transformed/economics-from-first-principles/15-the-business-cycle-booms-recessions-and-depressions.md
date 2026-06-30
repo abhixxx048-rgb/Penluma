@@ -48,7 +48,7 @@ faq:
       There is no single cause. The main drivers are demand shocks, credit
       swings, swings in business confidence ("animal spirits"), and supply
       shocks like the 1970s oil crisis. They often combine and feed each other.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: economics-from-first-principles

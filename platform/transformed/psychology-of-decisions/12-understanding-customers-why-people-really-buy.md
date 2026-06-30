@@ -36,8 +36,9 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 11
 icon: "\U0001F3AF"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -51,11 +52,11 @@ If you sell anything, build anything, or pitch anything, you are guessing at why
 
 Understanding the hidden psychology of buying does two things for you. It helps you design offers people genuinely want, instead of polishing features nobody cares about. And it lets you spot the exact moment those same tricks are being used on *you*, in a store, on a checkout page, or across a negotiating table.
 
-This isn't about manipulation. It's about seeing the real human behind the purchase.
+This isn't about [manipulation](/blog/psychology-of-decisions/22-persuasion-vs-manipulation-the-ethics-of-influence). It's about seeing the real human behind the purchase.
 
 ## Customers don't buy products. They "hire" them for a job
 
-The single most useful idea here is called **Jobs-To-Be-Done**, made famous by Harvard professor Clayton Christensen.
+The single most useful idea here is called [**Jobs-To-Be-Done**](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress), made famous by Harvard professor Clayton Christensen.
 
 The idea is simple: customers "hire" a product to make progress on a real job in their life. The product is just a tool. The *job* is the goal.
 
@@ -93,7 +94,7 @@ A store owner doesn't hire a print-shop app to "manage products." They hire it t
 
 We love to believe we weigh the facts and choose rationally. The science says otherwise.
 
-Researcher Gerald Zaltman estimates that about **95% of buying decisions happen below conscious awareness**, driven by feeling, not spreadsheets.
+Researcher Gerald Zaltman estimates that about **95% of buying decisions happen below conscious awareness**, [driven by feeling](/blog/psychology-of-decisions/09-feelings-first-how-emotions-steer-every-choice), not spreadsheets.
 
 The most striking proof comes from a patient known as "Elliot." After brain damage to the area that links emotion to decisions, his IQ and logic stayed perfect, but he became *unable to decide*. Choosing which pen to use or what time to schedule a meeting could eat up hours.
 
@@ -135,7 +136,7 @@ Prices aren't judged in absolute terms. They're judged against whatever referenc
 
 ### Anchoring: the first number sticks
 
-**Anchoring** means the first number you see becomes the mental anchor you compare everything else against.
+[**Anchoring**](/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults) means the first number you see becomes the mental anchor you compare everything else against.
 
 In a famous experiment, people spun a wheel that landed on a random number, then guessed an unrelated fact. Those who saw a high number guessed higher, even though they *knew* the wheel was random. That's how sticky anchors are.
 
@@ -191,4 +192,4 @@ Here is the one thing to carry away: people buy to make progress in their lives.
 
 Understand that real human, and you stop "selling products" and start helping people get a job done, which is exactly why they'll come back to you.
 
-And notice something curious in that last step, the way buyers rewrite the story *after* they've already decided. That instinct to defend a choice we've made runs far deeper than shopping. It shapes the beliefs we hold, the teams we root for, and the opinions we'll argue to the grave. Once you start seeing how the mind protects its own decisions, you can't unsee it.
+And notice something curious in that last step, the way buyers rewrite the story *after* they've already decided. That instinct to [defend a choice we've made](/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence) runs far deeper than shopping. It shapes the beliefs we hold, the teams we root for, and the opinions we'll argue to the grave. Once you start seeing how the mind protects its own decisions, you can't unsee it.

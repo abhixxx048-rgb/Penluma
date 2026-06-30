@@ -30,7 +30,7 @@ faq:
     a: "Yes, keep it on for relative and absolute colorimetric print conversions. It maps the source's darkest black to the print's darkest black so deep shadows keep their detail instead of crushing to a flat blob."
   - q: "When should I use absolute colorimetric?"
     a: "Only for proofing, when you need one device to simulate another - for example, an inkjet proofer mimicking a newspaper press. It preserves the source paper's white, which casts an unwanted tint in normal printing."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: computer-graphics-print

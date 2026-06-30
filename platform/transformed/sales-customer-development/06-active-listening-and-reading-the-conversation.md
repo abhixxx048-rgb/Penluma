@@ -32,9 +32,10 @@ category: Money & Business
 date: '2026-06-21'
 order: 5
 icon: "\U0001F91D"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - "https://en.wikipedia.org/wiki/Active_listening"
   - "https://en.wikipedia.org/wiki/Never_Split_the_Difference"
@@ -116,7 +117,7 @@ You do not pick one technique. You stack them: mirror, they expand, label the fe
 
 ## Getting past vague answers to real specifics
 
-People naturally speak in fluff: "we'd *probably* use that," "we *always* struggle with this," "it'd be *great* to have." Rob Fitzpatrick's book **The Mom Test** warns that vague answers and hypotheticals are dangerous. They feel like validation but tell you nothing real.
+People naturally speak in fluff: "we'd *probably* use that," "we *always* struggle with this," "it'd be *great* to have." Rob Fitzpatrick's book [**The Mom Test**](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself) warns that vague answers and hypotheticals are dangerous. They feel like validation but tell you nothing real.
 
 The fix is to anchor every vague claim to a specific past event:
 
@@ -161,9 +162,9 @@ On camera you also get **non-verbal cues** (body language). Leaning in, nodding,
 
 **"A compliment means I'm winning."** "I love it!" is being nice to you, not buying from you. A real signal is a specific question, a date, or a dollar amount, something that costs them a little to say.
 
-**"Tactical empathy is a manipulation trick."** It is the reverse. Manipulation hides what the other person wants. Tactical empathy surfaces it so you can both decide honestly whether there's a fit.
+**"Tactical empathy is a manipulation trick."** It is the reverse. [Manipulation hides what the other person wants](/blog/psychology-of-decisions/22-persuasion-vs-manipulation-the-ethics-of-influence). Tactical empathy surfaces it so you can both decide honestly whether there's a fit.
 
-**"If they say it would be useful, the problem is real."** Hypotheticals are the most dangerous answers in customer discovery. Only a real past event, with a real cost, proves the pain.
+**"If they say it would be useful, the problem is real."** Hypotheticals are the most dangerous answers in [customer discovery](/blog/sales-customer-development/03-customer-development-get-out-of-the-building). Only a real past event, with a real cost, proves the pain.
 
 ## How to use this on your next call
 
@@ -195,4 +196,4 @@ Notice you never described your product. By listening well, you got the customer
 
 If you remember one thing, remember this: the quietest person on the call is often the one who walks away with the deal. Stop performing, start reflecting, and let the buyer talk themselves into their own problem.
 
-There is one trap even great listeners fall into, though. You can listen perfectly and still get fooled if you ask the wrong questions in the first place, the kind that beg for a flattering yes. That is the next thing worth learning: how to ask questions your customer literally cannot lie to you about. The Mom Test starts there.
+There is one trap even great listeners fall into, though. You can listen perfectly and still get fooled if you [ask the wrong questions in the first place](/blog/sales-customer-development/05-asking-questions-without-leading), the kind that beg for a flattering yes. That is the next thing worth learning: how to ask questions your customer literally cannot lie to you about. The Mom Test starts there.

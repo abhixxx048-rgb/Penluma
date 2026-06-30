@@ -33,7 +33,7 @@ faq:
     a: Shorter trials of 7 to 14 days tend to convert better than 30-day trials because they create urgency. Pair the trial with structured Day 1, Day 3, and Day 7 check-ins to guide users to value.
   - q: What is a North Star metric?
     a: A North Star metric is the single number that best captures the value customers get from your product and predicts future revenue. A good one is within your team's control and acts as a leading indicator, like "number of stores that received an order this week."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: marketing-growth

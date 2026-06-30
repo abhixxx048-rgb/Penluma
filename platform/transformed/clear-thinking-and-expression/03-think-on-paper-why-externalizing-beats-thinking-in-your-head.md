@@ -51,7 +51,7 @@ faq:
       Set a timer for five minutes and freewrite on one nagging question without
       stopping or editing. Then read it back and underline the sentence that
       surprised you. That is a real idea your head was hiding.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources: []

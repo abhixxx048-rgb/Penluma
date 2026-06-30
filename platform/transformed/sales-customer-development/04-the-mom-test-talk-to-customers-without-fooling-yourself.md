@@ -53,9 +53,10 @@ category: Money & Business
 date: '2026-06-21'
 order: 3
 icon: "\U0001F91D"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -106,7 +107,7 @@ The more you talk, the more you steer them and the less you learn. Your job is t
 - **Compliments.** "That's a great idea!" Fitzpatrick calls these "the fluff." Free candy: sweet, zero nutrition.
 - **Opinions and hypotheticals.** Anything starting with "I would," "I could," or "I might." A guess about an imaginary future.
 - **Promises about the future.** "I'd definitely buy that." "Send it when it's ready." A promise costs nothing to make, so it's worth nothing.
-- **Wishlists.** "It should also do X and Y." People are bad at designing solutions. Treat feature requests as clues to a problem, not orders.
+- **Wishlists.** "It should also do X and Y." People are bad at designing solutions. Treat [feature requests as clues to a problem](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress), not orders.
 
 **Good data is the truth, even when it's quiet:**
 
@@ -119,7 +120,7 @@ Stories are facts. Opinions are guesses. If someone has already spent real time 
 
 ## Questions you can steal word for word
 
-Notice the pattern below. Bad questions ask for a verdict on your idea. Good questions ask for a true story from someone's past. You can't fake "the last time it happened." It either happened or it didn't.
+Notice the pattern below. Bad questions ask for a verdict on your idea. [Good questions ask for a true story](/blog/sales-customer-development/05-asking-questions-without-leading) from someone's past. You can't fake "the last time it happened." It either happened or it didn't.
 
 | Bad question (gets lies) | Good question (gets truth) |
 | --- | --- |
@@ -139,11 +140,11 @@ Lead with these, then just keep asking "why?" and "tell me more."
 
 ## Common misconceptions
 
-**"I'd definitely buy that!" means I've validated my idea.** No. This is the most dangerous sentence in customer research because it feels exactly like a win. Saying yes cost them nothing: no money, no commitment, no risk. It's pure hot air. The only thing that proves real interest is a **commitment**, which means giving up something of value right now. That could be money (a deposit or pre-order), time (a real next meeting with a goal), reputation (introducing you to their boss), or specific personal data. No commitment means it was just a compliment in disguise.
+**"I'd definitely buy that!" means I've validated my idea.** No. This is the most dangerous sentence in customer research because it feels exactly like a win. Saying yes cost them nothing: no money, no commitment, no risk. It's pure hot air. The only thing that proves real interest is a [**commitment**](/blog/sales-customer-development/14-from-conversation-to-commitment-advancing-and-closing), which means giving up something of value right now. That could be money (a deposit or pre-order), time (a real next meeting with a goal), reputation (introducing you to their boss), or specific personal data. No commitment means it was just a compliment in disguise.
 
 **A compliment is a signal.** A compliment is the absence of a signal. When one lands, don't bask in it. Bounce off it and dig.
 
-**Good interviewers are smooth talkers.** The opposite. The best customer conversations come from people who stay curious and quiet. If you dread selling, this is freeing. You don't have to charm anyone. You just have to listen well.
+**Good interviewers are smooth talkers.** The opposite. The best customer conversations come from people who stay curious and quiet. If you dread selling, this is freeing. You don't have to charm anyone. You just have to [listen well](/blog/sales-customer-development/06-active-listening-and-reading-the-conversation).
 
 **Feature requests tell me what to build.** They tell you where a problem might be hiding. Ask what the feature would let them do that they can't do today, then chase that.
 
@@ -186,4 +187,4 @@ No pitch. No compliments. You learned the problem is real, painful, frequent, an
 
 Here's the one thing to carry out the door: stop asking people what they think of your idea, and start asking what they've already done about their problem. The truth lives in actions and spending, never in applause.
 
-Now notice something. The good conversation above ended with the customer already paying $600 a month for a worse solution. That's not just validation. That's a price signal sitting in plain sight. The next question becomes how you turn a painful, expensive problem into an offer someone commits to before you've written a single line of code, which is exactly where customer development stops being research and starts becoming sales.
+Now notice something. The good conversation above ended with the customer already paying $600 a month for a worse solution. That's not just validation. That's a price signal sitting in plain sight. The next question becomes how you turn a painful, expensive problem into an offer someone commits to before you've written a single line of code, which is exactly where [customer development](/blog/sales-customer-development/03-customer-development-get-out-of-the-building) stops being research and starts becoming sales.

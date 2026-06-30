@@ -59,9 +59,10 @@ faq:
       Spanner uses TrueTime, a clock that returns a time interval with bounded
       uncertainty. It waits out that uncertainty before confirming a commit, so
       every transaction lands in a globally agreed real-time order.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/CAP_theorem
   - https://en.wikipedia.org/wiki/PACELC_theorem
@@ -176,7 +177,7 @@ This forces the read set and the write set to overlap by at least one node, so e
 - **N=3, W=3, R=1** gives fast reads, but one node down blocks every write.
 - **N=3, W=1, R=1** gives `2 > 3`, false. Fast and very available, but **eventually consistent**. This is the fast default in Dynamo-style stores.
 
-A back-of-the-envelope number makes the latency tax real. Three replicas across availability zones in one region cost roughly **1 to 2 milliseconds** for a strong write. Stretch that same quorum across two continents, say a round trip of about 80 milliseconds, and *every* strongly consistent write now costs **at least 80 milliseconds**. That is why cross-region strong consistency hurts, and why teams keep the consistency boundary inside one region and replicate across regions in the background.
+A back-of-the-envelope number makes the latency tax real. Three replicas across availability zones in one region cost roughly **1 to 2 milliseconds** for a strong write. Stretch that same quorum across two continents, say a round trip of about 80 milliseconds, and *every* strongly consistent write now costs **at least 80 milliseconds**. That is why cross-region strong consistency hurts, and why teams keep the consistency boundary inside one region and [replicate across regions in the background](/blog/system-design/08-replication-and-partitioning).
 
 One trap: quorum overlap is not full linearizability. Two reads during an in-flight write can still return different values, and "sloppy" quorums that write to any reachable node during a partition may not overlap at all. Overlap means you *can* see the latest write, not that everyone sees the same thing at the same instant.
 
@@ -205,9 +206,9 @@ The bill: every read-write transaction pays that commit-wait (a few milliseconds
 
 ### Dynamo: never refuse a write, on purpose
 
-Amazon faced the mirror image. During the 2006 holiday peak, the shopping-cart service saw availability dips that turned directly into lost sales across millions of requests per second. Amazon's verdict: an "add to cart" must *never* fail, even during a partition, because a rejected write is a rejected dollar. Dynamo (the design DNA behind DynamoDB, Cassandra, and Riak) is the answer to "what if we just stay writeable everywhere, deliberately?"
+Amazon faced the mirror image. During the 2006 holiday peak, the shopping-cart service saw availability dips that turned directly into lost sales across millions of requests per second. Amazon's verdict: an "add to cart" must *never* fail, even during a partition, because a rejected write is a rejected dollar. Dynamo (the design DNA behind [DynamoDB](/blog/aws-cloud-practitioner-mcq/12-amazon-dynamodb-managed-nosql), Cassandra, and Riak) is the answer to "what if we just stay writeable everywhere, deliberately?"
 
-It stays always-writeable using sloppy quorums and hinted handoff, writing to any reachable node during a partition. The cost it accepts is divergence. Two people adding to the same cart during a network blip can produce two versions, which the application merges back together later using version vectors. That is the famous "two divergent carts get merged" behavior, and it is a feature, not a bug.
+It stays always-writeable using sloppy quorums and hinted handoff, writing to any reachable node during a partition. The cost it accepts is divergence. Two people adding to the same cart during a network blip can produce two versions, which the application merges back together later using [version vectors](/blog/distributed-systems/15-vector-clocks-causality). That is the famous "two divergent carts get merged" behavior, and it is a feature, not a bug.
 
 ### Same question, opposite answers
 
@@ -234,7 +235,7 @@ Mature systems let you buy strength only where it matters and bank the latency a
 
 - **"We're CP, so we never lose data."** CP gives up *availability*, not durability, and only guarantees freshness if you read through the leader or quorum. Read from a follower for speed and you have quietly made an eventual-consistency decision, no matter the label.
 - **"Serializable transactions mean my reads are always fresh."** False if those reads hit async replicas. Isolation and replica consistency are different guarantees.
-- **"Last-write-wins is a safe conflict rule."** With physical clocks, a node whose clock is two seconds fast wins every conflict, and a backward-skewed node's newer writes vanish silently. Teams have lost data this way to ordinary clock glitches. Prefer version vectors or app-level merges.
+- **"Last-write-wins is a safe conflict rule."** With [physical clocks](/blog/distributed-systems/14-time-clocks-the-ordering-of-events), a node whose clock is two seconds fast wins every conflict, and a backward-skewed node's newer writes vanish silently. Teams have lost data this way to ordinary clock glitches. Prefer version vectors or app-level merges.
 - **"The marketing word 'consistent' is enough."** Always translate it. Linearizable? Causal? Bounded-stale by how much? Session-scoped? If the vendor cannot say, assume eventual.
 - **"Strong consistency by default is the safe choice."** It is the *most expensive* default: latency on every operation and unavailability under partition. Most reads are happy with session or eventual.
 
@@ -256,4 +257,4 @@ Here is the one thing to carry away: the choice between consistency and availabi
 
 So the next time a database calls itself "strongly consistent," you will know to ask the better question: strong in which of the five senses, and what does that cost me on every single request?
 
-And there is a deeper rabbit hole waiting. How do these systems actually *agree* on a single order of events when machines fail mid-decision? That machinery, the algorithms named Paxos and Raft, is what quietly powers the consistent corner of everything you just read.
+And there is a deeper rabbit hole waiting. How do these systems actually *agree* on a single order of events when machines fail mid-decision? That machinery, the algorithms named [Paxos and Raft](/blog/system-design/10-consensus-and-coordination), is what quietly powers the consistent corner of everything you just read.

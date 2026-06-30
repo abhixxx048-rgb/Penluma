@@ -46,7 +46,7 @@ faq:
     a: Reserve 1:1 demos for people who already attended a workshop or tried your
       self-serve demo and clicked "talk to us." Make it a "let's set up your account"
       session, not a generic product tour.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources: []

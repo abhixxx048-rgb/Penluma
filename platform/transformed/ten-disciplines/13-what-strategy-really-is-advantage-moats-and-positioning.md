@@ -57,9 +57,10 @@ faq:
       It describes a company trying to be both the cheapest and the most premium
       at once, and excelling at neither. The cost leader undercuts its prices and
       the differentiator wins its premium customers, leaving it squeezed.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -157,7 +158,7 @@ The trap is that you can create enormous value and capture almost none of it.
 
 The personal computer revolution created staggering value for the world. But most PC makers earned thin profits, fighting each other on price. The big winners were **Microsoft** (the Windows operating system) and **Intel** (the chips), together nicknamed "Wintel." They controlled the two parts everyone needed and could not replace, so they captured most of the profit while PC assemblers fought over scraps.
 
-Baking a giant pie is value creation. Getting your slice is value capture. A cook who bakes the world's biggest pie but lets everyone else eat it goes hungry. Many startups bake wonderful pies and starve.
+Baking a giant pie is value creation. Getting your slice is [value capture](/blog/how-to-make-money/14-pricing-value-capture). A cook who bakes the world's biggest pie but lets everyone else eat it goes hungry. Many startups bake wonderful pies and starve.
 
 ## The two basic ways to win
 
@@ -199,7 +200,7 @@ Picture the industry's profit as air inside a balloon, and the five forces as fi
 
 Airlines face brutal pressure on all five: easy substitutes (video calls, trains), powerful customers who compare prices in seconds, powerful suppliers (Boeing, Airbus, airports, fuel), savage rivalry, and waves of new low-cost entrants. The result is chronically thin profits. Compare branded soft drinks, where the forces press gently. Strong brands keep entrants out, customers are loyal, and suppliers of sugar and water have little power, so profits are rich and durable.
 
-Always separate two questions. First, *is this an attractive industry?* (answered by structure and Five Forces). Second, *can we win inside it?* (answered by position and advantage). Both must be yes. A brilliant company in a terrible industry usually still struggles.
+Always separate two questions. First, *is this an [attractive industry](/blog/ten-disciplines/14-industry-forces-competition-business-models-and-value-creation)?* (answered by structure and Five Forces). Second, *can we win inside it?* (answered by position and advantage). Both must be yes. A brilliant company in a terrible industry usually still struggles.
 
 ## Moats: why some advantages last for decades
 
@@ -226,9 +227,9 @@ Helmer's sharp insight: **power = benefit + barrier.** A low price or a cool fea
 
 A strategy can be elegant and still collapse if the underlying money math is broken. Two ideas keep you honest.
 
-Your **business model** is the logic of how you make money. Gillette sells razors cheaply, then earns its profit on the blades you keep buying. Google gives search away free and earns from ads. Same world, totally different money engines.
+Your **[business model](/blog/how-to-make-money/12-the-business-model-menu)** is the logic of how you make money. Gillette sells razors cheaply, then earns its profit on the blades you keep buying. Google gives search away free and earns from ads. Same world, totally different money engines.
 
-Your **unit economics** is the profit or loss on a *single* customer or sale. A child's lemonade stand asks the only question that matters before expanding: "On each cup, do I make money or lose money?" If you lose 10 cents a cup, selling more cups loses you more money. Growth makes a broken business fail *faster*, not slower.
+Your **[unit economics](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale)** is the profit or loss on a *single* customer or sale. A child's lemonade stand asks the only question that matters before expanding: "On each cup, do I make money or lose money?" If you lose 10 cents a cup, selling more cups loses you more money. Growth makes a broken business fail *faster*, not slower.
 
 Three terms you will hear constantly:
 
@@ -268,4 +269,4 @@ Strip away the jargon and strategy answers three questions, in order: **Where wi
 
 If you remember nothing else, remember the trade-off test. The fastest way to spot a fake strategy is to ask what the company is deliberately choosing *not* to do. If the answer is "nothing," you are looking at a wish wearing a strategy's clothes.
 
-Here is the thread worth pulling next. A real strategy is only half the job, because a brilliant plan that nobody executes is worth exactly as much as no plan at all. The harder, quieter discipline is turning these choices into goals that actually stick, and making an entire organization move in the same direction. That is where the real game begins.
+Here is the thread worth pulling next. A real strategy is only half the job, because a brilliant plan that nobody executes is worth exactly as much as no plan at all. The harder, quieter discipline is turning these choices into goals that actually stick, and [making an entire organization move in the same direction](/blog/ten-disciplines/15-execution-growth-and-strategic-decision-making-advanced). That is where the real game begins.

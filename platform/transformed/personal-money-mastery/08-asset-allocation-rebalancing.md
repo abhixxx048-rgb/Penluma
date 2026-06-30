@@ -28,7 +28,7 @@ faq:
     a: "Yes. EPF and PPF are debt holdings, so they count inside your debt allocation. Many people forget this and end up far more conservative than they intended."
   - q: "What is sequence-of-returns risk?"
     a: "It's the danger of a market crash hitting right before you need to withdraw money. A bad year at withdrawal time can permanently dent a corpus you spent decades building, which is why you de-risk a goal 3 to 5 years out."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: personal-money-mastery

@@ -48,7 +48,7 @@ faq:
       An old RIP flattened the transparency at low resolution, leaving a faint
       rectangle around each shadow. Re-export as PDF/X-4 so a modern RIP resolves
       the transparency live.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: computer-graphics-print

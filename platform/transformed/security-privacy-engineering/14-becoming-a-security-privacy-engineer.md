@@ -30,13 +30,14 @@ faq:
     a: "With focused daily effort, a 90-day plan can make you interview-ready for entry roles. The faster path is learning in public: publish write-ups and ship labs so employers can see your skill, not just read about it."
   - q: What is a privacy engineer and how is it different from a security engineer?
     a: "A privacy engineer handles the technical 'how' of privacy: data minimisation, de-identification, consent plumbing, and privacy threat modeling (LINDDUN). They sit between legal, security, and engineering, focused on protecting personal data."
+linked: true
 topic: security-privacy-engineering
 topicTitle: Security & Privacy Engineering
 category: Engineering
 date: '2026-06-21'
 order: 13
 icon: "\U0001F512"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
 sources: []
@@ -69,16 +70,16 @@ That single fact is your strategy. The way in is proof-of-work, not just a diplo
 "Security engineer" is a category, not a role. Most people who thrive specialise. Here are the main tracks and who each one fits.
 
 ### AppSec engineer
-You secure software and code: review designs, run scanners, threat-model features, and fix the classic web vulnerabilities. **Best fit if you are a developer** - this is the closest track to coding.
+You secure software and code: review designs, run scanners, threat-model features, and fix the [classic web vulnerabilities](/blog/security-privacy-engineering/05-application-web-security). **Best fit if you are a developer** - this is the closest track to coding.
 
 ### Security engineer (infrastructure / generalist)
 You build and harden defensive plumbing: identity, network controls, Zero Trust, secrets management, logging. **Best fit if you like building systems.**
 
 ### Cloud security engineer
-You wrangle AWS, Azure, and GCP: misconfigurations, identity and access management, container and Kubernetes security. **Best fit if you want the fastest-growing track** - a large share of employers pay a premium for it.
+You wrangle AWS, Azure, and GCP: misconfigurations, identity and access management, [container and Kubernetes security](/blog/security-privacy-engineering/06-network-cloud-infrastructure-security). **Best fit if you want the fastest-growing track** - a large share of employers pay a premium for it.
 
 ### Detection & Response / SOC (Blue Team)
-You build detections, investigate alerts, run incident response, and hunt for threats. **Best fit if you like puzzles and staying calm under pressure.** The SOC analyst role is the most common entry door in the whole field.
+You build detections, investigate alerts, [run incident response](/blog/security-privacy-engineering/13-detection-monitoring-incident-response), and hunt for threats. **Best fit if you like puzzles and staying calm under pressure.** The SOC analyst role is the most common entry door in the whole field.
 
 ### Penetration tester / Red Team (Offensive)
 You simulate attackers, find exploitable holes, and write reports. **Best fit if you love breaking things** - and explaining exactly how you did it.
@@ -103,7 +104,7 @@ Tools rot. Principles compound. The engineers who thrive for decades invest in a
 
 Five things never go out of style.
 
-**1. Fundamentals.** How networks actually work (TCP/IP, DNS, TLS, HTTP), how operating systems behave (especially Linux), and how authentication, authorization, and sessions really function. Plus crypto *basics* - meaning what to use, and the iron rule: never roll your own crypto.
+**1. Fundamentals.** How networks actually work (TCP/IP, DNS, TLS, HTTP), how operating systems behave (especially Linux), and how [authentication, authorization, and sessions](/blog/security-privacy-engineering/04-authentication-authorization) really function. Plus crypto *basics* - meaning what to use, and the iron rule: never roll your own crypto.
 
 **2. Threat modeling.** This is the single most transferable skill in security: systematically asking "what can go wrong?" Adam Shostack's four questions capture it perfectly - *What are we building? What can go wrong? What are we going to do about it? Did we do a good job?* A flaw caught at design time costs roughly **100x less** than the same flaw in production. That is the entire payoff of "shift-left."
 
@@ -164,7 +165,7 @@ And here is the multiplier: **document everything in public.** Write-ups, a GitH
 You do not need to read more guides. You need to start. Here is a concrete plan you can begin tomorrow.
 
 1. **Days 1-30 - Fundamentals.** Linux via OverTheWire Bandit. Networking (TCP/IP, DNS, HTTP, TLS). How auth and sessions work. Read the OWASP Top 10:2025. Start studying for CompTIA Security+ if you want a first cert.
-2. **Days 31-60 - Web and offence.** Complete the PortSwigger Web Security Academy with Burp Suite. Do TryHackMe beginner paths. Knock out 5-10 CTF challenges. Learn threat modeling and threat-model a real app you use.
+2. **Days 31-60 - Web and offence.** Complete the PortSwigger Web Security Academy with Burp Suite. Do TryHackMe beginner paths. Knock out 5-10 CTF challenges. Learn [threat modeling](/blog/security-privacy-engineering/07-threat-modeling-risk-management) and threat-model a real app you use.
 3. **Days 61-90 - Specialise and prove it.** Pick one track (AppSec, cloud, blue team, privacy, or AI security). Go deeper with HTB machines, a cloud free-tier lab, or AI security labs. Open a bug-bounty account. Publish 2-3 write-ups. Sit your first cert if you are ready.
 4. **After 90 days.** Ship one lab plus one write-up every month. Join a community (a local DEF CON group, security Discords). Apply to entry roles - SOC analyst, junior AppSec, GRC analyst - with your portfolio as the evidence.
 
@@ -178,4 +179,4 @@ If you remember one thing, remember this: the field rewards proof, not permissio
 
 Pick the 90-day path. Break a vulnerable box. Write up what you learned. Do it again next month. That is genuinely the whole secret.
 
-And here is the door worth walking through next: AI security is the newest, fastest-growing, lowest-barrier corner of the entire field - a place where even the biggest companies admit they lack talent. Prompt injection has no complete fix, your own apps' AI features are fresh attack surface, and almost nobody has years of experience yet. Which means, for the first time in a long time, you could get in near the ground floor of something huge. What would you build first?
+And here is the door worth walking through next: AI security is the newest, fastest-growing, lowest-barrier corner of the entire field - a place where even the biggest companies admit they lack talent. [Prompt injection](/blog/security-privacy-engineering/12-ai-llm-security-and-privacy) has no complete fix, your own apps' AI features are fresh attack surface, and almost nobody has years of experience yet. Which means, for the first time in a long time, you could get in near the ground floor of something huge. What would you build first?

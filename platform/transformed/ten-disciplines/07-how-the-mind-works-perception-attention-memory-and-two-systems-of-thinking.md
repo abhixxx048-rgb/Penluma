@@ -38,9 +38,10 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 6
 icon: "\U0001F9ED"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -136,7 +137,7 @@ A close cousin is **change blindness**, failing to notice a large change in a sc
 
 **Cognitive load** is the amount of mental work your mind is holding right now. Your active thinking space has a hard ceiling, and when you overload it, performance falls apart.
 
-Think of a small desk. You can lay out a few papers and work with them. Pile on too many, and papers start sliding off the edge. That edge is your cognitive load limit, and it is much lower than you would like.
+Think of a small desk. You can lay out a few papers and work with them. Pile on too many, and papers start sliding off the edge. That edge is your [cognitive load limit](/blog/ai-learning-platform/05-cognitive-load-theory-why-too-much-at-once-fails), and it is much lower than you would like.
 
 ## Common misconceptions
 
@@ -194,12 +195,12 @@ You can ride a bike without being able to explain it in words. That is procedura
 
 A new memory is like wet cement. Right after forming, it is easily smudged. Over time it hardens, through a process called **consolidation**, which happens heavily during sleep. Sleep is the curing time. Pull an all-nighter and the cement never properly sets.
 
-Without review, memory decays fast and then levels off. Hermann Ebbinghaus mapped this as the **forgetting curve**: a steep drop in the first days, then a slow tail. This is why cramming feels productive but most of it is gone within days.
+Without review, memory decays fast and then levels off. Hermann Ebbinghaus mapped this as the [**forgetting curve**](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve): a steep drop in the first days, then a slow tail. This is why cramming feels productive but most of it is gone within days.
 
 Two scientifically proven methods fight that curve:
 
 - **The spacing effect:** spreading study sessions out over time beats cramming them together.
-- **The testing effect:** actively quizzing yourself beats passively rereading.
+- **The testing effect:** [actively quizzing yourself](/blog/ai-learning-platform/06-retrieval-practice-why-testing-beats-re-reading) beats passively rereading.
 
 Flashcards reviewed a little each day for a week will beat one long all-nighter, even with the same total hours. The struggle of recalling strengthens the memory. Rereading only feels like learning.
 
@@ -249,7 +250,7 @@ Watch how they interlock:
 
 - Your expectations shape what you perceive, so before information is even "in," your mind has already biased it.
 - Attention is the gate to memory. You only remember what you attended to. Miss the gorilla, and there is nothing to store.
-- Working memory's tiny capacity explains why we lean so hard on System 1 shortcuts. We literally cannot run slow, careful thinking on everything.
+- [Working memory's tiny capacity](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits) explains why we lean so hard on System 1 shortcuts. We literally cannot run slow, careful thinking on everything.
 - Reconstructive memory means the "facts" you reason with are themselves partly invented.
 
 So when you make a decision, it rests on a tower of constructed perceptions, filtered attention, edited memories, and fast intuitions. That sounds alarming, but it is actually empowering. Once you know the failure points, you can guard against them.
@@ -270,4 +271,4 @@ Here is the one thing to carry with you: your mind is not a neutral recorder of 
 
 That is not a flaw to be ashamed of. It is the operating manual you were never handed. And now that you can see the blind spots, you can finally work around them.
 
-These four systems are only the foundation. Built on top of them are the mental shortcuts your fast mind takes, called **heuristics**, and the predictable errors those shortcuts cause, called **biases**. Once you understand the machinery, the next question gets irresistible: if your fast mind is usually right, why does it misfire in such reliable, repeatable ways? That is where the real fun begins.
+These four systems are only the foundation. Built on top of them are the mental shortcuts your fast mind takes, called **heuristics**, and the predictable errors those shortcuts cause, called [**biases**](/blog/clear-thinking-and-expression/18-cognitive-biases-logical-fallacies-and-how-to-dodge-them). Once you understand the machinery, the next question gets irresistible: if your fast mind is usually right, why does it misfire in such reliable, repeatable ways? That is where the real fun begins.

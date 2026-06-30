@@ -22,7 +22,7 @@ category: Certifications
 date: '2026-06-28'
 order: 1
 icon: ☁️
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 faq:
   - q: What are the six pillars of the AWS Well-Architected Framework?

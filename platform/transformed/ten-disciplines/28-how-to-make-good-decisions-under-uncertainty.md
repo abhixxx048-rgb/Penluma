@@ -30,10 +30,11 @@ faq:
     a: "Keep a decision journal, think in probabilities and ranges instead of certainties, start from base rates, run a premortem before big irreversible choices, and match your speed to how reversible the decision is. Better decisions come from a better process, not from being smarter in the moment."
   - q: "What is a premortem?"
     a: "A premortem, developed by psychologist Gary Klein, is a quick exercise where you imagine your decision has already failed badly and ask why. It is far easier to spot risks when you are explaining a failure than predicting one, so it surfaces problems while you can still fix them."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
 topic: ten-disciplines
+linked: true
 topicTitle: Ten Disciplines
 category: Thinking & Decisions
 date: '2026-06-22'
@@ -88,7 +89,7 @@ The mistake, called **base-rate neglect**, is getting swept up in the vivid deta
 
 ## Expected value: how to weigh a gamble
 
-**Expected value (EV)** is the average payoff you would get if you could repeat a choice many, many times. You multiply each possible outcome by its probability, then add them up.
+**[Expected value (EV)](/blog/ten-disciplines/29-the-tools-of-decision-making-expected-value-decision-trees-and-models)** is the average payoff you would get if you could repeat a choice many, many times. You multiply each possible outcome by its probability, then add them up.
 
 Take a lottery ticket. It costs 2 dollars and gives a 1-in-10-million shot at 5 million.
 
@@ -109,7 +110,7 @@ Pure EV has a blind spot. Consider two options:
 
 The expected value is identical. B is 0.5 × 2M = 1M, the same as the sure million. A pure EV calculator shrugs and says either is fine. Yet almost everyone sane takes the guaranteed million. Why?
 
-Because the *first* million changes your life, while the *second* million adds far less. Going from broke to a millionaire is enormous. Going from one million to two is nice, but smaller. This is **diminishing marginal utility**: each extra dollar matters a little less than the one before. The hundredth slice of pizza means less than the first.
+Because the *first* million changes your life, while the *second* million adds far less. Going from broke to a millionaire is enormous. Going from one million to two is nice, but smaller. This is **diminishing marginal utility**: each extra dollar matters a little less than the one before, an idea at the heart of [why losing money hurts more than gaining it](/blog/psychology-of-decisions/08-prospect-theory-behavioral-economics-how-we-weigh-gains-losses-risk). The hundredth slice of pizza means less than the first.
 
 The personal value an outcome gives *you*, as opposed to its dollar amount, is called **utility**. A thousand dollars means everything to someone who is broke and almost nothing to a billionaire. Same dollars, wildly different utility. And preferring a sure thing to a gamble with the same EV, which is **risk aversion**, falls right out of this. It is not irrational. It is your money buying real-life security.
 
@@ -117,7 +118,7 @@ This idea is old. Back in 1738, mathematician Daniel Bernoulli introduced utilit
 
 ## Updating your mind: Bayes in plain words
 
-New information arrives. How much should you change your mind? Too little is stubbornness. Too much is overreaction. **Bayes' rule** is the recipe for getting it just right, and in plain words it says: *start from the base rate, then move toward the new evidence, but don't forget where you started.*
+New information arrives. How much should you change your mind? Too little is stubbornness. Too much is overreaction. **[Bayes' rule](/blog/ten-disciplines/11-probability-uncertainty-distributions-and-bayesian-thinking)** is the recipe for getting it just right, and in plain words it says: *start from the base rate, then move toward the new evidence, but don't forget where you started.*
 
 The classic example teaches more than any formula. A disease affects **1%** of people. A test catches **90%** of those who truly have it but gives a false alarm **9%** of the time for healthy people. You test positive. How worried should you be?
 
@@ -134,11 +135,11 @@ When the percentages tangle you up, switch to "out of how many real people?" Cou
 
 ## Why smart people still decide badly
 
-So far this is how a rational person *should* decide. Now the honest part: how real brains actually work. Psychologists Daniel Kahneman and Amos Tversky spent decades showing that human judgment runs on mental shortcuts, called **heuristics**, that are usually helpful but sometimes reliably wrong. The predictable errors they cause are **cognitive biases**.
+So far this is how a rational person *should* decide. Now the honest part: how real brains actually work. Psychologists Daniel Kahneman and Amos Tversky spent decades showing that human judgment runs on mental shortcuts, called **heuristics**, that are usually helpful but sometimes reliably wrong. The predictable errors they cause are **[cognitive biases](/blog/ten-disciplines/08-biases-heuristics-and-why-smart-people-make-predictable-errors)**.
 
 Heuristics are like your phone's autocomplete: fast, right most of the time, occasionally hilarious. Biases are like optical illusions for the mind. Even when you *know* two lines are the same length, they still look different. Knowing about a bias does not switch it off.
 
-Kahneman frames this as two mental systems. **System 1** is fast, automatic, intuitive, always running. **System 2** is slow, effortful, logical, and lazy. System 1 is the autopilot doing the routine flying. System 2 is the pilot who only grabs the controls when an alarm goes off and would rather keep reading the newspaper.
+Kahneman frames this as [two mental systems](/blog/ten-disciplines/07-how-the-mind-works-perception-attention-memory-and-two-systems-of-thinking). **System 1** is fast, automatic, intuitive, always running. **System 2** is slow, effortful, logical, and lazy. System 1 is the autopilot doing the routine flying. System 2 is the pilot who only grabs the controls when an alarm goes off and would rather keep reading the newspaper.
 
 Here are the biases worth knowing by name:
 
@@ -162,7 +163,7 @@ A few beliefs sound smart and quietly wreck good decisions.
 
 ## When other people are deciding too
 
-Some choices do not depend on chance at all. They depend on what *other people* choose. **Game theory** is the math of these interdependent moves: my best move depends on yours, and yours on mine. Think rock-paper-scissors, or merging in heavy traffic.
+Some choices do not depend on chance at all. They depend on what *other people* choose. **[Game theory](/blog/ten-disciplines/30-advanced-decision-science-game-theory-bias-proofing-and-sharp-judgment)** is the math of these interdependent moves: my best move depends on yours, and yours on mine. Think rock-paper-scissors, or merging in heavy traffic.
 
 The famous setup is the **Prisoner's Dilemma**. Picture two rival shops, each tempted to cut prices to grab customers. Whatever the other does, cutting looks tempting, so both cut, both end up with thin margins, and neither dares raise prices first. That mutual price war is a **Nash equilibrium**: a stable state where no one can do better by changing only their own move. Stable, but worse for both than if they had held prices. The lesson is that stable and *optimal* can be very different things.
 

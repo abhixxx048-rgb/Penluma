@@ -32,8 +32,9 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 15
 icon: "\U0001F4A1"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -57,7 +58,7 @@ The hard part isn't effort. It's separating verified facts from inherited belief
 
 ### You should not use it for everything
 
-Reasoning by analogy - copying a template that already works - is faster, cheaper, and perfectly fine for routine decisions. First-principles thinking is a slow, heavy tool. Save it for the moments that justify the cost:
+Reasoning by analogy - copying a template that already works - is faster, cheaper, and perfectly fine for routine decisions. [First-principles thinking](/blog/thinking-skills/03-first-principles-thinking-reasoning-from-the-ground-up) is a slow, heavy tool. Save it for the moments that justify the cost:
 
 - A product that isn't selling, and the usual fixes aren't working.
 - A business model built on a cost assumption nobody has questioned.
@@ -81,7 +82,7 @@ Willpower is a finite daily resource. Good design means you spend less of it.
 
 ### Why "raise ability" beats "raise motivation"
 
-BJ Fogg's behavior model says a behavior happens when motivation, ability, and a prompt line up at the same moment. People assume motivation is the lever to pull. It's the most obvious one - and the least reliable. It's expensive to generate and decays fast.
+[BJ Fogg's behavior model](/blog/thinking-skills/08-section-7-behavior-design-models-why-people-do-and-don-t-act) says a behavior happens when motivation, ability, and a prompt line up at the same moment. People assume motivation is the lever to pull. It's the most obvious one - and the least reliable. It's expensive to generate and decays fast.
 
 **Ability** - making the behavior take less effort, skill, or time - works even when motivation is low, because the bar for action is already on the floor. This is why deleting steps from a signup flow converts better than piling on incentives. You don't push people harder; you lower the wall they have to climb.
 
@@ -112,7 +113,7 @@ The single most useful insight is **delays**. When you change something and noth
 
 ### Finding a leverage point
 
-A **leverage point** is a place in a system where a small change creates a large, lasting effect. Donella Meadows ranked them from weakest to strongest:
+A **[leverage point](/blog/thinking-skills/06-section-5-leverage-points-mental-models-for-better-decisions)** is a place in a system where a small change creates a large, lasting effect. Donella Meadows ranked them from weakest to strongest:
 
 - **Weakest:** tweaking numbers - prices, subsidies, budgets.
 - **Stronger:** changing information flows (what data people actually see) and rules (what's allowed).
@@ -141,7 +142,7 @@ The one rule that matters: **keep them strictly separate.** Never evaluate while
 
 ### Shower insights are real neuroscience
 
-The idea that good ideas arrive when you step away isn't a metaphor. The **Default Mode Network** - brain regions active during rest and mind-wandering - keeps chewing on problems your conscious attention has set down. fMRI studies confirm it.
+The idea that good ideas arrive when you step away isn't a metaphor. The **[Default Mode Network](/blog/thinking-skills/13-section-12-the-creative-mind-flow-incubation-beating-blocks)** - brain regions active during rest and mind-wandering - keeps chewing on problems your conscious attention has set down. fMRI studies confirm it.
 
 But there's a catch: incubation only works *after* preparation. You have to load the problem thoroughly first. Stepping away gives the network material to work with; it can't conjure an answer to a problem you never deeply engaged. The shower is where it surfaces, not where the work happens.
 
@@ -183,6 +184,6 @@ A quick field guide for choosing the right tool:
 
 If you keep only one idea, keep this: **most of your default mental moves are fast, efficient, and quietly biased - and nearly every technique here is a deliberate way to override the wrong default at the right moment.**
 
-First-principles thinking overrides the reflex to copy. Habit design overrides the reliance on motivation. Divergent thinking overrides grabbing the first idea. None of it asks you to become a different person. It asks you to insert a deliberate move at the exact spots where your instincts mislead you.
+First-principles thinking overrides the reflex to copy. [Habit design](/blog/thinking-skills/09-designing-your-own-habits-that-actually-stick) overrides the reliance on motivation. [Divergent thinking](/blog/thinking-skills/12-idea-generation-techniques-producing-options-on-demand) overrides grabbing the first idea. None of it asks you to become a different person. It asks you to insert a deliberate move at the exact spots where your instincts mislead you.
 
 So the next question worth sitting with is the uncomfortable one: where, right now, is a default running your decisions on autopilot - and what would you see if you turned it off?

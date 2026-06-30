@@ -44,7 +44,7 @@ faq:
     a: Apophenia is the tendency to see meaningful patterns in random, unrelated
       things, like faces in clouds. In data it leads people to "discover" patterns
       that are really just chance lining up.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources: []

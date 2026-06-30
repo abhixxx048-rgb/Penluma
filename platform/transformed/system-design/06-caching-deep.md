@@ -23,9 +23,10 @@ category: Engineering
 date: '2026-06-15'
 order: 6
 icon: "\U0001F3D7️"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 faq:
   - q: "What is the difference between cache-aside and write-through caching?"
     a: "With cache-aside, your app loads data into the cache on a miss and writes to the database directly, deleting the cache key afterward. With write-through, every write goes through the cache, which synchronously updates the database, so the cache is always consistent at the cost of slower writes."
@@ -177,7 +178,7 @@ A single product edit might need to invalidate dozens of derived caches: the pro
 
 ## Common misconceptions
 
-**"A cache makes everything faster."** Not if the data was already in your database's memory buffer pool. You may just be adding a network hop. Profile first.
+**"A cache makes everything faster."** Not if the data was already in [your database's memory buffer pool](/blog/system-design/04-databases-internals). You may just be adding a network hop. Profile first.
 
 **"Updating the cache on write is more efficient than deleting it."** It is faster on paper but opens a race that can pin the *old* value in cache indefinitely. Delete and let the next reader repopulate.
 
@@ -254,7 +255,7 @@ One honest limitation: you cannot get strong read-your-writes guarantees through
 
 ## Distributed caching and consistent hashing
 
-One node does not have enough RAM, so you shard keys across many. The naive approach, `hash(key) % N`, hides a catastrophe: change N by adding or removing a single node and almost *every* key remaps to a different node. Nearly your entire cache misses at once. Instant avalanche.
+One node does not have enough RAM, so you [shard keys across many](/blog/system-design/08-replication-and-partitioning). The naive approach, `hash(key) % N`, hides a catastrophe: change N by adding or removing a single node and almost *every* key remaps to a different node. Nearly your entire cache misses at once. Instant avalanche.
 
 **Consistent hashing** fixes this. Map both nodes and keys onto a ring. Each key belongs to the first node clockwise from its position. Adding or removing a node only remaps the keys in one arc of the ring, so on average just `K/N` keys move instead of all of them.
 
@@ -295,7 +296,7 @@ Here is a concrete checklist for building a cache tier that helps instead of hur
 3. **Always set a TTL, and always jitter it.** A fixed TTL is an avalanche waiting for a deploy. Add random spread so expiries never synchronize.
 4. **Put a short-lived local cache in front of your distributed cache** for hot keys. One or two seconds of staleness can cut a hot shard's load by orders of magnitude.
 5. **Add single-flight on expensive recomputes** so one expiry does not dogpile your database.
-6. **Guard against non-existent keys** with negative caching or a Bloom filter, especially if your IDs are guessable.
+6. **Guard against non-existent keys** with negative caching or [a Bloom filter](/blog/system-design/15-probabilistic-structures-and-algorithms), especially if your IDs are guessable.
 7. **Use consistent hashing** the moment you have more than one cache node, so scaling does not nuke your hit ratio.
 8. **Never store the only copy of important data in a plain cache.** If losing it hurts, give it persistence and replication, or keep the truth in a real database.
 9. **Use `SCAN`, never `KEYS *`, in production.** `KEYS` is a single blocking operation that can stall your entire Redis instance.
@@ -309,7 +310,7 @@ Their answer was the textbook **cache-aside** pattern from this article, hardene
 
 To stop hot keys from causing stampedes, they invented the **lease**: on a miss, the cache hands exactly one client a token and makes the others wait and retry. Only the token holder may recompute and set the value. That is single-flight built right into the cache server. The same lease *also* solved the stale-set race, because a delete during recompute voids the outstanding token, so a racing write of a now-stale value is rejected. One primitive killed two failure modes.
 
-For cross-region invalidation, they used the strongest technique available: a daemon that tails the database commit log and broadcasts cache deletes from the authoritative change stream, so even out-of-band writes were covered. And they accepted, deliberately, a small bounded staleness window in exchange for being able to serve the read volume at all. They did not stumble into eventual consistency; they chose it.
+For cross-region invalidation, they used the strongest technique available: a daemon that tails the database commit log and broadcasts cache deletes from the authoritative change stream, so even out-of-band writes were covered. And they accepted, deliberately, a small bounded staleness window in exchange for being able to serve the read volume at all. They did not stumble into [eventual consistency](/blog/system-design/09-cap-pacelc-consistency-models); they chose it.
 
 The result: hit ratios in the high 90s, a database that saw only a sliver of read traffic, and a single pattern that scaled from one cluster to many regions without being replaced. That is the lesson in one line. **The default pattern scales a very long way, if you harden it.**
 
@@ -319,4 +320,4 @@ If you remember one thing, remember this: a cache is not just a speed trick, it 
 
 So treat your cache with the same care you give your database. Jitter your TTLs, coalesce your misses, and decide your consistency target on purpose rather than by accident.
 
-And here is the thread worth pulling next. When the cache *does* fail and traffic floods the origin, what actually keeps the whole thing from collapsing? That is the job of circuit breakers, rate limiters, and load shedding, the resiliency patterns that catch you when your fastest layer finally blinks.
+And here is the thread worth pulling next. When the cache *does* fail and traffic floods the origin, what actually keeps the whole thing from collapsing? That is the job of circuit breakers, rate limiters, and load shedding, [the resiliency patterns](/blog/system-design/16-rate-limiting-and-resiliency) that catch you when your fastest layer finally blinks.

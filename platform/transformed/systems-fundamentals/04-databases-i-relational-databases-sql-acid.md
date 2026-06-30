@@ -61,7 +61,8 @@ order: 3
 icon: ⚙️
 transformed: true
 polished: true
-author: Pritesh Yadav (priteshyadav444)
+linked: true
+author: Brexis Wazik
 sources: []
 ---
 
@@ -83,7 +84,7 @@ A **database** is a structured system for storing, searching, and safely changin
 
 You *could* store your orders in plain files - a spreadsheet-style CSV, or a folder of JSON files. People try this. It falls apart fast. A real database wins on five fronts:
 
-- **Concurrency control** - if two parts of your program write to the same file at once, they overwrite each other and corrupt it. A database safely interleaves thousands of simultaneous writers.
+- [**Concurrency control**](/blog/systems-fundamentals/03-concurrency-parallelism-doing-many-things-at-once) - if two parts of your program write to the same file at once, they overwrite each other and corrupt it. A database safely interleaves thousands of simultaneous writers.
 - **Querying** - with files, answering "all orders over $100 placed last week by customers in Texas" means hand-writing a loop. A database answers it in one line of SQL.
 - **Integrity** - a database can refuse to save an order for a customer that doesn't exist. Files happily save garbage.
 - **Crash safety** - if the power dies halfway through writing a file, you get a broken half-file. A database guarantees a write either fully happened or didn't happen at all.
@@ -263,7 +264,7 @@ The four standard isolation levels, weakest to strongest:
 
 ## Common misconceptions
 
-**"The ACID 'C' and the CAP 'C' are the same thing."** They're unrelated concepts that happen to share a letter. ACID consistency means "constraints stay valid." CAP consistency (a networking topic) means "all replicas agree on the latest value."
+**"The ACID 'C' and the CAP 'C' are the same thing."** They're unrelated concepts that happen to share a letter. ACID consistency means "constraints stay valid." [CAP consistency](/blog/distributed-systems/16-the-cap-theorem-and-pacelc) (a networking topic) means "[all replicas agree on the latest value](/blog/distributed-systems/17-consistency-models)."
 
 **"Wrapping writes in a transaction prevents lost updates."** It doesn't - not at READ COMMITTED. A **lost update** happens when two transactions both read the same value, both modify it, and both write it back. The second write silently overwrites the first.
 
@@ -301,4 +302,4 @@ Bring it all together in an e-commerce checkout. Placing an order is **one trans
 
 If you remember one thing, make it this: a database's real job isn't storing data - it's keeping data *correct* while the world hammers it from every direction at once. ACID is how it keeps that promise. Tables, keys, and constraints are the shape; transactions and isolation are the safety.
 
-But correctness is only half the story. The other half is *speed* - how a database finds one row among ten million in milliseconds instead of reading them all. That's the job of indexes, and the way they work (B-trees, query planners, and the surprising cost of the wrong index) is where databases get genuinely clever. That's the next thing worth learning.
+But correctness is only half the story. The other half is *speed* - how a database finds one row among ten million in milliseconds instead of reading them all. That's the job of [indexes](/blog/systems-fundamentals/05-databases-ii-how-databases-store-find-data-fast-indexes-b-trees-lsm), and the way they work (B-trees, query planners, and the surprising cost of the wrong index) is where databases get genuinely clever. That's the next thing worth learning.

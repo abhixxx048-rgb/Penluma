@@ -51,7 +51,7 @@ faq:
       triggers a chain reaction: threads pile up, pools exhaust, health checks
       fail, nodes get ejected, survivors get more load, and the whole tier falls
       over. The trigger is trivial; the feedback loop is fatal.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 topic: system-design
 topicTitle: System Design
@@ -61,9 +61,10 @@ order: 16
 icon: "\U0001F3D7️"
 sources: []
 polished: true
+linked: true
 ---
 
-Most outages do not start with a server bursting into flames. They start with something tiny: a database that got 100 milliseconds slower. That extra wait makes web servers pile up requests. Threads run out. Health checks time out. The load balancer pulls "unhealthy" nodes offline, which dumps even more traffic on the survivors, which then fall over too.
+Most outages do not start with a server bursting into flames. They start with something tiny: a database that got 100 milliseconds slower. That extra wait makes web servers pile up requests. Threads run out. Health checks time out. The [load balancer](/blog/system-design/07-load-balancing-and-scaling) pulls "unhealthy" nodes offline, which dumps even more traffic on the survivors, which then fall over too.
 
 The failure was 100 milliseconds of latency. The outage was the system's *response* to it.
 
@@ -138,7 +139,7 @@ Retries fix *transient* failures beautifully, a dropped packet, a brief pause, a
 
 Rules for retrying safely:
 
-1. **Only retry idempotent operations**, or use an idempotency key. A retried `POST /charges` with no idempotency key is a double charge, and customers notice.
+1. **Only retry idempotent operations**, or use an [idempotency key](/blog/system-design/11-distributed-transactions-and-idempotency). A retried `POST /charges` with no idempotency key is a double charge, and customers notice.
 2. **Use exponential backoff.** Wait longer after each attempt, not a fixed interval.
 3. **Add jitter.** Without randomness, every client that failed at the same instant retries at the same instant, a synchronized wave. AWS's well-known write-up on backoff and jitter showed that adding randomness dramatically cuts contention.
 4. **Set a retry budget.** Cap retries to, say, 10% of total requests, a token bucket on retries themselves. When the budget runs dry, fail fast. Per-request caps alone still allow storms.
@@ -186,7 +187,7 @@ For each dependency, decide deliberately: **fail open or fail closed?** If your 
 
 When you are *already* overloaded, accepting more work just makes everything slower and serves no one. A queue of 10,000 requests all timing out equals zero successes and 100% CPU. **Load shedding** means deliberately rejecting some requests, with a 429 or 503, to keep the rest healthy. Shed by priority: drop batch and analytics traffic before you drop a paying customer's checkout. The best signal is **queue-latency-based** shedding, used at Meta: if a request has been waiting in the queue longer than a threshold, drop it, because wait time directly measures "am I falling behind?"
 
-**Backpressure** is the upstream-facing twin. Instead of silently dropping work, you signal the producer to slow down. TCP flow control, HTTP/2 flow control, and bounded queues all do this. A bounded queue that blocks or rejects when full *is* backpressure. This is exactly why you should **never put an unbounded queue between a fast producer and a slow consumer**, an unbounded queue is just an out-of-memory crash deferred to later, with latency that grows without limit in the meantime.
+**Backpressure** is the upstream-facing twin. Instead of silently dropping work, you signal the producer to slow down. [TCP flow control](/blog/system-design/02-networking-and-protocols), HTTP/2 flow control, and bounded queues all do this. A bounded queue that blocks or rejects when full *is* backpressure. This is exactly why you should **never put an unbounded queue between a fast producer and a slow consumer**, an unbounded queue is just an out-of-memory crash deferred to later, with latency that grows without limit in the meantime.
 
 ## How systems actually fail
 
@@ -202,7 +203,7 @@ Here is a subtle and dangerous one. Sometimes a system stays broken even after t
 
 ### Thundering herds
 
-Many clients wake up and slam the same resource at the same instant. The classic case is a **cache stampede**: a hot cache key expires, a thousand concurrent requests all miss, and all hit the database to recompute the same value. The fixes are request coalescing (only the first miss recomputes, the rest wait for the result), probabilistic early expiration, or locks. The same root cause shows up in synchronized retries (fixed by jitter) and in cron jobs or deploys that fire on every node at exactly midnight (fixed by staggering with jitter).
+Many clients wake up and slam the same resource at the same instant. The classic case is a **cache stampede**: a [hot cache key expires](/blog/system-design/06-caching-deep), a thousand concurrent requests all miss, and all hit the database to recompute the same value. The fixes are request coalescing (only the first miss recomputes, the rest wait for the result), probabilistic early expiration, or locks. The same root cause shows up in synchronized retries (fixed by jitter) and in cron jobs or deploys that fire on every node at exactly midnight (fixed by staggering with jitter).
 
 ### Blast-radius reduction and chaos engineering
 
@@ -244,4 +245,4 @@ Two famous engineering stories cover almost this entire toolkit between them.
 
 If you take one thing away, take this: **resilience is not about preventing failures, it is about controlling their blast radius.** A 100-millisecond slowdown should stay a 100-millisecond slowdown, not snowball into an outage. Timeouts, circuit breakers, bulkheads, and load shedding all exist to break the feedback loop before it becomes fatal.
 
-But there is a quiet trap hiding in all of this. Every one of these patterns adds a decision, fail open or fail closed, allow all or block all, and the most painful outages come not from picking the wrong answer but from discovering, mid-incident, that nobody picked one at all. So the real next question is the harder one: when your safety net itself fails, which way does it fall? That is where consistency-versus-availability trade-offs come in, and it is worth thinking through long before the pager goes off.
+But there is a quiet trap hiding in all of this. Every one of these patterns adds a decision, fail open or fail closed, allow all or block all, and the most painful outages come not from picking the wrong answer but from discovering, mid-incident, that nobody picked one at all. So the real next question is the harder one: when your safety net itself fails, which way does it fall? That is where [consistency-versus-availability trade-offs](/blog/system-design/09-cap-pacelc-consistency-models) come in, and it is worth thinking through long before the pager goes off.

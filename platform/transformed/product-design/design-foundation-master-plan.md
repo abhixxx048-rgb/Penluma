@@ -32,20 +32,21 @@ faq:
     a: Share one base layer of components and rules across all themes, then let each theme only change token values (colors, fonts), never re-copy the components. That way a fix in the base improves every theme at once.
   - q: What is a CMS block?
     a: A CMS block is a self-contained, reusable section of a page - a hero, a product grid, a testimonial row. Treating every section as a standardized block means it follows the same design rules and can be rearranged without breaking the look.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
 Your store loads in under a second. Checkout works. Products show up, the cart adds, the payment clears. And yet, when a friend visits, they say it looks... fine. Generic. A little cheap.
 
-Nothing is broken. That is exactly the problem. "Looks cheap" is rarely one big bug - it is a hundred tiny inconsistencies the eye notices but the brain can't name.
+Nothing is broken. That is exactly the problem. "Looks cheap" is rarely one big bug - it is a hundred tiny inconsistencies [the eye notices but the brain can't name](/blog/product-sense-empathy/07-cognitive-load-why-simple-feels-effortless).
 
 This is the story of how to fix that for real, without restyling your whole site three times.
 
 ## Why this matters
 
-A premium look is not vanity. It is trust. When two stores sell the same product at the same price, shoppers buy from the one that *feels* more legitimate. Polish signals "these people are careful, my money is safe here."
+A premium look is not vanity. It is [trust](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy). When two stores sell the same product at the same price, shoppers buy from the one that *feels* more legitimate. Polish signals "these people are careful, my money is safe here."
 
 But here is the trap most teams fall into. They try to make the store look better by hand-tweaking each page - nudge this padding, darken that shadow, round these corners. It looks better for a week. Then someone adds a new section, or ships a second visual theme, and the inconsistency creeps right back.
 
@@ -107,7 +108,7 @@ When sections are standardized blocks, three good things happen:
 - New sections **inherit** the premium look automatically, because they use the same tokens and primitives.
 - Adding a feature (say, a "Pick up where you left off" rail) becomes the *same* low-risk move you have already done a dozen times - not bespoke craft.
 
-A useful rule of thumb: a well-behaved block handles **all three of its states**. It shows a loading skeleton that matches the final shape (so the page doesn't jump), it gracefully collapses when there is nothing to show (instead of leaving an awkward empty gap), and it contains its own errors instead of breaking the whole page.
+A useful rule of thumb: a well-behaved block handles **all three of its states**. It shows a loading skeleton that matches the final shape (so the page doesn't jump), it gracefully collapses when there is nothing to show (instead of leaving an awkward empty gap), and it contains its own errors instead of [breaking the whole page](/blog/product-sense-empathy/06-closing-the-gulfs-action-feedback-the-seven-stages).
 
 ## Foundation first, features second
 
@@ -157,4 +158,4 @@ Start with steps 1 and 2 this week. They cost nothing and reveal almost everythi
 
 The single takeaway: **premium is consistency, and consistency comes from a shared foundation - not from tweaking pages one at a time.** Build your tokens and blocks once, and "make the design better" and "add a new feature" stop being different jobs. They become the same safe move, repeated.
 
-There is a deeper reward waiting on the other side of this work. Once your foundation is solid, you can finally build the things that actually keep shoppers coming back - a saved-designs library, gentle reprint reminders, a notifications feed - without any of them looking bolted-on. That is where polish quietly turns into loyalty, and it is a story worth telling next.
+There is a deeper reward waiting on the other side of this work. Once your foundation is solid, you can finally build the things that actually keep shoppers coming back - a saved-designs library, gentle reprint reminders, a notifications feed - without any of them looking bolted-on. That is where polish quietly turns into [loyalty](/blog/product-sense-empathy/11-emotional-design-delight-making-products-people-love), and it is a story worth telling next.

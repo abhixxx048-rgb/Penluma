@@ -26,7 +26,7 @@ faq:
     a: "Consistent visuals, working links (FAQ, returns, terms), honest reviews, forms that actually submit, and fast loading. Each one quietly tells the shopper 'this store is real and safe to buy from.'"
   - q: "How fast should my store load to avoid losing sales?"
     a: "Aim for your main content to appear within about 2.5 seconds. Render-blocking files and extra fetches delay that first paint, and every extra second of wait measurably lowers conversions."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 topic: marketing-growth
 topicTitle: Growth & Acquisition
 category: Business & Growth

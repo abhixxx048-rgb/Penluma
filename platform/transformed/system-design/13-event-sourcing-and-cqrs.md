@@ -37,9 +37,10 @@ faq:
     a: "A read model is a query-optimized table built by consuming the event log. It is derived, disposable data: if it gets corrupted or you need a new shape, you delete it and rebuild it by replaying events from the beginning."
   - q: "Can you do CQRS without event sourcing?"
     a: "Yes, and it is the common case. You keep a normal CRUD database for writes, emit change events through the outbox pattern or change data capture, and build separate read models from those events. No event store required."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Event-driven_architecture
   - https://martinfowler.com/eaaDev/EventSourcing.html
@@ -116,7 +117,7 @@ The critical rule: a snapshot is a *cache*, never the truth. You must be able to
 
 **Two people change the same thing at once.** Two requests both load account version 4, both decide a withdrawal is valid, both try to write version 5. The store enforces **optimistic concurrency**: "append only if the current version is still 4." The second write fails, reloads fresh state, and retries. No locks, and the account's rules stay intact. It's a compare-and-swap on the end of the stream.
 
-You don't need exotic infrastructure for any of this. Postgres works beautifully: an `events` table with a unique constraint on `(stream_id, version)` gives you optimistic concurrency for free. DynamoDB, Kafka, and purpose-built stores like EventStoreDB are all options too.
+You don't need exotic infrastructure for any of this. [Postgres works beautifully](/blog/system-design/04-databases-internals): an `events` table with a unique constraint on `(stream_id, version)` gives you optimistic concurrency for free. DynamoDB, Kafka, and purpose-built stores like EventStoreDB are all options too.
 
 ## CQRS: why reading and writing pull apart
 
@@ -146,7 +147,7 @@ Three consequences fall out of this:
 
 CQRS and event sourcing are *not* the same thing, and conflating them is the classic mistake.
 
-You can do CQRS with a plain CRUD database that emits change events (via the outbox pattern or change data capture) into separate read models. No event store required. That's the pragmatic version most teams actually want.
+You can do CQRS with a plain CRUD database that emits change events (via the [outbox pattern or change data capture](/blog/system-design/11-distributed-transactions-and-idempotency)) into separate read models. No event store required. That's the pragmatic version most teams actually want.
 
 | Pattern | Write store | Read store | Complexity | What you get |
 |---|---|---|---|---|
@@ -175,7 +176,7 @@ Here's the honest part most tutorials skip: **most apps should not do event sour
 
 The honest cost list, learned the hard way:
 
-- Eventual consistency leaks into the UI ("I saved it, why don't I see it?").
+- [Eventual consistency](/blog/system-design/09-cap-pacelc-consistency-models) leaks into the UI ("I saved it, why don't I see it?").
 - Event formats are forever. You can never delete an old event shape; 2029 code must still read events written in 2019.
 - Debugging means replaying streams, not reading a row.
 - Deleting data fights an append-only log (a real headache for "right to be forgotten" requests).
@@ -272,4 +273,4 @@ The trade-off they accepted is instructive: TigerBeetle gives up generality. It'
 
 The one idea worth carrying away: **when you store what happened instead of just the result, your data stops being a snapshot and becomes a story you can replay, audit, and reshape at will.** That power is real, and so is its price, which is why the discipline lives in scoping it to the few places where history truly is the product.
 
-There's a deeper rabbit hole waiting. Notice that "the log is the source of truth, and everything else is a derived view" isn't just an application pattern, it's how databases themselves work under the hood, and how Kafka reframes an entire data platform. Martin Kleppmann calls it "turning the database inside out." Once you see logs as truth, you start seeing them everywhere, including in the most familiar tool on your machine: Git is an event-sourced filesystem, where commits are immutable events and your working tree is just a projection.
+There's a deeper rabbit hole waiting. Notice that "the log is the source of truth, and everything else is a derived view" isn't just an application pattern, it's how databases themselves work under the hood, and how [Kafka reframes an entire data platform](/blog/system-design/12-messaging-and-event-driven). Martin Kleppmann calls it "turning the database inside out." Once you see logs as truth, you start seeing them everywhere, including in the most familiar tool on your machine: Git is an event-sourced filesystem, where commits are immutable events and your working tree is just a projection.

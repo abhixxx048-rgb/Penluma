@@ -46,9 +46,10 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 4
 icon: "\U0001F504"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -56,7 +57,7 @@ Turn a hot tap, wait, feel nothing, turn it more, and suddenly you are scalded. 
 
 ## Why this matters
 
-Most of us explain the world with straight lines. More effort, more results. More marketing, more sales. Spend more, fix the problem.
+Most of us explain the world with [straight lines](/blog/systems-thinking/02-systems-thinking-vs-linear-thinking). More effort, more results. More marketing, more sales. Spend more, fix the problem.
 
 Real systems do not work that way. They loop. A change goes out, travels around a chain of cause and effect, and comes back to change the very thing it started from.
 
@@ -66,7 +67,7 @@ Learn to spot two simple loop types and you gain a kind of x-ray vision for how 
 
 ## What a feedback loop really is
 
-In any system there are **stocks** (things that build up, like a bank balance or a population) and **flows** (the rates that fill or drain them, like interest or births).
+In any system there are [**stocks**](/blog/systems-thinking/04-stocks-and-flows-what-builds-up-and-what-moves) (things that build up, like a bank balance or a population) and **flows** (the rates that fill or drain them, like interest or births).
 
 On their own, stocks and flows are just plumbing. The magic starts when a stock begins to influence its own flows. That is a **feedback loop**.
 
@@ -131,7 +132,7 @@ Balancing loops are why systems have stable states at all. Without them, every n
 
 ## Delays: the hidden danger
 
-Loops rarely act instantly. A **delay** is the time gap between a cause and its effect. Meadows is blunt about why this matters: "Overshoots, oscillations, and collapses are always caused by delays."
+Loops rarely act instantly. A [**delay**](/blog/systems-thinking/06-delays-why-cause-and-effect-are-not-close-in-time) is the time gap between a cause and its effect. Meadows is blunt about why this matters: "Overshoots, oscillations, and collapses are always caused by delays."
 
 Back to the shower. You turn up the hot tap, but the water takes 30 seconds to arrive. Still cold, you turn it up more. Then both adjustments land at once and you are scalded. You crank it down, wait, feel nothing, crank it down more, and now it is freezing.
 
@@ -155,7 +156,7 @@ Think of an **epidemic**. Early on, infected people infect others, a reinforcing
 
 The same shape governed the Pet Rock craze of 1975: word-of-mouth drove explosive sales until everyone who would ever buy one had bought one, and the loop simply ran out of fuel.
 
-Peter Senge, in *The Fifth Discipline*, named this the **Limits to Growth** archetype, and he flagged a near-universal mistake. When growth slows, managers push *harder* on the reinforcing loop: more marketing, more hours, more budget. But if a balancing constraint is the real cause, that effort accomplishes nothing.
+Peter Senge, in *The Fifth Discipline*, named this the **Limits to Growth** [archetype](/blog/systems-thinking/12-system-archetypes-stories-that-repeat), and he flagged a near-universal mistake. When growth slows, managers push *harder* on the reinforcing loop: more marketing, more hours, more budget. But if a balancing constraint is the real cause, that effort accomplishes nothing.
 
 A startup whose support team cannot keep up will watch service quality fall, churn rise, and word-of-mouth sour, no matter how much it spends on ads. The leverage is in *weakening the constraint*, not flooring the accelerator.
 
@@ -184,4 +185,4 @@ The one idea to carry away: **a feedback loop is how a system talks to itself**,
 
 Master that distinction and you stop being surprised by exponential growth, oscillation, and collapse. You start expecting them.
 
-But here is the question that opens the next door. If you understand the loops, where exactly do you push to change a system's behavior? Some interventions barely move the needle while others transform everything. That is the search for **leverage points**, and it is where systems thinking turns from insight into power.
+But here is the question that opens the next door. If you understand the loops, where exactly do you push to change a system's behavior? Some interventions barely move the needle while others transform everything. That is the search for [**leverage points**](/blog/systems-thinking/13-leverage-points-where-to-push-to-change-a-system), and it is where systems thinking turns from insight into power.

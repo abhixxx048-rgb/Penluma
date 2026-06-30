@@ -23,9 +23,10 @@ category: Engineering
 date: '2026-06-15'
 order: 1
 icon: "\U0001F3D7️"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Little%27s_law
   - https://en.wikipedia.org/wiki/Tail_latency
@@ -54,7 +55,7 @@ This is where that skill starts.
 
 System design is not won by naming technologies. Anyone can say "we'll use Kafka and Redis." What separates an engineer from a name-dropper is being able to say something like this:
 
-*"This needs about 12,000 writes per second and 250 GB of new data per day. A single Postgres box tops out near 5,000 to 10,000 writes per second, so we need sharding or a write buffer."*
+*"This needs about 12,000 writes per second and 250 GB of new data per day. A single Postgres box tops out near 5,000 to 10,000 writes per second, so we need [sharding](/blog/system-design/08-replication-and-partitioning) or a write buffer."*
 
 That sentence is three estimates and one threshold. Everything downstream, every cache, shard, queue, and replica, is justified by numbers like these. If you cannot produce the numbers, you are guessing.
 
@@ -86,7 +87,7 @@ Computers operate on timescales our brains cannot feel. So multiply everything b
 
 The exact numbers drift as hardware improves. The **ratios are what matter**, and they barely change. Five rules fall straight out of this table:
 
-- **RAM is roughly 100× faster than an SSD, and an SSD is roughly 100× faster than a disk seek.** Two orders of magnitude each. This single fact is the entire justification for caching: keep hot data in memory and you skip a brutal penalty.
+- **RAM is roughly 100× faster than an SSD, and an SSD is roughly 100× faster than a disk seek.** Two orders of magnitude each. This single fact is the entire justification for [caching](/blog/system-design/06-caching-deep): keep hot data in memory and you skip a brutal penalty.
 - **One network round trip inside a datacenter costs about 5,000 memory accesses.** Network calls are expensive. This is why making 100 small database queries instead of one (the classic "N+1" problem) quietly turns a 1-millisecond job into a 50-millisecond one.
 - **Reading data in order is about 100× faster than jumping around randomly**, on both SSD and disk. Databases, logs, and batch jobs are all designed to turn random access into sequential access.
 - **Crossing a continent takes about 150 milliseconds, and that is physics.** Light in fiber covers roughly 200,000 km per second, so a 12,000 km path is about 60 ms one way before anything even processes it. No budget makes a single trip to another continent faster. The only fix is moving the data closer.
@@ -254,7 +255,7 @@ Let's size a Twitter-like feed service. **Assumptions, stated:** 10 million dail
 
 **Storage.** Text is 20M × 300 bytes ≈ 6 GB/day. Images are 20M × 10% × 200 KB ≈ 400 GB/day. Images dominate text by about 70×. Over 5 years with 3× replication that is roughly **2.25 PB**, almost entirely images. Conclusion: text goes in Postgres, but **media belongs in object storage (like S3) plus a CDN**, not the database. The sizing surfaced the architecture by itself.
 
-**Bandwidth.** A feed read returns about 20 posts, roughly 50 KB of text and thumbnails. 7,000 reads/sec × 50 KB ≈ 350 MB/sec, about **2.8 Gbps** at peak. That overwhelms a single 1 Gbps network card, which is the textbook case for a CDN to absorb media at the edge.
+**Bandwidth.** A feed read returns about 20 posts, roughly 50 KB of text and thumbnails. 7,000 reads/sec × 50 KB ≈ 350 MB/sec, about **2.8 Gbps** at peak. That overwhelms a single 1 Gbps network card, which is the textbook case for a [CDN](/blog/system-design/02-networking-and-protocols) to absorb media at the edge.
 
 **Servers.** Total peak is about 700 + 7,000 ≈ 7,700 QPS. At 2,000 QPS per app server that is 4 servers, doubled for redundancy ≈ **8 app servers**.
 
@@ -274,7 +275,7 @@ The tradeoff is explicit. With a few hundred followers, one tweet triggers a few
 
 Then it broke. A celebrity with tens of millions of followers would trigger tens of millions of cache writes per tweet, stalling the delivery pipeline for everyone. So Twitter went **hybrid**: ordinary accounts fan out on write, a small set of huge accounts are excluded and merged in at read time. Most timelines stay pure cache reads; the few that follow celebrities pay a small merge. That is "reduce the fan-out width" applied at the data-model level.
 
-What they gave up was real and worth naming: write simplicity, a lot of RAM for duplicated timelines, and strong consistency (your followers see a tweet over a span of seconds, not instantly). For a social feed that is fine. For a bank ledger it would be unacceptable. The lesson: **fan-out is a cost you can move, not erase**, and you should always say out loud what you are trading away.
+What they gave up was real and worth naming: write simplicity, a lot of RAM for duplicated timelines, and [strong consistency](/blog/system-design/09-cap-pacelc-consistency-models) (your followers see a tweet over a span of seconds, not instantly). For a social feed that is fine. For a bank ledger it would be unacceptable. The lesson: **fan-out is a cost you can move, not erase**, and you should always say out loud what you are trading away.
 
 ## Test yourself
 
@@ -293,4 +294,4 @@ If you remember one thing, remember this: **estimation is about staying within o
 
 The numbers told you something quietly profound along the way. They did not just count servers, they *chose the architecture*. The read/write ratio demanded a cache. The storage math demanded object storage. The bandwidth demanded a CDN. Good estimates do not follow your design; they reveal it.
 
-So here is the thread to pull next. Every estimate above eventually runs into a wall, the moment one box is not enough. What do you actually do when you cross that threshold? That is the difference between scaling *up* and scaling *out*, and it is where system design gets genuinely interesting.
+So here is the thread to pull next. Every estimate above eventually runs into a wall, the moment one box is not enough. What do you actually do when you cross that threshold? That is the difference between scaling *up* and [scaling *out*](/blog/system-design/07-load-balancing-and-scaling), and it is where system design gets genuinely interesting.

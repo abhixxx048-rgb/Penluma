@@ -28,7 +28,8 @@ faq:
     a: It's your inability to predict how a future intense state will hijack your behavior. When calm, you can't simulate hunger, anger, or craving, so you make plans your future self can't keep. It's a forecasting failure, not weak willpower.
   - q: Is hiding my emotions a good way to stay rational?
     a: No. Suppressing feelings hides them on the outside while they keep churning inside, hurting memory and raising stress. Reappraising, or reinterpreting the situation before the emotion peaks, works far better.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
+linked: true
 topic: psychology-of-decisions
 topicTitle: Psychology of Decisions
 category: Thinking & Decisions
@@ -39,7 +40,7 @@ transformed: true
 sources: []
 ---
 
-You think you decide with your head. You weigh the options, line up the pros and cons, and pick the sensible one. But by the time your reasoning shows up, a feeling has usually already chosen the direction. Your logic then spends its energy writing a respectable explanation for the choice your gut made a split second earlier.
+You think you decide with your head. You weigh the options, line up the pros and cons, and pick the sensible one. But by the time your reasoning shows up, [a feeling has usually already chosen the direction](/blog/psychology-of-decisions/03-how-the-brain-actually-decides-emotion-memory-attention). Your logic then spends its energy writing a respectable explanation for the choice your gut made a split second earlier.
 
 This isn't a character flaw. It's how the human mind is built. And once you can see it happening, you can finally do something about it.
 
@@ -55,7 +56,7 @@ The payoff is real. People who understand this make calmer money decisions, fall
 
 Here's the single most useful idea in this whole topic.
 
-The **affect heuristic** is a mental shortcut where you judge how risky or how beneficial something is by checking the instant good-or-bad feeling it gives you, instead of analyzing the actual facts. ("Affect" just means a faint, automatic sense of liking or disliking.)
+The **affect heuristic** is a [mental shortcut](/blog/psychology-of-decisions/05-mental-shortcuts-how-heuristics-help-and-trick-us) where you judge how risky or how beneficial something is by checking the instant good-or-bad feeling it gives you, instead of analyzing the actual facts. ("Affect" just means a faint, automatic sense of liking or disliking.)
 
 Now the strange part. In the real world, things that are very beneficial often carry real risk too, think powerful medicines, fast cars, big investments. But **in our minds, risk and benefit feel like opposites.** When something feels good, we rate it as high-benefit *and* low-risk at the same time. When something feels bad, we rate it as low-benefit *and* high-risk. One emotional tag drives both judgments at once.
 
@@ -101,7 +102,7 @@ Before deciding, we silently run a little movie: "How bad will I feel if this go
 
 Here's the counterintuitive bit. In the Dutch Postcode Lottery, tickets are tied to your home postcode. People buy in not because the odds are good, but because the thought of *not* playing and then watching their own postcode win is unbearable. Here, regret aversion actually *increases* risk-taking, the opposite of plain caution.
 
-So regret aversion isn't the same as fearing risk. Sometimes dodging regret makes us bolder. It's also why "money-back guarantee" and "free returns" sell so well: they remove the imagined regret of a bad purchase. Defaults work the same way, sticking with the preset feels safe because "I didn't choose it, so it's not my fault."
+So regret aversion isn't the same as fearing risk. Sometimes dodging regret makes us bolder. It's also why "money-back guarantee" and "free returns" sell so well: they remove the imagined regret of a bad purchase. [Defaults](/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults) work the same way, sticking with the preset feels safe because "I didn't choose it, so it's not my fault."
 
 ## You can't feel your future self: the hot-cold empathy gap
 
@@ -111,7 +112,7 @@ The key insight: this is a *forecasting* failure, not weak willpower. In a calm 
 
 You grocery shop right after a big meal (cold) and buy almost no snacks, you genuinely can't imagine wanting them. Three days later, hungry at 10 p.m. (hot), you'd raid the kitchen. New Year's resolutions made in a calm January 1 mindset collapse the moment real cravings arrive. Researchers have shown the same gap with arousal, anger, and pain: people's calm-state predictions of their own behavior were far tamer than how they actually behaved once the hot state hit.
 
-The cure is a **commitment device**, a decision you lock in *while cold* so your hot self can't undo it. Set up automatic savings. Pre-order healthy meals. Install an app blocker. Use a cooling-off period before big purchases. You're not trusting willpower, you're removing the future choice.
+The cure is a [**commitment device**](/blog/psychology-of-decisions/21-making-better-personal-decisions-a-debiasing-toolkit), a decision you lock in *while cold* so your hot self can't undo it. Set up automatic savings. Pre-order healthy meals. Install an app blocker. Use a cooling-off period before big purchases. You're not trusting willpower, you're removing the future choice.
 
 (Marketers exploit the reverse. "Only 2 left, order in the next 10 minutes!" is designed to shove you into a hot, impulsive state right at checkout.)
 
@@ -157,4 +158,4 @@ Emotion isn't the enemy of good decisions. It's the steering wheel that's *alway
 
 You can't turn feelings off. But three moves change everything: **name** the feeling, **time** the decision (decide cold, lock it in early), and **reappraise** rather than suppress. Do that, and your logic finally gets to do real work instead of writing flattering reports about wherever your gut already drove.
 
-Here's the next thread to pull: if a single feeling can flip your sense of risk and benefit, what happens when someone *designs* the feeling for you, with a price tag, a color, or the word "free"? That's where emotion meets persuasion, and it's the next thing worth understanding.
+Here's the next thread to pull: if a single feeling can flip your sense of risk and benefit, what happens when someone *designs* the feeling for you, with a price tag, a color, or the word "free"? That's where emotion meets [persuasion](/blog/psychology-of-decisions/10-the-six-levers-of-influence-how-people-get-persuaded), and it's the next thing worth understanding.

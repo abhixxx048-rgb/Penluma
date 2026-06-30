@@ -28,7 +28,7 @@ faq:
     a: Not usually. In many setups the tenant context is not restored inside queued jobs, so an Eloquent query that relies on a global scope runs unscoped across all tenants. Jobs that touch tenant data must re-initialize tenancy explicitly.
   - q: Is authentication the same as isolation?
     a: No. Authentication proves who someone is. Isolation decides what data their request is allowed to touch. A perfectly authenticated admin can still read another tenant's data if the authorization and scoping layers have a hole.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: engineering-ops

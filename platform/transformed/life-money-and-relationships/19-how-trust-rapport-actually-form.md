@@ -51,7 +51,7 @@ faq:
       Be genuinely curious, find real common ground, give sincere compliments, and
       keep small promises. The behaviors that build rapport and the manipulative
       "tactics" look identical - the only difference is intent, and people can feel it.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: life-money-and-relationships

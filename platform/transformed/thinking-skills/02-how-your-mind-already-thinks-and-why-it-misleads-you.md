@@ -38,8 +38,9 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 1
 icon: "\U0001F4A1"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow
 ---
@@ -58,7 +59,7 @@ Here is the practical payoff of looking under the hood:
 - You stop blaming willpower for problems that are really about how your mind is wired.
 - You gain access to a slower, sharper mode of thinking that can solve problems your reflexes can't.
 
-This is the foundation. Once you have a working map of your own mental machinery, everything else gets easier: why structured thinking tools work, why habits resist change, and why real creativity takes deliberate effort.
+This is the foundation. Once you have a working map of your own mental machinery, everything else gets easier: why [structured thinking tools work](/blog/thinking-skills/06-section-5-leverage-points-mental-models-for-better-decisions), why [habits resist change](/blog/thinking-skills/07-the-science-of-habits-how-behavior-becomes-automatic), and why [real creativity takes deliberate effort](/blog/thinking-skills/11-what-creativity-really-is-demystified).
 
 ## Your mind has two speeds
 
@@ -124,7 +125,7 @@ Analogy is the default. First principles is the upgrade. And because the upgrade
 
 A **heuristic** is a mental shortcut, a rule of thumb System 1 uses to produce fast, good-enough answers. Kahneman and Tversky's landmark 1974 paper, *Judgment Under Uncertainty: Heuristics and Biases*, proved something crucial about these shortcuts: their failures are not random. They are **systematic and predictable.**
 
-That's actually great news. A predictable error is one you can anticipate and correct. Here are four shortcuts most likely to mislead you.
+That's actually great news. A predictable error is one you can anticipate and correct. Here are [four shortcuts most likely to mislead you](/blog/clear-thinking-and-expression/18-cognitive-biases-logical-fallacies-and-how-to-dodge-them).
 
 ### Anchoring: the first number wins
 
@@ -175,7 +176,7 @@ You can't delete them; they're built into how the mind runs. The realistic goal 
 You don't need to rewire your brain. You need a few well-placed pauses. Try these:
 
 1. **Name the bias out loud.** When you catch a fast judgment forming, ask: *Could this be anchoring, confirmation, sunk cost, or availability?* You don't have to fix it. Just naming it nudges System 2 awake enough to double-check.
-2. **Ask "what do I know for certain?"** Before accepting that something must be done a certain way, strip it back to the facts you can actually prove. That's the entry point to first-principles thinking.
+2. **Ask "what do I know for certain?"** Before accepting that something must be done a certain way, strip it back to the facts you can actually prove. That's the entry point to [first-principles thinking](/blog/thinking-skills/03-first-principles-thinking-reasoning-from-the-ground-up).
 3. **Hunt for the disconfirming evidence.** Deliberately ask, *What would prove me wrong, and have I looked for it?* This is the direct antidote to confirmation bias.
 4. **Ignore what you've already spent.** When deciding whether to continue something, judge it only on the future: from today forward, is this still worth it? The past is gone either way.
 5. **Check the base rate, not the story.** When a vivid example is driving a decision, ask whether it's actually representative or just memorable. Reach for the numbers, not the anecdote.

@@ -48,7 +48,7 @@ faq:
       A well-defined problem is a measurable gap between today's reality and the
       state you want, with no solution hidden inside it. If your sentence already
       names a fix, you've described a solution, not the problem.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 linked: true
 transformed: true
 sources: []

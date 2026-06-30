@@ -54,9 +54,10 @@ faq:
       A position is what someone says they want. An interest is why they want it.
       Two people fighting over one orange may both win if one needs the juice and
       the other needs the peel. Ask "why does this matter to you?" before negotiating.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Modes_of_persuasion
   - https://en.wikipedia.org/wiki/Nonviolent_Communication
@@ -73,7 +74,7 @@ Most of the conversations that decide your life are not clean exchanges of infor
 
 In those rooms, polished grammar saves no one. What saves you is the ability to make it easy for the other person to understand you, feel what you feel, and say yes without losing face.
 
-Clarity is the floor. Influence and dialogue are the walls and the roof. This article is about the roof.
+[Clarity is the floor](/blog/ten-disciplines/19-clear-thinking-on-the-page-structure-clarity-and-writing-for-the-reader). Influence and dialogue are the walls and the roof. This article is about the roof.
 
 ## The three engines of persuasion
 
@@ -127,18 +128,18 @@ Here is the test. If the other person later learned exactly how you influenced t
 
 ## Why emotion goes first
 
-The psychologist Daniel Kahneman described the mind as running two systems. **System 1** is fast, automatic, and emotional; it forms snap impressions. **System 2** is slow, effortful, and logical; it does the math. The key finding: System 1 usually decides first, and System 2 then builds a justification it believes it reasoned to.
+The psychologist Daniel Kahneman described the mind as [running two systems](/blog/ten-disciplines/07-how-the-mind-works-perception-attention-memory-and-two-systems-of-thinking). **System 1** is fast, automatic, and emotional; it forms snap impressions. **System 2** is slow, effortful, and logical; it does the math. The key finding: System 1 usually decides first, and System 2 then builds a justification it believes it reasoned to.
 
 System 1 is the gut reaction of a crowd at a concert. System 2 is the lone accountant in the back doing the receipts. If you only address the accountant, the crowd has already left.
 
 Two quirks of this fast brain matter enormously for influence:
 
-- **Anchoring.** The first number you hear biases everything after it. Name a price of $10,000 and the "compromise" at $7,000 feels reasonable, because $10,000 set the anchor.
+- **[Anchoring](/blog/ten-disciplines/08-biases-heuristics-and-why-smart-people-make-predictable-errors).** The first number you hear biases everything after it. Name a price of $10,000 and the "compromise" at $7,000 feels reasonable, because $10,000 set the anchor.
 - **Framing.** The same fact feels different depending on the words. "90% fat-free" sells; "10% fat" repels. "A 95% survival rate" reassures; "a 5% death rate" frightens. Identical truth, opposite feeling.
 
 ## Stories carry meaning that facts cannot
 
-Facts are hard to remember and easy to argue with. Stories slip past defenses and lodge in memory, because the human brain is built for narrative.
+Facts are hard to remember and easy to argue with. Stories slip past defenses and lodge in memory, because [the human brain is built for narrative](/blog/ten-disciplines/20-persuasion-storytelling-and-communicating-to-an-audience).
 
 A story is the cable that uploads an idea into someone's memory. A stat sheet is a pile of loose parts you hope they assemble themselves. They won't.
 
@@ -245,7 +246,7 @@ The most common mistake is delivering bad news or strong emotion in writing. Tex
 Before your next hard conversation or important pitch, run this checklist:
 
 1. **Write the one outcome you want.** A single sentence. If you don't know it, you'll wander.
-2. **Lead with the answer.** Open with your ask and its benefit, then add support. "I'm asking for two weeks to fix our test suite; it'll cut release delays roughly in half."
+2. **[Lead with the answer](/blog/clear-thinking-and-expression/06-structure-frameworks-pyramid-principle-scqa-prep).** Open with your ask and its benefit, then add support. "I'm asking for two weeks to fix our test suite; it'll cut release delays roughly in half."
 3. **Reframe to what they care about.** Translate your goal into their world. "Clean code" becomes "fewer late-night emergencies."
 4. **Bring one story and one fact.** A concrete tale plus a single clear number beats a wall of data.
 5. **Write the bare facts a camera would catch** - separate from your judgments about them.

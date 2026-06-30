@@ -36,7 +36,7 @@ faq:
     a: The leader continuously sends heartbeats (empty AppendEntries messages). Each heartbeat resets the followers' election timers, so as long as they keep arriving, no follower starts a new election.
   - q: Is Raft easier to understand than Paxos?
     a: Yes, that was its explicit design goal. Raft splits consensus into leader election, log replication, and safety, making each piece easier to reason about than the monolithic Paxos algorithm.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources:

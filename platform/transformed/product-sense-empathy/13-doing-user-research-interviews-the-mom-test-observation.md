@@ -48,11 +48,12 @@ faq:
       only talking to people and watching them tells you why.
 topic: product-sense-empathy
 topicTitle: Product Sense & Empathy
+linked: true
 category: Thinking & Decisions
 date: '2026-06-21'
 order: 12
 icon: ❤️
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Contextual_inquiry
@@ -67,9 +68,9 @@ That single fact quietly ruins more product decisions than any technical bug. If
 
 You cannot design well for a user you have only imagined.
 
-Good product sense is not a gift you're born with. It's built from **evidence** about how real people actually behave. User research is just the practice of gathering that evidence on purpose, instead of guessing.
+[Good product sense](/blog/product-sense-empathy/02-what-product-sense-really-is) is not a gift you're born with. It's built from **evidence** about how real people actually behave. User research is just the practice of gathering that evidence on purpose, instead of guessing.
 
-It fights two costly mistakes. The first is building for yourself and assuming everyone else is like you. The second is trusting what people *say* over what they actually *do*.
+It fights two costly mistakes. The first is [building for yourself and assuming everyone else is like you](/blog/product-sense-empathy/03-user-empathy-seeing-through-the-user-s-eyes). The second is trusting what people *say* over what they actually *do*.
 
 Picture a developer who decides print-shop owners "probably want bulk discounts," builds it, and ships. Now picture sitting beside an owner at 9pm while she fumbles to quote a 500-business-card job from memory. The second person knows what to build. The first only has a hunch wearing a costume.
 
@@ -130,7 +131,7 @@ In one line: **generative research reveals what to test; evaluative research mea
 
 Usability testing means watching real people try to finish a real task with your product, and noting where they struggle.
 
-A well-known finding from usability researcher Jakob Nielsen is that you only need about **five users** to uncover most problems. One average user finds roughly 31% of the issues. By five users you've seen about 85%. By fifteen you approach 100%, but with sharply diminishing returns.
+A well-known finding from [usability researcher Jakob Nielsen](/blog/product-sense-empathy/10-evaluating-usability-nielsen-rsquo-s-10-heuristics) is that you only need about **five users** to uncover most problems. One average user finds roughly 31% of the issues. By five users you've seen about 85%. By fifteen you approach 100%, but with sharply diminishing returns.
 
 The practical takeaway isn't "run one big study of fifteen." It's to **run three small studies of five, fixing problems between each round.** Iteration beats sample size, because after the first five you mostly keep seeing the same issues.
 
@@ -150,7 +151,7 @@ This is sometimes called **contextual inquiry**: observation blended with a gent
 
 It runs on a **master-apprentice** model. The user is the master of their craft. You're the apprentice who learns by watching and quietly asking, "Why did you do that?"
 
-Consider the famous milkshake study, associated with Clayton Christensen and Bob Moesta. A fast-food chain discovered that a large share of its milkshakes were bought before 8:30am by solo drivers who took them to go. The "job" the shake was hired for wasn't dessert. It was making a long, boring commute less dull and holding off hunger until lunch. A thick shake lasts about twenty minutes through a straw, beating a banana or a bagel.
+Consider the famous milkshake study, associated with Clayton Christensen and Bob Moesta. A fast-food chain discovered that a large share of its milkshakes were bought before 8:30am by solo drivers who took them to go. The ["job" the shake was hired for](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress) wasn't dessert. It was making a long, boring commute less dull and holding off hunger until lunch. A thick shake lasts about twenty minutes through a straw, beating a banana or a bagel.
 
 Only *observation* revealed that. Asking "How do we make our milkshake better?" never would have.
 
@@ -171,7 +172,7 @@ The simplest way to hold this in your head: qualitative methods like interviews 
 
 - **"More users means better research."** For qualitative testing, five users per group catches most problems. The "five users" rule is for watching people, though. If you need statistics, you'll want closer to forty.
 - **"If they say they'd buy it, that's validation."** It isn't. Only commitment of time, reputation, or money counts.
-- **"The user got confused, so they're not very smart."** When a user struggles, the design is at fault, not the person. Don Norman called the everyday version of this a "Norman door," the kind you push when you should pull. If an owner can't find your "save price" button, that's a design bug to fix, not a user to blame.
+- **"The user got confused, so they're not very smart."** When a user struggles, [the design is at fault, not the person](/blog/product-sense-empathy/05-the-psychology-of-obvious-affordances-signifiers-mental-models). Don Norman called the everyday version of this a "Norman door," the kind you push when you should pull. If an owner can't find your "save price" button, that's a design bug to fix, not a user to blame.
 - **"Asking what people want is research."** People are poor at predicting their own behavior. Ask what they *did*, not what they *would* do.
 
 ## How to use this

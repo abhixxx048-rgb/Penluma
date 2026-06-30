@@ -52,8 +52,9 @@ faq:
       Use the transparency test: would this still work if the other side knew
       exactly what you were doing? Honest persuasion reveals what is true and
       survives that test. Manipulation manufactures something false and collapses.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -101,7 +102,7 @@ Most bad deals are halved oranges. When people battle over positions, they split
 
 **Anchoring** means the first number mentioned secretly pulls the final outcome toward itself. Our minds adjust away from a starting point, but never far enough.
 
-In a famous study, people spun a wheel rigged to land on either 10 or 65, then guessed what percent of the world's countries are in Africa. Those who saw 10 guessed about 25%. Those who saw 65 guessed about 45%. The number on the wheel was obviously random, and yet it still dragged their answers around. That is how strong anchoring is.
+In a famous study, people spun a wheel rigged to land on either 10 or 65, then guessed what percent of the world's countries are in Africa. Those who saw 10 guessed about 25%. Those who saw 65 guessed about 45%. The number on the wheel was obviously random, and yet it still dragged their answers around. That is how strong [anchoring](/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults) is.
 
 At the table, the person who makes the first *aggressive-but-justifiable* offer usually ends up with a better deal. The old advice "never make the first offer" is outdated. Make the first offer **when you know the value**. Let them go first only when you are genuinely unsure what something is worth.
 
@@ -109,7 +110,7 @@ One warning: an anchor only works if it is **defensible**. Demanding triple the 
 
 ## The same deal, framed two ways
 
-Describe the exact same deal as a gain or as a loss, and people react differently. That is because **losses feel about twice as painful as equal-sized gains**. This is loss aversion, and you can use it honestly.
+Describe the exact same deal as a gain or as a loss, and people react differently. That is because **losses feel about twice as painful as equal-sized gains**. This is [loss aversion](/blog/psychology-of-decisions/08-prospect-theory-behavioral-economics-how-we-weigh-gains-losses-risk), and you can use it honestly.
 
 - To create urgency, frame the cost of inaction as a *loss*: "If we don't lock this in today, you lose the spot," or "You're leaving $400 on the table."
 - To make a safe deal feel attractive, frame it as a *sure gain*: "You walk away guaranteed to save $400."
@@ -119,7 +120,7 @@ Same fact, different feeling, every time. "95% of our customers renew" lands far
 
 ## Trade, never give
 
-**Reciprocity** is our deep urge to repay what we receive. In a negotiation, a concession from you triggers an urge in the other person to concede back.
+**[Reciprocity](/blog/psychology-of-decisions/10-the-six-levers-of-influence-how-people-get-persuaded)** is our deep urge to repay what we receive. In a negotiation, a concession from you triggers an urge in the other person to concede back.
 
 But there is a discipline to it: *trade, don't give*. Every time you move, tie it to a return. "If I include free delivery, can you commit to the full order today?" When you give freely, you teach the other side that pushing gets results, so they just keep pushing.
 
@@ -176,7 +177,7 @@ The shrinking steps quietly signal "I'm near my limit," which feels honest and d
 
 ### Keep it honest
 
-Every tool here can be used cleanly or as a trick, and the line is simple. Persuasion *reveals* what is true. Manipulation *manufactures* it. A real deadline is fine to mention. A fake "offer ends tonight" that resets every night is a lie that kills trust.
+Every tool here can be used cleanly or as a trick, and [the line is simple](/blog/psychology-of-decisions/22-persuasion-vs-manipulation-the-ethics-of-influence). Persuasion *reveals* what is true. Manipulation *manufactures* it. A real deadline is fine to mention. A fake "offer ends tonight" that resets every night is a lie that kills trust.
 
 Use the **transparency test**: would this still work if they knew exactly what you were doing? Honest tactics survive that test. Manipulation collapses. The business case backs the ethics, too. A one-time win from a trick destroys repeat deals, referrals, and reputation, while fair dealing compounds into long-term relationships.
 
@@ -184,4 +185,4 @@ Use the **transparency test**: would this still work if they knew exactly what y
 
 Here is the one thing to carry with you: great negotiators do not overpower people, they understand them. Do your homework, dig for interests instead of positions, anchor high but defensibly, and make the other side feel heard. Then let silence finish your sentences.
 
-And notice something strange about all of this. Almost every tactic here works *because* of a predictable glitch in how the brain handles numbers, fairness, and loss. The same glitches that help you at the negotiating table are quietly shaping your choices when no one is across from you at all, in the store, on your phone, in your own head. Once you start seeing the patterns, the real question becomes harder: who is anchoring *you*?
+And notice something strange about all of this. Almost every tactic here works *because* of [a predictable glitch in how the brain handles numbers](/blog/psychology-of-decisions/01-what-psychology-is-and-why-rational-people-decide-irrationally), fairness, and loss. The same glitches that help you at the negotiating table are quietly shaping your choices when no one is across from you at all, in the store, on your phone, in your own head. Once you start seeing the patterns, the real question becomes harder: who is anchoring *you*?

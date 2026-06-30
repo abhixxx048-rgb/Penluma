@@ -35,7 +35,7 @@ faq:
   - q: How do I find out what job my product is hired for?
     a: >-
       Use a "switch interview" with people who recently changed solutions. Walk their decision backwards: when did the old way stop working, what pushed them to look, and what worried them? Focus on real past behavior, not hypothetical "would you buy this" questions.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 topic: product-sense-empathy
 topicTitle: Product Sense & Empathy
 category: Thinking & Decisions
@@ -43,6 +43,7 @@ date: '2026-06-21'
 order: 3
 icon: ❤️
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -58,7 +59,7 @@ Most product decisions go sideways for the same reason: we fall in love with the
 
 We add features. We run surveys asking "would you like it thicker, cheaper, faster?" We ship exactly what people request. And then sales don't move, because we answered a question the customer didn't actually care about.
 
-JTBD fixes the lens. It forces one stubborn question, asked over and over: **what progress is this person trying to make?** When you can answer that, you stop guessing about features, you discover competitors you never knew you had, and you finally understand why people switch to you, or away from you.
+JTBD fixes the lens. It forces one stubborn question, asked over and over: **what progress is this person trying to make?** When you can answer that, you stop guessing about features, you discover competitors you never knew you had, and you finally understand [why people switch](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy) to you, or away from you.
 
 ## The core idea: people hire products, then fire them
 
@@ -124,7 +125,7 @@ Christensen defines competition as "anything a customer might hire to get the sa
 
 The milkshake competed with bananas, donuts, and coffee, so the real market was far larger than "all milkshakes sold by every burger chain combined." In another case, tax-software users' true job turned out to be spending *less time* on their taxes, not maximizing their refund, which pointed the product in a completely different direction.
 
-So define your competitive set by the **job**, not the product category. Your real rival might be a spreadsheet, a Facebook page, a phone call, or simply "do nothing." That last one, the status quo, is often the toughest competitor you have.
+So define your competitive set by the **job**, not the product category. Your real rival might be a spreadsheet, a Facebook page, a phone call, or simply "do nothing." That last one, the status quo, is often the [toughest competitor](/blog/ten-disciplines/14-industry-forces-competition-business-models-and-value-creation) you have.
 
 ## Every job has three dimensions
 
@@ -142,7 +143,7 @@ Miss the emotional and social layers and you'll build something that technically
 
 **"A good product sells itself."** Moesta separates the **Big Hire** (the moment of purchase) from the **Little Hire** (the moment of actual use). A product can be bought and never used. Value only arrives at the Little Hire, so a sale that never turns into use is a job left undone.
 
-**"Better features create demand."** Often the blocker isn't a missing feature, it's fear. This is why free trials, onboarding, and guarantees matter so much. They don't add pull, they *reduce anxiety and habit*, which is a different lever entirely.
+**"Better features create demand."** Often the blocker isn't a missing feature, it's fear. This is why free trials, [onboarding](/blog/product-sense-empathy/09-reducing-friction-flows-steps-progressive-disclosure), and guarantees matter so much. They don't add pull, they *reduce anxiety and habit*, which is a different lever entirely.
 
 **"My competitors are the other companies in my category."** Your fiercest competitor is frequently "do nothing," a spreadsheet, or a free workaround the customer already trusts.
 
@@ -168,7 +169,7 @@ Behind every switch are **four forces**, named by Moesta. Two drive change, two 
 
 A switch happens only when **push + pull > anxiety + habit**.
 
-A clean way to write a job down, from the Nielsen Norman Group, is: *"When [situation], I want to [job], so I can [outcome]."* Notice it names no feature at all. And Rob Fitzpatrick's *The Mom Test* pairs perfectly here: ask about real past behavior ("tell me about the last time this happened"), never "would you buy this?"
+A clean way to write a job down, from the Nielsen Norman Group, is: *"When [situation], I want to [job], so I can [outcome]."* Notice it names no feature at all. And Rob Fitzpatrick's [*The Mom Test*](/blog/product-sense-empathy/13-doing-user-research-interviews-the-mom-test-observation) pairs perfectly here: ask about real past behavior ("tell me about the last time this happened"), never "would you buy this?"
 
 ## A worked example
 
@@ -194,4 +195,4 @@ The single thing to carry away: people don't buy products, they hire progress, a
 
 Once you start seeing the world this way, you can't unsee it. The drill becomes a hole. The milkshake becomes a boring commute. The website becomes a frightened shop owner who just wants to look legitimate.
 
-But here's the question that opens the next door: if every customer is hiring a product to feel a certain way, how do you actually get inside their head before you've ever shipped a thing? That's where empathy stops being a buzzword and becomes a research skill, and it's where the real product sense begins.
+But here's the question that opens the next door: if every customer is hiring a product to feel a certain way, how do you actually get inside their head before you've ever shipped a thing? That's where [empathy](/blog/product-sense-empathy/03-user-empathy-seeing-through-the-user-s-eyes) stops being a buzzword and becomes a research skill, and it's where the real product sense begins.

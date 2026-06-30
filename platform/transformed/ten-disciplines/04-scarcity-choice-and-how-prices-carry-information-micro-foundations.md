@@ -38,9 +38,10 @@ faq:
     a: Producing something at a lower opportunity cost than someone else. Even if one person or country is better at everything, both still gain by specialising in what they give up the least to make, then trading.
   - q: Do price controls like rent caps help with shortages?
     a: Usually not. A price cap does not make a thing less scarce; it silences the signal. Rent held below equilibrium leads to fewer apartments, queues, and decay rather than affordability.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Opportunity_cost
   - https://en.wikipedia.org/wiki/Comparative_advantage
@@ -57,11 +58,11 @@ You make economic choices all day without calling them that. Which job to take, 
 
 Most of the costly mistakes people make in these moments come from skipping one of a handful of simple ideas. Once you have them, a lot of confusing things, from college tuition to fuel prices to why imports are not a "loss," suddenly click into place.
 
-This guide builds that foundation. By the end you will understand five ideas that almost everything else rests on: **scarcity**, **opportunity cost**, **marginal thinking**, **supply and demand**, and the quietly amazing idea that a **price is really a piece of information**.
+This guide builds that foundation. By the end you will understand five ideas that almost everything else rests on: **scarcity**, **opportunity cost**, **marginal thinking**, [**supply and demand**](/blog/economics-from-first-principles/03-supply-demand-and-how-prices-are-determined), and the quietly amazing idea that a **price is really a piece of information**.
 
 ## Scarcity is the reason economics exists
 
-**Scarcity** is the basic fact that resources are limited but human wants are not. You cannot have everything, so you must choose.
+[**Scarcity**](/blog/economics-from-first-principles/01-what-economics-is-and-why-it-exists) is the basic fact that resources are limited but human wants are not. You cannot have everything, so you must choose.
 
 "Resources" means anything useful but limited: money, time, materials, workers, attention. "Wants" means everything you would take if it were free. The gap between the two never closes. Even a billionaire faces scarcity; their fortune is huge but not infinite, and their day still has only 24 hours.
 
@@ -91,7 +92,7 @@ A **sunk cost** is money or effort already spent that you cannot get back, no ma
 
 Opportunity cost looks *forward* at what you will give up. Sunk cost looks *backward* at what is already gone. A good decision-maker ignores sunk costs entirely, because no future choice can recover them.
 
-You paid 15 dollars for a movie ticket. Twenty minutes in, the film is terrible. The 15 is gone whether you stay or leave. The only real question is whether the next hour is better spent watching this or doing something else. Staying just because "I already paid" is the **sunk-cost fallacy**, throwing good time after bad money.
+You paid 15 dollars for a movie ticket. Twenty minutes in, the film is terrible. The 15 is gone whether you stay or leave. The only real question is whether the next hour is better spent watching this or doing something else. Staying just because "I already paid" is the [**sunk-cost fallacy**](/blog/ten-disciplines/08-biases-heuristics-and-why-smart-people-make-predictable-errors), throwing good time after bad money.
 
 ## Trade-offs you can see
 
@@ -215,7 +216,7 @@ Anna is better at everything. But look at opportunity cost. For Anna, one report
 
 ## When markets stumble
 
-Markets are powerful but not magic. Sometimes a free market produces a bad result even though each individual trade looked fine. Economists call this **market failure**. Three forms matter most.
+Markets are powerful but not magic. Sometimes a free market produces a bad result even though each individual trade looked fine. Economists call this [**market failure**](/blog/ten-disciplines/05-markets-incentives-trade-and-when-markets-fail). Three forms matter most.
 
 An **externality** is a cost or benefit that spills onto people who were not part of the deal. A factory makes a product, sells it, and both sides are happy, but it also dumps waste into a river, harming everyone downstream who never agreed to anything. The market "worked" for the two parties yet imposed an uncounted cost on bystanders. Secondhand smoke is the same idea on a personal scale.
 
@@ -239,4 +240,4 @@ If you keep one idea, keep this: **a price is information in disguise.** It comp
 
 Everything else here hangs on one chain. Scarcity forces choice, choice has a cost, good choices happen at the margin, prices coordinate those choices, and trade based on comparative advantage makes everyone richer, until a few specific situations cause the system to stumble.
 
-Here is the curious next thread. Everything above describes a single market, one good, one price. But what happens when you add up *all* the markets at once and ask about the whole economy, about jobs, inflation, interest rates, and why a central bank can move them with a single decision? That bigger machine sits directly on top of the spine you just built, and it behaves in ways no single market can explain.
+Here is the curious next thread. Everything above describes a single market, one good, one price. But what happens when you add up *all* the markets at once and ask about the whole economy, about jobs, [inflation, interest rates](/blog/ten-disciplines/06-the-big-picture-money-growth-inflation-and-the-macro-economy-advanced), and why a central bank can move them with a single decision? That bigger machine sits directly on top of the spine you just built, and it behaves in ways no single market can explain.

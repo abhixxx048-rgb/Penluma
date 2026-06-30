@@ -28,7 +28,7 @@ faq:
     a: "No. Global Tables replicate data across regions for availability and low latency. Because every change syncs, an accidental delete spreads everywhere. For recovering from mistakes, use backups or point-in-time recovery."
   - q: "Does DynamoDB support SQL joins?"
     a: "No. DynamoDB is non-relational, so there are no SQL joins. You model your data so the records you need are fetched directly by key, often storing related data together."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 topic: aws-cloud-practitioner-mcq
 topicTitle: AWS Cloud Practitioner

@@ -34,9 +34,10 @@ category: Money & Business
 date: '2026-06-21'
 order: 8
 icon: "\U0001F91D"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -94,7 +95,7 @@ This flips the emotional logic. Disqualifying is not failure. A fast, honest "th
 
 ## The four signals of a good fit
 
-A famous checklist called **BANT** (in use since the 1950s) covers what to look for. You do not need to memorize it, just feel the spirit:
+A famous checklist called **[BANT](/blog/sales-customer-development/08-sales-discovery-frameworks-spin-bant-meddic-and-friends)** (in use since the 1950s) covers what to look for. You do not need to memorize it, just feel the spirit:
 
 - **B**udget: Can they pay?
 - **A**uthority: Can they decide?
@@ -112,7 +113,7 @@ Here is what each signal sounds like in a real conversation:
 
 ### Watch for commitment, not compliments
 
-In his classic little book *The Mom Test*, Rob Fitzpatrick offers the sharpest signal of all: watch for **commitment**, not compliments.
+In his classic little book [*The Mom Test*](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself), Rob Fitzpatrick offers the sharpest signal of all: watch for **commitment**, not compliments.
 
 A compliment ("I love this, great idea!") is worthless. It costs the person nothing. Real interest shows up only when someone gives up something they value:
 
@@ -130,7 +131,7 @@ As Fitzpatrick puts it, a person who talks endlessly about a problem but never a
 
 **"If they were rude to say no, I should be too."** Never. The warmest exits earn the best referrals. The founder who told the truth is the one people remember and recommend.
 
-**"They said it was awesome, so it's basically a sale."** This is the trap of **happy ears**: being so eager that you hear every "yes" and tune out every hesitation. You built the product, you want it to work, so your brain edits out the doubts.
+**"They said it was awesome, so it's basically a sale."** This is the trap of [**happy ears**](/blog/sales-customer-development/06-active-listening-and-reading-the-conversation): being so eager that you hear every "yes" and tune out every hesitation. You built the product, you want it to work, so your brain edits out the doubts.
 
 > A prospect says: *"This looks really cool. We're pretty busy right now, and I'm not totally sure we have the budget, but yeah, neat stuff."*
 >
@@ -202,4 +203,4 @@ Let them off the hook, and reclaim your week.
 
 The single thing to remember is this: your scarcest resource is not money, it is your time and attention, and the whole job of qualifying is to spend it only on the few who truly fit. Be the goalkeeper closing doors, trust what people *do* over what they say, and disqualify fast and kindly.
 
-But qualifying only tells you *who* to talk to. The harder question comes next: once a real prospect is in front of you, how do you run a conversation that uncovers the truth instead of fishing for compliments? That is where learning to ask the right questions, the heart of *The Mom Test*, becomes your next superpower.
+But qualifying only tells you *who* to talk to. The harder question comes next: once a real prospect is in front of you, how do you [run a conversation that uncovers the truth](/blog/sales-customer-development/07-running-a-great-discovery-call-start-to-finish) instead of fishing for compliments? That is where [learning to ask the right questions](/blog/sales-customer-development/05-asking-questions-without-leading), the heart of *The Mom Test*, becomes your next superpower.

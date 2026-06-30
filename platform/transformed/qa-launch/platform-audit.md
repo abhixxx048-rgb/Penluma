@@ -34,8 +34,9 @@ category: Business & Growth
 date: '2026-05-31'
 order: 999
 icon: ✅
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -75,7 +76,7 @@ The lesson is simple. **An unverified finding is a rumor.** Confirm it by hand -
 
 ## The findings that actually matter, in order
 
-Not all bugs are equal. The art of an audit is ranking, so the most expensive problems get attention first. Here's a battle-tested order, from "fix today" to "fix eventually."
+Not all bugs are equal. The art of an audit is ranking, so [the most expensive problems get attention first](/blog/security-privacy-engineering/07-threat-modeling-risk-management). Here's a battle-tested order, from "fix today" to "fix eventually."
 
 ### Money first: currency and payments
 
@@ -93,13 +94,13 @@ The same threading discipline applies to analytics. A hardcoded `currency: 'INR'
 
 ### Security second: who can see whose data
 
-In **multi-tenant** software - one system serving many separate customers - the scariest bug is one customer reaching another customer's data. The technical name is an **IDOR** (Insecure Direct Object Reference), but the plain version is: *the app trusted the user to tell it which data they were allowed to see.*
+In **multi-tenant** software - one system serving many separate customers - the scariest bug is [one customer reaching another customer's data](/blog/security-privacy-engineering/05-application-web-security). The technical name is an **IDOR** (Insecure Direct Object Reference), but the plain version is: *the app trusted the user to tell it which data they were allowed to see.*
 
 Here's a real shape of it. A "list roles" endpoint normally scoped results to your own account. But it had a branch that, when the request included a flag like `type=campaign`, dropped the tenant boundary and filtered by whatever account IDs the *client* supplied. That flag was client-controlled. So any logged-in user could send `?type=campaign&tenant_ids=1,2,3` and read other companies' roles and names - both a data leak and a way to enumerate every customer on the platform.
 
 The fix wasn't to delete the feature. The cross-tenant view was legitimate - but only for a **super-admin**. So the fix gated that branch behind a real admin check, and everyone else fell back to seeing only their own data.
 
-The deeper principle: **derive identity from the session, never from the request.** Who you are comes from your login, not from a parameter you can edit in the URL bar. When that one rule holds, a forged ID returns an empty result instead of someone else's secrets.
+The deeper principle: **derive identity from the session, never from the request.** [Who you are comes from your login](/blog/security-privacy-engineering/04-authentication-authorization), not from a parameter you can edit in the URL bar. When that one rule holds, a forged ID returns an empty result instead of someone else's secrets.
 
 Not every scary-looking pattern is a hole, though. If a controller reads a `tenant_id` from the query but every underlying query is *also* automatically scoped to the logged-in user's tenant, the parameter is redundant but harmless - a forged value just yields nothing. Again: **verify before you panic.**
 
@@ -117,7 +118,7 @@ These won't crash anything. They just make your product feel unfinished.
 
 Real problems, but nobody's bleeding. These go on the list and get scheduled, not rushed.
 
-A common one is **unbounded queries** - asking the database for `per_page: 10000` to fill a board or calendar. It works until the dataset grows, then it quietly gets slow or starts dropping rows. The instinct is to slap a small cap on it. Resist that. If a view genuinely needs *all* the items, a blind cap silently hides data, which is a worse bug than the one you're fixing. The right fix is usually structural - date-range scoping, lazy loading, a searchable picker - and that's a real project, not a one-line patch.
+A common one is **unbounded queries** - asking the database for `per_page: 10000` to fill a board or calendar. It works until the dataset grows, then it [quietly gets slow or starts dropping rows](/blog/system-design/04-databases-internals). The instinct is to slap a small cap on it. Resist that. If a view genuinely needs *all* the items, a blind cap silently hides data, which is a worse bug than the one you're fixing. The right fix is usually structural - date-range scoping, lazy loading, a searchable picker - and that's a real project, not a one-line patch.
 
 ## Common misconceptions
 
@@ -141,7 +142,7 @@ Only when the view doesn't need everything. Silently capping an all-items list t
 4. **Rank ruthlessly by blast radius.** Money and data leaks first. User-visible breakage next. Tech debt last.
 5. **Follow the data, not the code.** Trace a value from the database to the pixel a human sees. Currency bugs, leaks, and wrong labels almost always live in that journey.
 6. **Fix forward, don't just patch.** When the clean fix is a real project, schedule it honestly instead of papering over it with a cap that hides data.
-7. **Write a test for every fix that matters.** Especially the security ones - confirm the test *fails* against the old code, so you know it actually guards the door.
+7. **Write a test for every fix that matters.** Especially the security ones - confirm the test *fails* against the old code, [so you know it actually guards the door](/blog/security-privacy-engineering/08-security-testing-auditing).
 
 ## Conclusion
 

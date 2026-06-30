@@ -21,9 +21,10 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 5
 icon: "\U0001F504"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 faq:
   - q: What is a delay in systems thinking?
     a: A delay is the lag between an action and its visible effect. When a delay sits inside a feedback loop, the system tends to overshoot and swing back and forth, because corrections are aimed at a problem that has already changed.
@@ -56,7 +57,7 @@ It usually isn't either. It's structure. Once you learn to see delays, you stop 
 
 A **delay** is the lag between an action and its visible effect.
 
-When that lag sits inside a **balancing feedback loop** (a loop that tries to correct a system back toward some target), the system tends to **overshoot** and **oscillate**. Not because anyone is careless, but because by the time the feedback arrives, the situation has already moved on.
+When that lag sits inside a [**balancing feedback loop**](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves) (a loop that tries to correct a system back toward some target), the system tends to **overshoot** and **oscillate**. Not because anyone is careless, but because by the time the feedback arrives, the situation has already moved on.
 
 Here's the part most people miss: you are always steering with slightly old information.
 
@@ -64,7 +65,7 @@ Here's the part most people miss: you are always steering with slightly old info
 
 ### Every stock is secretly a delay
 
-A **stock** is an accumulation, like water in a bathtub or money in a bank account. It's the stored-up history of everything that has flowed in and out over time, and it cannot jump to a new value instantly.
+A [**stock**](/blog/systems-thinking/04-stocks-and-flows-what-builds-up-and-what-moves) is an accumulation, like water in a bathtub or money in a bank account. It's the stored-up history of everything that has flowed in and out over time, and it cannot jump to a new value instantly.
 
 Turn off a bathtub faucet and the tub doesn't empty in that moment. The water level is still the lagged result of every drop that flowed in and out before. As Donella Meadows puts it in her book *Thinking in Systems*, stocks "act as delays, buffers, or shock absorbers in systems."
 
@@ -152,10 +153,10 @@ The core error is ignoring the **pipeline**: the goods already ordered and in tr
 
 Once you see the delay-oscillation pattern, it appears across wildly different fields, because it's structural, not topical.
 
-- **The pork cycle.** High pig prices push farmers to expand their herds. But there's a 9-to-10-month production lag, so the extra supply all arrives at once, prices collapse, herds shrink, a shortage follows, and prices climb again. Every farmer acts rationally. The aggregate overshoots because they all respond to the same delayed signal together.
+- **The pork cycle.** [High pig prices](/blog/economics-from-first-principles/03-supply-demand-and-how-prices-are-determined) push farmers to expand their herds. But there's a 9-to-10-month production lag, so the extra supply all arrives at once, prices collapse, herds shrink, a shortage follows, and prices climb again. Every farmer acts rationally. The aggregate overshoots because they all respond to the same delayed signal together.
 - **The 2020 to 2022 chip shortage.** Automakers canceled chip orders early in the pandemic, and electronics makers grabbed the freed capacity. When car demand recovered, chip lead times had stretched from a few months to over a year. With no buffer stock, automakers lost millions of vehicles in 2021 alone.
 - **Tech hiring, 2020 to 2023.** Demand surged and companies nearly doubled headcount, but new hires take months to become productive. By the time they were, demand had normalized, and a wave of layoffs followed as the delayed correction landed. A textbook overshoot of the headcount stock.
-- **Monetary policy.** Economist Milton Friedman described "long and variable lags" between a change in money supply and its effect. Modern research puts the inflation effect around 18 to 24 months out. Raise rates, see no result, raise more, and you risk all the corrections landing together as a recession.
+- [**Monetary policy.**](/blog/economics-from-first-principles/08-central-banks-and-monetary-policy) Economist Milton Friedman described "long and variable lags" between a change in money supply and its effect. Modern research puts the inflation effect around 18 to 24 months out. Raise rates, see no result, raise more, and you risk all the corrections landing together as a recession.
 
 One warning about that last point: a delay is rarely a fixed number. Friedman's lag was "long *and variable*." Assuming a precise "we'll see the effect in exactly 18 months" is its own oversimplification that causes errors.
 

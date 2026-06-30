@@ -50,13 +50,14 @@ category: Money & Business
 date: '2026-06-21'
 order: 14
 icon: "\U0001F91D"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
-You learned to talk to customers. You ran a discovery call. You gave a demo and survived a "no." So why do the deals still slip through your fingers?
+You learned to talk to customers. You ran a [discovery call](/blog/sales-customer-development/07-running-a-great-discovery-call-start-to-finish). You gave a [demo](/blog/sales-customer-development/10-the-demo-show-value-without-overselling) and survived a "no." So why do the deals still slip through your fingers?
 
 Because knowing how to sell once is not the same as selling reliably. The founders who win aren't the most charming people in the room. They're the most consistent. So let's turn selling from a thing you do when you remember into a habit you do on a schedule.
 
@@ -112,7 +113,7 @@ The two fields that matter most are **Next step** and **Next date**. Every live 
 
 Because patterns appear. If five deals died at "too expensive," your pricing or your value story needs work. If five died at "no reply after the demo," your follow-up is broken.
 
-Lost reasons turn vague failure into a concrete to-do list. As Steve Blank's idea of *customer development* puts it: every loss is data about your market, not just a bummer.
+Lost reasons turn vague failure into a concrete to-do list. As Steve Blank's idea of [*customer development*](/blog/sales-customer-development/03-customer-development-get-out-of-the-building) puts it: every loss is data about your market, not just a bummer.
 
 ## Track what you can control: leading vs lagging indicators
 
@@ -135,7 +136,7 @@ You will not improve just by doing more calls. You improve by *looking at* your 
 
 Record them, with permission. A simple line works almost every time: "I record calls so I can focus on you instead of scribbling notes, is that okay?" Then once a week, listen back to one.
 
-Don't grade everything. The people who improve fastest pick **one or two themes per call**. Feedback on ten things at once produces improvement on none. Listen for the most common founder mistake: jumping into your pitch before the buyer finished talking. (This echoes how negotiation coach Chris Voss teaches *mirroring* and *labeling*, naming what the other person feels instead of rushing to sell.)
+Don't grade everything. The people who improve fastest pick **one or two themes per call**. Feedback on ten things at once produces improvement on none. Listen for the most common founder mistake: [jumping into your pitch before the buyer finished talking](/blog/sales-customer-development/06-active-listening-and-reading-the-conversation). (This echoes how negotiation coach Chris Voss teaches *mirroring* and *labeling*, naming what the other person feels instead of rushing to sell.)
 
 Here's a five-minute self-review. After listening, fill in three lines:
 
@@ -203,4 +204,4 @@ If you remember one thing, make it this: **judge yourself on the activity you co
 
 The pipeline, the tracker, the call reviews; they all exist to protect those reps from the chaos of a founder's week.
 
-Here's the thread worth pulling next. Once your system is running, you'll notice your deals keep dying at the *same* stage. That pattern is the most valuable thing you own, because each stage where deals stall has its own fix: a sharper discovery question, a tighter demo, a better answer to "it's too expensive." Find your leak, and you'll know exactly which skill to sharpen next.
+Here's the thread worth pulling next. Once your system is running, you'll notice your deals keep dying at the *same* stage. That pattern is the most valuable thing you own, because each stage where deals stall has its own fix: a sharper discovery question, a tighter demo, a better answer to ["it's too expensive."](/blog/sales-customer-development/11-handling-objections-with-honesty) Find your leak, and you'll know exactly which skill to sharpen next.

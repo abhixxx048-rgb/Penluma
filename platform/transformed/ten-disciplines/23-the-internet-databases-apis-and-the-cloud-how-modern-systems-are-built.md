@@ -34,10 +34,11 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 22
 icon: "\U0001F9ED"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
 sources: []
+linked: true
 ---
 
 Press Enter on a web address and, in less than a second, your tap travels thousands of kilometers, gets translated from a name into a number, is chopped into postcards, reassembled by a stranger's computer, checked against a database, maybe routed through three other companies, and painted back onto your screen.
@@ -48,7 +49,7 @@ By the end, you will be able to trace exactly what happens behind any app you us
 
 ## Why this matters
 
-The apps you depend on every day, your bank, a map, a streaming service, an online store, are never one computer. They are many computers, often in different countries, talking to each other every second.
+The apps you depend on every day, your bank, a map, a streaming service, an online store, are never one computer. They are [many computers, often in different countries, talking to each other](/blog/distributed-systems/12-what-is-a-distributed-system) every second.
 
 Most people treat all of this as magic. That is a problem, because when something breaks (a slow page, a payment that fails, a message that vanishes) you have no way to reason about why.
 
@@ -81,7 +82,7 @@ The old format (IPv4) had about 4 billion addresses, and the world ran out, so a
 
 ### Humans use names, not numbers (DNS)
 
-You do not type `142.250.72.14`. You type `google.com`. **DNS** (the Domain Name System) translates the human name into the numeric address.
+You do not type `142.250.72.14`. You type `google.com`. [**DNS**](/blog/aws-cloud-practitioner-mcq/08-amazon-route-53-dns-routing) (the Domain Name System) translates the human name into the numeric address.
 
 DNS is the contacts app on your phone. You remember "Mom," not her ten-digit number. You tap the name, and your phone looks up and dials the real number behind the scenes.
 
@@ -133,7 +134,7 @@ Think of a giant, smart, multi-user spreadsheet. An ordinary spreadsheet breaks 
 | Best when data is structured and relationships matter (orders linked to customers) | Best when data is varied or changing shape rapidly |
 | Like a strict accounting ledger with fixed columns | Like a box of index cards, each saying something different |
 
-"SQL" (Structured Query Language) is also the language you use to talk to relational databases. The relational idea comes from **Edgar F. Codd**, who invented the model in 1970.
+"SQL" (Structured Query Language) is also the language you use to talk to [relational databases](/blog/aws-cloud-practitioner-mcq/11-amazon-rds-managed-relational-databases). The relational idea comes from **Edgar F. Codd**, who invented the model in 1970.
 
 A **query** is simply a request to fetch or change specific data, like asking a librarian "give me every book by this author published after 2020." You describe what you want, and the database finds exactly those records.
 
@@ -165,13 +166,13 @@ When an online store shows a delivery cost, it often sends your address to a shi
 
 ## The cloud: renting computers instead of owning them
 
-All these servers and databases run on real, physical machines. Twenty years ago, you bought those machines and kept them in a room with loud fans and cold air. Today most companies *rent* them over the internet from a provider like Amazon Web Services, Google Cloud, or Microsoft Azure. That is **the cloud**.
+All these servers and databases run on real, physical machines. Twenty years ago, you bought those machines and kept them in a room with loud fans and cold air. Today most companies *rent* them over the internet from a provider like Amazon Web Services, Google Cloud, or Microsoft Azure. That is [**the cloud**](/blog/aws-cloud-practitioner-mcq/01-cloud-concepts-value-proposition-cloud-economics).
 
 Think of electricity. You do not own a power plant. You plug into the grid, pay for what you use, and someone else maintains the plant. The cloud is computing from the grid.
 
 ### What makes it possible: virtualization and containers
 
-**Virtualization** uses software to split one powerful physical computer into several independent **virtual machines**, each acting like its own separate computer. Picture dividing one big warehouse into many separately locked rented units. One building, many tenants who cannot see into each other's space. This is the foundation of the entire cloud business.
+**Virtualization** uses software to split one powerful physical computer into several independent [**virtual machines**](/blog/aws-cloud-practitioner-mcq/06-amazon-ec2-instances-purchasing-options), each acting like its own separate computer. Picture dividing one big warehouse into many separately locked rented units. One building, many tenants who cannot see into each other's space. This is the foundation of the entire cloud business.
 
 A lighter, more modern version is the **container** (the best-known tool is Docker), which packages an app with everything it needs so it behaves identically on any machine. Managing thousands of containers automatically is **orchestration** (the best-known tool is Kubernetes). Containers are shipping containers: standardized boxes any crane, ship, or truck handles the same way, anywhere. Kubernetes is the automated port coordinating thousands of them without a human placing each one.
 

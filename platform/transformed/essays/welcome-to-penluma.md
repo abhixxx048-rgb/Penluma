@@ -42,7 +42,7 @@ category: Essays
 date: '2026-06-29'
 order: 0
 icon: ✦
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 sources: []
 linked: true

@@ -30,7 +30,7 @@ category: Certifications
 date: '2026-06-28'
 order: 2
 icon: ☁️
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 sources: []
 linked: true

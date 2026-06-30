@@ -34,9 +34,10 @@ category: Business & Growth
 date: '2026-06-16'
 order: 999
 icon: "\U0001F501"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -46,7 +47,7 @@ Here is the part most teams miss: roughly **70 to 80 percent of customers who le
 
 ## Why this matters
 
-Losing a customer you could have saved is the most expensive mistake in any subscription or repeat-purchase business. Winning a new customer costs far more than keeping one you already have, and a customer who churns takes their lifetime value with them.
+Losing a customer you could have saved is the most expensive mistake in any subscription or repeat-purchase business. Winning a new customer costs far more than keeping one you already have, and a customer who churns takes their [lifetime value](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale) with them.
 
 The good news is that churn is mostly predictable. Activity decline shows up **30 to 60 days before cancellation.** That window is your chance to send a check-in, fix a billing problem, or simply reach out before the relationship goes cold.
 
@@ -78,7 +79,7 @@ Send it immediately after a discrete moment: onboarding completes, a support iss
 
 ### CES - how hard was that?
 
-**Customer Effort Score** asks how much effort a task took. Send it right after task completion - setting up an account, getting a refund, finding an answer. High effort is a quiet churn driver, because people leave things that feel like work.
+**Customer Effort Score** asks how much effort a task took. Send it right after task completion - setting up an account, getting a refund, finding an answer. [High effort](/blog/product-sense-empathy/09-reducing-friction-flows-steps-progressive-disclosure) is a quiet churn driver, because people leave things that feel like work.
 
 > **The rule of thumb:** CSAT for a moment, CES for a task, NPS for the relationship. Don't pick one. Each answers a question the others can't.
 
@@ -149,7 +150,7 @@ For every threshold, define four things: the **action** (a check-in email, a fol
 
 ## Common misconceptions
 
-**"A high NPS means we're safe."** No. NPS measures stated loyalty, not behavior. A customer can rate you 9 and still churn if their usage is quietly falling. Low NPS *plus* declining usage together is a far stronger signal than either alone.
+**"A high NPS means we're safe."** No. NPS measures [stated loyalty, not behavior](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy). A customer can rate you 9 and still churn if their usage is quietly falling. Low NPS *plus* declining usage together is a far stronger signal than either alone.
 
 **"One survey is enough."** Each metric answers a different question. CSAT won't tell you about loyalty; NPS won't tell you why a support call went badly. Using one and ignoring the rest leaves blind spots.
 
@@ -178,4 +179,4 @@ If you remember one thing, make it this: **churn whispers before it shouts.** Th
 
 Build the score, band it, backtest it, and connect every red flag to a real nudge that lands in front of a real person. That's the whole game.
 
-The natural next question is what you actually *say* when the alert fires. A perfectly timed at-risk warning is wasted if the win-back message is generic - and the gap between a save and a goodbye often comes down to the first sentence of that outreach. That is where the real craft of retention begins.
+The natural next question is what you actually *say* when the alert fires. A perfectly timed at-risk warning is wasted if the [win-back message](/blog/psychology-of-decisions/18-writing-marketing-copy-that-persuades-without-lying) is generic - and the gap between a save and a goodbye often comes down to the first sentence of that outreach. That is where the real craft of retention begins.

@@ -34,7 +34,7 @@ faq:
     a: "A run-on jams two complete thoughts together with no proper break. Fix it with a full stop, a semicolon, or a comma plus 'and' or 'but'. For example: 'The API is slow. We should look at it.'"
   - q: "How do I stop confusing 'then' and 'than'?"
     a: "'Than' is for comparisons: 'faster than before'. 'Then' is about time or sequence: 'fix it, then deploy'. If you're comparing two things, it's always 'than'."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources: []

@@ -28,7 +28,7 @@ faq:
     a: "Yes, in the US, EU, and Canada with conditions. In the US, CAN-SPAM requires a truthful sender, a physical mailing address, and a working opt-out honored promptly. Always include those."
   - q: "How many cold emails can I send per inbox per day?"
     a: "Cap each inbox at roughly 20 to 40 per day even when fully warmed. To send more, rotate across several low-volume inboxes rather than blasting from one."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: marketing

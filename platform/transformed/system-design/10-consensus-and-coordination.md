@@ -36,9 +36,10 @@ category: Engineering
 date: '2026-06-15'
 order: 10
 icon: "\U0001F3D7️"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Consensus_(computer_science)
   - https://en.wikipedia.org/wiki/Raft_(algorithm)
@@ -58,7 +59,7 @@ Almost every hard problem in distributed systems quietly reduces to one question
 - Deciding which node holds a lock right now.
 - Agreeing on who is even still in the cluster.
 
-If you can get machines to agree on an **ordered list of commands**, you can build essentially any reliable system on top. Feed the same commands, in the same order, to identical deterministic replicas, and they stay perfectly in sync. That single idea - called **state machine replication** - is why people say "consensus is just a replicated log."
+If you can get machines to agree on an **ordered list of commands**, you can build essentially any reliable system on top. Feed the same commands, in the same order, to identical deterministic replicas, and they stay perfectly in sync. That single idea - called **[state machine replication](/blog/distributed-systems/03-replicated-state-machines-the-log)** - is why people say "consensus is just a replicated log."
 
 Get this right and your system survives crashes without losing data. Get it subtly wrong and you ship a corruption bug that only fires under load, at 3 a.m., when two machines both think they're in charge.
 
@@ -138,7 +139,7 @@ For most teams building a correct, maintainable log inside one datacenter, Raft 
 
 ## You don't implement this yourself - you rent it
 
-Here's the good news: you almost never write Raft by hand. You run a **coordination service** and use *its* primitives. Three dominate, and all three are **CP systems** - they favor consistency and will refuse writes rather than risk disagreement during a partition.
+Here's the good news: you almost never write Raft by hand. You run a **coordination service** and use *its* primitives. Three dominate, and all three are **[CP systems](/blog/system-design/09-cap-pacelc-consistency-models)** - they favor consistency and will refuse writes rather than risk disagreement during a partition.
 
 | | ZooKeeper | etcd | Consul |
 |---|---|---|---|
@@ -198,10 +199,10 @@ The catch, predictably, is **clocks**. Leases assume clocks don't drift too far 
 
 ## Keeping time without a global stopwatch
 
-You can't order events across machines using wall clocks alone - they drift, skew, and occasionally jump backward. Distributed systems use a toolbox of logical clocks instead:
+You can't [order events across machines](/blog/distributed-systems/14-time-clocks-the-ordering-of-events) using wall clocks alone - they drift, skew, and occasionally jump backward. Distributed systems use a toolbox of logical clocks instead:
 
 - **Lamport timestamps** (one counter): if event `a` causally happened before `b`, then `a`'s timestamp is smaller. The reverse isn't guaranteed - a smaller timestamp doesn't *prove* causality - but it's enough to build a total order for a single leader's log.
-- **Vector clocks** (one counter per node): can detect when two events are genuinely **concurrent** (neither caused the other). This is exactly what systems like DynamoDB and Riak need to spot conflicting writes.
+- **[Vector clocks](/blog/distributed-systems/15-vector-clocks-causality)** (one counter per node): can detect when two events are genuinely **concurrent** (neither caused the other). This is exactly what systems like DynamoDB and Riak need to spot conflicting writes.
 - **Hybrid Logical Clocks (HLC):** combine a physical component (timestamps that look like real time) with a logical counter (so causality is never violated). They never go backward and stay close to wall time. CockroachDB, YugabyteDB, and MongoDB use them. HLC is the pragmatic default when you want causality *and* meaningful timestamps but don't have Google's atomic-clock budget.
 - **TrueTime:** Spanner's hardware clocks with explicit uncertainty, used to deliver global linearizability by paying a few milliseconds of "commit wait."
 
@@ -249,4 +250,4 @@ The price they pay is real: write throughput does **not** scale by adding etcd n
 
 If you remember one thing, make it this: **a correct distributed lock is enforced by the resource, not the lock.** Everything else - Paxos, Raft, leases, fencing tokens, hybrid clocks - is machinery in service of that humble, hard-won idea that unreliable parts can still produce one trustworthy answer.
 
-Consensus gets a handful of machines to agree on a single ordered log. But the moment your data outgrows one cluster and spans many shards, a new question appears: how do you commit a transaction that touches *several* of those logs at once, atomically, without tearing it in half? That's the world of distributed transactions, two-phase commit, and sagas - and it's where consensus becomes the foundation for something even more ambitious.
+Consensus gets a handful of machines to agree on a single ordered log. But the moment your data outgrows one cluster and spans many shards, a new question appears: how do you commit a transaction that touches *several* of those logs at once, atomically, without tearing it in half? That's the world of [distributed transactions, two-phase commit, and sagas](/blog/system-design/11-distributed-transactions-and-idempotency) - and it's where consensus becomes the foundation for something even more ambitious.

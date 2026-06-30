@@ -54,14 +54,15 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 3
 icon: "\U0001F3AF"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 sources: []
+linked: true
 ---
 
 Give a child a prize for drawing, and within days they will draw less than the kids who got nothing. Pay a person more and they may try less, not more. Hand someone exactly the reward they expected, and their brain barely reacts at all.
 
-Motivation does not work the way it feels like it should. Underneath every choice you make sits a quiet engine of needs, cravings, and surprises, and it runs on rules that often contradict plain common sense. Once you can see those rules, the impulsive shopper, the loyal employee, and the person who cannot stop scrolling all start to make sense.
+Motivation does not work the way it feels like it should. Underneath [every choice you make](/blog/psychology-of-decisions/03-how-the-brain-actually-decides-emotion-memory-attention) sits a quiet engine of needs, cravings, and surprises, and it runs on rules that often contradict plain common sense. Once you can see those rules, [the impulsive shopper](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy), [the loyal employee](/blog/psychology-of-decisions/13-understanding-employees-teams-what-truly-motivates-people-at-work), and the person who cannot stop scrolling all start to make sense.
 
 ## Why this matters
 
@@ -69,7 +70,7 @@ If you ever try to get anyone to do anything, including yourself, you are bettin
 
 Most of us bet on the obvious one: people want rewards, so give them rewards. It is intuitive, it is simple, and it is frequently wrong. Leaning on it produces fragile, minimum-effort compliance and can even kill the genuine interest you were counting on.
 
-The good news is that motivation has been studied for decades, and the real engines are knowable. Understand them and you can build better habits, lead people without nagging, design products people actually love, and stop wasting money on bonuses that backfire.
+The good news is that motivation has been studied for decades, and the real engines are knowable. Understand them and you can build better habits, lead people without nagging, [design products people actually love](/blog/psychology-of-decisions/17-building-products-people-actually-want), and stop wasting money on bonuses that backfire.
 
 **Motivation** is simply the force that starts, directs, and sustains behavior. It answers two questions: why did this person bother to act at all, and why *this* action instead of another? Let us look at what actually powers it.
 
@@ -150,7 +151,7 @@ Neuroscientist Kent Berridge sharpened this even further. Dopamine drives **"wan
 
 Wanting is the engine. Liking is the view at the destination. Dopamine revs the engine hard, but it has surprisingly little to do with whether you enjoy the view once you arrive.
 
-This wanting-without-liking split is the engine behind compulsive scrolling, slot machines, and "I had to have it but it did not satisfy me." Notification dings and slot reels hook us because their rewards are **unpredictable.** Maximum surprise, maximum dopamine, maximum pull.
+This wanting-without-liking split is the engine behind [compulsive scrolling](/blog/thinking-skills/07-the-science-of-habits-how-behavior-becomes-automatic), slot machines, and "I had to have it but it did not satisfy me." Notification dings and slot reels hook us because their rewards are **unpredictable.** Maximum surprise, maximum dopamine, maximum pull.
 
 ## Common misconceptions
 

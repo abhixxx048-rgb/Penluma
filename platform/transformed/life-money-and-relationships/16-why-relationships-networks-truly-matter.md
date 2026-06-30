@@ -32,7 +32,7 @@ faq:
     a: "No, that statistic is not reliable and traces back to old anecdotes, not research. What is defensible is that referrals make up roughly 30 to 50 percent of hires and are several times more effective than cold applications, person for person."
   - q: "What is the difference between bonding and bridging capital?"
     a: "Bonding capital is your close, tight-knit ties that give trust and support. Bridging capital is your looser ties that connect you to other circles and bring new information and opportunities. A healthy network needs both."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources:

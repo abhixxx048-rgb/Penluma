@@ -57,9 +57,10 @@ category: Engineering
 date: '2026-06-21'
 order: 2
 icon: ⚙️
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -126,7 +127,7 @@ There are three common models, and the differences matter.
 
 **Processes** are independent running programs, each with its own private memory. Two processes can't corrupt each other's data because they're isolated, and if one crashes the others survive. The downside: they're heavyweight (slow to create), and talking between them needs **IPC** (inter-process communication: pipes, sockets, shared-memory segments), which is extra work.
 
-**Threads** are execution streams inside a single process. Multiple threads share the same memory. They're lightweight, fast to create, and they communicate just by reading and writing shared variables. But that shared memory is exactly what causes the nastiest bugs, because the operating system's **scheduler** can interrupt (or "preempt") a thread at almost any instruction.
+**Threads** are [execution streams inside a single process](/blog/systems-fundamentals/02-how-a-computer-runs-your-program-cpu-memory-processes-threads). Multiple threads share the same memory. They're lightweight, fast to create, and they communicate just by reading and writing shared variables. But that shared memory is exactly what causes the nastiest bugs, because the operating system's **scheduler** can interrupt (or "preempt") a thread at almost any instruction.
 
 **Async / event loops** run a single thread that picks up ready tasks and runs each a piece at a time. Tasks cooperatively give up control at marked pause points (often the keyword `await`). Because a task is never interrupted mid-step, there are far fewer races. The catch: one greedy task that never yields freezes everything.
 
@@ -243,7 +244,7 @@ queue FULL  => producers block  (this is "backpressure")
 queue EMPTY => consumers block  (wait for work)
 ```
 
-**Backpressure** means the queue's fixed size automatically slows fast producers when consumers can't keep up. A built-in safety valve.
+**Backpressure** means the queue's fixed size [automatically slows fast producers when consumers can't keep up](/blog/system-design/16-rate-limiting-and-resiliency). A built-in safety valve.
 
 One more warning that bites people constantly: never run a CPU-heavy or blocking call inside an async event loop without yielding. It freezes the entire loop and starves every other task. Keep the loop's tasks short and I/O-focused, and offload heavy compute to a worker.
 
@@ -287,4 +288,4 @@ If you remember one thing, make it this: **concurrency is how you structure a pr
 
 The deepest bugs in this space, the lost updates and frozen deadlocks, all come from sharing mutable memory. So the most powerful move isn't a cleverer lock. It's designing so there's nothing to share in the first place.
 
-That idea scales further than you'd expect. The same instinct that makes a single program correct under threads is exactly what makes a system of thousands of servers stay consistent across a network. Which raises the next question worth chasing: when your "shared memory" lives on machines an ocean apart, what does it even mean for them to agree? That's where distributed systems begin.
+That idea scales further than you'd expect. The same instinct that makes a single program correct under threads is exactly what makes a system of thousands of servers [stay consistent across a network](/blog/distributed-systems/17-consistency-models). Which raises the next question worth chasing: when your "shared memory" lives on machines an ocean apart, what does it even mean for them to agree? That's where [distributed systems](/blog/systems-fundamentals/09-distributed-systems-many-computers-working-as-one) begin.

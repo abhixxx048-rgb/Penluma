@@ -25,7 +25,7 @@ category: Money & Business
 date: '2026-06-22'
 order: 6
 icon: "\U0001F4C8"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 faq:
   - q: Do banks really create money out of thin air?

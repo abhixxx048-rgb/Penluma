@@ -55,14 +55,15 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 6
 icon: "\U0001F3AF"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
 You walk out of a film you hate and feel guilty about the ticket you already paid for. You keep arguing a point long after you suspect you're wrong. You swear your project will be done in three weeks, every time, even though it never is.
 
-None of that makes you foolish. It makes you human. These are not random slip-ups. They are systematic errors, predictable, repeatable, and shared by smart and expert people alike. This chapter is about the most expensive ones: the biases that make you hold on too long, defend bad ideas, and overrate yourself.
+None of that makes you foolish. It makes you human. These are not random slip-ups. They are [systematic errors, predictable, repeatable, and shared by smart and expert people](/blog/psychology-of-decisions/01-what-psychology-is-and-why-rational-people-decide-irrationally) alike. This chapter is about the most expensive ones: the biases that make you hold on too long, defend bad ideas, and overrate yourself.
 
 ## Why this matters
 
@@ -80,7 +81,7 @@ Imagine I offer you a coin flip. Heads, you win $100. Tails, you lose $100.
 
 The math is a perfect tie. The expected value is exactly zero. Yet almost nobody takes the bet. Most people only say yes when the possible win climbs to around **$200** against a possible $100 loss.
 
-That is **loss aversion**: losses weigh about twice as much as equal gains. Psychologists Daniel Kahneman and Amos Tversky measured the ratio at roughly 2 to 1. This single fact is the engine underneath several of the biases below.
+That is **loss aversion**: [losses weigh about twice as much as equal gains](/blog/psychology-of-decisions/08-prospect-theory-behavioral-economics-how-we-weigh-gains-losses-risk). Psychologists Daniel Kahneman and Amos Tversky measured the ratio at roughly 2 to 1. This single fact is the engine underneath several of the biases below.
 
 Think of it as a **smoke detector for your wallet and ego**. A smoke detector is tuned to scream at the faintest hint of smoke, because missing a real fire is fatal while a false alarm is merely annoying. Your mind is wired the same way about losses. In our ancestors' world, losing a resource could mean starving, so the alarm for losses rings louder than the bell for gains.
 
@@ -177,6 +178,6 @@ Knowing about a bias rarely makes it vanish. What works are *processes* that for
 
 If there's one thread running through all six biases, it's this: **we cling to what we have, what we've spent, and what we already believe, and we trust our own judgment far more than it deserves.**
 
-You can't switch these instincts off. But you can outsmart them with a handful of small habits, asking "would I start today?", looking for evidence you're wrong, and writing predictions down before outcomes arrive.
+You can't switch these instincts off. But you can outsmart them with [a handful of small habits](/blog/psychology-of-decisions/21-making-better-personal-decisions-a-debiasing-toolkit), asking "would I start today?", looking for evidence you're wrong, and writing predictions down before outcomes arrive.
 
-There's one more layer worth noticing. So far we've talked about biases as if they live inside your head. But the smartest companies on earth have learned to *design* the world around you to trigger them on purpose, from that free trial to the default option pre-ticked on a checkout page. Once you see how choices get engineered, you stop being so easy to steer.
+There's one more layer worth noticing. So far we've talked about [biases as if they live inside your head](/blog/psychology-of-decisions/16-understanding-yourself-seeing-your-own-blind-spots). But the smartest companies on earth have learned to *design* the world around you to trigger them on purpose, from that free trial to [the default option pre-ticked on a checkout page](/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults). Once you see how choices get engineered, you stop being so easy to steer.

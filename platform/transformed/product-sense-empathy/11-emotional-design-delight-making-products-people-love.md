@@ -50,8 +50,9 @@ faq:
       Surface delight is small touches like animations or playful copy that give
       an occasional wow. Deep delight is whole-product satisfaction that feels
       like a helpful assistant, and you only earn it once the basics are solid.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Emotional_Design
   - https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule
@@ -63,7 +64,7 @@ This is the layer most teams skip. They make a product people *can* use, then wo
 
 ## Why this matters
 
-You can ship something usable and watch it sink. Usability gets a user across the finish line once. Emotion is what makes them come back, tell others, and forgive you when something goes slightly wrong.
+You can ship something usable and watch it sink. [Usability](/blog/product-sense-empathy/10-evaluating-usability-nielsen-rsquo-s-10-heuristics) gets a user across the finish line once. Emotion is what makes them come back, tell others, and forgive you when something goes slightly wrong.
 
 Think about the feeling you most want to leave behind. For a lot of products it is **confidence** - the user should finish a task feeling capable and a little proud, never lost or stupid. Get that right and you win loyalty. Get it wrong and a technically perfect product still feels cold.
 
@@ -168,7 +169,7 @@ The takeaway: find your user's biggest win and engineer a peak there. A first or
 
 ## Design for the real emotional job
 
-Emotion also shapes *what* you build. Clayton Christensen's **Jobs to Be Done** theory says people "hire" a product to make progress in a situation - and that progress is often emotional.
+Emotion also shapes *what* you build. Clayton Christensen's **[Jobs to Be Done](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress)** theory says people "hire" a product to make progress in a situation - and that progress is often emotional.
 
 **The milkshake story.** A restaurant chain tried to boost milkshake sales by surveying buyers: thicker? cheaper? Nothing moved. Then researchers asked a different question - what *job* was the shake hired for? About 40% were bought early in the morning by lone commuters facing a long, boring drive. The real job: fill a dull commute, keep one hand busy, and stave off hunger until mid-morning. The shake won because it was thick (slow to drink), one-handed, and filling - beating bananas, bagels, and donuts. People do not buy features. They hire products to make progress and to feel a certain way.
 
@@ -188,4 +189,4 @@ The lesson: when a user asks for a button in a specific spot, the request is the
 
 If you remember one thing, make it this: **usability earns the right to delight, and emotion is what people actually carry away.** A product that makes someone feel capable and proud will be remembered and recommended long after they have forgotten its feature list.
 
-The deeper question this opens up is *who* you are designing those feelings for. Confidence for a nervous first-time user and confidence for a seasoned power user look completely different. That is where emotional design hands off to empathy and user research - learning the specific person on the other side of the screen, so the peak you design lands on the moment that actually matters to them.
+The deeper question this opens up is *who* you are designing those feelings for. Confidence for a nervous first-time user and confidence for a seasoned power user look completely different. That is where emotional design hands off to [empathy](/blog/product-sense-empathy/03-user-empathy-seeing-through-the-user-s-eyes) and [user research](/blog/product-sense-empathy/13-doing-user-research-interviews-the-mom-test-observation) - learning the specific person on the other side of the screen, so the peak you design lands on the moment that actually matters to them.

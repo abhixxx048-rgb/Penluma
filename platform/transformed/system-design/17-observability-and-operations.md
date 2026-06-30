@@ -37,9 +37,10 @@ category: Engineering
 date: '2026-06-15'
 order: 17
 icon: "\U0001F3D7️"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -49,7 +50,7 @@ That gap between "the lights are green" and "I can actually explain what broke" 
 
 ## Why this matters
 
-A modern app is not one program on one server. A single click can fan out across ten, fifty, even a thousand internal services. When something goes wrong, you cannot attach a debugger and step through it. The request already finished, on a machine you will never log into, milliseconds ago.
+A modern app is not one program on one server. A single click can fan out across ten, fifty, even a thousand [internal services](/blog/system-design/18-architecture-patterns-microservices). When something goes wrong, you cannot attach a debugger and step through it. The request already finished, on a machine you will never log into, milliseconds ago.
 
 So you need two things. First, **the ability to ask new questions of your running system** without shipping new code to answer them. Second, **a shared definition of what "healthy" even means**, so you know when to panic and when to relax.
 
@@ -124,11 +125,11 @@ trace_id = a1b2c3
    gateway.charge (95ms)
 ```
 
-One glance at this waterfall and the 140ms database query inside pricing is obviously the bottleneck. That fact is invisible to metrics and painful to dig out of logs, but instantly clear in a trace.
+One glance at this waterfall and the 140ms [database query](/blog/system-design/04-databases-internals) inside pricing is obviously the bottleneck. That fact is invisible to metrics and painful to dig out of logs, but instantly clear in a trace.
 
 The magic that makes this work is **context propagation**: passing the trace ID across every network boundary. The standard is W3C Trace Context, which rides along in an HTTP header called `traceparent`. Each service reads it, creates a child span, and forwards an updated header onward.
 
-There is a notorious bug here. When a request hits a message queue like Kafka or SQS, you must propagate the same trace context as a message attribute. Miss it, and your trace silently dies at the queue, hiding the slow downstream consumer completely.
+There is a notorious bug here. When a request hits a [message queue](/blog/system-design/12-messaging-and-event-driven) like Kafka or SQS, you must propagate the same trace context as a message attribute. Miss it, and your trace silently dies at the queue, hiding the slow downstream consumer completely.
 
 ### You cannot trace everything
 
@@ -251,7 +252,7 @@ This subtle distinction, gotten wrong, turns a small blip into a full outage.
 
 Here is the classic cascading-failure trap. You put a database ping in your *liveness* probe. The database has a brief hiccup, so liveness fails on *every* instance at once, so Kubernetes restarts *all of them simultaneously*, and a thundering herd of cold instances hammers the recovering database into total collapse.
 
-That database blip should have failed *readiness* instead: each instance quietly drops out of the load balancer, stays alive, and rejoins when the database recovers. The rule: **liveness checks the process, readiness checks dependencies.** Never let a shared dependency fail all your liveness probes in lockstep.
+That database blip should have failed *readiness* instead: each instance quietly drops out of the [load balancer](/blog/system-design/07-load-balancing-and-scaling), stays alive, and rejoins when the database recovers. The rule: **liveness checks the process, readiness checks dependencies.** Never let a shared dependency fail all your liveness probes in lockstep.
 
 ## Common misconceptions
 
@@ -276,4 +277,4 @@ That database blip should have failed *readiness* instead: each instance quietly
 
 If you remember one thing, make it this: **observability and SRE only pay off when signals turn into decisions.** Traces tell you *where* it broke, SLOs tell you *whether to care*, the error budget tells you *what to do about it*, and burn-rate alerts decide *when to wake someone up.* Disconnected, each is just data. Wired together, they let you operate a system no human could hold in their head while still shipping every day.
 
-The deeper rabbit hole from here is resilience: circuit breakers, load shedding, and bulkheads, the patterns that stop a single slow dependency from dragging down everything around it. Observability is how you *prove* those patterns are working, which raises a sharper question: if your system is designed to degrade gracefully under failure, how would you even know it just saved you?
+The deeper rabbit hole from here is resilience: [circuit breakers, load shedding, and bulkheads](/blog/system-design/16-rate-limiting-and-resiliency), the patterns that stop a single slow dependency from dragging down everything around it. Observability is how you *prove* those patterns are working, which raises a sharper question: if your system is designed to degrade gracefully under failure, how would you even know it just saved you?

@@ -45,10 +45,11 @@ faq:
       Design the behavior, not just the logic. For yourself, use the Four Laws:
       make the action obvious, attractive, easy, and satisfying. For your users,
       build a trigger, a simple action, a variable reward, and an investment.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 topic: thinking-skills
 topicTitle: Thinking Skills
+linked: true
 category: Thinking & Decisions
 date: '2026-06-21'
 order: 13
@@ -74,9 +75,9 @@ The fix is not a smarter brain. It is a **process** - a chain of four stages, ea
 
 Here is the whole chain at a glance:
 
-1. **Understand the real problem** - first-principles thinking and systems thinking.
+1. **Understand the real problem** - [first-principles thinking](/blog/thinking-skills/03-first-principles-thinking-reasoning-from-the-ground-up) and [systems thinking](/blog/thinking-skills/05-systems-thinking-seeing-the-whole-not-the-parts).
 2. **Generate many possible solutions** - creativity and lateral thinking.
-3. **Evaluate and choose the best** - mental models and deliberate analysis.
+3. **Evaluate and choose the best** - [mental models](/blog/thinking-skills/06-section-5-leverage-points-mental-models-for-better-decisions) and deliberate analysis.
 4. **Ship the behavior** - habit design for yourself, habit design for your users.
 
 Think of building a house. **Stage 1** is surveying the land: what is the ground actually like? **Stage 2** is sketching many floor plans. **Stage 3** is the engineer checking which plan can actually stand up. **Stage 4** is the construction schedule that turns a chosen plan into a real building - on time, not just on paper.
@@ -105,7 +106,7 @@ A useful trick: write the problem as one sentence. Then rewrite it three times, 
 
 ## Stage 2 - Generate many solutions
 
-Now that you know the real problem, open up wide. The goal here is **volume and variety**, not quality. Judgment kills creativity if it shows up too early.
+Now that you know the real problem, open up wide. The goal here is **volume and variety**, not quality. Judgment kills [creativity](/blog/thinking-skills/11-what-creativity-really-is-demystified) if it shows up too early.
 
 Edward de Bono, who coined "lateral thinking" in 1967, built the **Six Thinking Hats** precisely to separate idea generation from evaluation. The **Green Hat** is the creativity hat: during Green Hat time every idea is welcome, even the wild ones, because a wild idea often hides the seed of a practical breakthrough.
 
@@ -141,7 +142,7 @@ The point of Stage 3 is to choose the option that survives the most adversarial 
 
 ## Stage 4 - Ship the behavior
 
-Most plans die right here. An idea that never changes anyone's behavior - including your own - has zero real-world impact. Stage 4 makes the chosen solution actually happen, in two directions: your own execution habit, and your users' adoption.
+Most plans die right here. An idea that never changes anyone's behavior - including your own - has zero real-world impact. Stage 4 makes the chosen solution actually happen, in two directions: [your own execution habit](/blog/thinking-skills/09-designing-your-own-habits-that-actually-stick), and [your users' adoption](/blog/thinking-skills/10-designing-behavior-for-others-ethically).
 
 ### For yourself: the Four Laws
 

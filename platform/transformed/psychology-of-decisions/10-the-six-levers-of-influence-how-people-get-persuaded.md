@@ -50,13 +50,14 @@ faq:
       No. Pointing out that a bad behavior is common can backfire and make more
       people do it. Social proof only helps when it frames the behavior you want
       as what most similar people already do.
+linked: true
 topic: psychology-of-decisions
 topicTitle: Psychology of Decisions
 category: Thinking & Decisions
 date: '2026-06-22'
 order: 9
 icon: "\U0001F3AF"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 sources:
   - 'https://en.wikipedia.org/wiki/Influence:_Science_and_Practice'
@@ -72,15 +73,15 @@ That really happened in a famous experiment. And it reveals something uncomforta
 
 Every day, hundreds of people want a "yes" from you. Salespeople, advertisers, charities, your boss, your kids, and every app on your phone are all asking for a decision.
 
-You'd like to think you weigh each request on its merits. You can't. There isn't enough time or mental energy to analyze everything, so your brain takes shortcuts. It looks for a quick signal that says "this is probably fine" and acts on it.
+You'd like to think you weigh each request on its merits. You can't. There isn't enough time or mental energy to analyze everything, so your brain takes [mental shortcuts](/blog/psychology-of-decisions/05-mental-shortcuts-how-heuristics-help-and-trick-us). It looks for a quick signal that says "this is probably fine" and acts on it.
 
 Psychologist **Robert Cialdini** spent years figuring out exactly which shortcuts persuaders pull. He took a job at a used-car lot, trained as a fundraiser, and shadowed salespeople to learn their moves. He found that nearly every successful pitch yanks one of a small set of **levers** - predictable triggers that make us more likely to comply.
 
-Learn the levers and you get two gifts at once: you can spot when one is being pulled on you, and you can persuade others honestly instead of by accident.
+Learn the levers and you get two gifts at once: you can spot when one is being pulled on you, and you can [persuade others honestly](/blog/psychology-of-decisions/22-persuasion-vs-manipulation-the-ethics-of-influence) instead of by accident.
 
 ## The shortcut your brain can't switch off
 
-Your mind has a fast, automatic side that reacts before you think. A shortcut like "experts are usually right" is genuinely helpful. Doctors usually *are* right about medicine.
+Your mind has a [fast, automatic side that reacts before you think](/blog/psychology-of-decisions/02-two-minds-in-one-head-fast-thinking-vs-slow-thinking). A shortcut like "experts are usually right" is genuinely helpful. Doctors usually *are* right about medicine.
 
 The trouble is that the shortcut fires on the **signal**, not the real thing. A white coat triggers "expert" even when there's no expertise behind it. Persuaders learn to fake the signal - and that's where every trick below lives.
 
@@ -138,7 +139,7 @@ We value things more when they're rare, running out, or restricted. Losing the *
 
 In a 1975 cookie study, the very same cookies were rated more desirable when only 2 sat in the jar than when there were 10. Stronger still: cookies that *started* abundant and suddenly dropped to 2 were rated the most desirable of all - newly scarce, with a whiff of competition.
 
-Scarcity works through **loss aversion** (the pain of losing access) and **reactance** (when our freedom to choose is threatened, we want the thing even more). That's why "Only 2 left," countdown timers, flash sales, "5 people are viewing this," and invite-only launches are everywhere.
+Scarcity works through [**loss aversion**](/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence) (the pain of losing access) and **reactance** (when our freedom to choose is threatened, we want the thing even more). That's why "Only 2 left," countdown timers, flash sales, "5 people are viewing this," and invite-only launches are everywhere.
 
 ### Lever 7: Unity - "You're one of us"
 
@@ -175,4 +176,4 @@ Persuasion almost never changes your reasoning. It pulls one of seven well-worn 
 
 These levers are like keys that fit the locks in everyone's mind. Knowing they exist won't make you immune, but it lets you *hear the key turning* - and that's the whole game. The single takeaway: spot the lever, set it aside, and let your slow brain make the final call.
 
-One question lingers, though. If a tiny first "yes" can quietly reshape who you think you are, what happens when *you* are the one making small commitments to yourself every day? That's where the psychology of habit and identity begins - and it's a far stranger story than persuasion.
+One question lingers, though. If a tiny first "yes" can quietly reshape who you think you are, what happens when *you* are the one making small commitments to yourself every day? That's where the [psychology of habit and identity](/blog/thinking-skills/07-the-science-of-habits-how-behavior-becomes-automatic) begins - and it's a far stranger story than persuasion.

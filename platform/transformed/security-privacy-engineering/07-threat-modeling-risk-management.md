@@ -48,9 +48,10 @@ faq:
     a: A living log with one row per risk, recording its description, owner, likelihood,
       impact, chosen treatment, and review date. It proves risks were considered, not
       ignored.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -106,19 +107,19 @@ Once you have a map, you walk every piece of it and ask "what can go wrong here?
 
 ### S is for Spoofing: pretending to be someone else
 
-This breaks **authentication**, your system's ability to know who's really there. Think of an attacker stealing a session cookie to impersonate a logged-in user. In the 2024 Snowflake breaches, attackers simply logged in with stolen credentials to accounts that had no multi-factor authentication, hitting major companies and hundreds of millions of records. The fix: strong authentication, MFA, and signed tokens.
+This breaks **authentication**, your system's ability to know who's really there. Think of an attacker stealing a session cookie to impersonate a logged-in user. In the 2024 Snowflake breaches, attackers simply logged in with stolen credentials to accounts that had no multi-factor authentication, hitting major companies and hundreds of millions of records. The fix: [strong authentication](/blog/security-privacy-engineering/04-authentication-authorization), MFA, and signed tokens.
 
 ### T is for Tampering: changing data you shouldn't
 
-This breaks **integrity**. Examples include SQL injection or quietly editing a price in a request before it reaches the server. The 2023 MOVEit incident was a tampering flaw, a single injection bug exploited across thousands of organizations. The fix: validate input, use parameterized queries, and protect data in transit.
+This breaks **integrity**. Examples include [SQL injection](/blog/security-privacy-engineering/05-application-web-security) or quietly editing a price in a request before it reaches the server. The 2023 MOVEit incident was a tampering flaw, a single injection bug exploited across thousands of organizations. The fix: validate input, use parameterized queries, and protect data in transit.
 
 ### R is for Repudiation: "I never did that"
 
-This breaks **non-repudiation**, your ability to prove who did what. A user denies placing an order, or an attacker deletes the logs that would have caught them. The fix is almost always the same: **tamper-evident audit logs.** This is the direct line from threat modeling to the discipline of audit logging. Whenever you write down an R threat, the answer is usually a trustworthy log.
+This breaks **non-repudiation**, your ability to prove who did what. A user denies placing an order, or an attacker deletes the logs that would have caught them. The fix is almost always the same: **tamper-evident audit logs.** This is the direct line from threat modeling to the discipline of [audit logging](/blog/security-privacy-engineering/08-security-testing-auditing). Whenever you write down an R threat, the answer is usually a trustworthy log.
 
 ### I is for Information disclosure: leaking what should stay private
 
-This breaks **confidentiality**. Verbose error pages that dump stack traces, that IDOR bug from earlier, a misconfigured storage bucket open to the world, or unencrypted personal data. The fix: encryption, access control, least privilege, and boring generic error messages.
+This breaks **confidentiality**. Verbose error pages that dump stack traces, that IDOR bug from earlier, a misconfigured storage bucket open to the world, or unencrypted personal data. The fix: [encryption](/blog/security-privacy-engineering/03-cryptography-made-simple), access control, least privilege, and boring generic error messages.
 
 ### D is for Denial of service: knocking the system over
 
@@ -146,7 +147,7 @@ A few beliefs quietly sabotage good threat modeling. Here is the myth, and here 
 
 - **"It's a document we write once."** Reality: it is a recurring activity. A model from before three major features shipped describes a system that no longer exists.
 - **"A high CVSS score means high risk."** Reality: CVSS measures a vulnerability's *severity* in the abstract, not your actual *risk*. More on this below.
-- **"STRIDE covers everything."** Reality: STRIDE will never warn you that two anonymous records can be linked back to one real person. That is a privacy threat, the kind LINDDUN catches, and under laws like GDPR it can become a legal problem.
+- **"STRIDE covers everything."** Reality: STRIDE will never warn you that two anonymous records can be linked back to one real person. That is a [privacy threat](/blog/security-privacy-engineering/10-privacy-engineering-fundamentals), the kind LINDDUN catches, and under [laws like GDPR](/blog/security-privacy-engineering/11-privacy-laws-compliance) it can become a legal problem.
 - **"We bought insurance, so the risk is gone."** Reality: you can transfer cost, but you can't outsource trust. If customer data leaks, the reputational damage stays with you.
 - **"Accepting a risk means ignoring it."** Reality: a real acceptance is a documented, signed-off decision by a named owner. Silently tolerating a risk is not acceptance, it is negligence.
 

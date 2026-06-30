@@ -53,8 +53,9 @@ faq:
       The clearest starting point is the book Thinking in Systems: A Primer by
       Donella H. Meadows. It introduces stocks, flows, feedback loops, and delays,
       the standard vocabulary used across business, ecology, engineering, and policy.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 topic: thinking-skills
 topicTitle: Thinking Skills
 category: Thinking & Decisions
@@ -90,7 +91,7 @@ Here is Meadows' most useful insight: the **interconnections and purpose matter 
 
 Think of a football team. The players are elements, but the plays, communication, and rules are the interconnections, and winning is the purpose. Swap one player and far less changes than you would expect, because the relationships and the goal drive most of the behavior.
 
-It is the same in organizations. When a company underperforms, replacing the CEO (an element) rarely fixes it. The incentives, communication channels, and unspoken goals (the interconnections) are the deeper cause.
+It is the same in organizations. When a company underperforms, replacing the CEO (an element) rarely fixes it. The [incentives](/blog/economics-from-first-principles/02-how-economists-think-incentives-margins-and-models), communication channels, and unspoken goals (the interconnections) are the deeper cause.
 
 ## Building block 1: Stocks
 
@@ -131,7 +132,7 @@ Feedback loops are why systems seem to have a mind of their own. They explain wh
 
 A **reinforcing loop** amplifies whatever is already happening. The more you have, the more you get. The result is exponential growth, or exponential collapse. Meadows calls these "snowballs rolling downhill."
 
-**Compound interest is the classic example.** Deposit £1,000 at 7%, and it earns £70, giving you £1,070. Next year the larger balance earns more, and so on. The stock feeds its own inflow. Over 30 years that £1,000 grows to roughly £7,600 without you adding a single extra pound.
+**[Compound interest](/blog/economics-from-first-principles/09-loans-credit-debt-and-interest-rates) is the classic example.** Deposit £1,000 at 7%, and it earns £70, giving you £1,070. Next year the larger balance earns more, and so on. The stock feeds its own inflow. Over 30 years that £1,000 grows to roughly £7,600 without you adding a single extra pound.
 
 **Going viral runs on the same engine.** A video gets shared, more people see it, more of them share it, and the audience compounds. A clip with 100 shares today might have 10,000 tomorrow. The growth is not a straight line; it snowballs.
 
@@ -157,7 +158,7 @@ A **delay** is a gap in time between an action and its visible effect. Delays ar
 
 That shower is a balancing loop with a delay, and it reveals a rule worth tattooing on your brain: **a delay in a balancing loop makes a system oscillate.** The longer the delay, the bigger the overshoot and the more dramatic the swings.
 
-Delays also let reinforcing loops overshoot before anyone notices the danger. A housing boom builds momentum and construction starts everywhere. Because building takes years, all those projects finish at once, just as demand cools, flooding the market and crashing prices. The delay hid the warning signal.
+Delays also let reinforcing loops overshoot before anyone notices the danger. A [housing boom](/blog/economics-from-first-principles/15-the-business-cycle-booms-recessions-and-depressions) builds momentum and construction starts everywhere. Because building takes years, all those projects finish at once, just as demand cools, flooding the market and crashing prices. The delay hid the warning signal.
 
 Worst of all, delays scramble cause and effect in our minds. Because the result is invisible for a while, we blame the most recent action instead of the real one. A factory cuts quality to hit this quarter's cost target; warranty claims spike two years later; leadership blames the new supplier, not the old decision. So always ask: *what choice, made when, is producing this effect now, and am I reacting to a signal from months ago?*
 
@@ -212,7 +213,7 @@ Even a rough sketch on the back of an envelope will surface loops you could not 
 
 Imagine a startup whose growth turns sour. The **stock** is active users. The **inflow** is sign-ups, fueled partly by word of mouth. The **outflow** is churn.
 
-Early on, a **reinforcing loop** runs hot: more users bring more word of mouth, which brings more users. Then a **balancing loop** quietly switches on. More users means more support tickets, the team gets swamped, response times climb, satisfaction drops, and churn rises. A **delay** disguises all of it, because unhappy users do not quit on day one; they drift away six weeks later, long after the support quality first slipped.
+Early on, a **reinforcing loop** runs hot: more users bring more word of mouth, which brings more users. Then a **balancing loop** quietly switches on. More users means more support tickets, the team gets swamped, response times climb, satisfaction drops, and [churn rises](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale). A **delay** disguises all of it, because unhappy users do not quit on day one; they drift away six weeks later, long after the support quality first slipped.
 
 Panicking, the team hires support staff fast, but new hires take two months to get effective (another delay). The backlog keeps churning in the meantime, so the team assumes hiring is not working and hires even more aggressively, overshooting. Three months later they are overstaffed and forced to cut.
 
@@ -222,4 +223,4 @@ None of that is a failure of strategy. It is simply what a poorly understood sys
 
 If you remember one thing, make it this: **the system causes its own behavior.** Stop asking only "what just happened to me?" and start asking "what structure keeps producing this?" That single shift turns a frustrating, repeating problem into a map you can actually redraw.
 
-Once you can see stocks, flows, loops, and delays, a sharper question naturally appears: out of all the places you could push, which one moves the whole system the most? Meadows spent years ranking exactly those leverage points, from the weak ones everyone reaches for first to the powerful ones almost nobody touches, and that surprising hierarchy is where systems thinking goes from interesting to genuinely powerful.
+Once you can see stocks, flows, loops, and delays, a sharper question naturally appears: out of all the places you could push, which one moves the whole system the most? Meadows spent years ranking exactly those [leverage points](/blog/thinking-skills/06-section-5-leverage-points-mental-models-for-better-decisions), from the weak ones everyone reaches for first to the powerful ones almost nobody touches, and that surprising hierarchy is where systems thinking goes from interesting to genuinely powerful.

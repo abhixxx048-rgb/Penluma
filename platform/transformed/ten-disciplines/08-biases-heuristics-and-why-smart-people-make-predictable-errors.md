@@ -58,9 +58,10 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 7
 icon: "\U0001F9ED"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow
   - https://en.wikipedia.org/wiki/Cognitive_bias
@@ -79,7 +80,7 @@ The good news is that these errors have names and shapes. You do not need a psyc
 
 ## The two speeds of your thinking
 
-The psychologist Daniel Kahneman, who won a Nobel Prize for this work, gave us a simple way to talk about the mind. We think in two modes, which he called System 1 and System 2.
+The psychologist Daniel Kahneman, who won a Nobel Prize for this work, gave us a simple way to talk about the mind. We think in two modes, which he called [System 1 and System 2](/blog/ten-disciplines/07-how-the-mind-works-perception-attention-memory-and-two-systems-of-thinking).
 
 - **System 1** is fast, automatic, effortless thinking. It runs on its own, intuitive and emotional. You do not choose to use it; it is always on.
 - **System 2** is slow, deliberate, effortful thinking. It is the careful, step-by-step reasoning you have to decide to do.
@@ -102,7 +103,7 @@ One honest note: System 1 and System 2 are a useful *metaphor*, not two literal 
 
 ## Heuristics: the mental shortcuts behind the errors
 
-Why does the fast system ever give wrong answers? Because it runs on **heuristics**: mental shortcuts, or rules of thumb, that trade a bit of accuracy for a lot of speed.
+Why does the fast system ever give wrong answers? Because it runs on **heuristics**: [mental shortcuts, or rules of thumb](/blog/psychology-of-decisions/05-mental-shortcuts-how-heuristics-help-and-trick-us), that trade a bit of accuracy for a lot of speed.
 
 A heuristic is like a shortcut path across a field. Most days it gets you there faster than the long road. Occasionally it dumps you in a ditch. The shortcut is not stupid. It is efficient, but it has predictable failure points. Three of them show up everywhere.
 
@@ -132,7 +133,7 @@ A **cognitive bias** is a systematic, predictable deviation from rational judgme
 
 ### Anchoring
 
-The first number you see drags your final estimate toward it, even when that number is arbitrary.
+[The first number you see drags your final estimate toward it](/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults), even when that number is arbitrary.
 
 A jacket marked "$1,200, now $900" makes the $900 feel like a steal, but only because the $1,200 anchor was planted first. In a salary negotiation, whoever names a number first sets the anchor everyone else then argues around.
 
@@ -212,7 +213,7 @@ You cannot delete your biases, but you can build habits and environments that ca
 6. **Beat loss aversion by zooming out.** Judge the decision in terms of your total position, not the gain or loss from this exact moment.
 7. **Use checklists and second opinions.** A checklist forces the slow, thorough System 2 path. A trusted person who disagrees with you is the cheapest bias-detector there is.
 
-There is also a design lesson here, used for good and for ill. Because defaults are so sticky and losses so painful, the way a choice is *set up* shapes what people pick. This is called **choice architecture**, the idea behind "nudges" (Richard Thaler and Cass Sunstein, in their book *Nudge*). A good default, like automatically enrolling employees in a retirement plan with the freedom to opt out, helps people without removing their choice. The same knowledge powers "dark patterns": the hard-to-cancel subscriptions and pre-ticked boxes designed to exploit you.
+There is also a design lesson here, used for good and for ill. Because defaults are so sticky and losses so painful, the way a choice is *set up* shapes what people pick. This is called **[choice architecture](/blog/economics-from-first-principles/31-behavioral-economics-how-psychology-shapes-the-economy)**, the idea behind "nudges" (Richard Thaler and Cass Sunstein, in their book *Nudge*). A good default, like automatically enrolling employees in a retirement plan with the freedom to opt out, helps people without removing their choice. The same knowledge powers "dark patterns": the hard-to-cancel subscriptions and pre-ticked boxes designed to exploit you.
 
 So treat this as a shield as much as a sword. When you feel a strong, fast pull toward "buy now" or "act before it's gone," that feeling itself is the signal to slow down and check.
 
@@ -222,4 +223,4 @@ Smart people make predictable errors because intelligence and intuition run on t
 
 The goal is narrower and more achievable: learn the handful of moments where your mind reliably fails, recognize the *feeling* of those moments, and deliberately reach for slower thinking when the stakes are high. Watch for the biases in yourself first, not in everyone else.
 
-And here is the thread worth pulling next. If you cannot fully trust your own snap judgments, how do you decide what is true at all? That is the work of thinking about your own thinking, a skill called metacognition, and it turns out to be the quiet engine behind every good decision you will ever make.
+And here is the thread worth pulling next. If you cannot fully trust your own snap judgments, how do you decide what is true at all? That is the work of [thinking about your own thinking](/blog/ten-disciplines/30-advanced-decision-science-game-theory-bias-proofing-and-sharp-judgment), a skill called metacognition, and it turns out to be the quiet engine behind every good decision you will ever make.

@@ -25,9 +25,10 @@ category: Money & Business
 date: '2026-06-21'
 order: 2
 icon: "\U0001F91D"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 faq:
   - q: What does "get out of the building" mean?
     a: >-
@@ -142,7 +143,7 @@ Here is the trap: "I'll just build it, then ask people." By then you have alread
 
 Customer Development flips the order. You test the riskiest guesses with cheap conversations *first*. Then you keep talking to customers *while* you build, so every feature is steered by real feedback.
 
-Talking to customers is never a one-time phase you finish and tick off. The founders who win make it a permanent weekly habit, even after launch. It runs forever, beside the code.
+Talking to customers is never a one-time phase you finish and tick off. The founders who win make it a [permanent weekly habit](/blog/sales-customer-development/15-building-the-muscle-process-pipeline-habit), even after launch. It runs forever, beside the code.
 
 ## Common misconceptions
 
@@ -155,11 +156,11 @@ Talking to customers is never a one-time phase you finish and tick off. The foun
 | You cannot dig into a surprising answer | You ask "why?" and discover the unexpected |
 | People say what sounds nice | You hunt for facts that cannot be faked |
 
-This connects to the single most useful book on customer conversations, *The Mom Test* by Rob Fitzpatrick. The title comes from a simple truth: even your mom will lie to you about your idea, to protect your feelings. So you must ask questions even your mom could not lie about. Fitzpatrick gives three rules:
+This connects to the single most useful book on [customer conversations](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself), *The Mom Test* by Rob Fitzpatrick. The title comes from a simple truth: even your mom will lie to you about your idea, to protect your feelings. So you must ask questions even your mom could not lie about. Fitzpatrick gives three rules:
 
 1. **Talk about *their* life, not your idea.** The moment you pitch, they start being polite.
 2. **Ask about specifics in the *past*, not opinions about the future.** "Would you use this?" is worthless. "When did you last hit this problem, and what did you do?" is gold.
-3. **Talk less, listen more.**
+3. **Talk less, [listen more](/blog/sales-customer-development/06-active-listening-and-reading-the-conversation).**
 
 The whole thing rests on one line: opinions are worthless; behavior is everything. "I would totally buy that" is a polite opinion. "I paid $200 last month for a tool that didn't work" is a hard fact. Chase the facts.
 
@@ -200,7 +201,7 @@ After 12 of these, you will see a pattern. Maybe 9 of 12 describe the same painf
 1. **Write down your riskiest guess as one testable sentence.** Pick the belief that, if wrong, kills the whole idea. Phrase it so you could mark it true or false.
 2. **List who has the problem, specifically.** Not "businesses." Name the exact person: their size, role, and situation.
 3. **Find 10 to 15 of those people.** Call, email, visit, ask friends for introductions. Aim for short 20-minute chats.
-4. **Do not pitch.** Ask about their life and their recent past. "Walk me through the last time this happened." Then ask "why?" and stay quiet.
+4. **Do not pitch.** [Ask about their life and their recent past](/blog/sales-customer-development/05-asking-questions-without-leading). "Walk me through the last time this happened." Then ask "why?" and stay quiet.
 5. **Hunt for behavior, not opinions.** What did they actually do, pay, or try? Recent stories with dates and dollars are the prize.
 6. **After each chat, write three things:** the most surprising thing you heard, any real story with a date or amount, and whether your guess now looks more true or more false.
 7. **Look for the pattern, then loop.** If the pain is real and repeated, refine your guess and go again. If it is not, you just saved yourself six months. Keep the habit weekly, forever.
@@ -220,4 +221,4 @@ If you remember one thing, make it this: the facts that decide your fate are not
 
 Y Combinator boils the early founder's whole job down to two tasks: **write code and talk to users.** For most technical founders, the uncomfortable half of that sentence is the more important one, and it is the half you can start today, before writing another line.
 
-But getting people to *talk* is only the first hurdle. The harder, quieter skill is getting them to *commit*, to hand over their time, their email, or their money. That is where a real conversation turns into a real customer, and it is where we go next.
+But getting people to *talk* is only the first hurdle. The harder, quieter skill is getting them to *commit*, to hand over their time, their email, or their money. That is where a real conversation [turns into a real customer](/blog/sales-customer-development/14-from-conversation-to-commitment-advancing-and-closing), and it is where we go next.

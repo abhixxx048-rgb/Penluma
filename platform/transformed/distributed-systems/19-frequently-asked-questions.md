@@ -28,7 +28,7 @@ faq:
     a: A quorum is the minimum number of nodes that must agree for a decision to count. More than half is popular because two different majorities can never exist at once, so the system can never make two conflicting decisions, even during a network split.
   - q: Should I use a Lamport clock or a vector clock?
     a: Use a Lamport clock when you only need one agreed order of events. Use a vector clock when you need to know whether two events were truly causally related or just concurrent, for example to detect write conflicts. Vector clocks cost more space because they store one number per node.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 topic: distributed-systems
 linked: true

@@ -34,7 +34,7 @@ category: Engineering
 date: '2026-06-21'
 order: 10
 icon: "\U0001F4D0"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources: []

@@ -50,7 +50,7 @@ faq:
       read from and write to instead of messaging each other directly. It cuts
       message traffic and adds transparency, but introduces consistency and
       concurrency challenges when several agents touch the same state at once.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: agent-orchestration

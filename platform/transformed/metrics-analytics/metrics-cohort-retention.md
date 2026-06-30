@@ -30,7 +30,7 @@ faq:
     a: "No. N-day retention requires activity in an exact period and suits daily-use apps. For products people use occasionally, like reorders, it labels healthy customers as churned. Use unbounded or bracketed retention aligned to the product's natural usage frequency instead."
   - q: "What is a normal monthly churn rate for a small-business SaaS?"
     a: "For low-price, self-serve SMB products, monthly customer churn of 2.5 to 5 percent is generally considered normal or good, and under 1.5 percent is great. Net Revenue Retention above 100 percent is rare in this segment, so do not import enterprise benchmarks."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 topic: metrics-analytics
 linked: true

@@ -28,7 +28,7 @@ faq:
     a: It is the well-documented tendency to underestimate how much someone liked you after you meet them. It means the message you are nervous to send is usually far more welcome than your anxiety predicts.
   - q: What is the emotional bank account?
     a: A way to picture goodwill in a relationship. Kind, reliable acts are deposits; broken promises and thoughtless moments are withdrawals. A full account lets a relationship survive the inevitable conflicts.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: life-money-and-relationships

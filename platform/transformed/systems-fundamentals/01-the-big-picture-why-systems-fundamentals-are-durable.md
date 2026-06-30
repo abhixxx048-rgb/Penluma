@@ -54,9 +54,10 @@ faq:
       Finding the bottleneck resource - CPU, memory, disk, network, or time -
       before optimizing anything. Speeding up a resource that is not the
       constraint buys you nothing.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -84,10 +85,10 @@ The whole thesis is one sentence: **you cannot build good data systems without u
 
 Almost everything in computer systems rests on four load-bearing topics. Picture them as four faces of a single problem: *get the right data to the right place, correctly, fast enough.*
 
-- **Databases - the storage pillar.** How data is saved on durable media (storage that survives a power cut), organized so you can find things fast, queried, and kept correct. Indexes, transactions, and the on-disk structures behind them.
-- **Distributed systems - the scale and failure pillar.** What you do when one machine is not enough: copy data to several machines, split data across them, get machines to agree, and survive crashes.
-- **Networking - the movement pillar.** How bytes physically travel between machines: packets, the TCP/IP protocols, the hard limit set by the speed of light, and the difference between bandwidth and latency.
-- **Concurrency - the coordination pillar.** Doing many things at once on *one* machine without corrupting your data: threads, locks, race conditions, and async input/output.
+- **Databases - the storage pillar.** How data is saved on durable media (storage that survives a power cut), organized so you can find things fast, queried, and kept correct. [Indexes, transactions, and the on-disk structures behind them](/blog/systems-fundamentals/05-databases-ii-how-databases-store-find-data-fast-indexes-b-trees-lsm).
+- **Distributed systems - the scale and failure pillar.** What you do when one machine is not enough: [copy data to several machines, split data across them, get machines to agree, and survive crashes](/blog/systems-fundamentals/09-distributed-systems-many-computers-working-as-one).
+- **Networking - the movement pillar.** How bytes physically travel between machines: packets, [the TCP/IP protocols](/blog/systems-fundamentals/07-networking-i-how-data-travels-ip-tcp-udp-dns), the hard limit set by the speed of light, and the difference between bandwidth and latency.
+- **Concurrency - the coordination pillar.** Doing many things at once on *one* machine without corrupting your data: [threads, locks, race conditions, and async input/output](/blog/systems-fundamentals/03-concurrency-parallelism-doing-many-things-at-once).
 
 Here is the punchline that ties them together: **a distributed database is all four pillars at once.** It is a database (one), copied over a network (three), accessed by many users concurrently (four), spread across many machines (two). Learn the four pillars and you can reason about the hardest systems out there.
 
@@ -181,7 +182,7 @@ Every system runs against a fixed budget of physical resources. Engineering is d
 
 The core craft is this: **find the bottleneck resource first.** Optimizing anything else buys nothing.
 
-> **A worked example.** An API endpoint loops over 100 items and makes one database call per item. Each call is a ~50 ms network round trip. 100 × 50 ms = **5 seconds**, almost all of it spent waiting on the network. Doubling the CPU speed changes nothing - the CPU is idle, waiting. The fix is to replace 100 calls with *one batched query*. This is the famous **N+1 query** bug, and it is the single most common performance problem in real systems.
+> **A worked example.** An API endpoint loops over 100 items and makes one database call per item. Each call is a ~50 ms network round trip. 100 × 50 ms = **5 seconds**, almost all of it spent waiting on the network. Doubling the CPU speed changes nothing - the CPU is idle, waiting. The fix is to replace 100 calls with *one batched query*. This is the famous **[N+1 query](/blog/system-design/04-databases-internals)** bug, and it is the single most common performance problem in real systems.
 
 ## Common misconceptions
 

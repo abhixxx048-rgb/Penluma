@@ -34,9 +34,10 @@ category: Engineering
 order: 0
 icon: "\U0001F3D7️"
 date: '2026-06-15'
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -50,7 +51,7 @@ Here's the honest version of what to learn, in what sequence, and how to make it
 
 Most "system design" advice is a pile of disconnected facts: a CAP theorem diagram here, a Kafka tutorial there, a list of interview tricks. You memorize them, you nod along, and then you can't actually answer "what happens to my data when this server dies?"
 
-Real system design is a small number of **deep ideas that build on each other**. Estimation underpins every capacity decision. Consistency models underpin every database choice. Idempotency underpins every retry. Skip the foundations and the advanced topics feel like magic spells instead of consequences.
+Real system design is a small number of **deep ideas that build on each other**. Estimation underpins every capacity decision. [Consistency models](/blog/system-design/09-cap-pacelc-consistency-models) underpin every database choice. [Idempotency](/blog/system-design/11-distributed-transactions-and-idempotency) underpins every retry. Skip the foundations and the advanced topics feel like magic spells instead of consequences.
 
 Learning in the right order turns that pile of facts into a single connected map. You stop guessing and start reasoning - which is exactly the difference between a mid-level engineer and a staff-level one, in interviews and on call alike.
 
@@ -160,16 +161,16 @@ You've genuinely internalized this when you can honestly say:
 
 - I can **size a system for 10M users** on a napkin and recite the key latency numbers from memory.
 - I can explain **why strong consistency is expensive** and when a weaker model is the right call.
-- I can **design a rate limiter that works across many servers** without a single hot counter.
+- I can **[design a rate limiter that works across many servers](/blog/system-design/16-rate-limiting-and-resiliency)** without a single hot counter.
 - I can describe **how a write becomes durable** - write-ahead log, replication, quorum - and what data is lost in each failover mode.
 - I can explain **why you can't have a distributed transaction across two services** and design a saga with compensations and idempotency keys instead.
 - I can reason about a **retry storm** and name the mechanisms that prevent it.
 - I can **operate** a service: define an SLO, set a burn-rate alert, and run a canary deploy with a safe schema migration.
-- I can decide **when not to use microservices** and spot a distributed monolith from its symptoms.
+- I can decide **[when not to use microservices](/blog/system-design/18-architecture-patterns-microservices)** and spot a distributed monolith from its symptoms.
 - I can walk into a **system design interview** and defend the two or three load-bearing decisions of any design.
 
 ## Conclusion
 
 The biggest shift this roadmap gives you isn't a list of technologies - it's a single instinct: **every design is a trade-off, and your job is to make the trade-off on purpose, with eyes open, for a specific workload.** Once that clicks, the twenty topics stop being separate subjects and become one connected way of thinking.
 
-Start where everyone should start: estimation. Learn to size a system from a user count on a napkin, and you'll have the mental math that anchors every decision after it. Because here's the question that quietly drives the entire field - when your service is handling a million requests and something inevitably breaks, what *exactly* happens to a single user's data? Answer that with confidence, and you're already most of the way there.
+Start where everyone should start: [estimation](/blog/system-design/01-foundations-and-estimation). Learn to size a system from a user count on a napkin, and you'll have the mental math that anchors every decision after it. Because here's the question that quietly drives the entire field - when your service is handling a million requests and something inevitably breaks, what *exactly* happens to a single user's data? Answer that with confidence, and you're already most of the way there.

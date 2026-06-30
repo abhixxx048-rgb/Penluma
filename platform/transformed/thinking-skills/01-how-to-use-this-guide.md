@@ -34,8 +34,9 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 0
 icon: "\U0001F4A1"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -59,7 +60,7 @@ This guide is organized around three skills that reinforce each other. Think of 
 
 This is the **diagnostic layer**. Before you act, you figure out what is actually going on.
 
-**First-principles thinking** means stripping a problem down to the facts you know are true, then reasoning up from there, rather than copying what everyone else does. **Systems thinking** then zooms out to see how the parts connect, so you can find the one lever worth pulling.
+**[First-principles thinking](/blog/thinking-skills/03-first-principles-thinking-reasoning-from-the-ground-up)** means stripping a problem down to the facts you know are true, then reasoning up from there, rather than copying what everyone else does. **[Systems thinking](/blog/thinking-skills/05-systems-thinking-seeing-the-whole-not-the-parts)** then zooms out to see how the parts connect, so you can find the one lever worth pulling.
 
 Imagine your app's users keep churning. The borrowed answer is "add more features," because that is what competitors do. First-principles thinking asks: why do people actually leave? Maybe onboarding is confusing, so more features make it worse, not better. Systems thinking reveals the loop: confusing onboarding leads to frustrated users, who leave bad reviews, which scare off the patient newcomers who would have stuck around. The real lever was never features. It was the first five minutes.
 
@@ -67,7 +68,7 @@ Imagine your app's users keep churning. The borrowed answer is "add more feature
 
 This is the **execution layer**. It turns insight into durable action, in yourself and in the products you build.
 
-You will learn why behaviors become automatic, how to design routines that survive when motivation runs out, and how to apply behavioral science without manipulating people. The key truth: willpower is not a strategy. Design is.
+You will learn why [behaviors become automatic](/blog/thinking-skills/07-the-science-of-habits-how-behavior-becomes-automatic), how to design routines that survive when motivation runs out, and how to apply [behavioral science without manipulating people](/blog/thinking-skills/10-designing-behavior-for-others-ethically). The key truth: willpower is not a strategy. Design is.
 
 A simple example. "I'll write more" almost always fails. "After I pour my morning coffee, I write one sentence at my desk" tends to stick, because it is anchored to something you already do and asks for almost nothing. The coffee is the trigger, the single sentence is small enough to be unskippable, and the habit grows from there. That is design, not discipline.
 
@@ -75,7 +76,7 @@ A simple example. "I'll write more" almost always fails. "After I pour my mornin
 
 This is the **generative layer**. It fills your pipeline with options before you have to choose.
 
-Creativity is often treated as a mystery you either have or you don't. It is closer to a repeatable process with stages, techniques, and conditions you can train. You will learn proven methods for generating ideas, plus how to protect the conditions, like focused time and a relaxed mind, where your best thinking actually happens.
+Creativity is often treated as a mystery you either have or you don't. It is closer to a repeatable process with stages, techniques, and conditions you can train. You will learn [proven methods for generating ideas](/blog/thinking-skills/12-idea-generation-techniques-producing-options-on-demand), plus how to protect the conditions, like focused time and a relaxed mind, where your best thinking actually happens.
 
 ## How the three connect
 
@@ -83,7 +84,7 @@ The order is deliberate, and it matters.
 
 You cannot reliably **create** good solutions until you have **understood** the real problem, which is why Pillar A comes first. And even brilliant ideas stay trapped in notebooks if you never built the **habits** to ship them, which is why Pillar B holds the middle.
 
-A final stage ties all three into a single four-stage workflow: understand the problem, generate options, choose and design the action, then execute until it sticks. Run that loop on any challenge and you have a thinking operating system you will use for the rest of your career.
+A final stage ties all three into a single four-stage workflow: understand the problem, generate options, choose and design the action, then execute until it sticks. Run that loop on any challenge and you have a [thinking operating system](/blog/thinking-skills/14-putting-it-together-a-thinking-operating-system) you will use for the rest of your career.
 
 The concepts also compound. A term introduced early is assumed later. The habit loop you learn in one section becomes the foundation for thinking about ethics a few sections on. So the first time through, read in order. You can jump around freely once the foundation is in place.
 

@@ -25,9 +25,10 @@ keywords:
   - privacy enhancing technologies
   - data subject rights
   - GDPR lawful basis
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 faq:
   - q: What is the difference between security and privacy?
     a: Security keeps out people who should not have your data, like attackers. Privacy governs what the people who are allowed to touch the data may actually do with it. You can have perfect security and still fail at privacy.
@@ -52,9 +53,9 @@ That gap is the whole point of privacy engineering. Most of us learn security fi
 
 **Security** protects data from people who should not have it: attackers, outsiders, the curious stranger. **Privacy** governs what the people who *are* allowed to touch the data may actually do with it.
 
-You can have flawless security and terrible privacy at the same time. The database is encrypted. Access is locked down. Multi-factor authentication is everywhere. And then the company quietly sells that data, keeps it forever, or repurposes it for something the user never agreed to. No attacker, no breach, still a privacy failure.
+You can have flawless security and terrible privacy at the same time. The database is encrypted. Access is locked down. [Multi-factor authentication](/blog/security-privacy-engineering/04-authentication-authorization) is everywhere. And then the company quietly sells that data, keeps it forever, or repurposes it for something the user never agreed to. No attacker, no breach, still a privacy failure.
 
-Think of it this way. Security is the locks on the building. Privacy is the rule book for which rooms each keyholder may enter and what they may do once inside. A janitor with a master key reading a patient's file broke no lock. That is a privacy violation, not a security breach.
+Think of it this way. Security is the locks on the building. Privacy is the rule book for which rooms each keyholder may enter and what they may do once inside. A janitor with a master key reading a patient's file broke no lock. That is a [privacy violation, not a security breach](/blog/security-privacy-engineering/01-why-security-privacy-engineering-matters).
 
 Privacy engineering is the discipline of building privacy rules, like collect less and use data only for the stated reason, directly into the system's architecture, rather than writing a policy PDF and hoping for the best.
 
@@ -114,7 +115,7 @@ Early attempts to fix this were *syntactic*, meaning they reshaped the data to h
 
 ## Consent is state, not a checkbox
 
-Under GDPR you need at least one of six lawful bases to process personal data: consent, contract, legal obligation, vital interests, public task, or legitimate interests.
+Under GDPR you need at least one of [six lawful bases](/blog/security-privacy-engineering/11-privacy-laws-compliance) to process personal data: consent, contract, legal obligation, vital interests, public task, or legitimate interests.
 
 A common mistake is treating consent as the default or the only option. Often it is the wrong one. You do not ask consent to store the shipping address you need to ship the order; that is "contract." And when consent *is* the basis, it must be a genuine, freely given, affirmative opt-in. No pre-ticked boxes.
 
@@ -130,7 +131,7 @@ That map is what makes user rights buildable as real infrastructure instead of f
 - **Erasure (the right to be forgotten)** - the hardest to engineer. A soft-delete flag is *not* erasure; regulators reject it, because an admin can still read the row. You need a real purge across primary stores, indexes, caches, and derived data.
 - **Portability** - hand back the data the person gave you in a structured, machine-readable format like JSON or CSV, so they can switch providers.
 
-For backups you cannot rewrite, the elegant trick is **crypto-shredding**: encrypt each person's data with a unique per-person key, then destroy that key. The leftover ciphertext becomes mathematically equivalent to random noise, even inside untouched backups. Regulators accept this as valid erasure.
+For backups you cannot rewrite, the elegant trick is **crypto-shredding**: [encrypt each person's data with a unique per-person key](/blog/security-privacy-engineering/03-cryptography-made-simple), then destroy that key. The leftover ciphertext becomes mathematically equivalent to random noise, even inside untouched backups. Regulators accept this as valid erasure.
 
 ## How to use this
 
@@ -148,4 +149,4 @@ If you take nothing else into your next design review, take these:
 
 Here is the one idea to keep: security keeps the wrong people out, while privacy governs what the right people may do once they are in. Treat privacy as an engineering discipline, not a policy document, and most of the hard problems become design decisions you can actually ship.
 
-But notice how often the failures above came down to *math* defeating intuition: 8 movie ratings unmasking 99% of users, three plain fields fingerprinting 87% of a country. If ordinary data is this identifying, the natural next question is unsettling and worth chasing: in an age of AI models trained on everything, can truly anonymous data even exist anymore?
+But notice how often the failures above came down to *math* defeating intuition: 8 movie ratings unmasking 99% of users, three plain fields fingerprinting 87% of a country. If ordinary data is this identifying, the natural next question is unsettling and worth chasing: in an age of [AI models trained on everything](/blog/security-privacy-engineering/12-ai-llm-security-and-privacy), can truly anonymous data even exist anymore?

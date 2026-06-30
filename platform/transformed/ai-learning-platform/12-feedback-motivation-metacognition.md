@@ -36,7 +36,7 @@ faq:
     a: Metacognition is thinking about your own thinking, including noticing when you're confused. It matters because learners often feel they understand when they don't, then stop studying too early.
   - q: When does gamification become a dark pattern?
     a: When a mechanic exploits psychology for engagement numbers instead of learning, like guilt-trip streak notifications or leaderboards that demote learners who met their daily goal.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources: []

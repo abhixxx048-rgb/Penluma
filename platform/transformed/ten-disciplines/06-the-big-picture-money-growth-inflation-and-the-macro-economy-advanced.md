@@ -26,8 +26,9 @@ faq:
     a: "Not necessarily. GDP is like a country's revenue. It can rise while wages stagnate, inequality grows, or unpaid work goes uncounted. It is a scoreboard, not a happiness meter."
   - q: What is the difference between monetary and fiscal policy?
     a: "Monetary policy is the central bank changing interest rates and the money supply. Fiscal policy is the government changing its spending and taxes. One is fast, the other is slow."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 polished: true
 topic: ten-disciplines
 topicTitle: Ten Disciplines
@@ -87,7 +88,7 @@ Money is basically a universal IOU that everyone trusts. Without it you are stuc
 
 ### Why your dollars are backed by trust, not gold
 
-Almost all modern money is **fiat money**, meaning it has value because a government declares it legal tender and people trust it, not because it is backed by gold or anything physical.
+Almost all modern money is [**fiat money**](/blog/economics-from-first-principles/06-what-money-is-and-why-it-has-value), meaning it has value because a government declares it legal tender and people trust it, not because it is backed by gold or anything physical.
 
 That sounds shaky, and in one sense it is. The whole system rests on confidence. This is exactly why losing that confidence, as in a hyperinflation, is so catastrophic. The paper does not change, but suddenly nobody wants it.
 
@@ -117,7 +118,7 @@ That last one hides a sneaky trap, which leads us to the misconceptions worth cl
 
 **"Inflation is just greedy companies or one expensive product."** A one-time price jump in oil or eggs is not inflation; inflation is a broad, ongoing rise across the whole economy. And firms are not suddenly greedier than they were last year. What actually changes is the balance of money and demand against the goods available.
 
-The deepest idea in this whole topic, and the one most people get wrong, is what truly drives inflation. As the economist Milton Friedman put it, *"inflation is always and everywhere a monetary phenomenon."* At root, sustained inflation happens when there is too much money chasing too few goods.
+The deepest idea in this whole topic, and the one most people get wrong, is what truly drives inflation. As the economist Milton Friedman put it, *"inflation is always and everywhere a monetary phenomenon."* At root, [sustained inflation](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money) happens when there is too much money chasing too few goods.
 
 One simple relationship captures it, the **quantity theory of money**:
 
@@ -149,7 +150,7 @@ An **interest rate** is the cost of borrowing money, or the reward for saving it
 
 Borrowing is like renting an apartment. The interest rate is the rent you pay to live in someone else's money for a while. A higher rate is pricier rent, so you borrow less.
 
-Interest rates are the single most powerful lever in the economy because they sit underneath almost everything: your mortgage, your credit card, business loans, and the price of stocks and bonds. And once again, real versus nominal is decisive.
+[Interest rates](/blog/economics-from-first-principles/09-loans-credit-debt-and-interest-rates) are the single most powerful lever in the economy because they sit underneath almost everything: your mortgage, your credit card, business loans, and the price of stocks and bonds. And once again, real versus nominal is decisive.
 
 - **Nominal interest rate:** the stated rate on the loan or savings account.
 - **Real interest rate:** the nominal rate minus inflation, what you *actually* earn or pay in purchasing power.
@@ -160,7 +161,7 @@ That is why the right question is never "what is the interest rate?" It is "is m
 
 ## The central bank: the economy's thermostat
 
-So who controls interest rates and the money supply? A **central bank**: the US Federal Reserve ("the Fed"), India's RBI, the European Central Bank, the Bank of England, and so on. Their job, called **monetary policy**, is to steer money and rates to keep inflation low and employment high.
+So who controls interest rates and the money supply? A **central bank**: the US Federal Reserve ("the Fed"), India's RBI, the European Central Bank, the Bank of England, and so on. Their job, called [**monetary policy**](/blog/economics-from-first-principles/08-central-banks-and-monetary-policy), is to steer money and rates to keep inflation low and employment high.
 
 A central bank works like a thermostat for the economy.
 
@@ -193,7 +194,7 @@ In a deep recession, the economist **John Maynard Keynes** argued, private spend
 
 A **recession** is a significant, broad-based decline in economic activity. A common rule of thumb is two straight quarters of falling real GDP, though in the US it is officially dated by a committee that also weighs jobs, income, and spending.
 
-A recession is the economy losing its coordination. Spending falls, so firms sell less, so they lay off workers, so those workers spend even less. A downward spiral. This is where both levers come in at once: the central bank cuts rates, and the government may spend more, both trying to restart demand.
+A [recession](/blog/economics-from-first-principles/15-the-business-cycle-booms-recessions-and-depressions) is the economy losing its coordination. Spending falls, so firms sell less, so they lay off workers, so those workers spend even less. A downward spiral. This is where both levers come in at once: the central bank cuts rates, and the government may spend more, both trying to restart demand.
 
 There is a famous trap here, the **fallacy of composition**: what is true for one person can be false for everyone at once. If *you* save more in a downturn, you are being wise. But if *everyone* saves more at the same time, total spending collapses, businesses fail, and incomes drop, so society ends up *poorer*. Economists call this the "paradox of thrift." Always ask whether a good idea for one person survives being done by all.
 
@@ -216,7 +217,7 @@ Two of these deserve a closer look:
 
 ## The human layer: behavioral economics
 
-Classic theory assumes people are coldly rational calculators. Real humans are not. **Behavioral economics** studies how actual people, using mental shortcuts and biases, predictably stray from the textbook actor. This is not a footnote; it changes how policy works.
+Classic theory assumes people are coldly rational calculators. Real humans are not. [**Behavioral economics**](/blog/economics-from-first-principles/31-behavioral-economics-how-psychology-shapes-the-economy) studies how actual people, using mental shortcuts and biases, predictably stray from the textbook actor. This is not a footnote; it changes how policy works.
 
 Two ideas you will meet everywhere:
 

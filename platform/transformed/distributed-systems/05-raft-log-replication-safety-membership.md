@@ -36,7 +36,7 @@ faq:
     a: The log grows forever, one entry per command. Snapshots dump the current state machine so old entries can be discarded, keeping disk use and restart time bounded. InstallSnapshot brings a far-behind follower up to date when needed entries are already gone.
   - q: How does Raft decide which candidate is "up-to-date" enough to win an election?
     a: It compares the last log term first; the higher term wins. If the last terms are equal, the longer log wins. A shorter log with a higher last term counts as more up-to-date.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources:

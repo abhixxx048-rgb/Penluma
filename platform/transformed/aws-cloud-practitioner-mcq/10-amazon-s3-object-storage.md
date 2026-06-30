@@ -55,7 +55,7 @@ faq:
       Enable S3 Versioning before the mistake happens. It keeps every version of
       an object, so you can restore a previous copy after an accidental delete or
       overwrite.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 linked: true
 transformed: true
 sources: []

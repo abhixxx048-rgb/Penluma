@@ -32,8 +32,9 @@ faq:
     a: The 3-5 evaluators rule is for heuristic evaluation, where experts inspect the design. The 5 users rule is for usability testing, where real people try the product. Both come from Nielsen but they are different methods.
   - q: Is heuristic evaluation still relevant today?
     a: Yes. The 10 heuristics have not changed since 1994; only the wording and examples were modernized in 2020. It remains the most widely used quick usability inspection method.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Heuristic_evaluation
   - https://www.nngroup.com/articles/ten-usability-heuristics/
@@ -106,7 +107,7 @@ A delete dialog that says "This will permanently delete 'Premium Business Cards'
 
 ### 6. Recognition rather than recall
 
-Minimize memory load. Show options instead of making people remember them.
+[Minimize memory load](/blog/product-sense-empathy/07-cognitive-load-why-simple-feels-effortless). Show options instead of making people remember them.
 
 Pre-fill saved addresses with a "Use this address" picker. Offer one-click reorder. Do not force the shop owner to re-type the same address they entered on their last order.
 
@@ -138,7 +139,7 @@ An inline tooltip next to "Shipping weight" explaining how it sets the rate, wit
 
 ## Common misconceptions
 
-**Myth: heuristic evaluation replaces user testing.** Reality: it does not. It is the cheaper, earlier method that catches obvious problems. Watching real users still reveals things experts miss. The two complement each other.
+**Myth: heuristic evaluation replaces user testing.** Reality: it does not. It is the cheaper, earlier method that catches obvious problems. [Watching real users](/blog/product-sense-empathy/13-doing-user-research-interviews-the-mom-test-observation) still reveals things experts miss. The two complement each other.
 
 **Myth: the "5 users" rule and the "3 to 5 evaluators" rule are the same thing.** Reality: they are different methods that both happen to come from Nielsen. The "5 users" rule is for *usability testing* with real people. The "3 to 5 evaluators" rule is for *heuristic evaluation* with experts. Mixing them up is the single most common mistake.
 
@@ -174,9 +175,9 @@ Working solo? Run a "self heuristic review." Go flow by flow, checkout, then set
 
 Two thinkers are worth knowing here.
 
-**Don Norman**, in *The Design of Everyday Things*, gave us the "Norman door," a door you cannot tell whether to push or pull. The moment a door needs a "PUSH" sign, the design has failed. That is the same spirit as heuristics 1 and 2: a good interface should explain itself.
+**Don Norman**, in *The Design of Everyday Things*, gave us the "Norman door," a door you cannot tell whether to push or pull. The moment a door needs a "PUSH" sign, the design has failed. That is the same spirit as heuristics 1 and 2: [a good interface should explain itself](/blog/product-sense-empathy/05-the-psychology-of-obvious-affordances-signifiers-mental-models).
 
-**Clayton Christensen's** milkshake story reminds us to design for the *job* the user is hiring the product to do. He found roughly half of milkshakes were bought by solo morning commuters who wanted a thick, one-handed drink for a boring drive. Design for that real job, not for a feature spec written in a meeting room.
+**Clayton Christensen's** milkshake story reminds us to design for the [*job* the user is hiring the product to do](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress). He found roughly half of milkshakes were bought by solo morning commuters who wanted a thick, one-handed drink for a boring drive. Design for that real job, not for a feature spec written in a meeting room.
 
 ## Conclusion
 

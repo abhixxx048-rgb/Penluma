@@ -10,8 +10,9 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 0
 icon: "\U0001F3AF"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 keywords:
   - why people make irrational decisions
   - decision psychology
@@ -103,7 +104,7 @@ Every one of those is false for real people. A perfectly rational person would n
 
 Real humans do the opposite. We tip, we stay loyal to brands for decades, and we get insulted by a bad deal. In the famous "ultimatum game," when someone offers you just $2 out of $20, most people *reject it* out of spite, choosing nothing over something unfair. The robot would take the $2 every time.
 
-Two psychologists, **Daniel Kahneman** and **Amos Tversky**, spent decades documenting these departures. They showed people are **loss-averse** (a $50 loss hurts more than a $50 gain feels good) and easily swayed by **framing** (how a choice is worded). Their work essentially founded behavioral economics.
+Two psychologists, **Daniel Kahneman** and **Amos Tversky**, spent decades documenting these departures. They showed people are **[loss-averse](/blog/psychology-of-decisions/08-prospect-theory-behavioral-economics-how-we-weigh-gains-losses-risk)** (a $50 loss hurts more than a $50 gain feels good) and easily swayed by **[framing](/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults)** (how a choice is worded). Their work essentially founded behavioral economics.
 
 ## Common misconceptions
 
@@ -136,11 +137,11 @@ The small tip above the water is your **conscious, logical, deliberate** thinkin
 Nearly every great thinker in this field reached the same picture from a different angle:
 
 - **Simon** showed we *cannot* compute the perfect answer, so we shortcut.
-- **Kahneman** showed the mind runs two modes, a fast intuitive one and a slow effortful one, and the fast one usually wins.
+- **Kahneman** showed [the mind runs two modes, a fast intuitive one and a slow effortful one](/blog/psychology-of-decisions/02-two-minds-in-one-head-fast-thinking-vs-slow-thinking), and the fast one usually wins.
 - **Antonio Damasio** showed that emotion is *required* for good decisions, not opposed to them. Patients who lost their emotions became unable to decide at all.
 - **Benjamin Libet** and **Timothy Wilson** showed the unconscious often *starts* a decision before the conscious mind notices, and then we invent reasons afterward.
 
-So the throughline is this: **the conscious mind is the tip of the iceberg, not the captain of the ship.** Most of what you do is driven by emotion, habit, and bias.
+So the throughline is this: **the conscious mind is the tip of the iceberg, not the captain of the ship.** Most of what you do is [driven by emotion, habit, and bias](/blog/psychology-of-decisions/09-feelings-first-how-emotions-steer-every-choice).
 
 > Driving home on a familiar route, you can arrive with no memory of the trip, yet you stopped at every red light. Your unconscious autopilot handled it flawlessly while your conscious mind daydreamed. Most of life runs on that autopilot.
 
@@ -167,4 +168,4 @@ You cannot turn the iceberg off, but you can work with it. Start here:
 
 If you remember one thing, make it this: you are not a flawless calculator, and neither is anyone you are trying to understand. You are **boundedly rational**, steered mostly by the fast, emotional, habitual part of the mind. The good news is that this irrationality is systematic, which means it can be learned, anticipated, and used wisely.
 
-The natural next question is *which* shortcuts run the show. Why does "90% fat-free" beat "10% fat"? Why does a $2 offer feel like an insult? Those repeatable mental shortcuts have names, like anchoring, framing, and loss aversion, and once you can spot them, you start seeing them everywhere.
+The natural next question is *which* shortcuts run the show. Why does "90% fat-free" beat "10% fat"? Why does a $2 offer feel like an insult? Those [repeatable mental shortcuts](/blog/psychology-of-decisions/05-mental-shortcuts-how-heuristics-help-and-trick-us) have names, like anchoring, framing, and loss aversion, and once you can spot them, you start seeing them everywhere.

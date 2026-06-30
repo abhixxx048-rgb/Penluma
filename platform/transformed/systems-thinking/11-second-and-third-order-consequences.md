@@ -25,9 +25,10 @@ keywords:
   - systems thinking
   - rent control unintended consequences
   - pre-mortem decision making
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 faq:
   - q: What is a second-order consequence?
     a: >-
@@ -119,7 +120,7 @@ That fourth one has a beautiful example. The Protestant work ethic prized hard w
 
 Here is the mistake beginners make: they assume "I act, the system reacts," as if the system were passive clay waiting to be shaped.
 
-It is not. The system has its own goals and its own feedback loops.
+It is not. The system has its own goals and its own [feedback loops](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves).
 
 Donella Meadows, in *Thinking in Systems*, named a trap called **policy resistance**. Picture several groups all pulling the same thing toward their own incompatible goals. Any policy that yanks it one way yanks it *away* from someone, who then pushes back harder. Everyone burns energy, the thing barely moves, and the moment you relax, it snaps back to where it was.
 
@@ -129,7 +130,7 @@ Policy resistance is not bad luck. It is the structural result of many people ea
 
 ## Fixes that fail
 
-Peter Senge, in *The Fifth Discipline*, described a pattern he called **fixes that fail**. A problem flares up, you apply a quick fix, it works in the short run, but it has delayed side effects that bring the original problem back, often worse. So you apply more of the fix.
+Peter Senge, in *The Fifth Discipline*, described one of the recurring [system archetypes](/blog/systems-thinking/12-system-archetypes-stories-that-repeat) he called **fixes that fail**. A problem flares up, you apply a quick fix, it works in the short run, but it has delayed side effects that bring the original problem back, often worse. So you apply more of the fix.
 
 Picture someone with a broken bone who takes strong painkillers. The pain stops (first order). Feeling nothing, they use the limb freely and worsen the fracture (second order). The pain comes back worse than before. The fix treated the symptom, not the cause, and made the real problem worse.
 
@@ -169,7 +170,7 @@ Imagine firing every worker in an office who cannot speak French. Most people le
 
 ### The bottleneck that moves
 
-Eliyahu Goldratt's *The Goal* teaches the **Theory of Constraints**: a system's total output is set entirely by its single slowest step, the bottleneck. Improve any *other* step and you get a nasty surprise.
+Eliyahu Goldratt's *The Goal* teaches the **[Theory of Constraints](/blog/systems-thinking/09-bottlenecks-and-constraints-the-theory-of-constraints)**: a system's total output is set entirely by its single slowest step, the bottleneck. Improve any *other* step and you get a nasty surprise.
 
 A factory installs faster machines on the non-bottleneck steps to boost output. Now work arrives faster at the real bottleneck, the heat-treatment oven, and piles up in front of it. Inventory grows, delivery dates slip, despite the "improvement."
 
@@ -199,7 +200,7 @@ Here are five concrete techniques to make it a habit:
 
 One small ritual ties it together: whenever you propose a fix, force yourself to write the sentence *"This will work, and then what?"* three times in a row. By the third "and then what?", you are usually staring at the consequence that would have ambushed you.
 
-Watch out for one shape in particular. Picture adjusting a thermostat with a delay. You feel cold, so you crank it way up. The room slowly heats, but you overshot, and now it is too hot. You crank it down, overshoot again, and now it is cold. Every system with delayed feedback has this oscillating shape, and it is a factory for second- and third-order surprises.
+Watch out for one shape in particular. Picture adjusting a thermostat with a delay. You feel cold, so you crank it way up. The room slowly heats, but you overshot, and now it is too hot. You crank it down, overshoot again, and now it is cold. Every system with [delayed feedback](/blog/systems-thinking/06-delays-why-cause-and-effect-are-not-close-in-time) has this oscillating shape, and it is a factory for second- and third-order surprises.
 
 ## Conclusion
 
@@ -207,4 +208,4 @@ Every action ripples through a system. The first ripple is the one you wanted. T
 
 So here is the single thing to carry away: when you find a fix you love, do not stop at "this will work." Keep asking **"and then what?"** until the chain runs out. The answer you were not expecting is usually the one that matters most.
 
-And once you start seeing these chains everywhere, a sharper question follows close behind: if the system pushes back against most fixes, where are the rare spots where a small push creates lasting change? That is the question of **leverage points**, and it is where systems thinking gets genuinely powerful.
+And once you start seeing these chains everywhere, a sharper question follows close behind: if the system pushes back against most fixes, where are the rare spots where a small push creates lasting change? That is the question of **[leverage points](/blog/systems-thinking/13-leverage-points-where-to-push-to-change-a-system)**, and it is where systems thinking gets genuinely powerful.

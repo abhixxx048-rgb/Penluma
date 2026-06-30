@@ -34,7 +34,7 @@ faq:
     a: No. It says people make errors in systematic, predictable patterns rather than at random. That predictability is exactly why these biases can be studied by economists and used by marketers.
   - q: What is price discrimination?
     a: Price discrimination is selling the same product to different buyers at different prices for reasons unrelated to cost. Student discounts, bulk pricing, and matinee tickets are all examples.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources: []

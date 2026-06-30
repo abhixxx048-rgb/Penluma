@@ -34,8 +34,9 @@ faq:
     a: Invert the four laws. Make the cue invisible, the craving unattractive, the action difficult, and the result unsatisfying. Removing the cue from your environment and adding friction are usually the fastest wins.
   - q: What should I do after I slip up?
     a: Never miss twice. One miss is an accident; two in a row is the start of a new habit. After a slip, show up the next day in the smallest possible way, then ask what part of the design failed.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Atomic_Habits
   - https://en.wikipedia.org/wiki/Implementation_intention
@@ -51,11 +52,11 @@ Most advice tells you to want it more. Try harder. Find your "why." But motivati
 
 If your habit only happens on the days you feel inspired, you've built it on sand. The good news is that the alternative - a well-designed system - runs on its own, long after the motivation has burned off.
 
-This article gives you that toolkit. It's drawn from the most reliable research on behavior change, including James Clear's *Atomic Habits*, BJ Fogg's work at Stanford, and decades of psychology studies. By the end, you'll know exactly how to engineer a habit that survives your worst days.
+This article gives you that toolkit. It's drawn from the most reliable research on behavior change, including James Clear's *Atomic Habits*, [BJ Fogg's work at Stanford](/blog/thinking-skills/08-section-7-behavior-design-models-why-people-do-and-don-t-act), and decades of psychology studies. By the end, you'll know exactly how to engineer a habit that survives your worst days.
 
 ## The habit loop: the engine under every behavior
 
-Every habit, good or bad, runs on the same four-step loop: **Cue → Craving → Response → Reward**.
+Every habit, good or bad, runs on [the same four-step loop](/blog/thinking-skills/07-the-science-of-habits-how-behavior-becomes-automatic): **Cue → Craving → Response → Reward**.
 
 - **Cue** - a trigger that tells your brain a reward is nearby. A notification, a time of day, a location, a feeling.
 - **Craving** - the desire the cue creates. You don't crave the habit itself; you crave what it delivers: calm, energy, connection.
@@ -202,7 +203,7 @@ The tactics above work on their own. But two ideas make everything stick longer.
 
 ### Change your identity, not just your behavior
 
-Most people change from the outside in: set a goal ("lose 20 pounds"), then grind through the process. The most durable change works the other way - from the inside out, starting with **identity**.
+Most people change from the outside in: set a goal ("lose 20 pounds"), then grind through the process. The most durable change works the other way - from the inside out, [starting with **identity**](/blog/thinking-skills/06-section-5-leverage-points-mental-models-for-better-decisions).
 
 Every action is a vote for the kind of person you believe you are. Write one sentence of your novel, and you cast a vote for "I am a writer." Skip the cigarette, and you vote for "I am a non-smoker." No single vote wins the election, but enough of them shift who you are.
 
@@ -220,7 +221,7 @@ If a good habit feels like it isn't working, you're probably in the plateau. The
 
 ## Common misconceptions
 
-**"I just need more willpower."** Willpower is a finite resource, and relying on it means you'll fail every time it runs low. Systems and environment do the heavy lifting precisely so willpower doesn't have to.
+**"I just need more willpower."** Willpower is a finite resource, and relying on it means you'll fail every time it runs low. [Systems and environment](/blog/thinking-skills/05-systems-thinking-seeing-the-whole-not-the-parts) do the heavy lifting precisely so willpower doesn't have to.
 
 **"If I miss a day, I've blown it."** One miss is meaningless. The damage only starts when one miss becomes two. Forgive the slip and show up the next day.
 

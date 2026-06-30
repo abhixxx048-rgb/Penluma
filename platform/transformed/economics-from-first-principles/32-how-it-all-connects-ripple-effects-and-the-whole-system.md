@@ -47,7 +47,7 @@ faq:
       No. The outcome depends on why rates rose and what people expect next. The
       2022 hikes coexisted with a recovering market, while 1980's extreme hikes
       caused a deep recession. Same tool, very different results.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources:

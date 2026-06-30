@@ -21,7 +21,7 @@ keywords:
   - how G2 ranking works
   - get listed on software review sites
   - best software listicle outreach
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 faq:

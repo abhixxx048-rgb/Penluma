@@ -30,13 +30,14 @@ faq:
     a: "Logs are copied, shipped to third-party tools, and rarely deletable per user. PII in logs silently breaks your right-to-be-forgotten promise. Log a stable user ID instead."
   - q: "What is the most common reason for huge GDPR fines?"
     a: "Two patterns dominate: illegal cross-border data transfers and ad-tech or profiling without a valid lawful basis. The record €1.2B Meta fine was about EU-to-US transfers."
+linked: true
 topic: security-privacy-engineering
 topicTitle: Security & Privacy Engineering
 category: Engineering
 date: '2026-06-21'
 order: 10
 icon: "\U0001F512"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
 sources: []
@@ -68,7 +69,7 @@ Privacy law is, at its core, a set of rules about how you treat PII. Keep that a
 
 Engineers mix these up constantly. They answer two different questions.
 
-- **Security** asks: is the data protected from people who shouldn't see it? It's measured by the **CIA triad** - Confidentiality, Integrity, and Availability.
+- **Security** asks: is the data protected from people who shouldn't see it? It's measured by the **[CIA triad](/blog/security-privacy-engineering/02-core-security-foundations)** - Confidentiality, Integrity, and Availability.
 - **Privacy** asks: should you have this data at all, and are you respecting the person's rights over it? Collect only what's justified, use it only for the stated reason, delete it when asked.
 
 **An analogy.** Security is locking the filing cabinet so burglars can't get in. Privacy is only putting files in the cabinet that you're allowed to keep, and shredding them when you're done.
@@ -113,7 +114,7 @@ This is the single biggest reason privacy turns into an engineering challenge. T
 
 When a controller becomes "aware" of a breach that's likely to harm people's rights, it must notify the supervisory authority within **72 hours**, and tell affected individuals too if the risk is high. A processor must alert its controller "without undue delay."
 
-Seventy-two hours is brutal. You can only hit it if detection, logging, on-call rotations, and a rehearsed incident runbook already exist *before* the breach. You cannot improvise this at 2 a.m.
+Seventy-two hours is brutal. You can only hit it if detection, logging, on-call rotations, and a [rehearsed incident runbook](/blog/security-privacy-engineering/13-detection-monitoring-incident-response) already exist *before* the breach. You cannot improvise this at 2 a.m.
 
 ### Privacy by design, minimization, and DPIAs
 
@@ -155,7 +156,7 @@ Some data is special and gets its own rulebook.
 
 ### HIPAA - US health information
 
-Covers protected health information (PHI). A major Security Rule overhaul proposed in 2025 would make safeguards mandatory: encryption of health data at rest and in transit, MFA, annual penetration testing, network segmentation, and fast system restoration. It applies to vendors ("business associates"), not just hospitals. Treat it as imminent and tightening.
+Covers protected health information (PHI). A major Security Rule overhaul proposed in 2025 would make safeguards mandatory: encryption of health data at rest and in transit, MFA, [annual penetration testing](/blog/security-privacy-engineering/08-security-testing-auditing), network segmentation, and fast system restoration. It applies to vendors ("business associates"), not just hospitals. Treat it as imminent and tightening.
 
 ### PCI DSS - payment-card data
 
@@ -211,7 +212,7 @@ The **EU AI Act**, in force since August 2024, is the first big risk-tiered AI l
 - **Limited-risk:** chatbots and AI-generated content. Requires transparency - tell users it's a bot, label AI content.
 - **Minimal:** most other AI. No special obligations.
 
-Fines reach **€35M or 7% of global turnover**, even steeper than GDPR. The signal is clear: AI governance is becoming a formal compliance discipline (model documentation, dataset governance, impact assessments), and US states like California are heading the same way with automated-decision rules.
+Fines reach **€35M or 7% of global turnover**, even steeper than GDPR. The signal is clear: [AI governance](/blog/security-privacy-engineering/12-ai-llm-security-and-privacy) is becoming a formal compliance discipline (model documentation, dataset governance, impact assessments), and US states like California are heading the same way with automated-decision rules.
 
 ## Common misconceptions
 
@@ -230,7 +231,7 @@ Compliance turns into a finite list of things to build. Work through these:
 2. **Build DSAR machinery.** A reliable way to find, export, and delete one person's data *everywhere*, including backups, caches, logs, and vendors.
 3. **Minimize and set retention.** Don't collect or keep what you don't need. Automate deletion on a schedule.
 4. **Wire up real consent.** Make it granular and withdrawable, and honor opt-out signals like the Global Privacy Control.
-5. **Turn on the security controls the laws now mandate.** Encryption at rest and in transit, MFA, and least-privilege access.
+5. **Turn on the security controls the laws now mandate.** Encryption at rest and in transit, MFA, and [least-privilege access](/blog/security-privacy-engineering/04-authentication-authorization).
 6. **Run a DPIA before risky or AI features.** Treat it like a design review.
 7. **Rehearse breach response.** Detection, logging, on-call, and a 72-hour runbook that names who notifies whom.
 8. **Sign a DPA or SCC with every vendor.** Missing terms fueled the Honda and Healthline fines.

@@ -35,9 +35,10 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 9
 icon: "\U0001F504"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -59,7 +60,7 @@ A **trade-off** is simply a situation where getting more of one good thing requi
 
 This isn't just folk wisdom. In 1997, researchers David Wolpert and William Macready proved the **No Free Lunch theorem**: no problem-solving method is best for every kind of problem. Whatever an approach gains on one type of problem, it loses on another. The math formalizes what experience already teaches - you cannot win everywhere at once.
 
-So here's a rule of thumb that almost never fails. If someone claims they improved one thing with zero cost anywhere, they haven't beaten the trade-off. They've either moved the cost somewhere they aren't looking, or pushed it into the future where it'll arrive with interest.
+So here's a rule of thumb that almost never fails. If someone claims they improved one thing with zero cost anywhere, they haven't beaten the trade-off. They've either moved the cost somewhere they aren't looking, or [pushed it into the future](/blog/systems-thinking/11-second-and-third-order-consequences) where it'll arrive with interest.
 
 ## The Iron Triangle: fast, good, cheap - pick two
 
@@ -82,7 +83,7 @@ Now the second big idea. In *Thinking in Systems* (2008), Donella Meadows define
 The classic version is departmental KPIs - the numbers each team is measured on. Watch the trap unfold in a factory:
 
 1. Sales is measured on deals closed, so Sales closes more deals.
-2. Those deals pile onto Engineering, the slowest and smallest team - the bottleneck.
+2. Those deals pile onto Engineering, the slowest and smallest team - [the bottleneck](/blog/systems-thinking/09-bottlenecks-and-constraints-the-theory-of-constraints).
 3. Engineering's backlog grows. Downstream teams, stuck waiting, start *more* projects to look busy.
 4. That sends even more work toward the bottleneck, which jams harder.
 
@@ -92,7 +93,7 @@ The lesson is uncomfortable: green dashboards everywhere can sit right on top of
 
 ### Local optima vs global optima
 
-Let's name this precisely. A **local optimum** is a state that's better than everything nearby but not the best overall. A **global optimum** is the genuinely best state across all the possibilities. Any system whose parts depend on and feed back into each other almost always has many local optima - lots of little peaks that feel like the top until you look up.
+Let's name this precisely. A **local optimum** is a state that's better than everything nearby but not the best overall. A **global optimum** is the genuinely best state across all the possibilities. Any system whose parts depend on and [feed back into each other](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves) almost always has many local optima - lots of little peaks that feel like the top until you look up.
 
 Here's the trap, as Tiago Forte put it: adding up a series of local optima does not automatically lead to a global optimum - in fact, it can lead to the exact opposite. Optimize each part on its own and you get a pile of local bests that together are often the global *worst*.
 
@@ -129,7 +130,7 @@ One warning that catches almost everyone. Don't plan capacity from *average* spe
 
 ## When local rationality creates global chaos
 
-In *The Fifth Discipline* (1990), Peter Senge describes the **Beer Distribution Game**. A supply chain runs retailer to wholesaler to distributor to brewery. Each player orders sensibly to keep their own inventory near target. But nobody can see the whole chain, and orders take time to arrive.
+In *The Fifth Discipline* (1990), Peter Senge describes the **Beer Distribution Game**. A supply chain runs retailer to wholesaler to distributor to brewery. Each player orders sensibly to keep their own inventory near target. But nobody can see the whole chain, and [orders take time to arrive](/blog/systems-thinking/06-delays-why-cause-and-effect-are-not-close-in-time).
 
 A tiny bump in retail demand gets amplified at each stage into wild swings - the **bullwhip effect**. A retailer selling four cases a week can leave a wholesaler buried under 220 truckloads it can't move. Every single decision was locally reasonable. The system dynamic produced the disaster anyway.
 
@@ -139,7 +140,7 @@ A tiny bump in retail demand gets amplified at each stage into wild swings - the
 
 COVID-19 exposed this worldwide in 2020 and 2021. Decades of lean, single-source, zero-safety-stock supply chains were brilliant under normal conditions. When shipping and manufacturing broke at the same time, car plants halted for missing chips and PPE ran short in wealthy nations. NHS England, after a decade of efficiency cuts, was running bed occupancy above 85% - the exact threshold it had itself named as the safety risk line - and had to cancel hundreds of thousands of admissions to free up beds.
 
-The traffic analogy is worth keeping in your head. A highway flows smoothly at 85% capacity. Past 95%, one driver tapping the brakes triggers a stop-and-go wave that travels backward for miles. The last 10 to 15% of "utilization" is bought at a steep, nonlinear cost in stability.
+The traffic analogy is worth keeping in your head. A highway flows smoothly at 85% capacity. Past 95%, one driver tapping the brakes triggers a stop-and-go wave that travels backward for miles. The last 10 to 15% of "utilization" is bought at a steep, [nonlinear cost in stability](/blog/systems-thinking/07-nonlinearity-thresholds-and-tipping-points).
 
 Nassim Taleb (*Antifragile*, 2012) sharpens the vocabulary:
 

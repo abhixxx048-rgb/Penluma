@@ -28,7 +28,7 @@ faq:
     a: "It depends on your average revenue per account. Low-price SMB products usually land around 100 to 105% NRR. Chasing 120% with a low-priced customer base is rarely realistic."
   - q: "Should usage limits ever block a customer?"
     a: "No. A soft cap that nudges an upgrade keeps the customer happy and growing. A hard cap that blocks a live sale causes bill-shock and churn at the worst possible moment."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 topic: gtm-strategy
 topicTitle: Go-to-Market Strategy
 category: Business & Growth

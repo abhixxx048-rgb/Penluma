@@ -51,8 +51,9 @@ faq:
       375 pixels is a common phone screen width. Many users buy on mobile, and
       pages that look fine on a desktop can break, overflow, or hide critical
       buttons on a small screen.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 topic: qa-launch
 topicTitle: QA & Launch Readiness
 category: Business & Growth
@@ -72,7 +73,7 @@ Before you put your app in front of real, non-technical users, you need to hunt 
 
 When engineers test software, they read error logs and stack traces. When real users hit a problem, they shrug and leave.
 
-A non-technical store owner won't tell you the shipping cost calculated to zero. A locked-out customer won't email you to say the "reset your password" link never arrived - they'll just assume your product is broken and never come back.
+A non-technical store owner won't tell you the shipping cost calculated to zero. A locked-out customer won't email you to say the "reset your password" link never arrived - they'll just [assume your product is broken](/blog/product-sense-empathy/06-closing-the-gulfs-action-feedback-the-seven-stages) and never come back.
 
 This is the trap of a pre-launch product: **the absence of complaints is not proof that things work.** It often means the failures are silent, and your most honest feedback is walking out the door without a word.
 
@@ -118,8 +119,8 @@ The defense here is not manual checking. It's an automated **money-truth test** 
 
 Two failures deserve a category of their own because they aren't just bugs - they're open doors.
 
-- **Hardcoded backdoors.** A "master code" that logs in as any admin when an environment variable is unset is the kind of dev convenience that quietly rides into production. Anyone who learns the code owns every account.
-- **Broken account recovery.** A password reset that returns "link sent" but sends nothing means a locked-out user is locked out *forever*, while being told help is on the way. That's a silent lie with a security blast radius.
+- **[Hardcoded backdoors](/blog/security-privacy-engineering/08-security-testing-auditing).** A "master code" that logs in as any admin when an environment variable is unset is the kind of dev convenience that quietly rides into production. Anyone who learns the code owns every account.
+- **Broken [account recovery](/blog/security-privacy-engineering/04-authentication-authorization).** A password reset that returns "link sent" but sends nothing means a locked-out user is locked out *forever*, while being told help is on the way. That's a silent lie with a security blast radius.
 
 These should be treated as the top priority regardless of launch timing. A feature gap can wait. An unlocked door cannot.
 
@@ -181,7 +182,7 @@ Run this before any real user touches your product. Treat the first six as hard 
 
 1. **Close every backdoor.** Remove hardcoded master credentials. Ship a password reset that genuinely sends the email.
 2. **Make money agree with itself.** Add an automated test asserting cart = checkout = order = invoice, including shipping, tax, and coupons.
-3. **Decrement inventory atomically** at payment, so the same item can't be oversold.
+3. **[Decrement inventory atomically](/blog/system-design/11-distributed-transactions-and-idempotency)** at payment, so the same item can't be oversold.
 4. **Stop premature success messages.** Every success page must read the *real* status. Pending means pending.
 5. **Validate every input that touches money or fulfillment.** No silently-empty addresses, no dropped file uploads, no $0 shipping.
 6. **Add a shared error state** to critical pages (checkout, order list, order detail) so nothing renders blank on a fetch failure.
@@ -198,4 +199,4 @@ The single takeaway: **a confident "Success" message is worthless unless it's wi
 
 Launch readiness isn't about making the happy path shine. It's about refusing to lie when things go wrong, and building just enough of a spine to catch the users who would otherwise slip away in silence.
 
-Once you start hunting silent lies, you'll notice they hide everywhere there's a gap between *what the code did* and *what the screen said*. The natural next question: how do you catch them automatically, before a customer ever does? That's where proactive telemetry comes in - error-spike alerts and checkout-failure events that turn your next class of bugs into a dashboard signal instead of a lost sale. But that's a story for another post.
+Once you start hunting silent lies, you'll notice they hide everywhere there's a gap between *what the code did* and *what the screen said*. The natural next question: how do you catch them automatically, before a customer ever does? That's where [proactive telemetry](/blog/system-design/17-observability-and-operations) comes in - error-spike alerts and checkout-failure events that turn your next class of bugs into a dashboard signal instead of a lost sale. But that's a story for another post.

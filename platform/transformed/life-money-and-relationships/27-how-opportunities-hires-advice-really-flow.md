@@ -49,7 +49,7 @@ faq:
       Don't over-apologize for the gap. Lead with a specific, genuine reason you thought of
       them, ask one sincere question about their work, and make no request. The awkwardness is
       almost always smaller than you fear.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources:

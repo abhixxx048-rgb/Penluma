@@ -46,7 +46,7 @@ faq:
       Control Tower sits on top of Organizations. It uses Organizations under
       the hood and adds automated landing-zone setup, prebuilt guardrails,
       Account Factory provisioning, and a compliance dashboard.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: aws-cloud-practitioner-mcq

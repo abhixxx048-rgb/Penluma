@@ -28,9 +28,10 @@ faq:
     a: "Because they decide which facts you notice in the first place. Through the ladder of inference, your beliefs filter the data, so the world appears to confirm you even when it contradicts you."
   - q: "Why is a paradigm such a powerful leverage point?"
     a: "In Donella Meadows' famous ranking, the paradigm is the second-strongest place to change a system, far above prices or rules. Change what people assume is obviously true, and goals, structures, and behaviours reorganise around the new belief."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 topic: systems-thinking
 topicTitle: Systems Thinking
 category: Thinking & Decisions
@@ -48,7 +49,7 @@ The reason wasn't ignorance. It was a single belief running quietly underneath e
 
 The things that feel most concrete in any system - budgets, prices, rules, org charts - usually move it the least. The thing that feels most intangible, what people quietly assume to be true, usually moves it the most.
 
-That's a strange and useful idea. It means the lever you're reaching for is probably the weak one. When a problem keeps coming back no matter how many times you fix it, you're almost certainly working at the wrong depth.
+That's a strange and useful idea. It means the lever you're reaching for is probably the weak one. When [a problem keeps coming back no matter how many times you fix it](/blog/systems-thinking/02-systems-thinking-vs-linear-thinking), you're almost certainly working at the wrong depth.
 
 Learn to find the deeper layer and you stop fighting the same fire forever. You start changing the thing that produces the fire.
 
@@ -68,7 +69,7 @@ Most of an iceberg hides below the waterline, and so does most of any problem. S
 
 - **Events** - what just happened. A product recall, a missed deadline, a traffic jam.
 - **Patterns** - what keeps happening. Recalls getting more frequent. Deadlines slipping again and again.
-- **Structures** - the rules, incentives, and feedback loops that produce those patterns. Cost-cutting that quietly thins out quality checks. Scheduling norms that always lowball the work.
+- **Structures** - the rules, incentives, and [feedback loops](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves) that produce those patterns. Cost-cutting that quietly thins out quality checks. Scheduling norms that always lowball the work.
 - **Mental models** - the beliefs that built and maintain those structures. "Cost is the only variable we control." "A schedule is a negotiation, not a commitment."
 
 Most organisations fight fires at the top level, because the top is all they can see. They fire the manager after the recall and patch the hole after the breach. But if the structure and the underlying belief are untouched, the same root cause just produces a fresh event in a new disguise.
@@ -85,7 +86,7 @@ A paradigm is the water a fish swims in. The fish doesn't think *about* water; i
 
 ## Why the paradigm is near the top of the lever list
 
-A **leverage point** is a place in a system where a small push produces a large change. Meadows ranked twelve of them, from weakest to strongest, and the ranking surprises almost everyone - because the things that feel most important have the least leverage.
+A **[leverage point](/blog/systems-thinking/13-leverage-points-where-to-push-to-change-a-system)** is a place in a system where a small push produces a large change. Meadows ranked twelve of them, from weakest to strongest, and the ranking surprises almost everyone - because the things that feel most important have the least leverage.
 
 | Rank | Leverage point | How it feels |
 |---|---|---|
@@ -116,7 +117,7 @@ Chris Argyris built the **ladder of inference** to show how a belief becomes sel
 
 The sting is in the loop at the bottom. Our beliefs decide which data we notice in the first place. So the model grows *stronger* even when the world contradicts it, because the contradicting evidence never makes it onto the ladder.
 
-Experts are especially exposed. Their fast, accurate pattern-matching inside their field becomes fast, *inaccurate* pattern-matching outside it - and the speed hides the intermediate steps even from themselves. This is close cousin to the **curse of knowledge**: once you know something, you can't un-know it, so you badly underestimate how opaque your model is to a beginner.
+Experts are especially exposed. Their fast, accurate pattern-matching inside their field becomes fast, *inaccurate* pattern-matching outside it - and the speed hides the intermediate steps even from themselves. This is close cousin to the **[curse of knowledge](/blog/clear-thinking-and-expression/18-cognitive-biases-logical-fallacies-and-how-to-dodge-them)**: once you know something, you can't un-know it, so you badly underestimate how opaque your model is to a beginner.
 
 ### Single-loop versus double-loop learning
 
@@ -139,7 +140,7 @@ Most organisations are excellent thermostats: fast, precise, consistent. But if 
 
 **Toyota versus Taylorism.** Frederick Taylor's scientific management assumed "workers are interchangeable units; engineers design the work." The Toyota Production System reversed it: "workers are thinking partners; improvement comes from the people doing the work." Toyota even lets any worker pull a cord to stop the entire production line over a quality problem. At the 1984 NUMMI plant, the *same* workers and equipment that had produced GM's worst quality became one of America's most productive plants within two years under Toyota's management. Nothing physical changed. Only the paradigm.
 
-**The Theory of Constraints.** In *The Goal*, Eliyahu Goldratt attacked the belief that "a busy machine is a productive machine." His counter-paradigm: a system's output is limited by one constraint, so improving anything that *isn't* the constraint just piles up inventory and lengthens lead times. "A balanced plant is a bankrupt plant," he wrote. An hour lost at the bottleneck is an hour lost for the whole system. It overturned a belief that felt obviously true - which is what a real paradigm shift does.
+**The Theory of Constraints.** In *The Goal*, Eliyahu Goldratt attacked the belief that "a busy machine is a productive machine." His counter-paradigm: a system's output is [limited by one constraint](/blog/systems-thinking/09-bottlenecks-and-constraints-the-theory-of-constraints), so improving anything that *isn't* the constraint just piles up inventory and lengthens lead times. "A balanced plant is a bankrupt plant," he wrote. An hour lost at the bottleneck is an hour lost for the whole system. It overturned a belief that felt obviously true - which is what a real paradigm shift does.
 
 ## How to use this
 

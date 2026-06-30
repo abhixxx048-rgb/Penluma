@@ -51,7 +51,8 @@ faq:
       Ask how you'll feel about a decision in 10 minutes, 10 months, and 10 years.
       Spreading your emotion across those timeframes cools off hot feelings so you
       decide with your calm self, not your reactive one.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
+linked: true
 transformed: true
 topic: psychology-of-decisions
 topicTitle: Psychology of Decisions
@@ -70,7 +71,7 @@ This is your toolkit - seven practical tools and one framework that ties them to
 
 ## Why this matters
 
-Most of life's expensive mistakes aren't random bad luck. They're predictable. We underestimate how long things take, fall in love with our own plans, chase evidence that flatters us, and decide big things while emotions are running hot.
+Most of life's expensive mistakes aren't random bad luck. They're predictable. We underestimate how long things take, fall in love with our own plans, chase evidence that flatters us, and decide big things while [emotions are running hot](/blog/psychology-of-decisions/09-feelings-first-how-emotions-steer-every-choice).
 
 The cost is real: the job you took without asking the right questions, the renovation that ran triple over budget, the angry email you can't unsend, the purchase that thrilled you for a week.
 
@@ -90,7 +91,7 @@ It sounds like a tiny change in wording, but it changes how your brain works. No
 
 ## Tool 2: Consider the opposite - argue against yourself
 
-**Confirmation bias** is our habit of hunting for evidence that we're right and quietly ignoring evidence that we're wrong. The antidote is almost insultingly simple: deliberately ask, *"What if I'm wrong? What would have to be true for the other choice to be the better one?"*
+**[Confirmation bias](/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence)** is our habit of hunting for evidence that we're right and quietly ignoring evidence that we're wrong. The antidote is almost insultingly simple: deliberately ask, *"What if I'm wrong? What would have to be true for the other choice to be the better one?"*
 
 In a classic study, people merely told to "be unbiased" stayed just as biased as before. But people told to **"consider the opposite"** - to actively build the case against their own view - became noticeably more balanced. Vague good intentions don't work. A specific opposite-building instruction does.
 
@@ -174,7 +175,7 @@ Two ideas inside WRAP deserve their own spotlight:
 
 You won't run a seven-step ritual on whether to order pizza. Match the effort to the stakes. Here's a practical default for any decision that's expensive, hard to reverse, or emotionally loaded:
 
-1. **Widen first.** Force at least three real options onto the table - never just "do it or don't." Binary framing is the number-one decision killer.
+1. **Widen first.** Force at least three real options onto the table - never just "do it or don't." [Binary framing](/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults) is the number-one decision killer.
 2. **Find the base rate.** How do people who do this usually fare, and how long does it really take?
 3. **Consider the opposite.** Write the strongest case against your favorite.
 4. **Pre-mortem.** "It's a year later and this failed - why?" Build the fixes in.
@@ -186,8 +187,8 @@ And one shortcut that makes the whole thing stick: build your own one-page check
 
 ## Conclusion
 
-Here's the one thing to hold onto: you can't out-smart your own biases, because they survive intelligence - but you can out-*process* them. A simple, written, repeatable routine beats raw willpower every time.
+Here's the one thing to hold onto: you can't out-smart [your own biases](/blog/psychology-of-decisions/16-understanding-yourself-seeing-your-own-blind-spots), because they survive intelligence - but you can out-*process* them. A simple, written, repeatable routine beats raw willpower every time.
 
 Run even a few of these tools on your big choices and you won't make perfect decisions. You'll do something better: you'll dodge the predictable disasters. And over a lifetime, that's the difference that quietly compounds.
 
-One last thread to pull. Notice how almost every tool here works by getting the decision *out of your head* and onto paper. That's not a coincidence - there's a whole field on why our memory and intuition mislead us, and why externalizing your thinking is one of the most powerful mental upgrades you can make. That's where to look next.
+One last thread to pull. Notice how almost every tool here works by getting the decision *out of your head* and onto paper. That's not a coincidence - there's a whole field on why our memory and intuition mislead us, and why [externalizing your thinking](/blog/clear-thinking-and-expression/03-think-on-paper-why-externalizing-beats-thinking-in-your-head) is one of the most powerful mental upgrades you can make. That's where to look next.

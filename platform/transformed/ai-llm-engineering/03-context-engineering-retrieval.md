@@ -21,7 +21,7 @@ keywords:
   - prompt injection
   - LLM memory
   - contextual retrieval
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 faq:

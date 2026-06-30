@@ -36,9 +36,10 @@ faq:
     a: A price cap set below the natural market price guarantees a shortage. It also silences the signal that would have summoned more supply, so landlords stop building and sellers stop stocking, making the thing you wanted to keep affordable harder to find.
   - q: What is a perverse incentive?
     a: A perverse incentive rewards the opposite of what you intended. The classic case is a bounty on dead cobras that led people to breed cobras for cash, leaving more snakes than before once the scheme ended.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -65,7 +66,7 @@ Why downward for demand? At a lower price, more people can afford the thing, and
 
 Think of concert tickets. A small venue with scarce seats plus a wildly popular band sends the price sky-high. An unknown act in a half-empty hall has to slash prices to fill seats. Same mechanism, opposite directions.
 
-Now put both lines on one graph. They cross at exactly one point. That crossing point is the second most important idea in this entire field, right after opportunity cost.
+Now put both lines on one graph. They cross at exactly one point. That crossing point is the second most important idea in this entire field, right after [opportunity cost](/blog/ten-disciplines/04-scarcity-choice-and-how-prices-carry-information-micro-foundations).
 
 ## Equilibrium: where the market quietly settles
 
@@ -145,7 +146,7 @@ Scale that up to countries and you get the case for trade. England might be wors
 
 A few errors are so widespread they deserve their own warning label.
 
-- **"Trade is a contest. If they win, we lose."** Voluntary trade has no loser. Both sides only agree because both expect to come out ahead. An import is no more a "loss" than buying groceries is you "losing" to the supermarket. This is the single most common error in public debate about trade and tariffs.
+- **"Trade is a contest. If they win, we lose."** Voluntary trade has no loser. Both sides only agree because both expect to come out ahead. An import is no more a "loss" than buying groceries is you "losing" to the supermarket. This is the single most common error in public debate about [trade and tariffs](/blog/economics-from-first-principles/21-international-trade-imports-exports-tariffs-and-agreements).
 - **"Portugal is better at both, so it should make both."** Wrong. Specialisation follows *opportunity cost*, not raw skill. Confusing absolute with comparative advantage is the number-one misconception in all of trade economics, and getting it right is one of the clearest signs you actually understand the field.
 - **"Markets are always efficient" or "Markets always fail."** Neither is true. Markets work brilliantly for most ordinary goods and fail in specific, identifiable ways. The grown-up question is never "market or government?" It is "is a real failure present here, and is the cure better than the disease?"
 - **"Price controls protect people."** They silence the price signal and guarantee a shortage of exactly the thing you wanted to keep available.
@@ -173,7 +174,7 @@ Think of secondhand smoke. The smoker enjoys the cigarette, the shop made the sa
 
 Why is it a failure? Because the price of the cigarette (or the factory's product) does not include the harm to bystanders, so society produces *too much* of the harmful thing. Positive externalities run the other way. A vaccine protects not just you but everyone you would have infected, so markets *under*-provide things with spillover benefits.
 
-Ronald Coase added a twist. If the people involved can bargain cheaply and property rights are clear, they can sometimes solve externalities themselves, no government needed. A beekeeper and an orchard owner can simply strike a deal. This is the **Coase theorem**. It works when only a few parties are involved and breaks down when millions are affected, such as global air pollution, where bargaining is impossible.
+Ronald Coase added a twist. If the people involved can bargain cheaply and property rights are clear, they can sometimes solve externalities themselves, no government needed. A beekeeper and an orchard owner can simply strike a deal. This is the **Coase theorem**. It works when only a few parties are involved and breaks down when millions are affected, such as [global air pollution](/blog/economics-from-first-principles/30-environmental-economics-and-sustainable-development), where bargaining is impossible.
 
 ### 2. Public goods and free riders
 
@@ -198,7 +199,7 @@ This is when one side of a deal knows far more than the other. The classic case 
 
 ## Why rational people still reach bad outcomes
 
-One more tool sharpens the whole picture. **Game theory** studies decisions where your best move depends on what everyone else does. Its most famous puzzle is the **Prisoner's Dilemma**.
+One more tool sharpens the whole picture. **[Game theory](/blog/ten-disciplines/30-advanced-decision-science-game-theory-bias-proofing-and-sharp-judgment)** studies decisions where your best move depends on what everyone else does. Its most famous puzzle is the **Prisoner's Dilemma**.
 
 Two arrested partners are questioned separately. If both stay silent, each gets a light sentence. If one betrays the other, the betrayer walks free and the silent one suffers. If both betray, both get a medium sentence. Reasoning alone, each finds it safer to betray, so *both* betray and both end up worse off than if they had cooperated. Individually rational, collectively terrible.
 
@@ -218,4 +219,4 @@ Those three questions will carry you through most real-world arguments without n
 
 Here is the one thing to keep: **markets coordinate millions of strangers through prices and incentives, and free trade enlarges the pie for everyone. That is the default, and it is genuinely remarkable. But markets fail in four specific, nameable ways.** Holding both halves at once, the power and the failure modes, is what separates economic literacy from slogans.
 
-We have been zoomed in on single markets this whole time, one good and one price at a time. The natural next question is what happens when you zoom all the way out to the entire economy, where output, money, inflation, and the levers central banks pull take over. That is the world of macroeconomics, and these same ideas are about to reappear at national scale, sometimes behaving in ways that will surprise you.
+We have been zoomed in on single markets this whole time, one good and one price at a time. The natural next question is what happens when you zoom all the way out to the entire economy, where output, money, inflation, and the levers central banks pull take over. That is the [world of macroeconomics](/blog/ten-disciplines/06-the-big-picture-money-growth-inflation-and-the-macro-economy-advanced), and these same ideas are about to reappear at national scale, sometimes behaving in ways that will surprise you.

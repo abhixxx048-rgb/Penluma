@@ -50,7 +50,7 @@ faq:
       Do not let euphoria decide. Park the money, pause, clear bad debt, top up
       your emergency fund, then invest the rest gradually. Treat it like all
       other money rather than free play money.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: life-money-and-relationships

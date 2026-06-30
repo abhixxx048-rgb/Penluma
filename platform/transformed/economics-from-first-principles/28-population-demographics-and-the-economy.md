@@ -56,7 +56,7 @@ faq:
       At the aggregate level, research consensus finds immigration is a net
       positive for host economies: small overall wage effects, higher total GDP,
       and a net fiscal contribution - especially valuable for aging countries.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources:

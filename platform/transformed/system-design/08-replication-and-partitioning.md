@@ -36,9 +36,10 @@ faq:
     a: "When one key gets far more traffic than the rest (a viral product, a celebrity account), even perfect sharding cannot help, because a single key lives on a single shard. You fix it by splitting that key across many sub-keys or caching it separately."
   - q: "Is last-write-wins safe for resolving conflicts?"
     a: "Often not. It relies on synchronized clocks, and clock skew across machines is commonly 10 to 100 milliseconds, so a 'later' timestamp can belong to an earlier write. It silently drops the loser. Use it only for fields where losing a write is acceptable."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Consistent_hashing
   - https://en.wikipedia.org/wiki/Dynamo_(storage_system)
@@ -148,7 +149,7 @@ In multi-leader and leaderless systems, conflicts are unavoidable. Your strategy
 - **Vector clocks:** these can tell whether two writes were truly concurrent or one came after the other, and hand genuine conflicts to your application to resolve. Nothing is silently dropped.
 - **CRDTs (conflict-free replicated data types):** special data structures whose merges are mathematically guaranteed to converge. This is the modern answer for mergeable state, and the foundation under collaborative editors.
 
-Use LWW only for fields where losing a write is genuinely fine, like an "online" presence flag. For anything that accumulates, reach for vector clocks or CRDTs.
+Use LWW only for fields where losing a write is genuinely fine, like an "online" presence flag. For anything that accumulates, reach for [vector clocks](/blog/distributed-systems/15-vector-clocks-causality) or CRDTs.
 
 ## Partitioning: splitting a dataset too big for one machine
 
@@ -186,7 +187,7 @@ Once data is split, something has to know which node holds key K. Three patterns
 
 There's one more sharp edge worth knowing. Your data is partitioned by its *primary* key, but you often want to query by something else, like `WHERE color = 'red'`. If each partition indexes only its own data, a query by color must ask *every* partition and merge the results - a **scatter-gather**.
 
-Here's why that hurts. If a single-partition query is fast 99% of the time, a scatter-gather across 100 partitions has to wait for the slowest of the hundred. The odds that *all 100* are fast is 0.99 to the 100th power, roughly 0.37. So about **63% of those queries hit at least one slow partition.** This is why "just add a secondary index" doesn't scale, and why teams either build global indexes or pre-build query-specific tables.
+Here's why that hurts. If a single-partition query is fast 99% of the time, a scatter-gather across 100 partitions has to wait for the slowest of the hundred. The odds that *all 100* are fast is 0.99 to the 100th power, roughly 0.37. So about **63% of those queries hit at least one slow partition.** This is why "just add a [secondary index](/blog/system-design/04-databases-internals)" doesn't scale, and why teams either build global indexes or pre-build query-specific tables.
 
 ## Common misconceptions
 
@@ -194,7 +195,7 @@ A few beliefs that quietly cause outages:
 
 - **"Replication means my data is safe."** Async replication has a loss window. If the leader dies before shipping its latest writes, they're gone. Replication helps availability; it does not guarantee zero data loss unless it's synchronous.
 - **"A quorum gives me strong consistency."** It gives bounded staleness, not strict ordering. And the moment you use sloppy quorums and hinted handoff to stay available during a partition, even the overlap guarantee quietly turns off.
-- **"Sharding makes everything faster."** It makes you scale, but it can make cross-shard queries and cross-shard transactions slower or far more complex. A "transfer money between two accounts" that lands on two shards suddenly needs distributed transaction machinery you didn't have before.
+- **"Sharding makes everything faster."** It makes you scale, but it can make cross-shard queries and cross-shard transactions slower or far more complex. A "transfer money between two accounts" that lands on two shards suddenly needs [distributed transaction machinery](/blog/system-design/11-distributed-transactions-and-idempotency) you didn't have before.
 - **"Perfect hashing solves hot spots."** It can't split a *single* hot key. A viral product or a celebrity account lives on one shard no matter how good your hashing is.
 - **"Last-write-wins is a safe default."** It silently destroys concurrent writes whenever clocks disagree, which is always.
 
@@ -235,4 +236,4 @@ The deepest idea here isn't a formula. It's that **your consistency choices shou
 
 So the next time you reach for a read replica or a new shard, ask what happens at the edges: what does a user see when a copy lags, what moves when a node joins, what breaks when two writes collide.
 
-And there's a thread we kept tugging without fully unspooling: every time a quorum "isn't quite linearizable" or two leaders "have no global order," we brushed up against the deepest question in distributed systems - what does it even mean for separated machines to *agree*? That's the world of consensus, logical clocks, and the CAP theorem, and it's where this story goes next.
+And there's a thread we kept tugging without fully unspooling: every time a quorum "isn't quite linearizable" or two leaders "have no global order," we brushed up against the deepest question in distributed systems - what does it even mean for separated machines to *agree*? That's the world of [consensus](/blog/system-design/10-consensus-and-coordination), logical clocks, and the [CAP theorem](/blog/system-design/09-cap-pacelc-consistency-models), and it's where this story goes next.

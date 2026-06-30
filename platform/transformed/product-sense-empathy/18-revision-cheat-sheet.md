@@ -32,9 +32,10 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 17
 icon: ❤️
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 sources: []
+linked: true
 ---
 
 You can feel a bad screen in about three seconds. Something is off, you hesitate, you squint, you click the wrong thing. The strange part is that the people who built it never feel it - to them, everything is obvious.
@@ -54,9 +55,9 @@ The good news is that "obvious" is not a talent. It is a checklist. The teams wh
 These are the ideas everything else hangs on. If you only remember a handful, remember these.
 
 - **Absorb complexity so the user doesn't have to.** Your job is to take the hard problem and give it an obvious surface. The messy work happens behind the scenes.
-- **Design for the job, not the feature.** Ask what progress the person is trying to make. Nobody wants a "filter" - they want to find the one order from last Tuesday.
+- **Design for the job, not the feature.** Ask [what progress the person is trying to make](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress). Nobody wants a "filter" - they want to find the one order from last Tuesday.
 - **Match the mental model.** Make the thing work the way people already assume it works. Fighting their expectations is a fight you lose.
-- **Close both gulfs.** Make actions easy to find (the gulf of execution) and make results easy to read (the gulf of evaluation). A button they can't find and a result they can't interpret are the same failure.
+- **Close both gulfs.** Make actions easy to find ([the gulf of execution](/blog/product-sense-empathy/06-closing-the-gulfs-action-feedback-the-seven-stages)) and make results easy to read (the gulf of evaluation). A button they can't find and a result they can't interpret are the same failure.
 - **Cut cognitive load.** Show less, group the rest, and favor recognition over recall. Don't make people hold things in their head.
 - **Default to what 90% want** so most users configure nothing. A good default is a decision you made so they didn't have to.
 - **Every state is mandatory.** Loading, empty, and error are not edge cases - they are part of the screen. Design them on purpose.
@@ -77,7 +78,7 @@ These "laws" are just reliable patterns in how people behave. Treat them as nudg
 | **Peak-end rule** | An experience is judged by its peak and its ending | Build strong high points and clean endings |
 | **Curse of knowledge** | Experts forget what beginners find confusing | Test with real beginners, not your teammates |
 
-A quick example for Jakob's Law: when you put the shopping cart icon in the top right, you are not being unoriginal - you are being kind. People already know to look there, so you spend their attention on the thing that matters instead of teaching them your layout.
+A quick example for Jakob's Law: when you put the shopping cart icon in the top right, you are not being unoriginal - you are being kind. [People already know to look there](/blog/product-sense-empathy/05-the-psychology-of-obvious-affordances-signifiers-mental-models), so you spend their attention on the thing that matters instead of teaching them your layout.
 
 And the curse of knowledge is the sneaky one. You wrote the code, so the screen can never surprise you. That is exactly why your own judgment is the least trustworthy test in the room.
 
@@ -113,7 +114,7 @@ When a control is confusing, the failure is almost always one of these eight thi
 
 A few beliefs feel right and quietly wreck good design.
 
-- **"More options means more power."** More options usually means more hesitation. Power comes from sensible defaults plus the ability to go deeper when you actually need to.
+- **"More options means more power."** More options usually means more hesitation. Power comes from [sensible defaults](/blog/product-sense-empathy/08-the-make-it-obvious-toolkit-defaults-constraints-discoverability) plus the ability to go deeper when you actually need to.
 - **"If it looks clean, it's usable."** Pretty and usable are different things. A gorgeous screen with a hidden primary action still fails.
 - **"It's obvious - I can use it fine."** You built it. Of course you can. The only test that counts is whether a first-timer can.
 - **"Errors are rare edge cases."** Errors, empty states, and slow loads are part of normal life for your users. If you didn't design them, you shipped a blank wall.
@@ -139,4 +140,4 @@ Here is the one idea to carry out of all this: **obvious is not luck - it's a ch
 
 If a user couldn't find it, the placement is wrong. If they couldn't read it, the label is wrong. If they didn't know it worked, the feedback is missing. Every confusing screen traces back to a check that got skipped.
 
-So the real skill isn't talent - it's the discipline to run the list every single time. And the deepest item on that list is the hardest to see in yourself: the curse of knowledge, the reason your own eyes are the worst judge of your own work. The next question worth chasing is how the best teams design that blind spot away - by testing with real beginners before a single line of confusion ever reaches a real user.
+So the real skill isn't talent - it's the discipline to run the list every single time. And the deepest item on that list is the hardest to see in yourself: the curse of knowledge, the reason your own eyes are the worst judge of your own work. The next question worth chasing is how the best teams design that blind spot away - by [testing with real beginners](/blog/product-sense-empathy/13-doing-user-research-interviews-the-mom-test-observation) before a single line of confusion ever reaches a real user.

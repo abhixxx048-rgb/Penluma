@@ -30,7 +30,7 @@ faq:
     a: Staying invested almost always wins. The market's best days often cluster right after sharp drops, and missing just a handful of them can severely damage long-term returns. Time in the market beats timing the market.
   - q: What is the safest first step before investing?
     a: Build an emergency fund of three to six months of expenses in cash, then pay off high-interest debt like credit cards. Clearing a 20 percent credit card is a guaranteed 20 percent return.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 topic: ten-disciplines
 topicTitle: Ten Disciplines
 category: Thinking & Decisions
@@ -39,12 +39,13 @@ order: 16
 icon: "\U0001F9ED"
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
 Imagine someone offers you $100 right now or $100 in five years. You grab the cash today without thinking - and that instinct is correct. Hidden inside it is the single most powerful idea in all of finance.
 
-Almost every money decision you will ever make, from paying off a card to buying a house to investing for retirement, comes down to one question: what is money worth at different points in time, and how do you weigh a sure thing against a risky one? Master that, and the rest of investing stops feeling like a casino and starts feeling like a craft.
+Almost every money decision you will ever make, from paying off a card to buying a house to investing for retirement, comes down to one question: what is money worth at different points in time, and how do you [weigh a sure thing against a risky one](/blog/ten-disciplines/28-how-to-make-good-decisions-under-uncertainty)? Master that, and the rest of investing stops feeling like a casino and starts feeling like a craft.
 
 ## Why this matters
 
@@ -109,7 +110,7 @@ That single calculation is the seed of how every bond, loan, and business gets v
 
 ## Inflation: the silent leak in your money
 
-**Inflation** is the slow rise in prices over time. The same $100 buys fewer groceries in 2030 than in 2025. Your cash didn't move; the world just got more expensive around it.
+**Inflation** is [the slow rise in prices over time](/blog/economics-from-first-principles/10-inflation-deflation-and-the-value-of-money). The same $100 buys fewer groceries in 2030 than in 2025. Your cash didn't move; the world just got more expensive around it.
 
 This forces an important distinction:
 
@@ -158,7 +159,7 @@ There's even a number for how sensitive a stock is to the market, called **beta*
 
 An **interest rate** is the cost of borrowing - and the reward for lending. Think of it as *rent on money*. Borrow it, you pay rent. Lend it, you collect rent.
 
-It's also the "gravity" of finance. When central banks raise rates, that gravity tugs down on nearly every other asset. Why? Because of the time value of money: a higher discount rate shrinks the present value of every future dollar, so bonds, stocks, and houses all reprice at once. That's the hidden reason markets lurch when "the Fed raised rates" hits the news.
+It's also the "gravity" of finance. [When central banks raise rates](/blog/ten-disciplines/06-the-big-picture-money-growth-inflation-and-the-macro-economy-advanced), that gravity tugs down on nearly every other asset. Why? Because of the time value of money: a higher discount rate shrinks the present value of every future dollar, so bonds, stocks, and houses all reprice at once. That's the hidden reason markets lurch when "the Fed raised rates" hits the news.
 
 ## Bonds: being the lender
 
@@ -204,7 +205,7 @@ A few beliefs feel sensible but quietly wreck portfolios.
 - **"Guaranteed 20% returns" are real.** They aren't. A guaranteed high return violates the risk-return law. A steady, high, "safe" payout is the classic tell of a Ponzi scheme.
 - **"I own lots of stocks, so I'm diversified."** Not if they all move together. Twenty correlated tech stocks are effectively one big bet. Diversification needs *low correlation*, not just a big number of holdings.
 - **"Bonds are totally safe."** They lose value when rates rise, and issuers can default.
-- **"I'll sell once it gets back to what I paid."** The market doesn't know or care what you paid. What matters is the gap between today's price and the investment's true value going forward. Holding a loser just to break even is the sunk-cost fallacy.
+- **"I'll sell once it gets back to what I paid."** The market doesn't know or care what you paid. What matters is the gap between today's price and the investment's true value going forward. Holding a loser just to break even is the [sunk-cost fallacy](/blog/ten-disciplines/08-biases-heuristics-and-why-smart-people-make-predictable-errors).
 - **"Last year's hot fund will keep winning."** Past performance doesn't predict future returns. That fund often soared on luck or risk that won't repeat. This is recency bias.
 
 ## How sensible investing actually works
@@ -232,4 +233,4 @@ Here's the part that surprises people most: the biggest driver of your financial
 
 You don't need to predict the market or pick winners to do well. Master the time value of money, respect the risk-return tradeoff, and let compounding and time carry you.
 
-And those same ideas scale all the way up. The choice between borrowing money and selling ownership, the way a little debt can amplify both gains and losses like a crowbar, why most big companies carry *some* debt rather than none - it's the exact same logic of money over time under uncertainty, just running inside a corporation. That's where the story goes next.
+And those same ideas scale all the way up. The choice between [borrowing money and selling ownership](/blog/ten-disciplines/18-markets-valuation-and-personal-corporate-finance-advanced), the way a little debt can amplify both gains and losses like a crowbar, why most big companies carry *some* debt rather than none - it's the exact same logic of money over time under uncertainty, just running inside a corporation. That's where the story goes next.

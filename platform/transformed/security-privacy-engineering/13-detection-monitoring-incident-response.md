@@ -38,15 +38,16 @@ faq:
     a: It depends on the regime. GDPR requires notifying the authority within 72 hours of awareness, and US public companies have four business days after deciding a breach is material. Importantly, the clock starts when you become aware, not when the investigation ends.
   - q: What is a blameless postmortem?
     a: It is a review that assumes everyone acted in good faith and focuses on systemic causes like missing tooling or unclear runbooks, never on punishing a person. Blame makes people hide incidents, which quietly destroys your ability to detect them.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
 At 2:14 in the morning, an alert fires: the same account just logged in from London and Tokyo ten minutes apart, then started exporting your entire customer table. The question that decides everything is not "how did they get in?" It is "how fast can we notice and shut it down?"
 
-Everything you have read about security so far tries to *prevent* attacks. This article is about the moment prevention fails, because eventually it will. A clever phishing email, a leaked password, an unpatched library, one careless vendor, and something gets through. What separates a minor scare from a front-page catastrophe is not a taller wall. It is how quickly you spot the intruder and how cleanly you respond.
+Everything you have read about security so far tries to *prevent* attacks. This article is about the moment prevention fails, because eventually it will. A clever phishing email, a [leaked password](/blog/security-privacy-engineering/04-authentication-authorization), an [unpatched library](/blog/security-privacy-engineering/09-secure-sdlc-devsecops), one careless vendor, and something gets through. What separates a minor scare from a front-page catastrophe is not a taller wall. It is how quickly you spot the intruder and how cleanly you respond.
 
 ## Why this matters
 
@@ -87,7 +88,7 @@ This is where many teams turn their own logs into the breach. Never write any of
 - Passwords, session tokens, access tokens, API keys, encryption keys, database connection strings.
 - Full payment card numbers or CVV, government IDs, health data, and other sensitive personal data.
 
-Mask, hash, or strip these before writing. Two named weaknesses describe the failure: **CWE-532**, putting sensitive data into logs, and **CWE-117**, log injection, where an attacker plants newline characters in their input to forge fake log lines and hide their activity. Always neutralize newlines in any user input you log.
+Mask, hash, or strip these before writing. Two named weaknesses describe the failure: **CWE-532**, putting sensitive data into logs, and **CWE-117**, [log injection](/blog/security-privacy-engineering/05-application-web-security), where an attacker plants newline characters in their input to forge fake log lines and hide their activity. Always neutralize newlines in any user input you log.
 
 The most common version of this mistake is leaving debug logging at verbose level in production. It quietly dumps full request bodies, including auth tokens and card numbers, straight into your log files. A stolen log archive then hands the attacker a map to everything else.
 
@@ -150,7 +151,7 @@ One rule holds it together: always name an **Incident Commander**, the person wh
 
 A breach is not only a technical event. It triggers legal deadlines, and the most misunderstood part is *when* the clock starts. For most regimes it begins when you become reasonably aware a breach occurred, **not** when your investigation wraps up.
 
-- **GDPR (EU)** gives you 72 hours to notify the supervisory authority, and you must tell affected individuals if the risk to them is high.
+- **[GDPR (EU)](/blog/security-privacy-engineering/11-privacy-laws-compliance)** gives you 72 hours to notify the supervisory authority, and you must tell affected individuals if the risk to them is high.
 - **US public companies** must report a breach within four business days of deciding it is "material."
 - **US state and sector laws** vary widely (often around 30 days, and 60 days for health data under HIPAA), and all 50 states plus DC have their own rules.
 
@@ -170,7 +171,7 @@ The classic mistake here feels intuitive and is exactly wrong: pulling the power
 - **"More alerts mean more security."** The opposite. Drowning in low-value alerts means the one real alert gets missed. That is alert fatigue, and it is the core failure mode the OWASP A09 category warns about. Tune relentlessly.
 - **"Containment is the finish line."** It is the start of the cleanup, not the end. Skip eradication and the attacker's foothold survives.
 - **"Refusing to pay the ransom stops the leak."** It does not. Extortion groups often publish stolen data anyway. Declining to pay is a defensible choice, but it is not containment.
-- **"A vendor's security is the vendor's problem."** A vendor's risk is your risk. Plenty of major breaches start through a trusted third-party platform with weak defenses.
+- **"A vendor's security is the vendor's problem."** A vendor's risk is your risk. Plenty of major breaches start through a [trusted third-party platform with weak defenses](/blog/security-privacy-engineering/07-threat-modeling-risk-management).
 
 ## How to use this
 

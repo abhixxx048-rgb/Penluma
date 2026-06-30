@@ -57,8 +57,9 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 4
 icon: "\U0001F3AF"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources:
   - 'https://en.wikipedia.org/wiki/Heuristic_(psychology)'
   - 'https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow'
@@ -135,13 +136,13 @@ The **anchoring heuristic** means your estimate starts from whatever number you 
 
 Remember that rigged wheel of fortune? Researchers secretly fixed it to land on either 10 or 65, then asked people what percent of African countries are in the United Nations. People who saw 10 guessed about 25%. People who saw 65 guessed about 45%. A spinning wheel has *nothing* to do with Africa, and everyone knew that, yet a random number moved their answers by twenty points.
 
-**Where you'll see it:** this is the king of pricing tricks. "Was $200, now $99" makes $99 feel like a steal. The first figure in a salary negotiation usually wins. "Limit 12 per customer" makes shoppers buy more cans of soup than "no limit." Real estate list prices and charity "suggested donation" amounts work the same way.
+**Where you'll see it:** this is the king of [pricing tricks](/blog/business-financial-literacy/09-pricing-psychology-pricing-with-confidence). "Was $200, now $99" makes $99 feel like a steal. The first figure in a salary negotiation usually wins. "Limit 12 per customer" makes shoppers buy more cans of soup than "no limit." Real estate list prices and charity "suggested donation" amounts work the same way.
 
 > **Common myth:** that anchors only work if you believe the number. They don't. Anchoring bites even when the figure is obviously random or irrelevant. That is exactly what makes it so easy to weaponize against you.
 
 ### 4. Affect: "how I feel about it tells me how risky it is"
 
-The **affect heuristic**, studied by Paul Slovic, means you lean on your immediate *feelings*, a quick "good" or "bad" gut reaction, to make a judgment.
+The **affect heuristic**, studied by Paul Slovic, means you lean on your immediate *feelings*, a quick "good" or "bad" [gut reaction](/blog/psychology-of-decisions/09-feelings-first-how-emotions-steer-every-choice), to make a judgment.
 
 There is a striking twist. In your mind, risk and benefit feel *negatively linked* even when they aren't. If you *like* something, you tend to judge it both low-risk and high-benefit. If you dislike it, the reverse, regardless of the facts.
 
@@ -157,13 +158,13 @@ Often that signal is real. If a brand has crossed your path enough times to feel
 
 Here is the surprise. German students were asked which US city is larger, San Diego or San Antonio. They scored *better* than American students. Why? The Germans had heard of San Diego but not San Antonio, so they picked the one they recognized, and it is correct. The Americans recognized both, so the shortcut couldn't help. Knowing *less* was, oddly, an advantage.
 
-**Where you'll see it:** brand recognition driving purchases. It is why advertising that only makes you *familiar* with a name still works. Repeated exposure breeds a feeling of trust, the "mere-exposure effect."
+**Where you'll see it:** [brand recognition driving purchases](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy). It is why advertising that only makes you *familiar* with a name still works. Repeated exposure breeds a feeling of trust, the "mere-exposure effect."
 
 > **Common myth:** that recognition reliably tracks quality. It doesn't always. You might recognize a stock because of a scandal, or a restaurant because of one viral video. Recognition is only a useful clue when fame genuinely tracks being good or big, not in noisy areas where the two drift apart.
 
 ## The bigger machinery: two speeds of thinking
 
-Why do these shortcuts fire automatically? In *Thinking, Fast and Slow*, Kahneman describes two modes of thought.
+Why do these shortcuts fire automatically? In *Thinking, Fast and Slow*, Kahneman describes [two modes of thought](/blog/psychology-of-decisions/02-two-minds-in-one-head-fast-thinking-vs-slow-thinking).
 
 **System 1** is automatic, effortless, and always running. It is intuitive and emotional, it runs on heuristics, and it is the source of most biases.
 
@@ -193,4 +194,4 @@ You can't switch heuristics off, and you wouldn't want to. But you can build hab
 
 Here is the one thing to keep: your shortcuts are usually right, but each one fails in a *specific, predictable* way, and prediction is power. You can't delete the shortcut, but you can learn to feel the moment it is about to mislead you and slow down right there.
 
-Notice, too, how often these errors come dressed in confidence. The wrong answer doesn't feel like a guess; it feels obvious. That gap between how sure you are and how right you are has its own name and its own strange rules, and it is where we head next.
+Notice, too, how often these errors come dressed in confidence. The wrong answer doesn't feel like a guess; it feels obvious. [That gap between how sure you are and how right you are](/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence) has its own name and its own strange rules, and it is where we head next.

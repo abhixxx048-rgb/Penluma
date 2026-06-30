@@ -34,7 +34,7 @@ faq:
     a: No. Free signups cost the person nothing, so they're a weak signal. The real test is how many of those signups convert into paying customers. Plenty of 10,000-email waitlists have converted to zero revenue.
   - q: How can I test demand cheaply in India?
     a: Build a one-page site with a real price and an "Early Access" button, drive traffic from WhatsApp and Telegram communities, and collect small deposits via a Razorpay Payment Link or UPI. You can earn under 20 lakh in services with no GST registration friction.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources: []

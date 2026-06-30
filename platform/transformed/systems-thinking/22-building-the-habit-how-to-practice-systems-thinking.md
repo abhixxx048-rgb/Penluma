@@ -37,13 +37,14 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 21
 icon: "\U0001F504"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
-You can know everything about stocks, flows, feedback loops, and leverage points and still freeze the moment a real problem lands on your desk. Knowing the ideas is one thing. Seeing them automatically, in the middle of a busy Tuesday, is something else entirely.
+You can know everything about stocks, flows, [feedback loops](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves), and leverage points and still freeze the moment a real problem lands on your desk. Knowing the ideas is one thing. Seeing them automatically, in the middle of a busy Tuesday, is something else entirely.
 
 This is the bridge most people never cross. The good news: systems thinking is not a gift some people are born with. It is a skill, like playing an instrument, and it compounds. The more loops you see, the more loops you start to notice everywhere.
 
@@ -89,7 +90,7 @@ You don't need a whiteboard to think in systems. You need a short set of questio
 1. **What is the stock here?** What is accumulating or draining - trust, inventory, debt, energy, backlog?
 2. **Where is the loop?** Is something amplifying this (a **reinforcing** loop) or resisting it (a **balancing** loop)?
 3. **And then what?** Trace the consequence one or two steps further. This is the move from Eliyahu Goldratt's novel *The Goal*, where the mentor never gives a direct answer - he just keeps asking "and then what?" until the hero discovers the truth himself.
-4. **What is the constraint?** From Goldratt's Theory of Constraints: which single bottleneck is limiting the whole system's output right now?
+4. **What is the constraint?** From Goldratt's [Theory of Constraints](/blog/systems-thinking/09-bottlenecks-and-constraints-the-theory-of-constraints): which single bottleneck is limiting the whole system's output right now?
 5. **What mental model created this?** From Peter Senge's *The Fifth Discipline*: which hidden assumption keeps people stuck in a loop they cannot see?
 
 Here is the trick: don't try to use all five at once. Pick one for the week and tape it above your desk. "And then what?", asked relentlessly, will change how you make decisions faster than any diagram.
@@ -108,7 +109,7 @@ This connects to Donella Meadows' foundational habit from her essay *Dancing wit
 
 ## Drawing a quick causal loop diagram
 
-Once you can see the pattern, you can map the structure behind it. A **causal loop diagram (CLD)** shows variables connected by arrows that form a closed loop. Keep your first attempt to just 3-5 variables. A simple recipe:
+Once you can see the pattern, you can map the structure behind it. A **[causal loop diagram (CLD)](/blog/systems-thinking/15-causal-loop-diagrams-drawing-how-things-connect)** shows variables connected by arrows that form a closed loop. Keep your first attempt to just 3-5 variables. A simple recipe:
 
 1. **Name a variable** - a noun that can go up or down. Use "trust," not "the situation."
 2. **Ask what changes it, and what it changes** in turn.
@@ -137,7 +138,7 @@ A few myths trip up almost every beginner. Clearing them early saves months.
 
 **Myth: "Bigger diagrams are better."** Beginners try to cram in fifteen variables and end up with an unreadable mess. One clear loop a day beats one giant tangle a month. Stay small.
 
-**Myth: "Cause and effect happen close together."** They usually don't. A **time delay** is the lag between a cause and its effect, and delays are the single biggest reason intuition fails - System 1 simply cannot connect a cause to an effect that arrives weeks later.
+**Myth: "Cause and effect happen close together."** They usually don't. A **[time delay](/blog/systems-thinking/06-delays-why-cause-and-effect-are-not-close-in-time)** is the lag between a cause and its effect, and delays are the single biggest reason intuition fails - System 1 simply cannot connect a cause to an effect that arrives weeks later.
 
 The classic demonstration is the **Beer Game**, a supply-chain simulation invented by Jay Forrester at MIT. Players run a chain - retailer, wholesaler, distributor, factory. A tiny blip in customer demand turns into wild swings of shortage and surplus up the chain (the "bullwhip effect"). Almost everyone blames their supplier. The debrief reveals the truth: the oscillation came from the *structure* - the ordering delays everyone set in motion - not from anyone's bad decisions. A 10% shift in retail demand can produce 40% swings at the factory.
 
@@ -145,7 +146,7 @@ The classic demonstration is the **Beer Game**, a supply-chain simulation invent
 
 ## Story templates to recognize: the three archetypes
 
-Once you have the vocabulary, the same plots show up everywhere. These three **archetypes** are reusable story templates worth carrying in your head:
+Once you have the vocabulary, the same plots show up everywhere. These three **[archetypes](/blog/systems-thinking/12-system-archetypes-stories-that-repeat)** are reusable story templates worth carrying in your head:
 
 - **Fixes That Fail.** A quick fix relieves the symptom but creates a delayed side effect that makes the original problem worse. Ask: *"What is the unintended consequence of this fix three months out?"*
 - **Shifting the Burden.** A symptomatic solution hides the real problem, and the fundamental solution withers from disuse. Ask: *"Are we treating the symptom or the cause?"*
@@ -174,4 +175,4 @@ You do not become a systems thinker by knowing the theory. You become one by ins
 
 Start with one. "And then what?", asked of every decision for a single week, will already bend your thinking toward the loop instead of the event.
 
-And here is the door this opens. Once you can reliably *see* the structure behind a problem, the next question becomes irresistible: where in that structure can the smallest push create the biggest change? That hunt for **leverage points** - the places where a tiny shift moves the whole system - is where systems thinking stops being a way of seeing and starts being a way of acting.
+And here is the door this opens. Once you can reliably *see* the structure behind a problem, the next question becomes irresistible: where in that structure can the smallest push create the biggest change? That hunt for **[leverage points](/blog/systems-thinking/13-leverage-points-where-to-push-to-change-a-system)** - the places where a tiny shift moves the whole system - is where systems thinking stops being a way of seeing and starts being a way of acting.

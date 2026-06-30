@@ -49,9 +49,10 @@ faq:
       Monitoring tells you when a known metric crosses a threshold.
       Observability lets you investigate problems you never anticipated by
       reading the system's outputs like metrics, logs, and traces.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -63,7 +64,7 @@ The answer is that software was never really about code. It is about **systems**
 
 Most people working in or around technology react to symptoms. The release is late, so add people. The service is slow, so add servers. The metric looks bad, so push the team harder.
 
-These reactions feel obvious, and they routinely make things worse. The reason is that technology runs on **feedback loops** that do not behave like simple cause and effect. Push on the wrong spot and the system pushes back twice as hard.
+These reactions feel obvious, and they routinely make things worse. The reason is that technology runs on **[feedback loops](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves)** that do not behave like simple cause and effect. Push on the wrong spot and the system pushes back twice as hard.
 
 Once you can name the loop you are looking at, you stop fighting the system and start steering it. That is the difference between a team that thrashes and a team that ships.
 
@@ -97,7 +98,7 @@ The real lever is the *delay* before new people become productive. Shorten it wi
 
 ## Technical debt: a bathtub with a leaky tap
 
-**Technical debt** is messy or rushed code that makes future work harder. In systems terms it is a stock. Inflows raise it: rushed code, skipped tests, deferred cleanup. Outflows lower it: refactoring, adding tests, tidying the architecture.
+**Technical debt** is messy or rushed code that makes future work harder. In systems terms it is [a stock](/blog/systems-thinking/04-stocks-and-flows-what-builds-up-and-what-moves). Inflows raise it: rushed code, skipped tests, deferred cleanup. Outflows lower it: refactoring, adding tests, tidying the architecture.
 
 Picture the bathtub. The water level is your debt. The tap is new shortcuts flowing in. The drain is cleanup flowing out. If the tap runs faster than the drain, the tub overflows, and overflow means production incidents, burnout, and delivery you can no longer predict. Bailing one bucket a year does nothing while the tap is wide open.
 
@@ -132,7 +133,7 @@ The countermeasure is a **balancing loop**, a loop that opposes change and pulls
 
 ## Theory of Constraints: the bottleneck rules everything
 
-Eliyahu Goldratt's *The Goal* introduced the **Theory of Constraints**. The core idea: every system has at least one **constraint**, a single bottleneck, and the **throughput** of the *whole* system is set solely by that constraint. Improving anything else is, in Goldratt's words, an "illusion of improvement."
+Eliyahu Goldratt's *The Goal* introduced the **[Theory of Constraints](/blog/systems-thinking/09-bottlenecks-and-constraints-the-theory-of-constraints)**. The core idea: every system has at least one **constraint**, a single bottleneck, and the **throughput** of the *whole* system is set solely by that constraint. Improving anything else is, in Goldratt's words, an "illusion of improvement."
 
 A chain is only as strong as its weakest link. A four-lane highway that narrows to one lane jams no matter how wide the four lanes are, and widening them to six lanes makes the jam *worse* because cars reach the bottleneck faster. In software, automating a 30-minute build does nothing if a 6-hour manual QA step is the real constraint.
 
@@ -152,7 +153,7 @@ Consider electricity. Early factory electrification barely raised productivity, 
 
 ### Common misconceptions
 
-- **"AI will eliminate X percent of jobs."** Most jobs are bundles of tasks. AI automates some tasks, not whole jobs, so the headline number is almost always wrong.
+- **"AI will eliminate X percent of jobs."** Most jobs are bundles of tasks. [AI automates some tasks, not whole jobs](/blog/economics-from-first-principles/27-technology-automation-ai-and-innovation), so the headline number is almost always wrong.
 - **"AI won't change much."** Equally wrong. The accurate prediction is that most jobs get *restructured*. Recent research notes that AI exposure lands on non-routine cognitive work, the reverse of past automation, which reshapes hierarchies and which workers firms hire.
 - **"The early results prove it's a flop / a rocket."** Beware the **productivity J-curve**: output dips during adoption, before the complementary changes catch up, then climbs. Do not declare AI a failure today, and do not extrapolate early growth forever either.
 
@@ -172,7 +173,7 @@ The common mistake is assuming every digital product has network effects. A word
 
 ## Observability: changing what people can see is high leverage
 
-Systems thinker Donella Meadows ranked the **leverage points** where a small change produces large shifts. The structure of *information flows*, meaning who sees what and when, ranks surprisingly high, well above tweaking numbers.
+Systems thinker Donella Meadows ranked the **[leverage points](/blog/systems-thinking/13-leverage-points-where-to-push-to-change-a-system)** where a small change produces large shifts. The structure of *information flows*, meaning who sees what and when, ranks surprisingly high, well above tweaking numbers.
 
 Her classic case: moving household electric meters from the basement to a visible front hall cut consumption by about 30 percent, with no change in price. People simply *saw* their usage. The information flow changed the behavior.
 

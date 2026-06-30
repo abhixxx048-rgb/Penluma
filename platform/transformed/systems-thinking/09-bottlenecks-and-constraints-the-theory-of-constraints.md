@@ -36,9 +36,10 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 8
 icon: "\U0001F504"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Theory_of_constraints
   - https://en.wikipedia.org/wiki/The_Goal_(novel)
@@ -48,7 +49,7 @@ You spend a whole weekend making one part of your work faster. You measured it. 
 
 How is that possible? You worked hard and you got a real, measurable win - yet the system as a whole behaved as if you'd done nothing.
 
-The answer is one of the most useful ideas in all of systems thinking: **every system has a single constraint**, and almost all improvement effort is wasted unless it lands on that one spot. This article is about finding that spot, and what to do once you have.
+The answer is one of the most useful ideas in all of [systems thinking](/blog/systems-thinking/03-why-systems-thinking-matters-patterns-everywhere): **every system has a single constraint**, and almost all improvement effort is wasted unless it lands on that one spot. This article is about finding that spot, and what to do once you have.
 
 ## Why this matters
 
@@ -82,7 +83,7 @@ Picture a process with five steps in a row. Step 3 is the slow one. Now you go a
 
 What happens? More work now arrives at Step 3 - but Step 3 can still only handle what it always could. So the extra work just **piles up** in front of it. You haven't increased output. You've increased the pile, the chaos, and the cost of storing half-finished work.
 
-That pile has a name: **WIP**, or work-in-progress - partly finished work waiting in the system.
+That pile has a name: **WIP**, or work-in-progress - [partly finished work waiting in the system](/blog/systems-thinking/04-stocks-and-flows-what-builds-up-and-what-moves).
 
 - In a factory, WIP is physical inventory stacked on the floor.
 - In software, it's code that's written but not yet shipped.
@@ -150,7 +151,7 @@ The software world rediscovered all of this. *The Phoenix Project* (Gene Kim and
 
 The fix follows the five steps precisely: *identify* Brent; *exploit* by routing requests through a ticket queue so he isn't constantly interrupted; *subordinate* by making others document every solution he gives; *elevate* by cross-training other people to hold his knowledge.
 
-Here's a real example of where this leads. By 2011, Amazon was deploying code roughly once every 11.6 seconds. The old constraint was the slow, manual, batched deployment step. Treating deployment as the constraint and applying exploit, subordinate, and elevate - automation, a mandatory pipeline, continuous-delivery investment - is essentially how modern DevOps was born. The rule underneath it: until code is in production, it isn't output. It's just WIP stuck in the system.
+Here's a real example of where this leads. By 2011, Amazon was deploying code roughly once every 11.6 seconds. The old constraint was the slow, manual, batched deployment step. Treating deployment as the constraint and applying exploit, subordinate, and elevate - automation, a mandatory pipeline, continuous-delivery investment - is essentially how [modern DevOps](/blog/systems-thinking/19-systems-thinking-in-software-technology-and-ai) was born. The rule underneath it: until code is in production, it isn't output. It's just WIP stuck in the system.
 
 ## The bottleneck always moves (and that's good news)
 
@@ -183,4 +184,4 @@ If you remember one thing, remember this: **a system can only go as fast as its 
 
 The strange beauty of constraints is that the pile itself is the map. You don't need fancy analytics to find your bottleneck - you just walk the process and look for where work waits.
 
-But here's the question that opens the next door. If pushing harder on the wrong spot makes a system worse, where *are* the spots where a small nudge produces a huge change? That's the study of leverage points - the rare places in any system where a tiny shift moves everything. Once you can see constraints, finding leverage is the natural next step.
+But here's the question that opens the next door. If pushing harder on the wrong spot makes a system worse, where *are* the spots where a small nudge produces a huge change? That's the study of [leverage points](/blog/systems-thinking/13-leverage-points-where-to-push-to-change-a-system) - the rare places in any system where a tiny shift moves everything. Once you can see constraints, finding leverage is the natural next step.

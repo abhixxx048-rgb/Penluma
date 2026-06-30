@@ -30,7 +30,7 @@ faq:
     a: "An SBOM (Software Bill of Materials) is a full ingredient list of every dependency, version, and checksum in your software. It lets you instantly answer 'are we affected?' when a new vulnerability or backdoor is discovered in a library you use."
   - q: "How should I decide which security patches to apply first?"
     a: "Prioritize by real-world risk, not just severity. Patch anything in CISA's Known Exploited Vulnerabilities (KEV) catalog first - those are being attacked right now - then use CVSS and EPSS scores to rank the rest."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 topic: security-privacy-engineering
 topicTitle: Security & Privacy Engineering
 category: Engineering
@@ -39,6 +39,7 @@ order: 5
 icon: "\U0001F512"
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -92,7 +93,7 @@ A **VPN** builds an encrypted tunnel so a remote worker appears to be "inside" t
 
 - An **IDS** (Intrusion Detection System) watches and *alerts* but doesn't block - like a security camera.
 - An **IPS** (Intrusion Prevention System) sits in the traffic's path and can *block* it - like a guard who steps in.
-- A **WAF** (Web Application Firewall) is a filter built specifically for web apps. It stops common attacks like SQL injection and cross-site scripting. The OWASP Core Rule Set is the standard ruleset.
+- A **WAF** (Web Application Firewall) is a filter built specifically for web apps. It stops [common attacks like SQL injection and cross-site scripting](/blog/security-privacy-engineering/05-application-web-security). The OWASP Core Rule Set is the standard ruleset.
 
 One honest caveat: a WAF buys time, it doesn't cure the problem. It's a bandage over vulnerable code, not a replacement for fixing the code.
 
@@ -131,14 +132,14 @@ The trap is assuming "the cloud is secure" and quietly skipping *your* half. In 
 
 ## Identity is the new perimeter
 
-In the cloud, the old idea of a network "edge" you can defend mostly dissolves. What matters now is **identity** - who can do what. **IAM** (Identity and Access Management) is the real control plane.
+In the cloud, the old idea of a network "edge" you can defend mostly dissolves. What matters now is **identity** - who can do what. **IAM** ([Identity and Access Management](/blog/aws-cloud-practitioner-mcq/04-iam-identity-access-management)) is the real control plane.
 
 The guiding rule is **least privilege**: give every person and service the minimum access they need, and nothing more. The common rot looks like this:
 
 - Wildcard policies that effectively say "anyone can do anything to everything."
 - Old, over-powered roles nobody uses anymore but never removed.
 - Long-lived access keys that never expire.
-- No multi-factor authentication on accounts that can do real damage.
+- No [multi-factor authentication](/blog/security-privacy-engineering/04-authentication-authorization) on accounts that can do real damage.
 
 The fix: prefer **short-lived, auto-expiring credentials** over permanent static keys, and require MFA on every privileged identity. A credential that expires in an hour is far less useful to a thief than one that works forever.
 
@@ -211,11 +212,11 @@ A WAF buys time against attacks. It does not fix the underlying vulnerable code 
 Start with the moves that close the biggest gaps for the least effort:
 
 1. **Audit your shared-responsibility half.** List your data, access, network settings, and patching. Assume the provider does none of it for you.
-2. **Lock down public access.** Confirm no storage bucket is publicly readable. Keep "Block Public Access" on by default.
+2. **Lock down public access.** Confirm no [storage bucket](/blog/aws-cloud-practitioner-mcq/10-amazon-s3-object-storage) is publicly readable. Keep "Block Public Access" on by default.
 3. **Enforce least privilege and MFA.** Remove wildcard permissions and unused roles. Require MFA on every account that can do damage.
 4. **Switch to short-lived credentials.** Replace permanent static keys with auto-expiring ones wherever you can.
 5. **Get secrets out of code.** Move them into a secrets manager and add pre-commit secret scanning so leaks are caught before they land.
-6. **Scan before you deploy.** Run image scanning, infrastructure-as-code scanning, and dependency checks inside your build pipeline - not after.
+6. **Scan before you deploy.** Run image scanning, infrastructure-as-code scanning, and dependency checks [inside your build pipeline](/blog/security-privacy-engineering/09-secure-sdlc-devsecops) - not after.
 7. **Build an SBOM and sign your artifacts.** Know exactly what's in your software and prove it wasn't tampered with.
 8. **Patch by real-world risk.** Apply anything in the CISA Known Exploited Vulnerabilities catalog first - those are under active attack right now.
 9. **Segment aggressively.** Wall off networks and Kubernetes pods with a default-deny stance so one breach can't spread.

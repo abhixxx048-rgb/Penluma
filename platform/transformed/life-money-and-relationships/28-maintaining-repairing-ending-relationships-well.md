@@ -44,7 +44,7 @@ faq:
     a: Usually not. Most fading relationships just need quiet distancing, replying
       more slowly and narrowing the scope. Save the direct conversation for ties
       that are actively harmful.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources: []

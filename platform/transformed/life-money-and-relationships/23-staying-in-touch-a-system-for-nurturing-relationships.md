@@ -48,7 +48,7 @@ faq:
       Because nothing prompts you to reach out. A connection has no alarm that
       goes off when it goes cold, so it quietly slides. A system replaces the
       reminder your memory cannot provide.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: life-money-and-relationships

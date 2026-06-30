@@ -55,14 +55,15 @@ faq:
       Make it timely, specific, and genuine. "Great job" is weak. Naming the exact
       action and its impact is strong. Connecting people to the real human their
       work helped is recognition's most powerful form.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
 A manager once handed out the biggest bonuses in company history and watched, baffled, as morale dropped. People did not work harder. Some of the best ones quietly started looking for new jobs.
 
-If you believe motivation is simple - pay people more, they work harder - the human mind is about to surprise you. For routine, mechanical tasks, money works beautifully. But for the thinking, creative, problem-solving work most of us do now, the things that truly move people are quieter and easy to miss. This is what decades of research actually say about what drives people at work.
+If you believe motivation is simple - pay people more, they work harder - the human mind is about to surprise you. For routine, mechanical tasks, money works beautifully. But for the thinking, creative, problem-solving work most of us do now, the things that truly move people are quieter and easy to miss. This is what decades of research actually say about [what drives people at work](/blog/psychology-of-decisions/04-what-people-really-want-needs-motivation-reward).
 
 ## Why this matters
 
@@ -97,7 +98,7 @@ The most striking evidence that rewards can *hurt* creative work comes from a pu
 
 You are handed a candle, a box of tacks, and matches, and asked to fix the candle to a wall so the wax does not drip on the floor. The clever solution is to empty the box of tacks and use the empty box itself as a little shelf. Most people miss it, because they see the box only as a container for tacks.
 
-Here is the twist. When researchers offered a cash reward for solving it fast, people got *slower*, not faster. The reward narrowed their focus and squeezed out the wide, playful thinking the puzzle needed. But when they ran a simpler version - tacks already dumped out, solution obvious - the reward *did* help.
+Here is the twist. When researchers offered a cash reward for solving it fast, people got *slower*, not faster. The reward narrowed their focus and squeezed out the [wide, playful thinking](/blog/clear-thinking-and-expression/13-what-creativity-actually-is-recombination-not-magic) the puzzle needed. But when they ran a simpler version - tacks already dumped out, solution obvious - the reward *did* help.
 
 The lesson: incentives sharpen focus. That is wonderful for clear, mechanical tasks and terrible for creative ones.
 
@@ -168,7 +169,7 @@ Safety without standards is a cozy comfort zone where nothing improves. Safety *
 
 People do not judge their pay or treatment in absolute terms. They judge it by *comparison*.
 
-**Equity theory** says motivation depends on whether the ratio of what you put in (effort, skill, hours) to what you get out (pay, recognition, growth) feels fair *compared to others doing similar work*.
+**[Equity theory](/blog/economics-from-first-principles/31-behavioral-economics-how-psychology-shapes-the-economy)** says motivation depends on whether the ratio of what you put in (effort, skill, hours) to what you get out (pay, recognition, growth) feels fair *compared to others doing similar work*.
 
 When people sense unfairness, the tension pushes them to restore balance: they ask for a raise, quietly dial back effort, grow resentful, or quit.
 
@@ -224,4 +225,4 @@ If you remember one thing, remember this: for modern work, people are driven far
 
 So before you reach for another bonus, try the harder and cheaper thing first: give someone control, notice their work out loud, and make it safe to tell you the truth.
 
-And here is the question that opens the next door. If feeling *seen* and *in control* moves us this much at work, how much of our everyday decisions - what we buy, who we trust, how hard we try - is quietly steered by the same hidden levers? That is where the psychology of decisions gets really interesting.
+And here is the question that opens the next door. If feeling *seen* and *in control* moves us this much at work, how much of our everyday decisions - [what we buy](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy), who we trust, how hard we try - is quietly steered by the same hidden levers? That is where [the psychology of decisions](/blog/psychology-of-decisions/01-what-psychology-is-and-why-rational-people-decide-irrationally) gets really interesting.

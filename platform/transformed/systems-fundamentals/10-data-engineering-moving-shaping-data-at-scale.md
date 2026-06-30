@@ -23,9 +23,10 @@ category: Engineering
 date: '2026-06-21'
 order: 9
 icon: ⚙️
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 faq:
   - q: What is data engineering in simple terms?
     a: Data engineering is the craft of building the "plumbing" that moves, cleans, combines, and delivers data. The product it ships isn't a screen or feature - it's a trustworthy, on-time, well-shaped dataset that analysts and machine-learning models can rely on.
@@ -141,11 +142,11 @@ Picture the lakehouse as a layer cake, read bottom to top:
 
 There's a deep idea here, made famous by Martin Kleppmann in *Designing Data-Intensive Applications*: **an append-only, ordered log unifies batch and streaming**. A "log" here means a record book you only ever add to the end of, never edit.
 
-A *batch is just a bounded slice of a stream*. If every change is an immutable, ordered, **replayable** event in a durable log, then real-time consumers and historical reprocessing can run the *exact same logic*. You just choose where in the log to start reading.
+A *batch is just a bounded slice of a stream*. If every change is an immutable, ordered, **replayable** event in a [durable log](/blog/distributed-systems/03-replicated-state-machines-the-log), then real-time consumers and historical reprocessing can run the *exact same logic*. You just choose where in the log to start reading.
 
 ### Kafka basics - the log in practice
 
-Kafka is a **distributed, durable, append-only commit log**. Unlike a traditional queue, messages are *not* deleted when read - they're kept so many readers can re-read them.
+Kafka is a **distributed, durable, append-only commit log**. Unlike a [traditional queue](/blog/system-design/12-messaging-and-event-driven), messages are *not* deleted when read - they're kept so many readers can re-read them.
 
 - **Topic** - a named stream of records, like "orders."
 - **Partition** - a topic is split into ordered shards. Order is guaranteed only *within* a partition, never across the whole topic. Partitions are the unit of parallelism. Records with the same key (say, the same customer ID) always land in the same partition, so per-customer order is preserved.
@@ -162,7 +163,7 @@ Topic "orders"
 
 An offset is like a bookmark in a book that's never thrown away. The book - the log - keeps all its pages forever. If you crash before saving your bookmark, you simply reopen to the last saved page and re-read. That re-reading is exactly where duplicates come from.
 
-Which brings us to **delivery semantics**. Kafka's default is **at-least-once**: a consumer processes a record, *then* saves (commits) its offset. Crash in between, and that record gets delivered again and **processed twice**. The practical consequence is enormous: because duplicates *can* happen, everything downstream must be idempotent.
+Which brings us to **delivery semantics**. Kafka's default is **at-least-once**: a consumer processes a record, *then* saves (commits) its offset. Crash in between, and that record gets delivered again and **processed twice**. The practical consequence is enormous: because duplicates *can* happen, everything downstream must be [idempotent](/blog/system-design/11-distributed-transactions-and-idempotency).
 
 ## Common misconceptions
 
@@ -171,7 +172,7 @@ A few myths cause real outages and wrong dashboards. Worth clearing up.
 - **"I'll just run analytics on the production database."** The storage layout is wrong (row, not columnar), *and* the giant scan steals CPU and memory from live customer transactions, slowing your whole app. Copy the data into an OLAP system and query there.
 - **"Iceberg and Delta replace Parquet."** They don't. They store Parquet files and wrap them in a metadata and transaction layer. File format and table format are two different jobs.
 - **"Kafka guarantees global ordering and exactly-once delivery."** Order holds only within a partition - use a key to keep related events together. And at-least-once means you *will* see duplicates. Design for them.
-- **"Streaming is just the modern, better way to do everything."** Streaming adds real operational cost. If a nightly batch job meets your latency requirement, use it. Reach for streaming only when low latency is genuinely needed.
+- **"Streaming is just the modern, better way to do everything."** [Streaming](/blog/system-design/14-stream-processing-realtime) adds real operational cost. If a nightly batch job meets your latency requirement, use it. Reach for streaming only when low latency is genuinely needed.
 
 ## How to build pipelines that survive production
 
@@ -214,4 +215,4 @@ There's a subtle failure mode worth naming: **training/serving skew**. If you co
 
 If you remember one thing, make it this: **the job of data engineering is to deliver data you can trust, on time, in the right shape** - and almost every technique here exists to protect that trust. Idempotency protects it against retries. Replay protects it against bugs. Schema checks protect it against silent drift. Quality tests protect it against bad numbers reaching a human or a model.
 
-The deeper you go, the more one idea keeps reappearing: the humble append-only log. It's the thread connecting batch and streaming, the reason backfills are safe, and the quiet backbone of reproducible AI. So here's a question to chew on next - if a log of immutable events can rebuild any table on demand, why do we still store the "current state" at all? That question leads straight into event sourcing and CQRS, where the log isn't just the pipeline. It's the source of truth.
+The deeper you go, the more one idea keeps reappearing: the humble append-only log. It's the thread connecting batch and streaming, the reason backfills are safe, and the quiet backbone of reproducible AI. So here's a question to chew on next - if a log of immutable events can rebuild any table on demand, why do we still store the "current state" at all? That question leads straight into [event sourcing and CQRS](/blog/system-design/13-event-sourcing-and-cqrs), where the log isn't just the pipeline. It's the source of truth.

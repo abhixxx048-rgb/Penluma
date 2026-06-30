@@ -46,9 +46,10 @@ faq:
       Less than half the time. Research from Gong found that top reps talk about
       46% of a discovery call and listen 54%. If you have been speaking for more
       than 30 seconds, stop and ask a question.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 topic: sales-customer-development
 topicTitle: Sales & Customer Development
 category: Money & Business
@@ -60,7 +61,7 @@ sources: []
 
 The best salespeople barely talk. On a recorded analysis of thousands of real sales calls, the top performers spent more time listening than speaking, while the strugglers filled the air with their own voice. If "sales framework" makes you picture someone reading a pushy script at you, here is the surprise: the best frameworks are the opposite of a script. They are simply a list of things worth finding out, in a sensible order.
 
-Think of a framework as a checklist a doctor keeps in their head, not a speech they recite. A calm founder asks questions. A nervous one pitches. The frameworks below just help you ask better questions and remember what matters.
+Think of a framework as a checklist a doctor keeps in their head, not a speech they recite. A calm founder asks questions. A nervous one pitches. The frameworks below just help you [ask better questions](/blog/sales-customer-development/05-asking-questions-without-leading) and remember what matters.
 
 ## Why this matters
 
@@ -77,9 +78,9 @@ Here is a useful analogy. A framework is like a recipe's ingredient list. It tel
 
 ## The one rule that beats every framework: talk less
 
-Gong, a company that records and analyzes huge numbers of real sales calls, found that on discovery calls the best-performing reps talk about **46% of the time** and listen the other 54%. The worst performers talk around 72% of the time.
+Gong, a company that records and analyzes huge numbers of real sales calls, found that on [discovery calls](/blog/sales-customer-development/07-running-a-great-discovery-call-start-to-finish) the best-performing reps talk about **46% of the time** and listen the other 54%. The worst performers talk around 72% of the time.
 
-So the single biggest skill in selling is closing your own mouth. Every framework below is really just a way to spend your listening time well.
+So the single biggest skill in selling is [closing your own mouth](/blog/sales-customer-development/06-active-listening-and-reading-the-conversation). Every framework below is really just a way to spend your listening time well.
 
 A simple rule to live by: if you have been speaking for more than 30 seconds, stop and ask a question. Aim to talk less than half the call.
 
@@ -135,7 +136,7 @@ Notice what happened at the end. The owner asked *you* to pitch. That is the goa
 
 ## Qualification: is this deal even real?
 
-Once you understand the problem, you check whether the buyer can actually buy. Three names you will hear are BANT, MEDDIC, and MEDDPICC.
+Once you understand the problem, you [check whether the buyer can actually buy](/blog/sales-customer-development/09-qualifying-choosing-who-deserves-your-time). Three names you will hear are BANT, MEDDIC, and MEDDPICC.
 
 ### BANT: the simple old-school checklist
 
@@ -207,4 +208,4 @@ The **Sandler Pain Funnel**, from **David Sandler**, is a sequence of gently dee
 
 If you remember one thing, remember this: a framework is a lens, not a script. The letters exist to keep *you* from forgetting something important, never to turn a human conversation into a form-filling exercise. Master SPIN, listen more than you talk, and let the buyer's own words about their pain do the selling for you.
 
-There is a deeper question lurking underneath all of this, though. What happens *after* you uncover a giant, expensive problem and the buyer still says no? That is rarely about logic. It is about fear, status, and the quiet cost of change, and it is where the real art of selling begins.
+There is a deeper question lurking underneath all of this, though. What happens *after* you uncover a giant, expensive problem and [the buyer still says no](/blog/sales-customer-development/12-hearing-no-turning-rejection-into-learning)? That is rarely about logic. It is about fear, status, and the quiet cost of change, and it is where the real art of selling begins.

@@ -56,14 +56,15 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 11
 icon: "\U0001F4A1"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 sources: []
+linked: true
 ---
 
 You sit down to come up with ideas, stare at the blank page, and wait for lightning to strike. Sometimes it does. Usually it doesn't - and you walk away convinced you're "just not that creative."
 
-Here's the expensive lie buried in that moment: the belief that ideas arrive by luck. They don't. Creativity is a skill with repeatable moves, and expert innovators carry a toolbox they reach into on demand, the way a carpenter reaches for the right chisel. This article hands you that toolbox.
+Here's the expensive lie buried in that moment: the belief that ideas arrive by luck. They don't. [Creativity is a skill with repeatable moves](/blog/thinking-skills/11-what-creativity-really-is-demystified), and expert innovators carry a toolbox they reach into on demand, the way a carpenter reaches for the right chisel. This article hands you that toolbox.
 
 ## Why this matters
 
@@ -151,7 +152,7 @@ The facilitator announces which hat is "on" for the next few minutes, and everyo
 
 ## 5. Forced connections: combining the uncombinable
 
-**Combinatorial creativity** is the idea that almost all new ideas are combinations of old ones. Steve Jobs put it plainly: "Creativity is just connecting things." The catch is that your brain keeps combining the *same* familiar things. Forced connections jam an unrelated thing into the mix to stretch that habit.
+**[Combinatorial creativity](/blog/clear-thinking-and-expression/13-what-creativity-actually-is-recombination-not-magic)** is the idea that almost all new ideas are combinations of old ones. Steve Jobs put it plainly: "Creativity is just connecting things." The catch is that your brain keeps combining the *same* familiar things. Forced connections jam an unrelated thing into the mix to stretch that habit.
 
 How to run it:
 
@@ -167,7 +168,7 @@ Say the problem is improving employee onboarding, and your random word is *bambo
 
 ## 6. Analogical thinking and biomimicry: borrow a proven answer
 
-**Analogical thinking** asks: where has nature or another industry already solved a version of my problem? Instead of inventing from scratch, you transfer a tested solution across domains.
+**[Analogical thinking](/blog/clear-thinking-and-expression/15-analogical-lateral-thinking-connecting-different-domains)** asks: where has nature or another industry already solved a version of my problem? Instead of inventing from scratch, you transfer a tested solution across domains.
 
 **Biomimicry** is its most literal form - borrowing strategies evolution has already refined over millions of years:
 
@@ -201,7 +202,7 @@ A good HMW question isn't too narrow (which smuggles in a single solution) or to
 
 ## 8. First principles: stripping away inherited assumptions
 
-**First-principles thinking** means breaking a problem down to its most basic, undeniable truths and reasoning back up. The move is to stop accepting how something "has to" be done and ask: what is this actually trying to accomplish, and what would I build if I started from scratch?
+**[First-principles thinking](/blog/thinking-skills/03-first-principles-thinking-reasoning-from-the-ground-up)** means breaking a problem down to its most basic, undeniable truths and reasoning back up. The move is to stop accepting how something "has to" be done and ask: what is this actually trying to accomplish, and what would I build if I started from scratch?
 
 Elon Musk applied this to rockets. The aerospace industry assumed a rocket cost tens of millions of dollars. Musk asked what rockets are actually *made of* - aluminum, titanium, copper, carbon fiber - and found the raw materials were about 2% of the finished price. Almost all the cost lived in the *assumption* that rockets must be one-time-use custom builds. Dissolving that assumption opened the path to reusable rockets and a roughly 10× cost cut.
 
@@ -232,7 +233,7 @@ To use constraints on purpose, force a limit:
 
 The question you ask determines the answer space you search. Most people accept the first framing they stumble into. Better thinkers treat the question itself as the first design problem. Four moves:
 
-1. **Go upstream.** Ask "Why does this problem exist?" five times (the "5 Whys") to find a root cause sitting two levels above where you started.
+1. **Go upstream.** Ask "Why does this problem exist?" five times (the ["5 Whys"](/blog/clear-thinking-and-expression/12-analysis-frameworks-first-principles-mece-5-whys-second-order-thinking)) to find a root cause sitting two levels above where you started.
 2. **Invert.** Instead of "How do we get more customers?" ask "What would drive customers away?" - then reverse the findings.
 3. **Remove the assumed constraint.** "What would we do if the thing we treat as fixed could change?" Often it isn't fixed at all.
 4. **Change the beneficiary.** "How would we solve this to delight the employee, not the customer?" Different beneficiary, different solution space.
@@ -262,4 +263,4 @@ Two habits make this stick. First, keep an **idea parking lot** - a running list
 
 If you remember one thing, make it this: pick a technique *before* you start, not after you get stuck. The technique is the scaffold, your expertise is the raw material, and novelty is what emerges where they meet.
 
-Carry three of these as defaults - say, SCAMPER, "How Might We," and forced connections - and you'll never face a blank page unarmed again. Generating options, though, is only half the job. Once you have ten ideas on the table, you face a harder question: how do you tell the genuinely good one from the merely shiny one? That's where decision-making and evaluation techniques take over - and that's a craft worth learning next.
+Carry three of these as defaults - say, SCAMPER, "How Might We," and forced connections - and you'll never face a blank page unarmed again. Generating options, though, is only half the job. Once you have ten ideas on the table, you face a harder question: how do you tell the genuinely good one from the merely shiny one? That's where [decision-making and evaluation techniques](/blog/psychology-of-decisions/21-making-better-personal-decisions-a-debiasing-toolkit) take over - and that's a craft worth learning next.

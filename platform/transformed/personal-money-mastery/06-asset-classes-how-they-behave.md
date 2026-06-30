@@ -30,7 +30,7 @@ faq:
     a: No. They are available only under the old tax regime. The new regime is now the default and removes most deductions, so choose your regime first, then plan your tax saving.
   - q: How does inflation affect "safe" money?
     a: A 7% deposit taxed at 30% leaves about 4.9%. Subtract 5% inflation and your real return turns negative. Cash held for years quietly loses buying power.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 topic: personal-money-mastery
 topicTitle: Personal Money Mastery
 category: Money & Business

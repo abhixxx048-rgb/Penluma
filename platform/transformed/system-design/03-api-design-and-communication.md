@@ -23,9 +23,10 @@ category: Engineering
 date: '2026-06-15'
 order: 3
 icon: "\U0001F3D7️"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 faq:
   - q: "What is the difference between REST, GraphQL, and gRPC?"
@@ -72,7 +73,7 @@ Before you argue about REST versus GraphQL, separate two decisions that people c
 
 The dangerous combination is hidden synchronous coupling. If service A blocks while waiting on service B, then B's slowness becomes A's slowness, and B's outage becomes A's outage. You've chained their fates together without meaning to.
 
-**Rule of thumb:** Use synchronous request/response when the caller truly needs the answer to continue, like loading a product page. Use asynchronous events when the work can happen out of band, like sending a receipt email, generating a PDF, or rebuilding a search index. The email doesn't need to finish before you tell the user "order placed."
+**Rule of thumb:** Use synchronous request/response when the caller truly needs the answer to continue, like loading a product page. Use [asynchronous events](/blog/system-design/12-messaging-and-event-driven) when the work can happen out of band, like sending a receipt email, generating a PDF, or rebuilding a search index. The email doesn't need to finish before you tell the user "order placed."
 
 ## REST, GraphQL, gRPC, and tRPC: who wins when
 
@@ -91,7 +92,7 @@ With GraphQL, the **client** writes a query describing exactly which fields it w
 - **Over-fetching**: downloading a fat object when you only needed the name.
 - **Under-fetching**: making five separate calls just to fill one screen.
 
-GraphQL shines when one backend serves many clients with different appetites, like a data-hungry web dashboard and a bandwidth-conscious mobile app, or when a single screen pulls from several sources. The cost: HTTP caching gets hard (everything is one POST to one URL), and a careless setup can quietly fire one database query per item in a list. GitHub's v4 API is GraphQL.
+GraphQL shines when one backend serves many clients with different appetites, like a data-hungry web dashboard and a bandwidth-conscious mobile app, or when a single screen pulls from several sources. The cost: [HTTP caching](/blog/system-design/06-caching-deep) gets hard (everything is one POST to one URL), and a careless setup can quietly fire one database query per item in a list. GitHub's v4 API is GraphQL.
 
 ### gRPC: for services talking to services
 
@@ -130,7 +131,7 @@ Two properties of these verbs quietly drive everything else:
 - **Safe** means no side effects. A GET never changes anything.
 - **Idempotent** means running it ten times has the same effect as running it once. PUT and DELETE qualify; POST usually does not.
 
-These matter because they decide what's safe to retry. GET, PUT, and DELETE can be repeated freely. POST cannot, which is the whole reason idempotency keys exist (more on that below).
+These matter because they decide what's safe to retry. GET, PUT, and DELETE can be repeated freely. POST cannot, which is the whole reason [idempotency keys](/blog/system-design/11-distributed-transactions-and-idempotency) exist (more on that below).
 
 ### Pick the precise status code
 
@@ -237,7 +238,7 @@ A stable error shape lets the client branch on `type` (a fixed URI, not a transl
 
 Three patterns show up constantly once you have more than one service.
 
-**API gateway:** a single front door for many backend services. It handles the cross-cutting chores once, so each service doesn't reinvent them: TLS, authentication, rate limiting, routing, logging. Keep it dumb. The moment business logic creeps into the gateway, it becomes a tangled "god object" everyone fears to touch.
+**API gateway:** a single front door for many backend services. It handles the cross-cutting chores once, so each service doesn't reinvent them: TLS, authentication, [rate limiting](/blog/system-design/16-rate-limiting-and-resiliency), routing, logging. Keep it dumb. The moment business logic creeps into the gateway, it becomes a tangled "god object" everyone fears to touch.
 
 **Backend-for-Frontend (BFF):** a thin, per-client API layer. Your web app and mobile app want different things. Mobile wants fewer round-trips and smaller payloads; web can afford chattier calls. Instead of one bloated API serving both badly, each frontend gets its own slim BFF that aggregates and tailors data for it.
 
@@ -305,4 +306,4 @@ When you design or review an API, walk this checklist:
 
 If you remember one thing, make it this: **networks are ambiguous, so design every operation to be safe to retry.** That single principle is the thread running through idempotency keys, status code discipline, additive versioning, and at-least-once webhooks. You're not preventing failure, because failure is guaranteed. You're making failure boring.
 
-The patterns here decide *how* your services talk. The next question is where all those `orders` and `refunds` and `exports` actually live: how a database stores them, indexes them, and finds one row among billions in milliseconds. That's where the real performance story begins, and it's the topic worth reading next.
+The patterns here decide *how* your services talk. The next question is where all those `orders` and `refunds` and `exports` actually live: how [a database stores them, indexes them](/blog/system-design/04-databases-internals), and finds one row among billions in milliseconds. That's where the real performance story begins, and it's the topic worth reading next.

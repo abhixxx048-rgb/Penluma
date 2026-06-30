@@ -29,8 +29,9 @@ faq:
     a: Hick's Law states that the more choices you show, the longer a decision takes. The practical takeaway is to trim options or reveal them in stages so users decide faster.
   - q: What is a dark pattern?
     a: A dark pattern is a design that tricks or pressures users into actions against their own interest - like a hidden unsubscribe link or a pre-checked box that opts you into something. It's the deliberate misuse of these very principles.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 topic: product-sense-empathy
 topicTitle: Product Sense & Empathy
 category: Thinking & Decisions
@@ -46,7 +47,7 @@ Almost every confusing app, form, and checkout flow fails for reasons that alrea
 
 ## Why this matters
 
-You can't fix what you can't name. When a teammate says "this screen feels off," the conversation goes nowhere. When someone says "the signifiers are weak and the cognitive load is too high," you suddenly know exactly what to change.
+You can't fix what you can't name. When a teammate says "this screen feels off," the conversation goes nowhere. When someone says "the signifiers are weak and the [cognitive load](/blog/product-sense-empathy/07-cognitive-load-why-simple-feels-effortless) is too high," you suddenly know exactly what to change.
 
 A shared vocabulary turns gut feelings into decisions you can debate, test, and improve. It's also the fastest way to grow your own product sense, because each term is a lens that reveals a problem you used to walk right past.
 
@@ -58,9 +59,9 @@ These are the big-picture ideas. Everything else is detail underneath them.
 
 **Product sense** is the skill of judging what to build and why it matters to a real person - before and during the build. It's taste plus judgment. Not "can we make this?" but "should we, and for whom?"
 
-**User empathy** is the ability to see and feel a product from the user's point of view - their goal, their confusion, their fear - instead of your own. You wrote the code, so you know where the button is. They don't. Empathy is remembering that.
+**[User empathy](/blog/product-sense-empathy/03-user-empathy-seeing-through-the-user-s-eyes)** is the ability to see and feel a product from the user's point of view - their goal, their confusion, their fear - instead of your own. You wrote the code, so you know where the button is. They don't. Empathy is remembering that.
 
-**Jobs To Be Done (JTBD)** is the idea that people "hire" a product to make progress in their lives. Nobody wants a quarter-inch drill; they want a quarter-inch hole - and really, a shelf on the wall. Design for the goal, not the feature.
+**[Jobs To Be Done (JTBD)](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress)** is the idea that people "hire" a product to make progress in their lives. Nobody wants a quarter-inch drill; they want a quarter-inch hole - and really, a shelf on the wall. Design for the goal, not the feature.
 
 **Mental model** is the picture in a user's head of how something works. Software feels obvious when it matches that picture and confusing when it fights it. People expect a trash can to hold deleted things until they empty it, so an app that deletes instantly violates the model and scares them.
 
@@ -121,7 +122,7 @@ Working isn't the same as feeling good. These terms cover the emotional layer.
 
 Some terms name the traps. Knowing them is how you stop falling in.
 
-**Dark patterns** are designs that trick or pressure users into acting against their own interest - the hidden unsubscribe link, the sneaky pre-checked box, the "No thanks, I hate saving money" decline button. They work short-term and corrode trust long-term.
+**[Dark patterns](/blog/product-sense-empathy/15-common-mistakes-anti-patterns-pitfalls)** are designs that trick or pressure users into acting against their own interest - the hidden unsubscribe link, the sneaky pre-checked box, the "No thanks, I hate saving money" decline button. They work short-term and corrode trust long-term.
 
 **The curse of knowledge** is the trap behind most of them by accident: once you know how something works, you can't imagine not knowing. Experts go blind to what confuses beginners. You designed the flow, so it's obvious *to you* - which is exactly why you're the worst judge of it.
 
@@ -129,9 +130,9 @@ Some terms name the traps. Knowing them is how you stop falling in.
 
 Naming the concepts is step one. Here's how to actually catch them in your own product.
 
-1. **Run a heuristic evaluation.** Walk through your interface against a short checklist of usability rules of thumb (Jakob Nielsen's ten heuristics are the classic set). You'll catch obvious problems in an afternoon without a formal study.
+1. **Run a [heuristic evaluation](/blog/product-sense-empathy/10-evaluating-usability-nielsen-rsquo-s-10-heuristics).** Walk through your interface against a short checklist of usability rules of thumb (Jakob Nielsen's ten heuristics are the classic set). You'll catch obvious problems in an afternoon without a formal study.
 2. **Go dogfooding.** Use your own product the way a real user would - sign up with a fresh account, complete a real task, feel the rough edges firsthand. Pain you experience is pain you'll fix.
-3. **Interview with The Mom Test.** Ask users about their real past behavior, never about your idea. "When did you last do X, and what happened?" gets honest answers, where "Would you use my app?" gets polite lies. The name comes from a simple test: ask questions so grounded in facts that even your mom couldn't accidentally mislead you.
+3. **Interview with [The Mom Test](/blog/product-sense-empathy/13-doing-user-research-interviews-the-mom-test-observation).** Ask users about their real past behavior, never about your idea. "When did you last do X, and what happened?" gets honest answers, where "Would you use my app?" gets polite lies. The name comes from a simple test: ask questions so grounded in facts that even your mom couldn't accidentally mislead you.
 4. **Audit one screen at a time.** Pick a single screen and ask: What does this *afford*, and is there a *signifier* for it? What's the cognitive load? How many choices (Hick's Law)? Where are the gulfs?
 5. **Check your defaults.** For every setting, ask what most people want - then make that the default and let the rest opt in.
 

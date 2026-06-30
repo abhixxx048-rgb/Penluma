@@ -52,9 +52,10 @@ faq:
       It is a cheaper, simpler, initially worse product that serves the low end
       or a new market, then improves until it is good enough for everyone and
       displaces the incumbent. Netflix versus Blockbuster is the classic case.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 topic: ten-disciplines
 topicTitle: Ten Disciplines
 category: Thinking & Decisions
@@ -122,7 +123,7 @@ Now connect strategy to money. There are two separate quantities, and beginners 
 - **Value created** is the whole pie: the customer's willingness to pay minus the supplier's cost.
 - **Value captured** is your slice: the price you charge minus your cost.
 
-Here is the uncomfortable truth: **a company can create enormous value and capture almost none of it.** Creating value gets you in the game. Capturing value is how you survive and grow.
+Here is the uncomfortable truth: **a company can create enormous value and capture almost none of it.** Creating value gets you in the game. [Capturing value](/blog/how-to-make-money/02-value-creation-vs-value-capture) is how you survive and grow.
 
 **Who got rich from the personal computer?** PCs created staggering value for the whole world. But the firms that *captured* most of the profit were not the PC makers, who fought a brutal price war on near-identical boxes. It was Microsoft (the operating system) and Intel (the chips), the "Wintel" pair. They controlled the two components everyone needed and nobody could substitute, so they kept the lion's share of value the whole industry created.
 
@@ -130,7 +131,7 @@ The trap to avoid: building something users love but that anyone can clone or th
 
 ## Reading the industry: Porter's Five Forces
 
-We tend to credit or blame management for profits. The bigger truth is that **industry structure** drives most of the difference. Some industries are inherently rich; others are brutal no matter how well you run your company.
+We tend to credit or blame management for profits. The bigger truth is that **[industry structure](/blog/ten-disciplines/05-markets-incentives-trade-and-when-markets-fail)** drives most of the difference. Some industries are inherently rich; others are brutal no matter how well you run your company.
 
 Porter's **Five Forces** is the tool for judging how much profit an industry will *allow* you to keep. Picture the industry's profit as air inside a balloon, with five hands squeezing it. The harder each presses, the less profit is left.
 
@@ -186,11 +187,11 @@ The core numbers:
 
 Spend twenty dollars to win a customer worth sixty: good business. Spend sixty to win a customer worth twenty: you bleed money, and scaling bleeds you faster. As rough rules of thumb, subscription software often aims for an **LTV-to-CAC ratio near 3 to 1**, with CAC payback under roughly 12 months for small-business sales (up to about 18 for big enterprise deals).
 
-Beware **vanity unit economics**: inflating LTV by using revenue instead of gross margin or ignoring churn, understating CAC by leaving out salaries and overhead, or quoting a "blended" CAC that mixes free organic customers with paid ones to hide that *paid* acquisition loses money. Define the unit and prove its economics *before* you scale. Profitable unit economics is the floor everything else stands on.
+Beware **vanity unit economics**: inflating LTV by using revenue instead of gross margin or ignoring churn, understating CAC by leaving out salaries and overhead, or quoting a "blended" CAC that mixes free organic customers with paid ones to hide that *paid* acquisition loses money. Define the unit and prove its economics *before* you scale. [Profitable unit economics](/blog/business-financial-literacy/06-unit-economics-do-you-make-money-on-each-sale) is the floor everything else stands on.
 
 ## Moats: why advantage lasts
 
-Competitive advantage that gets copied next quarter is barely worth having. A firm truly has an edge only when it earns *persistently* higher returns than rivals. One good year is luck. Advantage is the pattern across the long run, like a poker player who wins over hundreds of hands rather than one big pot.
+[Competitive advantage](/blog/ten-disciplines/13-what-strategy-really-is-advantage-moats-and-positioning) that gets copied next quarter is barely worth having. A firm truly has an edge only when it earns *persistently* higher returns than rivals. One good year is luck. Advantage is the pattern across the long run, like a poker player who wins over hundreds of hands rather than one big pot.
 
 A **moat** is a durable structural barrier that protects your profits over time. Warren Buffett's image is a business as "an economic castle protected by a moat" that keeps competitors out. The crucial distinction: a *benefit* (low price, a cool feature) attracts customers but invites copying. A *moat* is what *stops* rivals from copying. Strategist Hamilton Helmer puts it sharply in *7 Powers*: **Power = Benefit + Barrier.** No barrier, no power.
 
@@ -265,7 +266,7 @@ Run strategy as a loop. Work through these steps in order:
 6. **Build a moat.** Identify which of the seven powers you can own: network effects, switching costs, scale, brand, and the rest. A benefit without a barrier is temporary.
 7. **Consider sidestepping.** Could an ERRC grid open uncontested blue-ocean space? And watch your low end, because the threat that kills you usually looks too small to bother with today.
 8. **Always ask "then what?"** After every move, game out how each player responds, and what happens next round.
-9. **Execute and allocate capital.** Cascade strategy into a *few* priorities with OKRs (an ambitious Objective plus 2 to 4 measurable Key Results), give each a single named owner, review on a regular cadence, and actually move money and people to it. Treat capital allocation, where the company's cash goes, as the highest-leverage decision: compare every use of cash against its risk-adjusted return, and default to the best ROIC, not to growth or empire-building.
+9. **Execute and allocate capital.** Cascade strategy into a *few* priorities with OKRs (an ambitious Objective plus 2 to 4 measurable Key Results), give each a single named owner, review on a regular cadence, and actually move money and people to it. Treat [capital allocation](/blog/ten-disciplines/15-execution-growth-and-strategic-decision-making-advanced), where the company's cash goes, as the highest-leverage decision: compare every use of cash against its risk-adjusted return, and default to the best ROIC, not to growth or empire-building.
 
 ## Conclusion
 

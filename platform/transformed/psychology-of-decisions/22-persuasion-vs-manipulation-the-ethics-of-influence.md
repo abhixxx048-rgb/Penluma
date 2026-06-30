@@ -57,12 +57,13 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 21
 icon: "\U0001F3AF"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
-A doctor and a poisoner study the same body. A locksmith and a burglar study the same lock. And everything you know about how people decide, the anchors, the loss aversion, the social proof, the quiet power of defaults, can be used to help someone or to hurt them.
+A doctor and a poisoner study the same body. A locksmith and a burglar study the same lock. And everything you know about how people decide, the anchors, the [loss aversion](/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence), the social proof, the quiet power of defaults, can be used to help someone or to hurt them.
 
 So here is the question that decides which one you are: when you influence someone, are you helping them choose, or tricking them into it?
 
@@ -70,7 +71,7 @@ So here is the question that decides which one you are: when you influence someo
 
 You influence people more than you think. You write the sign-up page. You make the sales call. You word the email, set the default, design the checkout. Every one of those moments nudges a real human toward a "yes" or a "no."
 
-The tools are neutral. The same scarcity message that warns an honest customer can also trap a tired one. The same default that builds someone's retirement savings can also auto-renew a subscription they forgot about.
+The tools are neutral. The same scarcity message that warns an honest customer can also trap a tired one. The same [default](/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults) that builds someone's retirement savings can also auto-renew a subscription they forgot about.
 
 Learning the line between persuasion and manipulation protects two things at once: the people you influence, and you. Manipulation tends to win once and burn the relationship. Honest influence compounds into trust, referrals, and a business that lasts. This is a moral argument and a practical one.
 
@@ -100,7 +101,7 @@ Here's how it plays out. You run an online store and show "Only 3 left in stock.
 
 ## The Smuggler and the Detective
 
-Robert Cialdini, who spent a career studying influence, offers the cleanest rule for anyone who does this for a living. Once you know the principles, reciprocity, social proof, authority, scarcity, you can use them in two opposite ways.
+Robert Cialdini, who spent a career studying influence, offers the cleanest rule for anyone who does this for a living. Once you know [the principles, reciprocity, social proof, authority, scarcity](/blog/psychology-of-decisions/10-the-six-levers-of-influence-how-people-get-persuaded), you can use them in two opposite ways.
 
 **The Smuggler counterfeits the principle.** Invents fake scarcity. Buys fake reviews. Fakes authority. Wins in the short term, then gets found out. Nobody deals with a smuggler twice.
 
@@ -162,7 +163,7 @@ Run any decision through these before you ship a page, send a pitch, or close a 
 5. **No exploiting weakness.** Am I helping a clear mind decide, or pouncing on a moment of fear, fatigue, or private vulnerability?
 6. **The long view.** If they fully understood this next month, would they thank me or feel cheated?
 
-One more test from Nir Eyal, useful for anyone building habit-forming products. Ask two questions: *Does this materially improve the user's life?* and *Would I use it myself?* If yes to both, you're a **facilitator**, building something good that you'd happily use. If no to both, you're a **dealer**, peddling pure exploitation. "Would I use this on myself, my parent, my child?" is one of the best ethics detectors ever invented, because it removes the comfortable distance between "users" and real human beings.
+One more test from Nir Eyal, useful for anyone [building habit-forming products](/blog/psychology-of-decisions/17-building-products-people-actually-want). Ask two questions: *Does this materially improve the user's life?* and *Would I use it myself?* If yes to both, you're a **facilitator**, building something good that you'd happily use. If no to both, you're a **dealer**, peddling pure exploitation. "Would I use this on myself, my parent, my child?" is one of the best ethics detectors ever invented, because it removes the comfortable distance between "users" and real human beings.
 
 And when in doubt, add *friction* instead of removing it. A confirmation step before a hard-to-undo action ("This will cancel your plan and delete your saved designs, are you sure?") is the ethical opposite of a roach motel. Slowing someone down to protect them is a sign you're persuading, not manipulating.
 
@@ -172,4 +173,4 @@ Persuasion and manipulation run on the exact same psychology. The only differenc
 
 So before you nudge anyone, ask the one question that contains all the others: *would they still say yes if they saw exactly what I'm doing, and would I be glad I did it this way?*
 
-Here's the unsettling part worth sitting with: the most effective manipulation rarely feels like manipulation from the inside. The smuggler usually believes they're just being clever. Which raises the next question, the one this whole series circles back to: how do you catch yourself when you're the one being fooled by your own good intentions?
+Here's the unsettling part worth sitting with: the most effective manipulation rarely feels like manipulation from the inside. The smuggler usually believes they're just being clever. Which raises the next question, the one this whole series circles back to: how do you catch yourself when you're [the one being fooled by your own good intentions](/blog/psychology-of-decisions/16-understanding-yourself-seeing-your-own-blind-spots)?

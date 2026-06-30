@@ -50,8 +50,9 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 8
 icon: ❤️
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -89,7 +90,7 @@ If it isn't, run it through four options, in order:
 
 1. **Remove it.** Delete the step entirely.
 2. **Defer it.** Push it to later, after the user has value.
-3. **Default it.** Pre-set a sensible value so the user just confirms.
+3. **Default it.** [Pre-set a sensible value](/blog/product-sense-empathy/08-the-make-it-obvious-toolkit-defaults-constraints-discoverability) so the user just confirms.
 4. **Auto-fill it.** Detect or reuse the answer so the user types nothing.
 
 The count is your diagnostic. A flow with 5 screens, 9 decisions, and 14 fields tells you exactly where to dig. Once you can see the toll, you can start removing it.
@@ -106,7 +107,7 @@ Picture a great restaurant. The menu is short and the dishes sound simple. The c
 
 **Progressive disclosure** is an interaction pattern named by Jakob Nielsen in 1995. The idea is simple: show only the primary, essential options by default, and tuck the advanced or rarely used ones behind a "Show more" link, an accordion, or an "Advanced settings" section the user opens only if they need it.
 
-It lowers mental load, makes products faster to learn, and prevents errors. Fewer visible options means fewer wrong choices. Google's homepage is the classic case: one search box up front, advanced search hidden away for the few who want it.
+It lowers [mental load](/blog/product-sense-empathy/07-cognitive-load-why-simple-feels-effortless), makes products faster to learn, and prevents errors. Fewer visible options means fewer wrong choices. Google's homepage is the classic case: one search box up front, advanced search hidden away for the few who want it.
 
 Here's it in practice. On a product form, ask only **Name, Price, and Photo** up front. Put SKU, inventory tracking, SEO description, and variant options behind an "Add more details" expander. About 90% of shop owners will skip it on day one, and that is exactly the point.
 
@@ -125,7 +126,7 @@ Each form field is another small tax on completion, and the drop-off adds up. Th
 
 ## Guest checkout and the forced-account trap
 
-The single most damaging field of all is the one that forces strangers to create an account.
+The single most damaging field of all is the one that [forces strangers to create an account](/blog/product-sense-empathy/15-common-mistakes-anti-patterns-pitfalls).
 
 Baymard found that **24% of US shoppers abandoned a cart in the past quarter purely because the site forced them to register first.** Another ~18% leave because checkout feels "too long or too complicated." Yet 62% of sites still fail to make guest checkout easy to find.
 
@@ -163,7 +164,7 @@ The rule of thumb: short flows fit on one page; long or branching flows deserve 
 
 Teams pick an **activation metric**, a measurable action that predicts long-term use. Facebook's growth team famously used "7 friends in 10 days." Dropbox aimed for one file in one folder on one device. (Treat the exact thresholds as well-known industry lore, not precise science. The principle is what's solid.)
 
-There's a famous story behind this from Clayton Christensen. A fast-food chain couldn't sell more milkshakes by tweaking flavor, until researchers watched buyers and found bored morning commuters "hiring" the shake to make a long, dull drive less boring. Design for the *job* the user came to do, then strip everything that doesn't serve it.
+There's a famous story behind this from Clayton Christensen. A fast-food chain couldn't sell more milkshakes by tweaking flavor, until researchers watched buyers and found bored morning commuters "hiring" the shake to make a long, dull drive less boring. Design for [the *job* the user came to do](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress), then strip everything that doesn't serve it.
 
 ## How to use this
 

@@ -49,14 +49,15 @@ faq:
       Wanting is the craving that pulls you to pursue something; liking is the
       pleasure of actually having it. They use different brain systems, which is
       why you can crave something you do not even enjoy.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
 You think you decide with logic. You almost never do. By the time you "choose" your morning coffee, the restaurant, the job, or the person to trust, the real decision was already made - quietly, emotionally, and below your awareness. Your reasoning mind mostly shows up late, to explain.
 
-That is not a flaw. It is how the machine is built. Once you see the four parts doing the actual work - emotion, dopamine, memory, and attention - the so-called irrational things people do start to make perfect sense.
+That is not a flaw. It is how the machine is built. Once you see the four parts doing the actual work - emotion, dopamine, memory, and attention - [the so-called irrational things people do](/blog/psychology-of-decisions/01-what-psychology-is-and-why-rational-people-decide-irrationally) start to make perfect sense.
 
 ## Why this matters
 
@@ -121,7 +122,7 @@ A slot machine and a social-media feed work the same way. The rewards are *unpre
 
 Now meet the great limiter of conscious thought.
 
-**Working memory** is the small, temporary mental workspace that holds the information you are using *right now* - a phone number you are about to dial, the three options you are comparing. It is the engine of slow, deliberate thinking, and it is tiny.
+**[Working memory](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits)** is the small, temporary mental workspace that holds the information you are using *right now* - a phone number you are about to dial, the three options you are comparing. It is the engine of slow, deliberate thinking, and it is tiny.
 
 In 1956, George Miller wrote a famous paper, *"The Magical Number Seven, Plus or Minus Two,"* suggesting we hold about seven items at once. Later research tightened that to roughly **four items, give or take one** - and only about **two or three** things in full voluntary attention at any instant.
 
@@ -129,7 +130,7 @@ Your conscious mind is a desk with room for about four sticky notes. That is it.
 
 You can stretch it with **chunking** - grouping items into meaningful units. Ten separate digits are impossible to hold; three chunks are easy (555 - 867 - 5309). That is why phone numbers, card numbers, and one-time codes are always grouped.
 
-This tiny capacity is *why* shortcuts and biases exist. When a decision has too many factors to hold at once, the workspace overloads and the brain quietly hands the job to fast, automatic intuition. **Biases are not defects. They are the price of a small, fast workspace.**
+This tiny capacity is *why* [shortcuts and biases](/blog/psychology-of-decisions/05-mental-shortcuts-how-heuristics-help-and-trick-us) exist. When a decision has too many factors to hold at once, the workspace overloads and the brain quietly hands the job to [fast, automatic intuition](/blog/psychology-of-decisions/02-two-minds-in-one-head-fast-thinking-vs-slow-thinking). **Biases are not defects. They are the price of a small, fast workspace.**
 
 ### Attention is a spotlight on a dark stage
 
@@ -168,7 +169,7 @@ Wilson also found something unsettling: **over-analysing can make decisions wors
 
 ## Conclusion
 
-Good decisions are not cold logic fighting messy emotion. They are a partnership: emotion tags options and narrows the field, dopamine pulls you toward what surprised you before, a tiny workspace forces you into shortcuts, and most of the real work happens below awareness - with your conscious mind arriving last, mostly to explain.
+Good decisions are not cold logic fighting messy emotion. They are a partnership: [emotion tags options and narrows the field](/blog/psychology-of-decisions/09-feelings-first-how-emotions-steer-every-choice), dopamine pulls you toward what surprised you before, a tiny workspace forces you into shortcuts, and most of the real work happens below awareness - with your conscious mind arriving last, mostly to explain.
 
 So the single thing to remember is this: **you are not the captain of the ship. You are the narrator.** And the narrator is often wrong about why the ship turned.
 

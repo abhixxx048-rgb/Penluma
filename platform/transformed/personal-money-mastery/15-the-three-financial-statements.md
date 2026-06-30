@@ -30,7 +30,7 @@ faq:
     a: "No. GST you collect is money you owe the government, so it is a liability on your balance sheet, not revenue. It should never appear in your sales line."
   - q: "What is cash runway and how do I calculate it?"
     a: "Runway is how long your money lasts: cash in the bank divided by your monthly burn. It comes from the cash-flow statement, not the P&L, and it tells you how many months you can survive at the current pace."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: personal-money-mastery

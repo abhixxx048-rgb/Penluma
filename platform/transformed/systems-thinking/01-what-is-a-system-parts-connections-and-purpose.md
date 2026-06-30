@@ -50,16 +50,17 @@ faq:
       Watch its behavior over time, not its stated goals. Where does the money go,
       who gets promoted, and what happens under pressure? As Donella Meadows put
       it, purposes are deduced from behavior, not from rhetoric.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Thinking_In_Systems:_A_Primer
 ---
 
 Replace every player on a football team and you still have a recognizable team. But keep all 22 players exactly the same and swap the rules of football for the rules of basketball, and you have a completely different game. The parts didn't change. Something invisible between them did - and it changed everything.
 
-That invisible "something" is the heart of what a system is. Once you learn to see it, you start noticing it everywhere: in your body, your workplace, your city, your relationships. This is the single most useful thinking skill you can pick up, and it starts with one deceptively simple question.
+That invisible "something" is the heart of what a system is. Once you learn to see it, you start [noticing it everywhere](/blog/systems-thinking/03-why-systems-thinking-matters-patterns-everywhere): in your body, your workplace, your city, your relationships. This is the single most useful thinking skill you can pick up, and it starts with one deceptively simple question.
 
 ## Why this matters
 
@@ -115,7 +116,7 @@ So whenever you study any organization, ask the diagnostic question: *If I only 
 
 ## A system is more than the sum of its parts
 
-Here's where systems get genuinely magical. When elements connect toward a purpose, the whole can do things no single part could ever do alone. These surprising new abilities are called **emergent properties** - capabilities that arise from the *interactions* among the parts but exist in none of the parts on their own.
+Here's where systems get genuinely magical. When elements connect toward a purpose, the whole can do things no single part could ever do alone. These surprising new abilities are called **[emergent properties](/blog/systems-thinking/08-emergence-and-self-organization)** - capabilities that arise from the *interactions* among the parts but exist in none of the parts on their own.
 
 A single heart-muscle cell can't pump blood. Left alone, it can only twitch. But billions of them, connected and coordinated by electrical signals, produce a heartbeat. The cells didn't gain a new feature. The *interaction* created something none of them possessed.
 
@@ -142,7 +143,7 @@ And it runs both ways. The same parts, arranged differently, become a different 
 
 To understand *why* interconnections carry so much weight, it helps to meet three more ideas. You don't need to master them yet - just recognize them.
 
-- **Stock** - anything that builds up or drains over time and can be measured at a moment. Water in a bathtub, money in a bank, people in a city, trust in a relationship.
+- **[Stock](/blog/systems-thinking/04-stocks-and-flows-what-builds-up-and-what-moves)** - anything that builds up or drains over time and can be measured at a moment. Water in a bathtub, money in a bank, people in a city, trust in a relationship.
 - **Flow** - the rate at which a stock fills or empties. Water from the tap (inflow), water down the drain (outflow), births, sales, spending.
 - **Feedback loop** - a closed chain of cause and effect, where the level of a stock reaches back and adjusts the very flows that change it. This is the engine that lets systems self-regulate or spiral.
 
@@ -176,7 +177,7 @@ The practical payoff of all this is one decision: when you want to change a syst
 So next time something keeps going wrong, try this sequence:
 
 1. **Resist "Who messed up?"** Blaming a person is reaching for the weakest lever. New people in a broken structure reproduce the old failures.
-2. **Ask the structure question instead:** *What set of rules, incentives, and feedback loops would reliably produce this result, no matter who's in the seats?* That single question moves you from elements to interconnections, where the real leverage lives.
+2. **Ask the structure question instead:** *What set of rules, incentives, and feedback loops would reliably produce this result, no matter who's in the seats?* That single question moves you from elements to interconnections, [where the real leverage lives](/blog/systems-thinking/13-leverage-points-where-to-push-to-change-a-system).
 3. **Then check the purpose.** Watch the money and the decisions, not the slogans. Is the system's real purpose the one everyone claims? If not, no amount of effort on the parts will fix it.
 
 This is exactly why Peter Senge, in *The Fifth Discipline* (1990), called systems thinking "the fifth discipline" - the one that ties all the others together. His core lesson: most organizational problems - missed deadlines, poor quality, low morale - are *symptoms of structure*, not failures of individual people. Blaming the person is the weakest lever. Seeing the structure is where real change begins.
@@ -185,4 +186,4 @@ This is exactly why Peter Senge, in *The Fifth Discipline* (1990), called system
 
 If you remember one thing, make it this: **the power in any system lives in the connections, not the parts** - and the deepest power of all lives in the purpose, which you can only read by watching behavior over time. Look past the obvious players and ask what's quietly wiring their behavior, and you'll start solving problems other people keep bouncing off of.
 
-But here's the question that opens the next door. If feedback loops are the engine of every system, why do some loops keep things calm and steady while others spiral out of control - a panic, a bank run, a runaway success? That difference between *balancing* and *reinforcing* loops is where systems thinking gets genuinely thrilling, and it's where we go next.
+But here's the question that opens the next door. If [feedback loops are the engine of every system](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves), why do some loops keep things calm and steady while others spiral out of control - a panic, a bank run, a runaway success? That difference between *balancing* and *reinforcing* loops is where systems thinking gets genuinely thrilling, and it's where we go next.

@@ -36,15 +36,16 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 21
 icon: "\U0001F9ED"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
 You tap a screen and a message reaches a friend on the other side of the planet. You type a few words and get ten million answers in half a second. You ask a chatbot a question and it writes you a paragraph. Most people file all of this under "magic" - something that just works, powered by forces no ordinary person could grasp.
 
-It is not magic. Every single thing a computer does traces back to a few simple ideas stacked on top of each other, layer by layer. This article walks you up that stack, from the tiniest building block (a single 0 or 1) all the way to programs, the internet, the cloud, and the AI that talks to you. No prior knowledge needed.
+It is not magic. Every single thing a computer does traces back to a few simple ideas stacked on top of each other, layer by layer. This article walks you up that stack, from the tiniest building block (a single 0 or 1) all the way to programs, [the internet, the cloud](/blog/ten-disciplines/23-the-internet-databases-apis-and-the-cloud-how-modern-systems-are-built), and the AI that talks to you. No prior knowledge needed.
 
 ## Why this matters
 
@@ -225,7 +226,7 @@ An **API (Application Programming Interface)** is a defined way for one program 
 
 The **cloud** is renting computing power, storage, and software over the internet instead of owning the hardware. It's electricity from the grid versus owning a generator: you pay for what you use, and someone else builds and maintains the power plant.
 
-The cloud is not somewhere ethereal. It is simply *someone else's computers* - real, humming machines in warehouse-sized data centers. The "pizza as a service" model captures the tiers neatly:
+The cloud is not somewhere ethereal. It is simply *someone else's computers* - real, humming machines in [warehouse-sized data centers](/blog/distributed-systems/12-what-is-a-distributed-system). The "pizza as a service" model captures the tiers neatly:
 
 - **IaaS** (Infrastructure) - they give you the kitchen; you make the pizza (e.g. Amazon EC2).
 - **PaaS** (Platform) - kitchen, dough, and oven are ready; you add toppings (e.g. Heroku).
@@ -235,7 +236,7 @@ This is why a one-person startup can today rent the same caliber of infrastructu
 
 ### AI and machine learning
 
-Here's the deep idea that makes machine learning different from ordinary programming:
+Here's the deep idea that makes [machine learning](/blog/ten-disciplines/24-artificial-intelligence-and-machine-learning-explained-advanced) different from ordinary programming:
 
 | Traditional programming | Machine learning |
 |---|---|
@@ -251,7 +252,7 @@ A **Large Language Model (LLM)** - like ChatGPT, Claude, or Gemini - is a very l
 - **"The padlock means the site is safe."** HTTPS only means the *connection* is encrypted so no one can eavesdrop in transit. It says nothing about whether the site itself is trustworthy. Phishing sites have padlocks too.
 - **"The cloud is something weightless and magical."** It's someone else's physical computers in a real building, drawing real electricity.
 - **"More data always makes AI better."** If the data is biased or low-quality, you get a biased, low-quality model - garbage in, garbage out. Quality beats raw volume.
-- **"The AI understands and knows facts."** An LLM predicts likely text. It has no built-in database of truth and will **hallucinate** - produce confident, false output - when it doesn't actually know. Fluency is not accuracy.
+- **"The AI understands and knows facts."** An LLM predicts likely text. It has no built-in database of truth and will [**hallucinate**](/blog/ai-learning-platform/25-keeping-the-ai-accurate-and-pedagogically-sound) - produce confident, false output - when it doesn't actually know. Fluency is not accuracy.
 - **"Incognito mode makes me anonymous."** It only hides history on your own device. Your internet provider, your employer, and the sites you visit still see you.
 
 ## How to use this
@@ -262,7 +263,7 @@ You don't need a computer science degree to act on any of this. Start here:
 2. **Treat the padlock as "private," not "trustworthy."** Check the actual web address before typing a password or card number. Encryption protects the road, not the destination.
 3. **Turn on multi-factor authentication everywhere and stop reusing passwords.** Use a password manager. One leaked site shouldn't hand attackers every account you own. MFA is the single most effective defense against a stolen password.
 4. **Install updates promptly.** Each update ("patch") closes a known hole attackers already know about.
-5. **Verify anything high-stakes an AI tells you.** Treat an LLM as a fast, fluent junior helper whose work you always check - never an oracle you obey. Ask it for sources and confirm them.
+5. **Verify anything high-stakes an AI tells you.** Treat [an LLM](/blog/ai-llm-engineering/01-foundations-how-llms-work-why-these-skills-endure) as a fast, fluent junior helper whose work you always check - never an oracle you obey. Ask it for sources and confirm them.
 6. **If you ever tinker, build something tiny and real and use version control (Git) from day one.** A working, slightly broken thing teaches more than a perfect mental model. Follow the order "make it work, make it right, make it fast."
 7. **Learn to debug, not just to build.** When something breaks, read the error message, isolate the failing part, form a hypothesis, test it, repeat. That patient narrowing-down is the real transferable skill - not memorizing syntax or being a math genius.
 

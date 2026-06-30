@@ -34,7 +34,7 @@ faq:
     a: No. A notebook, a stack of index cards, or a plain folder of text files works perfectly. Niklas Luhmann built his entire system on paper slips. The habit matters far more than the tool.
   - q: Why are my notes useless when I go back to them?
     a: Most notes fail because they store facts instead of producing connections. Highlights and copied text skip the thinking. Notes become useful when you reword ideas yourself and link them to other notes.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources:

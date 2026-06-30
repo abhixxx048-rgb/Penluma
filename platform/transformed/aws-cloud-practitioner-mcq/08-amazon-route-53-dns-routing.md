@@ -30,7 +30,7 @@ faq:
     a: You mark one record as primary and one as secondary, then attach a health check to the primary. While the primary is healthy, traffic goes there; when it fails the check, Route 53 automatically shifts traffic to the standby.
   - q: Does Route 53 replace a load balancer?
     a: No. Route 53 routes domain names to endpoints at the DNS level. Spreading individual requests across the servers behind that endpoint is the load balancer's job. The two complement each other.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: aws-cloud-practitioner-mcq

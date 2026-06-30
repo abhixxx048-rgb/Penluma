@@ -59,9 +59,10 @@ faq:
       information. A two-way door is easily reversed, so decide fast and learn
       from the result. Matching speed to reversibility saves your scarce
       attention.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -79,7 +80,7 @@ None of this requires hard math. It requires a little arithmetic and the willing
 
 ## First, three flavors of "not knowing"
 
-Every tool in this article helps you decide when you don't know what will happen. But "not knowing" comes in different strengths, and it matters which one you're facing.
+Every tool in this article helps you [decide when you don't know what will happen](/blog/ten-disciplines/28-how-to-make-good-decisions-under-uncertainty). But "not knowing" comes in different strengths, and it matters which one you're facing.
 
 - **Certainty.** You know exactly what happens. Press B4 on the vending machine, get the chips.
 - **Risk.** You don't know the outcome, but you *do* know the odds. A roulette wheel: you can't predict the spin, but you know each number's chance.
@@ -175,7 +176,7 @@ The tree's main gift isn't the final number-it's that it drags your hidden assum
 
 ## Mental models: the reusable thinking tools
 
-EV and decision trees are *specific* tools. But good decision-makers also carry a kit of more general thinking tools they reach for across every domain. These are **mental models**: reusable concepts-borrowed from any field-that help you make sense of a situation. Supply and demand, compound interest, base rates, second-order effects.
+EV and decision trees are *specific* tools. But good decision-makers also carry a kit of more general thinking tools they reach for across every domain. These are **mental models**: reusable concepts-borrowed from any field-that help you make sense of a situation. [Supply and demand](/blog/economics-from-first-principles/03-supply-demand-and-how-prices-are-determined), compound interest, base rates, second-order effects.
 
 Investor Charlie Munger put it best: to a person with only a hammer, every problem looks like a nail. If your one tool is "trust my gut," you'll hammer every decision with it, even the ones that need a screwdriver. A full toolbox lets you pick the right tool for the situation in front of you. Three models are useful enough to install right now.
 
@@ -185,11 +186,11 @@ A **base rate** is the background frequency of something *before* you look at th
 
 Before deciding your startup will surely succeed, note that roughly *90% of startups fail*. That 90% is the base rate-the "outside view." Your detailed, exciting plan is the "inside view." Both matter, but beginners almost always over-trust the inside view and ignore the base rate entirely.
 
-The fix is an explicit order of operations: **start from the base rate, then adjust for what's special about your case.** Never skip straight to the special case. This is exactly how the best forecasters work. Philip Tetlock's "superforecasters"-ordinary, trained people who out-predicted intelligence analysts in the Good Judgment Project-begin every forecast from the base rate, then update gradually as evidence comes in.
+The fix is an explicit order of operations: **start from the base rate, then adjust for what's special about your case.** Never skip straight to the special case. This is exactly how the best forecasters work. Philip Tetlock's "superforecasters"-ordinary, trained people who out-predicted intelligence analysts in the Good Judgment Project-begin every forecast from the base rate, then [update gradually as evidence comes in](/blog/ten-disciplines/11-probability-uncertainty-distributions-and-bayesian-thinking).
 
 ### Second-order thinking: "and then what?"
 
-**Second-order thinking** means tracing the consequences of the consequences, not just the first, obvious effect.
+**Second-order thinking** means [tracing the consequences of the consequences](/blog/clear-thinking-and-expression/12-analysis-frameworks-first-principles-mece-5-whys-second-order-thinking), not just the first, obvious effect.
 
 A weak chess player grabs the free pawn-that's first-order thinking ("this feels good now"). A strong player asks what the free pawn *sets in motion* three moves later, and notices it leads to checkmate.
 
@@ -243,4 +244,4 @@ It's tempting to think that with enough tools you can calculate your way to cert
 
 If you remember one thing, make it this: **the process is the product.** You can't control whether any single decision turns out well. You can only control the quality of how you decided. Expected value, utility, decision trees, and mental models are how you raise that quality-and over many decisions, a sound process wins even though good decisions sometimes lose.
 
-Which raises the obvious next question. If these clean tools are this good, why do smart, well-meaning people ignore them so reliably? Because the human mind comes pre-loaded with predictable biases that quietly pull every real decision away from the math. Knowing the tools is half the battle. Knowing how your own brain sabotages them is the other half-and that's where we go next.
+Which raises the obvious next question. If these clean tools are this good, why do smart, well-meaning people ignore them so reliably? Because the human mind comes pre-loaded with [predictable biases](/blog/ten-disciplines/08-biases-heuristics-and-why-smart-people-make-predictable-errors) that quietly pull every real decision away from the math. Knowing the tools is half the battle. Knowing how your own brain sabotages them is the other half-and that's where we go next.

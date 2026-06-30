@@ -30,7 +30,7 @@ faq:
     a: Until you are genuinely good at one thing, a second only adds complexity and keeps you sub-scale at everything. You cannot reinvest a surplus you do not yet have, so the surplus has to come first.
   - q: When does a freelancer in India need to register for GST?
     a: A service provider must register once aggregate turnover crosses ₹20 lakh (₹10 lakh in special-category states). Any inter-state supply requires registration regardless of turnover, so track combined turnover across all streams.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: how-to-make-money

@@ -34,7 +34,7 @@ faq:
     a: Use the template "I think ___ because ___." The first blank forces a clear claim, the second forces a reason. If you cannot fill the "because," you do not yet have an opinion, only a mood.
   - q: How can I tell if a sentence is too abstract?
     a: Ask if you could photograph or count what it describes. "We had some issues" is abstract. "Two orders shipped to the wrong address" is concrete and instantly clear.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 sources: []
 linked: true

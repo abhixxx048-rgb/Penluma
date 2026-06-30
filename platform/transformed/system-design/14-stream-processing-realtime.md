@@ -28,7 +28,7 @@ faq:
     a: Lambda runs two pipelines, a slow accurate batch one and a fast approximate streaming one, which means maintaining the same logic twice. Kappa keeps only the streaming pipeline and reprocesses by replaying the log, avoiding the duplicate-code problem.
   - q: When should I use stream processing instead of a nightly batch job?
     a: Use streaming when stale data costs money or safety, such as fraud detection, live dashboards, leaderboards, and alerting. Stick with batch for daily reports, model training, and backfills that tolerate hours of lag.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 topic: system-design
 topicTitle: System Design
 category: Engineering
@@ -37,6 +37,7 @@ order: 14
 icon: "\U0001F3D7️"
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -86,7 +87,7 @@ A serving layer merged them: old accurate data from batch, recent fast data from
 
 It works, but it has a fatal flaw. You write and maintain **the same business logic twice**, once in a batch framework and once in a streaming framework, often in different languages with different rules. The two versions drift apart. Your dashboard flickers when the batch view overwrites the speed view because they rounded or deduplicated slightly differently. This is operational misery.
 
-**Kappa architecture** deletes the batch layer entirely. The bet: if your stream engine is correct and your log (think Kafka) keeps enough history, you never needed batch. To "reprocess" data, you replay the log from the beginning through a new version of your job into a fresh output table, then swap over.
+**Kappa architecture** deletes the batch layer entirely. The bet: if your stream engine is correct and your [log (think Kafka)](/blog/system-design/12-messaging-and-event-driven) keeps enough history, you never needed batch. To "reprocess" data, you replay the log from the beginning through a new version of your job into a fresh output table, then swap over.
 
 One codebase. One set of semantics. No divergence bugs. Today, with engines that give correct results and cheap long-term log storage, **Kappa is the default recommendation for new systems.** Lambda mostly survives in legacy stacks.
 
@@ -186,7 +187,7 @@ This is the single most useful idea in modern stream processing, and it's surpri
 They're two views of the same thing. A changelog and a materialized state.
 
 - **Stream to table:** aggregate the stream by key, a `GROUP BY` that never ends, and you get a continuously updated table. That's a **materialized view**.
-- **Table to stream:** emit the table's change events as they happen. That's exactly what change-data-capture tools do when they tail a database's write log.
+- **Table to stream:** emit the table's change events as they happen. That's exactly what [change-data-capture](/blog/system-design/13-event-sourcing-and-cqrs) tools do when they tail a database's write log.
 
 This duality is why "materialized-view databases" exist. You write a SQL `SELECT ... GROUP BY`, and the engine keeps the result table incrementally up to date as the input changes, with no manual refresh. Under the hood it's a streaming job; the SQL is just a friendlier surface.
 
@@ -200,8 +201,8 @@ When you sit down to design a real-time pipeline, walk through these steps in or
 4. **Set a finite, sane watermark.** Pick a bounded out-of-orderness delay (e.g., 30 seconds). Never run with no watermark, or your state grows forever and the job dies of memory exhaustion.
 5. **Measure your late data.** Emit a late-records counter and alert on it. Silent loss is how dashboards quietly lie.
 6. **Window every stream-stream join.** Pick the window from the business need: too small misses real matches, too large explodes memory.
-7. **Make your sink idempotent or transactional.** This is what turns "exactly-once" from a slogan into a guarantee. Key writes by a deterministic ID and upsert.
-8. **Watch for hot keys.** A single viral item or whale user can route most events to one worker. Salt the key and aggregate in two stages, or use approximate sketches to bound memory.
+7. **Make your sink idempotent or transactional.** This is what turns "exactly-once" from a slogan into a guarantee. Key writes by a [deterministic ID and upsert](/blog/system-design/11-distributed-transactions-and-idempotency).
+8. **Watch for hot keys.** A single viral item or whale user can route most events to one worker. [Salt the key](/blog/system-design/08-replication-and-partitioning) and aggregate in two stages, or use [approximate sketches](/blog/system-design/15-probabilistic-structures-and-algorithms) to bound memory.
 
 ### Picking an engine
 

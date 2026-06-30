@@ -21,9 +21,10 @@ category: Engineering
 date: '2026-06-15'
 order: 2
 icon: "\U0001F3D7️"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 faq:
   - q: "Why does my website feel slow even though my server is fast?"
     a: "Most of the delay happens before your server does any work. Opening a fresh encrypted connection takes several network round-trips for DNS, TCP, and TLS. On a long-distance link each round-trip can cost 80ms or more, so a cold visit can lose hundreds of milliseconds to handshakes alone."
@@ -125,7 +126,7 @@ Before any of those handshakes can happen, your browser needs the server's actua
 
 The lookup walks a chain - your browser's cache, your computer's cache, then a resolver that asks the root servers, then the `.com` servers, then the site's own authoritative servers. A fully cold lookup can take several round-trips, but in practice almost everything is cached, so most lookups are nearly instant.
 
-DNS has a clever second job: **it can hand different visitors different answers.** That lets providers send each user to a nearby server based on location. The catch is that DNS answers are cached for a set lifetime (the **TTL**), so changes don't take effect instantly. That lag is exactly why the next trick exists.
+DNS has a clever second job: **it can hand different visitors different answers.** That lets providers [send each user to a nearby server based on location](/blog/aws-cloud-practitioner-mcq/08-amazon-route-53-dns-routing). The catch is that DNS answers are cached for a set lifetime (the **TTL**), so changes don't take effect instantly. That lag is exactly why the next trick exists.
 
 ## CDNs and anycast: bring the server closer
 
@@ -186,7 +187,7 @@ Normal HTTP is request-and-reply: the browser asks, the server answers. But what
 
 The rule of thumb: **if data only flows one way, reach for SSE first** - it's simpler and self-healing. Step up to WebSocket only when you genuinely need both sides talking at once.
 
-There's also **gRPC**, a compact, schema-driven way for servers to talk to each other over HTTP/2. It's a favorite for internal service-to-service communication because it's fast and strongly typed - though it needs a translation layer to work directly from a browser.
+There's also **gRPC**, a compact, schema-driven way for servers to talk to each other over HTTP/2. It's a favorite for internal [service-to-service communication](/blog/system-design/03-api-design-and-communication) because it's fast and strongly typed - though it needs a translation layer to work directly from a browser.
 
 ## Common misconceptions
 
@@ -196,7 +197,7 @@ There's also **gRPC**, a compact, schema-driven way for servers to talk to each 
 
 **"Opening a fresh connection each time is fine on a fast network."** It isn't. Every new connection pays the handshake round-trips *and* starts in cautious slow-start mode. Reuse always wins.
 
-**"HTTPS means my traffic is encrypted end to end."** Often it's only encrypted to your load balancer or CDN edge, then travels as plain text to your backend. If that internal hop runs over shared infrastructure, it may be readable. Re-encrypt internal traffic if it matters.
+**"HTTPS means my traffic is encrypted end to end."** Often it's only encrypted to your [load balancer](/blog/system-design/07-load-balancing-and-scaling) or CDN edge, then travels as plain text to your backend. If that internal hop runs over shared infrastructure, it may be readable. Re-encrypt internal traffic if it matters.
 
 **"A low DNS TTL is wasteful, so set it high."** High TTLs bite you during failover - when you change a server's address, cached old answers keep sending users to the dead one for hours. Lower the TTL *before* a planned change.
 
@@ -204,8 +205,8 @@ There's also **gRPC**, a compact, schema-driven way for servers to talk to each 
 
 You don't need to rewrite your stack. A handful of concrete moves remove most of the round-trip tax:
 
-1. **Reuse connections everywhere.** Enable keep-alive, and use connection pooling for your backend HTTP and database clients. This is the single biggest win, because it amortizes handshakes and keeps connections warmed up.
-2. **Put a CDN in front of your site.** It shortens the distance every handshake travels and serves cached content without ever touching your origin. This often beats any code optimization you could make.
+1. **Reuse connections everywhere.** Enable keep-alive, and use connection pooling for your backend HTTP and [database clients](/blog/system-design/04-databases-internals). This is the single biggest win, because it amortizes handshakes and keeps connections warmed up.
+2. **Put a CDN in front of your site.** It shortens the distance every handshake travels and [serves cached content](/blog/system-design/06-caching-deep) without ever touching your origin. This often beats any code optimization you could make.
 3. **Enable HTTP/3 (and HTTP/2) at your edge.** Most CDNs and load balancers offer this with a toggle. Clients negotiate the best version automatically, with a safe fallback to TCP where UDP is blocked.
 4. **Use modern TLS, and resume sessions** - but only put repeatable, harmless requests on the zero-round-trip resumption path. Never a payment or an account change.
 5. **Pick the right real-time tool.** One-way push? Use SSE. Two-way? Use WebSocket. And configure your load balancer's idle timeout above your heartbeat interval, or long-lived connections will get silently dropped.

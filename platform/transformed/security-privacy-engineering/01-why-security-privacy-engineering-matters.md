@@ -31,9 +31,10 @@ faq:
     a: The IBM Cost of a Data Breach Report 2025 put the global average at about $4.44 million, with the U.S. average at a record $10.22 million. Understaffed organizations paid roughly $1.76 million more per breach than well-staffed peers.
   - q: Does being compliant mean being secure?
     a: No. Compliance is a floor, not a ceiling. You can fully satisfy GDPR or an audit and still get breached. Regulations set minimum controls; real safety requires engineering beyond the checklist.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 topic: security-privacy-engineering
 topicTitle: Security & Privacy Engineering
 category: Engineering
@@ -61,7 +62,7 @@ And the work is durably human. You are not defending against bugs. You are defen
 
 The single most common beginner mistake is treating "security" and "privacy" as the same thing. They are not, and confusing them leaves a hole in whatever you build.
 
-**Security engineering** is the craft of protecting systems from *unauthorized* access, tampering, and disruption. The classic model is the **CIA triad**:
+**Security engineering** is the craft of protecting systems from *unauthorized* access, tampering, and disruption. The classic model is the **[CIA triad](/blog/security-privacy-engineering/02-core-security-foundations)**:
 
 - **Confidentiality** - only the right people can read the data. Keep secrets secret.
 - **Integrity** - data is not altered by the wrong people or by accident. You can trust what you see.
@@ -69,7 +70,7 @@ The single most common beginner mistake is treating "security" and "privacy" as 
 
 Security's core question: *"Can the wrong person get in, change things, or take us offline?"*
 
-**Privacy engineering** is the craft of responsibly handling people's personal data *even when everything is working as intended* - including by trusted insiders and by the company itself. The raw material here is **PII** (Personally Identifiable Information: any data that identifies a person, like a name, email, location, or face). The U.S. standards body **NIST** gives privacy its own triad:
+**[Privacy engineering](/blog/security-privacy-engineering/10-privacy-engineering-fundamentals)** is the craft of responsibly handling people's personal data *even when everything is working as intended* - including by trusted insiders and by the company itself. The raw material here is **PII** (Personally Identifiable Information: any data that identifies a person, like a name, email, location, or face). The U.S. standards body **NIST** gives privacy its own triad:
 
 - **Predictability** - people can reliably understand how their data is processed. No surprises.
 - **Manageability** - they can correct, export, or delete their data.
@@ -144,7 +145,7 @@ Shipping an AI feature is not like shipping a normal feature. It introduces whol
 
 The headline risks:
 
-**Prompt injection (the number one risk).** Tricking the model into ignoring its real instructions. *Direct* injection is a user typing malicious commands. *Indirect* injection is sneakier: the model reads poisoned content - a webpage, email, PDF, or document - that secretly hijacks it. If the model can use tools or act as an agent, that hijack becomes real actions in connected systems.
+**[Prompt injection](/blog/security-privacy-engineering/12-ai-llm-security-and-privacy) (the number one risk).** Tricking the model into ignoring its real instructions. *Direct* injection is a user typing malicious commands. *Indirect* injection is sneakier: the model reads poisoned content - a webpage, email, PDF, or document - that secretly hijacks it. If the model can use tools or act as an agent, that hijack becomes real actions in connected systems.
 
 **Sensitive-data exposure.** Models can leak training data, secrets, or other users' data. Agents can be tricked into emailing or exporting data they should never touch.
 
@@ -170,7 +171,7 @@ An arms race is exactly the condition under which skilled human defenders become
 
 Regulation converts security and privacy from "nice to have" into financial and legal exposure - and someone has to actually *engineer* the controls those laws require: data deletion, consent capture, access logging, model documentation. That someone is you.
 
-- **Privacy law is global.** Around 144 countries (about 79% of the world's population) have data-protection laws in force. The EU's **GDPR** is the template the world copies, and its penalties reach **4% of global annual turnover or €20 million, whichever is higher.**
+- **Privacy law is global.** Around 144 countries (about 79% of the world's population) have data-protection laws in force. The EU's **[GDPR](/blog/security-privacy-engineering/11-privacy-laws-compliance)** is the template the world copies, and its penalties reach **4% of global annual turnover or €20 million, whichever is higher.**
 - **The U.S. is a state-by-state patchwork** of 20-plus comprehensive privacy laws, led by California's CCPA/CPRA. The sheer complexity drives demand for engineers who can build one control that satisfies many laws.
 - **The EU AI Act** - the world's first comprehensive AI law - is phasing in now, with fines up to **€35 million or 7% of global turnover**, higher than GDPR.
 
@@ -178,7 +179,7 @@ Regulation converts security and privacy from "nice to have" into financial and 
 
 A handful of beliefs quietly sink teams. Unlearn these now:
 
-- **"Security is the security team's job."** No. Engineers build the vulnerabilities, so engineers must build the defenses. Handle it early in design and code - "shift left" - not bolted on at the end.
+- **"Security is the security team's job."** No. Engineers build the vulnerabilities, so engineers must build the defenses. Handle it early in design and code - "[shift left](/blog/security-privacy-engineering/09-secure-sdlc-devsecops)" - not bolted on at the end.
 - **"Privacy equals security."** No. Two distinct crafts with two distinct triads.
 - **"AI will automate security away."** The opposite. It expands the attack surface *and* multiplies defender leverage.
 - **"We're too small to be a target."** Most attacks are automated and opportunistic. Small businesses and supply-chain vendors are prime targets - roughly 30% of breaches trace to a third party.
@@ -200,4 +201,4 @@ Here is the one thing to carry out of this: **security keeps attackers out; priv
 
 The field is growing, stubbornly human, and now amplified by AI on both sides. The engineers who can actually build the controls don't get automated away. They become the most valuable people in the room.
 
-So how do you start thinking like the attacker instead of just bracing for one? That is the craft of **threat modeling** - deliberately imagining how your own system gets broken, before someone else does it for you. It's where the real fun begins.
+So how do you start thinking like the attacker instead of just bracing for one? That is the craft of **[threat modeling](/blog/security-privacy-engineering/07-threat-modeling-risk-management)** - deliberately imagining how your own system gets broken, before someone else does it for you. It's where the real fun begins.

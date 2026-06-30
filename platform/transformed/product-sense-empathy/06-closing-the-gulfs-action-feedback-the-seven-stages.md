@@ -36,8 +36,9 @@ faq:
     a: Under about 0.1 seconds feels instant. Past 1 second, signal that the system is working. Past 10 seconds, show a progress bar and a way to cancel, or users assume it froze.
   - q: What is the difference between an affordance and a signifier?
     a: An affordance is what an object lets you do, like a button affording a press. A signifier is the visible cue that the affordance exists, like the raised look that tells you it is clickable.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things
   - https://en.wikipedia.org/wiki/Seven_stages_of_action
@@ -104,7 +105,7 @@ Same complaint ("it's broken"), two completely different fixes. The seven stages
 
 ## Feedback: the heart of it all
 
-Feedback is how you close the evaluation gulf. **Jakob Nielsen**, Norman's co-founder at the Nielsen Norman Group, makes it his very first usability rule, *Visibility of System Status*: the design should always keep users informed about what's going on, through appropriate feedback within a reasonable amount of time.
+Feedback is how you close the evaluation gulf. **Jakob Nielsen**, Norman's co-founder at the Nielsen Norman Group, makes it his very first [usability rule](/blog/product-sense-empathy/10-evaluating-usability-nielsen-rsquo-s-10-heuristics), *Visibility of System Status*: the design should always keep users informed about what's going on, through appropriate feedback within a reasonable amount of time.
 
 Without it, users can't tell if an action succeeded, failed, or is still running. So they re-click, or give up.
 
@@ -146,7 +147,7 @@ If feedback closes the evaluation gulf, these seven principles close the executi
 
 A well-designed door needs no "Push / Pull" sign. A flat metal plate *signifies* push. A handle *signifies* pull.
 
-When a door has a pull-handle but you must push it, you get the dreaded **Norman door**: you yank, it doesn't move, you feel stupid. That's a Gulf of Execution opened by a misleading signifier.
+When a door has a pull-handle but you must push it, you get the dreaded **Norman door**: you yank, it doesn't move, you feel stupid. That's a Gulf of Execution opened by a [misleading signifier](/blog/product-sense-empathy/05-the-psychology-of-obvious-affordances-signifiers-mental-models).
 
 A Save button styled like plain gray text is the same door. It can be pressed, but nothing tells the eye that it can. Fix the signifier, and the gulf closes.
 
@@ -162,7 +163,7 @@ Any screen that loads data must handle three states. Each one is really *feedbac
 
 **"If the code returned success, the feature works."** Not for the user. If they can't perceive and interpret that success, the feature failed where it counts. Working code is necessary, not sufficient.
 
-**"Users want our features."** They want their *job* done. **Clayton Christensen**, the Harvard professor behind *The Innovator's Dilemma*, framed this as **Jobs-to-Be-Done**: customers "hire" a product to do a job. The classic line is that people don't want a quarter-inch drill, they want a quarter-inch hole.
+**"Users want our features."** They want their *job* done. **Clayton Christensen**, the Harvard professor behind *The Innovator's Dilemma*, framed this as **[Jobs-to-Be-Done](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress)**: customers "hire" a product to do a job. The classic line is that people don't want a quarter-inch drill, they want a quarter-inch hole.
 
 Christensen's team once tried to sell more milkshakes. Tweaking the recipe by customer demographic did nothing. Then they spent hours watching *when* shakes were actually bought. Around 40% sold before 8:30am, to solo commuters who bought only a shake and drove off. The real job: survive a long, boring drive with something one-handed, mess-free, and slow to finish (a thick shake lasts about 20 minutes). Its real rivals weren't other shakes. They were bananas, bagels, and donuts.
 
@@ -186,4 +187,4 @@ When a screen feels off, run this checklist:
 
 The single thing to remember: **a screen feels broken when the user can't tell what happened.** Close the gulf of evaluation with immediate, plain-language feedback, and most "your app is broken" emails simply stop arriving, often without you changing a single line of backend logic.
 
-Do this well and the user walks all seven stages without ever noticing the work you did. Which raises a deeper question worth chasing next: if great design is invisible when it works, how do you ever get credit, or even feedback, for the gulfs you quietly closed? That tension, between craft no one sees and impact everyone feels, is where product sense really begins.
+Do this well and the user walks all seven stages without ever noticing the work you did. Which raises a deeper question worth chasing next: if great design is invisible when it works, how do you ever get credit, or even feedback, for the gulfs you quietly closed? That tension, between craft no one sees and impact everyone feels, is where [product sense](/blog/product-sense-empathy/02-what-product-sense-really-is) really begins.

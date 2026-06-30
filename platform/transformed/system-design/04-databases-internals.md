@@ -23,9 +23,10 @@ category: Engineering
 date: '2026-06-15'
 order: 4
 icon: "\U0001F3D7️"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 faq:
   - q: "What is the difference between a B-tree and an LSM-tree database?"
     a: "A B-tree updates data in place and gives fast, predictable reads, so it suits read-heavy or balanced workloads. An LSM-tree only appends and merges files later, giving very high write throughput at the cost of slower, more variable reads. Postgres and MySQL use B-trees; Cassandra and RocksDB use LSM-trees."
@@ -57,7 +58,7 @@ The difference between an engineer who guesses and one who knows usually comes d
 - **Why is this query slow?** Because it scans the whole table instead of using an index, and you can see exactly that in an `EXPLAIN` plan.
 - **Why did two users overwrite each other's changes?** Because of a concurrency anomaly your isolation level allowed.
 - **Why is the database fine in the morning and crawling by afternoon?** Because a forgotten open transaction is causing dead rows to pile up.
-- **Should we use Postgres or Cassandra here?** Because one is built for reads and the other for writes, and your workload leans one way.
+- **Should we [use Postgres or Cassandra](/blog/system-design/05-data-modeling-sql-nosql) here?** Because one is built for reads and the other for writes, and your workload leans one way.
 
 Every one of those answers comes from the same small set of ideas. Learn them once and they pay off for your whole career.
 
@@ -101,7 +102,7 @@ A **Log-Structured Merge tree** flips the strategy. It never modifies data in pl
 
 The payoff is the headline feature: **writes are sequential, fast, and never overwrite anything.** That is exactly what disks love.
 
-The cost shows up on reads. A key could live in the memtable, or in any of several layers of SSTables, so a read may have to check many places. Databases soften this with **Bloom filters**, a clever structure that can instantly say "this key is definitely not in this file," letting reads skip most files. Deletes are also indirect: they write a **tombstone** marker, and the real removal happens later during compaction. Too many tombstones, and reads start wading through dead keys.
+The cost shows up on reads. A key could live in the memtable, or in any of several layers of SSTables, so a read may have to check many places. Databases soften this with **[Bloom filters](/blog/system-design/15-probabilistic-structures-and-algorithms)**, a clever structure that can instantly say "this key is definitely not in this file," letting reads skip most files. Deletes are also indirect: they write a **tombstone** marker, and the real removal happens later during compaction. Too many tombstones, and reads start wading through dead keys.
 
 Cassandra, ScyllaDB, RocksDB, and HBase are LSM databases. If you are ingesting a firehose of writes (logs, metrics, events, time series), this is your family.
 
@@ -183,7 +184,7 @@ ACID is the promise a transactional database makes. Four letters:
 - **Isolation** - concurrent transactions do not corrupt each other's view of the world. This is the slippery one, covered next.
 - **Durability** - once committed, it survives a crash. That is the WAL.
 
-One warning that trips people up constantly: the **"C" in ACID is not the "C" in CAP.** ACID consistency is about your declared rules. CAP consistency is about replicas agreeing with each other. Different ideas, same unfortunate word.
+One warning that trips people up constantly: the **"C" in ACID is not the "C" in CAP.** ACID consistency is about your declared rules. [CAP consistency](/blog/system-design/09-cap-pacelc-consistency-models) is about replicas agreeing with each other. Different ideas, same unfortunate word.
 
 ## Isolation levels and the anomalies they prevent
 
@@ -292,4 +293,4 @@ Here is the one idea to keep: a database is not magic, it is a machine making pr
 
 The story that proves it best is a real one. Discord stored chat messages in a database and grew from a hundred million messages to *trillions*, peaking past a million writes per second. Their write-heavy, append-mostly workload was a textbook case for an LSM engine, so they moved to Cassandra and later ScyllaDB, carefully designing their partition keys to bound how much data lived in one place. Every concept in this article shows up in that migration: storage families, the leftmost-prefix rule, read amplification, tombstones, hot partitions.
 
-Which raises the next question. Once a single machine is not enough and you have to spread data across many, how do you split it without breaking correctness, and what happens when one of those machines goes dark? That is the world of replication and partitioning, and it is where these internals meet the network.
+Which raises the next question. Once a single machine is not enough and you have to spread data across many, how do you split it without breaking correctness, and what happens when one of those machines goes dark? That is the world of [replication and partitioning](/blog/system-design/08-replication-and-partitioning), and it is where these internals meet the network.

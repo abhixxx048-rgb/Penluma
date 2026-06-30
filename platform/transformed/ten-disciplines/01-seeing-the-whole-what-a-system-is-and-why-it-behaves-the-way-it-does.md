@@ -44,9 +44,10 @@ faq:
       Climb down the "iceberg" from event to pattern to structure, and use the 5
       Whys: keep asking why until you reach a structural cause you can change.
       Then ask, "If I fix this, will the problem regenerate?"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 topic: ten-disciplines
 topicTitle: Ten Disciplines
 category: Thinking & Decisions
@@ -159,9 +160,9 @@ The everyday version: "We cut spending growth" doesn't mean savings went up. "We
 
 ## Feedback loops: the engine of behavior
 
-Stocks and flows are the parts. The **feedback loop** is the engine that makes a system come alive - and the single most important concept here.
+[Stocks and flows](/blog/ten-disciplines/02-the-machinery-of-systems-stocks-flows-feedback-loops-and-delays) are the parts. The **feedback loop** is the engine that makes a system come alive - and the single most important concept here.
 
-A feedback loop is a closed chain of cause and effect in which a change in a stock circles back to affect the very flows that change it. Output becomes input.
+A [feedback loop](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves) is a closed chain of cause and effect in which a change in a stock circles back to affect the very flows that change it. Output becomes input.
 
 Think of a **thermostat**. The room temperature controls the heater (cold room → heater on). The heater controls the room temperature (heater on → room warms). Round and round it goes. Neither the room nor the heater is "in charge" - the loop between them is.
 
@@ -187,7 +188,7 @@ When you see a trend, your first question should be: *what loop is driving this 
 
 ## Delays: why systems surprise us
 
-If feedback loops are the engine, **delays** are why the engine keeps backfiring in our faces. A delay is simply a gap in time between a cause and its visible effect.
+If feedback loops are the engine, **[delays](/blog/systems-thinking/06-delays-why-cause-and-effect-are-not-close-in-time)** are why the engine keeps backfiring in our faces. A delay is simply a gap in time between a cause and its visible effect.
 
 Picture **the slow shower**. You step in, it's cold, you crank the dial to hot. Nothing happens - the hot water hasn't reached the pipe yet. So you crank it further. Suddenly scalding water arrives; you yelp and crank it cold; a delay later, freezing water hits. You bounce back and forth, never comfortable, because you keep reacting before the previous change has shown up.
 
@@ -209,7 +210,7 @@ We're trained to expect effort and result to move in a straight line: twice the 
 
 Think of **the straw that broke the camel's back**. You pile on straw - nothing, nothing, nothing - then one more identical straw, no heavier than the rest, and the camel collapses. The last straw wasn't special; the system had reached a limit.
 
-That limit is a **tipping point**: a critical level beyond which a system suddenly flips into a whole new state, often abruptly and sometimes irreversibly.
+That limit is a **[tipping point](/blog/systems-thinking/07-nonlinearity-thresholds-and-tipping-points)**: a critical level beyond which a system suddenly flips into a whole new state, often abruptly and sometimes irreversibly.
 
 Heat water on a stove and for a long time it just gets warmer - gradual, linear. Then at 100°C it bursts into boiling, a sharp change at a threshold. A lake works similarly: farm-runoff nutrients build up quietly for years with no visible harm, then one season the lake flips almost overnight from clear to a green, algae-choked, fish-killing state - and it may not flip back even if you stop the runoff. That last part is **path dependence**: the damage changed what's now possible.
 
@@ -217,7 +218,7 @@ The lesson: small pushes can do nothing for ages and then trigger a sudden flip;
 
 ## Emergence: the whole is more than its parts
 
-Here is a property of systems that feels like magic the first time you grasp it: **emergence**. It's a behavior of the whole that arises from the interactions among its parts but exists in none of the parts alone.
+Here is a property of systems that feels like magic the first time you grasp it: **[emergence](/blog/systems-thinking/08-emergence-and-self-organization)**. It's a behavior of the whole that arises from the interactions among its parts but exists in none of the parts alone.
 
 Picture a **murmuration of starlings** - those huge, swirling, shape-shifting clouds of birds at dusk. No bird is the leader. No bird "knows" the shape. Each follows a couple of simple rules ("stay near my neighbors, don't crash into them"), and out of thousands of those local interactions, a breathtaking coordinated shape *emerges*. You'll never find that shape by studying one bird.
 
@@ -277,4 +278,4 @@ Notice how every concept showed up at once: stocks and flows, reinforcing and ba
 
 Systems thinking is a learnable lens, not a personality trait. The whole discipline collapses into one habit: when something keeps happening, stop asking *"who's to blame?"* and start asking *"what structure keeps producing this, and where can I change it?"* Because structure drives behavior - change the wiring, and the behavior changes with it.
 
-You now have the foundation. The next step is learning to *draw* these systems - mapping stocks, flows, and loops as simple diagrams reveals a small set of recurring traps, called **archetypes**, that show up in every field from medicine to management. Once you can spot the archetype, you can find the single high-leverage point where a small, well-aimed push changes everything. That's where the real power of seeing the whole begins.
+You now have the foundation. The next step is learning to *draw* these systems - mapping stocks, flows, and loops as simple diagrams reveals a small set of recurring traps, called **[archetypes](/blog/systems-thinking/12-system-archetypes-stories-that-repeat)**, that show up in every field from medicine to management. Once you can spot the archetype, you can find the single high-leverage point where a small, well-aimed push changes everything. That's where the real power of seeing the whole begins.

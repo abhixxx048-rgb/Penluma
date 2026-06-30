@@ -34,7 +34,7 @@ faq:
     a: "Saddle stitch staples folded sheets through the spine fold, ideal for thin booklets. Perfect binding glues pages into a square-backed cover like a paperback, which suits thicker books and catalogs."
   - q: "Why is online printing so cheap?"
     a: "Mostly because of gang runs, where many different jobs share one big press sheet. They split the setup and material cost, so each customer pays a fraction of a full press run."
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources: []

@@ -59,9 +59,10 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 11
 icon: "\U0001F504"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/System_archetype
   - https://en.wikipedia.org/wiki/Tragedy_of_the_commons
@@ -88,7 +89,7 @@ A **system archetype** is a recurring causal loop structure that produces a reco
 
 These patterns trace back to Jay Forrester's system dynamics work at MIT in the 1950s and 60s. Peter Senge named eight of them in *The Fifth Discipline* (1990), and Donella Meadows catalogued overlapping "system traps" in *Thinking in Systems* (2008).
 
-Every archetype is built from just two ingredients - two kinds of feedback loop:
+Every archetype is built from just two ingredients - two kinds of [feedback loop](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves):
 
 - **Reinforcing loop (R)** - also called positive feedback. It *amplifies* change. A virtuous or vicious cycle that snowballs.
 - **Balancing loop (B)** - also called negative feedback. It *counteracts* change, pushing the system toward a goal or a limit.
@@ -111,7 +112,7 @@ The reinforcing loop was beautiful: ultra-low fares brought passengers, which br
 
 > **Analogy.** A car accelerating toward a hill. The engine is the reinforcing loop; the hill is the constraint. Once you hit the steep grade, flooring the gas does nothing - you need a different gear. Most managers stare at the speedometer and never look at the grade.
 
-**The classic mistake:** when growth slows, the gut reaction is to push *harder* on the growth engine - more sales, more hours, more planes. That's exactly wrong if a constraint is binding. The way out is to find and relax the constraint *before* it bites. People's Express bought more planes when it should have been training more people.
+**The classic mistake:** when growth slows, the gut reaction is to push *harder* on the growth engine - more sales, more hours, more planes. That's exactly wrong if a constraint is binding. The way out is to find and relax [the binding constraint](/blog/systems-thinking/09-bottlenecks-and-constraints-the-theory-of-constraints) *before* it bites. People's Express bought more planes when it should have been training more people.
 
 ## Shifting the Burden: the seductive quick fix
 
@@ -153,7 +154,7 @@ The structure: two players compete for one limited resource - budget, attention,
 
 **Example - Internet Explorer.** Microsoft bundled IE with Windows 95. More users meant developers built for IE, which made rival browsers worse for everyone, which drove still more users to IE. By the early 2000s it held over 90% market share and Netscape was finished. The same network-effect flywheel explains Facebook, Amazon, and Uber.
 
-> **Analogy.** Compound interest, but applied to advantage instead of money. The first $1,000 makes the next $1,000 easier to earn. Someone starting from nothing doesn't just grow slower - past a tipping point, they can't catch up at all.
+> **Analogy.** Compound interest, but applied to advantage instead of money. The first $1,000 makes the next $1,000 easier to earn. Someone starting from nothing doesn't just grow slower - past a [tipping point](/blog/systems-thinking/07-nonlinearity-thresholds-and-tipping-points), they can't catch up at all.
 
 **The trap dressed as fairness:** this looks like pure meritocracy - reward the winner. But always funding the star team starves the others of the very development that would make *them* strong, leaving the whole system weaker. The fix is periodic rebalancing, or redesigning the contest so it isn't winner-take-all.
 
@@ -206,8 +207,8 @@ People's Express fits here too. Its leadership tracked tangible resources (plane
 
 ## Conclusion
 
-Here's the single thread running through every archetype: they are traps because of a **delay** between cause and effect. Humans easily connect events separated by days. Archetypes operate over months and years, hiding the feedback loop from intuition - so the short-term smart move and the long-term smart move point in opposite directions.
+Here's the single thread running through every archetype: they are traps because of a [**delay** between cause and effect](/blog/systems-thinking/06-delays-why-cause-and-effect-are-not-close-in-time). Humans easily connect events separated by days. Archetypes operate over months and years, hiding the feedback loop from intuition - so the short-term smart move and the long-term smart move point in opposite directions.
 
 The skill, then, isn't memorizing eight diagrams. It's learning to feel the *delay* - to ask, before you act, "What comes back to bite me, and how long until it does?"
 
-Once you start seeing structure instead of events, a harder question opens up: if archetypes are built from feedback loops, where exactly do you push to change one? Systems thinkers have an answer to that too - a ranked list of **leverage points**, from the weak (tweaking numbers) to the world-changing (shifting the goal of the whole system). That's where the real power hides.
+Once you start seeing structure instead of events, a harder question opens up: if archetypes are built from feedback loops, where exactly do you push to change one? Systems thinkers have an answer to that too - a ranked list of [**leverage points**](/blog/systems-thinking/13-leverage-points-where-to-push-to-change-a-system), from the weak (tweaking numbers) to the world-changing (shifting the goal of the whole system). That's where the real power hides.

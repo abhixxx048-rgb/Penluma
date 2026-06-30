@@ -28,7 +28,7 @@ faq:
     a: MoviePass charged about $9.95 a month but paid theaters $12 to $15 per ticket, losing money on every active customer. Growth made things worse, not better, because each new subscriber added to the losses.
   - q: Does growing faster fix bad unit economics?
     a: No. If you lose money on every sale, more sales mean bigger losses. Growth amplifies your unit economics, good or bad, so the math has to work on a single unit first.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: how-to-make-money

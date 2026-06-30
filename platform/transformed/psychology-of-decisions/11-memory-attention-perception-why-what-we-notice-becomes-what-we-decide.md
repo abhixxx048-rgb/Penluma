@@ -54,8 +54,9 @@ faq:
       Design the ending well, build one genuine high point, and avoid
       manipulative tricks like fake "original" prices. End on a warm, clear note
       and that is what people will remember.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -67,7 +68,7 @@ Here is the strange truth: you do not decide based on what actually happened to 
 
 ## Why this matters
 
-Almost every important choice you make is a vote cast by your memory, not your experience. Which restaurant to return to. Whether a project felt worth it. How you rate a service, judge a person, or recall what you "clearly saw."
+Almost [every important choice you make](/blog/psychology-of-decisions/03-how-the-brain-actually-decides-emotion-memory-attention) is a vote cast by your memory, not your experience. Which restaurant to return to. Whether a project felt worth it. How you rate a service, judge a person, or recall what you "clearly saw."
 
 If memory and attention are silently rewriting the evidence, then your decisions rest on edited footage. Understanding the editing process gives you two powerful things: a clearer view of your own choices, and the ability to shape experiences (for customers, friends, or yourself) so the right moments survive.
 
@@ -98,7 +99,7 @@ One warning here, because it is easy to misread. This does **not** mean duration
 
 ## Attentional bias: you notice what your mind is already tuned to
 
-Attention is not neutral. Whatever emotional state or craving you carry makes matching cues "jump out" at you, which then feeds your decisions a skewed sample of reality. This is **attentional bias**: the tendency to notice and dwell on cues that match your current internal state (anxiety, craving, a goal) while neutral information slides past unseen.
+Attention is not neutral. Whatever [emotional state or craving](/blog/psychology-of-decisions/09-feelings-first-how-emotions-steer-every-choice) you carry makes matching cues "jump out" at you, which then feeds your decisions a skewed sample of reality. This is **attentional bias**: the tendency to notice and dwell on cues that match your current internal state (anxiety, craving, a goal) while neutral information slides past unseen.
 
 An anxious person's eyes lock onto angry faces in a crowd. Someone trying to quit smoking suddenly "sees" cigarettes everywhere. Buy a particular car and you start spotting that exact model on every street, a related quirk called the *frequency illusion*. The cars were always there. Your attention filter just changed.
 
@@ -112,7 +113,7 @@ In the most famous demonstration, viewers counted basketball passes in a video. 
 
 A cousin effect, **change blindness**, is just as unsettling. In one study, a stranger asked a pedestrian for directions. Mid-conversation, workers carrying a door passed between them and a *different person* swapped in. Roughly half the pedestrians kept talking, never noticing they were now speaking to someone new.
 
-The scary part is not that we miss things. It is that we are *confident we would not*. Almost everyone insists they would spot the gorilla. This overconfidence is why "I clearly saw it" is weak evidence, and why drivers genuinely "look but do not see" a motorcycle.
+The scary part is not that we miss things. It is that we are *confident we would not*. Almost everyone insists they would spot the gorilla. This [overconfidence](/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence) is why "I clearly saw it" is weak evidence, and why drivers genuinely "look but do not see" a motorcycle.
 
 Attention is a flashlight in a dark room, not a ceiling light. You are sure you saw the whole room, but you only ever saw the small circle the beam was pointing at.
 
@@ -120,7 +121,7 @@ Attention is a flashlight in a dark room, not a ceiling light. You are sure you 
 
 Your estimates get pulled toward whatever number you saw first, even when that number is obviously random.
 
-In a classic study, people spun a rigged wheel that stopped on either 10 or 65, then guessed what percentage of African countries are in the UN. Those who saw 10 guessed about **25%**. Those who saw 65 guessed about **45%**. A 20-point swing, caused by a number they *knew* was meaningless. This is the **anchoring effect**.
+In a classic study, people spun a rigged wheel that stopped on either 10 or 65, then guessed what percentage of African countries are in the UN. Those who saw 10 guessed about **25%**. Those who saw 65 guessed about **45%**. A 20-point swing, caused by a number they *knew* was meaningless. This is the **[anchoring effect](/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults)**.
 
 You feel it every time you shop. A jacket tagged "$200, now $120" feels like a deal. The same jacket simply priced "$120" feels expensive. The crossed-out $200 is an anchor your mind cannot ignore, and even knowing the trick, you are still pulled.
 
@@ -163,4 +164,4 @@ People do not choose based on what happened. They choose based on a reconstructe
 
 So the single thing to remember is this: **if you want to influence a decision, including your own, design the moments that memory keeps.** Nail the ending. Build a real peak. Guide attention honestly. And never plant a memory with a leading question.
 
-Here is the thread worth pulling next. If your own memory can be quietly rewritten by a single word, what happens when *someone else* chooses those words for you, on purpose, at scale? That is where the psychology of persuasion begins.
+Here is the thread worth pulling next. If your own memory can be quietly rewritten by a single word, what happens when *someone else* chooses those words for you, on purpose, at scale? That is where the [psychology of persuasion](/blog/psychology-of-decisions/10-the-six-levers-of-influence-how-people-get-persuaded) begins.

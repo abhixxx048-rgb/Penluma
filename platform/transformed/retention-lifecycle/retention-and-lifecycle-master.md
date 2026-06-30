@@ -36,9 +36,10 @@ category: Business & Growth
 date: '2026-06-16'
 order: 999
 icon: "\U0001F501"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -50,7 +51,7 @@ This guide walks through the five levers that keep customers, why two of them co
 
 ## Why this matters
 
-Winning a new customer costs you advertising, sales effort, and the slow work of earning trust. A customer you keep skips all of that. They already buy, already trust you, and tend to spend more the longer they stay.
+[Winning a new customer costs you advertising, sales effort](/blog/how-to-make-money/13-unit-economics-does-each-sale-make-money), and the slow work of earning trust. A customer you keep skips all of that. They already buy, already trust you, and tend to spend more the longer they stay.
 
 That is why retention compounds. A small lift in the share of customers who renew or repeat shows up everywhere downstream: in revenue, in word of mouth, in the calm of not having to refill a leaking bucket every month.
 
@@ -58,7 +59,7 @@ And much of the leak is invisible. A failed payment is not a customer rejecting 
 
 ## The two audiences you must never confuse
 
-Before the levers, one idea organizes everything: **you almost always have two kinds of customers, and they churn for different reasons.**
+Before the levers, one idea organizes everything: **you almost always have [two kinds of customers](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy), and they churn for different reasons.**
 
 Picture a platform that sells software to store owners, and those store owners sell products to shoppers. There are two relationships at play:
 
@@ -71,7 +72,7 @@ These look similar but need separate handling. The reminders you send a paying c
 
 ## Lever 1: Onboarding that ends at the first real win
 
-Most onboarding checklists declare victory too early. The user finishes setup, the progress bar hits 100 percent, and the product says "all done." But setup is not success. **Success is the first real outcome** - the first order placed, the first report generated, the first genuine win.
+Most [onboarding checklists declare victory too early](/blog/product-sense-empathy/09-reducing-friction-flows-steps-progressive-disclosure). The user finishes setup, the progress bar hits 100 percent, and the product says "all done." But setup is not success. **Success is the first real outcome** - the first order placed, the first report generated, the first genuine win.
 
 A new store owner who has configured their shop but never received an order has not activated. They are one quiet week away from forgetting you exist.
 
@@ -111,7 +112,7 @@ The same engine powers more than carts:
 
 Two guardrails keep this engine from becoming a nuisance:
 
-- **A frequency cap.** One shared gatekeeper checks every non-essential message before it sends, so a customer who qualifies for three journeys at once does not get three emails in an hour. Essential messages - receipts, payment failures, delivery notices - are exempt.
+- **A frequency cap.** [One shared gatekeeper checks every non-essential message](/blog/system-design/16-rate-limiting-and-resiliency) before it sends, so a customer who qualifies for three journeys at once does not get three emails in an hour. Essential messages - receipts, payment failures, delivery notices - are exempt.
 - **A suppression rule.** Stop emailing people who have gone cold for 60 to 90 days. Repeatedly mailing the disengaged hurts your sender reputation and annoys the very people you want back.
 
 ## Lever 4: Health scores that warn you before someone leaves
@@ -160,7 +161,7 @@ This lever pays off over 12 to 18 months, not 12 to 18 days. Lead with the faste
 
 The temptation is to treat all five levers as five separate projects. Resist it. They collapse onto a couple of shared foundations, and they have a natural order. The principle: **protect revenue first, build the shared platform second, instrument third, moat last.**
 
-1. **Lay the foundation.** Make sure your system can send delayed, scheduled messages (a basic background-job setup) and can actually record payment failures. Without these, nothing below works.
+1. **Lay the foundation.** Make sure your system can send delayed, scheduled messages (a basic [background-job setup](/blog/system-design/12-messaging-and-event-driven)) and can actually record payment failures. Without these, nothing below works.
 2. **Fix activation (Lever 1).** Move onboarding state somewhere visible, redefine "done" as the first real win, and add a test-drive path. This stops losses at the front door.
 3. **Turn on dunning (Lever 2).** Warn before cards expire, retry on a schedule, and offer one-click card updates. Highest return, lowest effort.
 4. **Build the one lifecycle engine (Lever 3).** Make it reusable, add a frequency cap and suppression, and ship abandoned-cart recovery as the first journey. Now win-back and surveys are easy additions, not new builds.

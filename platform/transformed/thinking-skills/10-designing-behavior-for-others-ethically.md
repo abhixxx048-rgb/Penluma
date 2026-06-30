@@ -37,8 +37,9 @@ category: Thinking & Decisions
 date: '2026-06-21'
 order: 9
 icon: "\U0001F4A1"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
@@ -48,7 +49,7 @@ So the real question was never *whether* you shape behavior. You always do. The 
 
 ## Why this matters
 
-You can shape behavior to help people get what they came for, or to extract a few more clicks for your dashboard. Both use the exact same psychological levers. The mechanics that build a healthy morning workout habit are identical to the ones that build a gambling problem.
+You can shape behavior to help people get what they came for, or to extract a few more clicks for your dashboard. Both use the exact same psychological levers. The mechanics that build [a healthy morning workout habit](/blog/thinking-skills/09-designing-your-own-habits-that-actually-stick) are identical to the ones that build a gambling problem.
 
 That's the uncomfortable part. **The tools are neutral. You are not.**
 
@@ -58,7 +59,7 @@ This article walks through how engagement actually works under the hood, where t
 
 ## How engagement actually works
 
-Engagement isn't magic, and it isn't luck. It's applied behavioral science. Before you can use these tools honestly, you need to know what they are.
+Engagement isn't magic, and it isn't luck. It's applied [behavioral science](/blog/thinking-skills/08-section-7-behavior-design-models-why-people-do-and-don-t-act). Before you can use these tools honestly, you need to know what they are.
 
 ### The Hook Model: how habits form
 
@@ -69,7 +70,7 @@ In his 2014 book *Hooked*, Nir Eyal described a four-step loop that habit-formin
 3. **Variable reward** - the payoff, but unpredictable in size or timing.
 4. **Investment** - you put something in: data, a photo, a friend connection, time. That investment makes the next trigger more likely.
 
-Each lap tightens the loop. The trigger slowly shifts from "the app pinged me" to "I open it automatically when I feel restless." That move - from external nudge to internal craving - is what separates a real habit from a one-off visit.
+Each lap tightens the loop. The trigger slowly shifts from "the app pinged me" to "I open it automatically when I feel restless." That move - from external nudge to internal craving - is what separates [a real habit](/blog/thinking-skills/07-the-science-of-habits-how-behavior-becomes-automatic) from a one-off visit.
 
 Think of a language app like Duolingo. The trigger starts as a daily reminder. A few weeks in, it becomes "I feel guilty if I miss a day." The reminder is gone; the habit runs on its own.
 
@@ -94,7 +95,7 @@ This is why a good onboarding flow shows "Step 3 of 5 complete" right after sign
 
 ### Streaks: the pain of losing what you built
 
-A **streak** counts the consecutive days you've done something. It works through **loss aversion** - a finding from Kahneman and Tversky's Prospect Theory (1979) that losing something hurts about twice as much as gaining the same thing feels good.
+A **streak** counts the consecutive days you've done something. It works through **[loss aversion](/blog/economics-from-first-principles/31-behavioral-economics)** - a finding from Kahneman and Tversky's Prospect Theory (1979) that losing something hurts about twice as much as gaining the same thing feels good.
 
 A streak turns "keep going" into "don't lose what you've built," and that framing is powerful.
 
@@ -227,4 +228,4 @@ The standard is simple: **build the product you'd want your own parents to use.*
 
 Here's the one thing to carry out of all this: **behavioral science is a set of tools, never a set of goals.** The goal is always to help the person in front of you do the thing they actually came to do. Aim the tools at their interests and you build trust that compounds. Aim them at your dashboard and you build churn dressed up as growth.
 
-The hardest part isn't knowing the techniques - it's noticing when *you've* drifted, because the drift always feels like "just optimizing conversion." Which raises the next question worth sitting with: how do the smartest teams design systems that catch their own ethical blind spots before users do? That's where decision-making frameworks and pre-mortems come in - and that's a habit worth building, too.
+The hardest part isn't knowing the techniques - it's noticing when *you've* drifted, because the drift always feels like "just optimizing conversion." Which raises the next question worth sitting with: how do the smartest teams design systems that catch their own ethical blind spots before users do? That's where [decision-making frameworks](/blog/thinking-skills/06-section-5-leverage-points-mental-models-for-better-decisions) and pre-mortems come in - and that's a habit worth building, too.

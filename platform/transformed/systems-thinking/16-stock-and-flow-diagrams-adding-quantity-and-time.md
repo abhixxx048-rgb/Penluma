@@ -36,9 +36,10 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 15
 icon: "\U0001F504"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - 'https://en.wikipedia.org/wiki/Stock_and_flow'
   - 'https://en.wikipedia.org/wiki/System_dynamics'
@@ -50,7 +51,7 @@ That tiny mistake is one of the most expensive errors in human reasoning. It sho
 
 ## Why this matters
 
-You already know how to draw arrows between causes and effects. A causal loop diagram (CLD) does that well, showing what affects what and in which direction.
+You already know how to draw arrows between causes and effects. A [causal loop diagram (CLD)](/blog/systems-thinking/15-causal-loop-diagrams-drawing-how-things-connect) does that well, showing what affects what and in which direction.
 
 But arrows have a quiet weakness. They cannot tell you **how much** of anything there is, or **how fast** it is changing. No numbers, no units, no sense of time.
 
@@ -149,7 +150,7 @@ Start with a balance of $1,000. Add a $200/month deposit and a 0.5%/month intere
 
 The interesting part is the interest. The bigger the balance, the more interest you earn; the more interest, the bigger the balance. The balance feeds itself.
 
-That self-feeding pattern is a **reinforcing feedback loop**, and it bends a straight line into a curve that accelerates upward: exponential growth. The old **Rule of 72** captures it neatly, money doubles in roughly 72 ÷ (yearly % rate) years, so about 12 years at 6%.
+That self-feeding pattern is a [**reinforcing feedback loop**](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves), and it bends a straight line into a curve that accelerates upward: exponential growth. The old **Rule of 72** captures it neatly, money doubles in roughly 72 ÷ (yearly % rate) years, so about 12 years at 6%.
 
 ### A customer base (the leaky bucket)
 
@@ -159,7 +160,7 @@ Picture a bucket with a hole. You pour signups in the top; churn leaks out the b
 
 Eventually inflow equals outflow and the level holds steady, even though both are still flowing. The math is easy: 100 signups = customers × 0.05, so the system settles at **2,000 customers**.
 
-The diagram makes your two levers obvious. To grow past 2,000, you must either pour faster (more signups) or plug the hole (lower the churn rate). Most companies obsess over the first and ignore the second.
+The diagram makes your [two levers](/blog/systems-thinking/13-leverage-points-where-to-push-to-change-a-system) obvious. To grow past 2,000, you must either pour faster (more signups) or plug the hole (lower the churn rate). Most companies obsess over the first and ignore the second.
 
 ## The four shapes on the page
 
@@ -192,7 +193,7 @@ When you run a model, you get a **behavior-over-time (BOT) graph**: a stock or f
 - **Exponential growth** (the J-curve) comes from a reinforcing loop, like the savings account.
 - **Goal-seeking decay** comes from a balancing loop.
 - **S-curves** appear when reinforcing growth runs into a balancing limit, like the customer base hitting saturation.
-- **Oscillation** and **overshoot-and-collapse** appear when feedback is *delayed*, like fisheries that boom then crash before the correction arrives.
+- **Oscillation** and **overshoot-and-collapse** appear when [feedback is *delayed*](/blog/systems-thinking/06-delays-why-cause-and-effect-are-not-close-in-time), like fisheries that boom then crash before the correction arrives.
 
 One warning: a BOT graph shows *what* happened, never *why*. Two completely different systems can produce identical S-curves. To know whether you can change a behaviour, you must trace the loops in the diagram. Structure, not the picture, holds the answer.
 
@@ -229,6 +230,6 @@ When you outgrow the spreadsheet, free tools like **InsightMaker** (runs in a br
 
 If you remember one thing, remember this: **a stock is the running total of its net flow, so slowing a rate is not the same as lowering a level.** That single distinction quietly governs your savings, your customer base, and the carbon in the sky.
 
-This tool came from Jay Forrester at MIT in the late 1950s and was made famous for managers by Peter Senge in *The Fifth Discipline*. Senge added no new shapes, but he noticed that the same stock-and-flow structures repeat across wildly different situations, naming them **systems archetypes** with names like Limits to Growth, Fixes That Fail, and Tragedy of the Commons.
+This tool came from Jay Forrester at MIT in the late 1950s and was made famous for managers by Peter Senge in *The Fifth Discipline*. Senge added no new shapes, but he noticed that the same stock-and-flow structures repeat across wildly different situations, naming them [**systems archetypes**](/blog/systems-thinking/12-system-archetypes-stories-that-repeat) with names like Limits to Growth, Fixes That Fail, and Tragedy of the Commons.
 
 Once you can spot those recurring patterns, you stop reinventing diagrams and start recognising old traps in new clothes. That is where we go next.

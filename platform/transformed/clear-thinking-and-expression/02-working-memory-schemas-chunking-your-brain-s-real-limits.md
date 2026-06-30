@@ -39,7 +39,7 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 1
 icon: ✍️
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 sources:
   - https://en.wikipedia.org/wiki/Working_memory

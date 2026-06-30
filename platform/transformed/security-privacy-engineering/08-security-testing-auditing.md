@@ -36,9 +36,10 @@ category: Engineering
 date: '2026-06-21'
 order: 7
 icon: "\U0001F512"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -64,7 +65,7 @@ Four automated test types each look at your system from a different angle. None 
 
 Here's the clean mental model:
 
-- **SAST = your code, read statically.** Static Application Security Testing reads your source code *without running it*. Like proofreading a recipe for dangerous steps before you turn on the stove. It runs earliest - in your editor, on commit, in CI. Great for finding hardcoded secrets and injection flaws with an exact file and line. The catch: lots of false positives, and it's blind to runtime and configuration issues.
+- **SAST = your code, read statically.** Static Application Security Testing reads your source code *without running it*. Like proofreading a recipe for dangerous steps before you turn on the stove. It runs earliest - in your editor, on commit, in CI. Great for finding hardcoded secrets and [injection flaws](/blog/security-privacy-engineering/05-application-web-security) with an exact file and line. The catch: lots of false positives, and it's blind to runtime and configuration issues.
 
 - **DAST = the running app, from outside.** Dynamic Application Security Testing attacks your deployed app with no source code, like a mystery shopper rattling every door of the finished store. It finds what's *actually* exploitable at runtime and has fewer false positives. The catch: it runs late and can't point you to a line of code.
 
@@ -106,7 +107,7 @@ The "team colors" describe *roles*, not test types:
 - **Blue team (defense)** is the group that monitors, detects, responds, and hardens - your security operations center.
 - **Purple team** isn't a separate team at all. It's a *collaboration mode* where red and blue work together in real time, so every attack technique immediately teaches the defenders. It turns a pass/fail scorecard into actual learning.
 
-Then there are **bug bounties** - crowdsourced, pay-for-results testing through platforms like HackerOne and Bugcrowd. In 2025, HackerOne alone paid **$81 million** in bounties, up 13 percent year over year. AI is reshaping this space fast: prompt-injection reports jumped over 500 percent, and most researchers now use AI tools in their hunting. Bounties give you continuous coverage from many eyes - but with unpredictable scope and quality. They *complement* scheduled testing; they don't *replace* it.
+Then there are **bug bounties** - crowdsourced, pay-for-results testing through platforms like HackerOne and Bugcrowd. In 2025, HackerOne alone paid **$81 million** in bounties, up 13 percent year over year. AI is reshaping this space fast: [prompt-injection](/blog/security-privacy-engineering/12-ai-llm-security-and-privacy) reports jumped over 500 percent, and most researchers now use AI tools in their hunting. Bounties give you continuous coverage from many eyes - but with unpredictable scope and quality. They *complement* scheduled testing; they don't *replace* it.
 
 ## Fuzzing: let the machine find the weird inputs
 
@@ -160,7 +161,7 @@ Both matter. They just answer different questions.
 
 1. **Layer your automated tools.** Run SAST and SCA on every commit; add DAST or IAST in staging. None is sufficient alone.
 2. **Keep an SBOM continuously updated.** It's the difference between answering "are we affected by CVE-X?" in minutes versus weeks.
-3. **Add human code review for logic and authorization.** Specifically hunt for the bugs scanners can't reason about - IDOR, broken approval flows, coupon abuse.
+3. **Add human code review for logic and authorization.** Specifically hunt for the bugs scanners can't reason about - [IDOR](/blog/security-privacy-engineering/04-authentication-authorization), broken approval flows, coupon abuse.
 4. **Prioritize with the layered rule.** On KEV → fix now. EPSS above 0.5 → out-of-cycle patch. Everything else → schedule with SSVC.
 5. **Always close the loop.** After every fix, retest or rescan to confirm it worked *and* didn't break anything else. Capture it as a repeatable test so the bug can't quietly come back.
 6. **Do compliance and adversarial testing.** They answer different questions; you need both.
@@ -173,4 +174,4 @@ Memorizing exploits is a depreciating asset. Mastering the methodical process - 
 
 If you remember one thing, make it this: **compliance proves your processes exist; assessment proves your system survives an attack. A mature program needs both, run continuously, not once a year.**
 
-The natural next question is what attackers actually *do* once they're in - how a single overlooked authorization flaw becomes a full breach. That's where threat modeling comes in: mapping how someone moves through your system before they ever try. Learn to draw that map, and you start catching the unlocked windows before the burglar ever walks by.
+The natural next question is what attackers actually *do* once they're in - how a single overlooked authorization flaw becomes a full breach. That's where [threat modeling](/blog/security-privacy-engineering/07-threat-modeling-risk-management) comes in: mapping how someone moves through your system before they ever try. Learn to draw that map, and you start catching the unlocked windows before the burglar ever walks by.

@@ -59,9 +59,10 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 9
 icon: "\U0001F9ED"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -166,7 +167,7 @@ Same average, opposite realities. To see the difference, you need a measure of *
 
 (If you're curious about the machinery: standard deviation comes from **variance**, which averages the squared distance of each value from the mean. Squaring keeps the distances from cancelling out and punishes far misses extra hard. Then you take the square root to get back to normal units. That's all standard deviation is - the typical distance from average.)
 
-Here's why it matters in real life. Two investment funds both "averaged 8% per year." Fund 1 returned 7%, 8%, 9% across three years - steady, tiny spread. Fund 2 returned +40%, −30%, +14% - a roller coaster. Same average, but anyone who needs the money next year should care enormously. **The spread is the risk.** A number with no sense of spread is half a story.
+Here's why it matters in real life. Two investment funds both "averaged 8% per year." Fund 1 returned 7%, 8%, 9% across three years - steady, tiny spread. Fund 2 returned +40%, −30%, +14% - a roller coaster. Same average, but anyone who needs the money next year should care enormously. **The spread is [the risk](/blog/ten-disciplines/17-time-value-of-money-risk-return-and-how-investing-works).** A number with no sense of spread is half a story.
 
 ## Describing data by position
 
@@ -194,7 +195,7 @@ It might be a typo - someone entered an age of "350" instead of "35," and that s
 
 Single summary numbers crush a lot of detail. The richest picture comes from seeing the whole **shape** - the pattern of how often each value occurs, called the **distribution**. You draw it with a **histogram**, a bar chart where each bar's height shows how many observations fall into that range.
 
-One shape shows up so often in nature it earned a nickname: the **bell curve**, formally the **normal distribution**. Most values cluster near the middle, with fewer and fewer toward the extremes on either side. Adult height is a classic example - most people near average, a few quite tall or short, almost nobody a 7-foot giant.
+One shape shows up so often in nature it earned a nickname: the **bell curve**, formally the **[normal distribution](/blog/ten-disciplines/11-probability-uncertainty-distributions-and-bayesian-thinking)**. Most values cluster near the middle, with fewer and fewer toward the extremes on either side. Adult height is a classic example - most people near average, a few quite tall or short, almost nobody a 7-foot giant.
 
 ```
             .-=#####=-.
@@ -223,7 +224,7 @@ One more shape worth knowing: a **bimodal** distribution has two peaks. That usu
 
 ## How charts lie
 
-A chart turns numbers into a picture, and your brain reads pictures fast - often before you read the labels. That speed is what makes charts powerful and also what makes them easy to abuse. The same true data can be drawn to tell opposite stories. Here are the classic tricks.
+A chart turns numbers into a picture, and [your brain reads pictures fast](/blog/ten-disciplines/07-how-the-mind-works-perception-attention-memory-and-two-systems-of-thinking) - often before you read the labels. That speed is what makes charts powerful and also what makes them easy to abuse. The same true data can be drawn to tell opposite stories. Here are the classic tricks.
 
 **1. The truncated y-axis.** The most common deception of all. If the vertical axis starts at 98 instead of 0, a 1% gap between two bars can look like a cliff. Whenever one bar looks dramatically taller, glance at the bottom of the axis. If it doesn't start at zero, the "huge" difference may be trivial.
 
@@ -256,4 +257,4 @@ Reading the world in numbers isn't about formulas. It's a set of reflexes: ask w
 
 Here's the one thing to carry away: **a number without its spread, its shape, and its source is not information - it's a costume.** Your job is to ask what's underneath.
 
-And there's a natural next door to walk through. Once you can read a single number honestly, the obvious question becomes how two numbers relate - does more coffee really mean better sleep, or are they just moving together by coincidence? That's the world of **correlation**, where the most famous warning in all of statistics lives: correlation is not causation. But that's a story for another day.
+And there's a natural next door to walk through. Once you can read a single number honestly, the obvious question becomes how two numbers relate - does more coffee really mean better sleep, or are they just moving together by coincidence? That's the world of **[correlation](/blog/ten-disciplines/12-inference-correlation-vs-causation-and-how-statistics-mislead-advanced)**, where the most famous warning in all of statistics lives: correlation is not causation. But that's a story for another day.

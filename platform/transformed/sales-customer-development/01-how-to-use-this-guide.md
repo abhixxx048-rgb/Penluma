@@ -28,13 +28,14 @@ faq:
     a: Read one idea, then go have one real conversation. Awkward first calls are normal and expected. By your tenth call you will sound like a different person.
   - q: What is the Mom Test?
     a: It is a way of asking questions so people tell you the truth instead of polite lies, even your mom. You ask about their actual life and past behavior, not about whether they like your idea.
+linked: true
 topic: sales-customer-development
 topicTitle: Sales & Customer Development
 category: Money & Business
 date: '2026-06-21'
 order: 0
 icon: "\U0001F91D"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
 sources: []
@@ -50,7 +51,7 @@ Most technical founders avoid selling until it is almost too late. They polish t
 
 That instinct is expensive. The biggest risk in a startup is not shipping a buggy product. It is shipping one nobody wants. You cannot code your way out of that problem. You can only talk your way out of it, by finding real people with a real problem and learning whether what you are building actually helps.
 
-The good news is that this is a skill, not a personality. You can learn it the same way you learned to debug.
+The good news is that [this is a skill, not a personality](/blog/sales-customer-development/02-why-founders-must-learn-to-sell-and-why-it-is-learnable). You can learn it the same way you learned to debug.
 
 ## Two words, in plain English
 
@@ -58,7 +59,7 @@ Before anything else, let's clear up the two words in the title, because they sc
 
 **Sales** means helping someone decide to buy something that genuinely helps them. At its core it is honest communication, not trickery. If your product is wrong for them, an honest seller says so, and oddly, that is what makes people trust you enough to buy when it is right.
 
-**Customer development** is a phrase from startup teacher Steve Blank. It means going out and talking to real people to learn whether your product solves a real problem, before you bet everything on it. His famous line is: "There are no facts inside the building, so get outside." Your office has opinions. The outside world has facts.
+**Customer development** is a phrase from startup teacher Steve Blank. It means [going out and talking to real people](/blog/sales-customer-development/03-customer-development-get-out-of-the-building) to learn whether your product solves a real problem, before you bet everything on it. His famous line is: "There are no facts inside the building, so get outside." Your office has opinions. The outside world has facts.
 
 ## Selling is learned, not inherited
 
@@ -82,10 +83,10 @@ That mindset is comfortable for technical people because it is just truth-seekin
 
 A few beliefs keep good founders stuck. Here is the myth, and here is the reality.
 
-- **"I have to be a smooth talker."** Reality: the best discovery calls are mostly the customer talking and you listening. Smooth is overrated. Curious wins.
+- **"I have to be a smooth talker."** Reality: [the best discovery calls](/blog/sales-customer-development/07-running-a-great-discovery-call-start-to-finish) are mostly the customer talking and you listening. Smooth is overrated. Curious wins.
 - **"Selling means convincing people."** Reality: it means understanding people. If the fit is real, you mostly need to get out of the way.
 - **"I should wait until the product is ready."** Reality: waiting is the most expensive mistake there is. Conversations cost nothing but a little courage, and they tell you what to build.
-- **"If someone says my idea is great, I'm onto something."** Reality: polite praise is the most dangerous feedback you can get. People lie to be nice. Later in this guide, the Mom Test shows you how to ask so they cannot.
+- **"If someone says my idea is great, I'm onto something."** Reality: polite praise is the most dangerous feedback you can get. People lie to be nice. Later in this guide, [the Mom Test shows you how to ask](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself) so they cannot.
 
 ## What you will be able to do
 
@@ -104,7 +105,7 @@ The chapters move in a deliberate order, from mindset, to listening, to the actu
 
 - **Chapters 1 to 3 build the foundation:** why founders must sell, how to "get out of the building," and how to talk to people without fooling yourself (the famous **Mom Test**).
 - **Chapters 4 to 6 are the conversation craft:** asking questions that do not lead the witness, listening actively, and running a great **discovery call** (a first conversation to understand someone's situation) from start to finish.
-- **Chapters 7 to 9 are the professional toolkit:** well-known sales frameworks like SPIN, BANT, and MEDDIC, deciding who is worth your time, and giving a demo that shows value.
+- **Chapters 7 to 9 are the professional toolkit:** well-known [sales frameworks like SPIN, BANT, and MEDDIC](/blog/sales-customer-development/08-sales-discovery-frameworks-spin-bant-meddic-and-friends), deciding who is worth your time, and giving a demo that shows value.
 - **Chapters 10 to 11 handle the scary parts:** objections, and the word "no."
 - **Chapters 12 to 14 keep it going:** getting conversations in the first place, moving a deal toward a yes, and turning all of this into a steady habit.
 

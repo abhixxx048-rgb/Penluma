@@ -56,7 +56,7 @@ faq:
       The government stopped issuing new SGBs - the last tranche was February 2024.
       For new gold money, use a gold ETF or gold mutual fund instead. If you already
       hold SGBs, keep them; they still pay interest and mature normally.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 sources: []

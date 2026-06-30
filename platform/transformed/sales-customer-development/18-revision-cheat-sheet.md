@@ -32,9 +32,10 @@ category: Money & Business
 date: '2026-06-21'
 order: 17
 icon: "\U0001F91D"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -52,11 +53,11 @@ A good call gets you facts you can act on: what people actually do, what actuall
 
 ## The three rules that make people honest
 
-This comes from *The Mom Test* by Rob Fitzpatrick - named for questions so well-built that even your mom could not lie to you to spare your feelings.
+This comes from [*The Mom Test* by Rob Fitzpatrick](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself) - named for questions so well-built that even your mom could not lie to you to spare your feelings.
 
 1. **Talk about their life, not your idea.** The moment you describe your product, they start being nice instead of being honest.
 2. **Ask about the past and the specific, not opinions about the future.** "What did you do last time?" beats "What would you do?" every time. People are terrible predictors of their own future behavior and great reporters of their past.
-3. **Talk less, listen more.** Aim to let them speak about 80 percent of the time. If you are talking, you are not learning.
+3. **Talk less, listen more.** Aim to [let them speak about 80 percent of the time](/blog/sales-customer-development/06-active-listening-and-reading-the-conversation). If you are talking, you are not learning.
 
 A quick example. You are building a tool for print shops. The weak move is "I'm building software that handles rush orders - would that be useful?" They say yes to be kind. The strong move is "Walk me through the last rush order that went sideways." Now they are telling you a true story, with real costs and real frustration baked in.
 
@@ -75,7 +76,7 @@ Notice the pattern: every good question points backward in time, toward somethin
 
 ## The shape of a discovery call
 
-A discovery call is just a learning conversation with a spine. Keep these six beats in order and you will never feel lost mid-call.
+[A discovery call](/blog/sales-customer-development/07-running-a-great-discovery-call-start-to-finish) is just a learning conversation with a spine. Keep these six beats in order and you will never feel lost mid-call.
 
 1. **Open** - set the frame: "Mostly I want to learn how you work today. Cool if I ask some questions?"
 2. **Situation** - understand their world and current process.
@@ -107,11 +108,11 @@ When someone pushes back, resist the urge to argue. Use the five **LAARC** steps
 4. **Respond** honestly to the real concern.
 5. **Confirm:** "Does that put it to rest?"
 
-The core idea: **treat every objection as a question in disguise.** "It's too expensive" usually means "I'm not yet sure it's worth it." Answer the question hiding underneath, not the sharp tone on the surface.
+The core idea: **[treat every objection as a question in disguise](/blog/sales-customer-development/11-handling-objections-with-honesty).** "It's too expensive" usually means "I'm not yet sure it's worth it." Answer the question hiding underneath, not the sharp tone on the surface.
 
 ## Reaching out so people say yes
 
-Whether cold or warm, a good outreach message has three parts and stays short:
+Whether cold or warm, a good [outreach message](/blog/sales-customer-development/13-founder-led-outreach-getting-the-conversations) has three parts and stays short:
 
 - **Relevance** - why you, why now, specific to them.
 - **Credibility** - one short reason to trust you.
@@ -182,4 +183,4 @@ The Do / Never table to keep beside you:
 
 If you remember one thing, remember this: **the past is data, the future is fiction.** Every strong move on this page comes back to pulling out what people really did, not what they say they might do.
 
-Master that, and a question worth chewing on opens up: once you have collected ten honest stories, how do you tell a real pattern from a loud coincidence? That - turning raw conversations into a decision you can bet on - is where customer development gets genuinely interesting.
+Master that, and a question worth chewing on opens up: once you have collected ten honest stories, how do you tell a real pattern from a loud coincidence? That - turning raw conversations into a decision you can bet on - is where [customer development](/blog/sales-customer-development/03-customer-development-get-out-of-the-building) gets genuinely interesting.

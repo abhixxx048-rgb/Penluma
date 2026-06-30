@@ -36,9 +36,10 @@ category: Thinking & Decisions
 date: '2026-06-22'
 order: 23
 icon: "\U0001F9ED"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -150,11 +151,11 @@ A computer cannot do arithmetic on the word "king." It only handles numbers. So 
 
 Imagine a giant map where every word has coordinates placed by meaning rather than geography. "King," "queen," and "monarch" cluster in one neighbourhood; "banana" sits far away in a fruit district. The maths even works directionally: the step from "king" to "queen" is roughly the same as from "man" to "woman."
 
-This matters far beyond chatbots. Embeddings power semantic search (ask for documents about "cancelling a subscription" and you get results that mean it without using the word "cancel"), recommendation systems, and the retrieval step we will meet shortly. Once you see that meaning becomes coordinates, a lot of modern AI stops being mysterious.
+This matters far beyond chatbots. Embeddings power [semantic search](/blog/ai-llm-engineering/03-context-engineering-retrieval) (ask for documents about "cancelling a subscription" and you get results that mean it without using the word "cancel"), recommendation systems, and the retrieval step we will meet shortly. Once you see that meaning becomes coordinates, a lot of modern AI stops being mysterious.
 
 ## The LLM: astronomically powerful autocomplete
 
-Here is the plain, slightly deflating truth. At its core, a large language model does one thing: **predict the next token**, given all the tokens so far. That is it. ChatGPT, Claude, and Gemini are, mechanically, next-token predictors.
+Here is the plain, slightly deflating truth. At its core, a large language model does one thing: **predict the next token**, given all the tokens so far. That is it. ChatGPT, Claude, and Gemini are, mechanically, [next-token predictors](/blog/ai-llm-engineering/01-foundations-how-llms-work-why-these-skills-endure).
 
 Your phone's keyboard suggests the next word as you type - "I'm running a little..." becomes "late." An LLM is that same idea scaled up beyond imagination, trained on a large fraction of the public internet, books, and code, with billions of weights. At that scale, "predict the next likely chunk of text, one piece at a time" produces something that *looks* like reasoning.
 
@@ -193,11 +194,11 @@ These five terms are the working vocabulary for anyone using LLMs at work. Learn
 
 ### Why RAG is the quiet hero
 
-A closed-book exam forces a student to answer from memory - they might misremember or make something up. An open-book exam, where you hand them the exact reference pages first, produces far more accurate answers. RAG turns a closed-book LLM into an open-book one.
+A closed-book exam forces a student to answer from memory - they might misremember or make something up. An open-book exam, where you hand them the exact reference pages first, produces far more accurate answers. [RAG turns a closed-book LLM into an open-book one](/blog/ai-learning-platform/24-turning-a-pdf-into-a-course-rag-for-learning).
 
 This is how a company chatbot answers questions about *your* specific policies, prices, or product catalogue. Those facts were never in the model's training, so they are retrieved and supplied at question time. The flow is simple: take the user's question, search the company documents for the relevant pages (using embeddings), stuff those pages plus the question into the prompt, and let the LLM answer grounded in what it was given.
 
-RAG matters for three reasons. It keeps answers **current** - a model trained last year doesn't know this morning's price change, but a retrieved document does. It keeps answers **grounded**, which means less hallucination. And it lets you **cite sources**, so a human can verify, which is essential for anything high-stakes.
+RAG matters for three reasons. It keeps answers **current** - a model trained last year doesn't know this morning's price change, but a retrieved document does. It keeps answers **grounded**, which means [less hallucination](/blog/ai-learning-platform/25-keeping-the-ai-accurate-and-pedagogically-sound). And it lets you **cite sources**, so a human can verify, which is essential for anything high-stakes.
 
 ## Common misconceptions
 

@@ -48,7 +48,7 @@ faq:
     a: >-
       Apply each concept to your own numbers immediately. Reading about gross margin
       is forgettable; calculating your own gross margin and being shocked by it is not.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 sources: []
 linked: true

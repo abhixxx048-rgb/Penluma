@@ -49,11 +49,12 @@ faq:
       in her 2008 book "Thinking in Systems."
 topic: systems-thinking
 topicTitle: Systems Thinking
+linked: true
 category: Thinking & Decisions
 date: '2026-06-22'
 order: 12
 icon: "\U0001F504"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
 sources:
@@ -93,7 +94,7 @@ Think of it as an iceberg. Laws, prices, org charts, and programs float above th
 
 Parameters are the constants in a system: a tax rate, a speed limit, a subsidy amount. Changing them rarely changes *behaviour*.
 
-Meadows estimated that roughly 95% of management attention goes to parameters - budget figures, milestones, headcount - and yet they are the weakest lever. A number only matters when it pushes the system past a tipping point that flips how it behaves. Short of that, you are adjusting the faucet, not the plumbing.
+Meadows estimated that roughly 95% of management attention goes to parameters - budget figures, milestones, headcount - and yet they are the weakest lever. A number only matters when it pushes the system past a [tipping point](/blog/systems-thinking/07-nonlinearity-thresholds-and-tipping-points) that flips how it behaves. Short of that, you are adjusting the faucet, not the plumbing.
 
 ### #11 Buffers - the shock absorbers
 
@@ -113,13 +114,13 @@ Structures like road networks, factory floors, and the age profile of a populati
 
 ### #9 Delays - the lag between action and result
 
-When a delay is badly out of step with how fast a system changes, you get oscillation, overshoot, or collapse.
+When a [delay](/blog/systems-thinking/06-delays-why-cause-and-effect-are-not-close-in-time) is badly out of step with how fast a system changes, you get oscillation, overshoot, or collapse.
 
 Picture a hotel shower. It runs cold, so you crank it to hot. Ninety seconds later, scalding water arrives, so you jerk it back. Then freezing water arrives, and you swing again. The wild oscillation is caused entirely by the *delay*, not the temperature dial. Install an instant-hot heater and the swinging stops.
 
 ### #8 Balancing loops - the self-correcting kind
 
-A balancing (negative) feedback loop detects a gap from a goal and pushes to close it: a thermostat, a market price responding to demand, a welfare program catching people up. Its leverage is its *strength* relative to the disturbances it has to fight.
+A balancing (negative) [feedback loop](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves) detects a gap from a goal and pushes to close it: a thermostat, a market price responding to demand, a welfare program catching people up. Its leverage is its *strength* relative to the disturbances it has to fight.
 
 ### #7 Reinforcing loops - the self-amplifying kind
 
@@ -134,7 +135,7 @@ A reinforcing (positive) feedback loop feeds on itself: compound interest, arms 
 
 Here is Meadows' sharp insight: it is usually **more effective to slow down a runaway reinforcing loop than to strengthen a corrective balancing loop**.
 
-Take wealth inequality. The rich collect interest, hire accountants to cut taxes, and pass on inheritance and good schooling. The poor pay interest and inherit debt. Those are reinforcing loops compounding the gap. Trying to outrun them with welfare alone is like cancelling compound interest with a flat handout - the loop always gains. Progressive tax, inheritance tax, and universal education work better because they weaken the *compounding itself*.
+Take [wealth inequality](/blog/economics-from-first-principles/25-inequality-wealth-distribution-and-poverty). The rich collect interest, hire accountants to cut taxes, and pass on inheritance and good schooling. The poor pay interest and inherit debt. Those are reinforcing loops compounding the gap. Trying to outrun them with welfare alone is like cancelling compound interest with a flat handout - the loop always gains. Progressive tax, inheritance tax, and universal education work better because they weaken the *compounding itself*.
 
 ## The strong levers: information, rules, and self-organization
 
@@ -176,7 +177,7 @@ The highest leverage of all is the ability to hold *no* belief as absolute truth
 
 **"The biggest, most-fought-over lever must be the most powerful."** It is usually the opposite. We fight over parameters precisely because they are *legible* - measurable, claimable, press-release-friendly. The real leverage in goals and paradigms is invisible in a spreadsheet, slow to act, and threatening to whoever benefits from the status quo.
 
-**"High leverage means safe and good."** It only means high *impact* - in either direction. The hierarchy tells you where to look, not that the answer is correct. A misjudged paradigm shift can backfire as spectacularly as a wise one succeeds.
+**"High leverage means safe and good."** It only means high *impact* - in either direction. The hierarchy tells you where to look, not that the answer is correct. A misjudged [paradigm shift](/blog/systems-thinking/14-mental-models-and-paradigms-the-deepest-leverage) can backfire as spectacularly as a wise one succeeds.
 
 **"Change the rule and the system will follow."** Not if the paradigm underneath stays put. US Prohibition changed the law but not the belief that alcohol was a normal social good, so the system simply routed around it with speakeasies and crime, then repealed it. Rules sit *below* paradigms in the stack for a reason.
 
@@ -190,7 +191,7 @@ You do not need a computer model to think in leverage points. You need a habit o
 4. **Look for a missing feedback loop (#6) first.** Restoring information - making consequences reach the decision-maker - is often the cheapest powerful move available. Ask: who is shielded from the results of their own choices?
 5. **Hunt for the runaway loop (#7) before you reinforce the corrective one (#8).** Slowing the thing that compounds usually beats chasing it.
 6. **Check the goal (#3).** If the system's true purpose (where it spends its resources) contradicts what you want, no lower lever will hold.
-7. **Find the single binding constraint.** Eliyahu Goldratt's *Theory of Constraints*, from his 1984 novel *The Goal*, makes the operational version of this point: a factory's output is set by its one bottleneck, and effort spent anywhere else is waste. Push only there.
+7. **Find the single binding constraint.** Eliyahu Goldratt's *Theory of Constraints*, from his 1984 novel *The Goal*, makes the operational version of this point: a factory's output is set by its [one bottleneck](/blog/systems-thinking/09-bottlenecks-and-constraints-the-theory-of-constraints), and effort spent anywhere else is waste. Push only there.
 
 ## Conclusion
 

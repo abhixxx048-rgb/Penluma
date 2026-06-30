@@ -60,12 +60,13 @@ faq:
       assumption, label each as fact or assumption or opinion, then test your
       biggest assumption. Doing it in writing forces the precision that thinking
       in your head skips.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources: []
 ---
 
-You have probably heard that Elon Musk, inventors, and great scientists all "think from first principles." It sounds powerful. It also sounds vague - like advice you nod along to and then forget the moment you face an actual problem.
+You have probably heard that Elon Musk, inventors, and great scientists all "[think from first principles](/blog/thinking-skills/03-first-principles-thinking-reasoning-from-the-ground-up)." It sounds powerful. It also sounds vague - like advice you nod along to and then forget the moment you face an actual problem.
 
 Here is the part nobody tells you: first-principles thinking is not a mindset you switch on. It is a set of concrete tools, each with a name, a history, and a clear method. You can pick them up today.
 
@@ -137,7 +138,7 @@ That is what makes this tool special: it catches **hidden assumptions disguised 
 
 ## Tool 4: Decomposition
 
-**Decomposition** means taking a big, intimidating problem and breaking it into smaller, clearer pieces. A problem that feels impossible as a whole often becomes solvable when you look at each part on its own.
+**Decomposition** means taking a big, intimidating problem and [breaking it into smaller, clearer pieces](/blog/clear-thinking-and-expression/20-problem-solving-frameworks-define-decompose-hypothesize-test). A problem that feels impossible as a whole often becomes solvable when you look at each part on its own.
 
 Think of a car engine. You cannot "fix an engine." But you can fix the fuel system, the ignition, the cooling system - separately and methodically. The same logic works for business problems, technical bugs, and personal decisions.
 
@@ -151,7 +152,7 @@ A simple trick: draw it as a tree on paper. Problem at the top, branches for sub
 
 ## Tool 5: Identifying and challenging assumptions
 
-An **assumption** is something you believe to be true without having verified it. Most people treat assumptions exactly like facts - and that is precisely where first-principles thinking falls apart. The fix is to make your assumptions *visible* before you act on them.
+An **assumption** is something you believe to be true without having verified it. Most people [treat assumptions exactly like facts](/blog/clear-thinking-and-expression/17-critical-thinking-foundations-claims-evidence-assumptions) - and that is precisely where first-principles thinking falls apart. The fix is to make your assumptions *visible* before you act on them.
 
 Run this three-step habit every time you start on a problem:
 
@@ -230,7 +231,7 @@ Run this at the start of any serious problem-solving session. It takes about ten
 7. **Feynman check.** Explain your root cause in plain English to someone outside your field. Note every wobble.
 8. **Find the next verifiable step.** First-principles thinking is not finished until it points to a test. What is the smallest experiment that would confirm or refute your root-cause hypothesis?
 
-Do this in writing, not in your head. The physical act of writing forces precision - vague beliefs become obviously vague the second you try to put them in a clear sentence.
+Do this [in writing, not in your head](/blog/clear-thinking-and-expression/03-think-on-paper-why-externalizing-beats-thinking-in-your-head). The physical act of writing forces precision - vague beliefs become obviously vague the second you try to put them in a clear sentence.
 
 ## Conclusion
 
@@ -238,4 +239,4 @@ If you remember one thing, make it this: the single most expensive mistake in th
 
 Think of the checklist as a pilot's pre-flight check. It does not make flying impossible - it makes crashing far less likely. And experienced pilots still run it every single flight, not because they doubt themselves, but because the discipline is exactly what makes them reliable.
 
-Here is the next thread to pull: once you can reliably find the *true* root cause, how do you decide which of several true causes is actually worth solving first? That is where first-principles thinking hands off to the art of prioritization - and that is a different toolkit entirely.
+Here is the next thread to pull: once you can reliably find the *true* root cause, how do you decide which of several true causes is actually worth solving first? That is where first-principles thinking hands off to [the art of prioritization](/blog/thinking-skills/06-section-5-leverage-points-mental-models-for-better-decisions) - and that is a different toolkit entirely.

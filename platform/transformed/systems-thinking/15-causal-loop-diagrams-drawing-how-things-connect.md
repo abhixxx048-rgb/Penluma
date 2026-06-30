@@ -51,9 +51,10 @@ faq:
       No. A CLD is qualitative. It shows the direction and shape of
       relationships but never the speed or size. For timing and real numbers you
       move on to a stock-and-flow diagram and simulation.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Causal_loop_diagram
   - https://en.wikipedia.org/wiki/Thinking_in_Systems
@@ -79,7 +80,7 @@ Here's the good news. A CLD is made of exactly three kinds of things. There is n
 - **Causal arrows** - an arrow from a cause to an effect. It means: "if I changed this first thing and held everything else still, the second thing would move."
 - **Polarity signs** - every arrow gets a **+** or a **−**. Plus if the two variables move the *same* way; minus if they move *opposite* ways.
 
-Master those three, and you can map almost any feedback situation. That's it. Variables, arrows, and a sign on each arrow.
+Master those three, and you can map almost any [feedback situation](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves). That's it. Variables, arrows, and a sign on each arrow.
 
 ## How to name a variable (the rule beginners always break)
 
@@ -169,7 +170,7 @@ Notice the **||** marks on one arrow. Chronic stress takes days to wreck your sl
 
 ## Delays: the mark that predicts oscillation
 
-When an effect lags well behind its cause, draw two short parallel lines (**||**) across the arrow. Delays matter enormously, because people act on **old information** - and that's what makes systems swing back and forth.
+When an effect lags well behind its cause, draw two short parallel lines (**||**) across the arrow. [Delays](/blog/systems-thinking/06-delays-why-cause-and-effect-are-not-close-in-time) matter enormously, because people act on **old information** - and that's what makes systems swing back and forth.
 
 Meadows' classic example is a car dealer. The lot looks empty, so the dealer orders extra cars. But the factory takes weeks to deliver. By the time the shipment lands, the dealer has already sold down and cut new orders - and now the lot is overstocked. Then it swings the other way. The boom-and-bust isn't bad judgment. It's the **delay**.
 
@@ -184,13 +185,13 @@ Real systems almost always hold more than one loop, and the loops fight for cont
 
 When births per person beat deaths, R1 wins and population grows exponentially. When deaths win - famine, disease - B1 takes over and population collapses. The same structure runs a business: investment feeds a reinforcing stock of capital, while depreciation drains it through a balancing one.
 
-This R-plus-B pattern is so common that Senge named it the **Limits to Growth** archetype: something grows, then bumps into a balancing loop that slows it to a plateau. A quality program spreads through a company (reinforcing), until threatened managers push back (balancing) and the rollout stalls. Once you see the shape, you see it everywhere.
+This R-plus-B pattern is so common that Senge named it the **Limits to Growth** [archetype](/blog/systems-thinking/12-system-archetypes-stories-that-repeat): something grows, then bumps into a balancing loop that slows it to a plateau. A quality program spreads through a company (reinforcing), until threatened managers push back (balancing) and the rollout stalls. Once you see the shape, you see it everywhere.
 
 ## Name every loop
 
 Always give each loop a short, vivid name on top of its R1/B1 label: "Word-of-Mouth Engine," "Burnout," "Haste Makes Waste," "Escalation."
 
-Senge's arms-race **Escalation** archetype is two interlocked reinforcing loops - each nation arming in response to the other - ratcheting upward together. The name turns a tangle of arrows into a story you can talk about. Better, it points straight at the leverage: if Nation A disarms first, perceived threat drops and the whole loop runs in reverse.
+Senge's arms-race **Escalation** archetype is two interlocked reinforcing loops - each nation arming in response to the other - ratcheting upward together. The name turns a tangle of arrows into a story you can talk about. Better, it points straight at the [leverage](/blog/systems-thinking/13-leverage-points-where-to-push-to-change-a-system): if Nation A disarms first, perceived threat drops and the whole loop runs in reverse.
 
 ## Common misconceptions
 
@@ -216,7 +217,7 @@ Senge's arms-race **Escalation** archetype is two interlocked reinforcing loops 
 
 Be honest about the limits. A CLD is **qualitative**. It shows the *direction* and *shape* of relationships - never how fast or how much.
 
-It can't reliably tell you whether a loop will oscillate or grow smoothly, because that depends on which variables are **stocks** (accumulations, like a bank balance) and which are **flows** (rates, like income). For real numbers and real timing, you graduate to a **stock-and-flow diagram** and run a simulation.
+It can't reliably tell you whether a loop will oscillate or grow smoothly, because that depends on which variables are **stocks** (accumulations, like a bank balance) and which are **flows** (rates, like income). For real numbers and real timing, you graduate to a **[stock-and-flow diagram](/blog/systems-thinking/16-stock-and-flow-diagrams-adding-quantity-and-time)** and run a simulation.
 
 That simplicity is both the gift and the catch. Anyone can draw a CLD in minutes - but it stays silent on timing.
 
@@ -224,4 +225,4 @@ That simplicity is both the gift and the catch. Anyone can draw a CLD in minutes
 
 Here's the one thing to carry with you: **count the minus signs.** Even means the loop amplifies whatever you feed it; odd means it pushes back. That single habit turns a confusing knot of cause and effect into a clear prediction about which way a situation will run.
 
-Once you can see the loops, a sharper question appears. Some loops grow with no limit in sight, others slam into a ceiling and plateau - and the difference often comes down to a single hidden bathtub quietly filling or draining in the background. That's the stock. Learn to spot stocks and flows, and you stop describing how a system behaves and start forecasting it.
+Once you can see the loops, a sharper question appears. Some loops grow with no limit in sight, others slam into a ceiling and plateau - and the difference often comes down to a single hidden bathtub quietly filling or draining in the background. That's the stock. Learn to spot [stocks and flows](/blog/systems-thinking/04-stocks-and-flows-what-builds-up-and-what-moves), and you stop describing how a system behaves and start forecasting it.

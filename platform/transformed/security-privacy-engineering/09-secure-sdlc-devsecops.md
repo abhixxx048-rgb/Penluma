@@ -34,9 +34,10 @@ category: Engineering
 date: '2026-06-21'
 order: 8
 icon: "\U0001F512"
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -60,7 +61,7 @@ There's a newer wrinkle too: **Shadow AI**, meaning employees using AI tools the
 
 **Shift left** means moving security activities earlier on the timeline, toward the left, so you catch problems in design and code instead of in production.
 
-But design-time review can't catch a deployment misconfiguration or a bug that only appears at runtime. So good teams also **shift right**: they monitor the running app in production. The combination has a name, **shift everywhere**, and it's the whole game.
+But design-time review can't catch a [deployment misconfiguration](/blog/security-privacy-engineering/06-network-cloud-infrastructure-security) or a bug that only appears at runtime. So good teams also **shift right**: they monitor the running app in production. The combination has a name, **shift everywhere**, and it's the whole game.
 
 Think of a car factory. Shift left is catching a defect on the assembly line before the car is built. Shift right is monitoring cars already on the road and issuing a fast recall when something slips through. You need both. Fixing it on the line is far cheaper, but some faults only show up when real drivers hit real roads.
 
@@ -78,7 +79,7 @@ Everything from Plan through Test is shift left. Deploy and Operate are shift ri
 
 ## Threat modeling: asking "what could go wrong?" before you build
 
-**Threat modeling** is a structured conversation, held during architecture and *before* code, that asks one question: what could go wrong? The most common framework is Microsoft's **STRIDE**, where each letter is a category of threat that maps to a defense you want.
+[**Threat modeling**](/blog/security-privacy-engineering/07-threat-modeling-risk-management) is a structured conversation, held during architecture and *before* code, that asks one question: what could go wrong? The most common framework is Microsoft's **STRIDE**, where each letter is a category of threat that maps to a defense you want.
 
 | STRIDE threat | Plain meaning | Property you want |
 |---|---|---|
@@ -95,7 +96,7 @@ Keep it collaborative. Developers know the code, product managers know the busin
 
 ## The four scanners, and what each one actually sees
 
-Four automated scanners show up again and again. Each sees a different angle, and none is enough alone. Use them layered.
+[Four automated scanners](/blog/security-privacy-engineering/08-security-testing-auditing) show up again and again. Each sees a different angle, and none is enough alone. Use them layered.
 
 | Type | What it scans | When | False positives |
 |---|---|---|---|
@@ -129,11 +130,11 @@ Defend in depth, across three layers:
 2. **CI job** on push or pull request is your backstop for when someone skips the hook.
 3. **Platform protection** (such as GitHub Push Protection) blocks supported secret types before they leave the machine.
 
-> The mistake nearly everyone makes: deleting a leaked secret from a commit and assuming you're safe. Once a secret hits git history it is compromised forever, because that history is copied to every clone. You must **rotate the key**, meaning revoke the old one and issue a new one. Removing it from history is not revoking it.
+> The mistake nearly everyone makes: deleting a leaked secret from a commit and assuming you're safe. Once a secret hits git history it is compromised forever, because that history is copied to every clone. You must [**rotate the key**](/blog/security-privacy-engineering/03-cryptography-made-simple), meaning revoke the old one and issue a new one. Removing it from history is not revoking it.
 
 ## Your software is mostly other people's software
 
-This is the hottest security topic of the moment, and for good reason. Supply-chain attacks **more than doubled in 2025**; Sonatype counted over 454,600 new malicious packages that year. The **OWASP Top 10 2025** (OWASP is a respected nonprofit that publishes security guidance) added a brand-new category, **A03: Software Supply Chain Failures**, with the highest incidence rate of any category but very low CVE coverage. In plain terms: the attacks are outrunning the scanners' signatures.
+This is the hottest security topic of the moment, and for good reason. Supply-chain attacks **more than doubled in 2025**; Sonatype counted over 454,600 new malicious packages that year. The [**OWASP Top 10 2025**](/blog/security-privacy-engineering/05-application-web-security) (OWASP is a respected nonprofit that publishes security guidance) added a brand-new category, **A03: Software Supply Chain Failures**, with the highest incidence rate of any category but very low CVE coverage. In plain terms: the attacks are outrunning the scanners' signatures.
 
 Three landmark incidents each teach a different lesson.
 

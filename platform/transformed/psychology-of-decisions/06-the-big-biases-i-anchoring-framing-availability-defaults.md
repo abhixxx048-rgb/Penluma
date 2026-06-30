@@ -44,8 +44,9 @@ faq:
       Mostly no. Anchoring still works on people who watch the wheel being rigged.
       The reliable defense is a procedure, like writing your own number first or
       restating a choice both ways, not willpower.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 topic: psychology-of-decisions
 topicTitle: Psychology of Decisions
 category: Thinking & Decisions
@@ -63,11 +64,11 @@ Not because you are careless. Not because you are uninformed. Your brain runs on
 
 These shortcuts are not rare glitches. They show up every single day, in shops, hospitals, salary talks, charity forms, and the apps on your phone.
 
-And they do not spare clever people. Doctors, statisticians, and the very researchers who study these biases fall for them too. They are features of normal human thinking, which is precisely why they are everywhere and why they are worth learning to spot.
+And they do not spare [clever people](/blog/psychology-of-decisions/01-what-psychology-is-and-why-rational-people-decide-irrationally). Doctors, statisticians, and the very researchers who study these biases fall for them too. They are features of normal human thinking, which is precisely why they are everywhere and why they are worth learning to spot.
 
 Two quick words before we start:
 
-- A **heuristic** is a mental shortcut, a rule of thumb your brain uses to decide fast. Usually good enough. Sometimes wrong in a predictable way.
+- A **heuristic** is a [mental shortcut](/blog/psychology-of-decisions/05-mental-shortcuts-how-heuristics-help-and-trick-us), a rule of thumb your brain uses to decide fast. Usually good enough. Sometimes wrong in a predictable way.
 - A **bias** is the systematic, repeating error that a shortcut tends to produce. The heuristic is the shortcut; the bias is the mistake it causes.
 
 Now, the five big ones.
@@ -80,7 +81,7 @@ The most famous demonstration is almost comical. Researchers spun a wheel of for
 
 Think of dropping an anchor from a boat. You row away, but the rope only lets you go so far. Your final position is still tied to where the anchor first hit, even if it landed in a random spot.
 
-This is the engine behind a huge amount of selling and negotiating:
+This is the engine behind a huge amount of selling and [negotiating](/blog/psychology-of-decisions/19-negotiating-effectively-psychology-at-the-table):
 
 - **"Was $200, now $79."** The crossed-out $200 is the anchor. Suddenly $79 feels like a steal, even if $79 is the normal price.
 - **Salary talks.** The first number named tends to win the whole back-and-forth. That is why naming your range first can help you.
@@ -100,7 +101,7 @@ In the landmark study, people were told a disease threatened 600 lives and asked
 
 "200 saved" and "400 die" describe the identical result out of 600 people. Yet the first wording made people play safe and the second made them roll the dice.
 
-Why? When something is framed as a **gain**, we want to lock it in, so we play safe. When it is framed as a **loss**, we will gamble to avoid it. The deeper cause is loss aversion, a topic for another day.
+Why? When something is framed as a **gain**, we want to lock it in, so we play safe. When it is framed as a **loss**, we will gamble to avoid it. The deeper cause is [loss aversion](/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence), a topic for another day.
 
 > "90% fat-free" sells far better than "10% fat." "95% survival rate" makes patients far more likely to choose surgery than "5% death rate." Same number, opposite feeling.
 
@@ -178,4 +179,4 @@ Here is the single idea worth keeping: the facts of a choice rarely change your 
 
 The most useful thinking skill you can build is learning to mentally re-package a decision before you make it. Strip off the wrapper, and you see what you are actually choosing.
 
-But notice something in the framing examples: people played safe with gains and gambled to avoid losses. That is not random. It points to a deeper force, **loss aversion**, the lopsided way a loss hurts about twice as much as the same-sized gain feels good. Understand that, and a surprising amount of human behavior suddenly clicks into place.
+But notice something in the framing examples: people played safe with gains and gambled to avoid losses. That is not random. It points to a deeper force, **loss aversion**, the [lopsided way a loss hurts about twice as much as the same-sized gain feels good](/blog/psychology-of-decisions/08-prospect-theory-behavioral-economics-how-we-weigh-gains-losses-risk). Understand that, and a surprising amount of human behavior suddenly clicks into place.

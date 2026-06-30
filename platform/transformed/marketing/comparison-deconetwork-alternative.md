@@ -28,7 +28,7 @@ faq:
     a: Yes. Run a free trial alongside your current store, rebuild your top-selling products, and switch over only when you're ready. There's no card required to try it.
   - q: Is DecoNetwork a bad product?
     a: No. It's a capable, apparel-focused platform that's genuinely strong at decoration-specific production. The question is whether its design tool, learning curve, and pricing fit how you actually work.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: marketing

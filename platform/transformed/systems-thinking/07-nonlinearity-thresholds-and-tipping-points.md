@@ -40,11 +40,12 @@ faq:
     a: Usually no. You can often tell from a system's structure that a threshold exists,
       but the exact timing of nonlinear, self-organizing systems is inherently
       unpredictable. The practical move is to keep a wide safety margin.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
 topic: systems-thinking
 topicTitle: Systems Thinking
+linked: true
 category: Thinking & Decisions
 date: '2026-06-22'
 order: 6
@@ -58,11 +59,11 @@ This is the most counterintuitive truth in systems thinking: in complex systems,
 
 ## Why this matters
 
-Most of us were taught to think in straight lines. Push twice as hard, get twice the result. Spend twice as long, learn twice as much. That instinct works fine for thermostats and grocery bills, but it quietly fails you in exactly the moments that matter most.
+Most of us were taught to [think in straight lines](/blog/systems-thinking/02-systems-thinking-vs-linear-thinking). Push twice as hard, get twice the result. Spend twice as long, learn twice as much. That instinct works fine for thermostats and grocery bills, but it quietly fails you in exactly the moments that matter most.
 
 When you assume cause and effect stay proportional, you get blindsided. You blame the last straw instead of the load. You wait for a slow-looking problem to become urgent, by which point it is already out of control. You push harder on a stuck system and make it worse.
 
-Learning to see **nonlinearity** changes how you read the world. You stop being surprised by sudden collapses, you spot the leverage points where a tiny change moves everything, and you learn when prevention is the only affordable option. This is practical literacy for anyone who manages risk, builds things, or makes decisions that play out over time.
+Learning to see **nonlinearity** changes how you read the world. You stop being surprised by sudden collapses, you spot the [leverage points](/blog/systems-thinking/13-leverage-points-where-to-push-to-change-a-system) where a tiny change moves everything, and you learn when prevention is the only affordable option. This is practical literacy for anyone who manages risk, builds things, or makes decisions that play out over time.
 
 ## What "nonlinear" actually means
 
@@ -116,7 +117,7 @@ Once you have the pattern, you see it in wildly different systems running the sa
 
 ### Bank runs: fear that creates the failure it fears
 
-Most banks hold only a fraction of deposits as cash, maybe 10 percent. Normally withdrawals are predictable and a balancing loop keeps things calm. But if enough depositors fear failure and rush to withdraw at once, the bank simply cannot pay, even if it was perfectly solvent that morning.
+Most [banks hold only a fraction of deposits as cash](/blog/economics-from-first-principles/07-how-banks-work-and-how-they-create-money), maybe 10 percent. Normally withdrawals are predictable and a balancing loop keeps things calm. But if enough depositors fear failure and rush to withdraw at once, the bank simply cannot pay, even if it was perfectly solvent that morning.
 
 The fear manufactures the collapse it was afraid of. That is a **self-fulfilling prophecy** driven by a reinforcing loop: fear leads to withdrawals, which raise the risk of default, which feeds more fear. As former Bank of England governor Mervyn King observed, "It may not be rational to start a bank run, but it is rational to participate in one once it has started." A run can even be set off by a rumor everyone knows is false, because you will still pull your money if you expect others to believe it.
 
@@ -187,13 +188,13 @@ You will never predict the exact moment a system tips. But you can get dramatica
 3. **Reframe growth in doubling times.** Say "cases double every 4 days" instead of "growing 18 percent a day." Doubling times sharply reduce exponential growth bias and make the danger legible.
 4. **Plot curved data on a log scale.** On a logarithmic chart, exponential growth becomes a straight line you can actually read and extrapolate. Use it whenever you suspect acceleration.
 5. **Keep a wide safety margin from known thresholds.** Since you cannot time the flip, do not steer close to the edge. Distance is your insurance against an unpredictable system.
-6. **Look for leverage, not effort.** In identical houses with identical electricity prices, simply moving the electric meter from the basement to the visible front hallway cut consumption by about 30 percent. No price change, no campaign. When a system resists, try changing a flow of information or relaxing the constraint rather than pushing harder on the engine.
+6. **Look for leverage, not effort.** In identical houses with identical electricity prices, simply moving the electric meter from the basement to the visible front hallway cut consumption by about 30 percent. No price change, no campaign. When a system resists, try changing a flow of information or [relaxing the constraint](/blog/systems-thinking/09-bottlenecks-and-constraints-the-theory-of-constraints) rather than pushing harder on the engine.
 
 That last point deserves emphasis. When a growing system hits a limit, the instinct is to push the growth lever harder: more ads, more staff, more capital. It usually fails, because the constraint pushes back harder. The high-leverage move is the opposite, to relax the constraint, not amplify the engine.
 
 ## Conclusion
 
-If you remember one thing, make it this: **in complex systems, cause and effect are usually not proportional, and the calm before a collapse is not the same as safety.** Beneath every sudden flip is a quiet buildup shifting which feedback loop is in charge.
+If you remember one thing, make it this: **in complex systems, cause and effect are usually not proportional, and the calm before a collapse is not the same as safety.** Beneath every sudden flip is a quiet buildup shifting which [feedback loop is in charge](/blog/systems-thinking/05-feedback-loops-how-systems-talk-to-themselves).
 
 So the next time someone blames the last straw, you will know to look at the load instead. You will reframe a scary percentage as a doubling time, and you will treat a reversible-looking change as possibly permanent.
 

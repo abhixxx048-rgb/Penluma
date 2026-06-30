@@ -36,9 +36,10 @@ faq:
     a: Leverage points are places where a small change produces a large shift in behavior. Donella Meadows ranked twelve of them, with parameters like tax rates being weakest and goals and paradigms being strongest. The catch is that the strongest points are the ones systems resist most.
   - q: Why do simple fixes often fail over time?
     a: Because the dominant feedback loop shifts as stocks change. A fix that works while a reinforcing loop is in charge can stall or reverse once a balancing limit takes over, and second-order effects often loop back to hurt the very thing you tried to improve.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources: []
 ---
 
@@ -84,7 +85,7 @@ The classic trap is drawing the boundary too tight, then wondering why your fixe
 
 ### Step 3: List the key stocks
 
-A **stock** is an accumulation, something you could measure at a single frozen instant and that would still exist if time stopped. Water in a bathtub. Money in a bank account. A population. Your self-confidence.
+A [**stock**](/blog/systems-thinking/04-stocks-and-flows-what-builds-up-and-what-moves) is an accumulation, something you could measure at a single frozen instant and that would still exist if time stopped. Water in a bathtub. Money in a bank account. A population. Your self-confidence.
 
 **The time-stop test:** Freeze all activity. Can you still count it? Then it is a stock. If it only exists while something is happening, it is a flow.
 
@@ -100,7 +101,7 @@ When a source or sink lives outside your boundary, draw a little "cloud" symbol 
 
 ### Step 5: Find the feedback loops and delays
 
-Now connect the dots into a **causal loop diagram**. Every arrow gets a polarity: "+" means "if A goes up, B goes up," and "−" means "if A goes up, B goes down." To classify any loop, just count the minus signs around it.
+Now connect the dots into a [**causal loop diagram**](/blog/systems-thinking/15-causal-loop-diagrams-drawing-how-things-connect). Every arrow gets a polarity: "+" means "if A goes up, B goes up," and "−" means "if A goes up, B goes down." To classify any loop, just count the minus signs around it.
 
 | | Reinforcing loop (R) | Balancing loop (B) |
 |---|---|---|
@@ -119,7 +120,7 @@ So list every significant delay, in two flavors: **information delays** (how lon
 
 When several loops are running, one of them "wins" at any given moment and drives what you actually see. Meadows called this **shifting loop dominance**. Early in an epidemic, the reinforcing infection loop dominates and spread looks exponential. Later the balancing immunity loop takes over and slows it. Your job is to address the loop that is dominant *right now.*
 
-Closely related is the **constraint**, the bottleneck that, if relieved, would expand performance the most. This is Eliyahu Goldratt's central idea in *The Goal*. His five focusing steps:
+Closely related is the **constraint**, [the bottleneck](/blog/systems-thinking/09-bottlenecks-and-constraints-the-theory-of-constraints) that, if relieved, would expand performance the most. This is Eliyahu Goldratt's central idea in *The Goal*. His five focusing steps:
 
 1. Identify the constraint.
 2. Exploit it (squeeze maximum output from it without new spending).
@@ -131,7 +132,7 @@ The punchline is brutal and freeing: improving anything that is *not* the constr
 
 ### Step 7: Find the leverage points
 
-A **leverage point** is a place where a small push produces a large shift in behavior. In her famous 1999 essay, Meadows ranked twelve of them from weakest to strongest, and delivered an uncomfortable finding: people pour most of their effort into the weakest ones.
+A [**leverage point**](/blog/systems-thinking/13-leverage-points-where-to-push-to-change-a-system) is a place where a small push produces a large shift in behavior. In her famous 1999 essay, Meadows ranked twelve of them from weakest to strongest, and delivered an uncomfortable finding: people pour most of their effort into the weakest ones.
 
 - **Weak (12 to 10):** numbers and parameters (a tax rate), buffer sizes, physical structure.
 - **Moderate (9 to 6):** the length of delays, the strength of balancing loops, the gain of reinforcing loops, and the structure of information flows (who knows what, and when). These are often cheap and surprisingly powerful.
@@ -141,7 +142,7 @@ But strong does not mean easy. Meadows again: "The higher the leverage point, th
 
 ### Step 8: Test for second-order effects
 
-A **second-order effect** is a consequence of your fix that travels around the loops from Step 5 and circles back, often delayed, to hit the very thing you were trying to improve. Peter Senge calls this the "fixes that fail" pattern.
+A [**second-order effect**](/blog/systems-thinking/11-second-and-third-order-consequences) is a consequence of your fix that travels around the loops from Step 5 and circles back, often delayed, to hit the very thing you were trying to improve. Peter Senge calls this the "fixes that fail" pattern.
 
 Before you commit, trace every arrow leading out of your intervention and ask: *does this path lead back to my target, and does it help or hurt?* Four quick test questions:
 
@@ -211,4 +212,4 @@ Do it with the people inside the system, not in a quiet room by yourself. Start 
 
 If you remember one thing, remember this: the goal of mapping is not a beautiful diagram, it is finding the small number of changes that actually move the system, while quietly ignoring the many that just keep you busy.
 
-And here is the thread worth pulling next. Notice how often the highest-leverage change in these examples was not a parameter at all, but a *goal* or a *paradigm*, the things people believe about the system. That is also why those changes are the hardest to make and the easiest to resist. So the real frontier question becomes: how do you change what an entire organization believes, on purpose? That is where systems thinking stops being a diagramming skill and starts being a leadership one.
+And here is the thread worth pulling next. Notice how often the highest-leverage change in these examples was not a parameter at all, but a *goal* or a [*paradigm*](/blog/systems-thinking/14-mental-models-and-paradigms-the-deepest-leverage), the things people believe about the system. That is also why those changes are the hardest to make and the easiest to resist. So the real frontier question becomes: how do you change what an entire organization believes, on purpose? That is where systems thinking stops being a diagramming skill and starts being a leadership one.

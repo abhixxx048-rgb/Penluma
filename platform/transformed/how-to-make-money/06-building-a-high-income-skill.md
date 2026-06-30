@@ -48,7 +48,7 @@ faq:
       A hobby skill produces output you enjoy making. A paid skill solves a
       buyer's problem, meets a market quality bar, and is packaged and sold,
       rather than sitting in a folder for your own satisfaction.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 linked: true
 topic: how-to-make-money

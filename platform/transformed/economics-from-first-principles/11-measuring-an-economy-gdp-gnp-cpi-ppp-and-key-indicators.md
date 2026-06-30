@@ -43,7 +43,7 @@ faq:
     a: GDP ignores inequality, unpaid work like childcare and cooking, and
       environmental damage. It can even count cleanup of an oil spill as growth.
       Its own inventor warned it is not a measure of national well-being.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 topic: economics-from-first-principles
 topicTitle: Economics from First Principles

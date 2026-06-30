@@ -49,8 +49,9 @@ faq:
       Use chunking, sensible grouping, and progressive disclosure. Bundle items
       into meaningful units, group related controls together, and hide advanced
       options behind an "Advanced" link so beginners are not overwhelmed.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Cognitive_load
   - https://en.wikipedia.org/wiki/Hick%27s_law
@@ -65,13 +66,13 @@ That feeling has a name: **cognitive load** - the total amount of mental effort 
 
 Here is the uncomfortable truth about the brain: the part you think with right now is tiny.
 
-**Working memory** is the small mental "desk" where you hold the things you are actively using this second. It overflows almost instantly. **Long-term memory** - everything you have learned over a lifetime - is effectively unlimited, but it is not where live work happens. Live work happens on the tiny desk.
+**[Working memory](/blog/clear-thinking-and-expression/02-working-memory-schemas-chunking-your-brain-s-real-limits)** is the small mental "desk" where you hold the things you are actively using this second. It overflows almost instantly. **Long-term memory** - everything you have learned over a lifetime - is effectively unlimited, but it is not where live work happens. Live work happens on the tiny desk.
 
 So every label, every choice, every blinking icon you put on a screen takes up desk space. If you fill the desk with your stuff, there is no room left for the user to do their actual job. They feel the squeeze as that "ugh," and they quit.
 
 This is why "simple" is not a style. It is a budget. **Simple just means you left enough desk free for the person to think.**
 
-The idea comes from **Cognitive Load Theory**, developed by educational psychologist John Sweller in the late 1980s. His whole design goal fits in one sentence: do not blow the working-memory budget.
+The idea comes from **[Cognitive Load Theory](/blog/ai-learning-platform/05-cognitive-load-theory-why-too-much-at-once-fails)**, developed by educational psychologist John Sweller in the late 1980s. His whole design goal fits in one sentence: do not blow the working-memory budget.
 
 ## The three kinds of load (and which one is your fault)
 
@@ -107,7 +108,7 @@ The time it takes to make a decision grows as the number of choices grows. There
 
 Cut the number of options. Group many options into chunked steps. Highlight one recommended default so the user has an easy path to take.
 
-> **The trap:** "simplifying" by hiding a needed option where nobody can find it. Burying a setting is not reducing load - it is just moving the pain somewhere else. Pair fewer *visible* choices with smart grouping and progressive disclosure, never plain amputation.
+> **The trap:** "simplifying" by hiding a needed option where nobody can find it. Burying a setting is not reducing load - it is just moving the pain somewhere else. Pair fewer *visible* choices with smart grouping and [progressive disclosure](/blog/product-sense-empathy/09-reducing-friction-flows-steps-progressive-disclosure), never plain amputation.
 
 ### Miller's Law - "seven, plus or minus two" (with a correction)
 
@@ -120,7 +121,7 @@ In 1956, George Miller published a famous paper, *The Magical Number Seven, Plus
 
 ### Recognition over recall - show, don't make them remember
 
-This is usability expert Jakob Nielsen's sixth heuristic. **Recognition** is spotting something as familiar when you see it. **Recall** is dragging it out of memory from scratch, with no hint at all.
+This is usability expert [Jakob Nielsen's sixth heuristic](/blog/product-sense-empathy/10-evaluating-usability-nielsen-rsquo-s-10-heuristics). **Recognition** is spotting something as familiar when you see it. **Recall** is dragging it out of memory from scratch, with no hint at all.
 
 Recognition is far easier, because the interface hands you the cue.
 
@@ -162,10 +163,10 @@ Three reliable levers cut load *without* cutting a single capability. Reach for 
 
 **The overloaded settings page** is the opposite - one flat screen, dozens of ungrouped toggles, jargon labels, everything shouting at once. The user cannot tell what matters, freezes, and feels dumb. The fix is everything above: chunk into labeled sections, use plain labels, and hide the advanced controls until they are asked for.
 
-There is one more story worth holding onto. When researchers studied why a fast-food chain's milkshakes sold mostly before 8am to solo commuters, they found the real "job" was a one-handed, long-lasting, non-messy companion for a boring drive - competing with bagels and bananas, not with other shakes. Once the team understood that *one* job, the path forward was obvious. The lesson for simplicity is the same: find the single job the screen exists to do, then strip away everything that is not it.
+There is one more story worth holding onto. When researchers studied why a fast-food chain's milkshakes sold mostly before 8am to solo commuters, they found the real "job" was a one-handed, long-lasting, non-messy companion for a boring drive - competing with bagels and bananas, not with other shakes. Once the team understood that *one* job, the path forward was obvious. The lesson for simplicity is the same: find the single [job the screen exists to do](/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress), then strip away everything that is not it.
 
 ## Conclusion
 
 If you remember one thing, remember this: **working memory is a tiny desk, not a warehouse - so the kindest design move you can make is to leave it mostly empty.** "Simple feels effortless" because someone spent the effort up front, so the user would not have to.
 
-But notice what we have been doing this whole time. We have been quietly deciding *for* the user - defaulting their choices, hiding what they probably do not need, nudging them down one path. That power to shape decisions is enormous, and it cuts both ways. Used with care, it is empathy. Used carelessly, it becomes the dark pattern that tricks people into things they never meant to do. Where exactly is that line? That is the next thing worth understanding.
+But notice what we have been doing this whole time. We have been quietly deciding *for* the user - defaulting their choices, hiding what they probably do not need, nudging them down one path. That power to shape decisions is enormous, and it cuts both ways. Used with care, it is empathy. Used carelessly, it becomes the [dark pattern](/blog/product-sense-empathy/15-common-mistakes-anti-patterns-pitfalls) that tricks people into things they never meant to do. Where exactly is that line? That is the next thing worth understanding.

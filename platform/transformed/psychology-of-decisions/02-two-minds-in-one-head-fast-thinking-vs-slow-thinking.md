@@ -30,8 +30,9 @@ faq:
     a: Add friction. Write the decision down, sleep on it, say your answer out loud and check it, or use a checklist. Small speed bumps force your slow, deliberate mind to actually run.
   - q: What is dual-process theory?
     a: Dual-process theory is the idea that your mind runs in two modes - one fast and automatic, one slow and effortful - and that they often disagree about what to do.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
+linked: true
 topic: psychology-of-decisions
 topicTitle: Psychology of Decisions
 category: Thinking & Decisions
@@ -123,8 +124,8 @@ System 1 is fast and usually right, but it misfires in predictable ways. A famou
 The same tug-of-war explains everyday mistakes:
 
 - You judge a stranger as trustworthy or shady in a fraction of a second, then spend the whole conversation defending that first impression.
-- You buy something for an emotional, branded reason, then invent logical justifications afterward ("the specs are great").
-- You answer a hard question (*How risky is this investment?*) by quietly swapping in an easier one (*How do I feel about it?*) without noticing the substitution.
+- You [buy something for an emotional, branded reason](/blog/psychology-of-decisions/12-understanding-customers-why-people-really-buy), then invent logical justifications afterward ("the specs are great").
+- You answer a hard question (*How risky is this investment?*) by [quietly swapping in an easier one](/blog/psychology-of-decisions/05-mental-shortcuts-how-heuristics-help-and-trick-us) (*How do I feel about it?*) without noticing the substitution.
 
 These are not random slip-ups. They are *systematic* - the same traps catch nearly everyone the same way. That predictability is what makes biases learnable rather than just a list of human flaws.
 
@@ -146,6 +147,6 @@ You cannot rewire these systems. But you can manage *when* each one drives. Here
 
 Here is the one thing to carry away: **better decisions don't come from thinking harder all the time - they come from noticing the rare moment when your confident gut answer deserves a slower, second look.**
 
-That two-minds split is the spine of nearly everything in decision psychology. Bounded rationality, hidden unconscious choices, persuasion, and the long catalogue of biases are all, at bottom, the same story - a fast automatic mind that runs the show, and a slow deliberate mind too tired to step in.
+That two-minds split is the spine of nearly everything in decision psychology. [Bounded rationality](/blog/psychology-of-decisions/01-what-psychology-is-and-why-rational-people-decide-irrationally), hidden unconscious choices, [persuasion](/blog/psychology-of-decisions/10-the-six-levers-of-influence-how-people-get-persuaded), and the long catalogue of biases are all, at bottom, the same story - a fast automatic mind that runs the show, and a slow deliberate mind too tired to step in.
 
-So here's a question for next time: if so much of your "decision" is made before you're even aware of it, how much of your free will is really *yours*? That is exactly where the story of cognitive bias begins.
+So here's a question for next time: if so much of your "decision" is made before you're even aware of it, how much of your free will is really *yours*? That is exactly where [the story of cognitive bias](/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults) begins.

@@ -36,9 +36,10 @@ faq:
     a: The gold standard is a randomized controlled trial, where you randomly assign who gets the treatment. Randomization makes the groups alike in every way except the treatment, so any difference in outcome points to a real cause.
   - q: What is statistical significance versus practical significance?
     a: Statistical significance means an effect is unlikely to be pure luck. Practical significance asks whether the effect is big enough to matter. With huge samples, trivial effects can be highly significant yet useless.
-author: Pritesh Yadav (priteshyadav444)
+author: Brexis Wazik
 transformed: true
 polished: true
+linked: true
 sources:
   - https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation
   - https://en.wikipedia.org/wiki/Simpson%27s_paradox
@@ -48,7 +49,7 @@ sources:
 
 Ice cream sales and drownings rise together every summer. The link is real and strong. Yet banning ice cream would not save a single swimmer.
 
-That gap, between "these two things move together" and "one causes the other," is where most bad decisions are born. It fools shoppers, voters, executives, and even the experts who produce the statistics in the first place.
+That gap, between "these two things move together" and "one causes the other," is where [most bad decisions are born](/blog/ten-disciplines/28-how-to-make-good-decisions-under-uncertainty). It fools shoppers, voters, executives, and even the experts who produce the statistics in the first place.
 
 Here is the small set of questions that separate real signal from convincing noise. Learn them and you will never read a headline, a study, or a dashboard the same way again.
 
@@ -177,7 +178,7 @@ Even careful people repeat these. Here is the myth, then the reality.
 
 ## Paradoxes that fool even the experts
 
-These named traps show up everywhere. Learn to spot them by name and you'll catch errors that slip past trained professionals.
+These named traps show up everywhere. Learn to spot them by name and you'll catch [errors that slip past trained professionals](/blog/ten-disciplines/08-biases-heuristics-and-why-smart-people-make-predictable-errors).
 
 ### Base-rate neglect: forgetting how rare something is
 
@@ -220,7 +221,7 @@ The same trap hides in business advice. "Successful founders all dropped out of 
 
 ## How charts lie
 
-Your brain reads a slope or a shape faster than it reads the labels, so a chart can mislead you before you've processed a single number. The classics:
+Your brain reads a slope or a shape faster than it reads the labels, so [a chart can mislead you](/blog/ten-disciplines/10-reading-the-world-in-numbers-data-types-averages-spread-and-charts) before you've processed a single number. The classics:
 
 - **Truncated y-axis:** the vertical axis doesn't start at zero, so a tiny 1% difference looks like a cliff.
 - **Cherry-picked time window:** only the months that suit the story are shown, hiding the longer trend.
@@ -245,7 +246,7 @@ Here is p-hacking in the wild. A team tests whether a new feature affects 40 dif
 
 ## How to use this: a checklist for reading any statistic
 
-When a number lands in front of you, a study, a headline, a dashboard, an ad, run it through these in order.
+[When a number lands in front of you](/blog/clear-thinking-and-expression/21-reading-data-without-going-blank-the-questions-to-ask), a study, a headline, a dashboard, an ad, run it through these in order.
 
 1. **Picture it first.** Summary numbers can hide skew, outliers, and curves. Anscombe's quartet is four datasets with identical means, spreads, and correlation that look completely different when graphed. Always visualize.
 2. **Mean or median?** For skewed things like income, prices, and wait times, demand the median. When Bill Gates walks into a bar, the mean wealth rockets up while the median barely moves. The mean lies about the typical person.
@@ -265,4 +266,4 @@ The single takeaway is this: a bigger sample fixes noise, but it never fixes bia
 
 As the statistician George Box put it, "All models are wrong, but some are useful." The aim was never certainty. It is calibrated, honest, well-defended belief, the ability to hold "the evidence leans this way" and "here's how much I might be wrong" in your head at the same time.
 
-That balance is the heart of data literacy, and it rests on a deeper engine you've been using without naming it: how to update a belief the moment new evidence arrives. That is the work of Bayes' theorem, the quiet rule behind the rare-disease test and the prosecutor's fallacy, and it's worth meeting head-on next.
+That balance is the heart of data literacy, and it rests on a deeper engine you've been using without naming it: how to update a belief the moment new evidence arrives. That is the work of [Bayes' theorem](/blog/ten-disciplines/11-probability-uncertainty-distributions-and-bayesian-thinking), the quiet rule behind the rare-disease test and the prosecutor's fallacy, and it's worth meeting head-on next.
