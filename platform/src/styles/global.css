@@ -63,6 +63,22 @@ body {
   font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
 }
 
+/* ---------------------------------------------------------------------------
+   Dark-mode contrast lift. The muted/accent grey tokens (slate-500, slate-600,
+   brand-500, brand-600) are tuned for the WHITE page. On the near-black dark
+   page they drop to ~2-3.6:1 contrast - muted labels go hard to read and any
+   `text-brand-600` without a dark override renders near-black on near-black
+   (invisible). A single grey can't satisfy both backgrounds, so we re-resolve
+   these CSS variables inside `.dark`. This fixes every usage site-wide (pages,
+   components, prose) at once; explicit `dark:text-*` overrides still win, so
+   intentional pairings like `text-slate-500 dark:text-slate-400` are untouched. */
+.dark {
+  --color-slate-500: #a8a8a8; /* muted text - ~7:1 on #0a0a0a */
+  --color-slate-600: #9a9a9a; /* dark-only decoration / stray uses */
+  --color-brand-500: #a8a8a8; /* rules, focus rings, the "+" affordance */
+  --color-brand-600: #d4d4d4; /* accent text - was #2a2a2a (invisible on dark) */
+}
+
 /* Editorial serif for all headings */
 h1, h2, h3, h4, .font-serif {
   font-family: var(--font-serif);
@@ -92,6 +108,20 @@ a.filament {
   --tw-prose-invert-headings: #f2f2f2;
   --tw-prose-invert-bold: #f2f2f2;
   --tw-prose-invert-quotes: #b0b0b0;
+}
+
+/* The light-mode `--tw-prose-*` values above (headings/bold = #0a0a0a) are pinned
+   directly on `.prose-research`, which out-specifies `dark:prose-invert`. The
+   result: in dark mode, prose headings and bold text render near-black on the
+   near-black page (invisible), while body text gets the inverted colour. Force
+   the dark values here at higher specificity (.dark + .prose-research) so every
+   prose token flips correctly. */
+.dark .prose-research {
+  --tw-prose-body: #d6d6d6;
+  --tw-prose-headings: #f2f2f2;
+  --tw-prose-bold: #f2f2f2;
+  --tw-prose-quotes: #b0b0b0;
+  --tw-prose-links: #f2f2f2;
 }
 
 /* Drop-cap in indigo - a nod to illuminated manuscripts, no glow */
