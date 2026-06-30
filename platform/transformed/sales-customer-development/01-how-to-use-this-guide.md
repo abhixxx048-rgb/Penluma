@@ -45,6 +45,8 @@ You learned to build things. Nobody taught you to sell them. So when someone say
 
 Here is the relief. That person is not who good sellers actually are, and this guide will not turn you into them. If anything, selling well looks a lot like the thing you already do best as an engineer: ask honest questions until you understand the truth.
 
+**The short answer:** a founder who hates selling learns to sell by treating it as curiosity instead of persuasion. You read one idea, then go have one real conversation, asking honest questions about a person's actual problem rather than pitching your product. Repeat that ten times and the dread fades, because selling is a learnable process built on curiosity, honesty, and a simple structure, not on charm.
+
 ## Why this matters
 
 Most technical founders avoid selling until it is almost too late. They polish the product, add one more feature, rewrite the landing page, anything but talk to a real human who might buy.
@@ -120,6 +122,27 @@ Here is the practical part. Do this, not just read it.
 5. **Expect to get it wrong a few times.** Steve Blank's whole method assumes you will. That is the learning, not a failure. Each awkward round teaches you something the previous one could not.
 
 Do not try to master everything before you start. Mastery is a side effect of conversations, not a prerequisite for them.
+
+## The curriculum, in order
+
+You are here, on the starting page. From here the lessons move from mindset, through listening, into the selling motion, and finally into building a lasting habit. Read them in order at first, then jump to whatever you need.
+
+1. [Why founders must learn to sell, and why it's learnable](/blog/sales-customer-development/02-why-founders-must-learn-to-sell-and-why-it-is-learnable) — the case that sales is a skill, not a personality you were born with or denied.
+2. [Customer development: get out of the building](/blog/sales-customer-development/03-customer-development-get-out-of-the-building) — Steve Blank's method for finding facts outside your office before you build the wrong thing.
+3. [The Mom Test: talk to customers without fooling yourself](/blog/sales-customer-development/04-the-mom-test-talk-to-customers-without-fooling-yourself) — how to ask so people tell you the truth instead of polite lies.
+4. [Asking questions without leading](/blog/sales-customer-development/05-asking-questions-without-leading) — phrasing questions so you learn what is real instead of nudging people toward the answer you want.
+5. [Active listening and reading the conversation](/blog/sales-customer-development/06-active-listening-and-reading-the-conversation) — hearing what is actually said, and what is meant underneath it.
+6. [Running a great discovery call, start to finish](/blog/sales-customer-development/07-running-a-great-discovery-call-start-to-finish) — a repeatable structure for that first real conversation.
+7. [Sales discovery frameworks: SPIN, BANT, MEDDIC, and friends](/blog/sales-customer-development/08-sales-discovery-frameworks-spin-bant-meddic-and-friends) — the professional toolkits, explained in plain English and only when you need them.
+8. [Qualifying: choosing who deserves your time](/blog/sales-customer-development/09-qualifying-choosing-who-deserves-your-time) — deciding who is worth pursuing so you stop pouring effort into bad fits.
+9. [The demo: show value without overselling](/blog/sales-customer-development/10-the-demo-show-value-without-overselling) — showing your product so it lands as helpful, not pushy.
+10. [Handling objections with honesty](/blog/sales-customer-development/11-handling-objections-with-honesty) — meeting concerns straight instead of wriggling around them.
+11. [Hearing no: turning rejection into learning](/blog/sales-customer-development/12-hearing-no-turning-rejection-into-learning) — making a "no" useful instead of crushing.
+12. [Founder-led outreach: getting the conversations](/blog/sales-customer-development/13-founder-led-outreach-getting-the-conversations) — how to get real people to talk to you in the first place.
+13. [From conversation to commitment: advancing and closing](/blog/sales-customer-development/14-from-conversation-to-commitment-advancing-and-closing) — asking for a clear next step without feeling like a fraud.
+14. [Building the muscle: process, pipeline, habit](/blog/sales-customer-development/15-building-the-muscle-process-pipeline-habit) — turning all of this into a steady, repeatable practice.
+
+**References:** keep the [glossary of terms](/blog/sales-customer-development/16-glossary-of-terms), the [frequently asked questions](/blog/sales-customer-development/17-frequently-asked-questions), and the [revision cheat sheet](/blog/sales-customer-development/18-revision-cheat-sheet) open as you go.
 
 ## Conclusion
 

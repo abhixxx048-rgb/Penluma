@@ -46,6 +46,8 @@ That gap is where this whole field lives. And here's the surprising part: the mo
 
 Let's start at the very bottom, with what a language model truly is.
 
+**In short:** building with large language models means engineering a reliable system around a model that is only ever *mostly* right. The skills that make that possible are four durable pillars - evaluation (measuring whether output is actually good), context engineering and retrieval (feeding the model the right information), agent architecture (multi-step systems that use tools), and product judgment (deciding what to build and where the model is allowed to be wrong). Learn these four and you can build with any model, because they outlast every individual release.
+
 ## Why this matters
 
 If you only ever copy "magic prompts" off the internet, you're building on sand. The trick that worked last year quietly breaks when the model updates, and you won't even know why.
@@ -136,7 +138,7 @@ Deciding precisely what goes into that limited context window: which instruction
 
 ### 3. Agent architecture and orchestration
 
-Going beyond a single question-and-answer to [systems where the model can take multiple steps](/blog/ai-llm-engineering/04-agent-architecture-orchestration), use **tools** (call a calculator, search a database, hit an API), check its own work, and recover from failures. **Orchestration** is the conductor logic coordinating those steps.
+Going beyond a single question-and-answer to [systems where the model can take multiple steps](/blog/ai-llm-engineering/04-agent-architecture-orchestration), use **tools** (call a calculator, search a database, hit an API), check its own work, and recover from failures. **Orchestration** is the conductor logic coordinating those steps. To go deeper on coordinating several agents at once, see the companion pillar on [multi-agent LLM systems](/blog/agent-orchestration/agent-orchestration-00-index).
 
 ### 4. AI product judgment
 
@@ -149,6 +151,8 @@ These aren't four separate topics. They form one loop that turns a raw model cal
 Walk through a single user request. **Product judgment (4)** decides the feature is worth building and sets the rules of the game. For each request, **context engineering (2)** fills the model's limited window with the right instructions and freshly retrieved facts. The model runs inference, often inside an **agent loop (3)** that lets it use tools and take several steps. Finally, **evaluation (1)** scores the result - and feeds what it learns back into every earlier step.
 
 That feedback is the real engine: run your evals, find the weakest step, change one thing, re-run. Weakness in any single pillar caps the quality of the whole system.
+
+**References for this series.** Keep two quick companions handy as you work through the pillars: the [frequently asked questions](/blog/ai-llm-engineering/06-frequently-asked-questions) for plain-English answers to common sticking points, and the [revision cheat sheet](/blog/ai-llm-engineering/07-revision-cheat-sheet) for a one-page recap of every key term and idea.
 
 ## How to use this
 

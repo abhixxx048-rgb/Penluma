@@ -44,6 +44,8 @@ The people you admire for their clarity and creativity are not wired differently
 
 This guide is for builders: founders, developers, designers, product managers, and anyone who wants to think more clearly, act more consistently, and come up with better ideas. You do not need a degree in psychology or philosophy. If you can read and reflect, you are ready.
 
+**How do you learn to think more clearly?** Treat thinking as a set of trainable skills, not a fixed talent. You learn to break problems down to first principles, see the systems they sit inside, build habits that turn insight into action, and generate ideas on demand. Practice these methods on real problems, one at a time, and clear thinking becomes a routine instead of a lucky mood.
+
 ## Why this matters
 
 Most of us were never taught how to think. We were taught what to think: facts, formulas, frameworks handed down whole. So when a genuinely new problem lands on your desk, you reach for borrowed answers that do not quite fit.
@@ -107,6 +109,33 @@ Treat this as a workbook, not a novel. Here is a plan that fits a busy schedule.
 6. **Look up terms instead of reading past them.** When a word feels unfamiliar, check its plain-English definition rather than letting the fog build.
 
 A realistic timeline: finish the guide in two to three weeks, then revisit the closing workflow and your cheat sheet once a month as a maintenance ritual.
+
+## The full path
+
+You are here, at lesson one. Here is the full sequence, in the order that builds best.
+
+1. **[How your mind already thinks, and why it misleads you](/blog/thinking-skills/02-how-your-mind-already-thinks-and-why-it-misleads-you)** — the built-in shortcuts and biases that quietly distort everyday judgment.
+2. **[First-principles thinking: reasoning from the ground up](/blog/thinking-skills/03-first-principles-thinking-reasoning-from-the-ground-up)** — strip a problem down to what you know is true, then rebuild from there.
+3. **[The toolkit: how to actually do first-principles thinking](/blog/thinking-skills/04-the-toolkit-how-to-actually-do-first-principles-thinking)** — the step-by-step method, checklists, and worked examples.
+4. **[Systems thinking: seeing the whole, not the parts](/blog/thinking-skills/05-systems-thinking-seeing-the-whole-not-the-parts)** — how parts connect, loop, and produce surprises you cannot see up close.
+5. **[Leverage points: mental models for better decisions](/blog/thinking-skills/06-section-5-leverage-points-mental-models-for-better-decisions)** — find the small change that moves the whole system.
+6. **[The science of habits: how behavior becomes automatic](/blog/thinking-skills/07-the-science-of-habits-how-behavior-becomes-automatic)** — the cue-routine-reward loop behind every routine.
+7. **[Behavior design models: why people do and don't act](/blog/thinking-skills/08-section-7-behavior-design-models-why-people-do-and-don-t-act)** — the forces that drive action, from motivation to friction.
+8. **[Designing your own habits that actually stick](/blog/thinking-skills/09-designing-your-own-habits-that-actually-stick)** — turn the science into routines that survive low-motivation days.
+9. **[Designing behavior for others, ethically](/blog/thinking-skills/10-designing-behavior-for-others-ethically)** — apply behavioral science to your products without manipulating people.
+10. **[What creativity really is, demystified](/blog/thinking-skills/11-what-creativity-really-is-demystified)** — creativity as a repeatable process, not a rare gift.
+11. **[Idea generation techniques: producing options on demand](/blog/thinking-skills/12-idea-generation-techniques-producing-options-on-demand)** — proven methods to fill your pipeline with options before you choose.
+12. **[The creative mind: flow, incubation, and beating blocks](/blog/thinking-skills/13-section-12-the-creative-mind-flow-incubation-beating-blocks)** — protect the conditions where your best ideas actually surface.
+13. **[Putting it together: a thinking operating system](/blog/thinking-skills/14-putting-it-together-a-thinking-operating-system)** — the four-stage loop that ties all three pillars into one workflow.
+
+**References:** keep the [glossary of terms](/blog/thinking-skills/15-glossary-of-terms), the [frequently asked questions](/blog/thinking-skills/16-frequently-asked-questions), and the [revision cheat sheet](/blog/thinking-skills/17-revision-cheat-sheet) open as you work.
+
+## Go deeper
+
+Two themes introduced here open into full guides of their own.
+
+- **[Systems Thinking](/blog/systems-thinking/01-what-is-a-system-parts-connections-and-purpose)** — go here when a problem keeps coming back no matter how you fix the individual parts, and you need to understand the whole.
+- **[Psychology of Decisions](/blog/psychology-of-decisions/01-what-psychology-is-and-why-rational-people-decide-irrationally)** — go here when you want to understand why smart, rational people, yourself included, make predictably irrational choices.
 
 ## Conclusion
 
