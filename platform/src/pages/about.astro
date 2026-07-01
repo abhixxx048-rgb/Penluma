@@ -1,8 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE } from '../consts';
-import { topics, allPosts } from '../lib/content';
+import { topics, topicsByCategory, allPosts } from '../lib/content';
 const posts = await allPosts();
+const grouped = topicsByCategory();
 
 const aboutUrl = new URL('/about', Astro.site).toString();
 const description = `About Penluma: ${posts.length} in-depth, worked-through notes on system design, distributed systems, economics, money, and clear thinking - from intuition to mechanics to failure modes.`;
@@ -45,27 +46,103 @@ const jsonLd = [
 <BaseLayout title="About" description={description} keywords={keywords} jsonLd={jsonLd}>
   <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
     <h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">About Penluma</h1>
+    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">
+      A growing library of {posts.length} deep-dives that take hard topics from first intuition all
+      the way to how they break in production.
+    </p>
     <div class="prose-research mt-8">
       <p>
         <strong>Penluma</strong> - <em>pen</em> + <em>lumen</em>, the light of the pen - is a growing
         library of <strong>{posts.length} deep-dive notes</strong> across
-        <strong>{topics.length} topics</strong> - from staff-level system design and distributed
-        systems to economics, clear thinking, and money. Each topic is written to take you from
+        <strong>{topics.length} topics</strong>, from staff-level system design and distributed
+        systems to economics, clear thinking, and money. Every topic is written to take you from
         plain-language intuition, to precise mechanics, to the failure modes that show up in the
         real world.
       </p>
       <p>
         Unlike most online write-ups, these aren't cheat sheets. They include back-of-the-envelope
         math, worked examples, comparison tables, war stories, and test-yourself questions. They're
-        meant to be read slowly and worked through.
+        meant to be read slowly and worked through - the version I wish I'd had when I was learning
+        each of these things.
       </p>
-      <h2>Why this exists</h2>
+
+      <h2>The problem I'm trying to solve</h2>
       <p>
-        I research these topics in depth for my own learning and work, and publish the evergreen
-        parts here so they can help others learning the same things. New topics get added over time.
+        Most explanations sit at one of two extremes. Cheat sheets and hot takes are easy to read
+        but too shallow to use - you finish them <em>knowing about</em> a topic without actually
+        understanding it. Textbooks and papers are rigorous but so dense that most people bounce off
+        before the idea ever clicks. Both leave you stranded the moment you hit a real problem.
       </p>
+      <p>
+        Penluma aims for the missing middle: writing that is genuinely deep but still readable -
+        rigorous where it counts, plain-language where it can be.
+      </p>
+
+      <h2>The method: every topic, three levels deep</h2>
+      <p>Each deep-dive is built to move through three layers, in order:</p>
+      <ol>
+        <li>
+          <strong>Intuition</strong> - the plain-language mental model first, the way a smart friend
+          would explain it before any jargon shows up.
+        </li>
+        <li>
+          <strong>Mechanics</strong> - precisely how the thing actually works, step by step. No
+          hand-waving, no "it just works."
+        </li>
+        <li>
+          <strong>Failure modes</strong> - where it breaks in the real world, why, and what to do
+          about it. This is the part most explanations skip, and it's usually the part that matters.
+        </li>
+      </ol>
+
+      <h2>What you'll find here</h2>
+      <p>
+        The library spans {topics.length} topics grouped into a handful of areas. It keeps growing
+        as I work through new material:
+      </p>
+      <ul>
+        {grouped.map((g) => (
+          <li><strong>{g.category}</strong> - {g.topics.length} {g.topics.length === 1 ? 'topic' : 'topics'}</li>
+        ))}
+      </ul>
+
+      <h2>Who this is for</h2>
+      <p>
+        Penluma is for the curious builder, operator, or student who would rather understand
+        something properly than skim ten summaries of it - engineers levelling up toward staff,
+        founders trying to reason about their own business, and anyone who likes chasing an idea all
+        the way to the bottom. If you want a quick answer to copy-paste, this probably isn't the
+        place. If you want to actually <em>get</em> it, welcome.
+      </p>
+
+      <h2>How to get the most out of it</h2>
+      <ul>
+        <li>Read slowly. These are worked through, not skimmed - treat them like a short chapter, not a tweet.</li>
+        <li>Do the math and the test-yourself questions instead of nodding past them; that's where understanding actually sticks.</li>
+        <li>Follow a numbered series start to finish - the ordering is deliberate, each part builds on the last.</li>
+      </ul>
+
+      <h2>Who writes this</h2>
+      <p>
+        I'm {SITE.author} - an engineer and a compulsive learner. Penluma is my habit of taking one
+        hard topic at a time and writing through it until the fog clears, then publishing the part
+        that survived. There's no team and no ghostwriters: one voice, working things out in the
+        open, so the next person learning the same thing gets there faster.
+      </p>
+
+      <h2>What makes it different</h2>
+      <ul>
+        <li><strong>Depth over volume</strong> - one topic fully worked through beats ten skimmed for the algorithm.</li>
+        <li><strong>Evergreen, not news</strong> - the residue that stays true in five years, not a take that expires next week.</li>
+        <li><strong>Open by default</strong> - the whole library is free. No paywall, no signup wall to read.</li>
+      </ul>
+
       <h2>Stay in the loop</h2>
-      <p>Subscribe below to get an email when a substantial new topic or post lands.</p>
+      <p>
+        New deep-dives get added over time. If you'd like to know when a substantial new topic or
+        post lands, subscribe using the form at the bottom of the page - one email when there's
+        something worth reading, and nothing else.
+      </p>
     </div>
   </section>
 </BaseLayout>
