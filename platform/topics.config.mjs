@@ -188,6 +188,15 @@ export const TOPICS = {
     icon: '🌱',
     order: 7,
   },
+  'knowing-doing-gap': {
+    title: 'The Knowing-Doing Gap',
+    description:
+      'Why almost everyone knows what leads to success yet so few do it - the psychology, neuroscience, and habits behind closing the gap between knowing and doing.',
+    category: 'Thinking & Decisions',
+    icon: '🌉',
+    order: 8,
+    featured: true,
+  },
 
   // ---- Communication ----
   english: {

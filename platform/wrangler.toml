@@ -6,14 +6,10 @@ compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "dist"
 
 # ---------------------------------------------------------------------------
-# KV namespace - powers per-post view counts, likes, and newsletter signups.
-# OPTIONAL: the site deploys and runs fine without it (those endpoints no-op).
-#
-# To enable, run once:
-#   npx wrangler kv namespace create BLOG_KV
-# then paste the printed id below and UNCOMMENT the two lines:
-#
-# [[kv_namespaces]]
-# binding = "BLOG_KV"
-# id = "PASTE_YOUR_KV_NAMESPACE_ID_HERE"
+# KV namespace - powers per-post view counts, likes, newsletter signups, and
+# the contact form's backup copy. Created with `wrangler kv namespace create`.
+# The id below is a resource identifier, not a secret.
 # ---------------------------------------------------------------------------
+[[kv_namespaces]]
+binding = "BLOG_KV"
+id = "b782176e4f7b403f8a1b047251912ecb"

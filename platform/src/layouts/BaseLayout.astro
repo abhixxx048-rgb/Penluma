@@ -7,6 +7,8 @@ import '@fontsource-variable/fraunces';
 import '@fontsource-variable/jetbrains-mono';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import ConsentBanner from '../components/ConsentBanner.astro';
+import NewsletterPopup from '../components/NewsletterPopup.astro';
 import { SITE } from '../consts';
 
 interface Props {
@@ -131,6 +133,27 @@ const structuredData = [...baseLd, ...jsonLd];
       <script type="application/ld+json" set:html={JSON.stringify(data)} />
     ))}
 
+    {/* Google Consent Mode v2 - default DENIED. Must run BEFORE any GA tag so
+        nothing stores cookies until the visitor opts in via the banner. The
+        banner replays a saved 'granted' choice on later visits. */}
+    {import.meta.env.PROD && SITE.gaId && (
+      <script is:inline>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('consent', 'default', {
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied',
+          analytics_storage: 'denied',
+          wait_for_update: 500,
+        });
+        try {
+          var _c = JSON.parse(localStorage.getItem('consent_v2') || 'null');
+          if (_c) gtag('consent', 'update', _c);
+        } catch (e) {}
+      </script>
+    )}
+
     {/* Google Analytics 4 - production only, so local dev isn't counted */}
     {import.meta.env.PROD && SITE.gaId && (
       <Fragment>
@@ -140,10 +163,6 @@ const structuredData = [...baseLd, ...jsonLd];
           src={`https://www.googletagmanager.com/gtag/js?id=${SITE.gaId}`}
         ></script>
         <script is:inline define:vars={{ gaId: SITE.gaId }}>
-          window.dataLayer = window.dataLayer || [];
-          function gtag() {
-            dataLayer.push(arguments);
-          }
           gtag('js', new Date());
           gtag('config', gaId);
         </script>
@@ -163,5 +182,7 @@ const structuredData = [...baseLd, ...jsonLd];
       <slot />
     </main>
     <Footer />
+    <ConsentBanner />
+    {type === 'article' && <NewsletterPopup />}
   </body>
 </html>

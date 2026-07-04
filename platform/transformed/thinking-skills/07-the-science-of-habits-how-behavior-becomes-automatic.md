@@ -54,7 +54,7 @@ Every result you get, the body you have, the skills you build, the work you ship
 
 That cuts both ways. The same machinery that lets you drive a car without thinking also keeps you [reaching for your phone](/blog/thinking-skills/10-designing-behavior-for-others-ethically) the second you feel bored.
 
-Once you see how habits actually form, you stop relying on willpower and motivation, which run out. Instead, you can [design your behavior](/blog/thinking-skills/09-designing-your-own-habits-that-actually-stick) at the level where it is actually controlled. That is the difference between fighting yourself every day and building a life that mostly runs itself.
+Once you see [how habits actually form](/blog/knowing-doing-gap/05-how-habits-really-work), you stop relying on willpower and motivation, which run out. Instead, you can [design your behavior](/blog/thinking-skills/09-designing-your-own-habits-that-actually-stick) at the level where it is actually controlled. That is the difference between fighting yourself every day and building a life that mostly runs itself.
 
 ## What a habit actually is
 

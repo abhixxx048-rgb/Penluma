@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../consts';
+
+const url = new URL('/cookies', Astro.site).toString();
+const description = `The cookies and local storage ${SITE.name} uses — essential preferences vs. optional analytics — and how to control them.`;
+const updated = 'July 2026';
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: `Cookie Policy — ${SITE.name}`,
+    description,
+    url,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).toString() },
+      { '@type': 'ListItem', position: 2, name: 'Cookie Policy', item: url },
+    ],
+  },
+];
+---
+
+<BaseLayout title="Cookie Policy" description={description} keywords={['cookie policy', 'cookies', 'Penluma', 'consent']} jsonLd={jsonLd}>
+  <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+    <h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">Cookie Policy</h1>
+    <p class="mt-2 text-sm text-slate-500">Last updated: {updated}</p>
+
+    <div class="prose-research mt-8">
+      <p>
+        This page lists the cookies and browser storage {SITE.name} uses. We keep it minimal: a few essential
+        items to make the site work and remember your choices, plus optional analytics that load
+        <strong>only if you accept</strong>.
+      </p>
+
+      <div class="not-prose my-6 rounded-xl border border-slate-200 p-4 text-sm dark:border-slate-800">
+        <p class="font-semibold">Manage your choice</p>
+        <p class="mt-1 text-slate-600 dark:text-slate-400">
+          You can change your analytics consent at any time.
+        </p>
+        <button
+          data-cookie-settings
+          class="mt-3 rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
+          >Open cookie settings</button
+        >
+      </div>
+
+      <h2>Essential (always on)</h2>
+      <p>These make the site function and remember your preferences. They store no personal data and can't be turned off.</p>
+      <ul>
+        <li><strong>Theme</strong> — remembers light/dark mode (<code>theme</code>, in local storage).</li>
+        <li><strong>Consent choice</strong> — remembers your cookie decision so we don't ask again (<code>consent_v2</code>, in local storage).</li>
+        <li><strong>Newsletter prompt state</strong> — remembers if you subscribed or dismissed the newsletter popup, so it isn't shown repeatedly (<code>nl_subscribed</code>, <code>nl_dismissed_at</code>, in local storage).</li>
+      </ul>
+
+      <h2>Analytics (optional — only with consent)</h2>
+      <p>
+        If you accept, Google Analytics 4 sets cookies (such as <code>_ga</code>) to measure page views and
+        traffic in aggregate. Until you accept, Google Consent Mode keeps analytics storage denied, so these
+        cookies are not set. Decline or withdraw consent and they stay off.
+      </p>
+
+      <h2>What we don't use</h2>
+      <p>
+        No advertising cookies, no cross-site tracking, and no third-party marketing pixels. The
+        <a href="/tools">writing tools</a> run entirely in your browser and set no tracking storage of any kind.
+      </p>
+
+      <h2>Controlling cookies</h2>
+      <p>
+        Use <a href="#" data-cookie-settings>Cookie settings</a> to change your analytics choice here on the
+        site. You can also clear or block cookies and local storage through your browser settings at any time —
+        doing so may reset your theme and consent preferences.
+      </p>
+
+      <h2>Questions</h2>
+      <p>
+        See our <a href="/privacy">Privacy Policy</a> for the fuller picture, or email
+        <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

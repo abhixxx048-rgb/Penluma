@@ -68,7 +68,7 @@ This article is about that human gap. Once you understand *how* your own mind tr
 
 You probably already know more than enough to invest well. The information is free and everywhere.
 
-So why do so many smart people end up poorer than their plan promised? Because knowing the right thing and *doing* it under fear are two completely different skills.
+So why do so many smart people end up poorer than their plan promised? Because knowing the right thing and *doing* it under fear are two completely different skills. Part of the reason is present bias - our built-in pull toward [what feels good right now over what serves our future selves](/blog/knowing-doing-gap/04-why-comfort-beats-your-goals).
 
 Investing success is roughly **80% behaviour and 20% knowledge**. A simple plan you actually stick to will beat a brilliant plan you abandon at the first scary headline. This is the part no spreadsheet warns you about, and it is the part that quietly decides whether you build wealth or just talk about it.
 

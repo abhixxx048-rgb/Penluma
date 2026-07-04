@@ -129,6 +129,6 @@ New to all this? Do not try to read everything at once. This short path gives yo
 
 ## The bottom line
 
-Your mind is not broken - it is efficient, and efficiency has a price. The shortcuts that let you decide in a heartbeat are the same ones that quietly steer you wrong, in patterns reliable enough to name, predict, and design around. You cannot delete these biases, but you can catch them, and that is where all the leverage lives. **The goal is not to think harder about everything - it is to know which decisions deserve a slow second look, and to build simple habits that do the catching for you.**
+Your mind is not broken - it is efficient, and efficiency has a price. The shortcuts that let you decide in a heartbeat are the same ones that quietly steer you wrong, in patterns reliable enough to name, predict, and design around. You cannot delete these biases, but you can catch them, and that is where all the leverage lives. **The goal is not to think harder about everything - it is to know which decisions deserve a slow second look, and to build simple habits that do the catching for you.** And knowing all this is only half the job - the harder, more valuable half is [actually acting on what you already know](/blog/knowing-doing-gap/00-index-knowing-doing-gap).
 
 If this map helps, subscribe to the Penluma newsletter and I will send each new guide as it lands - one clear, honest study of how the mind really works.

@@ -187,7 +187,7 @@ And one shortcut that makes the whole thing stick: build your own one-page check
 
 ## Conclusion
 
-Here's the one thing to hold onto: you can't out-smart [your own biases](/blog/psychology-of-decisions/16-understanding-yourself-seeing-your-own-blind-spots), because they survive intelligence - but you can out-*process* them. A simple, written, repeatable routine beats raw willpower every time.
+Here's the one thing to hold onto: you can't out-smart [your own biases](/blog/psychology-of-decisions/16-understanding-yourself-seeing-your-own-blind-spots), because they survive intelligence - but you can out-*process* them. [A simple, written, repeatable routine beats raw willpower](/blog/knowing-doing-gap/11-how-to-close-the-knowing-doing-gap) every time.
 
 Run even a few of these tools on your big choices and you won't make perfect decisions. You'll do something better: you'll dodge the predictable disasters. And over a lifetime, that's the difference that quietly compounds.
 

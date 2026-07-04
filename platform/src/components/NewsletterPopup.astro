@@ -1,0 +1,191 @@
+---
+// Engagement-triggered newsletter popup. Rendered by BaseLayout only on article
+// pages (type="article"). It never interrupts on arrival — it waits for a real
+// signal of an engaged reader, then asks once, politely, and remembers the answer.
+//
+// TRIGGER (fires on whichever comes first):
+//   1. Scroll depth ≥ 65% of the page  — the reader is well into the piece.
+//   2. Dwell time ≥ 60s                 — they're actually reading, not bouncing.
+//   3. Exit intent (desktop)            — cursor leaves toward the tab bar.
+//
+// SUPPRESSION (so it's never annoying):
+//   • already subscribed        → never show          (localStorage nl_subscribed)
+//   • dismissed in last 45 days  → don't show          (localStorage nl_dismissed_at)
+//   • already shown this session → don't show again    (sessionStorage nl_shown)
+//
+// It reuses the working /api/subscribe endpoint (stores to Cloudflare KV).
+---
+
+<div
+  id="nl-popup"
+  hidden
+  class="fixed inset-0 z-[70] flex items-end justify-center p-4 sm:items-center"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="nl-popup-title"
+>
+  <div id="nl-popup-backdrop" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+
+  <div
+    class="relative w-full max-w-md rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl sm:p-7 dark:border-slate-800 dark:bg-slate-900"
+  >
+    <button
+      id="nl-popup-close"
+      type="button"
+      aria-label="Close"
+      class="absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-lg text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-white"
+    >
+      <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"></path>
+      </svg>
+    </button>
+
+    <p class="font-mono text-xs uppercase tracking-widest text-slate-500">The light of the pen</p>
+    <h2 id="nl-popup-title" class="mt-2 font-serif text-2xl font-bold">Enjoying this one?</h2>
+    <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
+      Get the next deep-dive by email — one message when a substantial new piece lands.
+      No spam, unsubscribe anytime.
+    </p>
+
+    <form id="nl-popup-form" class="mt-4 flex flex-col gap-2 sm:flex-row">
+      <input
+        type="email"
+        name="email"
+        required
+        autocomplete="email"
+        placeholder="you@example.com"
+        class="min-w-0 flex-1 rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/30 dark:border-slate-700 dark:bg-slate-950"
+      />
+      <button
+        type="submit"
+        class="rounded-lg bg-brand-700 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-800 disabled:opacity-50 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
+        >Subscribe</button
+      >
+    </form>
+    <p id="nl-popup-msg" class="mt-2 hidden text-sm" role="status" aria-live="polite"></p>
+
+    <button
+      id="nl-popup-dismiss"
+      type="button"
+      class="mt-3 text-xs text-slate-400 underline underline-offset-2 hover:text-slate-600 dark:hover:text-slate-300"
+      >No thanks, maybe later</button
+    >
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    var SUB = 'nl_subscribed';
+    var DIS = 'nl_dismissed_at';
+    var SHOWN = 'nl_shown';
+    var COOLDOWN_DAYS = 45;
+    var SCROLL_PCT = 0.65;
+    var DWELL_MS = 60000;
+
+    // --- suppression checks ------------------------------------------------
+    try {
+      if (localStorage.getItem(SUB)) return; // already a subscriber
+      var dismissedAt = parseInt(localStorage.getItem(DIS) || '0', 10);
+      if (dismissedAt && Date.now() - dismissedAt < COOLDOWN_DAYS * 864e5) return;
+      if (sessionStorage.getItem(SHOWN)) return; // once per session
+    } catch (e) {}
+
+    var popup = document.getElementById('nl-popup');
+    if (!popup) return;
+    var form = document.getElementById('nl-popup-form');
+    var msg = document.getElementById('nl-popup-msg');
+    var btn = form ? form.querySelector('button[type="submit"]') : null;
+    var opened = false;
+    var lastFocus = null;
+
+    function onKey(e) {
+      if (e.key === 'Escape') close(false);
+    }
+
+    function open() {
+      if (opened) return;
+      opened = true;
+      try { sessionStorage.setItem(SHOWN, '1'); } catch (e) {}
+      teardownTriggers();
+      lastFocus = document.activeElement;
+      popup.hidden = false;
+      document.addEventListener('keydown', onKey);
+      var email = form && form.querySelector('input[name="email"]');
+      if (email) setTimeout(function () { email.focus(); }, 50);
+    }
+
+    // dismissed = true when the reader actively says no (longer cooldown implied
+    // by storing the timestamp); false for an incidental close.
+    function close(dismissed) {
+      popup.hidden = true;
+      document.removeEventListener('keydown', onKey);
+      try { localStorage.setItem(DIS, String(Date.now())); } catch (e) {}
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    // --- triggers ----------------------------------------------------------
+    var timer = null;
+    function onScroll() {
+      var h = document.documentElement;
+      var scrolled = (h.scrollTop + window.innerHeight) / h.scrollHeight;
+      if (scrolled >= SCROLL_PCT) open();
+    }
+    function onExit(e) {
+      if (e.clientY <= 0) open();
+    }
+    function teardownTriggers() {
+      window.removeEventListener('scroll', onScroll);
+      document.removeEventListener('mouseout', onExit);
+      if (timer) clearTimeout(timer);
+    }
+    function armTriggers() {
+      window.addEventListener('scroll', onScroll, { passive: true });
+      // Exit intent is desktop-only (no hover on touch).
+      if (matchMedia('(hover: hover) and (pointer: fine)').matches) {
+        document.addEventListener('mouseout', onExit);
+      }
+      timer = setTimeout(open, DWELL_MS);
+    }
+    armTriggers();
+
+    // --- close affordances -------------------------------------------------
+    document.getElementById('nl-popup-close').addEventListener('click', function () { close(false); });
+    document.getElementById('nl-popup-dismiss').addEventListener('click', function () { close(true); });
+    document.getElementById('nl-popup-backdrop').addEventListener('click', function () { close(false); });
+
+    // --- submit ------------------------------------------------------------
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      var email = new FormData(form).get('email');
+      msg.classList.remove('hidden', 'text-red-500', 'text-green-600');
+      msg.classList.add('text-slate-500');
+      msg.textContent = 'Subscribing…';
+      if (btn) btn.disabled = true;
+      try {
+        var res = await fetch('/api/subscribe', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ email: email }),
+        });
+        var data = await res.json().catch(function () { return {}; });
+        msg.classList.remove('text-slate-500');
+        if (res.ok) {
+          msg.classList.add('text-green-600');
+          msg.textContent = data.message || 'Thanks — you’re subscribed!';
+          try { localStorage.setItem(SUB, '1'); } catch (e) {}
+          form.reset();
+          setTimeout(function () { close(false); }, 1400);
+        } else {
+          msg.classList.add('text-red-500');
+          msg.textContent = data.error || 'Something went wrong. Try again.';
+        }
+      } catch (err) {
+        msg.classList.remove('text-slate-500');
+        msg.classList.add('text-red-500');
+        msg.textContent = 'Network error. Please try again.';
+      } finally {
+        if (btn) btn.disabled = false;
+      }
+    });
+  })();
+</script>

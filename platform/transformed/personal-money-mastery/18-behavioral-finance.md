@@ -53,7 +53,7 @@ This is the part of money that no one teaches you, and it is the part that matte
 
 You can learn every rule of smart investing and still lose. Here is the uncomfortable truth: the biggest controllable driver of your real-world returns is not your stock-picking skill or your choice of fund. It is your **behavior**.
 
-The market's return is a published fact, the same number for everyone. But the return *you actually capture* depends entirely on how you behave when things get scary or exciting. Most people quietly hand back a chunk of their gains every year, not to fees, but to their own emotions.
+The market's return is a published fact, the same number for everyone. But the return *you actually capture* depends entirely on how you behave when things get scary or exciting. Most people quietly hand back a chunk of their gains every year, not to fees, but to their own emotions. Underneath a lot of it is present bias - the pull toward [comfort right now instead of the goal you set for later](/blog/knowing-doing-gap/04-why-comfort-beats-your-goals).
 
 As Benjamin Graham, the mentor of Warren Buffett, put it: *"The investor's chief problem, and even his worst enemy, is likely to be himself."*
 

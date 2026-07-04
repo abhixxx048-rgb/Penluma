@@ -1,8 +1,8 @@
 import type { APIRoute } from 'astro';
 
 // Runs at request time on Cloudflare (not prerendered). Captures contact
-// messages into BLOG_KV so they can be exported later with `wrangler kv key
-// list`. Wire an email/webhook provider where noted to get real-time delivery.
+// messages, pings a Discord webhook so you see them instantly, and keeps a copy
+// in BLOG_KV as a backup/export.
 export const prerender = false;
 
 const json = (data: unknown, status = 200) =>
@@ -12,6 +12,37 @@ const json = (data: unknown, status = 200) =>
   });
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+/**
+ * Post the message to a Discord channel webhook. Never throws — a webhook
+ * failure must not lose the message (we still store it in KV).
+ *
+ * Set the URL once with:  wrangler secret put DISCORD_WEBHOOK_URL
+ */
+async function notifyDiscord(
+  webhookUrl: string,
+  data: { name: string; email: string; message: string }
+): Promise<void> {
+  try {
+    await fetch(webhookUrl, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        username: 'Penluma Contact',
+        embeds: [
+          {
+            title: `New message from ${data.name}`,
+            description: data.message.slice(0, 4000),
+            color: 0x141414,
+            fields: [{ name: 'Email', value: data.email, inline: true }],
+          },
+        ],
+      }),
+    });
+  } catch (err) {
+    console.error('Discord webhook failed', err);
+  }
+}
 
 export const POST: APIRoute = async ({ request, locals }) => {
   let name = '';
@@ -43,16 +74,18 @@ export const POST: APIRoute = async ({ request, locals }) => {
   if (message.length > 5000)
     return json({ error: 'That message is a little too long — please trim it.' }, 400);
 
-  const store = (locals as any)?.runtime?.env?.BLOG_KV as KVNamespace | undefined;
+  const env = (locals as any)?.runtime?.env ?? {};
+  const webhookUrl = env.DISCORD_WEBHOOK_URL as string | undefined;
+  const store = env.BLOG_KV as KVNamespace | undefined;
+
+  // Real-time notification.
+  if (webhookUrl) await notifyDiscord(webhookUrl, { name, email, message });
+
+  // Backup/export copy. Sortable key; value holds the full submission.
   if (store) {
     const ts = new Date().toISOString();
-    // Sortable key; value holds the full submission.
-    await store.put(
-      `contact:${ts}:${email}`,
-      JSON.stringify({ name, email, message, ts })
-    );
+    await store.put(`contact:${ts}:${email}`, JSON.stringify({ name, email, message, ts }));
   }
-  // If you wire a provider (Resend/Postmark/a Discord or Slack webhook), call it
-  // here so messages reach you in real time.
+
   return json({ message: 'Thanks — your message has been sent. I read every one.' });
 };
