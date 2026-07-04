@@ -23,17 +23,13 @@ export const GET: APIRoute = async ({ locals }) => {
     out.kvTest = { ok: false, error: String(e?.message || e) };
   }
 
-  // --- Buttondown --------------------------------------------------------
+  // --- Buttondown (read-only auth check; doesn't add a subscriber or trip the
+  // firewall). 200 = key works; 401/403 = bad key. ----------------------------
   try {
-    const res = await fetch('https://api.buttondown.email/v1/subscribers', {
-      method: 'POST',
-      headers: {
-        Authorization: `Token ${env.BUTTONDOWN_API_KEY}`,
-        'content-type': 'application/json',
-      },
-      body: JSON.stringify({ email_address: 'diagnostic-test@penluma.com' }),
+    const res = await fetch('https://api.buttondown.email/v1/subscribers?page=1', {
+      headers: { Authorization: `Token ${(env.BUTTONDOWN_API_KEY || '').trim()}` },
     });
-    out.buttondown = { status: res.status, body: (await res.text()).slice(0, 600) };
+    out.buttondown = { status: res.status, authOk: res.ok };
   } catch (e: any) {
     out.buttondown = { error: String(e?.message || e) };
   }

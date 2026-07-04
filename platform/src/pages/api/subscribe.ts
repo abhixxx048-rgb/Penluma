@@ -25,13 +25,22 @@ async function addToButtondown(email: string, apiKey: string): Promise<boolean> 
         Authorization: `Token ${apiKey}`,
         'content-type': 'application/json',
       },
-      body: JSON.stringify({ email_address: email }),
+      // `type: regular` = added as an active subscriber (a self-serve signup),
+      // not left pending.
+      body: JSON.stringify({ email_address: email, type: 'regular' }),
     });
     if (res.ok) return true; // 200/201 created
-    // 400 = already subscribed / duplicate → treat as success (idempotent).
     if (res.status === 400) {
-      const body = await res.text().catch(() => '');
-      if (/already|exists|subscrib/i.test(body)) return true;
+      const body = (await res.json().catch(() => ({}))) as { code?: string; detail?: string };
+      const code = body.code || '';
+      // Duplicate → idempotent success. But DON'T match the substring "subscrib"
+      // blindly: "subscriber_blocked" (firewall) also contains it and is NOT a
+      // success. Match the real duplicate codes only.
+      if (code === 'email_already_exists' || /already exists|already subscrib/i.test(body.detail || '')) {
+        return true;
+      }
+      console.error('Buttondown 400', code, body.detail);
+      return false;
     }
     console.error('Buttondown error', res.status, await res.text().catch(() => ''));
     return false;
