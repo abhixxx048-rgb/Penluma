@@ -14,6 +14,7 @@
 //   • already shown this session → don't show again    (sessionStorage nl_shown)
 //
 // It reuses the working /api/subscribe endpoint (stores to Cloudflare KV).
+import Turnstile from './Turnstile.astro';
 ---
 
 <div
@@ -47,20 +48,23 @@
       No spam, unsubscribe anytime.
     </p>
 
-    <form id="nl-popup-form" method="post" action="/api/subscribe" class="mt-4 flex flex-col gap-2 sm:flex-row">
-      <input
-        type="email"
-        name="email"
-        required
-        autocomplete="email"
-        placeholder="you@example.com"
-        class="min-w-0 flex-1 rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/30 dark:border-slate-700 dark:bg-slate-950"
-      />
-      <button
-        type="submit"
-        class="rounded-lg bg-brand-700 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-800 disabled:opacity-50 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
-        >Subscribe</button
-      >
+    <form id="nl-popup-form" method="post" action="/api/subscribe" class="mt-4">
+      <div class="flex flex-col gap-2 sm:flex-row">
+        <input
+          type="email"
+          name="email"
+          required
+          autocomplete="email"
+          placeholder="you@example.com"
+          class="min-w-0 flex-1 rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/30 dark:border-slate-700 dark:bg-slate-950"
+        />
+        <button
+          type="submit"
+          class="rounded-lg bg-brand-700 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-800 disabled:opacity-50 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
+          >Subscribe</button
+        >
+      </div>
+      <Turnstile />
     </form>
     <p id="nl-popup-msg" class="mt-2 hidden text-sm" role="status" aria-live="polite"></p>
 
@@ -156,7 +160,9 @@
     // --- submit ------------------------------------------------------------
     form.addEventListener('submit', async function (e) {
       e.preventDefault();
-      var email = new FormData(form).get('email');
+      var fd = new FormData(form);
+      var email = fd.get('email');
+      var token = fd.get('cf-turnstile-response');
       msg.classList.remove('hidden', 'text-red-500', 'text-green-600');
       msg.classList.add('text-slate-500');
       msg.textContent = 'Subscribing…';
@@ -165,7 +171,7 @@
         var res = await fetch('/api/subscribe', {
           method: 'POST',
           headers: { 'content-type': 'application/json', accept: 'application/json' },
-          body: JSON.stringify({ email: email }),
+          body: JSON.stringify({ email: email, 'cf-turnstile-response': token }),
         });
         var data = await res.json().catch(function () { return {}; });
         msg.classList.remove('text-slate-500');
@@ -185,6 +191,7 @@
         msg.textContent = 'Network error. Please try again.';
       } finally {
         if (btn) btn.disabled = false;
+        if (window.turnstile) window.turnstile.reset();
       }
     });
   })();

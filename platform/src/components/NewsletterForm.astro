@@ -1,23 +1,27 @@
 ---
+import Turnstile from './Turnstile.astro';
 ---
 <div>
   <p class="font-semibold">Get new deep-dives by email</p>
   <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
     No spam. One email when a substantial new topic or post lands.
   </p>
-  <form id="newsletter-form" method="post" action="/api/subscribe" class="mt-4 flex max-w-sm gap-2">
-    <input
-      type="email"
-      name="email"
-      required
-      placeholder="you@example.com"
-      class="min-w-0 flex-1 rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/30 dark:border-slate-700 dark:bg-slate-900"
-    />
-    <button
-      type="submit"
-      class="rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
-      >Subscribe</button
-    >
+  <form id="newsletter-form" method="post" action="/api/subscribe" class="mt-4 max-w-sm">
+    <div class="flex gap-2">
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder="you@example.com"
+        class="min-w-0 flex-1 rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/30 dark:border-slate-700 dark:bg-slate-900"
+      />
+      <button
+        type="submit"
+        class="rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
+        >Subscribe</button
+      >
+    </div>
+    <Turnstile />
   </form>
   <p id="newsletter-msg" class="mt-2 hidden text-sm"></p>
 </div>
@@ -31,14 +35,16 @@
     const msg = document.getElementById('newsletter-msg');
     form?.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const email = new FormData(form).get('email');
+      const fd = new FormData(form);
+      const email = fd.get('email');
+      const token = fd.get('cf-turnstile-response');
       msg.classList.remove('hidden', 'text-red-500', 'text-green-600');
       msg.textContent = 'Subscribing…';
       try {
         const res = await fetch('/api/subscribe', {
           method: 'POST',
           headers: { 'content-type': 'application/json', accept: 'application/json' },
-          body: JSON.stringify({ email }),
+          body: JSON.stringify({ email, 'cf-turnstile-response': token }),
         });
         const data = await res.json().catch(() => ({}));
         if (res.ok) {
@@ -52,6 +58,8 @@
       } catch {
         msg.classList.add('text-red-500');
         msg.textContent = 'Network error. Please try again.';
+      } finally {
+        if (window.turnstile) window.turnstile.reset();
       }
     });
   })();

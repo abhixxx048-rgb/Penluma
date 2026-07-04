@@ -169,6 +169,12 @@ const structuredData = [...baseLd, ...jsonLd];
       </Fragment>
     )}
 
+    {/* Cloudflare Turnstile - loaded once; auto-renders every .cf-turnstile
+        widget on the page. Only when a site key is configured. */}
+    {SITE.turnstileSiteKey && (
+      <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    )}
+
     {/* Set theme before paint to avoid a flash. Penluma is lamplit by default:
         dark unless the reader has explicitly chosen light. */}
     <script is:inline>

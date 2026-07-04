@@ -11,6 +11,12 @@ export const SITE = {
   // Public contact address shown on the Contact page and used as the mailto
   // fallback. Point this at a real inbox before launch.
   contactEmail: 'hello@penluma.com',
+  // Cloudflare Turnstile (spam protection on the forms). PUBLIC site key — safe
+  // to commit. Leave EMPTY to disable the widget entirely; when set, the forms
+  // render a Turnstile challenge and the API routes verify it (they also need
+  // the private TURNSTILE_SECRET_KEY set as a Cloudflare secret). Get both keys
+  // at: Cloudflare dashboard → Turnstile → Add site.
+  turnstileSiteKey: '0x4AAAAAADvmdYT2pk0TpVMF',
   // BCP-47 locale, used for og:locale and the html lang attribute.
   locale: 'en_US',
   // Default social-share image. Lives in /public.

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Turnstile from '../components/Turnstile.astro';
 import { SITE } from '../consts';
 
 const contactUrl = new URL('/contact', Astro.site).toString();
@@ -59,6 +60,7 @@ const inputClass =
           <div class="absolute left-[-9999px]" aria-hidden="true">
             <label>Leave this empty<input name="botcheck" type="text" tabindex="-1" autocomplete="off" /></label>
           </div>
+          <Turnstile />
           <div class="flex items-center gap-4">
             <button
               type="submit"
@@ -147,6 +149,9 @@ const inputClass =
       msg.textContent = 'Network error. Please try again.';
     } finally {
       if (btn) btn.disabled = false;
+      // Reset the Turnstile widget so a fresh token is issued for a retry
+      // (tokens are single-use).
+      if (window.turnstile) window.turnstile.reset();
     }
   });
   })();

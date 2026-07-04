@@ -1,0 +1,19 @@
+---
+// Cloudflare Turnstile widget. Renders nothing unless SITE.turnstileSiteKey is
+// set, so the forms work fine before Turnstile is configured. The api.js script
+// is loaded once in BaseLayout; it auto-renders every .cf-turnstile element and
+// injects a hidden `cf-turnstile-response` token input into the parent form,
+// which the submit handlers forward and the API routes verify.
+import { SITE } from '../consts';
+---
+
+{
+  SITE.turnstileSiteKey && (
+    <div
+      class="cf-turnstile mt-1"
+      data-sitekey={SITE.turnstileSiteKey}
+      data-theme="auto"
+      data-size="flexible"
+    />
+  )
+}

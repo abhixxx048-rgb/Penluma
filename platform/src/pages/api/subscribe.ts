@@ -50,15 +50,41 @@ async function addToButtondown(email: string, apiKey: string): Promise<boolean> 
   }
 }
 
-/** Read the body whether it's JSON (fetch) or form-encoded (native submit). */
-async function readEmail(request: Request): Promise<string> {
+/** Read email + Turnstile token, whether JSON (fetch) or form-encoded (native). */
+async function readBody(request: Request): Promise<{ email: string; token: string }> {
   const ct = request.headers.get('content-type') || '';
   if (ct.includes('application/json')) {
-    const b = (await request.json().catch(() => ({}))) as { email?: string };
-    return (b?.email || '').trim().toLowerCase();
+    const b = (await request.json().catch(() => ({}))) as {
+      email?: string;
+      'cf-turnstile-response'?: string;
+    };
+    return {
+      email: (b?.email || '').trim().toLowerCase(),
+      token: (b?.['cf-turnstile-response'] || '').trim(),
+    };
   }
   const form = await request.formData();
-  return String(form.get('email') || '').trim().toLowerCase();
+  return {
+    email: String(form.get('email') || '').trim().toLowerCase(),
+    token: String(form.get('cf-turnstile-response') || '').trim(),
+  };
+}
+
+/** Verify a Cloudflare Turnstile token server-side. Returns true if valid. */
+async function verifyTurnstile(token: string, secret: string, ip?: string): Promise<boolean> {
+  if (!token) return false;
+  try {
+    const form = new URLSearchParams({ secret, response: token });
+    if (ip) form.set('remoteip', ip);
+    const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      body: form,
+    });
+    const data = (await res.json()) as { success?: boolean };
+    return !!data.success;
+  } catch {
+    return false;
+  }
 }
 
 export const POST: APIRoute = async ({ request, locals }) => {
@@ -70,8 +96,9 @@ export const POST: APIRoute = async ({ request, locals }) => {
     new Response(null, { status: 303, headers: { Location: back.split('?')[0] + params } });
 
   let email = '';
+  let token = '';
   try {
-    email = await readEmail(request);
+    ({ email, token } = await readBody(request));
   } catch {
     return wantsJson ? json({ error: 'Invalid request.' }, 400) : redirect('?subscribe=error');
   }
@@ -79,6 +106,17 @@ export const POST: APIRoute = async ({ request, locals }) => {
     return wantsJson ? json({ error: 'Please enter a valid email.' }, 400) : redirect('?subscribe=invalid');
 
   const env = (locals as any)?.runtime?.env ?? {};
+
+  // Cloudflare Turnstile — enforced only when the secret is configured.
+  const turnstileSecret = (env.TURNSTILE_SECRET_KEY as string | undefined)?.trim();
+  if (turnstileSecret) {
+    const ip = request.headers.get('CF-Connecting-IP') || undefined;
+    if (!(await verifyTurnstile(token, turnstileSecret, ip)))
+      return wantsJson
+        ? json({ error: 'Verification failed — please try again.' }, 400)
+        : redirect('?subscribe=captcha');
+  }
+
   // Trim to survive a stray newline/space pasted into `wrangler secret put`.
   const apiKey = (env.BUTTONDOWN_API_KEY as string | undefined)?.trim() || undefined;
   const store = env.BLOG_KV as KVNamespace | undefined;

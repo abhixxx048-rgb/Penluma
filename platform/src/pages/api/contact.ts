@@ -17,6 +17,23 @@ const json = (data: unknown, status = 200) =>
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+/** Verify a Cloudflare Turnstile token server-side. Returns true if valid. */
+async function verifyTurnstile(token: string, secret: string, ip?: string): Promise<boolean> {
+  if (!token) return false;
+  try {
+    const form = new URLSearchParams({ secret, response: token });
+    if (ip) form.set('remoteip', ip);
+    const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      body: form,
+    });
+    const data = (await res.json()) as { success?: boolean };
+    return !!data.success;
+  } catch {
+    return false;
+  }
+}
+
 /** Read the body whether it's JSON (fetch) or form-encoded (native submit). */
 async function readBody(request: Request): Promise<Record<string, string>> {
   const ct = request.headers.get('content-type') || '';
@@ -83,12 +100,23 @@ export const POST: APIRoute = async ({ request, locals }) => {
   // Silently accept bot submissions that fill the hidden honeypot field.
   if (hp) return ok();
 
+  const env = (locals as any)?.runtime?.env ?? {};
+
+  // Cloudflare Turnstile — enforced only when the secret is configured, so the
+  // form keeps working before Turnstile is set up.
+  const turnstileSecret = (env.TURNSTILE_SECRET_KEY as string | undefined)?.trim();
+  if (turnstileSecret) {
+    const token = (body['cf-turnstile-response'] || '').trim();
+    const ip = request.headers.get('CF-Connecting-IP') || undefined;
+    if (!(await verifyTurnstile(token, turnstileSecret, ip)))
+      return fail('Verification failed — please try again.');
+  }
+
   if (!name) return fail('Please enter your name.');
   if (!EMAIL_RE.test(email)) return fail('Please enter a valid email.');
   if (message.length < 10) return fail('Please add a bit more detail to your message.');
   if (message.length > 5000) return fail('That message is a little too long — please trim it.');
 
-  const env = (locals as any)?.runtime?.env ?? {};
   // Trim to survive a stray newline/space pasted into `wrangler secret put`.
   const webhookUrl = (env.DISCORD_WEBHOOK_URL as string | undefined)?.trim() || undefined;
   const store = env.BLOG_KV as KVNamespace | undefined;
