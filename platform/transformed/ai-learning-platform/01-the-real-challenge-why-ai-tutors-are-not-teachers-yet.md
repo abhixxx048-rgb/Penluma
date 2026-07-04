@@ -40,6 +40,8 @@ sources: []
 
 Ask a modern AI chatbot to "explain how the heart pumps blood" or "quiz me on Spanish verbs," and something surprising happens: it does it, and it does it well. Clear explanation, ten practice questions, a patient rephrase when you're confused.
 
+> This is the opening of [the complete guide to how learning works](/blog/ai-learning-platform/00-index-how-learning-works) - a step-by-step path you can read in order. Use the roadmap there to see where this fits and what comes next.
+
 So here's the honest question. If AI can already explain, quiz, and summarize, why isn't a chatbot enough? Why would anyone still need to *build* a learning platform around it?
 
 The short answer is this: a chatbot is a brilliant **answer machine**, but a real teacher is a **guide**. Those are very different jobs, and the gap between them is exactly where the whole opportunity lives.

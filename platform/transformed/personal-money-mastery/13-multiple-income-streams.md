@@ -46,7 +46,7 @@ Here is the part nobody puts on the motivational poster: multiple income streams
 
 The "seven streams" myth quietly wrecks more finances than it builds.
 
-People spread themselves thin across half-built projects, none of which ever compounds. They buy a rental flat expecting "passive" money and discover a part-time job managing tenants. They quote tax rules from old blog posts and overpay, or worse, get a notice.
+People spread themselves thin across half-built projects, none of which ever compounds. If you are still choosing that first project to master, our guide to [making money with AI](/blog/make-money-with-ai/00-index-make-money-with-ai) lays out 21 realistic options with honest earnings and timelines. They buy a rental flat expecting "passive" money and discover a part-time job managing tenants. They quote tax rules from old blog posts and overpay, or worse, get a notice.
 
 When you understand how income really works, three things change:
 

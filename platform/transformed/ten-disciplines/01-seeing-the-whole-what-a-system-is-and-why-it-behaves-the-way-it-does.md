@@ -59,6 +59,8 @@ sources: []
 
 Two families own basements that flood every spring. The first mops it up, runs a fan, and curses the rain - every single year. The second asks a different question: *why does this keep happening?* They discover the house sits below the water table with no drainage, install a drain once, and never think about it again.
 
+> This is the opening of [the full cross-disciplinary thinking toolkit](/blog/ten-disciplines/00-index-mental-models) - a step-by-step path you can read in order. Use the roadmap there to see where this fits and what comes next.
+
 Same flooded basement. Two completely different ways of seeing. One family fights the water forever. The other fixed it in an afternoon.
 
 This article is about learning to see like the second family. That way of seeing has a name - **systems thinking** - and it is a skill anyone can learn. No math, no engineering, no science background required. We build it from zero.

@@ -44,7 +44,7 @@ sources: []
 
 "The rich have seven income streams." You have heard it so many times it sounds like a starting move: quit focusing, scatter your energy across a course, a YouTube channel, a dropshipping store, and some stocks, all at once.
 
-That is almost always the wrong order. Multiple income streams are real and powerful, but they are an outcome, not a launch plan. They show up after you master one thing and start recycling its surplus on purpose. The engine that turns one good income into many has a name: the **reinvestment flywheel**.
+That is almost always the wrong order. Multiple income streams are real and powerful, but they are an outcome, not a launch plan. They show up after you master one thing and start recycling its surplus on purpose. The engine that turns one good income into many has a name: the **reinvestment flywheel**. But the flywheel needs a first engine to feed it - if you are still choosing what that engine should be, start by picking one of these [21 ways to make money with AI](/blog/make-money-with-ai/00-index-make-money-with-ai) and master it before you add a second.
 
 ## Why this matters
 

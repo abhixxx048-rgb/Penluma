@@ -60,6 +60,8 @@ sources:
 
 Replace every player on a football team and you still have a recognizable team. But keep all 22 players exactly the same and swap the rules of football for the rules of basketball, and you have a completely different game. The parts didn't change. Something invisible between them did - and it changed everything.
 
+> This is the opening of [the complete Systems Thinking roadmap](/blog/systems-thinking/00-index-systems-thinking) - a step-by-step path you can read in order. Use the roadmap there to see where this fits and what comes next.
+
 That invisible "something" is the heart of what a system is. Once you learn to see it, you start [noticing it everywhere](/blog/systems-thinking/03-why-systems-thinking-matters-patterns-everywhere): in your body, your workplace, your city, your relationships. This is the single most useful thinking skill you can pick up, and it starts with one deceptively simple question.
 
 **In short:** Systems thinking is a way of understanding the world by looking at how parts connect and influence each other over time, rather than studying each part in isolation. Instead of asking "who or what is broken?", it asks how the structure - the relationships, rules, and feedback loops between the parts - produces the behavior you see. Learn it and you stop chasing symptoms and start changing the patterns that cause them.

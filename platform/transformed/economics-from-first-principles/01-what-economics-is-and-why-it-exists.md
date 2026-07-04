@@ -38,6 +38,8 @@ sources: []
 
 Here's a surprise to start with: economics is not really about money. Money is just one tool it studies.
 
+> This is the opening of [the complete Economics from First Principles roadmap](/blog/economics-from-first-principles/00-index-learn-economics) - a step-by-step path you can read in order. Use the roadmap there to see where this fits and what comes next.
+
 At its heart, economics is about something far more universal: **how people and societies make choices when they cannot have everything they want.** If you have ever picked between sleeping in and going to the gym, or between paying rent and taking a trip, you have already done economics. You just didn't call it that.
 
 By the end of this one read, you'll have the whole foundation: the single fact that makes economics necessary, the chain of ideas it forces on us, the two altitudes economists work from, how to tell a fact from an opinion, and the quiet miracle the field exists to explain.

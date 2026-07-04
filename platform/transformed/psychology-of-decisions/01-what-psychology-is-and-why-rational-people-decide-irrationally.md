@@ -69,6 +69,8 @@ sources:
 
 You would never tip in a restaurant in a faraway city you will never visit again. There is no future payoff, so the logical move is to keep your money. Yet you would tip anyway, and so would almost everyone else.
 
+> This is the opening of [the full Decision Psychology roadmap](/blog/psychology-of-decisions/00-index-decision-psychology) - a step-by-step path you can read in order. Use the roadmap there to see where this fits and what comes next.
+
 That small moment hides a big truth: the "rational" human who always picks the best option for themselves does not exist. Real people tip strangers, stay loyal to brands for decades, and reject free money out of pure spite. And they do it in patterns so reliable you can learn to see them coming.
 
 **The short answer:** Smart people make irrational decisions because the brain has hard limits on information, time, and processing power, so it leans on fast, emotional, automatic shortcuts to cope. Those shortcuts usually serve us well, but they bend our choices in the same predictable directions every time. Intelligence does not switch them off, which is why even experts fall for them.

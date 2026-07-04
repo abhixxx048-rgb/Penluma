@@ -199,7 +199,7 @@ Treat this as a map, not tax advice - confirm everything with a chartered accoun
 
 A few beliefs quietly hold freelancers back. Drop them:
 
-- **"Quit your job and freelance full-time tomorrow."** No. Start as a side hustle. Build a pipeline and a cash buffer *first*, then jump.
+- **"Quit your job and freelance full-time tomorrow."** No. Start as a side hustle - many of the [best AI-era income paths](/blog/make-money-with-ai/00-index-make-money-with-ai) begin exactly this way. Build a pipeline and a cash buffer *first*, then jump.
 - **"The lowest price wins."** On platforms, low prices only trigger a race to the bottom. Specialization and outcomes win the *good* clients - the ones who pay well and stay.
 - **"Hourly is the safe default."** It caps your income and punishes speed. Remember: the top earners barely use it.
 - **"Freelancing is passive income."** It is not. It is you-for-hours until you productize and delegate. Be honest about that, and you'll plan correctly.
