@@ -154,7 +154,7 @@ They're not bad, just permissioned and harder to start cold. Many great business
 
 Here's the order that actually works. Most people get it backwards, waiting for funding or a team before they've built anything that runs on its own.
 
-1. **Start with a permissionless lever.** If you have no money and no audience, **code is the best first lever.** It needs no capital, no boss, and no permission. Naval again: *"Coding is such a great superpower because now you can speak the language of the robot armies."* Can't code? Media is your other no-gatekeeper option: writing, video, a newsletter.
+1. **Start with a permissionless lever.** If you have no money and no audience, **code is the best first lever.** It needs no capital, no boss, and no permission. Naval again: *"Coding is such a great superpower because now you can speak the language of the robot armies."* Can't code? Media is your other no-gatekeeper option: writing, video, a newsletter. And AI has pried this door open wider still: no-code and AI coding tools now let beginners wield code leverage without years of training — [21 realistic ways to make money with AI](/blog/make-money-with-ai/00-index-make-money-with-ai) shows what that looks like in practice.
 
 2. **Build one asset that works without you.** A small app, a tool, a body of content. Something that can serve a tenth customer, or a thousandth, without more of your hours.
 

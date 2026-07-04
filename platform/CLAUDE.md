@@ -94,6 +94,15 @@ curiosity hook to a related post. A blog is never a raw research dump.
 - **Outbound:** every post gets 3–6 contextual in-body links to *related existing*
   posts (same topic first, then genuinely relevant posts in other topics). Use
   descriptive anchor text, not "click here".
+- **Anchor links on real words inside the sentence.** While writing, weave links
+  onto the natural keyword/phrase that already describes the target post — don't
+  bolt on a separate "read more" line. The anchor text should read normally even if
+  the link were removed, and should roughly match what the target post ranks for.
+  - Good: `AI multiplies the value of a real skill … they're running an [automation agency](/blog/make-money-with-ai/01-ai-automation-agency) for local businesses.`
+  - Avoid: `Want to learn about automation agencies? [Click here](/blog/…).`
+  - Link on the specific concept, not a whole clause; one link per idea, and never
+    two links back-to-back. Skip a link if no phrase fits naturally — forced links
+    read as spam and hurt more than they help.
 - **Inbound:** find existing posts that *should* point at the new one and add links
   there too. A new topic with zero inbound links is invisible to internal PageRank.
   Check with:

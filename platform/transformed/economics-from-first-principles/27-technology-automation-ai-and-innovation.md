@@ -186,7 +186,7 @@ You can't control the macro forces, but you can position yourself wisely.
 
 1. **Bet on non-routine skills.** Anything rule-based and repeatable is the most exposed. Lean toward work that involves judgment, relationships, creativity, or physical dexterity that's hard to codify.
 2. **Become the person who redesigns work around the tool, not just the person who uses it.** The big payoffs from any technology come from reorganizing around it. Learn to redesign processes, not just press buttons.
-3. **Treat AI as a complement first.** Early evidence shows the biggest gains go to less-experienced workers using AI to level up. Use it to do work you couldn't do alone, not just to do old work slightly faster.
+3. **Treat AI as a complement first.** Early evidence shows the biggest gains go to less-experienced workers using AI to level up. Use it to do work you couldn't do alone, not just to do old work slightly faster. For concrete ways people are turning that leverage into income, see [how to make money with AI](/blog/make-money-with-ai/00-index-make-money-with-ai).
 4. **Don't panic at scary headline percentages.** When you read "X% of jobs at risk," ask whether it measures *possibility* or actual predicted loss. They're rarely the same.
 5. **Watch the transition, not just the destination.** If your industry is being automated, the danger is the messy in-between, not a permanent jobless future. Build a financial cushion and a skill bridge before you need them.
 6. **Pay attention to the politics of distribution.** Whether technology lifts you depends partly on institutions and policy. The "who keeps the gains" question is decided in part by votes, laws, and bargaining power, including yours.
