@@ -1,0 +1,182 @@
+---
+import type { QuizQuestion } from '../data/aws-ccp-quiz';
+
+interface Props {
+  questions: QuizQuestion[];
+}
+
+const { questions } = Astro.props;
+const total = questions.length;
+const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+---
+
+<div data-quiz-root>
+{/* Sticky score bar */}
+<div
+  data-quiz-scorebar
+  class="sticky top-16 z-30 rounded-2xl border border-slate-200 bg-white/90 p-4 backdrop-blur dark:border-slate-800 dark:bg-slate-950/90"
+>
+  <div class="flex items-center justify-between gap-4">
+    <div class="text-sm font-medium text-slate-700 dark:text-slate-300">
+      Answered <span data-answered-count>0</span>/{total}
+      · Correct <span data-correct-count class="text-emerald-600 dark:text-emerald-400">0</span>
+    </div>
+    <button
+      type="button"
+      data-reset-btn
+      class="rounded-lg border border-slate-300 px-3 py-1.5 text-xs font-medium text-slate-600 transition-colors hover:bg-slate-100 dark:border-slate-700 dark:text-slate-400 dark:hover:bg-slate-800"
+    >
+      Reset quiz
+    </button>
+  </div>
+  <div class="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800">
+    <div data-progress-bar class="h-full w-0 rounded-full bg-brand-600 transition-all duration-300 dark:bg-brand-400"></div>
+  </div>
+</div>
+
+{/* Questions */}
+<ol data-quiz class="mt-8 space-y-6">
+  {questions.map((q, i) => (
+    <li
+      class="question rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900 sm:p-6"
+      data-answer={q.answer}
+      data-answered="false"
+    >
+      <div class="flex items-start justify-between gap-3">
+        <span class="inline-flex rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-500 dark:bg-slate-800 dark:text-slate-400">
+          {q.domain}
+        </span>
+        <span class="shrink-0 text-xs font-semibold text-slate-400">Q{i + 1}</span>
+      </div>
+
+      <p class="mt-3 font-medium text-slate-900 dark:text-white">{q.question}</p>
+
+      <div class="mt-4 space-y-2.5">
+        {q.options.map((opt, oi) => (
+          <button
+            type="button"
+            class="option flex w-full items-start gap-3 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-left text-sm text-slate-700 transition-colors hover:border-brand-400 hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-800/50 dark:text-slate-300 dark:hover:border-brand-500 dark:hover:bg-slate-800"
+            data-index={oi}
+          >
+            <span class="mt-px inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-slate-300 text-xs font-semibold text-slate-500 dark:border-slate-600 dark:text-slate-400">
+              {letters[oi]}
+            </span>
+            <span>{opt}</span>
+          </button>
+        ))}
+      </div>
+
+      <div class="explanation mt-4 hidden rounded-xl border-l-2 border-brand-400 bg-slate-50 px-4 py-3 text-sm text-slate-600 dark:bg-slate-800/50 dark:text-slate-400">
+        <span class="font-semibold text-slate-800 dark:text-slate-200">Why: </span>{q.explanation}
+      </div>
+    </li>
+  ))}
+</ol>
+
+<div
+  data-final-score
+  class="mt-8 hidden rounded-2xl border border-brand-300 bg-brand-50/60 p-6 text-center dark:border-brand-700 dark:bg-brand-950/20"
+>
+  <p class="text-lg font-semibold text-slate-900 dark:text-white">
+    You scored <span data-final-correct>0</span>/{total} (<span data-final-pct>0</span>%)
+  </p>
+  <p data-final-msg class="mt-1 text-sm text-slate-600 dark:text-slate-400"></p>
+  <button
+    type="button"
+    data-final-reset
+    class="mt-4 rounded-lg bg-brand-700 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-brand-800 dark:bg-brand-400 dark:text-slate-900 dark:hover:bg-brand-300"
+  >
+    Try again
+  </button>
+</div>
+</div>
+
+<script>
+  function initQuiz(root: HTMLElement) {
+    const correctClass = ['!border-emerald-500', '!bg-emerald-50', 'dark:!bg-emerald-950/30'];
+    const wrongClass = ['!border-rose-500', '!bg-rose-50', 'dark:!bg-rose-950/30'];
+    const hoverClass = ['hover:border-brand-400', 'hover:bg-slate-100', 'dark:hover:border-brand-500', 'dark:hover:bg-slate-800'];
+
+    const questions = Array.from(root.querySelectorAll<HTMLElement>('.question'));
+    const total = questions.length;
+    const answeredEl = root.querySelector('[data-answered-count]')!;
+    const correctEl = root.querySelector('[data-correct-count]')!;
+    const progressBar = root.querySelector<HTMLElement>('[data-progress-bar]')!;
+    const finalBox = root.querySelector<HTMLElement>('[data-final-score]')!;
+    const finalCorrect = root.querySelector('[data-final-correct]')!;
+    const finalPct = root.querySelector('[data-final-pct]')!;
+    const finalMsg = root.querySelector('[data-final-msg]')!;
+
+    let answered = 0;
+    let correct = 0;
+
+    function refresh() {
+      answeredEl.textContent = String(answered);
+      correctEl.textContent = String(correct);
+      progressBar.style.width = (answered / total) * 100 + '%';
+      if (answered === total) {
+        const pct = Math.round((correct / total) * 100);
+        finalCorrect.textContent = String(correct);
+        finalPct.textContent = String(pct);
+        finalMsg.textContent =
+          pct >= 80
+            ? 'Solid — that’s a passing range for the real exam. Review the ones you missed and you’re ready.'
+            : pct >= 60
+              ? 'Getting there. Revisit the explanations on your misses and run it again.'
+              : 'Keep going — read each explanation, then retake to lock it in.';
+        finalBox.classList.remove('hidden');
+        finalBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        finalBox.classList.add('hidden');
+      }
+    }
+
+    function answer(card: HTMLElement, chosen: number) {
+      if (card.dataset.answered === 'true') return;
+      card.dataset.answered = 'true';
+      const correctIdx = Number(card.dataset.answer);
+      const options = Array.from(card.querySelectorAll<HTMLButtonElement>('.option'));
+
+      options.forEach((btn, idx) => {
+        btn.disabled = true;
+        btn.classList.add('cursor-default');
+        btn.classList.remove(...hoverClass);
+        if (idx === correctIdx) btn.classList.add(...correctClass);
+        else if (idx === chosen) btn.classList.add(...wrongClass);
+      });
+
+      card.querySelector('.explanation')!.classList.remove('hidden');
+      answered += 1;
+      if (chosen === correctIdx) correct += 1;
+      refresh();
+    }
+
+    function reset() {
+      answered = 0;
+      correct = 0;
+      questions.forEach((card) => {
+        card.dataset.answered = 'false';
+        card.querySelector('.explanation')!.classList.add('hidden');
+        card.querySelectorAll<HTMLButtonElement>('.option').forEach((btn) => {
+          btn.disabled = false;
+          btn.classList.remove(...correctClass, ...wrongClass, 'cursor-default');
+          btn.classList.add(...hoverClass);
+        });
+      });
+      refresh();
+      root.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    questions.forEach((card) => {
+      card.querySelectorAll<HTMLButtonElement>('.option').forEach((btn) => {
+        btn.addEventListener('click', () => answer(card, Number(btn.dataset.index)));
+      });
+    });
+
+    root.querySelector('[data-reset-btn]')!.addEventListener('click', reset);
+    root.querySelector('[data-final-reset]')!.addEventListener('click', reset);
+    refresh();
+  }
+
+  document.querySelectorAll<HTMLElement>('[data-quiz-root]').forEach(initQuiz);
+</script>
