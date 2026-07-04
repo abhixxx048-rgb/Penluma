@@ -121,6 +121,15 @@ export const TOPICS = {
     icon: '🪙',
     order: 4,
   },
+  'make-money-with-ai': {
+    title: 'Make Money with AI',
+    description:
+      '21 realistic ways to earn in the AI era - honest earnings, timelines, and how AI-proof each path is, researched for 2026.',
+    category: 'Money & Business',
+    icon: '💸',
+    order: 6,
+    featured: true,
+  },
   'sales-customer-development': {
     title: 'Sales & Customer Development',
     description: 'Talking to customers and selling honestly.',
