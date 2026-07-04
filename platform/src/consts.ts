@@ -10,7 +10,7 @@ export const SITE = {
   author: 'Brexis Wazik',
   // Public contact address shown on the Contact page and used as the mailto
   // fallback. Point this at a real inbox before launch.
-  contactEmail: 'hello@penluma.com',
+  contactEmail: 'brexiswazik@gmail.com',
   // Cloudflare Turnstile (spam protection on the forms). PUBLIC site key — safe
   // to commit. Leave EMPTY to disable the widget entirely; when set, the forms
   // render a Turnstile challenge and the API routes verify it (they also need
