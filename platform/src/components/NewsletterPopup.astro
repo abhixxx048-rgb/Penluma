@@ -47,7 +47,7 @@
       No spam, unsubscribe anytime.
     </p>
 
-    <form id="nl-popup-form" class="mt-4 flex flex-col gap-2 sm:flex-row">
+    <form id="nl-popup-form" method="post" action="/api/subscribe" class="mt-4 flex flex-col gap-2 sm:flex-row">
       <input
         type="email"
         name="email"
@@ -164,7 +164,7 @@
       try {
         var res = await fetch('/api/subscribe', {
           method: 'POST',
-          headers: { 'content-type': 'application/json' },
+          headers: { 'content-type': 'application/json', accept: 'application/json' },
           body: JSON.stringify({ email: email }),
         });
         var data = await res.json().catch(function () { return {}; });

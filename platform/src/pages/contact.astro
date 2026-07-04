@@ -40,7 +40,7 @@ const inputClass =
     <div class="mt-10 grid gap-10 sm:grid-cols-5">
       {/* Form */}
       <div class="sm:col-span-3">
-        <form id="contact-form" class="space-y-4" novalidate>
+        <form id="contact-form" method="post" action="/api/contact" class="space-y-4" novalidate>
           <div>
             <label for="c-name" class="text-sm font-medium">Name</label>
             <input id="c-name" name="name" type="text" required autocomplete="name" class={inputClass} />
@@ -95,6 +95,23 @@ const inputClass =
   const form = document.getElementById('contact-form');
   const msg = document.getElementById('contact-msg');
   const btn = form?.querySelector('button[type="submit"]');
+
+  // Surface the result of a no-JS (native form) submit that redirected back
+  // here, then strip the query string so a refresh doesn't repeat it.
+  (() => {
+    const p = new URLSearchParams(location.search);
+    if (!msg || (!p.has('sent') && !p.has('error'))) return;
+    msg.classList.remove('hidden');
+    if (p.has('sent')) {
+      msg.classList.add('text-green-600');
+      msg.textContent = 'Thanks — your message has been sent. I read every one.';
+    } else {
+      msg.classList.add('text-red-500');
+      msg.textContent = p.get('error') || 'Something went wrong. Please try again.';
+    }
+    history.replaceState(null, '', location.pathname);
+  })();
+
   form?.addEventListener('submit', async (e) => {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(form).entries());
@@ -105,7 +122,7 @@ const inputClass =
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'content-type': 'application/json' },
+        headers: { 'content-type': 'application/json', accept: 'application/json' },
         body: JSON.stringify(data),
       });
       const body = await res.json().catch(() => ({}));

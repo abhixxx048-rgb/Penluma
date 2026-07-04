@@ -5,7 +5,7 @@
   <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
     No spam. One email when a substantial new topic or post lands.
   </p>
-  <form id="newsletter-form" class="mt-4 flex max-w-sm gap-2">
+  <form id="newsletter-form" method="post" action="/api/subscribe" class="mt-4 flex max-w-sm gap-2">
     <input
       type="email"
       name="email"
@@ -33,7 +33,7 @@
     try {
       const res = await fetch('/api/subscribe', {
         method: 'POST',
-        headers: { 'content-type': 'application/json' },
+        headers: { 'content-type': 'application/json', accept: 'application/json' },
         body: JSON.stringify({ email }),
       });
       const data = await res.json().catch(() => ({}));

@@ -41,15 +41,33 @@ async function addToButtondown(email: string, apiKey: string): Promise<boolean> 
   }
 }
 
+/** Read the body whether it's JSON (fetch) or form-encoded (native submit). */
+async function readEmail(request: Request): Promise<string> {
+  const ct = request.headers.get('content-type') || '';
+  if (ct.includes('application/json')) {
+    const b = (await request.json().catch(() => ({}))) as { email?: string };
+    return (b?.email || '').trim().toLowerCase();
+  }
+  const form = await request.formData();
+  return String(form.get('email') || '').trim().toLowerCase();
+}
+
 export const POST: APIRoute = async ({ request, locals }) => {
+  // AJAX (our JS) sends `accept: application/json`; a native form submit doesn't.
+  // Native submits get a redirect (never raw JSON, never data in the URL).
+  const wantsJson = (request.headers.get('accept') || '').includes('application/json');
+  const back = request.headers.get('referer') || '/';
+  const redirect = (params: string) =>
+    new Response(null, { status: 303, headers: { Location: back.split('?')[0] + params } });
+
   let email = '';
   try {
-    const body = (await request.json()) as { email?: string };
-    email = (body?.email || '').trim().toLowerCase();
+    email = await readEmail(request);
   } catch {
-    return json({ error: 'Invalid request.' }, 400);
+    return wantsJson ? json({ error: 'Invalid request.' }, 400) : redirect('?subscribe=error');
   }
-  if (!EMAIL_RE.test(email)) return json({ error: 'Please enter a valid email.' }, 400);
+  if (!EMAIL_RE.test(email))
+    return wantsJson ? json({ error: 'Please enter a valid email.' }, 400) : redirect('?subscribe=invalid');
 
   const env = (locals as any)?.runtime?.env ?? {};
   const apiKey = env.BUTTONDOWN_API_KEY as string | undefined;
@@ -64,5 +82,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
     await store.put(`subscriber:${email}`, new Date().toISOString());
   }
 
-  return json({ message: 'Thanks - you’re subscribed!' });
+  return wantsJson
+    ? json({ message: 'Thanks - you’re subscribed!' })
+    : redirect('?subscribe=ok');
 };
