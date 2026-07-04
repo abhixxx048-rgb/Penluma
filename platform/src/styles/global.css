@@ -1,6 +1,10 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
+/* Tool-suite design tokens + scoped component classes (writing tools under
+   /tools). Additive + namespaced — see the file header. */
+@import './tools.css';
+
 /* Dark mode driven by a class on <html> (toggled + persisted in localStorage) */
 @custom-variant dark (&:where(.dark, .dark *));
 

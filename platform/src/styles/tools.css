@@ -1,0 +1,213 @@
+/* ===========================================================================
+   Penluma tool suite — design-system bridge.
+
+   The interactive writing tools were ported from a sibling project that used
+   its own token names (`ink`, `accent`, `--c-*`, `.card`, `.ctl`, `.eyebrow`,
+   `.halo`, `.rule-dash`, `.muted`, `.diff-*`). None of those names collide with
+   Penluma's own styles, so we re-home them here — remapped to Penluma's pure
+   monochrome brand — and scope every component rule under `.tools-scope` so the
+   rest of the site is untouched. The tool markup renders inside a
+   `<div class="tools-scope">` (see ToolLayout.astro).
+
+   Colour policy: the tools' single accent maps to Penluma ink (near-black on
+   light, near-white on dark) so tools read as native. The only real colours we
+   keep are the functional ok/warn/bad hues used by the diff viewer and
+   readability scorer, where meaning depends on colour.
+   =========================================================================== */
+
+/* Additive theme tokens — these generate the `text-accent`, `bg-accent`,
+   `border-ink/8`, `text-mark`, `bg-accent-soft`, `font-display`, `text-ok`…
+   utilities the ported components rely on. They are new names, so existing
+   Penluma pages are unaffected. */
+@theme {
+  --color-ink: #141414;          /* near-black — hairlines + base text        */
+  --color-paper: #ffffff;
+  --color-surface: #ffffff;
+  --color-muted: #6f6f6f;
+  --color-accent: #141414;       /* monochrome accent = ink                   */
+  --color-accent-soft: #f2f2f2;  /* light grey wash (chips, icon tiles)       */
+  --color-mark: #141414;
+  --color-mark-soft: #f2f2f2;
+  --color-ok: #1f7a52;           /* functional: diff insert / good score      */
+  --color-warn: #b27a1d;         /* functional: caution band                  */
+  --color-bad: #d2483b;          /* functional: diff delete / hard sentence   */
+
+  /* `font-display` utility → Penluma's Inter. font-sans/serif/mono stay as the
+     platform already defines them. */
+  --font-display: 'Inter Variable', 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --radius-card: 12px;
+}
+
+/* Plain CSS vars for the components' inline `style="… var(--c-*)"` usages,
+   plus the class rules below. Scoped to the tool subtree. */
+.tools-scope {
+  --c-ink: #141414;
+  --c-paper: #ffffff;
+  --c-surface: #ffffff;
+  --c-muted: #6f6f6f;
+  --c-accent-soft: #f2f2f2;
+  --c-mark-soft: #f2f2f2;
+  --font-display: var(--font-sans);
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.05), 0 12px 32px -18px rgb(0 0 0 / 0.14);
+}
+
+/* Dark mode — scoped so we never disturb Penluma's own dark tokens. Overriding
+   the @theme colour vars here is a plain cascade override that only reaches
+   descendants of `.tools-scope`. */
+.dark .tools-scope {
+  --color-ink: #f2f2f2;
+  --color-accent: #f2f2f2;
+  --color-mark: #f2f2f2;
+  --color-accent-soft: #262626;
+
+  --c-ink: #f2f2f2;
+  --c-paper: #0a0a0a;
+  --c-surface: #161616;
+  --c-muted: #a8a8a8;
+  --c-accent-soft: #262626;
+  --c-mark-soft: #262626;
+  --color-ok: #5fcf95;
+  --shadow-card: 0 1px 0 rgb(255 255 255 / 0.04) inset, 0 30px 60px -30px rgb(0 0 0 / 0.85);
+}
+
+/* --- Shared component classes (scoped) ------------------------------------ */
+
+/* Comfortable tap target for every shared control (WCAG 2.5.8). */
+.tools-scope .ctl { min-height: 44px; }
+
+/* Visible keyboard focus for tool controls. */
+.tools-scope :where(button, a, input, select, textarea, summary):focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Editorial eyebrow — a typed margin-note label. */
+.tools-scope .eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* Faint ruled wash behind a hero. */
+.tools-scope .halo {
+  background: radial-gradient(140% 80% at 50% -10%, color-mix(in srgb, var(--c-ink) 5%, transparent), transparent 60%);
+}
+
+/* An em-dash divider used as a structural rule. */
+.tools-scope .rule-dash {
+  border: 0;
+  height: 0;
+  text-align: center;
+  overflow: visible;
+  color: color-mix(in srgb, var(--c-ink) 28%, transparent);
+}
+.tools-scope .rule-dash::before {
+  content: '—';
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  letter-spacing: 0.2em;
+}
+
+.tools-scope .card {
+  background: var(--c-surface);
+  border: 1px solid color-mix(in srgb, var(--c-ink) 12%, transparent);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.tools-scope .ctl {
+  background: var(--c-surface);
+  border: 1px solid color-mix(in srgb, var(--c-ink) 18%, transparent);
+  color: var(--c-ink);
+  border-radius: 8px;
+}
+
+.tools-scope .muted { color: var(--c-muted); }
+
+/* Native form controls follow the monochrome accent, not the OS default blue. */
+.tools-scope input[type='checkbox'],
+.tools-scope input[type='radio'],
+.tools-scope input[type='range'],
+.tools-scope progress {
+  accent-color: var(--color-accent);
+}
+
+/* A tell struck through — used in some hero copy. */
+.tools-scope .struck { position: relative; color: var(--color-accent); white-space: nowrap; }
+.tools-scope .struck::after {
+  content: '';
+  position: absolute;
+  left: -0.04em; right: -0.04em; top: 54%;
+  height: 0.1em;
+  background: var(--color-accent);
+  transform: rotate(-2.2deg);
+  border-radius: 2px;
+}
+
+/* Diff highlights — colour never carries meaning alone (strike/underline too). */
+.tools-scope .diff-del {
+  background: color-mix(in srgb, var(--color-bad) 12%, transparent);
+  color: var(--color-bad);
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+  border-radius: 3px;
+  padding: 0 1px;
+}
+.tools-scope .diff-ins {
+  background: color-mix(in srgb, var(--color-ok) 14%, transparent);
+  color: var(--color-ok);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+  border-radius: 3px;
+  padding: 0 1px;
+}
+
+/* Score ring track. */
+.tools-scope .ring-track { stroke: color-mix(in srgb, var(--c-ink) 12%, transparent); }
+
+/* Filled accent buttons carry a hard-coded `text-white` label. In dark mode the
+   monochrome accent is near-white, so force a dark label to keep contrast. The
+   `.dark .tools-scope .bg-accent` selector out-specifies the `.text-white`
+   utility. */
+.dark .tools-scope .bg-accent { color: #0a0a0a; }
+
+/* --- Tool-page editorial chrome (header, SEO body, FAQ) ------------------- */
+
+.tools-scope .tool-head .back-note {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.tools-scope .tool-head h1 { line-height: 1.05; }
+.tools-scope .tool-head .lede { font-size: 1.2rem; line-height: 1.6; color: var(--c-muted); }
+
+.tools-scope .text-mark { color: var(--color-mark); }
+
+/* SEO long-form + FAQ links pick up the ink accent with a soft underline. */
+.tools-scope .seo a,
+.tools-scope .tool-head a.contextual {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+  text-underline-offset: 2px;
+}
+.tools-scope .seo code { font-family: var(--font-mono); font-size: 0.9em; }
+
+/* Clear the fixed mobile action bar some tools render, so the footer is
+   reachable on phones. */
+@media (max-width: 767px) {
+  body:has(.tools-scope) { padding-bottom: 4.5rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tools-scope * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto;
+  }
+}

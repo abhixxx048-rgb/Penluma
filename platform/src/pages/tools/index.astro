@@ -1,0 +1,164 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { TOOLS } from '../../lib/tools-registry';
+
+// The tool hub. Hub-and-spoke internal linking: every tool page links back here,
+// and this page links out to all of them. Grouped by the registry categories.
+const tiers = [
+  {
+    name: 'Clean & convert',
+    blurb:
+      'Everyday cleanup and conversion — the marks an editor makes first, each running entirely in your browser.',
+    tools: TOOLS.filter((t) => t.category === 'clean'),
+  },
+  {
+    name: 'Analyze & improve',
+    blurb:
+      'Read the draft the way an editor reads it — find what makes writing sound like AI, then fix it for quality, not detector-bypass.',
+    tools: TOOLS.filter((t) => t.category === 'analyze'),
+  },
+  {
+    name: 'Power tools',
+    blurb: 'Bigger workflows and on-device AI for the whole desk — still 100% on your device.',
+    tools: TOOLS.filter((t) => t.category === 'power'),
+  },
+];
+
+const total = TOOLS.length;
+const pad = (n: number) => String(n).padStart(2, '0');
+
+// Continuous numbering across groups, like entries in a galley index.
+let entry = 0;
+const groups = tiers.map((tier) => ({
+  ...tier,
+  tools: tier.tools.map((tool) => ({ ...tool, n: ++entry })),
+}));
+
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Free Writing & AI Text Cleanup Tools',
+  url: new URL('/tools', Astro.site).href,
+  hasPart: TOOLS.map((tool) => ({
+    '@type': 'WebApplication',
+    name: tool.title,
+    url: new URL(tool.href, Astro.site).href,
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'Web Browser',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  })),
+};
+---
+
+<BaseLayout
+  title="Free Writing Tools — No Signup, 100% In-Browser"
+  description={`${total} free tools to clean, convert and improve AI and human writing — remove em dashes and invisible characters, count words, check readability, fix quotes and more. Every tool runs entirely in your browser.`}
+  keywords={['free writing tools', 'ai text cleanup', 'em dash remover', 'readability checker', 'case converter']}
+  jsonLd={[collectionSchema]}
+>
+  <div class="tools-scope">
+    <main class="halo">
+      <header class="mx-auto max-w-3xl px-4 pt-12 pb-6 sm:pt-16">
+        <p class="eyebrow text-mark">The desk · {total} tools, no signup</p>
+        <h1 class="mt-4 text-4xl sm:text-5xl">The toolkit</h1>
+        <p class="mt-5 max-w-2xl text-lg leading-relaxed muted">
+          Every instrument on the writer's desk — for cleaning, converting and reading
+          your writing the way an editor would. Each one runs entirely on your device.
+          Your text never leaves the browser.
+        </p>
+      </header>
+
+      <div class="mx-auto max-w-3xl px-4">
+        <hr class="rule-dash" />
+      </div>
+
+      {
+        groups.map((group, i) => (
+          <section class="mx-auto max-w-3xl px-4">
+            <div class="pt-10 sm:pt-12">
+              <p class="eyebrow text-mark">
+                {pad(i + 1)} · {group.tools.length} entries
+              </p>
+              <h2 class="mt-2 text-2xl sm:text-3xl">{group.name}</h2>
+              <p class="mt-2 max-w-2xl text-base leading-relaxed muted">{group.blurb}</p>
+            </div>
+
+            <ul class="mt-7">
+              {group.tools.map((tool) => (
+                <li>
+                  <a href={tool.href} class="tool-row group flex items-baseline gap-4 py-4">
+                    <span class="eyebrow tool-no shrink-0 muted">{pad(tool.n)}</span>
+                    <span class="min-w-0 flex-1">
+                      <span class="flex flex-wrap items-baseline gap-x-2.5 gap-y-1">
+                        <span class="tool-title text-lg font-semibold group-hover:text-accent">
+                          {tool.title}
+                        </span>
+                        <span aria-hidden="true" class="tool-emoji text-sm opacity-70">
+                          {tool.icon}
+                        </span>
+                      </span>
+                      <span class="mt-1 block text-sm leading-relaxed muted">{tool.desc}</span>
+                    </span>
+                    <span aria-hidden="true" class="tool-arrow eyebrow shrink-0 self-center text-accent">
+                      →
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            {i < groups.length - 1 && <hr class="rule-dash mt-6" />}
+          </section>
+        ))
+      }
+
+      <div class="mx-auto max-w-3xl px-4">
+        <hr class="rule-dash mt-12" />
+      </div>
+
+      <section class="mx-auto max-w-3xl px-4 pb-20">
+        <div class="card mt-12 p-6 sm:p-7">
+          <p class="eyebrow text-mark">Margin note</p>
+          <p class="mt-3 text-base leading-relaxed">
+            Every tool here is 100% client-side. Open your browser's DevTools → Network
+            while you use any of them and you'll see zero requests. They even work offline.
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+</BaseLayout>
+
+<style>
+  /* Index rows: a ruled ledger of entries, hairline between each. */
+  .tool-row {
+    border-top: 1px solid color-mix(in srgb, var(--c-ink) 10%, transparent);
+    transition: background-color 0.15s ease, padding-left 0.15s ease;
+    padding-inline: 0.5rem;
+    margin-inline: -0.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  ul > li:last-child .tool-row {
+    border-bottom: 1px solid color-mix(in srgb, var(--c-ink) 10%, transparent);
+  }
+  .tool-row:hover {
+    background: var(--c-accent-soft);
+    padding-left: 0.85rem;
+  }
+  .tool-no {
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    padding-top: 0.15rem;
+  }
+  .tool-arrow {
+    opacity: 0;
+    transform: translateX(-4px);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+  }
+  .tool-row:hover .tool-arrow,
+  .tool-row:focus-visible .tool-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+</style>

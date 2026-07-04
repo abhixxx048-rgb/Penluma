@@ -8,6 +8,9 @@ export const SITE = {
   description:
     'Penluma is a growing library of deep-dive research: staff-level system design, multi-agent LLM systems, economics, business, and clear thinking - each topic taken from intuition to mechanics to failure modes.',
   author: 'Brexis Wazik',
+  // Public contact address shown on the Contact page and used as the mailto
+  // fallback. Point this at a real inbox before launch.
+  contactEmail: 'hello@penluma.com',
   // BCP-47 locale, used for og:locale and the html lang attribute.
   locale: 'en_US',
   // Default social-share image. Lives in /public.

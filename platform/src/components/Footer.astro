@@ -10,7 +10,11 @@ const year = new Date().getFullYear();
       <div>
         <p class="font-semibold">{SITE.title}</p>
         <p class="mt-2 max-w-sm text-sm text-slate-600 dark:text-slate-400">{SITE.tagline}</p>
-        <div class="mt-4 flex gap-4 text-sm text-slate-500">
+        <div class="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm text-slate-500">
+          <a class="hover:text-brand-600" href="/tools">Tools</a>
+          <a class="hover:text-brand-600" href="/blog">Blog</a>
+          <a class="hover:text-brand-600" href="/about">About</a>
+          <a class="hover:text-brand-600" href="/contact">Contact</a>
           {SITE.social.twitter && <a class="hover:text-brand-600" href={SITE.social.twitter}>Twitter</a>}
           {SITE.social.github && <a class="hover:text-brand-600" href={SITE.social.github}>GitHub</a>}
           {SITE.social.linkedin && <a class="hover:text-brand-600" href={SITE.social.linkedin}>LinkedIn</a>}
