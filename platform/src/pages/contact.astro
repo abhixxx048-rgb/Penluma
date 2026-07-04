@@ -53,9 +53,11 @@ const inputClass =
             <label for="c-message" class="text-sm font-medium">Message</label>
             <textarea id="c-message" name="message" rows="6" required class={inputClass}></textarea>
           </div>
-          {/* Honeypot - hidden from humans, catches bots. */}
+          {/* Honeypot - hidden from humans, catches bots. Named so browser
+              autofill never touches it (a "company"/"organization" field DOES
+              get autofilled, which would falsely flag a real person as a bot). */}
           <div class="absolute left-[-9999px]" aria-hidden="true">
-            <label>Company<input name="company" type="text" tabindex="-1" autocomplete="off" /></label>
+            <label>Leave this empty<input name="botcheck" type="text" tabindex="-1" autocomplete="off" /></label>
           </div>
           <div class="flex items-center gap-4">
             <button

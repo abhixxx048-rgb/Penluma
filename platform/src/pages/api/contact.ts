@@ -73,7 +73,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
   const name = (body.name || '').trim();
   const email = (body.email || '').trim().toLowerCase();
   const message = (body.message || '').trim();
-  const hp = (body.company || '').trim();
+  const hp = (body.botcheck || '').trim();
 
   const ok = () =>
     wantsJson
