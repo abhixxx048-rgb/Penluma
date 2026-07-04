@@ -82,7 +82,7 @@ This feels right because there *is* a pause. But a comma is too weak to hold two
 
 **Fix:** `The tests pass. The deploy is green.`
 
-The test for both: if you can split the line into two sentences that each stand alone, you must use a real join or a full stop between them.
+The test for both: if you can [split the line](/tools/sentence-splitter) into two sentences that each stand alone, you must use a real join or a full stop between them.
 
 ## The four legal ways to join two sentences
 

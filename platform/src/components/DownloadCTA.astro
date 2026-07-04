@@ -1,0 +1,131 @@
+---
+import Turnstile from './Turnstile.astro';
+
+interface Props {
+  /** Web path to the PDF, e.g. /downloads/system-design.pdf */
+  pdf?: string;
+  /** Optional headline override. */
+  title?: string;
+  /** Topic name, woven into the copy (e.g. "System Design"). */
+  topicTitle?: string;
+}
+
+const { pdf, title, topicTitle } = Astro.props;
+
+// Resilient: render nothing when there's no PDF to offer.
+const heading = title || 'Get the complete guide as a PDF';
+const blurb = topicTitle
+  ? `Every part of ${topicTitle}, packaged as one clean PDF you can keep, print, and read offline. Drop your email and it's yours.`
+  : `The whole guide, packaged as one clean PDF you can keep, print, and read offline. Drop your email and it's yours.`;
+
+// Unique suffix so multiple CTAs (or the site-wide NewsletterForm) can coexist
+// on one page without id collisions or is:inline const clashes.
+const uid = Math.random().toString(36).slice(2, 9);
+---
+
+{
+  pdf && (
+    <section
+      class="my-8 rounded-2xl border border-brand-200 bg-brand-50/60 p-6 dark:border-brand-800/60 dark:bg-brand-950/30"
+      data-download-cta={uid}
+    >
+      <div class="flex items-start gap-4">
+        <span class="hidden shrink-0 text-3xl sm:block" aria-hidden="true">
+          📘
+        </span>
+        <div class="min-w-0 flex-1">
+          <h2 class="text-lg font-bold text-slate-900 dark:text-white">{heading}</h2>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">{blurb}</p>
+
+          <form id={`dl-form-${uid}`} method="post" action="/api/subscribe" class="mt-4">
+            <div class="flex max-w-md flex-col gap-2 sm:flex-row">
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="you@example.com"
+                class="min-w-0 flex-1 rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/30 dark:border-slate-700 dark:bg-slate-900"
+              />
+              <button
+                type="submit"
+                class="shrink-0 rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
+              >
+                Email me the PDF
+              </button>
+            </div>
+            <Turnstile />
+          </form>
+
+          <p id={`dl-msg-${uid}`} class="mt-2 hidden text-sm" />
+
+          <a
+            id={`dl-link-${uid}`}
+            href={pdf}
+            download
+            class="mt-3 hidden items-center gap-2 rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
+          >
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M12 3v12m0 0-4-4m4 4 4-4M4 21h16" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Download the PDF
+          </a>
+
+          <p class="mt-2 text-xs text-slate-400 dark:text-slate-500">
+            No spam - one email when a substantial new guide lands. Unsubscribe anytime.
+          </p>
+        </div>
+      </div>
+
+      <script is:inline define:vars={{ uid, pdf }}>
+        // Wrapped in an IIFE + suffixed ids so this can share a page with the
+        // global NewsletterForm (and other DownloadCTAs) without redeclaring
+        // top-level consts in the shared is:inline global scope.
+        (() => {
+          const form = document.getElementById('dl-form-' + uid);
+          const msg = document.getElementById('dl-msg-' + uid);
+          const link = document.getElementById('dl-link-' + uid);
+          if (!form) return;
+          form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const fd = new FormData(form);
+            const email = fd.get('email');
+            const token = fd.get('cf-turnstile-response');
+            msg.classList.remove('hidden', 'text-red-500', 'text-green-600');
+            msg.textContent = 'Sending your download link…';
+            try {
+              const res = await fetch('/api/subscribe', {
+                method: 'POST',
+                headers: { 'content-type': 'application/json', accept: 'application/json' },
+                body: JSON.stringify({ email, 'cf-turnstile-response': token }),
+              });
+              const data = await res.json().catch(() => ({}));
+              if (res.ok) {
+                // Soft client-side gate: reveal the download, hide the form.
+                msg.classList.add('text-green-600');
+                msg.textContent = "You're in - your guide is ready below.";
+                form.classList.add('hidden');
+                link.classList.remove('hidden');
+                link.classList.add('inline-flex');
+                // Kick off the download without navigating away from the page.
+                const a = document.createElement('a');
+                a.href = pdf;
+                a.setAttribute('download', '');
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+              } else {
+                msg.classList.add('text-red-500');
+                msg.textContent = data.error || 'Something went wrong. Try again.';
+              }
+            } catch {
+              msg.classList.add('text-red-500');
+              msg.textContent = 'Network error. Please try again.';
+            } finally {
+              if (window.turnstile) window.turnstile.reset();
+            }
+          });
+        })();
+      </script>
+    </section>
+  )
+}

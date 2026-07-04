@@ -1,0 +1,258 @@
+---
+/**
+ * TableOfContents - a clickable ToC built from the h2/h3 headings of the
+ * rendered article.
+ *
+ * Two ways to feed it:
+ *   1. Pass Astro's `headings` (from `render(post)`) - rendered server-side,
+ *      cleanest, only the markdown content headings.
+ *   2. Omit `headings` - it reads h2/h3 from the target element in the DOM on
+ *      load (autofill mode) and builds the list client-side.
+ *
+ * Either way a tiny client script guarantees every h2/h3 in the target has an
+ * `id` (slugified from its text) so the anchors resolve, wires smooth-scroll
+ * (native, via html.scroll-smooth) with a scroll-margin offset for the sticky
+ * header, and highlights the current section on scroll via IntersectionObserver.
+ *
+ * Renders nothing when there are fewer than `minHeadings` headings.
+ *
+ * Layout: sticky side rail on desktop (>= lg), a collapsible <details> card on
+ * mobile. Drop it into a grid column beside the article for the rail to sit to
+ * one side (see the integration notes).
+ */
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+interface Props {
+  /** Astro `headings` array. If omitted, headings are read from the DOM. */
+  headings?: Heading[];
+  /** CSS selector for the article content whose headings drive the ToC. */
+  target?: string;
+  /** Label shown above the list / in the mobile summary. */
+  title?: string;
+  /** Hide the whole component below this many headings. */
+  minHeadings?: number;
+}
+const {
+  headings = [],
+  target = '.prose-research',
+  title = 'On this page',
+  minHeadings = 3,
+} = Astro.props;
+
+const items = headings.filter((h) => h.depth === 2 || h.depth === 3);
+const autofill = headings.length === 0;
+// Server-rendered path needs enough headings; autofill defers the count to the
+// client (which removes the component if the DOM has too few).
+const shouldRender = autofill || items.length >= minHeadings;
+---
+
+{
+  shouldRender && (
+    <div
+      data-toc
+      data-target={target}
+      data-min={minHeadings}
+      data-autofill={autofill ? 'true' : 'false'}
+    >
+      {/* Mobile: collapsible card */}
+      <details class="group rounded-xl border border-slate-200 bg-slate-50 lg:hidden dark:border-slate-800 dark:bg-slate-900/50">
+        <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-4 text-sm font-semibold text-slate-700 dark:text-slate-300">
+          <span>{title}</span>
+          <svg
+            class="h-4 w-4 shrink-0 text-brand-500 transition-transform group-open:rotate-180"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6" />
+          </svg>
+        </summary>
+        <nav class="px-4 pb-4 text-sm" aria-label={title}>
+          <ul class="toc-list space-y-1" data-toc-list>
+            {items.map((h) => (
+              <li class:list={[h.depth === 3 && 'pl-4']}>
+                <a
+                  href={`#${h.slug}`}
+                  data-toc-link
+                  data-slug={h.slug}
+                  class="toc-link py-0.5 text-slate-500 hover:text-brand-600 dark:hover:text-brand-400"
+                >
+                  {h.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </details>
+
+      {/* Desktop: sticky side rail */}
+      <nav
+        class="hidden text-sm lg:sticky lg:top-24 lg:block lg:max-h-[calc(100vh_-_8rem)] lg:overflow-y-auto"
+        aria-label={title}
+      >
+        <p class="mb-3 text-xs font-semibold uppercase tracking-wider text-slate-400">{title}</p>
+        <ul class="toc-list space-y-1" data-toc-list>
+          {items.map((h) => (
+            <li class:list={[h.depth === 3 && 'pl-4']}>
+              <a
+                href={`#${h.slug}`}
+                data-toc-link
+                data-slug={h.slug}
+                class="toc-link py-0.5 text-slate-500 hover:text-brand-600 dark:hover:text-brand-400"
+              >
+                {h.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
+  )
+}
+
+<style>
+  /* A subtle left rail that lights up on the active section. brand-500/600 are
+     CSS vars that already flip for dark mode, so no dark: overrides needed. */
+  .toc-link {
+    display: block;
+    border-left: 2px solid transparent;
+    margin-left: -0.75rem;
+    padding-left: calc(0.75rem - 2px);
+    line-height: 1.4;
+  }
+  .toc-link[data-active] {
+    border-left-color: var(--color-brand-500);
+    color: var(--color-brand-600);
+    font-weight: 500;
+  }
+</style>
+
+<script>
+  (() => {
+    function slugify(text: string): string {
+      return text
+        .toLowerCase()
+        .trim()
+        .replace(/[^\w\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-')
+        .replace(/^-+|-+$/g, '');
+    }
+
+    function initToc(root: HTMLElement) {
+      const article = document.querySelector<HTMLElement>(root.dataset.target || '.prose-research');
+      const min = parseInt(root.dataset.min || '3', 10);
+      const autofill = root.dataset.autofill === 'true';
+      if (!article) {
+        root.remove();
+        return;
+      }
+
+      const heads = Array.from(article.querySelectorAll<HTMLElement>('h2, h3'));
+
+      // Guarantee every heading has a stable, unique id + a scroll offset that
+      // clears the sticky header.
+      const used = new Set<string>();
+      for (const h of heads) {
+        if (!h.id) {
+          const base = slugify(h.textContent || '') || 'section';
+          let id = base;
+          let n = 1;
+          while (used.has(id) || (document.getElementById(id) && document.getElementById(id) !== h)) {
+            id = `${base}-${n++}`;
+          }
+          h.id = id;
+        }
+        used.add(h.id);
+        h.style.scrollMarginTop = '6rem';
+      }
+
+      if (heads.length < min) {
+        root.remove();
+        return;
+      }
+
+      // Autofill mode: build the list items from the DOM into every list copy.
+      if (autofill) {
+        for (const list of root.querySelectorAll<HTMLElement>('[data-toc-list]')) {
+          list.innerHTML = '';
+          for (const h of heads) {
+            const li = document.createElement('li');
+            if (h.tagName === 'H3') li.className = 'pl-4';
+            const a = document.createElement('a');
+            a.href = `#${h.id}`;
+            a.className = 'toc-link py-0.5 text-slate-500 hover:text-brand-600 dark:hover:text-brand-400';
+            a.setAttribute('data-toc-link', '');
+            a.setAttribute('data-slug', h.id);
+            a.textContent = h.textContent || '';
+            li.appendChild(a);
+            list.appendChild(li);
+          }
+        }
+      }
+
+      const links = Array.from(root.querySelectorAll<HTMLAnchorElement>('[data-toc-link]'));
+      const orderedIds = heads.map((h) => h.id);
+
+      const setActive = (id: string) => {
+        for (const a of links) {
+          const on = a.dataset.slug === id;
+          if (on) {
+            a.setAttribute('data-active', '');
+            a.setAttribute('aria-current', 'true');
+          } else {
+            a.removeAttribute('data-active');
+            a.removeAttribute('aria-current');
+          }
+        }
+      };
+
+      let raf = 0;
+      const compute = () => {
+        raf = 0;
+        const offset = 96; // clears the sticky header + a little breathing room
+        let current = orderedIds[0] || '';
+        for (const h of heads) {
+          if (h.getBoundingClientRect().top - offset <= 0) current = h.id;
+          else break;
+        }
+        // At the very bottom, the last section is the one being read.
+        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+          current = orderedIds[orderedIds.length - 1] || current;
+        }
+        setActive(current);
+      };
+      const schedule = () => {
+        if (!raf) raf = requestAnimationFrame(compute);
+      };
+
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(schedule, {
+          rootMargin: '-80px 0px -66% 0px',
+          threshold: [0, 1],
+        });
+        for (const h of heads) io.observe(h);
+      }
+      window.addEventListener('scroll', schedule, { passive: true });
+      window.addEventListener('resize', schedule, { passive: true });
+
+      // Collapse the mobile card after a jump.
+      for (const a of links) {
+        a.addEventListener('click', () => {
+          a.closest('details')?.removeAttribute('open');
+        });
+      }
+
+      compute();
+    }
+
+    for (const root of document.querySelectorAll<HTMLElement>('[data-toc]')) {
+      initToc(root);
+    }
+  })();
+</script>

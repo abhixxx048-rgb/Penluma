@@ -55,6 +55,7 @@ category: Thinking & Decisions
 date: '2026-07-04'
 order: 11
 icon: "🌉"
+schemaType: howto
 sources: []
 ---
 

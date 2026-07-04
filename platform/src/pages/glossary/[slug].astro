@@ -1,0 +1,141 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../consts';
+import glossaryData from '../../data/glossary.json';
+
+interface Term {
+  term: string;
+  slug: string;
+  definition: string;
+  learnMore?: string;
+  topic?: string;
+}
+
+const allTerms: Term[] = (Array.isArray(glossaryData) ? (glossaryData as Term[]) : []).filter(
+  (t) => t && t.term && t.slug && t.definition
+);
+
+export async function getStaticPaths() {
+  const raw = (Array.isArray(glossaryData) ? (glossaryData as Term[]) : []).filter(
+    (t) => t && t.term && t.slug && t.definition
+  );
+  // De-dupe on slug so two entries can never claim the same route.
+  const seen = new Set<string>();
+  const unique = raw.filter((t) => (seen.has(t.slug) ? false : (seen.add(t.slug), true)));
+  return unique.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
+}
+
+interface Props {
+  entry: Term;
+}
+const { entry } = Astro.props;
+
+// Pick up to 6 sibling terms: same-topic first, then others, to keep the
+// glossary internally linked without repeating the current term.
+const others = allTerms.filter((t) => t.slug !== entry.slug);
+const sameTopic = entry.topic ? others.filter((t) => t.topic === entry.topic) : [];
+const rest = others.filter((t) => !sameTopic.includes(t));
+const siblings = [...sameTopic, ...rest].slice(0, 6);
+
+const termUrl = new URL(`/glossary/${entry.slug}/`, Astro.site).toString();
+const glossaryUrl = new URL('/glossary/', Astro.site).toString();
+
+const title = `What is ${entry.term}?`;
+const description = entry.definition;
+const keywords = [
+  entry.term,
+  `what is ${entry.term}`,
+  `${entry.term} definition`,
+  `${entry.term} meaning`,
+  entry.topic,
+].filter(Boolean) as string[];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'DefinedTerm',
+    '@id': termUrl,
+    name: entry.term,
+    description: entry.definition,
+    url: termUrl,
+    inDefinedTermSet: glossaryUrl,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).toString() },
+      { '@type': 'ListItem', position: 2, name: 'Glossary', item: glossaryUrl },
+      { '@type': 'ListItem', position: 3, name: entry.term, item: termUrl },
+    ],
+  },
+];
+---
+
+<BaseLayout title={title} description={description} keywords={keywords} jsonLd={jsonLd}>
+  <article class="mx-auto max-w-2xl px-4 py-12 sm:px-6">
+    <nav aria-label="Breadcrumb" class="text-sm text-slate-500 dark:text-slate-400">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <span aria-hidden="true" class="mx-1.5">/</span>
+      <a href="/glossary" class="hover:text-brand-600 dark:hover:text-brand-400">Glossary</a>
+      <span aria-hidden="true" class="mx-1.5">/</span>
+      <span class="text-slate-700 dark:text-slate-300">{entry.term}</span>
+    </nav>
+
+    {entry.topic && (
+      <p class="mt-6 text-sm font-medium text-brand-600 dark:text-brand-400">{entry.topic}</p>
+    )}
+    <h1 class="mt-1 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
+      What is {entry.term}?
+    </h1>
+
+    <p class="mt-5 text-lg leading-relaxed text-slate-700 dark:text-slate-200">
+      {entry.definition}
+    </p>
+
+    {entry.learnMore && (
+      <div class="mt-8 rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-slate-800 dark:bg-slate-900">
+        <p class="text-sm font-medium text-slate-500 dark:text-slate-400">Go deeper</p>
+        <p class="mt-1 text-slate-700 dark:text-slate-200">
+          Read the full deep-dive that explains
+          <a
+            href={entry.learnMore}
+            class="font-semibold text-brand-700 hover:text-brand-800 dark:text-brand-300 dark:hover:text-brand-200"
+            >{entry.term} in context</a> - with examples, mechanics, and where it breaks.
+        </p>
+      </div>
+    )}
+
+    {siblings.length > 0 && (
+      <section class="mt-12 border-t border-slate-200 pt-8 dark:border-slate-800">
+        <h2 class="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+          Related terms
+        </h2>
+        <ul class="mt-4 grid gap-3 sm:grid-cols-2">
+          {siblings.map((s) => (
+            <li>
+              <a
+                href={`/glossary/${s.slug}`}
+                class="group flex flex-col rounded-xl border border-slate-200 bg-white p-4 transition-all hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-md dark:border-slate-800 dark:bg-slate-900 dark:hover:border-brand-700"
+              >
+                <span class="font-semibold text-slate-900 group-hover:text-brand-700 dark:text-white dark:group-hover:text-brand-300">
+                  {s.term}
+                </span>
+                <span class="mt-1 line-clamp-2 text-sm text-slate-600 dark:text-slate-400">
+                  {s.definition}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <p class="mt-10 text-sm">
+      <a
+        href="/glossary"
+        class="font-medium text-brand-600 hover:text-brand-800 dark:text-brand-400 dark:hover:text-brand-300"
+        ><span aria-hidden="true">←</span> Back to the full glossary</a>
+    </p>
+  </article>
+</BaseLayout>

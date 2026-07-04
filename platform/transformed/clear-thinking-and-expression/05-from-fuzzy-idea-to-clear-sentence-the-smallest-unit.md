@@ -74,7 +74,7 @@ The clearest sentence shape in English is **who does what to what**: the doer, t
 
 ## Rule 3: Prefer active voice
 
-**Active voice** puts the doer first: "Sam broke the build." **Passive voice** puts the thing first and lets the doer hide or vanish: "The build was broken."
+**Active voice** puts the doer first: "Sam broke the build." **[Passive voice](/tools/passive-voice-weasel-word-highlighter)** puts the thing first and lets the doer hide or vanish: "The build was broken."
 
 Here is a quick test. If you can add "...by zombies" to the end and it still fits, the sentence is passive: "mistakes were made [by zombies]."
 

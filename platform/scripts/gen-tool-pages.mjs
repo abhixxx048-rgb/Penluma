@@ -417,12 +417,59 @@ const CONTENT = {
   },
 };
 
+// Curated "Related reading" — links each tool page out to genuinely relevant
+// blog posts (the tool -> blog half of the internal-linking pass). URLs are
+// verified to exist. Keeps the tool suite woven into the content, not orphaned.
+const P = {
+  englishIndex: { url: '/blog/english/00-index', title: 'English for developers: the 7 mistakes to fix' },
+  apostrophes: { url: '/blog/english/05-plurals-and-possessives', title: "Its vs it's: the apostrophe rules devs get wrong" },
+  punctuation: { url: '/blog/english/07-punctuation-and-capitalization', title: 'Punctuation & capitalization that make you look senior' },
+  runOns: { url: '/blog/english/08-sentence-structure-run-ons', title: 'Run-on sentences: why your PRs get skimmed' },
+  devWriting: { url: '/blog/english/10-professional-dev-writing', title: 'Write like a senior dev: commits, PRs & reviews' },
+  spelling: { url: '/blog/english/11-spelling-typos', title: 'Spelling mistakes developers make (and how to fix them)' },
+  clearWriting: { url: '/blog/clear-thinking-and-expression/04-clear-writing-is-clear-thinking', title: 'Why clear writing is really just clear thinking' },
+  clearSentence: { url: '/blog/clear-thinking-and-expression/05-from-fuzzy-idea-to-clear-sentence-the-smallest-unit', title: 'How to write one clear sentence' },
+  editing: { url: '/blog/clear-thinking-and-expression/07-editing-turning-a-messy-draft-into-something-clear', title: 'How to edit your own writing' },
+  newsletter: { url: '/blog/make-money-with-ai/09-newsletter-business', title: 'How to build a newsletter business' },
+  blogging: { url: '/blog/make-money-with-ai/10-blogging-seo-ai-search', title: 'Niche blogging & SEO after AI overviews' },
+  digitalProducts: { url: '/blog/make-money-with-ai/11-selling-digital-products', title: 'Selling digital products: templates & prompt packs' },
+  contextEng: { url: '/blog/ai-llm-engineering/03-context-engineering-retrieval', title: 'Context engineering: feeding an LLM the right facts' },
+  aiJudgment: { url: '/blog/ai-llm-engineering/05-ai-product-judgment', title: 'When to use AI (and when plain code wins)' },
+};
+const RELATED_READING = {
+  'em-dash-remover': [P.blogging, P.aiJudgment, P.punctuation],
+  'invisible-watermark-character-inspector': [P.aiJudgment, P.blogging],
+  'word-reading-time-counter': [P.newsletter, P.blogging],
+  'before-after-diff-viewer': [P.editing, P.aiJudgment],
+  'readability-grade-level-scorer': [P.clearWriting, P.blogging, P.runOns],
+  'emoji-decorative-symbol-stripper': [P.blogging, P.newsletter],
+  'case-converter': [P.punctuation, P.devWriting],
+  'whitespace-line-break-reflow-fixer': [P.devWriting, P.editing],
+  'paste-from-word-docs-cleaner': [P.devWriting, P.blogging],
+  'markdown-to-clean-prose': [P.blogging, P.aiJudgment],
+  'straight-to-curly-quotes-converter': [P.punctuation, P.apostrophes],
+  'sentence-splitter': [P.runOns, P.clearSentence, P.editing],
+  'human-voice-ai-tell-report': [P.blogging, P.aiJudgment, P.digitalProducts],
+  'homoglyph-confusables-detector': [P.aiJudgment, P.contextEng],
+  'passive-voice-weasel-word-highlighter': [P.editing, P.clearSentence, P.devWriting],
+  'read-aloud-proofreader': [P.editing, P.spelling],
+  'local-voice-style-memory': [P.clearWriting, P.editing, P.blogging],
+};
+
 const page = (slug, c) => {
   const comp = c.component || `../../components/tools/${pascal(slug)}.astro`;
   const compName = /\/([A-Za-z0-9]+)\.astro$/.exec(comp)[1];
   const stepsHtml = c.steps.map((s) => `        <li>${s}</li>`).join('\n');
   const kw = JSON.stringify(c.keywords);
   const features = JSON.stringify(c.featureList);
+  const related = RELATED_READING[slug] || [];
+  const relatedHtml = related.length
+    ? `
+    <h2 class="text-2xl font-bold">Related reading</h2>
+    <ul class="list-disc space-y-2 pl-6 muted">
+${related.map((r) => `      <li><a href="${r.url}">${r.title}</a></li>`).join('\n')}
+    </ul>`
+    : '';
   const faqs = JSON.stringify(c.faqs, null, 2)
     .split('\n')
     .map((l, i) => (i === 0 ? l : '  ' + l))
@@ -466,6 +513,7 @@ ${stepsHtml}
       Open your browser's DevTools Network tab while you use it and you'll see
       zero requests - and it keeps working with your connection turned off.
     </p>
+${relatedHtml}
   </article>
 </ToolLayout>
 `;

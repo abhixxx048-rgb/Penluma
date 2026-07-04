@@ -1,0 +1,95 @@
+---
+// A no-login "save for later" toggle. Persists the current post to
+// localStorage under `penluma:bookmarks` (an array of {id,title,url,
+// topicTitle,savedAt}). Renders nothing if the essential data is missing,
+// so it's safe to drop into any header. State is reflected on load and the
+// button is a real aria-pressed toggle for assistive tech.
+interface Props {
+  id: string;
+  title: string;
+  url: string;
+  topicTitle?: string;
+}
+const { id, title, url, topicTitle } = Astro.props;
+const ok = Boolean(id && title && url);
+---
+{ok && (
+  <button
+    type="button"
+    class="bookmark-btn group inline-flex items-center gap-1.5 rounded-lg border border-slate-300 px-2.5 py-1 text-sm font-medium text-slate-600 transition-colors hover:border-brand-400 hover:text-brand-700 aria-pressed:border-brand-500 aria-pressed:text-brand-700 dark:border-slate-700 dark:text-slate-400 dark:hover:border-brand-600 dark:hover:text-brand-300 dark:aria-pressed:border-brand-500 dark:aria-pressed:text-brand-300"
+    aria-pressed="false"
+    data-id={id}
+    data-title={title}
+    data-url={url}
+    data-topic={topicTitle ?? ''}
+  >
+    {/* Outline bookmark - shown when NOT saved */}
+    <svg class="bm-outline h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"></path>
+    </svg>
+    {/* Filled bookmark - shown when saved */}
+    <svg class="bm-filled hidden h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"></path>
+    </svg>
+    <span class="bm-label">Save</span>
+  </button>
+)}
+
+<script is:inline>
+  // IIFE so top-level consts don't collide with other is:inline scripts sharing
+  // the page's global scope. Wires every .bookmark-btn on the page.
+  (() => {
+    const KEY = 'penluma:bookmarks';
+
+    const read = () => {
+      try {
+        const v = JSON.parse(localStorage.getItem(KEY) || '[]');
+        return Array.isArray(v) ? v : [];
+      } catch {
+        return [];
+      }
+    };
+    const write = (list) => {
+      try {
+        localStorage.setItem(KEY, JSON.stringify(list));
+      } catch {
+        /* storage full / disabled - fail silently */
+      }
+    };
+
+    const paint = (btn, saved) => {
+      btn.setAttribute('aria-pressed', saved ? 'true' : 'false');
+      btn.querySelector('.bm-outline')?.classList.toggle('hidden', saved);
+      btn.querySelector('.bm-filled')?.classList.toggle('hidden', !saved);
+      const label = btn.querySelector('.bm-label');
+      if (label) label.textContent = saved ? 'Saved' : 'Save';
+    };
+
+    document.querySelectorAll('.bookmark-btn').forEach((btn) => {
+      const id = btn.dataset.id;
+      if (!id) return;
+
+      paint(btn, read().some((b) => b && b.id === id));
+
+      btn.addEventListener('click', () => {
+        const list = read();
+        const i = list.findIndex((b) => b && b.id === id);
+        if (i >= 0) {
+          list.splice(i, 1);
+          write(list);
+          paint(btn, false);
+        } else {
+          list.push({
+            id,
+            title: btn.dataset.title || id,
+            url: btn.dataset.url || '',
+            topicTitle: btn.dataset.topic || '',
+            savedAt: new Date().toISOString(),
+          });
+          write(list);
+          paint(btn, true);
+        }
+      });
+    });
+  })();
+</script>

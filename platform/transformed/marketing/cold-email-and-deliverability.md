@@ -133,7 +133,7 @@ Send on Tuesday through Thursday mornings in the prospect's own timezone.
 
 **Speak their language, not yours.** Drop the insider jargon. A shop owner doesn't care about "multi-tenant architecture" - they care that customers keep emailing them PDFs and asking "can I just order this online?" Lead with [their day, their headache, their words](/blog/product-sense-empathy/03-user-empathy-seeing-through-the-user-s-eyes).
 
-**Personalize for real.** A genuine, specific detail about *their* business beats a generic merge tag like `[First Name]` by a wide margin. One real sentence - "nice work on the new storefront banners" - signals a human did this, not a robot.
+**Personalize for real.** A genuine, specific detail about *their* business beats a generic merge tag like `[First Name]` by a wide margin. One real sentence - "nice work on the new storefront banners" - signals [a human did this](/tools/human-voice-ai-tell-report), not a robot.
 
 A first email might be as simple as: *"Saw your shop does business cards and banners for the neighborhood. Quick question - when a customer wants to reorder or upload their own design, do they have to come in, or email you a file? We help shops put that whole thing online. Worth a 10-minute look?"* Short, plain, and about them.
 

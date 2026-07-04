@@ -60,7 +60,7 @@ And here it is cleaned up:
 
 > **After:** "Can you do research on grammar for me and teach me? I already know it, but right now I'm making so many mistakes."
 
-Same person. Same meaning. One version looks rushed; the other looks like it came from someone you'd trust with a release. Look at everything that changed in a single sentence:
+Same person. Same meaning. One version looks rushed; the other looks like it came from someone you'd trust with a release. Look at [everything that changed](/tools/before-after-diff-viewer) in a single sentence:
 
 | What changed | Before | After | Why |
 |---|---|---|---|

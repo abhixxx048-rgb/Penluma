@@ -55,6 +55,7 @@ category: Thinking & Decisions
 date: '2026-07-04'
 order: 0
 icon: "🌉"
+pdf: /downloads/knowing-doing-gap.pdf
 sources: []
 ---
 

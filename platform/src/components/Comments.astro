@@ -1,0 +1,106 @@
+---
+// Privacy-friendly comments via Giscus (GitHub Discussions, no database).
+// Renders NOTHING unless comments are enabled AND the repo/repoId are set, so
+// it is safe to drop into a template before the owner has done the one-time
+// setup. Configure it in src/config/comments.ts (that file explains how).
+//
+// Behaviour when active:
+//   - The Giscus script tag is lazy-loaded only once the section scrolls into
+//     view (IntersectionObserver), so it never costs anything above the fold.
+//   - Theme-aware: the initial embed uses config.theme, then we keep the
+//     iframe in sync with this site's manual dark/light toggle (the `.dark`
+//     class on <html>) via Giscus's postMessage API.
+import comments from '../config/comments';
+
+const active = comments.enabled && comments.repo !== '' && comments.repoId !== '';
+---
+
+{active && (
+  <section
+    id="comments"
+    aria-label="Comments"
+    class="mt-12 border-t border-slate-200 pt-8 dark:border-slate-800"
+    data-giscus
+    data-repo={comments.repo}
+    data-repo-id={comments.repoId}
+    data-category={comments.category}
+    data-category-id={comments.categoryId}
+    data-mapping={comments.mapping}
+    data-theme={comments.theme}
+  >
+    <h2 class="text-lg font-semibold text-slate-900 dark:text-white">Comments</h2>
+    <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">
+      Join the discussion with a GitHub account. No tracking, no database.
+    </p>
+    <div class="mt-6 min-h-[8rem]" data-giscus-slot></div>
+  </section>
+
+  <script is:inline>
+    // Wrapped in an IIFE so top-level names don't collide with other is:inline
+    // scripts sharing the page's global scope.
+    (() => {
+      const root = document.querySelector('[data-giscus]');
+      const slot = root && root.querySelector('[data-giscus-slot]');
+      if (!root || !slot) return;
+
+      // Map this site's manual toggle (.dark on <html>) to a Giscus theme.
+      const siteTheme = () =>
+        document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+
+      // If the configured default follows the OS, hand Giscus the site's actual
+      // theme so comments match the visible page from first paint.
+      const configTheme = root.getAttribute('data-theme') || 'preferred_color_scheme';
+      const initialTheme = configTheme === 'preferred_color_scheme' ? siteTheme() : configTheme;
+
+      let loaded = false;
+      function load() {
+        if (loaded) return;
+        loaded = true;
+        const s = document.createElement('script');
+        s.src = 'https://giscus.app/client.js';
+        s.async = true;
+        s.crossOrigin = 'anonymous';
+        s.setAttribute('data-repo', root.getAttribute('data-repo'));
+        s.setAttribute('data-repo-id', root.getAttribute('data-repo-id'));
+        s.setAttribute('data-category', root.getAttribute('data-category'));
+        s.setAttribute('data-category-id', root.getAttribute('data-category-id'));
+        s.setAttribute('data-mapping', root.getAttribute('data-mapping') || 'pathname');
+        s.setAttribute('data-strict', '0');
+        s.setAttribute('data-reactions-enabled', '1');
+        s.setAttribute('data-emit-metadata', '0');
+        s.setAttribute('data-input-position', 'top');
+        s.setAttribute('data-theme', initialTheme);
+        s.setAttribute('data-lang', 'en');
+        s.setAttribute('data-loading', 'lazy');
+        slot.appendChild(s);
+      }
+
+      // Keep the Giscus iframe in sync when the reader flips the theme toggle.
+      function pushTheme() {
+        const frame = document.querySelector('iframe.giscus-frame');
+        if (!frame || !frame.contentWindow) return;
+        frame.contentWindow.postMessage(
+          { giscus: { setConfig: { theme: siteTheme() } } },
+          'https://giscus.app'
+        );
+      }
+      new MutationObserver(pushTheme).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['class'],
+      });
+
+      // Lazy-load only when the section scrolls into view.
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries, obs) => {
+          if (entries.some((e) => e.isIntersecting)) {
+            obs.disconnect();
+            load();
+          }
+        }, { rootMargin: '200px' });
+        io.observe(root);
+      } else {
+        load();
+      }
+    })();
+  </script>
+)}

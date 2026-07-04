@@ -150,7 +150,7 @@ Google's recent enforcement specifically targets "scaled content abuse," meaning
 
 The rule is simple: **every programmatic page must carry real, distinct data.** Actual price ranges, genuine spec tables, real integration steps, unique screenshots. If two pages differ only by a swapped word, do not publish them.
 
-The same caution applies to AI writing tools. Use AI to outline from keyword clusters, to draft a first pass a human then edits, and to power your repurposing pipeline. Never mass-autopublish unedited AI text. The thing AI cannot fake, real screenshots of your product, real customer results, real first-hand opinions, is exactly what gets ranked and cited.
+The same caution applies to AI writing tools. Use AI to outline from keyword clusters, to draft a first pass a human then edits, and to power your repurposing pipeline. Never mass-autopublish [unedited AI text](/tools/human-voice-ai-tell-report). The thing AI cannot fake, real screenshots of your product, real customer results, real first-hand opinions, is exactly what gets ranked and cited.
 
 ## Free tools beat PDFs, especially if you already own the engine
 

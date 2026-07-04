@@ -81,7 +81,7 @@ Extras come later: paid cross-promotions (Beehiiv "Boosts," where other newslett
 ## What you need to start
 
 - **Money:** $0. Beehiiv's free plan covers up to 2,500 subscribers, and Substack is free with no limit. Budget $10-15/year for a custom domain, your own web address, which looks professional and protects **deliverability** (how reliably your emails land in inboxes, not spam). Paid plans run about $49-89/month, needed only *after* you outgrow the free tiers, by which point you should have income.
-- **Skills:** clear writing (not fancy writing), real knowledge or deep curiosity about one narrow topic, and consistency. No coding.
+- **Skills:** [clear writing](/tools/readability-grade-level-scorer) (not fancy writing), real knowledge or deep curiosity about one narrow topic, and consistency. No coding.
 - **Time:** 3-6 hours per week for a weekly issue. Do not go daily alone, because creators who do report burnout.
 - **A niche where money already flows:** finance, B2B (business-to-business, content for people at work), AI and tech, and careers monetize far better than general lifestyle content.
 

@@ -65,7 +65,7 @@ The rest of this article just unpacks those four into habits you can actually us
 
 ## Capital letters: three places you always need them
 
-Capitalization isn't decoration. It tells the reader, instantly, where a sentence begins and which words are names.
+[Capitalization](/tools/case-converter) isn't decoration. It tells the reader, instantly, where a sentence begins and which words are names.
 
 Capitalize in exactly these cases:
 
@@ -156,7 +156,7 @@ You don't need to become a grammar nerd. You need a few reflexes. Try this:
 
 1. **Before you hit send, read your message once.** Just once. You'll catch the lowercase `i` and the missing full stop almost every time.
 2. **Capitalize `I` and the first word - always.** Make this so automatic you do it without thinking. It's the highest-impact habit on this list.
-3. **One thought, one sentence.** If you find yourself writing `and` or `but` to bolt a third idea on, stop and start a new sentence instead.
+3. **[One thought, one sentence](/tools/sentence-splitter).** If you find yourself writing `and` or `but` to bolt a third idea on, stop and start a new sentence instead.
 4. **For commit messages**, capitalize the first word and skip the trailing period on the summary line: `Fix null pointer in OrderService`. Put full sentences in the body.
 5. **For PR descriptions and standups**, write full sentences with end marks. *"Yesterday I shipped the cache fix. Today I'm on the migration. No blockers."* reads worlds better than the lowercase version.
 6. **For code comments**, treat each one as a sentence: capital first word, full stop at the end. `// Guard against a null tenant after deletion.`

@@ -81,7 +81,7 @@ There are five main streams; the smart move is to weight them away from the ones
 You do not need much money, but you do need patience.
 
 - **Money:** $10 to $15 a year for a domain name (your web address), $5 to $10 a month for hosting (the computer that serves your site), free WordPress software, and a free email tool tier like Kit or MailerLite. Total: **$50 to $150 for year one.**
-- **Skills:** clear writing, basic keyword research (finding what people type into search, free with Google's own tools), and real knowledge of your subject - or the will to *go do things* in your niche so you have first-hand experience.
+- **Skills:** [clear writing](/tools/readability-grade-level-scorer), basic keyword research (finding what people type into search, free with Google's own tools), and real knowledge of your subject - or the will to *go do things* in your niche so you have first-hand experience.
 - **Time and temperament:** 8 to 15 hours a week for a year before meaningful money arrives. This is among the slowest opportunities in [the full 2026 guide](/blog/make-money-with-ai/00-index-make-money-with-ai), so expect a marathon.
 
 ## Your first 90 days

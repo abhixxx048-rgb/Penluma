@@ -153,7 +153,7 @@ Try the drills before reading on. Here's how each one resolves, with the reason 
 
 ### Part A
 
-1. **"I pushed the fix to your branch. Can you review it?"** Capital **I**, "your" not "ur," "you" not "u," split into two sentences, and a question ends with **?**.
+1. **"I pushed the fix to your branch. Can you review it?"** Capital **I**, "your" not "ur," "you" not "u," [split into two sentences](/tools/sentence-splitter), and a question ends with **?**.
 2. **"We are making so many mistakes in the checkout flow."** "Mistake" is countable, so **many** + plural **mistakes**. This is the signature slip.
 3. **"The migration is still running; it hasn't finished yet."** "Migration" is singular, so **is**. Two complete thoughts need a semicolon or full stop, not a lone comma.
 4. **"Please open a pull request against the main branch."** Add **a** before "pull request" and **the** before "main branch." Dropped articles are easy to miss.

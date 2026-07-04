@@ -1,0 +1,144 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const description =
+  'Your saved-for-later reading list on Penluma. Bookmarks live in this browser only - no login, no account, nothing sent anywhere.';
+---
+
+<BaseLayout title="Saved for later" description={description} noindex={true}>
+  <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+    <div class="flex flex-wrap items-start justify-between gap-4">
+      <div>
+        <h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">Saved for later</h1>
+        <p class="mt-3 text-slate-600 dark:text-slate-400">
+          Posts you bookmarked to read later. Stored in this browser only - no account needed.
+        </p>
+      </div>
+      <button
+        id="bm-clear"
+        type="button"
+        class="hidden shrink-0 rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:border-red-400 hover:text-red-600 dark:border-slate-700 dark:text-slate-400 dark:hover:border-red-500 dark:hover:text-red-400"
+      >
+        Clear all
+      </button>
+    </div>
+
+    {/* Client-rendered from localStorage. */}
+    <ul id="bm-list" class="mt-8 space-y-4"></ul>
+
+    {/* Empty state - shown when there are no bookmarks. */}
+    <div id="bm-empty" class="mt-8 hidden rounded-2xl border border-dashed border-slate-300 p-8 text-center dark:border-slate-700">
+      <p class="text-slate-600 dark:text-slate-400">You haven't saved anything yet.</p>
+      <p class="mt-2 text-sm text-slate-500">
+        Hit <span class="font-medium text-slate-700 dark:text-slate-300">Save</span> on any post and it'll show up here.
+      </p>
+      <a
+        href="/topics"
+        class="mt-5 inline-flex items-center gap-1 rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
+      >
+        Browse topics <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  (() => {
+    const KEY = 'penluma:bookmarks';
+    const listEl = document.getElementById('bm-list');
+    const emptyEl = document.getElementById('bm-empty');
+    const clearBtn = document.getElementById('bm-clear');
+    if (!listEl) return;
+
+    const read = () => {
+      try {
+        const v = JSON.parse(localStorage.getItem(KEY) || '[]');
+        return Array.isArray(v) ? v.filter((b) => b && b.id && b.url) : [];
+      } catch {
+        return [];
+      }
+    };
+    const write = (list) => {
+      try {
+        localStorage.setItem(KEY, JSON.stringify(list));
+      } catch {
+        /* fail silently */
+      }
+    };
+
+    const fmtDate = (iso) => {
+      const d = new Date(iso);
+      return isNaN(d.getTime())
+        ? ''
+        : d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+    };
+
+    const render = () => {
+      // Newest first.
+      const list = read().slice().sort((a, b) => String(b.savedAt).localeCompare(String(a.savedAt)));
+      listEl.textContent = '';
+
+      const empty = list.length === 0;
+      emptyEl?.classList.toggle('hidden', !empty);
+      clearBtn?.classList.toggle('hidden', empty);
+
+      for (const b of list) {
+        const li = document.createElement('li');
+        li.className =
+          'flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900';
+
+        const main = document.createElement('div');
+        main.className = 'min-w-0 flex-1';
+
+        if (b.topicTitle) {
+          const topic = document.createElement('p');
+          topic.className = 'text-xs font-medium text-brand-600 dark:text-brand-400';
+          topic.textContent = b.topicTitle;
+          main.appendChild(topic);
+        }
+
+        const link = document.createElement('a');
+        link.href = b.url;
+        link.className =
+          'mt-1 block font-semibold leading-snug text-slate-900 hover:text-brand-700 dark:text-white dark:hover:text-brand-300';
+        link.textContent = b.title || b.url;
+        main.appendChild(link);
+
+        const saved = fmtDate(b.savedAt);
+        if (saved) {
+          const meta = document.createElement('p');
+          meta.className = 'mt-2 text-xs text-slate-400';
+          meta.textContent = 'Saved ' + saved;
+          main.appendChild(meta);
+        }
+
+        const remove = document.createElement('button');
+        remove.type = 'button';
+        remove.className =
+          'shrink-0 rounded-lg p-2 text-slate-400 transition-colors hover:bg-slate-100 hover:text-red-600 dark:hover:bg-slate-800 dark:hover:text-red-400';
+        remove.setAttribute('aria-label', 'Remove bookmark');
+        remove.innerHTML =
+          '<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18"/></svg>';
+        remove.addEventListener('click', () => {
+          write(read().filter((x) => x.id !== b.id));
+          render();
+        });
+
+        li.appendChild(main);
+        li.appendChild(remove);
+        listEl.appendChild(li);
+      }
+    };
+
+    clearBtn?.addEventListener('click', () => {
+      write([]);
+      render();
+    });
+
+    render();
+    // Keep in sync if another tab changes the list.
+    window.addEventListener('storage', (e) => {
+      if (e.key === KEY) render();
+    });
+  })();
+</script>

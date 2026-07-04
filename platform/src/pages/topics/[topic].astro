@@ -62,6 +62,13 @@ const keywords = Array.from(
 ---
 
 <BaseLayout title={topic.title} description={topic.description} jsonLd={jsonLd} keywords={keywords}>
+  <link
+    slot="head"
+    rel="alternate"
+    type="application/rss+xml"
+    title={`${topic.title} RSS feed`}
+    href={`/rss/${topic.slug}.xml`}
+  />
   <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
     <nav aria-label="Breadcrumb" class="mb-4 text-sm text-slate-500 dark:text-slate-400">
       <ol class="flex flex-wrap items-center gap-1.5">

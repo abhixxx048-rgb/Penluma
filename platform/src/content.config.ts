@@ -48,6 +48,14 @@ const blog = defineCollection({
     author: z.string().optional(),
     /** True once a post has been rewritten from raw research into blog form. */
     transformed: z.boolean().default(false),
+    /** True once internal (in-body) linking is done. */
+    linked: z.boolean().optional(),
+    /** Last-updated date - renders a "Last updated" line when present. */
+    updated: z.coerce.date().optional(),
+    /** Opt-in structured-data override. Set to "howto" to emit HowTo JSON-LD. */
+    schemaType: z.enum(['howto']).optional(),
+    /** Explicit web path to a guide PDF lead-magnet for this post. */
+    pdf: z.string().optional(),
   }),
 });
 

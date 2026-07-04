@@ -241,7 +241,7 @@ class LLMGateway:
 # so changing models is config, not a rewrite.
 ```
 
-Treat prompts as versioned production assets (in git or a registry, never inline strings) with a frozen **regression testbed** so you can diff old-versus-new outputs and catch regressions before users do.
+Treat prompts as versioned production assets (in git or a registry, never inline strings) with a frozen **regression testbed** so you can [diff old-versus-new outputs](/tools/before-after-diff-viewer) and catch regressions before users do.
 
 ## How to use this
 

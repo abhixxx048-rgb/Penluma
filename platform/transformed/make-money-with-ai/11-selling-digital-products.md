@@ -106,7 +106,7 @@ Digital products are an on-ramp, not a ceiling. Once you have a niche audience a
 - Choosing saturated, generic niches ("daily planner") instead of specific ones.
 - Ugly mockup images - on Etsy, the photo sells the file.
 - Treating it as passive income and skipping marketing entirely.
-- Uploading obvious AI-generated filler, which buyers now spot and avoid.
+- Uploading obvious [AI-generated filler](/tools/human-voice-ai-tell-report), which buyers now spot and avoid.
 - Pricing at $2-3. Underpricing signals low quality and cannot fund ads.
 
 ## The bottom line

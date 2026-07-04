@@ -71,7 +71,7 @@
     } catch (e) {}
 
     // Cross-check via the Resource Timing API: catches requests made before our
-    // hooks loaded, plus <img>/<script>/<link> fetches the hooks above miss.
+    // hooks loaded, plus img / script / link element fetches the hooks miss.
     // We only count resources observed after this script runs.
     try {
       if (typeof PerformanceObserver === 'function') {

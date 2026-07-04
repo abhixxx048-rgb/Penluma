@@ -56,7 +56,7 @@ The good news: the fixes are **mechanical**. These aren't subtle style judgments
 
 If you remember nothing else, remember these four:
 
-- **Commits:** imperative mood, capitalized first word, no period at the end of the subject. *"Fix null guard on checkout"* - not *"fixed the null guard."*
+- **Commits:** imperative mood, [capitalized first word](/tools/case-converter), no period at the end of the subject. *"Fix null guard on checkout"* - not *"fixed the null guard."*
 - **PRs, comments, Slack, docs:** write **complete sentences.** Capital letter at the start, full stop at the end, no texting shortcuts (`u`, `ur`, `pls`).
 - **Reviews:** be specific, not blunt. Say what's wrong *and* suggest the fix. *"This throws when input is null"* beats *"this wrong."*
 - **Code comments and docstrings:** present tense, full sentence. *"Returns the cached price."* - not *"return cached price."*

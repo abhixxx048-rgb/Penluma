@@ -1,6 +1,14 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostInteractions from '../../components/PostInteractions.astro';
+import Comments from '../../components/Comments.astro';
+import BookmarkButton from '../../components/BookmarkButton.astro';
+import ReadingProgress from '../../components/ReadingProgress.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+import DownloadCTA from '../../components/DownloadCTA.astro';
+import pdfMap from '../../data/pdf-map.json';
+import { estimateReadingTime } from '../../lib/reading';
+import { courseJsonLd, howToJsonLd, learningResourceJsonLd, isHubPost, shouldBeHowTo } from '../../lib/schema';
 import { getCollection, render } from 'astro:content';
 import { postsForTopic, topicBySlug, relatedPosts } from '../../lib/content';
 import { SITE } from '../../consts';
@@ -15,6 +23,15 @@ const { post } = Astro.props;
 const { Content, headings } = await render(post);
 const topic = topicBySlug(post.data.topic);
 const stats = readingTime(post.body || '');
+const reading = estimateReadingTime(post.body);
+
+// PDF lead-magnet: explicit frontmatter `pdf` wins; otherwise auto-embed on the
+// topic hub (order 0) when a guide PDF exists for this topic.
+const pdfEntry = post.data.pdf
+  ? { pdf: post.data.pdf, label: post.data.topicTitle }
+  : post.data.order === 0
+    ? (pdfMap as Record<string, { pdf: string; label: string }>)[post.data.topic] ?? null
+    : null;
 
 const siblings = await postsForTopic(post.data.topic);
 const idx = siblings.findIndex((p) => p.id === post.id);
@@ -29,7 +46,9 @@ const author = post.data.author || SITE.author;
 const authorSlug = author.toLowerCase().replace(/\(.*\)/, '').trim().replace(/\s+/g, '-');
 
 const fmtDate = post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
+const fmtUpdated = post.data.updated
+  ? post.data.updated.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+  : null;
 
 const canonicalUrl = new URL(`/blog/${post.id}/`, Astro.site).toString();
 const publishedISO = post.data.date.toISOString();
@@ -43,7 +62,7 @@ const jsonLd = [
     headline: post.data.title,
     description: post.data.description,
     datePublished: publishedISO,
-    dateModified: publishedISO,
+    dateModified: post.data.updated ? post.data.updated.toISOString() : publishedISO,
     author: { '@type': 'Person', name: author },
     ...(keywords.length ? { keywords: keywords.join(', ') } : {}),
     publisher: {
@@ -80,6 +99,49 @@ const jsonLd = [
       ]
     : []),
 ];
+
+// Course node on a pillar HUB page (order 0): list the sibling lessons.
+const courseParts = isHubPost(post.data)
+  ? siblings
+      .filter((p) => p.data.order !== 0)
+      .map((p) => ({ title: p.data.title, url: new URL(`/blog/${p.id}/`, Astro.site).toString() }))
+  : [];
+const courseNode = isHubPost(post.data)
+  ? courseJsonLd({
+      title: post.data.title,
+      description: post.data.description,
+      url: canonicalUrl,
+      provider: SITE.name,
+      posts: courseParts,
+    })
+  : null;
+
+// HowTo node on posts that opted in via `schemaType: howto`.
+const howToSteps = shouldBeHowTo(post.data)
+  ? headings
+      .filter((h) => h.depth === 2)
+      .map((h) => ({ name: h.text, text: h.text, url: `${canonicalUrl}#${h.slug}` }))
+  : [];
+const howToNode = shouldBeHowTo(post.data)
+  ? howToJsonLd({
+      title: post.data.title,
+      description: post.data.description,
+      url: canonicalUrl,
+      steps: howToSteps,
+    })
+  : null;
+
+// LearningResource on a numbered lesson (not the hub) tying it to its pillar.
+const learningNode = !isHubPost(post.data)
+  ? learningResourceJsonLd({
+      title: post.data.title,
+      description: post.data.description,
+      url: canonicalUrl,
+      isPartOf: { name: post.data.topicTitle, url: new URL(`/topics/${post.data.topic}`, Astro.site).toString() },
+    })
+  : null;
+
+const extraLd = [courseNode, howToNode, learningNode].filter(Boolean);
 ---
 
 <BaseLayout
@@ -88,10 +150,11 @@ const jsonLd = [
   image={ogImagePath}
   type="article"
   publishedTime={publishedISO}
-  jsonLd={jsonLd}
+  jsonLd={[...jsonLd, ...extraLd]}
   keywords={keywords}
 >
-  <article class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+  <article class="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:max-w-5xl">
+    <ReadingProgress />
     <!-- breadcrumb -->
     <div class="flex flex-wrap items-center gap-2 text-sm text-slate-500">
       <a href="/topics" class="hover:text-brand-600">Topics</a>
@@ -108,27 +171,31 @@ const jsonLd = [
       <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-slate-500">
         <span>By <a href={`/author/${authorSlug}`} class="hover:text-brand-600">{author}</a></span>
         <time datetime={post.data.date.toISOString()}>{fmtDate}</time>
-        <span>{stats.text}</span>
+        <span>{reading.minutes} min read</span>
         <PostInteractions postId={post.id} />
+        <BookmarkButton
+          id={post.id}
+          title={post.data.title}
+          url={`/blog/${post.id}`}
+          topicTitle={post.data.topicTitle}
+        />
       </div>
+      {fmtUpdated && (
+        <p class="mt-2 text-xs text-slate-400">
+          Last updated <time datetime={post.data.updated!.toISOString()}>{fmtUpdated}</time>
+        </p>
+      )}
     </header>
 
-    {toc.length > 2 && (
-      <nav class="mt-8 rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm dark:border-slate-800 dark:bg-slate-900/50">
-        <p class="font-semibold text-slate-700 dark:text-slate-300">On this page</p>
-        <ul class="mt-2 space-y-1">
-          {toc.map((h) => (
-            <li class={h.depth === 3 ? 'ml-4' : ''}>
-              <a href={`#${h.slug}`} class="text-slate-500 hover:text-brand-600 dark:hover:text-brand-400">{h.text}</a>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    )}
-
-    <div class="prose-research mt-10">
-      <Content />
-    </div>
+    <div class="mt-8 lg:grid lg:grid-cols-[minmax(0,1fr)_15rem] lg:gap-12">
+      <aside class="mb-8 lg:order-2 lg:mb-0">
+        <TableOfContents headings={headings} />
+      </aside>
+      <div class="min-w-0 lg:order-1">
+        <div class="prose-research">
+          <Content />
+        </div>
+        {pdfEntry && <DownloadCTA pdf={pdfEntry.pdf} topicTitle={post.data.topicTitle} />}
 
     {/* FAQ - also emitted as FAQPage schema above */}
     {faq.length > 0 && (
@@ -210,5 +277,9 @@ const jsonLd = [
         </a>
       )}
     </nav>
+      </div>
+    </div>
+
+    <Comments />
   </article>
 </BaseLayout>

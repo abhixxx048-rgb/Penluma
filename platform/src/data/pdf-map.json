@@ -1,0 +1,98 @@
+{
+  "agent-orchestration": {
+    "pdf": "/downloads/agent-orchestration.pdf",
+    "label": "Multi-Agent LLM Systems"
+  },
+  "ai-learning-platform": {
+    "pdf": "/downloads/ai-learning-platform.pdf",
+    "label": "AI Learning Platform"
+  },
+  "ai-llm-engineering": {
+    "pdf": "/downloads/ai-llm-engineering.pdf",
+    "label": "AI & LLM Engineering"
+  },
+  "aws-cloud-practitioner-mcq": {
+    "pdf": "/downloads/aws-cloud-practitioner-mcq.pdf",
+    "label": "AWS Cloud Practitioner"
+  },
+  "business-financial-literacy": {
+    "pdf": "/downloads/business-financial-literacy.pdf",
+    "label": "Business & Financial Literacy"
+  },
+  "clear-thinking-and-expression": {
+    "pdf": "/downloads/clear-thinking-and-expression.pdf",
+    "label": "Clear Thinking & Expression"
+  },
+  "computer-graphics-print": {
+    "pdf": "/downloads/computer-graphics-print.pdf",
+    "label": "Computer Graphics for Print"
+  },
+  "distributed-systems": {
+    "pdf": "/downloads/distributed-systems.pdf",
+    "label": "Distributed Systems"
+  },
+  "economics-from-first-principles": {
+    "pdf": "/downloads/economics-from-first-principles.pdf",
+    "label": "Economics from First Principles"
+  },
+  "english": {
+    "pdf": "/downloads/english.pdf",
+    "label": "English for Developers"
+  },
+  "how-to-make-money": {
+    "pdf": "/downloads/how-to-make-money.pdf",
+    "label": "How to Make Money"
+  },
+  "knowing-doing-gap": {
+    "pdf": "/downloads/knowing-doing-gap.pdf",
+    "label": "The Knowing-Doing Gap"
+  },
+  "life-money-and-relationships": {
+    "pdf": "/downloads/life-money-and-relationships.pdf",
+    "label": "Life, Money & Relationships"
+  },
+  "personal-money-mastery": {
+    "pdf": "/downloads/personal-money-mastery.pdf",
+    "label": "Personal Money Mastery"
+  },
+  "print-production-craft": {
+    "pdf": "/downloads/print-production-craft.pdf",
+    "label": "Print Production Craft"
+  },
+  "product-sense-empathy": {
+    "pdf": "/downloads/product-sense-empathy.pdf",
+    "label": "Product Sense & Empathy"
+  },
+  "psychology-of-decisions": {
+    "pdf": "/downloads/psychology-of-decisions.pdf",
+    "label": "Psychology of Decisions"
+  },
+  "sales-customer-development": {
+    "pdf": "/downloads/sales-customer-development.pdf",
+    "label": "Sales & Customer Development"
+  },
+  "security-privacy-engineering": {
+    "pdf": "/downloads/security-privacy-engineering.pdf",
+    "label": "Security & Privacy Engineering"
+  },
+  "system-design": {
+    "pdf": "/downloads/system-design.pdf",
+    "label": "System Design"
+  },
+  "systems-fundamentals": {
+    "pdf": "/downloads/systems-fundamentals.pdf",
+    "label": "Systems Fundamentals"
+  },
+  "systems-thinking": {
+    "pdf": "/downloads/systems-thinking.pdf",
+    "label": "Systems Thinking"
+  },
+  "ten-disciplines": {
+    "pdf": "/downloads/ten-disciplines.pdf",
+    "label": "Ten Disciplines"
+  },
+  "thinking-skills": {
+    "pdf": "/downloads/thinking-skills.pdf",
+    "label": "Thinking Skills"
+  }
+}

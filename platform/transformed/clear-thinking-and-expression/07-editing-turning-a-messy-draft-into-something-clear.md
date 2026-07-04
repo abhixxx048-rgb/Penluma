@@ -108,8 +108,8 @@ Run these passes **one at a time**. Do not try to catch everything in a single r
 2. **Cut needless words.** For each word, ask: "If I remove this, do I lose meaning?" If not, cut it.
 3. **Replace abstract with concrete.** Swap vague nouns for things a reader can picture. "We saw improvements in performance" becomes "Pages loaded in 2 seconds instead of 6."
 4. **Fix flabby openings.** Hunt for "There is," "There are," and "It is" at the start of sentences and rewrite around the real subject.
-5. **Strong verbs, active voice.** Prefer "We shipped it" over "It was shipped by us." The doer comes first.
-6. **Read it aloud.** Your ear catches what your eye skips: [run-ons](/blog/english/08-sentence-structure-run-ons), missing words, awkward rhythm. If you run out of breath, the sentence is too long.
+5. **Strong verbs, [active voice](/tools/passive-voice-weasel-word-highlighter).** Prefer "We shipped it" over "It was shipped by us." The doer comes first.
+6. **[Read it aloud](/tools/read-aloud-proofreader).** Your ear catches what your eye skips: [run-ons](/blog/english/08-sentence-structure-run-ons), missing words, awkward rhythm. If you run out of breath, the sentence is too long.
 7. **The stranger test.** Imagine someone who knows nothing about your topic. Would they get it on the first read, without asking a question? If not, name the missing piece and add it.
 
 ## Watch it happen: a full before and after

@@ -1,0 +1,590 @@
+[
+  {
+    "term": "Akrasia",
+    "slug": "akrasia",
+    "definition": "The ancient Greek term for acting against your own better judgment - knowing the right thing to do and doing something else anyway.",
+    "learnMore": "/blog/knowing-doing-gap/01-why-you-dont-do-what-you-know",
+    "topic": "The Knowing-Doing Gap"
+  },
+  {
+    "term": "Intention-Behavior Gap",
+    "slug": "intention-behavior-gap",
+    "definition": "The distance between what you decide to do and what you actually do; across the research, intentions explain only about 28% of behavior.",
+    "learnMore": "/blog/knowing-doing-gap/01-why-you-dont-do-what-you-know",
+    "topic": "The Knowing-Doing Gap"
+  },
+  {
+    "term": "Inclined Abstainers",
+    "slug": "inclined-abstainers",
+    "definition": "People who fully intend to act but never do - the group where almost the entire knowing-doing gap actually lives.",
+    "learnMore": "/blog/knowing-doing-gap/01-why-you-dont-do-what-you-know",
+    "topic": "The Knowing-Doing Gap"
+  },
+  {
+    "term": "Habit Loop",
+    "slug": "habit-loop",
+    "definition": "The repeating cycle behind every habit - cue, craving, response, reward - which you reprogram one stage at a time rather than by trying harder.",
+    "learnMore": "/blog/knowing-doing-gap/05-how-habits-really-work",
+    "topic": "The Knowing-Doing Gap"
+  },
+  {
+    "term": "Default",
+    "slug": "default",
+    "definition": "What happens if you do nothing; the single strongest nudge there is, because doing nothing is always the easiest available action.",
+    "learnMore": "/blog/knowing-doing-gap/07-how-your-environment-shapes-behavior",
+    "topic": "The Knowing-Doing Gap"
+  },
+  {
+    "term": "Friction",
+    "slug": "friction",
+    "definition": "Any small cost or extra step between you and an action; adding or removing even 20 seconds of it changes behavior more than new knowledge does.",
+    "learnMore": "/blog/knowing-doing-gap/07-how-your-environment-shapes-behavior",
+    "topic": "The Knowing-Doing Gap"
+  },
+  {
+    "term": "Present Bias",
+    "slug": "present-bias",
+    "definition": "The built-in habit of treating right now as far more valuable than any later moment, so anything in the future instantly loses roughly a third of its worth.",
+    "learnMore": "/blog/knowing-doing-gap/04-why-comfort-beats-your-goals",
+    "topic": "The Knowing-Doing Gap"
+  },
+  {
+    "term": "Resulting",
+    "slug": "resulting",
+    "definition": "Judging a decision solely by its single outcome, which teaches the wrong lessons in anything that has luck mixed into the result.",
+    "learnMore": "/blog/knowing-doing-gap/08-luck-vs-hard-work",
+    "topic": "The Knowing-Doing Gap"
+  },
+  {
+    "term": "Process Goal",
+    "slug": "process-goal",
+    "definition": "A goal defined by actions fully under your control (\"train four times a week\") rather than an outcome the world decides - far more effective and less demoralizing.",
+    "learnMore": "/blog/knowing-doing-gap/08-luck-vs-hard-work",
+    "topic": "The Knowing-Doing Gap"
+  },
+  {
+    "term": "Ego Depletion",
+    "slug": "ego-depletion",
+    "definition": "The now-disputed idea that willpower drains like a fuel tank during the day; large replication studies found the effect close to zero.",
+    "learnMore": "/blog/knowing-doing-gap/02-why-your-brain-fights-good-habits",
+    "topic": "The Knowing-Doing Gap"
+  },
+  {
+    "term": "Deliberate Practice",
+    "slug": "deliberate-practice",
+    "definition": "Focused practice at the edge of your ability with clear goals and immediate feedback - what actually builds skill, unlike simply logging comfortable hours.",
+    "learnMore": "/blog/knowing-doing-gap/09-what-high-performers-do-differently",
+    "topic": "The Knowing-Doing Gap"
+  },
+  {
+    "term": "Self-Handicapping",
+    "slug": "self-handicapping",
+    "definition": "Creating an obstacle in advance so a possible failure has a ready excuse - a self-protection strategy that shields self-worth at the cost of results.",
+    "learnMore": "/blog/knowing-doing-gap/06-self-sabotage-fear-and-perfectionism",
+    "topic": "The Knowing-Doing Gap"
+  },
+  {
+    "term": "Product Sense",
+    "slug": "product-sense",
+    "definition": "The skill of judging what to build and why it matters to a real person - choosing the right thing to make, not just making things well.",
+    "learnMore": "/blog/product-sense-empathy/02-what-product-sense-really-is",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "User Empathy",
+    "slug": "user-empathy",
+    "definition": "The ability to see and feel a product from the user's point of view - their goal, their confusion, their fear - instead of your own expert perspective.",
+    "learnMore": "/blog/product-sense-empathy/03-user-empathy-seeing-through-the-user-s-eyes",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Jobs To Be Done",
+    "slug": "jobs-to-be-done",
+    "definition": "The idea that people \"hire\" a product to make progress in their lives; nobody wants a drill, they want the hole - so design for the goal, not the feature.",
+    "learnMore": "/blog/product-sense-empathy/04-jobs-to-be-done-people-hire-products-to-make-progress",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Mental Model",
+    "slug": "mental-model",
+    "definition": "The picture in a user's head of how something works; software feels obvious when it matches that picture and confusing when it fights it.",
+    "learnMore": "/blog/product-sense-empathy/05-the-psychology-of-obvious-affordances-signifiers-mental-models",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Affordance",
+    "slug": "affordance",
+    "definition": "What an object lets you do - a button affords pressing, a slider affords dragging. It is the action the thing makes possible.",
+    "learnMore": "/blog/product-sense-empathy/05-the-psychology-of-obvious-affordances-signifiers-mental-models",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Signifier",
+    "slug": "signifier",
+    "definition": "The visible cue that tells you an affordance exists - the underline that says \"link,\" the raised edge that says \"press me.\" Without it, a feature is effectively hidden.",
+    "learnMore": "/blog/product-sense-empathy/05-the-psychology-of-obvious-affordances-signifiers-mental-models",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Gulf of Execution",
+    "slug": "gulf-of-execution",
+    "definition": "The gap between what a user wants to do and figuring out how to do it in the interface - \"I want to refund this order, but where is that button?\"",
+    "learnMore": "/blog/product-sense-empathy/06-closing-the-gulfs-action-feedback-the-seven-stages",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Gulf of Evaluation",
+    "slug": "gulf-of-evaluation",
+    "definition": "The gap between the system doing something and the user understanding that it happened - \"did my changes actually save, or did I just lose an hour of work?\"",
+    "learnMore": "/blog/product-sense-empathy/06-closing-the-gulfs-action-feedback-the-seven-stages",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Cognitive Load",
+    "slug": "cognitive-load",
+    "definition": "The total mental effort a screen demands; the more a user must hold in their head at once, the heavier and more tiring the product feels.",
+    "learnMore": "/blog/product-sense-empathy/07-cognitive-load-why-simple-feels-effortless",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Hick's Law",
+    "slug": "hicks-law",
+    "definition": "The more choices you show, the longer a decision takes; the practical fix is to trim options or reveal them in stages so users decide faster.",
+    "learnMore": "/blog/product-sense-empathy/07-cognitive-load-why-simple-feels-effortless",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Miller's Law",
+    "slug": "millers-law",
+    "definition": "People can hold only about seven items (give or take two) in short-term memory at once, so information should be grouped and chunked to fit.",
+    "learnMore": "/blog/product-sense-empathy/07-cognitive-load-why-simple-feels-effortless",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Fitts's Law",
+    "slug": "fittss-law",
+    "definition": "The bigger and closer a target, the faster it is to hit; make important buttons large and reachable, and dangerous ones small and far.",
+    "learnMore": "/blog/product-sense-empathy/07-cognitive-load-why-simple-feels-effortless",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Jakob's Law",
+    "slug": "jakobs-law",
+    "definition": "Users spend most of their time on other products, so they expect yours to work the same way; inventing a brand-new pattern mostly invents new confusion.",
+    "learnMore": "/blog/product-sense-empathy/07-cognitive-load-why-simple-feels-effortless",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Recognition vs Recall",
+    "slug": "recognition-vs-recall",
+    "definition": "It is far easier to recognize an option that is shown than to recall one from memory, which is why menus beat blank command lines for most people.",
+    "learnMore": "/blog/product-sense-empathy/07-cognitive-load-why-simple-feels-effortless",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Progressive Disclosure",
+    "slug": "progressive-disclosure",
+    "definition": "Showing only what is needed now and revealing advanced options later, so beginners are not overwhelmed and experts are not blocked.",
+    "learnMore": "/blog/product-sense-empathy/09-reducing-friction-flows-steps-progressive-disclosure",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Constraints",
+    "slug": "constraints",
+    "definition": "Deliberate limits that prevent errors by making the wrong action impossible - like greying out \"Submit\" until a form is valid.",
+    "learnMore": "/blog/product-sense-empathy/08-the-make-it-obvious-toolkit-defaults-constraints-discoverability",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Discoverability",
+    "slug": "discoverability",
+    "definition": "How easily a user can find a feature or figure out what is possible without being told; high discoverability means the product teaches itself.",
+    "learnMore": "/blog/product-sense-empathy/08-the-make-it-obvious-toolkit-defaults-constraints-discoverability",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Emotional Design",
+    "slug": "emotional-design",
+    "definition": "Shaping how a product feels - trust, calm, delight - not just whether it functions; two apps can do the same task while one feels like a friend and the other like a tax form.",
+    "learnMore": "/blog/product-sense-empathy/11-emotional-design-delight-making-products-people-love",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Peak-End Rule",
+    "slug": "peak-end-rule",
+    "definition": "People judge an experience mostly by its most intense moment and its ending, not its average - so design strong peaks and clean endings.",
+    "learnMore": "/blog/product-sense-empathy/11-emotional-design-delight-making-products-people-love",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Dark Pattern",
+    "slug": "dark-pattern",
+    "definition": "A design that tricks or pressures users into acting against their own interest - the hidden unsubscribe link, the sneaky pre-checked box - working short-term and corroding trust long-term.",
+    "learnMore": "/blog/product-sense-empathy/15-common-mistakes-anti-patterns-pitfalls",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Curse of Knowledge",
+    "slug": "curse-of-knowledge",
+    "definition": "Once you know how something works you cannot imagine not knowing, which makes experts blind to what confuses beginners - and the worst judges of their own designs.",
+    "learnMore": "/blog/product-sense-empathy/15-common-mistakes-anti-patterns-pitfalls",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "Heuristic Evaluation",
+    "slug": "heuristic-evaluation",
+    "definition": "Walking through an interface against a short checklist of usability rules of thumb (classically Jakob Nielsen's ten) to catch obvious problems without a formal study.",
+    "learnMore": "/blog/product-sense-empathy/10-evaluating-usability-nielsen-rsquo-s-10-heuristics",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "The Mom Test",
+    "slug": "the-mom-test",
+    "definition": "A user-interview method: ask about real past behavior, never about your idea, with questions so grounded in facts that even your mom couldn't accidentally mislead you.",
+    "learnMore": "/blog/product-sense-empathy/13-doing-user-research-interviews-the-mom-test-observation",
+    "topic": "Product Sense & Empathy"
+  },
+  {
+    "term": "First-Principles Thinking",
+    "slug": "first-principles-thinking",
+    "definition": "Breaking a problem down to its most fundamental, verifiable truths and building conclusions up from those alone, ignoring how it has always been done.",
+    "learnMore": "/blog/thinking-skills/03-first-principles-thinking-reasoning-from-the-ground-up",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Reasoning by Analogy",
+    "slug": "reasoning-by-analogy",
+    "definition": "Solving a problem by copying what already exists; efficient and good for incremental improvement, but it can never escape the assumptions baked into the template.",
+    "learnMore": "/blog/thinking-skills/03-first-principles-thinking-reasoning-from-the-ground-up",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "5 Whys",
+    "slug": "five-whys",
+    "definition": "A root-cause technique from Toyota: ask \"Why?\" five times in a row, each time targeting the previous answer, to move from a surface symptom to the real cause.",
+    "learnMore": "/blog/thinking-skills/04-the-toolkit-how-to-actually-do-first-principles-thinking",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Feynman Technique",
+    "slug": "feynman-technique",
+    "definition": "A four-step learning loop: pick a concept, explain it in plain language as if to a child, find where the explanation breaks down, then simplify and repeat.",
+    "learnMore": "/blog/thinking-skills/04-the-toolkit-how-to-actually-do-first-principles-thinking",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Systems Thinking",
+    "slug": "systems-thinking",
+    "definition": "Seeing a problem as a web of stocks, flows, delays, and feedback loops rather than isolated parts, so you can predict how it will push back over time.",
+    "learnMore": "/blog/thinking-skills/05-systems-thinking-seeing-the-whole-not-the-parts",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Reinforcing Loop",
+    "slug": "reinforcing-loop",
+    "definition": "A feedback loop that amplifies whatever is already happening, producing exponential growth or runaway collapse - the compound interest of systems.",
+    "learnMore": "/blog/thinking-skills/05-systems-thinking-seeing-the-whole-not-the-parts",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Balancing Loop",
+    "slug": "balancing-loop",
+    "definition": "A feedback loop that resists change and pushes a system back toward a target, like a thermostat clicking the heat on and off.",
+    "learnMore": "/blog/thinking-skills/05-systems-thinking-seeing-the-whole-not-the-parts",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Leverage Point",
+    "slug": "leverage-point",
+    "definition": "A place in a system where a small change produces a large, lasting effect; the strongest of all is the paradigm - the shared beliefs the system was built on.",
+    "learnMore": "/blog/thinking-skills/06-section-5-leverage-points-mental-models-for-better-decisions",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Policy Resistance",
+    "slug": "policy-resistance",
+    "definition": "The tendency of a system to neutralize your fix - add highway lanes to cut traffic and you often induce more driving, recreating the jam.",
+    "learnMore": "/blog/thinking-skills/05-systems-thinking-seeing-the-whole-not-the-parts",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Second-Order Thinking",
+    "slug": "second-order-thinking",
+    "definition": "Asking \"and then what?\" beyond the first result of a decision, tracing the chain of later consequences - the antidote to choices that feel good now but cause damage later.",
+    "learnMore": "/blog/thinking-skills/06-section-5-leverage-points-mental-models-for-better-decisions",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Inversion",
+    "slug": "inversion",
+    "definition": "Working backward from the failure you most want to avoid; as the mathematician Carl Jacobi put it, \"invert, always invert.\"",
+    "learnMore": "/blog/thinking-skills/06-section-5-leverage-points-mental-models-for-better-decisions",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Pre-Mortem",
+    "slug": "pre-mortem",
+    "definition": "Imagining your plan has already failed and working back to what caused it, which surfaces risks that optimism normally hides.",
+    "learnMore": "/blog/thinking-skills/06-section-5-leverage-points-mental-models-for-better-decisions",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Circle of Competence",
+    "slug": "circle-of-competence",
+    "definition": "The domain where your understanding is genuinely reliable; knowing where its edge lies matters as much as knowing what is inside it.",
+    "learnMore": "/blog/thinking-skills/06-section-5-leverage-points-mental-models-for-better-decisions",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Latticework of Mental Models",
+    "slug": "latticework-of-mental-models",
+    "definition": "Charlie Munger's idea of wiring together frameworks from many fields so several lenses hit one decision at once, instead of forcing everything through a single tool.",
+    "learnMore": "/blog/thinking-skills/15-glossary-of-terms",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Opportunity Cost",
+    "slug": "opportunity-cost",
+    "definition": "The value of the best alternative you give up; every \"yes\" is a \"no\" to everything else you could have done with the same time or money.",
+    "learnMore": "/blog/thinking-skills/06-section-5-leverage-points-mental-models-for-better-decisions",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Base Rate",
+    "slug": "base-rate",
+    "definition": "The historical average for similar cases - what Kahneman calls the \"outside view\" - a powerful antidote to overconfidence in your own specific situation.",
+    "learnMore": "/blog/thinking-skills/06-section-5-leverage-points-mental-models-for-better-decisions",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "System 1 Thinking",
+    "slug": "system-1-thinking",
+    "definition": "Fast, automatic, effortless thinking that handles most daily decisions using shortcuts; efficient but predictably error-prone.",
+    "learnMore": "/blog/psychology-of-decisions/02-two-minds-in-one-head-fast-thinking-vs-slow-thinking",
+    "topic": "Psychology of Decisions"
+  },
+  {
+    "term": "System 2 Thinking",
+    "slug": "system-2-thinking",
+    "definition": "Slow, deliberate, effortful analysis that can override System 1's errors but tires quickly - which is why good defaults matter so much.",
+    "learnMore": "/blog/psychology-of-decisions/02-two-minds-in-one-head-fast-thinking-vs-slow-thinking",
+    "topic": "Psychology of Decisions"
+  },
+  {
+    "term": "Heuristic",
+    "slug": "heuristic",
+    "definition": "A mental shortcut that makes judgment fast and usually good enough, but fails in predictable, named ways when the situation doesn't fit the rule of thumb.",
+    "learnMore": "/blog/psychology-of-decisions/05-mental-shortcuts-how-heuristics-help-and-trick-us",
+    "topic": "Psychology of Decisions"
+  },
+  {
+    "term": "Confirmation Bias",
+    "slug": "confirmation-bias",
+    "definition": "Noticing and remembering only the evidence that fits what you already believe, while quietly discounting everything that disagrees.",
+    "learnMore": "/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence",
+    "topic": "Psychology of Decisions"
+  },
+  {
+    "term": "Anchoring Bias",
+    "slug": "anchoring-bias",
+    "definition": "Leaning too hard on the first number you see when estimating something; you adjust away from it but almost never far enough.",
+    "learnMore": "/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults",
+    "topic": "Psychology of Decisions"
+  },
+  {
+    "term": "Framing Effect",
+    "slug": "framing-effect",
+    "definition": "When the wording of a choice changes which option you pick even though the facts are identical - \"90% fat-free\" and \"10% fat\" describe the same food.",
+    "learnMore": "/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults",
+    "topic": "Psychology of Decisions"
+  },
+  {
+    "term": "Availability Heuristic",
+    "slug": "availability-heuristic",
+    "definition": "Judging how likely something is by how easily an example comes to mind, so vivid or recent events feel common even when they are rare.",
+    "learnMore": "/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults",
+    "topic": "Psychology of Decisions"
+  },
+  {
+    "term": "Status Quo Bias",
+    "slug": "status-quo-bias",
+    "definition": "The pull to keep things as they are because change takes effort and doing nothing feels safer, which is what makes default options so powerful.",
+    "learnMore": "/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults",
+    "topic": "Psychology of Decisions"
+  },
+  {
+    "term": "Endowment Effect",
+    "slug": "endowment-effect",
+    "definition": "Valuing something more simply because you own it, so you demand more to give it up than you would have paid to get it.",
+    "learnMore": "/blog/psychology-of-decisions/06-the-big-biases-i-anchoring-framing-availability-defaults",
+    "topic": "Psychology of Decisions"
+  },
+  {
+    "term": "Loss Aversion",
+    "slug": "loss-aversion",
+    "definition": "Losses hurt about twice as much as equivalent gains feel good, so people work harder to avoid losing than to win the same amount.",
+    "learnMore": "/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence",
+    "topic": "Psychology of Decisions"
+  },
+  {
+    "term": "Sunk Cost Fallacy",
+    "slug": "sunk-cost-fallacy",
+    "definition": "Throwing good resources after a failing path because of what you already spent; spent is spent, and it should never drive the next decision.",
+    "learnMore": "/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence",
+    "topic": "Psychology of Decisions"
+  },
+  {
+    "term": "Overconfidence",
+    "slug": "overconfidence",
+    "definition": "Systematically overrating the accuracy of your own judgment, which makes forecasts too narrow and blinds you to how often you are wrong.",
+    "learnMore": "/blog/psychology-of-decisions/07-the-big-biases-ii-loss-aversion-sunk-cost-confirmation-overconfidence",
+    "topic": "Psychology of Decisions"
+  },
+  {
+    "term": "Prospect Theory",
+    "slug": "prospect-theory",
+    "definition": "Kahneman and Tversky's account of how people actually weigh gains, losses, and risk - from a reference point, with losses looming larger than gains.",
+    "learnMore": "/blog/psychology-of-decisions/08-prospect-theory-behavioral-economics-how-we-weigh-gains-losses-risk",
+    "topic": "Psychology of Decisions"
+  },
+  {
+    "term": "Reciprocity",
+    "slug": "reciprocity",
+    "definition": "The urge to give back when someone gives to us first; it works even with tiny, unwanted gifts, which is why free samples reliably lift spending.",
+    "learnMore": "/blog/psychology-of-decisions/10-the-six-levers-of-influence-how-people-get-persuaded",
+    "topic": "Psychology of Decisions"
+  },
+  {
+    "term": "Social Proof",
+    "slug": "social-proof",
+    "definition": "Looking to what others are doing to decide what is correct, especially under uncertainty - the engine behind reviews, wait-lists, and \"bestseller\" tags.",
+    "learnMore": "/blog/psychology-of-decisions/10-the-six-levers-of-influence-how-people-get-persuaded",
+    "topic": "Psychology of Decisions"
+  },
+  {
+    "term": "Scarcity",
+    "slug": "scarcity",
+    "definition": "Wanting something more as it becomes rarer or more urgent; \"only 2 left\" and \"ends tonight\" work by making a loss feel imminent.",
+    "learnMore": "/blog/psychology-of-decisions/10-the-six-levers-of-influence-how-people-get-persuaded",
+    "topic": "Psychology of Decisions"
+  },
+  {
+    "term": "Authority Bias",
+    "slug": "authority-bias",
+    "definition": "Deferring to perceived experts or symbols of authority - titles, uniforms, credentials - even when the claim itself deserves scrutiny.",
+    "learnMore": "/blog/psychology-of-decisions/10-the-six-levers-of-influence-how-people-get-persuaded",
+    "topic": "Psychology of Decisions"
+  },
+  {
+    "term": "Dopamine",
+    "slug": "dopamine",
+    "definition": "A brain messenger that fires for surprise and anticipation rather than pleasure, driving wanting rather than liking - the pull behind cravings and habits.",
+    "learnMore": "/blog/psychology-of-decisions/03-how-the-brain-actually-decides-emotion-memory-attention",
+    "topic": "Psychology of Decisions"
+  },
+  {
+    "term": "Divergent Thinking",
+    "slug": "divergent-thinking",
+    "definition": "Generating many varied ideas without judging them, where quantity and variety are the goal; converge too early and you kill creativity.",
+    "learnMore": "/blog/thinking-skills/11-what-creativity-really-is-demystified",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Convergent Thinking",
+    "slug": "convergent-thinking",
+    "definition": "Narrowing a pile of options down to the best one; the necessary partner to divergent thinking, but destructive if used too soon.",
+    "learnMore": "/blog/thinking-skills/11-what-creativity-really-is-demystified",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Incubation",
+    "slug": "incubation",
+    "definition": "The creative stage where you deliberately step away from a problem so your unconscious keeps making associations and hands you the \"shower idea.\"",
+    "learnMore": "/blog/thinking-skills/13-section-12-the-creative-mind-flow-incubation-beating-blocks",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Growth Mindset",
+    "slug": "growth-mindset",
+    "definition": "Carol Dweck's finding that abilities like creativity can be developed with effort; it consistently produces more output and resilience than a fixed mindset.",
+    "learnMore": "/blog/thinking-skills/11-what-creativity-really-is-demystified",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Fixed Mindset",
+    "slug": "fixed-mindset",
+    "definition": "The belief that talent is innate and unchangeable, which quietly discourages effort and makes people quit the moment something feels hard.",
+    "learnMore": "/blog/thinking-skills/11-what-creativity-really-is-demystified",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Fogg Behavior Model",
+    "slug": "fogg-behavior-model",
+    "definition": "B = MAP: a behavior happens only when Motivation, Ability, and a Prompt converge; raising ability by cutting friction is the most reliable lever.",
+    "learnMore": "/blog/thinking-skills/08-section-7-behavior-design-models-why-people-do-and-don-t-act",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Implementation Intention",
+    "slug": "implementation-intention",
+    "definition": "An \"I will [behavior] at [time] in [place]\" plan; Peter Gollwitzer's research shows this simple format doubles or triples follow-through.",
+    "learnMore": "/blog/thinking-skills/09-designing-your-own-habits-that-actually-stick",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Habit Stacking",
+    "slug": "habit-stacking",
+    "definition": "Anchoring a new habit to an existing one - \"After I [current habit], I will [new habit]\" - borrowing the neural pathway that is already firing reliably.",
+    "learnMore": "/blog/thinking-skills/09-designing-your-own-habits-that-actually-stick",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Two-Minute Rule",
+    "slug": "two-minute-rule",
+    "definition": "Shrinking any new habit to a two-minute version, because starting is the hard part and a started habit is far easier to continue than to begin.",
+    "learnMore": "/blog/thinking-skills/09-designing-your-own-habits-that-actually-stick",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Identity-Based Habits",
+    "slug": "identity-based-habits",
+    "definition": "Tying a habit to who you are (\"I am a runner\") so each repetition becomes a vote for that identity rather than a chore to endure.",
+    "learnMore": "/blog/thinking-skills/09-designing-your-own-habits-that-actually-stick",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Never Miss Twice",
+    "slug": "never-miss-twice",
+    "definition": "The rule that one missed day is an accident but two in a row is the start of a new bad habit, so you always show up the next day.",
+    "learnMore": "/blog/thinking-skills/09-designing-your-own-habits-that-actually-stick",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Keystone Habit",
+    "slug": "keystone-habit",
+    "definition": "A single habit that drags other good behaviors along with it; exercise is the classic, quietly improving sleep, diet, and focus without you targeting them.",
+    "learnMore": "/blog/thinking-skills/07-the-science-of-habits-how-behavior-becomes-automatic",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Plateau of Latent Potential",
+    "slug": "plateau-of-latent-potential",
+    "definition": "The frustrating stretch where effort accumulates invisibly before results break through - like ice doing nothing at 25°F, then melting at 32°F.",
+    "learnMore": "/blog/thinking-skills/07-the-science-of-habits-how-behavior-becomes-automatic",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Reward Prediction Error",
+    "slug": "reward-prediction-error",
+    "definition": "The gap between an expected and an actual reward; dopamine fires most when a cue is recognized in anticipation, not just when the reward finally lands.",
+    "learnMore": "/blog/thinking-skills/07-the-science-of-habits-how-behavior-becomes-automatic",
+    "topic": "Thinking Skills"
+  },
+  {
+    "term": "Variable Reward",
+    "slug": "variable-reward",
+    "definition": "A payoff that varies unpredictably, producing the compulsive pull behind slot machines, social feeds, and notification badges.",
+    "learnMore": "/blog/thinking-skills/07-the-science-of-habits-how-behavior-becomes-automatic",
+    "topic": "Thinking Skills"
+  }
+]
