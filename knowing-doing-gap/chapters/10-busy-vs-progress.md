@@ -101,7 +101,7 @@ Around 1906, economist Vilfredo Pareto noticed that about 20% of Italians owned 
 
 Two honest warnings. First, Juran later renamed the other 80% from "the trivial many" to **"the useful many"**, because people kept concluding it was worthless — some low-yield work is necessary infrastructure. Second, the dishonest use of 80/20 is *retroactive*: labeling whatever you enjoy as "the vital 20%." Honest use means **measuring your output first**, then cutting.
 
-**In short:** shrink the container (deadlines) and concentrate on the measured vital few — but treat both rules as sharp heuristics, not laws of physics.
+**In short:** shrink the container (deadlines) and concentrate on the measured vital few — but treat both rules as sharp rules of thumb, not laws of physics.
 
 ---
 
@@ -155,9 +155,9 @@ Experts escape the plateau three ways: they focus on *technique*, they stay *goa
 
 Careful with the word "feedback," though. Kluger and DeNisi's landmark meta-analysis (1996) combined 607 effect sizes from 23,663 observations. On average, feedback improved performance (d = 0.41 — an **effect size** is just a standard measure of how big a difference is). But here is the shock: **over one-third of feedback interventions made performance WORSE.** The pattern: feedback pointing at the *task* ("this paragraph is unclear") helps; feedback pointing at the *self* ("you're so talented" / "you're careless") backfires, because attention shifts from fixing the work to defending the ego.
 
-### The 10,000-hour myth, handled honestly
+### The 10,000-hour myth, in one line
 
-You may have heard that 10,000 hours of practice makes anyone an expert. That "rule" is Malcolm Gladwell's simplification of Ericsson's 1993 violinist research — 10,000 was an average, never a magic threshold. And a 2014 meta-analysis by Macnamara, Hambrick and Oswald (88 studies) found deliberate practice explains only **26% of performance differences in games, 21% in music, 18% in sports, and under 1% in professions**. Genetics, starting age, and feedback quality matter too; Ericsson disputed the analysis, arguing many included studies measured mere hours, not true structured practice. What survives the fight — and it's all this chapter needs — is this: **unguided repetition plateaus; structured practice with immediate feedback reliably beats it.**
+You may have heard that 10,000 hours of practice makes anyone an expert. Chapter 9 takes that "rule" apart in full — the number was an arbitrary average, and the researcher behind the original data rejected the rule himself (see Chapter 9). What survives the debate — and it's all this chapter needs — is this: **unguided repetition plateaus; structured practice with immediate feedback reliably beats it.**
 
 **In short:** doing the reps gets you to competent; reps *at the edge of your ability, with fast task-focused feedback*, are the only known road past it.
 
@@ -169,11 +169,11 @@ One last tool, and it is one of the most solid findings in all of psychology.
 
 ### Specific, hard goals work
 
-Edwin Locke and Gary Latham's **goal-setting theory** was built on 88+ tasks and over 40,000 participants by 1990 — and it largely survived psychology's replication crisis, which killed many flashier ideas (willpower-as-a-muscle "ego depletion," for instance, failed a 23-lab replication in 2016). The finding: **specific, difficult goals beat vague "do your best" goals in about 96% of studies**, improving performance by roughly 17% on average, because they direct attention, energize effort, and trigger the search for better strategies. Caveat: on very complex, novel tasks, set a *learning* goal ("find five possible strategies") instead — and beware tunnel vision; aggressive targets can push people into cutting corners ("Goals Gone Wild," 2009).
+Edwin Locke and Gary Latham's **goal-setting theory** was built on 88+ tasks and over 40,000 participants by 1990. It also largely survived psychology's **replication crisis** — the period when scientists re-ran famous studies and many failed the retest. (Willpower-as-a-muscle "ego depletion," for instance, failed a 23-lab retest in 2016.) The finding: **specific, difficult goals beat vague "do your best" goals in about 96% of studies**, improving performance by roughly 17% on average, because they direct attention, energize effort, and trigger the search for better strategies. Caveat: on very complex, novel tasks, set a *learning* goal ("find five possible strategies") instead — and beware tunnel vision; aggressive targets can push people into cutting corners ("Goals Gone Wild," 2009).
 
 ### If-then plans
 
-Even better, Gollwitzer and Sheeran's meta-analysis of 94 studies (2006) tested **implementation intentions** — plans in the form "If situation X happens, then I will do Y." These simple if-then plans raised goal achievement with an effect size of **d = 0.65** — medium-to-large, remarkable for something that takes one minute to write. An if-then plan pre-loads the decision, like laying out your gym clothes the night before: when the moment comes, there is nothing left to decide.
+Even better, Gollwitzer and Sheeran's meta-analysis of 94 studies (2006) tested **implementation intentions** — plans in the form "If situation X happens, then I will do Y." These simple if-then plans raised goal achievement with an effect size of **d = 0.65** — medium-to-large, remarkable for something that takes one minute to write. An if-then plan pre-loads the decision, like laying out your gym clothes the night before: when the moment comes, there is nothing left to decide. (Chapter 11 turns this into a full step-by-step tool.)
 
 ### Input goals vs. output goals
 
@@ -215,5 +215,5 @@ Best practice: set the output goal once, for *direction* — then translate it e
 - Task-switching leaves attention residue (Leroy, 2009) and can burn up to 40% of productive time (Rubinstein et al., 2001). Protect one deep block daily.
 - Skill is a ladder — Knowledge → Execution → Mastery — and all the payment is on the upper rungs: $500/month invested beats decades of knowing about investing; "busy" market timing can cut $70k to under $35k.
 - Repetition without feedback stalls at the OK plateau; experts practice at the edge of failure with immediate, *task-focused* feedback — over a third of feedback interventions, mostly self-focused ones, actually hurt (Kluger & DeNisi, 1996).
-- The 10,000-hour rule is a myth, but its honest core survives: structured practice with feedback reliably beats unguided grinding (Macnamara et al., 2014).
+- The 10,000-hour rule is a myth, but its honest core survives: structured practice with feedback reliably beats unguided grinding (see Chapter 9 for the full story).
 - Set specific hard goals for direction (~17% gain; Locke & Latham), then run daily life on if-then input goals (d = 0.65; Gollwitzer & Sheeran, 2006) — behaviors are the only thing you can actually do.

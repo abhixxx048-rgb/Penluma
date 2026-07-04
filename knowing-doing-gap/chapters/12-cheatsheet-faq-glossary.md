@@ -27,7 +27,7 @@ Use it like a map you keep in your pocket, not a book you read once and shelve. 
 - ~43% of daily life is context-cued habit — reprogram the cue, don't lecture the conscious mind.
 - Every habit is a loop: cue → craving → response → reward. Redesign the loop stage by stage.
 - Shrink the behavior below your worst day's motivation (B = MAP); start comically small.
-- Use if-then plans — "After I [current habit], I will [tiny new one]" — to double or triple follow-through.
+- Use if-then plans — "After I [current habit], I will [tiny new one]" — to sharply raise follow-through.
 - Expect ~66 days on average, not 21; a single miss is harmless — just never miss twice.
 
 **Reprice the moment (the economics of now)**
@@ -182,7 +182,7 @@ The whole point of this book is that the gap is a *design* problem, not a verdic
 - **Habit stacking** — Attaching a new behavior to an existing habit: "After I [current habit], I will [new habit]."
 - **Hyperbolic discounting** — The way we don't reduce the value of future things smoothly; value falls off a cliff the moment something isn't *now*.
 - **Impostor phenomenon** — The persistent feeling that your success is undeserved and you'll be "found out"; common in high achievers and not cured by more success.
-- **Implementation intention (if-then plan)** — A plan in the form "If situation Y happens, then I will do X"; it roughly doubles or triples follow-through.
+- **Implementation intention (if-then plan)** — A plan in the form "If situation X happens, then I will do Y"; one of the best-tested tools in behavior science, it substantially raises follow-through.
 - **Inclined abstainers** — People who fully intend to act but never do; the group where almost the entire knowing-doing gap lives.
 - **Information deficit model** — The discredited assumption that people fail to act because they lack information, so more facts will fix behavior.
 - **Intelligent failure** — A failure that is in new territory, meaningful, hypothesis-driven, and as small as possible while still teaching you something.

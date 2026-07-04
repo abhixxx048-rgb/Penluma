@@ -1,5 +1,7 @@
 # Chapter 7: The Invisible Forces — Environment, Family, and Culture
 
+## Why this chapter matters
+
 Imagine two men. One lives in Austria, one in Germany. Same age, same values, same language. Ask them, "Should people donate their organs after death?" Both say yes. But only one is actually registered as a donor. Why? Not character. Not belief. A form. In Austria, you are a donor *unless* you tick a box. In Germany, you are *not* a donor unless you tick a box. That one design difference separates the two countries by more than 60 percentage points in registered donors (Johnson & Goldstein, *Science*, 2003).
 
 Both men "know" the same thing. Only one "does" it — and the reason is not inside his head at all.
@@ -12,7 +14,7 @@ In this chapter you will learn how forces outside you — the arrangement of cho
 
 Most advice about the knowing-doing gap points inward: try harder, be disciplined, want it more. This chapter argues the opposite: the gap is mostly a property of your *situation*, not your soul. Two findings set the stage:
 
-- Psychologist Wendy Wood found that about **43% of our daily actions are habits** — behaviors triggered automatically by context (same place, same time, same cue), with almost no conscious thought. Nearly half of your day is not decided by "you" at all. It is decided by wherever you happen to be standing.
+- Psychologist Wendy Wood found that about **43% of our daily actions are habits** — behaviors triggered automatically by context (same place, same time, same cue), with almost no conscious thought (see Chapter 5 for the full story). Nearly half of your day is not decided by "you" at all. It is decided by wherever you happen to be standing.
 - Angela Duckworth and colleagues (2016) ran experiments where students were randomly given different strategies for reaching study goals. Students taught **situation modification** — changing the environment, like physically removing the phone from the room — beat students who were simply told to "use willpower." The winning move happened *before* temptation appeared, not during it.
 
 Here is the picture to keep in mind:
@@ -60,7 +62,7 @@ Every "I know I should, but I don't" in your life has a choice architecture. Is 
 
 **Social contagion** is the idea that behaviors spread through networks of people, like a slow infection — not because anyone argues you into anything, but because the people around you silently redefine what "normal" looks like.
 
-The landmark evidence comes from Christakis and Fowler, who analyzed the Framingham Heart Study — **12,067 people tracked over 32 years** (NEJM, 2007). If a friend of yours became obese, your own risk of becoming obese rose by **57%**. A sibling raised it 40%, a spouse 37%. Strangely, distance didn't matter: a close friend far away still "transmitted" the effect, but a next-door neighbor did not — suggesting the vector is *social norms*, not shared food. The influence reached out to about **three degrees of separation**: your friends' friends' friends, people you have never met, nudge your waistline.
+The landmark evidence comes from Christakis and Fowler, who analyzed the Framingham Heart Study — **12,067 people tracked over 32 years** (NEJM, 2007). If a friend of yours became obese, your own risk of becoming obese rose by **57%**. A sibling raised it 40%, a spouse 37%. Strangely, distance didn't matter: a close friend far away still "transmitted" the effect, but a next-door neighbor did not — suggesting the carrier is *social norms*, not shared food. The influence reached out to about **three degrees of separation**: your friends' friends' friends, people you have never met, nudge your waistline.
 
 ```
    YOU ◄── friend ◄── friend's friend ◄── friend's friend's friend
@@ -99,8 +101,8 @@ So waiting is not raw virtue. It is a **rational bet on your environment**: "Do 
 
 For decades we knew poor children scored lower on tests, but was poverty a cause or just a correlation? Two pieces of evidence:
 
-- Noble et al. (2015, n=1,099) found family income tracks with **cortical surface area** (the folded outer layer of the brain), especially in regions for language and executive function, with the steepest differences at the low end of income.
-- Correlation became causation with the **Baby's First Years** experiment (Troller-Renfree, Noble et al., PNAS, 2022): low-income US mothers were randomly assigned to receive **$333 per month or $20 per month**, no strings attached. At age one, infants in the high-cash group showed **more high-frequency EEG brain activity** — a pattern linked with later cognitive development. Effects were modest, but it is randomized: money itself changed infant brains.
+- Noble et al. (2015; 1,099 children and young people) found family income tracks with **cortical surface area** (the folded outer layer of the brain), especially in regions for language and executive function (the brain's planning and self-control skills), with the steepest differences at the low end of income.
+- Correlation became causation with the **Baby's First Years** experiment (Troller-Renfree, Noble et al., PNAS, 2022): low-income US mothers were randomly assigned to receive **$333 per month or $20 per month**, no strings attached. At age one, infants in the high-cash group showed **more high-frequency brain activity on EEG** (a cap of sensors that records the brain's electrical signals) — a pattern linked with later learning and thinking. Effects were modest, but it is randomized: money itself changed infant brains.
 
 One famous "family environment" statistic to retire: the "30-million-word gap" — the claim that poor children hear 30 million fewer words by age four — came from a 1995 study of just 42 families, and a careful 2019 replication (Sperry, Sperry & Miller) failed to reproduce it; some low-income communities' children heard as many or *more* words. A tiny study became national policy folklore. Handle single small studies with tongs.
 
@@ -110,7 +112,7 @@ One famous "family environment" statistic to retire: the "30-million-word gap" �
 
 Here is the cruelest mechanism in this chapter. **Scarcity** — not having enough money (or time) — does not just limit your options. It taxes your *mind*.
 
-Mani, Mullainathan, Shafir and Zhao (Science, 2013) asked shoppers in a New Jersey mall to imagine a car repair, then take fluid-intelligence tests. When the imagined repair cost $150, rich and poor scored the same. When it cost **$1,500**, poorer participants' scores dropped by the equivalent of **~13 IQ points** — comparable to losing a full night's sleep. Just the *worry* did that.
+Mani, Mullainathan, Shafir and Zhao (Science, 2013) asked shoppers in a New Jersey mall to imagine a car repair, then take fluid-intelligence tests (tests of on-the-spot problem-solving, not learned knowledge). When the imagined repair cost $150, rich and poor scored the same. When it cost **$1,500**, poorer participants' scores dropped by the equivalent of **~13 IQ points** — comparable to losing a full night's sleep. Just the *worry* did that.
 
 The stronger version used real money: **464 Indian sugarcane farmers** who receive most of their yearly income at one harvest. The *same farmers* scored the equivalent of **9–10 IQ points higher** after harvest (flush with cash) than before it (broke). Same person, same knowledge, different bank balance, different brain.
 
@@ -133,7 +135,7 @@ Read that twice. Even a *belief* intervention only works when the surrounding cu
 
 ### Fear of failure is a local custom
 
-The Global Entrepreneurship Monitor asks adults worldwide whether fear of failure would stop them from starting a business even when they see a good opportunity. In recent data, about **54–55% of Japanese adults** say yes, versus roughly **45% of Americans**. Same human brains; different cultural price tag on failure (in Japan, business failure has historically carried deep personal and family stigma).
+The Global Entrepreneurship Monitor asks adults worldwide whether fear of failure would stop them from starting a business even when they see a good opportunity. In recent data, about **54–55% of Japanese adults** say yes, versus roughly **45% of Americans**. Same human brains; different cultural price tag on failure (in Japan, business failure has historically carried deep personal and family stigma). Chapter 6 explains the psychology of fear of failure; here we see that culture sets its price.
 
 Some communities deliberately re-engineered that price tag:
 
@@ -149,7 +151,7 @@ Some communities deliberately re-engineered that price tag:
 | When it acts | *During* temptation | *Before* temptation appears |
 | Cost per use | High (effort every time) | Mostly one-time (set up once) |
 | Under stress or scarcity | Collapses first | Keeps working |
-| Evidence | "Try harder" lost in Duckworth's RCTs | Defaults 42%→82%; tongs −8–16%; phone-removal beat willpower |
+| Evidence | "Try harder" lost in Duckworth's randomized trials | Defaults 42%→82%; tongs −8–16%; phone-removal beat willpower |
 | Example | "I won't check my phone" | Phone in another room |
 
 ---

@@ -28,7 +28,7 @@ David Laibson (1997) put a number on the cliff. In his **beta-delta model**, eve
 
 Every good goal has the same shape: **cost now, reward later.** Exercise hurts today and pays off in months. Present bias means the *cost* lands at full price while the *reward* gets the 30% "later" penalty. Every temptation has the opposite shape: reward now, cost later (discounted). The game is rigged before you start.
 
-A useful analogy: present bias is a hill that looks gentle from a distance but turns into a cliff the moment you reach it. "I'll start the diet Monday" is easy to choose on Thursday, because Monday's diet is a distant, discounted trade. Then Monday becomes *now*, the cliff appears, and the same person flips — the $50/$100 reversal in real life. The gym members did exactly this: the planning self signed the contract; the present self, week after week, faced the real now-price and stayed home. Brain scans (Hal Hershfield) even show that imagining your future self looks like imagining *a stranger* — and we cheerfully hand that stranger our costs.
+A useful analogy: present bias is a hill that looks gentle from a distance but turns into a cliff the moment you reach it. "I'll start the diet Monday" is easy to choose on Thursday, because Monday's diet is a distant, discounted trade. Then Monday becomes *now*, the cliff appears, and the same person flips — the $50/$100 reversal in real life. The gym members did exactly this: the planning self signed the contract; the present self, week after week, faced the real now-price and stayed home. Brain scans (Hal Hershfield) even show that imagining your future self looks like imagining *a stranger* — and we cheerfully hand that stranger our costs (see Chapter 3).
 
 **In short:** anything "later" instantly loses about a third of its value — so goals (cost now, reward later) start every auction losing.
 
@@ -128,7 +128,7 @@ A **commitment device** is any constraint or penalty you voluntarily impose on y
 
 - **Smoking.** Giné, Karlan and Zinman (2010) offered 2,000 smokers in the Philippines a savings account: deposit money regularly; if a urine test at six months shows nicotine, the money goes to charity. Only 11% signed up — but the offer raised quit rates **3.3 to 5.8 percentage points**, holding at a *surprise 12-month test*. The sting: about **66% of takers failed and lost their money**.
 - **Weight loss.** Volpp and colleagues (2008, *JAMA*) ran a 16-week trial where dieters put their own money at risk. The deposit group lost **14.0 pounds versus 3.9** for controls. But after the incentives stopped, much of the weight returned. Systematic reviews agree: commitment devices produce real but *small* effects that fade when the device ends. Excellent starters, poor finishers.
-- **Deadlines.** MIT students voluntarily imposed costly early deadlines on themselves, and it helped — though evenly spaced *external* deadlines worked best (Ariely & Wertenbroch, 2002; note: a 2024 replication failed on the performance results, so treat as directional).
+- **Deadlines.** MIT students voluntarily imposed costly early deadlines on themselves, and it helped — though evenly spaced *external* deadlines worked best (Ariely & Wertenbroch, 2002; note: a 2024 replication failed on the performance results, so treat as directional; detailed in Chapter 3).
 
 This research escaped the lab: Karlan and Ian Ayres founded **stickK.com** in 2008, where anyone can sign a contract, stake money — often to an "anti-charity" they despise — and appoint a referee. Everyday versions: cut up the credit card, hand your phone to a friend, buy snacks only in small packages.
 
@@ -158,9 +158,9 @@ Five tools, one move: change the prices your present self faces, instead of begg
 
 You might object: shouldn't a strong person simply push through? Isn't this scaffolding a crutch?
 
-For decades, science seemed to say willpower was a muscle — a limited tank called **ego depletion** that drains with use (Baumeister, 1998). Then researchers re-ran it at scale. A 2016 Registered Replication Report — **23 labs, over 2,000 participants**, one shared protocol — found an effect **indistinguishable from zero**, though 22 of the 23 labs had predicted success. A second mega-study (Vohs et al., 2021; 36 labs, 3,531 people) found the same nothing. The willpower-as-fuel-tank model is dead.
+For decades, science seemed to say willpower was a muscle — a limited tank called **ego depletion** that drains with use (Baumeister, 1998). Then large, careful replication efforts found the effect close to zero, and the willpower-as-fuel-tank model collapsed (Chapter 2 tells the full story).
 
-The famous **marshmallow test** shrank too. The original story — four-year-olds who waited for a second marshmallow grew into more successful teenagers — got much weaker on re-examination: in a larger, more diverse sample, the correlation was *half* the original and fell by *two-thirds* once family background was controlled (Watts, Duncan & Quan, 2018). Kids also wait longer when adults prove reliable (Kidd et al., 2013) — waiting partly measures a trustworthy environment, not inner steel.
+The famous **marshmallow test** shrank too (see Chapter 2): its power to predict success mostly disappeared once family background was accounted for. And children wait longer when the adults around them prove reliable (Kidd et al., 2013) — so waiting partly measures a trustworthy *environment*, not inner steel.
 
 So what do genuinely self-controlled people do? Experience-sampling studies (Hofmann et al., 2012; Milyavskaya & Inzlicht, 2017) found something deflating: people high in self-control **experience fewer temptations** in the first place. They arrange their lives so the battles never start — no candy in the house, phone in another room, the mast and the rope. In-the-moment resistance barely predicted reaching goals.
 
@@ -201,4 +201,4 @@ That ratio is the whole chapter in one number. The gap between knowing and doing
 - **Losses weigh about 2x gains** (λ ≈ 1.955 across 607 estimates), and every goal is a change from the status quo — a built-in 2:1 handicap.
 - **Defaults and friction beat education by an order of magnitude**: a checkbox default moves organ-donor consent from 12% to 99.98%; opaque candy jars cut 3.1 million calories; auto-enrollment adds ~50 points while seminars add a few.
 - **Commitment devices** and **temptation bundling** reprice the moment of choice — real effects, but they fade when the device ends, so use them to start behavior, not to sustain it.
-- **Willpower is not a depletable muscle** (ego depletion failed replication across 59 labs); genuinely self-controlled people avoid temptations rather than resist them. Design beats grit.
+- **Willpower is not a depletable muscle** (ego depletion failed large multi-lab replications; see Chapter 2); genuinely self-controlled people avoid temptations rather than resist them. Design beats grit.

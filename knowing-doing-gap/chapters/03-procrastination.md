@@ -188,7 +188,7 @@ This is **precommitment**: locking in your behavior now, while your sensible sel
 
 Did the deadlines improve performance? In the original study, yes: evenly spaced *external* deadlines beat self-imposed ones (grades 88.76 vs 85.67), and both beat a single end deadline. But honesty requires a caveat: a recent replication of the study's proofreading experiment found **negligible effects of deadline spacing on performance** — so treat that ranking with caution. The robust takeaway is the first one: **people will voluntarily pay a price to bind their own future behavior**. They understand their own knowing-doing gap perfectly well.
 
-One more myth to clear away. You may have heard that willpower is a muscle or a fuel tank that runs empty ("ego depletion"). In 2016, a massive replication effort — 23 labs, about 2,100 participants — found the effect **indistinguishable from zero**. Don't build your strategy on "conserving willpower fuel"; the sturdier foundations are emotion, impulsiveness, and distance.
+One more myth to clear away. Don't build your strategy on "conserving willpower fuel" — the idea that willpower is a muscle that runs empty ("ego depletion") failed large replication tests, as Chapter 2 explains in full. The sturdier foundations are emotion, impulsiveness, and distance.
 
 **In short:** you cannot rely on willpower, but you can rearrange the world in advance — near-term commitments with real teeth are the procrastinator's oldest working technology.
 

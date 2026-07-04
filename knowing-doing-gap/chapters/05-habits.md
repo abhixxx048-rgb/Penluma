@@ -141,7 +141,7 @@ Motivation and ability trade off along a curve Fogg calls the action line:
 
 Above the line, a prompt triggers the behavior. Below it, no prompt works — you see the reminder, feel the guilt, and still don't act.
 
-Fogg's counterintuitive insight: when a behavior keeps failing, almost everyone tries to raise motivation. The reliable move is the opposite — **raise ability by shrinking the behavior**, because motivation fluctuates daily while simplicity is stable. Betting on motivation is building on a wave. Shrinking the behavior is building on rock.
+Fogg's surprising insight: when a behavior keeps failing, almost everyone tries to raise motivation. The reliable move is the opposite — **raise ability by shrinking the behavior**, because motivation fluctuates daily while simplicity is stable. Betting on motivation is building on a wave. Shrinking the behavior is building on rock.
 
 His *Tiny Habits* method (2019): shrink the new behavior until it is comically small — floss *one* tooth, do *two* push-ups — anchor it right after an existing routine, and celebrate immediately (a fist pump, a genuine "yes!"). Fogg argues that the burst of positive emotion, not repetition alone, is what wires the habit in.
 
@@ -157,7 +157,7 @@ If this chapter could give you only one tool, it would be this one, because it h
 
 An **implementation intention** is a plan with the format: **"If situation Y happens, then I will do X."** Not "I'll exercise more," but "If it is 7 a.m. on Monday, then I put on my running shoes and step outside." You decide the when, where, and how *in advance*, so the moment itself requires no decision.
 
-Psychologist Peter Gollwitzer developed the idea in the 1990s, and Gollwitzer & Sheeran (2006) reviewed **94 independent tests** of it. The combined effect on reaching goals was medium-to-large (d = 0.65, in statistics-speak): people who form if-then plans are commonly **two to three times more likely** to follow through than people running on motivation alone. The effect is strongest when you genuinely care about the goal and rehearse the plan at least once.
+Psychologist Peter Gollwitzer developed the idea in the 1990s, and Gollwitzer & Sheeran (2006) reviewed **94 independent tests** of it. The combined effect on reaching goals was medium-to-large (in statistics-speak, an "effect size" of d = 0.65 — a standard way to measure how big a difference is): people who form if-then plans are commonly **two to three times more likely** to follow through than people running on motivation alone. The effect is strongest when you genuinely care about the goal and rehearse the plan at least once.
 
 Why does something so simple work so well? Because it hands the job of *remembering and deciding* over to the environment. The situation itself becomes the trigger — exactly how natural habits already work.
 

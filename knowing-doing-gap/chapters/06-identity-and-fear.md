@@ -32,7 +32,7 @@ What is solid is the direction of travel: behavior changes identity at least as 
 
 Nobody is afraid of failure itself. A rejected application does not physically hurt. What people fear is what failure would *mean*.
 
-Researcher David Conroy's measurement tool, the PFAI (2001–2002), breaks **fear of failure** into five specific feared consequences:
+Researcher David Conroy built a questionnaire called the PFAI — the Performance Failure Appraisal Inventory (2001–2002). It breaks **fear of failure** into five specific feared consequences:
 
 1. Feeling shame and embarrassment
 2. Lowering your opinion of yourself
@@ -70,7 +70,7 @@ What *is* real: fear of success's **costs**. Success raises expectations, visibi
 | **Other-oriented** | "You must be perfect" | Other people |
 | **Socially prescribed** | "Everyone expects me to be perfect" | Imagined judges |
 
-The third type — **socially prescribed perfectionism**, the feeling that other people demand perfection from you — is the most toxic: it is the type most strongly linked to depression, anxiety, and even suicidality.
+The third type — **socially prescribed perfectionism**, the feeling that other people demand perfection from you — is the most toxic: it is the type most strongly linked to depression, anxiety, and even suicidal thinking.
 
 And it is exactly the type that is exploding. Thomas Curran and Andrew Hill analyzed 164 samples of 41,641 American, British, and Canadian college students from 1989 to 2016 (*Psychological Bulletin*). Self-oriented perfectionism rose 10%, other-oriented 16% — and socially prescribed rose **33%**. Curran calls today's young people the first generation "raised on a diet of social media metrics": life as a report card that never stops grading.
 
@@ -81,7 +81,7 @@ Modern research divides perfectionism into two ingredients that behave in opposi
 - **Perfectionistic strivings** — genuinely wanting to do excellent work.
 - **Perfectionistic concerns** — fear of mistakes, doubt about your actions, dread of judgment.
 
-A meta-analysis by Sirois, Molnar and Hirsch (2017) found that concerns correlate *positively* with procrastination (r ≈ .23) while strivings correlate slightly *negatively* — high standards push you to start; fear of mistakes freezes you. Hill and Curran (2016) found the same split for burnout across 43 studies of 9,838 people: concerns show medium-to-large links; strivings show small negative or no links.
+A meta-analysis (a study that pools many studies together) by Sirois, Molnar and Hirsch (2017) found that concerns correlate *positively* with procrastination (r ≈ .23 — "r" measures how strongly two things travel together, from 0 for no link to 1 for a perfect link, so .23 is a modest but real link) while strivings correlate slightly *negatively* — high standards push you to start; fear of mistakes freezes you. Hill and Curran (2016) found the same split for burnout across 43 studies of 9,838 people: concerns show medium-to-large links; strivings show small negative or no links.
 
 So the damage never comes from wanting excellence. It comes from the fear component, because perfectionism turns every task into an **identity referendum** — a vote on whether you are adequate as a person. If the finished work could prove you inadequate, then *delaying the work delays the verdict*. Procrastination isn't the opposite of perfectionism; it's perfectionism's favorite exit.
 
@@ -95,7 +95,7 @@ A useful analogy: perfectionism is a debt collector. You borrow self-worth again
 
 In 1978, therapists Pauline Rose Clance and Suzanne Imes noticed something strange in about 150 high-achieving women they worked with. Despite degrees, honors, and promotions, these women privately believed they were frauds who would soon be "found out." They named it the **impostor phenomenon** — the persistent feeling that your success is undeserved and exposure is coming. Note the word: *phenomenon*, not "syndrome." It is a common experience, not a medical diagnosis.
 
-How common? A systematic review by Bravata and colleagues (2020) covering 62 studies and 14,161 participants found prevalence anywhere from 9% to 82% depending on the measure. It hits men and women alike (16 studies found women higher; 17 found no gender difference). The famous claim that "70% of people feel it at some point" traces to an *unpublished* 1980s survey — folklore-grade, though the experience is clearly widespread.
+How common? A systematic review by Bravata and colleagues (2020) covering 62 studies and 14,161 participants found rates anywhere from 9% to 82%, depending on how it was measured. It hits men and women alike (16 studies found women higher; 17 found no gender difference). The famous claim that "70% of people feel it at some point" traces to an *unpublished* 1980s survey — folklore-grade, though the experience is clearly widespread.
 
 The most important finding is what does NOT cure it: more success. Maya Angelou — winner of multiple Grammys, nominated for a Pulitzer — said: "I have written eleven books, but each time I think, 'Uh-oh, they're going to find out now. I've run a game on everybody, and they're going to find me out.'" Einstein, late in life, called himself an "involuntary swindler." If eleven books and relativity don't silence the feeling, your next promotion won't either.
 
@@ -113,7 +113,7 @@ Now the strangest behavior in this chapter. **Self-handicapping** means creating
 
 The founding experiment: Berglas and Jones (1978, *Journal of Personality and Social Psychology*). College students solved puzzles that were either solvable or secretly unsolvable — then *everyone* was told they had done brilliantly. One group's success felt earned; the other's felt like unexplainable luck. Before a retest, students chose between two (fictional) drugs: one said to *improve* performance, one to *impair* it.
 
-The students whose success felt unearned preferentially chose the performance-**impairing** drug. They deliberately handicapped themselves before a test. The logic, in its twisted way, is airtight: if I fail, the drug is to blame, not me; if I succeed anyway, I look even more brilliant. Either way, my *image* of competence survives. My actual results are the price.
+The students whose success felt unearned were more likely to choose the performance-**impairing** drug. They deliberately handicapped themselves before a test. The logic, in its twisted way, is airtight: if I fail, the drug is to blame, not me; if I succeed anyway, I look even more brilliant. Either way, my *image* of competence survives. My actual results are the price.
 
 You have seen this everywhere:
 
@@ -150,7 +150,7 @@ Notice that pep talks are source #3, the weak one. The practical rule: **small w
 
 Diener and Dweck (1978) gave fifth-graders identical puzzles and identical failures. "Helpless" children decided failure meant low ability, their strategies collapsed, and they avoided further challenge. "Mastery-oriented" children said things like "I love a challenge," focused on strategy, and often *improved* after failing. Same skill — a different *interpretation of failure* produced opposite behavior.
 
-Honesty flag: this observation is solid, but the pop-culture "growth mindset" industry built on it is oversold. Mindset interventions show tiny effects (Sisk et al., 2018: d ≈ 0.08; Yeager et al., 2019, *Nature*: about 0.10 GPA points, only for lower-achieving students). The pattern is real; the miracle cure is not.
+Honesty flag: this observation is solid, but the pop-culture "growth mindset" industry built on it is oversold — mindset interventions show only tiny average effects (see Chapter 7 for the full evidence). The pattern is real; the miracle cure is not.
 
 **In short:** belief that you can do *this specific thing* is one of the strongest predictors of starting and persisting — and the reliable way to build it is engineered small wins, not motivation.
 
@@ -201,7 +201,7 @@ The way out follows from the diagnosis. If tasks feel like verdicts on your wort
 - **Trying to fix perfectionism by lowering your standards.** The standards (strivings) were never the problem — the fear of judgment (concerns) is. Keep the ambition; detach your worth from any single result.
 - **Waiting for confidence before acting.** Bandura's data says it works the other way: mastery experiences build efficacy. Confidence is a *result* of small action, not a prerequisite.
 - **Treating impostor feelings as a signal to hold back.** They are the norm among achievers, and more success won't cure them — Angelou's eleventh book didn't. Act with the feeling present.
-- **Believing pop-psychology thermostats and miracle mindsets.** The "upper limit problem" has no peer-reviewed support, and mindset interventions average d ≈ 0.08. Use the evidenced tools: small wins, lowered stakes, self-compassion.
+- **Believing pop-psychology thermostats and miracle mindsets.** The "upper limit problem" has no peer-reviewed support, and mindset interventions have only tiny average effects (see Chapter 7). Use the evidenced tools: small wins, lowered stakes, self-compassion.
 
 ## Try This
 
