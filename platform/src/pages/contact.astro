@@ -92,6 +92,10 @@ const inputClass =
 </BaseLayout>
 
 <script is:inline>
+  // Wrapped in an IIFE so `form`/`msg`/`btn` stay local — other is:inline
+  // scripts on the page (the footer newsletter form) share the global scope and
+  // also declare `form`/`msg`, which would throw "already declared".
+  (() => {
   const form = document.getElementById('contact-form');
   const msg = document.getElementById('contact-msg');
   const btn = form?.querySelector('button[type="submit"]');
@@ -143,4 +147,5 @@ const inputClass =
       if (btn) btn.disabled = false;
     }
   });
+  })();
 </script>

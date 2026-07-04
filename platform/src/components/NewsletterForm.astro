@@ -23,31 +23,36 @@
 </div>
 
 <script is:inline>
-  const form = document.getElementById('newsletter-form');
-  const msg = document.getElementById('newsletter-msg');
-  form?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const email = new FormData(form).get('email');
-    msg.classList.remove('hidden', 'text-red-500', 'text-green-600');
-    msg.textContent = 'Subscribing…';
-    try {
-      const res = await fetch('/api/subscribe', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json', accept: 'application/json' },
-        body: JSON.stringify({ email }),
-      });
-      const data = await res.json().catch(() => ({}));
-      if (res.ok) {
-        msg.classList.add('text-green-600');
-        msg.textContent = data.message || 'Thanks - you’re subscribed!';
-        form.reset();
-      } else {
+  // Wrapped in an IIFE so these top-level consts don't collide with other
+  // is:inline scripts on the same page (e.g. the contact form's `form`/`msg`),
+  // which share the global scope and would otherwise throw "already declared".
+  (() => {
+    const form = document.getElementById('newsletter-form');
+    const msg = document.getElementById('newsletter-msg');
+    form?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = new FormData(form).get('email');
+      msg.classList.remove('hidden', 'text-red-500', 'text-green-600');
+      msg.textContent = 'Subscribing…';
+      try {
+        const res = await fetch('/api/subscribe', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json', accept: 'application/json' },
+          body: JSON.stringify({ email }),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (res.ok) {
+          msg.classList.add('text-green-600');
+          msg.textContent = data.message || 'Thanks - you’re subscribed!';
+          form.reset();
+        } else {
+          msg.classList.add('text-red-500');
+          msg.textContent = data.error || 'Something went wrong. Try again.';
+        }
+      } catch {
         msg.classList.add('text-red-500');
-        msg.textContent = data.error || 'Something went wrong. Try again.';
+        msg.textContent = 'Network error. Please try again.';
       }
-    } catch {
-      msg.classList.add('text-red-500');
-      msg.textContent = 'Network error. Please try again.';
-    }
-  });
+    });
+  })();
 </script>

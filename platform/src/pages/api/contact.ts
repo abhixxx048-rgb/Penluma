@@ -89,7 +89,8 @@ export const POST: APIRoute = async ({ request, locals }) => {
   if (message.length > 5000) return fail('That message is a little too long — please trim it.');
 
   const env = (locals as any)?.runtime?.env ?? {};
-  const webhookUrl = env.DISCORD_WEBHOOK_URL as string | undefined;
+  // Trim to survive a stray newline/space pasted into `wrangler secret put`.
+  const webhookUrl = (env.DISCORD_WEBHOOK_URL as string | undefined)?.trim() || undefined;
   const store = env.BLOG_KV as KVNamespace | undefined;
 
   if (webhookUrl) await notifyDiscord(webhookUrl, { name, email, message });

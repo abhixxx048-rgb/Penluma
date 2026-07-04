@@ -70,7 +70,8 @@ export const POST: APIRoute = async ({ request, locals }) => {
     return wantsJson ? json({ error: 'Please enter a valid email.' }, 400) : redirect('?subscribe=invalid');
 
   const env = (locals as any)?.runtime?.env ?? {};
-  const apiKey = env.BUTTONDOWN_API_KEY as string | undefined;
+  // Trim to survive a stray newline/space pasted into `wrangler secret put`.
+  const apiKey = (env.BUTTONDOWN_API_KEY as string | undefined)?.trim() || undefined;
   const store = env.BLOG_KV as KVNamespace | undefined;
 
   // Primary: the email service provider (the real list you broadcast from).
