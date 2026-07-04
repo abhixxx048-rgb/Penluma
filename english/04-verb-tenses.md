@@ -1,4 +1,4 @@
-# 04 — Verb tenses & keeping them consistent
+# 04 - Verb tenses & keeping them consistent
 
 *What this fixes for you: you'll stop writing "I am fix the bug", you'll pick the right tense for commits and standups, and your sentences will stop jumping between past and present halfway through.*
 
@@ -12,7 +12,7 @@
 
 ## Why this trips you up
 
-You reach for "I am" and then attach a plain verb — "I am fix" — but `am/is/are` must be followed by an **-ing** verb (`am fixing`) or you should drop the helper and use past simple (`I fixed`). You also slide between tenses inside one sentence because, in the moment of writing a standup or PR, the timeline in your head shifts and the verbs follow it. And small slips pile up — a lowercase "i", a missing full stop, "u" for "you" — which make even correct tenses read as rushed.
+You reach for "I am" and then attach a plain verb - "I am fix" - but `am/is/are` must be followed by an **-ing** verb (`am fixing`) or you should drop the helper and use past simple (`I fixed`). You also slide between tenses inside one sentence because, in the moment of writing a standup or PR, the timeline in your head shifts and the verbs follow it. And small slips pile up - a lowercase "i", a missing full stop, "u" for "you" - which make even correct tenses read as rushed.
 
 ## See it / fix it
 
@@ -45,11 +45,11 @@ You reach for "I am" and then attach a plain verb — "I am fix" — but `am/is/
 - ❌ It is run → ✅ It is **running**
 - If you don't want -ing, drop the helper: "I **fixed** it."
 
-**Perfect vs. past — the time-word test:** if the sentence names a finished time (*yesterday, last week, at 3pm, on Monday*), use **past simple**. If it's *already / just / so far / now*, use **present perfect**.
+**Perfect vs. past - the time-word test:** if the sentence names a finished time (*yesterday, last week, at 3pm, on Monday*), use **past simple**. If it's *already / just / so far / now*, use **present perfect**.
 - "I **deployed** it on Monday." (named time → past)
 - "I've **already** deployed it." (relevance now → perfect)
 
-**Commits & PR titles are imperative on purpose.** Git wants the title to complete the sentence *"If applied, this commit will ___"*. So write the bare command form: **Fix**, **Add**, **Remove**, **Refactor** — never "Fixed", "Adds", or "Fixing".
+**Commits & PR titles are imperative on purpose.** Git wants the title to complete the sentence *"If applied, this commit will ___"*. So write the bare command form: **Fix**, **Add**, **Remove**, **Refactor** - never "Fixed", "Adds", or "Fixing".
 - ✅ `Add rate limiting to login endpoint`
 - ✅ `Fix null pointer in cart total`
 - ❌ `Added rate limiting` / ❌ `Fixing login` / ❌ `Adds endpoint`
@@ -57,14 +57,14 @@ You reach for "I am" and then attach a plain verb — "I am fix" — but `am/is/
 ## In your daily writing
 
 - **Commit messages / PR titles:** imperative mood. "Fix", "Add", "Update", "Remove". One line, capital first letter, no full stop needed on the subject line.
-- **PR description (body):** present perfect or past for what you did — "I've moved the validation into the service layer" or "Moved validation into the service layer." Present simple for what the code now does — "The service now rejects empty payloads."
+- **PR description (body):** present perfect or past for what you did - "I've moved the validation into the service layer" or "Moved validation into the service layer." Present simple for what the code now does - "The service now rejects empty payloads."
 - **Standup (Slack):** three clean tenses. *Yesterday* → past simple ("I fixed the webhook retry"). *Today* → present continuous ("I'm writing tests for it"). *Blockers* → present simple ("I need access to the staging DB").
 - **Code comments / docs:** present simple, because they describe how the code behaves every time it runs. "Returns the cached value if present." Not "Returned" or "Will return".
 - **Bug reports:** past simple for what happened ("The page crashed when I clicked Save"), present simple for the steady behavior ("The error appears on every submit").
 
 ## Drills
 
-For each, fix the sentence, fill the blank, or choose A/B. Write professional dev English — capitals, full stops, real spelling.
+For each, fix the sentence, fill the blank, or choose A/B. Write professional dev English - capitals, full stops, real spelling.
 
 1. Fix: `i am fix the failing test right now`
 2. Fix: `yesterday i have deployed the new version`
@@ -77,23 +77,23 @@ For each, fix the sentence, fill the blank, or choose A/B. Write professional de
 9. Choose A or B: We (A) *are releasing* / (B) *release* every two weeks, like clockwork.
 10. Fix (PR title): `Fixed the race condition in the queue worker`
 11. Fix the run-on: `the build broke i looked at the logs the error was a missing env var i added it now its green`
-12. Fill the blank: The endpoint ____ (cache) the response for 60 seconds. (how the code works — pick the tense)
+12. Fill the blank: The endpoint ____ (cache) the response for 60 seconds. (how the code works - pick the tense)
 
 ---
 
 ## Answer key
 
-1. **I am fixing the failing test right now.** — After "I am", the verb takes **-ing** (`fixing`); capitalize "I" and the start, add a full stop.
-2. **Yesterday I deployed the new version.** — "Yesterday" is finished time, so use **past simple**, not present perfect.
-3. **Add** pagination... — Commit titles use the **imperative**: "Add", not "Added" or "Adding".
-4. **B — returns.** — How the code works = present simple, and third person singular adds **-s**.
-5. **The migration has finished, so you can run the seeder.** — Just done / relevant now → present perfect (`has finished`); "u" → "you"; add article-less connector "so" and a full stop.
-6. **B — am working.** — "Right now" + in progress = present continuous.
-7. **I already fixed the bug, but I still make so many mistakes in the tests.** — Past simple for the done fix; **many** + plural **mistakes** (countable); fix "i".
-8. **I've just pushed** the hotfix... — "Just" + still relevant = present perfect (`have/'ve` + past participle `pushed`).
-9. **B — release.** — A regular schedule/habit = present simple.
-10. **Fix the race condition in the queue worker.** — PR/commit titles use the **imperative** ("Fix"), not past tense.
-11. **The build broke. I looked at the logs, and the error was a missing env var. I added it, and now it's green.** — Split the run-on into sentences with full stops/commas; keep past simple for the finished steps; "its" → "it's" (it is).
-12. **caches** — Steady behavior of the code = present simple; third person singular adds **-s** (`caches`).
+1. **I am fixing the failing test right now.** - After "I am", the verb takes **-ing** (`fixing`); capitalize "I" and the start, add a full stop.
+2. **Yesterday I deployed the new version.** - "Yesterday" is finished time, so use **past simple**, not present perfect.
+3. **Add** pagination... - Commit titles use the **imperative**: "Add", not "Added" or "Adding".
+4. **B - returns.** - How the code works = present simple, and third person singular adds **-s**.
+5. **The migration has finished, so you can run the seeder.** - Just done / relevant now → present perfect (`has finished`); "u" → "you"; add article-less connector "so" and a full stop.
+6. **B - am working.** - "Right now" + in progress = present continuous.
+7. **I already fixed the bug, but I still make so many mistakes in the tests.** - Past simple for the done fix; **many** + plural **mistakes** (countable); fix "i".
+8. **I've just pushed** the hotfix... - "Just" + still relevant = present perfect (`have/'ve` + past participle `pushed`).
+9. **B - release.** - A regular schedule/habit = present simple.
+10. **Fix the race condition in the queue worker.** - PR/commit titles use the **imperative** ("Fix"), not past tense.
+11. **The build broke. I looked at the logs, and the error was a missing env var. I added it, and now it's green.** - Split the run-on into sentences with full stops/commas; keep past simple for the finished steps; "its" → "it's" (it is).
+12. **caches** - Steady behavior of the code = present simple; third person singular adds **-s** (`caches`).
 
-*Part of the Developer English course — see [00-index.md](./00-index.md).*
+*Part of the Developer English course - see [00-index.md](./00-index.md).*

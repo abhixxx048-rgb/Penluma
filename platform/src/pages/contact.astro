@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE } from '../consts';
 
 const contactUrl = new URL('/contact', Astro.site).toString();
-const description = `Get in touch with ${SITE.name} — questions, corrections, suggestions for a deep-dive, or just to say hello. I read every message.`;
+const description = `Get in touch with ${SITE.name} - questions, corrections, suggestions for a deep-dive, or just to say hello. I read every message.`;
 
 const jsonLd = [
   {
@@ -33,7 +33,7 @@ const inputClass =
       Get in touch
     </h1>
     <p class="mt-4 max-w-2xl text-lg text-slate-600 dark:text-slate-300">
-      Questions, corrections, a topic you'd love to see worked through, or just a hello —
+      Questions, corrections, a topic you'd love to see worked through, or just a hello -
       send it over. I read every message.
     </p>
 
@@ -53,7 +53,7 @@ const inputClass =
             <label for="c-message" class="text-sm font-medium">Message</label>
             <textarea id="c-message" name="message" rows="6" required class={inputClass}></textarea>
           </div>
-          {/* Honeypot — hidden from humans, catches bots. */}
+          {/* Honeypot - hidden from humans, catches bots. */}
           <div class="absolute left-[-9999px]" aria-hidden="true">
             <label>Company<input name="company" type="text" tabindex="-1" autocomplete="off" /></label>
           </div>
@@ -112,7 +112,7 @@ const inputClass =
       msg.classList.remove('text-slate-500');
       if (res.ok) {
         msg.classList.add('text-green-600');
-        msg.textContent = body.message || 'Thanks — your message has been sent.';
+        msg.textContent = body.message || 'Thanks - your message has been sent.';
         form.reset();
       } else {
         msg.classList.add('text-red-500');

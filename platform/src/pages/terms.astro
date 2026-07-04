@@ -3,14 +3,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE } from '../consts';
 
 const url = new URL('/terms', Astro.site).toString();
-const description = `The terms of use for ${SITE.name} — the writing, the free browser-based tools, and the usual fair-use and no-warranty basics.`;
+const description = `The terms of use for ${SITE.name} - the writing, the free browser-based tools, and the usual fair-use and no-warranty basics.`;
 const updated = 'July 2026';
 
 const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: `Terms of Use — ${SITE.name}`,
+    name: `Terms of Use - ${SITE.name}`,
     description,
     url,
   },
@@ -39,7 +39,7 @@ const jsonLd = [
       <h2>Using the site and tools</h2>
       <p>
         You may read, share, and use the tools for personal and commercial work. The tools run entirely in
-        your browser and are provided as a convenience. Please don't misuse the site — for example, by
+        your browser and are provided as a convenience. Please don't misuse the site - for example, by
         attempting to disrupt it, scrape it at abusive rates, or use it for anything unlawful.
       </p>
 
@@ -48,7 +48,7 @@ const jsonLd = [
         The articles, design, and original code of {SITE.name} are the property of their author and are
         protected by copyright. You're welcome to quote and link to the writing with attribution; please don't
         republish whole articles as your own. Any text <em>you</em> process with the tools remains entirely
-        yours — we never receive or claim any rights to it.
+        yours - we never receive or claim any rights to it.
       </p>
 
       <h2>No professional advice</h2>

@@ -45,7 +45,7 @@ let title = base.replace(/_/g, ' ').replace(/-/g, ' ').replace(/\s+\d{4} \d{2} \
 const h1 = raw.match(/^#\s+(.+?)\s*$/m);
 if (h1) title = h1[1].replace(/[*_`#]/g, '').trim();
 
-// Strip the first H1 from the body — it's already shown in the cover banner.
+// Strip the first H1 from the body - it's already shown in the cover banner.
 const body = raw.replace(/^#\s+.+?\r?\n/, '');
 const bodyHtml = md.render(body);
 
@@ -110,7 +110,7 @@ const cover = `
 
 const takeawayBlock = takeawayHtml
   ? `<div class="takeaways">
-       <div class="tk-head"><span class="tk-badge">In Short — Plain-Language Takeaways</span></div>
+       <div class="tk-head"><span class="tk-badge">In Short - Plain-Language Takeaways</span></div>
        ${takeawayHtml}
      </div>`
   : '';

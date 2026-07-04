@@ -1,6 +1,6 @@
 # Visual Brand & Design Consistency as a Conversion Lever
 
-> How faithful, consistent, fast brand rendering — across the SaaS marketing funnel and every tenant storefront — moves trial sign-ups and purchase-moment trust. Research findings, current-state map, gap analysis, and a phased plan.
+> How faithful, consistent, fast brand rendering - across the SaaS marketing funnel and every tenant storefront - moves trial sign-ups and purchase-moment trust. Research findings, current-state map, gap analysis, and a phased plan.
 >
 > **Date:** 2026-06-16
 
@@ -10,15 +10,15 @@
 
 - **The infrastructure is already correct; adoption is not.** Print-Flow-360 has a 175-token CSS custom-property system (`frontstore/app/assets/css/storefront.css`), a working file-based per-tenant brand engine (`{tenant storage}/branding/brand.css` → `resolveBrandCssUrl` → SSR injection), a 3-tier component resolver, and a `default` theme that proves the token-only architecture in 27 lines with zero overrides. The problem is inconsistent uptake of that architecture, not its absence.
 
-- **The single most important move is to make cross-tenant SSR brand rendering safe (P0).** Module-level theme refs, a singleton theme cache, a global component cache, and an SSR cache key on raw `host` instead of `x-tenant-host` can bleed **one tenant's brand into another tenant's page** during concurrent server renders. This is the highest-severity consistency failure possible — a paying store's customer could see a competitor's branding mid-purchase — and must be fixed before anything else.
+- **The single most important move is to make cross-tenant SSR brand rendering safe (P0).** Module-level theme refs, a singleton theme cache, a global component cache, and an SSR cache key on raw `host` instead of `x-tenant-host` can bleed **one tenant's brand into another tenant's page** during concurrent server renders. This is the highest-severity consistency failure possible - a paying store's customer could see a competitor's branding mid-purchase - and must be fixed before anything else.
 
 - **Visible trust defects on the tenant storefront are killing conversion at the decision moment.** Fabricated "4.9/5 from 12,000+ customers" stats appear identically on unrelated stores, a footer newsletter form silently clears the input with no API call (false-success), `/faq` and `/terms` links 404, and the platform name "Print Flow 360" leaks into tenant copy. These are cheap to fix and directly erode buyer trust.
 
-- **The keystone enabler is the missing primitive library.** Without `AppButton`, `AppInput`, `AppSelect`, `AppTextarea`, `AppModal`, and `AppLink`, 148+ block files hardcode brand utilities and 101 files carry scoped `<style>` color rules — so consistency is structurally unenforceable, and the Aurora theme can't be made brandable.
+- **The keystone enabler is the missing primitive library.** Without `AppButton`, `AppInput`, `AppSelect`, `AppTextarea`, `AppModal`, and `AppLink`, 148+ block files hardcode brand utilities and 101 files carry scoped `<style>` color rules - so consistency is structurally unenforceable, and the Aurora theme can't be made brandable.
 
-- **Aurora undercuts the platform's core promise.** Aurora is 4,039 lines / 1,259 `!important` rules / 557 `[class*=]` overrides, is not token-driven, and is excluded from `BRANDABLE_THEMES`. Every tenant on Aurora gets *no* one-color rebrand — the exact feature the platform sells.
+- **Aurora undercuts the platform's core promise.** Aurora is 4,039 lines / 1,259 `!important` rules / 557 `[class*=]` overrides, is not token-driven, and is excluded from `BRANDABLE_THEMES`. Every tenant on Aurora gets *no* one-color rebrand - the exact feature the platform sells.
 
-- **Two surfaces, both matter, but they're different.** The SaaS marketing/landing funnel (Anthropic-owned) must look premium to convert *trials*; the tenant storefront must render each store owner's identity faithfully — and never another tenant's — to convert *end-buyers*. Most findings concern the tenant storefront.
+- **Two surfaces, both matter, but they're different.** The SaaS marketing/landing funnel (Anthropic-owned) must look premium to convert *trials*; the tenant storefront must render each store owner's identity faithfully - and never another tenant's - to convert *end-buyers*. Most findings concern the tenant storefront.
 
 ---
 
@@ -33,19 +33,19 @@ One brand value should cascade site-wide; components consume tokens, never own h
 Every block must compose primitives (Button, Input, Select, Textarea, Modal, Link, plus the existing Badge/Card/Checkbox/Radio/Tab), never raw Tailwind brand utilities. Today **148+ block files hardcode brand utilities** (`bg-gray-900`, `text-white`, `hover:text-primary-600`) and **101 files carry scoped `<style>` color/radius/shadow rules** precisely because the missing primitives don't exist.
 
 ### 2.3 Never ship fabricated or hardcoded social proof
-Trust signals must reflect real data or be removed — fake proof violates trust and is a credibility/legal risk. The **Prism HeroBlock hardcodes "4.9/5 from 12,000+ customers" on every store** regardless of real reviews (`PRISM_THEME_REVIEW_2026-06-09`, High finding), appearing identically across unrelated tenants.
+Trust signals must reflect real data or be removed - fake proof violates trust and is a credibility/legal risk. The **Prism HeroBlock hardcodes "4.9/5 from 12,000+ customers" on every store** regardless of real reviews (`PRISM_THEME_REVIEW_2026-06-09`, High finding), appearing identically across unrelated tenants.
 
 ### 2.4 Every data-driven view needs loading, empty, and error states
 A blank or silently-failing UI reads as "broken" and kills conversion at the exact decision moment. `CLAUDE.md §0` mandates all three. Today the **Prism footer newsletter form silently clears the input with no API call/toast** (the customer believes they subscribed), and empty-state rendering is inconsistent (skip vs "No items yet" vs collapse).
 
 ### 2.5 Multi-tenant SSR must be request-scoped
-Shared module-level state can render one tenant's brand into another tenant's page — the most damaging possible consistency failure. `THEME_ISOLATION_AUDIT_2026-06-09` identifies **module-level refs in `useThemeSystem.ts`, a singleton `loadedThemes` cache, a global `componentCache` Map, and an SSR cache key on raw `host` instead of normalized `x-tenant-host`** as bleed vectors.
+Shared module-level state can render one tenant's brand into another tenant's page - the most damaging possible consistency failure. `THEME_ISOLATION_AUDIT_2026-06-09` identifies **module-level refs in `useThemeSystem.ts`, a singleton `loadedThemes` cache, a global `componentCache` Map, and an SSR cache key on raw `host` instead of normalized `x-tenant-host`** as bleed vectors.
 
 ### 2.6 Contrast/accessibility should be CI-enforced, not eyeballed
 Recurring **ink-on-ink invisible-text bugs** (active tab, cart stepper, Prism gallery icons) have no structural defense. `THEME_ARCHITECTURE_MIGRATION` bundles an a11y + contrast gate (Phase 0, item B2) as a MUST.
 
 ### 2.7 Visual-regression baselines make consistency objectively testable
-No Playwright baseline exists for **3 themes × 3 breakpoints**, so the multi-phase primitive migration has no regression net — drift stays invisible until a customer reports it.
+No Playwright baseline exists for **3 themes × 3 breakpoints**, so the multi-phase primitive migration has no regression net - drift stays invisible until a customer reports it.
 
 ### 2.8 SEO/social meta and customer-facing copy are part of brand consistency
 Search snippets and social cards are the first impression before the visit. `UIUX_AUDIT_2026-06-10` found **inconsistent `<title>`/`og:*` per page, "Print Flow 360" leaking into tenant copy, and placeholder strings** like "Contact form for storefront contact page."
@@ -54,22 +54,22 @@ Search snippets and social cards are the first impression before the visit. `UIU
 
 ## 3. Where Print-Flow-360 stands today
 
-### 3.1 Token system — foundation is already correct ✅
+### 3.1 Token system - foundation is already correct ✅
 **175 CSS custom properties** cover colors, the primary ramp (`color-mix` 50–900), control geometry, form controls, card/modal/button radius, shadows, focus ring, typography scale, spacing, and aspect ratios. Token defaults match today's hardcoded values, so migration is pixel-stable. The `default` theme is the canonical token-only baseline.
 - `frontstore/app/assets/css/storefront.css`
 - `frontstore/theme-styles/base/storefront.scss`
 - `frontstore/theme-styles/default/theme.scss`
 
-### 3.2 Per-tenant file-based brand engine — wired for `default` + `prism` ✅
-A store rebrands by placing `{tenant storage}/branding/brand.css` with `:root --theme-color-*` overrides. `StorefrontInitResource::resolveBrandCssUrl()` returns a versioned public URL; `injectThemeHtml.server.ts` injects brand CSS *after* theme CSS at SSR; `brandTokens.ts` builds `--brand-*` vars with luminance-aware `readableOn()`. `BRANDABLE_THEMES = ['default','prism']` — **Aurora is excluded because it hardcodes hex.**
+### 3.2 Per-tenant file-based brand engine - wired for `default` + `prism` ✅
+A store rebrands by placing `{tenant storage}/branding/brand.css` with `:root --theme-color-*` overrides. `StorefrontInitResource::resolveBrandCssUrl()` returns a versioned public URL; `injectThemeHtml.server.ts` injects brand CSS *after* theme CSS at SSR; `brandTokens.ts` builds `--brand-*` vars with luminance-aware `readableOn()`. `BRANDABLE_THEMES = ['default','prism']` - **Aurora is excluded because it hardcodes hex.**
 - `app/Http/Resources/Api/Storefront/StorefrontInitResource.php`
 - `frontstore/server/plugins/injectThemeHtml.server.ts`
 - `frontstore/app/utils/brandTokens.ts`
 - `frontstore/Readme/STORE_THEME_BRANDING.md`
 
-### 3.3 Design-system primitives — partial library ⚠️
+### 3.3 Design-system primitives - partial library ⚠️
 **Exists (token-driven):** `AppBadge`, `AppCard`, `AppCheckbox`, `AppRadio`, `AppIconButton`, `AppTab`, `AppQtyStepper`, `AppSkeleton`.
-**Missing:** `AppButton`, `AppInput`, `AppSelect`, `AppTextarea`, `AppModal`, `AppLink` — their absence forces 148+ block files to hardcode brand utilities and 101 files to keep scoped `<style>` color rules.
+**Missing:** `AppButton`, `AppInput`, `AppSelect`, `AppTextarea`, `AppModal`, `AppLink` - their absence forces 148+ block files to hardcode brand utilities and 101 files to keep scoped `<style>` color rules.
 - `frontstore/app/components/storefront/ui/AppBadge.vue`
 - `frontstore/app/components/storefront/ui/AppCard.vue`
 - `frontstore/app/components/storefront/ui/AppTab.vue`
@@ -77,9 +77,9 @@ A store rebrands by placing `{tenant storage}/branding/brand.css` with `:root --
 
 ### 3.4 Theme presets & override-soup ⚠️
 Three presets, all compiled by `scripts/build-theme-css.mjs` to `public/themes/{id}/theme.css`:
-- **default** — token-only, brandable.
-- **prism** — 1,046 lines, brand-engine-driven via `color-mix`, brandable.
-- **aurora** — 4,039 lines, 1,259 `!important`, 557 `[class*=]` substring overrides, **not token-driven, not brandable.**
+- **default** - token-only, brandable.
+- **prism** - 1,046 lines, brand-engine-driven via `color-mix`, brandable.
+- **aurora** - 4,039 lines, 1,259 `!important`, 557 `[class*=]` substring overrides, **not token-driven, not brandable.**
 
 Files:
 - `frontstore/theme-styles/aurora/theme.scss`
@@ -136,7 +136,7 @@ Both matter. Keep the marketing surface verified to **not** share the unsafe mod
 
 ## 5. Gap analysis (ranked)
 
-1. **🔴 Cross-tenant SSR isolation is architecturally unsafe.** Module-level refs in `useThemeSystem.ts`, the singleton `loadedThemes` cache, and the global `componentCache` Map are shared across concurrent requests — parallel SSR of two tenants can bleed one brand into another's page. *Highest severity.*
+1. **🔴 Cross-tenant SSR isolation is architecturally unsafe.** Module-level refs in `useThemeSystem.ts`, the singleton `loadedThemes` cache, and the global `componentCache` Map are shared across concurrent requests - parallel SSR of two tenants can bleed one brand into another's page. *Highest severity.*
 2. **🔴 SSR theme cache key uses raw `host`, not normalized `x-tenant-host`** in `injectThemeHtml.server.ts`, diverging from the Nitro ISR key and risking serving one tenant's cached `<head>` to another.
 3. **🔴 Fabricated/dead trust signals on the storefront:** hardcoded 4.9/5 stats on every store, silent-false-success newsletter form, dead `/faq` `/terms` links, platform-name leakage, trust-badge currency mismatch.
 4. **🔴 Prism `theme.css` cascade bug** clobbers tenant-chosen text/border colors (brand promise broken even on a "brandable" theme).
@@ -145,7 +145,7 @@ Both matter. Keep the marketing surface verified to **not** share the unsafe mod
 7. **🟠 Cross-theme CSS bleed:** Prism's `:root`/`[data-personality]` are unscoped (no `body.theme-prism` wrapper) and client brand vars are never cleared on theme switch.
 8. **🟠 HeroBlock drops 12+ admin banner settings** in Prism (silent-lie UX: owners toggle no-ops).
 9. **🟠 No visual-regression or a11y CI harness** (no Playwright baseline for 3 themes × 3 breakpoints); no automated contrast gate against recurring ink-on-ink bugs.
-10. **🟡 Custom CSS (`custom_code.css`) is not preloaded** — a second render-blocking fetch hurting LCP/CWV (a measurable conversion lever).
+10. **🟡 Custom CSS (`custom_code.css`) is not preloaded** - a second render-blocking fetch hurting LCP/CWV (a measurable conversion lever).
 11. **🟡 Inconsistent loading/empty/error states** across blocks and mixed primitive adoption in form blocks (raw native `<input type=checkbox>` vs Nuxt UI `:ui` overrides).
 12. **🟡 SEO/social meta inconsistency** (`<title>`/`og:*`, placeholder strings) affecting search/social first impressions.
 13. **🟡 No primitive gallery/design-system route** (`/preview/primitives`) to see every primitive × state × theme at a glance.
@@ -161,7 +161,7 @@ Both matter. Keep the marketing surface verified to **not** share the unsafe mod
 | **P0** | M | **Request-scope all shared SSR theme/brand state.** Move `useThemeSystem.ts` module refs to `useState()`/nuxtApp context; make `componentCache` Map and `loadedThemes` cache request-scoped; normalize SSR cache key to `x-tenant-host`; align TTL with Nitro ISR. Add a concurrent two-tenant SSR isolation test. | `useThemeSystem.ts`, `useComponentResolver.ts`, `registry.ts`, `injectThemeHtml.server.ts` |
 | **P0** | S | **Remove fabricated/dead trust signals + fix Prism brand-clobbering cascade.** Gate or hide the "4.9/5 from 12,000+" HeroBlock stats (bind to real review aggregate or remove); wire the newsletter form to the real subscribe API with loading+toast (or hide); fix the cascade so tenant `--theme-color-text`/`-border` use `var(--brand-*, fallback)` instead of equal-specificity re-declares. | `frontstore/app/themes/prism/components/blocks/`, `frontstore/theme-styles/prism/theme.scss` |
 | **P0** | S | **Fix dead trust/legal links + platform-name copy leakage.** Repoint or hide `/faq` `/terms` (and Privacy/Returns/Shipping) to valid CMS pages; replace "Print Flow 360" + placeholder copy with the tenant store name; fix trust-badge currency mismatch. | Per `UIUX_AUDIT_2026-06-10.md`; storefront footer/nav components |
-| **P0** | L | **Build the missing primitive library** (`AppButton`, `AppLink`, `AppInput`, `AppSelect`, `AppTextarea`, `AppModal`) — token-driven, no hardcoded utilities, following `AppCard`/`AppBadge`/`AppTab`. Keystone that unblocks de-hardcoding 148+ blocks and makes Aurora brandable. Sequence: button→link→input/select→modal. | `frontstore/app/components/storefront/ui/`; per `THEME_ARCHITECTURE_MIGRATION` Phase 1 |
+| **P0** | L | **Build the missing primitive library** (`AppButton`, `AppLink`, `AppInput`, `AppSelect`, `AppTextarea`, `AppModal`) - token-driven, no hardcoded utilities, following `AppCard`/`AppBadge`/`AppTab`. Keystone that unblocks de-hardcoding 148+ blocks and makes Aurora brandable. Sequence: button→link→input/select→modal. | `frontstore/app/components/storefront/ui/`; per `THEME_ARCHITECTURE_MIGRATION` Phase 1 |
 | **P1** | M | **Visual-regression + contrast/a11y CI gate.** Playwright baseline across 3 themes × 3 breakpoints + automated WCAG-AA contrast assertions so ink-on-ink and brand drift can't merge. | Per `THEME_ARCHITECTURE_MIGRATION` Phase 0 / B2 |
 | **P1** | L | **Migrate Aurora to token-driven styling + add to `BRANDABLE_THEMES`.** Refactor to read `--theme-color-*` (drop 1,259 `!important` / 557 `[class*=]`); de-fork the ~8 cosmetic forks via tokens, keep structural variants. | `frontstore/theme-styles/aurora/theme.scss`, `frontstore/app/themes/aurora/components/`, `BRANDABLE_THEMES` |
 | **P1** | S | **Scope Prism global CSS + clear brand vars on theme switch.** Wrap `:root`/`[data-personality]` under `body.theme-prism`; have `useBrandTokens.ts` remove `--brand-*` and `data-personality` when switching to a non-brand theme. | `frontstore/theme-styles/prism/theme.scss`, `useBrandTokens.ts` |
@@ -176,7 +176,7 @@ Both matter. Keep the marketing surface verified to **not** share the unsafe mod
 
 ## 7. Phased roadmap
 
-### Phase A — Quick wins (days; stop the bleeding on trust + safety)
+### Phase A - Quick wins (days; stop the bleeding on trust + safety)
 1. **P0** Remove/gate fabricated 4.9/5 stats; wire or hide the newsletter form. *(S)*
 2. **P0** Fix dead `/faq` `/terms` links + platform-name/placeholder copy leakage + currency mismatch. *(S)*
 3. **P0** Fix the Prism `theme.css` brand-clobbering cascade. *(S)*
@@ -184,15 +184,15 @@ Both matter. Keep the marketing surface verified to **not** share the unsafe mod
 5. **P2** Standardize SEO/social meta to the tenant store name. *(S)*
 6. **P2** Populate the brand.css template + ops SOP. *(S)*
 
-### Phase B — Foundational (weeks; make consistency structurally enforceable)
-1. **P0** Request-scope all shared SSR theme/brand state + `x-tenant-host` cache key + two-tenant isolation test. *(M)* — **do this first; it gates everything else for safety.**
+### Phase B - Foundational (weeks; make consistency structurally enforceable)
+1. **P0** Request-scope all shared SSR theme/brand state + `x-tenant-host` cache key + two-tenant isolation test. *(M)* - **do this first; it gates everything else for safety.**
 2. **P0** Build the missing primitive library (button→link→input/select→modal). *(L)*
-3. **P1** Stand up the visual-regression + contrast/a11y CI gate (3 themes × 3 breakpoints). *(M)* — land alongside the primitives so each one merges with a regression net.
+3. **P1** Stand up the visual-regression + contrast/a11y CI gate (3 themes × 3 breakpoints). *(M)* - land alongside the primitives so each one merges with a regression net.
 4. **P1** Standardize loading/empty/error states + migrate form blocks onto the new primitives. *(M)*
 5. **P1** Apply or hide HeroBlock admin banner settings in Prism. *(M)*
 
-### Phase C — Advanced (weeks+; fulfill the brand promise everywhere + speed)
-1. **P1** Migrate Aurora to token-driven styling, de-fork cosmetic forks, add to `BRANDABLE_THEMES`. *(L)* — biggest single lever for the "rebrand your store with one color" promise.
+### Phase C - Advanced (weeks+; fulfill the brand promise everywhere + speed)
+1. **P1** Migrate Aurora to token-driven styling, de-fork cosmetic forks, add to `BRANDABLE_THEMES`. *(L)* - biggest single lever for the "rebrand your store with one color" promise.
 2. **P2** Preload custom CSS (LCP/CWV) + ship the `/preview/primitives` gallery. *(M)*
 3. **P2** Audit + harden the SaaS marketing/landing surface as its own consistent, premium funnel. *(M)*
 4. Schedule and assign an owner for the remaining `THEME_ARCHITECTURE_MIGRATION` phases (composites, layout/forks de-fork, cleanup, new-theme DX); retire the superseded `DESIGN_SYSTEM_STANDARDIZATION_PLAN`.
@@ -201,12 +201,12 @@ Both matter. Keep the marketing surface verified to **not** share the unsafe mod
 
 ## 8. Source documents
 
-- `frontstore/Readme/THEME_ARCHITECTURE_MIGRATION_2026-06-11.md` — authoritative 6-phase migration plan (B1–B12)
-- `frontstore/Readme/THEME_ISOLATION_AUDIT_2026-06-09.md` — cross-tenant SSR bleed vectors
-- `frontstore/Readme/PRISM_THEME_REVIEW_2026-06-09.md` — Prism trust/conversion defects
-- `frontstore/Readme/UIUX_AUDIT_2026-06-10.md` — copy/meta/link audit
-- `frontstore/Readme/THEME_CONSISTENCY_SITEMAP_2026-06-10.md` — site-wide consistency map
-- `frontstore/Readme/STORE_THEME_BRANDING.md` — per-tenant brand engine reference
-- `frontstore/Readme/PRISM_DESIGN_LANGUAGE.md` — Prism design language
-- `frontstore/Readme/DESIGN_SYSTEM_STANDARDIZATION_PLAN.md` — superseded, owner TBD
-- `CLAUDE.md §0` — mandatory loading/empty/error + no-fake-trust UX rules
+- `frontstore/Readme/THEME_ARCHITECTURE_MIGRATION_2026-06-11.md` - authoritative 6-phase migration plan (B1–B12)
+- `frontstore/Readme/THEME_ISOLATION_AUDIT_2026-06-09.md` - cross-tenant SSR bleed vectors
+- `frontstore/Readme/PRISM_THEME_REVIEW_2026-06-09.md` - Prism trust/conversion defects
+- `frontstore/Readme/UIUX_AUDIT_2026-06-10.md` - copy/meta/link audit
+- `frontstore/Readme/THEME_CONSISTENCY_SITEMAP_2026-06-10.md` - site-wide consistency map
+- `frontstore/Readme/STORE_THEME_BRANDING.md` - per-tenant brand engine reference
+- `frontstore/Readme/PRISM_DESIGN_LANGUAGE.md` - Prism design language
+- `frontstore/Readme/DESIGN_SYSTEM_STANDARDIZATION_PLAN.md` - superseded, owner TBD
+- `CLAUDE.md §0` - mandatory loading/empty/error + no-fake-trust UX rules

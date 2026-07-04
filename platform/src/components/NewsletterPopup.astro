@@ -1,12 +1,12 @@
 ---
 // Engagement-triggered newsletter popup. Rendered by BaseLayout only on article
-// pages (type="article"). It never interrupts on arrival — it waits for a real
+// pages (type="article"). It never interrupts on arrival - it waits for a real
 // signal of an engaged reader, then asks once, politely, and remembers the answer.
 //
 // TRIGGER (fires on whichever comes first):
-//   1. Scroll depth ≥ 65% of the page  — the reader is well into the piece.
-//   2. Dwell time ≥ 60s                 — they're actually reading, not bouncing.
-//   3. Exit intent (desktop)            — cursor leaves toward the tab bar.
+//   1. Scroll depth ≥ 65% of the page  - the reader is well into the piece.
+//   2. Dwell time ≥ 60s                 - they're actually reading, not bouncing.
+//   3. Exit intent (desktop)            - cursor leaves toward the tab bar.
 //
 // SUPPRESSION (so it's never annoying):
 //   • already subscribed        → never show          (localStorage nl_subscribed)
@@ -43,7 +43,7 @@
     <p class="font-mono text-xs uppercase tracking-widest text-slate-500">The light of the pen</p>
     <h2 id="nl-popup-title" class="mt-2 font-serif text-2xl font-bold">Enjoying this one?</h2>
     <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
-      Get the next deep-dive by email — one message when a substantial new piece lands.
+      Get the next deep-dive by email - one message when a substantial new piece lands.
       No spam, unsubscribe anytime.
     </p>
 
@@ -171,7 +171,7 @@
         msg.classList.remove('text-slate-500');
         if (res.ok) {
           msg.classList.add('text-green-600');
-          msg.textContent = data.message || 'Thanks — you’re subscribed!';
+          msg.textContent = data.message || 'Thanks - you’re subscribed!';
           try { localStorage.setItem(SUB, '1'); } catch (e) {}
           form.reset();
           setTimeout(function () { close(false); }, 1400);

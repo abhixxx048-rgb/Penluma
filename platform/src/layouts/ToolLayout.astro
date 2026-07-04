@@ -9,7 +9,7 @@ interface FAQ {
 }
 
 interface Props {
-  /** Registry slug — drives breadcrumb + related tools. */
+  /** Registry slug - drives breadcrumb + related tools. */
   slug: string;
   /** <title>/OG title and on-page meta. */
   title: string;
@@ -129,7 +129,7 @@ const jsonLd = [webApp, breadcrumb, ...(faqSchema ? [faqSchema] : [])];
           <p class="eyebrow text-mark">Margin note</p>
           <p class="mt-3 text-base leading-relaxed">
             Every tool here runs 100% in your browser. Open DevTools → Network while
-            you use one and you'll see zero requests — your text never leaves your
+            you use one and you'll see zero requests - your text never leaves your
             device. Prefer the deep dives?
             <a href="/blog" class="contextual">Read the writing on {SITE.name}</a>.
           </p>

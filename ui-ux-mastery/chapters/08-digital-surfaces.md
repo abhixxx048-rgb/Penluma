@@ -48,7 +48,7 @@ Within a few seconds, a homepage must answer four questions: *Who are you? What 
 Why it matters, with numbers from NN/G's eye-tracking research:
 
 - About **74% of viewing time** happens in the top two screenfuls of a page.
-- The average gap in how users *treat* information above versus below the fold is **84%** — meaning content up top gets vastly more attention.
+- The average gap in how users *treat* information above versus below the fold is **84%** - meaning content up top gets vastly more attention.
 
 But here is the modern nuance. People are now used to scrolling, so the fold is not a hard wall. It is the place where you must *earn* the scroll. Put a strong value proposition and one primary button above the fold, then use visual cues (a peek of the next section, a downward arrow) to invite people to keep going.
 
@@ -88,15 +88,15 @@ A dashboard is a screen that shows a person the state of their work or business 
 
 **The single most common dashboard mistake is showing everything at once.** The old belief that a serious tool must cram every chart above the fold is over. A wall of 20 widgets does not look powerful. It looks like noise.
 
-The fix is **progressive disclosure** — a fancy name for a simple idea: show the one thing that answers *"is everything okay?"* first, then let people drill into detail only when they want it. It is a menu that shows the dishes first and the ingredient list on request.
+The fix is **progressive disclosure** - a fancy name for a simple idea: show the one thing that answers *"is everything okay?"* first, then let people drill into detail only when they want it. It is a menu that shows the dishes first and the ingredient list on request.
 
 - Start with **5 to 7 summary cards**, then expand on demand. This respects Miller's Law (people hold about 4 to 7 chunks at once).
-- Build in layers: **(1) overview** — high-level numbers; **(2) context** — hovering reveals trends; **(3) detail** — clicking opens the full report.
-- This is not just tidier. It changes behavior. Research on SaaS dashboards found that users shown a *simple, clear* day-one screen **activate at higher rates** (activation means reaching the first moment of real value) than users shown a complex one — even when the complex version technically holds more information. A lead-with-the-summary layout is understood correctly on the first try far more often than an everything-at-once layout.
+- Build in layers: **(1) overview** - high-level numbers; **(2) context** - hovering reveals trends; **(3) detail** - clicking opens the full report.
+- This is not just tidier. It changes behavior. Research on SaaS dashboards found that users shown a *simple, clear* day-one screen **activate at higher rates** (activation means reaching the first moment of real value) than users shown a complex one - even when the complex version technically holds more information. A lead-with-the-summary layout is understood correctly on the first try far more often than an everything-at-once layout.
 
 ### Empty states are onboarding
 
-An "empty state" is what a screen shows when there is no data yet — a brand-new account with nothing in it. Most teams leave it blank. That is a wasted moment, and a dangerous one.
+An "empty state" is what a screen shows when there is no data yet - a brand-new account with nothing in it. Most teams leave it blank. That is a wasted moment, and a dangerous one.
 
 The blank first-day screen, where new users see nothing, **hits hardest the very users most likely to churn** (churn means to quit and leave). They get no signal that the product solves their problem, so they leave. Treat the empty state as an onboarding moment, not a dead end:
 
@@ -112,14 +112,14 @@ Practical rules that make numbers scannable:
 
 - **Left-align text; right-align numbers.** Right-aligning numbers lines up the ones, tens, and hundreds down a column, so people can compare sizes at a glance.
 - **Align decimal points** and show a consistent number of decimal places.
-- **Use tabular (monospace) figures** — digit shapes with equal width — so numbers line up cleanly.
+- **Use tabular (monospace) figures** - digit shapes with equal width - so numbers line up cleanly.
 - **Align column headers to their content.** A numeric header should be right-aligned to match its numbers.
 - Add readability aids: **zebra striping** (shading every other row), bold headers, sticky headers that stay visible while scrolling, and light color or icons for key cells.
 - Pair a table with a chart. Do not force people to graph the numbers in their head.
 
 ### Onboarding
 
-Onboarding is the first-run experience that teaches a new user the product. Do not force an eight-step tour that people click through blindly. Use contextual, just-in-time guidance — empty states, tooltips, and checklists — tied to the user's first "aha" action. First-run simplicity beats feature-completeness.
+Onboarding is the first-run experience that teaches a new user the product. Do not force an eight-step tour that people click through blindly. Use contextual, just-in-time guidance - empty states, tooltips, and checklists - tied to the user's first "aha" action. First-run simplicity beats feature-completeness.
 
 ### Dashboard mistakes and fixes
 
@@ -164,7 +164,7 @@ Steven Hoober's field study of people using phones in the wild found that **abou
 +---------------------+
 ```
 
-The lesson: put **primary actions in the bottom third** — the bottom navigation bar, the main CTA, the floating action button. Put rare or destructive actions in the hard-to-reach corners, where an accidental tap is unlikely. On large phones, the top-left is the worst spot of all.
+The lesson: put **primary actions in the bottom third** - the bottom navigation bar, the main CTA, the floating action button. Put rare or destructive actions in the hard-to-reach corners, where an accidental tap is unlikely. On large phones, the top-left is the worst spot of all.
 
 ### iOS versus Android conventions
 
@@ -175,13 +175,13 @@ iOS and Android are two different countries with two different sets of road sign
 | Primary nav location | Bottom tab bar | Bottom navigation bar (Material 3) |
 | Tab item behavior | Returns to the **last screen viewed**, state kept | Resets to the destination's **top-level screen** |
 | Back gesture | Swipe left-to-right = **back** to previous screen | Swipe left-to-right = **switch tabs**; system back is an edge swipe |
-| Section transition | — | In-place cross-fade preferred; a lateral slide falsely implies swiping between peers |
+| Section transition | - | In-place cross-fade preferred; a lateral slide falsely implies swiping between peers |
 | Min touch target | 44 by 44 pt | 48 by 48 dp |
 
 ### Bottom navigation rules
 
 - Hold **3 to 5 items** (Material's guidance). Fewer than 3, use tabs or nothing. More than 5, use a drawer or a "More" tab.
-- Use it for **top-level, mutually-exclusive destinations** (Home, Search, Profile) — not for actions like "Share."
+- Use it for **top-level, mutually-exclusive destinations** (Home, Search, Profile) - not for actions like "Share."
 
 ### Gestures
 
@@ -210,9 +210,9 @@ A landing page is a single page built to make one thing happen, usually where an
 
 ### One goal per page
 
-A high-converting landing page has exactly **one conversion goal.** Every element — headline, copy, image, button, form — points at that one action. If other options exist, make them visually secondary.
+A high-converting landing page has exactly **one conversion goal.** Every element - headline, copy, image, button, form - points at that one action. If other options exist, make them visually secondary.
 
-A powerful trick: **remove the site navigation.** With no menu, there is no escape hatch. Designers call this the "attention ratio" — the number of things you can click versus the number of things you want people to do. A focused landing page aims for about 1:1.
+A powerful trick: **remove the site navigation.** With no menu, there is no escape hatch. Designers call this the "attention ratio" - the number of things you can click versus the number of things you want people to do. A focused landing page aims for about 1:1.
 
 ### Hero and headline clarity
 
@@ -223,14 +223,14 @@ Proven headline formulas:
 - **"How to [achieve goal] without [pain]."** Example: "How to file taxes without spreadsheets."
 - **Lead with the ultimate benefit** as the headline, and put the plain "what it is" underneath as a qualifier.
 
-On numbers: KlientBoost cites headline optimization lifting conversions by as much as **67.8%**. Treat figures like that as directional — a sign of how much headlines matter — not a promise.
+On numbers: KlientBoost cites headline optimization lifting conversions by as much as **67.8%**. Treat figures like that as directional - a sign of how much headlines matter - not a promise.
 
 ### CTA design
 
 A CTA (call to action) is the button you want clicked. Rules:
 
 - **Use one consistent CTA, repeated at the right moments:** in the hero, again mid-page after you have built desire, and again near the end.
-- **Wording changes results.** In a well-known test, switching a button from **"Sign up for free" to "Trial for free" lifted trial-starts by 104%** — because "trial" feels low-commitment and exploratory, while "sign up" feels like a bigger step.
+- **Wording changes results.** In a well-known test, switching a button from **"Sign up for free" to "Trial for free" lifted trial-starts by 104%** - because "trial" feels low-commitment and exploratory, while "sign up" feels like a bigger step.
 - **Make it visually dominant** with strong color contrast and generous size (Fitts's Law), using a benefit-driven verb: "Get my free plan."
 
 ### Conversion benchmarks
@@ -266,7 +266,7 @@ Core anatomy of a strong PDP:
 - Price plus any savings
 - Variant selectors (size, color)
 - Stock and availability
-- **The "Buy Section"** — add-to-cart, shipping, returns
+- **The "Buy Section"** - add-to-cart, shipping, returns
 - Description and specifications
 - Reviews
 - Related products
@@ -275,13 +275,13 @@ Core anatomy of a strong PDP:
 
 ### Images: the single biggest lever
 
-Product images matter more than anything else on the page. Research cited by Baymard found that about **67% of shoppers name image quality the top factor** in their buying decision — ahead of description, reviews, and price.
+Product images matter more than anything else on the page. Research cited by Baymard found that about **67% of shoppers name image quality the top factor** in their buying decision - ahead of description, reviews, and price.
 
 So do not ship a single small photo. Offer multiple *types* of image:
 
 - **Technical / compatibility** shots (what it is, how it fits)
-- **Lifestyle** shots (the product in real use — show, don't tell)
-- **User photos (UGC)** — real customers, real contexts
+- **Lifestyle** shots (the product in real use - show, don't tell)
+- **User photos (UGC)** - real customers, real contexts
 - **Scale references** so people judge size
 - **Zoom** to inspect detail
 
@@ -299,20 +299,20 @@ Show the star rating, the number of reviews, and **real customer photos.** Shopp
 
 ### Layout: tabs versus accordions
 
-Many sites hide the description, specs, and reviews behind horizontal tabs. Baymard found that **horizontal tabs cause about 27% of users to miss important content** — they simply do not notice the other tabs exist. Use **vertical collapsed sections (accordions)** instead. An accordion stacks labeled sections you can expand in place, and it tests far better because nothing is hidden off to the side.
+Many sites hide the description, specs, and reviews behind horizontal tabs. Baymard found that **horizontal tabs cause about 27% of users to miss important content** - they simply do not notice the other tabs exist. Use **vertical collapsed sections (accordions)** instead. An accordion stacks labeled sections you can expand in place, and it tests far better because nothing is hidden off to the side.
 
 ### Checkout and cart abandonment
 
 This is the most important e-commerce research to know. "Cart abandonment" means a shopper adds items but leaves without buying.
 
-- **The average cart abandonment rate is about 70.2%** — the mean across 50 studies from 2006 to 2025, with a range of 55% to 84.3%. In other words, roughly 7 in 10 filled carts are left behind.
+- **The average cart abandonment rate is about 70.2%** - the mean across 50 studies from 2006 to 2025, with a range of 55% to 84.3%. In other words, roughly 7 in 10 filled carts are left behind.
 - **Mobile is worse (about 80%) than desktop (about 66%).**
 
 Why do people abandon? Setting aside "just browsing" (itself about 43% of cases), the top reasons are:
 
 | Reason | Share |
 |---|---|
-| Extra costs too high (shipping, tax, fees) — #1 for six straight years | **39%** |
+| Extra costs too high (shipping, tax, fees) - #1 for six straight years | **39%** |
 | Delivery too slow | 21% |
 | Didn't trust the site with card info | 19% |
 | Forced to create an account | **19%** |
@@ -331,7 +331,7 @@ Notice how each fix targets a specific number above:
 
 - **Offer guest checkout.** This directly kills the 19% who abandon because they were forced to create an account.
 - **Show all costs early**, including shipping, before the final step. This attacks the 39% surprised by extra costs and the 14% who couldn't see the total.
-- **Add trust signals** near payment — security badges, recognizable payment logos — for the 19% worried about card security.
+- **Add trust signals** near payment - security badges, recognizable payment logos - for the 19% worried about card security.
 - **Use a progress bar** on multi-step checkout. People quit less when they can see the finish line.
 - **Offer multiple payment methods** (cards, PayPal, Apple Pay, Google Pay). This especially lifts mobile completion.
 - **Reduce fields** with autofill, address lookup, and combined name fields.
@@ -364,7 +364,7 @@ A form is any place where a user types information: a signup, a checkout, a surv
 A "label" is the text that says what a field is for ("Email address"). Where you put it matters more than you would guess.
 
 - **Top-aligned labels are best in most cases.** Placing the label directly above the field cuts completion time by as much as **50%** compared with left-aligned labels, because the eye reads the label and the field in one smooth downward glance.
-- **Never use inline labels** — that is, using the faint placeholder text inside a field *as* the label. The moment someone starts typing, the label vanishes, and they forget what the field was for. This is especially harmful on mobile. Baymard is blunt about it: never use inline labels.
+- **Never use inline labels** - that is, using the faint placeholder text inside a field *as* the label. The moment someone starts typing, the label vanishes, and they forget what the field was for. This is especially harmful on mobile. Baymard is blunt about it: never use inline labels.
 
 ```
 Top-aligned (good)          Placeholder-as-label (bad)
@@ -378,7 +378,7 @@ Top-aligned (good)          Placeholder-as-label (bad)
 
 "Inline validation" means checking a field as the user finishes it and showing feedback right there, instead of waiting for the final submit. Baymard found that about **31% of e-commerce sites fail to provide it.**
 
-- Validate each field **on blur** — the moment the user clicks or tabs away from it. That is when an error is cheapest to fix, because the person is still thinking about that field.
+- Validate each field **on blur** - the moment the user clicks or tabs away from it. That is when an error is cheapest to fix, because the person is still thinking about that field.
 - **Confirm success too.** A small green check reassures people they got it right, not just red errors when they get it wrong.
 - The payoff is large: NN/G found that usability-optimized forms can **nearly double first-attempt completion rates** across many form types, industries, and markets.
 
@@ -386,7 +386,7 @@ Top-aligned (good)          Placeholder-as-label (bad)
 
 A single-step form shows everything on one screen. A multi-step form breaks the questions into a few smaller screens with a progress bar.
 
-- **Multi-step forms can convert about 86% higher** than single-step for long forms — *but only* with clean error handling across steps.
+- **Multi-step forms can convert about 86% higher** than single-step for long forms - *but only* with clean error handling across steps.
 - With multi-step: validate the current step before "Next," block advancing on an error, and mark any errored step in the progress bar.
 - The single-step trap: dumping a **wall of red errors** on a 15-field form after submit is one of the fastest ways to kill conversion.
 - Rule of thumb: **short forms → single step; long or complex forms → multi-step with a progress bar,** chunked into logical groups (Miller's Law again).
@@ -396,7 +396,7 @@ A single-step form shows everything on one screen. A multi-step form breaks the 
 When something goes wrong, the words you choose decide whether people recover or rage-quit. Make errors **specific, actionable, and polite.**
 
 - "Please check your ZIP code format" beats "ZIP code is wrong," which beats a useless "Invalid input" or "Error."
-- Place the message **inline, next to the field it refers to** — not only in a summary at the top.
+- Place the message **inline, next to the field it refers to** - not only in a summary at the top.
 - **Preserve what the user typed.** Never wipe the whole form because of one mistake.
 
 ### Form mistakes and fixes
@@ -481,7 +481,7 @@ When something goes wrong, the words you choose decide whether people recover or
 - **Attention is top-heavy.** About 74% of viewing time is spent in the top two screenfuls, so earn the scroll with a clear value proposition and CTA up top.
 - **Less is more on data screens.** Leading with 5 to 7 summary cards and revealing detail on demand raises activation more than showing everything at once.
 - **Mobile is thumb-first.** Roughly half of users work one-handed, so honor the 44 pt / 48 dp target minimums and keep primary actions in the bottom third.
-- **A landing page has exactly one job.** Remove distractions, pass the 5-second headline test, and repeat one clear CTA — wording alone (like "Trial" vs "Sign up") can shift results by 104%.
+- **A landing page has exactly one job.** Remove distractions, pass the 5-second headline test, and repeat one clear CTA - wording alone (like "Trial" vs "Sign up") can shift results by 104%.
 - **Images sell and hidden costs kill.** About 67% of shoppers rank image quality first, while surprise fees (39%) and forced accounts (19%) drive most of the ~70% average cart abandonment.
 - **Cut the checkout and the form.** Aim for 7 to 8 real fields, use top-aligned labels (up to 50% faster), validate inline, and split long forms into steps for up to 86% higher conversion.
 - **Every number here is a benchmark, not a guarantee.** Use them to know what "good" looks like, then test against your own audience.

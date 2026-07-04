@@ -1,4 +1,4 @@
-# Chapter 2: Your Brain Was Not Built for Modern Success — Research Notes
+# Chapter 2: Your Brain Was Not Built for Modern Success - Research Notes
 
 *The neuroscience of why doing the right thing is hard. Every claim below is attributed to a named researcher/source and year. Where findings are disputed or failed replication, both the original claim and the current consensus are recorded.*
 
@@ -6,18 +6,18 @@
 
 ## 1. Dopamine and Reward Prediction Error (Wolfram Schultz)
 
-**The core discovery.** In the early 1990s, Cambridge neuroscientist **Wolfram Schultz** recorded from individual dopamine neurons in the midbrain of monkeys while giving them a squirt of juice. He expected the neurons to fire when the reward arrived. Instead he discovered something more subtle: **dopamine neurons don't fire for rewards — they fire for surprises.**
+**The core discovery.** In the early 1990s, Cambridge neuroscientist **Wolfram Schultz** recorded from individual dopamine neurons in the midbrain of monkeys while giving them a squirt of juice. He expected the neurons to fire when the reward arrived. Instead he discovered something more subtle: **dopamine neurons don't fire for rewards - they fire for surprises.**
 
 **The three-part signal (Schultz, Dayan & Montague, 1997; Schultz 2016 review, "Dopamine reward prediction-error coding," *Dialogues in Clinical Neuroscience*):**
-- **Positive prediction error** — when reward is *better than predicted*, dopamine neurons spike (a burst of activity).
-- **Fully predicted reward** — when reward exactly matches prediction, neurons stay at baseline (no response).
-- **Negative prediction error** — when reward is *worse than predicted* or omitted, neuron activity dips below baseline.
+- **Positive prediction error** - when reward is *better than predicted*, dopamine neurons spike (a burst of activity).
+- **Fully predicted reward** - when reward exactly matches prediction, neurons stay at baseline (no response).
+- **Negative prediction error** - when reward is *worse than predicted* or omitted, neuron activity dips below baseline.
 
-**Learning shifts the signal.** As a monkey learns that a light/tone predicts juice, the dopamine burst moves *backward in time* — from the moment of the juice to the moment of the cue that predicts it. This is why anticipation, not consumption, drives us.
+**Learning shifts the signal.** As a monkey learns that a light/tone predicts juice, the dopamine burst moves *backward in time* - from the moment of the juice to the moment of the cue that predicts it. This is why anticipation, not consumption, drives us.
 
-**Why it matters for the knowing-doing gap:** Reward prediction error is "crucial for basic forms of learning about rewards and makes us strive for *more* rewards." The system is built to chase the *next* hit of novelty, not to appreciate what we already have — a direct engine of restlessness. Schultz also showed the dopamine signal increases *nonlinearly* with reward value and encodes formal economic utility.
+**Why it matters for the knowing-doing gap:** Reward prediction error is "crucial for basic forms of learning about rewards and makes us strive for *more* rewards." The system is built to chase the *next* hit of novelty, not to appreciate what we already have - a direct engine of restlessness. Schultz also showed the dopamine signal increases *nonlinearly* with reward value and encodes formal economic utility.
 
-**The AI connection (memorable analogy):** The math of reward prediction error is literally the same equation used in **temporal-difference (TD) learning** in machine learning / reinforcement learning (Sutton & Barto). The brain runs the same algorithm that powers game-playing AI — evolution invented Q-learning millions of years before Silicon Valley did.
+**The AI connection (memorable analogy):** The math of reward prediction error is literally the same equation used in **temporal-difference (TD) learning** in machine learning / reinforcement learning (Sutton & Barto). The brain runs the same algorithm that powers game-playing AI - evolution invented Q-learning millions of years before Silicon Valley did.
 
 **Two-component response (Schultz, 2016, *Nature Reviews Neuroscience*, "Dopamine reward prediction-error signalling: a two-component response"):** The phasic dopamine response has an initial brief, *unselective, highly sensitive* burst (detects that *something* happened) that quickly evolves into a second component reflecting *subjective reward value and utility.*
 
@@ -27,12 +27,12 @@ Sources: brainfacts.org; Nature Reviews Neuroscience (nrn.2015.26); Schultz 2016
 
 ## 2. Wanting vs. Liking (Kent Berridge)
 
-**The dissociation.** University of Michigan neuroscientist **Kent Berridge** (with Terry Robinson) spent decades showing that the brain's "**wanting**" system and its "**liking**" system are *separate and dissociable.* This is one of the most important — and least intuitive — findings in motivation science.
+**The dissociation.** University of Michigan neuroscientist **Kent Berridge** (with Terry Robinson) spent decades showing that the brain's "**wanting**" system and its "**liking**" system are *separate and dissociable.* This is one of the most important - and least intuitive - findings in motivation science.
 
 - **"Wanting" (incentive salience):** A form of motivation/craving generated by *large, robust* neural systems centered on **mesolimbic dopamine.** It's what makes cues grab your attention and pull you toward a reward.
-- **"Liking" (hedonic pleasure):** The actual pleasurable impact of consuming a reward. It's mediated by *small and fragile* neural systems — "**hedonic hotspots**," cubic-millimeter-sized sites in the nucleus accumbens and ventral pallidum — and depends on **opioid and endocannabinoid** signaling, **NOT dopamine.**
+- **"Liking" (hedonic pleasure):** The actual pleasurable impact of consuming a reward. It's mediated by *small and fragile* neural systems - "**hedonic hotspots**," cubic-millimeter-sized sites in the nucleus accumbens and ventral pallidum - and depends on **opioid and endocannabinoid** signaling, **NOT dopamine.**
 
-**The bombshell claim (Berridge & Robinson, 2007, "The debate over dopamine's role in reward: the case for incentive salience," *Psychopharmacology* 191:391–431):** **Dopamine causes "wanting" but not "liking."** You can artificially boost dopamine and an animal will work harder for a reward while showing no more pleasure ("liking" facial reactions) when it consumes it. Conversely, you can knock out dopamine and animals still *like* sweet tastes — they just no longer *want* to pursue them.
+**The bombshell claim (Berridge & Robinson, 2007, "The debate over dopamine's role in reward: the case for incentive salience," *Psychopharmacology* 191:391–431):** **Dopamine causes "wanting" but not "liking."** You can artificially boost dopamine and an animal will work harder for a reward while showing no more pleasure ("liking" facial reactions) when it consumes it. Conversely, you can knock out dopamine and animals still *like* sweet tastes - they just no longer *want* to pursue them.
 
 **Incentive-Sensitization Theory of Addiction (Robinson & Berridge, 1993; "30 Years On," *Annual Review of Psychology*, 2024):** Addiction is the pathological **amplification of wanting without any matching amplification of liking.** Addicts crave the drug intensely (triggered by cues) even as they enjoy it less and less. This is the neural signature of the knowing-doing gap: *wanting* something you no longer even *like*, and doing it against your own knowledge.
 
@@ -42,21 +42,21 @@ Sources: Berridge Lab (LSA Michigan); Berridge & Robinson 2007 (PubMed 17072591)
 
 ---
 
-## 3. Prefrontal Cortex vs. Limbic/Striatal Reward — The McClure 2004 Study
+## 3. Prefrontal Cortex vs. Limbic/Striatal Reward - The McClure 2004 Study
 
 **The landmark experiment (McClure, Laibson, Loewenstein & Cohen, 2004, "Separate Neural Systems Value Immediate and Delayed Monetary Rewards," *Science* 306:503–507).** Using fMRI, researchers scanned people while they chose between smaller-sooner and larger-later monetary rewards (intertemporal / delay-discounting choices).
 
 **The two-systems finding:**
-- **The "β (beta) system"** — limbic and paralimbic regions tied to the **midbrain dopamine system** (ventral striatum, medial prefrontal cortex, posterior cingulate) — was *preferentially and disproportionately activated when an immediate reward was on the table.* It is impatient and shouts loudest for "reward NOW."
-- **The "δ (delta) system"** — **lateral prefrontal cortex and posterior parietal cortex** (deliberative, planning regions) — was engaged *uniformly by all intertemporal choices regardless of delay.* It is the calm, patient, future-oriented planner.
+- **The "β (beta) system"** - limbic and paralimbic regions tied to the **midbrain dopamine system** (ventral striatum, medial prefrontal cortex, posterior cingulate) - was *preferentially and disproportionately activated when an immediate reward was on the table.* It is impatient and shouts loudest for "reward NOW."
+- **The "δ (delta) system"** - **lateral prefrontal cortex and posterior parietal cortex** (deliberative, planning regions) - was engaged *uniformly by all intertemporal choices regardless of delay.* It is the calm, patient, future-oriented planner.
 
-**The predictive punchline:** When people *chose the immediate option*, the β (limbic) system's activity was relatively greater. When they chose the patient, delayed option, the δ (prefrontal) system won the tug-of-war. **Delay discounting is a competition between two brain systems** — a literal neural civil war between "now-me" and "future-me."
+**The predictive punchline:** When people *chose the immediate option*, the β (limbic) system's activity was relatively greater. When they chose the patient, delayed option, the δ (prefrontal) system won the tug-of-war. **Delay discounting is a competition between two brain systems** - a literal neural civil war between "now-me" and "future-me."
 
 **Follow-up (McClure et al., 2007, "Time Discounting for Primary Rewards," *J. Neuroscience*):** Replicated the pattern with *primary* rewards (juice and water delivered by the minute), showing it's not just about money.
 
-**Why it matters:** This is the neuroscientific heart of the chapter. Knowing the right long-term choice lives in the prefrontal δ-system; the pull toward the immediate lives in the limbic β-system. The gap between knowing and doing is the gap between these two circuits — and the limbic one has a head start.
+**Why it matters:** This is the neuroscientific heart of the chapter. Knowing the right long-term choice lives in the prefrontal δ-system; the pull toward the immediate lives in the limbic β-system. The gap between knowing and doing is the gap between these two circuits - and the limbic one has a head start.
 
-**Development caveat (Steinberg; Harvard Medical School; simplypsychology.org):** The prefrontal cortex — planning, impulse control, decision-making — is the **last brain region to fully mature, around age ~25**, via myelination that speeds neural communication. IMPORTANT HONESTY NOTE: the "brain matures at 25" figure is a *ballpark from general developmental trends, not a single definitive study* (see Wikipedia "Brain matures at 25 myth"; McGill OSS). Psychologist Laurence Steinberg frames 25 as a rough average — some brains keep changing into the 30s, others plateau earlier. Present it as an approximation, not a hard deadline.
+**Development caveat (Steinberg; Harvard Medical School; simplypsychology.org):** The prefrontal cortex - planning, impulse control, decision-making - is the **last brain region to fully mature, around age ~25**, via myelination that speeds neural communication. IMPORTANT HONESTY NOTE: the "brain matures at 25" figure is a *ballpark from general developmental trends, not a single definitive study* (see Wikipedia "Brain matures at 25 myth"; McGill OSS). Psychologist Laurence Steinberg frames 25 as a rough average - some brains keep changing into the 30s, others plateau earlier. Present it as an approximation, not a hard deadline.
 
 Sources: *Science* 2004 (science.org/doi/10.1126/science.1100907); J. Neuroscience 2007.
 
@@ -64,7 +64,7 @@ Sources: *Science* 2004 (science.org/doi/10.1126/science.1100907); J. Neuroscien
 
 ## 4. Why the Brain Evolved for Immediate Scarcity, Not Long-Term Abundance (Evolutionary Mismatch)
 
-**The core theory (Evolutionary Mismatch / Mismatch Theory).** Our neural circuitry evolved over hundreds of thousands of years in an environment of **scarcity, real physical danger, and slow-paced small-group social life** — utterly unlike the modern world of caloric and informational abundance.
+**The core theory (Evolutionary Mismatch / Mismatch Theory).** Our neural circuitry evolved over hundreds of thousands of years in an environment of **scarcity, real physical danger, and slow-paced small-group social life** - utterly unlike the modern world of caloric and informational abundance.
 
 **Key mismatches:**
 - **Calories:** Hunter-gatherers rarely knew where the next meal was coming from, so brains that *rewarded immediate consumption of high-energy food* (and stored the excess as fat) survived and reproduced. In a world of 24-hour drive-throughs, that same wiring drives obesity.
@@ -77,25 +77,25 @@ Sources: Wikipedia "Evolutionary mismatch"; PubMed 11032379 (Previc); worldofpal
 
 ---
 
-## 5. Willpower and the Ego-Depletion Controversy (BE HONEST — this is a replication-crisis case study)
+## 5. Willpower and the Ego-Depletion Controversy (BE HONEST - this is a replication-crisis case study)
 
 ### The original claim
-**Roy F. Baumeister** and colleagues (Baumeister, Bratslavsky, Muraven & Tice, 1998, *JPSP*, "Ego depletion: Is the active self a limited resource?"). The famous **radish/cookie experiment:** participants who resisted eating cookies (and ate radishes instead) subsequently gave up faster on an unsolvable puzzle than those who indulged. Claim: **willpower is a limited resource, like a muscle that fatigues** — self-control draws down a finite reservoir ("ego"), and using it on one task leaves less for the next. Later work linked this to **blood glucose** as the fuel.
+**Roy F. Baumeister** and colleagues (Baumeister, Bratslavsky, Muraven & Tice, 1998, *JPSP*, "Ego depletion: Is the active self a limited resource?"). The famous **radish/cookie experiment:** participants who resisted eating cookies (and ate radishes instead) subsequently gave up faster on an unsolvable puzzle than those who indulged. Claim: **willpower is a limited resource, like a muscle that fatigues** - self-control draws down a finite reservoir ("ego"), and using it on one task leaves less for the next. Later work linked this to **blood glucose** as the fuel.
 
 **First meta-analysis (Hagger, Wood, Stiff & Chatzisarantis, 2010):** Analyzed ~198 studies and reported a **medium-to-large effect, d = 0.62** (95% CI 0.57–0.67). This cemented ego depletion as textbook psychology for a decade.
 
 ### The replication failures (the honest current view)
-- **Carter & McCullough (2014, 2015):** Re-analyzed the meta-analysis correcting for publication bias (small-study effects via PET-PEESE / trim-and-fill). The corrected effect **shrank from g ≈ 0.43 down to g ≈ 0.24 — and was "indistinguishable from zero."** The original evidence base was inflated by publication bias.
-- **Multi-lab Registered Replication (Hagger & Chatzisarantis et al., 2016):** **23 laboratories, N = 2,141**, pre-registered. Result: effect size essentially **zero (d ≈ 0.04)** — *no evidence of ego depletion* despite massive statistical power to detect even d = 0.2.
+- **Carter & McCullough (2014, 2015):** Re-analyzed the meta-analysis correcting for publication bias (small-study effects via PET-PEESE / trim-and-fill). The corrected effect **shrank from g ≈ 0.43 down to g ≈ 0.24 - and was "indistinguishable from zero."** The original evidence base was inflated by publication bias.
+- **Multi-lab Registered Replication (Hagger & Chatzisarantis et al., 2016):** **23 laboratories, N = 2,141**, pre-registered. Result: effect size essentially **zero (d ≈ 0.04)** - *no evidence of ego depletion* despite massive statistical power to detect even d = 0.2.
 - **Second RRR (Vohs, Schmeichel, Baumeister et al., 2021):** A large multi-lab replication co-authored by Baumeister himself again found the effect **close to zero.**
-- **Glucose hypothesis** has also largely fallen apart — the brain's glucose use during self-control tasks is far too small to explain the effect.
+- **Glucose hypothesis** has also largely fallen apart - the brain's glucose use during self-control tasks is far too small to explain the effect.
 
 ### The response and nuance
 - Baumeister blamed the *design* of the replication tasks (e.g., the "e-crossing" task as suboptimal).
 - Later meta-analyses (Dang, 2018, *PMC6013521*) found that *some* task types (emotional-suppression video, Stroop, attention essay) show a **medium effect g ≈ 0.42 when restricted to "reliable" depleting tasks**, while attention-video and working-memory tasks show *nothing.* So the picture is messy, not a clean zero.
-- Emerging alternative models reframe it entirely — e.g., the **process/motivation model (Inzlicht & Schmeichel, 2012)**: what feels like "depletion" is a **shift in motivation and attention** (away from "have-to" toward "want-to" tasks), not the draining of a fuel tank. See also "Depletion or activation?" (ScienceDirect, 2025) challenging linear depletion models.
+- Emerging alternative models reframe it entirely - e.g., the **process/motivation model (Inzlicht & Schmeichel, 2012)**: what feels like "depletion" is a **shift in motivation and attention** (away from "have-to" toward "want-to" tasks), not the draining of a fuel tank. See also "Depletion or activation?" (ScienceDirect, 2025) challenging linear depletion models.
 
-**What to tell the reader (bottom line):** The strong "willpower is a finite fuel tank that runs dry" story is **not reliably supported** — it's a poster child for psychology's replication crisis. But self-control is still real and still hard. The better modern framing: motivation, attention, boredom, and *beliefs about willpower* (Job, Dweck & Walton, 2010 — people who believe willpower is unlimited don't show depletion) matter more than a literal energy reserve. **Don't build a life strategy on "conserve your willpower"; build one on designing your environment so you need less of it.**
+**What to tell the reader (bottom line):** The strong "willpower is a finite fuel tank that runs dry" story is **not reliably supported** - it's a poster child for psychology's replication crisis. But self-control is still real and still hard. The better modern framing: motivation, attention, boredom, and *beliefs about willpower* (Job, Dweck & Walton, 2010 - people who believe willpower is unlimited don't show depletion) matter more than a literal energy reserve. **Don't build a life strategy on "conserve your willpower"; build one on designing your environment so you need less of it.**
 
 Sources: Hagger et al. 2010 & 2016 (RRR); Carter & McCullough 2015; Vohs et al. 2021; Dang 2018 (PMC6013521); replicationindex.com; Inzlicht & Schmeichel 2012.
 
@@ -103,41 +103,41 @@ Sources: Hagger et al. 2010 & 2016 (RRR); Carter & McCullough 2015; Vohs et al. 
 
 ## 6. How Smartphones / Social Media / Short Video Exploit Variable Reward Schedules
 
-**The behavioral-science root (B.F. Skinner, 1950s).** Skinner's operant-conditioning work showed that **variable-ratio reinforcement** (rewards delivered unpredictably, after a random number of responses) is **"the most powerful reward schedule ever documented in behavioral science."** Pigeons on a variable schedule peck far more persistently — and resist extinction far longer — than those rewarded every time. This is the exact mechanic of a **slot machine.**
+**The behavioral-science root (B.F. Skinner, 1950s).** Skinner's operant-conditioning work showed that **variable-ratio reinforcement** (rewards delivered unpredictably, after a random number of responses) is **"the most powerful reward schedule ever documented in behavioral science."** Pigeons on a variable schedule peck far more persistently - and resist extinction far longer - than those rewarded every time. This is the exact mechanic of a **slot machine.**
 
-**Dopamine spikes on *uncertainty*.** Tying back to Schultz: dopamine surges *before* the reward, on the *cue and the anticipation* — and it spikes **hardest when the outcome is uncertain** (maximal reward prediction error). A predictable reward is boring; an unpredictable one is neurologically irresistible.
+**Dopamine spikes on *uncertainty*.** Tying back to Schultz: dopamine surges *before* the reward, on the *cue and the anticipation* - and it spikes **hardest when the outcome is uncertain** (maximal reward prediction error). A predictable reward is boring; an unpredictable one is neurologically irresistible.
 
 **The phone as a slot machine (Tristan Harris, former Google design ethicist):** *"When we pull our phone out of our pocket, we're playing a slot machine to see what notifications we got."* Pull-to-refresh, infinite scroll, and the unpredictable payoff of the next post/like/video are **designed** intermittent variable-reward loops.
 
-**The Hook Model (Nir Eyal, *Hooked*, 2014):** Habit-forming products run a loop of **Trigger → Action → Variable Reward → Investment.** The "variable reward" step is the deliberate engineering of Skinner's schedule into consumer tech. Social feeds deliver three overlapping variable rewards: **rewards of the tribe** (social approval — likes/comments), **rewards of the hunt** (novel information — the next scroll), and **rewards of the self** (mastery/completion).
+**The Hook Model (Nir Eyal, *Hooked*, 2014):** Habit-forming products run a loop of **Trigger → Action → Variable Reward → Investment.** The "variable reward" step is the deliberate engineering of Skinner's schedule into consumer tech. Social feeds deliver three overlapping variable rewards: **rewards of the tribe** (social approval - likes/comments), **rewards of the hunt** (novel information - the next scroll), and **rewards of the self** (mastery/completion).
 
 **What it does to attention and baseline motivation:**
-- **The "Vegas Effect" (Psychology Today, 2019):** Screens hold attention the way casinos hold gamblers — via variable reward and loss of time-awareness.
-- **Structural brain changes:** Imaging studies link excessive smartphone use to altered gray-matter volume in reward regions (e.g., **caudate**) and changes in functional connectivity in impulse-control and attention networks (see PMC5826267 and reviews). (State cautiously — correlational, causation not established.)
-- **Baseline motivation:** By flooding the reward system with easy, high-frequency dopamine "wanting" hits, effortful real-world goals (studying, exercise, deep work) feel comparatively *dull* — their slower, lower-frequency rewards can't compete. This is the mechanism by which the phone doesn't just steal time; it **recalibrates what feels worth doing.**
+- **The "Vegas Effect" (Psychology Today, 2019):** Screens hold attention the way casinos hold gamblers - via variable reward and loss of time-awareness.
+- **Structural brain changes:** Imaging studies link excessive smartphone use to altered gray-matter volume in reward regions (e.g., **caudate**) and changes in functional connectivity in impulse-control and attention networks (see PMC5826267 and reviews). (State cautiously - correlational, causation not established.)
+- **Baseline motivation:** By flooding the reward system with easy, high-frequency dopamine "wanting" hits, effortful real-world goals (studying, exercise, deep work) feel comparatively *dull* - their slower, lower-frequency rewards can't compete. This is the mechanism by which the phone doesn't just steal time; it **recalibrates what feels worth doing.**
 
 Sources: Harvard Health; PMC5826267; Psychology Today "Vegas Effect"; Nir Eyal *Hooked*; Tristan Harris (Time Well Spent / Center for Humane Technology); Sharpe & Spooner 2025 (Sage, "Dopamine-scrolling").
 
 ---
 
-## 7. Dopamine "Detox" — Myths vs. What the Science Actually Supports
+## 7. Dopamine "Detox" - Myths vs. What the Science Actually Supports
 
-**The origin (be precise).** The term **"dopamine fasting"** was coined by **Dr. Cameron Sepah**, a UCSF clinical psychologist, in an **August 2019** LinkedIn article, *"The Definitive Guide to Dopamine Fasting 2.0 — The Hot Silicon Valley Trend"* (140k+ views; sparked a *New York Times* piece). Sepah has repeatedly said the name is a **misnomer** and the practice is widely misinterpreted.
+**The origin (be precise).** The term **"dopamine fasting"** was coined by **Dr. Cameron Sepah**, a UCSF clinical psychologist, in an **August 2019** LinkedIn article, *"The Definitive Guide to Dopamine Fasting 2.0 - The Hot Silicon Valley Trend"* (140k+ views; sparked a *New York Times* piece). Sepah has repeatedly said the name is a **misnomer** and the practice is widely misinterpreted.
 
-**The myth (what the internet turned it into):** That you can "reset" or "lower" your dopamine by avoiding all stimulation — no screens, no music, no food, no eye contact, no talking — and thereby restore your brain's sensitivity. **This is scientifically incoherent.**
+**The myth (what the internet turned it into):** That you can "reset" or "lower" your dopamine by avoiding all stimulation - no screens, no music, no food, no eye contact, no talking - and thereby restore your brain's sensitivity. **This is scientifically incoherent.**
 - Dopamine is **made in the brain**; it is neither a toxin nor unnatural, so you cannot "detox" from it (Harvard Health, 2020, "Dopamine fasting: Misunderstanding science spawns a maladaptive fad").
-- Avoiding a stimulus (like TikTok) does **not lower your body's dopamine levels** — it only reduces the *stimulation* of the reward pathway. You can't and shouldn't drive dopamine down; low dopamine is associated with Parkinson's and anhedonia.
+- Avoiding a stimulus (like TikTok) does **not lower your body's dopamine levels** - it only reduces the *stimulation* of the reward pathway. You can't and shouldn't drive dopamine down; low dopamine is associated with Parkinson's and anhedonia.
 - Notre Dame's *Church Life Journal* and Cleveland Clinic both call the literal version pseudoscientific.
 
-**What Sepah actually meant (the defensible core):** A **Cognitive Behavioral Therapy (CBT) technique** to manage *impulsive/addictive behaviors* by **restricting them to scheduled time windows** and abstaining outside them — to "regain behavioral flexibility." It targets the *behaviors that trigger dopamine*, not dopamine itself. This is essentially **stimulus control** — a well-supported behavioral therapy tool.
+**What Sepah actually meant (the defensible core):** A **Cognitive Behavioral Therapy (CBT) technique** to manage *impulsive/addictive behaviors* by **restricting them to scheduled time windows** and abstaining outside them - to "regain behavioral flexibility." It targets the *behaviors that trigger dopamine*, not dopamine itself. This is essentially **stimulus control** - a well-supported behavioral therapy tool.
 
 **What the science genuinely supports (Anna Lembke, MD, Stanford, *Dopamine Nation*, 2021):**
 - Pleasure and pain are processed in the **same brain regions and work like a balance/seesaw** (the "pleasure-pain balance"). Repeated overstimulation tips the balance to the "pain" side as the brain **downregulates dopamine receptors to restore homeostasis** (neuroadaptation / opponent-process).
-- Result: after chronic overconsumption, baseline moves *below neutral* — you need the behavior **just to feel normal**, not to feel good. This is a **dopamine deficit state** (anhedonia, anxiety, restlessness).
-- The genuinely evidence-based intervention Lembke recommends is roughly a **~4-week "dopamine fast"** (abstinence from the problem stimulus) to let receptors **recalibrate/upregulate** back toward baseline — she prefers the term **"dopamine recalibration."**
+- Result: after chronic overconsumption, baseline moves *below neutral* - you need the behavior **just to feel normal**, not to feel good. This is a **dopamine deficit state** (anhedonia, anxiety, restlessness).
+- The genuinely evidence-based intervention Lembke recommends is roughly a **~4-week "dopamine fast"** (abstinence from the problem stimulus) to let receptors **recalibrate/upregulate** back toward baseline - she prefers the term **"dopamine recalibration."**
 - Complementary, evidence-supported moves: intentionally seek **effortful natural rewards** (exercise, nature, cold exposure, real social connection), and pursue **"pressing on the pain side"** (voluntary discomfort) so pleasure returns naturally. Plus sleep, diet, and exercise for reward-system health.
 
-**Bottom line for the reader:** You cannot "detox" dopamine, and a one-day social-media fast won't "reset" your brain. But **deliberately abstaining from a specific overstimulating behavior for a sustained period (weeks) to let your reward system recalibrate is real and works** — the science is about *behavioral stimulus control and receptor homeostasis*, not about purging a chemical.
+**Bottom line for the reader:** You cannot "detox" dopamine, and a one-day social-media fast won't "reset" your brain. But **deliberately abstaining from a specific overstimulating behavior for a sustained period (weeks) to let your reward system recalibrate is real and works** - the science is about *behavioral stimulus control and receptor homeostasis*, not about purging a chemical.
 
 Sources: Cameron Sepah (LinkedIn, Aug 2019); Harvard Health (2020); Cleveland Clinic; Notre Dame Church Life Journal; Anna Lembke *Dopamine Nation* (2021) & annalembke.com; Time (2023); The Scientist.
 
@@ -145,11 +145,11 @@ Sources: Cameron Sepah (LinkedIn, Aug 2019); Harvard Health (2020); Cleveland Cl
 
 ## 8. Related "Success Myth" Findings to Flag Honestly (for the study guide's honesty theme)
 
-- **Marshmallow Test (Mischel, 1972 → Watts, Duncan & Quan, 2018 conceptual replication, *Psychological Science*):** Original claim — a 4-year-old's ability to delay gratification predicts SAT scores and life success. Replication with **~10× the sample (analysis N = 918; key subgroup N = 552)** found the predictive power was **much smaller and largely vanished once family background / socioeconomic status and home environment were controlled.** Best characterized as a *partial* replication: delay of gratification is real but is heavily a *proxy for a child's affluence and environment,* not a magic individual trait. (UCLA Anderson Review; IFStudies.)
-- **Grit (Duckworth) vs. Credé, Tynan & Harms (2017, *JPSP*, "Much ado about grit"):** Meta-analysis of **584 effect sizes, 88 samples, 66,807 people.** Grit correlates only **modestly with academic performance (ρ ≈ .18)**, its two-factor structure isn't confirmed, and it is **very strongly correlated with the established trait Conscientiousness** — i.e., grit may be old wine (Conscientiousness) in a new bottle. The "perseverance of effort" facet does slightly better than "consistency of interest."
-- **10,000-Hour Rule / Deliberate Practice (Ericsson → popularized by Gladwell; challenged by Macnamara, Hambrick & Oswald, 2014, *Psychological Science*):** Meta-analysis found deliberate practice explains only **~26% of variance in games, ~21% in music, ~18% in sports, ~4% in education, and <1% in professions.** Practice matters but is **far from the whole story** — and among *elite* performers its contribution shrinks further (~1% in the 2016 sports meta-analysis, N = 2,765). The "10,000 hours" figure was never a real threshold; it was an average from a single small violinist study.
+- **Marshmallow Test (Mischel, 1972 → Watts, Duncan & Quan, 2018 conceptual replication, *Psychological Science*):** Original claim - a 4-year-old's ability to delay gratification predicts SAT scores and life success. Replication with **~10× the sample (analysis N = 918; key subgroup N = 552)** found the predictive power was **much smaller and largely vanished once family background / socioeconomic status and home environment were controlled.** Best characterized as a *partial* replication: delay of gratification is real but is heavily a *proxy for a child's affluence and environment,* not a magic individual trait. (UCLA Anderson Review; IFStudies.)
+- **Grit (Duckworth) vs. Credé, Tynan & Harms (2017, *JPSP*, "Much ado about grit"):** Meta-analysis of **584 effect sizes, 88 samples, 66,807 people.** Grit correlates only **modestly with academic performance (ρ ≈ .18)**, its two-factor structure isn't confirmed, and it is **very strongly correlated with the established trait Conscientiousness** - i.e., grit may be old wine (Conscientiousness) in a new bottle. The "perseverance of effort" facet does slightly better than "consistency of interest."
+- **10,000-Hour Rule / Deliberate Practice (Ericsson → popularized by Gladwell; challenged by Macnamara, Hambrick & Oswald, 2014, *Psychological Science*):** Meta-analysis found deliberate practice explains only **~26% of variance in games, ~21% in music, ~18% in sports, ~4% in education, and <1% in professions.** Practice matters but is **far from the whole story** - and among *elite* performers its contribution shrinks further (~1% in the 2016 sports meta-analysis, N = 2,765). The "10,000 hours" figure was never a real threshold; it was an average from a single small violinist study.
 
-**Why include these:** The chapter's thesis is that popular "just try harder / just have more grit / just practice more" advice oversells individual willpower and undersells brain wiring and environment. These four debunked-or-shrunk findings (ego depletion, marshmallow, grit, 10,000 hours) are the evidence that **knowing the slogan isn't enough — and that the slogans themselves are often weaker than advertised.**
+**Why include these:** The chapter's thesis is that popular "just try harder / just have more grit / just practice more" advice oversells individual willpower and undersells brain wiring and environment. These four debunked-or-shrunk findings (ego depletion, marshmallow, grit, 10,000 hours) are the evidence that **knowing the slogan isn't enough - and that the slogans themselves are often weaker than advertised.**
 
 Sources: Watts et al. 2018; Credé et al. 2017; Macnamara et al. 2014 & 2016.
 

@@ -55,7 +55,7 @@ const ORDER = [
   { src: 'trapping', title: 'Trapping (Deep Dive)' },
   { src: 'mine', n: 8,  title: 'Inside a PDF: Structure, Graphics & Fonts' },
   { src: 'typography', title: 'Typography & Text Rendering' },
-  { src: 'mine', n: 9,  title: 'PDF/X, Output Intent & Page Boxes — The Print-Ready Target' },
+  { src: 'mine', n: 9,  title: 'PDF/X, Output Intent & Page Boxes - The Print-Ready Target' },
   { src: 'mine', n: 10, title: 'Preflight: Validating a File Before It Prints' },
   { src: 'mine', n: 11, title: 'Imposition & Binding: Arranging Pages on the Sheet' },
   { src: 'mine', n: 12, title: 'Finishing & Document Geometry: Bleed, Trim & Safe Area' },

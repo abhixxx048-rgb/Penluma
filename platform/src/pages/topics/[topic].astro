@@ -48,7 +48,7 @@ const courseSchema = {
 const jsonLd = [breadcrumbSchema, courseSchema];
 
 // Target terms for this topic page: topic title + category, the post titles in
-// this topic, and any keywords declared on those posts — deduped.
+// this topic, and any keywords declared on those posts - deduped.
 const keywords = Array.from(
   new Set(
     [
@@ -94,7 +94,7 @@ const keywords = Array.from(
               Take the practice quiz
             </h2>
             <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">
-              {quiz.questions.length} interactive questions{quiz.badge ? ` · ${quiz.badge}` : ''} — answers stay hidden until you commit.
+              {quiz.questions.length} interactive questions{quiz.badge ? ` · ${quiz.badge}` : ''} - answers stay hidden until you commit.
             </p>
           </div>
         </div>

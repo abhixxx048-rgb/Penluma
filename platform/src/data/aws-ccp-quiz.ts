@@ -175,7 +175,7 @@ export const AWS_CCP_QUIZ: QuizQuestion[] = [
     question: 'What is the main purpose of comparing Total Cost of Ownership (TCO) between on-premises and AWS?',
     options: [
       'To measure network latency',
-      'To capture the full cost — hardware, power, staff, and maintenance — not just the sticker price',
+      'To capture the full cost - hardware, power, staff, and maintenance - not just the sticker price',
       'To choose an Availability Zone',
       'To set IAM permissions',
     ],
@@ -201,7 +201,7 @@ export const AWS_CCP_QUIZ: QuizQuestion[] = [
     options: ['AWS', 'The customer', 'Shared equally', 'The AWS Marketplace vendor'],
     answer: 1,
     explanation:
-      'AWS secures the cloud (hardware, hypervisor, facilities). The customer is responsible for security *in* the cloud — the guest OS, patches, applications, and data on EC2.',
+      'AWS secures the cloud (hardware, hypervisor, facilities). The customer is responsible for security *in* the cloud - the guest OS, patches, applications, and data on EC2.',
   },
   {
     id: 18,
@@ -215,7 +215,7 @@ export const AWS_CCP_QUIZ: QuizQuestion[] = [
     ],
     answer: 0,
     explanation:
-      'AWS is responsible for security *of* the cloud — including physical facilities, hardware, and the global infrastructure. Customers configure security groups, IAM, and data encryption.',
+      'AWS is responsible for security *of* the cloud - including physical facilities, hardware, and the global infrastructure. Customers configure security groups, IAM, and data encryption.',
   },
   {
     id: 19,
@@ -315,7 +315,7 @@ export const AWS_CCP_QUIZ: QuizQuestion[] = [
     ],
     answer: 1,
     explanation:
-      'Attaching an IAM role provides temporary, automatically rotated credentials to the instance — no long-lived keys to embed or leak.',
+      'Attaching an IAM role provides temporary, automatically rotated credentials to the instance - no long-lived keys to embed or leak.',
   },
   {
     id: 29,
@@ -362,7 +362,7 @@ export const AWS_CCP_QUIZ: QuizQuestion[] = [
   {
     id: 32,
     domain: 'Security & Compliance',
-    question: 'Which service records API calls made in your account — capturing who did what, when, and from where — for auditing and governance?',
+    question: 'Which service records API calls made in your account - capturing who did what, when, and from where - for auditing and governance?',
     options: ['Amazon CloudWatch', 'AWS CloudTrail', 'AWS Config', 'Amazon Inspector'],
     answer: 1,
     explanation:
@@ -398,7 +398,7 @@ export const AWS_CCP_QUIZ: QuizQuestion[] = [
     ],
     answer: 1,
     explanation:
-      'SCPs act as guardrails — they set the maximum permissions accounts can have but do not by themselves grant permissions. Actual access still requires IAM policies.',
+      'SCPs act as guardrails - they set the maximum permissions accounts can have but do not by themselves grant permissions. Actual access still requires IAM policies.',
   },
 
   // ============ Cloud Technology & Services ============
@@ -427,7 +427,7 @@ export const AWS_CCP_QUIZ: QuizQuestion[] = [
     options: ['Amazon EC2', 'AWS Lambda', 'AWS Batch', 'Amazon Lightsail'],
     answer: 1,
     explanation:
-      'AWS Lambda is serverless compute: you upload code, it runs in response to events, and you pay per request and execution duration — no servers to manage.',
+      'AWS Lambda is serverless compute: you upload code, it runs in response to events, and you pay per request and execution duration - no servers to manage.',
   },
   {
     id: 39,
@@ -517,7 +517,7 @@ export const AWS_CCP_QUIZ: QuizQuestion[] = [
     options: ['AWS Snowball', 'AWS DataSync', 'Amazon S3 Transfer Acceleration', 'AWS Storage Gateway'],
     answer: 0,
     explanation:
-      'AWS Snowball is a rugged physical appliance you load with data and ship to AWS — ideal for very large migrations where internet transfer would take too long.',
+      'AWS Snowball is a rugged physical appliance you load with data and ship to AWS - ideal for very large migrations where internet transfer would take too long.',
   },
   {
     id: 49,
@@ -562,7 +562,7 @@ export const AWS_CCP_QUIZ: QuizQuestion[] = [
     options: ['Amazon EC2', 'AWS Fargate', 'Amazon Lightsail', 'AWS Batch'],
     answer: 1,
     explanation:
-      'AWS Fargate is a serverless compute engine for containers (with Amazon ECS or EKS) — you run containers without managing EC2 instances.',
+      'AWS Fargate is a serverless compute engine for containers (with Amazon ECS or EKS) - you run containers without managing EC2 instances.',
   },
   {
     id: 54,
@@ -589,7 +589,7 @@ export const AWS_CCP_QUIZ: QuizQuestion[] = [
     options: ['Amazon Athena', 'Amazon Redshift', 'Amazon EMR', 'Amazon RDS'],
     answer: 0,
     explanation:
-      'Amazon Athena runs standard SQL queries directly against data in S3 and charges per data scanned — fully serverless.',
+      'Amazon Athena runs standard SQL queries directly against data in S3 and charges per data scanned - fully serverless.',
   },
   {
     id: 57,
@@ -716,7 +716,7 @@ export const AWS_CCP_QUIZ: QuizQuestion[] = [
   {
     id: 69,
     domain: 'Billing, Pricing & Support',
-    question: 'Which AWS Support plan provides 24/7 access to Cloud Support Engineers by phone, email, and chat, plus full Trusted Advisor checks — at the lowest price that includes those?',
+    question: 'Which AWS Support plan provides 24/7 access to Cloud Support Engineers by phone, email, and chat, plus full Trusted Advisor checks - at the lowest price that includes those?',
     options: ['Basic', 'Developer', 'Business', 'Enterprise'],
     answer: 2,
     explanation:

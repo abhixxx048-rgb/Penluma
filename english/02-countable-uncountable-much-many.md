@@ -1,4 +1,4 @@
-# 02 — Countable vs uncountable: much / many / few / less / fewer
+# 02 - Countable vs uncountable: much / many / few / less / fewer
 
 *What this fixes for you: you wrote "so much mistake" when you meant "so many mistakes." This doc makes that choice automatic, so your commits, PRs, and standups stop leaking that one tell.*
 
@@ -11,7 +11,7 @@
 
 ## Why this trips you up
 
-In your daily writing you reach for **much** by default and you drop the plural **-s** ("so much mistake," "few bug left"). Many languages don't mark countability the way English does, so the habit is invisible to you. The fix isn't memorizing a list — it's running the 30-second number test before you pick *much* or *many*.
+In your daily writing you reach for **much** by default and you drop the plural **-s** ("so much mistake," "few bug left"). Many languages don't mark countability the way English does, so the habit is invisible to you. The fix isn't memorizing a list - it's running the 30-second number test before you pick *much* or *many*.
 
 ## See it / fix it
 
@@ -30,7 +30,7 @@ In your daily writing you reach for **much** by default and you drop the plural 
 
 ## Patterns to remember
 
-**The pairing table — never mix the columns:**
+**The pairing table - never mix the columns:**
 
 | Countable (count them) | Uncountable (measure it) |
 |---|---|
@@ -54,16 +54,16 @@ In your daily writing you reach for **much** by default and you drop the plural 
 ## In your daily writing
 
 - **Commit messages:** "Fix many flaky tests" not "Fix much flaky test." "Remove unused code" (uncountable, no -s).
-- **PR titles:** "Resolve fewer-than-expected conflicts" — and "Reduce duplicate code," never "reduce duplicate codes."
+- **PR titles:** "Resolve fewer-than-expected conflicts" - and "Reduce duplicate code," never "reduce duplicate codes."
 - **Standups (Slack):** "I closed three bugs and got some feedback on the design." Count the bugs, measure the feedback.
 - **Code review comments:** "There are too many responsibilities in this class" (countable) vs "This adds too much complexity" (uncountable).
-- **Bug reports:** "Steps produce many errors in the console" — errors are countable, so plural **-s**.
+- **Bug reports:** "Steps produce many errors in the console" - errors are countable, so plural **-s**.
 
 A fast self-check before you hit send: find every *much / many / few / little / less / fewer*, then ask **"can I count this noun?"** If yes, you want *many / few / fewer* + **-s**. If no, you want *much / little / less*.
 
 ## Drills
 
-Fix, fill, or choose. No answers here — scroll to the key after you try.
+Fix, fill, or choose. No answers here - scroll to the key after you try.
 
 1. Fix: `i am making so much mistake in my commit message`
 2. Fix: `there is too much bug in the login flow`
@@ -82,17 +82,17 @@ Fix, fill, or choose. No answers here — scroll to the key after you try.
 
 ## Answer key
 
-1. **I'm making so many mistakes in my commit messages.** — *mistake* is countable → **many** + **-s**; capital *I*; messages plural too.
-2. **There are too many bugs in the login flow.** — countable → **many bugs**; plural subject → **are**.
-3. **fewer** — *queries* is countable (ends in -s) → **fewer**, not *less*.
-4. **feedback** — uncountable → no **-s**.
-5. **many** — *files* is countable → **many**.
-6. **We wrote fewer tests this sprint than last sprint.** — *tests* is countable → **fewer**, not *less*; capital *W*.
-7. **much** — *code* is uncountable → **much**.
-8. **a few** — *edge cases* is countable → **a few**, not *a little*.
-9. **I did a lot of research on grammar before the refactor.** — *research* is uncountable (no **-s**); spelling *research* and *grammar*; capital *I*.
-10. **fewer** bugs and **less** downtime. — *bugs* countable → **fewer**; *downtime* uncountable → **less**.
-11. **a lot of** — both work, but *much data* sounds formal; **a lot of data** is the natural dev phrasing. (Never *many data*.)
-12. **How many commits are in this PR?** — *commits* is countable → **many**; question → **?**.
+1. **I'm making so many mistakes in my commit messages.** - *mistake* is countable → **many** + **-s**; capital *I*; messages plural too.
+2. **There are too many bugs in the login flow.** - countable → **many bugs**; plural subject → **are**.
+3. **fewer** - *queries* is countable (ends in -s) → **fewer**, not *less*.
+4. **feedback** - uncountable → no **-s**.
+5. **many** - *files* is countable → **many**.
+6. **We wrote fewer tests this sprint than last sprint.** - *tests* is countable → **fewer**, not *less*; capital *W*.
+7. **much** - *code* is uncountable → **much**.
+8. **a few** - *edge cases* is countable → **a few**, not *a little*.
+9. **I did a lot of research on grammar before the refactor.** - *research* is uncountable (no **-s**); spelling *research* and *grammar*; capital *I*.
+10. **fewer** bugs and **less** downtime. - *bugs* countable → **fewer**; *downtime* uncountable → **less**.
+11. **a lot of** - both work, but *much data* sounds formal; **a lot of data** is the natural dev phrasing. (Never *many data*.)
+12. **How many commits are in this PR?** - *commits* is countable → **many**; question → **?**.
 
-*Part of the Developer English course — see [00-index.md](./00-index.md).*
+*Part of the Developer English course - see [00-index.md](./00-index.md).*

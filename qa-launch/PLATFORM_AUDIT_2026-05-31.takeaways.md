@@ -12,10 +12,10 @@
 
 - **"Coming soon" placeholders in live pages (fixed)** - Two tabs in the admin area (Payment Methods, Roles) were visible to store owners but did nothing. They have been removed so the interface no longer has dead ends.
 
-- **Security hole in user roles (fixed)** — A bug allowed any logged-in user to read the roles and account names of OTHER stores, not just their own. This was a serious privacy issue. It is now fixed and tested — a regular user can only see their own store's information.
+- **Security hole in user roles (fixed)** - A bug allowed any logged-in user to read the roles and account names of OTHER stores, not just their own. This was a serious privacy issue. It is now fixed and tested - a regular user can only see their own store's information.
 
-- **Technical debt (tracked, not yet fixed)** — About 128 places in the admin app fetch data in a way that doesn't follow the project's own rules. Some pages also had requests that could pull tens of thousands of records at once with no limit. These don't break anything today but make the code harder to maintain. They are logged for gradual clean-up.
+- **Technical debt (tracked, not yet fixed)** - About 128 places in the admin app fetch data in a way that doesn't follow the project's own rules. Some pages also had requests that could pull tens of thousands of records at once with no limit. These don't break anything today but make the code harder to maintain. They are logged for gradual clean-up.
 
 **What to do with this:**
 
-The most important fixes (currency, security hole, blank error screens) are already done and tested. The remaining open item is a slow background clean-up of the technical debt — no urgent action is needed from the store owner side.
+The most important fixes (currency, security hole, blank error screens) are already done and tested. The remaining open item is a slow background clean-up of the technical debt - no urgent action is needed from the store owner side.

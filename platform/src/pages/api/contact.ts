@@ -14,7 +14,7 @@ const json = (data: unknown, status = 200) =>
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 /**
- * Post the message to a Discord channel webhook. Never throws — a webhook
+ * Post the message to a Discord channel webhook. Never throws - a webhook
  * failure must not lose the message (we still store it in KV).
  *
  * Set the URL once with:  wrangler secret put DISCORD_WEBHOOK_URL
@@ -65,14 +65,14 @@ export const POST: APIRoute = async ({ request, locals }) => {
   }
 
   // Silently accept bot submissions that fill the hidden honeypot field.
-  if (hp) return json({ message: 'Thanks — your message has been sent.' });
+  if (hp) return json({ message: 'Thanks - your message has been sent.' });
 
   if (!name) return json({ error: 'Please enter your name.' }, 400);
   if (!EMAIL_RE.test(email)) return json({ error: 'Please enter a valid email.' }, 400);
   if (message.length < 10)
     return json({ error: 'Please add a bit more detail to your message.' }, 400);
   if (message.length > 5000)
-    return json({ error: 'That message is a little too long — please trim it.' }, 400);
+    return json({ error: 'That message is a little too long - please trim it.' }, 400);
 
   const env = (locals as any)?.runtime?.env ?? {};
   const webhookUrl = env.DISCORD_WEBHOOK_URL as string | undefined;
@@ -87,5 +87,5 @@ export const POST: APIRoute = async ({ request, locals }) => {
     await store.put(`contact:${ts}:${email}`, JSON.stringify({ name, email, message, ts }));
   }
 
-  return json({ message: 'Thanks — your message has been sent. I read every one.' });
+  return json({ message: 'Thanks - your message has been sent. I read every one.' });
 };

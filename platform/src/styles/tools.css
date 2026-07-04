@@ -1,11 +1,11 @@
 /* ===========================================================================
-   Penluma tool suite — design-system bridge.
+   Penluma tool suite - design-system bridge.
 
    The interactive writing tools were ported from a sibling project that used
    its own token names (`ink`, `accent`, `--c-*`, `.card`, `.ctl`, `.eyebrow`,
    `.halo`, `.rule-dash`, `.muted`, `.diff-*`). None of those names collide with
-   Penluma's own styles, so we re-home them here — remapped to Penluma's pure
-   monochrome brand — and scope every component rule under `.tools-scope` so the
+   Penluma's own styles, so we re-home them here - remapped to Penluma's pure
+   monochrome brand - and scope every component rule under `.tools-scope` so the
    rest of the site is untouched. The tool markup renders inside a
    `<div class="tools-scope">` (see ToolLayout.astro).
 
@@ -15,12 +15,12 @@
    readability scorer, where meaning depends on colour.
    =========================================================================== */
 
-/* Additive theme tokens — these generate the `text-accent`, `bg-accent`,
+/* Additive theme tokens - these generate the `text-accent`, `bg-accent`,
    `border-ink/8`, `text-mark`, `bg-accent-soft`, `font-display`, `text-ok`…
    utilities the ported components rely on. They are new names, so existing
    Penluma pages are unaffected. */
 @theme {
-  --color-ink: #141414;          /* near-black — hairlines + base text        */
+  --color-ink: #141414;          /* near-black - hairlines + base text        */
   --color-paper: #ffffff;
   --color-surface: #ffffff;
   --color-muted: #6f6f6f;
@@ -52,7 +52,7 @@
   --shadow-card: 0 1px 2px rgb(0 0 0 / 0.05), 0 12px 32px -18px rgb(0 0 0 / 0.14);
 }
 
-/* Dark mode — scoped so we never disturb Penluma's own dark tokens. Overriding
+/* Dark mode - scoped so we never disturb Penluma's own dark tokens. Overriding
    the @theme colour vars here is a plain cascade override that only reaches
    descendants of `.tools-scope`. */
 .dark .tools-scope {
@@ -82,7 +82,7 @@
   outline-offset: 2px;
 }
 
-/* Editorial eyebrow — a typed margin-note label. */
+/* Editorial eyebrow - a typed margin-note label. */
 .tools-scope .eyebrow {
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -105,7 +105,7 @@
   color: color-mix(in srgb, var(--c-ink) 28%, transparent);
 }
 .tools-scope .rule-dash::before {
-  content: '—';
+  content: '-';
   font-family: var(--font-display);
   font-size: 1.4rem;
   letter-spacing: 0.2em;
@@ -135,7 +135,7 @@
   accent-color: var(--color-accent);
 }
 
-/* A tell struck through — used in some hero copy. */
+/* A tell struck through - used in some hero copy. */
 .tools-scope .struck { position: relative; color: var(--color-accent); white-space: nowrap; }
 .tools-scope .struck::after {
   content: '';
@@ -147,7 +147,7 @@
   border-radius: 2px;
 }
 
-/* Diff highlights — colour never carries meaning alone (strike/underline too). */
+/* Diff highlights - colour never carries meaning alone (strike/underline too). */
 .tools-scope .diff-del {
   background: color-mix(in srgb, var(--color-bad) 12%, transparent);
   color: var(--color-bad);

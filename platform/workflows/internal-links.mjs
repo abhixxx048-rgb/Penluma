@@ -62,7 +62,7 @@ Task:
    post covers. Turn that phrase into a markdown link: [phrase](/blog/<id>) where <id> is the
    other post's "id" from the index (e.g. /blog/system-design/06-caching-deep).
 3. Rules:
-   - Link to GENUINELY relevant posts only — prefer same topic or a directly related concept.
+   - Link to GENUINELY relevant posts only - prefer same topic or a directly related concept.
    - NEVER link a post to itself. Use real ids from the index only (no invented URLs).
    - Link a given target at most once. Don't over-link: 3-6 total is the target.
    - Link natural noun phrases in prose; do NOT put links in headings, code blocks, the FAQ,

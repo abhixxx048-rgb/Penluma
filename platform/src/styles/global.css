@@ -2,7 +2,7 @@
 @plugin '@tailwindcss/typography';
 
 /* Tool-suite design tokens + scoped component classes (writing tools under
-   /tools). Additive + namespaced — see the file header. */
+   /tools). Additive + namespaced - see the file header. */
 @import './tools.css';
 
 /* Dark mode driven by a class on <html> (toggled + persisted in localStorage) */

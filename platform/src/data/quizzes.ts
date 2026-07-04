@@ -21,7 +21,7 @@ export const QUIZZES: Record<string, TopicQuiz> = {
   'aws-cloud-practitioner-mcq': {
     badge: 'CLF-C02',
     intro:
-      'Practice questions across the four AWS Cloud Practitioner exam domains. Pick an answer to reveal whether you were right and why — nothing is shown until you commit, so you can genuinely test yourself.',
+      'Practice questions across the four AWS Cloud Practitioner exam domains. Pick an answer to reveal whether you were right and why - nothing is shown until you commit, so you can genuinely test yourself.',
     questions: AWS_CCP_QUIZ,
   },
 };

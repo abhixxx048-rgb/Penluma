@@ -1,6 +1,6 @@
 # How to Choose YOUR Path
 
-Twenty-one options can feel paralyzing. This chapter turns them into a decision you can make today. The framework is simple: match the opportunity to your **skills**, your **money**, your **deadline**, and your **patience** — then commit to one path for 90 days minimum.
+Twenty-one options can feel paralyzing. This chapter turns them into a decision you can make today. The framework is simple: match the opportunity to your **skills**, your **money**, your **deadline**, and your **patience** - then commit to one path for 90 days minimum.
 
 ## Step 1: Answer Four Questions
 
@@ -42,35 +42,35 @@ Difficulty and AI-proof are rated 1-5. AI-proof means how resistant the income i
 Find the description closest to you. Each persona gets three picks.
 
 ### "I have tech skills"
-1. **High-Value Tech Freelancing (#5)** — the highest experienced ceiling on the list ($8K-25K+/mo). AI rollouts created a structural shortage of cloud/DevOps/integration specialists, and your former employer or colleagues are statistically your fastest first client.
-2. **AI Automation Agency (#1)** — small businesses budget $1,000-3,500/month to automate workflows and most need outside help. Recurring retainers, low startup cost, and your technical judgment is exactly the "maintenance layer" they pay for.
-3. **Micro-SaaS (#3)** — the highest leverage: build once, sell monthly. Slower and riskier (70% never pass $1K/mo), so run it alongside freelancing income, not instead of it.
+1. **High-Value Tech Freelancing (#5)** - the highest experienced ceiling on the list ($8K-25K+/mo). AI rollouts created a structural shortage of cloud/DevOps/integration specialists, and your former employer or colleagues are statistically your fastest first client.
+2. **AI Automation Agency (#1)** - small businesses budget $1,000-3,500/month to automate workflows and most need outside help. Recurring retainers, low startup cost, and your technical judgment is exactly the "maintenance layer" they pay for.
+3. **Micro-SaaS (#3)** - the highest leverage: build once, sell monthly. Slower and riskier (70% never pass $1K/mo), so run it alongside freelancing income, not instead of it.
 
 ### "I have no special skills"
-1. **AI Training & Data Annotation (#6)** — the fastest first dollar online (1-4 weeks), zero credentials needed. Treat it as a paid bridge while you build something else, because generalist pay is falling.
-2. **UGC Creator (#14)** — you need a phone and persistence, not followers. $75-300+ per video, first income in 2-6 weeks.
-3. **Flipping & Resale (#20)** — AI pricing apps mean beginners instantly know what items are worth. First sale possible within 48 hours on Facebook Marketplace.
+1. **AI Training & Data Annotation (#6)** - the fastest first dollar online (1-4 weeks), zero credentials needed. Treat it as a paid bridge while you build something else, because generalist pay is falling.
+2. **UGC Creator (#14)** - you need a phone and persistence, not followers. $75-300+ per video, first income in 2-6 weeks.
+3. **Flipping & Resale (#20)** - AI pricing apps mean beginners instantly know what items are worth. First sale possible within 48 hours on Facebook Marketplace.
 
 ### "I have less than $100"
-1. **AI Chatbots & Agents (#2)** — $0-100 to start, first income in 2-8 weeks, and it teaches skills that upgrade into the agency model later.
-2. **Selling Digital Products (#11)** — $0-100, and the AI flood works in your favor: buyers now pay a premium for visibly human, hyper-specific products.
-3. **AI Training gigs (#6)** — $0-50 and no selling required; you apply to platforms instead of pitching clients.
+1. **AI Chatbots & Agents (#2)** - $0-100 to start, first income in 2-8 weeks, and it teaches skills that upgrade into the agency model later.
+2. **Selling Digital Products (#11)** - $0-100, and the AI flood works in your favor: buyers now pay a premium for visibly human, hyper-specific products.
+3. **AI Training gigs (#6)** - $0-50 and no selling required; you apply to platforms instead of pitching clients.
 
 ### "I need money within 30 days"
-1. **Flipping & Resale (#20)** — 1-2 weeks, sometimes 48 hours. The fastest cash on the list.
-2. **AI Training & Data Annotation (#6)** — 1-4 weeks, and you can start the same day you're approved.
-3. **AI-Proof Local Services (#21)** — 1-3 weeks to first paying job if you can invest a little in basic equipment; the most reliable of the three.
+1. **Flipping & Resale (#20)** - 1-2 weeks, sometimes 48 hours. The fastest cash on the list.
+2. **AI Training & Data Annotation (#6)** - 1-4 weeks, and you can start the same day you're approved.
+3. **AI-Proof Local Services (#21)** - 1-3 weeks to first paying job if you can invest a little in basic equipment; the most reliable of the three.
 
 ### "I want the most AI-proof option"
-1. **AI-Proof Local Services (#21)** — resilience 5/5. AI cannot pressure-wash a driveway; it can only help you run the business like a five-person company.
-2. **Paid Communities (#13)** — resilience 5/5. AI flooding the internet made human connection *more* valuable; paid-member retention actually rose from 2.8 to 4.2 months.
-3. **Professional Consulting (#19)** or **Tutoring & Coaching (#18)** — both 4/5. Licensed judgment, accountability, and trust are what buyers pay for, and AI augments rather than replaces them.
+1. **AI-Proof Local Services (#21)** - resilience 5/5. AI cannot pressure-wash a driveway; it can only help you run the business like a five-person company.
+2. **Paid Communities (#13)** - resilience 5/5. AI flooding the internet made human connection *more* valuable; paid-member retention actually rose from 2.8 to 4.2 months.
+3. **Professional Consulting (#19)** or **Tutoring & Coaching (#18)** - both 4/5. Licensed judgment, accountability, and trust are what buyers pay for, and AI augments rather than replaces them.
 
 ### "I want the highest ceiling"
-1. **High-Value Tech Freelancing (#5)** — $8K-25K+/month experienced, the top of the table.
-2. **Professional Consulting (#19)** — $8K-20K+/month; one expert with AI tools now delivers what took a five-person team.
-3. **Online Courses & Cohorts (#12) or Paid Communities (#13)** — up to $15K/month, and unlike freelancing, income is not capped by your hours.
+1. **High-Value Tech Freelancing (#5)** - $8K-25K+/month experienced, the top of the table.
+2. **Professional Consulting (#19)** - $8K-20K+/month; one expert with AI tools now delivers what took a five-person team.
+3. **Online Courses & Cohorts (#12) or Paid Communities (#13)** - up to $15K/month, and unlike freelancing, income is not capped by your hours.
 
 ## Step 4: Commit
 
-Pick one primary path and, at most, one fast-cash path to fund it (e.g., annotation gigs paying the bills while you build a chatbot service). Write down a 90-day goal — usually "first paying customer," not a revenue number. Then go read your chapter and start this week. The comparison table doesn't earn anything; the first awkward pitch does.
+Pick one primary path and, at most, one fast-cash path to fund it (e.g., annotation gigs paying the bills while you build a chatbot service). Write down a 90-day goal - usually "first paying customer," not a revenue number. Then go read your chapter and start this week. The comparison table doesn't earn anything; the first awkward pitch does.

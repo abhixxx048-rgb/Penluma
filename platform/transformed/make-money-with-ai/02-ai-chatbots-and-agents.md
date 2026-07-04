@@ -64,7 +64,7 @@ Little or no coding is needed. Platforms like **Botpress**, **Voiceflow**, and *
 
 The market is growing, hype aside. The global AI agents market grew from about $7.6 billion in 2025 to roughly $11-12 billion in 2026. Gartner, a large research firm, forecasts that 40% of enterprise applications will embed task-specific AI agents by the end of 2026, up from under 5% in 2025. About 80% of companies are using or planning AI chatbots for customer service. An AI chat interaction costs roughly $0.50-$0.70, versus $6-$15 for a human agent.
 
-Here is the gap you fill. Small businesses want this but will not learn Botpress, and cannot afford a $75,000 custom development firm. They typically budget $100-$500/month for a simple bot that answers FAQs and captures leads (a **lead** is a potential customer's contact details) — too small for big agencies, perfect for a one-person operator.
+Here is the gap you fill. Small businesses want this but will not learn Botpress, and cannot afford a $75,000 custom development firm. They typically budget $100-$500/month for a simple bot that answers FAQs and captures leads (a **lead** is a potential customer's contact details) - too small for big agencies, perfect for a one-person operator.
 
 Be clear-eyed, though. YouTube "AI automation agency" gurus claiming $200,000/month are, per industry analyses, almost always misleading. This is a decent freelance service, not a get-rich machine.
 
@@ -80,7 +80,7 @@ You pay small platform fees ($0-100/month across tools at the start) and keep th
 
 - **Skills:** clear writing (the bot's answers are writing), basic logic (if the customer says X, do Y), patience with settings screens, and basic sales. Coding helps later, not on day one.
 - **Tools:** one bot platform (Botpress and Voiceflow have free tiers), one automation connector (Make or n8n, free tiers), a free portfolio page, and a screen recorder like Loom for demos.
-- **Money:** $0-100 to start. Your first real cost is a platform subscription (about $20-90/month) when a client needs pro features — their setup fee covers it.
+- **Money:** $0-100 to start. Your first real cost is a platform subscription (about $20-90/month) when a client needs pro features - their setup fee covers it.
 - **Time:** 5-10 hours/week minimum. Expect 20-40 hours to get competent on one platform.
 
 ## Your first 90 days
@@ -111,14 +111,14 @@ What stays valuable: integration into a business's messy systems; trust, someone
 
 - **Winston Zulu, an Upwork chatbot freelancer,** got his first Upwork project within 24 hours; a later project led a US company to hire him full-time and remote. He warns first projects on Upwork or Fiverr (another freelance marketplace) are hard for beginners, and recommends specializing.
 - **"Rucker Tech" (Medium, 2025)** landed a first client in about one week: a shop owner complaining in a Facebook group about missed follow-ups. Rucker built a follow-up automation in 3 hours and charged $150. The lesson: "you don't need an agency, you need one win."
-- **Conversational Design, an Italian agency,** built lead-qualification chatbots that raised a client's conversion rate by 40% and captured 20,000 leads in a year — the result that justifies a retainer.
+- **Conversational Design, an Italian agency,** built lead-qualification chatbots that raised a client's conversion rate by 40% and captured 20,000 leads in a year - the result that justifies a retainer.
 
 ## Mistakes that sink beginners
 
 - Building complex "AI agent stacks" nobody asked for, instead of solving one boring, expensive problem like missed calls or slow follow-up.
 - Pitching the technology instead of the outcome ("GPT-4o RAG chatbot" versus "never miss another lead").
 - Serving every industry at once. Generalists lose to niche specialists on trust and speed.
-- Ignoring failure modes. A wrong answer destroys trust, so always test, and always set up **escalation** — a rule that hands hard questions to a human.
+- Ignoring failure modes. A wrong answer destroys trust, so always test, and always set up **escalation** - a rule that hands hard questions to a human.
 
 ## Pro tips that raise your win rate
 

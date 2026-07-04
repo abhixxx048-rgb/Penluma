@@ -121,7 +121,7 @@ const html = `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Security &amp; Privacy Engineering — A Beginner-to-Advanced Study Guide</title>
+<title>Security &amp; Privacy Engineering - A Beginner-to-Advanced Study Guide</title>
 <style>${CSS}</style>
 </head>
 <body>

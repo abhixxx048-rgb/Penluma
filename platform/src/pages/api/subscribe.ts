@@ -12,7 +12,7 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 /**
  * Add a subscriber to Buttondown. Returns true if the email is now on the list
- * (created, or already existed), false on a real failure. Never throws — a
+ * (created, or already existed), false on a real failure. Never throws - a
  * provider hiccup must not lose the signup (we still fall back to KV).
  *
  * Set the key once with:  wrangler secret put BUTTONDOWN_API_KEY

@@ -97,7 +97,7 @@ const cover = `
   <p class="kicker">Complete Study Guide · Beginner to Advanced</p>
   <h1>UI/UX Mastery</h1>
   <p class="subtitle">The psychology, principles, and process behind designing anything people
-  see, read, use, or experience — websites, apps, dashboards, presentations, documents,
+  see, read, use, or experience - websites, apps, dashboards, presentations, documents,
   marketing, video, and physical products.</p>
   <div class="rule"></div>
   <p class="meta">${chapters.length} chapters · Compiled ${today}</p>
@@ -126,7 +126,7 @@ const bodyHtml = chapters.map(c => `
 
 const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
-<title>UI/UX Mastery — Complete Study Guide</title>
+<title>UI/UX Mastery - Complete Study Guide</title>
 <style>${CSS}</style></head><body>
 ${cover}
 ${toc}

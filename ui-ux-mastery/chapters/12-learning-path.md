@@ -33,7 +33,7 @@ Here is the ranked list at a glance, then details on each.
 | 7 | 100 Things... About People | Susan Weinschenk | Behavioral science, bite-sized | Dip-in reference |
 | 8 | Articulating Design Decisions | Tom Greever | Defending your work to others | Career survival |
 
-### 1. The Design of Everyday Things — Don Norman
+### 1. The Design of Everyday Things - Don Norman
 
 This is the foundational "why" of the whole field. Don Norman is often called the godfather of UX. He actually coined the term "user experience" while working at Apple in the early 1990s.
 
@@ -48,7 +48,7 @@ Norman's big lesson: when someone struggles with a door, a stove, or a microwave
 
 This book is denser than the others. Read it slowly.
 
-### 2. Don't Make Me Think — Steve Krug
+### 2. Don't Make Me Think - Steve Krug
 
 The friendliest possible starting point. It is short, funny, full of pictures, and you can read it in a weekend. It is still the number-one usability best seller on Amazon after more than 20 years.
 
@@ -56,7 +56,7 @@ The whole book hangs on one law: **"Don't make me think."** A good design is sel
 
 The second half is a superb, plain guide to cheap do-it-yourself usability testing (watching real people try to use your design). Krug's famous line: **"Testing one user is 100 percent better than testing none."** Keep that sentence in your pocket forever.
 
-### 3. Refactoring UI — Adam Wathan & Steve Schoger
+### 3. Refactoring UI - Adam Wathan & Steve Schoger
 
 This is the bridge from "I understand UX principles" to "my screens actually look good." It fixes the beginner's most visible weakness: interfaces that look amateur.
 
@@ -64,7 +64,7 @@ It is refreshingly practical, giving tweak-by-tweak advice: how to use spacing, 
 
 One honest note: this is UI polish, not UX research. It makes things pretty and clear. It does not teach you to find the right problem. You need both.
 
-### 4. Laws of UX — Jon Yablonski
+### 4. Laws of UX - Jon Yablonski
 
 This book turns cognitive psychology (the science of how the mind works) into about 10 memorable design laws you can name and cite. It has a free companion website that catalogs 30 principles. If you like structure, you will love this.
 
@@ -83,25 +83,25 @@ The highest-value laws to know by name:
 
 Keep this one open while you design.
 
-### 5. About Face — Alan Cooper
+### 5. About Face - Alan Cooper
 
 The heavyweight, around 700 pages. Think of it as the interaction-design bible. It introduces **goal-directed design** (designing around what the user is trying to achieve) and popularized **personas** (fictional but research-based profiles of your typical users). It goes deep on designing for how people actually work, and puts behavior before features.
 
 This is not a first read. Come back to it once your fundamentals are solid, and use it as a reference.
 
-### 6. Hooked — Nir Eyal
+### 6. Hooked - Nir Eyal
 
 This teaches the **Hook Model**, a four-step loop that builds habits: **Trigger → Action → Variable Reward → Investment.** A notification triggers you, you open the app (action), you get something unpredictable and pleasing (variable reward), and you put a little of yourself in, like a post or a follow (investment), which makes you come back. It explains how apps like Instagram and Slack keep you engaged.
 
 Read this one critically. The same techniques that build healthy engagement can cross into manipulation, which is where "dark patterns" (tricks that push users into things they did not want) begin. Eyal's follow-up book, *Indistractable*, is the ethical counterweight. Learn the model, but always ask whether you are helping the user or exploiting them.
 
-### 7. 100 Things Every Designer Needs to Know About People — Susan Weinschenk
+### 7. 100 Things Every Designer Needs to Know About People - Susan Weinschenk
 
 A behavioral-science reference organized as 100 short, evidence-backed principles about how people see, read, remember, decide, and get motivated. Things like how peripheral vision works, how the brain recognizes patterns, why multitasking fails, and how culture changes the meaning of a color. There is a follow-up called *100 More Things*.
 
 This is a dip-in book. Read a principle when you need it. It grounds your design choices in psychology instead of taste.
 
-### 8. Articulating Design Decisions — Tom Greever
+### 8. Articulating Design Decisions - Tom Greever
 
 The most underrated book on this list, and maybe the most important for your career. It teaches a *soft* skill that decides whether your good design ever ships: how to explain and defend your decisions to stakeholders (the bosses, clients, and teammates who approve or block your work).
 
@@ -141,7 +141,7 @@ Best for: working practitioners (roughly 3 or more years in) leveling up or aimi
 
 Best for: self-paced, budget-conscious learners who want breadth and a steady library. The content is text-heavy and academic, with less hand-holding than a bootcamp.
 
-### Designlab — UX Academy
+### Designlab - UX Academy
 
 - **Cost**: the UX Academy bootcamp is about $8,499. A shorter Foundations prep course is about $499 and earns a $500 credit. Interest-free payment plans exist (with a roughly $400 servicing fee).
 - **Format**: a one-on-one vetted working-designer mentor, weekly critiques with peers, a structured schedule, plus a UI module and real client capstone projects. Frequently rated a top UX bootcamp for satisfaction.
@@ -156,12 +156,12 @@ Best for: career-changers who need structure, accountability, mentorship, and a 
 
 You can learn an enormous amount for free. Good channels:
 
-- **AJ&Smart** — design sprints, running workshops, decision-making.
-- **Femke (@Femke.design)** — a senior product designer on research, prototyping, and process.
-- **CareerFoundry** — structured method: framing research questions, running interviews, synthesizing findings.
-- **The Futur** — the business and career side of design.
-- **Flux Academy, DesignCourse (Gary Simon), Jesse Showalter** — Figma and UI tutorials.
-- **UX Tools (Taylor Palmer)** — tools, usability studies, tutorials.
+- **AJ&Smart** - design sprints, running workshops, decision-making.
+- **Femke (@Femke.design)** - a senior product designer on research, prototyping, and process.
+- **CareerFoundry** - structured method: framing research questions, running interviews, synthesizing findings.
+- **The Futur** - the business and career side of design.
+- **Flux Academy, DesignCourse (Gary Simon), Jesse Showalter** - Figma and UI tutorials.
+- **UX Tools (Taylor Palmer)** - tools, usability studies, tutorials.
 
 A warning that we will repeat later: watching videos feels like progress but is not, by itself, learning. Use these to unblock a specific problem, then go make something.
 
@@ -175,29 +175,29 @@ Split your online sources into two buckets: places that teach you to *think corr
 
 ### Learn the principles (read these to think right)
 
-- **Nielsen Norman Group (nngroup.com)** — the gold standard for research-backed usability articles. Home of Jakob Nielsen's famous **10 Usability Heuristics** (10 general rules of thumb for good interface design). Free articles, paid deep reports.
-- **Baymard Institute (baymard.com)** — large-scale research on e-commerce, especially checkout. Their numbers are worth citing. Baymard reviewed more than 41,000 checkout performance scores and found that **65 percent of leading e-commerce sites score "mediocre" or worse** on checkout. The average site could gain roughly **35 percent more conversions** just from a better checkout. The average checkout has about 15 form fields (nearly 24 form elements) when it could have far fewer. And across 50 studies, the average shopping cart abandonment rate is about **70 percent**. Baymard estimates about **$260 billion** in recoverable revenue in the US and EU from fixing checkout alone. Numbers like these are gold in a portfolio case study.
-- **lawsofux.com** — Jon Yablonski's free catalog of 30 psychological design laws.
-- **Smashing Magazine** — practical front-end and UX articles, plus a strong weekly newsletter.
+- **Nielsen Norman Group (nngroup.com)** - the gold standard for research-backed usability articles. Home of Jakob Nielsen's famous **10 Usability Heuristics** (10 general rules of thumb for good interface design). Free articles, paid deep reports.
+- **Baymard Institute (baymard.com)** - large-scale research on e-commerce, especially checkout. Their numbers are worth citing. Baymard reviewed more than 41,000 checkout performance scores and found that **65 percent of leading e-commerce sites score "mediocre" or worse** on checkout. The average site could gain roughly **35 percent more conversions** just from a better checkout. The average checkout has about 15 form fields (nearly 24 form elements) when it could have far fewer. And across 50 studies, the average shopping cart abandonment rate is about **70 percent**. Baymard estimates about **$260 billion** in recoverable revenue in the US and EU from fixing checkout alone. Numbers like these are gold in a portfolio case study.
+- **lawsofux.com** - Jon Yablonski's free catalog of 30 psychological design laws.
+- **Smashing Magazine** - practical front-end and UX articles, plus a strong weekly newsletter.
 - **The primary source documents**: the WCAG accessibility guidelines from the W3C, Apple's Human Interface Guidelines, and Google's Material Design. Read the originals, not other people's summaries.
-- **Company design blogs** — Stripe, Figma, Airbnb, Notion, and Shopify's "Polaris" system show how mature teams reason.
+- **Company design blogs** - Stripe, Figma, Airbnb, Notion, and Shopify's "Polaris" system show how mature teams reason.
 
 ### Newsletters worth subscribing to
 
 Pick two or three and read them weekly:
 
-- **NN/g UX Newsletter** — research-backed.
-- **UX Design Weekly** (36,000+ subscribers) — curated links.
+- **NN/g UX Newsletter** - research-backed.
+- **UX Design Weekly** (36,000+ subscribers) - curated links.
 - **Smashing Magazine newsletter**, **Really Good UX**, **UX Collective**, and **Growth.Design** (which teaches through case studies drawn as comics).
 
 ### Study real patterns (steal the how, not the pixels)
 
-- **Mobbin** — the largest curated library of real, shipped mobile and web app screens and flows. Filter by app, by element, or by whole flow. This is the single best answer to "how do real apps actually solve this?"
-- **Page Flows** — screen-*recording videos* of real user flows like onboarding, checkout, and cancellation. Video shows you motion and sequence, which static screens cannot.
-- **UI Sources, Appshots, SaaSFrame** — annotated real-app flows and component collections. (Appshots alone cites more than 120,000 screens from 400-plus apps.)
-- **Refactoring UI site** — before-and-after examples of UI polish.
+- **Mobbin** - the largest curated library of real, shipped mobile and web app screens and flows. Filter by app, by element, or by whole flow. This is the single best answer to "how do real apps actually solve this?"
+- **Page Flows** - screen-*recording videos* of real user flows like onboarding, checkout, and cancellation. Video shows you motion and sequence, which static screens cannot.
+- **UI Sources, Appshots, SaaSFrame** - annotated real-app flows and component collections. (Appshots alone cites more than 120,000 screens from 400-plus apps.)
+- **Refactoring UI site** - before-and-after examples of UI polish.
 
-### Dribbble and Behance — with a big caveat
+### Dribbble and Behance - with a big caveat
 
 **Dribbble** and **Behance** are galleries of beautiful design work. Here is the trap: much of it is *aspirational art, not usable product.* A lot of Dribbble is "concept" work made to collect likes, and much of it could never actually be built or would frustrate real users. It optimizes for looking cool in a thumbnail, not for helping a person finish a task.
 
@@ -233,7 +233,7 @@ Pick a real app you use. Find one *specific* usability problem. Research why it 
 
 There is a classic naive mistake to avoid here. Do not "redesign Spotify's home screen" just to make it prettier. That teaches you almost nothing, because you have no idea about their business goals, their data, or the reasons behind their choices. Instead, define a real problem, solve that, and honestly admit what you do not know (like their internal metrics). A focused redesign of one real problem beats a from-scratch fantasy app, because the constraints are real.
 
-### 3. The Daily UI challenge — useful, but with big caveats
+### 3. The Daily UI challenge - useful, but with big caveats
 
 Daily UI (dailyui.co) emails you a UI prompt every day for 100 days.
 
@@ -278,28 +278,28 @@ Month:  1     2     3     4     5     6     7-9      10-12
         basics research design  E2E    study  project spec.       + apply
 ```
 
-**Month 1 — Foundations and tool basics.**
+**Month 1 - Foundations and tool basics.**
 Read *Don't Make Me Think* and start *The Design of Everyday Things*. Begin the Google UX Certificate (or IxDF). Learn Figma fundamentals: frames, components, **Auto Layout** (a feature that makes elements resize and space themselves automatically), variants, and basic prototyping. Warm up with the Daily UI challenge to beat the blank canvas. *Deliverable:* 8 to 10 Daily UI screens and a personal Figma cheat sheet.
 
-**Month 2 — UX process and research.**
+**Month 2 - UX process and research.**
 Learn the double-diamond (a model of design as two phases: explore wide, then narrow down, twice), user interviews, personas, journey maps, information architecture (how you organize and label content), and card sorting (a method for learning how users group things). Read *Laws of UX*. *Deliverable:* run 3 to 5 short user interviews with friends on a real problem, then write up your insights and an affinity map (grouped sticky notes of what you learned).
 
-**Month 3 — Interaction and visual design.**
+**Month 3 - Interaction and visual design.**
 Read *Refactoring UI* and use it to redo your Month 1 screens, keeping a before-and-after. Dip into Weinschenk's *100 Things*. Study real patterns on Mobbin and Page Flows. *Deliverable:* a small component library plus one redesign critique of a real app, with the problem stated first.
 
-**Month 4 — First end-to-end project.**
+**Month 4 - First end-to-end project.**
 Take one product (real, or clearly labeled hypothetical) all the way through: problem → research → information architecture → wireframes → high-fidelity prototype in Figma. Test it with about 5 users and iterate. (Nielsen's rule of thumb: around 5 users per round of testing surfaces most usability problems.) *Deliverable:* a working prototype and documented test findings.
 
-**Month 5 — Case study #1, plus accessibility.**
+**Month 5 - Case study #1, plus accessibility.**
 Write up your Month 4 project as a portfolio case study: outcome-first, mostly text, tradeoffs shown. Learn WCAG basics and audit and fix your project for accessibility. Read *Hooked* critically for product and retention thinking. *Deliverable:* one polished case study.
 
-**Month 6 — Second real project and portfolio site.**
+**Month 6 - Second real project and portfolio site.**
 Do a *real* project for an actual person or organization. Build your portfolio website and write case study #2. Get both critiqued on ADPList or in communities. *Deliverable:* two case studies and a live portfolio.
 
-**Months 7 to 9 — Depth, feedback, specialization.**
+**Months 7 to 9 - Depth, feedback, specialization.**
 Add a third project, ideally collaborative (team up with a developer or product manager). Read *About Face* and *Articulating Design Decisions*. Give and receive structured critique regularly. Explore a specialty: research, design systems, or product design. If you are aiming at research or senior roles, you could start NN/g courses. *Deliverable:* case study #3 and a clear specialization angle.
 
-**Months 10 to 12 — Job readiness (or client work).**
+**Months 10 to 12 - Job readiness (or client work).**
 Refine your 2 or 3 strongest case studies and tighten the portfolio to lead with impact. Practice presenting your work out loud, which is real interview prep. Build a network through meetups, ADPList mentors, and LinkedIn. Apply for junior roles, internships, or freelance gigs. Keep a steady input habit: one NN/g or Smashing article plus your newsletters each week. *Deliverable:* an interview-ready portfolio and active applications.
 
 **Ongoing, forever.**

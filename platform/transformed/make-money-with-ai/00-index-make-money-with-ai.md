@@ -104,42 +104,42 @@ Each link below opens a full beginner-to-advanced chapter with a 90-day plan, ho
 
 The highest earning ceilings here. You use AI as a tool to solve a business's problem and charge for the result.
 
-- **[AI Automation Agency](/blog/make-money-with-ai/01-ai-automation-agency)** — Connect small businesses' software tools with no-code platforms like n8n so repetitive work runs itself, charging setup fees ($500-2,000+) plus monthly retainers ($1,000-3,000) to keep it all working. *First income 4-12 weeks; beginners $200-1,500/mo; AI-proof 3/5.*
-- **[AI Chatbots & Agents](/blog/make-money-with-ai/02-ai-chatbots-and-agents)** — Build customer-support and lead-capture chatbots for small businesses using no-code tools, charging $500-5,000 setup plus $100-500/month maintenance retainers. *First income 2-8 weeks; beginners $200-1,000/mo; AI-proof 3/5.*
-- **[Micro-SaaS with AI](/blog/make-money-with-ai/03-micro-saas-with-ai)** — Use AI coding assistants to build a tiny subscription software tool that solves one specific problem for a niche audience, then collect recurring monthly payments as a one-person business. *First income 2-4 months; beginners $0-500/mo; AI-proof 3/5.*
-- **[Freelance Dev](/blog/make-money-with-ai/04-freelance-web-app-development)** — Build websites and small apps for clients using AI coding tools to deliver in days what used to take weeks, selling through Upwork/Fiverr or directly to local businesses. *First income 2-8 weeks; beginners $200-1,000/mo; AI-proof 3/5.*
-- **[Technical Freelancing](/blog/make-money-with-ai/05-technical-freelancing)** — Rent your specialized cloud, DevOps, data, or AI-integration skills to companies by the hour or project, at rates 3-5x higher than general freelance work because AI rollouts are creating a structural shortage of infrastructure specialists. *First income 4-12 weeks with existing skills; beginners $500-3,000/mo; AI-proof 4/5.*
+- **[AI Automation Agency](/blog/make-money-with-ai/01-ai-automation-agency)** - Connect small businesses' software tools with no-code platforms like n8n so repetitive work runs itself, charging setup fees ($500-2,000+) plus monthly retainers ($1,000-3,000) to keep it all working. *First income 4-12 weeks; beginners $200-1,500/mo; AI-proof 3/5.*
+- **[AI Chatbots & Agents](/blog/make-money-with-ai/02-ai-chatbots-and-agents)** - Build customer-support and lead-capture chatbots for small businesses using no-code tools, charging $500-5,000 setup plus $100-500/month maintenance retainers. *First income 2-8 weeks; beginners $200-1,000/mo; AI-proof 3/5.*
+- **[Micro-SaaS with AI](/blog/make-money-with-ai/03-micro-saas-with-ai)** - Use AI coding assistants to build a tiny subscription software tool that solves one specific problem for a niche audience, then collect recurring monthly payments as a one-person business. *First income 2-4 months; beginners $0-500/mo; AI-proof 3/5.*
+- **[Freelance Dev](/blog/make-money-with-ai/04-freelance-web-app-development)** - Build websites and small apps for clients using AI coding tools to deliver in days what used to take weeks, selling through Upwork/Fiverr or directly to local businesses. *First income 2-8 weeks; beginners $200-1,000/mo; AI-proof 3/5.*
+- **[Technical Freelancing](/blog/make-money-with-ai/05-technical-freelancing)** - Rent your specialized cloud, DevOps, data, or AI-integration skills to companies by the hour or project, at rates 3-5x higher than general freelance work because AI rollouts are creating a structural shortage of infrastructure specialists. *First income 4-12 weeks with existing skills; beginners $500-3,000/mo; AI-proof 4/5.*
 
 ### Build an audience and create content
 
 Slower to pay, but it compounds. An audience you own becomes the launchpad for everything else.
 
-- **[Niche YouTube](/blog/make-money-with-ai/07-niche-youtube-channel)** — Build a channel teaching one specific skill, then earn from ads, sponsors, affiliate links, and your own products as old videos keep paying for years. *First income 6-12 months; beginners $0-200/mo; AI-proof 3/5.*
-- **[Short-Form Video](/blog/make-money-with-ai/08-short-form-video-repurposing)** — Cut long podcasts and streams into viral short clips — earn per-view payouts from clipping marketplaces or monthly retainers from creators and businesses, no face required. *First income 2-6 weeks; beginners $0-500/mo; AI-proof 3/5.*
-- **[Newsletter Business](/blog/make-money-with-ai/09-newsletter-business)** — Build an email list around one narrow topic on Beehiiv or Substack, then earn from sponsorships, $10/month paid subscriptions, and affiliate links once a few hundred engaged readers trust you. *First income 2-4 months; beginners $0-300/mo; AI-proof 3/5.*
-- **[Blogging & SEO](/blog/make-money-with-ai/10-blogging-seo-ai-search)** — Build a website about one narrow topic you genuinely know, then earn through email subscribers, digital products, affiliates, and ads — knowing Google's AI answers have gutted the old free-traffic model. *First income 3-6 months; beginners $0-100/mo; AI-proof 2/5.*
-- **[UGC Creator](/blog/make-money-with-ai/14-ugc-creator-for-brands)** — Brands pay you $75-300+ per short, casual-looking product video that they post on their own channels, so you need zero followers — just a phone, a portfolio, and relentless pitching. *First income 2-6 weeks; beginners $200-1,000/mo; AI-proof 2/5.*
-- **[Video Editing](/blog/make-money-with-ai/15-video-editing-motion-design)** — Turn other people's raw footage into polished videos for creators and businesses, using AI tools for speed while charging for the storytelling judgment AI can't provide. *First income 4-8 weeks; beginners $500-2,000/mo; AI-proof 3/5.*
+- **[Niche YouTube](/blog/make-money-with-ai/07-niche-youtube-channel)** - Build a channel teaching one specific skill, then earn from ads, sponsors, affiliate links, and your own products as old videos keep paying for years. *First income 6-12 months; beginners $0-200/mo; AI-proof 3/5.*
+- **[Short-Form Video](/blog/make-money-with-ai/08-short-form-video-repurposing)** - Cut long podcasts and streams into viral short clips - earn per-view payouts from clipping marketplaces or monthly retainers from creators and businesses, no face required. *First income 2-6 weeks; beginners $0-500/mo; AI-proof 3/5.*
+- **[Newsletter Business](/blog/make-money-with-ai/09-newsletter-business)** - Build an email list around one narrow topic on Beehiiv or Substack, then earn from sponsorships, $10/month paid subscriptions, and affiliate links once a few hundred engaged readers trust you. *First income 2-4 months; beginners $0-300/mo; AI-proof 3/5.*
+- **[Blogging & SEO](/blog/make-money-with-ai/10-blogging-seo-ai-search)** - Build a website about one narrow topic you genuinely know, then earn through email subscribers, digital products, affiliates, and ads - knowing Google's AI answers have gutted the old free-traffic model. *First income 3-6 months; beginners $0-100/mo; AI-proof 2/5.*
+- **[UGC Creator](/blog/make-money-with-ai/14-ugc-creator-for-brands)** - Brands pay you $75-300+ per short, casual-looking product video that they post on their own channels, so you need zero followers - just a phone, a portfolio, and relentless pitching. *First income 2-6 weeks; beginners $200-1,000/mo; AI-proof 2/5.*
+- **[Video Editing](/blog/make-money-with-ai/15-video-editing-motion-design)** - Turn other people's raw footage into polished videos for creators and businesses, using AI tools for speed while charging for the storytelling judgment AI can't provide. *First income 4-8 weeks; beginners $500-2,000/mo; AI-proof 3/5.*
 
 ### Sell products, knowledge and community
 
 Package what you know once and sell it many times - or host the place people gather.
 
-- **[Digital Products](/blog/make-money-with-ai/11-selling-digital-products)** — Create a template, planner, spreadsheet, or prompt pack once and sell the same downloadable file repeatedly on Etsy, Gumroad, or your own site. *First income 2-8 weeks; beginners $0-300/mo; AI-proof 2/5.*
-- **[Online Courses](/blog/make-money-with-ai/12-online-courses-and-cohorts)** — Package what you know into a paid class — but in 2026 the money is in live cohort programs with feedback and accountability, not pre-recorded videos that AI now gives away free. *First income 2-4 months; beginners $0-1,000/mo; AI-proof 3/5.*
-- **[Paid Communities](/blog/make-money-with-ai/13-paid-communities)** — Run a private online group on Skool, Circle, or Discord where members pay roughly $26-50 a month for access to you and, more importantly, to each other. *First income 1-6 months; beginners $0-1,000/mo; AI-proof 5/5.*
-- **[Print-on-Demand & Etsy](/blog/make-money-with-ai/16-print-on-demand-etsy)** — Sell designs on printed products or instant-download files through Etsy — real passive-income potential, but 65% of sellers make under $100 a year, so only specific niches still pay. *First income 3-8 weeks; beginners $0-300/mo; AI-proof 2/5.*
-- **[Tutoring & Coaching](/blog/make-money-with-ai/18-online-tutoring-coaching)** — Get paid by the hour to teach school subjects, test prep, or — the fastest-growing niche — how to actually use AI tools, to students, professionals, and older adults over video calls. *First income 2-6 weeks; beginners $200-1,000/mo; AI-proof 4/5.*
-- **[Consulting](/blog/make-money-with-ai/19-consulting-your-expertise)** — Package the expertise from your existing career and sell it to companies as paid advice and hands-on help, by the hour, day, project, or monthly retainer. *First income 1-3 months; beginners $500-3,000/mo; AI-proof 4/5.*
+- **[Digital Products](/blog/make-money-with-ai/11-selling-digital-products)** - Create a template, planner, spreadsheet, or prompt pack once and sell the same downloadable file repeatedly on Etsy, Gumroad, or your own site. *First income 2-8 weeks; beginners $0-300/mo; AI-proof 2/5.*
+- **[Online Courses](/blog/make-money-with-ai/12-online-courses-and-cohorts)** - Package what you know into a paid class - but in 2026 the money is in live cohort programs with feedback and accountability, not pre-recorded videos that AI now gives away free. *First income 2-4 months; beginners $0-1,000/mo; AI-proof 3/5.*
+- **[Paid Communities](/blog/make-money-with-ai/13-paid-communities)** - Run a private online group on Skool, Circle, or Discord where members pay roughly $26-50 a month for access to you and, more importantly, to each other. *First income 1-6 months; beginners $0-1,000/mo; AI-proof 5/5.*
+- **[Print-on-Demand & Etsy](/blog/make-money-with-ai/16-print-on-demand-etsy)** - Sell designs on printed products or instant-download files through Etsy - real passive-income potential, but 65% of sellers make under $100 a year, so only specific niches still pay. *First income 3-8 weeks; beginners $0-300/mo; AI-proof 2/5.*
+- **[Tutoring & Coaching](/blog/make-money-with-ai/18-online-tutoring-coaching)** - Get paid by the hour to teach school subjects, test prep, or - the fastest-growing niche - how to actually use AI tools, to students, professionals, and older adults over video calls. *First income 2-6 weeks; beginners $200-1,000/mo; AI-proof 4/5.*
+- **[Consulting](/blog/make-money-with-ai/19-consulting-your-expertise)** - Package the expertise from your existing career and sell it to companies as paid advice and hands-on help, by the hour, day, project, or monthly retainer. *First income 1-3 months; beginners $500-3,000/mo; AI-proof 4/5.*
 
 ### Fast income and AI-proof work
 
 For when you need money soonest, or want work no algorithm can take.
 
-- **[AI Training Gigs](/blog/make-money-with-ai/06-ai-training-data-annotation)** — Get paid by platforms like DataAnnotation, Outlier, and Mercor to grade and correct AI chatbot answers — the fastest first dollar online, but with zero income stability. *First income 1-4 weeks; beginners $200-1,000/mo; AI-proof 2/5.*
-- **[Flipping & Resale](/blog/make-money-with-ai/20-flipping-and-resale)** — Buy underpriced used or clearance items locally, then resell them on Facebook Marketplace or eBay for a markup, using AI apps to price and list in seconds. *First income 1-2 weeks; beginners $200-1,000/mo; AI-proof 4/5.*
-- **[Local Lead Gen](/blog/make-money-with-ai/17-local-lead-generation)** — Build a simple website that ranks on Google for a local service like tree removal, then rent it to a local business that pays you monthly for the customer calls it generates. *First income 3-6 months; beginners $0-500/mo; AI-proof 2/5.*
-- **[Local Services](/blog/make-money-with-ai/21-ai-proof-local-services)** — Do physical work AI can't touch — cleaning, mobile detailing, pressure washing, handyman jobs — while AI tools handle your phone, quotes, bookings, and reviews so one person can operate like a five-person company. *First income 1-3 weeks; beginners $500-2,500/mo; AI-proof 5/5.*
+- **[AI Training Gigs](/blog/make-money-with-ai/06-ai-training-data-annotation)** - Get paid by platforms like DataAnnotation, Outlier, and Mercor to grade and correct AI chatbot answers - the fastest first dollar online, but with zero income stability. *First income 1-4 weeks; beginners $200-1,000/mo; AI-proof 2/5.*
+- **[Flipping & Resale](/blog/make-money-with-ai/20-flipping-and-resale)** - Buy underpriced used or clearance items locally, then resell them on Facebook Marketplace or eBay for a markup, using AI apps to price and list in seconds. *First income 1-2 weeks; beginners $200-1,000/mo; AI-proof 4/5.*
+- **[Local Lead Gen](/blog/make-money-with-ai/17-local-lead-generation)** - Build a simple website that ranks on Google for a local service like tree removal, then rent it to a local business that pays you monthly for the customer calls it generates. *First income 3-6 months; beginners $0-500/mo; AI-proof 2/5.*
+- **[Local Services](/blog/make-money-with-ai/21-ai-proof-local-services)** - Do physical work AI can't touch - cleaning, mobile detailing, pressure washing, handyman jobs - while AI tools handle your phone, quotes, bookings, and reviews so one person can operate like a five-person company. *First income 1-3 weeks; beginners $500-2,500/mo; AI-proof 5/5.*
 
 ## Start here: fastest paths by situation
 
@@ -153,16 +153,16 @@ When you're ready to decide, [the decision guide](/blog/make-money-with-ai/22-ho
 
 ## Plain-English glossary
 
-- **Retainer** — a fixed fee a client pays you every month for ongoing work, instead of a one-off payment. Predictable income is the goal.
-- **SaaS** — Software as a Service; software people pay a monthly subscription to use. "Micro-SaaS" just means a very small, one-person version.
-- **No-code** — building software or automations by clicking and connecting blocks instead of writing code (tools like n8n, Make, Zapier).
-- **Affiliate** — earning a commission for referring a sale, using a special tracking link.
-- **UGC** — User-Generated Content; casual, authentic-looking videos brands pay you to make for their own ads.
-- **Niche** — a narrow, specific topic or audience (e.g. "budgeting for nurses"), the opposite of trying to appeal to everyone.
-- **Lead** — a potential customer's contact details or enquiry. "[Lead generation](/blog/how-to-make-money/15-distribution-beats-product)" means producing those enquiries for a business.
-- **Retainer vs. project** — a project is paid once for a defined deliverable; a retainer repeats monthly. Retainers are the difference between hunting and farming.
-- **Cohort** — a group of students who go through a course together, live, at the same time.
-- **MRR** — Monthly Recurring Revenue; the total predictable income your subscriptions bring in each month.
+- **Retainer** - a fixed fee a client pays you every month for ongoing work, instead of a one-off payment. Predictable income is the goal.
+- **SaaS** - Software as a Service; software people pay a monthly subscription to use. "Micro-SaaS" just means a very small, one-person version.
+- **No-code** - building software or automations by clicking and connecting blocks instead of writing code (tools like n8n, Make, Zapier).
+- **Affiliate** - earning a commission for referring a sale, using a special tracking link.
+- **UGC** - User-Generated Content; casual, authentic-looking videos brands pay you to make for their own ads.
+- **Niche** - a narrow, specific topic or audience (e.g. "budgeting for nurses"), the opposite of trying to appeal to everyone.
+- **Lead** - a potential customer's contact details or enquiry. "[Lead generation](/blog/how-to-make-money/15-distribution-beats-product)" means producing those enquiries for a business.
+- **Retainer vs. project** - a project is paid once for a defined deliverable; a retainer repeats monthly. Retainers are the difference between hunting and farming.
+- **Cohort** - a group of students who go through a course together, live, at the same time.
+- **MRR** - Monthly Recurring Revenue; the total predictable income your subscriptions bring in each month.
 
 ## The bottom line
 

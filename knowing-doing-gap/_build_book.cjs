@@ -96,8 +96,8 @@ const cover = `
 <div class="cover">
   <p class="kicker">Complete Study Guide · Beginner to Advanced</p>
   <h1>The Knowing-Doing Gap</h1>
-  <p class="subtitle">Why almost everyone knows what leads to success — hard work, habits, saving,
-  consistency — yet so few actually do it. The psychology, neuroscience, behavioral economics,
+  <p class="subtitle">Why almost everyone knows what leads to success - hard work, habits, saving,
+  consistency - yet so few actually do it. The psychology, neuroscience, behavioral economics,
   and sociology of the gap between knowing and doing, and the evidence-based playbook for closing it.</p>
   <div class="rule"></div>
   <p class="meta">${chapters.length} chapters · Compiled ${today}</p>
@@ -127,7 +127,7 @@ const bodyHtml = chapters.map(c => `
 
 const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
-<title>The Knowing-Doing Gap — Complete Study Guide</title>
+<title>The Knowing-Doing Gap - Complete Study Guide</title>
 <style>${CSS}</style></head><body>
 ${cover}
 ${toc}

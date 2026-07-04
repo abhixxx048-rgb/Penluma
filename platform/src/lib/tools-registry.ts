@@ -26,7 +26,7 @@ const t = (
 
 export const TOOLS: Tool[] = [
   // Clean & convert
-  t('em-dash-remover', '—', 'Em Dash Remover', 'Strip em dashes, smart quotes, invisible characters and AI tells from your text.', 'clean'),
+  t('em-dash-remover', '-', 'Em Dash Remover', 'Strip em dashes, smart quotes, invisible characters and AI tells from your text.', 'clean'),
   t('invisible-watermark-character-inspector', '👻', 'Invisible Character Inspector', 'See and strip hidden zero-width, watermark and bidi characters.', 'clean'),
   t('word-reading-time-counter', '🔢', 'Word & Reading-Time Counter', 'Live word, character, sentence counts, reading time and platform limits.', 'clean'),
   t('before-after-diff-viewer', '🔬', 'Before/After Diff Viewer', 'Compare original vs cleaned text with per-change accept/reject.', 'clean'),

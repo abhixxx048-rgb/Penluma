@@ -74,15 +74,15 @@ The play: understand a client's business problem *and* build fast with AI, and y
 
 ## How the money flows
 
-1. **A client has a problem** — a clinic wants online booking, a shop wants a site that shows up on Google — and posts a job on Upwork or Fiverr, or you pitch them directly.
+1. **A client has a problem** - a clinic wants online booking, a shop wants a site that shows up on Google - and posts a job on Upwork or Fiverr, or you pitch them directly.
 2. **You send a proposal**, a short pitch of what you will build, for how much, by when. On Upwork this costs "Connects," small paid tokens, a few dollars per application.
 3. **You agree on a price.** Fixed price ($300-$800 for a landing page, a simple one-page website; $1,000-$5,000 for a small app) or hourly ($15-$50/hr as a beginner; experienced specialists on Upwork average $73-$128/hr).
-4. **The platform holds the money in escrow** — a neutral account that pays you when the client approves, minus the platform fee. Upwork charges a variable 0-15% (typically around 10%); Fiverr takes a flat 20%.
+4. **The platform holds the money in escrow** - a neutral account that pays you when the client approves, minus the platform fee. Upwork charges a variable 0-15% (typically around 10%); Fiverr takes a flat 20%.
 5. **Direct clients pay by invoice** with no platform fee. Margins are best here once you have a reputation.
 
 ## What you need to start
 
-- **Skills:** A basic grasp of **HTML, CSS, and JavaScript** — the three languages that structure, style, and animate web pages. No computer science degree needed, but you do need enough skill to check, fix, and publish what the AI writes. AI code you cannot debug is a liability, not a product. From zero, budget 2-4 months (free: freeCodeCamp, The Odin Project).
+- **Skills:** A basic grasp of **HTML, CSS, and JavaScript** - the three languages that structure, style, and animate web pages. No computer science degree needed, but you do need enough skill to check, fix, and publish what the AI writes. AI code you cannot debug is a liability, not a product. From zero, budget 2-4 months (free: freeCodeCamp, The Odin Project).
 - **Tools:** A computer and internet. An AI coding assistant (around $20/month for Claude or Cursor; free tiers exist). Free hosting from Cloudflare Pages, Vercel, or Netlify.
 - **Money:** $0-150 total. An AI subscription for a month or two, plus $20-50 of Upwork Connects.
 - **Portfolio:** 2-3 finished demo projects with live links. This matters more than any certificate.
@@ -109,13 +109,13 @@ What survives the next 3-5 years is the human stuff: understanding messy busines
 ## Real people, real numbers
 
 - **The 18-day first job:** A freelancer landed their first Upwork job in 18 days with zero reviews, using aggressive, tailored proposals to low-competition postings.
-- **The $600/month vibe coder:** A writer built small AI-assisted apps earning about $600/month — a realistic, unglamorous beginner number.
+- **The $600/month vibe coder:** A writer built small AI-assisted apps earning about $600/month - a realistic, unglamorous beginner number.
 - **The recurring-revenue model:** An industry report described a developer building appointment-booking tools for dental offices at around $3,000 setup plus $300/month each. With 8 clients, that is $2,400/month recurring plus $24,000 in setup fees in year one. The durable money is here: niched, recurring services.
 
 ## Mistakes that sink beginners
 
 - Competing on price against the whole world instead of picking a niche.
-- Shipping AI code they cannot explain or fix. One bad review can sink a new profile — a **Job Success Score** (Upwork's client-satisfaction rating) below 80% cuts your search visibility by about 60%.
+- Shipping AI code they cannot explain or fix. One bad review can sink a new profile - a **Job Success Score** (Upwork's client-satisfaction rating) below 80% cuts your search visibility by about 60%.
 - Sending generic copy-paste proposals.
 - Underquoting fixed-price projects, then letting "one small change" requests eat the profit. Define scope in writing.
 - Quitting at week 6, right before the typical first win.
@@ -123,7 +123,7 @@ What survives the next 3-5 years is the human stuff: understanding messy busines
 ## Pro tips that compound
 
 - Niche down to one client type and one problem ("booking sites for clinics"), and say so in your profile title.
-- Offer a **maintenance retainer** — a fixed monthly fee ($100-300/month) for ongoing care — on every project. Recurring income beats one-off gigs.
+- Offer a **maintenance retainer** - a fixed monthly fee ($100-300/month) for ongoing care - on every project. Recurring income beats one-off gigs.
 - After 2-3 platform projects, chase direct and local clients: no fees, less competition, better rates.
 - Present AI as *your* speed advantage ("delivered in 5 days, not 3 weeks"). Never sell "AI-generated" as the product; sell the result.
 - Keep a swipe file of everything you build. Each project is ammunition for the next pitch.

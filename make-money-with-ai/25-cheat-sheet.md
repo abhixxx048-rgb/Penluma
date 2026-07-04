@@ -32,23 +32,23 @@ Diff = difficulty 1-5. AI = AI-proof 1-5.
 
 ## One Insight Per Opportunity
 
-1. **Automation agency:** Clients pay for judgment and maintenance, not "AI" — niching into one industry took reply rates from 0.4% to 6.2%.
+1. **Automation agency:** Clients pay for judgment and maintenance, not "AI" - niching into one industry took reply rates from 0.4% to 6.2%.
 2. **Chatbots:** The setup fee is bait; the retainer only survives if you own the messy integrations and prove value with a monthly report.
-3. **Micro-SaaS:** AI made code the easy half — distribution and validated demand are the business; 70% never pass $1K/mo.
+3. **Micro-SaaS:** AI made code the easy half - distribution and validated demand are the business; 70% never pass $1K/mo.
 4. **Freelance dev:** Don't sell simple websites (clients can AI-generate those); niche into one business problem with a maintenance retainer.
 5. **Tech freelancing:** First paid client within 30 days = 3x survival odds; your former employer is the fastest client.
 6. **AI training gigs:** Enter generalist for fast cash, qualify for a specialty queue (2-4x pay) immediately, treat it as a bridge.
 7. **YouTube:** The faceless-AI purge protects human experts; at small scale, sponsors pay 10x what ads do.
-8. **Clipping:** Platform payouts are pennies — get paid by creators and brands ($1-5 per 1K views, or a $750-2K/mo retainer).
-9. **Newsletter:** Niche sets your ceiling (investing earns ~10x travel per subscriber); median first dollar at day 66 — don't quit at month three.
+8. **Clipping:** Platform payouts are pennies - get paid by creators and brands ($1-5 per 1K views, or a $750-2K/mo retainer).
+9. **Newsletter:** Niche sets your ceiling (investing earns ~10x travel per subscriber); median first dollar at day 66 - don't quit at month three.
 10. **Blogging:** Traffic-for-ads is dead; the blog is a front door to an email list that sells products ($536 vs $33 per 1K views).
-11. **Digital products:** The AI flood is the opportunity — buyers pay a premium for visibly human, hyper-specific products.
+11. **Digital products:** The AI flood is the opportunity - buyers pay a premium for visibly human, hyper-specific products.
 12. **Courses:** Recorded info courses are collapsing; live cohorts (~$2,500 avg) thrive because accountability can't be downloaded.
 13. **Communities:** Information is free now; access to *people* isn't. Members, not content, are the product.
-14. **UGC:** Prices fell 44% on generic clips — the money moved to usage rights, retainers, and physically handling products.
+14. **UGC:** Prices fell 44% on generic clips - the money moved to usage rights, retainers, and physically handling products.
 15. **Video editing:** Caption-and-crop is eaten by apps; a niche specialist with 3 portfolio pieces beats a generalist with 20.
 16. **POD/Etsy:** Generic apparel loses money on ads; deep personalization and 80-95%-margin digital downloads are what's left.
-17. **Rank & rent:** AI answers ate informational clicks, but emergency "call-now" niches still convert — niche choice is survival.
+17. **Rank & rent:** AI answers ate informational clicks, but emergency "call-now" niches still convert - niche choice is survival.
 18. **Tutoring:** Generic homework help is undercut by AI tutors, but teaching AI itself is the hottest subject ($300-600 workshops).
 19. **Consulting:** Your former employer is your most likely first client; plan for only 50-60% of hours being billable.
 20. **Flipping:** AI pricing apps killed easy arbitrage; margins live in bulky, untested, one-of-a-kind local items.
@@ -66,7 +66,7 @@ Diff = difficulty 1-5. AI = AI-proof 1-5.
 
 - [ ] **Day 1:** Answer the four questions (skills, deadline, budget, rejection tolerance). Pick ONE path from the table.
 - [ ] **Day 2:** Read your chapter fully. Write a one-sentence niche offer: "I help [specific buyer] get [specific result]."
-- [ ] **Day 3:** Set up the minimum toolkit — one AI assistant, one platform account, a separate savings pot for the 25-30% tax set-aside.
+- [ ] **Day 3:** Set up the minimum toolkit - one AI assistant, one platform account, a separate savings pot for the 25-30% tax set-aside.
 - [ ] **Day 4:** Create your proof: one sample, portfolio piece, listing, or demo. Done beats perfect.
 - [ ] **Day 5:** List 20 real potential buyers (or 20 content topics). Start with people who already know you.
 - [ ] **Day 6:** Make your first 5 pitches / publish your first piece. Expect silence; it's normal.

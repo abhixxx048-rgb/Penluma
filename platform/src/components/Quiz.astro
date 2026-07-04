@@ -120,10 +120,10 @@ const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
         finalPct.textContent = String(pct);
         finalMsg.textContent =
           pct >= 80
-            ? 'Solid — that’s a passing range for the real exam. Review the ones you missed and you’re ready.'
+            ? 'Solid - that’s a passing range for the real exam. Review the ones you missed and you’re ready.'
             : pct >= 60
               ? 'Getting there. Revisit the explanations on your misses and run it again.'
-              : 'Keep going — read each explanation, then retake to lock it in.';
+              : 'Keep going - read each explanation, then retake to lock it in.';
         finalBox.classList.remove('hidden');
         finalBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
       } else {

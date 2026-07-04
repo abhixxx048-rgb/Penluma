@@ -3,14 +3,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE } from '../consts';
 
 const url = new URL('/cookies', Astro.site).toString();
-const description = `The cookies and local storage ${SITE.name} uses — essential preferences vs. optional analytics — and how to control them.`;
+const description = `The cookies and local storage ${SITE.name} uses - essential preferences vs. optional analytics - and how to control them.`;
 const updated = 'July 2026';
 
 const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: `Cookie Policy — ${SITE.name}`,
+    name: `Cookie Policy - ${SITE.name}`,
     description,
     url,
   },
@@ -52,12 +52,12 @@ const jsonLd = [
       <h2>Essential (always on)</h2>
       <p>These make the site function and remember your preferences. They store no personal data and can't be turned off.</p>
       <ul>
-        <li><strong>Theme</strong> — remembers light/dark mode (<code>theme</code>, in local storage).</li>
-        <li><strong>Consent choice</strong> — remembers your cookie decision so we don't ask again (<code>consent_v2</code>, in local storage).</li>
-        <li><strong>Newsletter prompt state</strong> — remembers if you subscribed or dismissed the newsletter popup, so it isn't shown repeatedly (<code>nl_subscribed</code>, <code>nl_dismissed_at</code>, in local storage).</li>
+        <li><strong>Theme</strong> - remembers light/dark mode (<code>theme</code>, in local storage).</li>
+        <li><strong>Consent choice</strong> - remembers your cookie decision so we don't ask again (<code>consent_v2</code>, in local storage).</li>
+        <li><strong>Newsletter prompt state</strong> - remembers if you subscribed or dismissed the newsletter popup, so it isn't shown repeatedly (<code>nl_subscribed</code>, <code>nl_dismissed_at</code>, in local storage).</li>
       </ul>
 
-      <h2>Analytics (optional — only with consent)</h2>
+      <h2>Analytics (optional - only with consent)</h2>
       <p>
         If you accept, Google Analytics 4 sets cookies (such as <code>_ga</code>) to measure page views and
         traffic in aggregate. Until you accept, Google Consent Mode keeps analytics storage denied, so these
@@ -73,7 +73,7 @@ const jsonLd = [
       <h2>Controlling cookies</h2>
       <p>
         Use <a href="#" data-cookie-settings>Cookie settings</a> to change your analytics choice here on the
-        site. You can also clear or block cookies and local storage through your browser settings at any time —
+        site. You can also clear or block cookies and local storage through your browser settings at any time -
         doing so may reset your theme and consent preferences.
       </p>
 

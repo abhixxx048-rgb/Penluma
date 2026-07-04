@@ -1,6 +1,6 @@
-# 03 — Subject–verb agreement
+# 03 - Subject–verb agreement
 
-*What this fixes for you: the verb matching the subject, so your PRs and standups stop saying "the tests passes" or "the users is" — small slips that make solid work read as sloppy.*
+*What this fixes for you: the verb matching the subject, so your PRs and standups stop saying "the tests passes" or "the users is" - small slips that make solid work read as sloppy.*
 
 ## The rule in 30 seconds
 
@@ -50,17 +50,17 @@ In your first language the verb may not change with the subject the way it does 
 
 **Collective nouns (team, group, staff, list):** in American English, treat them as **singular** by default. "The team **is** shipping today", "The QA team **owns** this." (British writing allows "the team are", but stay singular to be safe.)
 
-**Countable test — many vs much:**
+**Countable test - many vs much:**
 > Can you count it? → plural -s + **many** (many mistakes, many bugs, many requests).
 > Can't count it (a mass)? → **much** (much progress, much memory, much traffic).
 
 ## In your daily writing
 
-- **Commit messages:** "Fix race condition where the worker **drops** events" — singular "worker" → "drops". Quick scan: is the doer one or many?
-- **PR titles:** "These changes **make** the build **pass**" — plural "changes" → "make"; "build" is one → "pass" (because the helper "make" already carries the agreement, the next verb stays base form).
+- **Commit messages:** "Fix race condition where the worker **drops** events" - singular "worker" → "drops". Quick scan: is the doer one or many?
+- **PR titles:** "These changes **make** the build **pass**" - plural "changes" → "make"; "build" is one → "pass" (because the helper "make" already carries the agreement, the next verb stays base form).
 - **Standups (Slack):** "All the tests **pass** locally" not "passes". "One of my branches **is** still red" not "are".
-- **Code comments:** "// This function **returns** null when the cache **is** empty" — both subjects singular → both verbs take -s/"is".
-- **Bug reports:** "The API **returns** 200 but the body **is** empty" — describe each singular subject with a singular verb; it reads precise and credible.
+- **Code comments:** "// This function **returns** null when the cache **is** empty" - both subjects singular → both verbs take -s/"is".
+- **Bug reports:** "The API **returns** 200 but the body **is** empty" - describe each singular subject with a singular verb; it reads precise and credible.
 
 ## Drills
 
@@ -70,7 +70,7 @@ Fix the agreement (and any dropped plural / article you spot).
 2. each of the services run in its own container.
 3. one of the env variables are missing on staging.
 4. there is three open pull request on this repo.
-5. the API endpoints returns different shapes — fix this.
+5. the API endpoints returns different shapes - fix this.
 6. everyone on the team have merge rights now.
 7. the data from the webhook are not validated.
 8. Choose A or B: "Neither of the builds (A) pass / (B) passes the lint step."
@@ -87,15 +87,15 @@ Fix the agreement (and any dropped plural / article you spot).
 2. **Each of the services runs in its own container.** "each" is singular → "runs".
 3. **One of the env variables is missing on staging.** "one" is the subject → "is".
 4. **There are three open pull requests on this repo.** Three → "are"; "requests" needs the plural -s.
-5. **The API endpoints return different shapes — fix this.** Plural "endpoints" → "return" (no -s).
+5. **The API endpoints return different shapes - fix this.** Plural "endpoints" → "return" (no -s).
 6. **Everyone on the team has merge rights now.** "everyone" is singular → "has".
 7. **The data from the webhook is not validated.** Treat "data" as singular in dev writing → "is".
-8. **B — passes.** "Neither" alone is singular → "passes".
+8. **B - passes.** "Neither" alone is singular → "passes".
 9. **applies.** "The set … applies"; subject is "set" (singular), not "rules".
 10. **So many edge cases are not covered by the test.** Countable → "many" + plural "cases" → "are"; capitalize "So".
-11. **A — is.** "There is" matches the first item ("a memory leak", singular).
+11. **A - is.** "There is" matches the first item ("a memory leak", singular).
 12. **The team is responsible for this incident, and I will write the postmortem.** American English: collective "team" is singular → "is"; capitalize "I".
 
 ---
 
-*Part of the Developer English course — see [00-index.md](./00-index.md).*
+*Part of the Developer English course - see [00-index.md](./00-index.md).*

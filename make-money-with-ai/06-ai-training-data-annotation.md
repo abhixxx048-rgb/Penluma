@@ -4,13 +4,13 @@
 
 ## What Is It, Really?
 
-AI companies build **large language models (LLMs)** — the software behind chatbots like ChatGPT and Claude. These models learn partly from human feedback: real people read the AI's answers, mark what is wrong, rank which answer is better, and write examples of good answers. This is called **RLHF** (reinforcement learning from human feedback) — humans grading AI so it learns.
+AI companies build **large language models (LLMs)** - the software behind chatbots like ChatGPT and Claude. These models learn partly from human feedback: real people read the AI's answers, mark what is wrong, rank which answer is better, and write examples of good answers. This is called **RLHF** (reinforcement learning from human feedback) - humans grading AI so it learns.
 
 Platforms like **DataAnnotation**, **Outlier** (owned by Scale AI), **Mercor**, and **Alignerr** are the middlemen: AI labs pay them for human feedback, and they pay you hourly to provide it.
 
-You are a **grader for a robot student**. The robot writes essays and math solutions all day. You mark its homework: "this answer is wrong," "this explanation is better than that one," "here is how a human would say it." You do not need to be a teacher — just careful, honest, and better than the robot at what you grade.
+You are a **grader for a robot student**. The robot writes essays and math solutions all day. You mark its homework: "this answer is wrong," "this explanation is better than that one," "here is how a human would say it." You do not need to be a teacher - just careful, honest, and better than the robot at what you grade.
 
-No clients, no marketing, no product. That makes this the fastest first income in this guide — and the one you control least.
+No clients, no marketing, no product. That makes this the fastest first income in this guide - and the one you control least.
 
 ## Why This Works in 2026
 
@@ -26,10 +26,10 @@ The honest 2026 pitch: easy entry at modest pay; real money only if you bring re
 ## How the Money Actually Flows
 
 1. An AI lab (Google, OpenAI, Meta, Anthropic, etc.) pays a data company for human feedback.
-2. The data company's platform (Outlier, DataAnnotation, Mercor...) posts "projects" — batches of tasks like rating chatbot answers, fixing AI-written code, or writing example conversations.
+2. The data company's platform (Outlier, DataAnnotation, Mercor...) posts "projects" - batches of tasks like rating chatbot answers, fixing AI-written code, or writing example conversations.
 3. You apply and pass an unpaid **assessment** (a screening test, usually 1-2 hours). Passing unlocks projects that match your profile.
 4. You work tasks by the hour or per task. The platform tracks your time and quality scores.
-5. You get paid weekly — DataAnnotation via Stripe, Outlier via PayPal/AirTM-style processors — typically starting within a week of your first approved work.
+5. You get paid weekly - DataAnnotation via Stripe, Outlier via PayPal/AirTM-style processors - typically starting within a week of your first approved work.
 
 Note: you are an **independent contractor**, not an employee. No benefits, no guaranteed hours, and taxes are your problem.
 
@@ -37,7 +37,7 @@ Note: you are an **independent contractor**, not an employee. No benefits, no gu
 
 - **Money:** $0. Any platform asking you to pay is a scam. Budget $0-50 only if you need a headset or better internet.
 - **Hardware:** a computer (not just a phone) and reliable internet.
-- **Skills:** excellent written English, careful reading, and the patience to follow long, picky instructions — enough for generalist work at $15-25/hour.
+- **Skills:** excellent written English, careful reading, and the patience to follow long, picky instructions - enough for generalist work at $15-25/hour.
 - **Skill multipliers:** coding (even basic Python), a math/science/law/medicine/finance degree, or fluency in a second language. These unlock the $30-60+/hour tiers.
 - **Paperwork:** government ID for identity checks, and a PayPal or Stripe-compatible account.
 
@@ -51,7 +51,7 @@ Apply to 3-5 platforms at once. Acceptance is unpredictable, and multiple accoun
 
 **Weeks 5-8:** Work consistently, even 1-2 hours daily. Take every qualification test for higher-paying specialties. Log date, project, hours, and pay so you know your true hourly rate.
 
-**Weeks 9-12:** Chase specialization. If you can code even a little, take the coding assessments — the difference between $18/hour and $40/hour. Bank the money. Do not quit anything based on one good month.
+**Weeks 9-12:** Chase specialization. If you can code even a little, take the coding assessments - the difference between $18/hour and $40/hour. Bank the money. Do not quit anything based on one good month.
 
 ## Realistic Earnings Timeline
 
@@ -63,14 +63,14 @@ Generalist pay is also trending down: projects paying $28-35/hour in early 2025 
 
 ## Will AI Kill This?
 
-Partially, yes — and faster than most fields in this guide. AI labs increasingly use **synthetic data** (training data generated by AI itself) and **RLAIF** (AI grading AI instead of humans). First-pass labeling is already automated. Humans are kept for borderline, sensitive, and expert-level cases.
+Partially, yes - and faster than most fields in this guide. AI labs increasingly use **synthetic data** (training data generated by AI itself) and **RLAIF** (AI grading AI instead of humans). First-pass labeling is already automated. Humans are kept for borderline, sensitive, and expert-level cases.
 
-The honest 3-5 year outlook: generalist "rate this chatbot reply" work shrinks and pays less every year. Expert evaluation — doctors checking medical answers, engineers checking code, lawyers checking contracts — likely survives and stays well-paid, because mistakes there are expensive. So specialize, treat this as a cash bridge (not a career), and use your front-row view of AI's weaknesses to build skills for your next move.
+The honest 3-5 year outlook: generalist "rate this chatbot reply" work shrinks and pays less every year. Expert evaluation - doctors checking medical answers, engineers checking code, lawyers checking contracts - likely survives and stays well-paid, because mistakes there are expensive. So specialize, treat this as a cash bridge (not a career), and use your front-row view of AI's weaknesses to build skills for your next move.
 
 ## Real-World Examples
 
-- **The steady part-timer:** a writer profiled on The Work at Home Woman earned about $14,000 her first year on DataAnnotation and $37,000 over two years, paid weekly with no payment problems — flexible side income, not a salary.
-- **The extreme outlier:** a contractor reported earning $60,000 in three months on an $80/hour Outlier project starting October 2025 — working 14-16 hour days on a project type most workers never see.
+- **The steady part-timer:** a writer profiled on The Work at Home Woman earned about $14,000 her first year on DataAnnotation and $37,000 over two years, paid weekly with no payment problems - flexible side income, not a salary.
+- **The extreme outlier:** a contractor reported earning $60,000 in three months on an $80/hour Outlier project starting October 2025 - working 14-16 hour days on a project type most workers never see.
 - **The dry-spell reality:** another Outlier worker reported about $9,000 across several months with "many dry months," their best project paying $31.50/hour. Income arrives in bursts, not paychecks.
 - **The industry shock:** after Meta's $14.3 billion investment in Scale AI (June 2025), Google, OpenAI, and xAI dropped Scale as a vendor, and Scale laid off 200 data-labeling staff. Whole platforms can wobble overnight.
 
@@ -78,7 +78,7 @@ The honest 3-5 year outlook: generalist "rate this chatbot reply" work shrinks a
 
 - Rushing the entry assessment. You usually get one shot.
 - Using ChatGPT to do tasks. Platforms detect it and permanently ban you.
-- Relying on one platform. Empty queues ("EQ" — periods with no tasks) and unexplained account deactivations are common, often with no appeal.
+- Relying on one platform. Empty queues ("EQ" - periods with no tasks) and unexplained account deactivations are common, often with no appeal.
 - Treating a good month as permanent income and quitting a job over it.
 - Ignoring taxes on contractor income.
 

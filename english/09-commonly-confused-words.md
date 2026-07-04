@@ -1,6 +1,6 @@
-# 09 — Commonly confused words
+# 09 - Commonly confused words
 
-*What this fixes for you: the small word mix-ups that make a clean PR or commit look careless — its/it's, your/you're, login vs log in, and friends. Get these right and your writing instantly reads as more senior.*
+*What this fixes for you: the small word mix-ups that make a clean PR or commit look careless - its/it's, your/you're, login vs log in, and friends. Get these right and your writing instantly reads as more senior.*
 
 ## The rule in 30 seconds
 
@@ -11,7 +11,7 @@
 
 ## Why this trips you up
 
-You write fast, all day, in commits and Slack — and texting habits leak in ("u", "ur", no capitals), so the apostrophe and the missing letter slip past. You also tend to drop the small grammar signals (the plural **-s**, the article **a/the**), and these confusable pairs hide in exactly that same blind spot. None of this means you don't know the rule — it means you're moving fast and need a quick self-check.
+You write fast, all day, in commits and Slack - and texting habits leak in ("u", "ur", no capitals), so the apostrophe and the missing letter slip past. You also tend to drop the small grammar signals (the plural **-s**, the article **a/the**), and these confusable pairs hide in exactly that same blind spot. None of this means you don't know the rule - it means you're moving fast and need a quick self-check.
 
 ## See it / fix it
 
@@ -46,7 +46,7 @@ You write fast, all day, in commits and Slack — and texting habits leak in ("u
 | who's | who is / who has | "who's on call?" |
 | whose | (no expansion) | "whose PR broke main?" |
 
-**One word (noun) vs two words (verb)** — the verb has a space:
+**One word (noun) vs two words (verb)** - the verb has a space:
 
 | Noun (one word) | Verb (two words) |
 |---|---|
@@ -56,24 +56,24 @@ You write fast, all day, in commits and Slack — and texting habits leak in ("u
 
 Trick: if you can put a word between the two halves ("set the env **up**", "log quickly **in**"), it's a verb → two words.
 
-**then vs than** — **a** for compare (th**a**n / comp**a**re), **e** for sequence (th**e**n / first th**e**n n**e**xt).
+**then vs than** - **a** for compare (th**a**n / comp**a**re), **e** for sequence (th**e**n / first th**e**n n**e**xt).
 
-**affect vs effect** — **A**ffect = **A**ction (verb). **E**ffect = **E**nd result (noun).
+**affect vs effect** - **A**ffect = **A**ction (verb). **E**ffect = **E**nd result (noun).
 
-**fewer vs less** — if you can count them with an **-s** plural (3 errors, 5 retries) → **fewer**. If you can't (less traffic, less memory) → **less**.
+**fewer vs less** - if you can count them with an **-s** plural (3 errors, 5 retries) → **fewer**. If you can't (less traffic, less memory) → **less**.
 
-**to / too / two** — **too** = also or excessive ("too slow"). **two** = the number 2. **to** = everything else.
+**to / too / two** - **too** = also or excessive ("too slow"). **two** = the number 2. **to** = everything else.
 
-**into vs in to** — **into** = movement/result ("merge it into main"). **in to** = the words just land next to each other ("log **in to** the box" = log in + to the box).
+**into vs in to** - **into** = movement/result ("merge it into main"). **in to** = the words just land next to each other ("log **in to** the box" = log in + to the box).
 
-**accept vs except** — acc**ept** = take it; **ex**cept = **ex**clude it.
+**accept vs except** - acc**ept** = take it; **ex**cept = **ex**clude it.
 
 ## In your daily writing
 
 - **Commit messages:** the big four to scan for are **its/it's**, **lose/loose**, **then/than**, **login/log in**. Example: `fix: prevent session from being lost on log in` (verb → two words).
-- **PR titles:** comparisons sneak in — "smaller bundle **than** before", not "then".
+- **PR titles:** comparisons sneak in - "smaller bundle **than** before", not "then".
 - **Slack standups:** kill the texting leak. Write "your PR is ready", not "ur PR is ready"; "they're reviewing", not "there reviewing". Capitalize **I** and the first word.
-- **Code comments & docs:** use **e.g.** for examples and **i.e.** to restate one specific thing — and put a comma after both: `// retry on transient errors, e.g., 502 and 503`.
+- **Code comments & docs:** use **e.g.** for examples and **i.e.** to restate one specific thing - and put a comma after both: `// retry on transient errors, e.g., 502 and 503`.
 - Quick self-check before you hit send: any apostrophe word? Expand it in your head. Any "login/setup"? Ask "is it a thing or an action?"
 
 ## Drills
@@ -99,21 +99,21 @@ Fix or choose. Don't peek at the key.
 
 ## Answer key
 
-1. **You're going to want to rebase before you push.** — "you're" = you are; capitalize the first word; end with a full stop.
-2. **than** — it's a comparison.
-3. **The cache keeps its value after restart.** — "its" = belonging to the cache, no apostrophe.
-4. **log in** — it's a verb here, so two words.
-5. **We have fewer open tickets than last sprint.** — tickets are countable → "fewer"; comparison → "than".
-6. **affect** — it's the verb (to change something).
-7. **Except for one flaky test, the suite is green.** — "except" = leaving out; capitalize the first word.
-8. **Whose** branch is this, and **who's** reviewing it? — "whose" = ownership; "who's" = who is.
-9. **Can you do research on grammar for me and teach me? I already know it, but right now I'm making so many mistakes.** — fixes: "you" not "u", spelling "research"/"grammar", capital "I", a question mark, "many mistakes" (countable plural), and clearer wording.
-10. **into** — one word for movement/result (merging X into Y).
-11. **Their service is down, so they're going to fail over.** — "their" = belonging to them; "they're" = they are; comma before "so".
-12. **e.g.** — you're giving examples, not restating one exact thing.
-13. **The build loses the env vars during setup.** — "loses" (verb, one `o`); "setup" as a noun here is correct.
-14. **too** — meaning excessive.
+1. **You're going to want to rebase before you push.** - "you're" = you are; capitalize the first word; end with a full stop.
+2. **than** - it's a comparison.
+3. **The cache keeps its value after restart.** - "its" = belonging to the cache, no apostrophe.
+4. **log in** - it's a verb here, so two words.
+5. **We have fewer open tickets than last sprint.** - tickets are countable → "fewer"; comparison → "than".
+6. **affect** - it's the verb (to change something).
+7. **Except for one flaky test, the suite is green.** - "except" = leaving out; capitalize the first word.
+8. **Whose** branch is this, and **who's** reviewing it? - "whose" = ownership; "who's" = who is.
+9. **Can you do research on grammar for me and teach me? I already know it, but right now I'm making so many mistakes.** - fixes: "you" not "u", spelling "research"/"grammar", capital "I", a question mark, "many mistakes" (countable plural), and clearer wording.
+10. **into** - one word for movement/result (merging X into Y).
+11. **Their service is down, so they're going to fail over.** - "their" = belonging to them; "they're" = they are; comma before "so".
+12. **e.g.** - you're giving examples, not restating one exact thing.
+13. **The build loses the env vars during setup.** - "loses" (verb, one `o`); "setup" as a noun here is correct.
+14. **too** - meaning excessive.
 
 ---
 
-*Part of the Developer English course — see [00-index.md](./00-index.md).*
+*Part of the Developer English course - see [00-index.md](./00-index.md).*

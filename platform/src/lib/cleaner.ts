@@ -52,7 +52,7 @@ export interface CleanResult {
   };
 }
 
-const EM = '—'; // U+2014 em dash (was a plain hyphen — the core matcher never saw real em dashes)
+const EM = '-'; // U+2014 em dash (was a plain hyphen - the core matcher never saw real em dashes)
 const EN = '–'; // U+2013 en dash
 
 // Zero-width & invisible characters frequently left in AI / web-copied text.

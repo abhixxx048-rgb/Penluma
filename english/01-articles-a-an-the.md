@@ -1,17 +1,17 @@
-# 01 — Articles: a, an, the (and no article)
+# 01 - Articles: a, an, the (and no article)
 
 *What this fixes for you: the dropped "a/an/the" in your commits and PRs ("open pull request" → "open **a** pull request"), and the "the" you add where English wants nothing.*
 
 ## The rule in 30 seconds
 
-- **a / an** = one of many, or the first time you mention it. Use **an** before a *vowel sound*, **a** before a *consonant sound* — it's about how the word sounds, not how it's spelled.
+- **a / an** = one of many, or the first time you mention it. Use **an** before a *vowel sound*, **a** before a *consonant sound* - it's about how the word sounds, not how it's spelled.
 - **the** = a specific thing both you and the reader already know about (the one we just mentioned, or the only one there is).
 - **no article** = general plurals ("tests fail"), uncountable stuff ("data", "code", "feedback"), and most names (Redis, GitHub, `main`).
 - Quick flow: **specific & known → the. First mention / one of many → a/an. General plural or uncountable → no article.**
 
 ## Why this trips you up
 
-In code and chat you drop short words to go fast — "open pull request", "merge to main branch", "fix bug in service" — so the articles fall off and the sentence reads like a log line, not English. The same habit makes you write "the data" or "the feedback" when English wants no article at all. Sound vs. letter is the other snag: it's "an SQL query" (sounds like *ess*) but "a URL" (sounds like *you-arr-ell*).
+In code and chat you drop short words to go fast - "open pull request", "merge to main branch", "fix bug in service" - so the articles fall off and the sentence reads like a log line, not English. The same habit makes you write "the data" or "the feedback" when English wants no article at all. Sound vs. letter is the other snag: it's "an SQL query" (sounds like *ess*) but "a URL" (sounds like *you-arr-ell*).
 
 ## See it / fix it
 
@@ -26,12 +26,12 @@ In code and chat you drop short words to go fast — "open pull request", "merge
 | restart server, then run migration | restart **the** server, then run **the** migration | Both are the specific known ones in this task → `the`. |
 | i am making so much mistake with article | I am making so **many mistakes** with **articles** | "mistake" is countable → **many** + plural `-s`; general plural "articles" → no article. |
 | send the feedback in the slack | send **feedback** in **Slack** | "feedback" is uncountable → no article; "Slack" is a proper name → no article. |
-| it returns a 401 unauthorized error | it returns **a** 401 Unauthorized error | "401" sounds like *four-oh-one* (consonant sound) → `a`. ✓ already fine — keep it. |
-| this is honest mistake in reaseach | this is **an honest mistake** in **research** | "honest" — the *h* is silent, sounds like *onnest* → `an`; spelling: research. |
+| it returns a 401 unauthorized error | it returns **a** 401 Unauthorized error | "401" sounds like *four-oh-one* (consonant sound) → `a`. ✓ already fine - keep it. |
+| this is honest mistake in reaseach | this is **an honest mistake** in **research** | "honest" - the *h* is silent, sounds like *onnest* → `an`; spelling: research. |
 
 ## Patterns to remember
 
-**a vs an — listen, don't spell:**
+**a vs an - listen, don't spell:**
 
 | Word | Sound starts with | Article |
 |---|---|---|
@@ -54,13 +54,13 @@ In code and chat you drop short words to go fast — "open pull request", "merge
 ## In your daily writing
 
 - **Commit messages** are the one place where dropping articles is OK style: `fix null check in cart service` is fine. The imperative-log voice is accepted.
-- **PR descriptions, Slack, code comments, docs** are real sentences — put the articles back: "This **PR** adds **a** retry to **the** webhook handler."
+- **PR descriptions, Slack, code comments, docs** are real sentences - put the articles back: "This **PR** adds **a** retry to **the** webhook handler."
 - **Code comments:** "// returns **the** cached store, or null on **a** miss" reads better than "returns cached store or null on miss".
 - **Standups:** "I opened **a** PR for **the** login bug and started **research** on **the** caching layer." (research = no article; the caching layer = the specific one.)
 
 ## Drills
 
-Fix or fill each one. Don't peek — answers are below.
+Fix or fill each one. Don't peek - answers are below.
 
 1. Fix: `can u do reaseach on grammer for me i already know but as of now i am making so much mistake`
 2. Fill: I opened ___ PR and merged it into ___ main branch.
@@ -79,18 +79,18 @@ Fix or fill each one. Don't peek — answers are below.
 
 ## Answer key
 
-1. **"Can you do research on grammar for me? I already know it, but right now I'm making so many mistakes."** — `you` not `u`, spell *research* and *grammar*, capital `I`, full stop, and "so **many mistakes**" (countable → many + plural).
-2. **a / the** — first mention of the PR → `a`; the one `main` everyone knows → `the`.
-3. **an / the** — "error" sounds vowel-ish → `an`; the specific database in context → `the`.
-4. **"Please review the pull request before standup."** — capital first word, and a known PR being discussed → `the`.
-5. **an / the** — "HTTP" sounds like *aitch* (vowel sound) → `an`; the specific token → `the`.
-6. **no article / the / no article** — "feedback" uncountable → no article; "the database" = the specific one → `the`; "Slack" is a name → no article.
-7. **"I fixed the bug, but tests are still failing on `main`."** — capital `I`, the known bug → `the`, comma before "but", and general "tests" → no article.
-8. **an / the** — "hour" has a silent h, sounds like *our* → `an`; the specific config file → `the`.
-9. **a / the** — one of many tests → `a`; the specific function you changed → `the`.
-10. **"This is an honest mistake; I dropped an article again."** — silent h → `an honest`; capital `I`; "an article" (one of many).
-11. **an / a** — "SQL" sounds like *ess* (vowel) → `an`; "URL" sounds like *you* (consonant) → `a`.
-12. **"Data is missing so many fields after the migration."** — "data" stays no article; "so **many fields**" (countable → many + plural `-s`); "the migration" = the specific one.
+1. **"Can you do research on grammar for me? I already know it, but right now I'm making so many mistakes."** - `you` not `u`, spell *research* and *grammar*, capital `I`, full stop, and "so **many mistakes**" (countable → many + plural).
+2. **a / the** - first mention of the PR → `a`; the one `main` everyone knows → `the`.
+3. **an / the** - "error" sounds vowel-ish → `an`; the specific database in context → `the`.
+4. **"Please review the pull request before standup."** - capital first word, and a known PR being discussed → `the`.
+5. **an / the** - "HTTP" sounds like *aitch* (vowel sound) → `an`; the specific token → `the`.
+6. **no article / the / no article** - "feedback" uncountable → no article; "the database" = the specific one → `the`; "Slack" is a name → no article.
+7. **"I fixed the bug, but tests are still failing on `main`."** - capital `I`, the known bug → `the`, comma before "but", and general "tests" → no article.
+8. **an / the** - "hour" has a silent h, sounds like *our* → `an`; the specific config file → `the`.
+9. **a / the** - one of many tests → `a`; the specific function you changed → `the`.
+10. **"This is an honest mistake; I dropped an article again."** - silent h → `an honest`; capital `I`; "an article" (one of many).
+11. **an / a** - "SQL" sounds like *ess* (vowel) → `an`; "URL" sounds like *you* (consonant) → `a`.
+12. **"Data is missing so many fields after the migration."** - "data" stays no article; "so **many fields**" (countable → many + plural `-s`); "the migration" = the specific one.
 
 ---
-*Part of the Developer English course — see [00-index.md](./00-index.md).*
+*Part of the Developer English course - see [00-index.md](./00-index.md).*
