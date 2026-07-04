@@ -36,11 +36,12 @@ export default defineConfig({
         } else if (
           path === '/topics' ||
           path === '/blog' ||
+          path === '/tools' ||
           path.startsWith('/topics/')
         ) {
           priority = 0.8;
           changefreq = 'weekly';
-        } else if (path.startsWith('/blog/')) {
+        } else if (path.startsWith('/blog/') || path.startsWith('/tools/')) {
           priority = 0.7;
           changefreq = 'monthly';
         }

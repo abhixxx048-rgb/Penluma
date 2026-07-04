@@ -4,7 +4,7 @@
 // Obsidian plugin) were dropped and the flagship em-dash cleaner is a first-class
 // tool page at /tools/em-dash-remover.
 
-export type ToolCategory = 'clean' | 'analyze' | 'power';
+export type ToolCategory = 'clean' | 'analyze';
 
 export interface Tool {
   slug: string;
@@ -45,11 +45,6 @@ export const TOOLS: Tool[] = [
   t('passive-voice-weasel-word-highlighter', '🎯', 'Passive-Voice Highlighter', 'Highlight passive voice, weak adverbs and weasel words.', 'analyze'),
   t('read-aloud-proofreader', '🔊', 'Read-Aloud Proofreader', 'Hear your text read aloud to catch run-ons and missing words.', 'analyze'),
   t('local-voice-style-memory', '🧠', 'Voice / Style Memory', 'Build a private style profile and flag where a draft stops sounding like you.', 'analyze'),
-
-  // Power tools
-  t('bulk-multi-file-cleaner', '🗂️', 'Bulk / Multi-File Cleaner', 'Drop multiple files, clean each in-browser, download the results.', 'power'),
-  t('on-device-ai-rewrite', '✨', 'On-Device AI Rewrite', 'One-click tone/length rewrite via your browser’s built-in AI.', 'power'),
-  t('webgpu-webllm-rewrite', '⚡', 'WebGPU Rewrite', 'Experimental on-device rewrite that never uploads your text.', 'power'),
 ];
 
 // The em-dash cleaner is the hub of the suite, surfaced as a related item for
@@ -85,7 +80,7 @@ const RELATED: Record<string, string[]> = {
   'before-after-diff-viewer': [
     'paste-from-word-docs-cleaner',
     'whitespace-line-break-reflow-fixer',
-    'bulk-multi-file-cleaner',
+    'straight-to-curly-quotes-converter',
   ],
   'readability-grade-level-scorer': [
     'word-reading-time-counter',
@@ -152,24 +147,7 @@ const RELATED: Record<string, string[]> = {
   'local-voice-style-memory': [
     'human-voice-ai-tell-report',
     'passive-voice-weasel-word-highlighter',
-    'on-device-ai-rewrite',
-  ],
-
-  // Power tools
-  'bulk-multi-file-cleaner': [
-    'before-after-diff-viewer',
-    'paste-from-word-docs-cleaner',
-    'invisible-watermark-character-inspector',
-  ],
-  'on-device-ai-rewrite': [
-    'webgpu-webllm-rewrite',
-    'human-voice-ai-tell-report',
-    'local-voice-style-memory',
-  ],
-  'webgpu-webllm-rewrite': [
-    'on-device-ai-rewrite',
-    'human-voice-ai-tell-report',
-    'local-voice-style-memory',
+    'read-aloud-proofreader',
   ],
 };
 

@@ -17,12 +17,7 @@ const tiers = [
       'Read the draft the way an editor reads it — find what makes writing sound like AI, then fix it for quality, not detector-bypass.',
     tools: TOOLS.filter((t) => t.category === 'analyze'),
   },
-  {
-    name: 'Power tools',
-    blurb: 'Bigger workflows and on-device AI for the whole desk — still 100% on your device.',
-    tools: TOOLS.filter((t) => t.category === 'power'),
-  },
-];
+].filter((tier) => tier.tools.length > 0);
 
 const total = TOOLS.length;
 const pad = (n: number) => String(n).padStart(2, '0');

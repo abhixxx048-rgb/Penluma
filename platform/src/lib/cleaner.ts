@@ -52,8 +52,8 @@ export interface CleanResult {
   };
 }
 
-const EM = '-'; // -
-const EN = '–'; // –
+const EM = '—'; // U+2014 em dash (was a plain hyphen — the core matcher never saw real em dashes)
+const EN = '–'; // U+2013 en dash
 
 // Zero-width & invisible characters frequently left in AI / web-copied text.
 // Includes ZWSP, ZWNJ, ZWJ, word joiner, BOM, soft hyphen, and bidi marks.
