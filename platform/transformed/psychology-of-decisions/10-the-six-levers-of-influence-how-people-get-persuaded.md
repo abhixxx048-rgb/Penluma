@@ -172,7 +172,7 @@ Whether you're defending yourself or persuading honestly, four moves do the heav
 
 ## Conclusion
 
-Persuasion almost never changes your reasoning. It pulls one of seven well-worn shortcuts - reciprocity, commitment, social proof, authority, liking, scarcity, and unity - and lets the shortcut do the rest.
+Persuasion almost never changes your reasoning. It pulls one of [seven well-worn shortcuts](/blog/communication-and-influence/05-cialdini-7-principles-of-persuasion) - reciprocity, commitment, social proof, authority, liking, scarcity, and unity - and lets the shortcut do the rest.
 
 These levers are like keys that fit the locks in everyone's mind. Knowing they exist won't make you immune, but it lets you *hear the key turning* - and that's the whole game. The single takeaway: spot the lever, set it aside, and let your slow brain make the final call.
 

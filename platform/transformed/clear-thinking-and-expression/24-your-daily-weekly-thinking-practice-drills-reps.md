@@ -58,7 +58,7 @@ The gap between people who *know about* good thinking and people who *do* it isn
 
 Your brain learns the way muscles grow: through small, regular, slightly challenging reps. Not big strains every now and then. Three ideas from learning science explain why a steady system wins.
 
-**Deliberate practice** means working right at the edge of what you can do - slightly harder than comfortable - while getting feedback on how it went. Psychologist Anders Ericsson studied experts across fields and found that *this* kind of focused, feedback-driven practice is what builds skill. Not just logging hours doing the activity.
+**[Deliberate practice](/blog/learn-how-to-learn/10-deliberate-practice)** means working right at the edge of what you can do - slightly harder than comfortable - while getting feedback on how it went. Psychologist Anders Ericsson studied experts across fields and found that *this* kind of focused, feedback-driven practice is what builds skill. Not just logging hours doing the activity.
 
 **[Spaced repetition](/blog/ai-learning-platform/07-spaced-repetition-beating-the-forgetting-curve)** means revisiting something at growing intervals - a day later, a week later - instead of cramming it all at once. Going back to Hermann Ebbinghaus's early memory experiments, researchers have shown again and again that spread-out review sticks far better than a single binge. This is often called the *spacing effect*.
 

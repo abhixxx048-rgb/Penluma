@@ -134,7 +134,7 @@ Here is the ethical point: **there is always a default.** You cannot avoid choos
 
 ### Framing: emphasis, not lying
 
-Saying "95% fat-free" instead of "5% fat" frames the same true fact to land better. That is allowed. It is honest emphasis. Framing becomes manipulation only when it *hides a material fact* the person needs.
+Saying "95% fat-free" instead of "5% fat" frames the same true fact to land better. That is allowed. It is honest emphasis. [Framing](/blog/communication-and-influence/07-framing-in-communication) becomes manipulation only when it *hides a material fact* the person needs.
 
 A real-estate agent who opens the curtains to show off a genuine ocean view is framing honestly. One who hangs a photo of an ocean over a window facing a brick wall is lying. Same room, same goal, opposite ethics.
 

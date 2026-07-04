@@ -48,7 +48,7 @@ This article hands you a small set of tools to organise your thoughts on the spo
 
 ## Why this matters
 
-Speaking on the spot is the moment people judge how clear and capable you are, often more than anything you write. Interviews, meetings, sales calls, tough questions from your boss, a toast at a wedding. These are unscripted, and they count.
+[Speaking on the spot](/blog/communication-and-influence/14-thinking-on-your-feet-impromptu-speaking) is the moment people judge how clear and capable you are, often more than anything you write. Interviews, meetings, sales calls, tough questions from your boss, a toast at a wedding. These are unscripted, and they count.
 
 The good news is the part that fails you is fixable. People who freeze are rarely empty-headed. They have the thought. They just can't deliver it smoothly. And delivery, unlike intelligence, is a skill you can train alone with your phone starting today.
 

@@ -123,7 +123,7 @@ How does a system know where the edge of forgetting is for each item? That is th
 
 **The Leitner box system** (Sebastian Leitner, 1970s) is pure paper. You keep a row of flashcard boxes, each reviewed less often than the last. A card you get *right* moves up to a slower box. A card you get *wrong* drops back to the daily box. No math, no computer, the boxes *are* the schedule.
 
-**The [SM-2 algorithm](/blog/ai-learning-platform/21-spaced-repetition-algorithms-in-practice-sm-2-fsrs)** (Piotr Woźniak, 1980s) is the brains behind apps like Anki. Each card carries an "ease" number that captures how easy that card is *for you*. After each review, the next gap is the previous gap stretched by that ease number. Get it wrong and the gap collapses back to one day.
+**The [SM-2 algorithm](/blog/ai-learning-platform/21-spaced-repetition-algorithms-in-practice-sm-2-fsrs)** (Piotr Woźniak, 1980s) is the brains behind [apps like Anki](/blog/learn-how-to-learn/04-spaced-repetition-anki). Each card carries an "ease" number that captures how easy that card is *for you*. After each review, the next gap is the previous gap stretched by that ease number. Get it wrong and the gap collapses back to one day.
 
 The Leitner boxes are a paper map with a few fixed routes. SM-2 is a basic satellite-navigation system that recalculates one number per card. Both answer the same question, "when should I see this again?", just with different levels of precision.
 

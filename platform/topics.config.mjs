@@ -197,14 +197,32 @@ export const TOPICS = {
     order: 8,
     featured: true,
   },
+  'learn-how-to-learn': {
+    title: 'Learn How to Learn',
+    description:
+      'The science of learning itself - how memory works, why you forget, and the evidence-based techniques (spaced repetition, active recall, interleaving, deliberate practice) that make anything stick.',
+    category: 'Thinking & Decisions',
+    icon: '📚',
+    order: 9,
+    featured: true,
+  },
 
   // ---- Communication ----
+  'communication-and-influence': {
+    title: 'Communication & Influence',
+    description:
+      'A 28-part beginner-to-advanced pillar on the skills that multiply a career: public speaking, storytelling, persuasive writing, and the psychology of ethical influence.',
+    category: 'Communication',
+    icon: '🗣️',
+    order: 1,
+    featured: true,
+  },
   english: {
     title: 'English for Developers',
     description: 'A 12-part course on grammar, clarity, and professional writing.',
     category: 'Communication',
     icon: '📝',
-    order: 1,
+    order: 2,
   },
 
   // ---- Certifications ----

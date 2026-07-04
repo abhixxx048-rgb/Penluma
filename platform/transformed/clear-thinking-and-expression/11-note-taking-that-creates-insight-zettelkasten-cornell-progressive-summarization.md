@@ -110,7 +110,7 @@ You only add a layer when you reopen a note. So the notes you reuse most become 
 
 ## Cornell notes: the workhorse for study and lectures
 
-When you are learning a fixed body of material - a course, a manual, a video lecture - you don't need links and original ideas. You need to absorb and remember. That is where **Cornell notes** shine. They were created at Cornell University by Walter Pauk, and they split a page into three zones.
+When you are learning a fixed body of material - a course, a manual, a video lecture - you don't need links and original ideas. You need to absorb and remember. That is where **[Cornell notes](/blog/learn-how-to-learn/13-study-system-note-taking)** shine. They were created at Cornell University by Walter Pauk, and they split a page into three zones.
 
 - **Notes column (the big right side):** capture ideas as you go, in your own words.
 - **Cue column (the narrow left side):** *afterward*, write questions or keywords that those notes answer. This quietly turns your notes into a self-quiz.

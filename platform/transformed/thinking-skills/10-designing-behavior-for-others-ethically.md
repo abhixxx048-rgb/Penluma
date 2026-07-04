@@ -109,7 +109,7 @@ The rule is simple: **a notification should earn its interruption.** It has to d
 
 ## Persuasion vs. manipulation: where the line is
 
-"Persuasion" means helping someone make a decision that serves *them*. "Manipulation" means pushing someone toward a decision that serves *you*, usually by sneaking past their judgment. The gap between those two is where ethics lives.
+["Persuasion"](/blog/communication-and-influence/08-persuasion-vs-manipulation) means helping someone make a decision that serves *them*. "Manipulation" means pushing someone toward a decision that serves *you*, usually by sneaking past their judgment. The gap between those two is where ethics lives.
 
 Here's how to tell them apart:
 

@@ -127,7 +127,7 @@ The shape is always the same: **confirm the problem, confirm the fit, ask for th
 
 ## Ask plainly. Then be quiet.
 
-Here is the secret that surprises every nervous founder: asking directly is *kinder* than hinting. Vague hints force the other person to guess what you want. A clear, calm ask respects their time. You are allowed to say what you want.
+Here is the secret that surprises every nervous founder: [asking directly](/blog/communication-and-influence/28-negotiation-and-everyday-persuasion) is *kinder* than hinting. Vague hints force the other person to guess what you want. A clear, calm ask respects their time. You are allowed to say what you want.
 
 Keep it simple on purpose:
 

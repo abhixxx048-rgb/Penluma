@@ -124,7 +124,7 @@ You set a scene, introduce tension, raise the question already forming in the li
 - **Question** - the natural question that tension raises. *"So what should we do?"*
 - **Answer** - your bottom line. *"Roll back to the old checkout this week."*
 
-SCQA works for emails, reports, pitches, and even hard conversations, because it makes the listener *feel the problem* before you hand them the solution. By the time you give your answer, they're already asking for it.
+SCQA works for emails, reports, [pitches](/blog/communication-and-influence/10-how-to-structure-a-presentation), and even hard conversations, because it makes the listener *feel the problem* before you hand them the solution. By the time you give your answer, they're already asking for it.
 
 ## PREP: a structure you can run in your head live
 

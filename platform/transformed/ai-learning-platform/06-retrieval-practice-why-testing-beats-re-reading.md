@@ -160,4 +160,4 @@ Notice that even a correct answer is never the end. It is "let's bring this back
 
 The one thing to remember: **learning happens when you pull information out, not when you push it back in.** If a study method feels smooth and easy, be suspicious. The struggle to recall is not a sign you're failing; it is the sound of the memory being built.
 
-There is a natural next question hiding inside all of this. If retrieving a memory works best right as it starts to fade, when exactly is that moment, and how do you time your reviews to catch it? That is the science of spacing, and it turns retrieval practice from a good habit into a remarkably efficient system.
+There is a natural next question hiding inside all of this. If retrieving a memory works best right as it starts to fade, when exactly is that moment, and how do you time your reviews to catch it? That is the science of spacing, and it turns [retrieval practice](/blog/learn-how-to-learn/05-active-recall-study-technique) from a good habit into a remarkably efficient system.

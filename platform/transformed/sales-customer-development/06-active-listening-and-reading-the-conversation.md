@@ -55,7 +55,7 @@ So listening is not the warm-up before the real work. **Listening is the work.**
 
 ## What active listening actually means
 
-**Active listening** means listening to genuinely understand the other person, and showing them you understood, rather than waiting silently for your turn to talk.
+**[Active listening](/blog/communication-and-influence/25-active-listening-and-building-rapport)** means listening to genuinely understand the other person, and showing them you understood, rather than waiting silently for your turn to talk.
 
 The term was coined in 1957 by psychologist **Carl Rogers** and Richard Farson. Rogers found that when people feel deeply understood, they relax, open up, and get to the real root of their problem. That is exactly what you want on a sales call.
 

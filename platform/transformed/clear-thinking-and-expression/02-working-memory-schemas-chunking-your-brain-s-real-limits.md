@@ -62,7 +62,7 @@ This is the foundation. Get it, and a dozen other thinking and communication ski
 
 ## The two memories you think with
 
-Your mind runs on two very different stores, and knowing the difference changes how you study, speak, and think.
+Your mind runs on [two very different stores](/blog/learn-how-to-learn/02-how-memory-works), and knowing the difference changes how you study, speak, and think.
 
 **Working memory** is the small mental desk where you hold whatever you are thinking about *right now*. It is tiny, and it fades in seconds. The phone number someone just read out loud lives here, briefly.
 

@@ -129,7 +129,7 @@ That link turns a hard new chunk into an easy extension of an old one.
 
 In the 1880s, a researcher named Hermann Ebbinghaus ran experiments on himself, memorizing lists of nonsense syllables like "WID" and "ZOF" and testing how much he kept after various delays.
 
-He found that forgetting is fast and predictable. You lose roughly half of new information within about an hour, and around 70 to 80 percent within a day. Then the loss slows down. Drawn on a graph, this makes a steep drop that flattens out: the **forgetting curve.**
+He found that forgetting is fast and predictable. You lose roughly half of new information within about an hour, and around 70 to 80 percent within a day. Then the loss slows down. Drawn on a graph, this makes a steep drop that flattens out: the **[forgetting curve](/blog/learn-how-to-learn/03-forgetting-curve-spacing-effect).**
 
 The crucial second half of his discovery is the hopeful part. Every time you review and successfully recall the material, the curve **resets and gets flatter.** You forget more slowly each time.
 
