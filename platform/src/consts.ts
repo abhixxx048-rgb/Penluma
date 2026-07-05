@@ -2,6 +2,9 @@ export const SITE = {
   name: 'Penluma',
   title: 'Penluma',
   tagline: 'Deep, worked-through writing on systems, AI, money, and thinking clearly.',
+  // Short <title> for the homepage (SERP-friendly, ≤60 chars). The long
+  // `tagline` above is still used for on-page hero copy.
+  homeTitle: 'Penluma — Deep writing on systems, AI & clear thinking',
   // brand story - pen + lumen (light)
   story:
     'Penluma - *pen* + *lumen*, the light of the pen. Writing is how unspoken thoughts come into view. This is a growing library of deep research, each topic taken from plain-language intuition to precise mechanics to the failure modes that show up in the real world.',

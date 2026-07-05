@@ -41,7 +41,7 @@ const {
   noindex = false,
 } = Astro.props;
 
-const pageTitle = title ? `${title} · ${SITE.title}` : `${SITE.title} - ${SITE.tagline}`;
+const pageTitle = title ? `${title} · ${SITE.title}` : SITE.homeTitle;
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 const ogImage = new URL(image ?? SITE.ogImage, Astro.site).toString();
 const twitterHandle = SITE.social.twitter ? `@${SITE.social.twitter}` : undefined;

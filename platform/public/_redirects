@@ -1,0 +1,3 @@
+# Canonicalize the www subdomain to the apex domain (301).
+# Cloudflare Pages matches these source patterns including the hostname.
+https://www.penluma.com/* https://penluma.com/:splat 301!
