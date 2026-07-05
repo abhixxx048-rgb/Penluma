@@ -31,7 +31,7 @@
 //   frame-src    https://giscus.app
 //   connect-src  https://giscus.app https://github.com
 //   img-src      https://*.githubusercontent.com   (avatar images)
-// Do NOT loosen the CSP just to "make it work" — allowlist these exact hosts.
+// Do NOT loosen the CSP just to "make it work" - allowlist these exact hosts.
 
 export interface CommentsConfig {
   /** Master switch. While false, Comments.astro renders nothing. */

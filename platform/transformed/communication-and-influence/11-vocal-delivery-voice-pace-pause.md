@@ -152,7 +152,7 @@ Fillers tend to show up for a handful of predictable reasons: you're speaking fa
 5. **Chunk your material.** Break a talk into clear, short sections in your head instead of one long stream. Knowing exactly where you are reduces the "searching" feeling that produces fillers.
 6. **Get a spotter.** A colleague who quietly signals every "um" - a hand tap, a note - builds awareness far faster than working alone.
 
-An engineer prepping for a technical review knows their tell is "so, um" at the start of every answer. In practice runs, they train themselves to start with the actual content instead - "The root cause was—" - pausing physically instead of reaching for the filler. Within a week of deliberate practice, the habit visibly drops in real meetings.
+An engineer prepping for a technical review knows their tell is "so, um" at the start of every answer. In practice runs, they train themselves to start with the actual content instead - "The root cause was-" - pausing physically instead of reaching for the filler. Within a week of deliberate practice, the habit visibly drops in real meetings.
 
 Aim for noticeably fewer fillers, not zero - a speaker with zero fillers and zero pauses can sound stiff and over-rehearsed. A few natural pauses in place of "um" reads as confident, not robotic.
 

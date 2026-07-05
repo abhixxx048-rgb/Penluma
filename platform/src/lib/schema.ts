@@ -1,10 +1,10 @@
 /**
- * schema.ts — pure JSON-LD builders for richer Google results.
+ * schema.ts - pure JSON-LD builders for richer Google results.
  *
  * These are framework-agnostic: every function returns a plain JSON-LD object
  * (a `Record<string, unknown>`) or `null` when the data needed to make a valid
  * node is missing. Nothing here imports Astro, reads the filesystem, or emits a
- * <script> tag — the call site (`blog/[...slug].astro`, a pillar hub page) is
+ * <script> tag - the call site (`blog/[...slug].astro`, a pillar hub page) is
  * responsible for assembling the array and handing it to `BaseLayout`'s
  * existing `jsonLd` prop, which renders one
  * `<script type="application/ld+json">` per entry (see BaseLayout.astro).
@@ -15,7 +15,7 @@
  *   const jsonLd = [ ...existing, courseJsonLd({ … }) ].filter(Boolean);
  *
  * This mirrors the "render nothing when data is absent" convention used across
- * the components — a hub with no siblings, or a how-to with no headings, simply
+ * the components - a hub with no siblings, or a how-to with no headings, simply
  * contributes no structured data instead of an empty/invalid node.
  */
 
@@ -29,7 +29,7 @@ export interface SchemaPost {
 
 /** A single ordered step inside a how-to/playbook. */
 export interface SchemaStep {
-  /** Short step name — typically an h2 heading text. */
+  /** Short step name - typically an h2 heading text. */
   name: string;
   /** The step body/summary. Falls back to `name` when empty. */
   text?: string;
@@ -111,7 +111,7 @@ export function courseJsonLd(opts: {
  * A playbook/how-to post as a schema.org `HowTo`, whose `step` list drives the
  * "steps" rich result.
  *
- * Derive `steps` at the call site from the rendered post's h2 headings — Astro's
+ * Derive `steps` at the call site from the rendered post's h2 headings - Astro's
  * `render(post)` returns a `headings` array of `{ depth, slug, text }`:
  *
  *   const { Content, headings } = await render(post);
@@ -155,7 +155,7 @@ export function howToJsonLd(opts: {
 }
 
 /**
- * A schema.org `LearningResource` — useful on an individual pillar lesson to
+ * A schema.org `LearningResource` - useful on an individual pillar lesson to
  * mark it as part of the parent course. Optional and additive; safe to emit
  * alongside the existing BlogPosting node.
  *

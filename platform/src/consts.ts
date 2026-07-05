@@ -4,7 +4,7 @@ export const SITE = {
   tagline: 'Deep, worked-through writing on systems, AI, money, and thinking clearly.',
   // Short <title> for the homepage (SERP-friendly, ≤60 chars). The long
   // `tagline` above is still used for on-page hero copy.
-  homeTitle: 'Penluma — Deep writing on systems, AI & clear thinking',
+  homeTitle: 'Penluma - Deep writing on systems, AI & clear thinking',
   // brand story - pen + lumen (light)
   story:
     'Penluma - *pen* + *lumen*, the light of the pen. Writing is how unspoken thoughts come into view. This is a growing library of deep research, each topic taken from plain-language intuition to precise mechanics to the failure modes that show up in the real world.',
@@ -14,7 +14,7 @@ export const SITE = {
   // Public contact address shown on the Contact page and used as the mailto
   // fallback. Point this at a real inbox before launch.
   contactEmail: 'brexiswazik@gmail.com',
-  // Cloudflare Turnstile (spam protection on the forms). PUBLIC site key — safe
+  // Cloudflare Turnstile (spam protection on the forms). PUBLIC site key - safe
   // to commit. Leave EMPTY to disable the widget entirely; when set, the forms
   // render a Turnstile challenge and the API routes verify it (they also need
   // the private TURNSTILE_SECRET_KEY set as a Cloudflare secret). Get both keys

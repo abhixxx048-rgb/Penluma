@@ -171,7 +171,7 @@ Enough theory. Here's a template for someone studying two subjects (call them A 
 | **Wed** | Interleaved practice: mix A + B problems | Rest / exercise (consolidation) |
 | **Thu** | Deep work: new material, Subject A | Spaced review: Monday's cue-column questions |
 | **Fri** | Interleaved practice + closed-book self-test | Turn best notes into linked evergreen notes |
-| **Sat** | Learning project - build or write something public | — |
+| **Sat** | Learning project - build or write something public | - |
 | **Sun** | **Weekly review**: what stuck, what to reschedule | Protect sleep; light reading only |
 
 Notice what's happening. New input arrives only in *focused* blocks, never while distracted. Every day has a *retrieval* moment - a brain-dump, a recall session, or a self-test - so you're always pulling knowledge out, not just pushing it in. Practice days *interleave* the two subjects. Wednesday is deliberately lighter because rest is part of the method, not a failure of it. And Sunday's review is where you notice you keep flunking Subject B's early questions and decide to reschedule them earlier next week.

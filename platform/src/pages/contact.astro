@@ -96,7 +96,7 @@ const inputClass =
 </BaseLayout>
 
 <script is:inline>
-  // Wrapped in an IIFE so `form`/`msg`/`btn` stay local — other is:inline
+  // Wrapped in an IIFE so `form`/`msg`/`btn` stay local - other is:inline
   // scripts on the page (the footer newsletter form) share the global scope and
   // also declare `form`/`msg`, which would throw "already declared".
   (() => {
@@ -112,7 +112,7 @@ const inputClass =
     msg.classList.remove('hidden');
     if (p.has('sent')) {
       msg.classList.add('text-green-600');
-      msg.textContent = 'Thanks — your message has been sent. I read every one.';
+      msg.textContent = 'Thanks - your message has been sent. I read every one.';
     } else {
       msg.classList.add('text-red-500');
       msg.textContent = p.get('error') || 'Something went wrong. Please try again.';

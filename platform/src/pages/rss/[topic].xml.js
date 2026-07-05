@@ -19,7 +19,7 @@ export async function GET(context) {
   const posts = await postsForTopic(topic.slug);
 
   return rss({
-    title: `${topic.title} — ${SITE.title}`,
+    title: `${topic.title} - ${SITE.title}`,
     description: topic.description,
     site: context.site,
     items: posts.slice(0, 50).map((post) => ({

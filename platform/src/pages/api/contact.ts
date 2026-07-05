@@ -5,7 +5,7 @@ import type { APIRoute } from 'astro';
 // in BLOG_KV as a backup.
 //
 // Progressive enhancement: the page's JS posts JSON and gets JSON back. If JS is
-// unavailable, the form still POSTs (form-encoded) — never a GET — so data is
+// unavailable, the form still POSTs (form-encoded) - never a GET - so data is
 // never leaked into the URL; those requests get a redirect instead of raw JSON.
 export const prerender = false;
 
@@ -94,7 +94,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
 
   const ok = () =>
     wantsJson
-      ? json({ message: 'Thanks — your message has been sent. I read every one.' })
+      ? json({ message: 'Thanks - your message has been sent. I read every one.' })
       : new Response(null, { status: 303, headers: { Location: '/contact?sent=1' } });
 
   // Silently accept bot submissions that fill the hidden honeypot field.
@@ -102,20 +102,20 @@ export const POST: APIRoute = async ({ request, locals }) => {
 
   const env = (locals as any)?.runtime?.env ?? {};
 
-  // Cloudflare Turnstile — enforced only when the secret is configured, so the
+  // Cloudflare Turnstile - enforced only when the secret is configured, so the
   // form keeps working before Turnstile is set up.
   const turnstileSecret = (env.TURNSTILE_SECRET_KEY as string | undefined)?.trim();
   if (turnstileSecret) {
     const token = (body['cf-turnstile-response'] || '').trim();
     const ip = request.headers.get('CF-Connecting-IP') || undefined;
     if (!(await verifyTurnstile(token, turnstileSecret, ip)))
-      return fail('Verification failed — please try again.');
+      return fail('Verification failed - please try again.');
   }
 
   if (!name) return fail('Please enter your name.');
   if (!EMAIL_RE.test(email)) return fail('Please enter a valid email.');
   if (message.length < 10) return fail('Please add a bit more detail to your message.');
-  if (message.length > 5000) return fail('That message is a little too long — please trim it.');
+  if (message.length > 5000) return fail('That message is a little too long - please trim it.');
 
   // Trim to survive a stray newline/space pasted into `wrangler secret put`.
   const webhookUrl = (env.DISCORD_WEBHOOK_URL as string | undefined)?.trim() || undefined;

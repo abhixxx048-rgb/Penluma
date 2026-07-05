@@ -417,7 +417,7 @@ const CONTENT = {
   },
 };
 
-// Curated "Related reading" — links each tool page out to genuinely relevant
+// Curated "Related reading" - links each tool page out to genuinely relevant
 // blog posts (the tool -> blog half of the internal-linking pass). URLs are
 // verified to exist. Keeps the tool suite woven into the content, not orphaned.
 const P = {

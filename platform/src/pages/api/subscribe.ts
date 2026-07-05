@@ -107,13 +107,13 @@ export const POST: APIRoute = async ({ request, locals }) => {
 
   const env = (locals as any)?.runtime?.env ?? {};
 
-  // Cloudflare Turnstile — enforced only when the secret is configured.
+  // Cloudflare Turnstile - enforced only when the secret is configured.
   const turnstileSecret = (env.TURNSTILE_SECRET_KEY as string | undefined)?.trim();
   if (turnstileSecret) {
     const ip = request.headers.get('CF-Connecting-IP') || undefined;
     if (!(await verifyTurnstile(token, turnstileSecret, ip)))
       return wantsJson
-        ? json({ error: 'Verification failed — please try again.' }, 400)
+        ? json({ error: 'Verification failed - please try again.' }, 400)
         : redirect('?subscribe=captcha');
   }
 
