@@ -1,0 +1,181 @@
+---
+// "Listen to this article" - client-side text-to-speech using the browser's
+// built-in Web Speech API (SpeechSynthesis). No server, no audio files, no cost.
+// Reads the post's prose aloud with play / pause / resume / stop. Progressively
+// enhanced: if the browser has no speech synthesis, the control hides itself.
+interface Props {
+  /** CSS selector for the content to read aloud. Defaults to the article prose. */
+  target?: string;
+}
+const { target = '.prose-research' } = Astro.props;
+---
+
+<span class="listen inline-flex items-center gap-1.5" data-listen data-target={target} hidden>
+  <button
+    type="button"
+    data-listen-toggle
+    aria-pressed="false"
+    aria-label="Listen to this article"
+    class="listen-btn group inline-flex items-center gap-1.5 rounded-lg border border-slate-300 px-2.5 py-1 text-sm font-medium text-slate-600 transition-colors hover:border-brand-400 hover:text-brand-700 aria-pressed:border-brand-500 aria-pressed:text-brand-700 dark:border-slate-700 dark:text-slate-400 dark:hover:border-brand-600 dark:hover:text-brand-300 dark:aria-pressed:border-brand-500 dark:aria-pressed:text-brand-300"
+  >
+    <svg data-listen-icon="play" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M11 5 6 9H2v6h4l5 4V5Z" />
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13" />
+    </svg>
+    <svg data-listen-icon="pause" class="hidden h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="6" y="5" width="4" height="14" rx="1" />
+      <rect x="14" y="5" width="4" height="14" rx="1" />
+    </svg>
+    <span data-listen-label>Listen</span>
+  </button>
+  <button
+    type="button"
+    data-listen-stop
+    aria-label="Stop listening"
+    hidden
+    class="listen-stop inline-flex items-center rounded-lg border border-slate-300 px-2 py-1 text-sm font-medium text-slate-500 transition-colors hover:border-brand-400 hover:text-brand-700 dark:border-slate-700 dark:text-slate-400 dark:hover:border-brand-600 dark:hover:text-brand-300"
+  >
+    Stop
+  </button>
+</span>
+
+<script is:inline>
+  (function () {
+    if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
+
+    document.querySelectorAll('[data-listen]').forEach(function (root) {
+      var target = root.getAttribute('data-target') || '.prose-research';
+      var toggle = root.querySelector('[data-listen-toggle]');
+      var stopBtn = root.querySelector('[data-listen-stop]');
+      var label = root.querySelector('[data-listen-label]');
+      var iconPlay = root.querySelector('[data-listen-icon="play"]');
+      var iconPause = root.querySelector('[data-listen-icon="pause"]');
+      if (!toggle) return;
+
+      // Feature is supported - reveal the control.
+      root.hidden = false;
+
+      var chunks = [];
+      var idx = 0;
+      var gen = 0; // bumps on every cancel so a stale utterance's callbacks are ignored
+      var state = 'idle'; // idle | playing | paused
+
+      // Collect readable prose: paragraphs, headings, list items, quotes.
+      // Skip code blocks (reading code aloud is useless) and anything hidden.
+      function collect() {
+        var el = document.querySelector(target);
+        if (!el) return [];
+        var blocks = el.querySelectorAll('p, h1, h2, h3, h4, li, blockquote');
+        var text = [];
+        blocks.forEach(function (n) {
+          if (n.closest('pre, table')) return;
+          var t = (n.innerText || n.textContent || '').replace(/\s+/g, ' ').trim();
+          if (t) text.push(t);
+        });
+        // Split into short chunks so long utterances don't get cut off (a known
+        // Chrome quirk) and pause/resume stays responsive.
+        var parts = [];
+        text.forEach(function (p) {
+          var sentences = p.match(/[^.!?]+[.!?]*\s*/g) || [p];
+          var buf = '';
+          sentences.forEach(function (s) {
+            if ((buf + s).length > 200 && buf) { parts.push(buf.trim()); buf = s; }
+            else { buf += s; }
+          });
+          if (buf.trim()) parts.push(buf.trim());
+        });
+        return parts;
+      }
+
+      function pickVoice() {
+        var voices = speechSynthesis.getVoices() || [];
+        return voices.filter(function (v) { return /en[-_]US/i.test(v.lang); })[0] ||
+               voices.filter(function (v) { return /^en/i.test(v.lang); })[0] || null;
+      }
+
+      // Speak chunk `i`. A generation token invalidates the callbacks of any
+      // utterance we deliberately cancel (for pause / stop), so cancelling never
+      // triggers an unwanted reset or advance.
+      function speakFrom(i) {
+        if (i >= chunks.length) { reset(); return; }
+        idx = i;
+        var myGen = ++gen;
+        var u = new SpeechSynthesisUtterance(chunks[idx]);
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.rate = 1; u.pitch = 1;
+        u.onend = function () {
+          if (myGen !== gen || state !== 'playing') return;
+          speakFrom(idx + 1);
+        };
+        u.onerror = function () {
+          if (myGen !== gen || state !== 'playing') return;
+          reset();
+        };
+        speechSynthesis.speak(u);
+      }
+
+      function setPlaying() {
+        if (label) label.textContent = 'Pause';
+        if (iconPlay) iconPlay.classList.add('hidden');
+        if (iconPause) iconPause.classList.remove('hidden');
+        toggle.setAttribute('aria-pressed', 'true');
+        if (stopBtn) stopBtn.hidden = false;
+      }
+      function setPaused() {
+        if (label) label.textContent = 'Resume';
+        if (iconPlay) iconPlay.classList.remove('hidden');
+        if (iconPause) iconPause.classList.add('hidden');
+      }
+      function reset() {
+        gen++;
+        speechSynthesis.cancel();
+        state = 'idle'; idx = 0;
+        if (label) label.textContent = 'Listen';
+        if (iconPlay) iconPlay.classList.remove('hidden');
+        if (iconPause) iconPause.classList.add('hidden');
+        toggle.setAttribute('aria-pressed', 'false');
+        if (stopBtn) stopBtn.hidden = true;
+      }
+
+      function start() {
+        chunks = collect();
+        if (!chunks.length) return;
+        state = 'playing';
+        setPlaying();
+        speakFrom(0);
+      }
+
+      // Pause/resume without relying on the flaky native pause()/resume(): stop
+      // speech and remember the current chunk, then re-speak that chunk from its
+      // start on resume. Chunks are short, so you just re-hear the current line.
+      function pause() {
+        state = 'paused';
+        gen++; // invalidate the in-flight utterance's callbacks so cancel() is silent
+        speechSynthesis.cancel();
+        setPaused();
+      }
+      function resume() {
+        state = 'playing';
+        setPlaying();
+        speakFrom(idx);
+      }
+
+      toggle.addEventListener('click', function () {
+        if (state === 'idle') { start(); }
+        else if (state === 'playing') { pause(); }
+        else if (state === 'paused') { resume(); }
+      });
+      if (stopBtn) stopBtn.addEventListener('click', reset);
+
+      // Never let speech keep going after the reader leaves the page.
+      window.addEventListener('beforeunload', function () { gen++; speechSynthesis.cancel(); });
+      window.addEventListener('pagehide', function () { gen++; speechSynthesis.cancel(); });
+
+      // Voices can load asynchronously on first visit.
+      if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.addEventListener('voiceschanged', function () {}, { once: true });
+      }
+    });
+  })();
+</script>

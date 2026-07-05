@@ -4,6 +4,7 @@ import PostInteractions from '../../components/PostInteractions.astro';
 import Comments from '../../components/Comments.astro';
 import BookmarkButton from '../../components/BookmarkButton.astro';
 import ReadingProgress from '../../components/ReadingProgress.astro';
+import ListenButton from '../../components/ListenButton.astro';
 import TableOfContents from '../../components/TableOfContents.astro';
 import DownloadCTA from '../../components/DownloadCTA.astro';
 import pdfMap from '../../data/pdf-map.json';
@@ -172,6 +173,7 @@ const extraLd = [courseNode, howToNode, learningNode].filter(Boolean);
         <span>By <a href={`/author/${authorSlug}`} class="hover:text-brand-600">{author}</a></span>
         <time datetime={post.data.date.toISOString()}>{fmtDate}</time>
         <span>{reading.minutes} min read</span>
+        <ListenButton />
         <PostInteractions postId={post.id} />
         <BookmarkButton
           id={post.id}
