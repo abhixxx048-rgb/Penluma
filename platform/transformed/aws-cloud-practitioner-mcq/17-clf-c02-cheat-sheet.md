@@ -81,6 +81,14 @@ The gentlest domain, but it hides the distinctions the exam loves: CapEx vs OpEx
 
 **CapEx vs OpEx:** CapEx is buying servers upfront (old way); OpEx is the monthly AWS bill, pay only for what you use (new way). The cloud converts CapEx into OpEx.
 
+### Cloud service models — who manages what
+
+| Model | You manage | Example |
+|---|---|---|
+| IaaS | OS, apps, data | EC2 |
+| PaaS | Apps & data only | Elastic Beanstalk |
+| SaaS | Nothing — just use it | Gmail, Salesforce |
+
 ### Well-Architected Framework — the 6 pillars
 
 The six pillars are a guaranteed question. The full memory trick and per-pillar services are in [the six pillars, made un-confusable](/blog/aws-cloud-practitioner-mcq/02-aws-well-architected-framework-the-six-pillars).
@@ -114,10 +122,17 @@ The six pillars are a guaranteed question. The full memory trick and per-pillar 
 | Regions | 33+ | Independent geographic areas |
 | Availability Zones | 2–6 per region | Physically separate data centers |
 | Edge Locations | 400+ | CloudFront caching, Route 53 DNS |
+| Local Zones | select metros | Run compute/storage close to end users |
 
 - **Region selection factors:** compliance, latency, cost, service availability.
 - **IAM is global.** EC2, RDS and VPC are region-specific.
 - **Multi-AZ** = high availability (survives a data-center failure). **Multi-Region** = disaster recovery (survives a whole-region failure).
+
+### Two more concepts the exam slips in
+
+- **AWS CAF (Cloud Adoption Framework)** plans a *migration* across 6 perspectives: Business, People, Governance, Platform, Security, Operations. (Well-Architected is for *designing workloads*; CAF is for *adopting the cloud*.)
+- **Decoupling / loose coupling** = split an app into independent parts (via SQS, SNS, EventBridge) so one failure doesn't take down the rest — the opposite of a monolith.
+- **TCO (Total Cost of Ownership)** compares on-premises (hardware, power, cooling, space, staff) against cloud OpEx; **Migration Evaluator** helps calculate it.
 
 ---
 
@@ -168,9 +183,21 @@ The seven services below are the heart of the security domain; the reasoning beh
 ### Encryption, compliance & network security
 
 - **At-rest** (stored data: S3, EBS, RDS) vs **in-transit** (moving data: HTTPS, TLS).
-- **KMS** = software-based keys, AWS-managed, cheap. **CloudHSM** = dedicated hardware, you hold the keys, for strict compliance.
+- **KMS** = software-managed keys (FIPS 140-2 **Level 2**), AWS-managed, cheap, with automatic annual rotation. **CloudHSM** = dedicated single-tenant hardware (FIPS 140-2 **Level 3**), *you* hold the keys and AWS can never access them.
 - **AWS Artifact** is the compliance filing cabinet — download SOC / ISO / PCI reports, sign the BAA for HIPAA.
 - **Security Group** = stateful, allow-only, attached to an EC2 instance. **NACL** = stateless, allow *and* deny, attached to a subnet. To explicitly **deny** an IP, you need a **NACL**.
+
+### More security services the exam expects
+
+| Service | Trigger phrase → it |
+|---|---|
+| Detective | "investigate / root cause" — used *after* GuardDuty flags a threat |
+| Secrets Manager | "rotate database passwords / API keys automatically" |
+| Parameter Store | "store config values or secrets, cheaper, no auto-rotation" |
+| Cognito | "add sign-up / sign-in / social login to an app" |
+| ACM | "free SSL/TLS certificate, auto-renew, HTTPS" |
+| VPC Flow Logs | "capture / monitor network traffic in a VPC" |
+| PrivateLink | "reach an AWS service privately, without the internet" |
 
 ---
 
@@ -189,8 +216,11 @@ The biggest domain — a third of the exam — and mostly a memory game of "whic
 | Fargate | Serverless containers (no EC2 to manage) |
 | Lightsail | Simple VPS for small projects |
 | Outposts | AWS services in your own data center |
+| Batch | Run batch-processing / queued compute jobs |
 
-- **ELB** distributes traffic across existing instances; **Auto Scaling** adds/removes instances by demand. Together = high availability + cost efficiency.
+**EC2 instance families:** General Purpose (T, M) · Compute Optimized (C — CPU-heavy) · Memory Optimized (R, X — in-memory DBs) · Storage Optimized (I, D — high I/O) · Accelerated (P, G — GPU/ML).
+
+- **ELB** distributes traffic across instances (ALB = HTTP/Layer 7, NLB = TCP/Layer 4); **Auto Scaling** adds/removes instances by demand. Together = high availability + cost efficiency.
 
 ### Storage
 
@@ -198,8 +228,13 @@ The biggest domain — a third of the exam — and mostly a memory game of "whic
 |---|---|---|
 | S3 | Object | Files, images, backups, static sites |
 | EBS | Block | Disk for a single EC2, one AZ |
-| EFS | File | Shared file system across many EC2/AZs |
+| EFS | File | Shared Linux file system across many EC2/AZs |
+| FSx | File | Windows file server or Lustre (high-performance) |
 | Glacier | Archive | Cheap long-term storage, slow retrieval |
+| Storage Gateway | Hybrid | Bridge on-premises storage to AWS |
+| Snow Family | Physical | Ship large data (Snowcone → Snowball → Snowmobile) |
+
+**S3 storage classes** (a near-guaranteed question): Standard (frequent access) · Standard-IA (infrequent, fast retrieval) · One Zone-IA (infrequent, single AZ, cheaper) · Glacier Instant (archive, ms retrieval) · Glacier Flexible (mins–hours) · Glacier Deep Archive (cheapest, 12–48 hr) · Intelligent-Tiering (auto-moves data between tiers).
 
 ### Databases
 
@@ -213,8 +248,11 @@ The biggest domain — a third of the exam — and mostly a memory game of "whic
 | Neptune | Graph | Social networks, fraud detection |
 | QLDB | Ledger | Immutable, cryptographically verifiable records |
 | DocumentDB | Document | MongoDB-compatible |
+| Timestream | Time-series | IoT sensor and metrics data |
 
 ### Networking
+
+Everything runs inside a [VPC](/blog/aws-cloud-practitioner-mcq/07-vpc-networking-fundamentals) — your private network; [Route 53](/blog/aws-cloud-practitioner-mcq/08-amazon-route-53-dns-routing) resolves DNS and [CloudFront](/blog/aws-cloud-practitioner-mcq/09-amazon-cloudfront-cdn-edge-delivery) caches content at the edge.
 
 | Service | Purpose |
 |---|---|
@@ -226,8 +264,11 @@ The biggest domain — a third of the exam — and mostly a memory game of "whic
 | VPN | Encrypted tunnel over the internet |
 | Transit Gateway | Central hub joining many VPCs + on-prem |
 | Internet Gateway | The door to the internet for a public subnet |
+| NAT Gateway | Lets a private subnet reach the internet outbound-only |
 
 ### Management, integration & migration
+
+Two services the exam constantly swaps: [CloudWatch](/blog/aws-cloud-practitioner-mcq/13-amazon-cloudwatch-monitoring-observability) watches *metrics and alarms*, while [CloudTrail](/blog/aws-cloud-practitioner-mcq/14-aws-cloudtrail-auditing-api-logging) records *who called which API*.
 
 | Service | Purpose |
 |---|---|
@@ -257,8 +298,43 @@ The biggest domain — a third of the exam — and mostly a memory game of "whic
 | Comprehend | NLP — sentiment, entities |
 | Textract | Extract text/tables from scanned docs |
 | Personalize | Real-time recommendations |
+| Kendra | Intelligent natural-language search across documents |
+| Forecast | Time-series forecasting (demand, sales) |
 | CloudFormation | AWS-native IaC (YAML/JSON) |
 | CDK | IaC in Python/TypeScript/Java → compiles to CloudFormation |
+
+### Analytics & streaming
+
+| Service | Does what |
+|---|---|
+| Athena | Query data in S3 using plain SQL (serverless) |
+| Glue | Serverless ETL — extract, transform, load |
+| Kinesis | Ingest and process real-time streaming data |
+| EMR | Big-data processing with Hadoop / Spark |
+
+### Delivery, performance & other services
+
+| Service | Does what |
+|---|---|
+| Global Accelerator | Route traffic over the AWS backbone with 2 static IPs (not caching) |
+| S3 Transfer Acceleration | Speed up S3 *uploads* via CloudFront edge locations |
+| X-Ray | Trace and debug requests across distributed / microservice apps |
+| DataSync | Fast bulk data transfer between on-premises and AWS |
+| AMI | Template (OS + software + config) to launch identical EC2 instances |
+| SES | Send transactional or marketing email |
+| Connect | Cloud contact centre (phone support) |
+| Service Catalog | Curated catalogue of approved resources for your org |
+| OpsWorks | Configuration management with Chef / Puppet |
+
+> CloudFront **caches content** at the edge; Global Accelerator **routes traffic** through AWS's network — same edge footprint, opposite jobs.
+
+### How you talk to AWS
+
+| Tool | What it is | Auth |
+|---|---|---|
+| Console | Web GUI (point and click) | Username + password |
+| CLI | Terminal commands, scripts | Access keys |
+| SDK | Language libraries (Python, Java…) | Access keys |
 
 ---
 
@@ -287,6 +363,8 @@ The smallest domain, but easy marks if you memorize three tables. The reasoning 
 | AWS Budgets | Alert *before* you overspend |
 | Pricing Calculator | Estimate *before* you deploy |
 | Cost & Usage Report | Most detailed line-by-line bill → to S3 |
+| Cost Allocation Tags | Tag resources to break the bill down by team/project |
+| Compute Optimizer | Right-size recommendations for EC2, EBS and Lambda |
 
 ### Support plans
 
@@ -300,7 +378,14 @@ The smallest domain, but easy marks if you memorize three tables. The reasoning 
 
 - 24/7 support and full Trusted Advisor checks start at **Business**.
 - **Pool of TAMs / 30-min response** = Enterprise On-Ramp. **Dedicated TAM / 15-min** = Enterprise.
-- **Consolidated Billing** = one bill + volume discounts across accounts, managed with [AWS Organizations](/blog/aws-cloud-practitioner-mcq/15-aws-organizations-multi-account-governance). **SCPs** only *restrict* services — they never grant permissions.
+- **Consolidated Billing** = one bill + volume discounts across accounts, managed with [AWS Organizations](/blog/aws-cloud-practitioner-mcq/15-aws-organizations-multi-account-governance). Organizations groups accounts into **OUs**; **SCPs** are applied per account or OU and only *restrict* services — they never grant permissions.
+- **Free Tier:** Always Free (e.g. Lambda 1M requests/mo, DynamoDB 25 GB) · 12-Months Free (EC2 t2.micro, S3 5 GB, RDS) · short service Trials.
+- **Data transfer IN is free; data transfer OUT costs money** — a favorite billing trick.
+- **AWS Marketplace** = buy/sell third-party software (AMIs, SaaS, containers), flexible pricing including BYOL.
+- Enterprise support adds a **dedicated TAM** and a **Concierge** billing team (both Enterprise-only).
+- **Reserved Instance payment:** All Upfront (biggest discount) > Partial Upfront > No Upfront. RI discounts are also **shared across all accounts** in an Organization.
+- **EC2 billing granularity:** Linux is billed per *second* (1-minute minimum), Windows per *hour*. An **Elastic IP** is free while attached to a running instance, but charged when left idle.
+- **Penetration testing** on your own instances is allowed without asking AWS first.
 
 ---
 
@@ -317,6 +402,12 @@ This is the highest-value table on the page. AWS builds questions around trigger
 | "Scan EC2 for vulnerabilities / open ports" | Inspector |
 | "Sensitive data / PII / cards in S3" | Macie |
 | "All security findings in one place" | Security Hub |
+| "Investigate / root-cause a security finding" | Detective |
+| "Rotate DB passwords / API keys automatically" | Secrets Manager |
+| "Add sign-in / social login to an app" | Cognito |
+| "Free SSL/TLS certificate / HTTPS" | ACM |
+| "Reach a service privately, no internet" | PrivateLink |
+| "Monitor network traffic in a VPC" | VPC Flow Logs |
 | "Who made the API call / audit trail" | CloudTrail |
 | "How did the resource config change" | AWS Config |
 | "Best-practice recommendations" | Trusted Advisor |
@@ -339,6 +430,23 @@ This is the highest-value table on the page. AWS builds questions around trigger
 | "Immutable / cryptographically verifiable" | QLDB |
 | "Cache DB queries" | ElastiCache |
 | "Physical data transfer / internet too slow" | Snow Family |
+| "Bridge on-prem storage to the cloud" | Storage Gateway |
+| "Windows file share / Lustre" | FSx |
+| "Private subnet needs outbound internet" | NAT Gateway |
+| "Run batch / queued compute jobs" | Batch |
+| "Query S3 with SQL" | Athena |
+| "Serverless ETL / prepare data" | Glue |
+| "Real-time streaming data" | Kinesis |
+| "Big data / Hadoop / Spark" | EMR |
+| "Improve global performance / static IPs" | Global Accelerator |
+| "Speed up uploads to S3" | S3 Transfer Acceleration |
+| "Trace / debug microservices" | X-Ray |
+| "Fast on-prem to AWS data transfer" | DataSync |
+| "Template to launch identical EC2s" | AMI |
+| "Send email" | SES |
+| "Cloud call centre" | Connect |
+| "Road map for cloud adoption / migration planning" | AWS CAF |
+| "Right-size EC2 recommendations" | Compute Optimizer |
 | "Migrate a database / minimal downtime" | DMS |
 | "Audio to text" | Transcribe |
 | "Text to audio" | Polly |
@@ -347,6 +455,8 @@ This is the highest-value table on the page. AWS builds questions around trigger
 | "Sentiment analysis / NLP" | Comprehend |
 | "Extract text from scanned docs" | Textract |
 | "Personalized recommendations" | Personalize |
+| "Natural-language search across documents" | Kendra |
+| "Forecast future demand / sales" | Forecast |
 | "YAML/JSON infra template" | CloudFormation |
 | "Infra in Python/TypeScript" | CDK |
 | "Deploy an app without managing infra" | Elastic Beanstalk |
@@ -373,6 +483,7 @@ This is the highest-value table on the page. AWS builds questions around trigger
 - **"LEAST operational overhead"** → think managed services (RDS over EC2 + MySQL).
 - **"Minimal downtime migration"** → DMS. **"No code changes"** → Rehost or Replatform.
 - **Stuck between two answers?** Eliminate the clearly wrong ones first, then pick the more *managed* / more *specific* service.
+- **Pace:** about 1.4 minutes per question. Flag the hard ones, keep moving, and circle back — most people finish with 15–20 minutes to spare.
 
 ## Now prove it stuck
 
