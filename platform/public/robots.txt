@@ -1,6 +1,7 @@
 User-agent: *
+# Content-use preferences for search/AI crawlers - https://contentsignals.org
+Content-Signal: search=yes, ai-train=no, use=reference
 Allow: /
-
 # Block server-rendered API endpoints from crawling
 Disallow: /api/
 
