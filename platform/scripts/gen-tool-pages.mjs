@@ -499,7 +499,8 @@ const faqs = ${faqs};
 
   <TrustStrip />
 
-  <article class="seo mx-auto mt-16 max-w-3xl space-y-5 px-4 leading-relaxed">
+  <div class="mx-auto mt-16 max-w-5xl px-4 sm:px-6">
+    <article class="seo max-w-3xl space-y-5 leading-relaxed">
     <p class="eyebrow text-mark">The short version</p>
     <hr class="rule-dash" />
     <h2 class="text-2xl font-bold">How to use it</h2>
@@ -514,7 +515,8 @@ ${stepsHtml}
       zero requests - and it keeps working with your connection turned off.
     </p>
 ${relatedHtml}
-  </article>
+    </article>
+  </div>
 </ToolLayout>
 `;
 };
