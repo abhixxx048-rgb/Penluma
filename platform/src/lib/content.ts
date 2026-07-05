@@ -46,6 +46,47 @@ export async function allPosts(): Promise<CollectionEntry<'blog'>[]> {
   return posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 }
 
+/**
+ * The homepage "start here" flagship: whichever post is flagged `flagship: true`,
+ * falling back to a known strong first-read so the block always renders.
+ */
+export async function flagshipPost(): Promise<CollectionEntry<'blog'> | undefined> {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  return (
+    posts.find((p) => p.data.flagship) ??
+    posts.find((p) => p.id === 'system-design/06-caching-deep') ??
+    posts[0]
+  );
+}
+
+/**
+ * Plain-text opening excerpt from a post's markdown body - the real first
+ * sentences, so the homepage can let a visitor start reading before they click.
+ * Skips headings, callouts, lists and images; strips inline markdown.
+ */
+export function excerpt(body: string, maxChars = 300): string {
+  const paras = (body || '')
+    .replace(/\r/g, '')
+    .split('\n\n')
+    .map((s) => s.trim())
+    .filter(Boolean);
+  const isProse = (p: string) =>
+    !/^[#>|]/.test(p) && // heading, blockquote, table
+    !/^[-*+]\s/.test(p) && // unordered list
+    !/^\d+\.\s/.test(p) && // ordered list
+    !/^</.test(p) && // html / callout div
+    !/^:::/.test(p) && // container directive
+    !/^!\[/.test(p); // image
+  const text = paras.filter(isProse).slice(0, 2).join(' ');
+  const plain = text
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // links → anchor text
+    .replace(/[*_`]/g, '') // emphasis / inline code
+    .replace(/\s+/g, ' ')
+    .trim();
+  if (plain.length <= maxChars) return plain;
+  return plain.slice(0, maxChars).replace(/\s+\S*$/, '') + '…';
+}
+
 export async function postsForTopic(slug: string): Promise<CollectionEntry<'blog'>[]> {
   const posts = await getCollection('blog', ({ data }) => data.topic === slug && !data.draft);
   // numbered courses read in order; otherwise newest first

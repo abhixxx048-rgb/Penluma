@@ -50,6 +50,8 @@ const blog = defineCollection({
     transformed: z.boolean().default(false),
     /** True once internal (in-body) linking is done. */
     linked: z.boolean().optional(),
+    /** Feature this post as the homepage flagship "start here" read. */
+    flagship: z.boolean().default(false),
     /** Last-updated date - renders a "Last updated" line when present. */
     updated: z.coerce.date().optional(),
     /** Opt-in structured-data override. Set to "howto" to emit HowTo JSON-LD. */

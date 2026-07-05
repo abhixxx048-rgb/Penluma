@@ -2,7 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PostCard from '../components/PostCard.astro';
 import { SITE } from '../consts';
-import { topics, topicsByCategory, allPosts, featuredPosts } from '../lib/content';
+import readingTime from 'reading-time';
+import { topics, topicsByCategory, allPosts, featuredPosts, flagshipPost, excerpt } from '../lib/content';
 
 const posts = await allPosts();
 const recent = posts.slice(0, 12);
@@ -10,6 +11,68 @@ const featuredTopics = topics.filter((t) => t.featured);
 const grouped = topicsByCategory();
 const totalPosts = posts.length;
 const totalTopics = topics.length;
+
+// Flagship "start here" read - the taste that converts a first-time visitor.
+const flagship = await flagshipPost();
+const flagshipUrl = flagship ? `/blog/${flagship.id}` : '/blog';
+const flagshipHook = flagship ? excerpt(flagship.body || '', 320) : '';
+const flagshipMins = flagship
+  ? Math.max(1, Math.round(readingTime(flagship.body || '').minutes))
+  : 0;
+
+// "Start here" - a curated trio of first reads, each framed as the question it
+// answers (curiosity gap > topic name). Hand-picked to span money, mind and AI
+// so any kind of visitor finds one they can't help clicking. Swap ids freely.
+// Each question is a "curiosity gap" - it opens a loop the reader wants closed.
+// The devices (from how YouTube titles, push notifications and email subject
+// lines earn a tap): relatable pain, counter-intuition, forbidden knowledge,
+// "you"-framing, and a concrete stake. Picked to span money, mind, learning,
+// economics and AI so any visitor finds one they can't leave unanswered.
+// Swap ids/questions freely - href, topic label and read-time resolve on their own.
+const startHerePicks = [
+  {
+    id: 'how-to-make-money/02-value-creation-vs-value-capture',
+    q: 'Why do hard-working people still stay broke?',
+    icon: '💸',
+  },
+  {
+    id: 'economics-from-first-principles/07-how-banks-work-and-how-they-create-money',
+    q: 'How do banks create money out of thin air?',
+    icon: '🏦',
+  },
+  {
+    id: 'clear-thinking-and-expression/01-nothing-is-wrong-with-you-the-science-of-going-blank',
+    q: 'Why does your mind go blank when someone asks what you think?',
+    icon: '🧠',
+  },
+  {
+    id: 'knowing-doing-gap/03-why-you-procrastinate-and-how-to-stop',
+    q: 'Why do you procrastinate, even when you know better?',
+    icon: '🎯',
+  },
+  {
+    id: 'system-design/02-networking-and-protocols',
+    q: 'Why do some websites feel instant and yours doesn\'t?',
+    icon: '⚡',
+  },
+  {
+    id: 'psychology-of-decisions/08-prospect-theory-behavioral-economics-how-we-weigh-gains-losses-risk',
+    q: 'Why does losing $50 hurt more than finding $50?',
+    icon: '⚖️',
+  },
+];
+const startHere = startHerePicks
+  .map((pick) => {
+    const post = posts.find((p) => p.id === pick.id);
+    if (!post) return null;
+    return {
+      ...pick,
+      href: `/blog/${post.id}`,
+      topicTitle: post.data.topicTitle,
+      mins: Math.max(1, Math.round(readingTime(post.body || '').minutes)),
+    };
+  })
+  .filter((x): x is NonNullable<typeof x> => x !== null);
 
 const homeUrl = new URL('/', Astro.site).toString();
 const pageDescription =
@@ -58,16 +121,17 @@ const jsonLd = [
         {SITE.name} · pen + lumen
       </p>
       <h1 class="mt-4 max-w-3xl text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl dark:text-white">
-        Understand hard things properly - not just enough to nod along.
+        Learn hard things so well you could explain them to anyone.
       </h1>
-      <p class="mt-5 max-w-2xl text-xl text-slate-600 dark:text-slate-300">{SITE.tagline}</p>
+      <p class="mt-5 max-w-2xl text-xl text-slate-600 dark:text-slate-300">
+        Clear, in-depth writing about systems, AI, money, and how to think well.
+      </p>
       <p class="mt-3 max-w-2xl text-slate-500 dark:text-slate-400">
-        No cheat sheets, no hot takes - each deep-dive goes from plain-language intuition, to precise
-        mechanics, to the failure modes that show up in the real world. The version I wish I'd had when
-        I was learning it.
+        No shortcuts, no quick opinions. Each topic starts with a simple idea, shows how it really
+        works, and then shows where it breaks in real life. It's the guide I wish I had when I was learning.
       </p>
       <div class="mt-8 flex flex-wrap gap-3">
-        <a href="/blog" class="rounded-xl bg-brand-700 px-5 py-2.5 font-semibold text-white transition-colors hover:bg-brand-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200">
+        <a href={flagshipUrl} class="rounded-xl bg-brand-700 px-5 py-2.5 font-semibold text-white transition-colors hover:bg-brand-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200">
           Start reading →
         </a>
         <a href="/topics" class="rounded-xl border border-slate-300 px-5 py-2.5 font-medium transition-colors hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-900">
@@ -77,51 +141,83 @@ const jsonLd = [
     </div>
   </section>
 
-  <!-- What Penluma is -->
-  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6">
-    <p class="text-sm font-semibold uppercase tracking-widest text-brand-600 dark:text-brand-400">What is Penluma</p>
-    <h2 class="mt-3 max-w-2xl text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl dark:text-white">
-      A library of deep-dives that actually go deep.
+  <!-- Flagship read - the first taste: one full example with its real opening
+       lines, so a visitor sees the writing quality before committing. -->
+  {flagship && (
+    <section class="mx-auto max-w-5xl px-4 pt-14 sm:px-6">
+      <a
+        href={flagshipUrl}
+        class="group block rounded-3xl border border-slate-200 bg-slate-50 p-8 transition-all hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-lg sm:p-10 dark:border-slate-800 dark:bg-slate-900/50 dark:hover:border-brand-700"
+      >
+        <p class="text-xs font-semibold uppercase tracking-wider text-brand-600 dark:text-brand-400">
+          {flagship.data.icon} See one taken all the way · {flagship.data.topicTitle}
+        </p>
+        <h2 class="mt-3 max-w-3xl font-serif text-2xl font-bold tracking-tight text-slate-900 group-hover:text-brand-700 sm:text-3xl dark:text-white dark:group-hover:text-brand-300">
+          {flagship.data.title}
+        </h2>
+        <p class="mt-4 max-w-2xl text-lg leading-relaxed text-slate-600 dark:text-slate-300">
+          {flagshipHook}
+        </p>
+        <p class="mt-6 inline-flex items-center gap-2 font-semibold text-brand-700 dark:text-brand-300">
+          Read the whole thing
+          <span class="font-normal text-slate-400">· {flagshipMins} min</span>
+          <span aria-hidden="true" class="transition-transform group-hover:translate-x-0.5">→</span>
+        </p>
+      </a>
+    </section>
+  )}
+
+  <!-- Start here - a compact buffet of curiosity questions right after the
+       flagship taste, so a visitor who wants variety can pick their own door. -->
+  {startHere.length > 0 && (
+    <section class="mx-auto max-w-5xl px-4 pt-14 sm:px-6">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl dark:text-white">
+        Or pick a question you want answered
+      </h2>
+      <p class="mt-2 max-w-2xl text-slate-600 dark:text-slate-400">
+        Tap the one you most want to know. Each answer is a full, clear read -
+        and most people stay for a second.
+      </p>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {startHere.map((s) => (
+          <a
+            href={s.href}
+            class="group flex flex-col rounded-2xl border border-slate-200 bg-white p-5 transition-all hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900 dark:hover:border-brand-700"
+          >
+            <p class="text-xs font-semibold uppercase tracking-wider text-brand-600 dark:text-brand-400">
+              {s.icon} {s.topicTitle} · {s.mins} min
+            </p>
+            <h3 class="mt-2 flex-1 font-serif text-lg font-bold leading-snug text-slate-900 group-hover:text-brand-700 dark:text-white dark:group-hover:text-brand-300">
+              {s.q}
+            </h3>
+            <p class="mt-3 inline-flex items-center gap-1 text-sm font-medium text-brand-600 dark:text-brand-400">
+              Read the answer
+              <span aria-hidden="true" class="transition-transform group-hover:translate-x-0.5">→</span>
+            </p>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- How Penluma works - one tight band that replaces the old four
+       (What-is / Problem / Method / Why). Problem as the hook, the 3-step
+       method as the concrete differentiator, then a compact "why" strip. -->
+  <section class="mx-auto max-w-5xl px-4 py-16 sm:px-6">
+    <p class="text-sm font-semibold uppercase tracking-widest text-brand-600 dark:text-brand-400">Why Penluma</p>
+    <h2 class="mt-3 max-w-3xl text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl dark:text-white">
+      You read it, it made sense - but you still couldn't do it yourself.
     </h2>
     <p class="mt-4 max-w-2xl text-lg text-slate-600 dark:text-slate-300">
-      Most sites hand you the summary. Penluma hands you the whole thing - system design, AI, money,
-      and clear thinking, each one built from the ground up and followed all the way to where it breaks.
+      Most content stops at the summary, so it falls apart the moment you face a real problem. Penluma
+      takes every topic all the way - in three plain steps.
     </p>
-    <div class="mt-6 flex flex-wrap gap-2.5">
-      {['Plain-language first', 'Precise mechanics', 'Real-world failure modes'].map((chip) => (
-        <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-sm text-slate-600 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300">
-          {chip}
-        </span>
-      ))}
-    </div>
-  </section>
 
-  <!-- The problem -->
-  <section class="mx-auto max-w-5xl px-4 sm:px-6">
-    <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 sm:p-12 dark:border-slate-800 dark:bg-slate-900/50">
-      <p class="text-xs font-semibold uppercase tracking-wider text-brand-600 dark:text-brand-400">The problem</p>
-      <h2 class="mt-3 max-w-3xl text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl dark:text-white">
-        You read the article, nodded along - and still couldn't build it.
-      </h2>
-      <p class="mt-4 max-w-2xl text-slate-600 dark:text-slate-300">
-        Cheat sheets are too shallow. Textbooks are too dense. Hot takes age in a week. Most content
-        leaves you <em>knowing about</em> a topic without actually <em>understanding</em> it - so it
-        collapses the moment you hit a real problem.
-      </p>
-    </div>
-  </section>
-
-  <!-- The method -->
-  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6">
-    <p class="text-sm font-semibold uppercase tracking-widest text-brand-600 dark:text-brand-400">The method</p>
-    <h2 class="mt-3 max-w-2xl text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl dark:text-white">
-      Every topic, taken three levels deep.
-    </h2>
     <div class="mt-8 grid gap-5 sm:grid-cols-3">
       {[
-        { n: '1', t: 'Intuition', d: 'The plain-language mental model - the way a smart friend would explain it before any jargon shows up.' },
-        { n: '2', t: 'Mechanics', d: 'Precisely how it actually works, step by step. No hand-waving, no "it just works".' },
-        { n: '3', t: 'Failure modes', d: 'Where it breaks in production, why, and what to do about it - the part most explanations skip.' },
+        { n: '1', t: 'The simple idea', d: 'The plain version first - the way a friend would explain it, before any hard words show up.' },
+        { n: '2', t: 'How it works', d: 'Exactly how it works, step by step. Nothing skipped, nothing left vague.' },
+        { n: '3', t: 'Where it breaks', d: 'Where it fails in real life, why it happens, and what to do - the part most guides skip.' },
       ].map((step) => (
         <div class="rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-900">
           <div class="flex h-9 w-9 items-center justify-center rounded-full bg-brand-100 font-bold text-brand-700 dark:bg-brand-900/40 dark:text-brand-300">{step.n}</div>
@@ -130,26 +226,19 @@ const jsonLd = [
         </div>
       ))}
     </div>
-  </section>
 
-  <!-- Why we're different -->
-  <section class="mx-auto max-w-5xl px-4 pb-4 sm:px-6">
-    <p class="text-sm font-semibold uppercase tracking-widest text-brand-600 dark:text-brand-400">Why Penluma</p>
-    <h2 class="mt-3 max-w-2xl text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl dark:text-white">
-      Not another blog.
-    </h2>
-    <div class="mt-8 grid gap-5 sm:grid-cols-2">
+    <div class="mt-10 grid gap-x-8 gap-y-4 border-t border-slate-200 pt-8 sm:grid-cols-2 lg:grid-cols-4 dark:border-slate-800">
       {[
-        { t: 'Depth over volume', d: 'One hard topic, fully worked through - not ten skimmed for the algorithm.' },
-        { t: 'Evergreen, not news', d: 'The residue that stays true in five years, not a take that expires next week.' },
-        { t: 'One voice, real understanding', d: "Written by someone who learned it the hard way - me - not stitched together for SEO." },
-        { t: 'Open by default', d: 'The whole library, free. No paywall, no signup wall to read.' },
+        { t: 'Depth, not volume', d: 'One topic done fully, not ten done halfway.' },
+        { t: 'Built to last', d: 'Ideas true for years, not next-week news.' },
+        { t: 'Written by one person', d: 'By me, who learned it the hard way - not AI for search.' },
+        { t: 'Free to read', d: 'The whole library, free. No paywall, no sign-up.' },
       ].map((item) => (
-        <div class="flex gap-4 rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-900">
-          <span class="mt-1 text-brand-600 dark:text-brand-400" aria-hidden="true">✓</span>
+        <div class="flex gap-2.5">
+          <span class="mt-0.5 text-brand-600 dark:text-brand-400" aria-hidden="true">✓</span>
           <div>
-            <h3 class="font-semibold text-slate-900 dark:text-white">{item.t}</h3>
-            <p class="mt-1.5 text-sm text-slate-600 dark:text-slate-400">{item.d}</p>
+            <p class="text-sm font-semibold text-slate-900 dark:text-white">{item.t}</p>
+            <p class="mt-0.5 text-sm text-slate-500 dark:text-slate-400">{item.d}</p>
           </div>
         </div>
       ))}
@@ -192,7 +281,7 @@ const jsonLd = [
   <!-- Start here -->
   {featuredTopics.length > 0 && (
     <section class="mx-auto max-w-5xl px-4 py-10 sm:px-6">
-      <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-500">Start here</h2>
+      <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-500">Go deeper · featured pillars</h2>
       <div class="mt-4 grid gap-5 sm:grid-cols-2">
         {featuredTopics.map((t) => (
           <a href={`/topics/${t.slug}`} class="group rounded-2xl border border-slate-200 bg-gradient-to-br from-brand-50 to-white p-6 transition-all hover:-translate-y-0.5 hover:shadow-lg dark:border-slate-800 dark:from-slate-900 dark:to-slate-950">
@@ -242,17 +331,16 @@ const jsonLd = [
     <div class="rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-8 sm:p-12 dark:border-slate-800 dark:from-slate-900 dark:to-slate-950">
       <p class="text-xs font-semibold uppercase tracking-wider text-brand-600 dark:text-brand-400">The story behind Penluma</p>
       <h2 class="mt-3 max-w-2xl text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl dark:text-white">
-        I write to understand things properly - then I publish what survived.
+        I write to truly understand a topic - then I share what worked.
       </h2>
       <p class="mt-4 max-w-2xl text-slate-600 dark:text-slate-400">
-        I'm {SITE.author}. Penluma is <em>pen</em> + <em>lumen</em>, the light of the pen - my habit
-        of taking one hard topic at a time and writing through it until the fog clears. No cheat sheets,
-        no hot takes: just the version I wish I'd had when I was learning it, taken from plain-language
-        intuition all the way down to how it breaks in the real world.
+        I'm {SITE.author}. Penluma means <em>pen</em> + <em>lumen</em> - the light of the pen. I take one
+        hard topic at a time and write about it until it finally makes sense. No shortcuts, no quick
+        opinions: just the guide I wish I had, from the simple idea all the way down to how it breaks in real life.
       </p>
       <p class="mt-3 max-w-2xl text-slate-600 dark:text-slate-400">
-        Everything here is the evergreen residue of that work - {totalPosts} deep-dives and counting,
-        published so the next person learning the same thing gets there faster.
+        Everything here is what was left standing after that work - {totalPosts} deep reads and growing,
+        shared so the next person learning the same thing gets there faster.
       </p>
       <div class="mt-6 flex flex-wrap items-center gap-3">
         <a href="/about" class="rounded-xl bg-brand-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200">More about me & Penluma →</a>

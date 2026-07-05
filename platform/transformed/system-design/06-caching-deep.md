@@ -27,6 +27,7 @@ author: Brexis Wazik
 transformed: true
 polished: true
 linked: true
+flagship: true
 faq:
   - q: "What is the difference between cache-aside and write-through caching?"
     a: "With cache-aside, your app loads data into the cache on a miss and writes to the database directly, deleting the cache key afterward. With write-through, every write goes through the cache, which synchronously updates the database, so the cache is always consistent at the cost of slower writes."

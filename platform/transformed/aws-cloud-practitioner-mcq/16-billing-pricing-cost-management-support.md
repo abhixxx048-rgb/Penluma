@@ -175,6 +175,6 @@ When you face a billing question (on the exam or at work), run through this chec
 
 ## Conclusion
 
-If you remember one thing, make it the timeline: **Calculator before you build, Cost Explorer after, Budgets to warn you, CUR for the raw detail.** Almost every cost question collapses into "which moment on that timeline am I asking about?"
+If you remember one thing, make it the timeline: **Calculator before you build, Cost Explorer after, Budgets to warn you, CUR for the raw detail.** Almost every cost question collapses into "which moment on that timeline am I asking about?" And with billing wrapped, you've now covered all four domains — the [one-page AWS Cloud Practitioner cheat sheet](/blog/aws-cloud-practitioner-mcq/17-clf-c02-cheat-sheet) pulls every service and exam trap onto a single review page.
 
 That same pay-as-you-go pricing that makes these tools necessary is also what makes the cloud so flexible - but flexibility cuts both ways. Once you are comfortable watching your spend, the natural next question is how AWS keeps that spend *secure*: who is allowed to spin up those resources in the first place, and how the [shared responsibility model](/blog/aws-cloud-practitioner-mcq/03-the-shared-responsibility-model) draws the line between what AWS protects and what you do.

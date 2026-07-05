@@ -1,0 +1,48 @@
+A company is hosting business critical workloads in an AWS Region. To protect against data loss and ensure business continuity, a mirror image of the current AWS environment should be created in another AWS Region. Company policy requires that the standby environment must be available in minutes in case of an outage in the primary AWS Region. Which AWS service can be used to meet these requirements?
+A. CloudEndure Disaster Recovery.
+
+Which of the following are examples of AWS-managed databases? (Choose TWO)
+A. Amazon Neptune.
+E. Amazon RDS for MySQL.
+
+You want to create a backup of your data in another geographical location. Where should you create this backup?
+B. In another Region.
+
+
+What does AWS Cost Explorer provide to help manage your AWS spend?
+D. Highly accurate cost forecasts for up to 12 months ahead.
+
+Which of the following is a feature of Amazon RDS that performs automatic failover when the primary database fails to respond?
+D. RDS Multi-AZ.
+
+Which of the following strategies helps protect your AWS root account?
+A. Delete root user access keys if you do not need them.
+
+Which of the following are factors should be considered for Amazon EBS pricing? (Choose TWO)
+A. The size of volumes provisioned per month.
+C. The amount of data you have stored in snapshots.
+
+
+Which of the following has the greatest impact on cost? (Choose TWO)
+A. Compute charges.
+D. Data Transfer Out charges.
+
+What does the term “Economies of scale” mean?
+C. It means that AWS will continuously lower costs as it grows.
+
+Which of the below options is true of Amazon VPC?
+B. AWS Customers have complete control over their Amazon VPC virtual networking environment.
+
+Select the services that are server-based: (Choose TWO)
+A. Amazon RDS.
+E. Amazon EMR.
+
+Your CTO has asked you to contact AWS support using the chat feature to ask for guidance related to EBS. However, when you open the AWS support center you can’t see a way to contact support via Chat. What should you do?
+C. At a minimum, upgrade to Business support plan.
+
+
+You have a real-time IoT application that requires sub-millisecond latency. Which of the following services should you use?
+D. Amazon ElastiCache for Redis
+
+Which of the following resources can an AWS customer use to learn more about prohibited uses of the services offered by AWS?
+D. AWS Acceptable Use Policy.
