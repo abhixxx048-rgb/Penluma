@@ -109,7 +109,7 @@ D. AWS Acceptable Use Policy.
 
 Steps a customer takes when conducting penetration testing on AWS?
 D. Request and wait for approval from AWS support, and then conduct testing.
-(NOTE: outdated — AWS now permits pen testing on 8 approved services WITHOUT prior approval; DDoS simulation still needs approval.)
+(NOTE: outdated - AWS now permits pen testing on 8 approved services WITHOUT prior approval; DDoS simulation still needs approval.)
 
 Which Well-Architected pillar helps select the right compute based on workload?
 C. Performance Efficiency.

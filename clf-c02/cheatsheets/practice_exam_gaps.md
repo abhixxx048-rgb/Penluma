@@ -1,4 +1,4 @@
-# Practice Exam Gap Training — Must-Know Concepts
+# Practice Exam Gap Training - Must-Know Concepts
 
 ## 1. AWS Artifact
 - A portal to download **compliance reports** (SOC 1/2/3, PCI DSS, ISO 27001)
@@ -12,14 +12,14 @@
 
 ### AWS Organizations
 - Manage **multiple AWS accounts** from one central place
-- **Consolidated Billing** — single bill for all accounts
-- **Volume discounts** — aggregated usage across all accounts = cheaper
-- **OUs (Organizational Units)** — group accounts (e.g., Dev OU, Prod OU)
+- **Consolidated Billing** - single bill for all accounts
+- **Volume discounts** - aggregated usage across all accounts = cheaper
+- **OUs (Organizational Units)** - group accounts (e.g., Dev OU, Prod OU)
 
 ### SCPs (Service Control Policies)
 - Restrict what services/actions accounts in the organization CAN use
 - Applied to OUs or individual accounts
-- Does NOT grant permissions — only restricts (like a guardrail)
+- Does NOT grant permissions - only restricts (like a guardrail)
 - Example: "No account in Dev OU can launch EC2 instances larger than t3.medium"
 
 **Exam keyword:** "centrally manage multiple accounts" → AWS Organizations
@@ -57,7 +57,7 @@
 
 ---
 
-## 5. Shared Responsibility — Service-Specific Rules
+## 5. Shared Responsibility - Service-Specific Rules
 
 The responsibility SHIFTS based on how managed the service is:
 
@@ -68,11 +68,11 @@ The responsibility SHIFTS based on how managed the service is:
 | **Lambda** | Code, data, IAM | Everything else (OS, scaling, patching, servers) |
 | **S3** | Data, access policies, encryption config | Infrastructure, durability, availability |
 
-**Key rule:** "Responsibilities vary depending on the services used" — TRUE!
+**Key rule:** "Responsibilities vary depending on the services used" - TRUE!
 
 ---
 
-## 6. AWS Support Plans — Response Times
+## 6. AWS Support Plans - Response Times
 
 | Severity | Business | Enterprise |
 |----------|----------|------------|
@@ -204,7 +204,7 @@ Console uses **username + password**.
 
 ---
 
-## 15. Well-Architected Framework — 6 Pillars
+## 15. Well-Architected Framework - 6 Pillars
 
 | Pillar | Focus | Example |
 |--------|-------|---------|
@@ -264,12 +264,12 @@ Console uses **username + password**.
 ## 19. AWS CAF (Cloud Adoption Framework)
 - Framework to help organizations plan cloud migration
 - 6 Perspectives:
-  1. **Business** — align IT with business goals
-  2. **People** — HR, training, organizational change
-  3. **Governance** — IT governance, risk management
-  4. **Platform** — architecture, infrastructure
-  5. **Security** — security controls
-  6. **Operations** — day-to-day operations
+  1. **Business** - align IT with business goals
+  2. **People** - HR, training, organizational change
+  3. **Governance** - IT governance, risk management
+  4. **Platform** - architecture, infrastructure
+  5. **Security** - security controls
+  6. **Operations** - day-to-day operations
 
 **Exam keyword:** "road map to cloud adoption", "framework for migration planning" → AWS CAF
 
@@ -293,7 +293,7 @@ Console uses **username + password**.
 | **AWS OpsWorks** | Configuration management using Chef/Puppet |
 | **AWS Service Catalog** | Create approved catalog of IT services for your org |
 | **Amazon EMR (Elastic MapReduce)** | Big data processing (Hadoop, Spark) |
-| **AWS Glue** | ETL (Extract, Transform, Load) — serverless data prep |
+| **AWS Glue** | ETL (Extract, Transform, Load) - serverless data prep |
 | **Amazon Athena** | Query S3 data using SQL (serverless) |
 | **Amazon Kinesis** | Real-time streaming data processing |
 | **AWS Storage Gateway** | Hybrid storage (on-prem ↔ cloud bridge) |
@@ -310,12 +310,12 @@ Console uses **username + password**.
 ---
 
 ## 22. EC2 Billing Details
-- **Linux instances** — billed per SECOND (minimum 1 minute)
-- **Windows instances** — billed per HOUR
-- **On-Demand** — no startup fee, no commitment
-- **Data Transfer IN** — always FREE
-- **Data Transfer OUT** — costs money
-- **Elastic IP** — FREE if attached to running instance, CHARGED if unused
+- **Linux instances** - billed per SECOND (minimum 1 minute)
+- **Windows instances** - billed per HOUR
+- **On-Demand** - no startup fee, no commitment
+- **Data Transfer IN** - always FREE
+- **Data Transfer OUT** - costs money
+- **Elastic IP** - FREE if attached to running instance, CHARGED if unused
 
 ---
 

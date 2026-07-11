@@ -50,21 +50,21 @@ order: 17
 icon: "☁️"
 ---
 
-Two nights before the CLF-C02, you don't need another 40-minute video. You need one page that fits the whole exam in your head — every service, every trap, in the order AWS actually tests them.
+Two nights before the CLF-C02, you don't need another 40-minute video. You need one page that fits the whole exam in your head - every service, every trap, in the order AWS actually tests them.
 
 This is that page. It covers all four exam domains, weighted the way the exam weights them, and ends with the part that quietly wins you the most marks: a keyword-to-answer table built from the exact trigger phrases AWS hides in its questions.
 
-A cheat sheet is for *consolidating*, not learning cold. If a row here makes you go "wait, why?", that's a signal — follow the link into the full explanation, take the [practice quiz](/topics/aws-cloud-practitioner-mcq/quiz), then come back and this page will finally stick.
+A cheat sheet is for *consolidating*, not learning cold. If a row here makes you go "wait, why?", that's a signal - follow the link into the full explanation, take the [practice quiz](/topics/aws-cloud-practitioner-mcq/quiz), then come back and this page will finally stick.
 
 ## How to use this cheat sheet
 
 - **48 hours out:** read it top to bottom once, slowly. Anything fuzzy, click through to the deep-dive.
 - **The morning of:** skim only the **Quick Exam Traps** and **Exam Day Tips** at the bottom.
-- **The rule that matters:** AWS tests *recognition*, not recall. You don't need to describe GuardDuty — you need to hear "unusual API activity" and think *GuardDuty*. Train the triggers.
+- **The rule that matters:** AWS tests *recognition*, not recall. You don't need to describe GuardDuty - you need to hear "unusual API activity" and think *GuardDuty*. Train the triggers.
 
 ---
 
-## Domain 1 — Cloud Concepts (24%)
+## Domain 1 - Cloud Concepts (24%)
 
 The gentlest domain, but it hides the distinctions the exam loves: CapEx vs OpEx, elasticity vs scalability, high availability vs fault tolerance. If those feel slippery, the full breakdown lives in [cloud concepts and cloud economics](/blog/aws-cloud-practitioner-mcq/01-cloud-concepts-value-proposition-cloud-economics).
 
@@ -81,15 +81,15 @@ The gentlest domain, but it hides the distinctions the exam loves: CapEx vs OpEx
 
 **CapEx vs OpEx:** CapEx is buying servers upfront (old way); OpEx is the monthly AWS bill, pay only for what you use (new way). The cloud converts CapEx into OpEx.
 
-### Cloud service models — who manages what
+### Cloud service models - who manages what
 
 | Model | You manage | Example |
 |---|---|---|
 | IaaS | OS, apps, data | EC2 |
 | PaaS | Apps & data only | Elastic Beanstalk |
-| SaaS | Nothing — just use it | Gmail, Salesforce |
+| SaaS | Nothing - just use it | Gmail, Salesforce |
 
-### Well-Architected Framework — the 6 pillars
+### Well-Architected Framework - the 6 pillars
 
 The six pillars are a guaranteed question. The full memory trick and per-pillar services are in [the six pillars, made un-confusable](/blog/aws-cloud-practitioner-mcq/02-aws-well-architected-framework-the-six-pillars).
 
@@ -104,7 +104,7 @@ The six pillars are a guaranteed question. The full memory trick and per-pillar 
 
 > Memory trick: **O**h **S**o **R**eliable **P**erformance **C**osts **S**ustainably.
 
-### Migration strategies — the 6 R's
+### Migration strategies - the 6 R's
 
 | Strategy | What it means | Code change? |
 |---|---|---|
@@ -131,14 +131,14 @@ The six pillars are a guaranteed question. The full memory trick and per-pillar 
 ### Two more concepts the exam slips in
 
 - **AWS CAF (Cloud Adoption Framework)** plans a *migration* across 6 perspectives: Business, People, Governance, Platform, Security, Operations. (Well-Architected is for *designing workloads*; CAF is for *adopting the cloud*.)
-- **Decoupling / loose coupling** = split an app into independent parts (via SQS, SNS, EventBridge) so one failure doesn't take down the rest — the opposite of a monolith.
+- **Decoupling / loose coupling** = split an app into independent parts (via SQS, SNS, EventBridge) so one failure doesn't take down the rest - the opposite of a monolith.
 - **TCO (Total Cost of Ownership)** compares on-premises (hardware, power, cooling, space, staff) against cloud OpEx; **Migration Evaluator** helps calculate it.
 
 ---
 
-## Domain 2 — Security & Compliance (30%)
+## Domain 2 - Security & Compliance (30%)
 
-The second-biggest domain, and the one candidates lose most marks on. Two ideas anchor it: the [shared responsibility model](/blog/aws-cloud-practitioner-mcq/03-the-shared-responsibility-model) (who secures what) and [IAM — users, roles, and policies](/blog/aws-cloud-practitioner-mcq/04-iam-identity-access-management) (who can do what).
+The second-biggest domain, and the one candidates lose most marks on. Two ideas anchor it: the [shared responsibility model](/blog/aws-cloud-practitioner-mcq/03-the-shared-responsibility-model) (who secures what) and [IAM - users, roles, and policies](/blog/aws-cloud-practitioner-mcq/04-iam-identity-access-management) (who can do what).
 
 ### Shared responsibility model
 
@@ -156,7 +156,7 @@ The second-biggest domain, and the one candidates lose most marks on. Two ideas 
 
 | Entity | Purpose |
 |---|---|
-| Root User | Full access — never use daily, enable MFA |
+| Root User | Full access - never use daily, enable MFA |
 | IAM User | One person or application |
 | IAM Group | A set of users; attach the policy once (cannot be nested) |
 | IAM Role | Temporary access for AWS services or federated users |
@@ -164,7 +164,7 @@ The second-biggest domain, and the one candidates lose most marks on. Two ideas 
 
 New users start with **zero permissions**. Always use **least privilege**, use **roles** for services (never hard-code access keys), and put **MFA** on root and every admin.
 
-### Security services — hear the trigger, name the service
+### Security services - hear the trigger, name the service
 
 The seven services below are the heart of the security domain; the reasoning behind each is in the [security, identity & compliance services](/blog/aws-cloud-practitioner-mcq/05-security-identity-compliance-services) deep-dive.
 
@@ -184,14 +184,14 @@ The seven services below are the heart of the security domain; the reasoning beh
 
 - **At-rest** (stored data: S3, EBS, RDS) vs **in-transit** (moving data: HTTPS, TLS).
 - **KMS** = software-managed keys (FIPS 140-2 **Level 2**), AWS-managed, cheap, with automatic annual rotation. **CloudHSM** = dedicated single-tenant hardware (FIPS 140-2 **Level 3**), *you* hold the keys and AWS can never access them.
-- **AWS Artifact** is the compliance filing cabinet — download SOC / ISO / PCI reports, sign the BAA for HIPAA.
+- **AWS Artifact** is the compliance filing cabinet - download SOC / ISO / PCI reports, sign the BAA for HIPAA.
 - **Security Group** = stateful, allow-only, attached to an EC2 instance. **NACL** = stateless, allow *and* deny, attached to a subnet. To explicitly **deny** an IP, you need a **NACL**.
 
 ### More security services the exam expects
 
 | Service | Trigger phrase → it |
 |---|---|
-| Detective | "investigate / root cause" — used *after* GuardDuty flags a threat |
+| Detective | "investigate / root cause" - used *after* GuardDuty flags a threat |
 | Secrets Manager | "rotate database passwords / API keys automatically" |
 | Parameter Store | "store config values or secrets, cheaper, no auto-rotation" |
 | Cognito | "add sign-up / sign-in / social login to an app" |
@@ -201,16 +201,16 @@ The seven services below are the heart of the security domain; the reasoning beh
 
 ---
 
-## Domain 3 — Cloud Technology & Services (34%)
+## Domain 3 - Cloud Technology & Services (34%)
 
-The biggest domain — a third of the exam — and mostly a memory game of "which service does X". These tables are the ones to over-learn. The most heavily tested services have their own deep-dives: [EC2 and its purchasing options](/blog/aws-cloud-practitioner-mcq/06-amazon-ec2-instances-purchasing-options), [S3 object storage](/blog/aws-cloud-practitioner-mcq/10-amazon-s3-object-storage), [RDS](/blog/aws-cloud-practitioner-mcq/11-amazon-rds-managed-relational-databases) and [DynamoDB](/blog/aws-cloud-practitioner-mcq/12-amazon-dynamodb-managed-nosql).
+The biggest domain - a third of the exam - and mostly a memory game of "which service does X". These tables are the ones to over-learn. The most heavily tested services have their own deep-dives: [EC2 and its purchasing options](/blog/aws-cloud-practitioner-mcq/06-amazon-ec2-instances-purchasing-options), [S3 object storage](/blog/aws-cloud-practitioner-mcq/10-amazon-s3-object-storage), [RDS](/blog/aws-cloud-practitioner-mcq/11-amazon-rds-managed-relational-databases) and [DynamoDB](/blog/aws-cloud-practitioner-mcq/12-amazon-dynamodb-managed-nosql).
 
 ### Compute
 
 | Service | Use case |
 |---|---|
 | EC2 | Virtual servers, full OS control |
-| Lambda | Serverless — run code, no servers to manage |
+| Lambda | Serverless - run code, no servers to manage |
 | Elastic Beanstalk | Deploy apps without managing infra (PaaS) |
 | ECS | Run Docker containers |
 | Fargate | Serverless containers (no EC2 to manage) |
@@ -218,7 +218,7 @@ The biggest domain — a third of the exam — and mostly a memory game of "whic
 | Outposts | AWS services in your own data center |
 | Batch | Run batch-processing / queued compute jobs |
 
-**EC2 instance families:** General Purpose (T, M) · Compute Optimized (C — CPU-heavy) · Memory Optimized (R, X — in-memory DBs) · Storage Optimized (I, D — high I/O) · Accelerated (P, G — GPU/ML).
+**EC2 instance families:** General Purpose (T, M) · Compute Optimized (C - CPU-heavy) · Memory Optimized (R, X - in-memory DBs) · Storage Optimized (I, D - high I/O) · Accelerated (P, G - GPU/ML).
 
 - **ELB** distributes traffic across instances (ALB = HTTP/Layer 7, NLB = TCP/Layer 4); **Auto Scaling** adds/removes instances by demand. Together = high availability + cost efficiency.
 
@@ -252,13 +252,13 @@ The biggest domain — a third of the exam — and mostly a memory game of "whic
 
 ### Networking
 
-Everything runs inside a [VPC](/blog/aws-cloud-practitioner-mcq/07-vpc-networking-fundamentals) — your private network; [Route 53](/blog/aws-cloud-practitioner-mcq/08-amazon-route-53-dns-routing) resolves DNS and [CloudFront](/blog/aws-cloud-practitioner-mcq/09-amazon-cloudfront-cdn-edge-delivery) caches content at the edge.
+Everything runs inside a [VPC](/blog/aws-cloud-practitioner-mcq/07-vpc-networking-fundamentals) - your private network; [Route 53](/blog/aws-cloud-practitioner-mcq/08-amazon-route-53-dns-routing) resolves DNS and [CloudFront](/blog/aws-cloud-practitioner-mcq/09-amazon-cloudfront-cdn-edge-delivery) caches content at the edge.
 
 | Service | Purpose |
 |---|---|
 | VPC | Your private network in AWS |
 | Route 53 | DNS + routing (latency, geo, health checks) |
-| CloudFront | CDN — cache at 400+ edge locations |
+| CloudFront | CDN - cache at 400+ edge locations |
 | API Gateway | Create, publish, secure APIs |
 | Direct Connect | Private dedicated line to AWS (no internet) |
 | VPN | Encrypted tunnel over the internet |
@@ -273,7 +273,7 @@ Two services the exam constantly swaps: [CloudWatch](/blog/aws-cloud-practitione
 | Service | Purpose |
 |---|---|
 | CloudWatch | Metrics, logs, alarms |
-| CloudTrail | Records every API call — *who* did *what*, *when* |
+| CloudTrail | Records every API call - *who* did *what*, *when* |
 | AWS Config | Tracks *how* a resource's config changed over time |
 | Trusted Advisor | Best-practice checks (cost, security, performance, fault tolerance, limits) |
 | Systems Manager | Patch/manage EC2 at scale, no SSH |
@@ -295,7 +295,7 @@ Two services the exam constantly swaps: [CloudWatch](/blog/aws-cloud-practitione
 | Translate | Language translation |
 | Lex | Conversational chatbots |
 | SageMaker | Build custom ML models |
-| Comprehend | NLP — sentiment, entities |
+| Comprehend | NLP - sentiment, entities |
 | Textract | Extract text/tables from scanned docs |
 | Personalize | Real-time recommendations |
 | Kendra | Intelligent natural-language search across documents |
@@ -308,7 +308,7 @@ Two services the exam constantly swaps: [CloudWatch](/blog/aws-cloud-practitione
 | Service | Does what |
 |---|---|
 | Athena | Query data in S3 using plain SQL (serverless) |
-| Glue | Serverless ETL — extract, transform, load |
+| Glue | Serverless ETL - extract, transform, load |
 | Kinesis | Ingest and process real-time streaming data |
 | EMR | Big-data processing with Hadoop / Spark |
 
@@ -326,7 +326,7 @@ Two services the exam constantly swaps: [CloudWatch](/blog/aws-cloud-practitione
 | Service Catalog | Curated catalogue of approved resources for your org |
 | OpsWorks | Configuration management with Chef / Puppet |
 
-> CloudFront **caches content** at the edge; Global Accelerator **routes traffic** through AWS's network — same edge footprint, opposite jobs.
+> CloudFront **caches content** at the edge; Global Accelerator **routes traffic** through AWS's network - same edge footprint, opposite jobs.
 
 ### How you talk to AWS
 
@@ -338,7 +338,7 @@ Two services the exam constantly swaps: [CloudWatch](/blog/aws-cloud-practitione
 
 ---
 
-## Domain 4 — Billing, Pricing & Support (12%)
+## Domain 4 - Billing, Pricing & Support (12%)
 
 The smallest domain, but easy marks if you memorize three tables. The reasoning behind pricing choices sits in the [billing, pricing & cost-management](/blog/aws-cloud-practitioner-mcq/16-billing-pricing-cost-management-support) deep-dive.
 
@@ -378,9 +378,9 @@ The smallest domain, but easy marks if you memorize three tables. The reasoning 
 
 - 24/7 support and full Trusted Advisor checks start at **Business**.
 - **Pool of TAMs / 30-min response** = Enterprise On-Ramp. **Dedicated TAM / 15-min** = Enterprise.
-- **Consolidated Billing** = one bill + volume discounts across accounts, managed with [AWS Organizations](/blog/aws-cloud-practitioner-mcq/15-aws-organizations-multi-account-governance). Organizations groups accounts into **OUs**; **SCPs** are applied per account or OU and only *restrict* services — they never grant permissions.
+- **Consolidated Billing** = one bill + volume discounts across accounts, managed with [AWS Organizations](/blog/aws-cloud-practitioner-mcq/15-aws-organizations-multi-account-governance). Organizations groups accounts into **OUs**; **SCPs** are applied per account or OU and only *restrict* services - they never grant permissions.
 - **Free Tier:** Always Free (e.g. Lambda 1M requests/mo, DynamoDB 25 GB) · 12-Months Free (EC2 t2.micro, S3 5 GB, RDS) · short service Trials.
-- **Data transfer IN is free; data transfer OUT costs money** — a favorite billing trick.
+- **Data transfer IN is free; data transfer OUT costs money** - a favorite billing trick.
 - **AWS Marketplace** = buy/sell third-party software (AMIs, SaaS, containers), flexible pricing including BYOL.
 - Enterprise support adds a **dedicated TAM** and a **Concierge** billing team (both Enterprise-only).
 - **Reserved Instance payment:** All Upfront (biggest discount) > Partial Upfront > No Upfront. RI discounts are also **shared across all accounts** in an Organization.
@@ -391,7 +391,7 @@ The smallest domain, but easy marks if you memorize three tables. The reasoning 
 
 ## Quick exam traps 🚨
 
-This is the highest-value table on the page. AWS builds questions around trigger phrases — learn the phrase, not the paragraph.
+This is the highest-value table on the page. AWS builds questions around trigger phrases - learn the phrase, not the paragraph.
 
 | If the question says… | The answer is… |
 |---|---|
@@ -477,14 +477,14 @@ This is the highest-value table on the page. AWS builds questions around trigger
 
 ## Exam day tips 🎯
 
-- **Format:** 65 questions (50 scored + 15 unscored), 90 minutes. Pass ≈ 700/1000. No penalty for guessing — never leave one blank.
+- **Format:** 65 questions (50 scored + 15 unscored), 90 minutes. Pass ≈ 700/1000. No penalty for guessing - never leave one blank.
 - **Read every option.** AWS writes distractors that are *almost* right.
 - **"MOST cost-effective"** → think Spot or Reserved.
 - **"LEAST operational overhead"** → think managed services (RDS over EC2 + MySQL).
 - **"Minimal downtime migration"** → DMS. **"No code changes"** → Rehost or Replatform.
 - **Stuck between two answers?** Eliminate the clearly wrong ones first, then pick the more *managed* / more *specific* service.
-- **Pace:** about 1.4 minutes per question. Flag the hard ones, keep moving, and circle back — most people finish with 15–20 minutes to spare.
+- **Pace:** about 1.4 minutes per question. Flag the hard ones, keep moving, and circle back - most people finish with 15–20 minutes to spare.
 
 ## Now prove it stuck
 
-A cheat sheet only works if you can recall it under pressure — reading it feels like knowing it, which is exactly the trap. Close this page and run the [AWS Cloud Practitioner practice quiz](/topics/aws-cloud-practitioner-mcq/quiz): every question you miss points you straight back to the row you thought you had. Do that twice, and the exam stops being a memory test and starts feeling like recognition.
+A cheat sheet only works if you can recall it under pressure - reading it feels like knowing it, which is exactly the trap. Close this page and run the [AWS Cloud Practitioner practice quiz](/topics/aws-cloud-practitioner-mcq/quiz): every question you miss points you straight back to the row you thought you had. Do that twice, and the exam stops being a memory test and starts feeling like recognition.

@@ -195,7 +195,7 @@ If a front end drops work into a queue and back-end workers pull from it, a slow
 3. **On each exam question, find the keyword first.** Underline the phrase that pins the term ("automatic," "zero interruption," "near a metro area") before you read the options.
 4. **When two options swap labels, slow down.** Many traps just flip cloud and on-prem, or invert the Region/AZ hierarchy. Read both fully.
 5. **Distrust absolute words.** "Never fails," "always free," "eliminates all expenses" are almost always wrong on this exam.
-6. **Do your final review from one page.** In the last 48 hours before the exam, stop opening ten tabs — skim the [one-page AWS Cloud Practitioner cheat sheet](/blog/aws-cloud-practitioner-mcq/17-clf-c02-cheat-sheet), which folds all four domains and every exam trap onto a single screen.
+6. **Do your final review from one page.** In the last 48 hours before the exam, stop opening ten tabs - skim the [one-page AWS Cloud Practitioner cheat sheet](/blog/aws-cloud-practitioner-mcq/17-clf-c02-cheat-sheet), which folds all four domains and every exam trap onto a single screen.
 
 ## Conclusion
 

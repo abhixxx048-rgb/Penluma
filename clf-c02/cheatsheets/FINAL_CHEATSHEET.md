@@ -1,4 +1,4 @@
-# AWS Cloud Practitioner (CLF-C02) — Final Cheatsheet
+# AWS Cloud Practitioner (CLF-C02) - Final Cheatsheet
 # All 4 Domains | Exam Ready
 
 ---
@@ -20,7 +20,7 @@
 - **OpEx** = monthly AWS bill, pay only for what you use (new way)
 - Cloud = converts CapEx → OpEx ✅
 
-### Well-Architected Framework — 6 Pillars (OSRPCS)
+### Well-Architected Framework - 6 Pillars (OSRPCS)
 | Pillar | Focus | Key Services |
 |--------|-------|-------------|
 | **Operational Excellence** | Automate, monitor, runbooks | CloudWatch, CloudTrail, Systems Manager |
@@ -32,7 +32,7 @@
 
 > Memory trick: **O**h **S**o **R**eliable **P**erformance **C**osts **S**ustainably
 
-### Migration Strategies — 6 R's
+### Migration Strategies - 6 R's
 | Strategy | What it means | Code Change? |
 |----------|--------------|-------------|
 | **Rehost** | Lift & shift to EC2 as-is | None |
@@ -80,16 +80,16 @@
 ### IAM (Identity & Access Management)
 | Entity | Purpose |
 |--------|---------|
-| **Root User** | Full account access — NEVER use daily, enable MFA |
+| **Root User** | Full account access - NEVER use daily, enable MFA |
 | **IAM User** | One person or application |
-| **IAM Group** | Collection of users — attach policy once (cannot be nested) |
+| **IAM Group** | Collection of users - attach policy once (cannot be nested) |
 | **IAM Role** | Temporary access for AWS services or external users |
 | **IAM Policy** | JSON document defining Allow/Deny permissions |
 
 - IAM is **global**
 - New users have **zero permissions** by default
 - Always use **least privilege**
-- Use **Roles** for AWS services — never embed access keys in code
+- Use **Roles** for AWS services - never embed access keys in code
 - **MFA** should be enabled on root and all admin accounts
 
 ### Security Services
@@ -191,7 +191,7 @@
 |---------|---------|
 | **VPC** | Your private network in AWS |
 | **Route 53** | DNS + traffic routing (latency, geo, health checks) |
-| **CloudFront** | CDN — cache content at 400+ edge locations |
+| **CloudFront** | CDN - cache content at 400+ edge locations |
 | **API Gateway** | Create, publish, secure REST/HTTP/WebSocket APIs |
 | **Direct Connect** | Private dedicated physical connection to AWS (no internet) |
 | **VPN** | Encrypted tunnel over internet to AWS |
@@ -202,7 +202,7 @@
 | Service | Purpose |
 |---------|---------|
 | **CloudWatch** | Monitor metrics, logs, set alarms |
-| **CloudTrail** | Record ALL API calls — WHO did WHAT and WHEN |
+| **CloudTrail** | Record ALL API calls - WHO did WHAT and WHEN |
 | **AWS Config** | Track HOW resource configurations changed over time |
 | **Trusted Advisor** | Best practice recommendations (cost, security, performance, fault tolerance, limits) |
 | **Systems Manager** | Patch/manage EC2 instances at scale without SSH |
@@ -236,7 +236,7 @@
 | **Translate** | Language translation |
 | **Lex** | Build conversational chatbots |
 | **SageMaker** | Build custom ML models from scratch |
-| **Comprehend** | NLP — sentiment analysis, entity detection |
+| **Comprehend** | NLP - sentiment analysis, entity detection |
 | **Textract** | Extract text/tables/forms from scanned documents |
 | **Kendra** | Intelligent enterprise search |
 | **Forecast** | Time-series forecasting |
@@ -247,7 +247,7 @@
 |---------|----------|-------|
 | **CloudFormation** | YAML / JSON | AWS native IaC |
 | **CDK** | Python, TypeScript, Java | Converts to CloudFormation |
-| **Elastic Beanstalk** | N/A | NOT IaC — deploys apps, not infrastructure |
+| **Elastic Beanstalk** | N/A | NOT IaC - deploys apps, not infrastructure |
 
 ---
 
@@ -303,7 +303,7 @@
 - **Consolidated Billing** = one combined bill + volume discounts across all accounts
 - **Management Account** = pays for all member accounts
 - **SCPs (Service Control Policies)** = restrict what services accounts can use
-  - SCPs do NOT grant permissions — they only restrict
+  - SCPs do NOT grant permissions - they only restrict
   - Applied at account or OU (Organizational Unit) level
 
 ---
@@ -311,10 +311,10 @@
 ## DOMAIN 5: Deeper Coverage & Newer Services 🆕
 > Everything below is fair game on CLF-C02 and fills the gaps most practice tests hit.
 
-### Disaster Recovery (DR) — mirror your Region
+### Disaster Recovery (DR) - mirror your Region
 | Concept | Meaning |
 |---------|---------|
-| **AWS Elastic Disaster Recovery (AWS DRS)** | Replicates servers into another Region; spins up a standby copy in **minutes** during an outage. **Replaced CloudEndure Disaster Recovery** — if you still see "CloudEndure DR" as an option, it's the same idea |
+| **AWS Elastic Disaster Recovery (AWS DRS)** | Replicates servers into another Region; spins up a standby copy in **minutes** during an outage. **Replaced CloudEndure Disaster Recovery** - if you still see "CloudEndure DR" as an option, it's the same idea |
 | **RPO (Recovery Point Objective)** | How much DATA you can afford to lose (measured in time) |
 | **RTO (Recovery Time Objective)** | How fast you must be back UP (measured in time) |
 
@@ -341,7 +341,7 @@
 ### Analytics & Big Data
 | Service | Does What | Serverless? |
 |---------|-----------|-------------|
-| **Athena** | Query data in S3 with SQL — pay per query | ✅ |
+| **Athena** | Query data in S3 with SQL - pay per query | ✅ |
 | **Glue** | Serverless **ETL** / data integration; auto-scales, no infra to manage | ✅ |
 | **EMR** | Managed **Hadoop/Spark/Hive** big-data clusters; decouples compute & storage | ❌ (runs on EC2) |
 | **Redshift** | Petabyte-scale data warehouse for complex analytics | ❌ |
@@ -355,7 +355,7 @@
 | Service | Does What |
 |---------|-----------|
 | **Amazon Q** | Generative-AI assistant for work & builders (chat, code, business data) |
-| **Amazon Bedrock** | Build GenAI apps with foundation models (Anthropic Claude, etc.) via one API — serverless |
+| **Amazon Bedrock** | Build GenAI apps with foundation models (Anthropic Claude, etc.) via one API - serverless |
 | **SageMaker** | Build/train/deploy custom ML models end-to-end |
 
 ### More Security & Identity services
@@ -369,7 +369,7 @@
 | **Directory Service** | Managed Microsoft Active Directory in AWS | "connect on-prem AD" |
 | **AWS Firewall Manager** | Centrally manage WAF/Shield/SG rules across accounts | "manage firewall rules org-wide" |
 
-### Shared Responsibility — extra rulings
+### Shared Responsibility - extra rulings
 - AWS **is** responsible for: physical hardware, **EC2 host firmware**, hypervisor, global infrastructure, managed-service patching (RDS engine, Lambda runtime).
 - **Configuration management** = **SHARED** between AWS and customer.
 - Customer is responsible for: guest OS patching on EC2, IAM, security groups, data & encryption choices, app code.
@@ -377,7 +377,7 @@
 ### Penetration Testing (updated policy) ⚠️
 - Customers **CAN** run pen tests on **8 approved services** (EC2, RDS, CloudFront, Aurora, API Gateway, Lambda, Lightsail, Elastic Beanstalk) **without prior approval**.
 - **DDoS / stress / simulated-event testing still requires AWS approval.**
-- Older practice questions may still say "request and wait for approval" — that's the legacy answer.
+- Older practice questions may still say "request and wait for approval" - that's the legacy answer.
 
 ### AWS Marketplace, Partners & Professional help
 | Thing | What it is |
@@ -395,7 +395,7 @@
 
 ### How AWS reduces cost / frees up IT
 - **Reduce TCO** = **minimize large capital expenditures** (no upfront hardware; CapEx → OpEx).
-- AWS handles the "undifferentiated heavy lifting": **patching database software, backing up databases, hardware maintenance** — freeing your team for app work.
+- AWS handles the "undifferentiated heavy lifting": **patching database software, backing up databases, hardware maintenance** - freeing your team for app work.
 - **Consolidated billing** advantage = **volume-pricing qualification** (aggregated usage across accounts = lower unit price; shared RI/Savings Plan discounts).
 
 ### Amazon VPC essentials
@@ -413,7 +413,7 @@
 | Class | Use Case | Cost / Retrieval |
 |-------|----------|------------------|
 | **S3 Standard** | Frequently accessed, hot data | Highest storage, free retrieval |
-| **S3 Intelligent-Tiering** | **Unknown / changing access patterns** — auto-moves data | Small monitoring fee, no retrieval fee |
+| **S3 Intelligent-Tiering** | **Unknown / changing access patterns** - auto-moves data | Small monitoring fee, no retrieval fee |
 | **S3 Standard-IA** (Infrequent Access) | Accessed rarely, needs multi-AZ | Cheaper storage, retrieval fee |
 | **S3 One Zone-IA** | Infrequent + **re-creatable** data (1 AZ only) | Cheapest IA, less durable |
 | **Glacier Instant Retrieval** | Archive, need instant access (ms) | Cheap storage |
@@ -426,7 +426,7 @@
 
 > "Unknown/unpredictable access" → **Intelligent-Tiering** | "Cheapest long-term archive" → **Glacier Deep Archive** | "Re-creatable, save money, single AZ" → **One Zone-IA**
 
-### AWS Free Tier — 3 types
+### AWS Free Tier - 3 types
 | Type | Meaning | Example |
 |------|---------|---------|
 | **12-Month Free** | Free for 12 months after signup | 750 hrs/mo t2.micro EC2, 5GB S3 |
@@ -578,7 +578,7 @@
 ## EXAM DAY TIPS 🎯
 - Exam = 65 questions (50 scored + 15 unscored), 90 minutes
 - Passing score = 700/1000 (roughly 70%)
-- Read ALL options before selecting — AWS loves tricky distractors
+- Read ALL options before selecting - AWS loves tricky distractors
 - "MOST cost-effective" → think Spot or Reserved
 - "LEAST operational overhead" → think managed services (RDS over EC2+MySQL)
 - "Minimal downtime migration" → DMS

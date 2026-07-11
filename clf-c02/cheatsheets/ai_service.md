@@ -5,7 +5,7 @@ Polly	Text → Speech (written words to audio)
 Translate	Language translation (English → Hindi)
 Lex	Build chatbots (powers Alexa)
 SageMaker	Build, train & deploy custom ML (Machine Learning) models
-Comprehend	NLP (Natural Language Processing) — sentiment analysis, key phrases
+Comprehend	NLP (Natural Language Processing) - sentiment analysis, key phrases
 Textract	Extract text & data from scanned documents (PDFs, forms)
 Kendra	Intelligent search (search across documents using natural language)
 Forecast	Time-series forecasting (predict future sales, demand)

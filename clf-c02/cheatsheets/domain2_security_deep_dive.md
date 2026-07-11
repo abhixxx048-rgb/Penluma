@@ -1,4 +1,4 @@
-# Domain 2: Security — Deep Dive Training
+# Domain 2: Security - Deep Dive Training
 
 ## Encryption Services
 
@@ -11,7 +11,7 @@
 - **Exam keyword:** "encryption keys, managed" → KMS
 
 ### CloudHSM (Hardware Security Module)
-- YOU manage everything — keys, hardware access, users
+- YOU manage everything - keys, hardware access, users
 - Dedicated hardware (single-tenant)
 - FIPS 140-2 Level 3 certified (highest security)
 - AWS CANNOT access your keys
