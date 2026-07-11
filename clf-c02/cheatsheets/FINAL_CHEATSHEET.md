@@ -308,6 +308,171 @@
 
 ---
 
+## DOMAIN 5: Deeper Coverage & Newer Services 🆕
+> Everything below is fair game on CLF-C02 and fills the gaps most practice tests hit.
+
+### Disaster Recovery (DR) — mirror your Region
+| Concept | Meaning |
+|---------|---------|
+| **AWS Elastic Disaster Recovery (AWS DRS)** | Replicates servers into another Region; spins up a standby copy in **minutes** during an outage. **Replaced CloudEndure Disaster Recovery** — if you still see "CloudEndure DR" as an option, it's the same idea |
+| **RPO (Recovery Point Objective)** | How much DATA you can afford to lose (measured in time) |
+| **RTO (Recovery Time Objective)** | How fast you must be back UP (measured in time) |
+
+**4 DR strategies (cheapest/slowest → priciest/fastest):**
+| Strategy | RTO/RPO | How it works |
+|----------|---------|-------------|
+| **Backup & Restore** | Hours | Just back up; restore after disaster |
+| **Pilot Light** | 10s of minutes | Core (DB) always running, rest off until needed |
+| **Warm Standby** | Minutes | Scaled-down full copy always running, scale up on failover |
+| **Multi-Site Active/Active** | Near-zero | Full copy running in both Regions simultaneously |
+
+> "Standby available in minutes / mirror image in another Region" → AWS Elastic Disaster Recovery (or Warm Standby)
+
+### Server-based vs Serverless
+- **Server-based** (you pick/see an instance): **EC2, RDS, EMR, ElastiCache, Redshift, OpenSearch**
+- **Serverless** (no servers to manage): **Lambda, Fargate, S3, DynamoDB, Aurora Serverless, API Gateway, SQS, SNS, Step Functions, Glue, Athena**
+
+> "Which are server-based?" → RDS + EMR are classic answers (they run on instances under the hood)
+
+### CloudWatch vs CloudWatch Logs (know the exact definition)
+- **Amazon CloudWatch** = a **metrics repository** with customizable notification thresholds and channels (alarms → SNS). NOT a code repo, NOT a firewall.
+- **CloudWatch Logs** features: **real-time monitoring** of log data + **adjustable/configurable retention** (1 day → forever).
+
+### Analytics & Big Data
+| Service | Does What | Serverless? |
+|---------|-----------|-------------|
+| **Athena** | Query data in S3 with SQL — pay per query | ✅ |
+| **Glue** | Serverless **ETL** / data integration; auto-scales, no infra to manage | ✅ |
+| **EMR** | Managed **Hadoop/Spark/Hive** big-data clusters; decouples compute & storage | ❌ (runs on EC2) |
+| **Redshift** | Petabyte-scale data warehouse for complex analytics | ❌ |
+| **Kinesis** | Ingest & process **real-time streaming** data | ✅ (mostly) |
+| **Data Firehose** | Load streaming data into S3/Redshift/OpenSearch | ✅ |
+| **QuickSight** | BI dashboards & visualizations | ✅ |
+| **OpenSearch** | Search & log analytics | ❌ |
+| **Lake Formation** | Build & secure a data lake quickly | ✅ |
+
+### Generative AI & newer AI services (added to the exam)
+| Service | Does What |
+|---------|-----------|
+| **Amazon Q** | Generative-AI assistant for work & builders (chat, code, business data) |
+| **Amazon Bedrock** | Build GenAI apps with foundation models (Anthropic Claude, etc.) via one API — serverless |
+| **SageMaker** | Build/train/deploy custom ML models end-to-end |
+
+### More Security & Identity services
+| Service | Does What | Exam Trigger |
+|---------|-----------|-------------|
+| **Secrets Manager** | Store, **auto-rotate**, retrieve DB creds / API keys / secrets | "rotate database credentials" |
+| **Systems Manager Parameter Store** | Store config & secrets (free tier, no auto-rotation) | "store config values / license keys" |
+| **ACM (Certificate Manager)** | Free public **SSL/TLS certificates** | "free HTTPS certificate" |
+| **Cognito** | Sign-up / sign-in & identity for your apps | "user authentication for mobile/web app" |
+| **IAM Identity Center** (was AWS SSO) | Single sign-on across multiple AWS accounts & apps | "one login for many accounts" |
+| **Directory Service** | Managed Microsoft Active Directory in AWS | "connect on-prem AD" |
+| **AWS Firewall Manager** | Centrally manage WAF/Shield/SG rules across accounts | "manage firewall rules org-wide" |
+
+### Shared Responsibility — extra rulings
+- AWS **is** responsible for: physical hardware, **EC2 host firmware**, hypervisor, global infrastructure, managed-service patching (RDS engine, Lambda runtime).
+- **Configuration management** = **SHARED** between AWS and customer.
+- Customer is responsible for: guest OS patching on EC2, IAM, security groups, data & encryption choices, app code.
+
+### Penetration Testing (updated policy) ⚠️
+- Customers **CAN** run pen tests on **8 approved services** (EC2, RDS, CloudFront, Aurora, API Gateway, Lambda, Lightsail, Elastic Beanstalk) **without prior approval**.
+- **DDoS / stress / simulated-event testing still requires AWS approval.**
+- Older practice questions may still say "request and wait for approval" — that's the legacy answer.
+
+### AWS Marketplace, Partners & Professional help
+| Thing | What it is |
+|-------|-----------|
+| **AWS Marketplace** | Digital catalog to **find, test, buy** third-party software; flexible pricing; software can run on AWS **or other clouds** |
+| **AWS Partner Network (APN)** | Global community building on AWS; key benefit = **Partner funding**, training, co-selling |
+| **AWS Professional Services** | AWS experts who help you migrate/adopt |
+| **AWS IQ** | Hire AWS-certified freelancers for small projects |
+| **Service Catalog** | Curate an **approved list** of products for your org to deploy |
+
+### Self-support & Learning resources (no support plan needed)
+- **AWS Documentation** (user guides), **SDK guides**, **Whitepapers**, **AWS re:Post** (community Q&A, replaced Forums), **Knowledge Center**, **AWS Trust & Safety Center** (report abuse).
+- **Instructor-led** learning: **AWS Classroom Training** + **AWS Online Tech Talks** (live). Self-paced: **AWS Skill Builder**.
+- **AWS Trusted Advisor** also flags **security groups with unrestricted (0.0.0.0/0) access**.
+
+### How AWS reduces cost / frees up IT
+- **Reduce TCO** = **minimize large capital expenditures** (no upfront hardware; CapEx → OpEx).
+- AWS handles the "undifferentiated heavy lifting": **patching database software, backing up databases, hardware maintenance** — freeing your team for app work.
+- **Consolidated billing** advantage = **volume-pricing qualification** (aggregated usage across accounts = lower unit price; shared RI/Savings Plan discounts).
+
+### Amazon VPC essentials
+- Customers have **complete control** over their VPC (IP ranges, subnets, route tables, gateways).
+- **VPC Dashboard** lets you configure: **Subnets, Security Groups**, Route Tables, Internet/NAT Gateways, VPC Peering.
+
+### Storage & DB quick rulings from tricky questions
+- **Sub-millisecond latency / real-time IoT cache** → **ElastiCache for Redis**.
+- **Big-data app on EC2 needing high throughput to many nodes at once** → **EFS** (shared, scales throughput).
+- **Amazon S3** = an **object store** + a **highly durable** (11 nines) storage system.
+- **Backup in another geographic location** → store it **in another Region**.
+- **AWS-managed databases** include Neptune, RDS (MySQL/PostgreSQL/etc.), Aurora, DynamoDB, Redshift, DocumentDB, QLDB, ElastiCache, Keyspaces, Timestream.
+
+### S3 Storage Classes (heavily tested) 🪣
+| Class | Use Case | Cost / Retrieval |
+|-------|----------|------------------|
+| **S3 Standard** | Frequently accessed, hot data | Highest storage, free retrieval |
+| **S3 Intelligent-Tiering** | **Unknown / changing access patterns** — auto-moves data | Small monitoring fee, no retrieval fee |
+| **S3 Standard-IA** (Infrequent Access) | Accessed rarely, needs multi-AZ | Cheaper storage, retrieval fee |
+| **S3 One Zone-IA** | Infrequent + **re-creatable** data (1 AZ only) | Cheapest IA, less durable |
+| **Glacier Instant Retrieval** | Archive, need instant access (ms) | Cheap storage |
+| **Glacier Flexible Retrieval** | Archive, minutes–hours retrieval | Cheaper |
+| **Glacier Deep Archive** | **Cheapest**, 12-hr retrieval, 7–10 yr compliance | Lowest cost |
+
+- **Lifecycle policies** auto-move objects between classes over time.
+- **Versioning** keeps multiple copies; protects against accidental delete/overwrite.
+- All classes = **11 nines (99.999999999%) durability** (One Zone-IA still 11 nines but in 1 AZ).
+
+> "Unknown/unpredictable access" → **Intelligent-Tiering** | "Cheapest long-term archive" → **Glacier Deep Archive** | "Re-creatable, save money, single AZ" → **One Zone-IA**
+
+### AWS Free Tier — 3 types
+| Type | Meaning | Example |
+|------|---------|---------|
+| **12-Month Free** | Free for 12 months after signup | 750 hrs/mo t2.micro EC2, 5GB S3 |
+| **Always Free** | Never expires | 1M Lambda requests/mo, 25GB DynamoDB |
+| **Trials** | Free for a short period after activating a service | SageMaker, some services (30/60/90 days) |
+
+### EC2 Instance Families (pick by workload)
+| Family | Optimized For | Example Use |
+|--------|--------------|-------------|
+| **General Purpose** (T, M) | Balanced CPU/memory | Web servers, dev/test |
+| **Compute Optimized** (C) | High CPU | Batch, gaming, HPC |
+| **Memory Optimized** (R, X) | Large RAM | In-memory DBs, big data |
+| **Storage Optimized** (I, D) | High disk I/O | Data warehouses, NoSQL |
+| **Accelerated Computing** (P, G) | GPUs | ML training, graphics |
+
+### Route 53 Routing Policies
+| Policy | Routes By |
+|--------|-----------|
+| **Simple** | One record, no logic |
+| **Weighted** | % split across resources (A/B testing) |
+| **Latency** | Lowest-latency Region for the user |
+| **Failover** | Active → standby if health check fails |
+| **Geolocation** | User's physical location |
+| **Geoproximity** | Location + bias adjustment |
+| **Multivalue** | Returns multiple healthy records |
+
+### AWS Control Tower & multi-account governance
+- **Control Tower** = set up & govern a **secure multi-account "landing zone"** using best practices (built on Organizations).
+- **Guardrails** = pre-packaged governance rules (preventive via SCPs + detective via Config).
+- **Landing Zone** = the well-architected multi-account baseline it creates.
+
+> "Set up a secure, governed multi-account environment quickly" → **Control Tower** (Organizations = the plumbing, Control Tower = the automated setup)
+
+### Cost drivers & pricing fundamentals (recap)
+- **3 fundamental cost drivers:** **Compute, Storage, Data Transfer OUT.**
+- Greatest cost impact → **Compute charges** + **Data Transfer Out** (Data Transfer IN is free).
+- **EBS pricing factors:** volume size (GB-month) provisioned + snapshot storage (+ provisioned IOPS/throughput).
+- **Cost Explorer** forecasts spend up to **12 months** ahead.
+
+### AWS Well-Architected pillar picker (recap)
+- "Right compute resources for the workload" → **Performance Efficiency**.
+- "Recover from failure / scale to demand" → **Reliability**.
+- "Automate, monitor, improve process" → **Operational Excellence**.
+
+---
+
 ## QUICK EXAM TRAPS 🚨
 
 | If question says... | Answer is... |
@@ -369,6 +534,44 @@
 | "EC2 + Lambda + Fargate discount" | Compute Savings Plan |
 | "Batch jobs / can be interrupted" | Spot Instances |
 | "Compliance / BYOL / dedicated server" | Dedicated Hosts |
+| "Mirror Region / standby in minutes / DR" | Elastic Disaster Recovery (CloudEndure DR) |
+| "Rotate database credentials / store secrets" | Secrets Manager |
+| "Free SSL/TLS certificate" | ACM (Certificate Manager) |
+| "User sign-up / sign-in for an app" | Cognito |
+| "Single sign-on across many accounts" | IAM Identity Center |
+| "Serverless SQL query on S3" | Athena |
+| "Serverless ETL / data prep" | Glue |
+| "Managed Hadoop / Spark clusters" | EMR |
+| "Real-time streaming data" | Kinesis |
+| "BI dashboards / visualize data" | QuickSight |
+| "Build GenAI app with foundation models" | Bedrock |
+| "GenAI work assistant / chat with your data" | Amazon Q |
+| "Metrics repository + alarms" | CloudWatch |
+| "Real-time log monitoring / adjustable retention" | CloudWatch Logs |
+| "Prohibited uses of AWS" | Acceptable Use Policy |
+| "SG allowing unrestricted (0.0.0.0/0) access" | Trusted Advisor |
+| "Sub-millisecond latency / IoT cache" | ElastiCache for Redis |
+| "High throughput to many EC2 nodes at once" | EFS |
+| "Object store + highly durable" | Amazon S3 |
+| "Buy 3rd-party software / runs on any cloud" | AWS Marketplace |
+| "Key benefit of being an AWS Partner" | Partner funding (APN) |
+| "Approved catalog of products for the org" | Service Catalog |
+| "Report abuse of AWS resources" | Trust & Safety Center |
+| "Instructor-led / classroom security training" | AWS Classroom Training + Tech Talks |
+| "Reduce TCO" | Minimize capital expenditure (CapEx → OpEx) |
+| "Volume-pricing qualification across accounts" | Consolidated Billing |
+| "Configuration management responsibility" | Shared (AWS + customer) |
+| "Update EC2 host firmware" | AWS responsibility |
+| "Managed Active Directory" | Directory Service |
+| "Manage WAF/Shield rules org-wide" | Firewall Manager |
+| "Unknown/unpredictable S3 access pattern" | S3 Intelligent-Tiering |
+| "Cheapest long-term archive (12hr retrieval)" | Glacier Deep Archive |
+| "Re-creatable data, single AZ, save cost" | S3 One Zone-IA |
+| "Govern secure multi-account landing zone" | Control Tower |
+| "Split traffic % / A-B testing DNS" | Route 53 Weighted |
+| "Route users to lowest-latency Region" | Route 53 Latency |
+| "GPU / ML training instance" | Accelerated Computing (P/G) |
+| "750 hours free EC2 / always-free Lambda" | AWS Free Tier |
 
 ---
 

@@ -59,3 +59,132 @@ For On-Demand Amazon EC2 instances running Amazon Linux, AWS bills per second, w
 Which services use AWS edge locations? (Choose two.)
 A. Amazon CloudFront
 B. AWS Shield
+
+
+A company is hosting business critical workloads in an AWS Region. To protect against data loss and ensure business continuity, a mirror image of the current AWS environment should be created in another AWS Region. Standby must be available in minutes.
+A. CloudEndure Disaster Recovery. (now AWS Elastic Disaster Recovery / AWS DRS)
+
+Which of the following are examples of AWS-managed databases? (Choose TWO)
+A. Amazon Neptune.
+E. Amazon RDS for MySQL.
+
+You want to create a backup of your data in another geographical location. Where should you create this backup?
+B. In another Region.
+
+What does AWS Cost Explorer provide to help manage your AWS spend?
+D. Highly accurate cost forecasts for up to 12 months ahead.
+
+Which feature of Amazon RDS performs automatic failover when the primary database fails to respond?
+D. RDS Multi-AZ.
+
+Which strategy helps protect your AWS root account?
+A. Delete root user access keys if you do not need them.
+
+Which factors should be considered for Amazon EBS pricing? (Choose TWO)
+A. The size of volumes provisioned per month.
+C. The amount of data you have stored in snapshots.
+
+Which has the greatest impact on cost? (Choose TWO)
+A. Compute charges.
+D. Data Transfer Out charges.
+
+What does the term "Economies of scale" mean?
+C. AWS will continuously lower costs as it grows.
+
+Which is true of Amazon VPC?
+B. AWS Customers have complete control over their Amazon VPC virtual networking environment.
+
+Select the services that are server-based: (Choose TWO)
+A. Amazon RDS.
+E. Amazon EMR.
+
+CTO wants to contact AWS support via Chat but can't see the option. What should you do?
+C. At a minimum, upgrade to Business support plan.
+
+Real-time IoT application requires sub-millisecond latency. Which service?
+D. Amazon ElastiCache for Redis
+
+Which resource explains prohibited uses of AWS services?
+D. AWS Acceptable Use Policy.
+
+Steps a customer takes when conducting penetration testing on AWS?
+D. Request and wait for approval from AWS support, and then conduct testing.
+(NOTE: outdated — AWS now permits pen testing on 8 approved services WITHOUT prior approval; DDoS simulation still needs approval.)
+
+Which Well-Architected pillar helps select the right compute based on workload?
+C. Performance Efficiency.
+
+Which service integrates with Shield and WAF to protect against network and application layer DDoS?
+D. Amazon CloudFront.
+
+Benefits of AWS Marketplace? (Choose TWO)
+D. Provides flexible pricing options that suit most customer needs.
+E. Provides software solutions that run on AWS or any other Cloud vendor.
+
+Big data app on EC2 needs automatic high throughput to multiple compute nodes. Which storage?
+C. Amazon Elastic File System (EFS).
+
+Which task is AWS responsible for in the shared responsibility model?
+C. Updating Amazon EC2 host firmware.
+
+Which service identifies security groups that allow unrestricted access?
+A. AWS Trusted Advisor.
+
+What is Amazon CloudWatch?
+B. A metrics repository with customizable notification thresholds and channels.
+
+Features of Amazon CloudWatch Logs? (Select TWO)
+D. Real-time monitoring.
+E. Adjustable retention.
+
+Who is responsible for configuration management (shared responsibility)?
+C. It is shared between AWS and the customer.
+
+Minimum AWS Support plan that includes Infrastructure Event Management without additional costs?
+A. Enterprise. (Enterprise On-Ramp also includes IEM)
+Business production system down response = < 1 hour. 15-minute response = Enterprise only.
+
+Characteristics of Amazon S3? (Select TWO)
+B. An object store.
+E. A durable storage system.
+
+Key benefit of being an AWS Partner?
+- AWS Partner Funding benefits.
+
+Self-support resources available to AWS customers? (Select THREE)
+- SDK guides
+- AWS Documentation (user guides for AWS services)
+- AWS Trust and Safety Center
+
+How can a company reduce its Total Cost of Ownership (TCO) using AWS?
+A. By minimizing large capital expenditures.
+
+Instructor-led security training options? (Select TWO)
+B. AWS Online Tech Talks.
+E. AWS Classroom Training.
+
+Features configurable through the Amazon VPC Dashboard? (Select TWO)
+C. Security Groups.
+D. Subnets.
+
+Common IT tasks AWS can cover to free up IT resources? (Select TWO)
+A. Patching database software.
+C. Backing up databases.
+
+Advantage of consolidated billing on AWS?
+A. Volume pricing qualification.
+
+Which services could deploy an application to on-premises servers? (Select TWO)
+B. AWS OpsWorks
+C. AWS CodeDeploy
+
+For On-Demand EC2 running Amazon Linux, AWS bills per second, 60-second minimum.
+
+Key managed services from these questions:
+- AWS Glue = fully managed, serverless ETL / data integration for analytics & ML.
+- Amazon EMR = managed big data platform (Spark, Hadoop, Hive); decouples compute from storage.
+- Amazon Aurora = managed MySQL/PostgreSQL-compatible DB; scales storage to 128 TiB, 3-AZ replication, up to 5x MySQL throughput.
+- AWS Secrets Manager = securely store, rotate, retrieve DB credentials, API keys, secrets.
+- AWS Systems Manager = centralized node management, patching, automation across accounts/Regions/hybrid.
+- AWS Marketplace = digital catalog to find, test, buy third-party software that runs on AWS.
+- AWS Partner Network (APN) = global community building solutions on AWS; Partner Funding is a key benefit.
