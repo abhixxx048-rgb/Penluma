@@ -46,3 +46,16 @@ D. Amazon ElastiCache for Redis
 
 Which of the following resources can an AWS customer use to learn more about prohibited uses of the services offered by AWS?
 D. AWS Acceptable Use Policy.
+
+Which of the following services could be used to deploy an application to servers running on-premises? (Select TWO.)
+B. AWS OpsWorks
+C. AWS CodeDeploy
+
+
+For On-Demand Amazon EC2 instances running Amazon Linux, AWS bills per second, with a 60-second minimum.
+
+
+
+Which services use AWS edge locations? (Choose two.)
+A. Amazon CloudFront
+B. AWS Shield
