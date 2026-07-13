@@ -128,6 +128,19 @@ The six pillars are a guaranteed question. The full memory trick and per-pillar 
 - **IAM is global.** EC2, RDS and VPC are region-specific.
 - **Multi-AZ** = high availability (survives a data-center failure). **Multi-Region** = disaster recovery (survives a whole-region failure).
 
+### Disaster recovery - the 4 strategies (commonly tested)
+
+Ordered cheapest/slowest → most expensive/fastest. **RTO** = how long until you're back up; **RPO** = how much data you can afford to lose.
+
+| Strategy | How it works | Speed |
+|---|---|---|
+| Backup & Restore | Back up data, restore after disaster | Slowest, cheapest (hours) |
+| Pilot Light | Core services (e.g. DB) always running, scale up on failure | Minutes–hours |
+| Warm Standby | Scaled-down full copy always running, scale up on failure | Minutes |
+| Multi-Site Active-Active | Full copy live in both Regions, no downtime | Instant, most expensive |
+
+> "Mirror image in another Region, standby available in **minutes**" → **AWS Elastic Disaster Recovery (DRS)** (formerly CloudEndure DR). Lower RTO/RPO = faster recovery, higher cost.
+
 ### Two more concepts the exam slips in
 
 - **AWS CAF (Cloud Adoption Framework)** plans a *migration* across 6 perspectives: Business, People, Governance, Platform, Security, Operations. (Well-Architected is for *designing workloads*; CAF is for *adopting the cloud*.)
@@ -185,6 +198,8 @@ The seven services below are the heart of the security domain; the reasoning beh
 - **At-rest** (stored data: S3, EBS, RDS) vs **in-transit** (moving data: HTTPS, TLS).
 - **KMS** = software-managed keys (FIPS 140-2 **Level 2**), AWS-managed, cheap, with automatic annual rotation. **CloudHSM** = dedicated single-tenant hardware (FIPS 140-2 **Level 3**), *you* hold the keys and AWS can never access them.
 - **AWS Artifact** is the compliance filing cabinet - download SOC / ISO / PCI reports, sign the BAA for HIPAA.
+- **AWS Acceptable Use Policy (AUP)** = the rules for what you're *not* allowed to do on AWS (spam, illegal content, attacks). "Where do I learn prohibited uses?" → **AUP**. Report abuse to the **Trust & Safety** team.
+- **Penetration testing** on 8 approved services (EC2, RDS, CloudFront, Aurora, API Gateway, Lambda, Lightsail, Elastic Beanstalk) is allowed **without** prior approval; simulated DDoS still needs AWS approval.
 - **Security Group** = stateful, allow-only, attached to an EC2 instance. **NACL** = stateless, allow *and* deny, attached to a subnet. To explicitly **deny** an IP, you need a **NACL**.
 
 ### More security services the exam expects
@@ -221,6 +236,7 @@ The biggest domain - a third of the exam - and mostly a memory game of "which se
 **EC2 instance families:** General Purpose (T, M) · Compute Optimized (C - CPU-heavy) · Memory Optimized (R, X - in-memory DBs) · Storage Optimized (I, D - high I/O) · Accelerated (P, G - GPU/ML).
 
 - **ELB** distributes traffic across instances (ALB = HTTP/Layer 7, NLB = TCP/Layer 4); **Auto Scaling** adds/removes instances by demand. Together = high availability + cost efficiency.
+- **Serverless vs server-based** (a favorite trap): **serverless** = Lambda, Fargate, S3, DynamoDB, Aurora Serverless, SQS, SNS, API Gateway (no servers to manage). **Server-based** = EC2, RDS, EMR, Redshift, ElastiCache (you provision instances). If the question asks for a *server-based* service, RDS and EMR qualify - Lambda does not.
 
 ### Storage
 
@@ -303,6 +319,46 @@ Two services the exam constantly swaps: [CloudWatch](/blog/aws-cloud-practitione
 | CloudFormation | AWS-native IaC (YAML/JSON) |
 | CDK | IaC in Python/TypeScript/Java → compiles to CloudFormation |
 
+### Generative AI & the newest services (2024–2025)
+
+AWS added a wave of GenAI and governance services that now appear on the CLF-C02 exam. These are the ones worth knowing cold.
+
+| Service | Does what | Remember as |
+|---|---|---|
+| **Amazon Bedrock** | Build GenAI apps on foundation models (Anthropic Claude, Meta, etc.) via one API - fully managed, serverless | "Foundation models / GenAI app" |
+| **Amazon Q** | AWS's GenAI assistant - Q Developer (coding help) & Q Business (chat over your company data) | "AI assistant / chatbot on my data" |
+| **SageMaker** | Build, train & deploy your *own* custom ML models | "Custom / train my own model" |
+| **SageMaker JumpStart** | Pre-built models and templates to start ML fast | "Pre-trained model quick start" |
+| **PartyRock** | No-code playground to build GenAI apps (built on Bedrock) | "No-code GenAI demo" |
+
+> The trap: **Bedrock** = use *existing* foundation models to build a GenAI app fast. **SageMaker** = build and train your *own* model from scratch. "Foundation model / generative AI" almost always means **Bedrock**.
+
+### Governance, compliance & migration (newer)
+
+| Service | Does what |
+|---|---|
+| **AWS Control Tower** | Set up & govern a secure multi-account environment (landing zone) - automates Organizations + guardrails |
+| **AWS Audit Manager** | Continuously collect evidence to prove compliance (SOC, PCI, GDPR) |
+| **AWS Well-Architected Tool** | Free self-review of a workload against the 6 pillars |
+| **AWS License Manager** | Track and manage software licenses (BYOL) |
+| **Application Migration Service (MGN)** | The primary lift-and-shift (rehost) service for migrating servers to AWS |
+| **AWS Health Dashboard** | Service Health = all-AWS status; **Your account** Health = events affecting *your* resources |
+| **AWS Amplify / App Runner** | Quickly build & host web/mobile apps and containers with minimal setup |
+
+### Developer & deployment tools
+
+| Service | Does what |
+|---|---|
+| CodeCommit | Private Git repository (source control) |
+| CodeBuild | Compile, test and build code |
+| CodeDeploy | Automate deployments - to EC2, Lambda, **and on-premises servers** |
+| CodePipeline | Orchestrate the full CI/CD pipeline |
+| CodeArtifact | Store and share software packages/dependencies |
+| OpsWorks | Config management (Chef/Puppet) - also manages **on-premises** servers |
+| AppConfig | Roll out application configuration and feature flags safely |
+
+> "Deploy an app to **on-premises** servers" → **CodeDeploy** or **OpsWorks** (both reach outside AWS). "Automate the whole build → test → deploy flow" → **CodePipeline**.
+
 ### Analytics & streaming
 
 | Service | Does what |
@@ -365,6 +421,8 @@ The smallest domain, but easy marks if you memorize three tables. The reasoning 
 | Cost & Usage Report | Most detailed line-by-line bill → to S3 |
 | Cost Allocation Tags | Tag resources to break the bill down by team/project |
 | Compute Optimizer | Right-size recommendations for EC2, EBS and Lambda |
+| Cost Anomaly Detection | ML-based alerts when spending suddenly spikes unexpectedly |
+| Billing Conductor | Customize/re-map billing for resellers and internal teams |
 
 ### Support plans
 
@@ -378,6 +436,8 @@ The smallest domain, but easy marks if you memorize three tables. The reasoning 
 
 - 24/7 support and full Trusted Advisor checks start at **Business**.
 - **Pool of TAMs / 30-min response** = Enterprise On-Ramp. **Dedicated TAM / 15-min** = Enterprise.
+- **Infrastructure Event Management (IEM)** = AWS help planning for a big event (product launch, sale). Included free with **Enterprise** and **Enterprise On-Ramp**; available at extra cost to Business.
+- **AWS Partner Network (APN)** = companies that build/sell on AWS; a key benefit is **AWS Partner Funding**. Self-service help: AWS Documentation, SDK/user guides, Knowledge Center, re:Post, Trust & Safety Center - all free, no support plan needed.
 - **Consolidated Billing** = one bill + volume discounts across accounts, managed with [AWS Organizations](/blog/aws-cloud-practitioner-mcq/15-aws-organizations-multi-account-governance). Organizations groups accounts into **OUs**; **SCPs** are applied per account or OU and only *restrict* services - they never grant permissions.
 - **Free Tier:** Always Free (e.g. Lambda 1M requests/mo, DynamoDB 25 GB) · 12-Months Free (EC2 t2.micro, S3 5 GB, RDS) · short service Trials.
 - **Data transfer IN is free; data transfer OUT costs money** - a favorite billing trick.
@@ -472,6 +532,23 @@ This is the highest-value table on the page. AWS builds questions around trigger
 | "Restrict services across accounts" | SCPs |
 | "EC2 + Lambda + Fargate discount" | Compute Savings Plan |
 | "Batch jobs / can be interrupted" | Spot Instances |
+| "Mirror Region, standby in minutes / DR" | Elastic Disaster Recovery (DRS) |
+| "Deploy an app to on-premises servers" | CodeDeploy or OpsWorks |
+| "Automate build → test → deploy (CI/CD)" | CodePipeline |
+| "Prohibited uses / what's not allowed on AWS" | Acceptable Use Policy |
+| "Sub-millisecond / real-time IoT / session store" | ElastiCache (Redis) or DynamoDB |
+| "Server-based service (not serverless)" | EC2, RDS, EMR, Redshift |
+| "Help planning a product launch / big event" | Infrastructure Event Management |
+| "Shared file storage for many EC2 / high throughput" | EFS |
+| "Generative AI app / foundation models" | Amazon Bedrock |
+| "AI assistant / chat over my company data" | Amazon Q |
+| "Train / build my own ML model" | SageMaker |
+| "Govern a multi-account setup / landing zone" | AWS Control Tower |
+| "Continuously collect compliance evidence" | Audit Manager |
+| "Alert on an unexpected spending spike" | Cost Anomaly Detection |
+| "Lift-and-shift / rehost servers to AWS" | Application Migration Service (MGN) |
+| "Is this event affecting my resources?" | AWS Health Dashboard |
+| "Review my workload against the 6 pillars" | Well-Architected Tool |
 
 ---
 
