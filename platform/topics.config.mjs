@@ -13,6 +13,7 @@
 
 export const CATEGORIES = [
   'Engineering',
+  'Design',
   'AI & LLMs',
   'Business & Growth',
   'Money & Business',
@@ -66,6 +67,17 @@ export const TOPICS = {
     category: 'Engineering',
     icon: '📐',
     order: 6,
+  },
+
+  // ---- Design ----
+  'laws-of-ux': {
+    title: 'Laws of UX',
+    description:
+      'The human constants behind every good interface - Hick, Fitts, Jakob, Miller and more - explained in plain language with real product examples.',
+    category: 'Design',
+    icon: '🎨',
+    order: 1,
+    featured: true,
   },
 
   // ---- AI & LLMs ----
